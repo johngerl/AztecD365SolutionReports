@@ -1,0 +1,1 @@
+azt_penetration: =(Decimal(azt_annualspend) / Decimal(azt_totalfunding)) * 100

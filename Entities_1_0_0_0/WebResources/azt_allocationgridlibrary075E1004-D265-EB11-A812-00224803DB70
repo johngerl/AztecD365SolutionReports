@@ -1,0 +1,96 @@
+if (typeof (ALL) === "undefined") { ALL = {}; }
+ALL.AllocationFunctions = {
+    gridSelectRow: function (e) {
+        var fields =
+            [
+                "azt_licensestatus",
+                "azt_name",
+                "azt_startdate",
+                "azt_expirationdate",
+                "azt_softwareproductid",
+                "azt_softwareversionnumber",
+                "azt_customerid",
+                "azt_softwarelicenseid"
+            ];
+        var entityObject = e.getFormContext().data.entity;
+        fields.forEach(function (attribute) {
+            ALL.AllocationFunctions.disableField(entityObject, attribute);
+        });
+    },
+    disableField: function (entityObject, fieldName) {
+        entityObject.attributes.forEach(function (attribute, i) {
+            if (attribute.getName() === fieldName) {
+                var writeInControl = attribute.controls.get(0);
+                writeInControl.setDisabled(true);
+            }
+        });
+    },
+    validateNumberOfLicenses: function (e) {
+        debugger;
+        var slId = "";
+        var formContext = e.getFormContext();
+        var entityObject = formContext.data.entity;
+        slId = ALL.AllocationFunctions.getSLId(entityObject);
+        entityObject.attributes.forEach(function (attribute, i) {
+            var allocationId = entityObject._entityId.guid;
+            if (attribute.getName() === "azt_numberoflicenses") {
+                if (attribute.getValue() !== null && attribute.getValue() !== undefined) {
+                    var numLicensesSubmitted = attribute.getValue();
+                    var numLicAvailable = 0;
+                    Xrm.WebApi.retrieveRecord("azt_softwarelicense", slId, "?$select=azt_concurrentusers").then(
+                        function success(result) {
+                            numLicAvailable = result["azt_concurrentusers"];
+                            ALL.AllocationFunctions.validateLicenseAllocations(numLicensesSubmitted, numLicAvailable, formContext, entityObject, slId, allocationId);
+                        },
+                        function (error) {
+                            formContext.ui.setFormNotification("Error obtaining concurrent users from Sofware License: " + error.message, "ERROR", "getConcurrentError");
+                        }
+                    );
+                }
+            }
+        });
+    },
+    getSLId: function (entityObject) {
+        var slId = "";
+        entityObject.attributes.forEach(function (attribute, i) {
+            if (attribute.getName() === "azt_softwarelicenseid") {
+                if (attribute.getValue() !== null && attribute.getValue() !== undefined) {
+                    slId = attribute.getValue()[0].id;
+                }
+            }
+        });
+        return slId;
+    },
+    validateLicenseAllocations: function (numLicensesSubmitted, numLicAvailable, formContext, entityObject, slId, allocationId) {
+        var totalLicenses = 0;
+        Xrm.WebApi.online.retrieveMultipleRecords("azt_allocatedlicense", "?$select=azt_numberoflicenses&$filter=_azt_softwarelicenseid_value eq " + slId + "and statecode eq 0").then(
+            function success(results) {
+                for (var i = 0; i < results.entities.length; i++) {
+                    var currAllocationId = results.entities[i]["azt_allocatedlicenseid"];
+                    if (currAllocationId === allocationId) {
+                        totalLicenses += numLicensesSubmitted;
+                    }
+                    else {
+                        totalLicenses += results.entities[i]["azt_numberoflicenses"];
+                    }
+                }
+                //alert("Total Licenses: " + totalLicenses);
+                if (totalLicenses > numLicAvailable) {
+                    Xrm.Utility.alertDialog("Exceeds the total number of licenses available of " + numLicAvailable);
+                    ALL.AllocationFunctions.clearNumberLicenses(entityObject);
+                }
+            },
+            function (error) {
+                formContext.ui.setFormNotification("Error calculating total number of licenses: " + error.message, "ERROR", "getLicTotalError");
+                //Xrm.Utility.alertDialog(error.message);
+            }
+        );
+    },
+    clearNumberLicenses: function (entityObject) {
+        entityObject.attributes.forEach(function (attribute, i) {
+            if (attribute.getName() === "azt_numberoflicenses") {
+                attribute.setValue(0);
+            }
+        });
+    }
+}

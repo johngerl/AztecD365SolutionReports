@@ -1,0 +1,13 @@
+if (typeof (CON) === "undefined") { CON = {}; }
+CON.ConnectionFunctions = {
+    onLoad: function (e) {
+        var formContext = e.getFormContext();
+        if (formContext.ui.getFormType() === 1) {
+            formContext.getAttribute("record2id").setValue(null);
+        }
+        var connectToControl = formContext.getControl("record2id");
+        if (connectToControl.getEntityTypes().length > 1) {
+            connectToControl.setEntityTypes(['contact']);
+        }
+    }
+}

@@ -1,0 +1,18 @@
+function onLoad() {
+    Xrm.Page.getAttribute("azt_opportunityproductid").setRequiredLevel("none");
+    Xrm.Page.getAttribute("azt_quoteproductid").setRequiredLevel("none");
+    Xrm.Page.getAttribute("azt_orderproductid").setRequiredLevel("none");
+    Xrm.Page.getAttribute("azt_invoiceproductid").setRequiredLevel("none");
+}
+function setName() {
+    if (Xrm.Page.ui.getFormType() === 1) {
+        var lookupFieldObject = Xrm.Page.data.entity.attributes.get('ownerid');
+        if (lookupFieldObject.getValue() !== null) {
+            var entityId = lookupFieldObject.getValue()[0].id;
+            var formattedentityId = entityId.replace('{', '').replace('}', '').toLowerCase();
+            var entityName = lookupFieldObject.getValue()[0].entityType;
+            var entityLabel = lookupFieldObject.getValue()[0].name; //Lookup Name Value
+            Xrm.Page.getAttribute("azt_name").setValue(entityLabel + " Discount");
+        }
+    }
+}

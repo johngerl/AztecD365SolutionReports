@@ -1,0 +1,38 @@
+# Obsidian
+.obsidian/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+.Python
+env/
+venv/
+ENV/
+.venv/
+.env
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+.DS_Store

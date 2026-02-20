@@ -1,0 +1,21 @@
+function onLoad(e) {
+    var orderType = Xrm.Page.getAttribute("azt_ordertype").getValue();
+    if (orderType !== undefined && orderType !== null) {
+        if (orderType === 276530002) Xrm.Page.ui.tabs.get("lseprocess").setVisible(true);
+        else Xrm.Page.ui.tabs.get("lseprocess").setVisible(false);
+
+        if (orderType === 276530001) Xrm.Page.ui.tabs.get("kaplanprocess").setVisible(true);
+        else Xrm.Page.ui.tabs.get("kaplanprocess").setVisible(false);
+    }
+    var roles = Xrm.Utility.getGlobalContext().userSettings.roles;
+    var hasRole = false;
+    roles.forEach(function (item) {
+        if (item.name.toLowerCase() === "system administrator" || item.name.toLowerCase() === "business manager") {
+            hasRole = true;
+        }
+    });
+    if (hasRole) {
+        var formContext = e.getFormContext();
+        formContext.getControl("manualdiscountamount").setDisabled(false);
+    }
+}

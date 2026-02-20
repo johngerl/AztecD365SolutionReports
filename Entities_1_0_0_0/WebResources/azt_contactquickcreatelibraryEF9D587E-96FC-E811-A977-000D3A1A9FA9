@@ -1,0 +1,20 @@
+function clearContactQuickCreate() {
+    var formType = Xrm.Page.ui.getFormType();
+    if (formType == 1) {
+        var fields = [];
+        fields.push("firstname");
+        fields.push("lastname");
+        fields.push("jobtitle");
+        fields.push("emailaddress1");
+        fields.push("mobilephone");
+        fields.push("telephone1");
+        fields.push("address1_line1");
+        fields.push("address1_line2");
+        fields.push("address1_city");
+        fields.push("address1_postalcode");
+        fields.push("description");
+        for (var F = 0; F < fields.length; F++) {
+            Xrm.Page.getAttribute(fields[F]).setValue(null);
+        }
+    }
+}

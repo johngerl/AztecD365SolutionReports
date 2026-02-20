@@ -1,0 +1,17 @@
+if (typeof (C) === "undefined") { C = {}; }
+C.CaseFunctions = {
+    onLoad: function (e) {
+        debugger;
+        var formContext = e.getFormContext();
+        var roles = Xrm.Utility.getGlobalContext().userSettings.roles;
+        var hasRole = false;
+        roles.forEach(function (item) {
+            if (item.name.toLowerCase() === "system administrator" || item.name.toLowerCase() === "business manager" || item.name.toLowerCase() === "record owner editor") {
+                hasRole = true;
+            }
+        });
+        if (hasRole) {
+            formContext.getControl("azt_recordownerid").setDisabled(false);
+        }
+    }
+}

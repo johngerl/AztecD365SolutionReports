@@ -1,0 +1,100 @@
+function cloneOpportunity() {
+    debugger;
+    var EstClose = Xrm.Page.getAttribute("estimatedclosedate").getValue();
+    var recordId = Xrm.Page.data.entity.getId();
+    recordId = recordId.replace('{', '').replace('}', '').toLowerCase();
+    if (EstClose === null) {
+        Xrm.Page.ui.setFormNotification("Opportunities can only be Cloned when the Estimated Close Date is populated", "ERROR", "EstValue");
+        return;
+    }
+    else {
+        Xrm.Page.ui.clearFormNotification("EstValue");
+        var confirmStrings = { text: "To Clone WITH Lines, click OK. To Clone WITHOUT Lines, click Cancel.", title: "Clone Opportunity" };
+        var confirmOptions = { height: 200, width: 450 };
+        Xrm.Navigation.openConfirmDialog(confirmStrings, confirmOptions).then(
+            function (success) {
+                if (success.confirmed) {
+                    clone(EstClose, recordId, true);
+                }
+                else
+                    clone(EstClose, recordId, false);
+            });
+    }
+}
+function clone(EstClose, recordId, hasLines) {
+    var serverURL = Xrm.Page.context.getClientUrl();
+    var data = {
+        "EstCloseDate": EstClose,
+        "CloneLines": hasLines
+    };
+    var req = new XMLHttpRequest();
+    req.open("POST", serverURL + "/api/data/v9.1/opportunities(" + recordId + ")/Microsoft.Dynamics.CRM.azt_CloneOpportunity", false);
+    req.setRequestHeader("Accept", "application/json");
+    req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+    req.setRequestHeader("OData-MaxVersion", "4.0");
+    req.setRequestHeader("OData-Version", "4.0");
+    req.onreadystatechange = function () {
+        if (this.readyState === 4 /* complete */) {
+            req.onreadystatechange = null;
+            if (this.status === 200) {
+                var data = JSON.parse(this.response);
+                //alert("EmailId: " + data.activityid);
+                Xrm.Utility.openEntityForm("opportunity", data.opportunityid);
+            } else {
+                var error = JSON.parse(this.response).error;
+                alert(error.message);
+            }
+        }
+    };
+    req.send(window.JSON.stringify(data));
+}
+function GetIsCloner() {
+    var isCloner = false;
+    isCloner = userHasRole("Clone Opportunity");
+    return isCloner;
+}
+function userHasRole(roleName) {
+    var globalContext = Xrm.Utility.getGlobalContext();
+    var userRoles = globalContext.userSettings.roles;
+    var hasRole = false;
+    userRoles.forEach(function hasRoleName(item, index) {
+        if (item.name === roleName) {
+            hasRole = true;
+        }
+    });
+    return hasRole;
+}
+function GetHasRole(userId, roleName) {
+    var hasRole = false;
+    var serverURL = Xrm.Page.context.getClientUrl();
+    var data =
+    {
+        "RoleName": roleName,
+        "UserName":
+        {
+            "@odata.type": "Microsoft.Dynamics.CRM.systemuser",
+            "systemuserid": userId
+        }
+    };
+    var req = new XMLHttpRequest();
+    req.open("POST", serverURL + "/api/data/v9.1/azt_GetHasRole", false);
+    req.setRequestHeader("Accept", "application/json");
+    req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+    req.setRequestHeader("OData-MaxVersion", "4.0");
+    req.setRequestHeader("OData-Version", "4.0");
+    req.onreadystatechange = function () {
+        if (this.readyState === 4 /* complete */) {
+            req.onreadystatechange = null;
+            if (this.status === 200) {
+                var data = JSON.parse(this.response);
+                //Xrm.Utility.openEntityForm("email", data.HasRole);
+                hasRole = data.HasRole;
+            } else {
+                var error = JSON.parse(this.response).error;
+                alert(error.message);
+            }
+        }
+    };
+    req.send(window.JSON.stringify(data));
+    return hasRole;
+}

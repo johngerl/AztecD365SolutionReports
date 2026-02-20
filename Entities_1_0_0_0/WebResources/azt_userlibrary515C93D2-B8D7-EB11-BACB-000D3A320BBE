@@ -1,0 +1,38 @@
+if (typeof (U) === "undefined") { U = {}; }
+U.UserFunctions = {
+    createGoals: function (e,goalType) {
+        var globalContext = Xrm.Utility.getGlobalContext();
+        var serverURL = globalContext.getClientUrl();
+        var userId = e.data.entity.getId();
+        var data =
+        {
+            "UserId":
+            {
+                "@odata.type": "Microsoft.Dynamics.CRM.systemuser",
+                "systemuserid": userId
+            },
+            "GoalType": goalType
+        };
+        var req = new XMLHttpRequest();
+        req.open("POST", serverURL + "/api/data/v9.1/azt_GoalAutoCreate", false);
+        req.setRequestHeader("Accept", "application/json");
+        req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+        req.setRequestHeader("OData-MaxVersion", "4.0");
+        req.setRequestHeader("OData-Version", "4.0");
+        req.onreadystatechange = function () {
+            if (this.readyState === 4 /* complete */) {
+                req.onreadystatechange = null;
+                if (this.status === 200) {
+                    var data = JSON.parse(this.response);
+                    Xrm.Utility.alertDialog("Goals have been created for this user.");
+                    //hasRole = data.HasRole;
+                } else {
+                    var error = JSON.parse(this.response).error;
+                    alert(error.message);
+                }
+            }
+        };
+        req.send(window.JSON.stringify(data));
+        //return hasRole;
+    }
+}

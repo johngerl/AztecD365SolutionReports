@@ -1,0 +1,12 @@
+function setAddressName() {
+    var addType = Xrm.Page.getAttribute("address1_addresstypecode").getValue();
+    if (addType != null) {
+        var addTypeString = Xrm.Page.getAttribute("address1_addresstypecode").getText();
+        Xrm.Page.getAttribute("address1_name").setValue(addTypeString);
+        Xrm.Page.getAttribute("address1_name").setSubmitMode("always");
+    }
+    else {
+        Xrm.Page.getAttribute("address1_name").setValue(null);
+        Xrm.Page.getAttribute("address1_name").setSubmitMode("always");
+    }
+}

@@ -1,0 +1,17 @@
+if (typeof (A) === "undefined") { APP = {}; }
+APP.AppointmentLibraryFunctions = {
+    onLoad: function (e) {
+        var formContext = e.getFormContext();
+        APP.AppointmentLibraryFunctions.setVisibleLeadership(e);
+    },
+    setVisibleLeadership: function (e) {
+        var formContext = e.getFormContext();
+        var isLeadership = formContext.getAttribute("azt_isleadershipappointment").getValue();
+        if (isLeadership) {
+            formContext.getControl("azt_leadershipcallwithid").setVisible(true);
+        }
+        else {
+            formContext.getControl("azt_leadershipcallwithid").setVisible(false);
+        }
+    }
+}

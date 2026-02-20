@@ -1,0 +1,54 @@
+if (typeof (SL) === "undefined") { SL = {}; }
+SL.LicenseFunctions = {
+    setVoucherIssued: function (e) {
+        var formContext = e.getFormContext();
+        var isVoucherIssued = formContext.getAttribute("azt_voucherissued").getValue();
+        if (isVoucherIssued) {
+            var userSettings = Xrm.Utility.getGlobalContext().userSettings;
+            //userSettings.userName;
+            formContext.getAttribute("azt_voucherissuedby").setValue(userSettings.userName);
+            formContext.getAttribute("azt_voucherissuedby").setSubmitMode("always");
+            formContext.getAttribute("azt_voucherissuedon").setValue(new Date());
+            formContext.getAttribute("azt_voucherissuedon").setSubmitMode("always");
+        }
+        else {
+            formContext.getAttribute("azt_voucherissuedby").setValue(null);
+            formContext.getAttribute("azt_voucherissuedby").setSubmitMode("always");
+            formContext.getAttribute("azt_voucherissuedon").setValue(null);
+            formContext.getAttribute("azt_voucherissuedon").setSubmitMode("always");
+        }
+    },
+    onSave: function (e) {
+        //var globalContext = Xrm.Utility.getGlobalContext();
+        //var serverURL = globalContext.getClientUrl();
+        var formContext = e.getFormContext();
+        formContext.getAttribute("azt_splitallocations").setValue(null);
+    },
+    cloneLicense: function (formContext) {
+        debugger;
+        var licenseId = formContext.data.entity.getId().replace('{', '').replace('}', '').toLowerCase();
+        //alert("License Id: " + licenseId);
+        var globalContext = Xrm.Utility.getGlobalContext();
+        var serverURL = globalContext.getClientUrl();
+
+        var req = new XMLHttpRequest();
+        req.open("POST", serverURL + "/api/data/v9.1/azt_softwarelicenses(" + licenseId + ")/Microsoft.Dynamics.CRM.azt_CloneLicense", false);
+        req.setRequestHeader("OData-MaxVersion", "4.0");
+        req.setRequestHeader("OData-Version", "4.0");
+        req.setRequestHeader("Accept", "application/json");
+        req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+        req.onreadystatechange = function () {
+            if (this.readyState === 4) {
+                req.onreadystatechange = null;
+                if (this.status === 200) {
+                    var results = JSON.parse(this.response);
+                    Xrm.Utility.openEntityForm("azt_softwarelicense", results.azt_softwarelicenseid);
+                } else {
+                    var error = JSON.parse(this.response).error;
+                    alert(error.message);
+                }
+            }
+        };
+        req.send();
+    }
+}

@@ -1,0 +1,149 @@
+<Activity x:Class="XrmWorkflowd620edb94c4149ad813143af1a9b414e" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mxs="clr-namespace:Microsoft.Xrm.Sdk;assembly=Microsoft.Xrm.Sdk, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mxswa="clr-namespace:Microsoft.Xrm.Sdk.Workflow.Activities;assembly=Microsoft.Xrm.Sdk.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:s="clr-namespace:System;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:srs="clr-namespace:System.Runtime.Serialization;assembly=System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:this="clr-namespace:" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="InputEntities" Type="InArgument(scg:IDictionary(x:String, mxs:Entity))" />
+    <x:Property Name="CreatedEntities" Type="InArgument(scg:IDictionary(x:String, mxs:Entity))" />
+  </x:Members>
+  <this:XrmWorkflowd620edb94c4149ad813143af1a9b414e.InputEntities>
+    <InArgument x:TypeArguments="scg:IDictionary(x:String, mxs:Entity)" />
+  </this:XrmWorkflowd620edb94c4149ad813143af1a9b414e.InputEntities>
+  <this:XrmWorkflowd620edb94c4149ad813143af1a9b414e.CreatedEntities>
+    <InArgument x:TypeArguments="scg:IDictionary(x:String, mxs:Entity)" />
+  </this:XrmWorkflowd620edb94c4149ad813143af1a9b414e.CreatedEntities>
+  <mva:VisualBasic.Settings>Assembly references and imported namespaces for internal implementation</mva:VisualBasic.Settings>
+  <mxswa:Workflow>
+    <Sequence DisplayName="UpdateStep3: Set fields before closing">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Object" Name="UpdateStep3_1" />
+        <Variable x:TypeArguments="x:Object" Name="UpdateStep3_2" />
+        <Variable x:TypeArguments="x:Object" Name="UpdateStep3_3" />
+      </Sequence.Variables>
+      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;incident&quot;)]" />
+      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">RetrieveCurrentTime</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters" xml:space="preserve">[New Object() {  }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[UpdateStep3_2]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { UpdateStep3_2 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[UpdateStep3_1]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="adx_resolutiondate" Entity="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" EntityName="incident" Value="[UpdateStep3_1]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CreateCrmType</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.String, "Mass Closure Pre Migration older than 365 Days", "String" }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[UpdateStep3_3]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="adx_resolution" Entity="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" EntityName="incident" Value="[UpdateStep3_3]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:UpdateEntity DisplayName="UpdateStep3" Entity="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" EntityName="incident" />
+      <Assign x:TypeArguments="mxs:Entity" To="[InputEntities(&quot;primaryEntity&quot;)]" Value="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" />
+      <Persist />
+    </Sequence>
+    <mxswa:SetState DisplayName="SetStateStep2: Close Case" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityId="[InputEntities(&quot;primaryEntity&quot;).Id]" EntityName="incident">
+      <mxswa:SetState.State>
+        <InArgument x:TypeArguments="mxs:OptionSetValue">
+          <mxswa:ReferenceLiteral x:TypeArguments="mxs:OptionSetValue">
+            <mxs:OptionSetValue ExtensionData="{x:Null}" Value="1" />
+          </mxswa:ReferenceLiteral>
+        </InArgument>
+      </mxswa:SetState.State>
+      <mxswa:SetState.Status>
+        <InArgument x:TypeArguments="mxs:OptionSetValue">
+          <mxswa:ReferenceLiteral x:TypeArguments="mxs:OptionSetValue">
+            <mxs:OptionSetValue ExtensionData="{x:Null}" Value="5" />
+          </mxswa:ReferenceLiteral>
+        </InArgument>
+      </mxswa:SetState.Status>
+    </mxswa:SetState>
+    <Persist />
+    <Sequence DisplayName="UpdateStep4: Set Resolved By">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Object" Name="UpdateStep4_1" />
+        <Variable x:TypeArguments="x:Object" Name="UpdateStep4_2" />
+      </Sequence.Variables>
+      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;incident&quot;)]" />
+      <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CreateCrmType</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.Guid, "4784191b-ed1f-e911-a952-000d3a3b9099", "Key" }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[UpdateStep4_2]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CreateCrmType</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.EntityReference, "systemuser", "Rafa Diaz", UpdateStep4_2, "Lookup" }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[UpdateStep4_1]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_resolvedbyid" Entity="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" EntityName="incident" Value="[UpdateStep4_1]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:UpdateEntity DisplayName="UpdateStep4" Entity="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" EntityName="incident" />
+      <Assign x:TypeArguments="mxs:Entity" To="[InputEntities(&quot;primaryEntity&quot;)]" Value="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" />
+      <Persist />
+    </Sequence>
+    <Sequence DisplayName="StopWorkflowStep5: Stop">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Object" Name="StopWorkflowStep5_1" />
+        <Variable x:TypeArguments="x:String" Default="e5a0b3e9-28b3-40e1-a236-6818017d3097" Name="stepLabelLabelId" />
+        <Variable x:TypeArguments="x:String" Name="stepLabelDescription">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String" Value="" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="x:Int32" Default="1033" Name="stepLabelLanguageCode" />
+      </Sequence.Variables>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CreateCrmType</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.String, "", "String" }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[StopWorkflowStep5_1]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <TerminateWorkflow DisplayName="StopWorkflowStep5: Stop" Exception="[New Microsoft.Xrm.Sdk.InvalidPluginExecutionException(Microsoft.Xrm.Sdk.OperationStatus.Succeeded)]" Reason="[DirectCast(StopWorkflowStep5_1, System.String)]" />
+    </Sequence>
+  </mxswa:Workflow>
+</Activity>

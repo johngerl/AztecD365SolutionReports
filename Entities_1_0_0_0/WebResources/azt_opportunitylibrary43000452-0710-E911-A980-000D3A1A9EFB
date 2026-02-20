@@ -1,0 +1,203 @@
+if (typeof (OPP) === "undefined") { OPP = {}; }
+OPP.OPPFunctions = {
+    onLoad: function (e) {
+        debugger;
+        var formContext = e.getFormContext();
+        OPP.OPPFunctions.setFreightAmt(e);
+        var userSettings = Xrm.Utility.getGlobalContext().userSettings;
+        var userId = userSettings.userId.replace('{', '').replace('}', '').toLowerCase();
+        var userName = userSettings.userName;
+
+        var formType = formContext.ui.getFormType();
+
+        var modifiedLookup = [];
+        modifiedLookup[0] = {};
+        modifiedLookup[0].id = userId;
+        modifiedLookup[0].name = userName;
+        modifiedLookup[0].entityType = "systemuser";
+        formContext.getAttribute("azt_lastmodifiedbyid").setValue(modifiedLookup);
+        if (formType === 2) {
+            formContext.data.save();
+        }
+        var canClone = OPP.OPPFunctions.userHasRole("Clone Opportunity");
+        var userIsBusMgr = OPP.OPPFunctions.userHasRole("Business Manager");
+        var isSalesManager = OPP.OPPFunctions.userHasRole("Sales Manager");
+        var userIsAdmin = OPP.OPPFunctions.userHasRole("System Administrator");
+        var isUserRecordOwnerEditor = OPP.OPPFunctions.userHasRole("Record Owner Editor");
+        if (userIsAdmin || isUserRecordOwnerEditor) formContext.getControl("azt_recordownerid").setDisabled(false);
+        var userIsCRT = OPP.OPPFunctions.userHasRole("CRT");
+        var userIsAcctsTeam = OPP.OPPFunctions.userHasRole("Aztec Accounts Team");
+        //if (!userIsBusMgr && !userIsAdmin && !userIsCRT && !userIsAcctsTeam) formContext.getControl("azt_expectedrenewalvalue").setVisible(false);
+        var lookupValue = formContext.getAttribute("pricelevelid").getValue();
+        if (lookupValue === null || lookupValue === undefined) {
+            Xrm.WebApi.retrieveMultipleRecords("pricelevel", "?$select=pricelevelid&$filter=name eq 'Full'").then(
+                function success(result) {
+                    for (var i = 0; i < result.entities.length; i++) {
+                        console.log(result.entities[i]);
+                        var priceListId = result.entities[0].pricelevelid;
+                        //alert("Price List Id: " + priceListId);
+                        //lookupValue.setValue([{id: priceListId, name: "2019", entityType: "pricelevel"}]);
+                        var pl = new Array();
+                        pl[0] = [];
+                        pl[0].id = priceListId;
+                        pl[0].name = "Full";
+                        pl[0].entityType = "pricelevel";
+                        formContext.getAttribute("pricelevelid").setValue(pl);
+                    }
+                    // perform additional operations on retrieved records
+                },
+                function (error) {
+                    console.log(error.message);
+                    // handle error conditions
+                }
+            );
+            //Xrm.WebApi.retrieveRecord(entityLogicalName, id, options).then(successCallback, errorCallback);
+        }
+
+        var oppId = formContext.data.entity.getId().replace('{', '').replace('}', '').toLowerCase();
+        Xrm.WebApi.online.retrieveMultipleRecords("opportunityproduct", "?$select=azt_licensetype&$filter=_opportunityid_value eq " + oppId).then(
+            function success(results) {
+                for (var i = 0; i < results.entities.length; i++) {
+                    var azt_licensetype = results.entities[i]["azt_licensetype"];
+                    var azt_licensetype_formatted = results.entities[i]["azt_licensetype@OData.Community.Display.V1.FormattedValue"];
+
+                    //if (azt_licensetype == 276530005) {
+                    //    formContext.getAttribute("freightamount").setRequiredLevel("required");
+                    //}
+                }
+            },
+            function (error) {
+                Xrm.Utility.alertDialog(error.message);
+            }
+        );
+
+
+
+
+        var committedToCloseField = formContext.getAttribute("azt_committoestimatedclose");
+        var isCommitted = false;
+        if (committedToCloseField == null)
+            isCommitted = false;
+        else if (committedToCloseField.getValue() == true)
+            isCommitted = true;
+        if (isCommitted) {
+            if (isSalesManager || userIsAdmin) {
+                formContext.getControl("azt_committoestimatedclose").setDisabled(false);
+            }
+            else {
+                formContext.getControl("azt_committoestimatedclose").setDisabled(true);
+            }
+        }
+        var roles = Xrm.Utility.getGlobalContext().userSettings.roles;
+        var hasRole = false;
+        roles.forEach(function (item) {
+            if (item.name.toLowerCase() === "system administrator" || item.name.toLowerCase() === "business manager") {
+                hasRole = true;
+            }
+        });
+        if (hasRole) {
+            formContext.getControl("azt_recordownerid").setDisabled(false);
+        }
+    },
+    setFreightAmt: function (e) {
+        debugger;
+        var formContext = e.getFormContext();
+        var freightAmt = formContext.getAttribute("freightamount").getValue();
+        var defaultFreightAmt = OPP.OPPFunctions.getFreightAmt(formContext);
+        formContext.getAttribute("azt_defaultfreightamount").setValue(defaultFreightAmt);
+        formContext.getAttribute("azt_defaultfreightamount").setSubmitMode("always");
+        var reqFreightAmt = formContext.getAttribute("azt_requestedfreightamt").getValue();
+        var freightApproved = formContext.getAttribute("azt_freightamtapproved").getValue();
+        if ((reqFreightAmt === null || reqFreightAmt === undefined) && defaultFreightAmt !== null) {
+            if (freightAmt !== defaultFreightAmt) {
+                formContext.getAttribute("freightamount").setValue(defaultFreightAmt);
+                formContext.getAttribute("freightamount").setSubmitMode("always");
+            }
+        }
+        else if (reqFreightAmt !== null && freightApproved) {
+            if (reqFreightAmt !== freightAmt) {
+                formContext.getAttribute("freightamount").setValue(reqFreightAmt);
+                formContext.getAttribute("freightamount").setSubmitMode("always");
+            }
+        }
+    },
+    getFreightAmt: function (formContext) {
+        var totalFreight = 0;
+        var recordId = formContext.data.entity.getId().replace('{', '').replace('}', '').toLowerCase();
+        var req = new XMLHttpRequest();
+        req.open("GET", formContext.context.getClientUrl() + "/api/data/v9.1/opportunityproducts?$select=extendedamount&$expand=productid($select=azt_isprint)&$filter=_opportunityid_value eq " + recordId, false);
+        req.setRequestHeader("OData-MaxVersion", "4.0");
+        req.setRequestHeader("OData-Version", "4.0");
+        req.setRequestHeader("Accept", "application/json");
+        req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+        req.setRequestHeader("Prefer", "odata.include-annotations=\"*\"");
+        req.onreadystatechange = function () {
+            if (this.readyState === 4) {
+                req.onreadystatechange = null;
+                if (this.status === 200) {
+                    var results = JSON.parse(this.response);
+                    for (var i = 0; i < results.value.length; i++) {
+                        var extendedamount = results.value[i]["extendedamount"];
+                        //var extendedamount_formatted = results.value[i]["extendedamount@OData.Community.Display.V1.FormattedValue"];
+                        ////Use @odata.nextLink to query resulting related records
+                        //var productid_NextLink = results.value[i]["productid@odata.nextLink"];
+                        var isPrint = results.value[i].productid.azt_isprint;
+                        if (isPrint) {
+                            totalFreight += extendedamount;
+                        }
+                    }
+                } else {
+                    Xrm.Utility.alertDialog(this.statusText);
+                }
+            }
+        };
+        req.send();
+        return totalFreight * .125;
+    },
+    userHasRole: function (roleName) { /////////////////////////////////////////////////New
+        var globalContext = Xrm.Utility.getGlobalContext();
+        var userRoles = globalContext.userSettings.roles;
+        var hasRole = false;
+        userRoles.forEach(function hasRoleName(item, index) {
+            if (item.name === roleName) {
+                hasRole = true;
+            }
+        });
+        return hasRole;
+    },
+    GetHasRole: function (userId, roleName) { ///////////////////NO LONGER IN USE
+        var hasRole = false;
+        var globalContext = Xrm.Utility.getGlobalContext();
+        var serverURL = globalContext.getClientUrl();
+        var data =
+        {
+            "RoleName": roleName,
+            "UserName":
+            {
+                "@odata.type": "Microsoft.Dynamics.CRM.systemuser",
+                "systemuserid": userId
+            }
+        };
+        var req = new XMLHttpRequest();
+        req.open("POST", serverURL + "/api/data/v9.1/azt_GetHasRole", false);
+        req.setRequestHeader("Accept", "application/json");
+        req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+        req.setRequestHeader("OData-MaxVersion", "4.0");
+        req.setRequestHeader("OData-Version", "4.0");
+        req.onreadystatechange = function () {
+            if (this.readyState === 4 /* complete */) {
+                req.onreadystatechange = null;
+                if (this.status === 200) {
+                    var data = JSON.parse(this.response);
+                    //Xrm.Utility.openEntityForm("email", data.HasRole);
+                    hasRole = data.HasRole;
+                } else {
+                    var error = JSON.parse(this.response).error;
+                    alert(error.message);
+                }
+            }
+        };
+        req.send(window.JSON.stringify(data));
+        return hasRole;
+    }
+}

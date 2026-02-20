@@ -1,0 +1,133 @@
+if (typeof (L) === "undefined") { L = {}; }
+L.LeadFunctions = {
+    qualifyLead: function (formContext) {
+        debugger;
+        var acctObj = formContext.getAttribute("parentaccountid").getValue();
+        if (acctObj !== null) {
+            var acctId = acctObj[0].id;
+            var formattedAcctId = acctId.replace('{', '').replace('}', '').toLowerCase();
+            var leadId = formContext.data.entity.getId().substr(1, 36);
+            var topic = formContext.getAttribute("subject").getValue();
+
+            var lead =
+            {
+                "statecode": 1,
+                "statuscode": 3
+            }
+            // update the record
+            Xrm.WebApi.updateRecord("lead", leadId, lead).then(
+                function success(result) {
+                    console.log("Lead qualified");
+                    // perform operations on record update
+                },
+                function (error) {
+                    console.log(error.message);
+                    // handle error conditions
+                }
+            );
+
+            var data =
+            {
+                "name": topic,
+                "customerid_account@odata.bind": "/accounts(" + formattedAcctId + ")",
+                "originatingleadid@odata.bind": "/leads(" + leadId + ")"
+            }
+            Xrm.WebApi.createRecord("opportunity", data).then(
+                function success(result) {
+                    console.log("Opp created with ID: " + result.id);
+
+                    Xrm.Utility.openEntityForm("opportunity", result.id);
+                },
+                function (error) {
+                    console.log(error.message);
+                    Xrm.Utility.alertDialog(error.message);
+                }
+            );
+        }
+        else {
+            Xrm.Utility.alertDialog("You must have an account specified to qualify the lead");
+        }
+    },
+    onSave: function (e) {
+        debugger;
+        var formContext = e.getFormContext();
+        var owner = formContext.getAttribute("ownerid").getValue();
+        var ownerName = owner[0].name;
+        //alert("Owner Name: " + ownerName);
+    },
+    getAccountPopulated: function (e) {
+        var acctPopulated = false;
+        var formContext = e.getFormContext();
+        var acctField = formContext.getAttribute("parentaccountid").getValue();
+        if (acctField !== null)
+            acctPopulated = true;
+        alert(acctPopulated);
+        return acctPopulated;
+    },
+    openSpecificLeadForm: function (e) {
+        debugger;
+        var formContext = e.getFormContext();
+        if (formContext.ui.getFormType() === 1) return;
+        var leadFormType = formContext.getAttribute("azt_leadformtype").getValue();
+        if (leadFormType !== null) {
+            var recordId = formContext.data.entity.getId().replace('{', '').replace('}', '').toLowerCase();
+            var leadForm = {};
+            leadForm["entityName"] = "lead";
+            leadForm["entityId"] = recordId;
+            var FSRFormId = "229c13bf-40fc-4b37-b4a9-637b54247dea";
+            var aztecLeadFormId = "05f95295-d7a2-4b47-b067-b38dbd6e7931";
+            //var leadFormId = "e3b6ddb7-8df0-4410-ac7b-fd32e5053d38";
+            var salesFormId = "580535c1-5cbb-4aa4-8040-7f2851557ee2";
+            var formItem = formContext.ui.formSelector.getCurrentItem();
+            var formId = formItem.getId();
+            //formContext.data.save();
+            //alert(formId);
+            var formLabel = formItem.getLabel();
+            if (leadFormType === 1 && formId !== FSRFormId) {
+                if (formLabel !== "FSR Lead") {
+                    leadForm["formId"] = FSRFormId;
+                    L.LeadFunctions.openForm(leadForm)
+                }
+            }
+            else if (leadFormType === 2 && formId !== salesFormId) {
+                if (formLabel !== "Sales") {
+                    leadForm["formId"] = salesFormId;
+                    L.LeadFunctions.openForm(salesFormId, recordId)
+                }
+            }
+            else if (leadFormType === 3 && formId !== aztecLeadFormId) {
+                if (formLabel !== "Aztec Lead") {
+                    leadForm["formId"] = aztecLeadFormId;
+                    L.LeadFunctions.openForm(leadForm)
+                }
+            }
+        }
+    },
+    openForm: function (form, recordId) {
+        var entityFormOptions = {};
+        entityFormOptions["entityName"] = "lead";
+        entityFormOptions["entityId"] = recordId;
+        entityFormOptions["formId"] = form;
+        Xrm.Navigation.openForm(form).then(
+            function (success) {
+                console.log(success);
+            },
+            function (error) {
+                console.log(error);
+            });
+    },
+    disableQualify: function (e) {
+        debugger;
+        var shouldDisable = false;
+        var formContext = e.getFormContext();
+        var leadFormType = formContext.getAttribute("azt_leadformtype").getValue();
+        if (leadFormType === 327630000)
+            alert("isSales");
+        return shouldDisable;
+    },
+    onLoad: function (e) {
+        debugger;
+        var formContext = e.getFormContext();
+        var formId = formContext.ui.formSelector.getCurrentItem().getId();
+    }
+}

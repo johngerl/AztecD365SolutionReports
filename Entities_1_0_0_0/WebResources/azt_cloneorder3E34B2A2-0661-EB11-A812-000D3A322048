@@ -1,0 +1,152 @@
+if (typeof (O) === "undefined") { O = {}; }
+O.OrderFunctions = {
+    cloneOrder: function (e) {
+        debugger;
+        Xrm.Utility.showProgressIndicator("Cloning Order...");
+        var globalContext = Xrm.Utility.getGlobalContext();
+        var serverURL = globalContext.getClientUrl();
+        var formContext = e;
+        var recordId = formContext.data.entity.getId().replace('{', '').replace('}', '').toLowerCase();
+        //if (O.OrderFunctions.getHasInvoices(formContext, recordId, serverURL)) {
+        //    Xrm.Utility.closeProgressIndicator();
+        //    formContext.ui.setFormNotification("This Order has already been invoiced and cannot be cloned.", "ERROR", "OrderHasInvoice");
+        //}
+        //else {
+        //    Xrm.Utility.closeProgressIndicator();
+        //    O.OrderFunctions.clone(recordId, formContext, serverURL);
+        //}
+        //Temp
+        Xrm.Utility.closeProgressIndicator();
+        O.OrderFunctions.clone(recordId, formContext, serverURL);
+    },
+    splitOrder: function (e) {
+        debugger;
+        Xrm.Utility.showProgressIndicator("Splitting Order...");
+        var globalContext = Xrm.Utility.getGlobalContext();
+        var serverURL = globalContext.getClientUrl();
+        var formContext = e;
+        var numToSplit = formContext.getAttribute("azt_numbertosplit").getValue();
+        var okToSplit = false;
+        var recordId = formContext.data.entity.getId().replace('{', '').replace('}', '').toLowerCase();
+        if (O.OrderFunctions.getHasInvoices(formContext, recordId, serverURL)) {
+            Xrm.Utility.closeProgressIndicator();
+            formContext.ui.setFormNotification("This Order has already been invoiced and cannot be cloned.", "ERROR", "OrderHasInvoice");
+        }
+        else {
+            okToSplit = true;
+        }
+        if (numToSplit === null || numToSplit === undefined) {
+            okToSplit = false;
+            Xrm.Utility.closeProgressIndicator();
+            formContext.ui.setFormNotification("You must first specify a number of orders to split into before the order can be split.", "ERROR", "NumberToSplit");
+        }
+        else okToSplit = true;
+        if (okToSplit) {
+            O.OrderFunctions.split3(recordId, numToSplit, formContext, serverURL);
+        }
+    },
+    clone: function (recordId, formContext, serverURL) {
+        var req = new XMLHttpRequest();
+        req.open("POST", serverURL + "/api/data/v9.1/salesorders(" + recordId + ")/Microsoft.Dynamics.CRM.azt_CloneOrder", false);
+        req.setRequestHeader("Accept", "application/json");
+        req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+        req.setRequestHeader("OData-MaxVersion", "4.0");
+        req.setRequestHeader("OData-Version", "4.0");
+        req.onreadystatechange = function () {
+            if (this.readyState === 4 /* complete */) {
+                req.onreadystatechange = null;
+                if (this.status === 200) {
+                    var data = JSON.parse(this.response);
+                    Xrm.Utility.closeProgressIndicator();
+                    Xrm.Utility.openEntityForm("salesorder", data.salesorderid);
+                } else {
+                    var error = JSON.parse(this.response).error;
+                    formContext.ui.setFormNotification(error.message, "ERROR", "OrderClone");
+                    Xrm.Utility.closeProgressIndicator();
+                }
+            }
+        };
+        req.send();//window.JSON.stringify());
+    },
+    split: function (recordId, numberToSplit, formContext, serverUrl) {
+        var parameters = {};
+        parameters.NumberToSplit = numberToSplit;
+        parameters.ExistingOrderId = recordId;
+
+        var req = new XMLHttpRequest();
+        req.open("POST", Xrm.Page.context.getClientUrl() + "/api/data/v9.1/salesorders(" + numberToSplit + ")/Microsoft.Dynamics.CRM.azt_OrderSplit", true);
+        req.setRequestHeader("OData-MaxVersion", "4.0");
+        req.setRequestHeader("OData-Version", "4.0");
+        req.setRequestHeader("Accept", "application/json");
+        req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+        req.onreadystatechange = function () {
+            if (this.readyState === 4) {
+                req.onreadystatechange = null;
+                if (this.status === 204) {
+                    //Success - No Return Data - Do Something
+                    Xrm.Utility.closeProgressIndicator();
+                    formContext.ui.setFormNotification("Order has been split.", "INFORMATION", );
+                } else {
+                    Xrm.Utility.closeProgressIndicator();
+                    Xrm.Utility.alertDialog("this.statusText: " + this.statusText + "Nothing");
+                }
+            }
+        };
+        req.send(JSON.stringify(parameters));
+    },
+    split3: function (recordId, numberToSplit, formContext, serverUrl) {
+        var parameters = {};
+        parameters.NumberToSplit = numberToSplit;
+        parameters.ExistingOrderId = recordId;
+
+        var req = new XMLHttpRequest();
+        req.open("POST", serverUrl + "/api/data/v9.1/salesorders(" + recordId + ")/Microsoft.Dynamics.CRM.azt_OrderSplit", false);
+        req.setRequestHeader("OData-MaxVersion", "4.0");
+        req.setRequestHeader("OData-Version", "4.0");
+        req.setRequestHeader("Accept", "application/json");
+        req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+        req.onreadystatechange = function () {
+            if (this.readyState === 4) {
+                req.onreadystatechange = null;
+                if (this.status === 200) {
+                    Xrm.Utility.closeProgressIndicator();
+                    var results = JSON.parse(this.response);
+                    var numberSplit = results.NumberSplit;
+                    formContext.ui.setFormNotification("Order has been split into " + numberSplit + " orders.", "INFORMATION",);
+                } else {
+                    Xrm.Utility.closeProgressIndicator();
+                    Xrm.Utility.alertDialog(this.statusText + " " + JSON.parse(this.response).error.message);
+                }
+            }
+        };
+        req.send(JSON.stringify(parameters));
+    },
+    getHasInvoices: function (formContext, recordId, serverURL) {
+        var HasInvoice = false;
+        var req = new XMLHttpRequest();
+        req.open("GET", serverURL + "/api/data/v9.1/invoices?$select=invoiceid&$filter=_salesorderid_value eq " + recordId, false);
+        req.setRequestHeader("OData-MaxVersion", "4.0");
+        req.setRequestHeader("OData-Version", "4.0");
+        req.setRequestHeader("Accept", "application/json");
+        req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+        req.setRequestHeader("Prefer", "odata.include-annotations=\"*\"");
+        req.onreadystatechange = function () {
+            if (this.readyState === 4) {
+                req.onreadystatechange = null;
+                if (this.status === 200) {
+                    var results = JSON.parse(this.response);
+                    if (results.value.length > 0) HasInvoice = true;
+                    //for (var i = 0; i < results.value.length; i++) {
+                    //    if (results.value.length > 0) HasInvoice = true;
+                    //    //var invoiceid = results.value[i]["invoiceid"];
+                    //}
+                } else {
+                    var error = JSON.parse(this.response).error;
+                    formContext.ui.setFormNotification("Error retrieving Related Invoices – " + error.message, "ERROR");
+                }
+            }
+        };
+        req.send();
+        return HasInvoice;
+    }
+}

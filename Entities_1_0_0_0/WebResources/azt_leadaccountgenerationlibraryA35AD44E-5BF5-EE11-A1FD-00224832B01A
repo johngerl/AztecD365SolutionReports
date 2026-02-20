@@ -1,0 +1,16 @@
+if (typeof (LAG) === "undefined") { LAG = {}; }
+LAG.LeadGenFunctions = {
+    onLoad: function (e) {
+        debugger;
+        var formContext = e.getFormContext();
+        var formType = formContext.ui.getFormType();
+        if (formType === 0 || formType === 1) {
+            formContext.getAttribute("azt_monthstofilteron").setValue(24);
+        }
+        else {
+            var evaluated = formContext.getAttribute("azt_evaluate").getValue();
+            if (evaluated)
+                formContext.getControl("azt_evaluate").setDisabled(true);
+        }
+    }
+}

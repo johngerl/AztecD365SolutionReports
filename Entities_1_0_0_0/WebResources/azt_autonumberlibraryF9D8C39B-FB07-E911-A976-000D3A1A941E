@@ -1,0 +1,88 @@
+function AutonumberLibrary() {
+    var prefixHasSeparator = Xrm.Page.getAttribute("azt_prefixhasseparator").getValue();
+    var suffixHasSeparator = Xrm.Page.getAttribute("azt_suffixhasseparator").getValue();
+    var prefix = Xrm.Page.getAttribute("azt_prefix").getValue();
+    var suffix = Xrm.Page.getAttribute("azt_suffix").getValue();
+    if (prefix != null) {
+        Xrm.Page.getControl("azt_prefixhasseparator").setVisible(true);
+        if (prefixHasSeparator == true) {
+            Xrm.Page.getControl("azt_prefixseparatorisspace").setVisible(true);
+            setPrefixSeparatorVisiblility();
+        }
+        else {
+            Xrm.Page.getAttribute("azt_prefixseparator").setValue(null);
+            Xrm.Page.getControl("azt_prefixseparator").setVisible(false);
+            Xrm.Page.getAttribute("azt_prefixseparator").setSubmitMode("always");
+            Xrm.Page.getAttribute("azt_prefixseparatorisspace").setValue(false);
+            Xrm.Page.getControl("azt_prefixseparatorisspace").setVisible(false);
+            Xrm.Page.getAttribute("azt_prefixseparatorisspace").setSubmitMode("always");
+            Xrm.Page.getAttribute("azt_prefixseparator").setValue(null);
+        }
+    }
+    else {
+        Xrm.Page.getAttribute("azt_prefixhasseparator").setValue(false);
+        Xrm.Page.getControl("azt_prefixhasseparator").setVisible(false);
+        Xrm.Page.getAttribute("azt_prefixhasseparator").setSubmitMode("always");
+        Xrm.Page.getAttribute("azt_prefixseparator").setValue(null);
+        Xrm.Page.getControl("azt_prefixseparator").setVisible(false);
+        Xrm.Page.getAttribute("azt_prefixseparator").setSubmitMode("always");
+        Xrm.Page.getAttribute("azt_prefixseparatorisspace").setValue(false);
+        Xrm.Page.getControl("azt_prefixseparatorisspace").setVisible(false);
+        Xrm.Page.getAttribute("azt_prefixseparatorisspace").setSubmitMode("always");
+        Xrm.Page.getAttribute("azt_prefixseparator").setValue(null);
+    }
+    if (suffix != null) {
+        Xrm.Page.getControl("azt_suffixhasseparator").setVisible(true);
+        if (suffixHasSeparator == true) {
+            Xrm.Page.getControl("azt_suffixseparatorisspace").setVisible(true);
+            Xrm.Page.getControl("azt_suffixseparator").setFocus();
+            setSuffixSeparatorVisiblility();
+        }
+        else {
+            Xrm.Page.getAttribute("azt_suffixseparator").setValue(null);
+            Xrm.Page.getControl("azt_suffixseparator").setVisible(false);
+            Xrm.Page.getAttribute("azt_suffixseparator").setSubmitMode("always");
+            Xrm.Page.getAttribute("azt_suffixseparatorisspace").setValue(false);
+            Xrm.Page.getControl("azt_suffixseparatorisspace").setVisible(false);
+            Xrm.Page.getAttribute("azt_suffixseparatorisspace").setSubmitMode("always");
+            Xrm.Page.getAttribute("azt_suffixseparator").setValue(null);
+        }
+    }
+    else {
+        Xrm.Page.getAttribute("azt_suffixhasseparator").setValue(false);
+        Xrm.Page.getControl("azt_suffixhasseparator").setVisible(false);
+        Xrm.Page.getAttribute("azt_suffixhasseparator").setSubmitMode("always");
+        Xrm.Page.getAttribute("azt_suffixseparator").setValue(null);
+        Xrm.Page.getControl("azt_suffixseparator").setVisible(false);
+        Xrm.Page.getAttribute("azt_suffixseparator").setRequiredLevel("none");
+        Xrm.Page.getAttribute("azt_suffixseparator").setSubmitMode("always");
+        Xrm.Page.getAttribute("azt_suffixseparatorisspace").setValue(false);
+        Xrm.Page.getControl("azt_suffixseparatorisspace").setVisible(false);
+        Xrm.Page.getAttribute("azt_suffixseparatorisspace").setSubmitMode("always");
+        Xrm.Page.getAttribute("azt_suffixseparator").setValue(null);
+    }
+}
+function setPrefixSeparatorVisiblility() {
+    if (Xrm.Page.getAttribute("azt_prefixseparatorisspace").getValue() == false) {
+        Xrm.Page.getAttribute("azt_prefixseparator").setRequiredLevel("required");
+        Xrm.Page.getControl("azt_prefixseparator").setVisible(true);
+    }
+    else {
+        Xrm.Page.getAttribute("azt_prefixseparator").setRequiredLevel("none");
+        Xrm.Page.getAttribute("azt_prefixseparator").setValue(null);
+        Xrm.Page.getControl("azt_prefixseparator").setVisible(false);
+        Xrm.Page.getAttribute("azt_prefixseparator").setSubmitMode("always");
+    }
+}
+function setSuffixSeparatorVisiblility() {
+    if (Xrm.Page.getAttribute("azt_suffixseparatorisspace").getValue() == false) {
+        Xrm.Page.getAttribute("azt_suffixseparator").setRequiredLevel("required");
+        Xrm.Page.getControl("azt_suffixseparator").setVisible(true);
+    }
+    else {
+        Xrm.Page.getAttribute("azt_suffixseparator").setRequiredLevel("none");
+        Xrm.Page.getAttribute("azt_suffixseparator").setValue(null);
+        Xrm.Page.getControl("azt_suffixseparator").setVisible(false);
+        Xrm.Page.getAttribute("azt_suffixseparator").setSubmitMode("always");
+    }
+}

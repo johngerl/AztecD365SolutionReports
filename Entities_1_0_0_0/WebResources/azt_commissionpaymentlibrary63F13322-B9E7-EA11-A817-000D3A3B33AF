@@ -1,0 +1,32 @@
+function cloneCommissionPayment() {
+    debugger;
+    Xrm.Page.ui.setFormNotification("Cloning...", "INFO", "Cloning");
+    var recordId = Xrm.Page.data.entity.getId();
+    recordId = recordId.replace('{', '').replace('}', '').toLowerCase();
+    var serverURL = Xrm.Page.context.getClientUrl();
+    var data = {
+
+    };
+    var req = new XMLHttpRequest();
+    req.open("POST", serverURL + "/api/data/v9.1/azt_commissionpayments(" + recordId + ")/Microsoft.Dynamics.CRM.azt_CloneCommissionPayment", false);
+    req.setRequestHeader("Accept", "application/json");
+    req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+    req.setRequestHeader("OData-MaxVersion", "4.0");
+    req.setRequestHeader("OData-Version", "4.0");
+    req.onreadystatechange = function () {
+        if (this.readyState === 4 /* complete */) {
+            req.onreadystatechange = null;
+            if (this.status === 200) {
+                var data = JSON.parse(this.response);
+                //alert("EmailId: " + data.activityid);
+                Xrm.Utility.openEntityForm("azt_commissionpayment", data.azt_commissionpaymentid);
+                Xrm.Page.ui.setFormNotification("The Commission Payment has been cloned!", "INFO", "CompPmtSuccess");
+            } else {
+                var error = JSON.parse(this.response).error;
+                Xrm.Page.ui.setFormNotification(error.message, "ERROR", "CommPmtFailure");
+                //alert(error.message);
+            }
+        }
+    };
+    req.send(window.JSON.stringify(data));
+}

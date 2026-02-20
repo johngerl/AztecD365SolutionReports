@@ -1,0 +1,267 @@
+<Activity x:Class="XrmWorkflow42857aa1cd134cc78748d63aaa26f04b" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mxs="clr-namespace:Microsoft.Xrm.Sdk;assembly=Microsoft.Xrm.Sdk, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mxsw="clr-namespace:Microsoft.Xrm.Sdk.Workflow;assembly=Microsoft.Xrm.Sdk.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mxswa="clr-namespace:Microsoft.Xrm.Sdk.Workflow.Activities;assembly=Microsoft.Xrm.Sdk.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:s="clr-namespace:System;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:srs="clr-namespace:System.Runtime.Serialization;assembly=System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:this="clr-namespace:" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="InputEntities" Type="InArgument(scg:IDictionary(x:String, mxs:Entity))" />
+    <x:Property Name="CreatedEntities" Type="InArgument(scg:IDictionary(x:String, mxs:Entity))" />
+    <x:Property Name="MaxLatitude" Type="InArgument(x:Decimal)">
+      <x:Property.Attributes>
+        <mxsw:ArgumentRequiredAttribute Value="False" />
+        <mxsw:ArgumentTargetAttribute Value="False" />
+        <mxsw:ArgumentDescriptionAttribute Value="New Argument" />
+        <mxsw:ArgumentDirectionAttribute Value="Input" />
+        <mxsw:ArgumentEntityAttribute Value="" />
+      </x:Property.Attributes>
+    </x:Property>
+    <x:Property Name="MinLatitude" Type="InArgument(x:Decimal)">
+      <x:Property.Attributes>
+        <mxsw:ArgumentRequiredAttribute Value="False" />
+        <mxsw:ArgumentTargetAttribute Value="False" />
+        <mxsw:ArgumentDescriptionAttribute Value="New Argument" />
+        <mxsw:ArgumentDirectionAttribute Value="Input" />
+        <mxsw:ArgumentEntityAttribute Value="" />
+      </x:Property.Attributes>
+    </x:Property>
+    <x:Property Name="MaxLongitude" Type="InArgument(x:Decimal)">
+      <x:Property.Attributes>
+        <mxsw:ArgumentRequiredAttribute Value="False" />
+        <mxsw:ArgumentTargetAttribute Value="False" />
+        <mxsw:ArgumentDescriptionAttribute Value="New Argument" />
+        <mxsw:ArgumentDirectionAttribute Value="Input" />
+        <mxsw:ArgumentEntityAttribute Value="" />
+      </x:Property.Attributes>
+    </x:Property>
+    <x:Property Name="MinLongitude" Type="InArgument(x:Decimal)">
+      <x:Property.Attributes>
+        <mxsw:ArgumentRequiredAttribute Value="False" />
+        <mxsw:ArgumentTargetAttribute Value="False" />
+        <mxsw:ArgumentDescriptionAttribute Value="New Argument" />
+        <mxsw:ArgumentDirectionAttribute Value="Input" />
+        <mxsw:ArgumentEntityAttribute Value="" />
+      </x:Property.Attributes>
+    </x:Property>
+    <x:Property Name="AccountType" Type="InArgument(x:String)">
+      <x:Property.Attributes>
+        <mxsw:ArgumentRequiredAttribute Value="False" />
+        <mxsw:ArgumentTargetAttribute Value="False" />
+        <mxsw:ArgumentDescriptionAttribute Value="New Argument" />
+        <mxsw:ArgumentDirectionAttribute Value="Input" />
+        <mxsw:ArgumentEntityAttribute Value="" />
+      </x:Property.Attributes>
+    </x:Property>
+    <x:Property Name="AccountDetails" Type="OutArgument(x:String)">
+      <x:Property.Attributes>
+        <mxsw:ArgumentRequiredAttribute Value="False" />
+        <mxsw:ArgumentTargetAttribute Value="False" />
+        <mxsw:ArgumentDescriptionAttribute Value="New Argument" />
+        <mxsw:ArgumentDirectionAttribute Value="Output" />
+        <mxsw:ArgumentEntityAttribute Value="" />
+      </x:Property.Attributes>
+    </x:Property>
+  </x:Members>
+  <this:XrmWorkflow42857aa1cd134cc78748d63aaa26f04b.InputEntities>
+    <InArgument x:TypeArguments="scg:IDictionary(x:String, mxs:Entity)" />
+  </this:XrmWorkflow42857aa1cd134cc78748d63aaa26f04b.InputEntities>
+  <this:XrmWorkflow42857aa1cd134cc78748d63aaa26f04b.CreatedEntities>
+    <InArgument x:TypeArguments="scg:IDictionary(x:String, mxs:Entity)" />
+  </this:XrmWorkflow42857aa1cd134cc78748d63aaa26f04b.CreatedEntities>
+  <mva:VisualBasic.Settings>Assembly references and imported namespaces for internal implementation</mva:VisualBasic.Settings>
+  <mxswa:Workflow>
+    <mxswa:Workflow.Variables>
+      <Variable x:TypeArguments="x:String" Default="[Nothing]" Name="CustomActivityStep1AccountsList_localParameter" />
+    </mxswa:Workflow.Variables>
+    <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.Composite, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="CustomActivityStep1: Custom Flow">
+      <mxswa:ActivityReference.Properties>
+        <sco:Collection x:TypeArguments="Variable" x:Key="Variables">
+          <Variable x:TypeArguments="x:Object" Name="CustomActivityStep1_1" />
+          <Variable x:TypeArguments="x:Object" Name="CustomActivityStep1_2" />
+          <Variable x:TypeArguments="x:Object" Name="CustomActivityStep1_1_converted" />
+          <Variable x:TypeArguments="x:Object" Name="CustomActivityStep1_3" />
+          <Variable x:TypeArguments="x:Object" Name="CustomActivityStep1_4" />
+          <Variable x:TypeArguments="x:Object" Name="CustomActivityStep1_3_converted" />
+          <Variable x:TypeArguments="x:Object" Name="CustomActivityStep1_5" />
+          <Variable x:TypeArguments="x:Object" Name="CustomActivityStep1_6" />
+          <Variable x:TypeArguments="x:Object" Name="CustomActivityStep1_5_converted" />
+          <Variable x:TypeArguments="x:Object" Name="CustomActivityStep1_7" />
+          <Variable x:TypeArguments="x:Object" Name="CustomActivityStep1_8" />
+          <Variable x:TypeArguments="x:Object" Name="CustomActivityStep1_7_converted" />
+          <Variable x:TypeArguments="x:Object" Name="CustomActivityStep1_9" />
+          <Variable x:TypeArguments="x:Object" Name="CustomActivityStep1_10" />
+          <Variable x:TypeArguments="x:Object" Name="CustomActivityStep1_9_converted" />
+        </sco:Collection>
+        <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CustomOperationArguments</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { MaxLatitude }]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Decimal" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CustomActivityStep1_2]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CustomActivityStep1_2 }]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Decimal" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CustomActivityStep1_1]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.ConvertCrmXrmTypes, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConvertCrmXrmTypes">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:Object" x:Key="Value">[CustomActivityStep1_1]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Decimal" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CustomActivityStep1_1_converted]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CustomOperationArguments</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { MinLatitude }]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Decimal" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CustomActivityStep1_4]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CustomActivityStep1_4 }]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Decimal" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CustomActivityStep1_3]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.ConvertCrmXrmTypes, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConvertCrmXrmTypes">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:Object" x:Key="Value">[CustomActivityStep1_3]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Decimal" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CustomActivityStep1_3_converted]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CustomOperationArguments</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { MaxLongitude }]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Decimal" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CustomActivityStep1_6]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CustomActivityStep1_6 }]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Decimal" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CustomActivityStep1_5]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.ConvertCrmXrmTypes, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConvertCrmXrmTypes">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:Object" x:Key="Value">[CustomActivityStep1_5]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Decimal" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CustomActivityStep1_5_converted]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CustomOperationArguments</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { MinLongitude }]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Decimal" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CustomActivityStep1_8]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CustomActivityStep1_8 }]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Decimal" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CustomActivityStep1_7]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.ConvertCrmXrmTypes, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConvertCrmXrmTypes">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:Object" x:Key="Value">[CustomActivityStep1_7]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Decimal" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CustomActivityStep1_7_converted]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CustomOperationArguments</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { AccountType }]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CustomActivityStep1_10]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CustomActivityStep1_10 }]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CustomActivityStep1_9]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.ConvertCrmXrmTypes, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConvertCrmXrmTypes">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:Object" x:Key="Value">[CustomActivityStep1_9]</InArgument>
+              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CustomActivityStep1_9_converted]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+          <mxswa:ActivityReference AssemblyQualifiedName="XrmAccountWFLibraryModified.XrmAccountWFAction, XrmAccountWFLibraryModified, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ce41bf8fbe76c8be" DisplayName="CustomActivityStep1: Custom Flow">
+            <mxswa:ActivityReference.Arguments>
+              <InArgument x:TypeArguments="x:Decimal" x:Key="MaxLatitude">[DirectCast(CustomActivityStep1_1_converted, System.Decimal)]</InArgument>
+              <InArgument x:TypeArguments="x:Decimal" x:Key="MinLatitude">[DirectCast(CustomActivityStep1_3_converted, System.Decimal)]</InArgument>
+              <InArgument x:TypeArguments="x:Decimal" x:Key="MaxLongitude">[DirectCast(CustomActivityStep1_5_converted, System.Decimal)]</InArgument>
+              <InArgument x:TypeArguments="x:Decimal" x:Key="MinLongitude">[DirectCast(CustomActivityStep1_7_converted, System.Decimal)]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="CompanyTypeValues">[DirectCast(CustomActivityStep1_9_converted, System.String)]</InArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="AccountsList">[CustomActivityStep1AccountsList_localParameter]</OutArgument>
+            </mxswa:ActivityReference.Arguments>
+          </mxswa:ActivityReference>
+        </sco:Collection>
+      </mxswa:ActivityReference.Properties>
+    </mxswa:ActivityReference>
+    <Sequence DisplayName="AssignOutputArgumentStep2: Assign JSON Value">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Object" Name="AssignOutputArgumentStep2_1" />
+        <Variable x:TypeArguments="x:String" Default="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="TypeName" />
+      </Sequence.Variables>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CustomActivityStep1AccountsList_localParameter }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[AssignOutputArgumentStep2_1]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <Assign x:TypeArguments="x:String" To="[AccountDetails]" Value="[AssignOutputArgumentStep2_1.ToString()]" />
+    </Sequence>
+  </mxswa:Workflow>
+</Activity>

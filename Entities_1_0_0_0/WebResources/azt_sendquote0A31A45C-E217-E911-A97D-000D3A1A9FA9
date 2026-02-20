@@ -1,0 +1,128 @@
+function sendQuote() {
+    debugger;
+    var recordId = Xrm.Page.data.entity.getId();
+    var formattedRecordId = recordId.replace('{', '').replace('}', '').toLowerCase();
+    var quoteNum = Xrm.Page.getAttribute("quotenumber").getValue();
+    var reportName = "Aztec Quote Report";
+    var reportid = getReportId(reportName);
+    var arrReportSession = executeReport(formattedRecordId, reportid, reportName);
+    convertResponseToPDF(arrReportSession, formattedRecordId, quoteNum);
+}
+function sendLifeSkillsQuote() {
+    debugger;
+    var recordId = Xrm.Page.data.entity.getId();
+    var formattedRecordId = recordId.replace('{', '').replace('}', '').toLowerCase();
+    var quoteNum = Xrm.Page.getAttribute("quotenumber").getValue();
+    var reportName = "Pub Quote Report";
+    var reportid = getReportId(reportName);
+    var arrReportSession = executeReport(formattedRecordId, reportid, reportName);
+    convertResponseToPDF(arrReportSession, formattedRecordId, quoteNum);
+}
+function sendPAQuote() {
+    debugger;
+    var recordId = Xrm.Page.data.entity.getId();
+    var formattedRecordId = recordId.replace('{', '').replace('}', '').toLowerCase();
+    var quoteNum = Xrm.Page.getAttribute("quotenumber").getValue();
+    var reportName = "PassAssured Quote";
+    var reportid = getReportId(reportName);
+    var arrReportSession = executeReport(formattedRecordId, reportid, reportName);
+    convertResponseToPDF(arrReportSession, formattedRecordId, quoteNum);
+}
+function executeReport(formattedRecordId, reportGuid, reportName) {
+    //var reportName = "Aztec Quote Report.rdl";
+    var pth = Xrm.Page.context.getClientUrl() + "/CRMReports/rsviewer/ReportViewer.aspx";
+    var reportPrefilter = "<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'><entity name='quote'><all-attributes /><filter type='and'><condition attribute='quoteid' operator='eq' value='" + formattedRecordId + "' /></filter></entity></fetch>";
+    var query = "id=%7B" + reportGuid + "%7D&uniquename=" + Xrm.Page.context.getOrgUniqueName()
+        + "&iscustomreport=true&reportnameonsrs=&reportName=" + reportName
+        + "&isScheduledReport=false&p:CRM_FilteredQuote=" + reportPrefilter;
+    var retrieveEntityReq = new XMLHttpRequest();
+    retrieveEntityReq.open("POST", pth, false);
+    retrieveEntityReq.setRequestHeader("Accept", "*/*");
+    retrieveEntityReq.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    retrieveEntityReq.send(query);
+    var x = retrieveEntityReq.responseText.lastIndexOf("ReportSession=");
+    var y = retrieveEntityReq.responseText.lastIndexOf("ControlID=");
+    var ret = new Array();
+    ret[0] = retrieveEntityReq.responseText.substr(x + 14, 24);
+    ret[1] = retrieveEntityReq.responseText.substr(x + 10, 32);
+    return ret;
+}
+function convertResponseToPDF(arrResponseSession, formattedRecordId, quoteNum) {
+    //var pth = Xrm.Page.context.getClientUrl() + "/Reserved.ReportViewerWebControl.axd?ReportSession=" + session1 + "&Culture=1033&CultureOverrides=True&UICulture=1033&UICultureOverrides=True&ReportStack=1&ControlID=" + session2 + "&OpType=Export&FileName=Public&ContentDisposition=OnlyHtmlInline&Format=PDF";
+    var pth = Xrm.Page.context.getClientUrl() + "/Reserved.ReportViewerWebControl.axd?ReportSession=" + arrResponseSession[0] + "&Culture=1033&CultureOverrides=True&UICulture=1033&UICultureOverrides=True&ReportStack=1&ControlID=" + arrResponseSession[1] + "&OpType=Export&FileName=Public&ContentDisposition=AlwaysInline&Format=PDF";  //ContentDisposition=AlwaysInline  OnlyHtmlInline
+    var retrieveEntityReq = new XMLHttpRequest();
+    retrieveEntityReq.open("GET", pth, true);
+    retrieveEntityReq.setRequestHeader("Accept", "*/*");
+    retrieveEntityReq.responseType = "arraybuffer";
+    retrieveEntityReq.onreadystatechange = function () {
+        if (retrieveEntityReq.readyState === 4 && retrieveEntityReq.status === 200) {
+            var binary = "";
+            var bytes = new Uint8Array(this.response);
+            //var base64 = Encode64(bytes); ////
+
+            for (var i = 0; i < bytes.byteLength; i++) {
+                binary += String.fromCharCode(bytes[i]);
+            }
+            var base64PDFString = btoa(binary);
+            CallAction(base64PDFString, formattedRecordId, quoteNum);
+        }
+    };
+    retrieveEntityReq.send();
+}
+function CallAction(base64PDFString, formattedRecordId, quoteNum) {
+    var serverURL = Xrm.Page.context.getClientUrl();
+    var data = {
+        "PDFString": base64PDFString,
+        "QuoteNumber": quoteNum
+    };
+    var req = new XMLHttpRequest();
+    req.open("POST", serverURL + "/api/data/v8.2/quotes(" + formattedRecordId + ")/Microsoft.Dynamics.CRM.azt_SendQuote", false);
+    req.setRequestHeader("Accept", "application/json");
+    req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+    req.setRequestHeader("OData-MaxVersion", "4.0");
+    req.setRequestHeader("OData-Version", "4.0");
+    req.onreadystatechange = function () {
+        if (this.readyState === 4 /* complete */) {
+            req.onreadystatechange = null;
+            if (this.status === 200) {
+                var data = JSON.parse(this.response);
+                //alert("EmailId: " + data.activityid);
+                Xrm.Utility.openEntityForm("email", data.activityid);
+            } else {
+                var error = JSON.parse(this.response).error;
+                alert(error.message);
+            }
+        }
+    };
+    req.send(window.JSON.stringify(data));
+}
+function getReportId(reportName) {
+    var reportid = "";
+    var clientURL = Xrm.Page.context.getClientUrl();
+    var req = new XMLHttpRequest()
+    req.open("GET", encodeURI(clientURL + "/api/data/v8.2/reports?$select=reportid&$filter=name eq '" + reportName + "'"), false);
+    req.setRequestHeader("Accept", "application/json");
+    req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+    req.setRequestHeader("OData-MaxVersion", "4.0");
+    req.setRequestHeader("OData-Version", "4.0");
+    req.onreadystatechange = function () {
+        if (this.readyState === 4) {
+            req.onreadystatechange = null;
+            if (this.status === 200) {
+                var data = JSON.parse(this.response);
+                if (data && data.value) {
+                    for (var indxAccounts = 0; indxAccounts < data.value.length; indxAccounts++) {
+                        reportid = data.value[indxAccounts].reportid;
+                        var eTag = data.value[indxAccounts]['@odata.etag'];
+                    }
+                }
+            }
+            else {
+                var error = JSON.parse(this.response).error;
+                Xrm.Page.ui.setFormNotification("Error retrieving reportId – " + error.message, "ERROR");
+            }
+        }
+    };
+    req.send(null);
+    return reportid;
+}

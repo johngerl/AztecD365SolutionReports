@@ -1,0 +1,152 @@
+if (typeof (ADD) === "undefined") { ADD = {}; }
+ADD.AddressFunctions = {
+    onLoad: function (e) {
+        debugger;
+        //Xrm.Utility.showProgressIndicator("Splitting Allocations...");
+        //alert("This feature is not implemented yet - but will split license allocations.");
+        //var globalContext = Xrm.Utility.getGlobalContext();
+        //var serverURL = globalContext.getClientUrl();
+        var formContext = e;
+        var recordId = formContext.data.entity.getId();
+        alert("Id: " + recordId);
+    },
+    addAddress: function (e) {
+        debugger;
+        var formContext = e;
+        var recordId = formContext.data.entity.getId();
+        var acctName = formContext.getAttribute("name").getValue();
+        var addLine1 = formContext.getAttribute("address1_line1").getValue();
+        var addLine2 = formContext.getAttribute("address1_line2").getValue();
+        var addCity = formContext.getAttribute("address1_city").getValue();
+        var addState = formContext.getAttribute("address1_stateorprovince").getValue();
+        var addZip = formContext.getAttribute("address1_postalcode").getValue();
+        var addCountry = formContext.getAttribute("address1_country").getValue();
+
+        var entityFormOptions = {};
+        entityFormOptions["entityName"] = "customeraddress";
+
+        // Set default values for the Contact form
+        var formParameters = {};
+        formParameters.AccountId = recordId.replace('{', '').replace('}', '').toLowerCase();
+        formParameters.Line1 = addLine1;
+        formParameters.Line2 = addLine2;
+        formParameters.City = addCity;
+        formParameters.State = addState;
+        formParameters.Zip = addZip;
+        formParameters.Country = addCountry;
+
+        //formParameters["line1"] = addLine1;
+        //formParameters["line2"] = addLine2;
+        //formParameters["city"] = addCity;
+        //formParameters["stateorprovince"] = addState;
+        //formParameters["postalcode"] = addZip;
+        //formParameters["country"] = addCountry;
+
+        //// Set lookup field
+        //formParameters["parentid"] = recordId; // ID of the user.
+        //formParameters["parentidname"] = acctName; // Name of the user.
+        //formParameters["parentidtype"] = "account"; // Entity name. 
+        // End of set lookup field
+
+        ADD.AddressFunctions.clone(formParameters);
+
+
+        //// Open the form.
+        //Xrm.Navigation.openForm(entityFormOptions, formParameters).then(
+        //    function (success) {
+        //        console.log(success);
+        //        //alert("Success");
+        //    },
+        //    function (error) {
+        //        console.log(error);
+        //        //alert("Failure");
+        //    });
+    },
+    clone: function (formParameters) {
+        var req = new XMLHttpRequest();
+        req.open("POST", Xrm.Page.context.getClientUrl() + "/api/data/v9.1/azt_AddressCreate", true);
+        req.setRequestHeader("OData-MaxVersion", "4.0");
+        req.setRequestHeader("OData-Version", "4.0");
+        req.setRequestHeader("Accept", "application/json");
+        req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+        req.onreadystatechange = function () {
+            if (this.readyState === 4) {
+                req.onreadystatechange = null;
+                if (this.status === 200) {
+                    var results = JSON.parse(this.response);
+                    var addressId = results.AddressId;
+                    //formContext.getControl("addresses").refresh();
+                    Xrm.Utility.openEntityForm("customeraddress", addressId);
+                } else {
+                    Xrm.Utility.alertDialog(this.statusText);
+                }
+            }
+        };
+        req.send(JSON.stringify(formParameters));
+    },
+    clone2: function (recordId, formParameters) {
+
+        var parameters = {};
+        parameters.AccountId = recordId;
+        parameters.Line1 = "Line 12";
+
+        var azt_AddressCreateRequest = {
+            AccountId: parameters.AccountId,
+            Line1: parameters.Line1,
+
+            getMetadata: function () {
+                return {
+                    boundParameter: null,
+                    parameterTypes: {
+                        "AccountId": {
+                            "typeName": "Edm.String",
+                            "structuralProperty": 1
+                        },
+                        "Line1": {
+                            "typeName": "Edm.String",
+                            "structuralProperty": 1
+                        }
+                    },
+                    operationType: 0,
+                    operationName: "azt_AddressCreate"
+                };
+            }
+        };
+
+        Xrm.WebApi.online.execute(azt_AddressCreateRequest).then(
+            function success(result) {
+                if (result.ok) {
+                    var results = JSON.parse(result.responseText);
+                    var test = results;
+                }
+            },
+            function (error) {
+                Xrm.Utility.alertDialog(error.message);
+            }
+        );
+
+
+        //var parameters = {};
+        //parameters.AccountId = "8347e74e-b770-eb11-a812-00224809a7cd";
+        //parameters.Line1 = "Line 12";
+
+        //var req = new XMLHttpRequest();
+        //req.open("POST", Xrm.Page.context.getClientUrl() + "/api/data/v9.1/azt_AddressCreate", true);
+        //req.setRequestHeader("OData-MaxVersion", "4.0");
+        //req.setRequestHeader("OData-Version", "4.0");
+        //req.setRequestHeader("Accept", "application/json");
+        //req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+        //req.onreadystatechange = function () {
+        //    if (this.readyState === 4) {
+        //        req.onreadystatechange = null;
+        //        if (this.status === 200) {
+        //            var results = JSON.parse(this.response);
+        //        } else {
+        //            Xrm.Utility.alertDialog(this.statusText);
+        //        }
+        //    }
+        //};
+        //req.send(JSON.stringify(parameters));
+
+    }
+}

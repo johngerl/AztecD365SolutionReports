@@ -1,0 +1,354 @@
+if (typeof (A) === "undefined") { A = {}; }
+A.AccountFunctions = {
+    setPrimAddressName: function (e) {
+        var formContext = e.getFormContext();
+        var addType = formContext.getAttribute("address1_addresstypecode");
+        var addTypeString = addType.getText();
+        if (addType.getValue() && addType.getValue() !== null) {
+            formContext.getAttribute("address1_name").setValue(addTypeString);
+            formContext.getAttribute("address1_name").setSubmitMode("always");
+        }
+        else {
+            formContext.getAttribute("address1_name").setValue(null);
+            formContext.getAttribute("address1_name").setSubmitMode("always");
+        }
+    },
+    setBillAddressName: function (e) {
+        var formContext = e.getFormContext();
+        var add2Type = formContext.getAttribute("address2_addresstypecode");
+        var add2TypeString = add2Type.getText();
+        if (add2Type.getValue() && add2Type.getValue() !== null) {
+            formContext.getAttribute("address2_name").setValue(add2TypeString);
+            formContext.getAttribute("address2_name").setSubmitMode("always");
+        }
+        else {
+            formContext.getAttribute("address2_name").setValue(null);
+            formContext.getAttribute("address2_name").setSubmitMode("always");
+        }
+    },
+    accountAlert: function (e) {
+        var formContext = e.getFormContext();
+        var acctAlert = formContext.getAttribute("azt_accountalert").getValue();
+        if (acctAlert !== null && acctAlert !== undefined) {
+            formContext.ui.setFormNotification(acctAlert, "INFO", "acctAlert");
+        }
+    },
+    createLead: function (formContext) {
+        debugger;
+        var name = formContext.getAttribute("name").getValue();
+        var state = formContext.getAttribute("address1_stateorprovince").getValue();
+        if (name === null || state === null) {
+            var alertStrings = { confirmButtonLabel: "Ok", text: "You cannot create a lead without an Account Name AND a Physical Address State.", title: "Missing Info" };
+            var alertOptions = { height: 120, width: 260 };
+            Xrm.Navigation.openAlertDialog(alertStrings, alertOptions).then(
+                function (success) {
+                    console.log("Alert dialog closed");
+                },
+                function (error) {
+                    console.log(error.message);
+                }
+            );
+        }
+        else {
+
+            A.AccountFunctions.createNewLead(formContext, name, state);
+        }
+    },
+    createNewLead: function (formContext, name, state) {
+        debugger;
+        var FSRFormId = "229c13bf-40fc-4b37-b4a9-637b54247dea";
+        //var aztecLeadFormId = "05f95295-d7a2-4b47-b067-b38dbd6e7931";
+        var salesFormId = "580535c1-5cbb-4aa4-8040-7f2851557ee2";
+        var form = "";
+        var isSales = A.AccountFunctions.userHasRole("External Salesperson");
+        var isFSR = (A.AccountFunctions.userHasRole("FSR") || A.AccountFunctions.userHasRole("Limited FSR") || A.AccountFunctions.userHasRole("CRT"));
+        var leadFormType = 3;
+        if (isSales) {
+            leadFormType = 2;
+            form = salesFormId;
+        }
+        if (isFSR) {
+            leadFormType = 1;
+            form = FSRFormId;
+        }
+
+        var acctId = formContext.data.entity.getId().substr(1, 36);
+        var acctName = formContext.getAttribute("name").getValue();
+        var parameters = {};
+        //parameters["parentcustomerid"] = "2878282E-94D6-E111-9B1D-00155D9D700B";
+        //parameters["parentcustomeridname"] = "Contoso";
+        //parameters["parentcustomeridtype"] = "account";
+        parameters["parentaccountid"] = acctId;
+        parameters["parentaccountidname"] = acctName;
+        parameters["parentaccountidtype"] = "account";
+        parameters["subject"] = name;
+        parameters["address1_stateorprovince"] = state;
+        parameters["azt_leadformtype"] = leadFormType;
+        if (isFSR)
+            parameters["azt_pendingassigmnent"] = 1;
+
+        var entityFormOptions = {};
+        entityFormOptions["entityName"] = "lead";
+        entityFormOptions["formId"] = form;
+        //entityFormOptions["formId"] = "229c13bf-40fc-4b37-b4a9-637b54247dea";
+        Xrm.Navigation.openForm(entityFormOptions, parameters).then(
+            function (success) {
+                console.log(success);
+            },
+            function (error) {
+                console.log(error);
+            });
+    },
+    userHasRole: function (roleName) {
+        var globalContext = Xrm.Utility.getGlobalContext();
+        var userRoles = globalContext.userSettings.roles;
+        var hasRole = false;
+        userRoles.forEach(function hasRoleName(item, index) {
+            if (item.name === roleName) {
+                hasRole = true;
+            }
+        });
+        return hasRole;
+    },
+    onLoad: function (e) {
+        debugger;
+        //var hasRole = A.AccountFunctions.userHasRole("System Administrator");
+        var globalContext = Xrm.Utility.getGlobalContext();
+        var formContext = e.getFormContext();
+        A.AccountFunctions.manageForm(formContext);
+        //A.AccountFunctions.parentAccountSpend(formContext);
+        //var roles = Xrm.Utility.getGlobalContext().userSettings.roles.getAll();
+        //var recordId = formContext.data.entity.getId().substr(1, 36);
+        var isAdmin = this.getHasRole("System Administrator");
+        if (isAdmin) {
+            formContext.getControl("azt_excludefromautoassign").setVisible(true);
+            //formContext.getControl("azt_customerintrocompletedby").setVisible(true);
+            //formContext.getControl("azt_customerintrocompletedon").setVisible(true);
+            //Xrm.Utility.getEntityMetadata(entityName, attributes).then(successCallback, errorCallback);
+        }
+        //azt_accounttype
+
+        Xrm.Utility.getEntityMetadata("account", ["accountclassificationcode"]).then(
+            function (entityMetadata) {
+                //check for attribute entity metadata
+                if (entityMetadata !== undefined && entityMetadata.Attributes !== undefined && entityMetadata.Attributes._collection !== undefined) {
+                    //check for industry type option set
+                    if (entityMetadata.Attributes._collection["accountclassificationcode"]) {
+                        //get option set data
+                        var industryCodeOptionSetData = entityMetadata.Attributes._collection["accountclassificationcode"].OptionSet;
+
+                    }
+                }
+            }, function (e) {
+                //error call back
+                alert(e.error.message);
+            });
+    },
+    manageForm: function (formContext) {
+        formItem = formContext.ui.formSelector.getCurrentItem();
+        var id = formItem._id.guid;
+        if (id == "a7fc2a6c-bdca-4294-9533-77d161f541b1") { //Is iGrad
+            A.AccountFunctions.setiGradVerticalMarket(formContext);
+        }
+        else {
+            A.AccountFunctions.setNonIgradVerticalMarket(formContext);
+        }
+    },
+    setiGradVerticalMarket: function (formContext) {
+        formContext.getControl("azt_verticalmarket").clearOptions();
+        formContext.getControl("azt_verticalmarket").addOption({ value: 327630000, text: 'Public Universities' });
+        formContext.getControl("azt_verticalmarket").addOption({ value: 327630001, text: 'Private Universities' });
+        formContext.getControl("azt_verticalmarket").addOption({ value: 327630002, text: 'Graduate Schools' });
+        formContext.getControl("azt_verticalmarket").addOption({ value: 327630003, text: 'Community Colleges' });
+        formContext.getControl("azt_verticalmarket").addOption({ value: 327630004, text: 'For Profit Colleges and Universities' });
+        formContext.getControl("azt_verticalmarket").addOption({ value: 327630005, text: 'Student Loan Providers' });
+        formContext.getControl("azt_verticalmarket").addOption({ value: 327630006, text: 'Banks' });
+        formContext.getControl("azt_verticalmarket").addOption({ value: 327630007, text: 'Credit Unions' });
+        formContext.getControl("azt_verticalmarket").addOption({ value: 327630008, text: 'RIAs/Financial Advisors/Wealth Management' });
+        formContext.getControl("azt_verticalmarket").addOption({ value: 327630009, text: 'Record Keepers' });
+        formContext.getControl("azt_verticalmarket").addOption({ value: 327630010, text: 'Insurance Carriers' });
+        formContext.getControl("azt_verticalmarket").addOption({ value: 327630011, text: 'Employers' });
+        formContext.getControl("azt_verticalmarket").addOption({ value: 327630012, text: 'Employers - Multinational' });
+        formContext.getControl("azt_verticalmarket").addOption({ value: 327630013, text: 'Municipalities' });
+        formContext.getControl("azt_verticalmarket").addOption({ value: 327630014, text: 'Early Wage Access' });
+        formContext.getControl("azt_verticalmarket").addOption({ value: 327630015, text: 'Benefits Aggregators' });
+        formContext.getControl("azt_verticalmarket").addOption({ value: 327630016, text: 'Misc Financial/Fin Tech' });
+        formContext.getControl("azt_verticalmarket").addOption({ value: 327630017, text: 'Not for Profit Organizations' });
+        formContext.getControl("azt_verticalmarket").addOption({ value: 327630018, text: 'Professional Organizations' });
+    },
+    setNonIgradVerticalMarket: function (formContext) {
+        formContext.getControl("azt_verticalmarket").removeOption(327630000);
+        formContext.getControl("azt_verticalmarket").removeOption(327630001);
+        formContext.getControl("azt_verticalmarket").removeOption(327630002);
+        formContext.getControl("azt_verticalmarket").removeOption(327630003);
+        formContext.getControl("azt_verticalmarket").removeOption(327630004);
+        formContext.getControl("azt_verticalmarket").removeOption(327630005);
+        formContext.getControl("azt_verticalmarket").removeOption(327630006);
+        formContext.getControl("azt_verticalmarket").removeOption(327630007);
+        formContext.getControl("azt_verticalmarket").removeOption(327630008);
+        formContext.getControl("azt_verticalmarket").removeOption(327630009);
+        formContext.getControl("azt_verticalmarket").removeOption(327630010);
+        formContext.getControl("azt_verticalmarket").removeOption(327630011);
+        formContext.getControl("azt_verticalmarket").removeOption(327630012);
+        formContext.getControl("azt_verticalmarket").removeOption(327630013);
+        formContext.getControl("azt_verticalmarket").removeOption(327630014);
+        formContext.getControl("azt_verticalmarket").removeOption(327630015);
+        formContext.getControl("azt_verticalmarket").removeOption(327630016);
+        formContext.getControl("azt_verticalmarket").removeOption(327630017);
+        formContext.getControl("azt_verticalmarket").removeOption(327630018);
+    },
+    parentAccountSpend: function (formContext) {
+        var hasParent = formContext.getAttribute("parentaccountid").getValue();
+        if (hasParent == null) {
+            formContext.getControl("azt_parentaccountspend").setVisible(false);
+        }
+        else {
+            formContext.getControl("azt_accountspend").setVisible(false);
+        }
+    },
+    getHasRole: function (roleName) {
+        //Returns information about the current user settings.
+        var userRoles = Xrm.Utility.getGlobalContext().userSettings;
+        //it will give you count of security a user is having
+        if (Object.keys(userRoles.roles._collection).length > 0) {
+            //userRoles.roles._collection will give you the index of the Current user security role , it contains roleid , and name of the security role
+            for (var rolidcollection in userRoles.roles._collection) {
+                //Once you get the index of the security role from where you can retrive id, name of the Security Role
+                var currentUserRoles = Xrm.Utility.getGlobalContext().userSettings.roles._collection[rolidcollection].name;
+                for (var i = 0; currentUserRoles.length > i; i++) {
+                    if (roleName === currentUserRoles) return true;
+                }
+                //console.log(currentUserRoles);
+            }
+        }
+    },
+    setCustIntroCompletedBy: function (e) {
+        var formContext = e.getFormContext();
+        if (formContext.getAttribute("azt_customerintroductioncompleted").getValue()) {
+            var currentDate = (new Date()).toLocaleDateString('en-US');
+            formContext.getAttribute("azt_customerintrocompletedon").setValue(currentDate);
+            formContext.getAttribute("azt_customerintrocompletedon").setSubmitMode("always");
+            var userSettings = Xrm.Utility.getGlobalContext().userSettings;
+            var userName = userSettings.userName;
+            formContext.getAttribute("azt_customerintrocompletedby").setValue(userName);
+            formContext.getAttribute("azt_customerintrocompletedby").setSubmitMode("always");
+        }
+        else {
+            formContext.getAttribute("azt_customerintrocompletedon").setValue(null);
+            formContext.getAttribute("azt_customerintrocompletedon").setSubmitMode("always");
+            var userSettings = Xrm.Utility.getGlobalContext().userSettings;
+            var userName = userSettings.userName;
+            formContext.getAttribute("azt_customerintrocompletedby").setValue(null);
+            formContext.getAttribute("azt_customerintrocompletedby").setSubmitMode("always");
+        }
+    },
+    setPrimaryButton: function (formContext, cont) {
+        var isPrint = false;
+        var confirmStrings = { text: "Set primary contact for this account.", title: "Set Primary Contact", confirmButtonLabel: "Ed Tech", cancelButtonLabel: "Print" };
+        var confirmOptions = { height: 200, width: 450 };
+        Xrm.Navigation.openConfirmDialog(confirmStrings, confirmOptions).then(
+            function (success) {
+                if (success.confirmed) {
+                    isPrint = false;
+                    A.AccountFunctions.setPrimary(formContext, cont, isPrint);
+                }
+                else
+                    isPrint = true;
+                A.AccountFunctions.setPrimary(formContext, cont, isPrint);
+            });
+    },
+    setConnectionRoleButton: function (formContext, cont, roleName) {
+        debugger;
+        var notificationTime = 3000;
+        var recordId = formContext.data.entity.getId().substr(1, 36);
+        var globalContext = Xrm.Utility.getGlobalContext();
+        var serverURL = globalContext.getClientUrl();
+        var data = {
+            "AccountId": recordId,
+            "ContactId": cont[0],
+            "RoleName": roleName
+        };
+        var req = new XMLHttpRequest();
+        req.open("POST", serverURL + "/api/data/v9.1/accounts(" + recordId + ")/Microsoft.Dynamics.CRM.azt_ContactSetConnectionRole", false);
+        req.setRequestHeader("Accept", "application/json");
+        req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+        req.setRequestHeader("OData-MaxVersion", "4.0");
+        req.setRequestHeader("OData-Version", "4.0");
+        req.onreadystatechange = function () {
+            if (this.readyState === 4 /* complete */) {
+                req.onreadystatechange = null;
+                if (this.status === 200 || this.status === 204) {
+                    //var data = JSON.parse(this.response); if(this.response === "")...
+                    //alert("EmailId: " + data.activityid);
+                    formContext.getControl("Connections").refresh();
+                    formContext.ui.setFormNotification("Contact Role Set!", "INFO", "setting");
+                    setTimeout(
+                        function () {
+                            formContext.ui.clearFormNotification("setting");
+                        },
+                        notificationTime
+                    );
+                } else {
+                    var error = JSON.parse(this.response).error;
+                    formContext.ui.setFormNotification("Error Setting Connection Role..." + error.message, "ERROR", "setting");
+                    //alert(error.message);
+
+                }
+            }
+        };
+        req.send(window.JSON.stringify(data));
+    },
+    setPrimary: function (formContext, cont, isPrint) {
+        var notificationTime = 3000;
+        var recordId = formContext.data.entity.getId().substr(1, 36);
+        var globalContext = Xrm.Utility.getGlobalContext();
+        var serverURL = globalContext.getClientUrl();
+        var data = {
+            "AccountId": recordId,
+            "ContactId": cont[0],
+            "isPrint": isPrint
+        };
+        var req = new XMLHttpRequest();
+        req.open("POST", serverURL + "/api/data/v9.1/accounts(" + recordId + ")/Microsoft.Dynamics.CRM.azt_ContactSetPrimary", false);
+        req.setRequestHeader("Accept", "application/json");
+        req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+        req.setRequestHeader("OData-MaxVersion", "4.0");
+        req.setRequestHeader("OData-Version", "4.0");
+        req.onreadystatechange = function () {
+            if (this.readyState === 4 /* complete */) {
+                req.onreadystatechange = null;
+                if (this.status === 200 || this.status === 204) {
+                    //var data = JSON.parse(this.response); if(this.response === "")...
+                    //alert("EmailId: " + data.activityid);
+                    formContext.getControl("Connections").refresh();
+                    formContext.ui.setFormNotification("Primary Contact Changed!", "INFO", "setting");
+                    setTimeout(
+                        function () {
+                            formContext.ui.clearFormNotification("setting");
+                        },
+                        notificationTime
+                    );
+                } else {
+                    var error = JSON.parse(this.response).error;
+                    formContext.ui.setFormNotification("Error Setting Primary Contact..." + error.message, "ERROR", "setting");
+                    //alert(error.message);
+
+                }
+            }
+        };
+        req.send(window.JSON.stringify(data));
+    }
+    //formatNumber: function (e) {
+    //    debugger;
+    //    var formContext = e.getFormContext();
+    //    formContext.getControl("telephone1").addOnKeyPress(this.formatMe);
+    //},
+    //formatMe: function (formContext) {
+    //    var phoneNo = formContext.getControl("telephone1").getValue();
+    //    if (phoneNo.length === 10) {
+    //        var formattedPhone = phoneNo.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
+    //        Xrm.Page.getAttribute("telephone1").setValue(formattedPhone);
+    //    }
+    //}
+
+};

@@ -1,0 +1,100 @@
+if (typeof (S) === "undefined") { S = {}; }
+S.LicenseFunctions = {
+    splitAllocation: function (e) {
+        debugger;
+        //Xrm.Utility.showProgressIndicator("Splitting Allocations...");
+        //alert("This feature is not implemented yet - but will split license allocations.");
+        //var globalContext = Xrm.Utility.getGlobalContext();
+        //var serverURL = globalContext.getClientUrl();
+        var formContext = e;
+        var splitNumber = formContext.getAttribute("azt_splitallocations").getValue();
+        if (splitNumber === null || splitNumber === 0) {
+            formContext.ui.setFormNotification("You must select a number of Allocations to create.", "ERROR", "noneSelected");
+            formContext.getControl("azt_splitallocations").setFocus();
+            S.LicenseFunctions.notificationTimeout(formContext, "noneSelected");
+            return;
+        }
+        var confirmStrings = { text: "Press OK to create " + splitNumber + " new Allocations.\n\nPress \"Cancel\" to cancel this operation.", title: "Confirm Allocation Creation" };
+        var confirmOptions = { height: 200, width: 450 };
+        Xrm.Navigation.openConfirmDialog(confirmStrings, confirmOptions).then(
+            function (success) {
+                if (success.confirmed) {
+                    console.log("Dialog closed using OK button.");
+
+                    var recordId = formContext.data.entity.getId();
+                    var formattedRecordId = recordId.replace('{', '').replace('}', '').toLowerCase();
+
+                    var name = formContext.getAttribute("azt_name").getValue();
+                    var customer = formContext.getAttribute("azt_accountid").getValue(); //Lookup
+                    var custId = customer[0].id.replace('{', '').replace('}', '');
+                    var product = formContext.getAttribute("azt_softwareproductid").getValue();
+                    var prodId = product[0].id.replace('{', '').replace('}', '');
+                    //var concurrentUsers = formContext.getAttribute("azt_concurrentusers").getValue();
+                    var licTermMonths = formContext.getAttribute("azt_licensetermmonths").getValue();
+                    var licType = formContext.getAttribute("azt_licensetype").getValue();
+                    var purchDate = formContext.getAttribute("azt_purchasedate").getValue();
+                    var expiration = purchDate.setFullYear(purchDate.getFullYear() + 1, purchDate.getMonth(), purchDate.getDate() - 1);
+                    var expDate = new Date(expiration).toISOString();
+                    var data =
+                    {
+                        "azt_name": name,
+                        "azt_AllocatedToId@odata.bind": "/accounts(" + custId + ")",
+                        "azt_CustomerId@odata.bind": "/accounts(" + custId + ")",
+                        "azt_SoftwareProductId@odata.bind": "/products(" + prodId + ")",
+                        "azt_SoftwareLicenseId@odata.bind": "/azt_softwarelicenses(" + formattedRecordId + ")",
+                        "azt_startdate": purchDate.toISOString(),
+                        "azt_expirationdate": expDate,
+                        //"azt_numberoflicenses": concurrentUsers,
+                        "azt_licensetermmonths": licTermMonths,
+                        "azt_licensestatus": 276530000,
+                        "azt_allocationtype": 327630000,
+                        "azt_licensetype": licType
+                    };
+                    S.LicenseFunctions.createAllocations(formContext, splitNumber, data);
+                }
+                else {
+                    console.log("Dialog closed using Cancel button or X.");
+                    formContext.ui.setFormNotification("Allocation Split\\Creation has been canceled.", "INFORMATION", "allocationCanceled");
+                    S.LicenseFunctions.notificationTimeout(formContext, "allocationCanceled");
+                }
+            });
+
+    },
+    createAllocations: function (formContext, splitNumber, data) {
+        for (var i = 0; i < splitNumber; i++) {
+            //alert("Num: " + i);
+        Xrm.WebApi.online.createRecord("azt_allocatedlicense", data).then(function (result) {
+            //alert("Success")
+            S.LicenseFunctions.createSuccess(formContext, result)
+            //S.LicenseFunctions.createErrorFunction(error),
+        },
+            function (error) {
+                formContext.ui.setFormNotification("Error creating Allocations: " + error.message, "ERROR", "createAllocationError");
+                //Xrm.Utility.alertDialog(error.message);
+            });
+        }
+    },
+    createSuccess: function (formContext, result) {
+        //console.log("Account created with ID: " + result.id);
+        // perform operations on record creation
+        formContext.ui.setFormNotification("Allocations have been created!", "INFORMATION", "duplicated");
+        formContext.getControl("licenseallocations").refresh();
+        S.LicenseFunctions.notificationTimeout(formContext, "duplicated");
+        //Xrm.Page.getControl("allocatedlicenses").refresh();
+        //Xrm.Page.ui.clearFormNotification("duplicated");
+    },
+    createErrorFunction: function (error) {
+        //console.log(error.message);
+        // handle error conditions
+        Xrm.Page.ui.setFormNotification("Error Duplicating Allocation Record: " + error.message, "ERROR", "ErrorDuplicatingAllocation");
+    },
+    notificationTimeout: function (formContext, notificationName) {
+        var notificationTime = 3000;
+        setTimeout(
+            function () {
+                formContext.ui.clearFormNotification(notificationName);
+            },
+            notificationTime
+        );
+    }
+}

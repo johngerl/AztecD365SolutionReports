@@ -1,0 +1,199 @@
+if (typeof (QUO) === "undefined") { QUO = {}; }
+QUO.QuoteFunctions = {
+    onLoad: function (e) {
+        var formContext = e.getFormContext();
+        var freightAmt = formContext.getAttribute("freightamount").getValue();
+        var defaultFreightAmt = formContext.getAttribute("azt_defaultfreightamount").getValue();
+        var reqFreightAmt = formContext.getAttribute("azt_requestedfreightamt").getValue();
+        var freightApproved = formContext.getAttribute("azt_freightamtapproved").getValue();
+        if ((reqFreightAmt === null || reqFreightAmt === undefined) && defaultFreightAmt !== null) {
+            if (freightAmt !== defaultFreightAmt) {
+                formContext.getAttribute("freightamount").setValue(defaultFreightAmt);
+                formContext.getAttribute("freightamount").setSubmitMode("always");
+            }
+        }
+
+        if (formContext.getAttribute("azt_recapnotescannedoptions") !== null) {
+            //Xrm.Page.getAttribute("azt_recapnotes").setValue(Xrm.Page.getAttribute("azt_recapnotescannedoptions").getText());
+            var cannedOption = formContext.getAttribute("azt_recapnotescannedoptions").getValue();
+            var cannedOptionText = "";
+            switch (cannedOption) {
+                case 100000004:
+                    //"Internet Renewal";
+                    cannedOptionText = "• This quote provides access for up to X concurrent licenses of X series with unlimited enrollment opportunities.  All pricing of Internet products is based upon an ANNUAL fee and the renewal will be at the current list price.  To avoid service interruptions, Aztec renewal invoices are sent 30 days prior to license expiration. Any additional taxes required will be added to your invoice.  Credit Card Payment Option: There is a 2.5% credit card processing fee. If tax exempt, please send a copy of your tax-exempt certificate to ORDERS@aztecsoftware.com, along with your purchase order and signed quote.";
+                    break;
+                case 276530000:
+                    //"Internet";
+                    cannedOptionText = "• All updates that are introduced by Aztec to this software will be provided to all paid customers through their annual contract. This quote provides access for up to X concurrent licenses of X series with unlimited enrollment opportunities.  All pricing of Internet products is based upon an ANNUAL fee and the renewal will be at the current list price.  Any additional taxes required will be added to your invoice.  Credit Card Payment Option: There is a 2.5% credit card processing fee. If tax exempt, please send a copy of your tax exempt certificate to sales@aztecsoftware.com, along with your purchase order and signed quote.";
+                    break;
+                case 100000003:
+                    //"Kaplan Series";
+                    cannedOptionText = "• This quote provides access for use of up to X concurrent licenses of Kaplan (Pick one GED – HiSET) Learning System powered by Aztec Software with unlimited enrollment opportunities.  All pricing of Internet products is based upon an ANNUAL fee and the renewal will be at the current list price.  To avoid service interruptions, Aztec renewal invoices are sent 30 days prior to license expiration. Any additional shipping/taxes required will be added to your invoice.  Credit Card Payment Option: There is a 2.5% credit card processing fee. If tax exempt, please send a copy of your tax-exempt certificate to ORDERS@aztecsoftware.com, along with your purchase order and signed quote.";
+                    break;
+                case 100000001:
+                    //"GED Flash";
+                    cannedOptionText = "• This quote provides access for up to X concurrent licenses of Aztec’s GED Flash™ series with unlimited enrollment opportunities. These licenses of GED Flash provide access to practice questions in all four subjects: Reading/Language Arts, Math, Science and Social Studies. All pricing of Internet products is based upon an ANNUAL fee and the renewal will be at the current list price.  To avoid service interruptions, Aztec renewal invoices are sent 30 days prior to license expiration. Any additional taxes required will be added to your invoice.  Credit Card Payment Option: There is a 2.5% credit card processing fee. If tax exempt, please send a copy of your tax-exempt certificate to ORDERS@aztecsoftware.com, along with your purchase order and signed quote.";
+                    break;
+                case 100000000:
+                    //"Life Skills Print";
+                    cannedOptionText = "• Thank You for your recent order. To expedite purchase, a signed quote and an attached purchase order is required. You may send both via fax (973-258-0010) or email them to ORDERS@aztecsoftware.com. NOTE: All payments must be made out to Aztec Software. Credit Card Payment Option: There is a 2.5% credit card processing fee. Production will begin with receipt of PO or Payment. If tax exempt, please send a copy of your tax-exempt certificate to ORDERS@aztecsoftware.com, along with your purchase order and signed quote.";
+                    break;
+                case 276530001:
+                    //"LAN";
+                    cannedOptionText = "• This purchase is for software usage of XYZ product for up to X concurrent renewable licenses which expires 12 months from date of purchase.  If these licenses are not renewed, any equipment provided by Aztec Software will need to be returned to Aztec Software, 461 HQ Plaza, North Tower, 2nd Floor, Morristown, NJ 07960. Credit Card Payment Option: There is a 2.5% credit card processing fee. If tax exempt, please send a copy of your tax-exempt certificate to ORDERS@aztecsoftware.com, along with your purchase order and signed quote.";
+                    break;
+                case 276530002:
+                    //"GED Ready Vouchers";
+                    cannedOptionText = "• GED Ready™ vouchers expire 18 months from GEDTS issue.  Any additional taxes required will be added to the invoice. Credit Card Payment Option: There is a 2.5% credit card processing fee. If tax exempt, please send a copy of your tax-exempt certificate to ORDERS@aztecsoftware.com, along with your purchase order and signed quote.";
+                    break;
+                case 100000002:
+                    //"Third party vendors";
+                    cannedOptionText = "• If using a third-party vendor to purchase from Aztec Software, we will pass through the third party expense to the client and add to the total cost of the software annual usage fee. If tax exempt, please send a copy of your tax-exempt certificate to ORDERS@aztecsoftware.com, along with your purchase order and signed quote.";
+                    break;
+                case 276530003:
+                    //COVID-19
+                    cannedOptionText = "• The following information represents the terms under which you have access to Aztec’s Learning System and its content in combination with the Terms and Conditions found under the support tab upon logging in to the system. Aztec Lite Online (ALO):  This quote for zero dollars provides temporary access to Aztec Lite Online, Aztec’s easy-to-use online learning management system for five (5) concurrent licenses.  An unlimited number of students can be enrolled in the system but only 5 can use it at any given time.  Included in this offer is access to the following learning series:  Aztec’s  Fundamentals Series (GLE 0.5-2.9), Aztec’s Foundations Series (GLE 3.0-5.9), and Aztec’s Bridge Series (6.0-8.9), and Aztec’s Kaplan GED or  HiSET or TASC Learning System. Access to the system will be granted for an initial term of 60 days.  Depending upon the longevity and severity of the COVID 19 Health Crisis extensions may be granted at the sole discretion of the company.  To request an extension, please send your Account Manager an email. All training and support will be conducted virtually. To process this no charge order, please email a signed copy of the quote to crs@aztecsoftware.com";
+                    break;
+                case 327630000:
+                    //Print
+                    cannedOptionText = "• Thank you for your interest in our materials. To expedite purchase, a purchase order is required. You may send it to orders@aztecsoftware.com. NOTE: All payments must be made out to Paxen Publishing. Credit Card Payment Option: There is a 2.5% credit card processing fee. Order processing and fulfillment will begin with receipt of PO or Payment. If tax exempt, please send a copy of your tax exemption certificate to orders@aztecsoftware.com, along with your purchase order and signed quote.";
+                    break;
+                case 327630001:
+                    //PassAssured
+                    cannedOptionText = "This quote includes X license to access the X product allocated per a single user for a period of 1 year from activation. Must be compliant with State Board’s requirements. Any additional taxes required will be added to your invoice unless a valid tax-exempt certificate is provided to orders@aztecsoftware.com Credit Card Payment Option: There is a 2.5% credit card processing fee. To expedite a purchase, a signed quote and an attached purchase order is required, you may send both via fax (973-258-0010) or email them to orders@aztecsoftware.com";
+                    break;
+
+            }
+            formContext.getAttribute("azt_recapnotes").setValue(cannedOptionText);
+        }
+        var roles = Xrm.Utility.getGlobalContext().userSettings.roles;
+        var hasRole = false;
+        roles.forEach(function (item) {
+            if (item.name.toLowerCase() === "system administrator" || item.name.toLowerCase() === "business manager") {
+                hasRole = true;
+            }
+        });
+        if (hasRole) {
+            formContext.getControl("azt_recordownerid").setDisabled(false);
+        }
+    },
+    setFreight: function (e) {
+        debugger;
+        var formContext = e.getFormContext();
+        var freightAmt = formContext.getAttribute("freightamount").getValue();
+        var defaultFreightAmt = QUO.QuoteFunctions.getFreightAmt(formContext); //formContext.getAttribute("azt_defaultfreightamount").getValue();
+        formContext.getAttribute("azt_defaultfreightamount").setValue(defaultFreightAmt);
+        formContext.getAttribute("azt_defaultfreightamount").setSubmitMode("always");
+        var reqFreightAmt = formContext.getAttribute("azt_requestedfreightamt").getValue();
+        var freightApproved = formContext.getAttribute("azt_freightamtapproved").getValue();
+        if ((reqFreightAmt === null || reqFreightAmt === undefined) && defaultFreightAmt !== null) {
+            if (freightAmt !== defaultFreightAmt) {
+                formContext.getAttribute("freightamount").setValue(defaultFreightAmt);
+                formContext.getAttribute("freightamount").setSubmitMode("always");
+            }
+        }
+        else if (reqFreightAmt !== null && freightApproved) {
+            if (reqFreightAmt !== freightAmt) {
+                formContext.getAttribute("freightamount").setValue(reqFreightAmt);
+                formContext.getAttribute("freightamount").setSubmitMode("always");
+            }
+        }
+    },
+    getFreightAmt: function (formContext) {
+        debugger;
+        var totalAmt = 0;
+        //var formContext = e.getFormContext();
+        var recordId = formContext.data.entity.getId().replace('{', '').replace('}', '').toLowerCase();
+
+        var req = new XMLHttpRequest();
+        req.open("GET", formContext.context.getClientUrl() + "/api/data/v9.1/quotedetails?$select=extendedamount,_productid_value&$expand=productid($select=azt_isprint)&$filter=_quoteid_value eq " + recordId, false);
+        req.setRequestHeader("OData-MaxVersion", "4.0");
+        req.setRequestHeader("OData-Version", "4.0");
+        req.setRequestHeader("Accept", "application/json");
+        req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+        req.setRequestHeader("Prefer", "odata.include-annotations=\"*\"");
+        req.onreadystatechange = function () {
+            if (this.readyState === 4) {
+                req.onreadystatechange = null;
+                if (this.status === 200) {
+                    var results = JSON.parse(this.response);
+                    for (var i = 0; i < results.value.length; i++) {
+                        var extendedamount = results.value[i]["extendedamount"];
+                        //var extendedamount_formatted = results.value[i]["extendedamount@OData.Community.Display.V1.FormattedValue"];
+                        //var _productid_value = results.value[i]["_productid_value"];
+                        //var _productid_value_formatted = results.value[i]["_productid_value@OData.Community.Display.V1.FormattedValue"];
+                        //var _productid_value_lookuplogicalname = results.value[i]["_productid_value@Microsoft.Dynamics.CRM.lookuplogicalname"];
+                        //Use @odata.nextLink to query resulting related records
+                        //var productid_NextLink = results.value[i]["productid@odata.nextLink"];
+                        var isPrint = results.value[i].productid.azt_isprint;
+                        if (isPrint) {
+                            totalAmt += extendedamount;
+                        }
+                    }
+                    //can return here
+                    //return totalAmt;
+                } else {
+                    Xrm.Utility.alertDialog(this.statusText);
+                }
+            }
+        };
+        req.send();
+        return totalAmt * .125;
+    }
+}
+function cloneAndDelete() {
+    debugger;
+    if ((!userHasRole("Clone and Delete")) && (!userHasRole("System Administrator"))) {
+        Xrm.Utility.alertDialog("Only users with the Clone and Delete role can clone and delete");
+        return;
+    }
+    var recordId = Xrm.Page.data.entity.getId();
+    recordId = recordId.replace('{', '').replace('}', '').toLowerCase();
+    var confirmStrings = { text: "This will delete the current Quote, all related Orders, then recreate it. To abort click Cancel.", title: "Clone and Delete Quote" };
+    var confirmOptions = { height: 200, width: 450 };
+    Xrm.Navigation.openConfirmDialog(confirmStrings, confirmOptions).then(
+        function (success) {
+            if (success.confirmed) {
+                clone(recordId);
+            }
+            else
+                Xrm.Page.ui.setFormNotification("Clone and Delete Quote Operation Aborted.", "INFO", "Aborted");
+        });
+}
+function userHasRole(roleName) {
+    var globalContext = Xrm.Utility.getGlobalContext();
+    var userRoles = globalContext.userSettings.roles;
+    var hasRole = false;
+    userRoles.forEach(function hasRoleName(item, index) {
+        if (item.name === roleName) {
+            hasRole = true;
+        }
+    });
+    return hasRole;
+}
+function clone(recordId) {
+    var serverURL = Xrm.Page.context.getClientUrl();
+    var data = {
+        "OldQuoteId": recordId
+    };
+    var req = new XMLHttpRequest();
+    req.open("POST", serverURL + "/api/data/v9.1/quotes(" + recordId + ")/Microsoft.Dynamics.CRM.azt_CloneAndDeleteQuote", false);
+    req.setRequestHeader("Accept", "application/json");
+    req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+    req.setRequestHeader("OData-MaxVersion", "4.0");
+    req.setRequestHeader("OData-Version", "4.0");
+    req.onreadystatechange = function () {
+        if (this.readyState === 4 /* complete */) {
+            req.onreadystatechange = null;
+            if (this.status === 200) {
+                var data = JSON.parse(this.response);
+                //alert("EmailId: " + data.activityid);
+                Xrm.Utility.openEntityForm("quote", data.quoteid);
+            } else {
+                var error = JSON.parse(this.response).error;
+                alert(error.message);
+            }
+        }
+    };
+    req.send(window.JSON.stringify(data));
+}

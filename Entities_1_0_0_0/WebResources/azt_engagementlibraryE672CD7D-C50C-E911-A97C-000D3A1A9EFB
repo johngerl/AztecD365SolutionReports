@@ -1,0 +1,112 @@
+if (typeof (EN) === "undefined") { EN = {}; }
+EN.EngagementFunctions = {
+    onLoad: function (e) {
+        debugger;
+        var formContext = e.getFormContext();
+        var formType = formContext.ui.getFormType();
+        if (formType === 1) {
+            lookupFieldObject = formContext.getAttribute('azt_accountid');
+            if (lookupFieldObject.getValue() !== null) {
+                var entityId = lookupFieldObject.getValue()[0].id;
+                var formattedentityId = entityId.replace('{', '').replace('}', '').toLowerCase();
+                var entityName = lookupFieldObject.getValue()[0].entityType;
+                var entityLabel = lookupFieldObject.getValue()[0].name; //Lookup Name Value
+                formContext.getAttribute("azt_name").setValue("Engagement for: " + entityLabel);
+            }
+        }
+        EN.EngagementFunctions.setCategory(e);
+        var roles = Xrm.Utility.getGlobalContext().userSettings.roles;
+        var hasRole = false;
+        roles.forEach(function (item) {
+            if (item.name.toLowerCase() === "system administrator" || item.name.toLowerCase() === "business manager" || item.name.toLowerCase() === "record owner editor") {
+                hasRole = true;
+            }
+        });
+        if (hasRole) {
+            formContext.getControl("azt_recordownerid").setDisabled(false);
+        }
+    },
+    setCategory: function (e) {
+        var formContext = e.getFormContext();
+        var engType = formContext.getAttribute('azt_engagementtype').getValue();
+        var catControl = formContext.getControl('azt_category');
+        switch (engType) {
+            case 276530003: //Implementation
+                EN.EngagementFunctions.categorySetVisible(formContext, true);
+                EN.EngagementFunctions.categorySetRequired(formContext, 'required');
+                catControl.clearOptions();
+                catControl.addOption({
+                    value: 327630010,
+                    text: 'Full Implementation'
+                });
+                catControl.addOption({
+                    value: 327630000,
+                    text: 'Lite Admin'
+                });
+                catControl.addOption({
+                    value: 327630001,
+                    text: 'Flash Only'
+                });
+                catControl.addOption({
+                    value: 327630002,
+                    text: 'Flash Add-On'
+                });
+                catControl.addOption({
+                    value: 327630003,
+                    text: 'ePub'
+                });
+                catControl.addOption({
+                    value: 327630004,
+                    text: 'Re-Implementation'
+                });
+                break;
+            case 327630000: //No Usage
+                EN.EngagementFunctions.categorySetVisible(formContext, true);
+                EN.EngagementFunctions.categorySetRequired(formContext, 'required');
+                catControl.clearOptions();
+                catControl.addOption({
+                    value: 327630009,
+                    text: 'Don\'t Know'
+                });
+                catControl.addOption({
+                    value: 327630005,
+                    text: 'Do Not Track'
+                });
+                break;
+            case 327630001: //Annual
+                EN.EngagementFunctions.categorySetVisible(formContext, true);
+                EN.EngagementFunctions.categorySetRequired(formContext, 'required');
+                catControl.clearOptions();
+                catControl.addOption({
+                    value: 327630006,
+                    text: '2019'
+                });
+                catControl.addOption({
+                    value: 327630007,
+                    text: '2020'
+                });
+                catControl.addOption({
+                    value: 327630008,
+                    text: '2021'
+                });
+                catControl.addOption({
+                    value: 100000000,
+                    text: '2022'
+                });
+                catControl.addOption({
+                    value: 327630011,
+                    text: '2023'
+                });
+                break;
+            default:
+                EN.EngagementFunctions.categorySetRequired(formContext, 'none');
+                EN.EngagementFunctions.categorySetVisible(formContext, false);
+        }
+    },
+    categorySetVisible: function (formContext, isVisible) {
+        formContext.getControl('azt_category').setVisible(isVisible);
+    },
+    categorySetRequired: function (formContext, requiredLevel) {
+        formContext.getAttribute('azt_category').setRequiredLevel(requiredLevel);
+    }
+}

@@ -1,0 +1,30 @@
+if (typeof (OP) === "undefined") { OP = {}; }
+OP.OppLineFunctions = {
+    onLoad: function (e) {
+        var formContext = e.getFormContext();
+        //formContext.getControl("azt_licensetype").removeOption(100000000); //No longer needed
+    },
+    addProduct: function (e) {
+        var formContext = e.getFormContext();
+        var existingProduct = formContext.getAttribute("productid").getValue();
+        if (existingProduct != null && existingProduct != undefined) {
+            //var oppLineId = formContext.data.entity.getId().replace('{', '').replace('}', '').toLowerCase();
+            Xrm.WebApi.online.retrieveRecord("product", existingProduct[0].id, "?$select=azt_isprint").then(
+                function success(result) {
+                    var isPrint = result["azt_isprint"];
+                    if (isPrint) {
+                        formContext.getAttribute("azt_licensetype").setValue(276530005);
+                    }
+                },
+                function (error) {
+                    Xrm.Utility.alertDialog(error.message);
+                }
+            );
+        }
+    }
+}
+
+
+
+
+

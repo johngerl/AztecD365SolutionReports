@@ -1,0 +1,2183 @@
+<Activity x:Class="XrmWorkflowd2a6ad48a6034150bc8472092afb3d79" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mxs="clr-namespace:Microsoft.Xrm.Sdk;assembly=Microsoft.Xrm.Sdk, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mxsw="clr-namespace:Microsoft.Xrm.Sdk.Workflow;assembly=Microsoft.Xrm.Sdk.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mxswa="clr-namespace:Microsoft.Xrm.Sdk.Workflow.Activities;assembly=Microsoft.Xrm.Sdk.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:s="clr-namespace:System;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:srs="clr-namespace:System.Runtime.Serialization;assembly=System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:this="clr-namespace:" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="InputEntities" Type="InArgument(scg:IDictionary(x:String, mxs:Entity))" />
+    <x:Property Name="CreatedEntities" Type="InArgument(scg:IDictionary(x:String, mxs:Entity))" />
+    <x:Property Name="NewOrderRef" Type="OutArgument(mxs:EntityReference)">
+      <x:Property.Attributes>
+        <mxsw:ArgumentRequiredAttribute Value="True" />
+        <mxsw:ArgumentTargetAttribute Value="False" />
+        <mxsw:ArgumentDescriptionAttribute Value="EntityReference for new order" />
+        <mxsw:ArgumentDirectionAttribute Value="Output" />
+        <mxsw:ArgumentEntityAttribute Value="salesorder" />
+      </x:Property.Attributes>
+    </x:Property>
+    <x:Property Name="Target" Type="InArgument(mxs:EntityReference)">
+      <x:Property.Attributes>
+        <mxsw:ArgumentRequiredAttribute Value="True" />
+        <mxsw:ArgumentTargetAttribute Value="True" />
+        <mxsw:ArgumentDescriptionAttribute Value="Target Argument" />
+        <mxsw:ArgumentDirectionAttribute Value="Input" />
+        <mxsw:ArgumentEntityAttribute Value="salesorder" />
+      </x:Property.Attributes>
+    </x:Property>
+  </x:Members>
+  <this:XrmWorkflowd2a6ad48a6034150bc8472092afb3d79.InputEntities>
+    <InArgument x:TypeArguments="scg:IDictionary(x:String, mxs:Entity)" />
+  </this:XrmWorkflowd2a6ad48a6034150bc8472092afb3d79.InputEntities>
+  <this:XrmWorkflowd2a6ad48a6034150bc8472092afb3d79.CreatedEntities>
+    <InArgument x:TypeArguments="scg:IDictionary(x:String, mxs:Entity)" />
+  </this:XrmWorkflowd2a6ad48a6034150bc8472092afb3d79.CreatedEntities>
+  <this:XrmWorkflowd2a6ad48a6034150bc8472092afb3d79.Target>
+    <InArgument x:TypeArguments="mxs:EntityReference" />
+  </this:XrmWorkflowd2a6ad48a6034150bc8472092afb3d79.Target>
+  <mva:VisualBasic.Settings>Assembly references and imported namespaces for internal implementation</mva:VisualBasic.Settings>
+  <mxswa:Workflow>
+    <Sequence DisplayName="CreateStep1: Create Cloned Order">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_1" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_2" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_3" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_4" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_5" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_6" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_7" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_8" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_9" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_10" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_11" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_12" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_13" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_14" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_15" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_16" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_17" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_18" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_19" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_20" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_21" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_22" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_23" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_24" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_25" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_26" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_27" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_28" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_29" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_30" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_31" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_32" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_33" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_34" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_35" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_36" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_37" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_38" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_39" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_40" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_41" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_42" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_43" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_44" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_45" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_46" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_47" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_48" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_49" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_50" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_51" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_52" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_53" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_54" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_55" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_56" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_57" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_58" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_59" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_60" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_61" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_62" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_63" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_64" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_65" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_66" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_67" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_68" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_69" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_70" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_71" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_72" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_73" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_74" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_75" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_76" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_77" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_78" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_79" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_80" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_81" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_82" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_83" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_84" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_85" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_86" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_87" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_88" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_89" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_90" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_91" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_92" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_93" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_94" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_95" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_96" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_97" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_98" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_99" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_100" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_101" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_102" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_103" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_104" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_105" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_106" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_107" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_108" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_109" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_110" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_111" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_112" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_113" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_114" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_115" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_116" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_117" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_118" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_119" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_120" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_121" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_122" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_123" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_124" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_125" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_126" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_127" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_128" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_129" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_130" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_131" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_132" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_133" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_134" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_135" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_136" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_137" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_138" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_139" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_140" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_141" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_142" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_143" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_144" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_145" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_146" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_147" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_148" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_149" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_150" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_151" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_152" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_153" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_154" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_155" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_156" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_157" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_158" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_159" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_160" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_161" />
+        <Variable x:TypeArguments="x:Object" Name="CreateStep1_162" />
+      </Sequence.Variables>
+      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" Value="[New Entity(&quot;salesorder&quot;)]" />
+      <mxswa:GetEntityProperty Attribute="azt_ponumber" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_2]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_2 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_1]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_ponumber" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_1]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CreateCrmType</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.String, "Backordered: ", "String" }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_4]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:GetEntityProperty Attribute="name" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_6]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_6 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_5]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">Add</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_4, CreateStep1_5 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_3]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="name" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_3]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CreateCrmType</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.Guid, "b337eacc-0105-e911-a94d-000d3a3b9f01", "Key" }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_8]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CreateCrmType</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.EntityReference, "transactioncurrency", "US Dollar", CreateStep1_8, "Lookup" }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_7]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="transactioncurrencyid" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_7]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="pricelevelid" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_10]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_10 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_9]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="pricelevelid" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_9]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="requestdeliveryby" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_12]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_12 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_11]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="requestdeliveryby" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_11]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_estfulfillmentdate" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_14]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_14 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_13]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_estfulfillmentdate" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_13]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="salesorderid" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_16]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_16 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_15]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_parentorderid" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_15]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_trackingnumber" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_18]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_18 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_17]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_trackingnumber" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_17]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="shippingmethodcode" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_20]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_20 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_19]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="shippingmethodcode" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_19]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="willcall" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_22]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Boolean" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_22 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Boolean" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_21]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="willcall" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_21]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Boolean" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="opportunityid" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_24]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_24 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_23]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="opportunityid" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_23]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="quoteid" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_26]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_26 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_25]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="quoteid" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_25]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_quotenumber" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_28]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_28 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_27]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_quotenumber" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_27]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="customerid" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_30]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_30 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_29]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="customerid" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_29]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="description" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_32]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_32 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_31]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="description" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_31]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_additionalfees" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_34]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:Money" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_34 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:Money" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_33]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_additionalfees" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_33]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:Money" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_allocationconfirmation" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_36]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_36 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_35]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_allocationconfirmation" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_35]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_shippingaddressconfirmed" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_38]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_38 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_37]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_shippingaddressconfirmed" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_37]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_paymentreceivedon" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_40]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_40 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_39]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_paymentreceivedon" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_39]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_sqreceivedon" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_42]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_42 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_41]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_sqreceivedon" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_41]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_poreceivedon" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_44]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_44 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_43]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_poreceivedon" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_43]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_poreceivedconfirmationsent" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_46]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_46 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_45]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_poreceivedconfirmationsent" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_45]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_taxexemptrequestsent" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_48]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_48 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_47]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_taxexemptrequestsent" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_47]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_sqreceiptconfirmationsent" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_50]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_50 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_49]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_sqreceiptconfirmationsent" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_49]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_hassaasproducts" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_52]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_52 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_51]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_hassaasproducts" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_51]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_licensescompleted" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_54]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_54 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_53]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_licensescompleted" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_53]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_estnucshipdate" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_56]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_56 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_55]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_estnucshipdate" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_55]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_actualnucshipdate" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_58]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_58 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_57]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_actualnucshipdate" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_57]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_customizationrequired" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_60]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_60 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_59]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_customizationrequired" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_59]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_customizationdate" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_62]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_62 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_61]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_customizationdate" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_61]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_staples" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_64]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_64 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_63]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_staples" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_63]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_alternatecovers" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_66]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_66 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_65]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_alternatecovers" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_65]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_customfilesreceived" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_68]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_68 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_67]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_customfilesreceived" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_67]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_customfilesreceivedon" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_70]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_70 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_69]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_customfilesreceivedon" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_69]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_estshipdate" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_72]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_72 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_71]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_estshipdate" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_71]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_actualprintshipdate" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_74]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_74 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_73]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_actualprintshipdate" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_73]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_estprintdate" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_76]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_76 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_75]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_estprintdate" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_75]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_externalprintorderplacedon" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_78]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_78 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_77]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_externalprintorderplacedon" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_77]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_voucherorderplacedon" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_80]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_80 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_79]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_voucherorderplacedon" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_79]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_saasemailsent" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_82]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_82 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_81]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_saasemailsent" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_81]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_swlicalloccreatedon" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_84]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_84 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_83]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_swlicalloccreatedon" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_83]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_engagementcreatedon" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_86]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_86 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_85]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_engagementcreatedon" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_85]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_engagementcreatedbyid" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_88]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_88 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_87]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_engagementcreatedbyid" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_87]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_fuactivitiescreatedon" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_90]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_90 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_89]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_fuactivitiescreatedon" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_89]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_printconfirmation" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_92]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_92 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_91]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_printconfirmation" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_91]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_hascompanion" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_94]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Boolean" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_94 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Boolean" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_93]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_hascompanion" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_93]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Boolean" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_ordertype" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_96]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_96 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_95]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_ordertype" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_95]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="azt_paymenttype" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_98]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_98 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_97]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="azt_paymenttype" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_97]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="billto_city" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_100]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_100 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_99]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="billto_city" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_99]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="billto_contactname" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_102]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_102 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_101]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="billto_contactname" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_101]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="billto_country" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_104]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_104 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_103]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="billto_country" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_103]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="billto_fax" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_106]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_106 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_105]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="billto_fax" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_105]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="billto_line1" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_108]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_108 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_107]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="billto_line1" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_107]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="billto_line2" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_110]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_110 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_109]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="billto_line2" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_109]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="billto_line3" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_112]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_112 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_111]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="billto_line3" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_111]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="billto_name" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_114]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_114 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_113]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="billto_name" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_113]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="billto_postalcode" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_116]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_116 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_115]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="billto_postalcode" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_115]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="billto_stateorprovince" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_118]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_118 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_117]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="billto_stateorprovince" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_117]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="billto_telephone" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_120]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_120 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_119]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="billto_telephone" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_119]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="campaignid" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_122]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_122 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_121]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="campaignid" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_121]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="emailaddress" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_124]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_124 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_123]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="emailaddress" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_123]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="freighttermscode" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_126]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_126 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_125]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="freighttermscode" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_125]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="lastbackofficesubmit" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_128]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_128 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_127]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="lastbackofficesubmit" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_127]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="lastonholdtime" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_130]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_130 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_129]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="lastonholdtime" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_129]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="paymenttermscode" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_132]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_132 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_131]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="paymenttermscode" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_131]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="prioritycode" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_134]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_134 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_133]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="prioritycode" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_133]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="shipto_city" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_136]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_136 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_135]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="shipto_city" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_135]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="shipto_contactname" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_138]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_138 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_137]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="shipto_contactname" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_137]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="shipto_country" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_140]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_140 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_139]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="shipto_country" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_139]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="shipto_fax" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_142]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_142 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_141]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="shipto_fax" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_141]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="shipto_freighttermscode" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_144]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_144 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_143]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="shipto_freighttermscode" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_143]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="shipto_line1" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_146]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_146 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_145]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="shipto_line1" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_145]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="shipto_line2" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_148]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_148 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_147]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="shipto_line2" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_147]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="shipto_line3" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_150]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_150 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_149]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="shipto_line3" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_149]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="shipto_name" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_152]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_152 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_151]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="shipto_name" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_151]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="shipto_postalcode" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_154]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_154 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_153]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="shipto_postalcode" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_153]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="shipto_stateorprovince" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_156]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_156 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_155]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="shipto_stateorprovince" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_155]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="shipto_telephone" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_158]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_158 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_157]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="shipto_telephone" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_157]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CreateCrmType</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.OptionSetValue, "0", "State" }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_159]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="statecode" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_159]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:GetEntityProperty Attribute="submitdate" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="salesorder" Value="[CreateStep1_161]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CreateStep1_161 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_160]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="submitdate" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_160]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="s:DateTime" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CreateCrmType</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.OptionSetValue, "327630000", "Status" }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CreateStep1_162]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <mxswa:SetEntityProperty Attribute="statuscode" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" Value="[CreateStep1_162]">
+        <mxswa:SetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:OptionSetValue" />
+          </InArgument>
+        </mxswa:SetEntityProperty.TargetType>
+      </mxswa:SetEntityProperty>
+      <mxswa:CreateEntity EntityId="{x:Null}" DisplayName="CreateStep1: Create Cloned Order" Entity="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" EntityName="salesorder" />
+      <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;CreateStep1_localParameter&quot;)]" Value="[CreatedEntities(&quot;CreateStep1_localParameter#Temp&quot;)]" />
+    </Sequence>
+    <Sequence DisplayName="AssignOutputArgumentStep2: Assign Order Reference">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Object" Name="AssignOutputArgumentStep2_1" />
+        <Variable x:TypeArguments="x:Object" Name="AssignOutputArgumentStep2_2" />
+        <Variable x:TypeArguments="x:String" Default="Microsoft.Xrm.Sdk.EntityReference, Microsoft.Xrm.Sdk, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Name="TypeName" />
+      </Sequence.Variables>
+      <mxswa:GetEntityProperty Attribute="salesorderid" Entity="[CreatedEntities(&quot;CreateStep1_localParameter&quot;)]" EntityName="salesorder" Value="[AssignOutputArgumentStep2_2]">
+        <mxswa:GetEntityProperty.TargetType>
+          <InArgument x:TypeArguments="s:Type">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+        </mxswa:GetEntityProperty.TargetType>
+      </mxswa:GetEntityProperty>
+      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
+        <mxswa:ActivityReference.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
+          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { AssignOutputArgumentStep2_2 }]</InArgument>
+          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
+            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:EntityReference" />
+          </InArgument>
+          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[AssignOutputArgumentStep2_1]</OutArgument>
+        </mxswa:ActivityReference.Arguments>
+      </mxswa:ActivityReference>
+      <Assign x:TypeArguments="mxs:EntityReference" To="[NewOrderRef]" Value="[DirectCast(AssignOutputArgumentStep2_1,Microsoft.Xrm.Sdk.EntityReference)]" />
+    </Sequence>
+  </mxswa:Workflow>
+</Activity>

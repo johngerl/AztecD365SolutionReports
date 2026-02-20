@@ -1,0 +1,114 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "azt_sharedcommondataserviceforapps_b2959"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "b9860376-5ae5-4b52-850d-e10c57af0bfa"
+          },
+          "type": "Request",
+          "kind": "PowerAppV2",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "title": "fetchXML",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "''",
+                  "x-ms-content-hint": "TEXT"
+                },
+                "text_1": {
+                  "title": "TableName",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "account",
+                  "x-ms-content-hint": "TEXT"
+                }
+              },
+              "required": [
+                "text",
+                "text_1"
+              ]
+            }
+          }
+        }
+      },
+      "actions": {
+        "List_rows": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "83d1a375-b11d-4856-899c-24f405d01461"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "ListRecords",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "@triggerBody()['text_1']",
+              "fetchXml": "@triggerBody()['text']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Respond_to_a_Power_App_or_flow": {
+          "runAfter": {
+            "List_rows": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "e91c761f-545f-4d1e-9abc-00b8a630ecfb"
+          },
+          "type": "Response",
+          "kind": "PowerApp",
+          "inputs": {
+            "statusCode": 200,
+            "body": {
+              "result": "@{outputs('List_rows')?['body/value']}"
+            },
+            "schema": {
+              "type": "object",
+              "properties": {
+                "result": {
+                  "title": "Result",
+                  "x-ms-dynamically-added": true,
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

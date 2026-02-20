@@ -1,0 +1,123 @@
+function trackDiscount() {
+    var canDoDiscounts = false;
+    if (CheckUserRole("Product Discounts") || CheckUserRole("System Administrator")) canDoDiscounts = true;
+    var name = Xrm.Page.getAttribute("name").getValue();
+    var custId;
+    var formattedCustId;
+    var custObject = Xrm.Page.data.entity.attributes.get("parentaccountid");
+    if (custObject.getValue() !== null) {
+        custId = custObject.getValue()[0].id;
+        formattedCustId = custId.replace('{', '').replace('}', '').toLowerCase();
+        entityName = custObject.getValue()[0].entityType;
+        entityLabel = custObject.getValue()[0].name;
+    }
+    var discount = getDiscountAmt();
+    if (discount === null || discount === 0.0) {
+        Xrm.Page.ui.setFormNotification("There is no discount specified on the Opportunity.", "ERROR", "nolines");
+        return;
+    }
+    Xrm.Page.ui.clearFormNotification("nolines");
+    var obj = {};
+    var recordId = Xrm.Page.data.entity.getId();
+    obj["discount"] = discount;
+    obj["recordid"] = recordId;
+    obj["name"] = name;
+    obj["customerid"] = formattedCustId;
+    obj["candiscount"] = canDoDiscounts;
+    createDiscountRecord(obj);
+}
+function getDiscountAmt() {
+    var finalDiscount = 0.0;
+    var percentageDiscountAmt = 0.0;
+    var discountDollarAmt = 0.0;
+    var totalLineAmt = Xrm.Page.getAttribute("totallineitemamount").getValue();
+    var discountPercent = Xrm.Page.getAttribute("discountpercentage").getValue();
+    var discountAmt = Xrm.Page.getAttribute("discountamount").getValue();
+    if (totalLineAmt !== null && totalLineAmt !== 0) {
+        if (discountPercent !== null && discountPercent !== 0.0) {
+            percentageDiscountAmt = (discountPercent / 100) * totalLineAmt;
+        }
+        if (discountAmt !== null && discountAmt != 0.0) {
+            discountDollarAmt = discountAmt;
+        }
+    }
+    return percentageDiscountAmt + discountDollarAmt;
+}
+function createDiscountRecord(obj) {
+    var canDiscount = obj["candiscount"];
+    var approvalStatus = 0;
+    if (canDiscount) approvalStatus = 276530001;
+    else approvalStatus = 276530000;
+    var name = obj["name"];
+    var data =
+    {
+        "azt_OpportunityId@odata.bind": "/opportunities(" + obj["recordid"].replace(/[{}]/g, "").toLowerCase() + ")",
+        "azt_CustomerId@odata.bind": "/accounts(" + obj["customerid"] + ")",
+        "azt_discountamount": obj["discount"],
+        "azt_name": name + " discount",
+        "azt_approvalstatus": approvalStatus
+    };
+    Xrm.WebApi.createRecord("azt_productdiscount", data).then(
+        function success(result) {
+            //console.log("Account created with ID: " + result.id);
+            // perform operations on record creation
+            Xrm.Page.ui.setFormNotification("A discount record has been created. Please specify the Line Item for the Discount.", "INFORMATION", "discounted");
+            Xrm.Page.getControl("discounts").refresh();
+            Xrm.Page.ui.tabs.get("discounts").setDisplayState("expanded");
+            Xrm.Page.ui.tabs.get("discounts").setFocus();
+
+        },
+        function (error) {
+            //console.log(error.message);
+            // handle error conditions
+            Xrm.Page.ui.setFormNotification("Error creating Discount Record: " + error.message, "ERROR");
+        }
+    );
+}
+function CheckUserRole(roleName) {
+    var currentUserRoles = Xrm.Page.context.getUserRoles();
+    for (var i = 0; i < currentUserRoles.length; i++) {
+        var userRoleId = currentUserRoles[i];
+        var userRoleName = GetRoleName(userRoleId);
+        if (userRoleName === roleName) {
+            return true;
+        }
+    }
+    return false;
+}
+function GetRoleName(userRoleId) {
+    var RoleName;
+    var clientURL = Xrm.Page.context.getClientUrl();
+    //lookupFieldObject = Xrm.Page.data.entity.attributes.get('crm3_submittedbyid');
+    //if (lookupFieldObject.getValue() != null) {
+    //    entityId = lookupFieldObject.getValue()[0].id;
+    //    entityName = lookupFieldObject.getValue()[0].entityType;
+    //    entityLabel = lookupFieldObject.getValue()[0].name; //Lookup Name Value
+    var req = new XMLHttpRequest()
+    req.open("GET", encodeURI(clientURL + "/api/data/v8.0/roles?$select=name&$filter=roleid eq " + userRoleId), false);
+    req.setRequestHeader("Accept", "application/json");
+    req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+    req.setRequestHeader("OData-MaxVersion", "4.0");
+    req.setRequestHeader("OData-Version", "4.0");
+
+    req.onreadystatechange = function () {
+        if (this.readyState === 4) {
+            req.onreadystatechange = null;
+            if (this.status === 200) {
+                var data = JSON.parse(this.response);//, dateReviver);
+                if (data && data.value) {
+                    for (var indxAccounts = 0; indxAccounts < data.value.length; indxAccounts++) {
+                        RoleName = data.value[indxAccounts].name;
+                        var eTag = data.value[indxAccounts]['@odata.etag'];
+                    }
+                }
+            }
+            else {
+                var error = JSON.parse(this.response).error;
+                Xrm.Page.ui.setFormNotification("Error retrieving User RoleName – " + error.message, "ERROR");
+            }
+        }
+    };
+    req.send(null);
+    return RoleName;
+}

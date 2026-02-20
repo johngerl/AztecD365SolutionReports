@@ -1,0 +1,33 @@
+if (typeof (DSC) === "undefined") { DSC = {}; }
+DSC.DiscountFunctions = {
+    gridSelectRow: function (e) {
+        var fields =
+            [
+                "azt_quoteproductid",
+                "azt_orderproductid",
+                "azt_invoiceproductid",
+                "azt_opportunityproductid"
+            ];
+        var entityObject = e.getFormContext().data.entity;
+        fields.forEach(function (attribute) {
+            DSC.DiscountFunctions.setNotRequired(entityObject, attribute);
+            DSC.DiscountFunctions.disableField(entityObject, attribute);
+        });
+    },
+    disableField: function (entityObject, fieldName) {
+        //getAttribute(arg).setRequiredLevel(requirementLevel)
+        entityObject.attributes.forEach(function (attribute, i) {
+            if (attribute.getName() === fieldName) {
+                var writeInControl = attribute.controls.get(0);
+                writeInControl.setDisabled(true);
+            }
+        });
+    },
+    setNotRequired: function (entityObject, fieldName) {
+        entityObject.attributes.forEach(function (attribute, i) {
+            if (attribute.getName() === fieldName) {
+                attribute.setRequiredLevel("none");
+            }
+        });
+    }
+}

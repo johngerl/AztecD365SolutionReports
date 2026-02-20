@@ -1,0 +1,114 @@
+function CreateLicense(primaryControl) {
+    debugger;
+    var custId;
+    var selectedEntityReferences = [];
+    var formContext = primaryControl;
+    //var OrderNum = formContext.getControl("ordernumber").getAttribute().getValue();
+    var custLookup = formContext.getControl("customerid").getAttribute();
+    if (custLookup.getValue() !== null) {
+        custId = custLookup.getValue()[0].id.replace('{', '').replace('}', '').toLowerCase();
+        var entityName = custLookup.getValue()[0].entityType;
+        var custName = custLookup.getValue()[0].name;
+    }
+    var recordId = Xrm.Page.data.entity.getId().replace('{', '').replace('}', '').toLowerCase();
+    var gridContext = formContext.getControl("salesorderdetailsGrid");
+    var selectedRows = gridContext.getGrid().getSelectedRows();
+    if (selectedRows.getLength() === 0) {
+        Xrm.Page.ui.setFormNotification("You must first select an Order Line to create a Software License for.", "ERROR", "error");
+    }
+    else if (selectedRows.getLength() > 1) {
+        Xrm.Page.ui.setFormNotification("Select only one Line Item to create a License for.", "ERROR", "error1");
+    }
+    else {
+        Xrm.Page.ui.clearFormNotification("error");
+        Xrm.Page.ui.clearFormNotification("error1");
+        Xrm.Page.ui.setFormNotification("Creating Software License...", "INFORMATION", "creatingLicense");
+        selectedRows.forEach(function (selectedRow, i) {
+            selectedEntityReferences.push(selectedRow.getData().getEntity().getEntityReference());
+            //Unnecessary
+            //var numLines = selectedEntityReferences.length;
+            var lineId = selectedEntityReferences[0].id.replace('{', '').replace('}', '').toLowerCase();
+            //alert(selectedEntityReferences[0].id.replace(/[{}]/g, "").toLowerCase());
+            CreateSoftwareLicense(recordId, custId, lineId);
+        });
+    }
+}
+function CreateSoftwareLicense(recordId, custId, lineId) {
+    var serverURL = Xrm.Page.context.getClientUrl();
+    var data =
+    {
+        "OrderLineId": lineId,
+        "SalesOrderRef":
+        {
+            "@odata.type": "Microsoft.Dynamics.CRM.salesorder",
+            "salesorderid": recordId
+        },
+        "CustomerRef":
+        {
+            "@odata.type": "Microsoft.Dynamics.CRM.account",
+            "accountid": custId
+        }
+    };
+    var req = new XMLHttpRequest();
+    req.open("POST", serverURL + "/api/data/v9.1/salesorders(" + recordId + ")/Microsoft.Dynamics.CRM.azt_CreateSoftwareLicense", false);
+    //req.open("POST", serverURL + "/api/data/v9.1/Microsoft.Dynamics.CRM.azt_CreateSoftwareLicense", false);
+    req.setRequestHeader("Accept", "application/json");
+    req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+    req.setRequestHeader("OData-MaxVersion", "4.0");
+    req.setRequestHeader("OData-Version", "4.0");
+    req.onreadystatechange = function () {
+        if (this.readyState === 4 /* complete */) {
+            req.onreadystatechange = null;
+            if (this.status === 200) {
+                var data = JSON.parse(this.response);
+                //Xrm.Utility.openEntityForm("email", data.HasRole);
+                var LicId = data.azt_softwarelicenseid;
+                Xrm.Utility.openEntityForm("azt_softwarelicense", LicId);
+            } else {
+                var error = JSON.parse(this.response).error;
+                alert(error.message);
+            }
+        }
+    };
+    req.send(window.JSON.stringify(data));
+}
+function GetCanCreateLicense() {
+    var canCreateLic = false;
+    var userId = Xrm.Page.context.getUserId().replace('{', '').replace('}', '').toLowerCase();
+    canCreateLic = GetHasRole(userId, "Business Manager");
+    return canCreateLic;
+}
+function GetHasRole(userId, roleName) {
+    var hasRole = false;
+    var serverURL = Xrm.Page.context.getClientUrl();
+    var data =
+    {
+        "RoleName": roleName,
+        "UserName":
+        {
+            "@odata.type": "Microsoft.Dynamics.CRM.systemuser",
+            "systemuserid": userId
+        }
+    };
+    var req = new XMLHttpRequest();
+    req.open("POST", serverURL + "/api/data/v9.1/azt_GetHasRole", false);
+    req.setRequestHeader("Accept", "application/json");
+    req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+    req.setRequestHeader("OData-MaxVersion", "4.0");
+    req.setRequestHeader("OData-Version", "4.0");
+    req.onreadystatechange = function () {
+        if (this.readyState === 4 /* complete */) {
+            req.onreadystatechange = null;
+            if (this.status === 200) {
+                var data = JSON.parse(this.response);
+                //Xrm.Utility.openEntityForm("email", data.HasRole);
+                hasRole = data.HasRole;
+            } else {
+                var error = JSON.parse(this.response).error;
+                alert(error.message);
+            }
+        }
+    };
+    req.send(window.JSON.stringify(data));
+    return hasRole;
+}

@@ -1,0 +1,35 @@
+if (typeof (INV) === "undefined") { INV = {}; }
+INV.InvoiceFunctions = {
+    onLoad: function (e) {
+        debugger;
+        var formContext = e.getFormContext();
+        var roles = INV.InvoiceFunctions.hasCompPlanRole();
+        if (roles.hasCompPlan) {
+            formContext.ui.tabs.get("Summary_tab").sections.get("commission").setVisible(true);
+            formContext.ui.tabs.get("Summary_tab").sections.get("compgoaltypes").setVisible(true);
+            formContext.ui.tabs.get("Summary_tab").sections.get("commissionpayments").setVisible(true);
+        }
+        if (roles.hasRecordOwner) {
+            formContext.getControl("azt_recordownerid").setDisabled(false);
+        }
+    },
+    hasCompPlanRole: function () {
+        var roles = Xrm.Utility.getGlobalContext().userSettings.roles;
+        if (roles === null) return false;
+        var returnedObj = {
+            hasCompPlan: false,
+            hasRecordOwner: false
+        };
+        var hasRole = false;
+        roles.forEach(function (item) {
+            if (item.name.toLowerCase() === "system administrator" || item.name.toLowerCase() === "read comp plan") {
+                hasRole = true;
+                returnedObj.hasCompPlan = true;
+            }
+            if (item.name.toLowerCase() === "system administrator" || item.name.toLowerCase() === "business manager") {
+                returnedObj.hasRecordOwner = true;
+            }
+        });
+        return returnedObj;
+    }
+}

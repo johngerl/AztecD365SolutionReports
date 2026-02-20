@@ -1,0 +1,88 @@
+C:\Users\crmadmin\Documents\Aztec\TFS\Aztec\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\AztecPlugins.dll
+C:\Users\crmadmin\Documents\Aztec\TFS\Aztec\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\AztecPlugins.pdb
+C:\Users\crmadmin\Documents\Aztec\TFS\Aztec\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+C:\Users\crmadmin\Documents\Aztec\TFS\Aztec\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\Users\crmadmin\Documents\Aztec\TFS\Aztec\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+C:\Users\crmadmin\Documents\Aztec\TFS\Aztec\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Xrm.Sdk.xml
+C:\Users\crmadmin\Documents\Aztec\TFS\Aztec\Online Plugins\AztecPlugins\AztecPlugins\obj\Debug\AztecPlugins.csprojAssemblyReference.cache
+C:\Users\crmadmin\Documents\Aztec\TFS\Aztec\Online Plugins\AztecPlugins\AztecPlugins\obj\Debug\AztecPlugins.csproj.CoreCompileInputs.cache
+C:\Users\crmadmin\Documents\Aztec\TFS\Aztec\Online Plugins\AztecPlugins\AztecPlugins\obj\Debug\AztecPlugins.csproj.CopyComplete
+C:\Users\crmadmin\Documents\Aztec\TFS\Aztec\Online Plugins\AztecPlugins\AztecPlugins\obj\Debug\AztecPlugins.dll
+C:\Users\crmadmin\Documents\Aztec\TFS\Aztec\Online Plugins\AztecPlugins\AztecPlugins\obj\Debug\AztecPlugins.pdb
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Aztec\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\AztecPlugins.dll
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Aztec\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\AztecPlugins.pdb
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Aztec\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Aztec\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Aztec\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Aztec\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Xrm.Sdk.xml
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Aztec\Online Plugins\AztecPlugins\AztecPlugins\obj\Debug\AztecPlugins.csprojAssemblyReference.cache
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Aztec\Online Plugins\AztecPlugins\AztecPlugins\obj\Debug\AztecPlugins.csproj.CoreCompileInputs.cache
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Aztec\Online Plugins\AztecPlugins\AztecPlugins\obj\Debug\AztecPlugins.csproj.CopyComplete
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Aztec\Online Plugins\AztecPlugins\AztecPlugins\obj\Debug\AztecPlugins.dll
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Aztec\Online Plugins\AztecPlugins\AztecPlugins\obj\Debug\AztecPlugins.pdb
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\obj\Debug\AztecPlugins.dll
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\obj\Debug\AztecPlugins.pdb
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\AztecPlugins.dll
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\AztecPlugins.pdb
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Xrm.Sdk.xml
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Xrm.Sdk.Workflow.dll
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Xrm.Sdk.Workflow.xml
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\obj\Debug\AztecPlugins.csproj.CoreCompileInputs.cache
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Aztec\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Xrm.Sdk.Workflow.dll
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Aztec\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Xrm.Sdk.Workflow.xml
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\obj\Debug\AztecPlugins.csproj.AssemblyReference.cache
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\AztecPlugins.dll.config
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Buffers.dll
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Memory.dll
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Text.Json.dll
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.ValueTuple.dll
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Buffers.xml
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Memory.xml
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Text.Json.xml
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.ValueTuple.xml
+C:\Users\Michael\Documents\Projects\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\obj\Debug\AztecPlu.D854DB68.Up2Date
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\AztecPlugins.dll.config
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\AztecPlugins.dll
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\AztecPlugins.pdb
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Xrm.Sdk.dll
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Xrm.Sdk.Workflow.dll
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Buffers.dll
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Memory.dll
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Numerics.Vectors.dll
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Text.Encodings.Web.dll
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Text.Json.dll
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Threading.Tasks.Extensions.dll
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.ValueTuple.dll
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Xrm.Sdk.xml
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\Microsoft.Xrm.Sdk.Workflow.xml
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Buffers.xml
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Memory.xml
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Numerics.Vectors.xml
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Text.Encodings.Web.xml
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Text.Json.xml
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.Threading.Tasks.Extensions.xml
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\bin\Debug\System.ValueTuple.xml
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\obj\Debug\AztecPlugins.csproj.AssemblyReference.cache
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\obj\Debug\AztecPlugins.csproj.CoreCompileInputs.cache
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\obj\Debug\AztecPlu.D854DB68.Up2Date
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\obj\Debug\AztecPlugins.dll
+F:\Source\Aztec Software\TFS\Online Plugins\AztecPlugins\AztecPlugins\obj\Debug\AztecPlugins.pdb

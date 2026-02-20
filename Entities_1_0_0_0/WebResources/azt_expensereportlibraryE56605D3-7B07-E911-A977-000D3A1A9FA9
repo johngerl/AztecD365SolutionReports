@@ -1,0 +1,428 @@
+if (typeof (E) === "undefined") { E = {}; }
+E.ExpenseReportFunctions = {
+    onLoad: function (e) {
+        debugger;
+        var formContext = e.getFormContext();
+        var globalContext = Xrm.Utility.getGlobalContext();
+        var serverURL = globalContext.getClientUrl();
+        var userId = globalContext.userSettings.userId;
+        var userIsSysAdmin = E.ExpenseReportFunctions.getRole("System Administrator", globalContext);
+        if (userIsSysAdmin) formContext.getControl("statuscode").setDisabled(false);
+        var corpApproved = formContext.getAttribute("azt_corporateapproved").getValue();
+        var ManagerApproved = formContext.getAttribute("azt_managerapproved").getValue();
+        var submitted = formContext.getAttribute("azt_submitted").getValue();
+        var IsPaid = formContext.getAttribute("azt_ispaid").getValue();
+
+        if (!submitted) {
+            formContext.getControl("azt_submitted").setDisabled(false);
+        }
+        else if (submitted && !ManagerApproved) {
+            formContext.getControl("azt_submitted").setDisabled(true);
+            formContext.getControl("azt_managerapproved").setDisabled(false);
+            formContext.getControl("azt_corporateapproved").setDisabled(true);
+        }
+        else if (submitted && ManagerApproved && !corpApproved && !userIsSysAdmin) {
+            formContext.getControl("azt_submitted").setDisabled(true);
+            formContext.getControl("azt_managerapproved").setDisabled(true);
+            formContext.getControl("azt_corporateapproved").setDisabled(false);
+        }
+        else if (ManagerApproved && corpApproved && !IsPaid && !userIsSysAdmin) {
+            formContext.getControl("azt_submitted").setDisabled(true);
+            formContext.getControl("azt_managerapproved").setDisabled(true);
+            formContext.getControl("azt_ispaid").setDisabled(false);
+        }
+        else if (ManagerApproved && corpApproved && IsPaid && !userIsSysAdmin) {
+            formContext.getControl("azt_submitted").setDisabled(true);
+            formContext.getControl("azt_managerapproved").setDisabled(true);
+            formContext.getControl("azt_ispaid").setDisabled(true);
+        }
+        else if (userIsSysAdmin) {
+            formContext.getControl("azt_submitted").setDisabled(false);
+            formContext.getControl("azt_managerapproved").setDisabled(false);
+            formContext.getControl("azt_corporateapproved").setDisabled(false);
+            formContext.getControl("azt_approvingmanagerid").setDisabled(false);
+            formContext.getControl("azt_datemanagerapproved").setDisabled(false);
+        }
+    },
+    getCanApprove: function (e) {
+        debugger;
+        var canApprove = false;
+        var formContext = e.getFormContext();
+        var globalContext = Xrm.Utility.getGlobalContext();
+        var userId = globalContext.userSettings.userId;
+        var userIsSysAdmin = E.ExpenseReportFunctions.getRole("System Administrator", globalContext);
+        var clientURL = globalContext.getClientUrl();
+        var recordId = formContext.data.entity.getId().replace('{', '').replace('}', '').toLowerCase();
+        var lookupFieldObject = formContext.data.entity.attributes.get('azt_submittedbyid');
+        if (!userIsSysAdmin) {
+            if (lookupFieldObject.getValue() !== null) {
+                entityId = lookupFieldObject.getValue()[0].id;
+                var formattedentityId = entityId.replace('{', '').replace('}', '').toLowerCase();
+                entityName = lookupFieldObject.getValue()[0].entityType;
+                entityLabel = lookupFieldObject.getValue()[0].name; //Lookup Name Value
+
+                var parameters = {};
+                var usertoapprove = {};
+                usertoapprove.systemuserid = userId; //"a3659850-5710-e911-a94d-000d3a3b939c"; //Delete if creating new record 
+                usertoapprove["@odata.type"] = "Microsoft.Dynamics.CRM.systemuser";
+                parameters.UserToApprove = usertoapprove;
+                var expenseuser = {};
+                expenseuser.systemuserid = formattedentityId; //"31e9b665-0f36-ee11-bdf4-000d3a993b8f"; //Delete if creating new record 
+                expenseuser["@odata.type"] = "Microsoft.Dynamics.CRM.systemuser";
+                parameters.ExpenseUser = expenseuser;
+
+                var req = new XMLHttpRequest();
+                req.open("POST", clientURL + "/api/data/v9.1/azt_expensereports(" + recordId + ")/Microsoft.Dynamics.CRM.azt_ExpenseCanApprove", true);
+                req.setRequestHeader("OData-MaxVersion", "4.0");
+                req.setRequestHeader("OData-Version", "4.0");
+                req.setRequestHeader("Accept", "application/json");
+                req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+                req.onreadystatechange = function () {
+                    if (this.readyState === 4) {
+                        req.onreadystatechange = null;
+                        if (this.status === 200) {
+                            var results = JSON.parse(this.response);
+                            canApprove = results.CanApprove;
+                            if (canApprove) {
+                                formContext.getControl("statuscode").setDisabled(false);
+                                formContext.getControl("azt_reject").setDisabled(false);
+                                formContext.getControl("azt_managerapproved").setDisabled(false);
+                            }
+                        } else {
+                            Xrm.Utility.alertDialog(this.responseText);
+                        }
+                    }
+                };
+                req.send(JSON.stringify(parameters));
+            }
+        }
+        else {
+            formContext.getControl("statuscode").setDisabled(false);
+            formContext.getControl("azt_reject").setDisabled(false);
+        }
+    },
+    reject: function (e) {
+        var formContext = e.getFormContext();
+        var rejected = formContext.getAttribute("azt_reject").getValue();
+        if (rejected) {
+            formContext.getAttribute("statuscode").setValue(276530005);
+            formContext.getAttribute("azt_submitted").setValue(false);
+            formContext.getAttribute("azt_submitted").setSubmitMode("always");
+        }
+    },
+    submit: function (e) {
+        debugger;
+        var formContext = e.getFormContext();
+        var globalContext = Xrm.Utility.getGlobalContext();
+        var userId = globalContext.userSettings.userId;
+        var userName = globalContext.userSettings.userName;
+        var submitted = formContext.getAttribute("azt_submitted").getValue();
+        var submittedBy = formContext.getAttribute("azt_submittedbyid").getValue();
+        if (submitted === true && submittedBy === null) {
+            formContext.getAttribute("azt_submittedbyid").setValue([{ id: userId, name: userName, entityType: "systemuser" }]);
+            var currentDate = new Date();
+            formContext.getAttribute("azt_datesubmitted").setValue(currentDate);
+            formContext.getControl("statuscode").setDisabled(false);
+            formContext.getAttribute("statuscode").setValue(276530000);
+            formContext.getAttribute("statuscode").setSubmitMode("always");
+            formContext.getControl("statuscode").setDisabled(true);
+
+            var activeStage = formContext.data.process.getActiveStage();
+            //alert(activeStage.getId());
+            //alert(activeStage.getName());
+            E.ExpenseReportFunctions.moveNext(activeStage.getName(), formContext);
+            formContext.data.entity.save();
+            //Xrm.Page.ui.setFormNotification("You must specify the \'Submitted by\' before submitting the Expense Report.", "ERROR","SubmittedBy");
+            //Xrm.Page.data.entity.attributes.get("azt_submitted").setValue(null);
+            return;
+        }
+        else if (submitted === true && submittedBy !== null/* && Xrm.Page.getAttribute("processid") != null*/) {
+            //Xrm.Page.ui.clearFormNotification("SubmittedBy");
+            var currentDate = new Date();
+            formContext.getAttribute("azt_datesubmitted").setValue(currentDate);
+            //Xrm.Page.data.process.moveNext();
+            //alert("Moved Next");
+            formContext.getControl("azt_submitted").setDisabled(true);
+            formContext.getControl("statuscode").setDisabled(false);
+            formContext.getAttribute("statuscode").setValue(293130000);
+            formContext.getAttribute("statuscode").setSubmitMode("always");
+            formContext.getControl("statuscode").setDisabled(true);
+
+            var activeStage = formContext.data.process.getActiveStage();
+            //alert(activeStage.getId());
+            //alert(activeStage.getName());
+            E.ExpenseReportFunctions.moveNext(activeStage.getName(), formContext);
+            formContext.data.save();
+        }
+        else if (submitted === false) {
+            //Xrm.Page.ui.clearFormNotification("SubmittedBy");
+            formContext.getControl("azt_submitted").setDisabled(false);
+            formContext.getAttribute("statuscode").setValue(1);
+            formContext.getAttribute("statuscode").setSubmitMode("always");
+            formContext.data.save();
+        }
+    },
+    setPaid: function (e) {
+        var formContext = e.getFormContext();
+        var globalContext = Xrm.Utility.getGlobalContext();
+        var userId = globalContext.userSettings.userId;
+        var userName = globalContext.userSettings.userName;
+        var lookupReference = [];
+        lookupReference[0] = {};
+        lookupReference[0].id = userId;
+        lookupReference[0].entityType = "systemuser";
+        lookupReference[0].name = userName;
+        formContext.getControl("azt_ispaid").setDisabled(false);
+        formContext.getControl("azt_paidbyid").setDisabled(false);
+        formContext.getControl("azt_datepaid").setDisabled(false);
+        formContext.getAttribute("azt_paidbyid").setValue(lookupReference);
+        var currentDate = new Date();
+        formContext.getAttribute("azt_datepaid").setValue(currentDate);
+        formContext.getAttribute("azt_ispaid").setSubmitMode("always");
+        formContext.getAttribute("azt_paidbyid").setSubmitMode("always");
+        formContext.getAttribute("azt_datepaid").setSubmitMode("always");
+        formContext.getControl("azt_ispaid").setDisabled(true);
+        formContext.getControl("azt_paidbyid").setDisabled(true);
+        formContext.getControl("azt_datepaid").setDisabled(true);
+
+        formContext.getControl("statuscode").setDisabled(false);
+        formContext.getAttribute("statuscode").setValue(276530003);
+        formContext.getAttribute("statuscode").setSubmitMode("always");
+        formContext.getControl("statuscode").setDisabled(true);
+        if (formContext.getAttribute("processid") !== null) formContext.data.process.moveNext();
+    },
+    corporateApprove: function (e) {
+        var formContext = e.getFormContext();
+        var globalContext = Xrm.Utility.getGlobalContext();
+        var userId = globalContext.userSettings.userId;
+        var userName = globalContext.userSettings.userName;
+        var ManagerApproved = formContext.getAttribute("azt_managerapproved").getValue();
+        var CorporateApproved = formContext.getAttribute("azt_corporateapproved").getValue();
+        if (ManagerApproved !== true) {
+            formContext.ui.setFormNotification("The Manager has not yet approved this Expense Report.", "ERROR");
+        }
+        else if (CorporateApproved === true) {
+            var lookupReference = [];
+            lookupReference[0] = {};
+            lookupReference[0].id = userId;
+            lookupReference[0].entityType = "systemuser";
+            lookupReference[0].name = userName;
+            formContext.getControl("azt_approvingcorporatemanagerid").setDisabled(false);
+            formContext.getControl("azt_datecorporateapproved").setDisabled(false);
+            formContext.getAttribute("azt_approvingcorporatemanagerid").setValue(lookupReference);
+            var currentDate = new Date();
+            formContext.getAttribute("azt_datecorporateapproved").setValue(currentDate);
+            formContext.getAttribute("azt_corporateapproved").setSubmitMode("always");
+            formContext.getAttribute("azt_approvingcorporatemanagerid").setSubmitMode("always");
+            formContext.getAttribute("azt_datecorporateapproved").setSubmitMode("always");
+
+            formContext.getControl("statuscode").setDisabled(false);
+            formContext.getAttribute("statuscode").setValue(276530002);
+            formContext.getAttribute("statuscode").setSubmitMode("always");
+            formContext.getControl("statuscode").setDisabled(true);
+
+            formContext.getControl("azt_approvingcorporatemanagerid").setDisabled(true);
+            formContext.getControl("azt_datecorporateapproved").setDisabled(true);
+            if (formContext.getAttribute("processid") !== null) {
+                var activeStage = formContext.data.process.getActiveStage();
+                //alert(activeStage.getId());
+                //alert(activeStage.getName());
+                E.ExpenseReportFunctions.moveNext(activeStage.getName(), formContext);
+                formContext.data.save();
+            }
+        }
+    },
+    getRole: function (roleName, globalContext) {
+        var userRoles = globalContext.userSettings.roles;
+        var hasRole = false;
+        userRoles.forEach(function hasRoleName(item, index) {
+            if (item.name === roleName)
+                hasRole = true;
+        });
+        return hasRole;
+    },
+    getManager: function (e) {
+        var formContext = e.getFormContext();
+        var globalContext = Xrm.Utility.getGlobalContext();
+        var userId = globalContext.userSettings.userId;
+        var clientURL = globalContext.getClientUrl();
+        lookupFieldObject = formContext.data.entity.attributes.get('azt_submittedbyid');
+        if (lookupFieldObject.getValue() !== null) {
+            entityId = lookupFieldObject.getValue()[0].id;
+            var formattedentityId = entityId.replace('{', '').replace('}', '').toLowerCase();
+            entityName = lookupFieldObject.getValue()[0].entityType;
+            entityLabel = lookupFieldObject.getValue()[0].name; //Lookup Name Value
+        }
+        var req = new XMLHttpRequest()
+        req.open("GET", encodeURI(clientURL + "/api/data/v8.0/systemusers?$select=_parentsystemuserid_value&$filter=systemuserid eq " + formattedentityId), false);
+        //req.open("GET", encodeURI(clientURL + "/api/data/v8.0/systemusers(" + formattedentityId + ")?$select=_parentsystemuserid_value"), false);
+        req.setRequestHeader("Accept", "application/json");
+        req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+        req.setRequestHeader("OData-MaxVersion", "4.0");
+        req.setRequestHeader("OData-Version", "4.0");
+
+        req.onreadystatechange = function () {
+            if (this.readyState === 4) {
+                req.onreadystatechange = null;
+                if (this.status === 200) {
+                    var results = JSON.parse(this.response);
+                    //var recordCount = results["@odata.count"];
+                    for (var i = 0; i < results.value.length; i++) {
+                        var _parentsystemuserid_value = results.value[i]["_parentsystemuserid_value"];
+                        //var _parentsystemuserid_value_formatted = results.value[i]["_parentsystemuserid_value@OData.Community.Display.V1.FormattedValue"];
+                        //alert("FormattedValue: " + _parentsystemuserid_value_formatted);
+                        if (_parentsystemuserid_value !== null) {
+                            var IsManager = (userId.replace('{', '').replace('}', '').toLowerCase() === _parentsystemuserid_value.replace('{', '').replace('}', '').toLowerCase());
+                            var ManagerApproved = formContext.getAttribute("azt_managerapproved").getValue();
+                            var submittedByValue = formContext.getAttribute("azt_submitted").getValue();
+                            //if(ManagerApproved == null || ManagerApproved == false || IsManager || CheckUserRole("System Administrator"))
+                            if (E.ExpenseReportFunctions.getRole("System Administrator", globalContext) || (IsManager && ManagerApproved != true && submittedByValue == true) || E.ExpenseReportFunctions.getRole("Aztec Manager", globalContext)) {
+                                formContext.getControl("azt_managerapproved").setDisabled(false);
+                                //Xrm.Page.getControl("azt_datemanagerapproved").setDisabled(false);
+                            }
+                        }
+                    }
+                }
+                else {
+                    var error = JSON.parse(this.response).error;
+                    formContext.ui.setFormNotification("Error retrieving Manager – " + error.message, "ERROR");
+                }
+            }
+        };
+        req.send(null);
+    },
+    setManagerApproval: function (e) {
+        var formContext = e.getFormContext();
+        var globalContext = Xrm.Utility.getGlobalContext();
+        var userId = globalContext.userSettings.userId;
+        var userName = globalContext.userSettings.userName;
+        var clientURL = globalContext.getClientUrl();
+        if (formContext.getAttribute("azt_managerapproved").getValue() === true && formContext.getAttribute("azt_submittedbyid").getValue() !== null) {
+            var currentUserId = userId.replace('{', '').replace('}', '').toLowerCase();
+            var currentUserName = globalContext.userSettings.userName;
+            var userIsSysAdmin = E.ExpenseReportFunctions.getRole("System Administrator", globalContext);
+
+            formContext.getControl("azt_approvingmanagerid").setDisabled(false);
+            formContext.getAttribute("azt_approvingmanagerid").setValue([{ id: currentUserId, name: currentUserName, entityType: "systemuser" }]);
+            formContext.getAttribute("azt_approvingmanagerid").setSubmitMode("always");
+            formContext.getControl("azt_approvingmanagerid").setDisabled(true);
+
+            formContext.getControl("azt_datemanagerapproved").setDisabled(false);
+            var currentDate = new Date();
+            formContext.getAttribute("azt_datemanagerapproved").setValue(currentDate);
+            formContext.getAttribute("azt_datemanagerapproved").setSubmitMode("always");
+            formContext.getControl("azt_datemanagerapproved").setDisabled(true);
+
+
+            formContext.getControl("statuscode").setDisabled(false);
+            formContext.getAttribute("statuscode").setValue(276530001);
+            formContext.getAttribute("statuscode").setSubmitMode("always");
+            formContext.getControl("statuscode").setDisabled(true);
+
+            if (formContext.getAttribute("processid") !== null) {
+                var activeStage = formContext.data.process.getActiveStage();
+                //alert(activeStage.getId());
+                //alert(activeStage.getName());
+                E.ExpenseReportFunctions.moveNext(activeStage.getName(), formContext);
+                formContext.data.save();
+            }
+        }
+    },
+    cloneLine: function (formContext) {
+        formContext.ui.setFormNotification("Cloning Expense Line...", "INFORMATION", "cloning");
+
+        var selectedEntityReferences = [];
+        var selectedRows = formContext.getControl("Expenses").getGrid().getSelectedRows();
+        if (selectedRows.getLength() === 0) {
+            formContext.ui.setFormNotification("You must first select an Expense to duplicate", "ERROR", "error");
+        }
+        else {
+            formContext.ui.clearFormNotification("error");
+        }
+        selectedRows.forEach(function (selectedRow, i) {
+            selectedEntityReferences.push(selectedRow.getData().getEntity().getEntityReference());
+        });
+        var numLines = selectedEntityReferences.length;
+        var lineId = selectedEntityReferences[0].id.replace('{', '').replace('}', '').toLowerCase();
+
+        if (selectedEntityReferences[0] === undefined || numLines < 1) {
+            formContext.ui.clearFormNotification("cloning");
+            formContext.ui.setFormNotification("You must first select an Expense to duplicate", "ERROR");
+        }
+        else {
+            formContext.ui.setFormNotification("Duplicating Expense...", "INFORMATION", "duplicating");
+            var expenseId = lineId;
+            //alert(Id[0].replace(/[{}]/g, "").toLowerCase());
+            var clonedExpense = {};
+            clonedExpense.azt_name = expenseId;
+            E.ExpenseReportFunctions.createRecord(clonedExpense, "azt_clonedexpenselines", E.ExpenseReportFunctions.recordCreated(formContext), E.ExpenseReportFunctions.errorCreating(formContext), formContext);
+            formContext.ui.clearFormNotification("cloning");
+        }
+    },
+    recordCreated: function (formContext) {
+        formContext.ui.setFormNotification("This Expense Line has been cloned. This page will now refresh.", "INFORMATION", "refresh");
+        formContext.data.refresh();
+        formContext.ui.clearFormNotification("refresh");
+        formContext.ui.setFormNotification("This Expense Line has been cloned.", "INFORMATION");
+    },
+    errorCreating: function (formContext) {
+        formContext.ui.setFormNotification("Error Duplicating Expense Record", "ERROR");
+    },
+    createRecord: function (object, type, successCallback, errorCallback, formContext) {
+        var serverURL = Xrm.Page.context.getClientUrl();
+        var req = new XMLHttpRequest();
+        req.open("POST", serverURL + "/api/data/v8.0/" + type, false);
+        req.setRequestHeader("Accept", "application/json");
+        req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+        req.setRequestHeader("OData-MaxVersion", "4.0");
+        req.setRequestHeader("OData-Version", "4.0");
+        req.onreadystatechange = function () {
+            if (this.readyState === 4 /* complete */) {
+                req.onreadystatechange = null;
+                if (this.status === 204) {
+                    //var accountUri = this.getResponseHeader("OData-EntityId");
+                    //var ID = accountUri.substr(accountUri.length - 38).substring(1, 37); //get only GUID
+                    //Xrm.Utility.openEntityForm("account", ID); //Open newly created account record
+                    formContext.ui.clearFormNotification("duplicating");
+                    formContext.ui.setFormNotification("This Expense Line has been duplicated. This page will now refresh.", "INFORMATION", "duplicated");
+                    formContext.getControl("Expenses").refresh();
+                    formContext.ui.clearFormNotification("duplicated");
+                    formContext.ui.setFormNotification("This Expense Line has been cloned.", "INFORMATION");
+                } else {
+                    var error = JSON.parse(this.response).error;
+                    formContext.ui.setFormNotification("Error Duplicating Expense Record: " + error.message, "ERROR");
+                }
+            }
+        };
+        req.send(JSON.stringify(object));
+    },
+    moveNext: function (currentStage, formContext) {
+        //Method is used to attempt to move to the next stage in the Business Process Flow
+        //currentStage is expected to be the current stage name of the record when this method is to be invoked
+        //console.log(“moveNext requested for stage: ” + Xrm.Page.data.process.getActiveStage().getName());
+        var pollingAttemptsRemaining = 10;
+        var intervalId;
+        //Cycle through code every 2 seconds for dirty check
+        intervalId = setInterval(function () {
+            pollingAttemptsRemaining -= 1;
+            //console.log(“Attempts Remaining: ” + pollingAttemptsRemaining);
+            //Check if the current stage is the same stage that record was in when calling moveNext
+            //This check is in place after 2015 SP1 due to changes in CRM code handling of moveNext with being called onSave with a dirty form
+            //Out Of Box moveNext calls an additional save which causes code to be executed twice, this prevents further execution
+            if (formContext.data.process.getActiveStage().getName() != currentStage) {
+                clearInterval(intervalId);
+            }
+            //Check if form is dirty, if it is not and the stage has not changed then attempt to moveNext
+            if (!formContext.data.entity.getIsDirty() && formContext.data.process.getActiveStage().getName() == currentStage) {
+                console.log("attempting move");
+                formContext.data.process.moveNext();
+                pollingAttemptsRemaining = 0;
+                clearInterval(intervalId);
+            }
+            //If number of attempts remaining has passed exit code
+            if (pollingAttemptsRemaining <= 0) {
+                clearInterval(intervalId);
+            }
+        }, 200);
+    }
+}

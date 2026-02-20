@@ -1,0 +1,71 @@
+function splitInvoice() {
+    var paymentsAlreadySplit = Xrm.Page.getAttribute("azt_paymentsalreadysplit").getValue();
+    if (paymentsAlreadySplit) {
+        Xrm.Page.ui.setFormNotification("Payments on this invoice have already been split.", "ERROR", "splitError");
+        return;
+    }
+    var recordId = Xrm.Page.data.entity.getId();
+    var formattedRecordId = recordId.replace('{', '').replace('}', '').toLowerCase();
+    var numPayments = Xrm.Page.getAttribute("azt_numberofpayments").getValue();
+    if (numPayments === null || numPayments === undefined || !numPayments > 0) {
+        Xrm.Page.ui.setFormNotification("You must specify the number of Payments to split.", "ERROR", "paymentError");
+        Xrm.Page.getControl("azt_numberofpayments").setFocus();
+        return;
+    }
+    else {
+        Xrm.Page.ui.clearFormNotification("paymentError");
+        Xrm.Page.getAttribute("azt_paymentsalreadysplit").setValue(true);
+        var record = {};
+        record["recordid"] = formattedRecordId;
+        record["numberpayments"] = numPayments;
+        record["totalamount"] = Xrm.Page.getAttribute("totalamount").getValue();
+        record["invoicenumber"] = Xrm.Page.getAttribute("invoicenumber").getValue();
+        CloneLine(record);
+    }
+}
+function CloneLine(record) {
+    var numPayments = record.numberpayments;
+    var recordId = record.recordid;
+    var totalamount = record.totalamount;
+    var paymentAmount = totalamount / numPayments;
+    var invoiceNum = record.invoicenumber;
+    for (var i = 0; i < numPayments; i++) {
+        var data =
+        {
+            "azt_InvoiceId@odata.bind": "/invoices(" + recordId.toLowerCase() + ")",
+            "azt_amount": paymentAmount,
+            "azt_name": invoiceNum + " Split Payment",
+            "azt_invoicenumber": invoiceNum
+        };
+        Xrm.WebApi.createRecord("azt_payment", data).then(
+            function success(result) {
+                //console.log("Payment created with ID: " + result.id);
+                setPaymentsAlreadySplit(recordId);
+                Xrm.Page.ui.setFormNotification("Payments have been split and created. Please specify the Due Dates and Payment Amounts.", "INFORMATION", "payments");
+                Xrm.Page.getControl("payments").refresh();
+                Xrm.Page.ui.tabs.get("payments").setDisplayState("expanded");
+                Xrm.Page.ui.tabs.get("payments").setFocus();
+            },
+            function (error) {
+                //console.log(error.message);
+                Xrm.Page.ui.setFormNotification("Error creating Payment Record: " + error.message, "ERROR");
+            }
+        );
+    }
+}
+function setPaymentsAlreadySplit(recordId) {
+    var data =
+    {
+        "azt_paymentsalreadysplit": true
+    };
+    Xrm.WebApi.updateRecord("invoice", recordId, data).then(
+        function success(result) {
+            console.log("Invoice updated");
+            // perform operations on record update
+        },
+        function (error) {
+            console.log(error.message);
+            // handle error conditions
+        }
+    );
+}

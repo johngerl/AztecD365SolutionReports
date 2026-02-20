@@ -1,0 +1,86 @@
+<Activity x:Class="XrmWorkflow6fafaafc08c647f398433a7e4c29ec32" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mxs="clr-namespace:Microsoft.Xrm.Sdk;assembly=Microsoft.Xrm.Sdk, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mxsw="clr-namespace:Microsoft.Xrm.Sdk.Workflow;assembly=Microsoft.Xrm.Sdk.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:mxswa="clr-namespace:Microsoft.Xrm.Sdk.Workflow.Activities;assembly=Microsoft.Xrm.Sdk.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:srs="clr-namespace:System.Runtime.Serialization;assembly=System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:this="clr-namespace:" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="InputEntities" Type="InArgument(scg:IDictionary(x:String, mxs:Entity))" />
+    <x:Property Name="CreatedEntities" Type="InArgument(scg:IDictionary(x:String, mxs:Entity))" />
+    <x:Property Name="AccountId" Type="InArgument(x:String)">
+      <x:Property.Attributes>
+        <mxsw:ArgumentRequiredAttribute Value="True" />
+        <mxsw:ArgumentTargetAttribute Value="False" />
+        <mxsw:ArgumentDescriptionAttribute Value="Unique identifier of the Account to append the Customer Address to." />
+        <mxsw:ArgumentDirectionAttribute Value="Input" />
+        <mxsw:ArgumentEntityAttribute Value="" />
+      </x:Property.Attributes>
+    </x:Property>
+    <x:Property Name="Line1" Type="InArgument(x:String)">
+      <x:Property.Attributes>
+        <mxsw:ArgumentRequiredAttribute Value="True" />
+        <mxsw:ArgumentTargetAttribute Value="False" />
+        <mxsw:ArgumentDescriptionAttribute Value="Line 1 of the Customer Address" />
+        <mxsw:ArgumentDirectionAttribute Value="Input" />
+        <mxsw:ArgumentEntityAttribute Value="" />
+      </x:Property.Attributes>
+    </x:Property>
+    <x:Property Name="Line2" Type="InArgument(x:String)">
+      <x:Property.Attributes>
+        <mxsw:ArgumentRequiredAttribute Value="False" />
+        <mxsw:ArgumentTargetAttribute Value="False" />
+        <mxsw:ArgumentDescriptionAttribute Value="Line 2 of the Customer Address" />
+        <mxsw:ArgumentDirectionAttribute Value="Input" />
+        <mxsw:ArgumentEntityAttribute Value="" />
+      </x:Property.Attributes>
+    </x:Property>
+    <x:Property Name="City" Type="InArgument(x:String)">
+      <x:Property.Attributes>
+        <mxsw:ArgumentRequiredAttribute Value="False" />
+        <mxsw:ArgumentTargetAttribute Value="False" />
+        <mxsw:ArgumentDescriptionAttribute Value="City of the Customer Address" />
+        <mxsw:ArgumentDirectionAttribute Value="Input" />
+        <mxsw:ArgumentEntityAttribute Value="" />
+      </x:Property.Attributes>
+    </x:Property>
+    <x:Property Name="State" Type="InArgument(x:String)">
+      <x:Property.Attributes>
+        <mxsw:ArgumentRequiredAttribute Value="False" />
+        <mxsw:ArgumentTargetAttribute Value="False" />
+        <mxsw:ArgumentDescriptionAttribute Value="State of the Customer Address" />
+        <mxsw:ArgumentDirectionAttribute Value="Input" />
+        <mxsw:ArgumentEntityAttribute Value="" />
+      </x:Property.Attributes>
+    </x:Property>
+    <x:Property Name="Zip" Type="InArgument(x:String)">
+      <x:Property.Attributes>
+        <mxsw:ArgumentRequiredAttribute Value="False" />
+        <mxsw:ArgumentTargetAttribute Value="False" />
+        <mxsw:ArgumentDescriptionAttribute Value="Zip of the Customer Address" />
+        <mxsw:ArgumentDirectionAttribute Value="Input" />
+        <mxsw:ArgumentEntityAttribute Value="" />
+      </x:Property.Attributes>
+    </x:Property>
+    <x:Property Name="Country" Type="InArgument(x:String)">
+      <x:Property.Attributes>
+        <mxsw:ArgumentRequiredAttribute Value="False" />
+        <mxsw:ArgumentTargetAttribute Value="False" />
+        <mxsw:ArgumentDescriptionAttribute Value="Country of the Customer Address" />
+        <mxsw:ArgumentDirectionAttribute Value="Input" />
+        <mxsw:ArgumentEntityAttribute Value="" />
+      </x:Property.Attributes>
+    </x:Property>
+    <x:Property Name="AddressId" Type="OutArgument(x:String)">
+      <x:Property.Attributes>
+        <mxsw:ArgumentRequiredAttribute Value="False" />
+        <mxsw:ArgumentTargetAttribute Value="False" />
+        <mxsw:ArgumentDescriptionAttribute Value="String Guid for new Customer Address" />
+        <mxsw:ArgumentDirectionAttribute Value="Output" />
+        <mxsw:ArgumentEntityAttribute Value="" />
+      </x:Property.Attributes>
+    </x:Property>
+  </x:Members>
+  <this:XrmWorkflow6fafaafc08c647f398433a7e4c29ec32.InputEntities>
+    <InArgument x:TypeArguments="scg:IDictionary(x:String, mxs:Entity)" />
+  </this:XrmWorkflow6fafaafc08c647f398433a7e4c29ec32.InputEntities>
+  <this:XrmWorkflow6fafaafc08c647f398433a7e4c29ec32.CreatedEntities>
+    <InArgument x:TypeArguments="scg:IDictionary(x:String, mxs:Entity)" />
+  </this:XrmWorkflow6fafaafc08c647f398433a7e4c29ec32.CreatedEntities>
+  <mva:VisualBasic.Settings>Assembly references and imported namespaces for internal implementation</mva:VisualBasic.Settings>
+  <mxswa:Workflow />
+</Activity>

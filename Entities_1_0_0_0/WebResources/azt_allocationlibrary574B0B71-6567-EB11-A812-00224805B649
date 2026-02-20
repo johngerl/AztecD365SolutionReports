@@ -1,0 +1,15 @@
+if (typeof (A) === "undefined") { A = {}; }
+A.AllocationFunctions = {
+    onLoad: function (e) {
+        var formContext = e.getFormContext();
+        var allocationType = formContext.getAttribute("azt_allocationtype").getValue();
+        if (allocationType !== null) {
+            if (allocationType === 327630000) {
+                formContext.ui.tabs.get("general").sections.get("print").setVisible(false);
+            }
+            else if (allocationType === 327630001) {
+                formContext.ui.tabs.get("general").sections.get("software").setVisible(false);
+            }
+        }
+    }
+}

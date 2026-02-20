@@ -1,0 +1,12 @@
+function setName() {
+    if (Xrm.Page.ui.getFormType() === 1) {
+        lookupFieldObject = Xrm.Page.data.entity.attributes.get('azt_invoiceid');
+        if (lookupFieldObject.getValue() !== null) {
+            entityId = lookupFieldObject.getValue()[0].id;
+            var formattedentityId = entityId.replace('{', '').replace('}', '').toLowerCase();
+            entityName = lookupFieldObject.getValue()[0].entityType;
+            entityLabel = lookupFieldObject.getValue()[0].name; //Lookup Name Value
+            Xrm.Page.getAttribute("azt_name").setValue("Payment for: " + entityLabel);
+        }
+    }
+}

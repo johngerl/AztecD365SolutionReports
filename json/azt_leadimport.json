@@ -1,0 +1,3494 @@
+{
+  "entityName": "azt_leadimport",
+  "displayName": "Lead Import",
+  "objectType": "Custom",
+  "recordCount": 208,
+  "lastUpdate": "2026-01-21 20:21:52",
+  "description": null,
+  "ownershipType": "OrganizationOwned",
+  "auditEnabled": "No",
+  "primaryIdField": "azt_leadimportid",
+  "primaryNameField": "azt_name",
+  "fields": [
+    {
+      "fieldName": "azt_attended",
+      "displayName": "Attended?",
+      "description": null,
+      "dataType": "Yes/No",
+      "required": "No",
+      "sourceType": null,
+      "customField": "Yes",
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-20 18:23:19",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [
+        {
+          "formName": "Lead Import",
+          "formType": "main",
+          "formId": "{f9757a11-5f08-405a-a66a-8e9d8cc4014a}",
+          "isActive": true,
+          "location": "General > General",
+          "label": "Attended?",
+          "visible": "true",
+          "disabled": "false"
+        },
+        {
+          "formName": "Lead Import Quick View",
+          "formType": "quick",
+          "formId": "{2e02a7dd-e815-4065-ade8-2aab500bf1d8}",
+          "isActive": true,
+          "location": "Tab > section",
+          "label": "Attended?",
+          "visible": "true",
+          "disabled": "false"
+        }
+      ],
+      "views": [
+        {
+          "viewName": "Active Lead Imports",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Import Advanced Find View",
+          "queryType": "Advanced Find",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Missing Account",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Multiple Accounts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Multiple Contacts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Quick Find Active Lead Imports",
+          "queryType": "Quick Find",
+          "usage": "column",
+          "width": "100"
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "azt_companyname",
+      "displayName": "Company Name",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": "Yes",
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-20 18:23:19",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [
+        {
+          "formName": "Lead Import",
+          "formType": "main",
+          "formId": "{f9757a11-5f08-405a-a66a-8e9d8cc4014a}",
+          "isActive": true,
+          "location": "General > General",
+          "label": "Company Name",
+          "visible": "true",
+          "disabled": "false"
+        },
+        {
+          "formName": "Lead Import Quick View",
+          "formType": "quick",
+          "formId": "{2e02a7dd-e815-4065-ade8-2aab500bf1d8}",
+          "isActive": true,
+          "location": "Tab > section",
+          "label": "Company Name",
+          "visible": "true",
+          "disabled": "false"
+        }
+      ],
+      "views": [
+        {
+          "viewName": "Active Lead Imports",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "150"
+        },
+        {
+          "viewName": "Lead Import Advanced Find View",
+          "queryType": "Advanced Find",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Missing Account",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "150"
+        },
+        {
+          "viewName": "Lead Imports Missing Account",
+          "queryType": "Standard",
+          "usage": "filter",
+          "operator": "null",
+          "value": ""
+        },
+        {
+          "viewName": "Lead Imports Multiple Accounts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "150"
+        },
+        {
+          "viewName": "Lead Imports Multiple Contacts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "150"
+        },
+        {
+          "viewName": "Quick Find Active Lead Imports",
+          "queryType": "Quick Find",
+          "usage": "column",
+          "width": "150"
+        },
+        {
+          "viewName": "Quick Find Active Lead Imports",
+          "queryType": "Quick Find",
+          "usage": "filter",
+          "operator": "like",
+          "value": "{0}"
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "LeadImport",
+          "file": "LeadImport.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "read"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "azt_email",
+      "displayName": "Email",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": "Yes",
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-20 18:23:19",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [
+        {
+          "formName": "Lead Import",
+          "formType": "main",
+          "formId": "{f9757a11-5f08-405a-a66a-8e9d8cc4014a}",
+          "isActive": true,
+          "location": "General > General",
+          "label": "Email",
+          "visible": "true",
+          "disabled": "false"
+        },
+        {
+          "formName": "Lead Import Quick View",
+          "formType": "quick",
+          "formId": "{2e02a7dd-e815-4065-ade8-2aab500bf1d8}",
+          "isActive": true,
+          "location": "Tab > section",
+          "label": "Email",
+          "visible": "true",
+          "disabled": "false"
+        }
+      ],
+      "views": [
+        {
+          "viewName": "Active Lead Imports",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "150"
+        },
+        {
+          "viewName": "Lead Import Advanced Find View",
+          "queryType": "Advanced Find",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Missing Account",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "150"
+        },
+        {
+          "viewName": "Lead Imports Multiple Accounts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "150"
+        },
+        {
+          "viewName": "Lead Imports Multiple Contacts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "150"
+        },
+        {
+          "viewName": "Quick Find Active Lead Imports",
+          "queryType": "Quick Find",
+          "usage": "column",
+          "width": "150"
+        },
+        {
+          "viewName": "Quick Find Active Lead Imports",
+          "queryType": "Quick Find",
+          "usage": "filter",
+          "operator": "like",
+          "value": "{0}"
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "LeadImport",
+          "file": "LeadImport.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "read"
+        },
+        {
+          "className": "LeadImportPopulateName",
+          "file": "LeadImportPopulateName.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "read"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "azt_firstname",
+      "displayName": "First Name",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": "Yes",
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-20 18:23:19",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [
+        {
+          "formName": "Lead Import",
+          "formType": "main",
+          "formId": "{f9757a11-5f08-405a-a66a-8e9d8cc4014a}",
+          "isActive": true,
+          "location": "General > General",
+          "label": "First Name",
+          "visible": "true",
+          "disabled": "false"
+        },
+        {
+          "formName": "Lead Import Quick View",
+          "formType": "quick",
+          "formId": "{2e02a7dd-e815-4065-ade8-2aab500bf1d8}",
+          "isActive": true,
+          "location": "Tab > section",
+          "label": "First Name",
+          "visible": "true",
+          "disabled": "false"
+        }
+      ],
+      "views": [
+        {
+          "viewName": "Active Lead Imports",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Import Advanced Find View",
+          "queryType": "Advanced Find",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Missing Account",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Multiple Accounts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Multiple Contacts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Quick Find Active Lead Imports",
+          "queryType": "Quick Find",
+          "usage": "column",
+          "width": "100"
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "LeadImport",
+          "file": "LeadImport.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "read"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "azt_importname",
+      "displayName": "Import Name",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": "Yes",
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-20 18:23:19",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [
+        {
+          "formName": "Lead Import",
+          "formType": "main",
+          "formId": "{f9757a11-5f08-405a-a66a-8e9d8cc4014a}",
+          "isActive": true,
+          "location": "General > General",
+          "label": "Import Name",
+          "visible": "true",
+          "disabled": "false"
+        },
+        {
+          "formName": "Lead Import Quick View",
+          "formType": "quick",
+          "formId": "{2e02a7dd-e815-4065-ade8-2aab500bf1d8}",
+          "isActive": true,
+          "location": "Tab > section",
+          "label": "Import Name",
+          "visible": "true",
+          "disabled": "false"
+        }
+      ],
+      "views": [
+        {
+          "viewName": "Active Lead Imports",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "200"
+        },
+        {
+          "viewName": "Lead Import Advanced Find View",
+          "queryType": "Advanced Find",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Import Advanced Find View",
+          "queryType": "Advanced Find",
+          "usage": "sort",
+          "descending": false
+        },
+        {
+          "viewName": "Lead Imports Missing Account",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "200"
+        },
+        {
+          "viewName": "Lead Imports Multiple Accounts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "200"
+        },
+        {
+          "viewName": "Lead Imports Multiple Contacts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "200"
+        },
+        {
+          "viewName": "Quick Find Active Lead Imports",
+          "queryType": "Quick Find",
+          "usage": "column",
+          "width": "200"
+        },
+        {
+          "viewName": "Quick Find Active Lead Imports",
+          "queryType": "Quick Find",
+          "usage": "filter",
+          "operator": "like",
+          "value": "{0}"
+        },
+        {
+          "viewName": "Quick Find Active Lead Imports",
+          "queryType": "Quick Find",
+          "usage": "sort",
+          "descending": false
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "LeadImport",
+          "file": "LeadImport.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "read"
+        },
+        {
+          "className": "LeadImportPopulateName",
+          "file": "LeadImportPopulateName.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "read"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "azt_interestrating",
+      "displayName": "Interest Rating",
+      "description": null,
+      "dataType": "Whole Number",
+      "required": "No",
+      "sourceType": null,
+      "customField": "Yes",
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-20 18:23:19",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [
+        {
+          "formName": "Lead Import",
+          "formType": "main",
+          "formId": "{f9757a11-5f08-405a-a66a-8e9d8cc4014a}",
+          "isActive": true,
+          "location": "General > General",
+          "label": "Interest Rating",
+          "visible": "true",
+          "disabled": "false"
+        },
+        {
+          "formName": "Lead Import Quick View",
+          "formType": "quick",
+          "formId": "{2e02a7dd-e815-4065-ade8-2aab500bf1d8}",
+          "isActive": true,
+          "location": "Tab > section",
+          "label": "Interest Rating",
+          "visible": "true",
+          "disabled": "false"
+        }
+      ],
+      "views": [
+        {
+          "viewName": "Active Lead Imports",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Import Advanced Find View",
+          "queryType": "Advanced Find",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Missing Account",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "150"
+        },
+        {
+          "viewName": "Lead Imports Multiple Accounts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Multiple Contacts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Quick Find Active Lead Imports",
+          "queryType": "Quick Find",
+          "usage": "column",
+          "width": "100"
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "azt_jobtitle",
+      "displayName": "Job Title",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": "Yes",
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-20 18:23:19",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [
+        {
+          "formName": "Lead Import",
+          "formType": "main",
+          "formId": "{f9757a11-5f08-405a-a66a-8e9d8cc4014a}",
+          "isActive": true,
+          "location": "General > General",
+          "label": "Job Title",
+          "visible": "true",
+          "disabled": "false"
+        },
+        {
+          "formName": "Lead Import Quick View",
+          "formType": "quick",
+          "formId": "{2e02a7dd-e815-4065-ade8-2aab500bf1d8}",
+          "isActive": true,
+          "location": "Tab > section",
+          "label": "Job Title",
+          "visible": "true",
+          "disabled": "false"
+        }
+      ],
+      "views": [
+        {
+          "viewName": "Active Lead Imports",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Import Advanced Find View",
+          "queryType": "Advanced Find",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Missing Account",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Multiple Accounts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Multiple Contacts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Quick Find Active Lead Imports",
+          "queryType": "Quick Find",
+          "usage": "column",
+          "width": "100"
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "LeadImport",
+          "file": "LeadImport.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "read"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "azt_lastname",
+      "displayName": "Last Name",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": "Yes",
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-20 18:23:19",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [
+        {
+          "formName": "Lead Import",
+          "formType": "main",
+          "formId": "{f9757a11-5f08-405a-a66a-8e9d8cc4014a}",
+          "isActive": true,
+          "location": "General > General",
+          "label": "Last Name",
+          "visible": "true",
+          "disabled": "false"
+        },
+        {
+          "formName": "Lead Import Quick View",
+          "formType": "quick",
+          "formId": "{2e02a7dd-e815-4065-ade8-2aab500bf1d8}",
+          "isActive": true,
+          "location": "Tab > section",
+          "label": "Last Name",
+          "visible": "true",
+          "disabled": "false"
+        }
+      ],
+      "views": [
+        {
+          "viewName": "Active Lead Imports",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Active Lead Imports",
+          "queryType": "Standard",
+          "usage": "sort",
+          "descending": false
+        },
+        {
+          "viewName": "Lead Import Advanced Find View",
+          "queryType": "Advanced Find",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Missing Account",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Missing Account",
+          "queryType": "Standard",
+          "usage": "sort",
+          "descending": false
+        },
+        {
+          "viewName": "Lead Imports Multiple Accounts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Multiple Accounts Found",
+          "queryType": "Standard",
+          "usage": "sort",
+          "descending": false
+        },
+        {
+          "viewName": "Lead Imports Multiple Contacts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Multiple Contacts Found",
+          "queryType": "Standard",
+          "usage": "sort",
+          "descending": false
+        },
+        {
+          "viewName": "Quick Find Active Lead Imports",
+          "queryType": "Quick Find",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Quick Find Active Lead Imports",
+          "queryType": "Quick Find",
+          "usage": "sort",
+          "descending": false
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "LeadImport",
+          "file": "LeadImport.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "read"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "azt_leadimportid",
+      "displayName": "Lead Import",
+      "description": "Unique identifier for entity instances",
+      "dataType": "GUID",
+      "required": "Yes (SystemRequired)",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-20 18:23:19",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [
+        {
+          "viewName": "Active Lead Imports",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": ""
+        },
+        {
+          "viewName": "Inactive Lead Imports",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": ""
+        },
+        {
+          "viewName": "Lead Import Advanced Find View",
+          "queryType": "Advanced Find",
+          "usage": "column",
+          "width": ""
+        },
+        {
+          "viewName": "Lead Import Associated View",
+          "queryType": "Associated View",
+          "usage": "column",
+          "width": ""
+        },
+        {
+          "viewName": "Lead Import Lookup View",
+          "queryType": "Lookup View",
+          "usage": "column",
+          "width": ""
+        },
+        {
+          "viewName": "Lead Imports Missing Account",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": ""
+        },
+        {
+          "viewName": "Lead Imports Multiple Accounts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": ""
+        },
+        {
+          "viewName": "Lead Imports Multiple Contacts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": ""
+        },
+        {
+          "viewName": "Lead Imports",
+          "queryType": "InteractiveWorkflow",
+          "usage": "column",
+          "width": ""
+        },
+        {
+          "viewName": "Quick Find Active Lead Imports",
+          "queryType": "Quick Find",
+          "usage": "column",
+          "width": ""
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "LeadImport",
+          "file": "LeadImport.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "write"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": [
+        {
+          "type": "in_code_not_on_forms"
+        }
+      ]
+    },
+    {
+      "fieldName": "azt_leadsourceid",
+      "displayName": "Lead Source",
+      "description": "Unique identifier of the Lead Source the Lead Import is associated with.",
+      "dataType": "Lookup",
+      "required": "No",
+      "sourceType": null,
+      "customField": "Yes",
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-20 18:23:19",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [
+        {
+          "formName": "Lead Import",
+          "formType": "main",
+          "formId": "{f9757a11-5f08-405a-a66a-8e9d8cc4014a}",
+          "isActive": true,
+          "location": "General > General",
+          "label": "Lead Source",
+          "visible": "true",
+          "disabled": "false"
+        },
+        {
+          "formName": "Lead Import Quick View",
+          "formType": "quick",
+          "formId": "{2e02a7dd-e815-4065-ade8-2aab500bf1d8}",
+          "isActive": true,
+          "location": "Tab > section",
+          "label": "Lead Source",
+          "visible": "true",
+          "disabled": "false"
+        }
+      ],
+      "views": [
+        {
+          "viewName": "Active Lead Imports",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "150"
+        },
+        {
+          "viewName": "Lead Import Advanced Find View",
+          "queryType": "Advanced Find",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Missing Account",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "150"
+        },
+        {
+          "viewName": "Lead Imports Multiple Accounts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "150"
+        },
+        {
+          "viewName": "Lead Imports Multiple Contacts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "150"
+        },
+        {
+          "viewName": "Quick Find Active Lead Imports",
+          "queryType": "Quick Find",
+          "usage": "column",
+          "width": "150"
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [
+        {
+          "workflowName": "BatchConverttoLead",
+          "file": "BatchConverttoLead-CC0F2DBB-B8CB-4B06-B891-DB6D97252DB8.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "BulkChangeLeadSource",
+          "file": "BulkChangeLeadSource-95E84234-8EE8-433E-B68A-78A0837A91CE.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CreateLeadfromAccount",
+          "file": "CreateLeadfromAccount-B5E04C1C-B038-4018-B602-645B1E766884.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CustomLeadCreation",
+          "file": "CustomLeadCreation-B26AC2BB-4660-4A50-9229-AD056DE0D9E1.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "LeadAssignment",
+          "file": "LeadAssignment-5FC23C73-5B6B-423C-8721-57EDA4553E31.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "LeadSourceChange",
+          "file": "LeadSourceChange-2F1F8085-9B50-4FE8-A756-20DAF80158A8.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "SetLeadTemperature",
+          "file": "SetLeadTemperature-91BC905B-86CD-4317-BC84-E50EE444C775.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "TaskCreateReorderLead",
+          "file": "TaskCreateReorderLead-3193EB56-8E56-46A3-B079-A7CFD1CE90B7.xaml",
+          "usage": "write"
+        }
+      ],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "LeadImport",
+          "file": "LeadImport.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "read"
+        },
+        {
+          "className": "LeadImport",
+          "file": "LeadImport.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "write"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [
+        {
+          "relationshipName": "azt_azt_leadsource_azt_leadimport",
+          "type": "N:1",
+          "referencedEntity": "azt_leadsource",
+          "referencingEntity": "azt_leadimport"
+        }
+      ],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "azt_name",
+      "displayName": "Name",
+      "description": "The name of the custom entity.",
+      "dataType": "Text",
+      "required": "Yes (ApplicationRequired)",
+      "sourceType": null,
+      "customField": "Yes",
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-20 18:23:19",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [
+        {
+          "formName": "Information",
+          "formType": "card",
+          "formId": "{4f86aa87-9cfc-41ca-9489-00449896a5ce}",
+          "isActive": true,
+          "location": "general > Details",
+          "label": "Name",
+          "visible": "true",
+          "disabled": "false"
+        },
+        {
+          "formName": "Lead Import",
+          "formType": "main",
+          "formId": "{f9757a11-5f08-405a-a66a-8e9d8cc4014a}",
+          "isActive": true,
+          "location": "General > Administration",
+          "label": "Name",
+          "visible": "true",
+          "disabled": "false"
+        },
+        {
+          "formName": "Information",
+          "formType": "quick",
+          "formId": "{e558c16c-1179-41f9-ab2b-18f63ad884f1}",
+          "isActive": true,
+          "location": " > GENERAL",
+          "label": "Name",
+          "visible": "true",
+          "disabled": "false"
+        }
+      ],
+      "views": [
+        {
+          "viewName": "Inactive Lead Imports",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "300"
+        },
+        {
+          "viewName": "Inactive Lead Imports",
+          "queryType": "Standard",
+          "usage": "sort",
+          "descending": false
+        },
+        {
+          "viewName": "Lead Import Associated View",
+          "queryType": "Associated View",
+          "usage": "column",
+          "width": "300"
+        },
+        {
+          "viewName": "Lead Import Associated View",
+          "queryType": "Associated View",
+          "usage": "sort",
+          "descending": false
+        },
+        {
+          "viewName": "Lead Import Lookup View",
+          "queryType": "Lookup View",
+          "usage": "column",
+          "width": "300"
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [
+        {
+          "workflowName": "0EngagementNames",
+          "file": "0EngagementNames-BC419DA7-86F1-43E4-88B5-509514704A0C.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "BatchCreateEngagements",
+          "file": "BatchCreateEngagements-CC9CDFC6-4BC9-4635-B786-0C7BE2C34344.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CloneCommissionPayment",
+          "file": "CloneCommissionPayment-7E83F6F0-D101-4045-B686-0B6C658CC9A2.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CloneCompGoal",
+          "file": "CloneCompGoal-156EF22C-38DA-4224-AD13-12A2524502F9.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "CloneLicense",
+          "file": "CloneLicense-49354120-2D2D-4DED-8C24-4ACA5F6D82D9.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "CreateSoftwareLicense",
+          "file": "CreateSoftwareLicense-82C11935-B2A2-4E45-94B4-F0EEA6641A08.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "Order-CreateOrderStageTracking",
+          "file": "Order-CreateOrderStageTracking-DFFA9A38-A8AC-4A7A-AB74-ED0683908649.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "RenameEngagements",
+          "file": "RenameEngagements-9D4DC906-B3F2-498A-AC17-7D302597E96C.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "SoftwareLicenseCreateEngagement",
+          "file": "SoftwareLicenseCreateEngagement-ABFE722A-CAC3-4A3B-AF5C-419EA2CE9CBD.xaml",
+          "usage": "write"
+        }
+      ],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "AccountLeadGenAssociate",
+          "file": "AccountLeadGenAssociate.cs",
+          "targetEntity": "azt_accountleadgeneration",
+          "message": "Associate",
+          "usage": "read"
+        },
+        {
+          "className": "AccountLeadGenAssociate",
+          "file": "AccountLeadGenAssociate.cs",
+          "targetEntity": "azt_accountleadgeneration",
+          "message": "Associate",
+          "usage": "sort"
+        },
+        {
+          "className": "AccountReassignmentShareRecords",
+          "file": "AccountReassignmentShareRecords.cs",
+          "targetEntity": "",
+          "message": "GrantAccess (inferred)",
+          "usage": "sort"
+        },
+        {
+          "className": "AutoNumber",
+          "file": "AutoNumber.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "filter"
+        },
+        {
+          "className": "CloneExpenseLine",
+          "file": "CloneExpenseLine.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "read"
+        },
+        {
+          "className": "CompGoalCreate",
+          "file": "CompGoalCreate.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "write"
+        },
+        {
+          "className": "CreateCompGoals",
+          "file": "CreateCompGoals.cs",
+          "targetEntity": "",
+          "message": "Create (inferred)",
+          "usage": "read"
+        },
+        {
+          "className": "CreateCompGoals",
+          "file": "CreateCompGoals.cs",
+          "targetEntity": "",
+          "message": "Create (inferred)",
+          "usage": "write"
+        },
+        {
+          "className": "CreateSoftwareLicenses",
+          "file": "CreateSoftwareLicenses.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "write"
+        },
+        {
+          "className": "InvoiceCompCompleted",
+          "file": "InvoiceCompCompleted.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "write"
+        },
+        {
+          "className": "LeadImportPopulateName",
+          "file": "LeadImportPopulateName.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "write"
+        },
+        {
+          "className": "OpportunityAudit",
+          "file": "OpportunityAudit.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "write"
+        },
+        {
+          "className": "OpptyToQuoteFieldMappings",
+          "file": "OpptyToQuoteFieldMappings.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "sort"
+        },
+        {
+          "className": "OrderManuallyCreateSoftwareLicense",
+          "file": "OrderManuallyCreateSoftwareLicense.cs",
+          "targetEntity": "",
+          "message": "Create (inferred)",
+          "usage": "write"
+        },
+        {
+          "className": "QuoteOrderProductsTrackDiscount",
+          "file": "QuoteOrderProductsTrackDiscount.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "sort"
+        },
+        {
+          "className": "ReviseQuoteDiscountMove",
+          "file": "ReviseQuoteDiscountMove.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "sort"
+        },
+        {
+          "className": "Utility",
+          "file": "Utility.cs",
+          "targetEntity": "",
+          "message": "",
+          "usage": "write"
+        },
+        {
+          "className": "Utility",
+          "file": "Utility.cs",
+          "targetEntity": "",
+          "message": "",
+          "usage": "sort"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "azt_phone",
+      "displayName": "Phone",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": "Yes",
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-20 18:23:19",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [
+        {
+          "formName": "Lead Import",
+          "formType": "main",
+          "formId": "{f9757a11-5f08-405a-a66a-8e9d8cc4014a}",
+          "isActive": true,
+          "location": "General > General",
+          "label": "Phone",
+          "visible": "true",
+          "disabled": "false"
+        },
+        {
+          "formName": "Lead Import Quick View",
+          "formType": "quick",
+          "formId": "{2e02a7dd-e815-4065-ade8-2aab500bf1d8}",
+          "isActive": true,
+          "location": "Tab > section",
+          "label": "Phone",
+          "visible": "true",
+          "disabled": "false"
+        }
+      ],
+      "views": [
+        {
+          "viewName": "Active Lead Imports",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Import Advanced Find View",
+          "queryType": "Advanced Find",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Missing Account",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Multiple Accounts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Multiple Contacts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Quick Find Active Lead Imports",
+          "queryType": "Quick Find",
+          "usage": "column",
+          "width": "100"
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "LeadImport",
+          "file": "LeadImport.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "read"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "azt_result",
+      "displayName": "Result",
+      "description": null,
+      "dataType": "Choice",
+      "required": "No",
+      "sourceType": null,
+      "customField": "Yes",
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": null,
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [
+        {
+          "viewName": "Active Lead Imports",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "150"
+        },
+        {
+          "viewName": "Lead Imports Missing Account",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "150"
+        },
+        {
+          "viewName": "Lead Imports Multiple Accounts Found",
+          "queryType": "Standard",
+          "usage": "filter",
+          "operator": "eq",
+          "value": "327630004"
+        },
+        {
+          "viewName": "Lead Imports Multiple Contacts Found",
+          "queryType": "Standard",
+          "usage": "filter",
+          "operator": "eq",
+          "value": "327630003"
+        },
+        {
+          "viewName": "Quick Find Active Lead Imports",
+          "queryType": "Quick Find",
+          "usage": "column",
+          "width": "100"
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "LeadImport",
+          "file": "LeadImport.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "write"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": [
+        {
+          "type": "in_code_not_on_forms"
+        }
+      ]
+    },
+    {
+      "fieldName": "Max Length (text):",
+      "displayName": null,
+      "description": null,
+      "dataType": null,
+      "required": null,
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-20 18:23:19",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "azt_stateprovince",
+      "displayName": "State/Province",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": "Yes",
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-20 18:23:19",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [
+        {
+          "formName": "Lead Import",
+          "formType": "main",
+          "formId": "{f9757a11-5f08-405a-a66a-8e9d8cc4014a}",
+          "isActive": true,
+          "location": "General > General",
+          "label": "State/Province",
+          "visible": "true",
+          "disabled": "false"
+        },
+        {
+          "formName": "Lead Import Quick View",
+          "formType": "quick",
+          "formId": "{2e02a7dd-e815-4065-ade8-2aab500bf1d8}",
+          "isActive": true,
+          "location": "Tab > section",
+          "label": "State/Province",
+          "visible": "true",
+          "disabled": "false"
+        }
+      ],
+      "views": [
+        {
+          "viewName": "Active Lead Imports",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Import Advanced Find View",
+          "queryType": "Advanced Find",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Missing Account",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Multiple Accounts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Multiple Contacts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Quick Find Active Lead Imports",
+          "queryType": "Quick Find",
+          "usage": "column",
+          "width": "100"
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "LeadImport",
+          "file": "LeadImport.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "read"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "azt_timeinsession",
+      "displayName": "Time In Session",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": "Yes",
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-20 18:23:19",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [
+        {
+          "formName": "Lead Import",
+          "formType": "main",
+          "formId": "{f9757a11-5f08-405a-a66a-8e9d8cc4014a}",
+          "isActive": true,
+          "location": "General > General",
+          "label": "Time In Session",
+          "visible": "true",
+          "disabled": "false"
+        },
+        {
+          "formName": "Lead Import Quick View",
+          "formType": "quick",
+          "formId": "{2e02a7dd-e815-4065-ade8-2aab500bf1d8}",
+          "isActive": true,
+          "location": "Tab > section",
+          "label": "Time In Session",
+          "visible": "true",
+          "disabled": "false"
+        }
+      ],
+      "views": [
+        {
+          "viewName": "Active Lead Imports",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Import Advanced Find View",
+          "queryType": "Advanced Find",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Missing Account",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Multiple Accounts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Multiple Contacts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Quick Find Active Lead Imports",
+          "queryType": "Quick Find",
+          "usage": "column",
+          "width": "125"
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "azt_unsubscribe",
+      "displayName": "Unsubscribe?",
+      "description": null,
+      "dataType": "Yes/No",
+      "required": "No",
+      "sourceType": null,
+      "customField": "Yes",
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-20 18:23:19",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [
+        {
+          "formName": "Lead Import",
+          "formType": "main",
+          "formId": "{f9757a11-5f08-405a-a66a-8e9d8cc4014a}",
+          "isActive": true,
+          "location": "General > General",
+          "label": "Unsubscribe?",
+          "visible": "true",
+          "disabled": "false"
+        }
+      ],
+      "views": [
+        {
+          "viewName": "Active Lead Imports",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Import Advanced Find View",
+          "queryType": "Advanced Find",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Missing Account",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Multiple Accounts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Multiple Contacts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Quick Find Active Lead Imports",
+          "queryType": "Quick Find",
+          "usage": "column",
+          "width": "100"
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "createdby",
+      "displayName": "Created By",
+      "description": "Unique identifier of the user who created the record.",
+      "dataType": "Lookup",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-20 18:23:19",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [
+        {
+          "workflowName": "AccountAuto-Assign",
+          "file": "AccountAuto-Assign-6DE252A4-C0D8-4C6B-800E-3985440C88D1.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "CasePendingAssignmentNotification",
+          "file": "CasePendingAssignmentNotification-177DE8B3-E0C3-4F1C-A7B5-DA84B3629AED.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "CaseRecordOwnerAssign",
+          "file": "CaseRecordOwnerAssign-02EE1A9D-1658-4013-BF63-9C0E5C65AAD0.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "CaseRecordOwnerAssignmentNotification",
+          "file": "CaseRecordOwnerAssignmentNotification-2F6035E6-1FBC-476B-9C97-4554E8360B7C.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "CaseResolutionNotificationEmail",
+          "file": "CaseResolutionNotificationEmail-734E721F-7454-4437-8BAC-8B20F496DF12.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "ContactAuto-Assign",
+          "file": "ContactAuto-Assign-25759C22-AE58-4CC7-81E1-9BBF37E76F3E.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "EngagementRecordOwner",
+          "file": "EngagementRecordOwner-00BE88CF-37E2-46ED-951B-A553329BC127.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "FSRLeadDistibutionNotification",
+          "file": "FSRLeadDistibutionNotification-2D276CE9-54BF-4703-A56C-933E5C57F3C7.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "LeadAssignment",
+          "file": "LeadAssignment-5FC23C73-5B6B-423C-8721-57EDA4553E31.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "NewFSRLeadNotification",
+          "file": "NewFSRLeadNotification-53E6AF89-E489-4977-8D9F-1579FF72FAC5.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "PhonecallAuto-Assign",
+          "file": "PhonecallAuto-Assign-D7FD43A4-5AFF-4929-BD37-A1917C4F2391.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "QuoteRecordOwner",
+          "file": "QuoteRecordOwner-C5266A8C-E23D-41C4-B51F-3A637538DDBF.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "TaskAuto-Assign",
+          "file": "TaskAuto-Assign-89E60667-3F7F-4ADD-8274-57C2BE011059.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "WorkforceAccountAuto-assign",
+          "file": "WorkforceAccountAuto-assign-1AD2C544-E6F9-4FC7-AA17-810AEB8939C2.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "WorkforceAppointmentAuto-Assign",
+          "file": "WorkforceAppointmentAuto-Assign-803829FB-077B-4F0B-B238-105814F5B202.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "WorkforceCaseAuto-assign",
+          "file": "WorkforceCaseAuto-assign-24BA0A9C-F8BD-45CB-A5F6-6DCE42CD998F.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "WorkforceContactAuto-assign",
+          "file": "WorkforceContactAuto-assign-65B65E23-A8F5-46DB-A35A-C5DC8542B6AE.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "WorkforceEngagementAuto-assign",
+          "file": "WorkforceEngagementAuto-assign-DA5CDD7F-2A3B-4A0A-861D-75305D10254E.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "WorkforceLeadAuto-Assign",
+          "file": "WorkforceLeadAuto-Assign-E5A4054C-5F7E-478C-87E3-529C1EEAB0DC.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "WorkforceOpportunityAuto-assign",
+          "file": "WorkforceOpportunityAuto-assign-7D379FBE-C672-41EB-90A3-A80451C62533.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "WorkforcePhone-callAuto-assign",
+          "file": "WorkforcePhone-callAuto-assign-BE1CB211-7C3C-4E39-8913-2DFCE7EDFC85.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "WorkforceQuoteAuto-assign",
+          "file": "WorkforceQuoteAuto-assign-E64BB2BB-5CD6-4327-AB1B-BF8C9D4D2385.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "iGradAppointmentAuto-Assign",
+          "file": "iGradAppointmentAuto-Assign-CE88A0C4-AA60-44F4-B33D-B57FB8279CCF.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "iGradCaseAuto-Assign",
+          "file": "iGradCaseAuto-Assign-CAF5021E-07E1-4689-92D5-FC59E9F30F78.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "iGradPhone-callAuto-assign",
+          "file": "iGradPhone-callAuto-assign-04423D55-3225-429E-BAC6-8DD37BC53F1B.xaml",
+          "usage": "read"
+        }
+      ],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [
+        {
+          "relationshipName": "lk_azt_leadimport_createdby",
+          "type": "N:1",
+          "referencedEntity": "SystemUser",
+          "referencingEntity": "azt_leadimport"
+        }
+      ],
+      "ribbon": [],
+      "conflicts": [
+        {
+          "type": "in_code_not_on_forms"
+        }
+      ]
+    },
+    {
+      "fieldName": "createdon",
+      "displayName": "Created On",
+      "description": "Date and time when the record was created.",
+      "dataType": "DateTime",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-20 18:23:19",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [
+        {
+          "formName": "Information",
+          "formType": "card",
+          "formId": "{4f86aa87-9cfc-41ca-9489-00449896a5ce}",
+          "isActive": true,
+          "location": "general > Footer",
+          "label": "Created On",
+          "visible": "true",
+          "disabled": "false"
+        },
+        {
+          "formName": "Lead Import Quick View",
+          "formType": "quick",
+          "formId": "{2e02a7dd-e815-4065-ade8-2aab500bf1d8}",
+          "isActive": true,
+          "location": "Tab > section",
+          "label": "Created On",
+          "visible": "true",
+          "disabled": "false"
+        }
+      ],
+      "views": [
+        {
+          "viewName": "Active Lead Imports",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "125"
+        },
+        {
+          "viewName": "Active Lead Imports",
+          "queryType": "Standard",
+          "usage": "sort",
+          "descending": true
+        },
+        {
+          "viewName": "Inactive Lead Imports",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "125"
+        },
+        {
+          "viewName": "Lead Import Advanced Find View",
+          "queryType": "Advanced Find",
+          "usage": "column",
+          "width": "125"
+        },
+        {
+          "viewName": "Lead Import Advanced Find View",
+          "queryType": "Advanced Find",
+          "usage": "sort",
+          "descending": true
+        },
+        {
+          "viewName": "Lead Import Associated View",
+          "queryType": "Associated View",
+          "usage": "column",
+          "width": "125"
+        },
+        {
+          "viewName": "Lead Import Lookup View",
+          "queryType": "Lookup View",
+          "usage": "column",
+          "width": "125"
+        },
+        {
+          "viewName": "Lead Imports Missing Account",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Lead Imports Missing Account",
+          "queryType": "Standard",
+          "usage": "sort",
+          "descending": true
+        },
+        {
+          "viewName": "Lead Imports Multiple Accounts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "125"
+        },
+        {
+          "viewName": "Lead Imports Multiple Accounts Found",
+          "queryType": "Standard",
+          "usage": "sort",
+          "descending": true
+        },
+        {
+          "viewName": "Lead Imports Multiple Contacts Found",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "125"
+        },
+        {
+          "viewName": "Lead Imports Multiple Contacts Found",
+          "queryType": "Standard",
+          "usage": "sort",
+          "descending": true
+        },
+        {
+          "viewName": "Quick Find Active Lead Imports",
+          "queryType": "Quick Find",
+          "usage": "column",
+          "width": "125"
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [
+        {
+          "workflowName": "CasePendingAssignmentNotification",
+          "file": "CasePendingAssignmentNotification-177DE8B3-E0C3-4F1C-A7B5-DA84B3629AED.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "CaseRecordOwnerAssignmentNotification",
+          "file": "CaseRecordOwnerAssignmentNotification-2F6035E6-1FBC-476B-9C97-4554E8360B7C.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "EffectiveTo",
+          "file": "EffectiveTo-C96A6885-1A20-E911-A94F-000D3A3B9B3D.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "EmailDeleteSendQuoteDrafts",
+          "file": "EmailDeleteSendQuoteDrafts-ED77962D-F57D-4F2F-A580-1F5D27E1280C.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "EmailRemoveUnsentEmails",
+          "file": "EmailRemoveUnsentEmails-2F1954B7-77B4-4D54-AA84-DBB10DFB6A71.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "FSRLeadDistibutionNotification",
+          "file": "FSRLeadDistibutionNotification-2D276CE9-54BF-4703-A56C-933E5C57F3C7.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "NewFSRLeadNotification",
+          "file": "NewFSRLeadNotification-53E6AF89-E489-4977-8D9F-1579FF72FAC5.xaml",
+          "usage": "read"
+        }
+      ],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "AccountLeadGen",
+          "file": "AccountLeadGen.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "filter"
+        },
+        {
+          "className": "ChangeLicenseType",
+          "file": "ChangeLicenseType.cs",
+          "targetEntity": "",
+          "message": "",
+          "usage": "sort"
+        },
+        {
+          "className": "CreateUserGoals",
+          "file": "CreateUserGoals.cs",
+          "targetEntity": "",
+          "message": "Create (inferred)",
+          "usage": "read"
+        },
+        {
+          "className": "CreateUserGoals",
+          "file": "CreateUserGoals.cs",
+          "targetEntity": "",
+          "message": "Create (inferred)",
+          "usage": "sort"
+        },
+        {
+          "className": "InvoiceCompCompleted",
+          "file": "InvoiceCompCompleted.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "sort"
+        },
+        {
+          "className": "OpptyToQuoteFieldMappings",
+          "file": "OpptyToQuoteFieldMappings.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "sort"
+        },
+        {
+          "className": "OrderStageTracking",
+          "file": "OrderStageTracking.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "read"
+        },
+        {
+          "className": "OrderStageTracking",
+          "file": "OrderStageTracking.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "sort"
+        },
+        {
+          "className": "ShipmentSetTrackingNumber",
+          "file": "ShipmentSetTrackingNumber.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "sort"
+        },
+        {
+          "className": "UpdateOppFromQuote",
+          "file": "UpdateOppFromQuote.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "read"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "createdonbehalfby",
+      "displayName": "Created By (Delegate)",
+      "description": "Unique identifier of the delegate user who created the record.",
+      "dataType": "Lookup",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "importsequencenumber",
+      "displayName": "Import Sequence Number",
+      "description": "Sequence number of the import that created this record.",
+      "dataType": "Whole Number",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-20 18:23:19",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "modifiedby",
+      "displayName": "Modified By",
+      "description": "Unique identifier of the user who modified the record.",
+      "dataType": "Lookup",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-20 18:23:19",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [
+        {
+          "workflowName": "LeadQualifyDisqualifyDate",
+          "file": "LeadQualifyDisqualifyDate-4DF6EBF4-0F22-4433-AB4F-A241C91F8B5A.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "Order-CreateOrderStageTracking",
+          "file": "Order-CreateOrderStageTracking-DFFA9A38-A8AC-4A7A-AB74-ED0683908649.xaml",
+          "usage": "write"
+        }
+      ],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [
+        {
+          "relationshipName": "lk_azt_leadimport_modifiedby",
+          "type": "N:1",
+          "referencedEntity": "SystemUser",
+          "referencingEntity": "azt_leadimport"
+        }
+      ],
+      "ribbon": [],
+      "conflicts": [
+        {
+          "type": "in_code_not_on_forms"
+        }
+      ]
+    },
+    {
+      "fieldName": "modifiedon",
+      "displayName": "Modified On",
+      "description": "Date and time when the record was modified.",
+      "dataType": "DateTime",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "AccountReassignmentShareRecords",
+          "file": "AccountReassignmentShareRecords.cs",
+          "targetEntity": "",
+          "message": "GrantAccess (inferred)",
+          "usage": "sort"
+        },
+        {
+          "className": "OpportunityLineSyncToQuote",
+          "file": "OpportunityLineSyncToQuote.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "sort"
+        },
+        {
+          "className": "UpdateOppFromQuote",
+          "file": "UpdateOppFromQuote.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "read"
+        },
+        {
+          "className": "UpdateOppFromQuote",
+          "file": "UpdateOppFromQuote.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "sort"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": [
+        {
+          "type": "in_code_not_on_forms"
+        }
+      ]
+    },
+    {
+      "fieldName": "modifiedonbehalfby",
+      "displayName": "Modified By (Delegate)",
+      "description": "Unique identifier of the delegate user who modified the record.",
+      "dataType": "Lookup",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "organizationid",
+      "displayName": "Organization Id",
+      "description": "Unique identifier for the organization",
+      "dataType": "Lookup",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-20 18:23:19",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [
+        {
+          "relationshipName": "organization_azt_leadimport",
+          "type": "N:1",
+          "referencedEntity": "Organization",
+          "referencingEntity": "azt_leadimport"
+        }
+      ],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "overriddencreatedon",
+      "displayName": "Record Created On",
+      "description": "Date and time that the record was migrated.",
+      "dataType": "DateTime",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "statecode",
+      "displayName": "Status",
+      "description": "Status of the Lead Import",
+      "dataType": "Choice",
+      "required": "Yes (SystemRequired)",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": null,
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [
+        {
+          "viewName": "Active Lead Imports",
+          "queryType": "Standard",
+          "usage": "filter",
+          "operator": "eq",
+          "value": "0"
+        },
+        {
+          "viewName": "Inactive Lead Imports",
+          "queryType": "Standard",
+          "usage": "filter",
+          "operator": "eq",
+          "value": "1"
+        },
+        {
+          "viewName": "Lead Import Associated View",
+          "queryType": "Associated View",
+          "usage": "filter",
+          "operator": "eq",
+          "value": "0"
+        },
+        {
+          "viewName": "Lead Import Lookup View",
+          "queryType": "Lookup View",
+          "usage": "filter",
+          "operator": "eq",
+          "value": "0"
+        },
+        {
+          "viewName": "Lead Imports Missing Account",
+          "queryType": "Standard",
+          "usage": "filter",
+          "operator": "eq",
+          "value": "0"
+        },
+        {
+          "viewName": "Lead Imports Multiple Accounts Found",
+          "queryType": "Standard",
+          "usage": "filter",
+          "operator": "eq",
+          "value": "0"
+        },
+        {
+          "viewName": "Lead Imports Multiple Contacts Found",
+          "queryType": "Standard",
+          "usage": "filter",
+          "operator": "eq",
+          "value": "0"
+        },
+        {
+          "viewName": "Lead Imports",
+          "queryType": "InteractiveWorkflow",
+          "usage": "filter",
+          "operator": "eq",
+          "value": "0"
+        },
+        {
+          "viewName": "Quick Find Active Lead Imports",
+          "queryType": "Quick Find",
+          "usage": "filter",
+          "operator": "eq",
+          "value": "0"
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [
+        {
+          "workflowName": "BatchConverttoLead",
+          "file": "BatchConverttoLead-CC0F2DBB-B8CB-4B06-B891-DB6D97252DB8.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CaseResolutionNotificationEmail",
+          "file": "CaseResolutionNotificationEmail-734E721F-7454-4437-8BAC-8B20F496DF12.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "CloneOrder",
+          "file": "CloneOrder-D2A6AD48-A603-4150-BC84-72092AFB3D79.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CreateLeadFromLeadGen",
+          "file": "CreateLeadFromLeadGen-2EA14729-4B62-4F91-95FA-76D258DA0831.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CreateLeadfromAccount",
+          "file": "CreateLeadfromAccount-B5E04C1C-B038-4018-B602-645B1E766884.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CustomLeadCreation",
+          "file": "CustomLeadCreation-B26AC2BB-4660-4A50-9229-AD056DE0D9E1.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "LeadQualifyDisqualifyDate",
+          "file": "LeadQualifyDisqualifyDate-4DF6EBF4-0F22-4433-AB4F-A241C91F8B5A.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "OpportunityAuditRemoval",
+          "file": "OpportunityAuditRemoval-DB05BF90-221B-4B58-8AA0-D1A0799EA0A1.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "TaskCreateReorderLead",
+          "file": "TaskCreateReorderLead-3193EB56-8E56-46A3-B079-A7CFD1CE90B7.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "WonOpportunityEmail",
+          "file": "WonOpportunityEmail-DB2872A0-18C2-4157-B6BD-480230C97D32.xaml",
+          "usage": "read"
+        }
+      ],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "AccountLeadGen",
+          "file": "AccountLeadGen.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "filter"
+        },
+        {
+          "className": "ActivityCloseForceRecordOwner",
+          "file": "ActivityCloseForceRecordOwner.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "read"
+        },
+        {
+          "className": "AllocationValidation",
+          "file": "AllocationValidation.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "filter"
+        },
+        {
+          "className": "ContactSetConnectionRole",
+          "file": "ContactSetConnectionRole.cs",
+          "targetEntity": "",
+          "message": "azt_ContactSetConnectionRole",
+          "usage": "read"
+        },
+        {
+          "className": "CreateSoftwareLicenses",
+          "file": "CreateSoftwareLicenses.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "read"
+        },
+        {
+          "className": "CreateSoftwareLicenses",
+          "file": "CreateSoftwareLicenses.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "image"
+        },
+        {
+          "className": "CreateUserGoals",
+          "file": "CreateUserGoals.cs",
+          "targetEntity": "",
+          "message": "Create (inferred)",
+          "usage": "filter"
+        },
+        {
+          "className": "DiscretionaryDiscountSetHeader",
+          "file": "DiscretionaryDiscountSetHeader.cs",
+          "targetEntity": "",
+          "message": "Delete",
+          "usage": "read"
+        },
+        {
+          "className": "DiscretionaryDiscountSetHeader",
+          "file": "DiscretionaryDiscountSetHeader.cs",
+          "targetEntity": "",
+          "message": "Delete",
+          "usage": "filter"
+        },
+        {
+          "className": "ExpenseRestrictVisibility",
+          "file": "ExpenseRestrictVisibility.cs",
+          "targetEntity": "",
+          "message": "",
+          "usage": "filter"
+        },
+        {
+          "className": "FundingSetAnnualSpend",
+          "file": "FundingSetAnnualSpend.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "filter"
+        },
+        {
+          "className": "InvoiceClosePaidOnPercentage",
+          "file": "InvoiceClosePaidOnPercentage.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "read"
+        },
+        {
+          "className": "InvoiceCompCompleted",
+          "file": "InvoiceCompCompleted.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "write"
+        },
+        {
+          "className": "LeadImport",
+          "file": "LeadImport.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "filter"
+        },
+        {
+          "className": "OpportunityLineSyncToQuote",
+          "file": "OpportunityLineSyncToQuote.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "read"
+        },
+        {
+          "className": "PhonecallCreateCallback",
+          "file": "PhonecallCreateCallback.cs",
+          "targetEntity": "team",
+          "message": "Create",
+          "usage": "read"
+        },
+        {
+          "className": "ProductDiscountPreventOnActiveQuote",
+          "file": "ProductDiscountPreventOnActiveQuote.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "read"
+        },
+        {
+          "className": "RestrictCreateQuote",
+          "file": "RestrictCreateQuote.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "filter"
+        },
+        {
+          "className": "SetPrimaryContact",
+          "file": "SetPrimaryContact.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "read"
+        },
+        {
+          "className": "Utility",
+          "file": "Utility.cs",
+          "targetEntity": "",
+          "message": "",
+          "usage": "read"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": [
+        {
+          "type": "in_code_not_on_forms"
+        }
+      ]
+    },
+    {
+      "fieldName": "Max Length (text):",
+      "displayName": null,
+      "description": null,
+      "dataType": null,
+      "required": null,
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-20 18:23:19",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "statuscode",
+      "displayName": "Status Reason",
+      "description": "Reason for the status of the Lead Import",
+      "dataType": "Choice",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": null,
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [
+        {
+          "formName": "Information",
+          "formType": "card",
+          "formId": "{4f86aa87-9cfc-41ca-9489-00449896a5ce}",
+          "isActive": true,
+          "location": "general > Header",
+          "label": "Status Reason",
+          "visible": "true",
+          "disabled": "false"
+        }
+      ],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [
+        {
+          "workflowName": "BatchCreateEngagements",
+          "file": "BatchCreateEngagements-CC9CDFC6-4BC9-4635-B786-0C7BE2C34344.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CloneOrder",
+          "file": "CloneOrder-D2A6AD48-A603-4150-BC84-72092AFB3D79.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "EmailDeleteSendQuoteDrafts",
+          "file": "EmailDeleteSendQuoteDrafts-ED77962D-F57D-4F2F-A580-1F5D27E1280C.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "EmailRemoveUnsentEmails",
+          "file": "EmailRemoveUnsentEmails-2F1954B7-77B4-4D54-AA84-DBB10DFB6A71.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "SoftwareLicenseCreateEngagement",
+          "file": "SoftwareLicenseCreateEngagement-ABFE722A-CAC3-4A3B-AF5C-419EA2CE9CBD.xaml",
+          "usage": "write"
+        }
+      ],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "CreateUserGoals",
+          "file": "CreateUserGoals.cs",
+          "targetEntity": "",
+          "message": "Create (inferred)",
+          "usage": "read"
+        },
+        {
+          "className": "InvoiceCompCompleted",
+          "file": "InvoiceCompCompleted.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "read"
+        },
+        {
+          "className": "InvoiceCompCompleted",
+          "file": "InvoiceCompCompleted.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "write"
+        },
+        {
+          "className": "InvoiceCompCompleted",
+          "file": "InvoiceCompCompleted.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "filter"
+        },
+        {
+          "className": "PaymentUpdate",
+          "file": "PaymentUpdate.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "read"
+        },
+        {
+          "className": "Utility",
+          "file": "Utility.cs",
+          "targetEntity": "",
+          "message": "",
+          "usage": "filter"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "Max Length (text):",
+      "displayName": null,
+      "description": null,
+      "dataType": null,
+      "required": null,
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-20 18:23:19",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "timezoneruleversionnumber",
+      "displayName": "Time Zone Rule Version Number",
+      "description": "For internal use only.",
+      "dataType": "Whole Number",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "utcconversiontimezonecode",
+      "displayName": "UTC Conversion Time Zone Code",
+      "description": "Time zone code that was in use when the record was created.",
+      "dataType": "Whole Number",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "versionnumber",
+      "displayName": "Version Number",
+      "description": "Version Number",
+      "dataType": "Big Integer",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-20 18:23:19",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "azt_leadsourceidname",
+      "displayName": "azt_leadsourceidname",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": "Yes",
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "createdbyname",
+      "displayName": "createdbyname",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "createdbyyominame",
+      "displayName": "createdbyyominame",
+      "description": null,
+      "dataType": "Text",
+      "required": "Yes (SystemRequired)",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "createdonbehalfbyname",
+      "displayName": "createdonbehalfbyname",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "createdonbehalfbyyominame",
+      "displayName": "createdonbehalfbyyominame",
+      "description": null,
+      "dataType": "Text",
+      "required": "Yes (SystemRequired)",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "modifiedbyname",
+      "displayName": "modifiedbyname",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "modifiedbyyominame",
+      "displayName": "modifiedbyyominame",
+      "description": null,
+      "dataType": "Text",
+      "required": "Yes (SystemRequired)",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "modifiedonbehalfbyname",
+      "displayName": "modifiedonbehalfbyname",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "modifiedonbehalfbyyominame",
+      "displayName": "modifiedonbehalfbyyominame",
+      "description": null,
+      "dataType": "Text",
+      "required": "Yes (SystemRequired)",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "organizationidname",
+      "displayName": "organizationidname",
+      "description": null,
+      "dataType": "Text",
+      "required": "Yes (SystemRequired)",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    }
+  ],
+  "dataTransformationRules": []
+}

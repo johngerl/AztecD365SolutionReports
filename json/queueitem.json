@@ -1,0 +1,3231 @@
+{
+  "entityName": "queueitem",
+  "displayName": "Queue Item",
+  "objectType": "Standard",
+  "recordCount": 20425,
+  "lastUpdate": "2026-01-21 20:22:12",
+  "description": "A specific item in a queue, such as a case record or an activity record.",
+  "ownershipType": "None",
+  "auditEnabled": "Yes",
+  "primaryIdField": "queueitemid",
+  "primaryNameField": "title",
+  "fields": [
+    {
+      "fieldName": "queueitemid",
+      "displayName": "Queue Item",
+      "description": "Unique identifier of the queue item.",
+      "dataType": "GUID",
+      "required": "Yes (SystemRequired)",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": "None",
+      "maxLength": null,
+      "lastUpdate": "2026-02-01 20:59:05",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [
+        {
+          "viewName": "All Items",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Items available to work on",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Items I am working on",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "PhonecallCreateCallback",
+          "file": "PhonecallCreateCallback.cs",
+          "targetEntity": "team",
+          "message": "Create",
+          "usage": "read"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": [
+        {
+          "type": "in_code_not_on_forms"
+        }
+      ]
+    },
+    {
+      "fieldName": "queueid",
+      "displayName": "Queue",
+      "description": "Choose the queue that the item is assigned to.",
+      "dataType": "Lookup",
+      "required": "Yes (ApplicationRequired)",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": "queue",
+      "maxLength": null,
+      "lastUpdate": "2026-02-01 20:59:05",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [
+        {
+          "viewName": "All Items",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "150"
+        },
+        {
+          "viewName": "Items available to work on",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "150"
+        },
+        {
+          "viewName": "Items I am working on",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "150"
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "PhonecallCreateCallback",
+          "file": "PhonecallCreateCallback.cs",
+          "targetEntity": "team",
+          "message": "Create",
+          "usage": "read"
+        },
+        {
+          "className": "PhonecallCreateCallback",
+          "file": "PhonecallCreateCallback.cs",
+          "targetEntity": "team",
+          "message": "Create",
+          "usage": "write"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": [
+        {
+          "type": "in_code_not_on_forms"
+        }
+      ]
+    },
+    {
+      "fieldName": "objectid",
+      "displayName": "Object",
+      "description": "Choose the activity, case, or article assigned to the queue.",
+      "dataType": "Lookup (Polymorphic)",
+      "required": "Yes (ApplicationRequired)",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": "Multiple entity types",
+      "maxLength": null,
+      "lastUpdate": "2026-02-01 20:59:05",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [
+        {
+          "viewName": "All Items",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": ""
+        },
+        {
+          "viewName": "Items available to work on",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": ""
+        },
+        {
+          "viewName": "Items I am working on",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": ""
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "PhonecallCreateCallback",
+          "file": "PhonecallCreateCallback.cs",
+          "targetEntity": "team",
+          "message": "Create",
+          "usage": "write"
+        },
+        {
+          "className": "PhonecallCreateCallback",
+          "file": "PhonecallCreateCallback.cs",
+          "targetEntity": "team",
+          "message": "Create",
+          "usage": "filter"
+        },
+        {
+          "className": "SendQuoteReport",
+          "file": "SendQuoteReport.cs",
+          "targetEntity": "",
+          "message": "",
+          "usage": "write"
+        },
+        {
+          "className": "ShareWithAccountOwner",
+          "file": "ShareWithAccountOwner.cs",
+          "targetEntity": "",
+          "message": "GrantAccess (inferred)",
+          "usage": "read"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": [
+        {
+          "type": "in_code_not_on_forms"
+        }
+      ]
+    },
+    {
+      "fieldName": "objecttypecode",
+      "displayName": "Type",
+      "description": "Select the type of the queue item, such as activity, case, or appointment.",
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": "None",
+      "maxLength": null,
+      "lastUpdate": "2026-02-01 20:59:05",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [
+        {
+          "viewName": "All Items",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Items available to work on",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Items I am working on",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "SendQuoteReport",
+          "file": "SendQuoteReport.cs",
+          "targetEntity": "",
+          "message": "",
+          "usage": "write"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": [
+        {
+          "type": "in_code_not_on_forms"
+        }
+      ]
+    },
+    {
+      "fieldName": "priority",
+      "displayName": "Priority",
+      "description": "Priority of the queue item.",
+      "dataType": "Integer",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": "None",
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "createdby",
+      "displayName": "Created By",
+      "description": "Shows who created the record.",
+      "dataType": "Lookup",
+      "required": "Yes",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": "systemuser",
+      "maxLength": null,
+      "lastUpdate": "2026-02-01 20:59:05",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [
+        {
+          "workflowName": "AccountAuto-Assign",
+          "file": "AccountAuto-Assign-6DE252A4-C0D8-4C6B-800E-3985440C88D1.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "CasePendingAssignmentNotification",
+          "file": "CasePendingAssignmentNotification-177DE8B3-E0C3-4F1C-A7B5-DA84B3629AED.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "CaseRecordOwnerAssign",
+          "file": "CaseRecordOwnerAssign-02EE1A9D-1658-4013-BF63-9C0E5C65AAD0.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "CaseRecordOwnerAssignmentNotification",
+          "file": "CaseRecordOwnerAssignmentNotification-2F6035E6-1FBC-476B-9C97-4554E8360B7C.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "CaseResolutionNotificationEmail",
+          "file": "CaseResolutionNotificationEmail-734E721F-7454-4437-8BAC-8B20F496DF12.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "ContactAuto-Assign",
+          "file": "ContactAuto-Assign-25759C22-AE58-4CC7-81E1-9BBF37E76F3E.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "EngagementRecordOwner",
+          "file": "EngagementRecordOwner-00BE88CF-37E2-46ED-951B-A553329BC127.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "FSRLeadDistibutionNotification",
+          "file": "FSRLeadDistibutionNotification-2D276CE9-54BF-4703-A56C-933E5C57F3C7.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "LeadAssignment",
+          "file": "LeadAssignment-5FC23C73-5B6B-423C-8721-57EDA4553E31.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "NewFSRLeadNotification",
+          "file": "NewFSRLeadNotification-53E6AF89-E489-4977-8D9F-1579FF72FAC5.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "PhonecallAuto-Assign",
+          "file": "PhonecallAuto-Assign-D7FD43A4-5AFF-4929-BD37-A1917C4F2391.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "QuoteRecordOwner",
+          "file": "QuoteRecordOwner-C5266A8C-E23D-41C4-B51F-3A637538DDBF.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "TaskAuto-Assign",
+          "file": "TaskAuto-Assign-89E60667-3F7F-4ADD-8274-57C2BE011059.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "WorkforceAccountAuto-assign",
+          "file": "WorkforceAccountAuto-assign-1AD2C544-E6F9-4FC7-AA17-810AEB8939C2.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "WorkforceAppointmentAuto-Assign",
+          "file": "WorkforceAppointmentAuto-Assign-803829FB-077B-4F0B-B238-105814F5B202.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "WorkforceCaseAuto-assign",
+          "file": "WorkforceCaseAuto-assign-24BA0A9C-F8BD-45CB-A5F6-6DCE42CD998F.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "WorkforceContactAuto-assign",
+          "file": "WorkforceContactAuto-assign-65B65E23-A8F5-46DB-A35A-C5DC8542B6AE.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "WorkforceEngagementAuto-assign",
+          "file": "WorkforceEngagementAuto-assign-DA5CDD7F-2A3B-4A0A-861D-75305D10254E.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "WorkforceLeadAuto-Assign",
+          "file": "WorkforceLeadAuto-Assign-E5A4054C-5F7E-478C-87E3-529C1EEAB0DC.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "WorkforceOpportunityAuto-assign",
+          "file": "WorkforceOpportunityAuto-assign-7D379FBE-C672-41EB-90A3-A80451C62533.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "WorkforcePhone-callAuto-assign",
+          "file": "WorkforcePhone-callAuto-assign-BE1CB211-7C3C-4E39-8913-2DFCE7EDFC85.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "WorkforceQuoteAuto-assign",
+          "file": "WorkforceQuoteAuto-assign-E64BB2BB-5CD6-4327-AB1B-BF8C9D4D2385.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "iGradAppointmentAuto-Assign",
+          "file": "iGradAppointmentAuto-Assign-CE88A0C4-AA60-44F4-B33D-B57FB8279CCF.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "iGradCaseAuto-Assign",
+          "file": "iGradCaseAuto-Assign-CAF5021E-07E1-4689-92D5-FC59E9F30F78.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "iGradPhone-callAuto-assign",
+          "file": "iGradPhone-callAuto-assign-04423D55-3225-429E-BAC6-8DD37BC53F1B.xaml",
+          "usage": "read"
+        }
+      ],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": [
+        {
+          "type": "in_code_not_on_forms"
+        }
+      ]
+    },
+    {
+      "fieldName": "createdon",
+      "displayName": "Created On",
+      "description": "Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.",
+      "dataType": "DateTime",
+      "required": "Yes",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": "None",
+      "maxLength": null,
+      "lastUpdate": "2026-02-01 20:59:05",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [
+        {
+          "workflowName": "CasePendingAssignmentNotification",
+          "file": "CasePendingAssignmentNotification-177DE8B3-E0C3-4F1C-A7B5-DA84B3629AED.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "CaseRecordOwnerAssignmentNotification",
+          "file": "CaseRecordOwnerAssignmentNotification-2F6035E6-1FBC-476B-9C97-4554E8360B7C.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "EffectiveTo",
+          "file": "EffectiveTo-C96A6885-1A20-E911-A94F-000D3A3B9B3D.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "EmailDeleteSendQuoteDrafts",
+          "file": "EmailDeleteSendQuoteDrafts-ED77962D-F57D-4F2F-A580-1F5D27E1280C.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "EmailRemoveUnsentEmails",
+          "file": "EmailRemoveUnsentEmails-2F1954B7-77B4-4D54-AA84-DBB10DFB6A71.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "FSRLeadDistibutionNotification",
+          "file": "FSRLeadDistibutionNotification-2D276CE9-54BF-4703-A56C-933E5C57F3C7.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "NewFSRLeadNotification",
+          "file": "NewFSRLeadNotification-53E6AF89-E489-4977-8D9F-1579FF72FAC5.xaml",
+          "usage": "read"
+        }
+      ],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "AccountLeadGen",
+          "file": "AccountLeadGen.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "filter"
+        },
+        {
+          "className": "ChangeLicenseType",
+          "file": "ChangeLicenseType.cs",
+          "targetEntity": "",
+          "message": "",
+          "usage": "sort"
+        },
+        {
+          "className": "CreateUserGoals",
+          "file": "CreateUserGoals.cs",
+          "targetEntity": "",
+          "message": "Create (inferred)",
+          "usage": "read"
+        },
+        {
+          "className": "CreateUserGoals",
+          "file": "CreateUserGoals.cs",
+          "targetEntity": "",
+          "message": "Create (inferred)",
+          "usage": "sort"
+        },
+        {
+          "className": "InvoiceCompCompleted",
+          "file": "InvoiceCompCompleted.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "sort"
+        },
+        {
+          "className": "OpptyToQuoteFieldMappings",
+          "file": "OpptyToQuoteFieldMappings.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "sort"
+        },
+        {
+          "className": "OrderStageTracking",
+          "file": "OrderStageTracking.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "read"
+        },
+        {
+          "className": "OrderStageTracking",
+          "file": "OrderStageTracking.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "sort"
+        },
+        {
+          "className": "ShipmentSetTrackingNumber",
+          "file": "ShipmentSetTrackingNumber.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "sort"
+        },
+        {
+          "className": "UpdateOppFromQuote",
+          "file": "UpdateOppFromQuote.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "read"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": [
+        {
+          "type": "in_code_not_on_forms"
+        }
+      ]
+    },
+    {
+      "fieldName": "modifiedby",
+      "displayName": "Modified By",
+      "description": "Shows who last updated the record.",
+      "dataType": "Lookup",
+      "required": "Yes",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": "systemuser",
+      "maxLength": null,
+      "lastUpdate": "2026-02-01 20:59:05",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [
+        {
+          "workflowName": "LeadQualifyDisqualifyDate",
+          "file": "LeadQualifyDisqualifyDate-4DF6EBF4-0F22-4433-AB4F-A241C91F8B5A.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "Order-CreateOrderStageTracking",
+          "file": "Order-CreateOrderStageTracking-DFFA9A38-A8AC-4A7A-AB74-ED0683908649.xaml",
+          "usage": "write"
+        }
+      ],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": [
+        {
+          "type": "in_code_not_on_forms"
+        }
+      ]
+    },
+    {
+      "fieldName": "modifiedon",
+      "displayName": "Modified On",
+      "description": "Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.",
+      "dataType": "DateTime",
+      "required": "Yes",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": "None",
+      "maxLength": null,
+      "lastUpdate": "2026-01-21 22:00:00",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "AccountReassignmentShareRecords",
+          "file": "AccountReassignmentShareRecords.cs",
+          "targetEntity": "",
+          "message": "GrantAccess (inferred)",
+          "usage": "sort"
+        },
+        {
+          "className": "OpportunityLineSyncToQuote",
+          "file": "OpportunityLineSyncToQuote.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "sort"
+        },
+        {
+          "className": "UpdateOppFromQuote",
+          "file": "UpdateOppFromQuote.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "read"
+        },
+        {
+          "className": "UpdateOppFromQuote",
+          "file": "UpdateOppFromQuote.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "sort"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": [
+        {
+          "type": "in_code_not_on_forms"
+        }
+      ]
+    },
+    {
+      "fieldName": "versionnumber",
+      "displayName": "Version Number",
+      "description": "Version number of the queue item.",
+      "dataType": "Integer",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": "None",
+      "maxLength": null,
+      "lastUpdate": "2026-02-01 20:59:05",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "organizationid",
+      "displayName": "Organization",
+      "description": "Unique identifier of the organization with which the queue item is associated.",
+      "dataType": "Lookup",
+      "required": "Yes (SystemRequired)",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": "organization",
+      "maxLength": null,
+      "lastUpdate": "2026-02-01 20:59:05",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "createdonbehalfby",
+      "displayName": "Created By (Delegate)",
+      "description": "Shows who created the record on behalf of another user.",
+      "dataType": "Lookup",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": "systemuser",
+      "maxLength": null,
+      "lastUpdate": "2026-02-01 20:59:05",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "modifiedonbehalfby",
+      "displayName": "Modified By (Delegate)",
+      "description": "Unique identifier of the delegate user who last modified the queueitem.",
+      "dataType": "Lookup",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": "systemuser",
+      "maxLength": null,
+      "lastUpdate": "2026-02-01 20:58:02",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "sentorimportqueueitemid",
+      "displayName": "Sent Or Import Queue Item",
+      "description": "Related sent or import queue item.",
+      "dataType": "Lookup",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": "queueitem",
+      "maxLength": null,
+      "lastUpdate": "2026-01-21 22:00:00",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "enteredqueueon",
+      "displayName": "Entered Queue On",
+      "description": "Date entered the queue.",
+      "dataType": "DateTime",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": "None",
+      "maxLength": null,
+      "lastUpdate": "2026-01-21 22:00:00",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "state",
+      "displayName": "Status (deprecated)",
+      "description": "Status of the queue item.",
+      "dataType": "Choice",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": "None",
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": [
+        {
+          "label": "In Queue",
+          "value": "0"
+        },
+        {
+          "label": "In Progress",
+          "value": "1"
+        },
+        {
+          "label": "Waiting",
+          "value": "2"
+        },
+        {
+          "label": "Completed",
+          "value": "3"
+        }
+      ],
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [
+        {
+          "controlName": "Bing Address Autocomplete",
+          "namespace": "Primary",
+          "propertyName": "state",
+          "propertyType": "SingleLine.Text",
+          "usage": "bound"
+        }
+      ],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "workeridtype",
+      "displayName": "Worker Type",
+      "description": null,
+      "dataType": "Choice",
+      "required": "Yes (ApplicationRequired)",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": "None",
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": [
+        {
+          "label": "System User",
+          "value": "1"
+        },
+        {
+          "label": "Team",
+          "value": "2"
+        }
+      ],
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "workerid",
+      "displayName": "Worked By",
+      "description": "Shows who is working on the queue item.",
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": "None",
+      "maxLength": 36,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [
+        {
+          "viewName": "All Items",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "150"
+        },
+        {
+          "viewName": "Items available to work on",
+          "queryType": "Standard",
+          "usage": "filter",
+          "operator": "null",
+          "value": ""
+        },
+        {
+          "viewName": "Items I am working on",
+          "queryType": "Standard",
+          "usage": "filter",
+          "operator": "eq-userid",
+          "value": ""
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "azt_duedate",
+      "displayName": "Due Date",
+      "description": "Date the Queue Item (phonecall typically) is due.",
+      "dataType": "DateTime",
+      "required": "No",
+      "sourceType": null,
+      "customField": "Yes",
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-01-30 22:25:41",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [
+        {
+          "formName": "Information",
+          "formType": "main",
+          "formId": "{6e47949e-8d77-4f99-8de2-aa6e88d88967}",
+          "isActive": true,
+          "location": "general > information",
+          "label": "Due Date",
+          "visible": "true",
+          "disabled": "false"
+        }
+      ],
+      "views": [
+        {
+          "viewName": "All Items",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "100"
+        },
+        {
+          "viewName": "Items available to work on",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "125"
+        },
+        {
+          "viewName": "Items I am working on",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "125"
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "PhonecallCreateCallback",
+          "file": "PhonecallCreateCallback.cs",
+          "targetEntity": "team",
+          "message": "Create",
+          "usage": "write"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "createdbyname",
+      "displayName": "createdbyname",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "createdbyyominame",
+      "displayName": "createdbyyominame",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "createdonbehalfbyname",
+      "displayName": "createdonbehalfbyname",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "createdonbehalfbyyominame",
+      "displayName": "createdonbehalfbyyominame",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "enteredon",
+      "displayName": "Entered Queue",
+      "description": "Shows the date the record was assigned to the queue.",
+      "dataType": "DateTime",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-02-01 20:59:05",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [
+        {
+          "viewName": "All Items",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "140"
+        },
+        {
+          "viewName": "All Items",
+          "queryType": "Standard",
+          "usage": "sort",
+          "descending": true
+        },
+        {
+          "viewName": "Items available to work on",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "140"
+        },
+        {
+          "viewName": "Items available to work on",
+          "queryType": "Standard",
+          "usage": "sort",
+          "descending": true
+        },
+        {
+          "viewName": "Items I am working on",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "140"
+        },
+        {
+          "viewName": "Items I am working on",
+          "queryType": "Standard",
+          "usage": "sort",
+          "descending": true
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "exchangerate",
+      "displayName": "Exchange Rate",
+      "description": "Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency.",
+      "dataType": "Decimal",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "importsequencenumber",
+      "displayName": "Import Sequence Number",
+      "description": "Unique identifier of the data import or data migration that created this record.",
+      "dataType": "Whole Number",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "inheritedparentclustermode",
+      "displayName": "Inherited parent Cluster Mode",
+      "description": "Cluster Mode of the parent entity record.",
+      "dataType": "Whole Number",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "modifiedbyname",
+      "displayName": "modifiedbyname",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "modifiedbyyominame",
+      "displayName": "modifiedbyyominame",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "modifiedonbehalfbyname",
+      "displayName": "modifiedonbehalfbyname",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "modifiedonbehalfbyyominame",
+      "displayName": "modifiedonbehalfbyyominame",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "msdyn_liveworkstreamid",
+      "displayName": "Live workstream",
+      "description": "Liveworkstream this queue item belongs to",
+      "dataType": "Lookup",
+      "required": "No",
+      "sourceType": null,
+      "customField": "Yes",
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [
+        {
+          "relationshipName": "msdyn_liveworkstream_queueitem_liveworkstreamid",
+          "type": "N:1",
+          "referencedEntity": "msdyn_liveworkstream",
+          "referencingEntity": "QueueItem"
+        }
+      ],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "msdyn_liveworkstreamidname",
+      "displayName": "msdyn_liveworkstreamidname",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": "Yes",
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "msdyn_skipursync",
+      "displayName": "msdyn_skipursync",
+      "description": "This attribute is used by Unified Routing system to decide whether to Skip Sync Call to Omnichannel Service or not.",
+      "dataType": "Yes/No",
+      "required": "No",
+      "sourceType": null,
+      "customField": "Yes",
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-02-01 20:59:05",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "objectidname",
+      "displayName": "objectidname",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "objectidtypecode",
+      "displayName": "Regarding Object Type",
+      "description": null,
+      "dataType": "Entity Name",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "organizationidname",
+      "displayName": "organizationidname",
+      "description": null,
+      "dataType": "Text",
+      "required": "Yes (SystemRequired)",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "overriddencreatedon",
+      "displayName": "Record Created On",
+      "description": "Date and time that the record was migrated.",
+      "dataType": "DateTime",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "ownerid",
+      "displayName": "Owner",
+      "description": "Unique identifier of the user or team who owns the queue item.",
+      "dataType": "Owner",
+      "required": "Yes (ApplicationRequired)",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-02-01 20:59:05",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [
+        {
+          "workflowName": "AllocationsAssigntoTeam",
+          "file": "AllocationsAssigntoTeam-B7D19816-C216-4C9D-81B7-9FE73CB2D066.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "AppointmentAuto-Assign",
+          "file": "AppointmentAuto-Assign-1A553A9D-514D-42CA-A9AE-73FEED04E1E5.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "BatchConverttoLead",
+          "file": "BatchConverttoLead-CC0F2DBB-B8CB-4B06-B891-DB6D97252DB8.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CasePendingAssignmentNotification",
+          "file": "CasePendingAssignmentNotification-177DE8B3-E0C3-4F1C-A7B5-DA84B3629AED.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "CaseRecordOwner",
+          "file": "CaseRecordOwner-E2135799-C146-4E0B-A0A5-F9917895B23E.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "CloneAndDeleteQuote",
+          "file": "CloneAndDeleteQuote-1D87A694-5A08-4C93-9925-447BB4FE7DA6.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CloneCommissionPayment",
+          "file": "CloneCommissionPayment-7E83F6F0-D101-4045-B686-0B6C658CC9A2.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CloneOpportunity",
+          "file": "CloneOpportunity-1A3FF4B3-79FD-420C-8A10-375E8892CA44.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "ContactAuto-Assign",
+          "file": "ContactAuto-Assign-25759C22-AE58-4CC7-81E1-9BBF37E76F3E.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "CreateLeadFromLeadGen",
+          "file": "CreateLeadFromLeadGen-2EA14729-4B62-4F91-95FA-76D258DA0831.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CreateLeadfromAccount",
+          "file": "CreateLeadfromAccount-B5E04C1C-B038-4018-B602-645B1E766884.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "EngagementRecordOwner",
+          "file": "EngagementRecordOwner-00BE88CF-37E2-46ED-951B-A553329BC127.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "FSRLeadDistibutionNotification",
+          "file": "FSRLeadDistibutionNotification-2D276CE9-54BF-4703-A56C-933E5C57F3C7.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "InvoiceRecordOwner",
+          "file": "InvoiceRecordOwner-C59ED476-F5C4-47B7-BD33-E88881D2B5EE.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "LeadAssignment",
+          "file": "LeadAssignment-5FC23C73-5B6B-423C-8721-57EDA4553E31.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "OpportunityRecordOwner",
+          "file": "OpportunityRecordOwner-B0889237-722A-47CC-B102-D507B14FED98.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "OrderRecordOwner",
+          "file": "OrderRecordOwner-701C3E67-4733-423C-BC31-5C846B542B76.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "PhonecallAuto-Assign",
+          "file": "PhonecallAuto-Assign-D7FD43A4-5AFF-4929-BD37-A1917C4F2391.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "PrintPurchaseAssigntoTeam",
+          "file": "PrintPurchaseAssigntoTeam-9620B3F1-4852-4FFA-8FA7-09615D8CCAFD.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "QuoteRecordOwner",
+          "file": "QuoteRecordOwner-C5266A8C-E23D-41C4-B51F-3A637538DDBF.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "SoftwareLicenseAssigntoTeam",
+          "file": "SoftwareLicenseAssigntoTeam-2CFFBE82-9E25-47FD-A201-E6DB0C220DDE.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "SoftwareLicenseSetOwner",
+          "file": "SoftwareLicenseSetOwner-438596B2-A87C-4F1E-AC53-3B3197DEF67C.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "TaskAuto-Assign",
+          "file": "TaskAuto-Assign-89E60667-3F7F-4ADD-8274-57C2BE011059.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "TaskCreateReorderLead",
+          "file": "TaskCreateReorderLead-3193EB56-8E56-46A3-B079-A7CFD1CE90B7.xaml",
+          "usage": "write"
+        }
+      ],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "AccountReassignmentShareRecords",
+          "file": "AccountReassignmentShareRecords.cs",
+          "targetEntity": "",
+          "message": "GrantAccess (inferred)",
+          "usage": "read"
+        },
+        {
+          "className": "ActivityRegardingGetState",
+          "file": "ActivityRegardingGetState.cs",
+          "targetEntity": "",
+          "message": "",
+          "usage": "read"
+        },
+        {
+          "className": "CaseAudit",
+          "file": "CaseAudit.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "read"
+        },
+        {
+          "className": "CreateCompGoals",
+          "file": "CreateCompGoals.cs",
+          "targetEntity": "",
+          "message": "Create (inferred)",
+          "usage": "write"
+        },
+        {
+          "className": "CreateCompGoals",
+          "file": "CreateCompGoals.cs",
+          "targetEntity": "",
+          "message": "Create (inferred)",
+          "usage": "filter"
+        },
+        {
+          "className": "CreateUserGoals",
+          "file": "CreateUserGoals.cs",
+          "targetEntity": "",
+          "message": "Create (inferred)",
+          "usage": "read"
+        },
+        {
+          "className": "CreateUserGoals",
+          "file": "CreateUserGoals.cs",
+          "targetEntity": "",
+          "message": "Create (inferred)",
+          "usage": "write"
+        },
+        {
+          "className": "CreateUserGoals",
+          "file": "CreateUserGoals.cs",
+          "targetEntity": "",
+          "message": "Create (inferred)",
+          "usage": "filter"
+        },
+        {
+          "className": "EngagementFSRAssignedOn",
+          "file": "EngagementFSRAssignedOn.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "read"
+        },
+        {
+          "className": "InvoiceCompCompleted",
+          "file": "InvoiceCompCompleted.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "read"
+        },
+        {
+          "className": "InvoiceCompCompleted",
+          "file": "InvoiceCompCompleted.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "write"
+        },
+        {
+          "className": "InvoiceCompCompleted",
+          "file": "InvoiceCompCompleted.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "filter"
+        },
+        {
+          "className": "OpportunityAssignFromLead",
+          "file": "OpportunityAssignFromLead.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "write"
+        },
+        {
+          "className": "OrderManuallyCreateSoftwareLicense",
+          "file": "OrderManuallyCreateSoftwareLicense.cs",
+          "targetEntity": "",
+          "message": "Create (inferred)",
+          "usage": "read"
+        },
+        {
+          "className": "OrderManuallyCreateSoftwareLicense",
+          "file": "OrderManuallyCreateSoftwareLicense.cs",
+          "targetEntity": "",
+          "message": "Create (inferred)",
+          "usage": "write"
+        },
+        {
+          "className": "PhonecallCreateCallback",
+          "file": "PhonecallCreateCallback.cs",
+          "targetEntity": "team",
+          "message": "Create",
+          "usage": "read"
+        },
+        {
+          "className": "PhonecallCreateCallback",
+          "file": "PhonecallCreateCallback.cs",
+          "targetEntity": "team",
+          "message": "Create",
+          "usage": "image"
+        },
+        {
+          "className": "RecordOwnerRestrictEdit",
+          "file": "RecordOwnerRestrictEdit.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "read"
+        },
+        {
+          "className": "ShareWithAccountOwner",
+          "file": "ShareWithAccountOwner.cs",
+          "targetEntity": "",
+          "message": "GrantAccess (inferred)",
+          "usage": "read"
+        },
+        {
+          "className": "Utility",
+          "file": "Utility.cs",
+          "targetEntity": "",
+          "message": "",
+          "usage": "write"
+        },
+        {
+          "className": "Utility",
+          "file": "Utility.cs",
+          "targetEntity": "",
+          "message": "",
+          "usage": "filter"
+        },
+        {
+          "className": "Utility",
+          "file": "Utility.cs",
+          "targetEntity": "",
+          "message": "",
+          "usage": "sort"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": [
+        {
+          "type": "in_code_not_on_forms"
+        }
+      ]
+    },
+    {
+      "fieldName": "owneridtype",
+      "displayName": "owneridtype",
+      "description": null,
+      "dataType": "Entity Name",
+      "required": "Yes (SystemRequired)",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "owningbusinessunit",
+      "displayName": "Owning Business Unit",
+      "description": "Unique identifier of the business unit that owns the queue item.",
+      "dataType": "Lookup",
+      "required": "Yes (ApplicationRequired)",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-02-01 20:59:05",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "owninguser",
+      "displayName": "Owning User",
+      "description": "Unique identifier of the user who owns the queue item.",
+      "dataType": "Lookup",
+      "required": "Yes (ApplicationRequired)",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-02-01 20:59:05",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "GetAcctTeamOwned",
+          "file": "GetAcctTeamOwned.cs",
+          "targetEntity": "",
+          "message": "",
+          "usage": "join"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "queueidname",
+      "displayName": "queueidname",
+      "description": null,
+      "dataType": "Text",
+      "required": "Yes (SystemRequired)",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "sender",
+      "displayName": "From",
+      "description": "Sender who created the queue item.",
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "statecode",
+      "displayName": "Status",
+      "description": "Shows whether the queue record is active or inactive. Inactive queue records are read-only and can't be edited unless they are reactivated.",
+      "dataType": "Choice",
+      "required": "Yes (SystemRequired)",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-02-01 20:59:05",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [
+        {
+          "viewName": "All Items",
+          "queryType": "Standard",
+          "usage": "filter",
+          "operator": "eq",
+          "value": "0"
+        },
+        {
+          "viewName": "Items available to work on",
+          "queryType": "Standard",
+          "usage": "filter",
+          "operator": "eq",
+          "value": "0"
+        },
+        {
+          "viewName": "Items I am working on",
+          "queryType": "Standard",
+          "usage": "filter",
+          "operator": "eq",
+          "value": "0"
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [
+        {
+          "workflowName": "BatchConverttoLead",
+          "file": "BatchConverttoLead-CC0F2DBB-B8CB-4B06-B891-DB6D97252DB8.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CaseResolutionNotificationEmail",
+          "file": "CaseResolutionNotificationEmail-734E721F-7454-4437-8BAC-8B20F496DF12.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "CloneOrder",
+          "file": "CloneOrder-D2A6AD48-A603-4150-BC84-72092AFB3D79.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CreateLeadFromLeadGen",
+          "file": "CreateLeadFromLeadGen-2EA14729-4B62-4F91-95FA-76D258DA0831.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CreateLeadfromAccount",
+          "file": "CreateLeadfromAccount-B5E04C1C-B038-4018-B602-645B1E766884.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CustomLeadCreation",
+          "file": "CustomLeadCreation-B26AC2BB-4660-4A50-9229-AD056DE0D9E1.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "LeadQualifyDisqualifyDate",
+          "file": "LeadQualifyDisqualifyDate-4DF6EBF4-0F22-4433-AB4F-A241C91F8B5A.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "OpportunityAuditRemoval",
+          "file": "OpportunityAuditRemoval-DB05BF90-221B-4B58-8AA0-D1A0799EA0A1.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "TaskCreateReorderLead",
+          "file": "TaskCreateReorderLead-3193EB56-8E56-46A3-B079-A7CFD1CE90B7.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "WonOpportunityEmail",
+          "file": "WonOpportunityEmail-DB2872A0-18C2-4157-B6BD-480230C97D32.xaml",
+          "usage": "read"
+        }
+      ],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "AccountLeadGen",
+          "file": "AccountLeadGen.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "filter"
+        },
+        {
+          "className": "ActivityCloseForceRecordOwner",
+          "file": "ActivityCloseForceRecordOwner.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "read"
+        },
+        {
+          "className": "AllocationValidation",
+          "file": "AllocationValidation.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "filter"
+        },
+        {
+          "className": "ContactSetConnectionRole",
+          "file": "ContactSetConnectionRole.cs",
+          "targetEntity": "",
+          "message": "azt_ContactSetConnectionRole",
+          "usage": "read"
+        },
+        {
+          "className": "CreateSoftwareLicenses",
+          "file": "CreateSoftwareLicenses.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "read"
+        },
+        {
+          "className": "CreateSoftwareLicenses",
+          "file": "CreateSoftwareLicenses.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "image"
+        },
+        {
+          "className": "CreateUserGoals",
+          "file": "CreateUserGoals.cs",
+          "targetEntity": "",
+          "message": "Create (inferred)",
+          "usage": "filter"
+        },
+        {
+          "className": "DiscretionaryDiscountSetHeader",
+          "file": "DiscretionaryDiscountSetHeader.cs",
+          "targetEntity": "",
+          "message": "Delete",
+          "usage": "read"
+        },
+        {
+          "className": "DiscretionaryDiscountSetHeader",
+          "file": "DiscretionaryDiscountSetHeader.cs",
+          "targetEntity": "",
+          "message": "Delete",
+          "usage": "filter"
+        },
+        {
+          "className": "ExpenseRestrictVisibility",
+          "file": "ExpenseRestrictVisibility.cs",
+          "targetEntity": "",
+          "message": "",
+          "usage": "filter"
+        },
+        {
+          "className": "FundingSetAnnualSpend",
+          "file": "FundingSetAnnualSpend.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "filter"
+        },
+        {
+          "className": "InvoiceClosePaidOnPercentage",
+          "file": "InvoiceClosePaidOnPercentage.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "read"
+        },
+        {
+          "className": "InvoiceCompCompleted",
+          "file": "InvoiceCompCompleted.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "write"
+        },
+        {
+          "className": "LeadImport",
+          "file": "LeadImport.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "filter"
+        },
+        {
+          "className": "OpportunityLineSyncToQuote",
+          "file": "OpportunityLineSyncToQuote.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "read"
+        },
+        {
+          "className": "PhonecallCreateCallback",
+          "file": "PhonecallCreateCallback.cs",
+          "targetEntity": "team",
+          "message": "Create",
+          "usage": "read"
+        },
+        {
+          "className": "ProductDiscountPreventOnActiveQuote",
+          "file": "ProductDiscountPreventOnActiveQuote.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "read"
+        },
+        {
+          "className": "RestrictCreateQuote",
+          "file": "RestrictCreateQuote.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "filter"
+        },
+        {
+          "className": "SetPrimaryContact",
+          "file": "SetPrimaryContact.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "read"
+        },
+        {
+          "className": "Utility",
+          "file": "Utility.cs",
+          "targetEntity": "",
+          "message": "",
+          "usage": "read"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": [
+        {
+          "type": "in_code_not_on_forms"
+        }
+      ]
+    },
+    {
+      "fieldName": "status",
+      "displayName": "Status Reason (deprecated)",
+      "description": "Reason for the status of the queue item.",
+      "dataType": "Whole Number",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "statuscode",
+      "displayName": "Status Reason",
+      "description": "Select the item's status.",
+      "dataType": "Choice",
+      "required": "Yes (SystemRequired)",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-02-01 20:59:05",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [
+        {
+          "workflowName": "BatchCreateEngagements",
+          "file": "BatchCreateEngagements-CC9CDFC6-4BC9-4635-B786-0C7BE2C34344.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CloneOrder",
+          "file": "CloneOrder-D2A6AD48-A603-4150-BC84-72092AFB3D79.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "EmailDeleteSendQuoteDrafts",
+          "file": "EmailDeleteSendQuoteDrafts-ED77962D-F57D-4F2F-A580-1F5D27E1280C.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "EmailRemoveUnsentEmails",
+          "file": "EmailRemoveUnsentEmails-2F1954B7-77B4-4D54-AA84-DBB10DFB6A71.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "SoftwareLicenseCreateEngagement",
+          "file": "SoftwareLicenseCreateEngagement-ABFE722A-CAC3-4A3B-AF5C-419EA2CE9CBD.xaml",
+          "usage": "write"
+        }
+      ],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "CreateUserGoals",
+          "file": "CreateUserGoals.cs",
+          "targetEntity": "",
+          "message": "Create (inferred)",
+          "usage": "read"
+        },
+        {
+          "className": "InvoiceCompCompleted",
+          "file": "InvoiceCompCompleted.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "read"
+        },
+        {
+          "className": "InvoiceCompCompleted",
+          "file": "InvoiceCompCompleted.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "write"
+        },
+        {
+          "className": "InvoiceCompCompleted",
+          "file": "InvoiceCompCompleted.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "filter"
+        },
+        {
+          "className": "PaymentUpdate",
+          "file": "PaymentUpdate.cs",
+          "targetEntity": "",
+          "message": "Update",
+          "usage": "read"
+        },
+        {
+          "className": "Utility",
+          "file": "Utility.cs",
+          "targetEntity": "",
+          "message": "",
+          "usage": "filter"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": [
+        {
+          "type": "in_code_not_on_forms"
+        }
+      ]
+    },
+    {
+      "fieldName": "timezoneruleversionnumber",
+      "displayName": "Time Zone Rule Version Number",
+      "description": "For internal use only.",
+      "dataType": "Whole Number",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-02-01 20:59:05",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "title",
+      "displayName": "Title",
+      "description": "Shows the title or name that describes the queue record. This value is copied from the record that was assigned to the queue.",
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-02-01 20:59:05",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [
+        {
+          "viewName": "All Items",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "150"
+        },
+        {
+          "viewName": "Items available to work on",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "300"
+        },
+        {
+          "viewName": "Items I am working on",
+          "queryType": "Standard",
+          "usage": "column",
+          "width": "300"
+        }
+      ],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [
+        {
+          "workflowName": "CasePendingAssignmentNotification",
+          "file": "CasePendingAssignmentNotification-177DE8B3-E0C3-4F1C-A7B5-DA84B3629AED.xaml",
+          "usage": "read"
+        },
+        {
+          "workflowName": "CaseRecordOwnerAssignmentNotification",
+          "file": "CaseRecordOwnerAssignmentNotification-2F6035E6-1FBC-476B-9C97-4554E8360B7C.xaml",
+          "usage": "read"
+        }
+      ],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "CreateUserGoals",
+          "file": "CreateUserGoals.cs",
+          "targetEntity": "",
+          "message": "Create (inferred)",
+          "usage": "write"
+        },
+        {
+          "className": "CreateUserGoals",
+          "file": "CreateUserGoals.cs",
+          "targetEntity": "",
+          "message": "Create (inferred)",
+          "usage": "sort"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": [
+        {
+          "type": "in_code_not_on_forms"
+        }
+      ]
+    },
+    {
+      "fieldName": "torecipients",
+      "displayName": "To",
+      "description": "Recipients listed on the To line of the message for email queue items.",
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "transactioncurrencyid",
+      "displayName": "Currency",
+      "description": "Choose the local currency for the record to make sure budgets are reported in the correct currency.",
+      "dataType": "Lookup",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [
+        {
+          "workflowName": "BatchConverttoLead",
+          "file": "BatchConverttoLead-CC0F2DBB-B8CB-4B06-B891-DB6D97252DB8.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "BatchOpportunityTransfer",
+          "file": "BatchOpportunityTransfer-744FEB80-2251-4252-875E-ED9958CB448A.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CasePendingAssignmentNotification",
+          "file": "CasePendingAssignmentNotification-177DE8B3-E0C3-4F1C-A7B5-DA84B3629AED.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CaseRecordOwnerAssignmentNotification",
+          "file": "CaseRecordOwnerAssignmentNotification-2F6035E6-1FBC-476B-9C97-4554E8360B7C.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CaseResolutionNotificationEmail",
+          "file": "CaseResolutionNotificationEmail-734E721F-7454-4437-8BAC-8B20F496DF12.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CloneAndDeleteQuote",
+          "file": "CloneAndDeleteQuote-1D87A694-5A08-4C93-9925-447BB4FE7DA6.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CloneCommissionPayment",
+          "file": "CloneCommissionPayment-7E83F6F0-D101-4045-B686-0B6C658CC9A2.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CloneCompGoal",
+          "file": "CloneCompGoal-156EF22C-38DA-4224-AD13-12A2524502F9.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CloneOpportunity",
+          "file": "CloneOpportunity-1A3FF4B3-79FD-420C-8A10-375E8892CA44.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CloneOrder",
+          "file": "CloneOrder-D2A6AD48-A603-4150-BC84-72092AFB3D79.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CreateLeadFromLeadGen",
+          "file": "CreateLeadFromLeadGen-2EA14729-4B62-4F91-95FA-76D258DA0831.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CreateLeadfromAccount",
+          "file": "CreateLeadfromAccount-B5E04C1C-B038-4018-B602-645B1E766884.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "CustomLeadCreation",
+          "file": "CustomLeadCreation-B26AC2BB-4660-4A50-9229-AD056DE0D9E1.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "ExpenseNotificationManager",
+          "file": "ExpenseNotificationManager-5CC7F6CC-5991-401F-AEE9-20010EEBB90E.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "ExpenseReportRejectedNotification",
+          "file": "ExpenseReportRejectedNotification-811FD6D5-D33F-4BEB-8F93-13D7F40F2A78.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "FSRLeadDistibutionNotification",
+          "file": "FSRLeadDistibutionNotification-2D276CE9-54BF-4703-A56C-933E5C57F3C7.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "NewFSRLeadNotification",
+          "file": "NewFSRLeadNotification-53E6AF89-E489-4977-8D9F-1579FF72FAC5.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "QualifyLead",
+          "file": "QualifyLead-F6899272-F476-48C4-B703-D5ACDD9EDFF7.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "TaskCreateReorderLead",
+          "file": "TaskCreateReorderLead-3193EB56-8E56-46A3-B079-A7CFD1CE90B7.xaml",
+          "usage": "write"
+        },
+        {
+          "workflowName": "WonOpportunityEmail",
+          "file": "WonOpportunityEmail-DB2872A0-18C2-4157-B6BD-480230C97D32.xaml",
+          "usage": "write"
+        }
+      ],
+      "formulas": [],
+      "plugins": [
+        {
+          "className": "CloneExpenseLine",
+          "file": "CloneExpenseLine.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "read"
+        },
+        {
+          "className": "CloneExpenseLine",
+          "file": "CloneExpenseLine.cs",
+          "targetEntity": "",
+          "message": "Create",
+          "usage": "write"
+        },
+        {
+          "className": "OpportunityClone",
+          "file": "OpportunityClone.cs",
+          "targetEntity": "",
+          "message": "Create (inferred)",
+          "usage": "read"
+        },
+        {
+          "className": "OrderClone",
+          "file": "OrderClone.cs",
+          "targetEntity": "",
+          "message": "Create (inferred)",
+          "usage": "read"
+        },
+        {
+          "className": "OrderSplit",
+          "file": "OrderSplit.cs",
+          "targetEntity": "",
+          "message": "Create (inferred)",
+          "usage": "read"
+        },
+        {
+          "className": "OrderSplit",
+          "file": "OrderSplit.cs",
+          "targetEntity": "",
+          "message": "Create (inferred)",
+          "usage": "write"
+        },
+        {
+          "className": "Utility",
+          "file": "Utility.cs",
+          "targetEntity": "",
+          "message": "",
+          "usage": "read"
+        },
+        {
+          "className": "Utility",
+          "file": "Utility.cs",
+          "targetEntity": "",
+          "message": "",
+          "usage": "write"
+        }
+      ],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": [
+        {
+          "type": "in_code_not_on_forms"
+        }
+      ]
+    },
+    {
+      "fieldName": "transactioncurrencyidname",
+      "displayName": "transactioncurrencyidname",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "utcconversiontimezonecode",
+      "displayName": "UTC Conversion Time Zone Code",
+      "description": "Time zone code that was in use when the record was created.",
+      "dataType": "Whole Number",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "2026-02-01 20:59:05",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "workeridmodifiedon",
+      "displayName": "Worked On",
+      "description": "Shows the date and time when the queue item was last assigned to a user.",
+      "dataType": "DateTime",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": "Yes",
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "workeridname",
+      "displayName": "workeridname",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "workeridyominame",
+      "displayName": "workeridyominame",
+      "description": null,
+      "dataType": "Text",
+      "required": "No",
+      "sourceType": null,
+      "customField": null,
+      "fieldSecurity": null,
+      "auditEnabled": null,
+      "relatedTo": null,
+      "maxLength": null,
+      "lastUpdate": "Never",
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    }
+  ],
+  "dataTransformationRules": []
+}

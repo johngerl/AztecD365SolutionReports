@@ -2,7 +2,7 @@
 """
 generate_field_usage.py
 
-Analyzes D365CE solution extract (Entities_1_0_0_0) to determine every field
+Analyzes D365CE solution extract (SolutionExtract) to determine every field
 on a target entity that is actively used across forms, views, charts, workflows,
 JavaScript, formulas, plugins, controls, and ribbon customizations.
 
@@ -23,7 +23,7 @@ from collections import defaultdict
 from datetime import date
 
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SOLUTION_DIR = os.path.join(PROJECT_DIR, "Entities_1_0_0_0")
+SOLUTION_DIR = os.path.join(PROJECT_DIR, "SolutionExtract")
 CUSTOMIZATIONS_FILE = os.path.join(SOLUTION_DIR, "customizations.xml")
 PLUGINS_DIR = os.path.join(PROJECT_DIR, "plugins")
 REPORTS_DIR = os.path.join(SOLUTION_DIR, "Reports")

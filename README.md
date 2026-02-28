@@ -12,7 +12,7 @@ This analysis feeds a data migration plan for re-platforming from D365CE to Sale
 │   └── generate_field_usage.py     # Main field usage analysis generator
 ├── reports/                        # Generated analysis reports (Markdown)
 ├── plans/                          # Architecture and implementation plans
-├── Entities_1_0_0_0/               # D365CE solution extract
+├── SolutionExtract/                # D365CE solution extract
 │   ├── customizations.xml          # Entity defs, forms, views, charts, dashboards, ribbons
 │   ├── Reports/                    # RDL report files (13)
 │   ├── Workflows/                  # Workflow XAML files

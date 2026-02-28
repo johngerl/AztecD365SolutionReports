@@ -1,6 +1,5 @@
 # Opportunity Field Usage Analysis
-> Generated from D365CE Solution: Entities_1_0_0_0  
-> Date: 2026-02-20
+> Date: 2026-02-28
 
 ## Table of Contents
 

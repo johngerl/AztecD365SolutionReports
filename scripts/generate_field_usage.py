@@ -1654,6 +1654,123 @@ def compute_conflicts(entity_name, fields, forms, views, workflows, js_files,
 
 
 # ---------------------------------------------------------------------------
+# SECTION REFERENCE COUNTING
+# ---------------------------------------------------------------------------
+
+def count_field_references(entity_name, forms, views, chart_visualizations,
+                           reports, dashboards, workflows, formulas,
+                           plugin_refs, controls, relationships, ribbon, conflicts):
+    """Pre-compute per-field reference counts for each report section.
+
+    Returns a defaultdict mapping field_name_lower -> {section_key: count}.
+    Section keys: forms, views, charts, reports, dashboards, workflows,
+    formulas, plugins, pcf, rels, ribbon, conflicts.
+    """
+    counts = defaultdict(lambda: defaultdict(int))
+
+    # Forms: header_fields, tabs[].sections[].fields (non-subgrid, non-webresource), footer_fields
+    for form in forms:
+        for hf in form['header_fields']:
+            counts[hf['name'].lower()]['forms'] += 1
+        for tab in form['tabs']:
+            for section in tab['sections']:
+                for field in section['fields']:
+                    if not field['is_subgrid'] and not field['is_webresource']:
+                        counts[field['name'].lower()]['forms'] += 1
+        for ff in form['footer_fields']:
+            counts[ff['name'].lower()]['forms'] += 1
+
+    # Views: columns, filter_fields, sort_fields
+    for view in views:
+        for col in view['columns']:
+            counts[col['name'].lower()]['views'] += 1
+        for ff in view['filter_fields']:
+            counts[ff['field'].lower()]['views'] += 1
+        for sf in view['sort_fields']:
+            counts[sf['field'].lower()]['views'] += 1
+
+    # Charts: measure_fields, groupby_fields, filter_fields, sort_fields
+    for chart in chart_visualizations:
+        for mf in chart['measure_fields']:
+            counts[mf['field'].lower()]['charts'] += 1
+        for gf in chart['groupby_fields']:
+            counts[gf['field'].lower()]['charts'] += 1
+        for ff in chart['filter_fields']:
+            counts[ff['field'].lower()]['charts'] += 1
+        for sf in chart['sort_fields']:
+            counts[sf['field'].lower()]['charts'] += 1
+
+    # Reports: datasets[].fetchxml_data[].attributes, conditions, orders + recursive link_entities
+    def count_report_link_entities(link_list):
+        for le in link_list:
+            for attr in le['attributes']:
+                counts[attr.lower()]['reports'] += 1
+            for cond in le['conditions']:
+                counts[cond['field'].lower()]['reports'] += 1
+            for order in le['orders']:
+                counts[order['field'].lower()]['reports'] += 1
+            if le['nested_links']:
+                count_report_link_entities(le['nested_links'])
+
+    for rpt in reports:
+        for ds in rpt['datasets']:
+            for fd in ds['fetchxml_data']:
+                for attr in fd['attributes']:
+                    counts[attr.lower()]['reports'] += 1
+                for cond in fd['conditions']:
+                    counts[cond['field'].lower()]['reports'] += 1
+                for order in fd['orders']:
+                    counts[order['field'].lower()]['reports'] += 1
+                count_report_link_entities(fd['link_entities'])
+
+    # Dashboards: no direct field references (reference views/charts by ID)
+
+    # Workflows: fields_read, fields_written
+    for wf in workflows:
+        for fn in wf['fields_read']:
+            counts[fn.lower()]['workflows'] += 1
+        for fn in wf['fields_written']:
+            counts[fn.lower()]['workflows'] += 1
+
+    # Formulas: field (target) + source_fields[].field
+    for formula in formulas:
+        counts[formula['field'].lower()]['formulas'] += 1
+        for sf in formula['source_fields']:
+            counts[sf['field'].lower()]['formulas'] += 1
+
+    # Plugins: fields_read, fields_written, fields_filtered, fields_sorted, fields_joined, image_fields
+    for plugin in plugin_refs:
+        for fn in plugin['fields_read']:
+            counts[fn.lower()]['plugins'] += 1
+        for fn in plugin['fields_written']:
+            counts[fn.lower()]['plugins'] += 1
+        for fn in plugin['fields_filtered']:
+            counts[fn.lower()]['plugins'] += 1
+        for fn in plugin['fields_sorted']:
+            counts[fn.lower()]['plugins'] += 1
+        for fn in plugin['fields_joined']:
+            counts[fn.lower()]['plugins'] += 1
+        for fn in plugin['image_fields']:
+            counts[fn.lower()]['plugins'] += 1
+
+    # PCF Controls: bound_properties[].name
+    for ctrl in controls:
+        for prop in ctrl['bound_properties']:
+            if prop['name']:
+                counts[prop['name'].lower()]['pcf'] += 1
+
+    # Relationships: referencing_attribute
+    for rel in relationships:
+        if rel['referencing_attribute']:
+            counts[rel['referencing_attribute'].lower()]['rels'] += 1
+
+    # Ribbon: no direct field references (defines buttons/commands)
+    # Conflicts: derived analysis, no direct field references
+
+    return counts
+
+
+# ---------------------------------------------------------------------------
 # MARKDOWN GENERATION
 # ---------------------------------------------------------------------------
 
@@ -1662,6 +1779,11 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
                       workflows, js_files, formulas, plugin_refs, controls,
                       relationships, ribbon, conflicts):
     field_index = defaultdict(list)
+    field_ref_counts = count_field_references(
+        entity_name, forms, views, chart_visualizations,
+        reports, dashboards, workflows, formulas,
+        plugin_refs, controls, relationships, ribbon, conflicts
+    )
     lines = []
     a = lines.append
 
@@ -1731,13 +1853,32 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     a('')
     a(f'Total fields: **{len(fields)}**')
     a('')
-    a('| # | Schema Name | Display Name | Type | Custom | Required | Source |')
-    a('|---|-------------|-------------|------|--------|----------|--------|')
+    a('| # | Schema Name | Display Name | Type | Custom | Required | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |')
+    a('|---|-------------|-------------|------|--------|----------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|')
+    section_cols = [
+        ('forms', '#2-forms'),
+        ('views', '#3-views'),
+        ('charts', '#4-chart-visualizations'),
+        ('reports', '#5-reports'),
+        ('dashboards', '#6-dashboards'),
+        ('workflows', '#7-workflows'),
+        ('formulas', '#9-formulas-rollups'),
+        ('plugins', '#10-plugin-source-code-analysis'),
+        ('pcf', '#11-pcf-controls'),
+        ('rels', '#12-relationships'),
+        ('ribbon', '#13-ribbon-customizations'),
+        ('conflicts', '#14-conflicts-observations'),
+    ]
     for i, field in enumerate(fields, 1):
         custom = 'Yes' if field['is_custom'] else 'No'
         sn = field['schema_name']
-        source = field.get('source', 'Solution Export')
-        a(f'| {i} | {fl(sn)} | {field["display_name"]} | {field["data_type"]} | {custom} | {field["required_level"]} | {source} |')
+        refs_for_field = field_ref_counts.get(sn.lower(), {})
+        cells = []
+        for key, slug in section_cols:
+            c = refs_for_field.get(key, 0)
+            cells.append(f'[{c}]({slug})' if c > 0 else '')
+        section_str = ' | '.join(cells)
+        a(f'| {i} | {fl(sn)} | {field["display_name"]} | {field["data_type"]} | {custom} | {field["required_level"]} | {section_str} |')
         ref(sn, '1-field-definitions', 'Field Definitions')
     a('')
 
@@ -2513,9 +2654,6 @@ def process_entity(entity_name, root, output_dir, property_to_field, class_to_en
     print(f"  Ribbon Actions: {len(ribbon['custom_actions'])}")
     print(f"  Ribbon Commands: {len(ribbon['commands'])}")
 
-    for field in fields:
-        field['source'] = 'Solution Export'
-
     all_referenced = set()
 
     for form in forms:
@@ -2598,7 +2736,6 @@ def process_entity(entity_name, root, output_dir, property_to_field, class_to_en
             'required_level': '',
             'is_custom': field_name.startswith(('azt_', 'ezt_')),
             'introduced_version': '',
-            'source': 'Inferred from Usage',
         })
 
     fields = sorted(fields, key=lambda f: f['schema_name'].lower())

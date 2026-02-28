@@ -1,0 +1,35 @@
+fieldName,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+azt_issaas,,,,OpportunityLineItem,SaaS,SaaS__c
+azt_licensetype,,,,OpportunityLineItem,License Type,License_Type__c
+azt_nonsaastype,,,,OpportunityLineItem,Non SaaS Type,Non_SaaS_Type__c
+createdby,,,,OpportunityLineItem,Created By,CreatedById
+createdbyname,Opportunity Product,Legacy Created By,,,,
+createdbyyominame,Opportunity Product,,,,,
+createdon,,,,OpportunityLineItem,Created Date,CreatedDate
+createdonbehalfbyname,Opportunity Product,,,,,
+createdonbehalfbyyominame,Opportunity Product,,,,,
+description,Opportunity Product,Line Description,Description,,,
+entityimage_timestamp,Opportunity Product,,,,,
+entityimage_url,Opportunity Product,,,,,
+entityimageid,Opportunity Product,,,,,
+extendedamount,,,,OpportunityLineItem,Total Price,TotalPrice
+lineitemnumber,,,,OpportunityLineItem,Line Number,SortOrder
+manualdiscountamount,,,,OpportunityLineItem,Discount Amount,Discount_Amount__c
+modifiedby,,,,OpportunityLineItem,Last Modified By,LastModifiedById
+modifiedbyname,Opportunity Product,,,,,
+modifiedbyyominame,Opportunity Product,,,,,
+modifiedon,,,,OpportunityLineItem,Last Modified Date,LastModifiedDate
+modifiedonbehalfbyname,Opportunity Product,,,,,
+modifiedonbehalfbyyominame,Opportunity Product,,,,,
+opportunityid,,,,OpportunityLineItem,Opportunity,OpportunityId
+opportunityidname,Opportunity Product,,,,,
+owneridname,Opportunity Product,,,,,
+owneridtype,Opportunity Product,,,,,
+owneridyominame,Opportunity Product,,,,,
+priceperunit,,,,OpportunityLineItem,Sales Price,UnitPrice
+productid,,,,OpportunityLineItem,Product,Product2Id
+productidname,Opportunity Product,,,,,
+quantity,Opportunity Product,Quantity,Quantity,,,
+tax,Opportunity Product,CRM Tax,,,,
+transactioncurrencyidname,Opportunity Product,,,,,
+uomidname,Opportunity Product,,,,,

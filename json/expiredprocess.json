@@ -1,0 +1,32 @@
+{
+  "entityName": "expiredprocess",
+  "fields": [
+    {
+      "fieldName": "knowledgearticleid",
+      "displayName": "Knowledge Article",
+      "dataType": "lookup",
+      "requiredLevel": "none",
+      "isCustom": false,
+      "introducedVersion": "8.2.0.0",
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "javaScript": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    }
+  ]
+}

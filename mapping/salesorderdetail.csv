@@ -1,0 +1,36 @@
+fieldName,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+azt_issaas,,,,OrderItem,SaaS,SaaS__c
+azt_licensetermmonths,,,,OrderItem,License Term Months,License_Term_Months__c
+azt_licensetype,,,,OrderItem,License Type,License_Type__c
+azt_orderdate,,,,OrderItem,Service Date,ServiceDate
+azt_softwarelicenseid,,,,OrderItem,Asset,Asset__c
+azt_softwarelicenseidname,Order Product,,,,,
+createdby,,,,OrderItem,Created By,CreatedById
+createdbyname,Order Product,,,,,
+createdbyyominame,Order Product,,,,,
+createdon,,,,OrderItem,Created Date,CreatedDate
+createdonbehalfbyname,Order Product,,,,,
+createdonbehalfbyyominame,Order Product,,,,,
+description,Order Product,Line Description,Description,,,
+extendedamount,,,,OrderItem,Total Price,TotalPrice
+manualdiscountamount,,,,OrderItem,Discount Amount,Discount_Amount__c
+modifiedby,,,,OrderItem,Last Modified By,LastModifiedById
+modifiedbyname,Order Product,,,,,
+modifiedbyyominame,Order Product,,,,,
+modifiedon,,,,OrderItem,Last Modified Date,LastModifiedDate
+modifiedonbehalfbyname,Order Product,,,,,
+modifiedonbehalfbyyominame,Order Product,,,,,
+owneridname,Order Product,,,,,
+owneridtype,Order Product,,,,,
+owneridyominame,Order Product,,,,,
+priceperunit,,,,OrderItem,Unit Price,UnitPrice
+productid,,,,OrderItem,Product,Product2Id
+productidname,Order Product,,,,,
+quantity,Order Product,Quantity,Quantity,,,
+quotedetailidname,Order Product,,,,,
+salesorderidname,Order Product,,,,,
+salesrepidname,Order Product,,,,,
+salesrepidyominame,Order Product,,,,,
+tax,Order Product,,,,,
+transactioncurrencyidname,Order Product,,,,,
+uomidname,Order Product,,,,,

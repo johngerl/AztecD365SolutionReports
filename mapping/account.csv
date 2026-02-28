@@ -1,0 +1,68 @@
+fieldName,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+accountclassificationcode,Account,CRM Account Classification,CRM_Account_Classification__c,,,
+accountnumber,,,,Account,Account Number,AccountNumber
+accountratingcode,,,,Account,Rating,Rating
+address1_addresstypecode,Account,,,,,
+address1_city,Account,,,,,
+address1_composite,Account,,,,,
+address1_country,Account,,,,,
+address1_latitude,,,,Account,Billing Latitude,BillingLatitude
+address1_line1,Account,,,,,
+address1_longitude,,,,Account,Billing Longitude,BillingLongitude
+address1_name,Account,,,,,
+address1_postalcode,,,,Account,Billing Zip,BillingPostalCode
+address1_stateorprovince,Account,,,,,
+address2_addresstypecode,Account,,,,,
+address2_city,Account,BillingCity,BillingCity,,,
+address2_composite,Account,,,,,
+address2_country,Account,BillingCountry,BillingCountry,,,
+address2_latitude,,,,Account,Shipping Latitude,ShippingLatitude
+address2_line1,Account,BillingStreet,BillingStreet,,,
+address2_longitude,,,,Account,Shipping Longitude,ShippingLongitude
+address2_name,Account,,,,,
+address2_postalcode,Account,BillingPostalCode,BillingPostalCode,,,
+address2_stateorprovince,Account,BillingState,BillingState,,,
+azt_accountalert,Account,Account Alert,Account_Alert__c,,,
+azt_accountnumber,,,,Account,AccountNumber,AccountNumber
+azt_accountspend_base,Account,CRM Account Spend (Base),CRM_Account_Spend__c,,,
+azt_accounttype,Account,Account Status,Account_Status__c,,,
+azt_customernumber,Account,Customer Number,Customer_Number__c,,,
+azt_executivesummary,Account,Executive Summary,Executive_Summary__c,,,
+azt_extension,Account,Ext,Ext__c,,,
+azt_fiscalyearend,Account,Fiscal Year End,Fiscal_Year_End__c,,,
+azt_fsradminpassword,Account,FSR Admin Password,FSR_Admin_Password__c,,,
+azt_fsradminusername,Account,FSR Admin Username,FSR_Admin_Username__c,,,
+azt_lastprintpurchase,Account,CRM Last Print Purchase,CRM_Last_Print_Purchase__c,,,
+azt_lastsaaspurchase,Account,CRM Last SaaS Purchase,CRM_Last_SaaS_Purchase__c,,,
+azt_leadsourceid,Account,Account Source,AccountSource,,,
+azt_nonsaasstatus,Account,CRM Non-SaaS Status,Non_SaaS_Status__c,,,
+azt_numberofcomputers,Account,# Computers,NumofComputers__c,,,
+azt_numberofstudents,Account,# Students,NumofStudents__c,,,
+azt_recordownerid,Account,Record Owner,OwnerId,,,
+azt_saasstatus,Account,CRM SaaS Status,CRM_SaaS_Status__c,,,
+azt_taxexemptcertificate,,,,Account,Tax Exempt,Tax_Exempt__c
+azt_type,,,,Account,Type,Type
+azt_verticalmarket,Account,Industry,,,,
+createdby,Account,Legacy Created By,Legacy_Created_By__c,,,
+createdon,Account,Legacy Created On Date,Legacy_Created_On_Date__c,,,
+customertypecode,,,,Account,Type,Type
+description,Account,Description,Description,,,
+donotemail,Account,Opt out of Emails,Opt_out_of_Emails__c,,,
+donotphone,Account,Opt Out of Phone Calls,Opt_Out_of_Phone_Calls__c,,,
+fax,Account,Fax,Fax,,,
+industrycode,,,,Account,Industry,Industry
+modifiedby,Account,Legacy Modified By,Legacy_Modified_By__c,,,
+modifiedon,Account,Legacy Modified On,Legacy_Modified_On__c,,,
+msa_managingpartnerid,Account,Managing Partner,Managing_Partner__c,,,
+name,Account,Account Name,Name,,,
+numberofemployees,Account,Employees,NumberOfEmployees,,,
+openrevenue,Account,Annual Revenue,AnnualRevenue,,,
+ownerid,Account,Record type,RecordType,,,
+ownershipcode,,,,Account,Ownership,Ownership
+parentaccountid,Account,ParentId,ParentId,,,
+revenue,,,,Account,Annual Revenue,AnnualRevenue
+sic,,,,Account,SIC Code,Sic
+telephone1,Account,Phone,,,,
+telephone2,Account,Other Phone,OtherPhone__c,,,
+tickersymbol,,,,Account,Ticker Symbol,TickerSymbol
+websiteurl,Account,Website,Website,,,

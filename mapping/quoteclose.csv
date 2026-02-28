@@ -1,0 +1,4 @@
+fieldName,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+description,,,,Quote,Description,Description
+ownerid,,,,Quote,OwnerId,OwnerId
+quotenumber,,,,Quote,QuoteNumber,QuoteNumber

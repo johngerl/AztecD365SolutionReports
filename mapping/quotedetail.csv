@@ -1,0 +1,18 @@
+fieldName,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+azt_issaas,,,,QuoteLineItem,SaaS,SaaS__c
+azt_licensetermmonths,,,,QuoteLineItem,Term Months,Term_Months__c
+azt_licensetype,,,,QuoteLineItem,License Type,License_Type__c
+azt_nonsaastype,,,,QuoteLineItem,Non SaaS Type,Non_SaaS_Type__c
+createdby,,,,QuoteLineItem,Created By,CreatedById
+createdon,,,,QuoteLineItem,Created Date,CreatedDate
+description,,,,QuoteLineItem,Description,Description
+extendedamount,,,,QuoteLineItem,Total Price,TotalPrice
+lineitemnumber,,,,QuoteLineItem,Sort Order,SortOrder
+manualdiscountamount,,,,QuoteLineItem,Discount Amount,Discount_Amount__c
+modifiedby,,,,QuoteLineItem,Last Modified By,LastModifiedById
+modifiedon,,,,QuoteLineItem,Last Modified Date,LastModifiedDate
+priceperunit,,,,QuoteLineItem,Sales Price,UnitPrice
+productid,,,,QuoteLineItem,Product,Product2Id
+quantity,,,,QuoteLineItem,Quantity,Quantity
+quoteid,,,,QuoteLineItem,Quote,QuoteId
+tax,,,,QuoteLineItem,Tax,Tax__c

@@ -1,0 +1,17 @@
+fieldName,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+accountid,,,,Case,Account,AccountId
+caseorigincode,,,,Case,Origin,Origin
+casetypecode,,,,Case,Type,Type
+contactid,,,,Case,Contact,ContactId
+createdby,,,,Case,Created By,CreatedById
+createdon,,,,Case,Created Date,CreatedDate
+description,,,,Case,Description,Description
+emailaddress,,,,Case,Contact Email,ContactEmail
+isescalated,,,,Case,Escalated,IsEscalated
+modifiedby,,,,Case,Last Modified By,LastModifiedById
+modifiedon,,,,Case,Last Modified Date,LastModifiedDate
+ownerid,,,,Case,Owner,OwnerId
+parentcaseid,,,,Case,Parent Case,ParentId
+prioritycode,,,,Case,Priority,Priority
+ticketnumber,,,,Case,Case Number,CaseNumber
+title,,,,Case,Subject,Subject

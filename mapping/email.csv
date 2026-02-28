@@ -1,0 +1,18 @@
+fieldName,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+bcc,,,,EmailMessage,BCC Address,BccAddress
+body,,,,EmailMessage,HTML Body,HtmlBody
+cc,,,,EmailMessage,CC Address,CcAddress
+createdby,,,,EmailMessage,Created By,CreatedById
+createdon,,,,EmailMessage,Created Date,CreatedDate
+description,EmailMessage,HTMLBody,,,,
+directioncode,,,,EmailMessage,Incoming,Incoming
+emailsender,EmailMessage,From Address,,,,
+from,,,,EmailMessage,From Name,FromName
+modifiedby,,,,EmailMessage,Last Modified By,LastModifiedById
+modifiedon,,,,EmailMessage,Last Modified Date,LastModifiedDate
+ownerid,EmailMessage,,,,,
+owneridname,EmailMessage,Owner,OwnerId,,,
+sender,,,,EmailMessage,From Address,FromAddress
+senton,,,,EmailMessage,Message Date,MessageDate
+subject,EmailMessage,Subject,,,,
+to,,,,EmailMessage,To Address,ToAddress

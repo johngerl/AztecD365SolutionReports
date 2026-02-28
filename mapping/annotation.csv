@@ -1,0 +1,11 @@
+fieldName,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+createdby,,,,ContentVersion,Created By,CreatedById
+createdon,,,,ContentVersion,Created Date,CreatedDate
+documentbody,,,,ContentVersion,Version Data,VersionData
+filesize,,,,ContentVersion,Content Size,ContentSize
+mimetype,,,,ContentVersion,File Type,FileType
+modifiedby,,,,ContentVersion,Last Modified By,LastModifiedById
+modifiedon,,,,ContentVersion,Last Modified Date,LastModifiedDate
+notetext,,,,ContentVersion,Description,Description
+ownerid,,,,ContentVersion,Owner,OwnerId
+subject,,,,ContentVersion,Title,Title

@@ -1,0 +1,40 @@
+fieldName,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+accountid,,,,Contact,Account,AccountId
+address1_addresstypecode,Contact,,,,,
+address1_city,Contact,,,,,
+address1_composite,Contact,,,,,
+address1_country,Contact,,,,,
+address1_latitude,,,,Contact,Mailing Latitude,MailingLatitude
+address1_line1,Contact,,,,,
+address1_line2,Contact,,,,,
+address1_longitude,,,,Contact,Mailing Longitude,MailingLongitude
+address1_name,Contact,,,,,
+address1_postalcode,Contact,,,,,
+address1_stateorprovince,Contact,,,,,
+address1_telephone1,Contact,,,,,
+assistantname,Contact,Assistant,AssistantName,,,
+assistantphone,Contact,Assistant Phone,AssistantPhone,,,
+azt_extension,Contact,Phone Extension,Phone_Ext__c,,,
+azt_recordownerid,Contact,Contact Owner,OwnerId,,,
+createdby,Contact,Legacy Created By,Legacy_Created_By__c,,,
+createdon,Contact,Legacy Created On,Legacy_Created_On__c,,,
+department,,,,Contact,Department,Department
+description,Contact,Description,Description,,,
+emailaddress1,Contact,Email,Email,,,
+fax,,,,Contact,Fax,Fax
+firstname,Contact,First Name,FirstName,,,
+fullname,Contact,,,,,
+jobtitle,Contact,Title,Title,,,
+lastname,Contact,Last Name,LastName,,,
+leadsourcecode,,,,Contact,LeadSource,LeadSource
+mobilephone,Contact,Phone,MobilePhone,,,
+modifiedby,,,,Contact,Last Modified By,LastModifiedById
+modifiedon,,,,Contact,Last Modified Date,LastModifiedDate
+msa_managingpartnerid,Contact,CRM Managing Partner,CRM_Managing_Partner__c,,,
+originatingleadid,,,,Contact,Lead Source,LeadSource
+ownerid,Contact,,,,,
+parentcustomerid,Contact,Account name,AccountId,,,
+salutation,,,,Contact,Salutation,Salutation
+suffix,,,,Contact,Suffix,Suffix
+telephone1,Contact,,,,,
+telephone2,,,,Contact,Other Phone,OtherPhone

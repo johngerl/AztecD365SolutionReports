@@ -1,0 +1,9 @@
+fieldName,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+createdby,,,,Task,Created By,CreatedById
+createdon,,,,Task,Created Date,CreatedDate
+description,,,,Task,Description,Description
+modifiedby,,,,Task,Last Modified By,LastModifiedById
+modifiedon,,,,Task,Last Modified Date,LastModifiedDate
+ownerid,,,,Task,Owner,OwnerId
+prioritycode,,,,Task,Priority,Priority
+subject,,,,Task,Subject,Subject

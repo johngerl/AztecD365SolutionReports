@@ -1,0 +1,4 @@
+fieldName,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+description,,,,Order,Description,Description
+ordernumber,,,,Order,OrderNumber,OrderNumber
+ownerid,,,,Order,OwnerId,OwnerId

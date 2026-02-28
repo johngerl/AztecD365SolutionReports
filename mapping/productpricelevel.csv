@@ -1,0 +1,8 @@
+fieldName,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+amount,,,,PricebookEntry,List Price,UnitPrice
+createdby,,,,PricebookEntry,Created By,CreatedById
+createdon,,,,PricebookEntry,Created Date,CreatedDate
+modifiedby,,,,PricebookEntry,Last Modified By,LastModifiedById
+modifiedon,,,,PricebookEntry,Last Modified Date,LastModifiedDate
+pricelevelid,,,,PricebookEntry,Price Book,Pricebook2Id
+productid,,,,PricebookEntry,Product,Product2Id

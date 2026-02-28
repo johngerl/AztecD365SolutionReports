@@ -1,0 +1,39 @@
+fieldName,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+azt_iscompanion,,,,Product2,Is Companion,Is_Companion__c
+azt_isprint,,,,Product2,Is Print,Is_Print__c
+azt_nonsaastype,,,,Product2,Non Saas Type,Non_Saas_Type__c
+azt_productcategory,,,,Product2,Product Type,Product_Type__c
+azt_replacementproductidname,Product,,,,,
+azt_saas,,,,Product2,SaaS,SaaS__c
+azt_salesfamily,,,,Product2,Sales Family,Sales_Family__c
+createdby,,,,Product2,Created By,CreatedById
+createdbyexternalpartyname,Product,,,,,
+createdbyexternalpartyyominame,Product,,,,,
+createdbyname,Product,,,,,
+createdbyyominame,Product,,,,,
+createdon,,,,Product2,Created Date,CreatedDate
+createdonbehalfbyname,Product,,,,,
+createdonbehalfbyyominame,Product,,,,,
+defaultuomidname,Product,,,,,
+defaultuomscheduleidname,Product,,,,,
+description,Product,Description,,,,
+entityimage_timestamp,Product,,,,,
+entityimage_url,Product,,,,,
+entityimageid,Product,,,,,
+modifiedby,,,,Product2,Last Modified By,LastModifiedById
+modifiedbyexternalpartyname,Product,,,,,
+modifiedbyexternalpartyyominame,Product,,,,,
+modifiedbyname,Product,,,,,
+modifiedbyyominame,Product,,,,,
+modifiedon,,,,Product2,Last Modified Date,LastModifiedDate
+modifiedonbehalfbyname,Product,,,,,
+modifiedonbehalfbyyominame,Product,,,,,
+name,Product,Name,,,,
+organizationidname,Product,,,,,
+parentproductidname,Product,,,,,
+price,,,,Product2,List Price,List_Price__c
+pricelevelidname,Product,,,,,
+productnumber,,,,Product2,Product Code,ProductCode
+size,Product,,,,,
+subjectidname,Product,,,,,
+transactioncurrencyidname,Product,,,,,

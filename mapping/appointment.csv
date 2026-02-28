@@ -1,0 +1,13 @@
+fieldName,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+createdby,,,,Event,Created By,CreatedById
+createdon,,,,Event,Created Date,CreatedDate
+description,,,,Event,Description,Description
+isalldayevent,,,,Event,All Day Event,IsAllDayEvent
+ismapiprivate,,,,Event,IsPrivate,IsPrivate
+location,,,,Event,Location,Location
+modifiedby,,,,Event,Last Modified By,LastModifiedById
+modifiedon,,,,Event,Last Modified Date,LastModifiedDate
+ownerid,,,,Event,Owner,OwnerId
+scheduledend,,,,Event,End Date Time,EndDateTime
+scheduledstart,,,,Event,Start Date Time,StartDateTime
+subject,,,,Event,Subject,Subject

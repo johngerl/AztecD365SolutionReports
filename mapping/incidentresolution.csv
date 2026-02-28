@@ -1,0 +1,5 @@
+fieldName,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+description,,,,Case,Description,Description
+ownerid,,,,Case,OwnerId,OwnerId
+prioritycode,,,,Case,Priority,Priority
+subject,,,,Case,Subject,Subject

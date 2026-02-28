@@ -1,0 +1,37 @@
+fieldName,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+address1_city,,,,Lead,City,City
+address1_country,,,,Lead,Country,Country
+address1_line1,,,,Lead,Street,Street
+address1_postalcode,,,,Lead,Zip,PostalCode
+address1_stateorprovince,,,,Lead,State,State
+azt_analysisbackground,,,,Lead,Analysis Background,Analysis_Background__c
+azt_leadsource,,,,Lead,Lead Source Campaign,Lead_Source_Campaign__c
+azt_leadsourceid,,,,Lead,LeadSource,LeadSource
+azt_leadtype,,,,Lead,Lead Type,Lead_Type__c
+azt_numberofstudents,,,,Lead,How Many Customers Members,How_Many_Customers_Members__c
+azt_productsissues,,,,Lead,Product Interest,Product_Interest__c
+azt_qualifieddisqualifiedon,,,,Lead,Qualified Disqualified On,Qualified_Disqualified_On__c
+azt_recommendation,,,,Lead,Next Step,Next_Step__c
+azt_verticalmarket,,,,Lead,Vertical Market,Vertical_Market__c
+budgetamount,,,,Lead,Budget,Budget__c
+createdby,,,,Lead,Created By,CreatedById
+createdon,,,,Lead,Created Date,CreatedDate
+description,,,,Lead,Description,Description
+donotemail,,,,Lead,Email Opt Out,HasOptedOutOfEmail
+donotfax,,,,Lead,Fax Opt Out,HasOptedOutOfFax
+donotphone,,,,Lead,Do Not Call,DoNotCall
+emailaddress1,,,,Lead,Email,Email
+fax,,,,Lead,Fax,Fax
+industrycode,,,,Lead,Industry,Industry
+jobtitle,,,,Lead,Title,Title
+leadqualitycode,,,,Lead,Rating,Rating
+leadsourcecode,,,,Lead,Lead Source,LeadSource
+mobilephone,,,,Lead,Mobile,MobilePhone
+modifiedby,,,,Lead,Last Modified By,LastModifiedById
+modifiedon,,,,Lead,Last Modified Date,LastModifiedDate
+numberofemployees,,,,Lead,No. of Employees,NumberOfEmployees
+ownerid,,,,Lead,Owner,OwnerId
+revenue,,,,Lead,Annual Revenue,AnnualRevenue
+salutation,,,,Lead,Salutation,Salutation
+telephone1,,,,Lead,Phone,Phone
+websiteurl,,,,Lead,Website,Website

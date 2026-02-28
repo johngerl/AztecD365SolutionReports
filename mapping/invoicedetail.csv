@@ -1,0 +1,38 @@
+fieldName,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+azt_licenseenddate,,,,Invoice_Line__c,License End Date,License_End_Date__c
+azt_licensestartdate,,,,Invoice_Line__c,License Start Date,License_Start_Date__c
+azt_licensetermmonths,,,,Invoice_Line__c,License Term Months,License_Term_Months__c
+azt_licensetype,,,,Invoice_Line__c,License Type,License_Type__c
+azt_softwarelicenseidname,Invoice Line Item,,,,,
+baseamount,,,,Invoice_Line__c,Sale Price,Sale_Price__c
+createdby,,,,Invoice_Line__c,Created By,CreatedById
+createdbyname,Invoice Line Item,,,,,
+createdbyyominame,Invoice Line Item,,,,,
+createdon,,,,Invoice_Line__c,Created Date,CreatedDate
+createdonbehalfbyname,Invoice Line Item,,,,,
+createdonbehalfbyyominame,Invoice Line Item,,,,,
+description,Invoice Line Item,Description,,,,
+extendedamount,,,,Invoice_Line__c,Total Price,Total_Price__c
+invoiceid,,,,Invoice_Line__c,Invoice,Invoice__c
+invoiceidname,Invoice Line Item,,,,,
+manualdiscountamount,,,,Invoice_Line__c,Discount Amount,Discount_Amount__c
+modifiedby,,,,Invoice_Line__c,Last Modified By,LastModifiedById
+modifiedbyname,Invoice Line Item,,,,,
+modifiedbyyominame,Invoice Line Item,,,,,
+modifiedon,,,,Invoice_Line__c,Last Modified Date,LastModifiedDate
+modifiedonbehalfbyname,Invoice Line Item,,,,,
+modifiedonbehalfbyyominame,Invoice Line Item,,,,,
+owneridname,Invoice Line Item,,,,,
+owneridtype,Invoice Line Item,,,,,
+owneridyominame,Invoice Line Item,,,,,
+priceperunit,,,,Invoice_Line__c,Unit Price,Unit_Price__c
+productid,,,,Invoice_Line__c,Product,Product__c
+productidname,Invoice Line Item,,,,,
+quantity,Invoice Line Item,Quantity,Quantity__c,,,
+salesorderdetailid,,,,Invoice_Line__c,Order Product,Order_Product__c
+salesorderdetailidname,Invoice Line Item,,,,,
+salesrepidname,Invoice Line Item,,,,,
+salesrepidyominame,Invoice Line Item,,,,,
+tax,Invoice Line Item,,,,,
+transactioncurrencyidname,Invoice Line Item,,,,,
+uomidname,Invoice Line Item,,,,,

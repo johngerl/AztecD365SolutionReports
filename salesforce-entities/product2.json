@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -67,12 +67,14 @@
       "maxLength": 40,
       "picklistValues": [
         {
-          "label": "Divide",
-          "value": "Divide"
+          "label": "Divide Amount into multiple installments",
+          "value": "Divide",
+          "active": true
         },
         {
-          "label": "Repeat",
-          "value": "Repeat"
+          "label": "Repeat Amount for each installment",
+          "value": "Repeat",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -91,23 +93,28 @@
       "picklistValues": [
         {
           "label": "Daily",
-          "value": "Daily"
+          "value": "Daily",
+          "active": true
         },
         {
           "label": "Weekly",
-          "value": "Weekly"
+          "value": "Weekly",
+          "active": true
         },
         {
           "label": "Monthly",
-          "value": "Monthly"
+          "value": "Monthly",
+          "active": true
         },
         {
           "label": "Quarterly",
-          "value": "Quarterly"
+          "value": "Quarterly",
+          "active": true
         },
         {
           "label": "Yearly",
-          "value": "Yearly"
+          "value": "Yearly",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -139,12 +146,14 @@
       "maxLength": 40,
       "picklistValues": [
         {
-          "label": "Divide",
-          "value": "Divide"
+          "label": "Divide Amount into multiple installments",
+          "value": "Divide",
+          "active": true
         },
         {
-          "label": "Repeat",
-          "value": "Repeat"
+          "label": "Repeat Amount for each installment",
+          "value": "Repeat",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -163,23 +172,28 @@
       "picklistValues": [
         {
           "label": "Daily",
-          "value": "Daily"
+          "value": "Daily",
+          "active": true
         },
         {
           "label": "Weekly",
-          "value": "Weekly"
+          "value": "Weekly",
+          "active": true
         },
         {
           "label": "Monthly",
-          "value": "Monthly"
+          "value": "Monthly",
+          "active": true
         },
         {
           "label": "Quarterly",
-          "value": "Quarterly"
+          "value": "Quarterly",
+          "active": true
         },
         {
           "label": "Yearly",
-          "value": "Yearly"
+          "value": "Yearly",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -206,7 +220,7 @@
     {
       "fieldName": "IsActive",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -220,7 +234,7 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -234,7 +248,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -248,7 +262,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -262,7 +276,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -276,7 +290,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -296,7 +310,8 @@
       "picklistValues": [
         {
           "label": "None",
-          "value": "None"
+          "value": "None",
+          "active": true
         }
       ],
       "d365EntityName": "product",
@@ -371,7 +386,8 @@
       "picklistValues": [
         {
           "label": "Each",
-          "value": "Each"
+          "value": "Each",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -384,7 +400,7 @@
     {
       "fieldName": "IsDeleted",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -398,7 +414,7 @@
     {
       "fieldName": "IsArchived",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -460,27 +476,33 @@
       "picklistValues": [
         {
           "label": "Ed Tech",
-          "value": "Ed Tech"
+          "value": "Ed Tech",
+          "active": true
         },
         {
           "label": "Pub",
-          "value": "Pub"
+          "value": "Pub",
+          "active": true
         },
         {
           "label": "Full",
-          "value": "Full"
+          "value": "Full",
+          "active": true
         },
         {
           "label": "CTE",
-          "value": "CTE"
+          "value": "CTE",
+          "active": true
         },
         {
           "label": "Workforce",
-          "value": "Workforce"
+          "value": "Workforce",
+          "active": true
         },
         {
           "label": "iGrad",
-          "value": "iGrad"
+          "value": "iGrad",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -499,15 +521,18 @@
       "picklistValues": [
         {
           "label": "Paxen Print",
-          "value": "Paxen Print"
+          "value": "Paxen Print",
+          "active": true
         },
         {
           "label": "Life Skills",
-          "value": "Life Skills"
+          "value": "Life Skills",
+          "active": true
         },
         {
           "label": "Other",
-          "value": "Other"
+          "value": "Other",
+          "active": true
         }
       ],
       "d365EntityName": "product",
@@ -526,67 +551,83 @@
       "picklistValues": [
         {
           "label": "Software",
-          "value": "Software"
+          "value": "Software",
+          "active": true
         },
         {
           "label": "Books",
-          "value": "Books"
+          "value": "Books",
+          "active": true
         },
         {
           "label": "Life Skills Book",
-          "value": "Life Skills Book"
+          "value": "Life Skills Book",
+          "active": true
         },
         {
           "label": "Other",
-          "value": "Other"
+          "value": "Other",
+          "active": true
         },
         {
           "label": "P6",
-          "value": "P6"
+          "value": "P6",
+          "active": true
         },
         {
           "label": "Vouchers",
-          "value": "Vouchers"
+          "value": "Vouchers",
+          "active": true
         },
         {
           "label": "Hardware",
-          "value": "Hardware"
+          "value": "Hardware",
+          "active": true
         },
         {
           "label": "SaaS Setup",
-          "value": "SaaS Setup"
+          "value": "SaaS Setup",
+          "active": true
         },
         {
           "label": "SaaS Licensing",
-          "value": "SaaS Licensing"
+          "value": "SaaS Licensing",
+          "active": true
         },
         {
           "label": "Credit Score and Report",
-          "value": "Credit Score and Report"
+          "value": "Credit Score and Report",
+          "active": true
         },
         {
           "label": "Coaching",
-          "value": "Coaching"
+          "value": "Coaching",
+          "active": true
         },
         {
           "label": "Offline Content",
-          "value": "Offline Content"
+          "value": "Offline Content",
+          "active": true
         },
         {
           "label": "Premium Content",
-          "value": "Premium Content"
+          "value": "Premium Content",
+          "active": true
         },
         {
           "label": "Consulting Service",
-          "value": "Consulting Service"
+          "value": "Consulting Service",
+          "active": true
         },
         {
           "label": "Custom NonContent",
-          "value": "Custom NonContent"
+          "value": "Custom NonContent",
+          "active": true
         },
         {
           "label": "SLA",
-          "value": "SLA"
+          "value": "SLA",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -605,23 +646,28 @@
       "picklistValues": [
         {
           "label": "Academic",
-          "value": "Academic"
+          "value": "Academic",
+          "active": true
         },
         {
           "label": "Other",
-          "value": "Other"
+          "value": "Other",
+          "active": true
         },
         {
           "label": "Workforce",
-          "value": "Workforce"
+          "value": "Workforce",
+          "active": true
         },
         {
           "label": "CTE",
-          "value": "CTE"
+          "value": "CTE",
+          "active": true
         },
         {
           "label": "Financial Wellness",
-          "value": "Financial Wellness"
+          "value": "Financial Wellness",
+          "active": true
         }
       ],
       "d365EntityName": "product",
@@ -634,7 +680,7 @@
     {
       "fieldName": "Is_Companion__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -648,7 +694,7 @@
     {
       "fieldName": "Is_Print__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -679,7 +725,583 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 4099,
-      "picklistValues": null,
+      "picklistValues": [
+        {
+          "label": "1st Edition",
+          "value": "1st Edition",
+          "active": true
+        },
+        {
+          "label": "2nd Edition",
+          "value": "2nd Edition",
+          "active": true
+        },
+        {
+          "label": "A Tutor",
+          "value": "A Tutor",
+          "active": true
+        },
+        {
+          "label": "ABE",
+          "value": "ABE",
+          "active": true
+        },
+        {
+          "label": "ABE-Digital",
+          "value": "ABE-Digital",
+          "active": true
+        },
+        {
+          "label": "ABE-Print",
+          "value": "ABE-Print",
+          "active": true
+        },
+        {
+          "label": "ACCU",
+          "value": "ACCU",
+          "active": true
+        },
+        {
+          "label": "ACT",
+          "value": "ACT",
+          "active": true
+        },
+        {
+          "label": "aPub",
+          "value": "aPub",
+          "active": true
+        },
+        {
+          "label": "Bridge",
+          "value": "Bridge",
+          "active": true
+        },
+        {
+          "label": "Bridge Digital",
+          "value": "Bridge Digital",
+          "active": true
+        },
+        {
+          "label": "Career Pathways Print",
+          "value": "Career Pathways Print",
+          "active": true
+        },
+        {
+          "label": "CASAS",
+          "value": "CASAS",
+          "active": true
+        },
+        {
+          "label": "CASAS Digital",
+          "value": "CASAS Digital",
+          "active": true
+        },
+        {
+          "label": "CASAS Print",
+          "value": "CASAS Print",
+          "active": true
+        },
+        {
+          "label": "Catalog Print",
+          "value": "Catalog Print",
+          "active": true
+        },
+        {
+          "label": "CBC Digital",
+          "value": "CBC Digital",
+          "active": true
+        },
+        {
+          "label": "CMA Digital",
+          "value": "CMA Digital",
+          "active": true
+        },
+        {
+          "label": "College",
+          "value": "College",
+          "active": true
+        },
+        {
+          "label": "College Prep Digital",
+          "value": "College Prep Digital",
+          "active": true
+        },
+        {
+          "label": "Companion",
+          "value": "Companion",
+          "active": true
+        },
+        {
+          "label": "Companion Digital",
+          "value": "Companion Digital",
+          "active": true
+        },
+        {
+          "label": "CTE",
+          "value": "CTE",
+          "active": true
+        },
+        {
+          "label": "CWED Digital",
+          "value": "CWED Digital",
+          "active": true
+        },
+        {
+          "label": "CWED Print",
+          "value": "CWED Print",
+          "active": true
+        },
+        {
+          "label": "Digital",
+          "value": "Digital",
+          "active": true
+        },
+        {
+          "label": "Digital Literacy",
+          "value": "Digital Literacy",
+          "active": true
+        },
+        {
+          "label": "Digital Literacy Digital",
+          "value": "Digital Literacy Digital",
+          "active": true
+        },
+        {
+          "label": "DiscountOther",
+          "value": "DiscountOther",
+          "active": true
+        },
+        {
+          "label": "Employability",
+          "value": "Employability",
+          "active": true
+        },
+        {
+          "label": "English",
+          "value": "English",
+          "active": true
+        },
+        {
+          "label": "English/French",
+          "value": "English/French",
+          "active": true
+        },
+        {
+          "label": "Enrich Digital",
+          "value": "Enrich Digital",
+          "active": true
+        },
+        {
+          "label": "ePub",
+          "value": "ePub",
+          "active": true
+        },
+        {
+          "label": "ePub-Org",
+          "value": "ePub-Org",
+          "active": true
+        },
+        {
+          "label": "ESL",
+          "value": "ESL",
+          "active": true
+        },
+        {
+          "label": "ESL Digital",
+          "value": "ESL Digital",
+          "active": true
+        },
+        {
+          "label": "FFG",
+          "value": "FFG",
+          "active": true
+        },
+        {
+          "label": "FFG - FINRA Digital",
+          "value": "FFG - FINRA Digital",
+          "active": true
+        },
+        {
+          "label": "FFG - MS - Andex Digital",
+          "value": "FFG - MS - Andex Digital",
+          "active": true
+        },
+        {
+          "label": "FFG - MS - FCS Digital",
+          "value": "FFG - MS - FCS Digital",
+          "active": true
+        },
+        {
+          "label": "FFG - MS - IC Digital",
+          "value": "FFG - MS - IC Digital",
+          "active": true
+        },
+        {
+          "label": "FFG - MS - SBBI Digital",
+          "value": "FFG - MS - SBBI Digital",
+          "active": true
+        },
+        {
+          "label": "FFG - Other Digital",
+          "value": "FFG - Other Digital",
+          "active": true
+        },
+        {
+          "label": "Financial Wellness",
+          "value": "Financial Wellness",
+          "active": true
+        },
+        {
+          "label": "Foundations",
+          "value": "Foundations",
+          "active": true
+        },
+        {
+          "label": "Foundations Digital",
+          "value": "Foundations Digital",
+          "active": true
+        },
+        {
+          "label": "Fundamental Skills Print",
+          "value": "Fundamental Skills Print",
+          "active": true
+        },
+        {
+          "label": "Fundamentals",
+          "value": "Fundamentals",
+          "active": true
+        },
+        {
+          "label": "Fundamentals Digital",
+          "value": "Fundamentals Digital",
+          "active": true
+        },
+        {
+          "label": "GED",
+          "value": "GED",
+          "active": true
+        },
+        {
+          "label": "GED Flash",
+          "value": "GED Flash",
+          "active": true
+        },
+        {
+          "label": "GED Flash Digital",
+          "value": "GED Flash Digital",
+          "active": true
+        },
+        {
+          "label": "GED Flash-Play Digital",
+          "value": "GED Flash-Play Digital",
+          "active": true
+        },
+        {
+          "label": "GED Play",
+          "value": "GED Play",
+          "active": true
+        },
+        {
+          "label": "GED Play Digital",
+          "value": "GED Play Digital",
+          "active": true
+        },
+        {
+          "label": "GED Practice Digital",
+          "value": "GED Practice Digital",
+          "active": true
+        },
+        {
+          "label": "GED Practice Print",
+          "value": "GED Practice Print",
+          "active": true
+        },
+        {
+          "label": "GED Prep Digital",
+          "value": "GED Prep Digital",
+          "active": true
+        },
+        {
+          "label": "GED Prep Print",
+          "value": "GED Prep Print",
+          "active": true
+        },
+        {
+          "label": "GED Vouchers Print",
+          "value": "GED Vouchers Print",
+          "active": true
+        },
+        {
+          "label": "GED Vouchers Print +",
+          "value": "GED Vouchers Print +",
+          "active": true
+        },
+        {
+          "label": "GED-Digital",
+          "value": "GED-Digital",
+          "active": true
+        },
+        {
+          "label": "GED-Print",
+          "value": "GED-Print",
+          "active": true
+        },
+        {
+          "label": "Health Science",
+          "value": "Health Science",
+          "active": true
+        },
+        {
+          "label": "HiSet",
+          "value": "HiSet",
+          "active": true
+        },
+        {
+          "label": "HiSET Digital",
+          "value": "HiSET Digital",
+          "active": true
+        },
+        {
+          "label": "HiSET Print",
+          "value": "HiSET Print",
+          "active": true
+        },
+        {
+          "label": "HSE",
+          "value": "HSE",
+          "active": true
+        },
+        {
+          "label": "iGrad",
+          "value": "iGrad",
+          "active": true
+        },
+        {
+          "label": "iGrad Digital",
+          "value": "iGrad Digital",
+          "active": true
+        },
+        {
+          "label": "Kaplan",
+          "value": "Kaplan",
+          "active": true
+        },
+        {
+          "label": "Lecture Digital",
+          "value": "Lecture Digital",
+          "active": true
+        },
+        {
+          "label": "Legacy Digital",
+          "value": "Legacy Digital",
+          "active": true
+        },
+        {
+          "label": "LSE",
+          "value": "LSE",
+          "active": true
+        },
+        {
+          "label": "LSE Digital",
+          "value": "LSE Digital",
+          "active": true
+        },
+        {
+          "label": "LSE Print",
+          "value": "LSE Print",
+          "active": true
+        },
+        {
+          "label": "LSE Print +",
+          "value": "LSE Print +",
+          "active": true
+        },
+        {
+          "label": "LSE-Digital",
+          "value": "LSE-Digital",
+          "active": true
+        },
+        {
+          "label": "LSE-Print",
+          "value": "LSE-Print",
+          "active": true
+        },
+        {
+          "label": "Other",
+          "value": "Other",
+          "active": true
+        },
+        {
+          "label": "Partner Product",
+          "value": "Partner Product",
+          "active": true
+        },
+        {
+          "label": "PassAssured",
+          "value": "PassAssured",
+          "active": true
+        },
+        {
+          "label": "Paxen Focus Digital",
+          "value": "Paxen Focus Digital",
+          "active": true
+        },
+        {
+          "label": "PharmacyTech",
+          "value": "PharmacyTech",
+          "active": true
+        },
+        {
+          "label": "Practice Tests",
+          "value": "Practice Tests",
+          "active": true
+        },
+        {
+          "label": "Pre-GED",
+          "value": "Pre-GED",
+          "active": true
+        },
+        {
+          "label": "Pre-GED Digital",
+          "value": "Pre-GED Digital",
+          "active": true
+        },
+        {
+          "label": "Pre-GED Print",
+          "value": "Pre-GED Print",
+          "active": true
+        },
+        {
+          "label": "Pre-GED-Digital",
+          "value": "Pre-GED-Digital",
+          "active": true
+        },
+        {
+          "label": "Pre-GED-Print",
+          "value": "Pre-GED-Print",
+          "active": true
+        },
+        {
+          "label": "Print",
+          "value": "Print",
+          "active": true
+        },
+        {
+          "label": "Print +",
+          "value": "Print +",
+          "active": true
+        },
+        {
+          "label": "Professional Development Print +",
+          "value": "Professional Development Print +",
+          "active": true
+        },
+        {
+          "label": "PTTP Digital",
+          "value": "PTTP Digital",
+          "active": true
+        },
+        {
+          "label": "PTTP Print +",
+          "value": "PTTP Print +",
+          "active": true
+        },
+        {
+          "label": "Re-Entry",
+          "value": "Re-Entry",
+          "active": true
+        },
+        {
+          "label": "Re-Entry Digital",
+          "value": "Re-Entry Digital",
+          "active": true
+        },
+        {
+          "label": "Re-Entry Print",
+          "value": "Re-Entry Print",
+          "active": true
+        },
+        {
+          "label": "RFW",
+          "value": "RFW",
+          "active": true
+        },
+        {
+          "label": "RFW Digital",
+          "value": "RFW Digital",
+          "active": true
+        },
+        {
+          "label": "RFW Print",
+          "value": "RFW Print",
+          "active": true
+        },
+        {
+          "label": "ShippingOther",
+          "value": "ShippingOther",
+          "active": true
+        },
+        {
+          "label": "Skills Books Print",
+          "value": "Skills Books Print",
+          "active": true
+        },
+        {
+          "label": "Skills Tutor Digital",
+          "value": "Skills Tutor Digital",
+          "active": true
+        },
+        {
+          "label": "Spanish",
+          "value": "Spanish",
+          "active": true
+        },
+        {
+          "label": "Spanish - Digital",
+          "value": "Spanish - Digital",
+          "active": true
+        },
+        {
+          "label": "Spanish - Print",
+          "value": "Spanish - Print",
+          "active": true
+        },
+        {
+          "label": "TABE",
+          "value": "TABE",
+          "active": true
+        },
+        {
+          "label": "TABE Digital",
+          "value": "TABE Digital",
+          "active": true
+        },
+        {
+          "label": "TABE Print",
+          "value": "TABE Print",
+          "active": true
+        },
+        {
+          "label": "TABE Tutor",
+          "value": "TABE Tutor",
+          "active": true
+        },
+        {
+          "label": "TASC Digital",
+          "value": "TASC Digital",
+          "active": true
+        },
+        {
+          "label": "TASC Print",
+          "value": "TASC Print",
+          "active": true
+        },
+        {
+          "label": "Workforce",
+          "value": "Workforce",
+          "active": true
+        }
+      ],
       "d365EntityName": null,
       "d365DisplayName": null,
       "d365InternalName": null,
@@ -718,7 +1340,7 @@
     {
       "fieldName": "SaaS__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -738,11 +1360,13 @@
       "picklistValues": [
         {
           "label": "Active",
-          "value": "Active"
+          "value": "Active",
+          "active": true
         },
         {
           "label": "Inactive",
-          "value": "Inactive"
+          "value": "Inactive",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -761,7 +1385,8 @@
       "picklistValues": [
         {
           "label": "Non-inventory",
-          "value": "Non-inventory"
+          "value": "Non-inventory",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -780,71 +1405,88 @@
       "picklistValues": [
         {
           "label": "SaaS Setup",
-          "value": "SaaS Setup"
+          "value": "SaaS Setup",
+          "active": true
         },
         {
           "label": "iGrad Licenses",
-          "value": "iGrad Licenses"
+          "value": "iGrad Licenses",
+          "active": true
         },
         {
           "label": "Enrich Licenses",
-          "value": "Enrich Licenses"
+          "value": "Enrich Licenses",
+          "active": true
         },
         {
           "label": "Credit Score",
-          "value": "Credit Score"
+          "value": "Credit Score",
+          "active": true
         },
         {
           "label": "Coaching",
-          "value": "Coaching"
+          "value": "Coaching",
+          "active": true
         },
         {
           "label": "Premium Content",
-          "value": "Premium Content"
+          "value": "Premium Content",
+          "active": true
         },
         {
           "label": "Premium Content - FFG",
-          "value": "Premium Content - FFG"
+          "value": "Premium Content - FFG",
+          "active": true
         },
         {
           "label": "Premium Content - International",
-          "value": "Premium Content - International"
+          "value": "Premium Content - International",
+          "active": true
         },
         {
           "label": "Consulting Service",
-          "value": "Consulting Service"
+          "value": "Consulting Service",
+          "active": true
         },
         {
           "label": "Custom NonContent",
-          "value": "Custom NonContent"
+          "value": "Custom NonContent",
+          "active": true
         },
         {
           "label": "SLA",
-          "value": "SLA"
+          "value": "SLA",
+          "active": true
         },
         {
           "label": "FFG - MS - Andex",
-          "value": "FFG - MS - Andex"
+          "value": "FFG - MS - Andex",
+          "active": true
         },
         {
           "label": "FFG - MS - SBBI",
-          "value": "FFG - MS - SBBI"
+          "value": "FFG - MS - SBBI",
+          "active": true
         },
         {
           "label": "FFG - FINRA",
-          "value": "FFG - FINRA"
+          "value": "FFG - FINRA",
+          "active": true
         },
         {
           "label": "FFG - MS - IC",
-          "value": "FFG - MS - IC"
+          "value": "FFG - MS - IC",
+          "active": true
         },
         {
           "label": "FFG - MS - FCS",
-          "value": "FFG - MS - FCS"
+          "value": "FFG - MS - FCS",
+          "active": true
         },
         {
           "label": "FFG - Other",
-          "value": "FFG - Other"
+          "value": "FFG - Other",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -863,15 +1505,18 @@
       "picklistValues": [
         {
           "label": "Other Income",
-          "value": "Other Income"
+          "value": "Other Income",
+          "active": true
         },
         {
           "label": "Software",
-          "value": "Software"
+          "value": "Software",
+          "active": true
         },
         {
           "label": "Print",
-          "value": "Print"
+          "value": "Print",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -890,35 +1535,43 @@
       "picklistValues": [
         {
           "label": "One Time",
-          "value": "One Time"
+          "value": "One Time",
+          "active": true
         },
         {
           "label": "Annual Recurring",
-          "value": "Annual Recurring"
+          "value": "Annual Recurring",
+          "active": true
         },
         {
           "label": "Usage Monthly",
-          "value": "Usage Monthly"
+          "value": "Usage Monthly",
+          "active": true
         },
         {
           "label": "Usage",
-          "value": "Usage"
+          "value": "Usage",
+          "active": true
         },
         {
           "label": "Monthly Recurring",
-          "value": "Monthly Recurring"
+          "value": "Monthly Recurring",
+          "active": true
         },
         {
           "label": "Varies",
-          "value": "Varies"
+          "value": "Varies",
+          "active": true
         },
         {
           "label": "Recurring",
-          "value": "Recurring"
+          "value": "Recurring",
+          "active": true
         },
         {
           "label": "As needed",
-          "value": "As needed"
+          "value": "As needed",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -937,27 +1590,33 @@
       "picklistValues": [
         {
           "label": "Unit: cobrand",
-          "value": "Unit: cobrand"
+          "value": "Unit: cobrand",
+          "active": true
         },
         {
           "label": "Unit: hours",
-          "value": "Unit: hours"
+          "value": "Unit: hours",
+          "active": true
         },
         {
           "label": "Unit: user",
-          "value": "Unit: user"
+          "value": "Unit: user",
+          "active": true
         },
         {
           "label": "Unit: appt",
-          "value": "Unit: appt"
+          "value": "Unit: appt",
+          "active": true
         },
         {
           "label": "Unit: question",
-          "value": "Unit: question"
+          "value": "Unit: question",
+          "active": true
         },
         {
           "label": "Unit: staff",
-          "value": "Unit: staff"
+          "value": "Unit: staff",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -1012,7 +1671,7 @@
     {
       "fieldName": "Migrated__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -1022,29 +1681,6 @@
       "d365SuggestedEntityName": null,
       "d365SuggestedDisplayName": null,
       "d365SuggestedInternalName": null
-    }
-  ],
-  "d365SourceEntity": "product",
-  "dataTransformationRules": [
-    {
-      "category": "Rules",
-      "rules": [
-        "Keep Product or any other object id while migrating data",
-        "Sales Family filtered to only Aztec products",
-        "Remove duplicates products",
-        "Add price for products without Price",
-        "Unrestrict Default Price List",
-        "Unrestrict Legacy Status",
-        "Unrestrict Product Families",
-        "RecordTypeId - Aztec",
-        "Product Status - Active (Make inactive in the end after loading all line items)",
-        "Assign blank record owners to CRM Admin ??",
-        "Load Pricebook Entry",
-        "Pricebook ID",
-        "Active - true (Make inactive in CRM after loading all line items to Salesforce)",
-        "Ensure PricebookEntry and Product ID is included in the sheet for future vlookups",
-        "Some products do not have price which is required so those are not inserted"
-      ]
     }
   ]
 }

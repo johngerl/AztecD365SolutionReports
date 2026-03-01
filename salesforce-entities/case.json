@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -20,7 +20,7 @@
     {
       "fieldName": "IsDeleted",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -48,7 +48,7 @@
     {
       "fieldName": "CaseNumber",
       "dataType": "string",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 30,
       "picklistValues": null,
@@ -166,11 +166,13 @@
       "picklistValues": [
         {
           "label": "Problem",
-          "value": "Problem"
+          "value": "Problem",
+          "active": true
         },
         {
           "label": "Question",
-          "value": "Question"
+          "value": "Question",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -203,23 +205,28 @@
       "picklistValues": [
         {
           "label": "New",
-          "value": "New"
+          "value": "New",
+          "active": true
         },
         {
           "label": "In Progres",
-          "value": "In Progres"
+          "value": "In Progres",
+          "active": true
         },
         {
           "label": "On Hold",
-          "value": "On Hold"
+          "value": "On Hold",
+          "active": true
         },
         {
           "label": "Closed",
-          "value": "Closed"
+          "value": "Closed",
+          "active": true
         },
         {
           "label": "Escalated",
-          "value": "Escalated"
+          "value": "Escalated",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -238,23 +245,28 @@
       "picklistValues": [
         {
           "label": "User didn't attend training",
-          "value": "User didn't attend training"
+          "value": "User didn't attend training",
+          "active": true
         },
         {
           "label": "Complex functionality",
-          "value": "Complex functionality"
+          "value": "Complex functionality",
+          "active": true
         },
         {
           "label": "Existing problem",
-          "value": "Existing problem"
+          "value": "Existing problem",
+          "active": true
         },
         {
           "label": "Instructions not clear",
-          "value": "Instructions not clear"
+          "value": "Instructions not clear",
+          "active": true
         },
         {
           "label": "New problem",
-          "value": "New problem"
+          "value": "New problem",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -273,15 +285,18 @@
       "picklistValues": [
         {
           "label": "Email",
-          "value": "Email"
+          "value": "Email",
+          "active": true
         },
         {
           "label": "Phone",
-          "value": "Phone"
+          "value": "Phone",
+          "active": true
         },
         {
           "label": "Web",
-          "value": "Web"
+          "value": "Web",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -314,15 +329,18 @@
       "picklistValues": [
         {
           "label": "High",
-          "value": "High"
+          "value": "High",
+          "active": true
         },
         {
           "label": "Medium",
-          "value": "Medium"
+          "value": "Medium",
+          "active": true
         },
         {
           "label": "Low",
-          "value": "Low"
+          "value": "Low",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -349,7 +367,7 @@
     {
       "fieldName": "IsClosed",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -377,7 +395,7 @@
     {
       "fieldName": "IsEscalated",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -391,7 +409,7 @@
     {
       "fieldName": "OwnerId",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "Group, User",
       "maxLength": 18,
       "picklistValues": null,
@@ -405,7 +423,7 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -419,7 +437,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -433,7 +451,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -447,7 +465,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -461,7 +479,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,

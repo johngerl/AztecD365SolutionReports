@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -76,7 +76,7 @@
     {
       "fieldName": "IsActive",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -90,7 +90,7 @@
     {
       "fieldName": "UseStandardPrice",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -104,7 +104,7 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -118,7 +118,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -132,7 +132,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -146,7 +146,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -160,7 +160,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -188,7 +188,7 @@
     {
       "fieldName": "IsDeleted",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -202,7 +202,7 @@
     {
       "fieldName": "IsArchived",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,

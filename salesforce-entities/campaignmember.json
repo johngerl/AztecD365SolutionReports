@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -20,7 +20,7 @@
     {
       "fieldName": "IsDeleted",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -82,11 +82,13 @@
       "picklistValues": [
         {
           "label": "Responded",
-          "value": "Responded"
+          "value": "Responded",
+          "active": true
         },
         {
           "label": "Sent",
-          "value": "Sent"
+          "value": "Sent",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -99,7 +101,7 @@
     {
       "fieldName": "HasResponded",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -113,7 +115,7 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -127,7 +129,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -141,7 +143,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -155,7 +157,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -169,7 +171,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -203,27 +205,33 @@
       "picklistValues": [
         {
           "label": "Mr.",
-          "value": "Mr."
+          "value": "Mr.",
+          "active": true
         },
         {
           "label": "Ms.",
-          "value": "Ms."
+          "value": "Ms.",
+          "active": true
         },
         {
           "label": "Mrs.",
-          "value": "Mrs."
+          "value": "Mrs.",
+          "active": true
         },
         {
           "label": "Dr.",
-          "value": "Dr."
+          "value": "Dr.",
+          "active": true
         },
         {
           "label": "Prof.",
-          "value": "Prof."
+          "value": "Prof.",
+          "active": true
         },
         {
           "label": "Mx.",
-          "value": "Mx."
+          "value": "Mx.",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -432,7 +440,7 @@
     {
       "fieldName": "DoNotCall",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -446,7 +454,7 @@
     {
       "fieldName": "HasOptedOutOfEmail",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -460,7 +468,7 @@
     {
       "fieldName": "HasOptedOutOfFax",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -479,108 +487,139 @@
       "maxLength": 255,
       "picklistValues": [
         {
-          "label": "Advertising",
-          "value": "Advertising"
+          "label": "Advertising (not Google Ads)",
+          "value": "Advertising",
+          "active": true
         },
         {
           "label": "Broker relationship",
-          "value": "Broker relationship"
+          "value": "Broker relationship",
+          "active": true
         },
         {
           "label": "Call-In",
-          "value": "Call-In"
+          "value": "Call-In",
+          "active": true
         },
         {
           "label": "Chat",
-          "value": "Chat"
+          "value": "Chat",
+          "active": true
         },
         {
           "label": "Client Relations - Referral",
-          "value": "Client Relations - Referral"
+          "value": "Client Relations - Referral",
+          "active": true
         },
         {
           "label": "Cold Call",
-          "value": "Cold Call"
+          "value": "Cold Call",
+          "active": true
         },
         {
           "label": "Conference",
-          "value": "Conference"
+          "value": "Conference",
+          "active": true
         },
         {
           "label": "Contact Us Form",
-          "value": "Contact Us Form"
+          "value": "Contact Us Form",
+          "active": true
         },
         {
           "label": "Current Client Upsell Opportunity",
-          "value": "Current Client Upsell Opportunity"
+          "value": "Current Client Upsell Opportunity",
+          "active": true
         },
         {
           "label": "Email Outreach",
-          "value": "Email Outreach"
+          "value": "Email Outreach",
+          "active": true
         },
         {
           "label": "FFG Original",
-          "value": "FFG Original"
+          "value": "FFG Original",
+          "active": true
         },
         {
           "label": "Google Ads",
-          "value": "Google Ads"
+          "value": "Google Ads",
+          "active": true
         },
         {
           "label": "Instantly",
-          "value": "Instantly"
+          "value": "Instantly",
+          "active": true
         },
         {
-          "label": "linkedin",
-          "value": "linkedin"
+          "label": "LinkedIn",
+          "value": "linkedin",
+          "active": true
         },
         {
           "label": "Marketing Campaign",
-          "value": "Marketing Campaign"
+          "value": "Marketing Campaign",
+          "active": true
         },
         {
           "label": "Other",
-          "value": "Other"
+          "value": "Other",
+          "active": true
         },
         {
           "label": "Previous Demo",
-          "value": "Previous Demo"
+          "value": "Previous Demo",
+          "active": true
         },
         {
           "label": "Referral",
-          "value": "Referral"
+          "value": "Referral",
+          "active": true
         },
         {
           "label": "RFI",
-          "value": "RFI"
+          "value": "RFI",
+          "active": true
         },
         {
           "label": "RFP",
-          "value": "RFP"
+          "value": "RFP",
+          "active": true
         },
         {
           "label": "Social media Other (Instagram, Facebook, Twitter)",
-          "value": "Social media Other (Instagram, Facebook, Twitter)"
+          "value": "Social media Other (Instagram, Facebook, Twitter)",
+          "active": true
         },
         {
           "label": "Webinar",
-          "value": "Webinar"
+          "value": "Webinar",
+          "active": true
         },
         {
           "label": "Cold Call by Sales rep",
-          "value": "Cold Call by Sales rep"
+          "value": "Cold Call by Sales rep",
+          "active": true
         },
         {
           "label": "Downloaded a Resource",
-          "value": "Downloaded a Resource"
+          "value": "Downloaded a Resource",
+          "active": true
         },
         {
           "label": "Cold email by Sales rep",
-          "value": "Cold email by Sales rep"
+          "value": "Cold email by Sales rep",
+          "active": true
         },
         {
           "label": "Zoominfo",
-          "value": "Zoominfo"
+          "value": "Zoominfo",
+          "active": true
+        },
+        {
+          "label": "Lost Opportunity",
+          "value": "Lost Opportunity",
+          "active": true
         }
       ],
       "d365EntityName": null,

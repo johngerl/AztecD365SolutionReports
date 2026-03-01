@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -20,7 +20,7 @@
     {
       "fieldName": "IsDeleted",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -34,7 +34,7 @@
     {
       "fieldName": "SolutionNumber",
       "dataType": "string",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 30,
       "picklistValues": null,
@@ -62,7 +62,7 @@
     {
       "fieldName": "IsPublished",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -76,7 +76,7 @@
     {
       "fieldName": "IsPublishedInPublicKb",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -90,21 +90,24 @@
     {
       "fieldName": "Status",
       "dataType": "picklist",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
       "picklistValues": [
         {
           "label": "Draft",
-          "value": "Draft"
+          "value": "Draft",
+          "active": true
         },
         {
           "label": "Reviewed",
-          "value": "Reviewed"
+          "value": "Reviewed",
+          "active": true
         },
         {
           "label": "Duplicate",
-          "value": "Duplicate"
+          "value": "Duplicate",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -117,7 +120,7 @@
     {
       "fieldName": "IsReviewed",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -145,7 +148,7 @@
     {
       "fieldName": "OwnerId",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -159,7 +162,7 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -173,7 +176,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -187,7 +190,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -201,7 +204,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -215,7 +218,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -271,7 +274,7 @@
     {
       "fieldName": "IsHtml",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,

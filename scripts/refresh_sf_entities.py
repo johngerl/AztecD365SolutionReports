@@ -5,19 +5,25 @@ refresh_sf_entities.py
 Refreshes Salesforce object schema JSON files in salesforce-entities/
 by calling the Salesforce REST API (SObject Describe).
 
-Reads credentials from .mcp.json (salesforce server config).
+Authentication (tried in order):
+  1. Salesforce CLI (`sf org display`) — uses existing authenticated session
+  2. OAuth 2.0 Client Credentials — reads from .mcp.json salesforce config
+
 Preserves existing d365 mapping fields when updating.
 
 Usage:
     python refresh_sf_entities.py Account           # single SF object
     python refresh_sf_entities.py --all              # all objects in salesforce-entities/
     python refresh_sf_entities.py --all --output-dir PATH
+    python refresh_sf_entities.py --all --auth oauth # force OAuth (skip SF CLI)
 """
 
 import argparse
 import json
 import os
+import shutil
 import ssl
+import subprocess
 import sys
 import urllib.error
 import urllib.parse
@@ -40,14 +46,87 @@ D365_MAPPING_FIELDS = [
 
 
 # ---------------------------------------------------------------------------
-# Credential loading
+# Authentication: SF CLI
+# ---------------------------------------------------------------------------
+
+def find_sf_cli_org(instance_url):
+    """Find a matching SF CLI org alias by instance URL.
+
+    Returns the alias/username or None.
+    """
+    sf_cmd = shutil.which("sf")
+    if not sf_cmd:
+        return None
+
+    try:
+        result = subprocess.run(
+            [sf_cmd, "org", "list", "--json"],
+            capture_output=True, text=True, timeout=30,
+        )
+        if result.returncode != 0:
+            return None
+
+        data = json.loads(result.stdout)
+        target = instance_url.rstrip("/").lower()
+        for org in data.get("result", {}).get("nonScratchOrgs", []):
+            org_url = org.get("instanceUrl", "").rstrip("/").lower()
+            if org_url == target:
+                return org.get("alias") or org.get("username")
+    except (subprocess.TimeoutExpired, json.JSONDecodeError, OSError):
+        pass
+    return None
+
+
+def authenticate_sf_cli(target_org=None):
+    """Authenticate using Salesforce CLI stored session.
+
+    If no target_org specified, attempts to find one matching the
+    instance URL from .mcp.json.
+
+    Returns (access_token, instance_url) or (None, None) if unavailable.
+    """
+    sf_cmd = shutil.which("sf")
+    if not sf_cmd:
+        return None, None
+
+    # Auto-discover org from .mcp.json instance URL if no target specified
+    if not target_org:
+        _, _, mcp_url = load_sf_credentials(MCP_CONFIG_PATH)
+        if mcp_url:
+            target_org = find_sf_cli_org(mcp_url)
+
+    cmd = [sf_cmd, "org", "display", "--json"]
+    if target_org:
+        cmd.extend(["--target-org", target_org])
+
+    try:
+        result = subprocess.run(
+            cmd, capture_output=True, text=True, timeout=30,
+        )
+        if result.returncode != 0:
+            return None, None
+
+        data = json.loads(result.stdout)
+        r = data.get("result", {})
+        token = r.get("accessToken")
+        url = r.get("instanceUrl", "").rstrip("/")
+
+        if token and url:
+            return token, url
+    except (subprocess.TimeoutExpired, json.JSONDecodeError, OSError):
+        pass
+
+    return None, None
+
+
+# ---------------------------------------------------------------------------
+# Authentication: OAuth 2.0 Client Credentials
 # ---------------------------------------------------------------------------
 
 def load_sf_credentials(mcp_path):
     """Read Salesforce credentials from .mcp.json salesforce server config."""
     if not os.path.isfile(mcp_path):
-        print(f"ERROR: .mcp.json not found at {mcp_path}", file=sys.stderr)
-        sys.exit(1)
+        return None, None, None
 
     with open(mcp_path, "r", encoding="utf-8") as f:
         config = json.load(f)
@@ -63,24 +142,15 @@ def load_sf_credentials(mcp_path):
     instance_url = sf_env.get("SALESFORCE_INSTANCE_URL", "").rstrip("/")
 
     if not all([client_id, client_secret, instance_url]):
-        print(
-            "ERROR: Missing SALESFORCE_CLIENT_ID, SALESFORCE_CLIENT_SECRET, "
-            "or SALESFORCE_INSTANCE_URL in .mcp.json salesforce config",
-            file=sys.stderr,
-        )
-        sys.exit(1)
+        return None, None, None
 
     return client_id, client_secret, instance_url
 
 
-# ---------------------------------------------------------------------------
-# OAuth 2.0 authentication
-# ---------------------------------------------------------------------------
-
-def authenticate(client_id, client_secret, instance_url):
+def authenticate_oauth(client_id, client_secret, instance_url):
     """Authenticate via OAuth 2.0 Client Credentials flow.
 
-    Returns (access_token, instance_url_from_token).
+    Returns (access_token, instance_url) or (None, None) on failure.
     """
     token_url = f"{instance_url}/services/oauth2/token"
     data = urllib.parse.urlencode({
@@ -98,25 +168,56 @@ def authenticate(client_id, client_secret, instance_url):
             body = json.loads(resp.read().decode("utf-8"))
     except urllib.error.HTTPError as e:
         error_body = e.read().decode("utf-8", errors="replace")
-        print(f"ERROR: OAuth token request failed ({e.code}): {error_body}", file=sys.stderr)
-        if "no valid scopes" in error_body.lower() or "invalid_scope" in error_body.lower():
+        print(f"  OAuth failed ({e.code}): {error_body}", file=sys.stderr)
+        if "no valid scopes" in error_body.lower():
             print(
-                "\nHINT: Salesforce Winter '26+ requires at least one valid OAuth scope\n"
-                "on the Connected App. Go to Setup > App Manager > [Connected App] >\n"
-                "Edit Policies > Selected OAuth Scopes and add 'Manage user data via\n"
-                "APIs (api)'. See: https://cloudwithabhi.com/client-credentials-flow-new-invalid-scope-error/",
+                "  HINT: Add 'Manage user data via APIs (api)' scope to the Connected App.",
                 file=sys.stderr,
             )
-        sys.exit(1)
+        return None, None
 
     access_token = body.get("access_token")
     returned_url = body.get("instance_url", instance_url).rstrip("/")
-
     if not access_token:
-        print("ERROR: No access_token in OAuth response", file=sys.stderr)
-        sys.exit(1)
+        return None, None
 
     return access_token, returned_url
+
+
+def resolve_auth(auth_mode):
+    """Try authentication methods and return (access_token, instance_url).
+
+    Exits with error if all methods fail.
+    """
+    # SF CLI first (unless forced to oauth)
+    if auth_mode != "oauth":
+        print("Trying Salesforce CLI authentication...")
+        token, url = authenticate_sf_cli()
+        if token:
+            print(f"  Authenticated via SF CLI ({url})")
+            return token, url
+        print("  SF CLI not available or not authenticated.")
+
+    # OAuth fallback
+    if auth_mode != "cli":
+        print("Trying OAuth 2.0 Client Credentials from .mcp.json...")
+        cid, csecret, iurl = load_sf_credentials(MCP_CONFIG_PATH)
+        if cid:
+            token, url = authenticate_oauth(cid, csecret, iurl)
+            if token:
+                print(f"  Authenticated via OAuth ({url})")
+                return token, url
+        else:
+            print("  No credentials found in .mcp.json.")
+
+    print(
+        "\nERROR: All authentication methods failed.\n"
+        "Options:\n"
+        "  1. Install SF CLI and run: sf org login web --instance-url <url>\n"
+        "  2. Configure OAuth in .mcp.json with a Connected App that has 'api' scope",
+        file=sys.stderr,
+    )
+    sys.exit(1)
 
 
 # ---------------------------------------------------------------------------
@@ -261,7 +362,6 @@ def discover_existing_objects(output_dir):
                 if obj_name:
                     objects.append(obj_name)
             except (json.JSONDecodeError, OSError):
-                # Use filename stem as fallback
                 objects.append(filename.replace(".json", ""))
     return objects
 
@@ -286,6 +386,10 @@ def main():
         "--output-dir", default=DEFAULT_OUTPUT_DIR,
         help=f"Output directory (default: {DEFAULT_OUTPUT_DIR})",
     )
+    parser.add_argument(
+        "--auth", choices=["auto", "cli", "oauth"], default="auto",
+        help="Authentication method: auto (try CLI then OAuth), cli, or oauth",
+    )
     args = parser.parse_args()
 
     if not args.all and not args.object:
@@ -299,14 +403,8 @@ def main():
     print("=" * 60)
     print()
 
-    # Load credentials and authenticate
-    print("Loading credentials from .mcp.json...")
-    client_id, client_secret, instance_url = load_sf_credentials(MCP_CONFIG_PATH)
-    print(f"  Instance: {instance_url}")
-
-    print("Authenticating via OAuth 2.0 Client Credentials...")
-    access_token, auth_url = authenticate(client_id, client_secret, instance_url)
-    print("  Authenticated successfully.")
+    # Authenticate
+    access_token, auth_url = resolve_auth(args.auth)
     print()
 
     # Determine objects to refresh

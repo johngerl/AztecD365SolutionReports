@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -20,7 +20,7 @@
     {
       "fieldName": "IsDeleted",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -48,7 +48,7 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -62,7 +62,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -76,7 +76,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -90,7 +90,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -104,7 +104,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -166,31 +166,38 @@
       "picklistValues": [
         {
           "label": "Aztec Internal",
-          "value": "Aztec Internal"
+          "value": "Aztec Internal",
+          "active": true
         },
         {
           "label": "Employee Training",
-          "value": "Employee Training"
+          "value": "Employee Training",
+          "active": true
         },
         {
           "label": "Business Development",
-          "value": "Business Development"
+          "value": "Business Development",
+          "active": true
         },
         {
           "label": "Customer Support",
-          "value": "Customer Support"
+          "value": "Customer Support",
+          "active": true
         },
         {
           "label": "Sales - Add On",
-          "value": "Sales - Add On"
+          "value": "Sales - Add On",
+          "active": true
         },
         {
           "label": "Sales - Initial",
-          "value": "Sales - Initial"
+          "value": "Sales - Initial",
+          "active": true
         },
         {
           "label": "Sales - Renewal",
-          "value": "Sales - Renewal"
+          "value": "Sales - Renewal",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -209,19 +216,23 @@
       "picklistValues": [
         {
           "label": "Open",
-          "value": "Open"
+          "value": "Open",
+          "active": true
         },
         {
           "label": "Pending Approval",
-          "value": "Pending Approval"
+          "value": "Pending Approval",
+          "active": true
         },
         {
           "label": "Approved",
-          "value": "Approved"
+          "value": "Approved",
+          "active": true
         },
         {
           "label": "Rejected",
-          "value": "Rejected"
+          "value": "Rejected",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -240,71 +251,88 @@
       "picklistValues": [
         {
           "label": "Airfare",
-          "value": "Airfare"
+          "value": "Airfare",
+          "active": true
         },
         {
           "label": "Meals",
-          "value": "Meals"
+          "value": "Meals",
+          "active": true
         },
         {
           "label": "Rental Car",
-          "value": "Rental Car"
+          "value": "Rental Car",
+          "active": true
         },
         {
           "label": "Lodging",
-          "value": "Lodging"
+          "value": "Lodging",
+          "active": true
         },
         {
           "label": "Other",
-          "value": "Other"
+          "value": "Other",
+          "active": true
         },
         {
           "label": "Conference Fee",
-          "value": "Conference Fee"
+          "value": "Conference Fee",
+          "active": true
         },
         {
           "label": "Customer Entertainment",
-          "value": "Customer Entertainment"
+          "value": "Customer Entertainment",
+          "active": true
         },
         {
           "label": "Ground Transportation (Gas)",
-          "value": "Ground Transportation (Gas)"
+          "value": "Ground Transportation (Gas)",
+          "active": true
         },
         {
           "label": "Ground Transportation (Parking)",
-          "value": "Ground Transportation (Parking)"
+          "value": "Ground Transportation (Parking)",
+          "active": true
         },
         {
           "label": "Ground Transportation (Rental Car)",
-          "value": "Ground Transportation (Rental Car)"
+          "value": "Ground Transportation (Rental Car)",
+          "active": true
         },
         {
           "label": "Ground Transportation (Taxi/Ride Share)",
-          "value": "Ground Transportation (Taxi/Ride Share)"
+          "value": "Ground Transportation (Taxi/Ride Share)",
+          "active": true
         },
         {
           "label": "Miles",
-          "value": "Miles"
+          "value": "Miles",
+          "active": true
         },
         {
           "label": "Office Supplies",
-          "value": "Office Supplies"
+          "value": "Office Supplies",
+          "active": true
         },
         {
           "label": "Phone/Internet",
-          "value": "Phone/Internet"
+          "value": "Phone/Internet",
+          "active": true
         },
         {
           "label": "Service",
-          "value": "Service"
+          "value": "Service",
+          "active": true
         },
         {
           "label": "Shipping",
-          "value": "Shipping"
+          "value": "Shipping",
+          "active": true
         },
         {
           "label": "Tips",
-          "value": "Tips"
+          "value": "Tips",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -345,7 +373,7 @@
     {
       "fieldName": "Approved__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,

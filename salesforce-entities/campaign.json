@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -20,7 +20,7 @@
     {
       "fieldName": "IsDeleted",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -68,39 +68,48 @@
       "picklistValues": [
         {
           "label": "Event",
-          "value": "Event"
+          "value": "Event",
+          "active": true
         },
         {
           "label": "Demo Signup / Trial",
-          "value": "Demo Signup / Trial"
+          "value": "Demo Signup / Trial",
+          "active": true
         },
         {
           "label": "Email",
-          "value": "Email"
+          "value": "Email",
+          "active": true
         },
         {
           "label": "Referral Program",
-          "value": "Referral Program"
+          "value": "Referral Program",
+          "active": true
         },
         {
           "label": "Search",
-          "value": "Search"
+          "value": "Search",
+          "active": true
         },
         {
           "label": "Social Media",
-          "value": "Social Media"
+          "value": "Social Media",
+          "active": true
         },
         {
           "label": "Thought Leadership",
-          "value": "Thought Leadership"
+          "value": "Thought Leadership",
+          "active": true
         },
         {
           "label": "Website Direct",
-          "value": "Website Direct"
+          "value": "Website Direct",
+          "active": true
         },
         {
           "label": "Other",
-          "value": "Other"
+          "value": "Other",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -119,19 +128,23 @@
       "picklistValues": [
         {
           "label": "In Progress",
-          "value": "In Progress"
+          "value": "In Progress",
+          "active": true
         },
         {
           "label": "Completed",
-          "value": "Completed"
+          "value": "Completed",
+          "active": true
         },
         {
           "label": "Aborted",
-          "value": "Aborted"
+          "value": "Aborted",
+          "active": true
         },
         {
           "label": "Planned",
-          "value": "Planned"
+          "value": "Planned",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -242,7 +255,7 @@
     {
       "fieldName": "IsActive",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -382,7 +395,7 @@
     {
       "fieldName": "OwnerId",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -396,7 +409,7 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -410,7 +423,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -424,7 +437,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -438,7 +451,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -452,7 +465,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,

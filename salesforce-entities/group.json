@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -67,72 +67,89 @@
       "maxLength": 40,
       "picklistValues": [
         {
-          "label": "AllCustomerPortal",
-          "value": "AllCustomerPortal"
+          "label": null,
+          "value": "AllCustomerPortal",
+          "active": true
         },
         {
-          "label": "ChannelProgramGroup",
-          "value": "ChannelProgramGroup"
+          "label": null,
+          "value": "ChannelProgramGroup",
+          "active": true
         },
         {
-          "label": "CollaborationGroup",
-          "value": "CollaborationGroup"
+          "label": null,
+          "value": "CollaborationGroup",
+          "active": true
         },
         {
-          "label": "DataAnalytics",
-          "value": "DataAnalytics"
+          "label": null,
+          "value": "DataAnalytics",
+          "active": true
         },
         {
-          "label": "Manager",
-          "value": "Manager"
+          "label": null,
+          "value": "Manager",
+          "active": true
         },
         {
-          "label": "ManagerAndSubordinatesInternal",
-          "value": "ManagerAndSubordinatesInternal"
+          "label": null,
+          "value": "ManagerAndSubordinatesInternal",
+          "active": true
         },
         {
-          "label": "Organization",
-          "value": "Organization"
+          "label": null,
+          "value": "Organization",
+          "active": true
         },
         {
-          "label": "Participant",
-          "value": "Participant"
+          "label": null,
+          "value": "Participant",
+          "active": true
         },
         {
-          "label": "PRMOrganization",
-          "value": "PRMOrganization"
+          "label": null,
+          "value": "PRMOrganization",
+          "active": true
         },
         {
-          "label": "Queue",
-          "value": "Queue"
+          "label": null,
+          "value": "Queue",
+          "active": true
         },
         {
-          "label": "Regular",
-          "value": "Regular"
+          "label": null,
+          "value": "Regular",
+          "active": true
         },
         {
-          "label": "Role",
-          "value": "Role"
+          "label": null,
+          "value": "Role",
+          "active": true
         },
         {
-          "label": "RoleAndSubordinates",
-          "value": "RoleAndSubordinates"
+          "label": null,
+          "value": "RoleAndSubordinates",
+          "active": true
         },
         {
-          "label": "RoleAndSubordinatesInternal",
-          "value": "RoleAndSubordinatesInternal"
+          "label": null,
+          "value": "RoleAndSubordinatesInternal",
+          "active": true
         },
         {
-          "label": "SharingRecordCollGroup",
-          "value": "SharingRecordCollGroup"
+          "label": null,
+          "value": "SharingRecordCollGroup",
+          "active": true
         },
         {
-          "label": "Territory",
-          "value": "Territory"
+          "label": null,
+          "value": "Territory",
+          "active": true
         },
         {
-          "label": "TerritoryAndSubordinates",
-          "value": "TerritoryAndSubordinates"
+          "label": null,
+          "value": "TerritoryAndSubordinates",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -173,7 +190,7 @@
     {
       "fieldName": "DoesSendEmailToMembers",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -187,7 +204,7 @@
     {
       "fieldName": "DoesIncludeBosses",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -201,7 +218,7 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -215,7 +232,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -229,7 +246,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -243,7 +260,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -257,9 +274,23 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Description",
+      "dataType": "textarea",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 1332,
       "picklistValues": null,
       "d365EntityName": null,
       "d365DisplayName": null,

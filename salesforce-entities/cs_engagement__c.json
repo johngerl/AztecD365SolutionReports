@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -20,7 +20,7 @@
     {
       "fieldName": "OwnerId",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "Group, User",
       "maxLength": 18,
       "picklistValues": null,
@@ -34,7 +34,7 @@
     {
       "fieldName": "IsDeleted",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -76,7 +76,7 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -90,7 +90,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -104,7 +104,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -118,7 +118,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -132,7 +132,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -194,15 +194,18 @@
       "picklistValues": [
         {
           "label": "Client Relations",
-          "value": "Client Relations"
+          "value": "Client Relations",
+          "active": true
         },
         {
           "label": "Sales",
-          "value": "Sales"
+          "value": "Sales",
+          "active": true
         },
         {
           "label": "Customer Request",
-          "value": "Customer Request"
+          "value": "Customer Request",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -221,39 +224,48 @@
       "picklistValues": [
         {
           "label": "Pending Assignment",
-          "value": "Pending Assignment"
+          "value": "Pending Assignment",
+          "active": true
         },
         {
           "label": "Initiating",
-          "value": "Initiating"
+          "value": "Initiating",
+          "active": true
         },
         {
           "label": "Planning",
-          "value": "Planning"
+          "value": "Planning",
+          "active": true
         },
         {
           "label": "Training/Documentation",
-          "value": "Training/Documentation"
+          "value": "Training/Documentation",
+          "active": true
         },
         {
           "label": "Monitoring",
-          "value": "Monitoring"
+          "value": "Monitoring",
+          "active": true
         },
         {
           "label": "Hold (Cust Req)",
-          "value": "Hold (Cust Req)"
+          "value": "Hold (Cust Req)",
+          "active": true
         },
         {
           "label": "Escalated to Mgmt",
-          "value": "Escalated to Mgmt"
+          "value": "Escalated to Mgmt",
+          "active": true
         },
         {
           "label": "Stalled",
-          "value": "Stalled"
+          "value": "Stalled",
+          "active": true
         },
         {
           "label": "Complete",
-          "value": "Complete"
+          "value": "Complete",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -272,39 +284,48 @@
       "picklistValues": [
         {
           "label": "Annual",
-          "value": "Annual"
+          "value": "Annual",
+          "active": true
         },
         {
           "label": "Executive Check In",
-          "value": "Executive Check In"
+          "value": "Executive Check In",
+          "active": true
         },
         {
           "label": "Follow-Up",
-          "value": "Follow-Up"
+          "value": "Follow-Up",
+          "active": true
         },
         {
           "label": "Implementation",
-          "value": "Implementation"
+          "value": "Implementation",
+          "active": true
         },
         {
           "label": "No Usage",
-          "value": "No Usage"
+          "value": "No Usage",
+          "active": true
         },
         {
           "label": "Reallocation",
-          "value": "Reallocation"
+          "value": "Reallocation",
+          "active": true
         },
         {
           "label": "Renewal/Add-On",
-          "value": "Renewal/Add-On"
+          "value": "Renewal/Add-On",
+          "active": true
         },
         {
           "label": "Temperature",
-          "value": "Temperature"
+          "value": "Temperature",
+          "active": true
         },
         {
           "label": "Training",
-          "value": "Training"
+          "value": "Training",
+          "active": true
         }
       ],
       "d365EntityName": null,

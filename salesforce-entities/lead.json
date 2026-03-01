@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -20,7 +20,7 @@
     {
       "fieldName": "IsDeleted",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -82,27 +82,33 @@
       "picklistValues": [
         {
           "label": "Mr.",
-          "value": "Mr."
+          "value": "Mr.",
+          "active": true
         },
         {
           "label": "Ms.",
-          "value": "Ms."
+          "value": "Ms.",
+          "active": true
         },
         {
           "label": "Mrs.",
-          "value": "Mrs."
+          "value": "Mrs.",
+          "active": true
         },
         {
           "label": "Dr.",
-          "value": "Dr."
+          "value": "Dr.",
+          "active": true
         },
         {
           "label": "Prof.",
-          "value": "Prof."
+          "value": "Prof.",
+          "active": true
         },
         {
           "label": "Mx.",
-          "value": "Mx."
+          "value": "Mx.",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -303,47 +309,58 @@
       "picklistValues": [
         {
           "label": "Address",
-          "value": "Address"
+          "value": "Address",
+          "active": true
         },
         {
-          "label": "NearAddress",
-          "value": "NearAddress"
+          "label": "Near Address",
+          "value": "NearAddress",
+          "active": true
         },
         {
           "label": "Block",
-          "value": "Block"
+          "value": "Block",
+          "active": true
         },
         {
           "label": "Street",
-          "value": "Street"
+          "value": "Street",
+          "active": true
         },
         {
-          "label": "ExtendedZip",
-          "value": "ExtendedZip"
+          "label": "Extended Zip",
+          "value": "ExtendedZip",
+          "active": true
         },
         {
           "label": "Zip",
-          "value": "Zip"
+          "value": "Zip",
+          "active": true
         },
         {
           "label": "Neighborhood",
-          "value": "Neighborhood"
+          "value": "Neighborhood",
+          "active": true
         },
         {
           "label": "City",
-          "value": "City"
+          "value": "City",
+          "active": true
         },
         {
           "label": "County",
-          "value": "County"
+          "value": "County",
+          "active": true
         },
         {
           "label": "State",
-          "value": "State"
+          "value": "State",
+          "active": true
         },
         {
           "label": "Unknown",
-          "value": "Unknown"
+          "value": "Unknown",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -473,108 +490,139 @@
       "maxLength": 255,
       "picklistValues": [
         {
-          "label": "Advertising",
-          "value": "Advertising"
+          "label": "Advertising (not Google Ads)",
+          "value": "Advertising",
+          "active": true
         },
         {
           "label": "Broker relationship",
-          "value": "Broker relationship"
+          "value": "Broker relationship",
+          "active": true
         },
         {
           "label": "Call-In",
-          "value": "Call-In"
+          "value": "Call-In",
+          "active": true
         },
         {
           "label": "Chat",
-          "value": "Chat"
+          "value": "Chat",
+          "active": true
         },
         {
           "label": "Client Relations - Referral",
-          "value": "Client Relations - Referral"
+          "value": "Client Relations - Referral",
+          "active": true
         },
         {
           "label": "Cold Call",
-          "value": "Cold Call"
+          "value": "Cold Call",
+          "active": true
         },
         {
           "label": "Conference",
-          "value": "Conference"
+          "value": "Conference",
+          "active": true
         },
         {
           "label": "Contact Us Form",
-          "value": "Contact Us Form"
+          "value": "Contact Us Form",
+          "active": true
         },
         {
           "label": "Current Client Upsell Opportunity",
-          "value": "Current Client Upsell Opportunity"
+          "value": "Current Client Upsell Opportunity",
+          "active": true
         },
         {
           "label": "Email Outreach",
-          "value": "Email Outreach"
+          "value": "Email Outreach",
+          "active": true
         },
         {
           "label": "FFG Original",
-          "value": "FFG Original"
+          "value": "FFG Original",
+          "active": true
         },
         {
           "label": "Google Ads",
-          "value": "Google Ads"
+          "value": "Google Ads",
+          "active": true
         },
         {
           "label": "Instantly",
-          "value": "Instantly"
+          "value": "Instantly",
+          "active": true
         },
         {
-          "label": "linkedin",
-          "value": "linkedin"
+          "label": "LinkedIn",
+          "value": "linkedin",
+          "active": true
         },
         {
           "label": "Marketing Campaign",
-          "value": "Marketing Campaign"
+          "value": "Marketing Campaign",
+          "active": true
         },
         {
           "label": "Other",
-          "value": "Other"
+          "value": "Other",
+          "active": true
         },
         {
           "label": "Previous Demo",
-          "value": "Previous Demo"
+          "value": "Previous Demo",
+          "active": true
         },
         {
           "label": "Referral",
-          "value": "Referral"
+          "value": "Referral",
+          "active": true
         },
         {
           "label": "RFI",
-          "value": "RFI"
+          "value": "RFI",
+          "active": true
         },
         {
           "label": "RFP",
-          "value": "RFP"
+          "value": "RFP",
+          "active": true
         },
         {
           "label": "Social media Other (Instagram, Facebook, Twitter)",
-          "value": "Social media Other (Instagram, Facebook, Twitter)"
+          "value": "Social media Other (Instagram, Facebook, Twitter)",
+          "active": true
         },
         {
           "label": "Webinar",
-          "value": "Webinar"
+          "value": "Webinar",
+          "active": true
         },
         {
           "label": "Cold Call by Sales rep",
-          "value": "Cold Call by Sales rep"
+          "value": "Cold Call by Sales rep",
+          "active": true
         },
         {
           "label": "Downloaded a Resource",
-          "value": "Downloaded a Resource"
+          "value": "Downloaded a Resource",
+          "active": true
         },
         {
           "label": "Cold email by Sales rep",
-          "value": "Cold email by Sales rep"
+          "value": "Cold email by Sales rep",
+          "active": true
         },
         {
           "label": "Zoominfo",
-          "value": "Zoominfo"
+          "value": "Zoominfo",
+          "active": true
+        },
+        {
+          "label": "Lost Opportunity",
+          "value": "Lost Opportunity",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -587,29 +635,34 @@
     {
       "fieldName": "Status",
       "dataType": "picklist",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
       "picklistValues": [
         {
           "label": "MQL",
-          "value": "MQL"
+          "value": "MQL",
+          "active": true
         },
         {
           "label": "SQL",
-          "value": "SQL"
+          "value": "SQL",
+          "active": true
         },
         {
           "label": "Qualified",
-          "value": "Qualified"
+          "value": "Qualified",
+          "active": true
         },
         {
           "label": "Disqualified",
-          "value": "Disqualified"
+          "value": "Disqualified",
+          "active": true
         },
         {
           "label": "Nurturing",
-          "value": "Nurturing"
+          "value": "Nurturing",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -628,131 +681,163 @@
       "picklistValues": [
         {
           "label": "Agriculture",
-          "value": "Agriculture"
+          "value": "Agriculture",
+          "active": true
         },
         {
           "label": "Apparel",
-          "value": "Apparel"
+          "value": "Apparel",
+          "active": true
         },
         {
           "label": "Banking",
-          "value": "Banking"
+          "value": "Banking",
+          "active": true
         },
         {
           "label": "Biotechnology",
-          "value": "Biotechnology"
+          "value": "Biotechnology",
+          "active": true
         },
         {
           "label": "Chemicals",
-          "value": "Chemicals"
+          "value": "Chemicals",
+          "active": true
         },
         {
           "label": "Communications",
-          "value": "Communications"
+          "value": "Communications",
+          "active": true
         },
         {
           "label": "Construction",
-          "value": "Construction"
+          "value": "Construction",
+          "active": true
         },
         {
           "label": "Consulting",
-          "value": "Consulting"
+          "value": "Consulting",
+          "active": true
         },
         {
           "label": "Education",
-          "value": "Education"
+          "value": "Education",
+          "active": true
         },
         {
           "label": "Electronics",
-          "value": "Electronics"
+          "value": "Electronics",
+          "active": true
         },
         {
           "label": "Energy",
-          "value": "Energy"
+          "value": "Energy",
+          "active": true
         },
         {
           "label": "Engineering",
-          "value": "Engineering"
+          "value": "Engineering",
+          "active": true
         },
         {
           "label": "Entertainment",
-          "value": "Entertainment"
+          "value": "Entertainment",
+          "active": true
         },
         {
           "label": "Environmental",
-          "value": "Environmental"
+          "value": "Environmental",
+          "active": true
         },
         {
           "label": "Finance",
-          "value": "Finance"
+          "value": "Finance",
+          "active": true
         },
         {
           "label": "Food & Beverage",
-          "value": "Food & Beverage"
+          "value": "Food & Beverage",
+          "active": true
         },
         {
           "label": "Government",
-          "value": "Government"
+          "value": "Government",
+          "active": true
         },
         {
           "label": "Healthcare",
-          "value": "Healthcare"
+          "value": "Healthcare",
+          "active": true
         },
         {
           "label": "Hospitality",
-          "value": "Hospitality"
+          "value": "Hospitality",
+          "active": true
         },
         {
           "label": "Insurance",
-          "value": "Insurance"
+          "value": "Insurance",
+          "active": true
         },
         {
           "label": "Machinery",
-          "value": "Machinery"
+          "value": "Machinery",
+          "active": true
         },
         {
           "label": "Manufacturing",
-          "value": "Manufacturing"
+          "value": "Manufacturing",
+          "active": true
         },
         {
           "label": "Media",
-          "value": "Media"
+          "value": "Media",
+          "active": true
         },
         {
           "label": "Not For Profit",
-          "value": "Not For Profit"
+          "value": "Not For Profit",
+          "active": true
         },
         {
           "label": "Other",
-          "value": "Other"
+          "value": "Other",
+          "active": true
         },
         {
           "label": "Recreation",
-          "value": "Recreation"
+          "value": "Recreation",
+          "active": true
         },
         {
           "label": "Retail",
-          "value": "Retail"
+          "value": "Retail",
+          "active": true
         },
         {
           "label": "Shipping",
-          "value": "Shipping"
+          "value": "Shipping",
+          "active": true
         },
         {
           "label": "Technology",
-          "value": "Technology"
+          "value": "Technology",
+          "active": true
         },
         {
           "label": "Telecommunications",
-          "value": "Telecommunications"
+          "value": "Telecommunications",
+          "active": true
         },
         {
           "label": "Transportation",
-          "value": "Transportation"
+          "value": "Transportation",
+          "active": true
         },
         {
           "label": "Utilities",
-          "value": "Utilities"
+          "value": "Utilities",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -771,15 +856,18 @@
       "picklistValues": [
         {
           "label": "Hot",
-          "value": "Hot"
+          "value": "Hot",
+          "active": true
         },
         {
           "label": "Warm",
-          "value": "Warm"
+          "value": "Warm",
+          "active": true
         },
         {
           "label": "Cold",
-          "value": "Cold"
+          "value": "Cold",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -820,7 +908,7 @@
     {
       "fieldName": "OwnerId",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "Group, User",
       "maxLength": 18,
       "picklistValues": null,
@@ -834,7 +922,7 @@
     {
       "fieldName": "HasOptedOutOfEmail",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -848,7 +936,7 @@
     {
       "fieldName": "IsConverted",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -918,7 +1006,7 @@
     {
       "fieldName": "IsUnreadByOwner",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -932,7 +1020,7 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -946,7 +1034,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -960,7 +1048,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -974,7 +1062,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -988,7 +1076,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -1016,7 +1104,7 @@
     {
       "fieldName": "DoNotCall",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -1030,7 +1118,7 @@
     {
       "fieldName": "HasOptedOutOfFax",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -1145,6 +1233,100 @@
       "required": "No",
       "relatedTo": "Individual",
       "maxLength": 18,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Pronouns",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": [
+        {
+          "label": "He/Him",
+          "value": "He/Him",
+          "active": true
+        },
+        {
+          "label": "She/Her",
+          "value": "She/Her",
+          "active": true
+        },
+        {
+          "label": "They/Them",
+          "value": "They/Them",
+          "active": true
+        },
+        {
+          "label": "He/They",
+          "value": "He/They",
+          "active": true
+        },
+        {
+          "label": "She/They",
+          "value": "She/They",
+          "active": true
+        },
+        {
+          "label": "Not Listed",
+          "value": "Not Listed",
+          "active": true
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "GenderIdentity",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": [
+        {
+          "label": "Male",
+          "value": "Male",
+          "active": true
+        },
+        {
+          "label": "Female",
+          "value": "Female",
+          "active": true
+        },
+        {
+          "label": "Nonbinary",
+          "value": "Nonbinary",
+          "active": true
+        },
+        {
+          "label": "Not Listed",
+          "value": "Not Listed",
+          "active": true
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "IsPriorityRecord",
+      "dataType": "boolean",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
       "picklistValues": null,
       "d365EntityName": null,
       "d365DisplayName": null,
@@ -1274,19 +1456,23 @@
       "picklistValues": [
         {
           "label": "iGrad Platform",
-          "value": "iGrad Platform"
+          "value": "iGrad Platform",
+          "active": true
         },
         {
           "label": "Enrich Platform",
-          "value": "Enrich Platform"
+          "value": "Enrich Platform",
+          "active": true
         },
         {
           "label": "FinComm",
-          "value": "FinComm"
+          "value": "FinComm",
+          "active": true
         },
         {
           "label": "FFG",
-          "value": "FFG"
+          "value": "FFG",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -1305,11 +1491,13 @@
       "picklistValues": [
         {
           "label": "Qualify",
-          "value": "Qualify"
+          "value": "Qualify",
+          "active": true
         },
         {
           "label": "Disqualify",
-          "value": "Disqualify"
+          "value": "Disqualify",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -1328,27 +1516,33 @@
       "picklistValues": [
         {
           "label": "Legitimate interest - prospect/lead",
-          "value": "Legitimate interest - prospect/lead"
+          "value": "Legitimate interest - prospect/lead",
+          "active": true
         },
         {
           "label": "Legitimate interest - existing customer",
-          "value": "Legitimate interest - existing customer"
+          "value": "Legitimate interest - existing customer",
+          "active": true
         },
         {
           "label": "Legitimate interest - other",
-          "value": "Legitimate interest - other"
+          "value": "Legitimate interest - other",
+          "active": true
         },
         {
           "label": "Performance of a contract",
-          "value": "Performance of a contract"
+          "value": "Performance of a contract",
+          "active": true
         },
         {
           "label": "Freely given consent from contact",
-          "value": "Freely given consent from contact"
+          "value": "Freely given consent from contact",
+          "active": true
         },
         {
           "label": "Not applicable",
-          "value": "Not applicable"
+          "value": "Not applicable",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -1367,19 +1561,23 @@
       "picklistValues": [
         {
           "label": "Less than 3 months",
-          "value": "Less than 3 months"
+          "value": "Less than 3 months",
+          "active": true
         },
         {
           "label": "3-6 months",
-          "value": "3-6 months"
+          "value": "3-6 months",
+          "active": true
         },
         {
           "label": "6-9 months",
-          "value": "6-9 months"
+          "value": "6-9 months",
+          "active": true
         },
         {
           "label": "1 year +",
-          "value": "1 year +"
+          "value": "1 year +",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -1398,19 +1596,23 @@
       "picklistValues": [
         {
           "label": "Our Employees",
-          "value": "Our Employees"
+          "value": "Our Employees",
+          "active": true
         },
         {
           "label": "Our Customers or Members",
-          "value": "Our Customers or Members"
+          "value": "Our Customers or Members",
+          "active": true
         },
         {
           "label": "Both",
-          "value": "Both"
+          "value": "Both",
+          "active": true
         },
         {
           "label": "Students",
-          "value": "Students"
+          "value": "Students",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -1429,203 +1631,253 @@
       "picklistValues": [
         {
           "label": "Alabama",
-          "value": "Alabama"
+          "value": "Alabama",
+          "active": true
         },
         {
           "label": "Alaska",
-          "value": "Alaska"
+          "value": "Alaska",
+          "active": true
         },
         {
           "label": "Arizona",
-          "value": "Arizona"
+          "value": "Arizona",
+          "active": true
         },
         {
           "label": "Arkansas",
-          "value": "Arkansas"
+          "value": "Arkansas",
+          "active": true
         },
         {
           "label": "California",
-          "value": "California"
+          "value": "California",
+          "active": true
         },
         {
           "label": "Colorado",
-          "value": "Colorado"
+          "value": "Colorado",
+          "active": true
         },
         {
           "label": "Connecticut",
-          "value": "Connecticut"
+          "value": "Connecticut",
+          "active": true
         },
         {
           "label": "Delaware",
-          "value": "Delaware"
+          "value": "Delaware",
+          "active": true
         },
         {
           "label": "Georgia",
-          "value": "Georgia"
+          "value": "Georgia",
+          "active": true
         },
         {
           "label": "Florida",
-          "value": "Florida"
+          "value": "Florida",
+          "active": true
         },
         {
           "label": "Hawaii",
-          "value": "Hawaii"
+          "value": "Hawaii",
+          "active": true
         },
         {
           "label": "Idaho",
-          "value": "Idaho"
+          "value": "Idaho",
+          "active": true
         },
         {
           "label": "Illinois",
-          "value": "Illinois"
+          "value": "Illinois",
+          "active": true
         },
         {
           "label": "Indiana",
-          "value": "Indiana"
+          "value": "Indiana",
+          "active": true
         },
         {
           "label": "Iowa",
-          "value": "Iowa"
+          "value": "Iowa",
+          "active": true
         },
         {
           "label": "Kentucky",
-          "value": "Kentucky"
+          "value": "Kentucky",
+          "active": true
         },
         {
           "label": "Kansas",
-          "value": "Kansas"
+          "value": "Kansas",
+          "active": true
         },
         {
           "label": "Louisiana",
-          "value": "Louisiana"
+          "value": "Louisiana",
+          "active": true
         },
         {
           "label": "Maine",
-          "value": "Maine"
+          "value": "Maine",
+          "active": true
         },
         {
           "label": "Maryland",
-          "value": "Maryland"
+          "value": "Maryland",
+          "active": true
         },
         {
           "label": "Massachusetts",
-          "value": "Massachusetts"
+          "value": "Massachusetts",
+          "active": true
         },
         {
           "label": "Michigan",
-          "value": "Michigan"
+          "value": "Michigan",
+          "active": true
         },
         {
           "label": "Minnesota",
-          "value": "Minnesota"
+          "value": "Minnesota",
+          "active": true
         },
         {
           "label": "Mississippi",
-          "value": "Mississippi"
+          "value": "Mississippi",
+          "active": true
         },
         {
           "label": "Missouri",
-          "value": "Missouri"
+          "value": "Missouri",
+          "active": true
         },
         {
           "label": "Montana",
-          "value": "Montana"
+          "value": "Montana",
+          "active": true
         },
         {
           "label": "Nebraska",
-          "value": "Nebraska"
+          "value": "Nebraska",
+          "active": true
         },
         {
           "label": "Nevada",
-          "value": "Nevada"
+          "value": "Nevada",
+          "active": true
         },
         {
           "label": "New Hampshire",
-          "value": "New Hampshire"
+          "value": "New Hampshire",
+          "active": true
         },
         {
           "label": "New Jersey",
-          "value": "New Jersey"
+          "value": "New Jersey",
+          "active": true
         },
         {
           "label": "New Mexico",
-          "value": "New Mexico"
+          "value": "New Mexico",
+          "active": true
         },
         {
           "label": "New York",
-          "value": "New York"
+          "value": "New York",
+          "active": true
         },
         {
           "label": "North Carolina",
-          "value": "North Carolina"
+          "value": "North Carolina",
+          "active": true
         },
         {
           "label": "North Dakota",
-          "value": "North Dakota"
+          "value": "North Dakota",
+          "active": true
         },
         {
           "label": "Ohio",
-          "value": "Ohio"
+          "value": "Ohio",
+          "active": true
         },
         {
           "label": "Oklahoma",
-          "value": "Oklahoma"
+          "value": "Oklahoma",
+          "active": true
         },
         {
           "label": "Oregon",
-          "value": "Oregon"
+          "value": "Oregon",
+          "active": true
         },
         {
           "label": "Pennsylvania",
-          "value": "Pennsylvania"
+          "value": "Pennsylvania",
+          "active": true
         },
         {
           "label": "Rhode Island",
-          "value": "Rhode Island"
+          "value": "Rhode Island",
+          "active": true
         },
         {
           "label": "South Carolina",
-          "value": "South Carolina"
+          "value": "South Carolina",
+          "active": true
         },
         {
           "label": "South Dakota",
-          "value": "South Dakota"
+          "value": "South Dakota",
+          "active": true
         },
         {
           "label": "Tennessee",
-          "value": "Tennessee"
+          "value": "Tennessee",
+          "active": true
         },
         {
           "label": "Texas",
-          "value": "Texas"
+          "value": "Texas",
+          "active": true
         },
         {
           "label": "Utah",
-          "value": "Utah"
+          "value": "Utah",
+          "active": true
         },
         {
           "label": "Vermont",
-          "value": "Vermont"
+          "value": "Vermont",
+          "active": true
         },
         {
           "label": "Virginia",
-          "value": "Virginia"
+          "value": "Virginia",
+          "active": true
         },
         {
           "label": "Washington",
-          "value": "Washington"
+          "value": "Washington",
+          "active": true
         },
         {
           "label": "West Virginia",
-          "value": "West Virginia"
+          "value": "West Virginia",
+          "active": true
         },
         {
           "label": "Wisconsin",
-          "value": "Wisconsin"
+          "value": "Wisconsin",
+          "active": true
         },
         {
           "label": "Wyoming",
-          "value": "Wyoming"
+          "value": "Wyoming",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -1644,11 +1896,13 @@
       "picklistValues": [
         {
           "label": "Aztec",
-          "value": "Aztec"
+          "value": "Aztec",
+          "active": true
         },
         {
           "label": "iGrad",
-          "value": "iGrad"
+          "value": "iGrad",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -1667,63 +1921,78 @@
       "picklistValues": [
         {
           "label": "Adult Education",
-          "value": "Adult Education"
+          "value": "Adult Education",
+          "active": true
         },
         {
           "label": "Community College",
-          "value": "Community College"
+          "value": "Community College",
+          "active": true
         },
         {
           "label": "Corporate",
-          "value": "Corporate"
+          "value": "Corporate",
+          "active": true
         },
         {
           "label": "Adult Corrections",
-          "value": "Adult Corrections"
+          "value": "Adult Corrections",
+          "active": true
         },
         {
           "label": "Juvenile Corrections",
-          "value": "Juvenile Corrections"
+          "value": "Juvenile Corrections",
+          "active": true
         },
         {
           "label": "Faith Based Organization",
-          "value": "Faith Based Organization"
+          "value": "Faith Based Organization",
+          "active": true
         },
         {
           "label": "HEP",
-          "value": "HEP"
+          "value": "HEP",
+          "active": true
         },
         {
           "label": "Military",
-          "value": "Military"
+          "value": "Military",
+          "active": true
         },
         {
           "label": "K-12",
-          "value": "K-12"
+          "value": "K-12",
+          "active": true
         },
         {
           "label": "K-12 Charter/Private",
-          "value": "K-12 Charter/Private"
+          "value": "K-12 Charter/Private",
+          "active": true
         },
         {
           "label": "Consumer Financial Services",
-          "value": "Consumer Financial Services"
+          "value": "Consumer Financial Services",
+          "active": true
         },
         {
           "label": "Employers",
-          "value": "Employers"
+          "value": "Employers",
+          "active": true
         },
         {
           "label": "Education",
-          "value": "Education"
+          "value": "Education",
+          "active": true
         },
         {
           "label": "Miscellaneous",
-          "value": "Miscellaneous"
+          "value": "Miscellaneous",
+          "active": true
         },
         {
           "label": "Resellers",
-          "value": "Resellers"
+          "value": "Resellers",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -1742,103 +2011,128 @@
       "picklistValues": [
         {
           "label": "Banks",
-          "value": "Banks"
+          "value": "Banks",
+          "active": true
         },
         {
           "label": "Credit Unions",
-          "value": "Credit Unions"
+          "value": "Credit Unions",
+          "active": true
         },
         {
           "label": "Record Keepers",
-          "value": "Record Keepers"
+          "value": "Record Keepers",
+          "active": true
         },
         {
           "label": "Retirement Plans",
-          "value": "Retirement Plans"
+          "value": "Retirement Plans",
+          "active": true
         },
         {
           "label": "Registered Investment Advisors (RIAs) - Large",
-          "value": "Registered Investment Advisors (RIAs) - Large"
+          "value": "Registered Investment Advisors (RIAs) - Large",
+          "active": true
         },
         {
           "label": "Registered Investment Advisors (RIAs) - Small",
-          "value": "Registered Investment Advisors (RIAs) - Small"
+          "value": "Registered Investment Advisors (RIAs) - Small",
+          "active": true
         },
         {
           "label": "Wealth Management - Large",
-          "value": "Wealth Management - Large"
+          "value": "Wealth Management - Large",
+          "active": true
         },
         {
           "label": "Wealth Management - Small",
-          "value": "Wealth Management - Small"
+          "value": "Wealth Management - Small",
+          "active": true
         },
         {
           "label": "Insurance",
-          "value": "Insurance"
+          "value": "Insurance",
+          "active": true
         },
         {
           "label": "Broker-Dealers",
-          "value": "Broker-Dealers"
+          "value": "Broker-Dealers",
+          "active": true
         },
         {
           "label": "FinTech",
-          "value": "FinTech"
+          "value": "FinTech",
+          "active": true
         },
         {
           "label": "Non-profits",
-          "value": "Non-profits"
+          "value": "Non-profits",
+          "active": true
         },
         {
           "label": "General Employer",
-          "value": "General Employer"
+          "value": "General Employer",
+          "active": true
         },
         {
           "label": "Municipality",
-          "value": "Municipality"
+          "value": "Municipality",
+          "active": true
         },
         {
           "label": "Colleges & Universities",
-          "value": "Colleges & Universities"
+          "value": "Colleges & Universities",
+          "active": true
         },
         {
           "label": "Community Colleges",
-          "value": "Community Colleges"
+          "value": "Community Colleges",
+          "active": true
         },
         {
           "label": "High Schools",
-          "value": "High Schools"
+          "value": "High Schools",
+          "active": true
         },
         {
           "label": "School Districts",
-          "value": "School Districts"
+          "value": "School Districts",
+          "active": true
         },
         {
           "label": "Professional Organization",
-          "value": "Professional Organization"
+          "value": "Professional Organization",
+          "active": true
         },
         {
           "label": "Tribal Nation",
-          "value": "Tribal Nation"
+          "value": "Tribal Nation",
+          "active": true
         },
         {
           "label": "Reseller Full",
-          "value": "Reseller Full"
+          "value": "Reseller Full",
+          "active": true
         },
         {
           "label": "Reseller Access Only",
-          "value": "Reseller Access Only"
+          "value": "Reseller Access Only",
+          "active": true
         },
         {
           "label": "Reseller Full and/or Access",
-          "value": "Reseller Full and/or Access"
+          "value": "Reseller Full and/or Access",
+          "active": true
         },
         {
           "label": "Referral Partner",
-          "value": "Referral Partner"
+          "value": "Referral Partner",
+          "active": true
         },
         {
           "label": "Other",
-          "value": "Other"
+          "value": "Other",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -1857,23 +2151,28 @@
       "picklistValues": [
         {
           "label": "1 month",
-          "value": "1 month"
+          "value": "1 month",
+          "active": true
         },
         {
           "label": "3 months",
-          "value": "3 months"
+          "value": "3 months",
+          "active": true
         },
         {
           "label": "6 months",
-          "value": "6 months"
+          "value": "6 months",
+          "active": true
         },
         {
           "label": "12 months",
-          "value": "12 months"
+          "value": "12 months",
+          "active": true
         },
         {
           "label": "Instantly",
-          "value": "Instantly"
+          "value": "Instantly",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -1892,19 +2191,23 @@
       "picklistValues": [
         {
           "label": "Bad Timing",
-          "value": "Bad Timing"
+          "value": "Bad Timing",
+          "active": true
         },
         {
           "label": "Budget Issues",
-          "value": "Budget Issues"
+          "value": "Budget Issues",
+          "active": true
         },
         {
           "label": "HubSpot Lead Nurturing Instantly",
-          "value": "HubSpot Lead Nurturing Instantly"
+          "value": "HubSpot Lead Nurturing Instantly",
+          "active": true
         },
         {
           "label": "Other",
-          "value": "Other"
+          "value": "Other",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -1951,47 +2254,58 @@
       "picklistValues": [
         {
           "label": "CASAS",
-          "value": "CASAS"
+          "value": "CASAS",
+          "active": true
         },
         {
           "label": "Adult Basic Education",
-          "value": "Adult Basic Education"
+          "value": "Adult Basic Education",
+          "active": true
         },
         {
           "label": "GED/HiSET",
-          "value": "GED/HiSET"
+          "value": "GED/HiSET",
+          "active": true
         },
         {
           "label": "College Preparation",
-          "value": "College Preparation"
+          "value": "College Preparation",
+          "active": true
         },
         {
           "label": "Spanish Curriculum",
-          "value": "Spanish Curriculum"
+          "value": "Spanish Curriculum",
+          "active": true
         },
         {
           "label": "Corrections",
-          "value": "Corrections"
+          "value": "Corrections",
+          "active": true
         },
         {
           "label": "CTE Healthcare Pathways",
-          "value": "CTE Healthcare Pathways"
+          "value": "CTE Healthcare Pathways",
+          "active": true
         },
         {
           "label": "Employability & Life Skills",
-          "value": "Employability & Life Skills"
+          "value": "Employability & Life Skills",
+          "active": true
         },
         {
           "label": "Workforce",
-          "value": "Workforce"
+          "value": "Workforce",
+          "active": true
         },
         {
           "label": "Digital Literacy",
-          "value": "Digital Literacy"
+          "value": "Digital Literacy",
+          "active": true
         },
         {
           "label": "Financial Wellness/Literacy",
-          "value": "Financial Wellness/Literacy"
+          "value": "Financial Wellness/Literacy",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -2066,11 +2380,13 @@
       "picklistValues": [
         {
           "label": "Call",
-          "value": "Call"
+          "value": "Call",
+          "active": true
         },
         {
           "label": "In Person",
-          "value": "In Person"
+          "value": "In Person",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -2100,7 +2416,583 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 4099,
-      "picklistValues": null,
+      "picklistValues": [
+        {
+          "label": "1st Edition",
+          "value": "1st Edition",
+          "active": true
+        },
+        {
+          "label": "2nd Edition",
+          "value": "2nd Edition",
+          "active": true
+        },
+        {
+          "label": "A Tutor",
+          "value": "A Tutor",
+          "active": true
+        },
+        {
+          "label": "ABE",
+          "value": "ABE",
+          "active": true
+        },
+        {
+          "label": "ABE-Digital",
+          "value": "ABE-Digital",
+          "active": true
+        },
+        {
+          "label": "ABE-Print",
+          "value": "ABE-Print",
+          "active": true
+        },
+        {
+          "label": "ACCU",
+          "value": "ACCU",
+          "active": true
+        },
+        {
+          "label": "ACT",
+          "value": "ACT",
+          "active": true
+        },
+        {
+          "label": "aPub",
+          "value": "aPub",
+          "active": true
+        },
+        {
+          "label": "Bridge",
+          "value": "Bridge",
+          "active": true
+        },
+        {
+          "label": "Bridge Digital",
+          "value": "Bridge Digital",
+          "active": true
+        },
+        {
+          "label": "Career Pathways Print",
+          "value": "Career Pathways Print",
+          "active": true
+        },
+        {
+          "label": "CASAS",
+          "value": "CASAS",
+          "active": true
+        },
+        {
+          "label": "CASAS Digital",
+          "value": "CASAS Digital",
+          "active": true
+        },
+        {
+          "label": "CASAS Print",
+          "value": "CASAS Print",
+          "active": true
+        },
+        {
+          "label": "Catalog Print",
+          "value": "Catalog Print",
+          "active": true
+        },
+        {
+          "label": "CBC Digital",
+          "value": "CBC Digital",
+          "active": true
+        },
+        {
+          "label": "CMA Digital",
+          "value": "CMA Digital",
+          "active": true
+        },
+        {
+          "label": "College",
+          "value": "College",
+          "active": true
+        },
+        {
+          "label": "College Prep Digital",
+          "value": "College Prep Digital",
+          "active": true
+        },
+        {
+          "label": "Companion",
+          "value": "Companion",
+          "active": true
+        },
+        {
+          "label": "Companion Digital",
+          "value": "Companion Digital",
+          "active": true
+        },
+        {
+          "label": "CTE",
+          "value": "CTE",
+          "active": true
+        },
+        {
+          "label": "CWED Digital",
+          "value": "CWED Digital",
+          "active": true
+        },
+        {
+          "label": "CWED Print",
+          "value": "CWED Print",
+          "active": true
+        },
+        {
+          "label": "Digital",
+          "value": "Digital",
+          "active": true
+        },
+        {
+          "label": "Digital Literacy",
+          "value": "Digital Literacy",
+          "active": true
+        },
+        {
+          "label": "Digital Literacy Digital",
+          "value": "Digital Literacy Digital",
+          "active": true
+        },
+        {
+          "label": "DiscountOther",
+          "value": "DiscountOther",
+          "active": true
+        },
+        {
+          "label": "Employability",
+          "value": "Employability",
+          "active": true
+        },
+        {
+          "label": "English",
+          "value": "English",
+          "active": true
+        },
+        {
+          "label": "English/French",
+          "value": "English/French",
+          "active": true
+        },
+        {
+          "label": "Enrich Digital",
+          "value": "Enrich Digital",
+          "active": true
+        },
+        {
+          "label": "ePub",
+          "value": "ePub",
+          "active": true
+        },
+        {
+          "label": "ePub-Org",
+          "value": "ePub-Org",
+          "active": true
+        },
+        {
+          "label": "ESL",
+          "value": "ESL",
+          "active": true
+        },
+        {
+          "label": "ESL Digital",
+          "value": "ESL Digital",
+          "active": true
+        },
+        {
+          "label": "FFG",
+          "value": "FFG",
+          "active": true
+        },
+        {
+          "label": "FFG - FINRA Digital",
+          "value": "FFG - FINRA Digital",
+          "active": true
+        },
+        {
+          "label": "FFG - MS - Andex Digital",
+          "value": "FFG - MS - Andex Digital",
+          "active": true
+        },
+        {
+          "label": "FFG - MS - FCS Digital",
+          "value": "FFG - MS - FCS Digital",
+          "active": true
+        },
+        {
+          "label": "FFG - MS - IC Digital",
+          "value": "FFG - MS - IC Digital",
+          "active": true
+        },
+        {
+          "label": "FFG - MS - SBBI Digital",
+          "value": "FFG - MS - SBBI Digital",
+          "active": true
+        },
+        {
+          "label": "FFG - Other Digital",
+          "value": "FFG - Other Digital",
+          "active": true
+        },
+        {
+          "label": "Financial Wellness",
+          "value": "Financial Wellness",
+          "active": true
+        },
+        {
+          "label": "Foundations",
+          "value": "Foundations",
+          "active": true
+        },
+        {
+          "label": "Foundations Digital",
+          "value": "Foundations Digital",
+          "active": true
+        },
+        {
+          "label": "Fundamental Skills Print",
+          "value": "Fundamental Skills Print",
+          "active": true
+        },
+        {
+          "label": "Fundamentals",
+          "value": "Fundamentals",
+          "active": true
+        },
+        {
+          "label": "Fundamentals Digital",
+          "value": "Fundamentals Digital",
+          "active": true
+        },
+        {
+          "label": "GED",
+          "value": "GED",
+          "active": true
+        },
+        {
+          "label": "GED Flash",
+          "value": "GED Flash",
+          "active": true
+        },
+        {
+          "label": "GED Flash Digital",
+          "value": "GED Flash Digital",
+          "active": true
+        },
+        {
+          "label": "GED Flash-Play Digital",
+          "value": "GED Flash-Play Digital",
+          "active": true
+        },
+        {
+          "label": "GED Play",
+          "value": "GED Play",
+          "active": true
+        },
+        {
+          "label": "GED Play Digital",
+          "value": "GED Play Digital",
+          "active": true
+        },
+        {
+          "label": "GED Practice Digital",
+          "value": "GED Practice Digital",
+          "active": true
+        },
+        {
+          "label": "GED Practice Print",
+          "value": "GED Practice Print",
+          "active": true
+        },
+        {
+          "label": "GED Prep Digital",
+          "value": "GED Prep Digital",
+          "active": true
+        },
+        {
+          "label": "GED Prep Print",
+          "value": "GED Prep Print",
+          "active": true
+        },
+        {
+          "label": "GED Vouchers Print",
+          "value": "GED Vouchers Print",
+          "active": true
+        },
+        {
+          "label": "GED Vouchers Print +",
+          "value": "GED Vouchers Print +",
+          "active": true
+        },
+        {
+          "label": "GED-Digital",
+          "value": "GED-Digital",
+          "active": true
+        },
+        {
+          "label": "GED-Print",
+          "value": "GED-Print",
+          "active": true
+        },
+        {
+          "label": "Health Science",
+          "value": "Health Science",
+          "active": true
+        },
+        {
+          "label": "HiSet",
+          "value": "HiSet",
+          "active": true
+        },
+        {
+          "label": "HiSET Digital",
+          "value": "HiSET Digital",
+          "active": true
+        },
+        {
+          "label": "HiSET Print",
+          "value": "HiSET Print",
+          "active": true
+        },
+        {
+          "label": "HSE",
+          "value": "HSE",
+          "active": true
+        },
+        {
+          "label": "iGrad",
+          "value": "iGrad",
+          "active": true
+        },
+        {
+          "label": "iGrad Digital",
+          "value": "iGrad Digital",
+          "active": true
+        },
+        {
+          "label": "Kaplan",
+          "value": "Kaplan",
+          "active": true
+        },
+        {
+          "label": "Lecture Digital",
+          "value": "Lecture Digital",
+          "active": true
+        },
+        {
+          "label": "Legacy Digital",
+          "value": "Legacy Digital",
+          "active": true
+        },
+        {
+          "label": "LSE",
+          "value": "LSE",
+          "active": true
+        },
+        {
+          "label": "LSE Digital",
+          "value": "LSE Digital",
+          "active": true
+        },
+        {
+          "label": "LSE Print",
+          "value": "LSE Print",
+          "active": true
+        },
+        {
+          "label": "LSE Print +",
+          "value": "LSE Print +",
+          "active": true
+        },
+        {
+          "label": "LSE-Digital",
+          "value": "LSE-Digital",
+          "active": true
+        },
+        {
+          "label": "LSE-Print",
+          "value": "LSE-Print",
+          "active": true
+        },
+        {
+          "label": "Other",
+          "value": "Other",
+          "active": true
+        },
+        {
+          "label": "Partner Product",
+          "value": "Partner Product",
+          "active": true
+        },
+        {
+          "label": "PassAssured",
+          "value": "PassAssured",
+          "active": true
+        },
+        {
+          "label": "Paxen Focus Digital",
+          "value": "Paxen Focus Digital",
+          "active": true
+        },
+        {
+          "label": "PharmacyTech",
+          "value": "PharmacyTech",
+          "active": true
+        },
+        {
+          "label": "Practice Tests",
+          "value": "Practice Tests",
+          "active": true
+        },
+        {
+          "label": "Pre-GED",
+          "value": "Pre-GED",
+          "active": true
+        },
+        {
+          "label": "Pre-GED Digital",
+          "value": "Pre-GED Digital",
+          "active": true
+        },
+        {
+          "label": "Pre-GED Print",
+          "value": "Pre-GED Print",
+          "active": true
+        },
+        {
+          "label": "Pre-GED-Digital",
+          "value": "Pre-GED-Digital",
+          "active": true
+        },
+        {
+          "label": "Pre-GED-Print",
+          "value": "Pre-GED-Print",
+          "active": true
+        },
+        {
+          "label": "Print",
+          "value": "Print",
+          "active": true
+        },
+        {
+          "label": "Print +",
+          "value": "Print +",
+          "active": true
+        },
+        {
+          "label": "Professional Development Print +",
+          "value": "Professional Development Print +",
+          "active": true
+        },
+        {
+          "label": "PTTP Digital",
+          "value": "PTTP Digital",
+          "active": true
+        },
+        {
+          "label": "PTTP Print +",
+          "value": "PTTP Print +",
+          "active": true
+        },
+        {
+          "label": "Re-Entry",
+          "value": "Re-Entry",
+          "active": true
+        },
+        {
+          "label": "Re-Entry Digital",
+          "value": "Re-Entry Digital",
+          "active": true
+        },
+        {
+          "label": "Re-Entry Print",
+          "value": "Re-Entry Print",
+          "active": true
+        },
+        {
+          "label": "RFW",
+          "value": "RFW",
+          "active": true
+        },
+        {
+          "label": "RFW Digital",
+          "value": "RFW Digital",
+          "active": true
+        },
+        {
+          "label": "RFW Print",
+          "value": "RFW Print",
+          "active": true
+        },
+        {
+          "label": "ShippingOther",
+          "value": "ShippingOther",
+          "active": true
+        },
+        {
+          "label": "Skills Books Print",
+          "value": "Skills Books Print",
+          "active": true
+        },
+        {
+          "label": "Skills Tutor Digital",
+          "value": "Skills Tutor Digital",
+          "active": true
+        },
+        {
+          "label": "Spanish",
+          "value": "Spanish",
+          "active": true
+        },
+        {
+          "label": "Spanish - Digital",
+          "value": "Spanish - Digital",
+          "active": true
+        },
+        {
+          "label": "Spanish - Print",
+          "value": "Spanish - Print",
+          "active": true
+        },
+        {
+          "label": "TABE",
+          "value": "TABE",
+          "active": true
+        },
+        {
+          "label": "TABE Digital",
+          "value": "TABE Digital",
+          "active": true
+        },
+        {
+          "label": "TABE Print",
+          "value": "TABE Print",
+          "active": true
+        },
+        {
+          "label": "TABE Tutor",
+          "value": "TABE Tutor",
+          "active": true
+        },
+        {
+          "label": "TASC Digital",
+          "value": "TASC Digital",
+          "active": true
+        },
+        {
+          "label": "TASC Print",
+          "value": "TASC Print",
+          "active": true
+        },
+        {
+          "label": "Workforce",
+          "value": "Workforce",
+          "active": true
+        }
+      ],
       "d365EntityName": null,
       "d365DisplayName": null,
       "d365InternalName": null,
@@ -2131,27 +3023,33 @@
       "picklistValues": [
         {
           "label": "Delayed - put on hold",
-          "value": "Delayed - put on hold"
+          "value": "Delayed - put on hold",
+          "active": true
         },
         {
           "label": "No budget/budget cuts/grant loss",
-          "value": "No budget/budget cuts/grant loss"
+          "value": "No budget/budget cuts/grant loss",
+          "active": true
         },
         {
           "label": "Went with competitor",
-          "value": "Went with competitor"
+          "value": "Went with competitor",
+          "active": true
         },
         {
           "label": "Too expensive",
-          "value": "Too expensive"
+          "value": "Too expensive",
+          "active": true
         },
         {
           "label": "No longer interested",
-          "value": "No longer interested"
+          "value": "No longer interested",
+          "active": true
         },
         {
           "label": "Looking for additional service we don't provide",
-          "value": "Looking for additional service we don't provide"
+          "value": "Looking for additional service we don't provide",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -2184,15 +3082,18 @@
       "picklistValues": [
         {
           "label": "Initial",
-          "value": "Initial"
+          "value": "Initial",
+          "active": true
         },
         {
           "label": "Add-On",
-          "value": "Add-On"
+          "value": "Add-On",
+          "active": true
         },
         {
           "label": "Print",
-          "value": "Print"
+          "value": "Print",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -2225,15 +3126,18 @@
       "picklistValues": [
         {
           "label": "Consumer Financial Services",
-          "value": "Consumer Financial Services"
+          "value": "Consumer Financial Services",
+          "active": true
         },
         {
           "label": "Education, Municipalities, NonProfit",
-          "value": "Education, Municipalities, NonProfit"
+          "value": "Education, Municipalities, NonProfit",
+          "active": true
         },
         {
           "label": "Employers",
-          "value": "Employers"
+          "value": "Employers",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -2252,71 +3156,88 @@
       "picklistValues": [
         {
           "label": "Banks",
-          "value": "Banks"
+          "value": "Banks",
+          "active": true
         },
         {
           "label": "Broker-Dealers",
-          "value": "Broker-Dealers"
+          "value": "Broker-Dealers",
+          "active": true
         },
         {
           "label": "Colleges and Universities",
-          "value": "Colleges and Universities"
+          "value": "Colleges and Universities",
+          "active": true
         },
         {
           "label": "Credit Unions",
-          "value": "Credit Unions"
+          "value": "Credit Unions",
+          "active": true
         },
         {
           "label": "FinTech",
-          "value": "FinTech"
+          "value": "FinTech",
+          "active": true
         },
         {
           "label": "General Employer",
-          "value": "General Employer"
+          "value": "General Employer",
+          "active": true
         },
         {
           "label": "HS: 9-12",
-          "value": "HS: 9-12"
+          "value": "HS: 9-12",
+          "active": true
         },
         {
           "label": "Municipalities",
-          "value": "Municipalities"
+          "value": "Municipalities",
+          "active": true
         },
         {
           "label": "Non-Profits",
-          "value": "Non-Profits"
+          "value": "Non-Profits",
+          "active": true
         },
         {
           "label": "Record Keepers",
-          "value": "Record Keepers"
+          "value": "Record Keepers",
+          "active": true
         },
         {
           "label": "Referral Partner",
-          "value": "Referral Partner"
+          "value": "Referral Partner",
+          "active": true
         },
         {
           "label": "Registered Investment Advisors (RIAs) - Large",
-          "value": "Registered Investment Advisors (RIAs) - Large"
+          "value": "Registered Investment Advisors (RIAs) - Large",
+          "active": true
         },
         {
           "label": "Registered Investment Advisors (RIAs) - Small",
-          "value": "Registered Investment Advisors (RIAs) - Small"
+          "value": "Registered Investment Advisors (RIAs) - Small",
+          "active": true
         },
         {
           "label": "Reseller Access Only",
-          "value": "Reseller Access Only"
+          "value": "Reseller Access Only",
+          "active": true
         },
         {
           "label": "Reseller Full",
-          "value": "Reseller Full"
+          "value": "Reseller Full",
+          "active": true
         },
         {
           "label": "Reseller Full and/or Access",
-          "value": "Reseller Full and/or Access"
+          "value": "Reseller Full and/or Access",
+          "active": true
         },
         {
           "label": "Tribal",
-          "value": "Tribal"
+          "value": "Tribal",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -2335,27 +3256,33 @@
       "picklistValues": [
         {
           "label": "Mr.",
-          "value": "Mr."
+          "value": "Mr.",
+          "active": true
         },
         {
           "label": "Ms.",
-          "value": "Ms."
+          "value": "Ms.",
+          "active": true
         },
         {
           "label": "Mrs.",
-          "value": "Mrs."
+          "value": "Mrs.",
+          "active": true
         },
         {
           "label": "Dr.",
-          "value": "Dr."
+          "value": "Dr.",
+          "active": true
         },
         {
           "label": "Prof.",
-          "value": "Prof."
+          "value": "Prof.",
+          "active": true
         },
         {
           "label": "Mx.",
-          "value": "Mx."
+          "value": "Mx.",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -2500,55 +3427,68 @@
       "picklistValues": [
         {
           "label": "Advertising",
-          "value": "Advertising"
+          "value": "Advertising",
+          "active": true
         },
         {
           "label": "Call-In",
-          "value": "Call-In"
+          "value": "Call-In",
+          "active": true
         },
         {
           "label": "Chat",
-          "value": "Chat"
+          "value": "Chat",
+          "active": true
         },
         {
           "label": "Cold Call",
-          "value": "Cold Call"
+          "value": "Cold Call",
+          "active": true
         },
         {
           "label": "Conference",
-          "value": "Conference"
+          "value": "Conference",
+          "active": true
         },
         {
           "label": "Current Client Upsell Opportunity",
-          "value": "Current Client Upsell Opportunity"
+          "value": "Current Client Upsell Opportunity",
+          "active": true
         },
         {
           "label": "Email Outreach",
-          "value": "Email Outreach"
+          "value": "Email Outreach",
+          "active": true
         },
         {
           "label": "Marketing Campaign",
-          "value": "Marketing Campaign"
+          "value": "Marketing Campaign",
+          "active": true
         },
         {
           "label": "Previous Demo",
-          "value": "Previous Demo"
+          "value": "Previous Demo",
+          "active": true
         },
         {
           "label": "Referral",
-          "value": "Referral"
+          "value": "Referral",
+          "active": true
         },
         {
           "label": "RFP",
-          "value": "RFP"
+          "value": "RFP",
+          "active": true
         },
         {
           "label": "Webinar",
-          "value": "Webinar"
+          "value": "Webinar",
+          "active": true
         },
         {
           "label": "Web Search",
-          "value": "Web Search"
+          "value": "Web Search",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -2567,39 +3507,48 @@
       "picklistValues": [
         {
           "label": "Delayed / Put on Hold",
-          "value": "Delayed / Put on Hold"
+          "value": "Delayed / Put on Hold",
+          "active": true
         },
         {
           "label": "Duplicate Lead",
-          "value": "Duplicate Lead"
+          "value": "Duplicate Lead",
+          "active": true
         },
         {
           "label": "Looking for Additional Product or Service We Don't Provide",
-          "value": "Looking for Additional Product or Service We Don't Provide"
+          "value": "Looking for Additional Product or Service We Don't Provide",
+          "active": true
         },
         {
           "label": "No Budget / Budget Cuts / Loss of Grant",
-          "value": "No Budget / Budget Cuts / Loss of Grant"
+          "value": "No Budget / Budget Cuts / Loss of Grant",
+          "active": true
         },
         {
           "label": "No Longer Interested",
-          "value": "No Longer Interested"
+          "value": "No Longer Interested",
+          "active": true
         },
         {
           "label": "No Response / Unreachable",
-          "value": "No Response / Unreachable"
+          "value": "No Response / Unreachable",
+          "active": true
         },
         {
           "label": "Small Business e-Commerce Opportunity",
-          "value": "Small Business e-Commerce Opportunity"
+          "value": "Small Business e-Commerce Opportunity",
+          "active": true
         },
         {
           "label": "Too Expensive",
-          "value": "Too Expensive"
+          "value": "Too Expensive",
+          "active": true
         },
         {
           "label": "Went with Competitor",
-          "value": "Went with Competitor"
+          "value": "Went with Competitor",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -2646,25 +3595,58 @@
       "picklistValues": [
         {
           "label": "Broker",
-          "value": "Broker"
+          "value": "Broker",
+          "active": true
         },
         {
           "label": "Email",
-          "value": "Email"
+          "value": "Email",
+          "active": true
         },
         {
           "label": "Conference",
-          "value": "Conference"
+          "value": "Conference",
+          "active": true
         },
         {
           "label": "Referral",
-          "value": "Referral"
+          "value": "Referral",
+          "active": true
         },
         {
           "label": "Web Search",
-          "value": "Web Search"
+          "value": "Web Search",
+          "active": true
         }
       ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Recycled_From_Opportunity__c",
+      "dataType": "boolean",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Original_Lost_Opportunity__c",
+      "dataType": "reference",
+      "required": "No",
+      "relatedTo": "Opportunity",
+      "maxLength": 18,
+      "picklistValues": null,
       "d365EntityName": null,
       "d365DisplayName": null,
       "d365InternalName": null,

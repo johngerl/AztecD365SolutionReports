@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -20,7 +20,7 @@
     {
       "fieldName": "IsDeleted",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -96,27 +96,33 @@
       "picklistValues": [
         {
           "label": "Mr.",
-          "value": "Mr."
+          "value": "Mr.",
+          "active": true
         },
         {
           "label": "Ms.",
-          "value": "Ms."
+          "value": "Ms.",
+          "active": true
         },
         {
           "label": "Mrs.",
-          "value": "Mrs."
+          "value": "Mrs.",
+          "active": true
         },
         {
           "label": "Dr.",
-          "value": "Dr."
+          "value": "Dr.",
+          "active": true
         },
         {
           "label": "Prof.",
-          "value": "Prof."
+          "value": "Prof.",
+          "active": true
         },
         {
           "label": "Mx.",
-          "value": "Mx."
+          "value": "Mx.",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -275,47 +281,58 @@
       "picklistValues": [
         {
           "label": "Address",
-          "value": "Address"
+          "value": "Address",
+          "active": true
         },
         {
-          "label": "NearAddress",
-          "value": "NearAddress"
+          "label": "Near Address",
+          "value": "NearAddress",
+          "active": true
         },
         {
           "label": "Block",
-          "value": "Block"
+          "value": "Block",
+          "active": true
         },
         {
           "label": "Street",
-          "value": "Street"
+          "value": "Street",
+          "active": true
         },
         {
-          "label": "ExtendedZip",
-          "value": "ExtendedZip"
+          "label": "Extended Zip",
+          "value": "ExtendedZip",
+          "active": true
         },
         {
           "label": "Zip",
-          "value": "Zip"
+          "value": "Zip",
+          "active": true
         },
         {
           "label": "Neighborhood",
-          "value": "Neighborhood"
+          "value": "Neighborhood",
+          "active": true
         },
         {
           "label": "City",
-          "value": "City"
+          "value": "City",
+          "active": true
         },
         {
           "label": "County",
-          "value": "County"
+          "value": "County",
+          "active": true
         },
         {
           "label": "State",
-          "value": "State"
+          "value": "State",
+          "active": true
         },
         {
           "label": "Unknown",
-          "value": "Unknown"
+          "value": "Unknown",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -473,108 +490,139 @@
       "maxLength": 255,
       "picklistValues": [
         {
-          "label": "Advertising",
-          "value": "Advertising"
+          "label": "Advertising (not Google Ads)",
+          "value": "Advertising",
+          "active": true
         },
         {
           "label": "Broker relationship",
-          "value": "Broker relationship"
+          "value": "Broker relationship",
+          "active": true
         },
         {
           "label": "Call-In",
-          "value": "Call-In"
+          "value": "Call-In",
+          "active": true
         },
         {
           "label": "Chat",
-          "value": "Chat"
+          "value": "Chat",
+          "active": true
         },
         {
           "label": "Client Relations - Referral",
-          "value": "Client Relations - Referral"
+          "value": "Client Relations - Referral",
+          "active": true
         },
         {
           "label": "Cold Call",
-          "value": "Cold Call"
+          "value": "Cold Call",
+          "active": true
         },
         {
           "label": "Conference",
-          "value": "Conference"
+          "value": "Conference",
+          "active": true
         },
         {
           "label": "Contact Us Form",
-          "value": "Contact Us Form"
+          "value": "Contact Us Form",
+          "active": true
         },
         {
           "label": "Current Client Upsell Opportunity",
-          "value": "Current Client Upsell Opportunity"
+          "value": "Current Client Upsell Opportunity",
+          "active": true
         },
         {
           "label": "Email Outreach",
-          "value": "Email Outreach"
+          "value": "Email Outreach",
+          "active": true
         },
         {
           "label": "FFG Original",
-          "value": "FFG Original"
+          "value": "FFG Original",
+          "active": true
         },
         {
           "label": "Google Ads",
-          "value": "Google Ads"
+          "value": "Google Ads",
+          "active": true
         },
         {
           "label": "Instantly",
-          "value": "Instantly"
+          "value": "Instantly",
+          "active": true
         },
         {
-          "label": "linkedin",
-          "value": "linkedin"
+          "label": "LinkedIn",
+          "value": "linkedin",
+          "active": true
         },
         {
           "label": "Marketing Campaign",
-          "value": "Marketing Campaign"
+          "value": "Marketing Campaign",
+          "active": true
         },
         {
           "label": "Other",
-          "value": "Other"
+          "value": "Other",
+          "active": true
         },
         {
           "label": "Previous Demo",
-          "value": "Previous Demo"
+          "value": "Previous Demo",
+          "active": true
         },
         {
           "label": "Referral",
-          "value": "Referral"
+          "value": "Referral",
+          "active": true
         },
         {
           "label": "RFI",
-          "value": "RFI"
+          "value": "RFI",
+          "active": true
         },
         {
           "label": "RFP",
-          "value": "RFP"
+          "value": "RFP",
+          "active": true
         },
         {
           "label": "Social media Other (Instagram, Facebook, Twitter)",
-          "value": "Social media Other (Instagram, Facebook, Twitter)"
+          "value": "Social media Other (Instagram, Facebook, Twitter)",
+          "active": true
         },
         {
           "label": "Webinar",
-          "value": "Webinar"
+          "value": "Webinar",
+          "active": true
         },
         {
           "label": "Cold Call by Sales rep",
-          "value": "Cold Call by Sales rep"
+          "value": "Cold Call by Sales rep",
+          "active": true
         },
         {
           "label": "Downloaded a Resource",
-          "value": "Downloaded a Resource"
+          "value": "Downloaded a Resource",
+          "active": true
         },
         {
           "label": "Cold email by Sales rep",
-          "value": "Cold email by Sales rep"
+          "value": "Cold email by Sales rep",
+          "active": true
         },
         {
           "label": "Zoominfo",
-          "value": "Zoominfo"
+          "value": "Zoominfo",
+          "active": true
+        },
+        {
+          "label": "Lost Opportunity",
+          "value": "Lost Opportunity",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -601,7 +649,7 @@
     {
       "fieldName": "OwnerId",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -615,7 +663,7 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -629,7 +677,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -643,7 +691,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -657,7 +705,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -671,7 +719,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -783,7 +831,7 @@
     {
       "fieldName": "IsEmailBounced",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -851,6 +899,55 @@
       "d365SuggestedInternalName": null
     },
     {
+      "fieldName": "IsPriorityRecord",
+      "dataType": "boolean",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "ContactSource",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 40,
+      "picklistValues": [
+        {
+          "label": "Auto Create",
+          "value": "Auto Create",
+          "active": true
+        },
+        {
+          "label": "Email Message",
+          "value": "Email Message",
+          "active": true
+        },
+        {
+          "label": "Meeting Digest",
+          "value": "Meeting Digest",
+          "active": true
+        },
+        {
+          "label": "Seller Home",
+          "value": "Seller Home",
+          "active": true
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
       "fieldName": "rcsfl__SMS_Number__c",
       "dataType": "phone",
       "required": "No",
@@ -884,6 +981,34 @@
       "required": "No",
       "relatedTo": "Account_Address__c",
       "maxLength": 18,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Company_Name__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Managing_Partner__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
       "picklistValues": null,
       "d365EntityName": null,
       "d365DisplayName": null,
@@ -971,55 +1096,68 @@
       "picklistValues": [
         {
           "label": "Advertising",
-          "value": "Advertising"
+          "value": "Advertising",
+          "active": true
         },
         {
           "label": "Call-In",
-          "value": "Call-In"
+          "value": "Call-In",
+          "active": true
         },
         {
           "label": "Chat",
-          "value": "Chat"
+          "value": "Chat",
+          "active": true
         },
         {
           "label": "Cold Call",
-          "value": "Cold Call"
+          "value": "Cold Call",
+          "active": true
         },
         {
           "label": "Conference",
-          "value": "Conference"
+          "value": "Conference",
+          "active": true
         },
         {
           "label": "Current Client Upsell Opportunity",
-          "value": "Current Client Upsell Opportunity"
+          "value": "Current Client Upsell Opportunity",
+          "active": true
         },
         {
           "label": "Email Outreach",
-          "value": "Email Outreach"
+          "value": "Email Outreach",
+          "active": true
         },
         {
           "label": "Marketing Campaign",
-          "value": "Marketing Campaign"
+          "value": "Marketing Campaign",
+          "active": true
         },
         {
           "label": "Previous Demo",
-          "value": "Previous Demo"
+          "value": "Previous Demo",
+          "active": true
         },
         {
           "label": "Referral",
-          "value": "Referral"
+          "value": "Referral",
+          "active": true
         },
         {
           "label": "RFP",
-          "value": "RFP"
+          "value": "RFP",
+          "active": true
         },
         {
           "label": "Webinar",
-          "value": "Webinar"
+          "value": "Webinar",
+          "active": true
         },
         {
           "label": "Web Search",
-          "value": "Web Search"
+          "value": "Web Search",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -1084,44 +1222,6 @@
       "d365SuggestedEntityName": null,
       "d365SuggestedDisplayName": null,
       "d365SuggestedInternalName": null
-    }
-  ],
-  "d365SourceEntity": "contact",
-  "dataTransformationRules": [
-    {
-      "category": "Rules",
-      "rules": [
-        "Keep Contact or any other object id while migrating data",
-        "Remove Blank Columns",
-        "Remove Contacts without Last name",
-        "Remove Contacts without Email Address",
-        "Include contacts with Owner = Aztec Team",
-        "Assign blank record owners to CRM Admin",
-        "Map Account id from Account Success sheet using GUID = Vlookup",
-        "Correct names of Record owners",
-        "Map owner Id from SF to Record Owner = vlookup",
-        "Only map Contacts with a non-blank Last Name",
-        "Only map Contacts assigned to the Aztec Team (for Record Type mapping)",
-        "Only map Contacts with an Owner assigned and mapped to Salesforce User",
-        "Only map Contacts associated with a valid Company Name (for Account linkage)",
-        "Need to Update Company Names to match Salesforce Account Names (adjusted to reflect name changes via automation)",
-        "Correct formatting and values of all fields based on their data type in Salesforce (e.g., text, phone, picklists)",
-        "Exclude rows with blank Last Name",
-        "Exclude contacts with no mapped Owner ID (unless client provides reassignment)",
-        "Exclude contacts with no Company Name (as these cannot be related to an Account)",
-        "Exclude blank or irrelevant columns",
-        "Exclude address fields will not be migrated (per client directive)",
-        "Map all Record Type IDs to the Aztec Team Record Type in Salesforce",
-        "Owner IDs mapped using extracted Salesforce user list",
-        "Lisa Schambers and Kathryn Crockett do not exist in Salesforce; need client to provide reassignment or disregard those Contacts",
-        "Phone number (pending extraction assistance from Desiree)",
-        "Role field from Dynamics will be mapped to the Title field in Salesforce",
-        "Ensure Company names in Dynamics are updated to match Account names already in Salesforce",
-        "Owner ID validation: Confirm client’s approach for contacts with unmapped or missing owners (e.g., reassign to Admin or exclude)",
-        "Role-to-Title mapping must be verified post-load to ensure consistency",
-        "Phone field is known to have migration issues – validation required during testing phase",
-        "Confirm if any fallback is needed for Company name matching if no match is found (e.g., create as Lead instead or reject)"
-      ]
     }
   ]
 }

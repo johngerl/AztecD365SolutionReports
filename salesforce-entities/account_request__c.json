@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -20,7 +20,7 @@
     {
       "fieldName": "OwnerId",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "Group, User",
       "maxLength": 18,
       "picklistValues": null,
@@ -34,7 +34,7 @@
     {
       "fieldName": "IsDeleted",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -62,7 +62,7 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -76,7 +76,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -90,7 +90,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -104,7 +104,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -118,7 +118,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -166,11 +166,13 @@
       "picklistValues": [
         {
           "label": "Aztec",
-          "value": "Aztec"
+          "value": "Aztec",
+          "active": true
         },
         {
           "label": "iGrad",
-          "value": "iGrad"
+          "value": "iGrad",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -189,15 +191,18 @@
       "picklistValues": [
         {
           "label": "Yes",
-          "value": "Yes"
+          "value": "Yes",
+          "active": true
         },
         {
           "label": "No",
-          "value": "No"
+          "value": "No",
+          "active": true
         },
         {
           "label": "Unknown",
-          "value": "Unknown"
+          "value": "Unknown",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -216,15 +221,18 @@
       "picklistValues": [
         {
           "label": "Pending",
-          "value": "Pending"
+          "value": "Pending",
+          "active": true
         },
         {
           "label": "Approved",
-          "value": "Approved"
+          "value": "Approved",
+          "active": true
         },
         {
           "label": "Not-Approved",
-          "value": "Not-Approved"
+          "value": "Not-Approved",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -265,10 +273,3055 @@
     {
       "fieldName": "Current_User_Created_By__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Business_Address__Street__s",
+      "dataType": "textarea",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Business_Address__City__s",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 40,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Business_Address__PostalCode__s",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 20,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Business_Address__StateCode__s",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 10,
+      "picklistValues": [
+        {
+          "label": "Acre",
+          "value": "AC",
+          "active": true
+        },
+        {
+          "label": "Agrigento",
+          "value": "AG",
+          "active": true
+        },
+        {
+          "label": "Aguascalientes",
+          "value": "AG",
+          "active": true
+        },
+        {
+          "label": "Alabama",
+          "value": "AL",
+          "active": true
+        },
+        {
+          "label": "Alagoas",
+          "value": "AL",
+          "active": true
+        },
+        {
+          "label": "Alaska",
+          "value": "AK",
+          "active": true
+        },
+        {
+          "label": "Alberta",
+          "value": "AB",
+          "active": true
+        },
+        {
+          "label": "Alessandria",
+          "value": "AL",
+          "active": true
+        },
+        {
+          "label": "Amapá",
+          "value": "AP",
+          "active": true
+        },
+        {
+          "label": "Amazonas",
+          "value": "AM",
+          "active": true
+        },
+        {
+          "label": "Ancona",
+          "value": "AN",
+          "active": true
+        },
+        {
+          "label": "Andaman and Nicobar Islands",
+          "value": "AN",
+          "active": true
+        },
+        {
+          "label": "Andhra Pradesh",
+          "value": "AP",
+          "active": true
+        },
+        {
+          "label": "Anhui",
+          "value": "34",
+          "active": true
+        },
+        {
+          "label": "Aosta",
+          "value": "AO",
+          "active": true
+        },
+        {
+          "label": "Arezzo",
+          "value": "AR",
+          "active": true
+        },
+        {
+          "label": "Arizona",
+          "value": "AZ",
+          "active": true
+        },
+        {
+          "label": "Arkansas",
+          "value": "AR",
+          "active": true
+        },
+        {
+          "label": "Arunachal Pradesh",
+          "value": "AR",
+          "active": true
+        },
+        {
+          "label": "Ascoli Piceno",
+          "value": "AP",
+          "active": true
+        },
+        {
+          "label": "Assam",
+          "value": "AS",
+          "active": true
+        },
+        {
+          "label": "Asti",
+          "value": "AT",
+          "active": true
+        },
+        {
+          "label": "Australian Capital Territory",
+          "value": "ACT",
+          "active": true
+        },
+        {
+          "label": "Avellino",
+          "value": "AV",
+          "active": true
+        },
+        {
+          "label": "Bahia",
+          "value": "BA",
+          "active": true
+        },
+        {
+          "label": "Baja California",
+          "value": "BC",
+          "active": true
+        },
+        {
+          "label": "Baja California Sur",
+          "value": "BS",
+          "active": true
+        },
+        {
+          "label": "Bari",
+          "value": "BA",
+          "active": true
+        },
+        {
+          "label": "Barletta-Andria-Trani",
+          "value": "BT",
+          "active": true
+        },
+        {
+          "label": "Beijing",
+          "value": "11",
+          "active": true
+        },
+        {
+          "label": "Belluno",
+          "value": "BL",
+          "active": true
+        },
+        {
+          "label": "Benevento",
+          "value": "BN",
+          "active": true
+        },
+        {
+          "label": "Bergamo",
+          "value": "BG",
+          "active": true
+        },
+        {
+          "label": "Biella",
+          "value": "BI",
+          "active": true
+        },
+        {
+          "label": "Bihar",
+          "value": "BR",
+          "active": true
+        },
+        {
+          "label": "Bologna",
+          "value": "BO",
+          "active": true
+        },
+        {
+          "label": "Bolzano",
+          "value": "BZ",
+          "active": true
+        },
+        {
+          "label": "Brescia",
+          "value": "BS",
+          "active": true
+        },
+        {
+          "label": "Brindisi",
+          "value": "BR",
+          "active": true
+        },
+        {
+          "label": "British Columbia",
+          "value": "BC",
+          "active": true
+        },
+        {
+          "label": "Cagliari",
+          "value": "CA",
+          "active": true
+        },
+        {
+          "label": "California",
+          "value": "CA",
+          "active": true
+        },
+        {
+          "label": "Caltanissetta",
+          "value": "CL",
+          "active": true
+        },
+        {
+          "label": "Campeche",
+          "value": "CM",
+          "active": true
+        },
+        {
+          "label": "Campobasso",
+          "value": "CB",
+          "active": true
+        },
+        {
+          "label": "Carbonia-Iglesias",
+          "value": "CI",
+          "active": true
+        },
+        {
+          "label": "Carlow",
+          "value": "CW",
+          "active": true
+        },
+        {
+          "label": "Caserta",
+          "value": "CE",
+          "active": true
+        },
+        {
+          "label": "Catania",
+          "value": "CT",
+          "active": true
+        },
+        {
+          "label": "Catanzaro",
+          "value": "CZ",
+          "active": true
+        },
+        {
+          "label": "Cavan",
+          "value": "CN",
+          "active": true
+        },
+        {
+          "label": "Ceará",
+          "value": "CE",
+          "active": true
+        },
+        {
+          "label": "Chandigarh",
+          "value": "CH",
+          "active": true
+        },
+        {
+          "label": "Chhattisgarh",
+          "value": "CT",
+          "active": true
+        },
+        {
+          "label": "Chiapas",
+          "value": "CS",
+          "active": true
+        },
+        {
+          "label": "Chieti",
+          "value": "CH",
+          "active": true
+        },
+        {
+          "label": "Chihuahua",
+          "value": "CH",
+          "active": true
+        },
+        {
+          "label": "Chinese Taipei",
+          "value": "71",
+          "active": true
+        },
+        {
+          "label": "Chongqing",
+          "value": "50",
+          "active": true
+        },
+        {
+          "label": "Clare",
+          "value": "CE",
+          "active": true
+        },
+        {
+          "label": "Coahuila",
+          "value": "CO",
+          "active": true
+        },
+        {
+          "label": "Colima",
+          "value": "CL",
+          "active": true
+        },
+        {
+          "label": "Colorado",
+          "value": "CO",
+          "active": true
+        },
+        {
+          "label": "Como",
+          "value": "CO",
+          "active": true
+        },
+        {
+          "label": "Connecticut",
+          "value": "CT",
+          "active": true
+        },
+        {
+          "label": "Cork",
+          "value": "CO",
+          "active": true
+        },
+        {
+          "label": "Cosenza",
+          "value": "CS",
+          "active": true
+        },
+        {
+          "label": "Cremona",
+          "value": "CR",
+          "active": true
+        },
+        {
+          "label": "Crotone",
+          "value": "KR",
+          "active": true
+        },
+        {
+          "label": "Cuneo",
+          "value": "CN",
+          "active": true
+        },
+        {
+          "label": "Dadra and Nagar Haveli",
+          "value": "DN",
+          "active": true
+        },
+        {
+          "label": "Daman and Diu",
+          "value": "DD",
+          "active": true
+        },
+        {
+          "label": "Delaware",
+          "value": "DE",
+          "active": true
+        },
+        {
+          "label": "Delhi",
+          "value": "DL",
+          "active": true
+        },
+        {
+          "label": "District of Columbia",
+          "value": "DC",
+          "active": true
+        },
+        {
+          "label": "Distrito Federal",
+          "value": "DF",
+          "active": true
+        },
+        {
+          "label": "Donegal",
+          "value": "DL",
+          "active": true
+        },
+        {
+          "label": "Dublin",
+          "value": "D",
+          "active": true
+        },
+        {
+          "label": "Durango",
+          "value": "DG",
+          "active": true
+        },
+        {
+          "label": "Enna",
+          "value": "EN",
+          "active": true
+        },
+        {
+          "label": "Espírito Santo",
+          "value": "ES",
+          "active": true
+        },
+        {
+          "label": "Federal District",
+          "value": "DF",
+          "active": true
+        },
+        {
+          "label": "Fermo",
+          "value": "FM",
+          "active": true
+        },
+        {
+          "label": "Ferrara",
+          "value": "FE",
+          "active": true
+        },
+        {
+          "label": "Florence",
+          "value": "FI",
+          "active": true
+        },
+        {
+          "label": "Florida",
+          "value": "FL",
+          "active": true
+        },
+        {
+          "label": "Foggia",
+          "value": "FG",
+          "active": true
+        },
+        {
+          "label": "Forlì-Cesena",
+          "value": "FC",
+          "active": true
+        },
+        {
+          "label": "Frosinone",
+          "value": "FR",
+          "active": true
+        },
+        {
+          "label": "Fujian",
+          "value": "35",
+          "active": true
+        },
+        {
+          "label": "Galway",
+          "value": "G",
+          "active": true
+        },
+        {
+          "label": "Gansu",
+          "value": "62",
+          "active": true
+        },
+        {
+          "label": "Genoa",
+          "value": "GE",
+          "active": true
+        },
+        {
+          "label": "Georgia",
+          "value": "GA",
+          "active": true
+        },
+        {
+          "label": "Goa",
+          "value": "GA",
+          "active": true
+        },
+        {
+          "label": "Goiás",
+          "value": "GO",
+          "active": true
+        },
+        {
+          "label": "Gorizia",
+          "value": "GO",
+          "active": true
+        },
+        {
+          "label": "Grosseto",
+          "value": "GR",
+          "active": true
+        },
+        {
+          "label": "Guanajuato",
+          "value": "GT",
+          "active": true
+        },
+        {
+          "label": "Guangdong",
+          "value": "44",
+          "active": true
+        },
+        {
+          "label": "Guangxi",
+          "value": "45",
+          "active": true
+        },
+        {
+          "label": "Guerrero",
+          "value": "GR",
+          "active": true
+        },
+        {
+          "label": "Guizhou",
+          "value": "52",
+          "active": true
+        },
+        {
+          "label": "Gujarat",
+          "value": "GJ",
+          "active": true
+        },
+        {
+          "label": "Hainan",
+          "value": "46",
+          "active": true
+        },
+        {
+          "label": "Haryana",
+          "value": "HR",
+          "active": true
+        },
+        {
+          "label": "Hawaii",
+          "value": "HI",
+          "active": true
+        },
+        {
+          "label": "Hebei",
+          "value": "13",
+          "active": true
+        },
+        {
+          "label": "Heilongjiang",
+          "value": "23",
+          "active": true
+        },
+        {
+          "label": "Henan",
+          "value": "41",
+          "active": true
+        },
+        {
+          "label": "Hidalgo",
+          "value": "HG",
+          "active": true
+        },
+        {
+          "label": "Himachal Pradesh",
+          "value": "HP",
+          "active": true
+        },
+        {
+          "label": "Hong Kong",
+          "value": "91",
+          "active": true
+        },
+        {
+          "label": "Hubei",
+          "value": "42",
+          "active": true
+        },
+        {
+          "label": "Hunan",
+          "value": "43",
+          "active": true
+        },
+        {
+          "label": "Idaho",
+          "value": "ID",
+          "active": true
+        },
+        {
+          "label": "Illinois",
+          "value": "IL",
+          "active": true
+        },
+        {
+          "label": "Imperia",
+          "value": "IM",
+          "active": true
+        },
+        {
+          "label": "Indiana",
+          "value": "IN",
+          "active": true
+        },
+        {
+          "label": "Iowa",
+          "value": "IA",
+          "active": true
+        },
+        {
+          "label": "Isernia",
+          "value": "IS",
+          "active": true
+        },
+        {
+          "label": "Jalisco",
+          "value": "JA",
+          "active": true
+        },
+        {
+          "label": "Jammu and Kashmir",
+          "value": "JK",
+          "active": true
+        },
+        {
+          "label": "Jharkhand",
+          "value": "JH",
+          "active": true
+        },
+        {
+          "label": "Jiangsu",
+          "value": "32",
+          "active": true
+        },
+        {
+          "label": "Jiangxi",
+          "value": "36",
+          "active": true
+        },
+        {
+          "label": "Jilin",
+          "value": "22",
+          "active": true
+        },
+        {
+          "label": "Kansas",
+          "value": "KS",
+          "active": true
+        },
+        {
+          "label": "Karnataka",
+          "value": "KA",
+          "active": true
+        },
+        {
+          "label": "Kentucky",
+          "value": "KY",
+          "active": true
+        },
+        {
+          "label": "Kerala",
+          "value": "KL",
+          "active": true
+        },
+        {
+          "label": "Kerry",
+          "value": "KY",
+          "active": true
+        },
+        {
+          "label": "Kildare",
+          "value": "KE",
+          "active": true
+        },
+        {
+          "label": "Kilkenny",
+          "value": "KK",
+          "active": true
+        },
+        {
+          "label": "L'Aquila",
+          "value": "AQ",
+          "active": true
+        },
+        {
+          "label": "Lakshadweep",
+          "value": "LD",
+          "active": true
+        },
+        {
+          "label": "Laois",
+          "value": "LS",
+          "active": true
+        },
+        {
+          "label": "La Spezia",
+          "value": "SP",
+          "active": true
+        },
+        {
+          "label": "Latina",
+          "value": "LT",
+          "active": true
+        },
+        {
+          "label": "Lecce",
+          "value": "LE",
+          "active": true
+        },
+        {
+          "label": "Lecco",
+          "value": "LC",
+          "active": true
+        },
+        {
+          "label": "Leitrim",
+          "value": "LM",
+          "active": true
+        },
+        {
+          "label": "Liaoning",
+          "value": "21",
+          "active": true
+        },
+        {
+          "label": "Limerick",
+          "value": "LK",
+          "active": true
+        },
+        {
+          "label": "Livorno",
+          "value": "LI",
+          "active": true
+        },
+        {
+          "label": "Lodi",
+          "value": "LO",
+          "active": true
+        },
+        {
+          "label": "Longford",
+          "value": "LD",
+          "active": true
+        },
+        {
+          "label": "Louisiana",
+          "value": "LA",
+          "active": true
+        },
+        {
+          "label": "Louth",
+          "value": "LH",
+          "active": true
+        },
+        {
+          "label": "Lucca",
+          "value": "LU",
+          "active": true
+        },
+        {
+          "label": "Macao",
+          "value": "92",
+          "active": true
+        },
+        {
+          "label": "Macerata",
+          "value": "MC",
+          "active": true
+        },
+        {
+          "label": "Madhya Pradesh",
+          "value": "MP",
+          "active": true
+        },
+        {
+          "label": "Maharashtra",
+          "value": "MH",
+          "active": true
+        },
+        {
+          "label": "Maine",
+          "value": "ME",
+          "active": true
+        },
+        {
+          "label": "Manipur",
+          "value": "MN",
+          "active": true
+        },
+        {
+          "label": "Manitoba",
+          "value": "MB",
+          "active": true
+        },
+        {
+          "label": "Mantua",
+          "value": "MN",
+          "active": true
+        },
+        {
+          "label": "Maranhão",
+          "value": "MA",
+          "active": true
+        },
+        {
+          "label": "Maryland",
+          "value": "MD",
+          "active": true
+        },
+        {
+          "label": "Massa and Carrara",
+          "value": "MS",
+          "active": true
+        },
+        {
+          "label": "Massachusetts",
+          "value": "MA",
+          "active": true
+        },
+        {
+          "label": "Matera",
+          "value": "MT",
+          "active": true
+        },
+        {
+          "label": "Mato Grosso",
+          "value": "MT",
+          "active": true
+        },
+        {
+          "label": "Mato Grosso do Sul",
+          "value": "MS",
+          "active": true
+        },
+        {
+          "label": "Mayo",
+          "value": "MO",
+          "active": true
+        },
+        {
+          "label": "Meath",
+          "value": "MH",
+          "active": true
+        },
+        {
+          "label": "Medio Campidano",
+          "value": "VS",
+          "active": true
+        },
+        {
+          "label": "Meghalaya",
+          "value": "ML",
+          "active": true
+        },
+        {
+          "label": "Messina",
+          "value": "ME",
+          "active": true
+        },
+        {
+          "label": "Mexico State",
+          "value": "ME",
+          "active": true
+        },
+        {
+          "label": "Michigan",
+          "value": "MI",
+          "active": true
+        },
+        {
+          "label": "Michoacán",
+          "value": "MI",
+          "active": true
+        },
+        {
+          "label": "Milan",
+          "value": "MI",
+          "active": true
+        },
+        {
+          "label": "Minas Gerais",
+          "value": "MG",
+          "active": true
+        },
+        {
+          "label": "Minnesota",
+          "value": "MN",
+          "active": true
+        },
+        {
+          "label": "Mississippi",
+          "value": "MS",
+          "active": true
+        },
+        {
+          "label": "Missouri",
+          "value": "MO",
+          "active": true
+        },
+        {
+          "label": "Mizoram",
+          "value": "MZ",
+          "active": true
+        },
+        {
+          "label": "Modena",
+          "value": "MO",
+          "active": true
+        },
+        {
+          "label": "Monaghan",
+          "value": "MN",
+          "active": true
+        },
+        {
+          "label": "Montana",
+          "value": "MT",
+          "active": true
+        },
+        {
+          "label": "Monza and Brianza",
+          "value": "MB",
+          "active": true
+        },
+        {
+          "label": "Morelos",
+          "value": "MO",
+          "active": true
+        },
+        {
+          "label": "Nagaland",
+          "value": "NL",
+          "active": true
+        },
+        {
+          "label": "Naples",
+          "value": "NA",
+          "active": true
+        },
+        {
+          "label": "Nayarit",
+          "value": "NA",
+          "active": true
+        },
+        {
+          "label": "Nebraska",
+          "value": "NE",
+          "active": true
+        },
+        {
+          "label": "Nei Mongol",
+          "value": "15",
+          "active": true
+        },
+        {
+          "label": "Nevada",
+          "value": "NV",
+          "active": true
+        },
+        {
+          "label": "New Brunswick",
+          "value": "NB",
+          "active": true
+        },
+        {
+          "label": "Newfoundland and Labrador",
+          "value": "NL",
+          "active": true
+        },
+        {
+          "label": "New Hampshire",
+          "value": "NH",
+          "active": true
+        },
+        {
+          "label": "New Jersey",
+          "value": "NJ",
+          "active": true
+        },
+        {
+          "label": "New Mexico",
+          "value": "NM",
+          "active": true
+        },
+        {
+          "label": "New South Wales",
+          "value": "NSW",
+          "active": true
+        },
+        {
+          "label": "New York",
+          "value": "NY",
+          "active": true
+        },
+        {
+          "label": "Ningxia",
+          "value": "64",
+          "active": true
+        },
+        {
+          "label": "North Carolina",
+          "value": "NC",
+          "active": true
+        },
+        {
+          "label": "North Dakota",
+          "value": "ND",
+          "active": true
+        },
+        {
+          "label": "Northern Territory",
+          "value": "NT",
+          "active": true
+        },
+        {
+          "label": "Northwest Territories",
+          "value": "NT",
+          "active": true
+        },
+        {
+          "label": "Novara",
+          "value": "NO",
+          "active": true
+        },
+        {
+          "label": "Nova Scotia",
+          "value": "NS",
+          "active": true
+        },
+        {
+          "label": "Nuevo León",
+          "value": "NL",
+          "active": true
+        },
+        {
+          "label": "Nunavut",
+          "value": "NU",
+          "active": true
+        },
+        {
+          "label": "Nuoro",
+          "value": "NU",
+          "active": true
+        },
+        {
+          "label": "Oaxaca",
+          "value": "OA",
+          "active": true
+        },
+        {
+          "label": "Odisha",
+          "value": "OR",
+          "active": true
+        },
+        {
+          "label": "Offaly",
+          "value": "OY",
+          "active": true
+        },
+        {
+          "label": "Ogliastra",
+          "value": "OG",
+          "active": true
+        },
+        {
+          "label": "Ohio",
+          "value": "OH",
+          "active": true
+        },
+        {
+          "label": "Oklahoma",
+          "value": "OK",
+          "active": true
+        },
+        {
+          "label": "Olbia-Tempio",
+          "value": "OT",
+          "active": true
+        },
+        {
+          "label": "Ontario",
+          "value": "ON",
+          "active": true
+        },
+        {
+          "label": "Oregon",
+          "value": "OR",
+          "active": true
+        },
+        {
+          "label": "Oristano",
+          "value": "OR",
+          "active": true
+        },
+        {
+          "label": "Padua",
+          "value": "PD",
+          "active": true
+        },
+        {
+          "label": "Palermo",
+          "value": "PA",
+          "active": true
+        },
+        {
+          "label": "Pará",
+          "value": "PA",
+          "active": true
+        },
+        {
+          "label": "Paraíba",
+          "value": "PB",
+          "active": true
+        },
+        {
+          "label": "Paraná",
+          "value": "PR",
+          "active": true
+        },
+        {
+          "label": "Parma",
+          "value": "PR",
+          "active": true
+        },
+        {
+          "label": "Pavia",
+          "value": "PV",
+          "active": true
+        },
+        {
+          "label": "Pennsylvania",
+          "value": "PA",
+          "active": true
+        },
+        {
+          "label": "Pernambuco",
+          "value": "PE",
+          "active": true
+        },
+        {
+          "label": "Perugia",
+          "value": "PG",
+          "active": true
+        },
+        {
+          "label": "Pesaro and Urbino",
+          "value": "PU",
+          "active": true
+        },
+        {
+          "label": "Pescara",
+          "value": "PE",
+          "active": true
+        },
+        {
+          "label": "Piacenza",
+          "value": "PC",
+          "active": true
+        },
+        {
+          "label": "Piauí",
+          "value": "PI",
+          "active": true
+        },
+        {
+          "label": "Pisa",
+          "value": "PI",
+          "active": true
+        },
+        {
+          "label": "Pistoia",
+          "value": "PT",
+          "active": true
+        },
+        {
+          "label": "Pordenone",
+          "value": "PN",
+          "active": true
+        },
+        {
+          "label": "Potenza",
+          "value": "PZ",
+          "active": true
+        },
+        {
+          "label": "Prato",
+          "value": "PO",
+          "active": true
+        },
+        {
+          "label": "Prince Edward Island",
+          "value": "PE",
+          "active": true
+        },
+        {
+          "label": "Puducherry",
+          "value": "PY",
+          "active": true
+        },
+        {
+          "label": "Puebla",
+          "value": "PB",
+          "active": true
+        },
+        {
+          "label": "Punjab",
+          "value": "PB",
+          "active": true
+        },
+        {
+          "label": "Qinghai",
+          "value": "63",
+          "active": true
+        },
+        {
+          "label": "Quebec",
+          "value": "QC",
+          "active": true
+        },
+        {
+          "label": "Queensland",
+          "value": "QLD",
+          "active": true
+        },
+        {
+          "label": "Querétaro",
+          "value": "QE",
+          "active": true
+        },
+        {
+          "label": "Quintana Roo",
+          "value": "QR",
+          "active": true
+        },
+        {
+          "label": "Ragusa",
+          "value": "RG",
+          "active": true
+        },
+        {
+          "label": "Rajasthan",
+          "value": "RJ",
+          "active": true
+        },
+        {
+          "label": "Ravenna",
+          "value": "RA",
+          "active": true
+        },
+        {
+          "label": "Reggio Calabria",
+          "value": "RC",
+          "active": true
+        },
+        {
+          "label": "Reggio Emilia",
+          "value": "RE",
+          "active": true
+        },
+        {
+          "label": "Rhode Island",
+          "value": "RI",
+          "active": true
+        },
+        {
+          "label": "Rieti",
+          "value": "RI",
+          "active": true
+        },
+        {
+          "label": "Rimini",
+          "value": "RN",
+          "active": true
+        },
+        {
+          "label": "Rio de Janeiro",
+          "value": "RJ",
+          "active": true
+        },
+        {
+          "label": "Rio Grande do Norte",
+          "value": "RN",
+          "active": true
+        },
+        {
+          "label": "Rio Grande do Sul",
+          "value": "RS",
+          "active": true
+        },
+        {
+          "label": "Rome",
+          "value": "RM",
+          "active": true
+        },
+        {
+          "label": "Rondônia",
+          "value": "RO",
+          "active": true
+        },
+        {
+          "label": "Roraima",
+          "value": "RR",
+          "active": true
+        },
+        {
+          "label": "Roscommon",
+          "value": "RN",
+          "active": true
+        },
+        {
+          "label": "Rovigo",
+          "value": "RO",
+          "active": true
+        },
+        {
+          "label": "Salerno",
+          "value": "SA",
+          "active": true
+        },
+        {
+          "label": "San Luis Potosí",
+          "value": "SL",
+          "active": true
+        },
+        {
+          "label": "Santa Catarina",
+          "value": "SC",
+          "active": true
+        },
+        {
+          "label": "São Paulo",
+          "value": "SP",
+          "active": true
+        },
+        {
+          "label": "Saskatchewan",
+          "value": "SK",
+          "active": true
+        },
+        {
+          "label": "Sassari",
+          "value": "SS",
+          "active": true
+        },
+        {
+          "label": "Savona",
+          "value": "SV",
+          "active": true
+        },
+        {
+          "label": "Sergipe",
+          "value": "SE",
+          "active": true
+        },
+        {
+          "label": "Shaanxi",
+          "value": "61",
+          "active": true
+        },
+        {
+          "label": "Shandong",
+          "value": "37",
+          "active": true
+        },
+        {
+          "label": "Shanghai",
+          "value": "31",
+          "active": true
+        },
+        {
+          "label": "Shanxi",
+          "value": "14",
+          "active": true
+        },
+        {
+          "label": "Sichuan",
+          "value": "51",
+          "active": true
+        },
+        {
+          "label": "Siena",
+          "value": "SI",
+          "active": true
+        },
+        {
+          "label": "Sikkim",
+          "value": "SK",
+          "active": true
+        },
+        {
+          "label": "Sinaloa",
+          "value": "SI",
+          "active": true
+        },
+        {
+          "label": "Sligo",
+          "value": "SO",
+          "active": true
+        },
+        {
+          "label": "Sondrio",
+          "value": "SO",
+          "active": true
+        },
+        {
+          "label": "Sonora",
+          "value": "SO",
+          "active": true
+        },
+        {
+          "label": "South Australia",
+          "value": "SA",
+          "active": true
+        },
+        {
+          "label": "South Carolina",
+          "value": "SC",
+          "active": true
+        },
+        {
+          "label": "South Dakota",
+          "value": "SD",
+          "active": true
+        },
+        {
+          "label": "Syracuse",
+          "value": "SR",
+          "active": true
+        },
+        {
+          "label": "Tabasco",
+          "value": "TB",
+          "active": true
+        },
+        {
+          "label": "Tamaulipas",
+          "value": "TM",
+          "active": true
+        },
+        {
+          "label": "Tamil Nadu",
+          "value": "TN",
+          "active": true
+        },
+        {
+          "label": "Taranto",
+          "value": "TA",
+          "active": true
+        },
+        {
+          "label": "Tasmania",
+          "value": "TAS",
+          "active": true
+        },
+        {
+          "label": "Tennessee",
+          "value": "TN",
+          "active": true
+        },
+        {
+          "label": "Teramo",
+          "value": "TE",
+          "active": true
+        },
+        {
+          "label": "Terni",
+          "value": "TR",
+          "active": true
+        },
+        {
+          "label": "Texas",
+          "value": "TX",
+          "active": true
+        },
+        {
+          "label": "Tianjin",
+          "value": "12",
+          "active": true
+        },
+        {
+          "label": "Tipperary",
+          "value": "TA",
+          "active": true
+        },
+        {
+          "label": "Tlaxcala",
+          "value": "TL",
+          "active": true
+        },
+        {
+          "label": "Tocantins",
+          "value": "TO",
+          "active": true
+        },
+        {
+          "label": "Trapani",
+          "value": "TP",
+          "active": true
+        },
+        {
+          "label": "Trento",
+          "value": "TN",
+          "active": true
+        },
+        {
+          "label": "Treviso",
+          "value": "TV",
+          "active": true
+        },
+        {
+          "label": "Trieste",
+          "value": "TS",
+          "active": true
+        },
+        {
+          "label": "Tripura",
+          "value": "TR",
+          "active": true
+        },
+        {
+          "label": "Turin",
+          "value": "TO",
+          "active": true
+        },
+        {
+          "label": "Udine",
+          "value": "UD",
+          "active": true
+        },
+        {
+          "label": "Utah",
+          "value": "UT",
+          "active": true
+        },
+        {
+          "label": "Uttarakhand",
+          "value": "UT",
+          "active": true
+        },
+        {
+          "label": "Uttar Pradesh",
+          "value": "UP",
+          "active": true
+        },
+        {
+          "label": "Varese",
+          "value": "VA",
+          "active": true
+        },
+        {
+          "label": "Venice",
+          "value": "VE",
+          "active": true
+        },
+        {
+          "label": "Veracruz",
+          "value": "VE",
+          "active": true
+        },
+        {
+          "label": "Verbano-Cusio-Ossola",
+          "value": "VB",
+          "active": true
+        },
+        {
+          "label": "Vercelli",
+          "value": "VC",
+          "active": true
+        },
+        {
+          "label": "Vermont",
+          "value": "VT",
+          "active": true
+        },
+        {
+          "label": "Verona",
+          "value": "VR",
+          "active": true
+        },
+        {
+          "label": "Vibo Valentia",
+          "value": "VV",
+          "active": true
+        },
+        {
+          "label": "Vicenza",
+          "value": "VI",
+          "active": true
+        },
+        {
+          "label": "Victoria",
+          "value": "VIC",
+          "active": true
+        },
+        {
+          "label": "Virginia",
+          "value": "VA",
+          "active": true
+        },
+        {
+          "label": "Viterbo",
+          "value": "VT",
+          "active": true
+        },
+        {
+          "label": "Washington",
+          "value": "WA",
+          "active": true
+        },
+        {
+          "label": "Waterford",
+          "value": "WD",
+          "active": true
+        },
+        {
+          "label": "West Bengal",
+          "value": "WB",
+          "active": true
+        },
+        {
+          "label": "Western Australia",
+          "value": "WA",
+          "active": true
+        },
+        {
+          "label": "Westmeath",
+          "value": "WH",
+          "active": true
+        },
+        {
+          "label": "West Virginia",
+          "value": "WV",
+          "active": true
+        },
+        {
+          "label": "Wexford",
+          "value": "WX",
+          "active": true
+        },
+        {
+          "label": "Wicklow",
+          "value": "WW",
+          "active": true
+        },
+        {
+          "label": "Wisconsin",
+          "value": "WI",
+          "active": true
+        },
+        {
+          "label": "Wyoming",
+          "value": "WY",
+          "active": true
+        },
+        {
+          "label": "Xinjiang",
+          "value": "65",
+          "active": true
+        },
+        {
+          "label": "Xizang",
+          "value": "54",
+          "active": true
+        },
+        {
+          "label": "Yucatán",
+          "value": "YU",
+          "active": true
+        },
+        {
+          "label": "Yukon Territories",
+          "value": "YT",
+          "active": true
+        },
+        {
+          "label": "Yunnan",
+          "value": "53",
+          "active": true
+        },
+        {
+          "label": "Zacatecas",
+          "value": "ZA",
+          "active": true
+        },
+        {
+          "label": "Zhejiang",
+          "value": "33",
+          "active": true
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Business_Address__CountryCode__s",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 10,
+      "picklistValues": [
+        {
+          "label": "Afghanistan",
+          "value": "AF",
+          "active": true
+        },
+        {
+          "label": "Aland Islands",
+          "value": "AX",
+          "active": true
+        },
+        {
+          "label": "Albania",
+          "value": "AL",
+          "active": true
+        },
+        {
+          "label": "Algeria",
+          "value": "DZ",
+          "active": true
+        },
+        {
+          "label": "Andorra",
+          "value": "AD",
+          "active": true
+        },
+        {
+          "label": "Angola",
+          "value": "AO",
+          "active": true
+        },
+        {
+          "label": "Anguilla",
+          "value": "AI",
+          "active": true
+        },
+        {
+          "label": "Antarctica",
+          "value": "AQ",
+          "active": true
+        },
+        {
+          "label": "Antigua and Barbuda",
+          "value": "AG",
+          "active": true
+        },
+        {
+          "label": "Argentina",
+          "value": "AR",
+          "active": true
+        },
+        {
+          "label": "Armenia",
+          "value": "AM",
+          "active": true
+        },
+        {
+          "label": "Aruba",
+          "value": "AW",
+          "active": true
+        },
+        {
+          "label": "Australia",
+          "value": "AU",
+          "active": true
+        },
+        {
+          "label": "Austria",
+          "value": "AT",
+          "active": true
+        },
+        {
+          "label": "Azerbaijan",
+          "value": "AZ",
+          "active": true
+        },
+        {
+          "label": "Bahamas",
+          "value": "BS",
+          "active": true
+        },
+        {
+          "label": "Bahrain",
+          "value": "BH",
+          "active": true
+        },
+        {
+          "label": "Bangladesh",
+          "value": "BD",
+          "active": true
+        },
+        {
+          "label": "Barbados",
+          "value": "BB",
+          "active": true
+        },
+        {
+          "label": "Belarus",
+          "value": "BY",
+          "active": true
+        },
+        {
+          "label": "Belgium",
+          "value": "BE",
+          "active": true
+        },
+        {
+          "label": "Belize",
+          "value": "BZ",
+          "active": true
+        },
+        {
+          "label": "Benin",
+          "value": "BJ",
+          "active": true
+        },
+        {
+          "label": "Bermuda",
+          "value": "BM",
+          "active": true
+        },
+        {
+          "label": "Bhutan",
+          "value": "BT",
+          "active": true
+        },
+        {
+          "label": "Bolivia, Plurinational State of",
+          "value": "BO",
+          "active": true
+        },
+        {
+          "label": "Bonaire, Sint Eustatius and Saba",
+          "value": "BQ",
+          "active": true
+        },
+        {
+          "label": "Bosnia and Herzegovina",
+          "value": "BA",
+          "active": true
+        },
+        {
+          "label": "Botswana",
+          "value": "BW",
+          "active": true
+        },
+        {
+          "label": "Bouvet Island",
+          "value": "BV",
+          "active": true
+        },
+        {
+          "label": "Brazil",
+          "value": "BR",
+          "active": true
+        },
+        {
+          "label": "British Indian Ocean Territory",
+          "value": "IO",
+          "active": true
+        },
+        {
+          "label": "Brunei Darussalam",
+          "value": "BN",
+          "active": true
+        },
+        {
+          "label": "Bulgaria",
+          "value": "BG",
+          "active": true
+        },
+        {
+          "label": "Burkina Faso",
+          "value": "BF",
+          "active": true
+        },
+        {
+          "label": "Burundi",
+          "value": "BI",
+          "active": true
+        },
+        {
+          "label": "Cambodia",
+          "value": "KH",
+          "active": true
+        },
+        {
+          "label": "Cameroon",
+          "value": "CM",
+          "active": true
+        },
+        {
+          "label": "Canada",
+          "value": "CA",
+          "active": true
+        },
+        {
+          "label": "Cape Verde",
+          "value": "CV",
+          "active": true
+        },
+        {
+          "label": "Cayman Islands",
+          "value": "KY",
+          "active": true
+        },
+        {
+          "label": "Central African Republic",
+          "value": "CF",
+          "active": true
+        },
+        {
+          "label": "Chad",
+          "value": "TD",
+          "active": true
+        },
+        {
+          "label": "Chile",
+          "value": "CL",
+          "active": true
+        },
+        {
+          "label": "China",
+          "value": "CN",
+          "active": true
+        },
+        {
+          "label": "Chinese Taipei",
+          "value": "TW",
+          "active": true
+        },
+        {
+          "label": "Christmas Island",
+          "value": "CX",
+          "active": true
+        },
+        {
+          "label": "Cocos (Keeling) Islands",
+          "value": "CC",
+          "active": true
+        },
+        {
+          "label": "Colombia",
+          "value": "CO",
+          "active": true
+        },
+        {
+          "label": "Comoros",
+          "value": "KM",
+          "active": true
+        },
+        {
+          "label": "Congo",
+          "value": "CG",
+          "active": true
+        },
+        {
+          "label": "Congo, the Democratic Republic of the",
+          "value": "CD",
+          "active": true
+        },
+        {
+          "label": "Cook Islands",
+          "value": "CK",
+          "active": true
+        },
+        {
+          "label": "Costa Rica",
+          "value": "CR",
+          "active": true
+        },
+        {
+          "label": "Cote d'Ivoire",
+          "value": "CI",
+          "active": true
+        },
+        {
+          "label": "Croatia",
+          "value": "HR",
+          "active": true
+        },
+        {
+          "label": "Cuba",
+          "value": "CU",
+          "active": true
+        },
+        {
+          "label": "Curaçao",
+          "value": "CW",
+          "active": true
+        },
+        {
+          "label": "Cyprus",
+          "value": "CY",
+          "active": true
+        },
+        {
+          "label": "Czech Republic",
+          "value": "CZ",
+          "active": true
+        },
+        {
+          "label": "Denmark",
+          "value": "DK",
+          "active": true
+        },
+        {
+          "label": "Djibouti",
+          "value": "DJ",
+          "active": true
+        },
+        {
+          "label": "Dominica",
+          "value": "DM",
+          "active": true
+        },
+        {
+          "label": "Dominican Republic",
+          "value": "DO",
+          "active": true
+        },
+        {
+          "label": "Ecuador",
+          "value": "EC",
+          "active": true
+        },
+        {
+          "label": "Egypt",
+          "value": "EG",
+          "active": true
+        },
+        {
+          "label": "El Salvador",
+          "value": "SV",
+          "active": true
+        },
+        {
+          "label": "Equatorial Guinea",
+          "value": "GQ",
+          "active": true
+        },
+        {
+          "label": "Eritrea",
+          "value": "ER",
+          "active": true
+        },
+        {
+          "label": "Estonia",
+          "value": "EE",
+          "active": true
+        },
+        {
+          "label": "Ethiopia",
+          "value": "ET",
+          "active": true
+        },
+        {
+          "label": "Falkland Islands (Malvinas)",
+          "value": "FK",
+          "active": true
+        },
+        {
+          "label": "Faroe Islands",
+          "value": "FO",
+          "active": true
+        },
+        {
+          "label": "Fiji",
+          "value": "FJ",
+          "active": true
+        },
+        {
+          "label": "Finland",
+          "value": "FI",
+          "active": true
+        },
+        {
+          "label": "France",
+          "value": "FR",
+          "active": true
+        },
+        {
+          "label": "French Guiana",
+          "value": "GF",
+          "active": true
+        },
+        {
+          "label": "French Polynesia",
+          "value": "PF",
+          "active": true
+        },
+        {
+          "label": "French Southern Territories",
+          "value": "TF",
+          "active": true
+        },
+        {
+          "label": "Gabon",
+          "value": "GA",
+          "active": true
+        },
+        {
+          "label": "Gambia",
+          "value": "GM",
+          "active": true
+        },
+        {
+          "label": "Georgia",
+          "value": "GE",
+          "active": true
+        },
+        {
+          "label": "Germany",
+          "value": "DE",
+          "active": true
+        },
+        {
+          "label": "Ghana",
+          "value": "GH",
+          "active": true
+        },
+        {
+          "label": "Gibraltar",
+          "value": "GI",
+          "active": true
+        },
+        {
+          "label": "Greece",
+          "value": "GR",
+          "active": true
+        },
+        {
+          "label": "Greenland",
+          "value": "GL",
+          "active": true
+        },
+        {
+          "label": "Grenada",
+          "value": "GD",
+          "active": true
+        },
+        {
+          "label": "Guadeloupe",
+          "value": "GP",
+          "active": true
+        },
+        {
+          "label": "Guatemala",
+          "value": "GT",
+          "active": true
+        },
+        {
+          "label": "Guernsey",
+          "value": "GG",
+          "active": true
+        },
+        {
+          "label": "Guinea",
+          "value": "GN",
+          "active": true
+        },
+        {
+          "label": "Guinea-Bissau",
+          "value": "GW",
+          "active": true
+        },
+        {
+          "label": "Guyana",
+          "value": "GY",
+          "active": true
+        },
+        {
+          "label": "Haiti",
+          "value": "HT",
+          "active": true
+        },
+        {
+          "label": "Heard Island and McDonald Islands",
+          "value": "HM",
+          "active": true
+        },
+        {
+          "label": "Holy See (Vatican City State)",
+          "value": "VA",
+          "active": true
+        },
+        {
+          "label": "Honduras",
+          "value": "HN",
+          "active": true
+        },
+        {
+          "label": "Hungary",
+          "value": "HU",
+          "active": true
+        },
+        {
+          "label": "Iceland",
+          "value": "IS",
+          "active": true
+        },
+        {
+          "label": "India",
+          "value": "IN",
+          "active": true
+        },
+        {
+          "label": "Indonesia",
+          "value": "ID",
+          "active": true
+        },
+        {
+          "label": "Iran, Islamic Republic of",
+          "value": "IR",
+          "active": true
+        },
+        {
+          "label": "Iraq",
+          "value": "IQ",
+          "active": true
+        },
+        {
+          "label": "Ireland",
+          "value": "IE",
+          "active": true
+        },
+        {
+          "label": "Isle of Man",
+          "value": "IM",
+          "active": true
+        },
+        {
+          "label": "Israel",
+          "value": "IL",
+          "active": true
+        },
+        {
+          "label": "Italy",
+          "value": "IT",
+          "active": true
+        },
+        {
+          "label": "Jamaica",
+          "value": "JM",
+          "active": true
+        },
+        {
+          "label": "Japan",
+          "value": "JP",
+          "active": true
+        },
+        {
+          "label": "Jersey",
+          "value": "JE",
+          "active": true
+        },
+        {
+          "label": "Jordan",
+          "value": "JO",
+          "active": true
+        },
+        {
+          "label": "Kazakhstan",
+          "value": "KZ",
+          "active": true
+        },
+        {
+          "label": "Kenya",
+          "value": "KE",
+          "active": true
+        },
+        {
+          "label": "Kiribati",
+          "value": "KI",
+          "active": true
+        },
+        {
+          "label": "Korea, Democratic People's Republic of",
+          "value": "KP",
+          "active": true
+        },
+        {
+          "label": "Korea, Republic of",
+          "value": "KR",
+          "active": true
+        },
+        {
+          "label": "Kuwait",
+          "value": "KW",
+          "active": true
+        },
+        {
+          "label": "Kyrgyzstan",
+          "value": "KG",
+          "active": true
+        },
+        {
+          "label": "Lao People's Democratic Republic",
+          "value": "LA",
+          "active": true
+        },
+        {
+          "label": "Latvia",
+          "value": "LV",
+          "active": true
+        },
+        {
+          "label": "Lebanon",
+          "value": "LB",
+          "active": true
+        },
+        {
+          "label": "Lesotho",
+          "value": "LS",
+          "active": true
+        },
+        {
+          "label": "Liberia",
+          "value": "LR",
+          "active": true
+        },
+        {
+          "label": "Libyan Arab Jamahiriya",
+          "value": "LY",
+          "active": true
+        },
+        {
+          "label": "Liechtenstein",
+          "value": "LI",
+          "active": true
+        },
+        {
+          "label": "Lithuania",
+          "value": "LT",
+          "active": true
+        },
+        {
+          "label": "Luxembourg",
+          "value": "LU",
+          "active": true
+        },
+        {
+          "label": "Macao",
+          "value": "MO",
+          "active": true
+        },
+        {
+          "label": "Macedonia, the former Yugoslav Republic of",
+          "value": "MK",
+          "active": true
+        },
+        {
+          "label": "Madagascar",
+          "value": "MG",
+          "active": true
+        },
+        {
+          "label": "Malawi",
+          "value": "MW",
+          "active": true
+        },
+        {
+          "label": "Malaysia",
+          "value": "MY",
+          "active": true
+        },
+        {
+          "label": "Maldives",
+          "value": "MV",
+          "active": true
+        },
+        {
+          "label": "Mali",
+          "value": "ML",
+          "active": true
+        },
+        {
+          "label": "Malta",
+          "value": "MT",
+          "active": true
+        },
+        {
+          "label": "Martinique",
+          "value": "MQ",
+          "active": true
+        },
+        {
+          "label": "Mauritania",
+          "value": "MR",
+          "active": true
+        },
+        {
+          "label": "Mauritius",
+          "value": "MU",
+          "active": true
+        },
+        {
+          "label": "Mayotte",
+          "value": "YT",
+          "active": true
+        },
+        {
+          "label": "Mexico",
+          "value": "MX",
+          "active": true
+        },
+        {
+          "label": "Moldova, Republic of",
+          "value": "MD",
+          "active": true
+        },
+        {
+          "label": "Monaco",
+          "value": "MC",
+          "active": true
+        },
+        {
+          "label": "Mongolia",
+          "value": "MN",
+          "active": true
+        },
+        {
+          "label": "Montenegro",
+          "value": "ME",
+          "active": true
+        },
+        {
+          "label": "Montserrat",
+          "value": "MS",
+          "active": true
+        },
+        {
+          "label": "Morocco",
+          "value": "MA",
+          "active": true
+        },
+        {
+          "label": "Mozambique",
+          "value": "MZ",
+          "active": true
+        },
+        {
+          "label": "Myanmar",
+          "value": "MM",
+          "active": true
+        },
+        {
+          "label": "Namibia",
+          "value": "NA",
+          "active": true
+        },
+        {
+          "label": "Nauru",
+          "value": "NR",
+          "active": true
+        },
+        {
+          "label": "Nepal",
+          "value": "NP",
+          "active": true
+        },
+        {
+          "label": "Netherlands",
+          "value": "NL",
+          "active": true
+        },
+        {
+          "label": "New Caledonia",
+          "value": "NC",
+          "active": true
+        },
+        {
+          "label": "New Zealand",
+          "value": "NZ",
+          "active": true
+        },
+        {
+          "label": "Nicaragua",
+          "value": "NI",
+          "active": true
+        },
+        {
+          "label": "Niger",
+          "value": "NE",
+          "active": true
+        },
+        {
+          "label": "Nigeria",
+          "value": "NG",
+          "active": true
+        },
+        {
+          "label": "Niue",
+          "value": "NU",
+          "active": true
+        },
+        {
+          "label": "Norfolk Island",
+          "value": "NF",
+          "active": true
+        },
+        {
+          "label": "Norway",
+          "value": "NO",
+          "active": true
+        },
+        {
+          "label": "Oman",
+          "value": "OM",
+          "active": true
+        },
+        {
+          "label": "Pakistan",
+          "value": "PK",
+          "active": true
+        },
+        {
+          "label": "Palestinian Territory, Occupied",
+          "value": "PS",
+          "active": true
+        },
+        {
+          "label": "Panama",
+          "value": "PA",
+          "active": true
+        },
+        {
+          "label": "Papua New Guinea",
+          "value": "PG",
+          "active": true
+        },
+        {
+          "label": "Paraguay",
+          "value": "PY",
+          "active": true
+        },
+        {
+          "label": "Peru",
+          "value": "PE",
+          "active": true
+        },
+        {
+          "label": "Philippines",
+          "value": "PH",
+          "active": true
+        },
+        {
+          "label": "Pitcairn",
+          "value": "PN",
+          "active": true
+        },
+        {
+          "label": "Poland",
+          "value": "PL",
+          "active": true
+        },
+        {
+          "label": "Portugal",
+          "value": "PT",
+          "active": true
+        },
+        {
+          "label": "Qatar",
+          "value": "QA",
+          "active": true
+        },
+        {
+          "label": "Reunion",
+          "value": "RE",
+          "active": true
+        },
+        {
+          "label": "Romania",
+          "value": "RO",
+          "active": true
+        },
+        {
+          "label": "Russian Federation",
+          "value": "RU",
+          "active": true
+        },
+        {
+          "label": "Rwanda",
+          "value": "RW",
+          "active": true
+        },
+        {
+          "label": "Saint Barthélemy",
+          "value": "BL",
+          "active": true
+        },
+        {
+          "label": "Saint Helena, Ascension and Tristan da Cunha",
+          "value": "SH",
+          "active": true
+        },
+        {
+          "label": "Saint Kitts and Nevis",
+          "value": "KN",
+          "active": true
+        },
+        {
+          "label": "Saint Lucia",
+          "value": "LC",
+          "active": true
+        },
+        {
+          "label": "Saint Martin (French part)",
+          "value": "MF",
+          "active": true
+        },
+        {
+          "label": "Saint Pierre and Miquelon",
+          "value": "PM",
+          "active": true
+        },
+        {
+          "label": "Saint Vincent and the Grenadines",
+          "value": "VC",
+          "active": true
+        },
+        {
+          "label": "Samoa",
+          "value": "WS",
+          "active": true
+        },
+        {
+          "label": "San Marino",
+          "value": "SM",
+          "active": true
+        },
+        {
+          "label": "Sao Tome and Principe",
+          "value": "ST",
+          "active": true
+        },
+        {
+          "label": "Saudi Arabia",
+          "value": "SA",
+          "active": true
+        },
+        {
+          "label": "Senegal",
+          "value": "SN",
+          "active": true
+        },
+        {
+          "label": "Serbia",
+          "value": "RS",
+          "active": true
+        },
+        {
+          "label": "Seychelles",
+          "value": "SC",
+          "active": true
+        },
+        {
+          "label": "Sierra Leone",
+          "value": "SL",
+          "active": true
+        },
+        {
+          "label": "Singapore",
+          "value": "SG",
+          "active": true
+        },
+        {
+          "label": "Sint Maarten (Dutch part)",
+          "value": "SX",
+          "active": true
+        },
+        {
+          "label": "Slovakia",
+          "value": "SK",
+          "active": true
+        },
+        {
+          "label": "Slovenia",
+          "value": "SI",
+          "active": true
+        },
+        {
+          "label": "Solomon Islands",
+          "value": "SB",
+          "active": true
+        },
+        {
+          "label": "Somalia",
+          "value": "SO",
+          "active": true
+        },
+        {
+          "label": "South Africa",
+          "value": "ZA",
+          "active": true
+        },
+        {
+          "label": "South Georgia and the South Sandwich Islands",
+          "value": "GS",
+          "active": true
+        },
+        {
+          "label": "South Sudan",
+          "value": "SS",
+          "active": true
+        },
+        {
+          "label": "Spain",
+          "value": "ES",
+          "active": true
+        },
+        {
+          "label": "Sri Lanka",
+          "value": "LK",
+          "active": true
+        },
+        {
+          "label": "Sudan",
+          "value": "SD",
+          "active": true
+        },
+        {
+          "label": "Suriname",
+          "value": "SR",
+          "active": true
+        },
+        {
+          "label": "Svalbard and Jan Mayen",
+          "value": "SJ",
+          "active": true
+        },
+        {
+          "label": "Swaziland",
+          "value": "SZ",
+          "active": true
+        },
+        {
+          "label": "Sweden",
+          "value": "SE",
+          "active": true
+        },
+        {
+          "label": "Switzerland",
+          "value": "CH",
+          "active": true
+        },
+        {
+          "label": "Syrian Arab Republic",
+          "value": "SY",
+          "active": true
+        },
+        {
+          "label": "Tajikistan",
+          "value": "TJ",
+          "active": true
+        },
+        {
+          "label": "Tanzania, United Republic of",
+          "value": "TZ",
+          "active": true
+        },
+        {
+          "label": "Thailand",
+          "value": "TH",
+          "active": true
+        },
+        {
+          "label": "Timor-Leste",
+          "value": "TL",
+          "active": true
+        },
+        {
+          "label": "Togo",
+          "value": "TG",
+          "active": true
+        },
+        {
+          "label": "Tokelau",
+          "value": "TK",
+          "active": true
+        },
+        {
+          "label": "Tonga",
+          "value": "TO",
+          "active": true
+        },
+        {
+          "label": "Trinidad and Tobago",
+          "value": "TT",
+          "active": true
+        },
+        {
+          "label": "Tunisia",
+          "value": "TN",
+          "active": true
+        },
+        {
+          "label": "Turkey",
+          "value": "TR",
+          "active": true
+        },
+        {
+          "label": "Turkmenistan",
+          "value": "TM",
+          "active": true
+        },
+        {
+          "label": "Turks and Caicos Islands",
+          "value": "TC",
+          "active": true
+        },
+        {
+          "label": "Tuvalu",
+          "value": "TV",
+          "active": true
+        },
+        {
+          "label": "Uganda",
+          "value": "UG",
+          "active": true
+        },
+        {
+          "label": "Ukraine",
+          "value": "UA",
+          "active": true
+        },
+        {
+          "label": "United Arab Emirates",
+          "value": "AE",
+          "active": true
+        },
+        {
+          "label": "United Kingdom",
+          "value": "GB",
+          "active": true
+        },
+        {
+          "label": "United States",
+          "value": "US",
+          "active": true
+        },
+        {
+          "label": "Uruguay",
+          "value": "UY",
+          "active": true
+        },
+        {
+          "label": "Uzbekistan",
+          "value": "UZ",
+          "active": true
+        },
+        {
+          "label": "Vanuatu",
+          "value": "VU",
+          "active": true
+        },
+        {
+          "label": "Venezuela, Bolivarian Republic of",
+          "value": "VE",
+          "active": true
+        },
+        {
+          "label": "Viet Nam",
+          "value": "VN",
+          "active": true
+        },
+        {
+          "label": "Virgin Islands, British",
+          "value": "VG",
+          "active": true
+        },
+        {
+          "label": "Wallis and Futuna",
+          "value": "WF",
+          "active": true
+        },
+        {
+          "label": "Western Sahara",
+          "value": "EH",
+          "active": true
+        },
+        {
+          "label": "Yemen",
+          "value": "YE",
+          "active": true
+        },
+        {
+          "label": "Zambia",
+          "value": "ZM",
+          "active": true
+        },
+        {
+          "label": "Zimbabwe",
+          "value": "ZW",
+          "active": true
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Business_Address__Latitude__s",
+      "dataType": "double",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Business_Address__Longitude__s",
+      "dataType": "double",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Business_Address__GeocodeAccuracy__s",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 40,
+      "picklistValues": [
+        {
+          "label": "Address",
+          "value": "Address",
+          "active": true
+        },
+        {
+          "label": "Near Address",
+          "value": "NearAddress",
+          "active": true
+        },
+        {
+          "label": "Block",
+          "value": "Block",
+          "active": true
+        },
+        {
+          "label": "Street",
+          "value": "Street",
+          "active": true
+        },
+        {
+          "label": "Extended Zip",
+          "value": "ExtendedZip",
+          "active": true
+        },
+        {
+          "label": "Zip",
+          "value": "Zip",
+          "active": true
+        },
+        {
+          "label": "Neighborhood",
+          "value": "Neighborhood",
+          "active": true
+        },
+        {
+          "label": "City",
+          "value": "City",
+          "active": true
+        },
+        {
+          "label": "County",
+          "value": "County",
+          "active": true
+        },
+        {
+          "label": "State",
+          "value": "State",
+          "active": true
+        },
+        {
+          "label": "Unknown",
+          "value": "Unknown",
+          "active": true
+        }
+      ],
       "d365EntityName": null,
       "d365DisplayName": null,
       "d365InternalName": null,

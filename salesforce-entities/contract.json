@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -53,28 +53,34 @@
       "maxLength": 40,
       "picklistValues": [
         {
-          "label": "15",
-          "value": "15"
+          "label": "15 Days",
+          "value": "15",
+          "active": true
         },
         {
-          "label": "30",
-          "value": "30"
+          "label": "30 Days",
+          "value": "30",
+          "active": true
         },
         {
-          "label": "45",
-          "value": "45"
+          "label": "45 Days",
+          "value": "45",
+          "active": true
         },
         {
-          "label": "60",
-          "value": "60"
+          "label": "60 Days",
+          "value": "60",
+          "active": true
         },
         {
-          "label": "90",
-          "value": "90"
+          "label": "90 Days",
+          "value": "90",
+          "active": true
         },
         {
-          "label": "120",
-          "value": "120"
+          "label": "120 Days",
+          "value": "120",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -219,47 +225,58 @@
       "picklistValues": [
         {
           "label": "Address",
-          "value": "Address"
+          "value": "Address",
+          "active": true
         },
         {
-          "label": "NearAddress",
-          "value": "NearAddress"
+          "label": "Near Address",
+          "value": "NearAddress",
+          "active": true
         },
         {
           "label": "Block",
-          "value": "Block"
+          "value": "Block",
+          "active": true
         },
         {
           "label": "Street",
-          "value": "Street"
+          "value": "Street",
+          "active": true
         },
         {
-          "label": "ExtendedZip",
-          "value": "ExtendedZip"
+          "label": "Extended Zip",
+          "value": "ExtendedZip",
+          "active": true
         },
         {
           "label": "Zip",
-          "value": "Zip"
+          "value": "Zip",
+          "active": true
         },
         {
           "label": "Neighborhood",
-          "value": "Neighborhood"
+          "value": "Neighborhood",
+          "active": true
         },
         {
           "label": "City",
-          "value": "City"
+          "value": "City",
+          "active": true
         },
         {
           "label": "County",
-          "value": "County"
+          "value": "County",
+          "active": true
         },
         {
           "label": "State",
-          "value": "State"
+          "value": "State",
+          "active": true
         },
         {
           "label": "Unknown",
-          "value": "Unknown"
+          "value": "Unknown",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -390,47 +407,58 @@
       "picklistValues": [
         {
           "label": "Address",
-          "value": "Address"
+          "value": "Address",
+          "active": true
         },
         {
-          "label": "NearAddress",
-          "value": "NearAddress"
+          "label": "Near Address",
+          "value": "NearAddress",
+          "active": true
         },
         {
           "label": "Block",
-          "value": "Block"
+          "value": "Block",
+          "active": true
         },
         {
           "label": "Street",
-          "value": "Street"
+          "value": "Street",
+          "active": true
         },
         {
-          "label": "ExtendedZip",
-          "value": "ExtendedZip"
+          "label": "Extended Zip",
+          "value": "ExtendedZip",
+          "active": true
         },
         {
           "label": "Zip",
-          "value": "Zip"
+          "value": "Zip",
+          "active": true
         },
         {
           "label": "Neighborhood",
-          "value": "Neighborhood"
+          "value": "Neighborhood",
+          "active": true
         },
         {
           "label": "City",
-          "value": "City"
+          "value": "City",
+          "active": true
         },
         {
           "label": "County",
-          "value": "County"
+          "value": "County",
+          "active": true
         },
         {
           "label": "State",
-          "value": "State"
+          "value": "State",
+          "active": true
         },
         {
           "label": "Unknown",
-          "value": "Unknown"
+          "value": "Unknown",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -471,7 +499,7 @@
     {
       "fieldName": "OwnerId",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -485,25 +513,29 @@
     {
       "fieldName": "Status",
       "dataType": "picklist",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 100,
       "picklistValues": [
         {
           "label": "In Approval Process",
-          "value": "In Approval Process"
+          "value": "In Approval Process",
+          "active": true
         },
         {
           "label": "Activated",
-          "value": "Activated"
+          "value": "Activated",
+          "active": true
         },
         {
           "label": "Draft",
-          "value": "Draft"
+          "value": "Draft",
+          "active": true
         },
         {
           "label": "Approved to be Sent",
-          "value": "Approved to be Sent"
+          "value": "Approved to be Sent",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -634,23 +666,68 @@
       "picklistValues": [
         {
           "label": "Draft",
-          "value": "Draft"
+          "value": "Draft",
+          "active": true
         },
         {
-          "label": "InApproval",
-          "value": "InApproval"
+          "label": "In Approval Process",
+          "value": "InApproval",
+          "active": true
         },
         {
           "label": "Activated",
-          "value": "Activated"
+          "value": "Activated",
+          "active": true
         },
         {
           "label": "Terminated",
-          "value": "Terminated"
+          "value": "Terminated",
+          "active": true
         },
         {
           "label": "Expired",
-          "value": "Expired"
+          "value": "Expired",
+          "active": true
+        },
+        {
+          "label": "Rejected",
+          "value": "Rejected",
+          "active": true
+        },
+        {
+          "label": "Negotiating",
+          "value": "Negotiating",
+          "active": true
+        },
+        {
+          "label": "Awaiting Signature",
+          "value": "AwaitingSignature",
+          "active": true
+        },
+        {
+          "label": "Signature Declined",
+          "value": "SignatureDeclined",
+          "active": true
+        },
+        {
+          "label": "Signed",
+          "value": "Signed",
+          "active": true
+        },
+        {
+          "label": "Canceled",
+          "value": "Cancelled",
+          "active": true
+        },
+        {
+          "label": "Contract Expired",
+          "value": "Expired2",
+          "active": true
+        },
+        {
+          "label": "Contract Terminated",
+          "value": "Terminated2",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -677,7 +754,7 @@
     {
       "fieldName": "IsDeleted",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -691,7 +768,7 @@
     {
       "fieldName": "ContractNumber",
       "dataType": "string",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 30,
       "picklistValues": null,
@@ -719,7 +796,7 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -733,7 +810,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -747,7 +824,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -761,7 +838,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -775,7 +852,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -907,27 +984,33 @@
       "picklistValues": [
         {
           "label": "Annual",
-          "value": "Annual"
+          "value": "Annual",
+          "active": true
         },
         {
           "label": "Semi-Annual",
-          "value": "Semi-Annual"
+          "value": "Semi-Annual",
+          "active": true
         },
         {
           "label": "Quarterly",
-          "value": "Quarterly"
+          "value": "Quarterly",
+          "active": true
         },
         {
           "label": "Monthly",
-          "value": "Monthly"
+          "value": "Monthly",
+          "active": true
         },
         {
           "label": "One-Time",
-          "value": "One-Time"
+          "value": "One-Time",
+          "active": true
         },
         {
-          "label": "In_Arrears",
-          "value": "In_Arrears"
+          "label": "In Arrears",
+          "value": "In_Arrears",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -954,7 +1037,7 @@
     {
       "fieldName": "PO_Required__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -968,7 +1051,7 @@
     {
       "fieldName": "Third_Party_Management__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -988,23 +1071,28 @@
       "picklistValues": [
         {
           "label": "30",
-          "value": "30"
+          "value": "30",
+          "active": true
         },
         {
           "label": "60",
-          "value": "60"
+          "value": "60",
+          "active": true
         },
         {
           "label": "90",
-          "value": "90"
+          "value": "90",
+          "active": true
         },
         {
           "label": "00",
-          "value": "00"
+          "value": "00",
+          "active": true
         },
         {
           "label": "NCT",
-          "value": "NCT"
+          "value": "NCT",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -1023,19 +1111,23 @@
       "picklistValues": [
         {
           "label": "Initial",
-          "value": "Initial"
+          "value": "Initial",
+          "active": true
         },
         {
           "label": "Add-On",
-          "value": "Add-On"
+          "value": "Add-On",
+          "active": true
         },
         {
           "label": "Renewal",
-          "value": "Renewal"
+          "value": "Renewal",
+          "active": true
         },
         {
           "label": "Print",
-          "value": "Print"
+          "value": "Print",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -1062,7 +1154,7 @@
     {
       "fieldName": "DocuSign__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -1076,7 +1168,7 @@
     {
       "fieldName": "Contract_Signed_by_Client__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -1138,27 +1230,33 @@
       "picklistValues": [
         {
           "label": "Net 30",
-          "value": "Net 30"
+          "value": "Net 30",
+          "active": true
         },
         {
           "label": "Net 45",
-          "value": "Net 45"
+          "value": "Net 45",
+          "active": true
         },
         {
           "label": "Net 60",
-          "value": "Net 60"
+          "value": "Net 60",
+          "active": true
         },
         {
           "label": "Net 90",
-          "value": "Net 90"
+          "value": "Net 90",
+          "active": true
         },
         {
           "label": "Due on Receipt",
-          "value": "Due on Receipt"
+          "value": "Due on Receipt",
+          "active": true
         },
         {
           "label": "End of Month",
-          "value": "End of Month"
+          "value": "End of Month",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -1177,11 +1275,13 @@
       "picklistValues": [
         {
           "label": "Yes",
-          "value": "Yes"
+          "value": "Yes",
+          "active": true
         },
         {
           "label": "No",
-          "value": "No"
+          "value": "No",
+          "active": true
         }
       ],
       "d365EntityName": null,

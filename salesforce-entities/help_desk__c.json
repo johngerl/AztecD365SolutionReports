@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -20,7 +20,7 @@
     {
       "fieldName": "OwnerId",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "Group, User",
       "maxLength": 18,
       "picklistValues": null,
@@ -34,7 +34,7 @@
     {
       "fieldName": "IsDeleted",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -48,7 +48,7 @@
     {
       "fieldName": "Name",
       "dataType": "string",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 80,
       "picklistValues": null,
@@ -76,7 +76,7 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -90,7 +90,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -104,7 +104,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -118,7 +118,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -132,7 +132,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -208,11 +208,13 @@
       "picklistValues": [
         {
           "label": "Aztec",
-          "value": "Aztec"
+          "value": "Aztec",
+          "active": true
         },
         {
           "label": "iGrad",
-          "value": "iGrad"
+          "value": "iGrad",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -231,23 +233,28 @@
       "picklistValues": [
         {
           "label": "New",
-          "value": "New"
+          "value": "New",
+          "active": true
         },
         {
           "label": "On Hold",
-          "value": "On Hold"
+          "value": "On Hold",
+          "active": true
         },
         {
           "label": "In Progress",
-          "value": "In Progress"
+          "value": "In Progress",
+          "active": true
         },
         {
           "label": "Closed",
-          "value": "Closed"
+          "value": "Closed",
+          "active": true
         },
         {
           "label": "Wish List",
-          "value": "Wish List"
+          "value": "Wish List",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -280,39 +287,48 @@
       "picklistValues": [
         {
           "label": "Account",
-          "value": "Account"
+          "value": "Account",
+          "active": true
         },
         {
           "label": "Lead",
-          "value": "Lead"
+          "value": "Lead",
+          "active": true
         },
         {
           "label": "Opportunity",
-          "value": "Opportunity"
+          "value": "Opportunity",
+          "active": true
         },
         {
           "label": "Quote",
-          "value": "Quote"
+          "value": "Quote",
+          "active": true
         },
         {
           "label": "Contract",
-          "value": "Contract"
+          "value": "Contract",
+          "active": true
         },
         {
           "label": "Access",
-          "value": "Access"
+          "value": "Access",
+          "active": true
         },
         {
           "label": "System Error Message",
-          "value": "System Error Message"
+          "value": "System Error Message",
+          "active": true
         },
         {
           "label": "Training",
-          "value": "Training"
+          "value": "Training",
+          "active": true
         },
         {
           "label": "Report",
-          "value": "Report"
+          "value": "Report",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -471,15 +487,18 @@
       "picklistValues": [
         {
           "label": "Low",
-          "value": "Low"
+          "value": "Low",
+          "active": true
         },
         {
           "label": "Medium",
-          "value": "Medium"
+          "value": "Medium",
+          "active": true
         },
         {
           "label": "High",
-          "value": "High"
+          "value": "High",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -512,11 +531,13 @@
       "picklistValues": [
         {
           "label": "New",
-          "value": "New"
+          "value": "New",
+          "active": true
         },
         {
           "label": "Existing",
-          "value": "Existing"
+          "value": "Existing",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -535,15 +556,18 @@
       "picklistValues": [
         {
           "label": "New User",
-          "value": "New User"
+          "value": "New User",
+          "active": true
         },
         {
           "label": "Reporting",
-          "value": "Reporting"
+          "value": "Reporting",
+          "active": true
         },
         {
           "label": "Other",
-          "value": "Other"
+          "value": "Other",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -562,23 +586,28 @@
       "picklistValues": [
         {
           "label": "Data Entry Error",
-          "value": "Data Entry Error"
+          "value": "Data Entry Error",
+          "active": true
         },
         {
           "label": "Login Failure",
-          "value": "Login Failure"
+          "value": "Login Failure",
+          "active": true
         },
         {
           "label": "Email Not Sent",
-          "value": "Email Not Sent"
+          "value": "Email Not Sent",
+          "active": true
         },
         {
           "label": "Record Not Saving",
-          "value": "Record Not Saving"
+          "value": "Record Not Saving",
+          "active": true
         },
         {
           "label": "Other",
-          "value": "Other"
+          "value": "Other",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -597,35 +626,43 @@
       "picklistValues": [
         {
           "label": "Account",
-          "value": "Account"
+          "value": "Account",
+          "active": true
         },
         {
           "label": "Lead",
-          "value": "Lead"
+          "value": "Lead",
+          "active": true
         },
         {
           "label": "Contact",
-          "value": "Contact"
+          "value": "Contact",
+          "active": true
         },
         {
           "label": "Opportunity",
-          "value": "Opportunity"
+          "value": "Opportunity",
+          "active": true
         },
         {
           "label": "Product",
-          "value": "Product"
+          "value": "Product",
+          "active": true
         },
         {
           "label": "Quote",
-          "value": "Quote"
+          "value": "Quote",
+          "active": true
         },
         {
           "label": "Contract",
-          "value": "Contract"
+          "value": "Contract",
+          "active": true
         },
         {
           "label": "Order",
-          "value": "Order"
+          "value": "Order",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -658,35 +695,43 @@
       "picklistValues": [
         {
           "label": "Create User Account",
-          "value": "Create User Account"
+          "value": "Create User Account",
+          "active": true
         },
         {
           "label": "Deactivate User",
-          "value": "Deactivate User"
+          "value": "Deactivate User",
+          "active": true
         },
         {
           "label": "Freeze User",
-          "value": "Freeze User"
+          "value": "Freeze User",
+          "active": true
         },
         {
           "label": "Unfreeze User",
-          "value": "Unfreeze User"
+          "value": "Unfreeze User",
+          "active": true
         },
         {
           "label": "Provide Additional Access",
-          "value": "Provide Additional Access"
+          "value": "Provide Additional Access",
+          "active": true
         },
         {
           "label": "Modify Existing Access",
-          "value": "Modify Existing Access"
+          "value": "Modify Existing Access",
+          "active": true
         },
         {
           "label": "Password Reset",
-          "value": "Password Reset"
+          "value": "Password Reset",
+          "active": true
         },
         {
           "label": "Update User Details (Name, Email, Manager, Role)",
-          "value": "Update User Details (Name, Email, Manager, Role)"
+          "value": "Update User Details (Name, Email, Manager, Role)",
+          "active": true
         }
       ],
       "d365EntityName": null,

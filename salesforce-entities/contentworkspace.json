@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -53,16 +53,19 @@
       "maxLength": 40,
       "picklistValues": [
         {
-          "label": "U",
-          "value": "U"
+          "label": "Unrestricted",
+          "value": "U",
+          "active": true
         },
         {
-          "label": "G",
-          "value": "G"
+          "label": "Guided",
+          "value": "G",
+          "active": true
         },
         {
-          "label": "R",
-          "value": "R"
+          "label": "Restricted",
+          "value": "R",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -75,7 +78,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -89,7 +92,7 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -103,7 +106,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -117,7 +120,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -131,7 +134,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -159,7 +162,7 @@
     {
       "fieldName": "IsRestrictContentTypes",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -173,7 +176,7 @@
     {
       "fieldName": "IsRestrictLinkedContentTypes",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -192,12 +195,14 @@
       "maxLength": 40,
       "picklistValues": [
         {
-          "label": "R",
-          "value": "R"
+          "label": "Regular",
+          "value": "R",
+          "active": true
         },
         {
-          "label": "B",
-          "value": "B"
+          "label": "Asset System",
+          "value": "B",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -210,7 +215,7 @@
     {
       "fieldName": "ShouldAddCreatorMembership",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,

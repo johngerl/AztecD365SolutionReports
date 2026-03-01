@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -67,16 +67,19 @@
       "maxLength": 40,
       "picklistValues": [
         {
-          "label": "None",
-          "value": "None"
+          "label": "Private",
+          "value": "None",
+          "active": true
         },
         {
-          "label": "Read",
-          "value": "Read"
+          "label": "Read Only",
+          "value": "Read",
+          "active": true
         },
         {
-          "label": "Edit",
-          "value": "Edit"
+          "label": "Read/Write",
+          "value": "Edit",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -94,16 +97,19 @@
       "maxLength": 40,
       "picklistValues": [
         {
-          "label": "None",
-          "value": "None"
+          "label": "Private",
+          "value": "None",
+          "active": true
         },
         {
-          "label": "Read",
-          "value": "Read"
+          "label": "Read Only",
+          "value": "Read",
+          "active": true
         },
         {
-          "label": "Edit",
-          "value": "Edit"
+          "label": "Read/Write",
+          "value": "Edit",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -121,16 +127,19 @@
       "maxLength": 40,
       "picklistValues": [
         {
-          "label": "None",
-          "value": "None"
+          "label": "Private",
+          "value": "None",
+          "active": true
         },
         {
-          "label": "Read",
-          "value": "Read"
+          "label": "Read Only",
+          "value": "Read",
+          "active": true
         },
         {
-          "label": "Edit",
-          "value": "Edit"
+          "label": "Read/Write",
+          "value": "Edit",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -157,7 +166,7 @@
     {
       "fieldName": "MayForecastManagerShare",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -171,7 +180,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -185,7 +194,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -199,7 +208,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -247,15 +256,18 @@
       "picklistValues": [
         {
           "label": "None",
-          "value": "None"
+          "value": "None",
+          "active": true
         },
         {
-          "label": "CustomerPortal",
-          "value": "CustomerPortal"
+          "label": "Customer Portal",
+          "value": "CustomerPortal",
+          "active": true
         },
         {
-          "label": "Partner",
-          "value": "Partner"
+          "label": "Partner Portal",
+          "value": "Partner",
+          "active": true
         }
       ],
       "d365EntityName": null,

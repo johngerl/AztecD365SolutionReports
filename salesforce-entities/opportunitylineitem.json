@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -202,7 +202,7 @@
     {
       "fieldName": "HasRevenueSchedule",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -216,7 +216,7 @@
     {
       "fieldName": "HasQuantitySchedule",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -244,7 +244,7 @@
     {
       "fieldName": "HasSchedule",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -258,7 +258,7 @@
     {
       "fieldName": "CanUseQuantitySchedule",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -272,7 +272,7 @@
     {
       "fieldName": "CanUseRevenueSchedule",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -286,7 +286,7 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -300,7 +300,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -314,7 +314,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -328,7 +328,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -342,7 +342,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -356,7 +356,7 @@
     {
       "fieldName": "IsDeleted",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -404,19 +404,23 @@
       "picklistValues": [
         {
           "label": "Initial",
-          "value": "Initial"
+          "value": "Initial",
+          "active": true
         },
         {
           "label": "Renewal",
-          "value": "Renewal"
+          "value": "Renewal",
+          "active": true
         },
         {
           "label": "Add-On",
-          "value": "Add-On"
+          "value": "Add-On",
+          "active": true
         },
         {
           "label": "Print",
-          "value": "Print"
+          "value": "Print",
+          "active": true
         }
       ],
       "d365EntityName": "opportunityproduct",
@@ -457,7 +461,7 @@
     {
       "fieldName": "IsPrint__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -485,7 +489,7 @@
     {
       "fieldName": "SaaS__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -527,7 +531,7 @@
     {
       "fieldName": "Print__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -583,7 +587,7 @@
     {
       "fieldName": "Uplift_Eligeble__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -659,37 +663,59 @@
       "picklistValues": [
         {
           "label": "One Time",
-          "value": "One Time"
+          "value": "One Time",
+          "active": true
         },
         {
           "label": "Annual Recurring",
-          "value": "Annual Recurring"
+          "value": "Annual Recurring",
+          "active": true
         },
         {
           "label": "Usage Monthly",
-          "value": "Usage Monthly"
+          "value": "Usage Monthly",
+          "active": true
         },
         {
           "label": "Usage",
-          "value": "Usage"
+          "value": "Usage",
+          "active": true
         },
         {
           "label": "Monthly Recurring",
-          "value": "Monthly Recurring"
+          "value": "Monthly Recurring",
+          "active": true
         },
         {
           "label": "Varies",
-          "value": "Varies"
+          "value": "Varies",
+          "active": true
         },
         {
           "label": "Recurring",
-          "value": "Recurring"
+          "value": "Recurring",
+          "active": true
         },
         {
           "label": "As needed",
-          "value": "As needed"
+          "value": "As needed",
+          "active": true
         }
       ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Uplift_Annual_Pct__c",
+      "dataType": "percent",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
       "d365EntityName": null,
       "d365DisplayName": null,
       "d365InternalName": null,
@@ -710,25 +736,6 @@
       "d365SuggestedEntityName": null,
       "d365SuggestedDisplayName": null,
       "d365SuggestedInternalName": null
-    }
-  ],
-  "d365SourceEntity": "opportunityproduct",
-  "dataTransformationRules": [
-    {
-      "category": "Rules",
-      "rules": [
-        "Keep Opportunity Line Item or any other object id while migrating data",
-        "Unrestrict License Type",
-        "Filter to only Aztec records",
-        "Correct Record Owner Names",
-        "Assign blank record owners to CRM Admin ??",
-        "Map Opporutnity Id from Inserted Opps",
-        "Map Product Id from inserted Products",
-        "Print is required field, TRUE for all",
-        "Deactivate flows on Opp Product - Opportunity - After Save - Closed/Won WorkFlow Emails",
-        "Discount amount flow needs to be updated in Prod",
-        "Exclude Opportunity Products without Matched ProductID because they cannot be loaded"
-      ]
     }
   ]
 }

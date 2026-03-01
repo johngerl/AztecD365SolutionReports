@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -48,7 +48,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -62,7 +62,7 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -76,7 +76,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -90,7 +90,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -104,7 +104,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -172,6 +172,20 @@
       "d365SuggestedInternalName": null
     },
     {
+      "fieldName": "Name",
+      "dataType": "string",
+      "required": "Yes",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
       "fieldName": "FromName",
       "dataType": "string",
       "required": "No",
@@ -207,24 +221,29 @@
       "maxLength": 255,
       "picklistValues": [
         {
-          "label": "john@devblue.com",
-          "value": "john@devblue.com"
+          "label": "John Gerl <jgerl@aztecsoftware.com>",
+          "value": "jgerl@aztecsoftware.com",
+          "active": true
         },
         {
-          "label": "billing@igrad.com",
-          "value": "billing@igrad.com"
+          "label": "Billing <billing@igrad.com>",
+          "value": "billing@igrad.com",
+          "active": true
         },
         {
-          "label": "busdev@igrad.com",
-          "value": "busdev@igrad.com"
+          "label": "Business Development <busdev@igrad.com>",
+          "value": "busdev@igrad.com",
+          "active": true
         },
         {
-          "label": "salesforceadmin@aztecsoftware.com",
-          "value": "salesforceadmin@aztecsoftware.com"
+          "label": "Salesforce Admin <salesforceadmin@aztecsoftware.com>",
+          "value": "salesforceadmin@aztecsoftware.com",
+          "active": true
         },
         {
-          "label": "support@igrad.com",
-          "value": "support@igrad.com"
+          "label": "Support <support@igrad.com>",
+          "value": "support@igrad.com",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -279,7 +298,7 @@
     {
       "fieldName": "Incoming",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -293,7 +312,7 @@
     {
       "fieldName": "HasAttachment",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -312,28 +331,34 @@
       "maxLength": 40,
       "picklistValues": [
         {
-          "label": "0",
-          "value": "0"
+          "label": "New",
+          "value": "0",
+          "active": true
         },
         {
-          "label": "1",
-          "value": "1"
+          "label": "Read",
+          "value": "1",
+          "active": true
         },
         {
-          "label": "2",
-          "value": "2"
+          "label": "Replied",
+          "value": "2",
+          "active": true
         },
         {
-          "label": "3",
-          "value": "3"
+          "label": "Sent",
+          "value": "3",
+          "active": true
         },
         {
-          "label": "4",
-          "value": "4"
+          "label": "Forwarded",
+          "value": "4",
+          "active": true
         },
         {
-          "label": "5",
-          "value": "5"
+          "label": "Draft",
+          "value": "5",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -360,7 +385,7 @@
     {
       "fieldName": "IsDeleted",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -388,7 +413,7 @@
     {
       "fieldName": "IsExternallyVisible",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -428,11 +453,53 @@
       "d365SuggestedInternalName": null
     },
     {
+      "fieldName": "ClientThreadIdentifier",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 765,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "FromId",
+      "dataType": "reference",
+      "required": "No",
+      "relatedTo": "Contact, Lead, User",
+      "maxLength": 18,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
       "fieldName": "IsClientManaged",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "AttachmentIds",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 32768,
       "picklistValues": null,
       "d365EntityName": null,
       "d365DisplayName": null,
@@ -445,7 +512,7 @@
       "fieldName": "RelatedToId",
       "dataType": "reference",
       "required": "No",
-      "relatedTo": "Account, Asset, AssetRelationship, CS_Engagement__c, Campaign, Case, CommSubscriptionConsent, ContactRequest, Contract, CreditMemo, Help_Desk__c, Image, Invoice, ListEmail, Location, Opportunity, Order, PartyConsent, ProcessException, Product2, Quote, Sales_Lead__c, Solution, WorkOrder, WorkOrderLineItem",
+      "relatedTo": "Account, ApprovalSubmission, ApprovalSubmissionDetail, ApprovalWorkItem, Asset, AssetRelationship, CS_Engagement__c, Campaign, Case, CommSubscriptionConsent, ContactRequest, Contract, CreditMemo, DataQueryWorkspace, GoalAssignment, GoalDefinition, Help_Desk__c, Image, Invoice, ListEmail, Location, Opportunity, Order, PartyConsent, ProcessException, Product2, Quote, Sales_Lead__c, Solution, WorkOrder, WorkOrderLineItem, dfsle__AgreementConfiguration__c, dfsle__BulkList__c, dfsle__BulkStatus__c, dfsle__CustomParameterMap__c, dfsle__EnvelopeConfiguration__c, dfsle__EnvelopeStatus__c, dfsle__GenTemplate__c, dfsle__Log__c, dfsle__RecipientStatus__c",
       "maxLength": 18,
       "picklistValues": null,
       "d365EntityName": null,
@@ -458,7 +525,7 @@
     {
       "fieldName": "IsTracked",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -472,7 +539,7 @@
     {
       "fieldName": "IsOpened",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -514,7 +581,7 @@
     {
       "fieldName": "IsBounced",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -532,6 +599,61 @@
       "relatedTo": "EmailTemplate",
       "maxLength": 18,
       "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "AutomationType",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 40,
+      "picklistValues": [
+        {
+          "label": "AI-Assisted",
+          "value": "AiAssisted",
+          "active": true
+        },
+        {
+          "label": "AI-Automated",
+          "value": "AiAutomated",
+          "active": true
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Source",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 40,
+      "picklistValues": [
+        {
+          "label": "Einstein Activity Capture",
+          "value": "Einstein Activity Capture",
+          "active": true
+        },
+        {
+          "label": "Einstein Activity Capture Limited",
+          "value": "Einstein Activity Capture Limited",
+          "active": true
+        },
+        {
+          "label": "Email Integration App Manual",
+          "value": "Email Integration App Manual",
+          "active": true
+        }
+      ],
       "d365EntityName": null,
       "d365DisplayName": null,
       "d365InternalName": null,

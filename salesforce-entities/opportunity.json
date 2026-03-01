@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -20,7 +20,7 @@
     {
       "fieldName": "IsDeleted",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -95,28 +95,54 @@
       "maxLength": 255,
       "picklistValues": [
         {
-          "label": "Align",
-          "value": "Align"
+          "label": "Pre-Initiating",
+          "value": "Pre-Initiating",
+          "active": true
+        },
+        {
+          "label": "Initiating",
+          "value": "Initiating",
+          "active": true
+        },
+        {
+          "label": "Needs Analysis",
+          "value": "Needs Analysis",
+          "active": true
+        },
+        {
+          "label": "Cultivate",
+          "value": "Cultivate",
+          "active": true
         },
         {
           "label": "Propose",
-          "value": "Propose"
+          "value": "Propose",
+          "active": true
+        },
+        {
+          "label": "Negotiation",
+          "value": "Negotiation",
+          "active": true
         },
         {
           "label": "Commit",
-          "value": "Commit"
+          "value": "Commit",
+          "active": true
         },
         {
           "label": "Activated",
-          "value": "Activated"
+          "value": "Activated",
+          "active": true
         },
         {
           "label": "Closed Won",
-          "value": "Closed Won"
+          "value": "Closed Won",
+          "active": true
         },
         {
           "label": "Closed Lost",
-          "value": "Closed Lost"
+          "value": "Closed Lost",
+          "active": true
         }
       ],
       "d365EntityName": "opportunity",
@@ -191,27 +217,33 @@
       "picklistValues": [
         {
           "label": "Initial",
-          "value": "Initial"
+          "value": "Initial",
+          "active": true
         },
         {
           "label": "Add-On",
-          "value": "Add-On"
+          "value": "Add-On",
+          "active": true
         },
         {
           "label": "Renewal",
-          "value": "Renewal"
+          "value": "Renewal",
+          "active": true
         },
         {
           "label": "Add On - Reseller",
-          "value": "Add On - Reseller"
+          "value": "Add On - Reseller",
+          "active": true
         },
         {
           "label": "Other",
-          "value": "Other"
+          "value": "Other",
+          "active": true
         },
         {
           "label": "Win Back",
-          "value": "Win Back"
+          "value": "Win Back",
+          "active": true
         }
       ],
       "d365EntityName": "opportunity",
@@ -243,108 +275,139 @@
       "maxLength": 255,
       "picklistValues": [
         {
-          "label": "Advertising",
-          "value": "Advertising"
+          "label": "Advertising (not Google Ads)",
+          "value": "Advertising",
+          "active": true
         },
         {
           "label": "Broker relationship",
-          "value": "Broker relationship"
+          "value": "Broker relationship",
+          "active": true
         },
         {
           "label": "Call-In",
-          "value": "Call-In"
+          "value": "Call-In",
+          "active": true
         },
         {
           "label": "Chat",
-          "value": "Chat"
+          "value": "Chat",
+          "active": true
         },
         {
           "label": "Client Relations - Referral",
-          "value": "Client Relations - Referral"
+          "value": "Client Relations - Referral",
+          "active": true
         },
         {
           "label": "Cold Call",
-          "value": "Cold Call"
+          "value": "Cold Call",
+          "active": true
         },
         {
           "label": "Conference",
-          "value": "Conference"
+          "value": "Conference",
+          "active": true
         },
         {
           "label": "Contact Us Form",
-          "value": "Contact Us Form"
+          "value": "Contact Us Form",
+          "active": true
         },
         {
           "label": "Current Client Upsell Opportunity",
-          "value": "Current Client Upsell Opportunity"
+          "value": "Current Client Upsell Opportunity",
+          "active": true
         },
         {
           "label": "Email Outreach",
-          "value": "Email Outreach"
+          "value": "Email Outreach",
+          "active": true
         },
         {
           "label": "FFG Original",
-          "value": "FFG Original"
+          "value": "FFG Original",
+          "active": true
         },
         {
           "label": "Google Ads",
-          "value": "Google Ads"
+          "value": "Google Ads",
+          "active": true
         },
         {
           "label": "Instantly",
-          "value": "Instantly"
+          "value": "Instantly",
+          "active": true
         },
         {
-          "label": "linkedin",
-          "value": "linkedin"
+          "label": "LinkedIn",
+          "value": "linkedin",
+          "active": true
         },
         {
           "label": "Marketing Campaign",
-          "value": "Marketing Campaign"
+          "value": "Marketing Campaign",
+          "active": true
         },
         {
           "label": "Other",
-          "value": "Other"
+          "value": "Other",
+          "active": true
         },
         {
           "label": "Previous Demo",
-          "value": "Previous Demo"
+          "value": "Previous Demo",
+          "active": true
         },
         {
           "label": "Referral",
-          "value": "Referral"
+          "value": "Referral",
+          "active": true
         },
         {
           "label": "RFI",
-          "value": "RFI"
+          "value": "RFI",
+          "active": true
         },
         {
           "label": "RFP",
-          "value": "RFP"
+          "value": "RFP",
+          "active": true
         },
         {
           "label": "Social media Other (Instagram, Facebook, Twitter)",
-          "value": "Social media Other (Instagram, Facebook, Twitter)"
+          "value": "Social media Other (Instagram, Facebook, Twitter)",
+          "active": true
         },
         {
           "label": "Webinar",
-          "value": "Webinar"
+          "value": "Webinar",
+          "active": true
         },
         {
           "label": "Cold Call by Sales rep",
-          "value": "Cold Call by Sales rep"
+          "value": "Cold Call by Sales rep",
+          "active": true
         },
         {
           "label": "Downloaded a Resource",
-          "value": "Downloaded a Resource"
+          "value": "Downloaded a Resource",
+          "active": true
         },
         {
           "label": "Cold email by Sales rep",
-          "value": "Cold email by Sales rep"
+          "value": "Cold email by Sales rep",
+          "active": true
         },
         {
           "label": "Zoominfo",
-          "value": "Zoominfo"
+          "value": "Zoominfo",
+          "active": true
+        },
+        {
+          "label": "Lost Opportunity",
+          "value": "Lost Opportunity",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -357,7 +420,7 @@
     {
       "fieldName": "IsClosed",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -371,7 +434,7 @@
     {
       "fieldName": "IsWon",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -391,27 +454,33 @@
       "picklistValues": [
         {
           "label": "Omitted",
-          "value": "Omitted"
+          "value": "Omitted",
+          "active": true
         },
         {
           "label": "Pipeline",
-          "value": "Pipeline"
+          "value": "Pipeline",
+          "active": true
         },
         {
-          "label": "BestCase",
-          "value": "BestCase"
+          "label": "Best Case",
+          "value": "BestCase",
+          "active": true
         },
         {
-          "label": "MostLikely",
-          "value": "MostLikely"
+          "label": "Most Likely",
+          "value": "MostLikely",
+          "active": true
         },
         {
-          "label": "Forecast",
-          "value": "Forecast"
+          "label": "Commit",
+          "value": "Forecast",
+          "active": true
         },
         {
           "label": "Closed",
-          "value": "Closed"
+          "value": "Closed",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -430,23 +499,28 @@
       "picklistValues": [
         {
           "label": "Omitted",
-          "value": "Omitted"
+          "value": "Omitted",
+          "active": true
         },
         {
           "label": "Pipeline",
-          "value": "Pipeline"
+          "value": "Pipeline",
+          "active": true
         },
         {
           "label": "Best Case",
-          "value": "Best Case"
+          "value": "Best Case",
+          "active": true
         },
         {
           "label": "Commit",
-          "value": "Commit"
+          "value": "Commit",
+          "active": true
         },
         {
           "label": "Closed",
-          "value": "Closed"
+          "value": "Closed",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -473,7 +547,7 @@
     {
       "fieldName": "HasOpportunityLineItem",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -487,7 +561,7 @@
     {
       "fieldName": "IsSplit",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -515,7 +589,7 @@
     {
       "fieldName": "OwnerId",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -543,7 +617,7 @@
     {
       "fieldName": "IsExcludedFromTerritory2Filter",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -557,7 +631,21 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "AgeInDays",
+      "dataType": "int",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -571,7 +659,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -585,7 +673,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -599,7 +687,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -613,7 +701,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -627,6 +715,62 @@
     {
       "fieldName": "LastActivityDate",
       "dataType": "date",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "LastActivityInDays",
+      "dataType": "int",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "PushCount",
+      "dataType": "int",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "LastStageChangeDate",
+      "dataType": "datetime",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "LastStageChangeInDays",
+      "dataType": "int",
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
@@ -753,7 +897,7 @@
     {
       "fieldName": "HasOpenActivity",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -767,7 +911,7 @@
     {
       "fieldName": "HasOverdueTask",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -807,9 +951,23 @@
       "d365SuggestedInternalName": null
     },
     {
+      "fieldName": "IsPriorityRecord",
+      "dataType": "boolean",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
       "fieldName": "Budget_Confirmed__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -823,7 +981,7 @@
     {
       "fieldName": "Discovery_Completed__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -837,7 +995,7 @@
     {
       "fieldName": "ROI_Analysis_Completed__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -851,7 +1009,7 @@
     {
       "fieldName": "Closed_Last_Year__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -871,55 +1029,68 @@
       "picklistValues": [
         {
           "label": "Lost to Competitor",
-          "value": "Lost to Competitor"
+          "value": "Lost to Competitor",
+          "active": true
         },
         {
           "label": "No Budget / Lost Funding",
-          "value": "No Budget / Lost Funding"
+          "value": "No Budget / Lost Funding",
+          "active": true
         },
         {
           "label": "No Decision / Non-Responsive",
-          "value": "No Decision / Non-Responsive"
+          "value": "No Decision / Non-Responsive",
+          "active": true
         },
         {
-          "label": "Too_Expensive",
-          "value": "Too_Expensive"
+          "label": "Too Expensive",
+          "value": "Too_Expensive",
+          "active": true
         },
         {
           "label": "Change in Decision Maker /Champion",
-          "value": "Change in Decision Maker /Champion"
+          "value": "Change in Decision Maker /Champion",
+          "active": true
         },
         {
           "label": "Change in Programming offered",
-          "value": "Change in Programming offered"
+          "value": "Change in Programming offered",
+          "active": true
         },
         {
           "label": "Decreased Demand/ Low Usage",
-          "value": "Decreased Demand/ Low Usage"
+          "value": "Decreased Demand/ Low Usage",
+          "active": true
         },
         {
           "label": "Not Lost / Combined Ops",
-          "value": "Not Lost / Combined Ops"
+          "value": "Not Lost / Combined Ops",
+          "active": true
         },
         {
           "label": "Organization Shutdown",
-          "value": "Organization Shutdown"
+          "value": "Organization Shutdown",
+          "active": true
         },
         {
           "label": "Bulk Loss Older Than One Year",
-          "value": "Bulk Loss Older Than One Year"
+          "value": "Bulk Loss Older Than One Year",
+          "active": true
         },
         {
           "label": "No Computers / Technology",
-          "value": "No Computers / Technology"
+          "value": "No Computers / Technology",
+          "active": true
         },
         {
           "label": "No Test Prep Offered",
-          "value": "No Test Prep Offered"
+          "value": "No Test Prep Offered",
+          "active": true
         },
         {
           "label": "Other",
-          "value": "Other"
+          "value": "Other",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -932,7 +1103,7 @@
     {
       "fieldName": "Closed_This_Year__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -946,7 +1117,7 @@
     {
       "fieldName": "Closed_Two_Years_Ago__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -966,43 +1137,53 @@
       "picklistValues": [
         {
           "label": "Annual Budget",
-          "value": "Annual Budget"
+          "value": "Annual Budget",
+          "active": true
         },
         {
           "label": "Discretionary Budget",
-          "value": "Discretionary Budget"
+          "value": "Discretionary Budget",
+          "active": true
         },
         {
           "label": "Grant - Federal",
-          "value": "Grant - Federal"
+          "value": "Grant - Federal",
+          "active": true
         },
         {
           "label": "Grant - Private",
-          "value": "Grant - Private"
+          "value": "Grant - Private",
+          "active": true
         },
         {
           "label": "Grant - State",
-          "value": "Grant - State"
+          "value": "Grant - State",
+          "active": true
         },
         {
           "label": "Grant - Perkins",
-          "value": "Grant - Perkins"
+          "value": "Grant - Perkins",
+          "active": true
         },
         {
           "label": "Title 1 Funds",
-          "value": "Title 1 Funds"
+          "value": "Title 1 Funds",
+          "active": true
         },
         {
           "label": "Other",
-          "value": "Other"
+          "value": "Other",
+          "active": true
         },
         {
           "label": "Use or Lose Funds",
-          "value": "Use or Lose Funds"
+          "value": "Use or Lose Funds",
+          "active": true
         },
         {
           "label": "Unknown",
-          "value": "Unknown"
+          "value": "Unknown",
+          "active": true
         }
       ],
       "d365EntityName": "opportunity",
@@ -1021,23 +1202,28 @@
       "picklistValues": [
         {
           "label": "Committee",
-          "value": "Committee"
+          "value": "Committee",
+          "active": true
         },
         {
           "label": "Individual",
-          "value": "Individual"
+          "value": "Individual",
+          "active": true
         },
         {
           "label": "RFP",
-          "value": "RFP"
+          "value": "RFP",
+          "active": true
         },
         {
           "label": "Third-party vendors",
-          "value": "Third-party vendors"
+          "value": "Third-party vendors",
+          "active": true
         },
         {
           "label": "Unknown",
-          "value": "Unknown"
+          "value": "Unknown",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -1056,23 +1242,28 @@
       "picklistValues": [
         {
           "label": "Pending",
-          "value": "Pending"
+          "value": "Pending",
+          "active": true
         },
         {
           "label": "Initiating",
-          "value": "Initiating"
+          "value": "Initiating",
+          "active": true
         },
         {
           "label": "Negotiating",
-          "value": "Negotiating"
+          "value": "Negotiating",
+          "active": true
         },
         {
           "label": "Renewed",
-          "value": "Renewed"
+          "value": "Renewed",
+          "active": true
         },
         {
           "label": "Not Renewed",
-          "value": "Not Renewed"
+          "value": "Not Renewed",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -1099,7 +1290,7 @@
     {
       "fieldName": "Approved__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -1125,6 +1316,720 @@
       "d365SuggestedInternalName": null
     },
     {
+      "fieldName": "CRM_Account_Classification__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Actual_Revenue__c",
+      "dataType": "currency",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Add_On_Opportunity_Total__c",
+      "dataType": "currency",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Assigned_AM__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Budget_Amount__c",
+      "dataType": "currency",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Close_Date__c",
+      "dataType": "date",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Current_Situation__c",
+      "dataType": "textarea",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 32768,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Customer_Need__c",
+      "dataType": "textarea",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 32768,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Days_Since_Probability_Changed__c",
+      "dataType": "double",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Default_Freight_Amount__c",
+      "dataType": "currency",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Delivery_Type__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Discretionary_Discount__c",
+      "dataType": "currency",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Email_Address__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Estimated_Close_Date__c",
+      "dataType": "date",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Historical_Owner__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Initial_Opportunity_Total__c",
+      "dataType": "currency",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Internal_Aztec_Notes__c",
+      "dataType": "textarea",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 32768,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Invoice_Number__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Last_Activity_Date__c",
+      "dataType": "date",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Lead_Source__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Need__c",
+      "dataType": "textarea",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 32768,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Opp_num__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Opportunity_Discount_Amount__c",
+      "dataType": "currency",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Opportunity_Discount__c",
+      "dataType": "percent",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Opportunity_Product_Category__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Other_Opportunity_Total__c",
+      "dataType": "currency",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Owner__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Owning_Business_Unit__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Parent_Opportunity_Name__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Partner__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Pilot_Opportunity_Total__c",
+      "dataType": "currency",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Pipeline_Phase__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Pipeline_Stage__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Potential_Customer__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Print_Opportunity_Total__c",
+      "dataType": "currency",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Probability_Number__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Purchase_Process__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Purchase_Timeframe__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Record_Owner_Name__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Renewal_Opportunity_Total__c",
+      "dataType": "currency",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Requested_Freight_Amount__c",
+      "dataType": "currency",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Revenue__c",
+      "dataType": "currency",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Status_Reason__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Status__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Total_Amount__c",
+      "dataType": "currency",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Total_Detail_Amount__c",
+      "dataType": "currency",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Total_Discount_Amount__c",
+      "dataType": "currency",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Total_Line_Item_Discount_Amount__c",
+      "dataType": "currency",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Total_Pre_Freight_Amount__c",
+      "dataType": "currency",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Total_Tax__c",
+      "dataType": "currency",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Win_Back_Opportunity_Total__c",
+      "dataType": "currency",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
       "fieldName": "Contact__c",
       "dataType": "reference",
       "required": "No",
@@ -1141,7 +2046,7 @@
     {
       "fieldName": "Cross_Sell__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -1259,47 +2164,58 @@
       "picklistValues": [
         {
           "label": "Adult Basic Education",
-          "value": "Adult Basic Education"
+          "value": "Adult Basic Education",
+          "active": true
         },
         {
           "label": "GED/HiSET",
-          "value": "GED/HiSET"
+          "value": "GED/HiSET",
+          "active": true
         },
         {
           "label": "College Preparation",
-          "value": "College Preparation"
+          "value": "College Preparation",
+          "active": true
         },
         {
           "label": "Spanish Curriculum",
-          "value": "Spanish Curriculum"
+          "value": "Spanish Curriculum",
+          "active": true
         },
         {
           "label": "Corrections",
-          "value": "Corrections"
+          "value": "Corrections",
+          "active": true
         },
         {
           "label": "CTE Healthcare Pathways",
-          "value": "CTE Healthcare Pathways"
+          "value": "CTE Healthcare Pathways",
+          "active": true
         },
         {
           "label": "Employability & Life Skills",
-          "value": "Employability & Life Skills"
+          "value": "Employability & Life Skills",
+          "active": true
         },
         {
           "label": "Workforce",
-          "value": "Workforce"
+          "value": "Workforce",
+          "active": true
         },
         {
           "label": "Digital Literacy",
-          "value": "Digital Literacy"
+          "value": "Digital Literacy",
+          "active": true
         },
         {
           "label": "Financial Wellness/Literacy",
-          "value": "Financial Wellness/Literacy"
+          "value": "Financial Wellness/Literacy",
+          "active": true
         },
         {
           "label": "Educated Investor",
-          "value": "Educated Investor"
+          "value": "Educated Investor",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -1438,7 +2354,21 @@
     {
       "fieldName": "Tablet__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "XXXDel__c",
+      "dataType": "boolean",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -1452,7 +2382,7 @@
     {
       "fieldName": "Demo_Completed__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -1466,7 +2396,7 @@
     {
       "fieldName": "Demo_Scheduled__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -1480,7 +2410,7 @@
     {
       "fieldName": "Discovery_Meeting_Occurred__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -1494,7 +2424,7 @@
     {
       "fieldName": "Discovery_Meeting_Scheduled__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -1562,6 +2492,48 @@
       "d365SuggestedInternalName": null
     },
     {
+      "fieldName": "CRM_Contact_GUID__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Contact_Name__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Dep__c",
+      "dataType": "boolean",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
       "fieldName": "Estimated_Shipping__c",
       "dataType": "currency",
       "required": "No",
@@ -1578,7 +2550,7 @@
     {
       "fieldName": "Has_Print__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -1592,7 +2564,7 @@
     {
       "fieldName": "MultiYear__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -1660,6 +2632,20 @@
       "d365SuggestedInternalName": null
     },
     {
+      "fieldName": "CRM_Opportunity_Number__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
       "fieldName": "Opportunity_Summary__c",
       "dataType": "textarea",
       "required": "No",
@@ -1710,27 +2696,33 @@
       "picklistValues": [
         {
           "label": "Annual",
-          "value": "Annual"
+          "value": "Annual",
+          "active": true
         },
         {
           "label": "Semi-Annual",
-          "value": "Semi-Annual"
+          "value": "Semi-Annual",
+          "active": true
         },
         {
           "label": "Quarterly",
-          "value": "Quarterly"
+          "value": "Quarterly",
+          "active": true
         },
         {
           "label": "Monthly",
-          "value": "Monthly"
+          "value": "Monthly",
+          "active": true
         },
         {
           "label": "One-Time",
-          "value": "One-Time"
+          "value": "One-Time",
+          "active": true
         },
         {
-          "label": "In_Arrears",
-          "value": "In_Arrears"
+          "label": "In Arrears",
+          "value": "In_Arrears",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -1757,7 +2749,7 @@
     {
       "fieldName": "PO_Required__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -1771,7 +2763,7 @@
     {
       "fieldName": "Third_Party_Management__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -1791,23 +2783,63 @@
       "picklistValues": [
         {
           "label": "30",
-          "value": "30"
+          "value": "30",
+          "active": true
         },
         {
           "label": "60",
-          "value": "60"
+          "value": "60",
+          "active": true
         },
         {
           "label": "90",
-          "value": "90"
+          "value": "90",
+          "active": true
         },
         {
           "label": "00",
-          "value": "00"
+          "value": "00",
+          "active": true
         },
         {
           "label": "NCT",
-          "value": "NCT"
+          "value": "NCT",
+          "active": true
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Initial_Product_Interest__c",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": [
+        {
+          "label": "iGrad Platform",
+          "value": "iGrad Platform",
+          "active": true
+        },
+        {
+          "label": "Enrich Platform",
+          "value": "Enrich Platform",
+          "active": true
+        },
+        {
+          "label": "FinComm",
+          "value": "FinComm",
+          "active": true
+        },
+        {
+          "label": "FFG",
+          "value": "FFG",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -1824,6 +2856,86 @@
       "relatedTo": "Opportunity",
       "maxLength": 18,
       "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "iGrad_Lead_Source__c",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": [
+        {
+          "label": "Advertising",
+          "value": "Advertising",
+          "active": true
+        },
+        {
+          "label": "Call-In",
+          "value": "Call-In",
+          "active": true
+        },
+        {
+          "label": "Chat",
+          "value": "Chat",
+          "active": true
+        },
+        {
+          "label": "Cold Call",
+          "value": "Cold Call",
+          "active": true
+        },
+        {
+          "label": "Conference",
+          "value": "Conference",
+          "active": true
+        },
+        {
+          "label": "Current Client Upsell Opportunity",
+          "value": "Current Client Upsell Opportunity",
+          "active": true
+        },
+        {
+          "label": "Email Outreach",
+          "value": "Email Outreach",
+          "active": true
+        },
+        {
+          "label": "Marketing Campaign",
+          "value": "Marketing Campaign",
+          "active": true
+        },
+        {
+          "label": "Previous Demo",
+          "value": "Previous Demo",
+          "active": true
+        },
+        {
+          "label": "Referral",
+          "value": "Referral",
+          "active": true
+        },
+        {
+          "label": "RFP",
+          "value": "RFP",
+          "active": true
+        },
+        {
+          "label": "Webinar",
+          "value": "Webinar",
+          "active": true
+        },
+        {
+          "label": "Web Search",
+          "value": "Web Search",
+          "active": true
+        }
+      ],
       "d365EntityName": null,
       "d365DisplayName": null,
       "d365InternalName": null,
@@ -1868,11 +2980,13 @@
       "picklistValues": [
         {
           "label": "Yes",
-          "value": "Yes"
+          "value": "Yes",
+          "active": true
         },
         {
           "label": "No",
-          "value": "No"
+          "value": "No",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -1905,19 +3019,23 @@
       "picklistValues": [
         {
           "label": "iGrad Platform",
-          "value": "iGrad Platform"
+          "value": "iGrad Platform",
+          "active": true
         },
         {
           "label": "Enrich Platform",
-          "value": "Enrich Platform"
+          "value": "Enrich Platform",
+          "active": true
         },
         {
           "label": "FinComm",
-          "value": "FinComm"
+          "value": "FinComm",
+          "active": true
         },
         {
           "label": "FFG",
-          "value": "FFG"
+          "value": "FFG",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -2020,23 +3138,28 @@
       "picklistValues": [
         {
           "label": "Pipeline",
-          "value": "Pipeline"
+          "value": "Pipeline",
+          "active": true
         },
         {
           "label": "Best case",
-          "value": "Best case"
+          "value": "Best case",
+          "active": true
         },
         {
           "label": "Commit",
-          "value": "Commit"
+          "value": "Commit",
+          "active": true
         },
         {
           "label": "Closed",
-          "value": "Closed"
+          "value": "Closed",
+          "active": true
         },
         {
           "label": "Omitted",
-          "value": "Omitted"
+          "value": "Omitted",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -2055,27 +3178,33 @@
       "picklistValues": [
         {
           "label": "Net 30",
-          "value": "Net 30"
+          "value": "Net 30",
+          "active": true
         },
         {
           "label": "Net 45",
-          "value": "Net 45"
+          "value": "Net 45",
+          "active": true
         },
         {
           "label": "Net 60",
-          "value": "Net 60"
+          "value": "Net 60",
+          "active": true
         },
         {
           "label": "Net 90",
-          "value": "Net 90"
+          "value": "Net 90",
+          "active": true
         },
         {
           "label": "Due on Receipt",
-          "value": "Due on Receipt"
+          "value": "Due on Receipt",
+          "active": true
         },
         {
           "label": "End of Month",
-          "value": "End of Month"
+          "value": "End of Month",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -2144,7 +3273,21 @@
     {
       "fieldName": "Within_Contract_Renewal__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Uplift_Year_Index__c",
+      "dataType": "double",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -2161,6 +3304,20 @@
       "required": "No",
       "relatedTo": "Account_Address__c",
       "maxLength": 18,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CRM_Probability__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
       "picklistValues": null,
       "d365EntityName": null,
       "d365DisplayName": null,
@@ -2198,6 +3355,48 @@
       "d365SuggestedInternalName": null
     },
     {
+      "fieldName": "Legacy_Last_Activity_Date__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Legacy_Modified_By__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Legacy_Modified_On__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
       "fieldName": "Status__c",
       "dataType": "picklist",
       "required": "No",
@@ -2206,15 +3405,18 @@
       "picklistValues": [
         {
           "label": "Open",
-          "value": "Open"
+          "value": "Open",
+          "active": true
         },
         {
           "label": "Won",
-          "value": "Won"
+          "value": "Won",
+          "active": true
         },
         {
           "label": "Lost",
-          "value": "Lost"
+          "value": "Lost",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -2275,15 +3477,18 @@
       "picklistValues": [
         {
           "label": "Initial",
-          "value": "Initial"
+          "value": "Initial",
+          "active": true
         },
         {
           "label": "Add-On",
-          "value": "Add-On"
+          "value": "Add-On",
+          "active": true
         },
         {
           "label": "Print",
-          "value": "Print"
+          "value": "Print",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -2302,23 +3507,28 @@
       "picklistValues": [
         {
           "label": "Broker",
-          "value": "Broker"
+          "value": "Broker",
+          "active": true
         },
         {
           "label": "Email",
-          "value": "Email"
+          "value": "Email",
+          "active": true
         },
         {
           "label": "Conference",
-          "value": "Conference"
+          "value": "Conference",
+          "active": true
         },
         {
           "label": "Referral",
-          "value": "Referral"
+          "value": "Referral",
+          "active": true
         },
         {
           "label": "Web Search",
-          "value": "Web Search"
+          "value": "Web Search",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -2393,155 +3603,193 @@
       "picklistValues": [
         {
           "label": "Apex",
-          "value": "Apex"
+          "value": "Apex",
+          "active": true
         },
         {
           "label": "BALANCE",
-          "value": "BALANCE"
+          "value": "BALANCE",
+          "active": true
         },
         {
           "label": "Banzai",
-          "value": "Banzai"
+          "value": "Banzai",
+          "active": true
         },
         {
           "label": "BrightDime",
-          "value": "BrightDime"
+          "value": "BrightDime",
+          "active": true
         },
         {
           "label": "Brightside",
-          "value": "Brightside"
+          "value": "Brightside",
+          "active": true
         },
         {
           "label": "EBSCO Learning Express",
-          "value": "EBSCO Learning Express"
+          "value": "EBSCO Learning Express",
+          "active": true
         },
         {
           "label": "Ed2Go",
-          "value": "Ed2Go"
+          "value": "Ed2Go",
+          "active": true
         },
         {
           "label": "Edgenuity",
-          "value": "Edgenuity"
+          "value": "Edgenuity",
+          "active": true
         },
         {
           "label": "Edmentum",
-          "value": "Edmentum"
+          "value": "Edmentum",
+          "active": true
         },
         {
           "label": "Edukate",
-          "value": "Edukate"
+          "value": "Edukate",
+          "active": true
         },
         {
           "label": "Essential Education",
-          "value": "Essential Education"
+          "value": "Essential Education",
+          "active": true
         },
         {
           "label": "EVERFI",
-          "value": "EVERFI"
+          "value": "EVERFI",
+          "active": true
         },
         {
           "label": "Financial Finesse",
-          "value": "Financial Finesse"
+          "value": "Financial Finesse",
+          "active": true
         },
         {
           "label": "GOLS CS",
-          "value": "GOLS CS"
+          "value": "GOLS CS",
+          "active": true
         },
         {
           "label": "Gradifi",
-          "value": "Gradifi"
+          "value": "Gradifi",
+          "active": true
         },
         {
           "label": "GreenPath",
-          "value": "GreenPath"
+          "value": "GreenPath",
+          "active": true
         },
         {
           "label": "I-Pathways",
-          "value": "I-Pathways"
+          "value": "I-Pathways",
+          "active": true
         },
         {
           "label": "IXL",
-          "value": "IXL"
+          "value": "IXL",
+          "active": true
         },
         {
           "label": "KET",
-          "value": "KET"
+          "value": "KET",
+          "active": true
         },
         {
           "label": "Learning Express",
-          "value": "Learning Express"
+          "value": "Learning Express",
+          "active": true
         },
         {
           "label": "LearnLux",
-          "value": "LearnLux"
+          "value": "LearnLux",
+          "active": true
         },
         {
           "label": "Lemon",
-          "value": "Lemon"
+          "value": "Lemon",
+          "active": true
         },
         {
           "label": "LifeCents",
-          "value": "LifeCents"
+          "value": "LifeCents",
+          "active": true
         },
         {
           "label": "MedCerts",
-          "value": "MedCerts"
+          "value": "MedCerts",
+          "active": true
         },
         {
           "label": "New Readers Press",
-          "value": "New Readers Press"
+          "value": "New Readers Press",
+          "active": true
         },
         {
           "label": "NHA",
-          "value": "NHA"
+          "value": "NHA",
+          "active": true
         },
         {
           "label": "Nudge",
-          "value": "Nudge"
+          "value": "Nudge",
+          "active": true
         },
         {
           "label": "Odysseyware",
-          "value": "Odysseyware"
+          "value": "Odysseyware",
+          "active": true
         },
         {
           "label": "Paperwork",
-          "value": "Paperwork"
+          "value": "Paperwork",
+          "active": true
         },
         {
           "label": "Savology",
-          "value": "Savology"
+          "value": "Savology",
+          "active": true
         },
         {
           "label": "SmartDollar",
-          "value": "SmartDollar"
+          "value": "SmartDollar",
+          "active": true
         },
         {
           "label": "Spring",
-          "value": "Spring"
+          "value": "Spring",
+          "active": true
         },
         {
           "label": "TIFIN",
-          "value": "TIFIN"
+          "value": "TIFIN",
+          "active": true
         },
         {
           "label": "Worldwide Interactive Services",
-          "value": "Worldwide Interactive Services"
+          "value": "Worldwide Interactive Services",
+          "active": true
         },
         {
           "label": "Your Money Line",
-          "value": "Your Money Line"
+          "value": "Your Money Line",
+          "active": true
         },
         {
           "label": "Zogo",
-          "value": "Zogo"
+          "value": "Zogo",
+          "active": true
         },
         {
           "label": "Other",
-          "value": "Other"
+          "value": "Other",
+          "active": true
         },
         {
           "label": "Did not disclose",
-          "value": "Did not disclose"
+          "value": "Did not disclose",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -2552,8 +3800,8 @@
       "d365SuggestedInternalName": null
     },
     {
-      "fieldName": "Uplift_First_Year__c",
-      "dataType": "double",
+      "fieldName": "Approved_for_Closing__c",
+      "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
@@ -2564,57 +3812,73 @@
       "d365SuggestedEntityName": null,
       "d365SuggestedDisplayName": null,
       "d365SuggestedInternalName": null
-    }
-  ],
-  "d365SourceEntity": "opportunity",
-  "dataTransformationRules": [
+    },
     {
-      "category": "Rules",
-      "rules": [
-        "Keep Opportunity or any other object id while migrating data",
-        "Disable Opportunity naming flow - Opportunity Naming Convention - Before Save - Create/Update",
-        "Filter Aztec Team records only",
-        "Remove records with blank Opportunity names",
-        "Remove records with blank Owners or assign blank record owners to CRM Admin ????",
-        "Remove records with blank Account Names",
-        "Unrestrict Status field",
-        "Map Account Id = vlookup",
-        "Formula to Get Actual or Est Close date based on StateCodeName",
-        "Remove 00:00:00 from Closedate",
-        "Update Stage Based on Probability",
-        "Map Contact Id from inserted Contacts = vlookup",
-        "Map Owner Id from SF = vlookup",
-        "Record TypeID - Aztec Team",
-        "Assign PricebookID",
-        "Deactivate validation -",
-        "Required_Fields_for_Propose_Stage_Budget",
-        "Required_fields_for_Activated_Stage",
-        "Do a last update for the updating the names to historical name",
-        "**Automation Warning:** Opportunity Name field is formula-driven in SF; this must be disabled during load, then re-enabled post-load",
-        "Only map Opportunities with non-blank Opportunity Name",
-        "Only map Opportunities tagged under the Aztec Team (for Record Type assignment)",
-        "Only map Opportunities with a mapped Owner ID in Salesforce",
-        "Only map Opportunities with Account Name (used for Account linkage)",
-        "Only map Opportunities with Created Date, Last Modified Date, or Last Activity Date from January 2021 onwards",
-        "**Confirm** with client which specific date field is to be used",
-        "Fields must be updated to follow correct data formats as per Salesforce (e.g., Stage, Amount, Close Date)",
-        "Remove blank/unnecessary columns",
-        "Exclude rows with blank Opportunity Name",
-        "Exclude opportunities with no mapped Owner (unless fallback user is provided by client)",
-        "Exclude opportunities with no Account name (cannot be related to existing Accounts)",
-        "Exclude records prior to January 2021 (based on the date field once confirmed)",
-        "Exclude blank columns or improperly formatted fields",
-        "Map all Record Type IDs to the Aztec Record Type in Salesforce",
-        "Map Owner IDs using exported user list from Salesforce",
-        "Map Account Names to corresponding Salesforce Account IDs using updated Account names (ensure automation doesn’t interfere)",
-        "Update and format Stage/Status field values to match Salesforce picklist values",
-        "Update Opportunity Name logic:",
-        "SF uses a formula to derive Opportunity Name, disable automation temporarily during data load to preserve original names",
-        "Ensure all field values are consistent with Salesforce field types (e.g., currency, dates, picklists)",
-        "**Confirm** with Aztec:",
-        "Which date field (Created, Last Modified, or Last Activity) should be used for filtering post-Jan 2021 records",
-        "Who the fallback Owner should be for Opportunities with unmapped or deactivated users"
-      ]
+      "fieldName": "Estimated_Close_Date__c",
+      "dataType": "date",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Estimated_Revenue__c",
+      "dataType": "currency",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Create_a_Lead_out_of_Lost_Opportunity__c",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "Yes",
+          "active": true
+        },
+        {
+          "label": "No",
+          "value": "No",
+          "active": true
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "WAG_Summary__c",
+      "dataType": "textarea",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 32768,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
     }
   ]
 }

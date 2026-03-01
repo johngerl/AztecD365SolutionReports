@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -20,7 +20,7 @@
     {
       "fieldName": "OwnerId",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "Group, User",
       "maxLength": 18,
       "picklistValues": null,
@@ -34,7 +34,7 @@
     {
       "fieldName": "IsDeleted",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -48,7 +48,7 @@
     {
       "fieldName": "WorkOrderNumber",
       "dataType": "string",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
       "picklistValues": null,
@@ -62,7 +62,7 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -76,7 +76,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -90,7 +90,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -104,7 +104,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -118,7 +118,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -320,47 +320,58 @@
       "picklistValues": [
         {
           "label": "Address",
-          "value": "Address"
+          "value": "Address",
+          "active": true
         },
         {
-          "label": "NearAddress",
-          "value": "NearAddress"
+          "label": "Near Address",
+          "value": "NearAddress",
+          "active": true
         },
         {
           "label": "Block",
-          "value": "Block"
+          "value": "Block",
+          "active": true
         },
         {
           "label": "Street",
-          "value": "Street"
+          "value": "Street",
+          "active": true
         },
         {
-          "label": "ExtendedZip",
-          "value": "ExtendedZip"
+          "label": "Extended Zip",
+          "value": "ExtendedZip",
+          "active": true
         },
         {
           "label": "Zip",
-          "value": "Zip"
+          "value": "Zip",
+          "active": true
         },
         {
           "label": "Neighborhood",
-          "value": "Neighborhood"
+          "value": "Neighborhood",
+          "active": true
         },
         {
           "label": "City",
-          "value": "City"
+          "value": "City",
+          "active": true
         },
         {
           "label": "County",
-          "value": "County"
+          "value": "County",
+          "active": true
         },
         {
           "label": "State",
-          "value": "State"
+          "value": "State",
+          "active": true
         },
         {
           "label": "Unknown",
-          "value": "Unknown"
+          "value": "Unknown",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -463,31 +474,38 @@
       "picklistValues": [
         {
           "label": "New",
-          "value": "New"
+          "value": "New",
+          "active": true
         },
         {
           "label": "In Progress",
-          "value": "In Progress"
+          "value": "In Progress",
+          "active": true
         },
         {
           "label": "On Hold",
-          "value": "On Hold"
+          "value": "On Hold",
+          "active": true
         },
         {
           "label": "Completed",
-          "value": "Completed"
+          "value": "Completed",
+          "active": true
         },
         {
           "label": "Closed",
-          "value": "Closed"
+          "value": "Closed",
+          "active": true
         },
         {
           "label": "Cannot Complete",
-          "value": "Cannot Complete"
+          "value": "Cannot Complete",
+          "active": true
         },
         {
           "label": "Canceled",
-          "value": "Canceled"
+          "value": "Canceled",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -506,19 +524,23 @@
       "picklistValues": [
         {
           "label": "Low",
-          "value": "Low"
+          "value": "Low",
+          "active": true
         },
         {
           "label": "Medium",
-          "value": "Medium"
+          "value": "Medium",
+          "active": true
         },
         {
           "label": "High",
-          "value": "High"
+          "value": "High",
+          "active": true
         },
         {
           "label": "Critical",
-          "value": "Critical"
+          "value": "Critical",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -643,7 +665,7 @@
     {
       "fieldName": "IsClosed",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -691,11 +713,13 @@
       "picklistValues": [
         {
           "label": "Hours",
-          "value": "Hours"
+          "value": "Hours",
+          "active": true
         },
         {
           "label": "Minutes",
-          "value": "Minutes"
+          "value": "Minutes",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -742,35 +766,43 @@
       "picklistValues": [
         {
           "label": "New",
-          "value": "New"
+          "value": "New",
+          "active": true
         },
         {
-          "label": "InProgress",
-          "value": "InProgress"
+          "label": "In Progress",
+          "value": "InProgress",
+          "active": true
         },
         {
-          "label": "OnHold",
-          "value": "OnHold"
+          "label": "On Hold",
+          "value": "OnHold",
+          "active": true
         },
         {
           "label": "Completed",
-          "value": "Completed"
+          "value": "Completed",
+          "active": true
         },
         {
           "label": "Closed",
-          "value": "Closed"
+          "value": "Closed",
+          "active": true
         },
         {
           "label": "None",
-          "value": "None"
+          "value": "None",
+          "active": true
         },
         {
-          "label": "CannotComplete",
-          "value": "CannotComplete"
+          "label": "Cannot Complete",
+          "value": "CannotComplete",
+          "active": true
         },
         {
           "label": "Canceled",
-          "value": "Canceled"
+          "value": "Canceled",
+          "active": true
         }
       ],
       "d365EntityName": null,

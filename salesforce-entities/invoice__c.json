@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -20,7 +20,7 @@
     {
       "fieldName": "OwnerId",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "Group, User",
       "maxLength": 18,
       "picklistValues": null,
@@ -34,7 +34,7 @@
     {
       "fieldName": "IsDeleted",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -48,7 +48,7 @@
     {
       "fieldName": "Name",
       "dataType": "string",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 80,
       "picklistValues": null,
@@ -62,7 +62,7 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -76,7 +76,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -90,7 +90,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -104,7 +104,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -118,7 +118,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -356,7 +356,7 @@
     {
       "fieldName": "CRM_Comp_Completed__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -650,7 +650,7 @@
     {
       "fieldName": "CRM_Payments_Already_Split__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -954,23 +954,6 @@
       "d365SuggestedEntityName": null,
       "d365SuggestedDisplayName": null,
       "d365SuggestedInternalName": null
-    }
-  ],
-  "d365SourceEntity": "invoice",
-  "dataTransformationRules": [
-    {
-      "category": "Rules",
-      "rules": [
-        "Keep Invoice or any other object id while migrating data",
-        "Filter Aztec Team records",
-        "Map Order Id from inserted SF Orders",
-        "Map Account Id with inserted SF Accounts",
-        "Map Owner Id from SF to record owners",
-        "Map Opportunity Id with inserted SF Opporutnity",
-        "Correct date formats",
-        "Activate flow - RT -> Invoice -> Invoice Line Creation",
-        "Once you load Invoice Line, load Invoice Payments records"
-      ]
     }
   ]
 }

@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -20,7 +20,7 @@
     {
       "fieldName": "IsDeleted",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -35,7 +35,7 @@
       "fieldName": "ParentId",
       "dataType": "reference",
       "required": "Yes",
-      "relatedTo": "Account, Account_Address__c, Account_Request__c, Asset, CS_Engagement__c, Campaign, Case, Contact, Contract, EmailMessage, EmailTemplate, Event, Lead, Opportunity, Order, Product2, Quote, Sales_Lead__c, Solution, Task",
+      "relatedTo": "Account, Account_Address__c, Account_Request__c, ApprovalSubmission, ApprovalSubmissionDetail, ApprovalWorkItem, Asset, CS_Engagement__c, Campaign, Case, CodeBuilder__SessionData__c, CodeBuilder__Workspace__c, CommSubscription, CommSubscriptionChannelType, CommSubscriptionConsent, CommSubscriptionTiming, Competitor_Encounter__c, Competitor__c, Contact, Contract, CreditMemo, DataQueryWorkspace, EmailMessage, EmailTemplate, EngagementChannelType, Event, Expense_Report__c, Expense__c, FlowPersonalConfiguration__c, FlowTableViewDefinition__c, GoalAssignment, GoalDefinition, Graphics_Pack_Example__c, Help_Desk__c, Image, Invoice, Invoice_Line__c, Invoice__c, Lead, Location, Opportunity, Order, Payment__c, Product2, Quote, Sales_Lead__c, SocialPost, Solution, Task, WorkOrder, WorkOrderLineItem, dfsle__AgreementConfiguration__c, dfsle__BulkList__c, dfsle__BulkStatus__c, dfsle__CustomParameterMap__c, dfsle__CustomRecipient__c, dfsle__Document__c, dfsle__EnvelopeConfigurationDocument__c, dfsle__EnvelopeConfigurationRecipient__c, dfsle__EnvelopeConfiguration__c, dfsle__EnvelopeLocalization__c, dfsle__EnvelopeStatus__c, dfsle__Envelope__c, dfsle__GenTemplate__c, dfsle__Jobs__c, dfsle__Log__c, dfsle__RecipientStatus__c, dfsle__Recipient__c, dlrs__LookupChild__c, dlrs__LookupParent__c, dlrs__LookupRollupCalculateJob__c, dlrs__LookupRollupSummaryLog__c, dlrs__LookupRollupSummaryScheduleItems__c, dlrs__LookupRollupSummary__c, rcsfl__AdminUISetting__c, rcsfl__RingCentral_Webinar_Token__c, sf_devops__Async_Operation_Result__c, sf_devops__Back_Sync__c, sf_devops__Branch__c, sf_devops__Change_Bundle_Install__c, sf_devops__Change_Bundle__c, sf_devops__Change_Submission__c, sf_devops__Deploy_Component__c, sf_devops__Deployment_Result__c, sf_devops__Environment__c, sf_devops__Hidden_Remote_Change__c, sf_devops__Merge_Result__c, sf_devops__Object_Activity__c, sf_devops__Pipeline_Stage__c, sf_devops__Pipeline__c, sf_devops__Project__c, sf_devops__Remote_Change__c, sf_devops__Repository__c, sf_devops__Source_Member_Reference__c, sf_devops__Submit_Component__c, sf_devops__Vcs_Synch_State__c, sf_devops__Vcs__c, sf_devops__Work_Item_Promote__c, sf_devops__Work_Item__c",
       "maxLength": 18,
       "picklistValues": null,
       "d365EntityName": null,
@@ -62,7 +62,7 @@
     {
       "fieldName": "IsPrivate",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -118,7 +118,7 @@
     {
       "fieldName": "OwnerId",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "Calendar, User",
       "maxLength": 18,
       "picklistValues": null,
@@ -132,7 +132,7 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -146,7 +146,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -160,7 +160,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -174,7 +174,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -188,7 +188,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,

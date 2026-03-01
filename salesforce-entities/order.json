@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -20,7 +20,7 @@
     {
       "fieldName": "OwnerId",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "Group, User",
       "maxLength": 18,
       "picklistValues": null,
@@ -160,7 +160,7 @@
     {
       "fieldName": "IsReductionOrder",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -180,19 +180,23 @@
       "picklistValues": [
         {
           "label": "Pending",
-          "value": "Pending"
+          "value": "Pending",
+          "active": true
         },
         {
           "label": "Verified",
-          "value": "Verified"
+          "value": "Verified",
+          "active": true
         },
         {
           "label": "Fulfilled",
-          "value": "Fulfilled"
+          "value": "Fulfilled",
+          "active": true
         },
         {
           "label": "iGrad Fulfilled",
-          "value": "iGrad Fulfilled"
+          "value": "iGrad Fulfilled",
+          "active": true
         }
       ],
       "d365EntityName": "salesorder",
@@ -281,19 +285,23 @@
       "picklistValues": [
         {
           "label": "Initial",
-          "value": "Initial"
+          "value": "Initial",
+          "active": true
         },
         {
           "label": "Add-On",
-          "value": "Add-On"
+          "value": "Add-On",
+          "active": true
         },
         {
           "label": "Renewal",
-          "value": "Renewal"
+          "value": "Renewal",
+          "active": true
         },
         {
           "label": "Print",
-          "value": "Print"
+          "value": "Print",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -410,47 +418,58 @@
       "picklistValues": [
         {
           "label": "Address",
-          "value": "Address"
+          "value": "Address",
+          "active": true
         },
         {
-          "label": "NearAddress",
-          "value": "NearAddress"
+          "label": "Near Address",
+          "value": "NearAddress",
+          "active": true
         },
         {
           "label": "Block",
-          "value": "Block"
+          "value": "Block",
+          "active": true
         },
         {
           "label": "Street",
-          "value": "Street"
+          "value": "Street",
+          "active": true
         },
         {
-          "label": "ExtendedZip",
-          "value": "ExtendedZip"
+          "label": "Extended Zip",
+          "value": "ExtendedZip",
+          "active": true
         },
         {
           "label": "Zip",
-          "value": "Zip"
+          "value": "Zip",
+          "active": true
         },
         {
           "label": "Neighborhood",
-          "value": "Neighborhood"
+          "value": "Neighborhood",
+          "active": true
         },
         {
           "label": "City",
-          "value": "City"
+          "value": "City",
+          "active": true
         },
         {
           "label": "County",
-          "value": "County"
+          "value": "County",
+          "active": true
         },
         {
           "label": "State",
-          "value": "State"
+          "value": "State",
+          "active": true
         },
         {
           "label": "Unknown",
-          "value": "Unknown"
+          "value": "Unknown",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -581,47 +600,58 @@
       "picklistValues": [
         {
           "label": "Address",
-          "value": "Address"
+          "value": "Address",
+          "active": true
         },
         {
-          "label": "NearAddress",
-          "value": "NearAddress"
+          "label": "Near Address",
+          "value": "NearAddress",
+          "active": true
         },
         {
           "label": "Block",
-          "value": "Block"
+          "value": "Block",
+          "active": true
         },
         {
           "label": "Street",
-          "value": "Street"
+          "value": "Street",
+          "active": true
         },
         {
-          "label": "ExtendedZip",
-          "value": "ExtendedZip"
+          "label": "Extended Zip",
+          "value": "ExtendedZip",
+          "active": true
         },
         {
           "label": "Zip",
-          "value": "Zip"
+          "value": "Zip",
+          "active": true
         },
         {
           "label": "Neighborhood",
-          "value": "Neighborhood"
+          "value": "Neighborhood",
+          "active": true
         },
         {
           "label": "City",
-          "value": "City"
+          "value": "City",
+          "active": true
         },
         {
           "label": "County",
-          "value": "County"
+          "value": "County",
+          "active": true
         },
         {
           "label": "State",
-          "value": "State"
+          "value": "State",
+          "active": true
         },
         {
           "label": "Unknown",
-          "value": "Unknown"
+          "value": "Unknown",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -752,23 +782,28 @@
       "picklistValues": [
         {
           "label": "Draft",
-          "value": "Draft"
+          "value": "Draft",
+          "active": true
         },
         {
           "label": "Activated",
-          "value": "Activated"
+          "value": "Activated",
+          "active": true
         },
         {
           "label": "Canceled",
-          "value": "Canceled"
+          "value": "Canceled",
+          "active": true
         },
         {
           "label": "Expired",
-          "value": "Expired"
+          "value": "Expired",
+          "active": true
         },
         {
           "label": "Superseded",
-          "value": "Superseded"
+          "value": "Superseded",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -781,7 +816,7 @@
     {
       "fieldName": "OrderNumber",
       "dataType": "string",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 30,
       "picklistValues": null,
@@ -809,7 +844,7 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -823,7 +858,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -837,7 +872,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -851,7 +886,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -865,7 +900,7 @@
     {
       "fieldName": "IsDeleted",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -879,7 +914,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -977,7 +1012,7 @@
     {
       "fieldName": "Fulfilled__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -1271,7 +1306,7 @@
     {
       "fieldName": "CRM_Customization_Required__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -1509,7 +1544,7 @@
     {
       "fieldName": "CRM_Has_SaaS_Products__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -1523,7 +1558,7 @@
     {
       "fieldName": "CRM_Licenses_Completed__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -1607,7 +1642,7 @@
     {
       "fieldName": "CRM_PO_Received_Confirmation_Sent__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -1907,27 +1942,33 @@
       "picklistValues": [
         {
           "label": "Annual",
-          "value": "Annual"
+          "value": "Annual",
+          "active": true
         },
         {
           "label": "Semi-Annual",
-          "value": "Semi-Annual"
+          "value": "Semi-Annual",
+          "active": true
         },
         {
           "label": "Quarterly",
-          "value": "Quarterly"
+          "value": "Quarterly",
+          "active": true
         },
         {
           "label": "Monthly",
-          "value": "Monthly"
+          "value": "Monthly",
+          "active": true
         },
         {
           "label": "One-Time",
-          "value": "One-Time"
+          "value": "One-Time",
+          "active": true
         },
         {
-          "label": "In_Arrears",
-          "value": "In_Arrears"
+          "label": "In Arrears",
+          "value": "In_Arrears",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -1936,31 +1977,20 @@
       "d365SuggestedEntityName": null,
       "d365SuggestedDisplayName": null,
       "d365SuggestedInternalName": null
-    }
-  ],
-  "d365SourceEntity": "salesorder",
-  "dataTransformationRules": [
+    },
     {
-      "category": "Rules",
-      "rules": [
-        "Keep Order or any other object id while migrating data",
-        "Filter to only Aztec records",
-        "Map Account id from inserted SF Accounts",
-        "Map Opportutnity Id from inserted SF Opportunities",
-        "Map Owner Id from SF to map record owners",
-        "Map Contact Id from inserted contacts",
-        "Add record Type Id",
-        "Update values for Status field to map to sheet",
-        "Concatenate Bill to Address Line 1 and 2",
-        "Concatenate Ship to Address Line 1 and 2",
-        "Update date formats",
-        "Add PricebookID in the column",
-        "Once Order products are added, update status to fulfilled",
-        "Status needs to be in Draft status first and then update it to Fulfilled - 2 loads",
-        "Before updating the status to fulfilled, we need to load Order Products to have atleast one product against it",
-        "Status will be updated to fulfilled only if there are products attached to it.",
-        "Formats of dates on extracted data is not correct, so its giving errors - created on date, modified on date - mm/dd/yyyy"
-      ]
+      "fieldName": "Annual_Uplift_Percentage__c",
+      "dataType": "percent",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
     }
   ]
 }

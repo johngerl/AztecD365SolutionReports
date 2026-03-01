@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -20,7 +20,7 @@
     {
       "fieldName": "OwnerId",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "Group, User",
       "maxLength": 18,
       "picklistValues": null,
@@ -34,7 +34,7 @@
     {
       "fieldName": "IsDeleted",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -62,7 +62,7 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -76,7 +76,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -90,7 +90,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -104,7 +104,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -118,7 +118,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -138,27 +138,33 @@
       "picklistValues": [
         {
           "label": "Open",
-          "value": "Open"
+          "value": "Open",
+          "active": true
         },
         {
           "label": "Pending Approval",
-          "value": "Pending Approval"
+          "value": "Pending Approval",
+          "active": true
         },
         {
           "label": "Approved",
-          "value": "Approved"
+          "value": "Approved",
+          "active": true
         },
         {
           "label": "Sent to Intacct",
-          "value": "Sent to Intacct"
+          "value": "Sent to Intacct",
+          "active": true
         },
         {
           "label": "Rejected",
-          "value": "Rejected"
+          "value": "Rejected",
+          "active": true
         },
         {
           "label": "Completed",
-          "value": "Completed"
+          "value": "Completed",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -199,7 +205,7 @@
     {
       "fieldName": "Approved__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,

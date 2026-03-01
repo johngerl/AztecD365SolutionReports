@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -104,7 +104,7 @@
     {
       "fieldName": "IsCompetitorProduct",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -118,7 +118,7 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -132,7 +132,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -146,7 +146,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -160,7 +160,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -174,7 +174,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -188,7 +188,7 @@
     {
       "fieldName": "IsDeleted",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -278,23 +278,28 @@
       "picklistValues": [
         {
           "label": "Purchased",
-          "value": "Purchased"
+          "value": "Purchased",
+          "active": true
         },
         {
           "label": "Shipped",
-          "value": "Shipped"
+          "value": "Shipped",
+          "active": true
         },
         {
           "label": "Installed",
-          "value": "Installed"
+          "value": "Installed",
+          "active": true
         },
         {
           "label": "Registered",
-          "value": "Registered"
+          "value": "Registered",
+          "active": true
         },
         {
           "label": "Obsolete",
-          "value": "Obsolete"
+          "value": "Obsolete",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -349,7 +354,7 @@
     {
       "fieldName": "OwnerId",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -405,7 +410,7 @@
     {
       "fieldName": "IsInternal",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -436,6 +441,188 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 180,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Street",
+      "dataType": "textarea",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "City",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 40,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "State",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 80,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "PostalCode",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 20,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Country",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 80,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Latitude",
+      "dataType": "double",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Longitude",
+      "dataType": "double",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "GeocodeAccuracy",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 40,
+      "picklistValues": [
+        {
+          "label": "Address",
+          "value": "Address",
+          "active": true
+        },
+        {
+          "label": "Near Address",
+          "value": "NearAddress",
+          "active": true
+        },
+        {
+          "label": "Block",
+          "value": "Block",
+          "active": true
+        },
+        {
+          "label": "Street",
+          "value": "Street",
+          "active": true
+        },
+        {
+          "label": "Extended Zip",
+          "value": "ExtendedZip",
+          "active": true
+        },
+        {
+          "label": "Zip",
+          "value": "Zip",
+          "active": true
+        },
+        {
+          "label": "Neighborhood",
+          "value": "Neighborhood",
+          "active": true
+        },
+        {
+          "label": "City",
+          "value": "City",
+          "active": true
+        },
+        {
+          "label": "County",
+          "value": "County",
+          "active": true
+        },
+        {
+          "label": "State",
+          "value": "State",
+          "active": true
+        },
+        {
+          "label": "Unknown",
+          "value": "Unknown",
+          "active": true
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Address",
+      "dataType": "address",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
       "picklistValues": null,
       "d365EntityName": null,
       "d365DisplayName": null,
@@ -481,23 +668,28 @@
       "picklistValues": [
         {
           "label": "Initial",
-          "value": "Initial"
+          "value": "Initial",
+          "active": true
         },
         {
           "label": "Add-On",
-          "value": "Add-On"
+          "value": "Add-On",
+          "active": true
         },
         {
           "label": "Renewal",
-          "value": "Renewal"
+          "value": "Renewal",
+          "active": true
         },
         {
           "label": "Print",
-          "value": "Print"
+          "value": "Print",
+          "active": true
         },
         {
           "label": "Other",
-          "value": "Other"
+          "value": "Other",
+          "active": true
         }
       ],
       "d365EntityName": "azt_softwarelicense",
@@ -516,11 +708,13 @@
       "picklistValues": [
         {
           "label": "Print",
-          "value": "Print"
+          "value": "Print",
+          "active": true
         },
         {
           "label": "Software License",
-          "value": "Software License"
+          "value": "Software License",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -659,7 +853,7 @@
     {
       "fieldName": "Active_Asset__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -953,7 +1147,7 @@
     {
       "fieldName": "Is_Print__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -967,7 +1161,7 @@
     {
       "fieldName": "Is_SaaS__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -1005,33 +1199,6 @@
       "d365SuggestedEntityName": null,
       "d365SuggestedDisplayName": null,
       "d365SuggestedInternalName": null
-    },
-    {
-      "fieldName": "Product_Type__c",
-      "dataType": "string",
-      "required": "No",
-      "relatedTo": "None",
-      "maxLength": 1300,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
-    }
-  ],
-  "d365SourceEntity": "azt_softwarelicense",
-  "dataTransformationRules": [
-    {
-      "category": "Rules",
-      "rules": [
-        "Filter to only Aztec records",
-        "Map Account ID",
-        "Correct formats of Dates",
-        "Map Created by with Owner Id",
-        "Keep Product name in the list for getting Product ID"
-      ]
     }
   ]
 }

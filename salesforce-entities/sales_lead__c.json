@@ -6,7 +6,7 @@
     {
       "fieldName": "Id",
       "dataType": "id",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
       "picklistValues": null,
@@ -20,7 +20,7 @@
     {
       "fieldName": "OwnerId",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "Group, User",
       "maxLength": 18,
       "picklistValues": null,
@@ -34,7 +34,7 @@
     {
       "fieldName": "IsDeleted",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -76,7 +76,7 @@
     {
       "fieldName": "CreatedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -90,7 +90,7 @@
     {
       "fieldName": "CreatedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -104,7 +104,7 @@
     {
       "fieldName": "LastModifiedDate",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -118,7 +118,7 @@
     {
       "fieldName": "LastModifiedById",
       "dataType": "reference",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,
@@ -132,7 +132,7 @@
     {
       "fieldName": "SystemModstamp",
       "dataType": "datetime",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -194,27 +194,33 @@
       "picklistValues": [
         {
           "label": "Inbound",
-          "value": "Inbound"
+          "value": "Inbound",
+          "active": true
         },
         {
           "label": "Sales Sourced",
-          "value": "Sales Sourced"
+          "value": "Sales Sourced",
+          "active": true
         },
         {
           "label": "Trade Show",
-          "value": "Trade Show"
+          "value": "Trade Show",
+          "active": true
         },
         {
           "label": "Marketing Campaign",
-          "value": "Marketing Campaign"
+          "value": "Marketing Campaign",
+          "active": true
         },
         {
           "label": "Client Success Sourced",
-          "value": "Client Success Sourced"
+          "value": "Client Success Sourced",
+          "active": true
         },
         {
           "label": "Client Relations Sourced",
-          "value": "Client Relations Sourced"
+          "value": "Client Relations Sourced",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -233,11 +239,13 @@
       "picklistValues": [
         {
           "label": "Call",
-          "value": "Call"
+          "value": "Call",
+          "active": true
         },
         {
           "label": "In Person",
-          "value": "In Person"
+          "value": "In Person",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -256,15 +264,18 @@
       "picklistValues": [
         {
           "label": "Open",
-          "value": "Open"
+          "value": "Open",
+          "active": true
         },
         {
           "label": "Qualified",
-          "value": "Qualified"
+          "value": "Qualified",
+          "active": true
         },
         {
           "label": "Disqualified",
-          "value": "Disqualified"
+          "value": "Disqualified",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -283,23 +294,28 @@
       "picklistValues": [
         {
           "label": "Priority",
-          "value": "Priority"
+          "value": "Priority",
+          "active": true
         },
         {
           "label": "Hot",
-          "value": "Hot"
+          "value": "Hot",
+          "active": true
         },
         {
           "label": "Warm",
-          "value": "Warm"
+          "value": "Warm",
+          "active": true
         },
         {
           "label": "Cold",
-          "value": "Cold"
+          "value": "Cold",
+          "active": true
         },
         {
           "label": "Future",
-          "value": "Future"
+          "value": "Future",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -318,15 +334,18 @@
       "picklistValues": [
         {
           "label": "Initial",
-          "value": "Initial"
+          "value": "Initial",
+          "active": true
         },
         {
           "label": "Add-On",
-          "value": "Add-On"
+          "value": "Add-On",
+          "active": true
         },
         {
           "label": "Print",
-          "value": "Print"
+          "value": "Print",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -619,7 +638,7 @@
     {
       "fieldName": "CRM_Pending_Assignment__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -793,47 +812,58 @@
       "picklistValues": [
         {
           "label": "CASAS",
-          "value": "CASAS"
+          "value": "CASAS",
+          "active": true
         },
         {
           "label": "Adult Basic Education",
-          "value": "Adult Basic Education"
+          "value": "Adult Basic Education",
+          "active": true
         },
         {
           "label": "GED/HiSET",
-          "value": "GED/HiSET"
+          "value": "GED/HiSET",
+          "active": true
         },
         {
           "label": "College Preparation",
-          "value": "College Preparation"
+          "value": "College Preparation",
+          "active": true
         },
         {
           "label": "Spanish Curriculum",
-          "value": "Spanish Curriculum"
+          "value": "Spanish Curriculum",
+          "active": true
         },
         {
           "label": "Corrections",
-          "value": "Corrections"
+          "value": "Corrections",
+          "active": true
         },
         {
           "label": "CTE Healthcare Pathways",
-          "value": "CTE Healthcare Pathways"
+          "value": "CTE Healthcare Pathways",
+          "active": true
         },
         {
           "label": "Employability & Life Skills",
-          "value": "Employability & Life Skills"
+          "value": "Employability & Life Skills",
+          "active": true
         },
         {
           "label": "Workforce",
-          "value": "Workforce"
+          "value": "Workforce",
+          "active": true
         },
         {
           "label": "Digital Literacy",
-          "value": "Digital Literacy"
+          "value": "Digital Literacy",
+          "active": true
         },
         {
           "label": "Financial Wellness/Literacy",
-          "value": "Financial Wellness/Literacy"
+          "value": "Financial Wellness/Literacy",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -964,463 +994,578 @@
       "picklistValues": [
         {
           "label": "1st Edition",
-          "value": "1st Edition"
+          "value": "1st Edition",
+          "active": true
         },
         {
           "label": "2nd Edition",
-          "value": "2nd Edition"
+          "value": "2nd Edition",
+          "active": true
         },
         {
           "label": "A Tutor",
-          "value": "A Tutor"
+          "value": "A Tutor",
+          "active": true
         },
         {
           "label": "ABE",
-          "value": "ABE"
+          "value": "ABE",
+          "active": true
         },
         {
           "label": "ABE-Digital",
-          "value": "ABE-Digital"
+          "value": "ABE-Digital",
+          "active": true
         },
         {
           "label": "ABE-Print",
-          "value": "ABE-Print"
+          "value": "ABE-Print",
+          "active": true
         },
         {
           "label": "ACCU",
-          "value": "ACCU"
+          "value": "ACCU",
+          "active": true
         },
         {
           "label": "ACT",
-          "value": "ACT"
+          "value": "ACT",
+          "active": true
         },
         {
           "label": "aPub",
-          "value": "aPub"
+          "value": "aPub",
+          "active": true
         },
         {
           "label": "Bridge",
-          "value": "Bridge"
+          "value": "Bridge",
+          "active": true
         },
         {
           "label": "Bridge Digital",
-          "value": "Bridge Digital"
+          "value": "Bridge Digital",
+          "active": true
         },
         {
           "label": "Career Pathways Print",
-          "value": "Career Pathways Print"
+          "value": "Career Pathways Print",
+          "active": true
         },
         {
           "label": "CASAS",
-          "value": "CASAS"
+          "value": "CASAS",
+          "active": true
         },
         {
           "label": "CASAS Digital",
-          "value": "CASAS Digital"
+          "value": "CASAS Digital",
+          "active": true
         },
         {
           "label": "CASAS Print",
-          "value": "CASAS Print"
+          "value": "CASAS Print",
+          "active": true
         },
         {
           "label": "Catalog Print",
-          "value": "Catalog Print"
+          "value": "Catalog Print",
+          "active": true
         },
         {
           "label": "CBC Digital",
-          "value": "CBC Digital"
+          "value": "CBC Digital",
+          "active": true
         },
         {
           "label": "CMA Digital",
-          "value": "CMA Digital"
+          "value": "CMA Digital",
+          "active": true
         },
         {
           "label": "College",
-          "value": "College"
+          "value": "College",
+          "active": true
         },
         {
           "label": "College Prep Digital",
-          "value": "College Prep Digital"
+          "value": "College Prep Digital",
+          "active": true
         },
         {
           "label": "Companion",
-          "value": "Companion"
+          "value": "Companion",
+          "active": true
         },
         {
           "label": "Companion Digital",
-          "value": "Companion Digital"
+          "value": "Companion Digital",
+          "active": true
         },
         {
           "label": "CTE",
-          "value": "CTE"
+          "value": "CTE",
+          "active": true
         },
         {
           "label": "CWED Digital",
-          "value": "CWED Digital"
+          "value": "CWED Digital",
+          "active": true
         },
         {
           "label": "CWED Print",
-          "value": "CWED Print"
+          "value": "CWED Print",
+          "active": true
         },
         {
           "label": "Digital",
-          "value": "Digital"
+          "value": "Digital",
+          "active": true
         },
         {
           "label": "Digital Literacy",
-          "value": "Digital Literacy"
+          "value": "Digital Literacy",
+          "active": true
         },
         {
           "label": "Digital Literacy Digital",
-          "value": "Digital Literacy Digital"
+          "value": "Digital Literacy Digital",
+          "active": true
         },
         {
           "label": "DiscountOther",
-          "value": "DiscountOther"
+          "value": "DiscountOther",
+          "active": true
         },
         {
           "label": "Employability",
-          "value": "Employability"
+          "value": "Employability",
+          "active": true
         },
         {
           "label": "English",
-          "value": "English"
+          "value": "English",
+          "active": true
         },
         {
           "label": "English/French",
-          "value": "English/French"
+          "value": "English/French",
+          "active": true
         },
         {
           "label": "Enrich Digital",
-          "value": "Enrich Digital"
+          "value": "Enrich Digital",
+          "active": true
         },
         {
           "label": "ePub",
-          "value": "ePub"
+          "value": "ePub",
+          "active": true
         },
         {
           "label": "ePub-Org",
-          "value": "ePub-Org"
+          "value": "ePub-Org",
+          "active": true
         },
         {
           "label": "ESL",
-          "value": "ESL"
+          "value": "ESL",
+          "active": true
         },
         {
           "label": "ESL Digital",
-          "value": "ESL Digital"
+          "value": "ESL Digital",
+          "active": true
         },
         {
           "label": "FFG",
-          "value": "FFG"
+          "value": "FFG",
+          "active": true
         },
         {
           "label": "FFG - FINRA Digital",
-          "value": "FFG - FINRA Digital"
+          "value": "FFG - FINRA Digital",
+          "active": true
         },
         {
           "label": "FFG - MS - Andex Digital",
-          "value": "FFG - MS - Andex Digital"
+          "value": "FFG - MS - Andex Digital",
+          "active": true
         },
         {
           "label": "FFG - MS - FCS Digital",
-          "value": "FFG - MS - FCS Digital"
+          "value": "FFG - MS - FCS Digital",
+          "active": true
         },
         {
           "label": "FFG - MS - IC Digital",
-          "value": "FFG - MS - IC Digital"
+          "value": "FFG - MS - IC Digital",
+          "active": true
         },
         {
           "label": "FFG - MS - SBBI Digital",
-          "value": "FFG - MS - SBBI Digital"
+          "value": "FFG - MS - SBBI Digital",
+          "active": true
         },
         {
           "label": "FFG - Other Digital",
-          "value": "FFG - Other Digital"
+          "value": "FFG - Other Digital",
+          "active": true
         },
         {
           "label": "Financial Wellness",
-          "value": "Financial Wellness"
+          "value": "Financial Wellness",
+          "active": true
         },
         {
           "label": "Foundations",
-          "value": "Foundations"
+          "value": "Foundations",
+          "active": true
         },
         {
           "label": "Foundations Digital",
-          "value": "Foundations Digital"
+          "value": "Foundations Digital",
+          "active": true
         },
         {
           "label": "Fundamental Skills Print",
-          "value": "Fundamental Skills Print"
+          "value": "Fundamental Skills Print",
+          "active": true
         },
         {
           "label": "Fundamentals",
-          "value": "Fundamentals"
+          "value": "Fundamentals",
+          "active": true
         },
         {
           "label": "Fundamentals Digital",
-          "value": "Fundamentals Digital"
+          "value": "Fundamentals Digital",
+          "active": true
         },
         {
           "label": "GED",
-          "value": "GED"
+          "value": "GED",
+          "active": true
         },
         {
           "label": "GED Flash",
-          "value": "GED Flash"
+          "value": "GED Flash",
+          "active": true
         },
         {
           "label": "GED Flash Digital",
-          "value": "GED Flash Digital"
+          "value": "GED Flash Digital",
+          "active": true
         },
         {
           "label": "GED Flash-Play Digital",
-          "value": "GED Flash-Play Digital"
+          "value": "GED Flash-Play Digital",
+          "active": true
         },
         {
           "label": "GED Play",
-          "value": "GED Play"
+          "value": "GED Play",
+          "active": true
         },
         {
           "label": "GED Play Digital",
-          "value": "GED Play Digital"
+          "value": "GED Play Digital",
+          "active": true
         },
         {
           "label": "GED Practice Digital",
-          "value": "GED Practice Digital"
+          "value": "GED Practice Digital",
+          "active": true
         },
         {
           "label": "GED Practice Print",
-          "value": "GED Practice Print"
+          "value": "GED Practice Print",
+          "active": true
         },
         {
           "label": "GED Prep Digital",
-          "value": "GED Prep Digital"
+          "value": "GED Prep Digital",
+          "active": true
         },
         {
           "label": "GED Prep Print",
-          "value": "GED Prep Print"
+          "value": "GED Prep Print",
+          "active": true
         },
         {
           "label": "GED Vouchers Print",
-          "value": "GED Vouchers Print"
+          "value": "GED Vouchers Print",
+          "active": true
         },
         {
           "label": "GED Vouchers Print +",
-          "value": "GED Vouchers Print +"
+          "value": "GED Vouchers Print +",
+          "active": true
         },
         {
           "label": "GED-Digital",
-          "value": "GED-Digital"
+          "value": "GED-Digital",
+          "active": true
         },
         {
           "label": "GED-Print",
-          "value": "GED-Print"
+          "value": "GED-Print",
+          "active": true
         },
         {
           "label": "Health Science",
-          "value": "Health Science"
+          "value": "Health Science",
+          "active": true
         },
         {
           "label": "HiSet",
-          "value": "HiSet"
+          "value": "HiSet",
+          "active": true
         },
         {
           "label": "HiSET Digital",
-          "value": "HiSET Digital"
+          "value": "HiSET Digital",
+          "active": true
         },
         {
           "label": "HiSET Print",
-          "value": "HiSET Print"
+          "value": "HiSET Print",
+          "active": true
         },
         {
           "label": "HSE",
-          "value": "HSE"
+          "value": "HSE",
+          "active": true
         },
         {
           "label": "iGrad",
-          "value": "iGrad"
+          "value": "iGrad",
+          "active": true
         },
         {
           "label": "iGrad Digital",
-          "value": "iGrad Digital"
+          "value": "iGrad Digital",
+          "active": true
         },
         {
           "label": "Kaplan",
-          "value": "Kaplan"
+          "value": "Kaplan",
+          "active": true
         },
         {
           "label": "Lecture Digital",
-          "value": "Lecture Digital"
+          "value": "Lecture Digital",
+          "active": true
         },
         {
           "label": "Legacy Digital",
-          "value": "Legacy Digital"
+          "value": "Legacy Digital",
+          "active": true
         },
         {
           "label": "LSE",
-          "value": "LSE"
+          "value": "LSE",
+          "active": true
         },
         {
           "label": "LSE Digital",
-          "value": "LSE Digital"
+          "value": "LSE Digital",
+          "active": true
         },
         {
           "label": "LSE Print",
-          "value": "LSE Print"
+          "value": "LSE Print",
+          "active": true
         },
         {
           "label": "LSE Print +",
-          "value": "LSE Print +"
+          "value": "LSE Print +",
+          "active": true
         },
         {
           "label": "LSE-Digital",
-          "value": "LSE-Digital"
+          "value": "LSE-Digital",
+          "active": true
         },
         {
           "label": "LSE-Print",
-          "value": "LSE-Print"
+          "value": "LSE-Print",
+          "active": true
         },
         {
           "label": "Other",
-          "value": "Other"
+          "value": "Other",
+          "active": true
         },
         {
           "label": "Partner Product",
-          "value": "Partner Product"
+          "value": "Partner Product",
+          "active": true
         },
         {
           "label": "PassAssured",
-          "value": "PassAssured"
+          "value": "PassAssured",
+          "active": true
         },
         {
           "label": "Paxen Focus Digital",
-          "value": "Paxen Focus Digital"
+          "value": "Paxen Focus Digital",
+          "active": true
         },
         {
           "label": "PharmacyTech",
-          "value": "PharmacyTech"
+          "value": "PharmacyTech",
+          "active": true
         },
         {
           "label": "Practice Tests",
-          "value": "Practice Tests"
+          "value": "Practice Tests",
+          "active": true
         },
         {
           "label": "Pre-GED",
-          "value": "Pre-GED"
+          "value": "Pre-GED",
+          "active": true
         },
         {
           "label": "Pre-GED Digital",
-          "value": "Pre-GED Digital"
+          "value": "Pre-GED Digital",
+          "active": true
         },
         {
           "label": "Pre-GED Print",
-          "value": "Pre-GED Print"
+          "value": "Pre-GED Print",
+          "active": true
         },
         {
           "label": "Pre-GED-Digital",
-          "value": "Pre-GED-Digital"
+          "value": "Pre-GED-Digital",
+          "active": true
         },
         {
           "label": "Pre-GED-Print",
-          "value": "Pre-GED-Print"
+          "value": "Pre-GED-Print",
+          "active": true
         },
         {
           "label": "Print",
-          "value": "Print"
+          "value": "Print",
+          "active": true
         },
         {
           "label": "Print +",
-          "value": "Print +"
+          "value": "Print +",
+          "active": true
         },
         {
           "label": "Professional Development Print +",
-          "value": "Professional Development Print +"
+          "value": "Professional Development Print +",
+          "active": true
         },
         {
           "label": "PTTP Digital",
-          "value": "PTTP Digital"
+          "value": "PTTP Digital",
+          "active": true
         },
         {
           "label": "PTTP Print +",
-          "value": "PTTP Print +"
+          "value": "PTTP Print +",
+          "active": true
         },
         {
           "label": "Re-Entry",
-          "value": "Re-Entry"
+          "value": "Re-Entry",
+          "active": true
         },
         {
           "label": "Re-Entry Digital",
-          "value": "Re-Entry Digital"
+          "value": "Re-Entry Digital",
+          "active": true
         },
         {
           "label": "Re-Entry Print",
-          "value": "Re-Entry Print"
+          "value": "Re-Entry Print",
+          "active": true
         },
         {
           "label": "RFW",
-          "value": "RFW"
+          "value": "RFW",
+          "active": true
         },
         {
           "label": "RFW Digital",
-          "value": "RFW Digital"
+          "value": "RFW Digital",
+          "active": true
         },
         {
           "label": "RFW Print",
-          "value": "RFW Print"
+          "value": "RFW Print",
+          "active": true
         },
         {
           "label": "ShippingOther",
-          "value": "ShippingOther"
+          "value": "ShippingOther",
+          "active": true
         },
         {
           "label": "Skills Books Print",
-          "value": "Skills Books Print"
+          "value": "Skills Books Print",
+          "active": true
         },
         {
           "label": "Skills Tutor Digital",
-          "value": "Skills Tutor Digital"
+          "value": "Skills Tutor Digital",
+          "active": true
         },
         {
           "label": "Spanish",
-          "value": "Spanish"
+          "value": "Spanish",
+          "active": true
         },
         {
           "label": "Spanish - Digital",
-          "value": "Spanish - Digital"
+          "value": "Spanish - Digital",
+          "active": true
         },
         {
           "label": "Spanish - Print",
-          "value": "Spanish - Print"
+          "value": "Spanish - Print",
+          "active": true
         },
         {
           "label": "TABE",
-          "value": "TABE"
+          "value": "TABE",
+          "active": true
         },
         {
           "label": "TABE Digital",
-          "value": "TABE Digital"
+          "value": "TABE Digital",
+          "active": true
         },
         {
           "label": "TABE Print",
-          "value": "TABE Print"
+          "value": "TABE Print",
+          "active": true
         },
         {
           "label": "TABE Tutor",
-          "value": "TABE Tutor"
+          "value": "TABE Tutor",
+          "active": true
         },
         {
           "label": "TASC Digital",
-          "value": "TASC Digital"
+          "value": "TASC Digital",
+          "active": true
         },
         {
           "label": "TASC Print",
-          "value": "TASC Print"
+          "value": "TASC Print",
+          "active": true
         },
         {
           "label": "Workforce",
-          "value": "Workforce"
+          "value": "Workforce",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -1447,7 +1592,7 @@
     {
       "fieldName": "Qualified__c",
       "dataType": "boolean",
-      "required": "Yes",
+      "required": "No",
       "relatedTo": "None",
       "maxLength": null,
       "picklistValues": null,
@@ -1495,39 +1640,48 @@
       "picklistValues": [
         {
           "label": "New",
-          "value": "New"
+          "value": "New",
+          "active": true
         },
         {
           "label": "Qualified",
-          "value": "Qualified"
+          "value": "Qualified",
+          "active": true
         },
         {
           "label": "Duplicate Lead",
-          "value": "Duplicate Lead"
+          "value": "Duplicate Lead",
+          "active": true
         },
         {
           "label": "No Immediate Need",
-          "value": "No Immediate Need"
+          "value": "No Immediate Need",
+          "active": true
         },
         {
           "label": "Sent to Web",
-          "value": "Sent to Web"
+          "value": "Sent to Web",
+          "active": true
         },
         {
           "label": "No Budget",
-          "value": "No Budget"
+          "value": "No Budget",
+          "active": true
         },
         {
           "label": "Student/Individual",
-          "value": "Student/Individual"
+          "value": "Student/Individual",
+          "active": true
         },
         {
           "label": "Other",
-          "value": "Other"
+          "value": "Other",
+          "active": true
         },
         {
           "label": "Bad Contact Information",
-          "value": "Bad Contact Information"
+          "value": "Bad Contact Information",
+          "active": true
         }
       ],
       "d365EntityName": null,

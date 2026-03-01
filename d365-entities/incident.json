@@ -8,6 +8,20 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "P6 - Testing Platform",
+          "value": "100000000"
+        },
+        {
+          "label": "P12 - Learning Platform",
+          "value": "100000001"
+        },
+        {
+          "label": "Legacy",
+          "value": "100000003"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -35,6 +49,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Active",
+          "value": "1"
+        },
+        {
+          "label": "Expired",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -62,6 +86,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -116,6 +141,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -211,6 +237,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "No",
+          "value": "0"
+        },
+        {
+          "label": "Yes",
+          "value": "1"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -260,6 +296,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -309,6 +346,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -720,6 +758,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -786,6 +825,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -835,6 +875,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -877,6 +918,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -950,6 +992,52 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Support - Request",
+          "value": "3"
+        },
+        {
+          "label": "Academic",
+          "value": "100000001"
+        },
+        {
+          "label": "Engineering",
+          "value": "100000000"
+        },
+        {
+          "label": "Operational",
+          "value": "327630000"
+        },
+        {
+          "label": "Companion Repair",
+          "value": "327630002"
+        },
+        {
+          "label": "Support - Companion",
+          "value": "327630001"
+        },
+        {
+          "label": "Support - Internal",
+          "value": "1"
+        },
+        {
+          "label": "Support - Online",
+          "value": "2"
+        },
+        {
+          "label": "Professional Development Support",
+          "value": "100000004"
+        },
+        {
+          "label": "Feature Request",
+          "value": "100000002"
+        },
+        {
+          "label": "Content Request",
+          "value": "100000003"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1013,6 +1101,7 @@
       "requiredLevel": "systemrequired",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1246,6 +1335,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "6.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1273,6 +1363,7 @@
       "requiredLevel": "required",
       "isCustom": false,
       "introducedVersion": "6.1.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1344,6 +1435,7 @@
       "requiredLevel": "systemrequired",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1609,6 +1701,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,

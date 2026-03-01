@@ -129,10 +129,25 @@ def parse_field_definitions(entity_el):
 
         schema_name = name_el.text if name_el is not None and name_el.text else ''
         display_name = get_display_name(attr)
+        optionset = attr.find('optionset')
         if not display_name:
-            optionset = attr.find('optionset')
             if optionset is not None:
                 display_name = get_display_name(optionset)
+
+        # Extract picklist/optionset values
+        picklist_values = []
+        if optionset is not None:
+            options_el = optionset.find('options')
+            if options_el is not None:
+                for option in options_el.findall('option'):
+                    value = option.get('value', '')
+                    label = ''
+                    labels_el = option.find('labels')
+                    if labels_el is not None:
+                        label_el = labels_el.find("label[@languagecode='1033']")
+                        if label_el is not None:
+                            label = label_el.get('description', '')
+                    picklist_values.append({'label': label, 'value': value})
 
         fields.append({
             'schema_name': schema_name,
@@ -141,6 +156,7 @@ def parse_field_definitions(entity_el):
             'required_level': req_el.text if req_el is not None and req_el.text else 'none',
             'is_custom': (custom_el.text == '1') if custom_el is not None and custom_el.text else False,
             'introduced_version': version_el.text if version_el is not None and version_el.text else '',
+            'picklist_values': picklist_values,
         })
 
     return sorted(fields, key=lambda f: f['schema_name'].lower())
@@ -2039,8 +2055,8 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     a('')
     a(f'Total fields: **{len(fields)}**')
     a('')
-    a('| # | Schema Name | Display Name | Type | Custom | Required | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |')
-    a('|---|-------------|-------------|------|--------|----------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|')
+    a('| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |')
+    a('|---|-------------|-------------|------|-----------------|--------|----------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|')
     section_cols = [
         ('forms', '#2-forms'),
         ('views', '#3-views'),
@@ -2061,6 +2077,9 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
         custom = 'Yes' if field['is_custom'] else 'No'
         sn = field['schema_name']
         sn_lower = sn.lower()
+        # Picklist values column
+        pv = field.get('picklist_values', [])
+        pv_str = ', '.join(f'{v["value"]}: {v["label"]}' for v in pv) if pv else ''
         # SF mapping columns
         suggested = 'true' if _field_mapping_suggested.get(sn_lower) else 'false'
         sf_data = _sf_mapping.get(sn_lower, {})
@@ -2078,7 +2097,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
             c = refs_for_field.get(key, 0)
             cells.append(f'[{c}]({slug})' if c > 0 else '')
         section_str = ' | '.join(cells)
-        a(f'| {i} | {fl(sn)} | {field["display_name"]} | {field["data_type"]} | {custom} | {field["required_level"]} | {sf_str} | {section_str} |')
+        a(f'| {i} | {fl(sn)} | {field["display_name"]} | {field["data_type"]} | {pv_str} | {custom} | {field["required_level"]} | {sf_str} | {section_str} |')
         ref(sn, '1-field-definitions', 'Field Definitions')
     a('')
 
@@ -2937,6 +2956,7 @@ def process_entity(entity_name, root, output_dir, property_to_field, class_to_en
             'required_level': '',
             'is_custom': field_name.startswith(('azt_', 'ezt_')),
             'introduced_version': '',
+            'picklist_values': [],
         })
 
     fields = sorted(fields, key=lambda f: f['schema_name'].lower())
@@ -2950,8 +2970,13 @@ def process_entity(entity_name, root, output_dir, property_to_field, class_to_en
     print(f"  Fields in code not on forms: {len(conflicts['in_code_not_on_forms'])}")
     print(f"  Fields on forms not in logic: {len(conflicts['on_forms_not_in_logic'])}")
 
-    # SF mapping: write suggestions to CSV, then read CSV as source of truth
+    # SF mapping: compute usage first, then write validated suggestions to CSV
     field_mapping_suggested = {}
+    field_ref_counts = count_field_references(
+        entity_name, forms, views, chart_visualizations,
+        reports, dashboards, workflows, formulas,
+        plugin_refs, controls, relationships, ribbon, conflicts
+    )
     if mapping_dir:
         sf_mapping = load_mapping_csv(mapping_dir, entity_name)
         sf_object = resolve_sf_object(entity_name, mapping_dir, sf_entity_index)
@@ -2960,25 +2985,55 @@ def process_entity(entity_name, root, output_dir, property_to_field, class_to_en
         sf_fields = load_sf_entity_fields(SF_ENTITIES_DIR, sf_object) if sf_object else []
         by_d365_internal, by_d365_suggested, by_name_lower = build_sf_field_lookup(sf_fields)
 
-        # Write suggestions to CSV for any field missing SF data
+        # Write suggestions to CSV only for fields with usage that lack
+        # confirmed mapping; also validate/clean orphan mapping values
         suggestions_added = 0
         for field in fields:
             sn_lower = field['schema_name'].lower()
             if sn_lower not in sf_mapping:
                 sf_mapping[sn_lower] = {col: '' for col in SF_COLUMNS}
             data = sf_mapping[sn_lower]
-            has_existing = any(data.get(c, '') for c in (
-                'sfObjectName', 'sfFieldDisplayName', 'sfFieldApiName',
-                'sfSuggestedObjectName', 'sfSuggestedFieldDisplayName',
-                'sfSuggestedFieldApiName'))
-            if not has_existing and sf_object:
-                sf_display, sf_api = match_sf_field(
-                    field['schema_name'],
-                    by_d365_internal, by_d365_suggested, by_name_lower)
-                data['sfSuggestedObjectName'] = sf_object
-                data['sfSuggestedFieldDisplayName'] = sf_display
-                data['sfSuggestedFieldApiName'] = sf_api
-                suggestions_added += 1
+
+            # Compute whether this field has any usage across all sections
+            refs = field_ref_counts.get(sn_lower, {})
+            has_usage = any(refs.get(k, 0) > 0 for k in refs)
+
+            # Rule 1b: clear sfObjectName if sfFieldDisplayName AND
+            # sfFieldApiName are both empty
+            if data.get('sfObjectName') and not (
+                    data.get('sfFieldDisplayName') and data.get('sfFieldApiName')):
+                data['sfObjectName'] = ''
+
+            # Rule 1a: clear sfSuggested* for fields with zero usage
+            if not has_usage:
+                data['sfSuggestedObjectName'] = ''
+                data['sfSuggestedFieldDisplayName'] = ''
+                data['sfSuggestedFieldApiName'] = ''
+            else:
+                # Rule 1c: clear sfSuggestedObjectName if
+                # sfSuggestedFieldDisplayName AND sfSuggestedFieldApiName
+                # are both empty
+                if data.get('sfSuggestedObjectName') and not (
+                        data.get('sfSuggestedFieldDisplayName') and
+                        data.get('sfSuggestedFieldApiName')):
+                    data['sfSuggestedObjectName'] = ''
+
+                # Rule 1d: generate suggestions for fields with usage that
+                # lack all three confirmed SF columns
+                has_confirmed = all(data.get(c, '') for c in (
+                    'sfObjectName', 'sfFieldDisplayName', 'sfFieldApiName'))
+                has_suggested = all(data.get(c, '') for c in (
+                    'sfSuggestedObjectName', 'sfSuggestedFieldDisplayName',
+                    'sfSuggestedFieldApiName'))
+                if not has_confirmed and not has_suggested and sf_object:
+                    sf_display, sf_api = match_sf_field(
+                        field['schema_name'],
+                        by_d365_internal, by_d365_suggested, by_name_lower)
+                    if sf_display and sf_api:
+                        data['sfSuggestedObjectName'] = sf_object
+                        data['sfSuggestedFieldDisplayName'] = sf_display
+                        data['sfSuggestedFieldApiName'] = sf_api
+                        suggestions_added += 1
 
         update_mapping_csv(mapping_dir, entity_name, sf_mapping)
 
@@ -2986,11 +3041,6 @@ def process_entity(entity_name, root, output_dir, property_to_field, class_to_en
         sf_mapping = load_mapping_csv(mapping_dir, entity_name)
 
         # Compute mapping_suggested (display-only flag, not stored in CSV)
-        field_ref_counts = count_field_references(
-            entity_name, forms, views, chart_visualizations,
-            reports, dashboards, workflows, formulas,
-            plugin_refs, controls, relationships, ribbon, conflicts
-        )
         for field in fields:
             sn_lower = field['schema_name'].lower()
             refs = field_ref_counts.get(sn_lower, {})

@@ -8,6 +8,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -68,6 +78,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -129,6 +149,32 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "1 Day",
+          "value": "276530000"
+        },
+        {
+          "label": "2 Days",
+          "value": "276530001"
+        },
+        {
+          "label": "3 Days",
+          "value": "276530002"
+        },
+        {
+          "label": "1 Week",
+          "value": "276530003"
+        },
+        {
+          "label": "1 Month",
+          "value": "276530004"
+        },
+        {
+          "label": "Specific Date",
+          "value": "276530005"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -190,6 +236,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -251,6 +298,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -311,6 +368,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -371,6 +438,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -420,6 +488,20 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Active",
+          "value": "276530000"
+        },
+        {
+          "label": "Failed",
+          "value": "276530001"
+        },
+        {
+          "label": "Qualified",
+          "value": "276530002"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -447,6 +529,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -989,6 +1072,20 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Connected",
+          "value": "327630000"
+        },
+        {
+          "label": "Left VM",
+          "value": "327630001"
+        },
+        {
+          "label": "No Answer",
+          "value": "327630002"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1035,6 +1132,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1187,6 +1285,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,

@@ -8,6 +8,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -54,6 +64,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -134,6 +154,28 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Kaplan Books",
+          "value": "276530001"
+        },
+        {
+          "label": "Life Skills",
+          "value": "276530000"
+        },
+        {
+          "label": "GED Vouchers",
+          "value": "276530003"
+        },
+        {
+          "label": "Paxen Print",
+          "value": "327630000"
+        },
+        {
+          "label": "Other",
+          "value": "276530002"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -180,6 +222,36 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "ABE",
+          "value": "327630000"
+        },
+        {
+          "label": "HSE",
+          "value": "327630001"
+        },
+        {
+          "label": "College",
+          "value": "327630002"
+        },
+        {
+          "label": "Healthcare",
+          "value": "327630003"
+        },
+        {
+          "label": "Trades",
+          "value": "327630004"
+        },
+        {
+          "label": "Life Skills",
+          "value": "327630005"
+        },
+        {
+          "label": "Work Skills",
+          "value": "327630006"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -222,6 +294,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -273,6 +346,68 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "CASAS",
+          "value": "327630000"
+        },
+        {
+          "label": "CTE Supplemental",
+          "value": "327630007"
+        },
+        {
+          "label": "Comprehensive",
+          "value": "327630002"
+        },
+        {
+          "label": "GED Comprehensive",
+          "value": "327630008"
+        },
+        {
+          "label": "Credential",
+          "value": "327630004"
+        },
+        {
+          "label": "Foundations",
+          "value": "327630011"
+        },
+        {
+          "label": "Fundamentals",
+          "value": "327630010"
+        },
+        {
+          "label": "GED Supplemental",
+          "value": "327630003"
+        },
+        {
+          "label": "HiSET",
+          "value": "327630009"
+        },
+        {
+          "label": "Non Re-entry",
+          "value": "327630006"
+        },
+        {
+          "label": "Pre-HSE",
+          "value": "327630012"
+        },
+        {
+          "label": "Re-entry",
+          "value": "327630005"
+        },
+        {
+          "label": "TABE",
+          "value": "327630001"
+        },
+        {
+          "label": "Vouchers",
+          "value": "327630013"
+        },
+        {
+          "label": "Other",
+          "value": "327630014"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -315,6 +450,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "English",
+          "value": "327630000"
+        },
+        {
+          "label": "Spanish",
+          "value": "327630001"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -357,6 +502,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -410,6 +556,16 @@
       "requiredLevel": "required",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -495,6 +651,28 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Academic",
+          "value": "327630000"
+        },
+        {
+          "label": "Workforce",
+          "value": "327630001"
+        },
+        {
+          "label": "Financial Wellness",
+          "value": "327630002"
+        },
+        {
+          "label": "CTE",
+          "value": "327630003"
+        },
+        {
+          "label": "Other",
+          "value": "327630004"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -537,7 +715,8 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
-      "sfObjectName": "Product",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": "Description",
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -696,6 +875,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "6.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -723,6 +903,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -750,6 +931,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "7.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -808,7 +990,8 @@
       "requiredLevel": "required",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
-      "sfObjectName": "Product",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": "Name",
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -1215,6 +1398,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1260,6 +1444,7 @@
       "requiredLevel": "systemrequired",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1398,6 +1583,20 @@
       "requiredLevel": "systemrequired",
       "isCustom": false,
       "introducedVersion": "7.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Product",
+          "value": "1"
+        },
+        {
+          "label": "Product Family",
+          "value": "2"
+        },
+        {
+          "label": "Product Bundle",
+          "value": "3"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1464,6 +1663,44 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Software",
+          "value": "1"
+        },
+        {
+          "label": "Legacy",
+          "value": "2"
+        },
+        {
+          "label": "Hardware",
+          "value": "3"
+        },
+        {
+          "label": "Books",
+          "value": "4"
+        },
+        {
+          "label": "Life Skills Book",
+          "value": "5"
+        },
+        {
+          "label": "PD",
+          "value": "6"
+        },
+        {
+          "label": "Vouchers",
+          "value": "8"
+        },
+        {
+          "label": "P6",
+          "value": "9"
+        },
+        {
+          "label": "Other",
+          "value": "7"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1561,6 +1798,7 @@
       "requiredLevel": "systemrequired",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,

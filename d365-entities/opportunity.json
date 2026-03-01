@@ -8,6 +8,36 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "A",
+          "value": "276530000"
+        },
+        {
+          "label": "B",
+          "value": "276530001"
+        },
+        {
+          "label": "C",
+          "value": "276530002"
+        },
+        {
+          "label": "D",
+          "value": "100000001"
+        },
+        {
+          "label": "E",
+          "value": "100000000"
+        },
+        {
+          "label": "S",
+          "value": "276530003"
+        },
+        {
+          "label": "N/A",
+          "value": "276530004"
+        }
+      ],
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Account Classification",
       "sfFieldApiName": "CRM_Account_Classification__c",
@@ -122,6 +152,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Add On Opportunity Total",
       "sfFieldApiName": "CRM_Add_On_Opportunity_Total__c",
@@ -179,6 +210,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -206,6 +238,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Assigned AM",
       "sfFieldApiName": "CRM_Assigned_AM__c",
@@ -255,6 +288,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -319,7 +362,8 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
-      "sfObjectName": "Opportunity",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -395,6 +439,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Days Since Probability Changed",
       "sfFieldApiName": "CRM_Days_Since_Probability_Changed__c",
@@ -478,6 +523,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Default Freight Amount",
       "sfFieldApiName": "CRM_Default_Freight_Amount__c",
@@ -565,6 +611,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -592,6 +639,44 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Internet",
+          "value": "276530000"
+        },
+        {
+          "label": "LAN",
+          "value": "276530001"
+        },
+        {
+          "label": "Print",
+          "value": "276530002"
+        },
+        {
+          "label": "LAN & Print",
+          "value": "276530003"
+        },
+        {
+          "label": "Internet & Print",
+          "value": "276530004"
+        },
+        {
+          "label": "Internet Year 2",
+          "value": "276530005"
+        },
+        {
+          "label": "Internet Year 3+",
+          "value": "276530006"
+        },
+        {
+          "label": "SA",
+          "value": "276530007"
+        },
+        {
+          "label": "WAN",
+          "value": "276530008"
+        }
+      ],
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Delivery Type",
       "sfFieldApiName": "CRM_Delivery_Type__c",
@@ -651,6 +736,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Discretionary Discount",
       "sfFieldApiName": "CRM_Discretionary_Discount__c",
@@ -708,6 +794,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -735,6 +822,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -798,6 +886,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -825,6 +914,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -937,6 +1027,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -964,6 +1055,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1047,6 +1148,44 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Annual Budget",
+          "value": "276530000"
+        },
+        {
+          "label": "Discretionary Budget",
+          "value": "276530001"
+        },
+        {
+          "label": "Grant - Federal",
+          "value": "276530002"
+        },
+        {
+          "label": "Grant - Private",
+          "value": "276530003"
+        },
+        {
+          "label": "Grant - State",
+          "value": "276530004"
+        },
+        {
+          "label": "Grant - Perkins",
+          "value": "276530005"
+        },
+        {
+          "label": "Title 1 Funds",
+          "value": "276530006"
+        },
+        {
+          "label": "Other",
+          "value": "276530007"
+        },
+        {
+          "label": "Use or Lose Funds",
+          "value": "276530008"
+        }
+      ],
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "Funding Source",
       "sfFieldApiName": "Funding_Source__c",
@@ -1126,6 +1265,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Historical Owner",
       "sfFieldApiName": "CRM_Historical_Owner__c",
@@ -1173,6 +1313,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Initial Opportunity Total",
       "sfFieldApiName": "CRM_Initial_Opportunity_Total__c",
@@ -1230,6 +1371,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1257,6 +1399,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Internal Aztec Notes",
       "sfFieldApiName": "CRM_Internal_Aztec_Notes__c",
@@ -1306,6 +1449,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Invoice Number",
       "sfFieldApiName": "CRM_Invoice_Number__c",
@@ -1333,6 +1477,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "Cross-Sell",
       "sfFieldApiName": "Cross_Sell__c",
@@ -1385,6 +1539,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "Legacy Last Activity Date",
       "sfFieldApiName": "Legacy_Last_Activity_Date__c",
@@ -1448,6 +1603,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "Legacy Modified By",
       "sfFieldApiName": "Legacy_Modified_By__c",
@@ -1525,12 +1681,13 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Lead Source",
-      "sfSuggestedFieldApiName": "LeadSource",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
       "forms": [],
       "views": [],
       "chartVisualizations": [],
@@ -1552,6 +1709,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Lead Source",
       "sfFieldApiName": "CRM_Lead_Source__c",
@@ -1661,6 +1819,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Opportunity Number",
       "sfFieldApiName": "CRM_Opportunity_Number__c",
@@ -1753,6 +1912,52 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "P12 & Legacy",
+          "value": "276530000"
+        },
+        {
+          "label": "Kaplan Book",
+          "value": "276530001"
+        },
+        {
+          "label": "GED Flash",
+          "value": "276530002"
+        },
+        {
+          "label": "P12 Prep",
+          "value": "276530003"
+        },
+        {
+          "label": "Legacy",
+          "value": "276530004"
+        },
+        {
+          "label": "APT - Free",
+          "value": "276530005"
+        },
+        {
+          "label": "APT - Paid",
+          "value": "276530006"
+        },
+        {
+          "label": "OPT - Free",
+          "value": "276530007"
+        },
+        {
+          "label": "OPT - Paid",
+          "value": "276530008"
+        },
+        {
+          "label": "Workbooks",
+          "value": "276530009"
+        },
+        {
+          "label": "LSE Booklets",
+          "value": "276530010"
+        }
+      ],
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Opportunity Product Category",
       "sfFieldApiName": "CRM_Opportunity_Product_Category__c",
@@ -1963,6 +2168,60 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Renewal",
+          "value": "276530005"
+        },
+        {
+          "label": "Initial",
+          "value": "276530004"
+        },
+        {
+          "label": "Print",
+          "value": "276530002"
+        },
+        {
+          "label": "Add-On",
+          "value": "276530003"
+        },
+        {
+          "label": "Vouchers",
+          "value": "276530001"
+        },
+        {
+          "label": "Pilot",
+          "value": "276530000"
+        },
+        {
+          "label": "Professional Development",
+          "value": "276530008"
+        },
+        {
+          "label": "Monthly",
+          "value": "276530006"
+        },
+        {
+          "label": "Win Back",
+          "value": "100000000"
+        },
+        {
+          "label": "Sample",
+          "value": "327630000"
+        },
+        {
+          "label": "PA",
+          "value": "100000001"
+        },
+        {
+          "label": "Other",
+          "value": "276530007"
+        },
+        {
+          "label": "Add On - Reseller",
+          "value": "327630001"
+        }
+      ],
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "Type",
       "sfFieldApiName": "Type",
@@ -2405,6 +2664,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Other Opportunity Total",
       "sfFieldApiName": "CRM_Other_Opportunity_Total__c",
@@ -2462,6 +2722,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2489,6 +2750,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Parent Opportunity Name",
       "sfFieldApiName": "CRM_Parent_Opportunity_Name__c",
@@ -2548,6 +2810,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Pilot Opportunity Total",
       "sfFieldApiName": "CRM_Pilot_Opportunity_Total__c",
@@ -2605,6 +2868,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2632,6 +2896,44 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Identify",
+          "value": "276530000"
+        },
+        {
+          "label": "Qualified",
+          "value": "276530001"
+        },
+        {
+          "label": "Prospecting",
+          "value": "276530002"
+        },
+        {
+          "label": "Cultivating",
+          "value": "276530003"
+        },
+        {
+          "label": "Proposing",
+          "value": "276530004"
+        },
+        {
+          "label": "Closing",
+          "value": "276530005"
+        },
+        {
+          "label": "Delivering",
+          "value": "276530006"
+        },
+        {
+          "label": "Awaiting Payment",
+          "value": "276530007"
+        },
+        {
+          "label": "Won",
+          "value": "276530008"
+        }
+      ],
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "Stage",
       "sfFieldApiName": "StageName",
@@ -2850,6 +3152,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "276530000"
+        },
+        {
+          "label": "No",
+          "value": "276530001"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2877,6 +3189,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2916,6 +3229,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Print Opportunity Total",
       "sfFieldApiName": "CRM_Print_Opportunity_Total__c",
@@ -2973,6 +3287,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -3000,6 +3315,68 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "1%",
+          "value": "276530010"
+        },
+        {
+          "label": "10%",
+          "value": "276530000"
+        },
+        {
+          "label": "20%",
+          "value": "276530001"
+        },
+        {
+          "label": "30%",
+          "value": "276530002"
+        },
+        {
+          "label": "35%",
+          "value": "100000001"
+        },
+        {
+          "label": "40%",
+          "value": "276530003"
+        },
+        {
+          "label": "50%",
+          "value": "276530004"
+        },
+        {
+          "label": "55%",
+          "value": "100000000"
+        },
+        {
+          "label": "60%",
+          "value": "276530005"
+        },
+        {
+          "label": "70%",
+          "value": "276530006"
+        },
+        {
+          "label": "75%",
+          "value": "100530010"
+        },
+        {
+          "label": "80%",
+          "value": "276530007"
+        },
+        {
+          "label": "90%",
+          "value": "276530008"
+        },
+        {
+          "label": "95%",
+          "value": "327630000"
+        },
+        {
+          "label": "99%",
+          "value": "276530009"
+        }
+      ],
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Probability",
       "sfFieldApiName": "CRM_Probability__c",
@@ -3308,6 +3685,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "Probability Last Changed",
       "sfFieldApiName": "Probability_Last_Changed__c",
@@ -3400,6 +3778,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -3447,6 +3835,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "276530000"
+        },
+        {
+          "label": "No",
+          "value": "276530001"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -3474,6 +3872,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "Record Owner",
       "sfFieldApiName": "OwnerId",
@@ -4511,6 +4910,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "Renewal Notes",
       "sfFieldApiName": "Renewal_Notes__c",
@@ -4563,6 +4963,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Renewal Opportunity Total",
       "sfFieldApiName": "CRM_Renewal_Opportunity_Total__c",
@@ -4620,6 +5021,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -4647,6 +5049,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Requested Freight Amount",
       "sfFieldApiName": "CRM_Requested_Freight_Amount__c",
@@ -4730,6 +5133,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -4757,7 +5161,8 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
-      "sfObjectName": "Opportunity",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -4794,6 +5199,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "276530000"
+        },
+        {
+          "label": "No",
+          "value": "276530001"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -4821,6 +5236,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Win Back Opportunity Total",
       "sfFieldApiName": "CRM_Win_Back_Opportunity_Total__c",
@@ -4878,6 +5294,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -4905,6 +5322,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Probability Number",
       "sfFieldApiName": "CRM_Probability_Number__c",
@@ -5004,7 +5422,8 @@
       "requiredLevel": "required",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
-      "sfObjectName": "Opportunity",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -5494,6 +5913,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "Close Date",
       "sfFieldApiName": "CRM_Estimated_Close_Date__c",
@@ -6138,6 +6558,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Estimated Revenue",
       "sfFieldApiName": "CRM_Estimated_Revenue__c",
@@ -6528,6 +6949,16 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": [
+        {
+          "label": "System Calculated",
+          "value": "1"
+        },
+        {
+          "label": "User Provided",
+          "value": "0"
+        }
+      ],
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Revenue",
       "sfFieldApiName": "CRM_Revenue__c",
@@ -6595,12 +7026,13 @@
       "requiredLevel": "required",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
+      "sfSuggestedObjectName": "Opportunity",
+      "sfSuggestedFieldDisplayName": "Name",
+      "sfSuggestedFieldApiName": "Name",
       "forms": [
         {
           "formName": "iGrad",
@@ -7413,6 +7845,7 @@
       "requiredLevel": "systemrequired",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "Record Type",
       "sfFieldApiName": "RecordTypeId",
@@ -8027,6 +8460,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -8256,6 +8690,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "Contact name",
       "sfFieldApiName": "ContactId",
@@ -8401,6 +8836,7 @@
       "requiredLevel": "required",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "Price Book",
       "sfFieldApiName": "Pricebook2Id",
@@ -8515,6 +8951,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -8542,6 +8979,7 @@
       "requiredLevel": "systemrequired",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Opportunity",
       "sfFieldDisplayName": "CRM Status",
       "sfFieldApiName": "CRM_Status__c",
@@ -9179,6 +9617,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,

@@ -8,6 +8,56 @@
       "requiredLevel": "required",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Conference Call",
+          "value": "100000000"
+        },
+        {
+          "label": "Offsite Cold Call",
+          "value": "100000001"
+        },
+        {
+          "label": "Onsite Customer Service",
+          "value": "100000002"
+        },
+        {
+          "label": "Onsite Meeting",
+          "value": "100000003"
+        },
+        {
+          "label": "Onsite Presentation",
+          "value": "100000004"
+        },
+        {
+          "label": "Onsite Technical",
+          "value": "100000005"
+        },
+        {
+          "label": "Onsite Training",
+          "value": "100000006"
+        },
+        {
+          "label": "Other",
+          "value": "100000010"
+        },
+        {
+          "label": "Trade Show",
+          "value": "293130000"
+        },
+        {
+          "label": "Web Implementation",
+          "value": "100000007"
+        },
+        {
+          "label": "Web Training",
+          "value": "100000008"
+        },
+        {
+          "label": "Webinar",
+          "value": "100000009"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -288,6 +338,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -337,6 +388,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -390,6 +451,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -449,6 +511,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1329,6 +1392,28 @@
       "requiredLevel": "systemrequired",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Not Recurring",
+          "value": "0"
+        },
+        {
+          "label": "Recurring Master",
+          "value": "1"
+        },
+        {
+          "label": "Recurring Instance",
+          "value": "2"
+        },
+        {
+          "label": "Recurring Exception",
+          "value": "3"
+        },
+        {
+          "label": "Recurring Future Exception",
+          "value": "4"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1374,6 +1459,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,

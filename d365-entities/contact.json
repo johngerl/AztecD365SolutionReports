@@ -8,7 +8,8 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
-      "sfObjectName": "Contact",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -93,7 +94,8 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
-      "sfObjectName": "Contact",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -166,7 +168,8 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
-      "sfObjectName": "Contact",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -224,7 +227,8 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
-      "sfObjectName": "Contact",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -297,7 +301,8 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
-      "sfObjectName": "Contact",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -442,6 +447,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -486,6 +492,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -530,6 +537,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -583,6 +591,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -618,6 +636,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -653,6 +681,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -721,6 +759,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Contact",
       "sfFieldDisplayName": "Phone Extension",
       "sfFieldApiName": "Phone_Ext__c",
@@ -780,6 +819,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -815,6 +864,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Contact",
       "sfFieldDisplayName": "Contact Owner",
       "sfFieldApiName": "OwnerId",
@@ -1209,6 +1259,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1243,6 +1294,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1277,6 +1329,7 @@
       "requiredLevel": "required",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Contact",
       "sfFieldDisplayName": "Account name",
       "sfFieldApiName": "AccountId",
@@ -1429,6 +1482,7 @@
       "requiredLevel": "systemrequired",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1701,6 +1755,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,

@@ -8,6 +8,7 @@
       "requiredLevel": "required",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "Account",
       "sfFieldApiName": "AccountId",
@@ -293,6 +294,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -363,6 +365,28 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "NUC-3.1",
+          "value": "100000001"
+        },
+        {
+          "label": "NUC-3",
+          "value": "100000000"
+        },
+        {
+          "label": "NUC-2",
+          "value": "276530002"
+        },
+        {
+          "label": "NUC-1.5",
+          "value": "276530001"
+        },
+        {
+          "label": "NUC-1",
+          "value": "276530000"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -419,6 +443,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -461,7 +486,17 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
-      "sfObjectName": "Assets",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -503,7 +538,8 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
-      "sfObjectName": "Assets",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -552,6 +588,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "CRM Certificate Signed By",
       "sfFieldApiName": "CRM_Certificate_Signed_By__c",
@@ -601,6 +638,7 @@
       "requiredLevel": "required",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "Quantity",
       "sfFieldApiName": "Quantity",
@@ -766,6 +804,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "Contact",
       "sfFieldApiName": "ContactId",
@@ -822,6 +861,20 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "X86",
+          "value": "276530000"
+        },
+        {
+          "label": "X64",
+          "value": "276530001"
+        },
+        {
+          "label": "IA64",
+          "value": "276530002"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -864,6 +917,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "CRM Donation License",
       "sfFieldApiName": "CRM_Donation_License__c",
@@ -906,6 +969,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "CRM Eligible Computers",
       "sfFieldApiName": "CRM_Eligible_Computers__c",
@@ -948,6 +1012,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "CRM License Status",
       "sfFieldApiName": "CRM_License_Status__c",
@@ -1107,7 +1172,8 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
-      "sfObjectName": "Assets",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -1325,6 +1391,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "License Type",
       "sfFieldApiName": "License_Type__c",
@@ -1654,6 +1721,7 @@
       "requiredLevel": "required",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "Asset Name",
       "sfFieldApiName": "Name",
@@ -2041,6 +2109,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "CRM Notes",
       "sfFieldApiName": "CRM_Notes__c",
@@ -2083,6 +2152,20 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "4 GB",
+          "value": "276530000"
+        },
+        {
+          "label": "8 GB",
+          "value": "276530001"
+        },
+        {
+          "label": "16 GB",
+          "value": "276530002"
+        }
+      ],
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "NUC RAM",
       "sfFieldApiName": "NUC_RAM__c",
@@ -2139,6 +2222,144 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "10.0",
+          "value": "276530006"
+        },
+        {
+          "label": "11.0",
+          "value": "276530007"
+        },
+        {
+          "label": "11.3",
+          "value": "276530008"
+        },
+        {
+          "label": "11.4",
+          "value": "276530009"
+        },
+        {
+          "label": "163",
+          "value": "100000010"
+        },
+        {
+          "label": "164",
+          "value": "100000011"
+        },
+        {
+          "label": "165",
+          "value": "100000012"
+        },
+        {
+          "label": "166",
+          "value": "100000013"
+        },
+        {
+          "label": "167",
+          "value": "100000014"
+        },
+        {
+          "label": "21.1",
+          "value": "276530010"
+        },
+        {
+          "label": "22.2",
+          "value": "276530011"
+        },
+        {
+          "label": "24",
+          "value": "276530003"
+        },
+        {
+          "label": "30",
+          "value": "276530002"
+        },
+        {
+          "label": "30.0.1",
+          "value": "276530001"
+        },
+        {
+          "label": "31.0",
+          "value": "276530000"
+        },
+        {
+          "label": "52",
+          "value": "100000004"
+        },
+        {
+          "label": "53",
+          "value": "100000005"
+        },
+        {
+          "label": "54",
+          "value": "100000006"
+        },
+        {
+          "label": "63",
+          "value": "100000009"
+        },
+        {
+          "label": "7.03",
+          "value": "276530004"
+        },
+        {
+          "label": "9.5",
+          "value": "276530005"
+        },
+        {
+          "label": "CZ180",
+          "value": "100000020"
+        },
+        {
+          "label": "CZ180b",
+          "value": "100000021"
+        },
+        {
+          "label": "CZ401",
+          "value": "100000019"
+        },
+        {
+          "label": "CZ402",
+          "value": "100000018"
+        },
+        {
+          "label": "CZ403",
+          "value": "100000017"
+        },
+        {
+          "label": "CZ410",
+          "value": "100000016"
+        },
+        {
+          "label": "CZ414",
+          "value": "100000015"
+        },
+        {
+          "label": "FL61",
+          "value": "100000007"
+        },
+        {
+          "label": "FL62a",
+          "value": "100000008"
+        },
+        {
+          "label": "V55",
+          "value": "100000000"
+        },
+        {
+          "label": "V56",
+          "value": "100000001"
+        },
+        {
+          "label": "V58",
+          "value": "100000003"
+        },
+        {
+          "label": "VFL57",
+          "value": "100000002"
+        }
+      ],
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "NUC Version",
       "sfFieldApiName": "NUC_Version__c",
@@ -2195,6 +2416,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2222,6 +2453,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2249,6 +2490,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2276,6 +2527,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2303,6 +2564,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2330,6 +2601,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2357,6 +2638,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2384,6 +2675,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2411,6 +2712,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2438,6 +2749,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2465,6 +2786,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2492,6 +2823,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2519,6 +2860,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2546,6 +2897,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2573,6 +2934,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "Order",
       "sfFieldApiName": "Order__c",
@@ -2633,6 +2995,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "CRM Parent Account",
       "sfFieldApiName": "CRM_Parent_Account__c",
@@ -2689,6 +3052,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "License Activation Date",
       "sfFieldApiName": "License_Activation_Date__c",
@@ -2856,7 +3220,8 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
-      "sfObjectName": "Assets",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -3228,6 +3593,7 @@
       "requiredLevel": "systemrequired",
       "isCustom": false,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -3417,7 +3783,8 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
-      "sfObjectName": "Assets",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -3574,6 +3941,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "Serial Number",
       "sfFieldApiName": "SerialNumber",
@@ -3616,6 +3984,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "Software Version Type",
       "sfFieldApiName": "Software_Version_Type__c",
@@ -3678,7 +4047,37 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
-      "sfObjectName": "Assets",
+      "picklistValues": [
+        {
+          "label": "Aztec - Active",
+          "value": "276530000"
+        },
+        {
+          "label": "Aztec - Inactive",
+          "value": "276530001"
+        },
+        {
+          "label": "Original",
+          "value": "276530002"
+        },
+        {
+          "label": "P-12",
+          "value": "276530003"
+        },
+        {
+          "label": "P6-Free",
+          "value": "276530004"
+        },
+        {
+          "label": "P6-Paid",
+          "value": "276530005"
+        },
+        {
+          "label": "Pilot",
+          "value": "276530006"
+        }
+      ],
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -3720,7 +4119,8 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
-      "sfObjectName": "Assets",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -3786,6 +4186,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "License End Date",
       "sfFieldApiName": "License_End_Date__c",
@@ -4032,6 +4433,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "Total Users",
       "sfFieldApiName": "Total_Users__c",
@@ -4074,6 +4476,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "Username",
       "sfFieldApiName": "Username__c",
@@ -4123,6 +4526,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "Voucher Issued",
       "sfFieldApiName": "Voucher_Issued__c",
@@ -4175,6 +4588,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "Voucher Issued By",
       "sfFieldApiName": "Voucher_Issued_By__c",
@@ -4227,6 +4641,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "Voucher Issued On",
       "sfFieldApiName": "Voucher_Issued_On__c",
@@ -4279,6 +4694,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "Voucher #",
       "sfFieldApiName": "Voucher__c",
@@ -4321,6 +4737,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "Asset Owner",
       "sfFieldApiName": "OwnerId",
@@ -4485,6 +4902,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "CRM Created On",
       "sfFieldApiName": "CRM_Created_On__c",
@@ -4679,6 +5097,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -4706,6 +5125,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -4733,6 +5153,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "CRM Modified By",
       "sfFieldApiName": "CRM_Modified_By__c",
@@ -4782,6 +5203,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "CRM Modified On",
       "sfFieldApiName": "CRM_Modified_On__c",
@@ -4842,6 +5264,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -4869,6 +5292,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -4896,6 +5320,7 @@
       "requiredLevel": "systemrequired",
       "isCustom": false,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "Record Type",
       "sfFieldApiName": "RecordTypeId",
@@ -5265,6 +5690,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Assets",
       "sfFieldDisplayName": "CRM Owning Business Unit",
       "sfFieldApiName": "CRM_Owning_Business_Unit__c",
@@ -5299,6 +5725,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -5351,6 +5778,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -5393,6 +5821,7 @@
       "requiredLevel": "systemrequired",
       "isCustom": false,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": "CRM Status",
       "sfFieldApiName": null,
@@ -5659,7 +6088,8 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "1.0.0.0",
-      "sfObjectName": "Assets",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -5824,6 +6254,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -5851,6 +6282,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,

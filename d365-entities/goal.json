@@ -8,6 +8,48 @@
       "requiredLevel": "recommended",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Actual SaaS",
+          "value": "327630000"
+        },
+        {
+          "label": "Actual Print",
+          "value": "327630001"
+        },
+        {
+          "label": "Actual Combined",
+          "value": "327630002"
+        },
+        {
+          "label": "SaaS Opportunity",
+          "value": "327630003"
+        },
+        {
+          "label": "Print Opportunity",
+          "value": "327630004"
+        },
+        {
+          "label": "Initial",
+          "value": "327630005"
+        },
+        {
+          "label": "Add-On",
+          "value": "327630006"
+        },
+        {
+          "label": "Win-Back",
+          "value": "327630007"
+        },
+        {
+          "label": "Renewals",
+          "value": "327630008"
+        },
+        {
+          "label": "Print +",
+          "value": "327630009"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -74,6 +116,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -127,6 +179,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,

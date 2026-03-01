@@ -8,6 +8,68 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "9.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Processed",
+          "value": "276530000"
+        },
+        {
+          "label": "No Funding Available",
+          "value": "276530001"
+        },
+        {
+          "label": "Lost to Competitor",
+          "value": "276530002"
+        },
+        {
+          "label": "No Test Prep Offered",
+          "value": "276530003"
+        },
+        {
+          "label": "No Computers/Technology",
+          "value": "276530004"
+        },
+        {
+          "label": "Customer Unresponsive",
+          "value": "276530005"
+        },
+        {
+          "label": "Change in Decision Maker/Champion",
+          "value": "276530006"
+        },
+        {
+          "label": "Organization Shut Down",
+          "value": "276530007"
+        },
+        {
+          "label": "Other",
+          "value": "276530008"
+        },
+        {
+          "label": "Bulk Loss Older than 1 Year",
+          "value": "276530009"
+        },
+        {
+          "label": "In Progress",
+          "value": "1"
+        },
+        {
+          "label": "On Hold",
+          "value": "2"
+        },
+        {
+          "label": "Won",
+          "value": "3"
+        },
+        {
+          "label": "Selected another Aztec Opportunity",
+          "value": "4"
+        },
+        {
+          "label": "Too Expensive",
+          "value": "5"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -35,6 +97,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,

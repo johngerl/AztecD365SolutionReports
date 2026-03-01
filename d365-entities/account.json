@@ -8,6 +8,52 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": [
+        {
+          "label": "A",
+          "value": "1"
+        },
+        {
+          "label": "B",
+          "value": "276530000"
+        },
+        {
+          "label": "C",
+          "value": "276530001"
+        },
+        {
+          "label": "D",
+          "value": "100000001"
+        },
+        {
+          "label": "E",
+          "value": "100000000"
+        },
+        {
+          "label": "S",
+          "value": "276530002"
+        },
+        {
+          "label": "N/A",
+          "value": "276530003"
+        },
+        {
+          "label": "aa",
+          "value": "276530004"
+        },
+        {
+          "label": "bb",
+          "value": "276530005"
+        },
+        {
+          "label": "cc",
+          "value": "276530006"
+        },
+        {
+          "label": "ss",
+          "value": "276530007"
+        }
+      ],
       "sfObjectName": "Account",
       "sfFieldDisplayName": "CRM Account Classification",
       "sfFieldApiName": "CRM_Account_Classification__c",
@@ -136,6 +182,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -170,7 +217,25 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
-      "sfObjectName": "Account",
+      "picklistValues": [
+        {
+          "label": "Physical",
+          "value": "3"
+        },
+        {
+          "label": "Bill To",
+          "value": "1"
+        },
+        {
+          "label": "Ship To",
+          "value": "2"
+        },
+        {
+          "label": "Other",
+          "value": "4"
+        }
+      ],
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -273,7 +338,8 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
-      "sfObjectName": "Account",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -454,7 +520,8 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "6.0.0.0",
-      "sfObjectName": "Account",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -496,7 +563,8 @@
       "requiredLevel": "recommended",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
-      "sfObjectName": "Account",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -569,6 +637,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -606,6 +675,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -640,6 +710,16 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": [
+        {
+          "label": "FOB",
+          "value": "1"
+        },
+        {
+          "label": "No Charge",
+          "value": "2"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -667,12 +747,13 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
-      "sfSuggestedObjectName": "Account",
-      "sfSuggestedFieldDisplayName": "Billing Latitude",
-      "sfSuggestedFieldApiName": "BillingLatitude",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
       "forms": [],
       "views": [],
       "chartVisualizations": [],
@@ -694,7 +775,8 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
-      "sfObjectName": "Account",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -772,6 +854,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -840,6 +923,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -867,12 +951,13 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
-      "sfSuggestedObjectName": "Account",
-      "sfSuggestedFieldDisplayName": "Billing Longitude",
-      "sfSuggestedFieldApiName": "BillingLongitude",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
       "forms": [],
       "views": [],
       "chartVisualizations": [],
@@ -894,7 +979,8 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
-      "sfObjectName": "Account",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -987,6 +1073,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1060,6 +1147,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1087,6 +1175,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1114,6 +1203,36 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Airborne",
+          "value": "1"
+        },
+        {
+          "label": "DHL",
+          "value": "2"
+        },
+        {
+          "label": "FedEx",
+          "value": "3"
+        },
+        {
+          "label": "UPS",
+          "value": "4"
+        },
+        {
+          "label": "Postal Mail",
+          "value": "5"
+        },
+        {
+          "label": "Full Load",
+          "value": "6"
+        },
+        {
+          "label": "Will Call",
+          "value": "7"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1171,7 +1290,8 @@
       "requiredLevel": "recommended",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
-      "sfObjectName": "Account",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -1417,6 +1537,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1456,6 +1577,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1483,6 +1605,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1510,6 +1633,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1537,6 +1661,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1564,7 +1689,25 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
-      "sfObjectName": "Account",
+      "picklistValues": [
+        {
+          "label": "Physical",
+          "value": "3"
+        },
+        {
+          "label": "Bill To",
+          "value": "1"
+        },
+        {
+          "label": "Ship To",
+          "value": "2"
+        },
+        {
+          "label": "Other",
+          "value": "4"
+        }
+      ],
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -1635,6 +1778,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "BillingCity",
       "sfFieldApiName": "BillingCity",
@@ -1662,7 +1806,8 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "6.0.0.0",
-      "sfObjectName": "Account",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -1689,6 +1834,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "BillingCountry",
       "sfFieldApiName": "BillingCountry",
@@ -1726,6 +1872,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1763,6 +1910,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1790,6 +1938,12 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Default Value",
+          "value": "1"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1817,12 +1971,13 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
-      "sfSuggestedObjectName": "Account",
-      "sfSuggestedFieldDisplayName": "Shipping Latitude",
-      "sfSuggestedFieldApiName": "ShippingLatitude",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
       "forms": [],
       "views": [],
       "chartVisualizations": [],
@@ -1844,6 +1999,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "BillingStreet",
       "sfFieldApiName": "BillingStreet",
@@ -1880,6 +2036,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1907,6 +2064,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -1934,12 +2092,13 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
-      "sfSuggestedObjectName": "Account",
-      "sfSuggestedFieldDisplayName": "Shipping Longitude",
-      "sfSuggestedFieldApiName": "ShippingLongitude",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
       "forms": [],
       "views": [],
       "chartVisualizations": [],
@@ -1961,7 +2120,8 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
-      "sfObjectName": "Account",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -2017,6 +2177,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "BillingPostalCode",
       "sfFieldApiName": "BillingPostalCode",
@@ -2044,6 +2205,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2071,6 +2233,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2098,6 +2261,12 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Default Value",
+          "value": "1"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2155,6 +2324,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "BillingState",
       "sfFieldApiName": "BillingState",
@@ -2182,6 +2352,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2209,6 +2380,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2236,6 +2408,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2263,6 +2436,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2290,6 +2464,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2317,6 +2492,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "Account Alert",
       "sfFieldApiName": "Account_Alert__c",
@@ -2379,6 +2555,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2424,12 +2601,13 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
-      "sfSuggestedObjectName": "Account",
-      "sfSuggestedFieldDisplayName": "AccountNumber",
-      "sfSuggestedFieldApiName": "AccountNumber",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
       "forms": [],
       "views": [],
       "chartVisualizations": [],
@@ -2451,6 +2629,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2512,6 +2691,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "CRM Account Spend (Base)",
       "sfFieldApiName": "CRM_Account_Spend__c",
@@ -2539,6 +2719,44 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Active Account",
+          "value": "276530000"
+        },
+        {
+          "label": "Expired Account",
+          "value": "276530001"
+        },
+        {
+          "label": "Prospect",
+          "value": "276530007"
+        },
+        {
+          "label": "Trade Show",
+          "value": "276530005"
+        },
+        {
+          "label": "Partner",
+          "value": "276530003"
+        },
+        {
+          "label": "Vendor",
+          "value": "276530006"
+        },
+        {
+          "label": "Pilot",
+          "value": "276530004"
+        },
+        {
+          "label": "Other",
+          "value": "276530002"
+        },
+        {
+          "label": "Active",
+          "value": "100000000"
+        }
+      ],
       "sfObjectName": "Account",
       "sfFieldDisplayName": "Account Status",
       "sfFieldApiName": "Account_Status__c",
@@ -2700,6 +2918,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.1",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2763,6 +2982,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2809,6 +3029,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2861,6 +3091,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2920,6 +3151,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -2979,6 +3211,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -3038,6 +3280,7 @@
       "requiredLevel": "recommended",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "Customer Number",
       "sfFieldApiName": "Customer_Number__c",
@@ -3170,6 +3413,20 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Aztec",
+          "value": "276530000"
+        },
+        {
+          "label": "Life Skills",
+          "value": "276530001"
+        },
+        {
+          "label": "Aztec & Life Skills",
+          "value": "276530002"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -3222,6 +3479,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -3249,6 +3507,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -3284,6 +3543,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -3362,6 +3631,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "Executive Summary",
       "sfFieldApiName": "Executive_Summary__c",
@@ -3421,6 +3691,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "Ext",
       "sfFieldApiName": "Ext__c",
@@ -3477,6 +3748,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "Fiscal Year End",
       "sfFieldApiName": "Fiscal_Year_End__c",
@@ -3519,6 +3791,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "FSR Admin Password",
       "sfFieldApiName": "FSR_Admin_Password__c",
@@ -3546,6 +3819,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "FSR Admin Username",
       "sfFieldApiName": "FSR_Admin_Username__c",
@@ -3573,6 +3847,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -3600,6 +3884,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -3627,6 +3921,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -3686,6 +3981,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -3713,6 +4018,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -3748,6 +4063,20 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "0"
+        },
+        {
+          "label": "No",
+          "value": "1"
+        },
+        {
+          "label": "Possible",
+          "value": "2"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -3783,6 +4112,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -3810,6 +4149,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -3862,6 +4202,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "CRM Last Print Purchase",
       "sfFieldApiName": "CRM_Last_Print_Purchase__c",
@@ -3979,6 +4320,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "CRM Last SaaS Purchase",
       "sfFieldApiName": "CRM_Last_SaaS_Purchase__c",
@@ -4096,6 +4438,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -4148,6 +4491,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -4195,6 +4539,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -4222,6 +4567,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "Account Source",
       "sfFieldApiName": "AccountSource",
@@ -4333,6 +4679,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -4360,6 +4716,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "CRM Non-SaaS Status",
       "sfFieldApiName": "Non_SaaS_Status__c",
@@ -4423,6 +4780,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "# Computers",
       "sfFieldApiName": "NumofComputers__c",
@@ -4465,6 +4823,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "# Students",
       "sfFieldApiName": "NumofStudents__c",
@@ -4517,6 +4876,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -4559,6 +4919,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -4611,6 +4972,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -4638,6 +5000,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -4680,6 +5043,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -4707,6 +5071,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -4749,6 +5114,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -4776,6 +5142,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -4825,6 +5192,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -4887,6 +5255,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "Record Owner",
       "sfFieldApiName": "OwnerId",
@@ -5317,6 +5686,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "CRM SaaS Status",
       "sfFieldApiName": "CRM_SaaS_Status__c",
@@ -5380,6 +5750,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -5422,6 +5793,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -5449,6 +5830,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -5501,6 +5883,16 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "0"
+        }
+      ],
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -5528,12 +5920,13 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
-      "sfSuggestedObjectName": "Account",
-      "sfSuggestedFieldDisplayName": "Type",
-      "sfSuggestedFieldApiName": "Type",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
       "forms": [],
       "views": [],
       "chartVisualizations": [],
@@ -5555,7 +5948,8 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
-      "sfObjectName": "Account",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": "Industry",
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -5665,6 +6059,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -5712,6 +6107,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -5739,6 +6135,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -5786,6 +6183,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -5813,6 +6211,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -5872,6 +6271,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -5906,6 +6306,7 @@
       "requiredLevel": "required",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "Account Name",
       "sfFieldApiName": "Name",
@@ -6566,6 +6967,7 @@
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -6625,6 +7027,7 @@
       "requiredLevel": "systemrequired",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "Record type",
       "sfFieldApiName": "RecordType",
@@ -7043,6 +7446,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "ParentId",
       "sfFieldApiName": "ParentId",
@@ -7242,6 +7646,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -7316,6 +7721,7 @@
       "requiredLevel": "systemrequired",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
       "sfFieldApiName": null,
@@ -7679,7 +8085,8 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
-      "sfObjectName": "Account",
+      "picklistValues": null,
+      "sfObjectName": null,
       "sfFieldDisplayName": "Phone",
       "sfFieldApiName": null,
       "sfSuggestedObjectName": null,
@@ -7946,6 +8353,7 @@
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "picklistValues": null,
       "sfObjectName": "Account",
       "sfFieldDisplayName": "Other Phone",
       "sfFieldApiName": "OtherPhone__c",

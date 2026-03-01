@@ -497,6 +497,7 @@ def enrich_entity(entity_name, root, property_to_field, class_to_entity, mapping
         fn_lower = fdef['schema_name'].lower()
 
         # Base field properties from customizations.xml
+        pv = fdef.get('picklist_values')
         field_out = {
             'fieldName': fdef['schema_name'],
             'displayName': fdef['display_name'],
@@ -504,6 +505,7 @@ def enrich_entity(entity_name, root, property_to_field, class_to_entity, mapping
             'requiredLevel': fdef['required_level'],
             'isCustom': fdef['is_custom'],
             'introducedVersion': fdef['introduced_version'],
+            'picklistValues': pv if pv else None,
         }
 
         # SF mapping from CSV (null if no mapping row exists)

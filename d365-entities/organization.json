@@ -1,4 +1,11 @@
 {
   "entityName": "organization",
+  "displayName": "",
+  "description": "",
+  "objectType": "Standard",
+  "ownershipType": "",
+  "auditEnabled": false,
+  "primaryIdField": "organizationid",
+  "primaryNameField": null,
   "fields": []
 }

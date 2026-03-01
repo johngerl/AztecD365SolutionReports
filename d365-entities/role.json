@@ -1,4 +1,11 @@
 {
   "entityName": "role",
+  "displayName": "",
+  "description": "",
+  "objectType": "Standard",
+  "ownershipType": "BusinessOwned",
+  "auditEnabled": true,
+  "primaryIdField": "roleid",
+  "primaryNameField": null,
   "fields": []
 }

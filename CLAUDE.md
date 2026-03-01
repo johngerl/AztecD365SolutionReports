@@ -152,6 +152,83 @@ Each `mapping/{entity}.csv` contains one row per D365 field with these columns:
 
 ---
 
+## D365 Entity JSON Schema
+
+Each `d365-entities/{entity}.json` contains:
+
+```json
+{
+  "entityName": "account",
+  "displayName": "Account",
+  "description": "Business that represents a customer or potential customer.",
+  "objectType": "Standard|Custom",
+  "ownershipType": "UserOwned",
+  "auditEnabled": true,
+  "primaryIdField": "accountid",
+  "primaryNameField": "name",
+  "fields": [
+    {
+      "fieldName": "accountnumber",
+      "displayName": "Account Number",
+      "description": "Type an ID number or code for the account.",
+      "dataType": "nvarchar",
+      "requiredLevel": "none",
+      "isCustom": false,
+      "introducedVersion": "5.0.0.0",
+      "maxLength": 20,
+      "fieldSecurity": false,
+      "auditEnabled": true,
+      "relatedTo": null,
+      "picklistValues": null,
+      "sfObjectName": null,
+      "sfFieldDisplayName": null,
+      "sfFieldApiName": null,
+      "sfSuggestedObjectName": "Account",
+      "sfSuggestedFieldDisplayName": "Account Number",
+      "sfSuggestedFieldApiName": "AccountNumber",
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "javaScript": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [],
+      "ribbon": [],
+      "conflicts": []
+    }
+  ]
+}
+```
+
+### Entity-level properties
+
+| Property | Source | Description |
+|---|---|---|
+| `entityName` | customizations.xml | D365 entity schema name (lowercase) |
+| `displayName` | `<LocalizedNames>` | English display name of the entity |
+| `description` | `<Descriptions>` | English description of the entity |
+| `objectType` | Derived | `"Custom"` if entity starts with `azt_`, else `"Standard"` |
+| `ownershipType` | `<OwnershipTypeMask>` | Ownership model (e.g., `UserOwned`, `OrganizationOwned`) |
+| `auditEnabled` | `<IsAuditEnabled>` | Whether entity-level auditing is enabled |
+| `primaryIdField` | Convention | `{entityname}id` |
+| `primaryNameField` | `<DisplayMask>` | Field whose DisplayMask contains `PrimaryName` |
+
+### Per-field properties
+
+| Property | Source | Description |
+|---|---|---|
+| `description` | Field `<Descriptions>` | English description of the field |
+| `maxLength` | `<MaxLength>` | Maximum string length (int or null) |
+| `fieldSecurity` | `<IsSecured>` | Whether field-level security is enabled |
+| `auditEnabled` | Field `<IsAuditEnabled>` | Whether field-level auditing is enabled |
+| `relatedTo` | Relationships section | Referenced entity name from first relationship, or null |
+
+---
+
 ## Salesforce Entity JSON Schema
 
 Each `salesforce-entities/{object}.json` contains:

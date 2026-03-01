@@ -1,4 +1,11 @@
 {
   "entityName": "connectionrole",
+  "displayName": "",
+  "description": "",
+  "objectType": "Standard",
+  "ownershipType": "",
+  "auditEnabled": false,
+  "primaryIdField": "connectionroleid",
+  "primaryNameField": null,
   "fields": []
 }

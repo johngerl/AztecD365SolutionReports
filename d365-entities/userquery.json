@@ -1,4 +1,11 @@
 {
   "entityName": "userquery",
+  "displayName": "",
+  "description": "",
+  "objectType": "Standard",
+  "ownershipType": "",
+  "auditEnabled": false,
+  "primaryIdField": "userqueryid",
+  "primaryNameField": null,
   "fields": []
 }

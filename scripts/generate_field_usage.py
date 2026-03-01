@@ -108,6 +108,25 @@ def get_display_name(el):
     return ''
 
 
+def get_description(el):
+    """Extract English description from <Descriptions><Description> child."""
+    container = el.find('Descriptions')
+    if container is None:
+        return ''
+    for desc in container.findall('Description'):
+        if desc.get('languagecode') == '1033':
+            return desc.get('description', '')
+    return ''
+
+
+def text_of(el, tag, default=''):
+    """Return text content of a direct child element, or default."""
+    child = el.find(tag)
+    if child is not None and child.text:
+        return child.text
+    return default
+
+
 # ---------------------------------------------------------------------------
 # 1. FIELD DEFINITIONS
 # ---------------------------------------------------------------------------
@@ -153,17 +172,48 @@ def parse_field_definitions(entity_el):
                             label = label_el.get('description', '')
                     picklist_values.append({'label': label, 'value': value})
 
+        # New metadata attributes
+        max_length_str = text_of(attr, 'MaxLength')
+        max_length = int(max_length_str) if max_length_str else None
+
         fields.append({
             'schema_name': schema_name,
             'display_name': display_name,
+            'description': get_description(attr),
             'data_type': type_el.text if type_el is not None and type_el.text else '',
             'required_level': req_el.text if req_el is not None and req_el.text else 'none',
             'is_custom': (custom_el.text == '1') if custom_el is not None and custom_el.text else False,
             'introduced_version': version_el.text if version_el is not None and version_el.text else '',
+            'is_audit_enabled': text_of(attr, 'IsAuditEnabled', '0') == '1',
+            'is_secured': text_of(attr, 'IsSecured', '0') == '1',
+            'max_length': max_length,
+            'display_mask': text_of(attr, 'DisplayMask'),
             'picklist_values': picklist_values,
         })
 
     return sorted(fields, key=lambda f: f['schema_name'].lower())
+
+
+def parse_entity_metadata(entity_el):
+    """Extract entity-level metadata from customizations.xml Entity element.
+
+    Returns a dict with display_name, description, ownership_type, and
+    is_audit_enabled sourced from <EntityInfo><entity>.
+    """
+    entity_inner = entity_el.find("EntityInfo/entity")
+    if entity_inner is None:
+        return {
+            'display_name': '',
+            'description': '',
+            'ownership_type': '',
+            'is_audit_enabled': False,
+        }
+    return {
+        'display_name': get_localized_name(entity_inner),
+        'description': get_description(entity_inner),
+        'ownership_type': text_of(entity_inner, 'OwnershipTypeMask'),
+        'is_audit_enabled': text_of(entity_inner, 'IsAuditEnabled', '0') == '1',
+    }
 
 
 # ---------------------------------------------------------------------------

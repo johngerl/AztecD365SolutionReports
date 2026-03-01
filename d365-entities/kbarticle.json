@@ -1,4 +1,11 @@
 {
   "entityName": "kbarticle",
+  "displayName": "",
+  "description": "",
+  "objectType": "Standard",
+  "ownershipType": "OrgOwned",
+  "auditEnabled": true,
+  "primaryIdField": "kbarticleid",
+  "primaryNameField": null,
   "fields": []
 }

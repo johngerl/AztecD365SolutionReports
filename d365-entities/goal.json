@@ -1,13 +1,25 @@
 {
   "entityName": "goal",
+  "displayName": "Goal",
+  "description": "Target objective for a user or a team for a specified time period.",
+  "objectType": "Standard",
+  "ownershipType": "UserOwned",
+  "auditEnabled": true,
+  "primaryIdField": "goalid",
+  "primaryNameField": null,
   "fields": [
     {
       "fieldName": "azt_goaltype",
       "displayName": "Goal Type",
+      "description": "",
       "dataType": "picklist",
       "requiredLevel": "recommended",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "maxLength": null,
+      "fieldSecurity": false,
+      "auditEnabled": true,
+      "relatedTo": null,
       "picklistValues": [
         {
           "label": "Actual SaaS",
@@ -112,10 +124,15 @@
     {
       "fieldName": "azt_isprint",
       "displayName": "Is Print?",
+      "description": "",
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "maxLength": null,
+      "fieldSecurity": false,
+      "auditEnabled": true,
+      "relatedTo": null,
       "picklistValues": [
         {
           "label": "Yes",
@@ -175,10 +192,15 @@
     {
       "fieldName": "azt_month",
       "displayName": "Month",
+      "description": "",
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "maxLength": null,
+      "fieldSecurity": true,
+      "auditEnabled": true,
+      "relatedTo": null,
       "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,

@@ -1,4 +1,11 @@
 {
   "entityName": "goalrollupquery",
+  "displayName": "",
+  "description": "",
+  "objectType": "Standard",
+  "ownershipType": "UserOwned",
+  "auditEnabled": true,
+  "primaryIdField": "goalrollupqueryid",
+  "primaryNameField": null,
   "fields": []
 }

@@ -1,4 +1,11 @@
 {
   "entityName": "sharepointdocumentlocation",
+  "displayName": "",
+  "description": "",
+  "objectType": "Standard",
+  "ownershipType": "",
+  "auditEnabled": false,
+  "primaryIdField": "sharepointdocumentlocationid",
+  "primaryNameField": null,
   "fields": []
 }

@@ -1,4 +1,11 @@
 {
   "entityName": "solution",
+  "displayName": "",
+  "description": "",
+  "objectType": "Standard",
+  "ownershipType": "",
+  "auditEnabled": false,
+  "primaryIdField": "solutionid",
+  "primaryNameField": null,
   "fields": []
 }

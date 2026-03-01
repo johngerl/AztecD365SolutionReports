@@ -1,4 +1,11 @@
 {
   "entityName": "knowledgebaserecord",
+  "displayName": "Knowledge Base Record",
+  "description": "Metadata of knowledge base (KB) articles associated with Microsoft Dynamics 365 entities.",
+  "objectType": "Standard",
+  "ownershipType": "OrgOwned",
+  "auditEnabled": false,
+  "primaryIdField": "knowledgebaserecordid",
+  "primaryNameField": null,
   "fields": []
 }

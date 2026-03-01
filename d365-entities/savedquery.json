@@ -1,4 +1,11 @@
 {
   "entityName": "savedquery",
+  "displayName": "",
+  "description": "",
+  "objectType": "Standard",
+  "ownershipType": "",
+  "auditEnabled": false,
+  "primaryIdField": "savedqueryid",
+  "primaryNameField": null,
   "fields": []
 }

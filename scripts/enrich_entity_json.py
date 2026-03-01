@@ -33,6 +33,7 @@ if SCRIPTS_DIR not in sys.path:
 from generate_field_usage import (
     discover_entities,
     parse_field_definitions,
+    parse_entity_metadata,
     parse_forms,
     parse_views,
     parse_chart_visualizations,
@@ -456,9 +457,19 @@ def enrich_entity(entity_name, root, property_to_field, class_to_entity, mapping
         print(f"  WARNING: '{entity_name}' not found in customizations.xml — skipping")
         return None, 0
 
+    # Entity-level metadata from customizations.xml
+    entity_meta = parse_entity_metadata(entity_el)
+
     # Field definitions from customizations.xml (authoritative source)
     field_defs = parse_field_definitions(entity_el)
     known_fields = {f['schema_name'] for f in field_defs}
+
+    # Derive primaryNameField from DisplayMask containing "PrimaryName"
+    primary_name_field = None
+    for fdef in field_defs:
+        if 'PrimaryName' in fdef.get('display_mask', ''):
+            primary_name_field = fdef['schema_name']
+            break
 
     # Load SF mapping from CSV
     sf_mapping = load_mapping_csv(mapping_dir, entity_name)
@@ -498,13 +509,24 @@ def enrich_entity(entity_name, root, property_to_field, class_to_entity, mapping
 
         # Base field properties from customizations.xml
         pv = fdef.get('picklist_values')
+
+        # Derive relatedTo from relationships
+        field_refs = per_field.get(fn_lower, empty_sections)
+        rel_list = field_refs.get('relationships', [])
+        related_to = rel_list[0]['referenced_entity'] if rel_list else None
+
         field_out = {
             'fieldName': fdef['schema_name'],
             'displayName': fdef['display_name'],
+            'description': fdef.get('description', ''),
             'dataType': fdef['data_type'],
             'requiredLevel': fdef['required_level'],
             'isCustom': fdef['is_custom'],
             'introducedVersion': fdef['introduced_version'],
+            'maxLength': fdef.get('max_length'),
+            'fieldSecurity': fdef.get('is_secured', False),
+            'auditEnabled': fdef.get('is_audit_enabled', False),
+            'relatedTo': related_to,
             'picklistValues': pv if pv else None,
         }
 
@@ -515,7 +537,6 @@ def enrich_entity(entity_name, root, property_to_field, class_to_entity, mapping
             field_out[col] = val if val else None
 
         # 13 section datasets
-        field_refs = per_field.get(fn_lower, empty_sections)
         for section_key in SECTION_KEYS:
             section_data = field_refs.get(section_key, [])
             field_out[section_key] = convert_keys_to_camel(section_data)
@@ -525,6 +546,13 @@ def enrich_entity(entity_name, root, property_to_field, class_to_entity, mapping
 
     enriched = {
         'entityName': entity_name,
+        'displayName': entity_meta['display_name'],
+        'description': entity_meta['description'],
+        'objectType': "Custom" if entity_name.startswith("azt_") else "Standard",
+        'ownershipType': entity_meta['ownership_type'],
+        'auditEnabled': entity_meta['is_audit_enabled'],
+        'primaryIdField': f"{entity_name}id",
+        'primaryNameField': primary_name_field,
         'fields': enriched_fields,
     }
 

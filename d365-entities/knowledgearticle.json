@@ -1,4 +1,11 @@
 {
   "entityName": "knowledgearticle",
+  "displayName": "",
+  "description": "",
+  "objectType": "Standard",
+  "ownershipType": "UserOwned",
+  "auditEnabled": false,
+  "primaryIdField": "knowledgearticleid",
+  "primaryNameField": null,
   "fields": []
 }

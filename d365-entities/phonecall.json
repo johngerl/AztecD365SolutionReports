@@ -1,13 +1,25 @@
 {
   "entityName": "phonecall",
+  "displayName": "Phone Call",
+  "description": "Activity to track a telephone call.",
+  "objectType": "Standard",
+  "ownershipType": "UserOwned",
+  "auditEnabled": false,
+  "primaryIdField": "phonecallid",
+  "primaryNameField": null,
   "fields": [
     {
       "fieldName": "azt_addtocrtqueue",
       "displayName": "Add to CRT Queue?",
+      "description": "",
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "maxLength": null,
+      "fieldSecurity": false,
+      "auditEnabled": true,
+      "relatedTo": null,
       "picklistValues": [
         {
           "label": "Yes",
@@ -74,10 +86,15 @@
     {
       "fieldName": "azt_autocreatecallback",
       "displayName": "Autocreate Callback?",
+      "description": "",
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "maxLength": null,
+      "fieldSecurity": false,
+      "auditEnabled": true,
+      "relatedTo": null,
       "picklistValues": [
         {
           "label": "Yes",
@@ -145,10 +162,15 @@
     {
       "fieldName": "azt_callbackin",
       "displayName": "Callback In:",
+      "description": "",
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "maxLength": null,
+      "fieldSecurity": false,
+      "auditEnabled": true,
+      "relatedTo": null,
       "picklistValues": [
         {
           "label": "1 Day",
@@ -232,10 +254,15 @@
     {
       "fieldName": "azt_callbackon",
       "displayName": "Callback On",
+      "description": "",
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "maxLength": null,
+      "fieldSecurity": false,
+      "auditEnabled": true,
+      "relatedTo": null,
       "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
@@ -294,10 +321,15 @@
     {
       "fieldName": "azt_copydescription",
       "displayName": "Copy Description?",
+      "description": "",
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "maxLength": null,
+      "fieldSecurity": false,
+      "auditEnabled": true,
+      "relatedTo": null,
       "picklistValues": [
         {
           "label": "Yes",
@@ -364,10 +396,15 @@
     {
       "fieldName": "azt_copysubject",
       "displayName": "Copy Subject?",
+      "description": "",
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "maxLength": null,
+      "fieldSecurity": false,
+      "auditEnabled": true,
+      "relatedTo": null,
       "picklistValues": [
         {
           "label": "Yes",
@@ -434,10 +471,15 @@
     {
       "fieldName": "azt_historicalowner",
       "displayName": "Historical Owner",
+      "description": "Specifies the historical owner of the record no longer with the company.",
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "maxLength": 100,
+      "fieldSecurity": false,
+      "auditEnabled": true,
+      "relatedTo": null,
       "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
@@ -484,10 +526,15 @@
     {
       "fieldName": "azt_phonecallstatus",
       "displayName": "Phonecall Status",
+      "description": "",
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "maxLength": null,
+      "fieldSecurity": false,
+      "auditEnabled": true,
+      "relatedTo": null,
       "picklistValues": [
         {
           "label": "Active",
@@ -525,10 +572,15 @@
     {
       "fieldName": "azt_recordownerid",
       "displayName": "Record Owner",
+      "description": "Unique identifier of the Record Owner (System User) the Phone Call is associated with.",
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "maxLength": null,
+      "fieldSecurity": false,
+      "auditEnabled": false,
+      "relatedTo": "SystemUser",
       "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
@@ -1068,10 +1120,15 @@
     {
       "fieldName": "azt_result",
       "displayName": "Result",
+      "description": "",
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": true,
       "introducedVersion": "1.0.0.0",
+      "maxLength": null,
+      "fieldSecurity": false,
+      "auditEnabled": true,
+      "relatedTo": null,
       "picklistValues": [
         {
           "label": "Connected",
@@ -1128,10 +1185,15 @@
     {
       "fieldName": "description",
       "displayName": "Description",
+      "description": "Type additional information to describe the phone call, such as the primary message or the products and services discussed.",
       "dataType": "ntext",
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "maxLength": 4000,
+      "fieldSecurity": false,
+      "auditEnabled": true,
+      "relatedTo": null,
       "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,
@@ -1281,10 +1343,15 @@
     {
       "fieldName": "regardingobjectid",
       "displayName": "Regarding",
+      "description": "Choose the record that the phone call relates to.",
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "maxLength": null,
+      "fieldSecurity": false,
+      "auditEnabled": true,
+      "relatedTo": "Account",
       "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,

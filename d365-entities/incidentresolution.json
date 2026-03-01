@@ -1,4 +1,11 @@
 {
   "entityName": "incidentresolution",
+  "displayName": "",
+  "description": "",
+  "objectType": "Standard",
+  "ownershipType": "",
+  "auditEnabled": false,
+  "primaryIdField": "incidentresolutionid",
+  "primaryNameField": null,
   "fields": []
 }

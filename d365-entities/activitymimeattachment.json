@@ -1,4 +1,11 @@
 {
   "entityName": "activitymimeattachment",
+  "displayName": "",
+  "description": "",
+  "objectType": "Standard",
+  "ownershipType": "",
+  "auditEnabled": false,
+  "primaryIdField": "activitymimeattachmentid",
+  "primaryNameField": null,
   "fields": []
 }

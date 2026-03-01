@@ -1,13 +1,25 @@
 {
   "entityName": "opportunityclose",
+  "displayName": "Opportunity Close",
+  "description": "Activity that is created automatically when an opportunity is closed, containing information such as the description of the closing and actual revenue.",
+  "objectType": "Standard",
+  "ownershipType": "UserOwned",
+  "auditEnabled": false,
+  "primaryIdField": "opportunitycloseid",
+  "primaryNameField": null,
   "fields": [
     {
       "fieldName": "opportunitystatuscode",
       "displayName": "Status Reason",
+      "description": "Status reason of the opportunity.",
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "9.0.0.0",
+      "maxLength": null,
+      "fieldSecurity": false,
+      "auditEnabled": true,
+      "relatedTo": null,
       "picklistValues": [
         {
           "label": "Processed",
@@ -93,10 +105,15 @@
     {
       "fieldName": "regardingobjectid",
       "displayName": "Regarding",
+      "description": "Unique identifier of the object with which the activity is associated.",
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": false,
       "introducedVersion": "5.0.0.0",
+      "maxLength": null,
+      "fieldSecurity": false,
+      "auditEnabled": true,
+      "relatedTo": "Account",
       "picklistValues": null,
       "sfObjectName": null,
       "sfFieldDisplayName": null,

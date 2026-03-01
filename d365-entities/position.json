@@ -1,4 +1,11 @@
 {
   "entityName": "position",
+  "displayName": "Position",
+  "description": "Position of a user in the hierarchy",
+  "objectType": "Standard",
+  "ownershipType": "OrgOwned",
+  "auditEnabled": false,
+  "primaryIdField": "positionid",
+  "primaryNameField": null,
   "fields": []
 }

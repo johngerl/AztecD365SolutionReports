@@ -1,4 +1,11 @@
 {
   "entityName": "activitypointer",
+  "displayName": "",
+  "description": "",
+  "objectType": "Standard",
+  "ownershipType": "",
+  "auditEnabled": false,
+  "primaryIdField": "activitypointerid",
+  "primaryNameField": null,
   "fields": []
 }

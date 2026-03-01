@@ -4,7 +4,8 @@
       "Bash(python:*)",
       "Bash(git *)",
       "Bash(cd:*)",
-      "Bash(tail:*)"
+      "Bash(tail:*)",
+      "Bash(ls:*)"
     ]
   }
 }

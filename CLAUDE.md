@@ -100,7 +100,7 @@ You are acting as the **most senior Dynamics 365 Customer Engagement (D365CE) pr
 
 | Script | Input | Output | Purpose |
 |---|---|---|---|
-| `generate_field_usage.py` | `SolutionExtract/`, `salesforce-entities/` | `reports/*.md`, `mapping/*.csv` | Parse D365 solution, generate field usage reports, update mapping CSVs with SF suggestions |
+| `generate_field_usage.py` | `SolutionExtract/`, `salesforce-entities/` | `reports/{entity}.md`, `mapping/*.csv` | Parse D365 solution, generate field usage reports, update mapping CSVs with SF suggestions |
 | `enrich_entity_json.py` | `SolutionExtract/`, `mapping/*.csv` | `d365-entities/*.json` | Build enriched per-field JSON with 13 section datasets and SF mapping from CSVs |
 | `refresh_sf_entities.py` | Salesforce REST API | `salesforce-entities/*.json` | Refresh SF object schemas from org, preserving d365 cross-references |
 | `extract_mapping_csv.py` | `d365-entities/*.json` | `mapping/*.csv` | Extract mapping CSV from enriched entity JSON |

@@ -536,12 +536,12 @@ def enrich_entity(entity_name, root, property_to_field, class_to_entity, mapping
 # ---------------------------------------------------------------------------
 
 def cleanup_orphan_jsons(output_dir, reports_dir):
-    """Delete output JSONs that have no matching field_usage report."""
+    """Delete output JSONs that have no matching report."""
     report_entities = set()
     if os.path.isdir(reports_dir):
         for f in os.listdir(reports_dir):
-            if f.endswith('_field_usage.md'):
-                report_entities.add(f.replace('_field_usage.md', ''))
+            if f.endswith('.md'):
+                report_entities.add(f.replace('.md', ''))
 
     removed = []
     for f in os.listdir(output_dir):

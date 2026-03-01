@@ -3062,7 +3062,7 @@ def process_entity(entity_name, root, output_dir, property_to_field, class_to_en
         sf_mapping=sf_mapping, field_mapping_suggested=field_mapping_suggested
     )
 
-    output_file = os.path.join(output_dir, f"{entity_name}_field_usage.md")
+    output_file = os.path.join(output_dir, f"{entity_name}.md")
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(markdown)
 

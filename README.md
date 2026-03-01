@@ -42,7 +42,7 @@ python scripts/generate_field_usage.py --all                 # all 94 entities
 python scripts/generate_field_usage.py account --output-dir ./out
 ```
 
-**Outputs:** `reports/{entity}_field_usage.md`, `mapping/{entity}.csv`
+**Outputs:** `reports/{entity}.md`, `mapping/{entity}.csv`
 
 ### enrich_entity_json.py
 

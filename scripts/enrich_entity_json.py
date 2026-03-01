@@ -57,7 +57,7 @@ from generate_field_usage import (
 
 PROJECT_DIR = os.path.dirname(SCRIPTS_DIR)
 DEFAULT_MAPPING_DIR = os.path.join(PROJECT_DIR, "mapping")
-DEFAULT_OUTPUT_DIR = os.path.join(PROJECT_DIR, "json")
+DEFAULT_OUTPUT_DIR = os.path.join(PROJECT_DIR, "d365-entities")
 REPORTS_DIR = os.path.join(PROJECT_DIR, "reports")
 
 SECTION_KEYS = [

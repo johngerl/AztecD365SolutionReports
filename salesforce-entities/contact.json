@@ -1,0 +1,1127 @@
+{
+  "objectName": "Contact",
+  "objectType": "Standard",
+  "recordCount": 0,
+  "fields": [
+    {
+      "fieldName": "Id",
+      "dataType": "id",
+      "required": "Yes",
+      "relatedTo": "None",
+      "maxLength": 18,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "IsDeleted",
+      "dataType": "boolean",
+      "required": "Yes",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "MasterRecordId",
+      "dataType": "reference",
+      "required": "No",
+      "relatedTo": "Contact",
+      "maxLength": 18,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "AccountId",
+      "dataType": "reference",
+      "required": "No",
+      "relatedTo": "Account",
+      "maxLength": 18,
+      "picklistValues": null,
+      "d365EntityName": "contact",
+      "d365DisplayName": "Company Name",
+      "d365InternalName": "parentcustomerid",
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "LastName",
+      "dataType": "string",
+      "required": "Yes",
+      "relatedTo": "None",
+      "maxLength": 80,
+      "picklistValues": null,
+      "d365EntityName": "contact",
+      "d365DisplayName": "Last Name",
+      "d365InternalName": "lastname",
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "FirstName",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 40,
+      "picklistValues": null,
+      "d365EntityName": "contact",
+      "d365DisplayName": "First Name",
+      "d365InternalName": "firstname",
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Salutation",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 40,
+      "picklistValues": [
+        {
+          "label": "Mr.",
+          "value": "Mr."
+        },
+        {
+          "label": "Ms.",
+          "value": "Ms."
+        },
+        {
+          "label": "Mrs.",
+          "value": "Mrs."
+        },
+        {
+          "label": "Dr.",
+          "value": "Dr."
+        },
+        {
+          "label": "Prof.",
+          "value": "Prof."
+        },
+        {
+          "label": "Mx.",
+          "value": "Mx."
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": "contact",
+      "d365SuggestedDisplayName": "Salutation",
+      "d365SuggestedInternalName": "salutation"
+    },
+    {
+      "fieldName": "MiddleName",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 40,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Suffix",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 40,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": "contact",
+      "d365SuggestedDisplayName": "Suffix",
+      "d365SuggestedInternalName": "suffix"
+    },
+    {
+      "fieldName": "Name",
+      "dataType": "string",
+      "required": "Yes",
+      "relatedTo": "None",
+      "maxLength": 121,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "MailingStreet",
+      "dataType": "textarea",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "MailingCity",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 40,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "MailingState",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 80,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "MailingPostalCode",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 20,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "MailingCountry",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 80,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "MailingLatitude",
+      "dataType": "double",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": "contact",
+      "d365SuggestedDisplayName": "Address 1: Latitude",
+      "d365SuggestedInternalName": "address1_latitude"
+    },
+    {
+      "fieldName": "MailingLongitude",
+      "dataType": "double",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": "contact",
+      "d365SuggestedDisplayName": "Address 1: Longitude",
+      "d365SuggestedInternalName": "address1_longitude"
+    },
+    {
+      "fieldName": "MailingGeocodeAccuracy",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 40,
+      "picklistValues": [
+        {
+          "label": "Address",
+          "value": "Address"
+        },
+        {
+          "label": "NearAddress",
+          "value": "NearAddress"
+        },
+        {
+          "label": "Block",
+          "value": "Block"
+        },
+        {
+          "label": "Street",
+          "value": "Street"
+        },
+        {
+          "label": "ExtendedZip",
+          "value": "ExtendedZip"
+        },
+        {
+          "label": "Zip",
+          "value": "Zip"
+        },
+        {
+          "label": "Neighborhood",
+          "value": "Neighborhood"
+        },
+        {
+          "label": "City",
+          "value": "City"
+        },
+        {
+          "label": "County",
+          "value": "County"
+        },
+        {
+          "label": "State",
+          "value": "State"
+        },
+        {
+          "label": "Unknown",
+          "value": "Unknown"
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "MailingAddress",
+      "dataType": "address",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Phone",
+      "dataType": "phone",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 40,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Fax",
+      "dataType": "phone",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 40,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": "contact",
+      "d365SuggestedDisplayName": "Fax",
+      "d365SuggestedInternalName": "fax"
+    },
+    {
+      "fieldName": "MobilePhone",
+      "dataType": "phone",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 40,
+      "picklistValues": null,
+      "d365EntityName": "contact",
+      "d365DisplayName": "Mobile Phone",
+      "d365InternalName": "mobilephone",
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "OtherPhone",
+      "dataType": "phone",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 40,
+      "picklistValues": null,
+      "d365EntityName": "contact",
+      "d365DisplayName": "Business Phone",
+      "d365InternalName": "telephone1",
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "ReportsToId",
+      "dataType": "reference",
+      "required": "No",
+      "relatedTo": "Contact",
+      "maxLength": 18,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Email",
+      "dataType": "email",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 80,
+      "picklistValues": null,
+      "d365EntityName": "contact",
+      "d365DisplayName": "Email",
+      "d365InternalName": "emailaddress1",
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Title",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 128,
+      "picklistValues": null,
+      "d365EntityName": "contact",
+      "d365DisplayName": "Job Title",
+      "d365InternalName": "jobtitle",
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Department",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 80,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": "contact",
+      "d365SuggestedDisplayName": "Department",
+      "d365SuggestedInternalName": "department"
+    },
+    {
+      "fieldName": "AssistantName",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 40,
+      "picklistValues": null,
+      "d365EntityName": "contact",
+      "d365DisplayName": "Assistant",
+      "d365InternalName": "assistantname",
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "LeadSource",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": [
+        {
+          "label": "Advertising",
+          "value": "Advertising"
+        },
+        {
+          "label": "Broker relationship",
+          "value": "Broker relationship"
+        },
+        {
+          "label": "Call-In",
+          "value": "Call-In"
+        },
+        {
+          "label": "Chat",
+          "value": "Chat"
+        },
+        {
+          "label": "Client Relations - Referral",
+          "value": "Client Relations - Referral"
+        },
+        {
+          "label": "Cold Call",
+          "value": "Cold Call"
+        },
+        {
+          "label": "Conference",
+          "value": "Conference"
+        },
+        {
+          "label": "Contact Us Form",
+          "value": "Contact Us Form"
+        },
+        {
+          "label": "Current Client Upsell Opportunity",
+          "value": "Current Client Upsell Opportunity"
+        },
+        {
+          "label": "Email Outreach",
+          "value": "Email Outreach"
+        },
+        {
+          "label": "FFG Original",
+          "value": "FFG Original"
+        },
+        {
+          "label": "Google Ads",
+          "value": "Google Ads"
+        },
+        {
+          "label": "Instantly",
+          "value": "Instantly"
+        },
+        {
+          "label": "linkedin",
+          "value": "linkedin"
+        },
+        {
+          "label": "Marketing Campaign",
+          "value": "Marketing Campaign"
+        },
+        {
+          "label": "Other",
+          "value": "Other"
+        },
+        {
+          "label": "Previous Demo",
+          "value": "Previous Demo"
+        },
+        {
+          "label": "Referral",
+          "value": "Referral"
+        },
+        {
+          "label": "RFI",
+          "value": "RFI"
+        },
+        {
+          "label": "RFP",
+          "value": "RFP"
+        },
+        {
+          "label": "Social media Other (Instagram, Facebook, Twitter)",
+          "value": "Social media Other (Instagram, Facebook, Twitter)"
+        },
+        {
+          "label": "Webinar",
+          "value": "Webinar"
+        },
+        {
+          "label": "Cold Call by Sales rep",
+          "value": "Cold Call by Sales rep"
+        },
+        {
+          "label": "Downloaded a Resource",
+          "value": "Downloaded a Resource"
+        },
+        {
+          "label": "Cold email by Sales rep",
+          "value": "Cold email by Sales rep"
+        },
+        {
+          "label": "Zoominfo",
+          "value": "Zoominfo"
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": "contact",
+      "d365SuggestedDisplayName": "Lead Source",
+      "d365SuggestedInternalName": "leadsourcecode"
+    },
+    {
+      "fieldName": "Description",
+      "dataType": "textarea",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 32000,
+      "picklistValues": null,
+      "d365EntityName": "contact",
+      "d365DisplayName": "Description",
+      "d365InternalName": "description",
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "OwnerId",
+      "dataType": "reference",
+      "required": "Yes",
+      "relatedTo": "User",
+      "maxLength": 18,
+      "picklistValues": null,
+      "d365EntityName": "contact",
+      "d365DisplayName": "Record Owner",
+      "d365InternalName": "azt_recordownerid",
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CreatedDate",
+      "dataType": "datetime",
+      "required": "Yes",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CreatedById",
+      "dataType": "reference",
+      "required": "Yes",
+      "relatedTo": "User",
+      "maxLength": 18,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "LastModifiedDate",
+      "dataType": "datetime",
+      "required": "Yes",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": "contact",
+      "d365SuggestedDisplayName": "Modified On",
+      "d365SuggestedInternalName": "modifiedon"
+    },
+    {
+      "fieldName": "LastModifiedById",
+      "dataType": "reference",
+      "required": "Yes",
+      "relatedTo": "User",
+      "maxLength": 18,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": "contact",
+      "d365SuggestedDisplayName": "Modified By",
+      "d365SuggestedInternalName": "modifiedby"
+    },
+    {
+      "fieldName": "SystemModstamp",
+      "dataType": "datetime",
+      "required": "Yes",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "LastActivityDate",
+      "dataType": "date",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "LastCURequestDate",
+      "dataType": "datetime",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "LastCUUpdateDate",
+      "dataType": "datetime",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "LastViewedDate",
+      "dataType": "datetime",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "LastReferencedDate",
+      "dataType": "datetime",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "EmailBouncedReason",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "EmailBouncedDate",
+      "dataType": "datetime",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "IsEmailBounced",
+      "dataType": "boolean",
+      "required": "Yes",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "PhotoUrl",
+      "dataType": "url",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Jigsaw",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 20,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "JigsawContactId",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 20,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "IndividualId",
+      "dataType": "reference",
+      "required": "No",
+      "relatedTo": "Individual",
+      "maxLength": 18,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "rcsfl__SMS_Number__c",
+      "dataType": "phone",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 40,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "rcsfl__SendSMS__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 1300,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Address__c",
+      "dataType": "reference",
+      "required": "No",
+      "relatedTo": "Account_Address__c",
+      "maxLength": 18,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Contact_GUID__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 180,
+      "picklistValues": null,
+      "d365EntityName": "contact",
+      "d365DisplayName": "GUID",
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Phone_Ext__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 10,
+      "picklistValues": null,
+      "d365EntityName": "contact",
+      "d365DisplayName": "Extension",
+      "d365InternalName": "azt_extension",
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Qualification_Meeting_Date__c",
+      "dataType": "date",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Qualification_Meeting_Notes__c",
+      "dataType": "textarea",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 32768,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Lead_Source_Campaign__c",
+      "dataType": "reference",
+      "required": "No",
+      "relatedTo": "Campaign",
+      "maxLength": 18,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "iGrad_Lead_Source__c",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": [
+        {
+          "label": "Advertising",
+          "value": "Advertising"
+        },
+        {
+          "label": "Call-In",
+          "value": "Call-In"
+        },
+        {
+          "label": "Chat",
+          "value": "Chat"
+        },
+        {
+          "label": "Cold Call",
+          "value": "Cold Call"
+        },
+        {
+          "label": "Conference",
+          "value": "Conference"
+        },
+        {
+          "label": "Current Client Upsell Opportunity",
+          "value": "Current Client Upsell Opportunity"
+        },
+        {
+          "label": "Email Outreach",
+          "value": "Email Outreach"
+        },
+        {
+          "label": "Marketing Campaign",
+          "value": "Marketing Campaign"
+        },
+        {
+          "label": "Previous Demo",
+          "value": "Previous Demo"
+        },
+        {
+          "label": "Referral",
+          "value": "Referral"
+        },
+        {
+          "label": "RFP",
+          "value": "RFP"
+        },
+        {
+          "label": "Webinar",
+          "value": "Webinar"
+        },
+        {
+          "label": "Web Search",
+          "value": "Web Search"
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Qualified_On__c",
+      "dataType": "date",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Qualification_Reason__c",
+      "dataType": "textarea",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Legacy_Created_By__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": "contact",
+      "d365DisplayName": "Created By",
+      "d365InternalName": "createdby",
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Legacy_Created_On__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": "contact",
+      "d365DisplayName": "Created On",
+      "d365InternalName": "createdon",
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    }
+  ],
+  "d365SourceEntity": "contact",
+  "dataTransformationRules": [
+    {
+      "category": "Rules",
+      "rules": [
+        "Keep Contact or any other object id while migrating data",
+        "Remove Blank Columns",
+        "Remove Contacts without Last name",
+        "Remove Contacts without Email Address",
+        "Include contacts with Owner = Aztec Team",
+        "Assign blank record owners to CRM Admin",
+        "Map Account id from Account Success sheet using GUID = Vlookup",
+        "Correct names of Record owners",
+        "Map owner Id from SF to Record Owner = vlookup",
+        "Only map Contacts with a non-blank Last Name",
+        "Only map Contacts assigned to the Aztec Team (for Record Type mapping)",
+        "Only map Contacts with an Owner assigned and mapped to Salesforce User",
+        "Only map Contacts associated with a valid Company Name (for Account linkage)",
+        "Need to Update Company Names to match Salesforce Account Names (adjusted to reflect name changes via automation)",
+        "Correct formatting and values of all fields based on their data type in Salesforce (e.g., text, phone, picklists)",
+        "Exclude rows with blank Last Name",
+        "Exclude contacts with no mapped Owner ID (unless client provides reassignment)",
+        "Exclude contacts with no Company Name (as these cannot be related to an Account)",
+        "Exclude blank or irrelevant columns",
+        "Exclude address fields will not be migrated (per client directive)",
+        "Map all Record Type IDs to the Aztec Team Record Type in Salesforce",
+        "Owner IDs mapped using extracted Salesforce user list",
+        "Lisa Schambers and Kathryn Crockett do not exist in Salesforce; need client to provide reassignment or disregard those Contacts",
+        "Phone number (pending extraction assistance from Desiree)",
+        "Role field from Dynamics will be mapped to the Title field in Salesforce",
+        "Ensure Company names in Dynamics are updated to match Account names already in Salesforce",
+        "Owner ID validation: Confirm client’s approach for contacts with unmapped or missing owners (e.g., reassign to Admin or exclude)",
+        "Role-to-Title mapping must be verified post-load to ensure consistency",
+        "Phone field is known to have migration issues – validation required during testing phase",
+        "Confirm if any fallback is needed for Company name matching if no match is found (e.g., create as Lead instead or reject)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1050 @@
+{
+  "objectName": "Product2",
+  "objectType": "Standard",
+  "recordCount": 1486,
+  "fields": [
+    {
+      "fieldName": "Id",
+      "dataType": "id",
+      "required": "Yes",
+      "relatedTo": "None",
+      "maxLength": 18,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Name",
+      "dataType": "string",
+      "required": "Yes",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "ProductCode",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": "product",
+      "d365SuggestedDisplayName": "Product ID",
+      "d365SuggestedInternalName": "productnumber"
+    },
+    {
+      "fieldName": "Description",
+      "dataType": "textarea",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 4000,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "QuantityScheduleType",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 40,
+      "picklistValues": [
+        {
+          "label": "Divide",
+          "value": "Divide"
+        },
+        {
+          "label": "Repeat",
+          "value": "Repeat"
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "QuantityInstallmentPeriod",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 40,
+      "picklistValues": [
+        {
+          "label": "Daily",
+          "value": "Daily"
+        },
+        {
+          "label": "Weekly",
+          "value": "Weekly"
+        },
+        {
+          "label": "Monthly",
+          "value": "Monthly"
+        },
+        {
+          "label": "Quarterly",
+          "value": "Quarterly"
+        },
+        {
+          "label": "Yearly",
+          "value": "Yearly"
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "NumberOfQuantityInstallments",
+      "dataType": "int",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "RevenueScheduleType",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 40,
+      "picklistValues": [
+        {
+          "label": "Divide",
+          "value": "Divide"
+        },
+        {
+          "label": "Repeat",
+          "value": "Repeat"
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "RevenueInstallmentPeriod",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 40,
+      "picklistValues": [
+        {
+          "label": "Daily",
+          "value": "Daily"
+        },
+        {
+          "label": "Weekly",
+          "value": "Weekly"
+        },
+        {
+          "label": "Monthly",
+          "value": "Monthly"
+        },
+        {
+          "label": "Quarterly",
+          "value": "Quarterly"
+        },
+        {
+          "label": "Yearly",
+          "value": "Yearly"
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "NumberOfRevenueInstallments",
+      "dataType": "int",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "IsActive",
+      "dataType": "boolean",
+      "required": "Yes",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": "product",
+      "d365DisplayName": "statuscodename",
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "CreatedDate",
+      "dataType": "datetime",
+      "required": "Yes",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": "product",
+      "d365SuggestedDisplayName": "Created On",
+      "d365SuggestedInternalName": "createdon"
+    },
+    {
+      "fieldName": "CreatedById",
+      "dataType": "reference",
+      "required": "Yes",
+      "relatedTo": "User",
+      "maxLength": 18,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": "product",
+      "d365SuggestedDisplayName": "Created By",
+      "d365SuggestedInternalName": "createdby"
+    },
+    {
+      "fieldName": "LastModifiedDate",
+      "dataType": "datetime",
+      "required": "Yes",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": "product",
+      "d365SuggestedDisplayName": "Modified On",
+      "d365SuggestedInternalName": "modifiedon"
+    },
+    {
+      "fieldName": "LastModifiedById",
+      "dataType": "reference",
+      "required": "Yes",
+      "relatedTo": "User",
+      "maxLength": 18,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": "product",
+      "d365SuggestedDisplayName": "Modified By",
+      "d365SuggestedInternalName": "modifiedby"
+    },
+    {
+      "fieldName": "SystemModstamp",
+      "dataType": "datetime",
+      "required": "Yes",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Family",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": [
+        {
+          "label": "None",
+          "value": "None"
+        }
+      ],
+      "d365EntityName": "product",
+      "d365DisplayName": "azt_productfamilyname",
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "RecordTypeId",
+      "dataType": "reference",
+      "required": "No",
+      "relatedTo": "RecordType",
+      "maxLength": 18,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "ExternalDataSourceId",
+      "dataType": "reference",
+      "required": "No",
+      "relatedTo": "ExternalDataSource",
+      "maxLength": 18,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "ExternalId",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "DisplayUrl",
+      "dataType": "url",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 1000,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "QuantityUnitOfMeasure",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": [
+        {
+          "label": "Each",
+          "value": "Each"
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "IsDeleted",
+      "dataType": "boolean",
+      "required": "Yes",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "IsArchived",
+      "dataType": "boolean",
+      "required": "Yes",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "LastViewedDate",
+      "dataType": "datetime",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "LastReferencedDate",
+      "dataType": "datetime",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "StockKeepingUnit",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 180,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Default_Price_List__c",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": [
+        {
+          "label": "Ed Tech",
+          "value": "Ed Tech"
+        },
+        {
+          "label": "Pub",
+          "value": "Pub"
+        },
+        {
+          "label": "Full",
+          "value": "Full"
+        },
+        {
+          "label": "CTE",
+          "value": "CTE"
+        },
+        {
+          "label": "Workforce",
+          "value": "Workforce"
+        },
+        {
+          "label": "iGrad",
+          "value": "iGrad"
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Non_Saas_Type__c",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": [
+        {
+          "label": "Paxen Print",
+          "value": "Paxen Print"
+        },
+        {
+          "label": "Life Skills",
+          "value": "Life Skills"
+        },
+        {
+          "label": "Other",
+          "value": "Other"
+        }
+      ],
+      "d365EntityName": "product",
+      "d365DisplayName": "azt_nonsaastypename",
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Product_Type__c",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": [
+        {
+          "label": "Software",
+          "value": "Software"
+        },
+        {
+          "label": "Books",
+          "value": "Books"
+        },
+        {
+          "label": "Life Skills Book",
+          "value": "Life Skills Book"
+        },
+        {
+          "label": "Other",
+          "value": "Other"
+        },
+        {
+          "label": "P6",
+          "value": "P6"
+        },
+        {
+          "label": "Vouchers",
+          "value": "Vouchers"
+        },
+        {
+          "label": "Hardware",
+          "value": "Hardware"
+        },
+        {
+          "label": "SaaS Setup",
+          "value": "SaaS Setup"
+        },
+        {
+          "label": "SaaS Licensing",
+          "value": "SaaS Licensing"
+        },
+        {
+          "label": "Credit Score and Report",
+          "value": "Credit Score and Report"
+        },
+        {
+          "label": "Coaching",
+          "value": "Coaching"
+        },
+        {
+          "label": "Offline Content",
+          "value": "Offline Content"
+        },
+        {
+          "label": "Premium Content",
+          "value": "Premium Content"
+        },
+        {
+          "label": "Consulting Service",
+          "value": "Consulting Service"
+        },
+        {
+          "label": "Custom NonContent",
+          "value": "Custom NonContent"
+        },
+        {
+          "label": "SLA",
+          "value": "SLA"
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": "product",
+      "d365SuggestedDisplayName": "Product Category",
+      "d365SuggestedInternalName": "azt_productcategory"
+    },
+    {
+      "fieldName": "Sales_Family__c",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": [
+        {
+          "label": "Academic",
+          "value": "Academic"
+        },
+        {
+          "label": "Other",
+          "value": "Other"
+        },
+        {
+          "label": "Workforce",
+          "value": "Workforce"
+        },
+        {
+          "label": "CTE",
+          "value": "CTE"
+        },
+        {
+          "label": "Financial Wellness",
+          "value": "Financial Wellness"
+        }
+      ],
+      "d365EntityName": "product",
+      "d365DisplayName": "azt_salesfamilyname",
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Is_Companion__c",
+      "dataType": "boolean",
+      "required": "Yes",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": "product",
+      "d365DisplayName": "azt_iscompanion",
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Is_Print__c",
+      "dataType": "boolean",
+      "required": "Yes",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": "product",
+      "d365DisplayName": "azt_isprint",
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "List_Price__c",
+      "dataType": "currency",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": "product",
+      "d365DisplayName": "price",
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Product_Families__c",
+      "dataType": "multipicklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 4099,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Product_GUID__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": "product",
+      "d365DisplayName": "productid",
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Product_ID__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 180,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "SaaS__c",
+      "dataType": "boolean",
+      "required": "Yes",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": "product",
+      "d365DisplayName": "azt_saasname",
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Legacy_Status__c",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": [
+        {
+          "label": "Active",
+          "value": "Active"
+        },
+        {
+          "label": "Inactive",
+          "value": "Inactive"
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Item_Type__c",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": [
+        {
+          "label": "Non-inventory",
+          "value": "Non-inventory"
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Product_Line__c",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": [
+        {
+          "label": "SaaS Setup",
+          "value": "SaaS Setup"
+        },
+        {
+          "label": "iGrad Licenses",
+          "value": "iGrad Licenses"
+        },
+        {
+          "label": "Enrich Licenses",
+          "value": "Enrich Licenses"
+        },
+        {
+          "label": "Credit Score",
+          "value": "Credit Score"
+        },
+        {
+          "label": "Coaching",
+          "value": "Coaching"
+        },
+        {
+          "label": "Premium Content",
+          "value": "Premium Content"
+        },
+        {
+          "label": "Premium Content - FFG",
+          "value": "Premium Content - FFG"
+        },
+        {
+          "label": "Premium Content - International",
+          "value": "Premium Content - International"
+        },
+        {
+          "label": "Consulting Service",
+          "value": "Consulting Service"
+        },
+        {
+          "label": "Custom NonContent",
+          "value": "Custom NonContent"
+        },
+        {
+          "label": "SLA",
+          "value": "SLA"
+        },
+        {
+          "label": "FFG - MS - Andex",
+          "value": "FFG - MS - Andex"
+        },
+        {
+          "label": "FFG - MS - SBBI",
+          "value": "FFG - MS - SBBI"
+        },
+        {
+          "label": "FFG - FINRA",
+          "value": "FFG - FINRA"
+        },
+        {
+          "label": "FFG - MS - IC",
+          "value": "FFG - MS - IC"
+        },
+        {
+          "label": "FFG - MS - FCS",
+          "value": "FFG - MS - FCS"
+        },
+        {
+          "label": "FFG - Other",
+          "value": "FFG - Other"
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "GL_Group__c",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": [
+        {
+          "label": "Other Income",
+          "value": "Other Income"
+        },
+        {
+          "label": "Software",
+          "value": "Software"
+        },
+        {
+          "label": "Print",
+          "value": "Print"
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Frequency__c",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": [
+        {
+          "label": "One Time",
+          "value": "One Time"
+        },
+        {
+          "label": "Annual Recurring",
+          "value": "Annual Recurring"
+        },
+        {
+          "label": "Usage Monthly",
+          "value": "Usage Monthly"
+        },
+        {
+          "label": "Usage",
+          "value": "Usage"
+        },
+        {
+          "label": "Monthly Recurring",
+          "value": "Monthly Recurring"
+        },
+        {
+          "label": "Varies",
+          "value": "Varies"
+        },
+        {
+          "label": "Recurring",
+          "value": "Recurring"
+        },
+        {
+          "label": "As needed",
+          "value": "As needed"
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Unit_Based__c",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": [
+        {
+          "label": "Unit: cobrand",
+          "value": "Unit: cobrand"
+        },
+        {
+          "label": "Unit: hours",
+          "value": "Unit: hours"
+        },
+        {
+          "label": "Unit: user",
+          "value": "Unit: user"
+        },
+        {
+          "label": "Unit: appt",
+          "value": "Unit: appt"
+        },
+        {
+          "label": "Unit: question",
+          "value": "Unit: question"
+        },
+        {
+          "label": "Unit: staff",
+          "value": "Unit: staff"
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Tax_Code__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Legacy_Item_Id__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Product_Number__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Migrated__c",
+      "dataType": "boolean",
+      "required": "Yes",
+      "relatedTo": "None",
+      "maxLength": null,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    }
+  ],
+  "d365SourceEntity": "product",
+  "dataTransformationRules": [
+    {
+      "category": "Rules",
+      "rules": [
+        "Keep Product or any other object id while migrating data",
+        "Sales Family filtered to only Aztec products",
+        "Remove duplicates products",
+        "Add price for products without Price",
+        "Unrestrict Default Price List",
+        "Unrestrict Legacy Status",
+        "Unrestrict Product Families",
+        "RecordTypeId - Aztec",
+        "Product Status - Active (Make inactive in the end after loading all line items)",
+        "Assign blank record owners to CRM Admin ??",
+        "Load Pricebook Entry",
+        "Pricebook ID",
+        "Active - true (Make inactive in CRM after loading all line items to Salesforce)",
+        "Ensure PricebookEntry and Product ID is included in the sheet for future vlookups",
+        "Some products do not have price which is required so those are not inserted"
+      ]
+    }
+  ]
+}

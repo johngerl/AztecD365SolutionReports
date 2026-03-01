@@ -41,6 +41,8 @@ SF_COLUMNS = [
     "sfSuggestedFieldApiName",
 ]
 
+D365_COLUMNS = ["displayName", "dataType", "requiredLevel", "isCustom"]
+
 
 CLASSID_SUBGRID = "{e7a81278-8bb2-4f1d-acd7-36f4db40e15e}"
 CLASSID_WEBRESOURCE = "{9fdf5f91-18b7-4a41-8f8c-b0bd4ec1c21e}"
@@ -1826,26 +1828,30 @@ def match_sf_field(d365_schema_name, by_d365_internal, by_d365_suggested, by_nam
     return '', ''
 
 
-def update_mapping_csv(mapping_dir, entity_name, sf_mapping):
-    """Write the complete mapping dict back to CSV.
+def update_mapping_csv(mapping_dir, entity_name, fields, sf_mapping):
+    """Write one row per D365 field to the mapping CSV.
 
-    Only writes rows where at least one SF column is non-empty.
+    Includes D365 metadata columns and SF mapping columns (11 total).
+    Every field is written regardless of whether SF columns are populated.
     Sorted by fieldName.
     """
     csv_path = os.path.join(mapping_dir, f"{entity_name}.csv")
-    header = ["fieldName"] + SF_COLUMNS
+    header = ["fieldName"] + D365_COLUMNS + SF_COLUMNS
 
     rows = []
-    for field_name in sorted(sf_mapping.keys()):
-        data = sf_mapping[field_name]
-        if any(data.get(col, "") for col in SF_COLUMNS):
-            row = {"fieldName": field_name}
-            for col in SF_COLUMNS:
-                row[col] = data.get(col, "") or ""
-            rows.append(row)
-
-    if not rows:
-        return
+    for field in sorted(fields, key=lambda f: f['schema_name'].lower()):
+        sn_lower = field['schema_name'].lower()
+        data = sf_mapping.get(sn_lower, {})
+        row = {
+            "fieldName": field['schema_name'],
+            "displayName": field.get('display_name', ''),
+            "dataType": field.get('data_type', ''),
+            "requiredLevel": field.get('required_level', ''),
+            "isCustom": str(field.get('is_custom', False)),
+        }
+        for col in SF_COLUMNS:
+            row[col] = data.get(col, "") or ""
+        rows.append(row)
 
     os.makedirs(mapping_dir, exist_ok=True)
     with open(csv_path, "w", encoding="utf-8", newline="") as f:
@@ -3035,7 +3041,7 @@ def process_entity(entity_name, root, output_dir, property_to_field, class_to_en
                         data['sfSuggestedFieldApiName'] = sf_api
                         suggestions_added += 1
 
-        update_mapping_csv(mapping_dir, entity_name, sf_mapping)
+        update_mapping_csv(mapping_dir, entity_name, fields, sf_mapping)
 
         # Reload CSV as the single source of truth for the report
         sf_mapping = load_mapping_csv(mapping_dir, entity_name)

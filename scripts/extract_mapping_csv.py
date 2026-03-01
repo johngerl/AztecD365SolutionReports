@@ -35,24 +35,33 @@ SF_COLUMNS = [
     "sfSuggestedFieldApiName",
 ]
 
+D365_COLUMNS = ["displayName", "dataType", "requiredLevel", "isCustom"]
+
 
 def extract_mapping(source_file, output_file):
-    """Read a source JSON and write a mapping CSV with non-empty SF rows."""
+    """Read a source JSON and write a mapping CSV with one row per field."""
     with open(source_file, "r", encoding="utf-8") as f:
         data = json.load(f)
 
+    header = ["fieldName"] + D365_COLUMNS + SF_COLUMNS
     rows = []
     for field in data.get("fields", []):
-        field_name = field.get("fieldName", "")
-        sf_values = {col: field.get(col) or "" for col in SF_COLUMNS}
-        if any(sf_values.values()):
-            rows.append({"fieldName": field_name, **sf_values})
+        row = {
+            "fieldName": field.get("fieldName", ""),
+            "displayName": field.get("displayName", ""),
+            "dataType": field.get("dataType", ""),
+            "requiredLevel": field.get("requiredLevel", ""),
+            "isCustom": str(field.get("isCustom", False)),
+        }
+        for col in SF_COLUMNS:
+            row[col] = field.get(col) or ""
+        rows.append(row)
 
     rows.sort(key=lambda r: r["fieldName"].lower())
 
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     with open(output_file, "w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=["fieldName"] + SF_COLUMNS)
+        writer = csv.DictWriter(f, fieldnames=header)
         writer.writeheader()
         writer.writerows(rows)
 

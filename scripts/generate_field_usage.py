@@ -13,6 +13,7 @@ Usage:
 """
 
 import xml.etree.ElementTree as ET
+import csv
 import html
 import re
 import os
@@ -28,6 +29,18 @@ CUSTOMIZATIONS_FILE = os.path.join(SOLUTION_DIR, "customizations.xml")
 PLUGINS_DIR = os.path.join(PROJECT_DIR, "plugins")
 REPORTS_DIR = os.path.join(SOLUTION_DIR, "Reports")
 DEFAULT_OUTPUT_DIR = os.path.join(PROJECT_DIR, "reports")
+DEFAULT_MAPPING_DIR = os.path.join(PROJECT_DIR, "mapping")
+SF_ENTITIES_DIR = os.path.join(PROJECT_DIR, "salesforce-entities")
+
+SF_COLUMNS = [
+    "sfObjectName",
+    "sfFieldDisplayName",
+    "sfFieldApiName",
+    "sfSuggestedObjectName",
+    "sfSuggestedFieldDisplayName",
+    "sfSuggestedFieldApiName",
+]
+
 
 CLASSID_SUBGRID = "{e7a81278-8bb2-4f1d-acd7-36f4db40e15e}"
 CLASSID_WEBRESOURCE = "{9fdf5f91-18b7-4a41-8f8c-b0bd4ec1c21e}"
@@ -1654,6 +1667,178 @@ def compute_conflicts(entity_name, fields, forms, views, workflows, js_files,
 
 
 # ---------------------------------------------------------------------------
+# SF MAPPING
+# ---------------------------------------------------------------------------
+
+def load_mapping_csv(mapping_dir, entity_name):
+    """Load SF mapping data from a CSV file into a dict keyed by fieldName.
+
+    Returns {field_name_lower: {sfObjectName: ..., ...}} or empty dict.
+    """
+    csv_path = os.path.join(mapping_dir, f"{entity_name}.csv")
+    if not os.path.isfile(csv_path):
+        return {}
+
+    mapping = {}
+    with open(csv_path, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            field_name = row.get("fieldName", "").lower()
+            if field_name:
+                mapping[field_name] = {
+                    col: row.get(col, "") or "" for col in SF_COLUMNS
+                }
+    return mapping
+
+
+def build_sf_entity_index(sf_entities_dir):
+    """Scan salesforce-entities/*.json and build {objectName_lower: objectName}.
+
+    Returns dict mapping lowercase object name to its canonical casing.
+    """
+    import json
+    index = {}
+    if not os.path.isdir(sf_entities_dir):
+        return index
+    for fname in os.listdir(sf_entities_dir):
+        if not fname.endswith('.json'):
+            continue
+        fpath = os.path.join(sf_entities_dir, fname)
+        try:
+            with open(fpath, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            obj_name = data.get('objectName', '')
+            if obj_name:
+                index[obj_name.lower()] = obj_name
+        except (json.JSONDecodeError, IOError):
+            continue
+    return index
+
+
+def load_sf_entity_fields(sf_entities_dir, sf_object_name):
+    """Load the SF entity JSON for a given object and return its fields.
+
+    Returns list of field dicts from the JSON, or empty list.
+    """
+    import json
+    if not os.path.isdir(sf_entities_dir):
+        return []
+    # Filename is objectName lowered + .json
+    fname = sf_object_name.lower() + '.json'
+    fpath = os.path.join(sf_entities_dir, fname)
+    if not os.path.isfile(fpath):
+        return []
+    try:
+        with open(fpath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        return data.get('fields', [])
+    except (json.JSONDecodeError, IOError):
+        return []
+
+
+def resolve_sf_object(entity_name, mapping_dir, sf_entity_index):
+    """Determine the SF object name for a D365 entity (data-driven only).
+
+    1. From existing CSV data — most common sfObjectName or sfSuggestedObjectName
+    2. From SF entity JSON index — match D365 entity name to SF objectName
+    3. No match — returns ''
+    """
+    # Tier 1: scan CSV for most common SF object name
+    csv_path = os.path.join(mapping_dir, f"{entity_name}.csv")
+    if os.path.isfile(csv_path):
+        obj_counts = defaultdict(int)
+        with open(csv_path, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                for col in ("sfObjectName", "sfSuggestedObjectName"):
+                    val = (row.get(col, "") or "").strip()
+                    if val:
+                        obj_counts[val] += 1
+        if obj_counts:
+            return max(obj_counts, key=obj_counts.get)
+
+    # Tier 2: match against SF entity JSON objectNames
+    if entity_name in sf_entity_index:
+        return sf_entity_index[entity_name]
+
+    # Tier 3: no match
+    return ''
+
+
+def build_sf_field_lookup(sf_fields):
+    """Build lookup dicts from an SF entity's field list.
+
+    Returns (by_d365_internal, by_d365_suggested, by_name_lower):
+    - by_d365_internal: {d365InternalName_lower: sf_field_dict}
+    - by_d365_suggested: {d365SuggestedInternalName_lower: sf_field_dict}
+    - by_name_lower: {fieldName_lower: sf_field_dict}
+    """
+    by_d365_internal = {}
+    by_d365_suggested = {}
+    by_name_lower = {}
+    for sf_field in sf_fields:
+        fn = sf_field.get('fieldName', '')
+        if fn:
+            by_name_lower[fn.lower()] = sf_field
+        d365_int = sf_field.get('d365InternalName') or ''
+        if d365_int:
+            by_d365_internal[d365_int.lower()] = sf_field
+        d365_sug = sf_field.get('d365SuggestedInternalName') or ''
+        if d365_sug:
+            by_d365_suggested[d365_sug.lower()] = sf_field
+    return by_d365_internal, by_d365_suggested, by_name_lower
+
+
+def match_sf_field(d365_schema_name, by_d365_internal, by_d365_suggested, by_name_lower):
+    """Find the best-matching SF field for a D365 field.
+
+    Resolution order:
+    1. Confirmed mapping: d365InternalName matches D365 schema_name
+    2. Suggested mapping: d365SuggestedInternalName matches D365 schema_name
+    3. Exact name match: SF fieldName matches D365 schema_name (case-insensitive)
+    4. No match
+
+    Returns (sf_field_api_name, sf_field_api_name) or ('', '').
+    We use fieldName for both display and API since the JSON has no separate
+    display name — the CSV consumer can refine the display name later.
+    """
+    key = d365_schema_name.lower()
+    sf_field = by_d365_internal.get(key) or by_d365_suggested.get(key) or by_name_lower.get(key)
+    if sf_field:
+        fn = sf_field.get('fieldName', '')
+        return fn, fn
+    return '', ''
+
+
+def update_mapping_csv(mapping_dir, entity_name, sf_mapping):
+    """Write the complete mapping dict back to CSV.
+
+    Only writes rows where at least one SF column is non-empty.
+    Sorted by fieldName.
+    """
+    csv_path = os.path.join(mapping_dir, f"{entity_name}.csv")
+    header = ["fieldName"] + SF_COLUMNS
+
+    rows = []
+    for field_name in sorted(sf_mapping.keys()):
+        data = sf_mapping[field_name]
+        if any(data.get(col, "") for col in SF_COLUMNS):
+            row = {"fieldName": field_name}
+            for col in SF_COLUMNS:
+                row[col] = data.get(col, "") or ""
+            rows.append(row)
+
+    if not rows:
+        return
+
+    os.makedirs(mapping_dir, exist_ok=True)
+    with open(csv_path, "w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=header)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+# ---------------------------------------------------------------------------
 # SECTION REFERENCE COUNTING
 # ---------------------------------------------------------------------------
 
@@ -1777,7 +1962,8 @@ def count_field_references(entity_name, forms, views, chart_visualizations,
 def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
                       reports, dashboards,
                       workflows, js_files, formulas, plugin_refs, controls,
-                      relationships, ribbon, conflicts):
+                      relationships, ribbon, conflicts,
+                      sf_mapping=None, field_mapping_suggested=None):
     field_index = defaultdict(list)
     field_ref_counts = count_field_references(
         entity_name, forms, views, chart_visualizations,
@@ -1853,8 +2039,8 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     a('')
     a(f'Total fields: **{len(fields)}**')
     a('')
-    a('| # | Schema Name | Display Name | Type | Custom | Required | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |')
-    a('|---|-------------|-------------|------|--------|----------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|')
+    a('| # | Schema Name | Display Name | Type | Custom | Required | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |')
+    a('|---|-------------|-------------|------|--------|----------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|')
     section_cols = [
         ('forms', '#2-forms'),
         ('views', '#3-views'),
@@ -1869,16 +2055,30 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
         ('ribbon', '#13-ribbon-customizations'),
         ('conflicts', '#14-conflicts-observations'),
     ]
+    _sf_mapping = sf_mapping or {}
+    _field_mapping_suggested = field_mapping_suggested or {}
     for i, field in enumerate(fields, 1):
         custom = 'Yes' if field['is_custom'] else 'No'
         sn = field['schema_name']
-        refs_for_field = field_ref_counts.get(sn.lower(), {})
+        sn_lower = sn.lower()
+        # SF mapping columns
+        suggested = 'true' if _field_mapping_suggested.get(sn_lower) else 'false'
+        sf_data = _sf_mapping.get(sn_lower, {})
+        sf_obj = sf_data.get('sfObjectName', '') or ''
+        sf_field = sf_data.get('sfFieldDisplayName', '') or ''
+        sf_api = sf_data.get('sfFieldApiName', '') or ''
+        sf_sug_obj = sf_data.get('sfSuggestedObjectName', '') or ''
+        sf_sug_field = sf_data.get('sfSuggestedFieldDisplayName', '') or ''
+        sf_sug_api = sf_data.get('sfSuggestedFieldApiName', '') or ''
+        sf_str = f'{suggested} | {sf_obj} | {sf_field} | {sf_api} | {sf_sug_obj} | {sf_sug_field} | {sf_sug_api}'
+        # Section heatmap columns
+        refs_for_field = field_ref_counts.get(sn_lower, {})
         cells = []
         for key, slug in section_cols:
             c = refs_for_field.get(key, 0)
             cells.append(f'[{c}]({slug})' if c > 0 else '')
         section_str = ' | '.join(cells)
-        a(f'| {i} | {fl(sn)} | {field["display_name"]} | {field["data_type"]} | {custom} | {field["required_level"]} | {section_str} |')
+        a(f'| {i} | {fl(sn)} | {field["display_name"]} | {field["data_type"]} | {custom} | {field["required_level"]} | {sf_str} | {section_str} |')
         ref(sn, '1-field-definitions', 'Field Definitions')
     a('')
 
@@ -2596,7 +2796,8 @@ def discover_entities(root):
     return sorted(entities, key=str.lower)
 
 
-def process_entity(entity_name, root, output_dir, property_to_field, class_to_entity):
+def process_entity(entity_name, root, output_dir, property_to_field, class_to_entity,
+                    mapping_dir=None, sf_entity_index=None):
     entity_name = entity_name.lower()
 
     print(f"\nProcessing {entity_name.upper()}...")
@@ -2749,11 +2950,66 @@ def process_entity(entity_name, root, output_dir, property_to_field, class_to_en
     print(f"  Fields in code not on forms: {len(conflicts['in_code_not_on_forms'])}")
     print(f"  Fields on forms not in logic: {len(conflicts['on_forms_not_in_logic'])}")
 
+    # SF mapping: write suggestions to CSV, then read CSV as source of truth
+    field_mapping_suggested = {}
+    if mapping_dir:
+        sf_mapping = load_mapping_csv(mapping_dir, entity_name)
+        sf_object = resolve_sf_object(entity_name, mapping_dir, sf_entity_index)
+
+        # Load SF entity fields for suggestion matching
+        sf_fields = load_sf_entity_fields(SF_ENTITIES_DIR, sf_object) if sf_object else []
+        by_d365_internal, by_d365_suggested, by_name_lower = build_sf_field_lookup(sf_fields)
+
+        # Write suggestions to CSV for any field missing SF data
+        suggestions_added = 0
+        for field in fields:
+            sn_lower = field['schema_name'].lower()
+            if sn_lower not in sf_mapping:
+                sf_mapping[sn_lower] = {col: '' for col in SF_COLUMNS}
+            data = sf_mapping[sn_lower]
+            has_existing = any(data.get(c, '') for c in (
+                'sfObjectName', 'sfFieldDisplayName', 'sfFieldApiName',
+                'sfSuggestedObjectName', 'sfSuggestedFieldDisplayName',
+                'sfSuggestedFieldApiName'))
+            if not has_existing and sf_object:
+                sf_display, sf_api = match_sf_field(
+                    field['schema_name'],
+                    by_d365_internal, by_d365_suggested, by_name_lower)
+                data['sfSuggestedObjectName'] = sf_object
+                data['sfSuggestedFieldDisplayName'] = sf_display
+                data['sfSuggestedFieldApiName'] = sf_api
+                suggestions_added += 1
+
+        update_mapping_csv(mapping_dir, entity_name, sf_mapping)
+
+        # Reload CSV as the single source of truth for the report
+        sf_mapping = load_mapping_csv(mapping_dir, entity_name)
+
+        # Compute mapping_suggested (display-only flag, not stored in CSV)
+        field_ref_counts = count_field_references(
+            entity_name, forms, views, chart_visualizations,
+            reports, dashboards, workflows, formulas,
+            plugin_refs, controls, relationships, ribbon, conflicts
+        )
+        for field in fields:
+            sn_lower = field['schema_name'].lower()
+            refs = field_ref_counts.get(sn_lower, {})
+            has_usage = any(refs.get(k, 0) > 0 for k in refs)
+            req = field.get('required_level', '') or ''
+            is_required = req.lower() not in ('', 'none')
+            field_mapping_suggested[sn_lower] = has_usage or is_required
+
+        matched = sum(1 for v in sf_mapping.values() if v.get('sfSuggestedFieldApiName', ''))
+        print(f"  SF mapping: {len(sf_mapping)} CSV rows, {suggestions_added} suggestions added ({matched} with SF field match)")
+    else:
+        sf_mapping = {}
+
     markdown, field_index = generate_markdown(
         entity_name, fields, forms, views, chart_visualizations,
         reports, dashboards,
         workflows, js_files, formulas, plugin_refs, controls,
-        relationships, ribbon, conflicts
+        relationships, ribbon, conflicts,
+        sf_mapping=sf_mapping, field_mapping_suggested=field_mapping_suggested
     )
 
     output_file = os.path.join(output_dir, f"{entity_name}_field_usage.md")
@@ -2845,12 +3101,15 @@ def main():
                         help='Generate reports for all entities in the solution')
     parser.add_argument('--output-dir', default=DEFAULT_OUTPUT_DIR,
                         help='Directory for generated .md files (default: reports/)')
+    parser.add_argument('--mapping-dir', default=DEFAULT_MAPPING_DIR,
+                        help='Directory containing SF mapping CSVs (default: mapping/)')
     args = parser.parse_args()
 
     if not args.all and not args.entity:
         parser.error('either provide an entity name or use --all')
 
     output_dir = args.output_dir
+    mapping_dir = args.mapping_dir
 
     if not os.path.isdir(output_dir):
         os.makedirs(output_dir, exist_ok=True)
@@ -2869,12 +3128,17 @@ def main():
     print(f"    Property mappings: {len(property_to_field)}")
     print(f"    Entity classes: {len(class_to_entity)}")
 
+    print("  Building SF entity index...")
+    sf_entity_index = build_sf_entity_index(SF_ENTITIES_DIR)
+    print(f"    SF objects: {len(sf_entity_index)}")
+
     if args.all:
         entities = discover_entities(root)
         print(f"\nDiscovered {len(entities)} entities in solution.")
         success = 0
         for entity_name in entities:
-            if process_entity(entity_name, root, output_dir, property_to_field, class_to_entity):
+            if process_entity(entity_name, root, output_dir, property_to_field, class_to_entity,
+                              mapping_dir=mapping_dir, sf_entity_index=sf_entity_index):
                 success += 1
         print()
         print("=" * 60)
@@ -2882,7 +3146,8 @@ def main():
         print("=" * 60)
     else:
         entity_name = args.entity.lower()
-        if not process_entity(entity_name, root, output_dir, property_to_field, class_to_entity):
+        if not process_entity(entity_name, root, output_dir, property_to_field, class_to_entity,
+                              mapping_dir=mapping_dir, sf_entity_index=sf_entity_index):
             sys.exit(1)
         print()
         print("=" * 60)

@@ -1,6 +1,6 @@
-fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-azt_historicalowner,Historical Owner,nvarchar,none,True,,,,,,,,
-azt_recordownerid,Record Owner,lookup,none,True,,,,,,,,
-azt_reorderopportunityid,Reorder Opportunity,lookup,none,True,,,,,,,,
-azt_tasktype,Task Type,picklist,none,True,"327630000: Standard Task, 327630001: Reorder Task",,,,,,,
-regardingobjectid,Regarding,lookup,none,False,,,,,,,,
+fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+azt_historicalowner,Historical Owner,nvarchar,none,True,,,0,0,0,0,0,2,0,0,0,0,0,,,,,,
+azt_recordownerid,Record Owner,lookup,none,True,,,1,6,0,0,0,37,0,9,0,1,0,,,,,,
+azt_reorderopportunityid,Reorder Opportunity,lookup,none,True,,,1,0,0,0,0,0,0,0,0,1,0,,,,,,
+azt_tasktype,Task Type,picklist,none,True,"327630000: Standard Task, 327630001: Reorder Task",,1,2,0,0,0,0,0,0,0,0,0,,,,,,
+regardingobjectid,Regarding,lookup,none,False,,,0,5,0,0,0,14,0,8,0,32,0,,,,,,

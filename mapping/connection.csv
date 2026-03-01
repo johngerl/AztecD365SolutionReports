@@ -1,4 +1,4 @@
-fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-azt_verticalname,Vertical Name,picklist,none,True,"100000000: CTE, 327630000: Academic, 327630001: Workforce, 327630002: Wellness",,,,,,,
-record1id,Connected From,lookup,none,False,,,,,,,,
-record2id,Connected To,lookup,none,False,,,,,,,,
+fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+azt_verticalname,Vertical Name,picklist,none,True,"100000000: CTE, 327630000: Academic, 327630001: Workforce, 327630002: Wellness",,1,2,0,0,0,0,0,0,0,0,0,,,,,,
+record1id,Connected From,lookup,none,False,,,1,0,0,0,0,0,0,5,0,38,0,,,,,,
+record2id,Connected To,lookup,none,False,,,1,6,0,0,0,0,0,6,0,38,0,,,,,,

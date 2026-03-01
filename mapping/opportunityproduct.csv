@@ -1,10 +1,10 @@
-fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-azt_discretionarydiscountamt,Discretionary Discount Amt,money,none,True,,,,,,,,
-azt_discretionarydiscountamt_base,Discretionary Discount Amt (Base),money,none,True,,,,,,,,
-azt_issaas,Is SaaS?,bit,none,True,"1: Yes, 0: No",,,,,OpportunityLineItem,SaaS,SaaS__c
-azt_licensetermmonths,License Term (Months),int,none,True,,,,,,,,
-azt_licensetype,License Type,picklist,required,True,,,,,,OpportunityLineItem,License Type,License_Type__c
-azt_nonsaastype,Non-SaaS Type,picklist,none,True,"276530000: Life Skills, 276530001: Kaplan Books, 276530003: GED Vouchers, 276530002: Other",,,,,OpportunityLineItem,Non SaaS Type,Non_SaaS_Type__c
-azt_pricebookentry,SF Price Book Entry,nvarchar,none,True,,,,,,,,
-entityimage,Entity Image,image,none,False,,,,,,,,
-quantity,Quantity,decimal,required,False,,,Opportunity Product,Quantity,Quantity,,,
+fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+azt_discretionarydiscountamt,Discretionary Discount Amt,money,none,True,,,1,0,0,0,0,0,0,2,0,0,0,,,,,,
+azt_discretionarydiscountamt_base,Discretionary Discount Amt (Base),money,none,True,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_issaas,Is SaaS?,bit,none,True,"1: Yes, 0: No",,2,0,0,0,0,0,0,2,0,0,0,,,,OpportunityLineItem,SaaS,SaaS__c
+azt_licensetermmonths,License Term (Months),int,none,True,,,2,2,0,0,0,1,0,22,0,0,0,,,,,,
+azt_licensetype,License Type,picklist,required,True,,,2,5,0,0,0,1,0,25,0,0,0,,,,OpportunityLineItem,License Type,License_Type__c
+azt_nonsaastype,Non-SaaS Type,picklist,none,True,"276530000: Life Skills, 276530001: Kaplan Books, 276530003: GED Vouchers, 276530002: Other",,0,0,0,0,0,0,0,1,0,0,0,,,,OpportunityLineItem,Non SaaS Type,Non_SaaS_Type__c
+azt_pricebookentry,SF Price Book Entry,nvarchar,none,True,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+entityimage,Entity Image,image,none,False,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+quantity,Quantity,decimal,required,False,,,0,7,2,0,0,0,0,18,0,0,0,Opportunity Product,Quantity,Quantity,,,

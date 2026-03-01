@@ -1,4 +1,4 @@
-fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-azt_regionalteam,Regional Team?,bit,none,True,"1: Yes, 0: No",,,,,,,
-azt_stateabbreviation,State Abbreviation,nvarchar,none,True,,,,,,,,
-issastokenset,,bit,none,False,,,,,,,,
+fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+azt_regionalteam,Regional Team?,bit,none,True,"1: Yes, 0: No",,1,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_stateabbreviation,State Abbreviation,nvarchar,none,True,,,1,5,0,0,0,0,0,1,0,0,0,,,,,,
+issastokenset,,bit,none,False,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,

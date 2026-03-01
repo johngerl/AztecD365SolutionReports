@@ -1,30 +1,30 @@
-fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-azt_defaultfreightamount,Default Freight Amount,money,none,True,,,,,,,,
-azt_defaultfreightamount_base,Default Freight Amount (Base),money,none,True,,,,,,,,
-azt_discretionarydiscount,Discretionary Discount,money,none,True,,,,,,,,
-azt_discretionarydiscount_base,Discretionary Discount (Base),money,none,True,,,,,,,,
-azt_discretionarydiscountamt,Discretionary Discount Amt,money,none,True,,,,,,,,
-azt_discretionarydiscountamt_base,Discretionary Discount Amt (Base),money,none,True,,,,,,,,
-azt_freightamtapproved,Freight Amt Approved?,bit,none,True,"1: Yes, 0: No",,,,,Quote,Freight Approved,Freight_Approved__c
-azt_historicalowner,Historical Owner,nvarchar,none,True,,,,,,,,
-azt_ponumber,PO Number,nvarchar,none,True,,,,,,Quote,PO Number,PO_Number__c
-azt_quoteapproval,Quote Approval,picklist,none,True,"276530000: Does not need approval, 276530001: Needs approval, 276530002: Approved",,,,,Quote,Approved,Approved__c
-azt_quotedcontactid,Quoted Contact,lookup,none,True,,,,,,,,
-azt_recapnotes,Recap Notes,ntext,none,True,,,,,,Quote,Quote Summary,Quote_Summary__c
-azt_recapnotescannedoptions,Recap Notes (Canned Options),picklist,none,True,"100000004: Internet Renewal, 276530000: Internet, 100000003: Kaplan Series, 100000001: GED Flash, 100000000: Life Skills Print, 276530001: LAN, 276530002: GED Ready Vouchers, 100000002: Third party vendors (ie..SHI), 276530003: COVID-19, 327630000: Print, 327630001: PassAssured",,,,,,,
-azt_recordownerid,Record Owner,lookup,none,True,,,,,,,,
-azt_requestedfreightamt,Requested Freight Amt,money,none,True,,,,,,Quote,Freight Requested,Freight_Requested__c
-azt_requestedfreightamt_base,Requested Freight Amt (Base),money,none,True,,,,,,,,
-azt_shippingcompany,Ship To Company,nvarchar,none,True,,,,,,,,
-azt_signedquotereceived,Signed Quote Received?,bit,none,True,"1: Yes, 0: No",,,,,,,
-azt_taxamount,Tax Amount,money,none,True,,,,,,,,
-azt_taxamount_base,Tax Amount (Base),money,none,True,,,,,,,,
-customerid,Potential Customer,customer,required,False,,,,,,,,
-freightamount,Freight Amount,money,none,False,,,,,,Quote,Shipping and Handling,ShippingHandling
-freightamount_base,Freight Amount (Base),money,none,False,,,,,,,,
-name,Name,nvarchar,required,False,,,,,,Quote,Name,Name
-quotenumber,Quote ID,nvarchar,systemrequired,False,,,,,,Quote,Quote Number,QuoteNumber
-shipto_contactname,Shipping Contact,nvarchar,none,False,,,,,,,,
-statecode,Status,state,systemrequired,False,,,,,,,,
-statuscode,Status Reason,status,none,False,,,,,,,,
-totalamount,Total Amount,money,none,False,,,,,,Quote,Grand Total,GrandTotal
+fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+azt_defaultfreightamount,Default Freight Amount,money,none,True,,,1,1,0,0,0,0,0,1,0,0,0,,,,,,
+azt_defaultfreightamount_base,Default Freight Amount (Base),money,none,True,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_discretionarydiscount,Discretionary Discount,money,none,True,,,1,2,0,3,0,0,1,0,0,0,0,,,,,,
+azt_discretionarydiscount_base,Discretionary Discount (Base),money,none,True,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_discretionarydiscountamt,Discretionary Discount Amt,money,none,True,,,1,0,0,0,0,0,1,2,0,0,0,,,,,,
+azt_discretionarydiscountamt_base,Discretionary Discount Amt (Base),money,none,True,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_freightamtapproved,Freight Amt Approved?,bit,none,True,"1: Yes, 0: No",,1,0,0,0,0,0,0,1,0,0,0,,,,Quote,Freight Approved,Freight_Approved__c
+azt_historicalowner,Historical Owner,nvarchar,none,True,,,1,0,0,0,0,3,0,0,0,0,0,,,,,,
+azt_ponumber,PO Number,nvarchar,none,True,,,1,0,0,1,0,3,0,2,0,0,0,,,,Quote,PO Number,PO_Number__c
+azt_quoteapproval,Quote Approval,picklist,none,True,"276530000: Does not need approval, 276530001: Needs approval, 276530002: Approved",,0,0,0,0,0,2,0,0,0,0,0,,,,Quote,Approved,Approved__c
+azt_quotedcontactid,Quoted Contact,lookup,none,True,,,1,0,0,1,0,3,0,0,0,1,0,,,,,,
+azt_recapnotes,Recap Notes,ntext,none,True,,,1,0,0,3,0,2,0,0,0,0,0,,,,Quote,Quote Summary,Quote_Summary__c
+azt_recapnotescannedoptions,Recap Notes (Canned Options),picklist,none,True,"100000004: Internet Renewal, 276530000: Internet, 100000003: Kaplan Series, 100000001: GED Flash, 100000000: Life Skills Print, 276530001: LAN, 276530002: GED Ready Vouchers, 100000002: Third party vendors (ie..SHI), 276530003: COVID-19, 327630000: Print, 327630001: PassAssured",,1,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_recordownerid,Record Owner,lookup,none,True,,,1,1,0,3,0,37,0,9,0,1,0,,,,,,
+azt_requestedfreightamt,Requested Freight Amt,money,none,True,,,1,1,0,0,0,0,0,1,0,0,0,,,,Quote,Freight Requested,Freight_Requested__c
+azt_requestedfreightamt_base,Requested Freight Amt (Base),money,none,True,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_shippingcompany,Ship To Company,nvarchar,none,True,,,1,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_signedquotereceived,Signed Quote Received?,bit,none,True,"1: Yes, 0: No",,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_taxamount,Tax Amount,money,none,True,,,1,0,0,3,0,2,0,0,0,0,0,,,,,,
+azt_taxamount_base,Tax Amount (Base),money,none,True,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+customerid,Potential Customer,customer,required,False,,,0,5,0,5,0,14,0,11,0,1,0,,,,,,
+freightamount,Freight Amount,money,none,False,,,1,1,0,4,0,2,0,1,0,0,0,,,,Quote,Shipping and Handling,ShippingHandling
+freightamount_base,Freight Amount (Base),money,none,False,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+name,Name,nvarchar,required,False,,,0,8,0,10,0,17,0,23,0,0,0,,,,Quote,Name,Name
+quotenumber,Quote ID,nvarchar,systemrequired,False,,,0,1,0,4,0,0,0,0,0,0,0,,,,Quote,Quote Number,QuoteNumber
+shipto_contactname,Shipping Contact,nvarchar,none,False,,,1,0,0,3,0,3,0,0,0,0,0,,,,,,
+statecode,Status,state,systemrequired,False,,,0,8,0,1,0,10,0,20,0,0,0,,,,,,
+statuscode,Status Reason,status,none,False,,,0,0,0,2,0,5,0,6,0,0,0,,,,,,
+totalamount,Total Amount,money,none,False,,,0,5,0,5,0,0,0,4,0,0,0,,,,Quote,Grand Total,GrandTotal

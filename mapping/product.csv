@@ -1,21 +1,21 @@
-fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-azt_iscompanion,Is Companion,bit,none,True,"1: Yes, 0: No",,,,,Product2,Is Companion,Is_Companion__c
-azt_isprint,Is Print,bit,none,True,"1: Yes, 0: No",,,,,Product2,Is Print,Is_Print__c
-azt_nonsaastype,Non-SaaS Type,picklist,none,True,"276530001: Kaplan Books, 276530000: Life Skills, 276530003: GED Vouchers, 327630000: Paxen Print, 276530002: Other",,,,,Product2,Non Saas Type,Non_Saas_Type__c
-azt_productcategory,Product Category,picklist,none,True,"327630000: ABE, 327630001: HSE, 327630002: College, 327630003: Healthcare, 327630004: Trades, 327630005: Life Skills, 327630006: Work Skills",,,,,Product2,Product Type,Product_Type__c
-azt_productfamily,Product Family,multiselectpicklist,none,True,,,,,,,,
-azt_productgroup,Product Group,picklist,none,True,"327630000: CASAS, 327630007: CTE Supplemental, 327630002: Comprehensive, 327630008: GED Comprehensive, 327630004: Credential, 327630011: Foundations, 327630010: Fundamentals, 327630003: GED Supplemental, 327630009: HiSET, 327630006: Non Re-entry, 327630012: Pre-HSE, 327630005: Re-entry, 327630001: TABE, 327630013: Vouchers, 327630014: Other",,,,,,,
-azt_productlanguage,Product Language,picklist,none,True,"327630000: English, 327630001: Spanish",,,,,,,
-azt_replacementproductid,Replacement Product,lookup,none,True,,,,,,,,
-azt_saas,SAAS,bit,required,True,"1: Yes, 0: No",,,,,Product2,SaaS,SaaS__c
-azt_salesfamily,Sales Family,picklist,none,True,"327630000: Academic, 327630001: Workforce, 327630002: Financial Wellness, 327630003: CTE, 327630004: Other",,,,,Product2,Sales Family,Sales_Family__c
-description,Description,ntext,none,False,,,,Description,,Product2,Description,Description
-entityimage,Entity Image,image,none,False,,,,,,,,
-exchangerate,Exchange Rate,decimal,none,False,,,,,,,,
-hierarchypath,Hierarchy Path,nvarchar,none,False,,,,,,,,
-name,Name,nvarchar,required,False,,,,Name,,Product2,Name,Name
-price,List Price,money,none,False,,,,,,Product2,List Price,List_Price__c
-productnumber,Product ID,nvarchar,systemrequired,False,,,,,,Product2,Product Code,ProductCode
-productstructure,Product Structure,picklist,systemrequired,False,"1: Product, 2: Product Family, 3: Product Bundle",,,,,,,
-producttypecode,Product Type,picklist,none,False,"1: Software, 2: Legacy, 3: Hardware, 4: Books, 5: Life Skills Book, 6: PD, 8: Vouchers, 9: P6, 7: Other",,,,,,,
-statecode,Status,state,systemrequired,False,,,,,,,,
+fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+azt_iscompanion,Is Companion,bit,none,True,"1: Yes, 0: No",,1,0,0,0,0,0,0,1,0,0,0,,,,Product2,Is Companion,Is_Companion__c
+azt_isprint,Is Print,bit,none,True,"1: Yes, 0: No",,1,3,0,0,0,0,0,1,0,0,0,,,,Product2,Is Print,Is_Print__c
+azt_nonsaastype,Non-SaaS Type,picklist,none,True,"276530001: Kaplan Books, 276530000: Life Skills, 276530003: GED Vouchers, 327630000: Paxen Print, 276530002: Other",,1,0,0,0,0,0,0,1,0,0,0,,,,Product2,Non Saas Type,Non_Saas_Type__c
+azt_productcategory,Product Category,picklist,none,True,"327630000: ABE, 327630001: HSE, 327630002: College, 327630003: Healthcare, 327630004: Trades, 327630005: Life Skills, 327630006: Work Skills",,1,0,0,0,0,0,0,0,0,0,0,,,,Product2,Product Type,Product_Type__c
+azt_productfamily,Product Family,multiselectpicklist,none,True,,,1,2,0,0,0,0,0,0,0,0,0,,,,,,
+azt_productgroup,Product Group,picklist,none,True,"327630000: CASAS, 327630007: CTE Supplemental, 327630002: Comprehensive, 327630008: GED Comprehensive, 327630004: Credential, 327630011: Foundations, 327630010: Fundamentals, 327630003: GED Supplemental, 327630009: HiSET, 327630006: Non Re-entry, 327630012: Pre-HSE, 327630005: Re-entry, 327630001: TABE, 327630013: Vouchers, 327630014: Other",,1,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_productlanguage,Product Language,picklist,none,True,"327630000: English, 327630001: Spanish",,1,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_replacementproductid,Replacement Product,lookup,none,True,,,1,0,0,0,0,0,0,1,0,1,0,,,,,,
+azt_saas,SAAS,bit,required,True,"1: Yes, 0: No",,1,5,0,0,0,0,0,2,0,0,0,,,,Product2,SaaS,SaaS__c
+azt_salesfamily,Sales Family,picklist,none,True,"327630000: Academic, 327630001: Workforce, 327630002: Financial Wellness, 327630003: CTE, 327630004: Other",,1,0,0,0,0,0,0,0,0,0,0,,,,Product2,Sales Family,Sales_Family__c
+description,Description,ntext,none,False,,,0,1,0,0,0,14,0,7,0,0,0,,Description,,Product2,Description,Description
+entityimage,Entity Image,image,none,False,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+exchangerate,Exchange Rate,decimal,none,False,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+hierarchypath,Hierarchy Path,nvarchar,none,False,,,0,5,0,0,0,0,0,0,0,0,0,,,,,,
+name,Name,nvarchar,required,False,,,0,12,0,0,0,16,0,23,0,0,0,,Name,,Product2,Name,Name
+price,List Price,money,none,False,,,1,1,0,0,0,0,0,0,0,0,0,,,,Product2,List Price,List_Price__c
+productnumber,Product ID,nvarchar,systemrequired,False,,,0,7,0,5,0,0,0,3,0,0,0,,,,Product2,Product Code,ProductCode
+productstructure,Product Structure,picklist,systemrequired,False,"1: Product, 2: Product Family, 3: Product Bundle",,0,6,0,0,0,0,0,0,0,0,0,,,,,,
+producttypecode,Product Type,picklist,none,False,"1: Software, 2: Legacy, 3: Hardware, 4: Books, 5: Life Skills Book, 6: PD, 8: Vouchers, 9: P6, 7: Other",,1,6,0,0,0,0,0,3,0,0,0,,,,,,
+statecode,Status,state,systemrequired,False,,,0,4,0,0,0,10,0,20,0,0,0,,,,,,

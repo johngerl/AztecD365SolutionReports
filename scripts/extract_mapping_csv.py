@@ -37,7 +37,24 @@ SF_COLUMNS = [
 
 D365_COLUMNS = ["displayName", "dataType", "requiredLevel", "isCustom"]
 REPORT_COLUMNS = ["picklistValues", "mappingSuggested"]
-CSV_COLUMNS = D365_COLUMNS + REPORT_COLUMNS + SF_COLUMNS
+
+# Reference count columns: CSV header -> JSON section key
+REF_COUNT_COLUMNS = [
+    ("refForms", "forms"),
+    ("refViews", "views"),
+    ("refChartVisualizations", "chartVisualizations"),
+    ("refReports", "reports"),
+    ("refDashboards", "dashboards"),
+    ("refWorkflows", "workflows"),
+    ("refFormulas", "formulas"),
+    ("refPlugins", "plugins"),
+    ("refPcfControls", "pcfControls"),
+    ("refRelationships", "relationships"),
+    ("refRibbon", "ribbon"),
+]
+
+CSV_COLUMNS = (D365_COLUMNS + REPORT_COLUMNS
+               + [col for col, _ in REF_COUNT_COLUMNS] + SF_COLUMNS)
 
 
 def extract_mapping(source_file, output_file):
@@ -65,6 +82,9 @@ def extract_mapping(source_file, output_file):
             "mappingSuggested": str(field.get("mappingSuggested", "")).lower()
                 if field.get("mappingSuggested") is not None else "",
         }
+        for csv_col, json_key in REF_COUNT_COLUMNS:
+            section = field.get(json_key)
+            row[csv_col] = len(section) if isinstance(section, list) else 0
         for col in SF_COLUMNS:
             row[col] = field.get(col) or ""
         rows.append(row)

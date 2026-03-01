@@ -1,42 +1,42 @@
-fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-azt_accountleadgen,Account Lead Gen,nvarchar,none,True,,,,,,,,
-azt_addresssearch,Address Search,nvarchar,none,True,,,,,,,,
-azt_analysisbackground,Analysis Background,ntext,none,True,,,,,,Lead,Analysis Background,Analysis_Background__c
-azt_assignedon,Assigned On,datetime,none,True,,,,,,,,
-azt_dayssinceassigned,Days Since Assigned,int,none,True,,,,,,,,
-azt_dayssincecreated,Days Since Created,int,none,True,,,,,,,,
-azt_fiscalyearend,Fiscal Year End,picklist,none,True,,,,,,,,
-azt_lastactivitydate,Last Activity Date,datetime,none,True,,,,,,,,
-azt_leadformtype,Lead Form Type,picklist,none,True,"3: Aztec Lead, 1: FSR, 2: Sales Lead",,,,,,,
-azt_leadsource,Old Lead Source,picklist,none,True,,,,,,,,
-azt_leadsourceid,Lead Source,lookup,required,True,,,,,,Lead,LeadSource,LeadSource
-azt_leadtemperature,Lead Temperature,picklist,required,True,"327630000: Hot, 327630001: Warm, 327630002: Cold, 327630003: Rainy Day, 327630004: Future, 327630005: Internal Assignment, 100000000: Priority",,,,,,,
-azt_leadtype,Lead Type,picklist,none,True,"327630000: Ed Tech, 327630001: Pub, 327630002: CTE, 327630003: Workforce",,,,,Lead,Lead Type,Lead_Type__c
-azt_nextstepsuggestion,Next Step Suggestion,ntext,none,True,,,,,,,,
-azt_numberofcomputers,# Computers,int,none,True,,,,,,,,
-azt_numberofstudents,# Students,int,none,True,,,,,,Lead,How Many Customers Members,How_Many_Customers_Members__c
-azt_opportunityleadid,Opportunity Lead,lookup,none,True,,,,,,,,
-azt_originatingleadimportid,Originating Lead Import,lookup,none,True,,,,,,,,
-azt_pendingassigmnent,Pending Assigmnent,bit,none,True,"1: Yes, 0: No",,,,,,,
-azt_productsissues,Product(s) Issues,ntext,none,True,,,,,,Lead,Product Interest,Product_Interest__c
-azt_qualifiedbyid,Qualified By,lookup,none,True,,,,,,,,
-azt_qualifieddisqualifiedon,Qualified/Disqualified On,datetime,none,True,,,,,,Lead,Qualified Disqualified On,Qualified_Disqualified_On__c
-azt_recommendation,Recommendation,ntext,none,True,,,,,,Lead,Next Step,Next_Step__c
-azt_recordownerid,Record Owner,lookup,none,True,,,,,,,,
-azt_verticalmarket,Vertical Market,picklist,none,True,,,,,,Lead,Vertical Market,Vertical_Market__c
-companyname,Company Name,nvarchar,recommended,False,,,,,,,,
-customerid,Customer,customer,none,False,,,,,,,,
-emailaddress1,Email,nvarchar,none,False,,,,,,Lead,Email,Email
-entityimage,Entity Image,image,none,False,,,,,,,,
-exchangerate,Exchange Rate,decimal,none,False,,,,,,,,
-firstname,First Name,nvarchar,recommended,False,,,,,,Lead,FirstName,FirstName
-fullname,Name,nvarchar,none,False,,,,,,,,
-lastname,Last Name,nvarchar,recommended,False,,,,,,Lead,LastName,LastName
-leadsourcecode,OOB Lead Source,picklist,none,False,"1: Advertisement, 2: Employee Referral, 3: External Referral, 4: Partner, 5: Public Relations, 6: Seminar, 7: Trade Show, 8: Web, 9: Word of Mouth, 10: Other",,,,,,,
-ownerid,Owner,owner,systemrequired,False,,,,,,Lead,Owner,OwnerId
-parentaccountid,Parent Account for lead,lookup,none,False,,,,,,,,
-qualifyingopportunityid,Qualifying Opportunity,lookup,none,False,,,,,,,,
-statecode,Status,state,systemrequired,False,,,,,,,,
-statuscode,Status Reason,status,none,False,,,,,,,,
-subject,Topic,nvarchar,required,False,,,,,,,,
-telephone1,Business Phone,nvarchar,none,False,,,,,,Lead,Phone,Phone
+fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+azt_accountleadgen,Account Lead Gen,nvarchar,none,True,,,1,0,0,0,0,1,0,0,0,0,0,,,,,,
+azt_addresssearch,Address Search,nvarchar,none,True,,,3,0,0,0,0,0,0,2,0,0,0,,,,,,
+azt_analysisbackground,Analysis Background,ntext,none,True,,,2,0,0,0,0,0,0,0,0,0,0,,,,Lead,Analysis Background,Analysis_Background__c
+azt_assignedon,Assigned On,datetime,none,True,,,2,0,0,0,0,0,1,0,0,0,0,,,,,,
+azt_dayssinceassigned,Days Since Assigned,int,none,True,,,2,0,0,0,0,0,1,0,0,0,0,,,,,,
+azt_dayssincecreated,Days Since Created,int,none,True,,,2,5,0,0,0,0,1,0,0,0,0,,,,,,
+azt_fiscalyearend,Fiscal Year End,picklist,none,True,,,3,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_lastactivitydate,Last Activity Date,datetime,none,True,,,2,5,0,0,0,0,1,1,0,0,0,,,,,,
+azt_leadformtype,Lead Form Type,picklist,none,True,"3: Aztec Lead, 1: FSR, 2: Sales Lead",,4,0,0,0,0,1,0,0,0,0,0,,,,,,
+azt_leadsource,Old Lead Source,picklist,none,True,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_leadsourceid,Lead Source,lookup,required,True,,,2,4,0,1,0,8,0,2,0,1,0,,,,Lead,LeadSource,LeadSource
+azt_leadtemperature,Lead Temperature,picklist,required,True,"327630000: Hot, 327630001: Warm, 327630002: Cold, 327630003: Rainy Day, 327630004: Future, 327630005: Internal Assignment, 100000000: Priority",,4,6,2,0,0,4,0,0,0,0,0,,,,,,
+azt_leadtype,Lead Type,picklist,none,True,"327630000: Ed Tech, 327630001: Pub, 327630002: CTE, 327630003: Workforce",,1,6,0,0,0,0,0,0,0,0,0,,,,Lead,Lead Type,Lead_Type__c
+azt_nextstepsuggestion,Next Step Suggestion,ntext,none,True,,,2,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_numberofcomputers,# Computers,int,none,True,,,3,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_numberofstudents,# Students,int,none,True,,,3,0,0,0,0,0,0,0,0,0,0,,,,Lead,How Many Customers Members,How_Many_Customers_Members__c
+azt_opportunityleadid,Opportunity Lead,lookup,none,True,,,1,0,0,0,0,2,0,0,0,1,0,,,,,,
+azt_originatingleadimportid,Originating Lead Import,lookup,none,True,,,1,0,0,0,0,0,0,1,0,1,0,,,,,,
+azt_pendingassigmnent,Pending Assigmnent,bit,none,True,"1: Yes, 0: No",,3,0,0,0,0,2,0,0,0,0,0,,,,,,
+azt_productsissues,Product(s) Issues,ntext,none,True,,,2,0,0,0,0,0,0,0,0,0,0,,,,Lead,Product Interest,Product_Interest__c
+azt_qualifiedbyid,Qualified By,lookup,none,True,,,1,0,0,0,0,1,0,0,0,1,0,,,,,,
+azt_qualifieddisqualifiedon,Qualified/Disqualified On,datetime,none,True,,,4,0,0,0,0,1,0,0,0,0,0,,,,Lead,Qualified Disqualified On,Qualified_Disqualified_On__c
+azt_recommendation,Recommendation,ntext,none,True,,,2,0,0,0,0,0,0,0,0,0,0,,,,Lead,Next Step,Next_Step__c
+azt_recordownerid,Record Owner,lookup,none,True,,,1,2,0,1,0,37,0,9,0,1,0,,,,,,
+azt_verticalmarket,Vertical Market,picklist,none,True,,,3,0,0,0,0,2,0,0,0,0,0,,,,Lead,Vertical Market,Vertical_Market__c
+companyname,Company Name,nvarchar,recommended,False,,,3,6,0,0,0,3,0,1,0,0,0,,,,,,
+customerid,Customer,customer,none,False,,,0,0,0,0,0,13,0,11,0,1,0,,,,,,
+emailaddress1,Email,nvarchar,none,False,,,3,0,0,0,0,0,0,2,0,0,0,,,,Lead,Email,Email
+entityimage,Entity Image,image,none,False,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+exchangerate,Exchange Rate,decimal,none,False,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+firstname,First Name,nvarchar,recommended,False,,,0,0,0,0,0,3,0,1,0,0,0,,,,Lead,FirstName,FirstName
+fullname,Name,nvarchar,none,False,,,2,4,0,3,0,4,0,7,0,0,0,,,,,,
+lastname,Last Name,nvarchar,recommended,False,,,0,0,0,0,0,3,0,1,0,0,0,,,,Lead,LastName,LastName
+leadsourcecode,OOB Lead Source,picklist,none,False,"1: Advertisement, 2: Employee Referral, 3: External Referral, 4: Partner, 5: Public Relations, 6: Seminar, 7: Trade Show, 8: Web, 9: Word of Mouth, 10: Other",,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+ownerid,Owner,owner,systemrequired,False,,,3,12,0,1,0,24,0,22,0,0,0,,,,Lead,Owner,OwnerId
+parentaccountid,Parent Account for lead,lookup,none,False,,,8,13,0,1,0,12,0,4,0,0,0,,,,,,
+qualifyingopportunityid,Qualifying Opportunity,lookup,none,False,,,1,5,0,0,0,1,0,0,0,0,0,,,,,,
+statecode,Status,state,systemrequired,False,,,0,12,0,1,0,10,1,20,0,0,0,,,,,,
+statuscode,Status Reason,status,none,False,,,3,2,0,1,0,5,0,6,0,0,0,,,,,,
+subject,Topic,nvarchar,required,False,,,3,15,0,2,0,18,1,3,0,0,0,,,,,,
+telephone1,Business Phone,nvarchar,none,False,,,3,0,0,0,0,0,0,1,0,0,0,,,,Lead,Phone,Phone

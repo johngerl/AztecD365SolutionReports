@@ -1,18 +1,18 @@
-fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-azt_aztecproduct,Aztec Product,picklist,none,True,"100000000: P6 - Testing Platform, 100000001: P12 - Learning Platform, 100000003: Legacy",,,,,,,
-azt_customersupportstatus,Customer Support Status,bit,none,True,"1: Active, 0: Expired",,,,,,,
-azt_daysopen,Days Open,int,none,True,,,,,,,,
-azt_engagementid,Engagement,lookup,none,True,,,,,,,,
-azt_firstrecordownerassignment,First Record Owner Assignment,bit,none,True,"0: No, 1: Yes",,,,,,,
-azt_historicalowner,Historical Owner,nvarchar,none,True,,,,,,,,
-azt_recordownerid,Record Owner,lookup,none,True,,,,,,,,
-azt_resolvedbyid,Resolved By,lookup,none,True,,,,,,,,
-azt_responsibletechnicianid,Responsible Rep,lookup,none,True,,,,,,,,
-azt_utrackcase,U-Track Case#,nvarchar,none,True,,,,,,,,
-caseorigincode,Case Origin,picklist,none,False,,,,,,Case,Origin,Origin
-casetypecode,Case Type,picklist,none,False,"3: Support - Request, 100000001: Academic, 100000000: Engineering, 327630000: Operational, 327630002: Companion Repair, 327630001: Support - Companion, 1: Support - Internal, 2: Support - Online, 100000004: Professional Development Support, 100000002: Feature Request, 100000003: Content Request",,,,,Case,Type,Type
-customerid,Customer,customer,systemrequired,False,,,,,,,,
-entityimage,Entity Image,image,none,False,,,,,,,,
-primarycontactid,Contact,lookup,required,False,,,,,,,,
-statecode,Status,state,systemrequired,False,,,,,,,,
-statuscode,Status Reason,status,none,False,,,,,,,,
+fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+azt_aztecproduct,Aztec Product,picklist,none,True,"100000000: P6 - Testing Platform, 100000001: P12 - Learning Platform, 100000003: Legacy",,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_customersupportstatus,Customer Support Status,bit,none,True,"1: Active, 0: Expired",,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_daysopen,Days Open,int,none,True,,,1,1,0,0,0,0,1,0,0,0,0,,,,,,
+azt_engagementid,Engagement,lookup,none,True,,,1,0,0,0,0,4,0,4,0,1,0,,,,,,
+azt_firstrecordownerassignment,First Record Owner Assignment,bit,none,True,"0: No, 1: Yes",,1,0,0,0,0,2,0,0,0,0,0,,,,,,
+azt_historicalowner,Historical Owner,nvarchar,none,True,,,1,0,0,0,0,2,0,0,0,0,0,,,,,,
+azt_recordownerid,Record Owner,lookup,none,True,,,2,5,0,0,0,37,0,9,0,1,0,,,,,,
+azt_resolvedbyid,Resolved By,lookup,none,True,,,1,0,0,0,0,1,0,2,0,1,0,,,,,,
+azt_responsibletechnicianid,Responsible Rep,lookup,none,True,,,1,0,0,0,0,0,0,0,0,1,0,,,,,,
+azt_utrackcase,U-Track Case#,nvarchar,none,True,,,1,0,0,0,0,0,0,0,0,0,0,,,,,,
+caseorigincode,Case Origin,picklist,none,False,,,2,4,0,0,0,0,0,0,0,0,0,,,,Case,Origin,Origin
+casetypecode,Case Type,picklist,none,False,"3: Support - Request, 100000001: Academic, 100000000: Engineering, 327630000: Operational, 327630002: Companion Repair, 327630001: Support - Companion, 1: Support - Internal, 2: Support - Online, 100000004: Professional Development Support, 100000002: Feature Request, 100000003: Content Request",,1,2,0,0,0,2,0,0,0,0,0,,,,Case,Type,Type
+customerid,Customer,customer,systemrequired,False,,,0,5,0,0,0,13,0,11,0,2,0,,,,,,
+entityimage,Entity Image,image,none,False,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+primarycontactid,Contact,lookup,required,False,,,1,0,0,0,0,2,0,2,0,1,0,,,,,,
+statecode,Status,state,systemrequired,False,,,0,6,0,0,0,10,0,20,0,0,0,,,,,,
+statuscode,Status Reason,status,none,False,,,1,2,0,0,0,5,0,6,0,0,0,,,,,,

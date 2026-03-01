@@ -1,15 +1,15 @@
-fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-azt_discretionarydiscount,Discretionary Discount,money,none,True,,,,,,,,
-azt_discretionarydiscount_base,Discretionary Discount (Base),money,none,True,,,,,,,,
-azt_discretionarydiscountamt,Discretionary Discount Amt,money,none,True,,,,,,,,
-azt_discretionarydiscountamt_base,Discretionary Discount Amt (Base),money,none,True,,,,,,,,
-azt_issaas,Is SaaS?,bit,none,True,"1: Yes, 0: No",,,,,,,
-azt_licenseenddate,License End Date,datetime,none,True,,,,,,,,
-azt_licensestartdate,License Start Date,datetime,none,True,,,,,,Invoice_Line__c,License Start Date,License_Start_Date__c
-azt_licensetermmonths,License Term (Months),int,none,True,,,,,,Invoice_Line__c,License Term Months,License_Term_Months__c
-azt_licensetype,License Type,picklist,none,True,,,,,,Invoice_Line__c,License Type,License_Type__c
-azt_nonsaastype,Non-SaaS Type,picklist,none,True,"276530000: Life Skills, 276530001: Kaplan Books, 276530002: GED Vouchers, 276530003: Other",,,,,,,
-azt_softwarelicenseid,Software License,lookup,none,True,,,,,,,,
-azt_unitprice,Unit Price,money,none,True,,,,,,,,
-azt_unitprice_base,Unit Price (Base),money,none,True,,,,,,,,
-invoiceid,Invoice ID,lookup,systemrequired,False,,,,,,Invoice_Line__c,Invoice,Invoice__c
+fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+azt_discretionarydiscount,Discretionary Discount,money,none,True,,,1,0,0,0,0,0,1,0,0,0,0,,,,,,
+azt_discretionarydiscount_base,Discretionary Discount (Base),money,none,True,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_discretionarydiscountamt,Discretionary Discount Amt,money,none,True,,,1,2,0,0,0,0,0,2,0,0,0,,,,,,
+azt_discretionarydiscountamt_base,Discretionary Discount Amt (Base),money,none,True,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_issaas,Is SaaS?,bit,none,True,"1: Yes, 0: No",,1,0,0,0,0,0,0,2,0,0,0,,,,,,
+azt_licenseenddate,License End Date,datetime,none,True,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_licensestartdate,License Start Date,datetime,none,True,,,1,0,0,0,0,0,0,0,0,0,0,,,,Invoice_Line__c,License Start Date,License_Start_Date__c
+azt_licensetermmonths,License Term (Months),int,none,True,,,1,2,0,0,0,1,0,22,0,0,0,,,,Invoice_Line__c,License Term Months,License_Term_Months__c
+azt_licensetype,License Type,picklist,none,True,,,1,1,0,0,0,1,0,25,0,0,0,,,,Invoice_Line__c,License Type,License_Type__c
+azt_nonsaastype,Non-SaaS Type,picklist,none,True,"276530000: Life Skills, 276530001: Kaplan Books, 276530002: GED Vouchers, 276530003: Other",,1,0,0,0,0,0,0,1,0,0,0,,,,,,
+azt_softwarelicenseid,Software License,lookup,none,True,,,1,0,0,0,0,2,0,6,0,1,0,,,,,,
+azt_unitprice,Unit Price,money,none,True,,,0,1,0,0,0,0,1,0,0,0,0,,,,,,
+azt_unitprice_base,Unit Price (Base),money,none,True,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+invoiceid,Invoice ID,lookup,systemrequired,False,,,1,0,0,0,0,1,0,8,0,1,0,,,,Invoice_Line__c,Invoice,Invoice__c

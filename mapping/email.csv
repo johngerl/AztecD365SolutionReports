@@ -1,4 +1,4 @@
-fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-issafedescriptiontruncated,IsSafeDescriptionTruncated,int,none,False,,,,,,,,
-regardingobjectid,Regarding,lookup,none,False,,,,,,,,
-related,Related,partylist,none,False,,,,,,,,
+fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+issafedescriptiontruncated,IsSafeDescriptionTruncated,int,none,False,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+regardingobjectid,Regarding,lookup,none,False,,,1,0,0,0,0,14,0,8,0,32,0,,,,,,
+related,Related,partylist,none,False,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,

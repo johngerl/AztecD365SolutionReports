@@ -1,5 +1,5 @@
-fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-address1_telephone1,Main Phone,nvarchar,none,False,,,,,,,,
-azt_stateabbreviation,State Abbreviation,nvarchar,none,True,,,,,,,,
-name,Name,nvarchar,systemrequired,False,,,,,,,,
-websiteurl,Website,nvarchar,none,False,,,,,,,,
+fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+address1_telephone1,Main Phone,nvarchar,none,False,,,0,3,0,0,0,0,0,1,0,0,0,,,,,,
+azt_stateabbreviation,State Abbreviation,nvarchar,none,True,,,1,4,0,0,0,0,0,1,0,0,0,,,,,,
+name,Name,nvarchar,systemrequired,False,,,0,7,0,0,0,16,0,23,0,0,0,,,,,,
+websiteurl,Website,nvarchar,none,False,,,0,3,0,0,0,0,0,0,0,0,0,,,,,,

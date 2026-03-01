@@ -1,4 +1,4 @@
-fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-azt_goaltype,Goal Type,picklist,recommended,True,"327630000: Actual SaaS, 327630001: Actual Print, 327630002: Actual Combined, 327630003: SaaS Opportunity, 327630004: Print Opportunity, 327630005: Initial, 327630006: Add-On, 327630007: Win-Back, 327630008: Renewals, 327630009: Print +",,,,,,,
-azt_isprint,Is Print?,bit,none,True,"1: Yes, 0: No",,,,,,,
-azt_month,Month,picklist,none,True,,,,,,,,
+fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+azt_goaltype,Goal Type,picklist,recommended,True,"327630000: Actual SaaS, 327630001: Actual Print, 327630002: Actual Combined, 327630003: SaaS Opportunity, 327630004: Print Opportunity, 327630005: Initial, 327630006: Add-On, 327630007: Win-Back, 327630008: Renewals, 327630009: Print +",,1,2,0,0,0,0,0,2,0,0,0,,,,,,
+azt_isprint,Is Print?,bit,none,True,"1: Yes, 0: No",,0,0,0,0,0,0,0,1,0,0,0,,,,,,
+azt_month,Month,picklist,none,True,,,1,0,0,0,0,0,0,0,0,0,0,,,,,,

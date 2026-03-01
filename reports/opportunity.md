@@ -325,13 +325,13 @@ Total fields: **442**
 | 6 | [a_ef7baa35fe04e911a94d000d3a3b9f01.address1_stateorprovince](#index-a_ef7baa35fe04e911a94d000d3a3b9f01address1_stateorprovince) |  |  |  | No |  | true |  |  |  |  |  |  |  | [14](#3-views) |  |  |  |  |  |  |  |  |  |  |
 | 7 | [a_ef7baa35fe04e911a94d000d3a3b9f01.azt_verticalmarket](#index-a_ef7baa35fe04e911a94d000d3a3b9f01azt_verticalmarket) |  |  |  | No |  | true |  |  |  |  |  |  |  | [3](#3-views) |  |  |  |  |  |  |  |  |  |  |
 | 8 | [a_ef7baa35fe04e911a94d000d3a3b9f01.ownerid](#index-a_ef7baa35fe04e911a94d000d3a3b9f01ownerid) |  |  |  | No |  | true |  |  |  |  |  |  |  | [2](#3-views) |  |  |  |  |  |  |  |  |  |  |
-| 9 | [accountid](#index-accountid) |  |  |  | No |  | true |  |  |  | Opportunity | Account | AccountId |  |  |  |  |  |  |  | [12](#10-plugin-source-code-analysis) |  |  |  |  |
+| 9 | [accountid](#index-accountid) |  |  |  | No |  | true |  |  |  | Opportunity | AccountId | AccountId |  |  |  |  |  |  |  | [12](#10-plugin-source-code-analysis) |  |  |  |  |
 | 10 | [actioncards](#index-actioncards) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 11 | [activities](#index-activities) |  |  |  | No |  | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 12 | [activityid](#index-activityid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10-plugin-source-code-analysis) |  |  |  |  |
 | 13 | [activitytypecode](#index-activitytypecode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
-| 14 | [actualclosedate](#index-actualclosedate) |  |  |  | No |  | true | Opportunity | Close Date | CloseDate |  |  |  | [2](#2-forms) | [27](#3-views) | [5](#4-chart-visualizations) |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 15 | [actualvalue](#index-actualvalue) |  |  |  | No |  | true | Opportunity | CRM Actual Revenue | CRM_Actual_Revenue__c |  |  |  |  | [15](#3-views) | [2](#4-chart-visualizations) |  |  | [1](#7-workflows) |  |  |  |  |  |  |
+| 14 | [actualclosedate](#index-actualclosedate) |  |  |  | No |  | true |  |  |  | Opportunity | CloseDate | CloseDate | [2](#2-forms) | [27](#3-views) | [5](#4-chart-visualizations) |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
+| 15 | [actualvalue](#index-actualvalue) |  |  |  | No |  | true |  |  |  |  |  |  |  | [15](#3-views) | [2](#4-chart-visualizations) |  |  | [1](#7-workflows) |  |  |  |  |  |  |
 | 16 | [actualvalue_base](#index-actualvalue_base) |  |  |  | No |  | true |  |  |  |  |  |  |  | [2](#3-views) |  |  |  |  |  |  |  |  |  |  |
 | 17 | [address1_city](#index-address1_city) |  |  |  | No |  | true |  |  |  |  |  |  |  | [19](#3-views) |  |  |  |  |  |  |  |  |  |  |
 | 18 | [address1_composite](#index-address1_composite) |  |  |  | No |  | true |  |  |  |  |  |  |  | [1](#3-views) |  |  |  |  |  |  |  |  |  |  |
@@ -561,8 +561,8 @@ Total fields: **442**
 | 242 | [body](#index-body) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 243 | [bpf_duration](#index-bpf_duration) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 244 | [bpf_salesorderid](#index-bpf_salesorderid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 245 | [budgetamount](#index-budgetamount) |  |  |  | No |  | true | Opportunity | Budget Amount | Budget_Amount__c |  |  |  | [2](#2-forms) |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
-| 246 | [budgetstatus](#index-budgetstatus) |  |  |  | No |  | true |  |  |  | Opportunity | Budget Confirmed | Budget_Confirmed__c |  |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
+| 245 | [budgetamount](#index-budgetamount) |  |  |  | No |  | true |  |  |  | Opportunity | Budget_Amount__c | Budget_Amount__c | [2](#2-forms) |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
+| 246 | [budgetstatus](#index-budgetstatus) |  |  |  | No |  | true |  |  |  | Opportunity | Budget_Confirmed__c | Budget_Confirmed__c |  |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
 | 247 | [businessprocessflowinstanceid](#index-businessprocessflowinstanceid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 248 | [businessunitid](#index-businessunitid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10-plugin-source-code-analysis) |  |  |  |  |
 | 249 | [cadencewidgetcontrol](#index-cadencewidgetcontrol) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
@@ -579,29 +579,29 @@ Total fields: **442**
 | 260 | [connectionid](#index-connectionid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 261 | [connectionroleid](#index-connectionroleid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
 | 262 | [consideronlygoalownersrecords](#index-consideronlygoalownersrecords) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 263 | [contactid](#index-contactid) |  |  |  | No |  | true | Opportunity | Contact name | ContactId |  |  |  |  |  |  |  |  |  |  | [5](#10-plugin-source-code-analysis) |  |  |  |  |
+| 263 | [contactid](#index-contactid) |  |  |  | No |  | true |  |  |  | Opportunity | ContactId | ContactId |  |  |  |  |  |  |  | [5](#10-plugin-source-code-analysis) |  |  |  |  |
 | 264 | [country](#index-country) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11-pcf-controls) |  |  |  |
 | 265 | [county](#index-county) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11-pcf-controls) |  |  |  |
-| 266 | [createdby](#index-createdby) |  |  |  | No |  | true | Opportunity | Legacy Created By | Legacy_Created_By__c |  |  |  | [2](#2-forms) | [9](#3-views) | [14](#4-chart-visualizations) |  |  | [1](#7-workflows) |  |  |  |  |  |  |
-| 267 | [createdon](#index-createdon) |  |  |  | No |  | true | Opportunity | Legacy Created On | Legacy_Created_On__c |  |  |  | [2](#2-forms) | [39](#3-views) | [3](#4-chart-visualizations) |  |  |  | [1](#9-formulas-rollups) | [10](#10-plugin-source-code-analysis) |  |  |  |  |
+| 266 | [createdby](#index-createdby) |  |  |  | No |  | true |  |  |  | Opportunity | Legacy_Created_By__c | Legacy_Created_By__c | [2](#2-forms) | [9](#3-views) | [14](#4-chart-visualizations) |  |  | [1](#7-workflows) |  |  |  |  |  |  |
+| 267 | [createdon](#index-createdon) |  |  |  | No |  | true |  |  |  | Opportunity | Legacy_Created_On__c | Legacy_Created_On__c | [2](#2-forms) | [39](#3-views) | [3](#4-chart-visualizations) |  |  |  | [1](#9-formulas-rollups) | [10](#10-plugin-source-code-analysis) |  |  |  |  |
 | 268 | [crm3_expenseamount](#index-crm3_expenseamount) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 269 | [crm3_parentleadid](#index-crm3_parentleadid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
-| 270 | [currentsituation](#index-currentsituation) |  |  |  | No |  | true | Opportunity | NextStep | NextStep |  |  |  | [2](#2-forms) |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
+| 270 | [currentsituation](#index-currentsituation) |  |  |  | No |  | true |  |  |  | Opportunity | NextStep | NextStep | [2](#2-forms) |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
 | 271 | [customerid](#index-customerid) | Potential Customer | customer |  | No | required | true |  |  |  |  |  |  |  | [48](#3-views) |  |  |  | [14](#7-workflows) |  | [11](#10-plugin-source-code-analysis) |  | [1](#12-relationships) |  |  |
-| 272 | [customerneed](#index-customerneed) |  |  |  | No |  | true | Opportunity | CRM Customer Need | CRM_Customer_Need__c |  |  |  | [2](#2-forms) |  |  |  |  | [1](#7-workflows) |  |  |  |  |  |  |
+| 272 | [customerneed](#index-customerneed) |  |  |  | No |  | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  | [1](#7-workflows) |  |  |  |  |  |  |
 | 273 | [customerpainpoints](#index-customerpainpoints) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
 | 274 | [datefulfilled](#index-datefulfilled) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 275 | [decisionmaker](#index-decisionmaker) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
 | 276 | [defaultuomid](#index-defaultuomid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
-| 277 | [description](#index-description) |  |  |  | No |  | true | Opportunity | Description | Description |  |  |  | [1](#2-forms) |  |  |  |  | [2](#7-workflows) |  | [7](#10-plugin-source-code-analysis) |  |  |  |  |
+| 277 | [description](#index-description) |  |  |  | No |  | true |  |  |  | Opportunity | Description | Description | [1](#2-forms) |  |  |  |  | [2](#7-workflows) |  | [7](#10-plugin-source-code-analysis) |  |  |  |  |
 | 278 | [developproposal](#index-developproposal) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
-| 279 | [discountamount](#index-discountamount) |  |  |  | No |  | true | Opportunity | CRM Opportunity Discount Amount | CRM_Opportunity_Discount_Amount__c |  |  |  | [2](#2-forms) |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
-| 280 | [discountpercentage](#index-discountpercentage) |  |  |  | No |  | true | Opportunity | CRM Opportunity Discount | CRM_Opportunity_Discount__c |  |  |  | [1](#2-forms) |  |  |  |  | [2](#7-workflows) |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
+| 279 | [discountamount](#index-discountamount) |  |  |  | No |  | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
+| 280 | [discountpercentage](#index-discountpercentage) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  | [2](#7-workflows) |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 281 | [discounts](#index-discounts) |  |  |  | No |  | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 282 | [documents](#index-documents) |  |  |  | No |  | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 283 | [documentssubgrid](#index-documentssubgrid) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 284 | [dynamicpropertieslist_linkcontrol](#index-dynamicpropertieslist_linkcontrol) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 285 | [emailaddress](#index-emailaddress) |  |  |  | No |  | true | Opportunity | CRM Email Address | CRM_Email_Address__c |  |  |  |  |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
+| 285 | [emailaddress](#index-emailaddress) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
 | 286 | [emailaddress1](#index-emailaddress1) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 287 | [estimatedclosedate](#index-estimatedclosedate) | Est. Close Date | datetime |  | No | none | true | Opportunity | Close Date | CRM_Estimated_Close_Date__c |  |  |  | [3](#2-forms) | [81](#3-views) | [7](#4-chart-visualizations) |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
 | 288 | [estimatedvalue](#index-estimatedvalue) | Est. Revenue | money |  | No | none | true | Opportunity | CRM Estimated Revenue | CRM_Estimated_Revenue__c |  |  |  | [4](#2-forms) | [41](#3-views) | [8](#4-chart-visualizations) |  |  | [2](#7-workflows) |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -612,7 +612,7 @@ Total fields: **442**
 | 293 | [filedebrief](#index-filedebrief) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
 | 294 | [filename](#index-filename) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 295 | [firstname](#index-firstname) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 296 | [freightamount](#index-freightamount) |  |  |  | No |  | true | Opportunity | Freight Amount | Freight_Amount__c |  |  |  | [2](#2-forms) |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
+| 296 | [freightamount](#index-freightamount) |  |  |  | No |  | true |  |  |  | Opportunity | Freight_Amount__c | Freight_Amount__c | [2](#2-forms) |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 297 | [freighttermscode](#index-freighttermscode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 298 | [from](#index-from) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 299 | [fullname](#index-fullname) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -644,14 +644,14 @@ Total fields: **442**
 | 325 | [mimetype](#index-mimetype) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 326 | [mobilephone](#index-mobilephone) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 327 | [modifiedon](#index-modifiedon) |  |  |  | No |  | true |  |  |  |  |  |  |  | [1](#3-views) |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
-| 328 | [msa_partnerid](#index-msa_partnerid) |  |  |  | No |  | true | Opportunity | CRM Partner | CRM_Partner__c |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
+| 328 | [msa_partnerid](#index-msa_partnerid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
 | 329 | [msa_partneroppid](#index-msa_partneroppid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
 | 330 | [msdyn_forecastcategory](#index-msdyn_forecastcategory) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 331 | [msdyn_opportunitykpiid](#index-msdyn_opportunitykpiid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
 | 332 | [msdyn_predictivescoreid](#index-msdyn_predictivescoreid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
 | 333 | [msdyn_segmentid](#index-msdyn_segmentid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
 | 334 | [name](#index-name) | Topic | nvarchar |  | No | required | true |  |  |  | Opportunity | Name | Name | [2](#2-forms) | [75](#3-views) |  |  |  | [19](#7-workflows) |  | [23](#10-plugin-source-code-analysis) |  |  |  |  |
-| 335 | [need](#index-need) |  |  |  | No |  | true | Opportunity | CRM Need | CRM_Need__c |  |  |  |  |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
+| 335 | [need](#index-need) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
 | 336 | [new_sharedwith](#index-new_sharedwith) |  |  |  | No |  | true |  |  |  |  |  |  |  | [1](#3-views) |  |  |  |  |  |  |  |  |  |  |
 | 337 | [notescontrol](#index-notescontrol) |  |  |  | No |  | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 338 | [objectid](#index-objectid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -661,9 +661,9 @@ Total fields: **442**
 | 342 | [opportunityproductid](#index-opportunityproductid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [14](#10-plugin-source-code-analysis) |  |  |  |  |
 | 343 | [opportunityproductsgrid](#index-opportunityproductsgrid) |  |  |  | No |  | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 344 | [opportunityratingcode](#index-opportunityratingcode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
-| 345 | [originatingleadid](#index-originatingleadid) |  |  |  | No |  | true | Opportunity | Sales Lead | Sales_Lead__c |  |  |  | [2](#2-forms) |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  | [1](#12-relationships) |  |  |
+| 345 | [originatingleadid](#index-originatingleadid) |  |  |  | No |  | true |  |  |  | Opportunity | Sales_Lead__c | Sales_Lead__c | [2](#2-forms) |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  | [1](#12-relationships) |  |  |
 | 346 | [ownerid](#index-ownerid) | Owner | owner |  | No | systemrequired | true | Opportunity | Record Type | RecordTypeId |  |  |  | [4](#2-forms) | [27](#3-views) | [9](#4-chart-visualizations) |  |  | [25](#7-workflows) |  | [22](#10-plugin-source-code-analysis) |  |  |  |  |
-| 347 | [owningbusinessunit](#index-owningbusinessunit) |  |  |  | No |  | true | Opportunity | CRM Owning Business Unit | CRM_Owning_Business_Unit__c |  |  |  |  | [5](#3-views) |  |  |  |  |  |  |  |  |  |  |
+| 347 | [owningbusinessunit](#index-owningbusinessunit) |  |  |  | No |  | true |  |  |  |  |  |  |  | [5](#3-views) |  |  |  |  |  |  |  |  |  |  |
 | 348 | [parentaccountid](#index-parentaccountid) | Account | lookup |  | No | none | true |  |  |  |  |  |  | [5](#2-forms) | [1](#3-views) |  |  |  | [13](#7-workflows) |  | [4](#10-plugin-source-code-analysis) |  | [1](#12-relationships) |  |  |
 | 349 | [parentcontactid](#index-parentcontactid) | Contact | lookup |  | No | none | true | Opportunity | Contact name | ContactId |  |  |  | [5](#2-forms) | [1](#3-views) |  |  |  | [10](#7-workflows) |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 350 | [parentcustomerid](#index-parentcustomerid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -684,9 +684,9 @@ Total fields: **442**
 | 365 | [productnumber](#index-productnumber) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
 | 366 | [productsuggestions_linkcontrol](#index-productsuggestions_linkcontrol) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 367 | [producttypecode](#index-producttypecode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
-| 368 | [proposedsolution](#index-proposedsolution) |  |  |  | No |  | true | Opportunity | Proposed Solution | Proposed_Solution__c |  |  |  | [1](#2-forms) |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
-| 369 | [purchaseprocess](#index-purchaseprocess) |  |  |  | No |  | true | Opportunity | Purchase Process | CRM_Purchase_Process__c |  |  |  | [2](#2-forms) |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
-| 370 | [purchasetimeframe](#index-purchasetimeframe) |  |  |  | No |  | true | Opportunity | CRM Purchase Timeframe | CRM_Purchase_Timeframe__c |  |  |  | [2](#2-forms) |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
+| 368 | [proposedsolution](#index-proposedsolution) |  |  |  | No |  | true |  |  |  | Opportunity | Proposed_Solution__c | Proposed_Solution__c | [1](#2-forms) |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
+| 369 | [purchaseprocess](#index-purchaseprocess) |  |  |  | No |  | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
+| 370 | [purchasetimeframe](#index-purchasetimeframe) |  |  |  | No |  | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
 | 371 | [pursuit_team](#index-pursuit_team) |  |  |  | No |  | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 372 | [pursuitdecision](#index-pursuitdecision) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
 | 373 | [qualificationcomments](#index-qualificationcomments) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
@@ -749,10 +749,10 @@ Total fields: **442**
 | 430 | [title](#index-title) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 431 | [tm.systemuserid](#index-tmsystemuserid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 432 | [to](#index-to) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
-| 433 | [totalamount](#index-totalamount) |  |  |  | No |  | true | Opportunity | CRM Total Amount | CRM_Total_Amount__c |  |  |  | [1](#2-forms) |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
+| 433 | [totalamount](#index-totalamount) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
 | 434 | [totalamountlessfreight](#index-totalamountlessfreight) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 435 | [totallineitemamount](#index-totallineitemamount) |  |  |  | No |  | true | Opportunity | CRM Total Detail Amount | CRM_Total_Detail_Amount__c |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 436 | [totaltax](#index-totaltax) |  |  |  | No |  | true | Opportunity | CRM Total Tax | CRM_Total_Tax__c |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 435 | [totallineitemamount](#index-totallineitemamount) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 436 | [totaltax](#index-totaltax) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 437 | [transactioncurrencyid](#index-transactioncurrencyid) |  |  |  | No |  | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  | [2](#7-workflows) |  | [8](#10-plugin-source-code-analysis) |  |  |  |  |
 | 438 | [uomid](#index-uomid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10-plugin-source-code-analysis) |  |  |  |  |
 | 439 | [value](#index-value) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11-pcf-controls) |  |  |  |

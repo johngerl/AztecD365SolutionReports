@@ -185,7 +185,7 @@ Total fields: **365**
 |---|-------------|-------------|------|-----------------|--------|----------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
 | 1 | [!process_custom_attribute_url_](#index-process_custom_attribute_url_) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  | [3](#7-workflows) |  |  |  |  |  |  |
 | 2 | [accessteam](#index-accessteam) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 3 | [accountid](#index-accountid) |  |  |  | No |  | true |  |  |  | Case | Account | AccountId |  |  |  |  |  |  |  | [12](#10-plugin-source-code-analysis) |  |  |  |  |
+| 3 | [accountid](#index-accountid) |  |  |  | No |  | true |  |  |  | Case | AccountId | AccountId |  |  |  |  |  |  |  | [12](#10-plugin-source-code-analysis) |  |  |  |  |
 | 4 | [activityid](#index-activityid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10-plugin-source-code-analysis) |  |  |  |  |
 | 5 | [activitytypecode](#index-activitytypecode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 6 | [actualclosedate](#index-actualclosedate) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -392,14 +392,14 @@ Total fields: **365**
 | 207 | [connectionid](#index-connectionid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 208 | [connectionroleid](#index-connectionroleid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
 | 209 | [consideronlygoalownersrecords](#index-consideronlygoalownersrecords) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 210 | [contactid](#index-contactid) |  |  |  | No |  | true |  |  |  | Case | Contact | ContactId |  |  |  |  |  |  |  | [5](#10-plugin-source-code-analysis) |  |  |  |  |
+| 210 | [contactid](#index-contactid) |  |  |  | No |  | true |  |  |  | Case | ContactId | ContactId |  |  |  |  |  |  |  | [5](#10-plugin-source-code-analysis) |  |  |  |  |
 | 211 | [contractdetailid](#index-contractdetailid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
 | 212 | [contractid](#index-contractid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
 | 213 | [country](#index-country) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11-pcf-controls) |  |  |  |
 | 214 | [county](#index-county) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11-pcf-controls) |  |  |  |
-| 215 | [createdby](#index-createdby) |  |  |  | No |  | true |  |  |  | Case | Created By | CreatedById | [1](#2-forms) | [4](#3-views) | [4](#4-chart-visualizations) |  |  | [6](#7-workflows) |  |  |  | [1](#12-relationships) |  |  |
+| 215 | [createdby](#index-createdby) |  |  |  | No |  | true |  |  |  | Case | CreatedById | CreatedById | [1](#2-forms) | [4](#3-views) | [4](#4-chart-visualizations) |  |  | [6](#7-workflows) |  |  |  | [1](#12-relationships) |  |  |
 | 216 | [createdbyexternalparty](#index-createdbyexternalparty) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
-| 217 | [createdon](#index-createdon) |  |  |  | No |  | true |  |  |  | Case | Created Date | CreatedDate |  | [8](#3-views) |  |  |  | [2](#7-workflows) | [1](#9-formulas-rollups) | [10](#10-plugin-source-code-analysis) |  |  |  |  |
+| 217 | [createdon](#index-createdon) |  |  |  | No |  | true |  |  |  | Case | CreatedDate | CreatedDate |  | [8](#3-views) |  |  |  | [2](#7-workflows) | [1](#9-formulas-rollups) | [10](#10-plugin-source-code-analysis) |  |  |  |  |
 | 218 | [crm3_expenseamount](#index-crm3_expenseamount) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 219 | [crm3_parentleadid](#index-crm3_parentleadid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 220 | [customerid](#index-customerid) | Customer | customer |  | No | systemrequired | true |  |  |  |  |  |  |  | [5](#3-views) |  |  |  | [13](#7-workflows) |  | [11](#10-plugin-source-code-analysis) |  | [2](#12-relationships) |  |  |
@@ -449,9 +449,9 @@ Total fields: **365**
 | 264 | [metricid](#index-metricid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 265 | [mimetype](#index-mimetype) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 266 | [mobilephone](#index-mobilephone) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 267 | [modifiedby](#index-modifiedby) |  |  |  | No |  | true |  |  |  | Case | Last Modified By | LastModifiedById |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
+| 267 | [modifiedby](#index-modifiedby) |  |  |  | No |  | true |  |  |  | Case | LastModifiedById | LastModifiedById |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
 | 268 | [modifiedbyexternalparty](#index-modifiedbyexternalparty) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
-| 269 | [modifiedon](#index-modifiedon) |  |  |  | No |  | true |  |  |  | Case | Last Modified Date | LastModifiedDate |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
+| 269 | [modifiedon](#index-modifiedon) |  |  |  | No |  | true |  |  |  | Case | LastModifiedDate | LastModifiedDate |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
 | 270 | [msa_partnercontactid](#index-msa_partnercontactid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
 | 271 | [msa_partnerid](#index-msa_partnerid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
 | 272 | [msdyn_aiagentstatus](#index-msdyn_aiagentstatus) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
@@ -464,12 +464,12 @@ Total fields: **365**
 | 279 | [opportunityproductid](#index-opportunityproductid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [14](#10-plugin-source-code-analysis) |  |  |  |  |
 | 280 | [originatingcaseid](#index-originatingcaseid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
 | 281 | [originatingleadid](#index-originatingleadid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
-| 282 | [ownerid](#index-ownerid) |  |  |  | No |  | true |  |  |  | Case | Owner | OwnerId | [2](#2-forms) | [2](#3-views) |  |  |  | [2](#7-workflows) |  | [22](#10-plugin-source-code-analysis) |  |  |  |  |
+| 282 | [ownerid](#index-ownerid) |  |  |  | No |  | true |  |  |  | Case | OwnerId | OwnerId | [2](#2-forms) | [2](#3-views) |  |  |  | [2](#7-workflows) |  | [22](#10-plugin-source-code-analysis) |  |  |  |  |
 | 283 | [owningbusinessunit](#index-owningbusinessunit) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
 | 284 | [owningteam](#index-owningteam) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  | [1](#12-relationships) |  |  |
 | 285 | [owninguser](#index-owninguser) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  | [1](#12-relationships) |  |  |
 | 286 | [parentaccountid](#index-parentaccountid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
-| 287 | [parentcaseid](#index-parentcaseid) |  |  |  | No |  | true |  |  |  | Case | Parent Case | ParentId |  | [1](#3-views) |  |  |  |  |  |  |  |  |  |  |
+| 287 | [parentcaseid](#index-parentcaseid) |  |  |  | No |  | true |  |  |  | Case | ParentId | ParentId |  | [1](#3-views) |  |  |  |  |  |  |  |  |  |  |
 | 288 | [parentcontactid](#index-parentcontactid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 289 | [parentcustomerid](#index-parentcustomerid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10-plugin-source-code-analysis) |  |  |  |  |
 | 290 | [parentgoalid](#index-parentgoalid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -537,7 +537,7 @@ Total fields: **365**
 | 352 | [teamid](#index-teamid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
 | 353 | [teamtype](#index-teamtype) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
 | 354 | [telephone1](#index-telephone1) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 355 | [ticketnumber](#index-ticketnumber) |  |  |  | No |  | true |  |  |  | Case | Case Number | CaseNumber |  | [4](#3-views) |  |  |  | [3](#7-workflows) |  |  |  |  |  |  |
+| 355 | [ticketnumber](#index-ticketnumber) |  |  |  | No |  | true |  |  |  | Case | CaseNumber | CaseNumber |  | [4](#3-views) |  |  |  | [3](#7-workflows) |  |  |  |  |  |  |
 | 356 | [title](#index-title) |  |  |  | No |  | true |  |  |  | Case | Subject | Subject |  | [12](#3-views) |  |  |  | [2](#7-workflows) |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 357 | [tm.systemuserid](#index-tmsystemuserid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 358 | [to](#index-to) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |

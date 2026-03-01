@@ -1,8 +1,8 @@
-fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-azt_appointmenttype,Appointment Type,picklist,required,True,"100000000: Conference Call, 100000001: Offsite Cold Call, 100000002: Onsite Customer Service, 100000003: Onsite Meeting, 100000004: Onsite Presentation, 100000005: Onsite Technical, 100000006: Onsite Training, 100000010: Other, 293130000: Trade Show, 100000007: Web Implementation, 100000008: Web Training, 100000009: Webinar",,,,,,,
-azt_historicalowner,Historical Owner,nvarchar,none,True,,,,,,,,
-azt_isleadershipappointment,Is Leadership Appointment,bit,none,True,"1: Yes, 0: No",,,,,,,
-azt_leadershipcallwithid,Leadership Call With,lookup,none,True,,,,,,,,
-azt_recordownerid,Record Owner,lookup,none,True,,,,,,,,
-instancetypecode,Recurring Type,picklist,systemrequired,False,"0: Not Recurring, 1: Recurring Master, 2: Recurring Instance, 3: Recurring Exception, 4: Recurring Future Exception",,,,,,,
-regardingobjectid,Regarding,lookup,none,False,,,,,,,,
+fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+azt_appointmenttype,Appointment Type,picklist,required,True,"100000000: Conference Call, 100000001: Offsite Cold Call, 100000002: Onsite Customer Service, 100000003: Onsite Meeting, 100000004: Onsite Presentation, 100000005: Onsite Technical, 100000006: Onsite Training, 100000010: Other, 293130000: Trade Show, 100000007: Web Implementation, 100000008: Web Training, 100000009: Webinar",,2,32,0,1,0,0,0,0,0,0,0,,,,,,
+azt_historicalowner,Historical Owner,nvarchar,none,True,,,1,0,0,0,0,2,0,0,0,0,0,,,,,,
+azt_isleadershipappointment,Is Leadership Appointment,bit,none,True,"1: Yes, 0: No",,1,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_leadershipcallwithid,Leadership Call With,lookup,none,True,,,1,0,0,0,0,0,0,0,0,1,0,,,,,,
+azt_recordownerid,Record Owner,lookup,none,True,,,1,36,46,1,0,37,0,9,0,1,0,,,,,,
+instancetypecode,Recurring Type,picklist,systemrequired,False,"0: Not Recurring, 1: Recurring Master, 2: Recurring Instance, 3: Recurring Exception, 4: Recurring Future Exception",,0,1,0,1,0,0,0,0,0,0,0,,,,,,
+regardingobjectid,Regarding,lookup,none,False,,,0,2,0,1,0,14,0,8,0,33,0,,,,,,

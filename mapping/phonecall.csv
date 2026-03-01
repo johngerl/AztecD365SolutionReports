@@ -1,13 +1,13 @@
-fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-azt_addtocrtqueue,Add to CRT Queue?,bit,none,True,"1: Yes, 0: No",,,,,,,
-azt_autocreatecallback,Autocreate Callback?,bit,none,True,"1: Yes, 0: No",,,,,,,
-azt_callbackin,Callback In:,picklist,none,True,"276530000: 1 Day, 276530001: 2 Days, 276530002: 3 Days, 276530003: 1 Week, 276530004: 1 Month, 276530005: Specific Date",,,,,,,
-azt_callbackon,Callback On,datetime,none,True,,,,,,,,
-azt_copydescription,Copy Description?,bit,none,True,"1: Yes, 0: No",,,,,,,
-azt_copysubject,Copy Subject?,bit,none,True,"1: Yes, 0: No",,,,,,,
-azt_historicalowner,Historical Owner,nvarchar,none,True,,,,,,,,
-azt_phonecallstatus,Phonecall Status,picklist,none,True,"276530000: Active, 276530001: Failed, 276530002: Qualified",,,,,,,
-azt_recordownerid,Record Owner,lookup,none,True,,,,,,,,
-azt_result,Result,picklist,none,True,"327630000: Connected, 327630001: Left VM, 327630002: No Answer",,,,,,,
-description,Description,ntext,none,False,,,,,,Task,Description,Description
-regardingobjectid,Regarding,lookup,none,False,,,,,,,,
+fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+azt_addtocrtqueue,Add to CRT Queue?,bit,none,True,"1: Yes, 0: No",,1,0,0,0,0,0,0,1,0,0,0,,,,,,
+azt_autocreatecallback,Autocreate Callback?,bit,none,True,"1: Yes, 0: No",,1,0,0,0,0,0,0,1,0,0,0,,,,,,
+azt_callbackin,Callback In:,picklist,none,True,"276530000: 1 Day, 276530001: 2 Days, 276530002: 3 Days, 276530003: 1 Week, 276530004: 1 Month, 276530005: Specific Date",,1,0,0,0,0,0,0,1,0,0,0,,,,,,
+azt_callbackon,Callback On,datetime,none,True,,,1,0,0,0,0,0,0,1,0,0,0,,,,,,
+azt_copydescription,Copy Description?,bit,none,True,"1: Yes, 0: No",,1,0,0,0,0,0,0,1,0,0,0,,,,,,
+azt_copysubject,Copy Subject?,bit,none,True,"1: Yes, 0: No",,1,0,0,0,0,0,0,1,0,0,0,,,,,,
+azt_historicalowner,Historical Owner,nvarchar,none,True,,,1,0,0,0,0,2,0,0,0,0,0,,,,,,
+azt_phonecallstatus,Phonecall Status,picklist,none,True,"276530000: Active, 276530001: Failed, 276530002: Qualified",,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_recordownerid,Record Owner,lookup,none,True,,,1,15,13,0,0,37,0,9,0,1,0,,,,,,
+azt_result,Result,picklist,none,True,"327630000: Connected, 327630001: Left VM, 327630002: No Answer",,1,0,0,0,0,0,0,1,0,0,0,,,,,,
+description,Description,ntext,none,False,,,0,0,0,0,0,14,0,7,0,0,0,,,,Task,Description,Description
+regardingobjectid,Regarding,lookup,none,False,,,0,4,0,0,0,14,0,8,0,35,0,,,,,,

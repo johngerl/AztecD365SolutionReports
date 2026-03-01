@@ -1,10 +1,10 @@
-fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-azt_discretionarydiscount,Discretionary Discount,money,none,True,,,,,,,,
-azt_discretionarydiscount_base,Discretionary Discount (Base),money,none,True,,,,,,,,
-azt_discretionarydiscountamt,Discretionary Discount Amt,money,none,True,,,,,,,,
-azt_discretionarydiscountamt_base,Discretionary Discount Amt (Base),money,none,True,,,,,,,,
-azt_issaas,Is SaaS?,bit,none,True,"1: Yes, 0: No",,,,,QuoteLineItem,SaaS,SaaS__c
-azt_licensetermmonths,License Term (Months),int,none,True,,,,,,QuoteLineItem,Term Months,Term_Months__c
-azt_licensetype,License Type,picklist,required,True,,,,,,QuoteLineItem,License Type,License_Type__c
-azt_nonsaastype,Non-SaaS Type,picklist,none,True,"276530000: Life Skills, 276530001: Kaplan Books, 276530002: GED Vouchers, 276530003: Other",,,,,QuoteLineItem,Non SaaS Type,Non_SaaS_Type__c
-azt_opportunityproductid,Opportunity Product,lookup,none,True,,,,,,,,
+fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+azt_discretionarydiscount,Discretionary Discount,money,none,True,,,1,0,0,3,0,0,1,0,0,0,0,,,,,,
+azt_discretionarydiscount_base,Discretionary Discount (Base),money,none,True,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_discretionarydiscountamt,Discretionary Discount Amt,money,none,True,,,1,0,0,0,0,0,0,2,0,0,0,,,,,,
+azt_discretionarydiscountamt_base,Discretionary Discount Amt (Base),money,none,True,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_issaas,Is SaaS?,bit,none,True,"1: Yes, 0: No",,1,0,0,0,0,0,0,2,0,0,0,,,,QuoteLineItem,SaaS,SaaS__c
+azt_licensetermmonths,License Term (Months),int,none,True,,,1,0,0,0,0,1,0,22,0,0,0,,,,QuoteLineItem,Term Months,Term_Months__c
+azt_licensetype,License Type,picklist,required,True,,,1,1,0,0,0,1,0,25,0,0,0,,,,QuoteLineItem,License Type,License_Type__c
+azt_nonsaastype,Non-SaaS Type,picklist,none,True,"276530000: Life Skills, 276530001: Kaplan Books, 276530002: GED Vouchers, 276530003: Other",,1,0,0,0,0,0,0,1,0,0,0,,,,QuoteLineItem,Non SaaS Type,Non_SaaS_Type__c
+azt_opportunityproductid,Opportunity Product,lookup,none,True,,,1,0,0,0,0,0,0,10,0,1,0,,,,,,

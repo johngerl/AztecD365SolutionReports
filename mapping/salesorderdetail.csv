@@ -1,23 +1,23 @@
-fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-azt_discretionarydiscount,Discretionary Discount,money,none,True,,,,,,,,
-azt_discretionarydiscount_base,Discretionary Discount (Base),money,none,True,,,,,,,,
-azt_discretionarydiscountamt,Discretionary Discount Amt,money,none,True,,,,,,,,
-azt_discretionarydiscountamt_base,Discretionary Discount Amt (Base),money,none,True,,,,,,,,
-azt_estfulfillmentdate,Est Fulfillment Date,datetime,none,True,,,,,,,,
-azt_hasloadingdock,Has Loading Dock?,bit,none,True,"1: Yes, 0: No",,,,,,,
-azt_issaas,Is SaaS?,bit,none,True,"1: Yes, 0: No",,,,,OrderItem,SaaS,SaaS__c
-azt_itemstatus,Item Status,picklist,none,True,"276530000: Ordered, 276530001: Pending Fulfillment, 276530002: Fulfilled",,,,,,,
-azt_licenseenddate,License End Date,datetime,none,True,,,,,,,,
-azt_licensestartdate,License Start Date,datetime,none,True,,,,,,,,
-azt_licensetermmonths,License Term (Months),int,none,True,,,,,,OrderItem,License Term Months,License_Term_Months__c
-azt_licensetype,License Type,picklist,none,True,,,,,,OrderItem,License Type,License_Type__c
-azt_lsebookfilesprovidedon,LSE Book Files Provided On,datetime,none,True,,,,,,,,
-azt_lsebooksfile,LSE Books Files Provided?,picklist,none,True,"276530000: Yes, 276530001: No",,,,,,,
-azt_lsecustomartapproved,LSE Custom Art Approved?,picklist,none,True,"276530000: Yes, 276530001: No",,,,,,,
-azt_lsecustomartapprovedon,LSE Custom Art Approved On,datetime,none,True,,,,,,,,
-azt_lseproductionstartdate,LSE Production Start Date,datetime,none,True,,,,,,,,
-azt_nonsaastype,Non-SaaS Type,picklist,none,True,"276530000: Life Skills, 276530001: Kaplan Books, 276530002: GED Vouchers, 276530003: Other",,,,,,,
-azt_orderdate,Order Date,datetime,none,True,,,,,,OrderItem,Service Date,ServiceDate
-azt_ordertype,Order Type,picklist,none,True,"276530000: Companion, 276530001: Kaplan, 276530002: Print, 276530003: Software",,,,,,,
-azt_shippingdate,Shipping Date,datetime,none,True,,,,,,,,
-azt_softwarelicenseid,Software License,lookup,none,True,,,,,,OrderItem,Asset,Asset__c
+fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+azt_discretionarydiscount,Discretionary Discount,money,none,True,,,1,0,0,0,0,0,1,0,0,0,0,,,,,,
+azt_discretionarydiscount_base,Discretionary Discount (Base),money,none,True,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_discretionarydiscountamt,Discretionary Discount Amt,money,none,True,,,1,0,0,0,0,0,0,2,0,0,0,,,,,,
+azt_discretionarydiscountamt_base,Discretionary Discount Amt (Base),money,none,True,,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_estfulfillmentdate,Est Fulfillment Date,datetime,none,True,,,1,0,0,0,0,1,0,2,0,0,0,,,,,,
+azt_hasloadingdock,Has Loading Dock?,bit,none,True,"1: Yes, 0: No",,1,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_issaas,Is SaaS?,bit,none,True,"1: Yes, 0: No",,1,0,0,0,0,0,0,2,0,0,0,,,,OrderItem,SaaS,SaaS__c
+azt_itemstatus,Item Status,picklist,none,True,"276530000: Ordered, 276530001: Pending Fulfillment, 276530002: Fulfilled",,1,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_licenseenddate,License End Date,datetime,none,True,,,1,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_licensestartdate,License Start Date,datetime,none,True,,,1,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_licensetermmonths,License Term (Months),int,none,True,,,1,0,0,0,0,1,0,22,0,0,0,,,,OrderItem,License Term Months,License_Term_Months__c
+azt_licensetype,License Type,picklist,none,True,,,1,2,0,0,0,1,0,25,0,0,0,,,,OrderItem,License Type,License_Type__c
+azt_lsebookfilesprovidedon,LSE Book Files Provided On,datetime,none,True,,,1,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_lsebooksfile,LSE Books Files Provided?,picklist,none,True,"276530000: Yes, 276530001: No",,1,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_lsecustomartapproved,LSE Custom Art Approved?,picklist,none,True,"276530000: Yes, 276530001: No",,1,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_lsecustomartapprovedon,LSE Custom Art Approved On,datetime,none,True,,,1,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_lseproductionstartdate,LSE Production Start Date,datetime,none,True,,,1,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_nonsaastype,Non-SaaS Type,picklist,none,True,"276530000: Life Skills, 276530001: Kaplan Books, 276530002: GED Vouchers, 276530003: Other",,1,0,0,0,0,0,0,1,0,0,0,,,,,,
+azt_orderdate,Order Date,datetime,none,True,,,2,0,0,0,0,0,0,0,0,0,0,,,,OrderItem,Service Date,ServiceDate
+azt_ordertype,Order Type,picklist,none,True,"276530000: Companion, 276530001: Kaplan, 276530002: Print, 276530003: Software",,1,0,0,0,0,1,0,1,0,0,0,,,,,,
+azt_shippingdate,Shipping Date,datetime,none,True,,,1,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_softwarelicenseid,Software License,lookup,none,True,,,1,0,0,0,0,2,0,6,0,1,0,,,,OrderItem,Asset,Asset__c

@@ -141,6 +141,17 @@ Each `mapping/{entity}.csv` contains one row per D365 field with these columns:
 | `isCustom` | customizations.xml | True if custom field (azt_ prefix) |
 | `picklistValues` | customizations.xml | Pre-formatted picklist string: `1: Label, 2: Label, ...` |
 | `mappingSuggested` | Computed | `true` if field has usage refs or requiredLevel is not none/empty |
+| `refForms` | Computed | Number of form references for this field |
+| `refViews` | Computed | Number of view references for this field |
+| `refChartVisualizations` | Computed | Number of chart visualization references |
+| `refReports` | Computed | Number of report references |
+| `refDashboards` | Computed | Number of dashboard references |
+| `refWorkflows` | Computed | Number of workflow references |
+| `refFormulas` | Computed | Number of formula/rollup references |
+| `refPlugins` | Computed | Number of plugin references |
+| `refPcfControls` | Computed | Number of PCF control references |
+| `refRelationships` | Computed | Number of relationship references |
+| `refRibbon` | Computed | Number of ribbon customization references |
 | `sfObjectName` | Human-confirmed | Confirmed Salesforce target object |
 | `sfFieldDisplayName` | Human-confirmed | Confirmed Salesforce field label |
 | `sfFieldApiName` | Human-confirmed | Confirmed Salesforce field API name |

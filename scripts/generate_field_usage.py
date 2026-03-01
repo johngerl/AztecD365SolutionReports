@@ -43,7 +43,24 @@ SF_COLUMNS = [
 
 D365_COLUMNS = ["displayName", "dataType", "requiredLevel", "isCustom"]
 REPORT_COLUMNS = ["picklistValues", "mappingSuggested"]
-CSV_COLUMNS = D365_COLUMNS + REPORT_COLUMNS + SF_COLUMNS
+
+# Reference count columns: CSV header -> count_field_references key
+REF_COUNT_COLUMNS = [
+    ("refForms", "forms"),
+    ("refViews", "views"),
+    ("refChartVisualizations", "charts"),
+    ("refReports", "reports"),
+    ("refDashboards", "dashboards"),
+    ("refWorkflows", "workflows"),
+    ("refFormulas", "formulas"),
+    ("refPlugins", "plugins"),
+    ("refPcfControls", "pcf"),
+    ("refRelationships", "rels"),
+    ("refRibbon", "ribbon"),
+]
+
+CSV_COLUMNS = (D365_COLUMNS + REPORT_COLUMNS
+               + [col for col, _ in REF_COUNT_COLUMNS] + SF_COLUMNS)
 
 
 CLASSID_SUBGRID = "{e7a81278-8bb2-4f1d-acd7-36f4db40e15e}"
@@ -1881,15 +1898,17 @@ def match_sf_field(d365_schema_name, by_d365_internal, by_d365_suggested, by_nam
 
 
 def update_mapping_csv(mapping_dir, entity_name, fields, sf_mapping,
-                       field_mapping_suggested):
+                       field_mapping_suggested, field_ref_counts=None):
     """Write one row per D365 field to the mapping CSV.
 
-    Includes D365 metadata, report, and SF mapping columns (13 total).
+    Includes D365 metadata, report columns, reference counts, and SF mapping.
     Every field is written regardless of whether SF columns are populated.
     Sorted by fieldName.
     """
     csv_path = os.path.join(mapping_dir, f"{entity_name}.csv")
     header = ["fieldName"] + CSV_COLUMNS
+    if field_ref_counts is None:
+        field_ref_counts = {}
 
     rows = []
     for field in sorted(fields, key=lambda f: f['schema_name'].lower()):
@@ -1908,6 +1927,9 @@ def update_mapping_csv(mapping_dir, entity_name, fields, sf_mapping,
             "picklistValues": pv_str,
             "mappingSuggested": "true" if suggested else "false",
         }
+        refs = field_ref_counts.get(sn_lower, {})
+        for csv_col, count_key in REF_COUNT_COLUMNS:
+            row[csv_col] = refs.get(count_key, 0)
         for col in SF_COLUMNS:
             row[col] = data.get(col, "") or ""
         rows.append(row)
@@ -3113,7 +3135,7 @@ def process_entity(entity_name, root, output_dir, property_to_field, class_to_en
             field_mapping_suggested[sn_lower] = has_usage or is_required
 
         update_mapping_csv(mapping_dir, entity_name, fields, sf_mapping,
-                           field_mapping_suggested)
+                           field_mapping_suggested, field_ref_counts)
 
         # Reload CSV as the single source of truth for the report
         sf_mapping = load_mapping_csv(mapping_dir, entity_name)

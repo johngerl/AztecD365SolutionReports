@@ -33,6 +33,9 @@ ENV/
 *.swo
 *~
 
+# Credentials
+.mcp.json
+
 # OS
 Thumbs.db
 .DS_Store

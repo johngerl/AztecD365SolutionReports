@@ -36,6 +36,8 @@ SF_COLUMNS = [
 ]
 
 D365_COLUMNS = ["displayName", "dataType", "requiredLevel", "isCustom"]
+REPORT_COLUMNS = ["picklistValues", "mappingSuggested"]
+CSV_COLUMNS = D365_COLUMNS + REPORT_COLUMNS + SF_COLUMNS
 
 
 def extract_mapping(source_file, output_file):
@@ -43,15 +45,25 @@ def extract_mapping(source_file, output_file):
     with open(source_file, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    header = ["fieldName"] + D365_COLUMNS + SF_COLUMNS
+    header = ["fieldName"] + CSV_COLUMNS
     rows = []
     for field in data.get("fields", []):
+        pv = field.get("picklistValues")
+        if isinstance(pv, list):
+            pv_str = ', '.join(
+                f'{v.get("value", "")}: {v.get("label", "")}' for v in pv
+            ) if pv else ''
+        else:
+            pv_str = str(pv) if pv else ''
         row = {
             "fieldName": field.get("fieldName", ""),
             "displayName": field.get("displayName", ""),
             "dataType": field.get("dataType", ""),
             "requiredLevel": field.get("requiredLevel", ""),
             "isCustom": str(field.get("isCustom", False)),
+            "picklistValues": pv_str,
+            "mappingSuggested": str(field.get("mappingSuggested", "")).lower()
+                if field.get("mappingSuggested") is not None else "",
         }
         for col in SF_COLUMNS:
             row[col] = field.get(col) or ""

@@ -139,6 +139,8 @@ Each `mapping/{entity}.csv` contains one row per D365 field with these columns:
 | `dataType` | customizations.xml | D365 field type (Lookup, String, OptionSet, etc.) |
 | `requiredLevel` | customizations.xml | none / recommended / required |
 | `isCustom` | customizations.xml | True if custom field (azt_ prefix) |
+| `picklistValues` | customizations.xml | Pre-formatted picklist string: `1: Label, 2: Label, ...` |
+| `mappingSuggested` | Computed | `true` if field has usage refs or requiredLevel is not none/empty |
 | `sfObjectName` | Human-confirmed | Confirmed Salesforce target object |
 | `sfFieldDisplayName` | Human-confirmed | Confirmed Salesforce field label |
 | `sfFieldApiName` | Human-confirmed | Confirmed Salesforce field API name |

@@ -42,6 +42,8 @@ SF_COLUMNS = [
 ]
 
 D365_COLUMNS = ["displayName", "dataType", "requiredLevel", "isCustom"]
+REPORT_COLUMNS = ["picklistValues", "mappingSuggested"]
+CSV_COLUMNS = D365_COLUMNS + REPORT_COLUMNS + SF_COLUMNS
 
 
 CLASSID_SUBGRID = "{e7a81278-8bb2-4f1d-acd7-36f4db40e15e}"
@@ -1704,7 +1706,7 @@ def load_mapping_csv(mapping_dir, entity_name):
             field_name = row.get("fieldName", "").lower()
             if field_name:
                 mapping[field_name] = {
-                    col: row.get(col, "") or "" for col in SF_COLUMNS
+                    col: row.get(col, "") or "" for col in CSV_COLUMNS
                 }
     return mapping
 
@@ -1828,26 +1830,33 @@ def match_sf_field(d365_schema_name, by_d365_internal, by_d365_suggested, by_nam
     return '', ''
 
 
-def update_mapping_csv(mapping_dir, entity_name, fields, sf_mapping):
+def update_mapping_csv(mapping_dir, entity_name, fields, sf_mapping,
+                       field_mapping_suggested):
     """Write one row per D365 field to the mapping CSV.
 
-    Includes D365 metadata columns and SF mapping columns (11 total).
+    Includes D365 metadata, report, and SF mapping columns (13 total).
     Every field is written regardless of whether SF columns are populated.
     Sorted by fieldName.
     """
     csv_path = os.path.join(mapping_dir, f"{entity_name}.csv")
-    header = ["fieldName"] + D365_COLUMNS + SF_COLUMNS
+    header = ["fieldName"] + CSV_COLUMNS
 
     rows = []
     for field in sorted(fields, key=lambda f: f['schema_name'].lower()):
         sn_lower = field['schema_name'].lower()
         data = sf_mapping.get(sn_lower, {})
+        pv = field.get('picklist_values', [])
+        pv_str = ', '.join(
+            f'{v["value"]}: {v["label"]}' for v in pv) if pv else ''
+        suggested = field_mapping_suggested.get(sn_lower, False)
         row = {
             "fieldName": field['schema_name'],
             "displayName": field.get('display_name', ''),
             "dataType": field.get('data_type', ''),
             "requiredLevel": field.get('required_level', ''),
             "isCustom": str(field.get('is_custom', False)),
+            "picklistValues": pv_str,
+            "mappingSuggested": "true" if suggested else "false",
         }
         for col in SF_COLUMNS:
             row[col] = data.get(col, "") or ""
@@ -2078,24 +2087,27 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
         ('conflicts', '#14-conflicts-observations'),
     ]
     _sf_mapping = sf_mapping or {}
-    _field_mapping_suggested = field_mapping_suggested or {}
     for i, field in enumerate(fields, 1):
-        custom = 'Yes' if field['is_custom'] else 'No'
         sn = field['schema_name']
         sn_lower = sn.lower()
-        # Picklist values column
-        pv = field.get('picklist_values', [])
-        pv_str = ', '.join(f'{v["value"]}: {v["label"]}' for v in pv) if pv else ''
-        # SF mapping columns
-        suggested = 'true' if _field_mapping_suggested.get(sn_lower) else 'false'
-        sf_data = _sf_mapping.get(sn_lower, {})
-        sf_obj = sf_data.get('sfObjectName', '') or ''
-        sf_field = sf_data.get('sfFieldDisplayName', '') or ''
-        sf_api = sf_data.get('sfFieldApiName', '') or ''
-        sf_sug_obj = sf_data.get('sfSuggestedObjectName', '') or ''
-        sf_sug_field = sf_data.get('sfSuggestedFieldDisplayName', '') or ''
-        sf_sug_api = sf_data.get('sfSuggestedFieldApiName', '') or ''
-        sf_str = f'{suggested} | {sf_obj} | {sf_field} | {sf_api} | {sf_sug_obj} | {sf_sug_field} | {sf_sug_api}'
+        csv_row = _sf_mapping.get(sn_lower, {})
+        # D365 metadata from CSV
+        display_name = csv_row.get('displayName', '') or field.get('display_name', '')
+        data_type = csv_row.get('dataType', '') or field.get('data_type', '')
+        custom = 'Yes' if csv_row.get('isCustom', '') == 'True' else (
+            'Yes' if field.get('is_custom') else 'No')
+        required_level = csv_row.get('requiredLevel', '') or field.get('required_level', '')
+        # Picklist values from CSV (pre-formatted)
+        pv_str = csv_row.get('picklistValues', '')
+        # SF mapping columns from CSV
+        suggested = csv_row.get('mappingSuggested', 'false')
+        sf_obj = csv_row.get('sfObjectName', '')
+        sf_field_name = csv_row.get('sfFieldDisplayName', '')
+        sf_api = csv_row.get('sfFieldApiName', '')
+        sf_sug_obj = csv_row.get('sfSuggestedObjectName', '')
+        sf_sug_field = csv_row.get('sfSuggestedFieldDisplayName', '')
+        sf_sug_api = csv_row.get('sfSuggestedFieldApiName', '')
+        sf_str = f'{suggested} | {sf_obj} | {sf_field_name} | {sf_api} | {sf_sug_obj} | {sf_sug_field} | {sf_sug_api}'
         # Section heatmap columns
         refs_for_field = field_ref_counts.get(sn_lower, {})
         cells = []
@@ -2103,7 +2115,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
             c = refs_for_field.get(key, 0)
             cells.append(f'[{c}]({slug})' if c > 0 else '')
         section_str = ' | '.join(cells)
-        a(f'| {i} | {fl(sn)} | {field["display_name"]} | {field["data_type"]} | {pv_str} | {custom} | {field["required_level"]} | {sf_str} | {section_str} |')
+        a(f'| {i} | {fl(sn)} | {display_name} | {data_type} | {pv_str} | {custom} | {required_level} | {sf_str} | {section_str} |')
         ref(sn, '1-field-definitions', 'Field Definitions')
     a('')
 
@@ -3041,12 +3053,7 @@ def process_entity(entity_name, root, output_dir, property_to_field, class_to_en
                         data['sfSuggestedFieldApiName'] = sf_api
                         suggestions_added += 1
 
-        update_mapping_csv(mapping_dir, entity_name, fields, sf_mapping)
-
-        # Reload CSV as the single source of truth for the report
-        sf_mapping = load_mapping_csv(mapping_dir, entity_name)
-
-        # Compute mapping_suggested (display-only flag, not stored in CSV)
+        # Compute mapping_suggested before writing CSV so it's persisted
         for field in fields:
             sn_lower = field['schema_name'].lower()
             refs = field_ref_counts.get(sn_lower, {})
@@ -3054,6 +3061,12 @@ def process_entity(entity_name, root, output_dir, property_to_field, class_to_en
             req = field.get('required_level', '') or ''
             is_required = req.lower() not in ('', 'none')
             field_mapping_suggested[sn_lower] = has_usage or is_required
+
+        update_mapping_csv(mapping_dir, entity_name, fields, sf_mapping,
+                           field_mapping_suggested)
+
+        # Reload CSV as the single source of truth for the report
+        sf_mapping = load_mapping_csv(mapping_dir, entity_name)
 
         matched = sum(1 for v in sf_mapping.values() if v.get('sfSuggestedFieldApiName', ''))
         print(f"  SF mapping: {len(sf_mapping)} CSV rows, {suggestions_added} suggestions added ({matched} with SF field match)")

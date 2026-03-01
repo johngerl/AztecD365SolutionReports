@@ -36,6 +36,9 @@ ENV/
 # Credentials
 .mcp.json
 
+# Temp
+temp/
+
 # OS
 Thumbs.db
 .DS_Store

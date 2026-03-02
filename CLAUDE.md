@@ -86,10 +86,10 @@ You are acting as the **most senior Dynamics 365 Customer Engagement (D365CE) pr
 |---|---|---|
 | `SolutionExtract/` | D365CE solution export (customizations.xml, Reports, Workflows, WebResources, Formulas, Controls) | — |
 | `plugins/` | Plugin C# source files | 87 |
-| `d365-entities/` | Enriched D365 entity JSON with per-field section datasets and SF mapping | 94 |
+| `d365-entities/` | Enriched D365 entity JSON with entity-level sections and per-field section datasets | 94 |
 | `salesforce-entities/` | Salesforce object describe JSON with d365 cross-reference fields | 50 |
 | `reports/` | Generated Markdown field usage reports (one per entity) | 94 |
-| `mapping/` | Field mapping CSVs with confirmed + suggested SF columns | 93 |
+| `mapping/` | Field mapping CSVs with confirmed + suggested SF columns | 94 |
 | `scripts/` | Python analysis and refresh scripts | 4 |
 | `plans/` | Architecture and implementation plans | — |
 | `.claude/commands/` | Claude Code slash commands | 3 |
@@ -98,32 +98,43 @@ You are acting as the **most senior Dynamics 365 Customer Engagement (D365CE) pr
 
 ## Scripts
 
-| Script | Input | Output | Purpose |
-|---|---|---|---|
-| `generate_field_usage.py` | `SolutionExtract/`, `salesforce-entities/` | `reports/{entity}.md`, `mapping/*.csv` | Parse D365 solution, generate field usage reports, update mapping CSVs with SF suggestions |
-| `enrich_entity_json.py` | `SolutionExtract/`, `mapping/*.csv` | `d365-entities/*.json` | Build enriched per-field JSON with 13 section datasets and SF mapping from CSVs |
-| `refresh_sf_entities.py` | Salesforce REST API | `salesforce-entities/*.json` | Refresh SF object schemas from org, preserving d365 cross-references |
-| `extract_mapping_csv.py` | `d365-entities/*.json` | `mapping/*.csv` | Extract mapping CSV from enriched entity JSON |
+Pipeline scripts run in order: Step 1 → Step 2 → Step 3 → Step 4.
 
-All scripts accept a single entity name or `--all`. Python 3.6+ stdlib only (no pip dependencies). `refresh_sf_entities.py` requires network access to the Salesforce org.
+| Step | Script | Input | Output | Purpose |
+|---|---|---|---|---|
+| 1 | `enrich_entity_json.py` | `SolutionExtract/`, `plugins/` | `d365-entities/*.json` | Parse D365 solution and build enriched JSON with entity-level sections and per-field section datasets |
+| 2 | `extract_mapping_csv.py` | `d365-entities/*.json`, existing `mapping/*.csv` | `mapping/*.csv` | Extract mapping CSV from JSON; preserves confirmed SF columns, clears sfSuggested columns |
+| 3 | `refresh_sf_entities.py` | Salesforce REST API | `salesforce-entities/*.json` | Refresh SF object schemas from org, preserving d365 cross-references |
+| 4 | `generate_field_usage.py` | `d365-entities/*.json`, `salesforce-entities/*.json`, `mapping/*.csv` | `reports/*.md`, `mapping/*.csv` | Generate field usage reports and update mapping CSVs with SF suggestions |
+
+All scripts accept a single entity name or `--all`. Python 3.6+ stdlib only (no pip dependencies). `refresh_sf_entities.py` requires network access to the Salesforce org. `enrich_entity_json.py` contains all SolutionExtract and plugin parsing logic (17+ parse functions).
 
 ---
 
 ## Data Flow
 
 ```
+Step 1: enrich_entity_json.py
 SolutionExtract/customizations.xml ──┐
 SolutionExtract/Reports/*.rdl ───────┤
 SolutionExtract/Workflows/*.xaml ────┤
 SolutionExtract/WebResources/* ──────┤     ┌──────────────────────┐
-SolutionExtract/Formulas/*.xaml ─────┼────>│ generate_field_usage  │───> reports/*.md
-SolutionExtract/Controls/* ──────────┤     │        .py            │───> mapping/*.csv
-plugins/*.cs ────────────────────────┤     └──────────────────────┘
-salesforce-entities/*.json ──────────┘              │
-                                                    v
-mapping/*.csv ──────────────────────────> enrich_entity_json.py ───> d365-entities/*.json
+SolutionExtract/Formulas/*.xaml ─────┼────>│ enrich_entity_json   │───> d365-entities/*.json
+SolutionExtract/Controls/* ──────────┤     │        .py            │
+plugins/*.cs ────────────────────────┘     └──────────────────────┘
+                                                    │
+Step 2: extract_mapping_csv.py                      v
+d365-entities/*.json ───────────────────> extract_mapping_csv.py ──> mapping/*.csv
+existing mapping/*.csv (confirmed SF) ──┘
 
+Step 3: refresh_sf_entities.py
 Salesforce REST API ────────────────────> refresh_sf_entities.py ──> salesforce-entities/*.json
+
+Step 4: generate_field_usage.py
+d365-entities/*.json ───────────────┐
+salesforce-entities/*.json ─────────┼────> generate_field_usage ───> reports/*.md
+mapping/*.csv ──────────────────────┘     │        .py            │───> mapping/*.csv (updated)
+                                          └──────────────────────┘
 ```
 
 ---
@@ -159,7 +170,7 @@ Each `mapping/{entity}.csv` contains one row per D365 field with these columns:
 | `sfSuggestedFieldDisplayName` | AI-generated | Suggested SF field label (fuzzy match) |
 | `sfSuggestedFieldApiName` | AI-generated | Suggested SF field API name (fuzzy match) |
 
-**Source of truth rule:** The mapping CSV is the authoritative source for SF mapping data. Confirmed columns (`sf*` without "Suggested") override suggestions. Scripts read from the CSV and propagate to both reports and enriched JSON.
+**Source of truth rule:** The mapping CSV is the authoritative source for confirmed SF mapping data. Confirmed columns (`sfObjectName`, `sfFieldDisplayName`, `sfFieldApiName`) are preserved across pipeline runs by `extract_mapping_csv.py`. Suggested columns (`sfSuggested*`) are cleared by step 2 and regenerated by step 4 (`generate_field_usage.py`) using salesforce-entities/ matching. The enriched JSON (`d365-entities/`) does not contain SF columns — SF data lives only in the CSV and reports.
 
 ---
 
@@ -177,6 +188,21 @@ Each `d365-entities/{entity}.json` contains:
   "auditEnabled": true,
   "primaryIdField": "accountid",
   "primaryNameField": "name",
+  "sections": {
+    "forms": [],
+    "views": [],
+    "chartVisualizations": [],
+    "reports": [],
+    "dashboards": [],
+    "workflows": [],
+    "javaScript": [],
+    "formulas": [],
+    "plugins": [],
+    "pcfControls": [],
+    "relationships": [],
+    "ribbon": { "customActions": [], "commands": [] },
+    "conflicts": { "perFormConflicts": [], "inCodeNotOnForms": [], "onFormsNotInLogic": [] }
+  },
   "fields": [
     {
       "fieldName": "accountnumber",
@@ -191,12 +217,6 @@ Each `d365-entities/{entity}.json` contains:
       "auditEnabled": true,
       "relatedTo": null,
       "picklistValues": null,
-      "sfObjectName": null,
-      "sfFieldDisplayName": null,
-      "sfFieldApiName": null,
-      "sfSuggestedObjectName": "Account",
-      "sfSuggestedFieldDisplayName": "Account Number",
-      "sfSuggestedFieldApiName": "AccountNumber",
       "forms": [],
       "views": [],
       "chartVisualizations": [],
@@ -227,6 +247,7 @@ Each `d365-entities/{entity}.json` contains:
 | `auditEnabled` | `<IsAuditEnabled>` | Whether entity-level auditing is enabled |
 | `primaryIdField` | Convention | `{entityname}id` |
 | `primaryNameField` | `<DisplayMask>` | Field whose DisplayMask contains `PrimaryName` |
+| `sections` | Parsed from SolutionExtract/ + plugins/ | Full entity-level parse outputs (forms, views, charts, reports, dashboards, workflows, JS, formulas, plugins, PCF controls, relationships, ribbon, conflicts) |
 
 ### Per-field properties
 

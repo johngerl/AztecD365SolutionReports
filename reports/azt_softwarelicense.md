@@ -229,8 +229,8 @@ Total fields: **364**
 | 23 | [azt_approvalstatus](#index-azt_approvalstatus) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
 | 24 | [azt_autocreatecallback](#index-azt_autocreatecallback) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 25 | [azt_autonumberid](#index-azt_autonumberid) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
-| 26 | [azt_azteccompanionserial](#index-azt_azteccompanionserial) | Aztec Companion Serial | nvarchar |  | Yes | none | true |  |  |  | Asset | Aztec Companion Serial | Aztec_Companion_Serial__c | [1](#2-forms) | [3](#3-views) |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
-| 27 | [azt_azteccompaniontype](#index-azt_azteccompaniontype) | Aztec Companion Type | picklist | 100000001: NUC-3.1, 100000000: NUC-3, 276530002: NUC-2, 276530001: NUC-1.5, 276530000: NUC-1 | Yes | none | true |  |  |  | Asset | Aztec Companion Type | Aztec_Companion_Type__c | [1](#2-forms) | [1](#3-views) |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
+| 26 | [azt_azteccompanionserial](#index-azt_azteccompanionserial) | Aztec Companion Serial | nvarchar |  | Yes | none | true |  |  |  |  |  |  | [1](#2-forms) | [3](#3-views) |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
+| 27 | [azt_azteccompaniontype](#index-azt_azteccompaniontype) | Aztec Companion Type | picklist | 100000001: NUC-3.1, 100000000: NUC-3, 276530002: NUC-2, 276530001: NUC-1.5, 276530000: NUC-1 | Yes | none | true |  |  |  |  |  |  | [1](#2-forms) | [1](#3-views) |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
 | 28 | [azt_azteccustomerid](#index-azt_azteccustomerid) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 29 | [azt_aztecsitename](#index-azt_aztecsitename) | Aztec Site Name | nvarchar |  | Yes | none | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
 | 30 | [azt_bookingurl](#index-azt_bookingurl) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -253,7 +253,7 @@ Total fields: **364**
 | 47 | [azt_contactid](#index-azt_contactid) | Contact | lookup |  | Yes | none | true | Assets | Contact | ContactId |  |  |  | [1](#2-forms) |  |  |  |  | [2](#7-workflows) |  |  |  | [1](#12-relationships) |  |  |
 | 48 | [azt_copydescription](#index-azt_copydescription) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 49 | [azt_copysubject](#index-azt_copysubject) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 50 | [azt_cpu](#index-azt_cpu) | CPU | picklist | 276530000: X86, 276530001: X64, 276530002: IA64 | Yes | none | true |  |  |  | Asset | CPU | CRM_CPU__c |  |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
+| 50 | [azt_cpu](#index-azt_cpu) | CPU | picklist | 276530000: X86, 276530001: X64, 276530002: IA64 | Yes | none | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
 | 51 | [azt_currentnumber](#index-azt_currentnumber) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 52 | [azt_customerid](#index-azt_customerid) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10-plugin-source-code-analysis) |  |  |  |  |
 | 53 | [azt_customertrainingid](#index-azt_customertrainingid) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |

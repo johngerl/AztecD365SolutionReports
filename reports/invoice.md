@@ -290,7 +290,7 @@ Total fields: **370**
 | 98 | [azt_goaltype](#index-azt_goaltype) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 99 | [azt_importname](#index-azt_importname) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 100 | [azt_invoicealert](#index-azt_invoicealert) | Invoice Alert | nvarchar |  | Yes | none | false | Invoice - Custom | CRM Invoice Alert | CRM_Invoice_Alert__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 101 | [azt_invoicedate](#index-azt_invoicedate) | Invoice Date | datetime |  | Yes | none | true |  |  |  | Invoice__c | Invoice Date | Invoice_Date__c |  | [2](#3-views) |  |  |  |  |  |  |  |  |  |  |
+| 101 | [azt_invoicedate](#index-azt_invoicedate) | Invoice Date | datetime |  | Yes | none | true |  |  |  |  |  |  |  | [2](#3-views) |  |  |  |  |  |  |  |  |  |  |
 | 102 | [azt_invoiceid](#index-azt_invoiceid) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10-plugin-source-code-analysis) |  | [3](#12-relationships) |  |  |
 | 103 | [azt_invoiceproductid](#index-azt_invoiceproductid) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 104 | [azt_isbn](#index-azt_isbn) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |

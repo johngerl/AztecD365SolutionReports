@@ -1,5 +1,7 @@
 Generate field usage report(s) and update mapping CSV(s) with SF suggestions.
 
+This is Step 4 of the pipeline. It reads from d365-entities/*.json (not SolutionExtract/ directly), salesforce-entities/*.json, and mapping/*.csv. Run Steps 1-2 first if the JSON or CSV files are stale.
+
 If `$ARGUMENTS` is empty, run for all entities. Otherwise run for the specified entity.
 
 ```bash

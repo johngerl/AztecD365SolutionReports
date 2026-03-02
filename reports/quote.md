@@ -262,7 +262,7 @@ Total fields: **357**
 | 70 | [azt_firstname](#index-azt_firstname) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 71 | [azt_fiscalperiodend](#index-azt_fiscalperiodend) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 72 | [azt_fiscalperiodstart](#index-azt_fiscalperiodstart) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
-| 73 | [azt_freightamtapproved](#index-azt_freightamtapproved) | Freight Amt Approved? | bit | 1: Yes, 0: No | Yes | none | true |  |  |  | Quote | Freight Approved | Freight_Approved__c | [1](#2-forms) |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
+| 73 | [azt_freightamtapproved](#index-azt_freightamtapproved) | Freight Amt Approved? | bit | 1: Yes, 0: No | Yes | none | true |  |  |  | Quote | Freight_Approved__c | Freight_Approved__c | [1](#2-forms) |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 74 | [azt_fsrassignedon](#index-azt_fsrassignedon) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 75 | [azt_fsremail](#index-azt_fsremail) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 76 | [azt_fsrid](#index-azt_fsrid) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -324,7 +324,7 @@ Total fields: **357**
 | 132 | [azt_periodend](#index-azt_periodend) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 133 | [azt_periodstart](#index-azt_periodstart) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 134 | [azt_phone](#index-azt_phone) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 135 | [azt_ponumber](#index-azt_ponumber) | PO Number | nvarchar |  | Yes | none | true |  |  |  | Quote | PO Number | PO_Number__c | [1](#2-forms) |  |  | [1](#5-reports) |  | [3](#7-workflows) |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
+| 135 | [azt_ponumber](#index-azt_ponumber) | PO Number | nvarchar |  | Yes | none | true |  |  |  | Quote | PO_Number__c | PO_Number__c | [1](#2-forms) |  |  | [1](#5-reports) |  | [3](#7-workflows) |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 136 | [azt_prefix](#index-azt_prefix) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 137 | [azt_prefixhasseparator](#index-azt_prefixhasseparator) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 138 | [azt_prefixseparator](#index-azt_prefixseparator) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -342,17 +342,17 @@ Total fields: **357**
 | 150 | [azt_producttype](#index-azt_producttype) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10-plugin-source-code-analysis) |  |  |  |  |
 | 151 | [azt_purchasedate](#index-azt_purchasedate) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 152 | [azt_quantity](#index-azt_quantity) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 153 | [azt_quoteapproval](#index-azt_quoteapproval) | Quote Approval | picklist | 276530000: Does not need approval, 276530001: Needs approval, 276530002: Approved | Yes | none | true |  |  |  | Quote | Approved | Approved__c |  |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
+| 153 | [azt_quoteapproval](#index-azt_quoteapproval) | Quote Approval | picklist | 276530000: Does not need approval, 276530001: Needs approval, 276530002: Approved | Yes | none | true |  |  |  | Quote | Approved__c | Approved__c |  |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
 | 154 | [azt_quotedcontactid](#index-azt_quotedcontactid) | Quoted Contact | lookup |  | Yes | none | true |  |  |  |  |  |  | [1](#2-forms) |  |  | [1](#5-reports) |  | [3](#7-workflows) |  |  |  | [1](#12-relationships) |  |  |
 | 155 | [azt_quotenumber](#index-azt_quotenumber) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 156 | [azt_quoteproductid](#index-azt_quoteproductid) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [9](#10-plugin-source-code-analysis) |  |  |  |  |
 | 157 | [azt_reasonforexpense](#index-azt_reasonforexpense) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
-| 158 | [azt_recapnotes](#index-azt_recapnotes) | Recap Notes | ntext |  | Yes | none | true |  |  |  | Quote | Quote Summary | Quote_Summary__c | [1](#2-forms) |  |  | [3](#5-reports) |  | [2](#7-workflows) |  |  |  |  |  |  |
+| 158 | [azt_recapnotes](#index-azt_recapnotes) | Recap Notes | ntext |  | Yes | none | true |  |  |  | Quote | Quote_Summary__c | Quote_Summary__c | [1](#2-forms) |  |  | [3](#5-reports) |  | [2](#7-workflows) |  |  |  |  |  |  |
 | 159 | [azt_recapnotescannedoptions](#index-azt_recapnotescannedoptions) | Recap Notes (Canned Options) | picklist | 100000004: Internet Renewal, 276530000: Internet, 100000003: Kaplan Series, 100000001: GED Flash, 100000000: Life Skills Print, 276530001: LAN, 276530002: GED Ready Vouchers, 100000002: Third party vendors (ie..SHI), 276530003: COVID-19, 327630000: Print, 327630001: PassAssured | Yes | none | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 160 | [azt_recordowner](#index-azt_recordowner) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 161 | [azt_recordownerid](#index-azt_recordownerid) | Record Owner | lookup |  | Yes | none | true |  |  |  |  |  |  | [1](#2-forms) | [1](#3-views) |  | [3](#5-reports) |  | [37](#7-workflows) |  | [9](#10-plugin-source-code-analysis) |  | [1](#12-relationships) |  |  |
 | 162 | [azt_replacementproductid](#index-azt_replacementproductid) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 163 | [azt_requestedfreightamt](#index-azt_requestedfreightamt) | Requested Freight Amt | money |  | Yes | none | true |  |  |  | Quote | Freight Requested | Freight_Requested__c | [1](#2-forms) | [1](#3-views) |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
+| 163 | [azt_requestedfreightamt](#index-azt_requestedfreightamt) | Requested Freight Amt | money |  | Yes | none | true |  |  |  | Quote | Freight_Requested__c | Freight_Requested__c | [1](#2-forms) | [1](#3-views) |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 164 | [azt_requestedfreightamt_base](#index-azt_requestedfreightamt_base) | Requested Freight Amt (Base) | money |  | Yes | none | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 165 | [azt_resolvedbyid](#index-azt_resolvedbyid) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 166 | [azt_result](#index-azt_result) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -432,7 +432,7 @@ Total fields: **357**
 | 240 | [fetchxml](#index-fetchxml) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 241 | [filename](#index-filename) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 242 | [firstname](#index-firstname) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  | [1](#5-reports) |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 243 | [freightamount](#index-freightamount) | Freight Amount | money |  | No | none | true |  |  |  | Quote | Shipping and Handling | ShippingHandling | [1](#2-forms) | [1](#3-views) |  | [4](#5-reports) |  | [2](#7-workflows) |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
+| 243 | [freightamount](#index-freightamount) | Freight Amount | money |  | No | none | true |  |  |  | Quote | ShippingHandling | ShippingHandling | [1](#2-forms) | [1](#3-views) |  | [4](#5-reports) |  | [2](#7-workflows) |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 244 | [freightamount_base](#index-freightamount_base) | Freight Amount (Base) | money |  | No | none | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 245 | [freighttermscode](#index-freighttermscode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7-workflows) |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 246 | [from](#index-from) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -495,7 +495,7 @@ Total fields: **357**
 | 303 | [quotedetailsgrid](#index-quotedetailsgrid) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 304 | [quoteid](#index-quoteid) |  |  |  | No |  | true |  |  |  |  |  |  |  | [5](#3-views) |  | [4](#5-reports) |  | [3](#7-workflows) |  | [20](#10-plugin-source-code-analysis) |  | [1](#12-relationships) |  |  |
 | 305 | [quotelines](#index-quotelines) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 306 | [quotenumber](#index-quotenumber) | Quote ID | nvarchar |  | No | systemrequired | true |  |  |  | Quote | Quote Number | QuoteNumber |  | [1](#3-views) |  | [4](#5-reports) |  |  |  |  |  |  |  |  |
+| 306 | [quotenumber](#index-quotenumber) | Quote ID | nvarchar |  | No | systemrequired | true |  |  |  | Quote | QuoteNumber | QuoteNumber |  | [1](#3-views) |  | [4](#5-reports) |  |  |  |  |  |  |  |  |
 | 307 | [record1id](#index-record1id) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10-plugin-source-code-analysis) |  |  |  |  |
 | 308 | [record1roleid](#index-record1roleid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
 | 309 | [record2id](#index-record2id) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -539,7 +539,7 @@ Total fields: **357**
 | 347 | [title](#index-title) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  | [3](#5-reports) |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 348 | [tm.systemuserid](#index-tmsystemuserid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 349 | [to](#index-to) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
-| 350 | [totalamount](#index-totalamount) | Total Amount | money |  | No | none | true |  |  |  | Quote | Grand Total | GrandTotal |  | [5](#3-views) |  | [5](#5-reports) |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
+| 350 | [totalamount](#index-totalamount) | Total Amount | money |  | No | none | true |  |  |  | Quote | GrandTotal | GrandTotal |  | [5](#3-views) |  | [5](#5-reports) |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
 | 351 | [totallineitemamount](#index-totallineitemamount) |  |  |  | No |  | true |  |  |  | Quote | Subtotal | Subtotal |  |  |  | [3](#5-reports) |  |  |  |  |  |  |  |  |
 | 352 | [transactioncurrencyid](#index-transactioncurrencyid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  | [1](#7-workflows) |  | [8](#10-plugin-source-code-analysis) |  |  |  |  |
 | 353 | [uomid](#index-uomid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10-plugin-source-code-analysis) |  |  |  |  |

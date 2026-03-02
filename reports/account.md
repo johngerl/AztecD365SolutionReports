@@ -234,7 +234,7 @@ Total fields: **481**
 | 3 | [accountcasessgrid](#index-accountcasessgrid) |  |  |  | No |  | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 4 | [accountclassificationcode](#index-accountclassificationcode) | Account Classification | picklist | 1: A, 276530000: B, 276530001: C, 100000001: D, 100000000: E, 276530002: S, 276530003: N/A, 276530004: aa, 276530005: bb, 276530006: cc, 276530007: ss | No | none | true | Account | CRM Account Classification | CRM_Account_Classification__c |  |  |  | [2](#2-forms) | [12](#3-views) |  |  |  |  |  |  |  |  |  |  |
 | 5 | [accountid](#index-accountid) |  |  |  | No |  | true |  |  |  |  |  |  |  | [23](#3-views) |  | [1](#5-reports) |  | [8](#7-workflows) |  | [12](#10-plugin-source-code-analysis) |  |  |  |  |
-| 6 | [accountnumber](#index-accountnumber) | Sequence Number | nvarchar |  | No | none | true |  |  |  | Account | Account Number | AccountNumber |  | [1](#3-views) |  |  |  |  |  |  |  |  |  |  |
+| 6 | [accountnumber](#index-accountnumber) | Sequence Number | nvarchar |  | No | none | true |  |  |  | Account | AccountNumber | AccountNumber |  | [1](#3-views) |  |  |  |  |  |  |  |  |  |  |
 | 7 | [accountopportunitiesgrid](#index-accountopportunitiesgrid) |  |  |  | No |  | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 8 | [activityid](#index-activityid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10-plugin-source-code-analysis) |  |  |  |  |
 | 9 | [activitytypecode](#index-activitytypecode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -255,7 +255,7 @@ Total fields: **481**
 | 24 | [address1_line3](#index-address1_line3) | Physical Address Street 3 | nvarchar |  | No | none | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 25 | [address1_longitude](#index-address1_longitude) | Physical Address Longitude | float |  | No | none | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 26 | [address1_name](#index-address1_name) | Physical Address Name | nvarchar |  | No | none | true |  |  |  |  |  |  | [2](#2-forms) | [1](#3-views) |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
-| 27 | [address1_postalcode](#index-address1_postalcode) | Physical Address ZIP/Postal Code | nvarchar |  | No | none | true |  |  |  | Account | Billing Zip | BillingPostalCode | [2](#2-forms) |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
+| 27 | [address1_postalcode](#index-address1_postalcode) | Physical Address ZIP/Postal Code | nvarchar |  | No | none | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
 | 28 | [address1_postofficebox](#index-address1_postofficebox) | Physical Address Post Office Box | nvarchar |  | No | none | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 29 | [address1_primarycontactname](#index-address1_primarycontactname) | Physical Address Primary Contact Name | nvarchar |  | No | none | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 30 | [address1_shippingmethodcode](#index-address1_shippingmethodcode) | Physical Address Shipping Method | picklist | 1: Airborne, 2: DHL, 3: FedEx, 4: UPS, 5: Postal Mail, 6: Full Load, 7: Will Call | No | none | true |  |  |  |  |  |  |  |  |  |  |  | [5](#7-workflows) |  |  |  |  |  |  |
@@ -498,7 +498,7 @@ Total fields: **481**
 | 267 | [azt_supportexpirationdate](#index-azt_supportexpirationdate) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 268 | [azt_tax_exempt_certificate__c](#index-azt_tax_exempt_certificate__c) | Tax_Exempt_Certificate__c | bit | 1: Yes, 0: No | Yes | none | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 269 | [azt_taxamount](#index-azt_taxamount) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  | [1](#5-reports) |  |  |  |  |  |  |  |  |
-| 270 | [azt_taxexemptcertificate](#index-azt_taxexemptcertificate) | Tax Exempt Certificate # | nvarchar |  | Yes | none | true |  |  |  | Account | Tax Exempt | Tax_Exempt__c | [2](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 270 | [azt_taxexemptcertificate](#index-azt_taxexemptcertificate) | Tax Exempt Certificate # | nvarchar |  | Yes | none | true |  |  |  | Account | Tax_Exempt__c | Tax_Exempt__c | [2](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 271 | [azt_total](#index-azt_total) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
 | 272 | [azt_totalamountpaid](#index-azt_totalamountpaid) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 273 | [azt_totalfunding](#index-azt_totalfunding) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |

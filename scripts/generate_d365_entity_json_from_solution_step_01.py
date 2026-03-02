@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """
-enrich_entity_json.py
+generate_d365_entity_json_from_solution_step_01.py
+
+Step 1 of the pipeline.
 
 Sole owner of SolutionExtract/plugins parsing. Derives entity/field definitions
 from customizations.xml, parses all 13 sections, augments with inferred fields,
@@ -9,9 +11,9 @@ and writes enriched entity JSON with entity-level sections and per-field referen
 No external dependencies beyond Python 3.6+ stdlib.
 
 Usage:
-    python enrich_entity_json.py account
-    python enrich_entity_json.py --all
-    python enrich_entity_json.py --all --output-dir PATH
+    python generate_d365_entity_json_from_solution_step_01.py account
+    python generate_d365_entity_json_from_solution_step_01.py --all
+    python generate_d365_entity_json_from_solution_step_01.py --all --output-dir PATH
 """
 
 import csv

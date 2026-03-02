@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """
-refresh_sf_entities.py
+generate_sf_entity_json_from_api_step_03.py
+
+Step 3 of the pipeline.
 
 Refreshes Salesforce object schema JSON files in salesforce-entities/
 by calling the Salesforce REST API (SObject Describe).
@@ -12,10 +14,10 @@ Authentication (tried in order):
 Preserves existing d365 mapping fields when updating.
 
 Usage:
-    python refresh_sf_entities.py Account           # single SF object
-    python refresh_sf_entities.py --all              # all objects in salesforce-entities/
-    python refresh_sf_entities.py --all --output-dir PATH
-    python refresh_sf_entities.py --all --auth oauth # force OAuth (skip SF CLI)
+    python generate_sf_entity_json_from_api_step_03.py Account           # single SF object
+    python generate_sf_entity_json_from_api_step_03.py --all              # all objects in salesforce-entities/
+    python generate_sf_entity_json_from_api_step_03.py --all --output-dir PATH
+    python generate_sf_entity_json_from_api_step_03.py --all --auth oauth # force OAuth (skip SF CLI)
 """
 
 import argparse

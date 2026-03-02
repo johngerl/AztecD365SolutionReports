@@ -1,6 +1,6 @@
 Refresh Salesforce object schema(s) from the org via REST API.
 
-If `$ARGUMENTS` is empty, run for all existing objects. Otherwise run for the specified Salesforce object (use API name, e.g., Account, Opportunity, Custom_Object__c).
+This is Step 3 of the pipeline. If `$ARGUMENTS` is empty, run for all existing objects. Otherwise run for the specified Salesforce object (use API name, e.g., Account, Opportunity, Custom_Object__c).
 
 ```bash
 # Determine argument
@@ -10,7 +10,7 @@ else
   ARG="$ARGUMENTS"
 fi
 
-python scripts/refresh_sf_entities.py $ARG
+python scripts/generate_sf_entity_json_from_api_step_03.py $ARG
 ```
 
 After completion, report:

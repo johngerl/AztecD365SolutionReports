@@ -1,6 +1,6 @@
-Run the full pipeline: enrich JSON, extract CSV, refresh SF entities, update SF suggestions, and generate reports.
+Run the full pipeline: generate D365 JSON, extract CSV, refresh SF entities, update SF suggestions, and generate reports.
 
-Runs Steps 1 → 2 → 3 → 4a → 4b in sequence. Step 3 (SF refresh) is only included when running for all entities, since it requires SF API names which differ from D365 entity names. To refresh a single SF object, use `/refresh-sf-entity` separately.
+Runs Steps 1 → 2 → 3 → 4 → 5 in sequence.
 
 If `$ARGUMENTS` is empty, run for all entities. Otherwise run for the specified entity.
 
@@ -12,48 +12,52 @@ if [ -z "$ARGUMENTS" ]; then
   echo "Full Pipeline: All Entities"
   echo "============================================================"
   echo ""
-  echo "Step 1/5: Enriching D365 entity JSON..."
+  echo "Step 1/5: Generating D365 entity JSON from solution..."
   echo "------------------------------------------------------------"
-  python scripts/enrich_entity_json.py --all
+  python scripts/generate_d365_entity_json_from_solution_step_01.py --all
   echo ""
-  echo "Step 2/5: Extracting mapping CSVs..."
+  echo "Step 2/5: Generating D365 entity CSV mappings..."
   echo "------------------------------------------------------------"
-  python scripts/extract_mapping_csv.py --all
+  python scripts/generate_d365_entity_csv_mapping_step_02.py --all
   echo ""
-  echo "Step 3/5: Refreshing SF entity schemas..."
+  echo "Step 3/5: Generating SF entity JSON from API..."
   echo "------------------------------------------------------------"
-  python scripts/refresh_sf_entities.py --all
+  python scripts/generate_sf_entity_json_from_api_step_03.py --all
   echo ""
-  echo "Step 4/5: Updating mapping CSVs with SF suggestions..."
+  echo "Step 4/5: Updating D365 CSV mappings with SF suggestions..."
   echo "------------------------------------------------------------"
-  python scripts/update_mapping_csv.py --all
+  python scripts/update_d365_entity_csv_mapping_with_sf_suggestions_step_04.py --all
   echo ""
-  echo "Step 5/5: Generating field usage reports..."
+  echo "Step 5/5: Generating D365 field usage reports..."
   echo "------------------------------------------------------------"
-  python scripts/generate_report.py --all
+  python scripts/generate_d365_report_from_json_and_csv_step_05.py --all
 else
   ARG="$ARGUMENTS"
+  # Capitalize first letter as heuristic SF object name
+  SF_NAME="$(echo "$ARG" | sed 's/^./\U&/')"
   echo "============================================================"
   echo "Full Pipeline: $ARG"
   echo "============================================================"
   echo ""
-  echo "Step 1/4: Enriching D365 entity JSON..."
+  echo "Step 1/5: Generating D365 entity JSON from solution..."
   echo "------------------------------------------------------------"
-  python scripts/enrich_entity_json.py $ARG
+  python scripts/generate_d365_entity_json_from_solution_step_01.py $ARG
   echo ""
-  echo "Step 2/4: Extracting mapping CSV..."
+  echo "Step 2/5: Generating D365 entity CSV mapping..."
   echo "------------------------------------------------------------"
-  python scripts/extract_mapping_csv.py $ARG
+  python scripts/generate_d365_entity_csv_mapping_step_02.py $ARG
   echo ""
-  echo "Step 3/4: Updating mapping CSV with SF suggestions..."
+  echo "Step 3/5: Generating SF entity JSON from API ($SF_NAME)..."
   echo "------------------------------------------------------------"
-  python scripts/update_mapping_csv.py $ARG
+  python scripts/generate_sf_entity_json_from_api_step_03.py $SF_NAME
   echo ""
-  echo "Step 4/4: Generating field usage report..."
+  echo "Step 4/5: Updating D365 CSV mapping with SF suggestions..."
   echo "------------------------------------------------------------"
-  python scripts/generate_report.py $ARG
+  python scripts/update_d365_entity_csv_mapping_with_sf_suggestions_step_04.py $ARG
   echo ""
-  echo "(Skipped SF entity refresh — use /refresh-sf-entity with SF API name separately)"
+  echo "Step 5/5: Generating D365 field usage report..."
+  echo "------------------------------------------------------------"
+  python scripts/generate_d365_report_from_json_and_csv_step_05.py $ARG
 fi
 
 echo ""
@@ -67,4 +71,3 @@ After completion, report:
 - Number of mapping CSVs updated
 - Number of reports generated
 - Any warnings or errors from the run
-- For single-entity runs, remind the user to run `/refresh-sf-entity <SfObjectName>` if they need updated SF schema

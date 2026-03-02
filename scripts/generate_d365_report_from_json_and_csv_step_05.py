@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 """
-generate_report.py
+generate_d365_report_from_json_and_csv_step_05.py
+
+Step 5 of the pipeline. Run steps 1-4 first.
 
 Reads enriched D365 entity JSON from d365-entities/ and mapping CSVs from
 mapping/, then generates comprehensive Markdown field usage reports.
 
-This is Step 4b of the pipeline. Run Steps 1-3 and 4a first.
-
 Usage:
-    python generate_report.py <entity> [--output-dir <path>]
-    python generate_report.py --all
+    python generate_d365_report_from_json_and_csv_step_05.py <entity> [--output-dir <path>]
+    python generate_d365_report_from_json_and_csv_step_05.py --all
 """
 
 import csv
@@ -21,6 +21,12 @@ import sys
 import argparse
 from collections import defaultdict
 from datetime import date
+
+from pipeline_shared import (
+    convert_keys_to_snake,
+    adapt_json_fields,
+    count_field_references,
+)
 
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_OUTPUT_DIR = os.path.join(PROJECT_DIR, "reports")
@@ -34,55 +40,6 @@ def slugify(text):
     text = re.sub(r'[\s]+', '-', text)
     text = re.sub(r'-+', '-', text)
     return text.strip('-')
-
-
-# ---------------------------------------------------------------------------
-# camelCase -> snake_case conversion
-# ---------------------------------------------------------------------------
-
-def camel_to_snake(name):
-    """Convert camelCase to snake_case: 'formType' -> 'form_type'."""
-    return re.sub(r'([A-Z])', r'_\1', name).lower().lstrip('_')
-
-
-# Keys whose values are dicts with data identifiers as keys (not schema keys).
-_DATA_DICT_KEYS = frozenset({'field_refs', 'func_fields'})
-
-
-def convert_keys_to_snake(obj, _parent_key=None):
-    """Recursively convert all dict keys from camelCase to snake_case.
-
-    Dicts under keys in _DATA_DICT_KEYS preserve their keys (data identifiers)
-    while still converting their nested values.
-    """
-    if isinstance(obj, dict):
-        if _parent_key in _DATA_DICT_KEYS:
-            return {k: convert_keys_to_snake(v) for k, v in obj.items()}
-        return {
-            camel_to_snake(k): convert_keys_to_snake(v, _parent_key=camel_to_snake(k))
-            for k, v in obj.items()
-        }
-    if isinstance(obj, list):
-        return [convert_keys_to_snake(item, _parent_key=_parent_key) for item in obj]
-    return obj
-
-
-def adapt_json_fields(json_fields):
-    """Convert enriched JSON field dicts to the parse-output key format
-    expected by generate_markdown and other functions."""
-    return [{
-        'schema_name': jf.get('fieldName', ''),
-        'display_name': jf.get('displayName', ''),
-        'description': jf.get('description', ''),
-        'data_type': jf.get('dataType', ''),
-        'required_level': jf.get('requiredLevel', 'none'),
-        'is_custom': jf.get('isCustom', False),
-        'introduced_version': jf.get('introducedVersion', ''),
-        'max_length': jf.get('maxLength'),
-        'is_audit_enabled': jf.get('auditEnabled', False),
-        'is_secured': jf.get('fieldSecurity', False),
-        'picklist_values': jf.get('picklistValues') or [],
-    } for jf in json_fields]
 
 
 # ---------------------------------------------------------------------------
@@ -101,107 +58,6 @@ def read_mapping_csv(mapping_dir, entity_name):
             if fn:
                 mapping[fn] = row
     return mapping
-
-
-# ---------------------------------------------------------------------------
-# SECTION REFERENCE COUNTING
-# ---------------------------------------------------------------------------
-
-def count_field_references(entity_name, forms, views, chart_visualizations,
-                           reports, dashboards, workflows, formulas,
-                           plugin_refs, controls, relationships, ribbon, conflicts):
-    """Pre-compute per-field reference counts for each report section.
-
-    Returns a defaultdict mapping field_name_lower -> {section_key: count}.
-    """
-    counts = defaultdict(lambda: defaultdict(int))
-
-    for form in forms:
-        for hf in form['header_fields']:
-            counts[hf['name'].lower()]['forms'] += 1
-        for tab in form['tabs']:
-            for section in tab['sections']:
-                for field in section['fields']:
-                    if not field['is_subgrid'] and not field['is_webresource']:
-                        counts[field['name'].lower()]['forms'] += 1
-        for ff in form['footer_fields']:
-            counts[ff['name'].lower()]['forms'] += 1
-
-    for view in views:
-        for col in view['columns']:
-            counts[col['name'].lower()]['views'] += 1
-        for ff in view['filter_fields']:
-            counts[ff['field'].lower()]['views'] += 1
-        for sf in view['sort_fields']:
-            counts[sf['field'].lower()]['views'] += 1
-
-    for chart in chart_visualizations:
-        for mf in chart['measure_fields']:
-            counts[mf['field'].lower()]['charts'] += 1
-        for gf in chart['groupby_fields']:
-            counts[gf['field'].lower()]['charts'] += 1
-        for ff in chart['filter_fields']:
-            counts[ff['field'].lower()]['charts'] += 1
-        for sf in chart['sort_fields']:
-            counts[sf['field'].lower()]['charts'] += 1
-
-    def count_report_link_entities(link_list):
-        for le in link_list:
-            for attr in le['attributes']:
-                counts[attr.lower()]['reports'] += 1
-            for cond in le['conditions']:
-                counts[cond['field'].lower()]['reports'] += 1
-            for order in le['orders']:
-                counts[order['field'].lower()]['reports'] += 1
-            if le['nested_links']:
-                count_report_link_entities(le['nested_links'])
-
-    for rpt in reports:
-        for ds in rpt['datasets']:
-            for fd in ds['fetchxml_data']:
-                for attr in fd['attributes']:
-                    counts[attr.lower()]['reports'] += 1
-                for cond in fd['conditions']:
-                    counts[cond['field'].lower()]['reports'] += 1
-                for order in fd['orders']:
-                    counts[order['field'].lower()]['reports'] += 1
-                count_report_link_entities(fd['link_entities'])
-
-    for wf in workflows:
-        for fn in wf['fields_read']:
-            counts[fn.lower()]['workflows'] += 1
-        for fn in wf['fields_written']:
-            counts[fn.lower()]['workflows'] += 1
-
-    for formula in formulas:
-        counts[formula['field'].lower()]['formulas'] += 1
-        for sf in formula['source_fields']:
-            counts[sf['field'].lower()]['formulas'] += 1
-
-    for plugin in plugin_refs:
-        for fn in plugin['fields_read']:
-            counts[fn.lower()]['plugins'] += 1
-        for fn in plugin['fields_written']:
-            counts[fn.lower()]['plugins'] += 1
-        for fn in plugin['fields_filtered']:
-            counts[fn.lower()]['plugins'] += 1
-        for fn in plugin['fields_sorted']:
-            counts[fn.lower()]['plugins'] += 1
-        for fn in plugin['fields_joined']:
-            counts[fn.lower()]['plugins'] += 1
-        for fn in plugin['image_fields']:
-            counts[fn.lower()]['plugins'] += 1
-
-    for ctrl in controls:
-        for prop in ctrl['bound_properties']:
-            if prop['name']:
-                counts[prop['name'].lower()]['pcf'] += 1
-
-    for rel in relationships:
-        if rel['referencing_attribute']:
-            counts[rel['referencing_attribute'].lower()]['rels'] += 1
-
-    return counts
 
 
 # ---------------------------------------------------------------------------

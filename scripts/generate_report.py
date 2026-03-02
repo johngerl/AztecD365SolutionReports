@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
 """
-generate_field_usage.py
+generate_report.py
 
-Reads enriched D365 entity JSON from d365-entities/, loads SF entity data
-from salesforce-entities/, and generates comprehensive Markdown field usage
-reports and mapping CSVs.
+Reads enriched D365 entity JSON from d365-entities/ and mapping CSVs from
+mapping/, then generates comprehensive Markdown field usage reports.
+
+This is Step 4b of the pipeline. Run Steps 1-3 and 4a first.
 
 Usage:
-    python generate_field_usage.py <entity> [--output-dir <path>]
+    python generate_report.py <entity> [--output-dir <path>]
+    python generate_report.py --all
 """
 
 import csv
@@ -23,39 +25,7 @@ from datetime import date
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_OUTPUT_DIR = os.path.join(PROJECT_DIR, "reports")
 DEFAULT_MAPPING_DIR = os.path.join(PROJECT_DIR, "mapping")
-SF_ENTITIES_DIR = os.path.join(PROJECT_DIR, "salesforce-entities")
 DEFAULT_D365_DIR = os.path.join(PROJECT_DIR, "d365-entities")
-
-SF_COLUMNS = [
-    "sfObjectName",
-    "sfFieldDisplayName",
-    "sfFieldApiName",
-    "sfSuggestedObjectName",
-    "sfSuggestedFieldDisplayName",
-    "sfSuggestedFieldApiName",
-]
-
-D365_COLUMNS = ["displayName", "dataType", "requiredLevel", "isCustom"]
-REPORT_COLUMNS = ["picklistValues", "mappingSuggested"]
-
-# Reference count columns: CSV header -> count_field_references key
-REF_COUNT_COLUMNS = [
-    ("refForms", "forms"),
-    ("refViews", "views"),
-    ("refChartVisualizations", "charts"),
-    ("refReports", "reports"),
-    ("refDashboards", "dashboards"),
-    ("refWorkflows", "workflows"),
-    ("refFormulas", "formulas"),
-    ("refPlugins", "plugins"),
-    ("refPcfControls", "pcf"),
-    ("refRelationships", "rels"),
-    ("refRibbon", "ribbon"),
-]
-
-CSV_COLUMNS = (D365_COLUMNS + REPORT_COLUMNS
-               + [col for col, _ in REF_COUNT_COLUMNS] + SF_COLUMNS)
-
 
 
 def slugify(text):
@@ -64,7 +34,6 @@ def slugify(text):
     text = re.sub(r'[\s]+', '-', text)
     text = re.sub(r'-+', '-', text)
     return text.strip('-')
-
 
 
 # ---------------------------------------------------------------------------
@@ -77,7 +46,6 @@ def camel_to_snake(name):
 
 
 # Keys whose values are dicts with data identifiers as keys (not schema keys).
-# The dict values get converted, but the keys themselves are preserved.
 _DATA_DICT_KEYS = frozenset({'field_refs', 'func_fields'})
 
 
@@ -89,7 +57,6 @@ def convert_keys_to_snake(obj, _parent_key=None):
     """
     if isinstance(obj, dict):
         if _parent_key in _DATA_DICT_KEYS:
-            # Preserve data-identifier keys, still convert nested values
             return {k: convert_keys_to_snake(v) for k, v in obj.items()}
         return {
             camel_to_snake(k): convert_keys_to_snake(v, _parent_key=camel_to_snake(k))
@@ -118,194 +85,22 @@ def adapt_json_fields(json_fields):
     } for jf in json_fields]
 
 
-
-
 # ---------------------------------------------------------------------------
-# SF MAPPING
+# CSV READER (read-only, for report display)
 # ---------------------------------------------------------------------------
 
-def load_mapping_csv(mapping_dir, entity_name):
-    """Load SF mapping data from a CSV file into a dict keyed by fieldName.
-
-    Returns {field_name_lower: {sfObjectName: ..., ...}} or empty dict.
-    """
+def read_mapping_csv(mapping_dir, entity_name):
+    """Read mapping CSV into a dict keyed by fieldName for report display."""
     csv_path = os.path.join(mapping_dir, f"{entity_name}.csv")
     if not os.path.isfile(csv_path):
         return {}
-
     mapping = {}
     with open(csv_path, "r", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            field_name = row.get("fieldName", "").lower()
-            if field_name:
-                mapping[field_name] = {
-                    col: row.get(col, "") or "" for col in CSV_COLUMNS
-                }
+        for row in csv.DictReader(f):
+            fn = row.get("fieldName", "").lower()
+            if fn:
+                mapping[fn] = row
     return mapping
-
-
-def build_sf_entity_index(sf_entities_dir):
-    """Scan salesforce-entities/*.json and build {objectName_lower: objectName}.
-
-    Returns dict mapping lowercase object name to its canonical casing.
-    """
-    import json
-    index = {}
-    if not os.path.isdir(sf_entities_dir):
-        return index
-    for fname in os.listdir(sf_entities_dir):
-        if not fname.endswith('.json'):
-            continue
-        fpath = os.path.join(sf_entities_dir, fname)
-        try:
-            with open(fpath, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-            obj_name = data.get('objectName', '')
-            if obj_name:
-                index[obj_name.lower()] = obj_name
-        except (json.JSONDecodeError, IOError):
-            continue
-    return index
-
-
-def load_sf_entity_fields(sf_entities_dir, sf_object_name):
-    """Load the SF entity JSON for a given object and return its fields.
-
-    Returns list of field dicts from the JSON, or empty list.
-    """
-    import json
-    if not os.path.isdir(sf_entities_dir):
-        return []
-    # Filename is objectName lowered + .json
-    fname = sf_object_name.lower() + '.json'
-    fpath = os.path.join(sf_entities_dir, fname)
-    if not os.path.isfile(fpath):
-        return []
-    try:
-        with open(fpath, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-        return data.get('fields', [])
-    except (json.JSONDecodeError, IOError):
-        return []
-
-
-def resolve_sf_object(entity_name, mapping_dir, sf_entity_index):
-    """Determine the SF object name for a D365 entity (data-driven only).
-
-    1. From existing CSV data — most common sfObjectName or sfSuggestedObjectName
-    2. From SF entity JSON index — match D365 entity name to SF objectName
-    3. No match — returns ''
-    """
-    # Tier 1: scan CSV for most common SF object name
-    csv_path = os.path.join(mapping_dir, f"{entity_name}.csv")
-    if os.path.isfile(csv_path):
-        obj_counts = defaultdict(int)
-        with open(csv_path, "r", encoding="utf-8") as f:
-            reader = csv.DictReader(f)
-            for row in reader:
-                for col in ("sfObjectName", "sfSuggestedObjectName"):
-                    val = (row.get(col, "") or "").strip()
-                    if val:
-                        obj_counts[val] += 1
-        if obj_counts:
-            return max(obj_counts, key=obj_counts.get)
-
-    # Tier 2: match against SF entity JSON objectNames
-    if entity_name in sf_entity_index:
-        return sf_entity_index[entity_name]
-
-    # Tier 3: no match
-    return ''
-
-
-def build_sf_field_lookup(sf_fields):
-    """Build lookup dicts from an SF entity's field list.
-
-    Returns (by_d365_internal, by_d365_suggested, by_name_lower):
-    - by_d365_internal: {d365InternalName_lower: sf_field_dict}
-    - by_d365_suggested: {d365SuggestedInternalName_lower: sf_field_dict}
-    - by_name_lower: {fieldName_lower: sf_field_dict}
-    """
-    by_d365_internal = {}
-    by_d365_suggested = {}
-    by_name_lower = {}
-    for sf_field in sf_fields:
-        fn = sf_field.get('fieldName', '')
-        if fn:
-            by_name_lower[fn.lower()] = sf_field
-        d365_int = sf_field.get('d365InternalName') or ''
-        if d365_int:
-            by_d365_internal[d365_int.lower()] = sf_field
-        d365_sug = sf_field.get('d365SuggestedInternalName') or ''
-        if d365_sug:
-            by_d365_suggested[d365_sug.lower()] = sf_field
-    return by_d365_internal, by_d365_suggested, by_name_lower
-
-
-def match_sf_field(d365_schema_name, by_d365_internal, by_d365_suggested, by_name_lower):
-    """Find the best-matching SF field for a D365 field.
-
-    Resolution order:
-    1. Confirmed mapping: d365InternalName matches D365 schema_name
-    2. Suggested mapping: d365SuggestedInternalName matches D365 schema_name
-    3. Exact name match: SF fieldName matches D365 schema_name (case-insensitive)
-    4. No match
-
-    Returns (sf_field_api_name, sf_field_api_name) or ('', '').
-    We use fieldName for both display and API since the JSON has no separate
-    display name — the CSV consumer can refine the display name later.
-    """
-    key = d365_schema_name.lower()
-    sf_field = by_d365_internal.get(key) or by_d365_suggested.get(key) or by_name_lower.get(key)
-    if sf_field:
-        fn = sf_field.get('fieldName', '')
-        return fn, fn
-    return '', ''
-
-
-def update_mapping_csv(mapping_dir, entity_name, fields, sf_mapping,
-                       field_mapping_suggested, field_ref_counts=None):
-    """Write one row per D365 field to the mapping CSV.
-
-    Includes D365 metadata, report columns, reference counts, and SF mapping.
-    Every field is written regardless of whether SF columns are populated.
-    Sorted by fieldName.
-    """
-    csv_path = os.path.join(mapping_dir, f"{entity_name}.csv")
-    header = ["fieldName"] + CSV_COLUMNS
-    if field_ref_counts is None:
-        field_ref_counts = {}
-
-    rows = []
-    for field in sorted(fields, key=lambda f: f['schema_name'].lower()):
-        sn_lower = field['schema_name'].lower()
-        data = sf_mapping.get(sn_lower, {})
-        pv = field.get('picklist_values', [])
-        pv_str = ', '.join(
-            f'{v["value"]}: {v["label"]}' for v in pv) if pv else ''
-        suggested = field_mapping_suggested.get(sn_lower, False)
-        row = {
-            "fieldName": field['schema_name'],
-            "displayName": field.get('display_name', ''),
-            "dataType": field.get('data_type', ''),
-            "requiredLevel": field.get('required_level', ''),
-            "isCustom": str(field.get('is_custom', False)),
-            "picklistValues": pv_str,
-            "mappingSuggested": "true" if suggested else "false",
-        }
-        refs = field_ref_counts.get(sn_lower, {})
-        for csv_col, count_key in REF_COUNT_COLUMNS:
-            row[csv_col] = refs.get(count_key, 0)
-        for col in SF_COLUMNS:
-            row[col] = data.get(col, "") or ""
-        rows.append(row)
-
-    os.makedirs(mapping_dir, exist_ok=True)
-    with open(csv_path, "w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=header)
-        writer.writeheader()
-        writer.writerows(rows)
 
 
 # ---------------------------------------------------------------------------
@@ -318,12 +113,9 @@ def count_field_references(entity_name, forms, views, chart_visualizations,
     """Pre-compute per-field reference counts for each report section.
 
     Returns a defaultdict mapping field_name_lower -> {section_key: count}.
-    Section keys: forms, views, charts, reports, dashboards, workflows,
-    formulas, plugins, pcf, rels, ribbon, conflicts.
     """
     counts = defaultdict(lambda: defaultdict(int))
 
-    # Forms: header_fields, tabs[].sections[].fields (non-subgrid, non-webresource), footer_fields
     for form in forms:
         for hf in form['header_fields']:
             counts[hf['name'].lower()]['forms'] += 1
@@ -335,7 +127,6 @@ def count_field_references(entity_name, forms, views, chart_visualizations,
         for ff in form['footer_fields']:
             counts[ff['name'].lower()]['forms'] += 1
 
-    # Views: columns, filter_fields, sort_fields
     for view in views:
         for col in view['columns']:
             counts[col['name'].lower()]['views'] += 1
@@ -344,7 +135,6 @@ def count_field_references(entity_name, forms, views, chart_visualizations,
         for sf in view['sort_fields']:
             counts[sf['field'].lower()]['views'] += 1
 
-    # Charts: measure_fields, groupby_fields, filter_fields, sort_fields
     for chart in chart_visualizations:
         for mf in chart['measure_fields']:
             counts[mf['field'].lower()]['charts'] += 1
@@ -355,7 +145,6 @@ def count_field_references(entity_name, forms, views, chart_visualizations,
         for sf in chart['sort_fields']:
             counts[sf['field'].lower()]['charts'] += 1
 
-    # Reports: datasets[].fetchxml_data[].attributes, conditions, orders + recursive link_entities
     def count_report_link_entities(link_list):
         for le in link_list:
             for attr in le['attributes']:
@@ -378,22 +167,17 @@ def count_field_references(entity_name, forms, views, chart_visualizations,
                     counts[order['field'].lower()]['reports'] += 1
                 count_report_link_entities(fd['link_entities'])
 
-    # Dashboards: no direct field references (reference views/charts by ID)
-
-    # Workflows: fields_read, fields_written
     for wf in workflows:
         for fn in wf['fields_read']:
             counts[fn.lower()]['workflows'] += 1
         for fn in wf['fields_written']:
             counts[fn.lower()]['workflows'] += 1
 
-    # Formulas: field (target) + source_fields[].field
     for formula in formulas:
         counts[formula['field'].lower()]['formulas'] += 1
         for sf in formula['source_fields']:
             counts[sf['field'].lower()]['formulas'] += 1
 
-    # Plugins: fields_read, fields_written, fields_filtered, fields_sorted, fields_joined, image_fields
     for plugin in plugin_refs:
         for fn in plugin['fields_read']:
             counts[fn.lower()]['plugins'] += 1
@@ -408,19 +192,14 @@ def count_field_references(entity_name, forms, views, chart_visualizations,
         for fn in plugin['image_fields']:
             counts[fn.lower()]['plugins'] += 1
 
-    # PCF Controls: bound_properties[].name
     for ctrl in controls:
         for prop in ctrl['bound_properties']:
             if prop['name']:
                 counts[prop['name'].lower()]['pcf'] += 1
 
-    # Relationships: referencing_attribute
     for rel in relationships:
         if rel['referencing_attribute']:
             counts[rel['referencing_attribute'].lower()]['rels'] += 1
-
-    # Ribbon: no direct field references (defines buttons/commands)
-    # Conflicts: derived analysis, no direct field references
 
     return counts
 
@@ -1263,10 +1042,8 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
 # MAIN
 # ---------------------------------------------------------------------------
 
-def process_entity(entity_name, output_dir, mapping_dir=None,
-                   sf_entity_index=None, d365_entities_dir=None):
-    """Load enriched JSON, convert to parse-output format, compute SF
-    suggestions, write CSV and markdown report."""
+def process_entity(entity_name, output_dir, mapping_dir, d365_entities_dir):
+    """Load enriched JSON, read mapping CSV, and generate markdown report."""
     entity_name = entity_name.lower()
 
     print(f"\nProcessing {entity_name.upper()}...")
@@ -1301,16 +1078,13 @@ def process_entity(entity_name, output_dir, mapping_dir=None,
     fields = adapt_json_fields(entity_data.get('fields', []))
 
     # 4. Post-conversion fixups
-    # Restore sets for form['all_fields'] (JSON list -> set)
     for form in forms:
         form['all_fields'] = set(form.get('all_fields', []))
 
-    # Ensure conflicts has expected keys
     conflicts.setdefault('per_form_conflicts', [])
     conflicts.setdefault('in_code_not_on_forms', [])
     conflicts.setdefault('on_forms_not_in_logic', [])
 
-    # Ensure js field_refs dicts have expected defaults
     for js in js_files:
         raw_refs = js.get('field_refs', {})
         field_refs = {}
@@ -1336,76 +1110,8 @@ def process_entity(entity_name, output_dir, mapping_dir=None,
     print(f"  Ribbon Actions: {len(ribbon.get('custom_actions', []))}")
     print(f"  Ribbon Commands: {len(ribbon.get('commands', []))}")
 
-    # 5. SF mapping: compute usage, write validated suggestions to CSV
-    field_mapping_suggested = {}
-    field_ref_counts = count_field_references(
-        entity_name, forms, views, chart_visualizations,
-        reports, dashboards, workflows, formulas,
-        plugin_refs, controls, relationships, ribbon, conflicts
-    )
-    if mapping_dir:
-        sf_mapping = load_mapping_csv(mapping_dir, entity_name)
-        sf_object = resolve_sf_object(entity_name, mapping_dir, sf_entity_index)
-
-        sf_fields = load_sf_entity_fields(SF_ENTITIES_DIR, sf_object) if sf_object else []
-        by_d365_internal, by_d365_suggested, by_name_lower = build_sf_field_lookup(sf_fields)
-
-        suggestions_added = 0
-        for field in fields:
-            sn_lower = field['schema_name'].lower()
-            if sn_lower not in sf_mapping:
-                sf_mapping[sn_lower] = {col: '' for col in SF_COLUMNS}
-            data = sf_mapping[sn_lower]
-
-            refs = field_ref_counts.get(sn_lower, {})
-            has_usage = any(refs.get(k, 0) > 0 for k in refs)
-
-            if data.get('sfObjectName') and not (
-                    data.get('sfFieldDisplayName') and data.get('sfFieldApiName')):
-                data['sfObjectName'] = ''
-
-            if not has_usage:
-                data['sfSuggestedObjectName'] = ''
-                data['sfSuggestedFieldDisplayName'] = ''
-                data['sfSuggestedFieldApiName'] = ''
-            else:
-                if data.get('sfSuggestedObjectName') and not (
-                        data.get('sfSuggestedFieldDisplayName') and
-                        data.get('sfSuggestedFieldApiName')):
-                    data['sfSuggestedObjectName'] = ''
-
-                has_confirmed = all(data.get(c, '') for c in (
-                    'sfObjectName', 'sfFieldDisplayName', 'sfFieldApiName'))
-                has_suggested = all(data.get(c, '') for c in (
-                    'sfSuggestedObjectName', 'sfSuggestedFieldDisplayName',
-                    'sfSuggestedFieldApiName'))
-                if not has_confirmed and not has_suggested and sf_object:
-                    sf_display, sf_api = match_sf_field(
-                        field['schema_name'],
-                        by_d365_internal, by_d365_suggested, by_name_lower)
-                    if sf_display and sf_api:
-                        data['sfSuggestedObjectName'] = sf_object
-                        data['sfSuggestedFieldDisplayName'] = sf_display
-                        data['sfSuggestedFieldApiName'] = sf_api
-                        suggestions_added += 1
-
-        for field in fields:
-            sn_lower = field['schema_name'].lower()
-            refs = field_ref_counts.get(sn_lower, {})
-            has_usage = any(refs.get(k, 0) > 0 for k in refs)
-            req = field.get('required_level', '') or ''
-            is_required = req.lower() not in ('', 'none')
-            field_mapping_suggested[sn_lower] = has_usage or is_required
-
-        update_mapping_csv(mapping_dir, entity_name, fields, sf_mapping,
-                           field_mapping_suggested, field_ref_counts)
-
-        sf_mapping = load_mapping_csv(mapping_dir, entity_name)
-
-        matched = sum(1 for v in sf_mapping.values() if v.get('sfSuggestedFieldApiName', ''))
-        print(f"  SF mapping: {len(sf_mapping)} CSV rows, {suggestions_added} suggestions added ({matched} with SF field match)")
-    else:
-        sf_mapping = {}
+    # 5. Read mapping CSV (read-only, for display in report)
+    sf_mapping = read_mapping_csv(mapping_dir, entity_name)
 
     # 6. Generate markdown
     markdown, field_index = generate_markdown(
@@ -1413,7 +1119,7 @@ def process_entity(entity_name, output_dir, mapping_dir=None,
         reports, dashboards,
         workflows, js_files, formulas, plugin_refs, controls,
         relationships, ribbon, conflicts,
-        sf_mapping=sf_mapping, field_mapping_suggested=field_mapping_suggested
+        sf_mapping=sf_mapping, field_mapping_suggested={}
     )
 
     output_file = os.path.join(output_dir, f"{entity_name}.md")
@@ -1497,16 +1203,16 @@ def process_entity(entity_name, output_dir, mapping_dir=None,
 
 def main():
     parser = argparse.ArgumentParser(
-        description='D365CE Entity Field Usage Analysis Generator'
+        description='D365CE Entity Field Usage Report Generator'
     )
     parser.add_argument('entity', nargs='?', default=None,
                         help='Target entity schema name (e.g., account, contact)')
     parser.add_argument('--all', action='store_true',
-                        help='Generate reports for all entities in the solution')
+                        help='Generate reports for all entities')
     parser.add_argument('--output-dir', default=DEFAULT_OUTPUT_DIR,
                         help='Directory for generated .md files (default: reports/)')
     parser.add_argument('--mapping-dir', default=DEFAULT_MAPPING_DIR,
-                        help='Directory containing SF mapping CSVs (default: mapping/)')
+                        help='Directory containing mapping CSVs (default: mapping/)')
     parser.add_argument('--d365-entities-dir', default=DEFAULT_D365_DIR,
                         help='Directory containing enriched D365 entity JSONs')
     args = parser.parse_args()
@@ -1522,31 +1228,27 @@ def main():
         os.makedirs(output_dir, exist_ok=True)
 
     print("=" * 60)
-    print("D365CE Field Usage Analysis Generator")
+    print("D365CE Field Usage Report Generator")
     print("=" * 60)
     print()
 
-    print("  Building SF entity index...")
-    sf_entity_index = build_sf_entity_index(SF_ENTITIES_DIR)
-    print(f"    SF objects: {len(sf_entity_index)}")
-
     if args.all:
         entities = sorted(f[:-5] for f in os.listdir(d365_dir) if f.endswith('.json'))
-        print(f"\nDiscovered {len(entities)} entities in {d365_dir}.")
+        print(f"Discovered {len(entities)} entities in {d365_dir}.")
         success = 0
         for entity_name in entities:
             if process_entity(entity_name, output_dir,
-                              mapping_dir=mapping_dir, sf_entity_index=sf_entity_index,
+                              mapping_dir=mapping_dir,
                               d365_entities_dir=d365_dir):
                 success += 1
         print()
         print("=" * 60)
-        print(f"Generation complete! {success}/{len(entities)} entities processed.")
+        print(f"Generation complete! {success}/{len(entities)} reports generated.")
         print("=" * 60)
     else:
         entity_name = args.entity.lower()
         if not process_entity(entity_name, output_dir,
-                              mapping_dir=mapping_dir, sf_entity_index=sf_entity_index,
+                              mapping_dir=mapping_dir,
                               d365_entities_dir=d365_dir):
             sys.exit(1)
         print()

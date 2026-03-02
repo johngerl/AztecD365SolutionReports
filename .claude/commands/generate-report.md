@@ -1,6 +1,6 @@
-Generate field usage report(s) and update mapping CSV(s) with SF suggestions.
+Generate field usage report(s) from d365-entities/*.json and mapping/*.csv.
 
-This is Step 4 of the pipeline. It reads from d365-entities/*.json (not SolutionExtract/ directly), salesforce-entities/*.json, and mapping/*.csv. Run Steps 1-2 first if the JSON or CSV files are stale.
+This is Step 4b of the pipeline. It reads from d365-entities/*.json (not SolutionExtract/ directly) and mapping/*.csv. Run Steps 1-3 and 4a first if the JSON, CSV, or SF suggestion data is stale.
 
 If `$ARGUMENTS` is empty, run for all entities. Otherwise run for the specified entity.
 
@@ -12,12 +12,11 @@ else
   ARG="$ARGUMENTS"
 fi
 
-python scripts/generate_field_usage.py $ARG
+python scripts/generate_report.py $ARG
 ```
 
 After completion, report:
 - Number of reports generated (count files in reports/)
-- Number of mapping CSVs updated (count files in mapping/)
 - Any warnings or errors from the run
 
-Note: This also updates mapping/*.csv files with SF suggested mappings sourced from salesforce-entities/ JSON schemas.
+Note: This script reads mapping/*.csv for display only. To update SF suggestions in the CSVs, run `/update-mapping-csv` (Step 4a) first.

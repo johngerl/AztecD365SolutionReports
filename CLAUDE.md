@@ -92,7 +92,7 @@ You are acting as the **most senior Dynamics 365 Customer Engagement (D365CE) pr
 | `mapping/` | Field mapping CSVs with confirmed + suggested SF columns | 94 |
 | `scripts/` | Python analysis and refresh scripts | 5 |
 | `plans/` | Architecture and implementation plans | — |
-| `.claude/commands/` | Claude Code slash commands | 4 |
+| `.claude/commands/` | Claude Code slash commands | 5 |
 
 ---
 
@@ -307,5 +307,6 @@ The `d365*` fields provide reverse cross-references from SF back to D365. Confir
 | `/refresh-sf-entity [entity]` | `refresh_sf_entities.py` | Refresh Salesforce object schema(s) from org |
 | `/update-mapping-csv [entity]` | `update_mapping_csv.py` | Update mapping CSV(s) with SF suggestions |
 | `/generate-report [entity]` | `generate_report.py` | Generate field usage Markdown report(s) |
+| `/generate-all [entity]` | All pipeline scripts | Run full pipeline (Steps 1 → 2 → 3 → 4a → 4b) |
 
 All commands default to `--all` when no entity argument is provided.

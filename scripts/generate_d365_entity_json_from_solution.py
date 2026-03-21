@@ -2191,6 +2191,10 @@ def enrich_entity(entity_name, root, property_to_field, class_to_entity):
             all_referenced.add(sf['field'].lower())
 
     for plugin in plugin_refs:
+        # Only create field stubs for plugins targeting this entity (or unknown target)
+        tgt = plugin.get('target_entity', '')
+        if tgt and tgt != entity_name:
+            continue
         for fn in plugin['fields_read']:
             all_referenced.add(fn.lower())
         for fn in plugin['fields_written']:

@@ -255,7 +255,7 @@ def get_entity_attributes(api_base, headers, entity_name):
 def process_entity(api_base, headers, entity_json_path, dry_run):
     """Load entity JSON, match stubs against API, enrich, and save.
 
-    Returns (stub_count, enriched_count, artifact_count) or None on error.
+    Returns (stub_count, enriched_count, removed_count) or None on error.
     """
     # Load JSON preserving key order
     with open(entity_json_path, "r", encoding="utf-8") as f:
@@ -317,15 +317,20 @@ def process_entity(api_base, headers, entity_json_path, dry_run):
 
         enriched += 1
 
-    print(f"  Matched in API: {enriched} (enriched)")
-    print(f"  Not in API: {artifacts} (UI artifacts, unchanged)")
+    # Remove unresolved stubs (cross-entity artifacts)
+    before_count = len(fields)
+    data["fields"] = [f for f in fields if f.get("dataType", "") != ""]
+    removed = before_count - len(data["fields"])
 
-    if not dry_run and enriched > 0:
+    print(f"  Matched in API: {enriched} (enriched)")
+    print(f"  Removed: {removed} (cross-entity artifacts)")
+
+    if not dry_run and (enriched > 0 or removed > 0):
         with open(entity_json_path, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
             f.write("\n")
 
-    return (stub_count, enriched, artifacts)
+    return (stub_count, enriched, removed)
 
 
 # ---------------------------------------------------------------------------
@@ -405,7 +410,7 @@ def main():
     successful = 0
     failed = 0
     total_enriched = 0
-    total_artifacts = 0
+    total_removed = 0
 
     for json_path in json_files:
         entity = os.path.splitext(os.path.basename(json_path))[0]
@@ -415,7 +420,7 @@ def main():
             if result is not None:
                 successful += 1
                 total_enriched += result[1]
-                total_artifacts += result[2]
+                total_removed += result[2]
             else:
                 failed += 1
         except Exception as e:
@@ -425,7 +430,7 @@ def main():
     # Summary
     mode = " (dry run)" if args.dry_run else ""
     print(f"\nComplete{mode}: {successful} enriched, {failed} failed.")
-    print(f"Total: {total_enriched} fields enriched, {total_artifacts} UI artifacts unchanged.")
+    print(f"Total: {total_enriched} fields enriched, {total_removed} cross-entity artifacts removed.")
 
 
 if __name__ == "__main__":

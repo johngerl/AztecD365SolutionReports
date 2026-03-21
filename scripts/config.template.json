@@ -1,0 +1,10 @@
+{
+  "dataverse": {
+    "server": "yourorg.crm.dynamics.com",
+    "port": 5558,
+    "database": "yourorg",
+    "tenant_id": "your-tenant-id",
+    "client_id": "your-client-id",
+    "client_secret": "your-client-secret"
+  }
+}

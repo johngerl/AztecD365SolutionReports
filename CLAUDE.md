@@ -90,9 +90,9 @@ You are acting as the **most senior Dynamics 365 Customer Engagement (D365CE) pr
 | `salesforce-entities/` | Salesforce object describe JSON with d365 cross-reference fields | 50 |
 | `reports/` | Generated Markdown field usage reports (one per entity) | 94 |
 | `mapping/` | Field mapping CSVs with confirmed + suggested SF columns | 94 |
-| `scripts/` | Python analysis and refresh scripts | 6 |
+| `scripts/` | Python analysis and refresh scripts | 7 |
 | `plans/` | Architecture and implementation plans | — |
-| `.claude/commands/` | Claude Code slash commands | 7 |
+| `.claude/commands/` | Claude Code slash commands | 8 |
 
 ---
 
@@ -108,8 +108,9 @@ Pipeline scripts run in order: Step 1 → Step 2 → Step 3 → Step 4 → Step 
 | 4 | `update_d365_entity_csv_mapping_with_sf_suggestions_step_04.py` | `d365-entities/*.json`, `salesforce-entities/*.json`, `mapping/*.csv` | `mapping/*.csv` | Update mapping CSVs with SF suggestions and reference counts |
 | 5 | `generate_d365_report_from_json_and_csv_step_05.py` | `d365-entities/*.json`, `mapping/*.csv` | `reports/*.md` | Generate field usage Markdown reports |
 | — | `pipeline_shared.py` | — | — | Shared utility functions used by steps 4 and 5 |
+| — | `refresh_d365_field_lastupdates_tds.py` | `d365-entities/*.json`, Dataverse TDS | `d365-entities/*.json` (in-place) | Query MAX(modifiedon) per field via TDS and update lastUpdate values |
 
-All scripts accept a single entity name or `--all`. Python 3.6+ stdlib only (no pip dependencies). `generate_sf_entity_json_from_api_step_03.py` requires network access to the Salesforce org. `generate_d365_entity_json_from_solution_step_01.py` contains all SolutionExtract and plugin parsing logic (17+ parse functions).
+All scripts accept a single entity name or `--all`. Python 3.6+ stdlib only (no pip dependencies). `refresh_d365_field_lastupdates_tds.py` additionally requires `pyodbc` and `msal` (pip install) plus ODBC Driver 18 for SQL Server and `scripts/config.local.json` with Dataverse credentials. `generate_sf_entity_json_from_api_step_03.py` requires network access to the Salesforce org. `generate_d365_entity_json_from_solution_step_01.py` contains all SolutionExtract and plugin parsing logic (17+ parse functions).
 
 ---
 
@@ -311,5 +312,6 @@ The `d365*` fields provide reverse cross-references from SF back to D365. Confir
 | `/update-d365-csv-with-sf [entity]` | `update_d365_entity_csv_mapping_with_sf_suggestions_step_04.py` | Step 4: Update mapping CSV(s) with SF suggestions |
 | `/generate-d365-report [entity]` | `generate_d365_report_from_json_and_csv_step_05.py` | Step 5: Generate field usage Markdown report(s) |
 | `/generate-all [entity]` | All pipeline scripts | Run full pipeline (Steps 1 → 2 → 3 → 4 → 5) |
+| `/refresh-d365-lastupdates [entity]` | `refresh_d365_field_lastupdates_tds.py` | Refresh lastUpdate via Dataverse TDS (standalone utility) |
 
 All commands default to `--all` when no entity argument is provided.

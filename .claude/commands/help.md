@@ -13,6 +13,12 @@ Do NOT run any scripts. Simply display the following information to the user:
 | `/generate-d365-report [entity]` | `/generate-d365-report opportunity` or `/generate-d365-report` (all) | Step 5: Generate field usage report(s). Reads from d365-entities/*.json and mapping/*.csv |
 | `/generate-all [entity]` | `/generate-all account` or `/generate-all` (all) | Run full pipeline: Steps 1 → 2 → 3 → 4 → 5 |
 
+### Standalone Utilities
+
+| Command | Usage | Description |
+|---|---|---|
+| `/refresh-d365-lastupdates [entity]` | `/refresh-d365-lastupdates account` or `/refresh-d365-lastupdates` (all) | Refresh lastUpdate fields in d365-entities/*.json by querying the D365 Dataverse TDS endpoint. Requires pyodbc, msal, and scripts/config.local.json |
+
 All commands default to `--all` when no argument is provided.
 
 ### Pipeline Order

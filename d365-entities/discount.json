@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "",
   "auditEnabled": false,
+  "totalRows": 41,
+  "lastUpdate": "2023-11-13 19:05:36",
   "primaryIdField": "discountid",
   "primaryNameField": null,
   "sections": {
@@ -3049,7 +3051,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "modifiedon",
@@ -3109,7 +3112,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "name",
@@ -3302,7 +3306,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "statuscode",
@@ -3376,7 +3381,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -3464,7 +3470,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2023-05-19 16:20:53"
     }
   ]
 }

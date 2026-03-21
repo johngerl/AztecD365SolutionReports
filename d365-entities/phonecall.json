@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "UserOwned",
   "auditEnabled": false,
+  "totalRows": 214108,
+  "lastUpdate": "2026-03-21 01:27:28",
   "primaryIdField": "phonecallid",
   "primaryNameField": null,
   "sections": {
@@ -6269,7 +6271,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 01:27:28"
     },
     {
       "fieldName": "activitytypecode",
@@ -6315,7 +6318,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 01:27:28"
     },
     {
       "fieldName": "actualend",
@@ -6517,7 +6521,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 01:27:28"
     },
     {
       "fieldName": "azt_addtocrtqueue",
@@ -6586,7 +6591,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 01:27:28"
     },
     {
       "fieldName": "azt_autocreatecallback",
@@ -6656,7 +6662,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 01:27:28"
     },
     {
       "fieldName": "azt_callbackin",
@@ -6742,7 +6749,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 21:42:40"
     },
     {
       "fieldName": "azt_callbackon",
@@ -6803,7 +6811,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 21:24:01"
     },
     {
       "fieldName": "azt_copydescription",
@@ -6872,7 +6881,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 01:27:28"
     },
     {
       "fieldName": "azt_copysubject",
@@ -6941,7 +6951,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 01:27:28"
     },
     {
       "fieldName": "azt_historicalowner",
@@ -6990,7 +7001,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-02-13 16:44:14"
     },
     {
       "fieldName": "azt_phonecallstatus",
@@ -7030,7 +7042,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2021-11-09 03:52:20"
     },
     {
       "fieldName": "azt_recordownerid",
@@ -7572,7 +7585,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 01:27:28"
     },
     {
       "fieldName": "azt_result",
@@ -7631,7 +7645,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 21:42:40"
     },
     {
       "fieldName": "category",
@@ -7684,7 +7699,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "createdby",
@@ -7744,7 +7760,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 01:27:28"
     },
     {
       "fieldName": "createdon",
@@ -7846,7 +7863,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "description",
@@ -7998,7 +8016,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 01:27:28"
     },
     {
       "fieldName": "directioncode",
@@ -8035,7 +8054,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 01:27:28"
     },
     {
       "fieldName": "from",
@@ -8087,7 +8107,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (partylist)"
     },
     {
       "fieldName": "leftvoicemail",
@@ -8124,7 +8145,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 01:27:28"
     },
     {
       "fieldName": "modifiedon",
@@ -8184,7 +8206,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "ownerid",
@@ -8403,7 +8426,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 01:27:28"
     },
     {
       "fieldName": "phonenumber",
@@ -8468,7 +8492,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 21:02:02"
     },
     {
       "fieldName": "prioritycode",
@@ -8524,7 +8549,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 01:27:28"
     },
     {
       "fieldName": "regardingobjectid",
@@ -8933,7 +8959,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 01:27:28"
     },
     {
       "fieldName": "scheduledend",
@@ -9016,7 +9043,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 21:42:40"
     },
     {
       "fieldName": "statecode",
@@ -9216,7 +9244,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 01:27:28"
     },
     {
       "fieldName": "statuscode",
@@ -9290,7 +9319,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 01:27:28"
     },
     {
       "fieldName": "subject",
@@ -9492,7 +9522,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 01:27:28"
     },
     {
       "fieldName": "to",
@@ -9563,7 +9594,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (partylist)"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -9651,7 +9683,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-27 23:59:03"
     }
   ]
 }

@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "UnOwned",
   "auditEnabled": false,
+  "totalRows": 3207,
+  "lastUpdate": "2026-03-03 19:38:13",
   "primaryIdField": "productpricelevelid",
   "primaryNameField": null,
   "sections": {
@@ -3179,7 +3181,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "exchangerate",
@@ -3206,7 +3209,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-03 19:38:13"
     },
     {
       "fieldName": "modifiedon",
@@ -3266,7 +3270,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "pricelevelid",
@@ -3305,7 +3310,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-03 19:38:13"
     },
     {
       "fieldName": "productid",
@@ -3605,7 +3611,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-03 19:38:13"
     },
     {
       "fieldName": "productnumber",
@@ -3677,7 +3684,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-03 19:38:13"
     },
     {
       "fieldName": "productpricelevelid",
@@ -3723,7 +3731,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-03 19:38:13"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -3811,7 +3820,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-03 19:38:13"
     },
     {
       "fieldName": "uomid",
@@ -3918,7 +3928,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-03 19:38:13"
     }
   ]
 }

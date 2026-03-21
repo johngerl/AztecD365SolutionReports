@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "",
   "auditEnabled": false,
+  "totalRows": 62,
+  "lastUpdate": "2026-03-21 08:50:30",
   "primaryIdField": "connectionroleid",
   "primaryNameField": null,
   "sections": {
@@ -3000,7 +3002,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 08:50:30"
     },
     {
       "fieldName": "connectionroleid",
@@ -3060,7 +3063,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 08:50:30"
     },
     {
       "fieldName": "createdon",
@@ -3162,7 +3166,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "description",
@@ -3243,7 +3248,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 08:01:41"
     },
     {
       "fieldName": "modifiedon",
@@ -3303,7 +3309,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "name",
@@ -3496,7 +3503,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 08:50:30"
     },
     {
       "fieldName": "statecode",
@@ -3668,7 +3676,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 08:50:30"
     },
     {
       "fieldName": "statuscode",
@@ -3742,7 +3751,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 08:50:30"
     }
   ]
 }

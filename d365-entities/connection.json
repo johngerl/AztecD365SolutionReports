@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "UserOwned",
   "auditEnabled": true,
+  "totalRows": 151896,
+  "lastUpdate": "2026-03-21 00:42:12",
   "primaryIdField": "connectionid",
   "primaryNameField": null,
   "sections": {
@@ -3851,7 +3853,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 18:09:53"
     },
     {
       "fieldName": "connectionid",
@@ -3916,7 +3919,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 00:42:12"
     },
     {
       "fieldName": "createdon",
@@ -4018,7 +4022,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "description",
@@ -4118,7 +4123,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 18:09:53"
     },
     {
       "fieldName": "effectiveend",
@@ -4160,7 +4166,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "effectivestart",
@@ -4202,7 +4209,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2020-02-24 13:30:33"
     },
     {
       "fieldName": "modifiedon",
@@ -4262,7 +4270,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "name",
@@ -4455,7 +4464,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 00:42:12"
     },
     {
       "fieldName": "ownerid",
@@ -4648,7 +4658,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 00:42:12"
     },
     {
       "fieldName": "record1id",
@@ -4951,7 +4962,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 00:42:12"
     },
     {
       "fieldName": "record1roleid",
@@ -5011,7 +5023,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 00:42:12"
     },
     {
       "fieldName": "record2id",
@@ -5373,7 +5386,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 00:42:12"
     },
     {
       "fieldName": "record2roleid",
@@ -5459,7 +5473,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 00:42:12"
     },
     {
       "fieldName": "statecode",
@@ -5653,7 +5668,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 00:42:12"
     },
     {
       "fieldName": "statuscode",
@@ -5727,7 +5743,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 00:42:12"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -5815,7 +5832,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 00:42:12"
     }
   ]
 }

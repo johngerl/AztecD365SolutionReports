@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "UserOwned",
   "auditEnabled": true,
+  "totalRows": 2175,
+  "lastUpdate": "2026-03-21 09:20:18",
   "primaryIdField": "goalid",
   "primaryNameField": null,
   "sections": {
@@ -3318,7 +3320,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "amountdatatype",
@@ -3357,7 +3360,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 09:20:18"
     },
     {
       "fieldName": "azt_goaltype",
@@ -3464,7 +3468,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 09:20:18"
     },
     {
       "fieldName": "azt_isprint",
@@ -3526,7 +3531,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 09:20:18"
     },
     {
       "fieldName": "azt_month",
@@ -3568,7 +3574,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 09:20:18"
     },
     {
       "fieldName": "consideronlygoalownersrecords",
@@ -3607,7 +3614,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 09:20:18"
     },
     {
       "fieldName": "createdon",
@@ -3709,7 +3717,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "goalenddate",
@@ -3776,7 +3785,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 09:20:18"
     },
     {
       "fieldName": "goalid",
@@ -3828,7 +3838,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 09:20:18"
     },
     {
       "fieldName": "goalownerid",
@@ -3882,7 +3893,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 09:20:18"
     },
     {
       "fieldName": "goalstartdate",
@@ -3949,7 +3961,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 09:20:18"
     },
     {
       "fieldName": "inprogressstring",
@@ -3989,7 +4002,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "isamount",
@@ -4028,7 +4042,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 09:20:18"
     },
     {
       "fieldName": "isfiscalperiodgoal",
@@ -4067,7 +4082,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 09:20:18"
     },
     {
       "fieldName": "metricid",
@@ -4113,7 +4129,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 09:20:18"
     },
     {
       "fieldName": "modifiedon",
@@ -4173,7 +4190,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "ownerid",
@@ -4359,7 +4377,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 09:20:18"
     },
     {
       "fieldName": "parentgoalid",
@@ -4418,7 +4437,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 09:20:18"
     },
     {
       "fieldName": "percentage",
@@ -4458,7 +4478,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 09:20:18"
     },
     {
       "fieldName": "rolluponlyfromchildgoals",
@@ -4497,7 +4518,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 09:20:18"
     },
     {
       "fieldName": "rollupqueryactualmoneyid",
@@ -4536,7 +4558,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 09:20:18"
     },
     {
       "fieldName": "statecode",
@@ -4723,7 +4746,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 09:20:18"
     },
     {
       "fieldName": "statuscode",
@@ -4797,7 +4821,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 09:20:18"
     },
     {
       "fieldName": "targetstring",
@@ -4837,7 +4862,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "title",
@@ -4908,7 +4934,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 09:20:18"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -4996,7 +5023,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 09:20:18"
     }
   ]
 }

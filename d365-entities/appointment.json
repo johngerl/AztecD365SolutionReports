@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "UserOwned",
   "auditEnabled": false,
+  "totalRows": 16052,
+  "lastUpdate": "2026-03-20 20:16:59",
   "primaryIdField": "appointmentid",
   "primaryNameField": null,
   "sections": {
@@ -7906,7 +7908,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 20:16:59"
     },
     {
       "fieldName": "activitytypecode",
@@ -7952,7 +7955,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 20:16:59"
     },
     {
       "fieldName": "actualend",
@@ -8059,7 +8063,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:45:25"
     },
     {
       "fieldName": "actualstart",
@@ -8111,7 +8116,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2025-11-23 14:40:19"
     },
     {
       "fieldName": "azt_appointmenttype",
@@ -8440,7 +8446,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:45:25"
     },
     {
       "fieldName": "azt_historicalowner",
@@ -8489,7 +8496,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-11-23 14:40:12"
     },
     {
       "fieldName": "azt_isleadershipappointment",
@@ -8551,7 +8559,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 20:16:59"
     },
     {
       "fieldName": "azt_leadershipcallwithid",
@@ -8610,7 +8619,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 10:38:38"
     },
     {
       "fieldName": "azt_recordownerid",
@@ -9490,7 +9500,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 20:16:59"
     },
     {
       "fieldName": "category",
@@ -9543,7 +9554,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "createdby",
@@ -9613,7 +9625,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 20:16:59"
     },
     {
       "fieldName": "createdon",
@@ -9738,7 +9751,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "description",
@@ -9825,7 +9839,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 20:16:59"
     },
     {
       "fieldName": "instancetypecode",
@@ -9891,7 +9906,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 20:16:59"
     },
     {
       "fieldName": "isonlinemeeting",
@@ -9933,7 +9949,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 20:16:59"
     },
     {
       "fieldName": "location",
@@ -9967,7 +9984,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:45:25"
     },
     {
       "fieldName": "modifiedon",
@@ -10027,7 +10045,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "ownerid",
@@ -10269,7 +10288,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 20:16:59"
     },
     {
       "fieldName": "prioritycode",
@@ -10303,7 +10323,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 20:16:59"
     },
     {
       "fieldName": "regardingobjectid",
@@ -10695,7 +10716,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 20:16:59"
     },
     {
       "fieldName": "requiredattendees",
@@ -10737,7 +10759,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (partylist)"
     },
     {
       "fieldName": "scheduledend",
@@ -11045,7 +11068,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 20:16:59"
     },
     {
       "fieldName": "scheduledstart",
@@ -11182,7 +11206,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 20:16:59"
     },
     {
       "fieldName": "statecode",
@@ -11375,7 +11400,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 20:16:59"
     },
     {
       "fieldName": "statuscode",
@@ -11456,7 +11482,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 20:16:59"
     },
     {
       "fieldName": "subject",
@@ -11841,7 +11868,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 20:16:59"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -11929,7 +11957,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2025-11-23 14:40:19"
     }
   ]
 }

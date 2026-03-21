@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "UserOwned",
   "auditEnabled": true,
+  "totalRows": 54199,
+  "lastUpdate": "2026-03-20 22:35:47",
   "primaryIdField": "quoteid",
   "primaryNameField": "name",
   "sections": {
@@ -6544,7 +6546,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "azt_defaultfreightamount",
@@ -6628,7 +6631,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "azt_defaultfreightamount_base",
@@ -6655,7 +6659,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "azt_discretionarydiscount",
@@ -6734,7 +6739,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "azt_discretionarydiscount_base",
@@ -6761,7 +6767,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "azt_discretionarydiscountamt",
@@ -6822,7 +6829,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2024-11-10 17:15:24"
     },
     {
       "fieldName": "azt_discretionarydiscountamt_base",
@@ -6849,7 +6857,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2024-11-10 17:15:24"
     },
     {
       "fieldName": "azt_freightamtapproved",
@@ -6931,7 +6940,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "azt_historicalowner",
@@ -6985,7 +6995,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-02-13 16:44:19"
     },
     {
       "fieldName": "azt_ponumber",
@@ -7061,7 +7072,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-01-22 16:04:03"
     },
     {
       "fieldName": "azt_quoteapproval",
@@ -7116,7 +7128,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-21 01:13:24"
     },
     {
       "fieldName": "azt_quotedcontactid",
@@ -7184,7 +7197,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "azt_recapnotes",
@@ -7260,7 +7274,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "azt_recapnotescannedoptions",
@@ -7351,7 +7366,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "azt_recordownerid",
@@ -7745,7 +7761,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "azt_requestedfreightamt",
@@ -7825,7 +7842,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-19 15:27:57"
     },
     {
       "fieldName": "azt_requestedfreightamt_base",
@@ -7852,7 +7870,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-19 15:27:57"
     },
     {
       "fieldName": "azt_shippingcompany",
@@ -7894,7 +7913,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "azt_signedquotereceived",
@@ -7930,7 +7950,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "azt_taxamount",
@@ -7998,7 +8019,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-02-24 16:32:32"
     },
     {
       "fieldName": "azt_taxamount_base",
@@ -8025,7 +8047,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-02-24 16:32:32"
     },
     {
       "fieldName": "billto_city",
@@ -8098,7 +8121,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "billto_contactname",
@@ -8147,7 +8171,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2024-11-08 03:09:28"
     },
     {
       "fieldName": "billto_country",
@@ -8196,7 +8221,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "billto_fax",
@@ -8245,7 +8271,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "billto_line1",
@@ -8326,7 +8353,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "billto_line2",
@@ -8389,7 +8417,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:28:01"
     },
     {
       "fieldName": "billto_line3",
@@ -8435,7 +8464,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 21:44:41"
     },
     {
       "fieldName": "billto_name",
@@ -8492,7 +8522,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-21 01:13:24"
     },
     {
       "fieldName": "billto_postalcode",
@@ -8573,7 +8604,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "billto_stateorprovince",
@@ -8654,7 +8686,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "billto_telephone",
@@ -8703,7 +8736,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2021-09-07 02:22:59"
     },
     {
       "fieldName": "campaignid",
@@ -8745,7 +8779,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "closedon",
@@ -8787,7 +8822,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:14:10"
     },
     {
       "fieldName": "contactid",
@@ -8854,7 +8890,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-20 19:16:35"
     },
     {
       "fieldName": "createdby",
@@ -8896,7 +8933,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "createdon",
@@ -9061,7 +9099,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "customerid",
@@ -9324,7 +9363,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "description",
@@ -9405,7 +9445,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 21:44:41"
     },
     {
       "fieldName": "discountamount",
@@ -9477,7 +9518,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-02-20 19:23:10"
     },
     {
       "fieldName": "discountpercentage",
@@ -9542,7 +9584,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-07-09 16:14:07"
     },
     {
       "fieldName": "effectivefrom",
@@ -9615,7 +9658,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "effectiveto",
@@ -9700,7 +9744,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "emailaddress",
@@ -9742,7 +9787,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "expireson",
@@ -9784,7 +9830,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "freightamount",
@@ -9916,7 +9963,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "freightamount_base",
@@ -9943,7 +9991,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "freighttermscode",
@@ -9993,7 +10042,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:27:06"
     },
     {
       "fieldName": "modifiedon",
@@ -10053,7 +10103,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "name",
@@ -10507,7 +10558,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "opportunityid",
@@ -10788,7 +10840,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "ownerid",
@@ -10999,7 +11052,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "paymenttermscode",
@@ -11041,7 +11095,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2025-07-18 12:45:13"
     },
     {
       "fieldName": "pricelevelid",
@@ -11091,7 +11146,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "quoteid",
@@ -11342,7 +11398,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "quotenumber",
@@ -11436,7 +11493,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "requestdeliveryby",
@@ -11486,7 +11544,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "shippingmethodcode",
@@ -11549,7 +11608,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:27:06"
     },
     {
       "fieldName": "shipto_city",
@@ -11604,7 +11664,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "shipto_contactname",
@@ -11677,7 +11738,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-08-12 17:04:53"
     },
     {
       "fieldName": "shipto_country",
@@ -11732,7 +11794,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "shipto_fax",
@@ -11781,7 +11844,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "shipto_freighttermscode",
@@ -11823,7 +11887,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "shipto_line1",
@@ -11886,7 +11951,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "shipto_line2",
@@ -11949,7 +12015,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:28:01"
     },
     {
       "fieldName": "shipto_line3",
@@ -12006,7 +12073,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:14:10"
     },
     {
       "fieldName": "shipto_name",
@@ -12076,7 +12144,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "shipto_postalcode",
@@ -12139,7 +12208,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "shipto_stateorprovince",
@@ -12202,7 +12272,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "shipto_telephone",
@@ -12251,7 +12322,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2021-05-31 23:15:13"
     },
     {
       "fieldName": "statecode",
@@ -12533,7 +12605,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "statuscode",
@@ -12704,7 +12777,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "totalamount",
@@ -12840,7 +12914,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "totallineitemamount",
@@ -12890,7 +12965,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -12984,7 +13060,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:47"
     },
     {
       "fieldName": "willcall",
@@ -13028,7 +13105,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 22:35:47"
     }
   ]
 }

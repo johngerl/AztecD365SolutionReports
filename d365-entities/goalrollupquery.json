@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "UserOwned",
   "auditEnabled": true,
+  "totalRows": 2417,
+  "lastUpdate": "2026-01-23 18:55:52",
   "primaryIdField": "goalrollupqueryid",
   "primaryNameField": null,
   "sections": {
@@ -3049,7 +3051,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "fetchxml",
@@ -3088,7 +3091,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-23 18:55:52"
     },
     {
       "fieldName": "goalrollupqueryid",
@@ -3127,7 +3131,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-23 18:55:52"
     },
     {
       "fieldName": "modifiedon",
@@ -3187,7 +3192,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "name",
@@ -3380,7 +3386,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-23 18:55:52"
     },
     {
       "fieldName": "ownerid",
@@ -3566,7 +3573,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-23 18:55:52"
     },
     {
       "fieldName": "queryentitytype",
@@ -3605,7 +3613,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-23 18:55:52"
     },
     {
       "fieldName": "statecode",
@@ -3777,7 +3786,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-23 18:55:52"
     },
     {
       "fieldName": "statuscode",
@@ -3851,7 +3861,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-23 18:55:52"
     }
   ]
 }

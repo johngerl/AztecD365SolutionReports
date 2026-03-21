@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "OrgOwned",
   "auditEnabled": true,
+  "totalRows": 1571,
+  "lastUpdate": "2026-03-03 19:38:44",
   "primaryIdField": "productid",
   "primaryNameField": "name",
   "sections": {
@@ -4669,7 +4671,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-03 19:38:44"
     },
     {
       "fieldName": "azt_isprint",
@@ -4758,7 +4761,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-03 19:38:44"
     },
     {
       "fieldName": "azt_nonsaastype",
@@ -4825,7 +4829,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-02-25 19:42:12"
     },
     {
       "fieldName": "azt_productcategory",
@@ -4896,7 +4901,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-03 19:38:44"
     },
     {
       "fieldName": "azt_productfamily",
@@ -4947,7 +4953,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-03 19:38:44"
     },
     {
       "fieldName": "azt_productgroup",
@@ -5050,7 +5057,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-03 19:38:44"
     },
     {
       "fieldName": "azt_productlanguage",
@@ -5101,7 +5109,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-03 19:38:44"
     },
     {
       "fieldName": "azt_replacementproductid",
@@ -5154,7 +5163,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2024-03-22 06:50:30"
     },
     {
       "fieldName": "azt_saas",
@@ -5248,7 +5258,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-03 19:38:44"
     },
     {
       "fieldName": "azt_salesfamily",
@@ -5311,7 +5322,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-03 19:38:44"
     },
     {
       "fieldName": "createdon",
@@ -5413,7 +5425,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "defaultuomid",
@@ -5459,7 +5472,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-03 19:38:44"
     },
     {
       "fieldName": "description",
@@ -5618,7 +5632,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-03 04:10:34"
     },
     {
       "fieldName": "entityimage",
@@ -5645,7 +5660,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Skipped (image)"
     },
     {
       "fieldName": "exchangerate",
@@ -5672,7 +5688,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-03 19:38:44"
     },
     {
       "fieldName": "hierarchypath",
@@ -5730,7 +5747,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2024-03-22 06:50:30"
     },
     {
       "fieldName": "modifiedon",
@@ -5790,7 +5808,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "name",
@@ -6197,7 +6216,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-03 19:38:44"
     },
     {
       "fieldName": "parentproductid",
@@ -6231,7 +6251,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2024-03-22 06:50:30"
     },
     {
       "fieldName": "price",
@@ -6276,7 +6297,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-03 19:38:44"
     },
     {
       "fieldName": "pricelevelid",
@@ -6334,7 +6356,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-03 19:38:44"
     },
     {
       "fieldName": "productid",
@@ -6693,7 +6716,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-03 19:38:44"
     },
     {
       "fieldName": "productnumber",
@@ -6831,7 +6855,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-03 19:38:44"
     },
     {
       "fieldName": "productstructure",
@@ -6910,7 +6935,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-03 19:38:44"
     },
     {
       "fieldName": "producttypecode",
@@ -7044,7 +7070,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-03 19:38:44"
     },
     {
       "fieldName": "statecode",
@@ -7293,7 +7320,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-03 19:38:44"
     },
     {
       "fieldName": "statuscode",
@@ -7382,7 +7410,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-03 19:38:44"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -7470,7 +7499,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-03 19:38:44"
     },
     {
       "fieldName": "validfromdate",
@@ -7516,7 +7546,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2024-03-22 06:43:42"
     },
     {
       "fieldName": "validtodate",
@@ -7562,7 +7593,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2024-03-22 06:43:42"
     }
   ]
 }

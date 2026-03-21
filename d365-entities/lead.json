@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "UserOwned",
   "auditEnabled": true,
+  "totalRows": 20522,
+  "lastUpdate": "2026-03-20 16:52:44",
   "primaryIdField": "leadid",
   "primaryNameField": "fullname",
   "sections": {
@@ -9119,7 +9121,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-19 19:05:35"
     },
     {
       "fieldName": "address1_addresstypecode",
@@ -9203,7 +9206,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "address1_city",
@@ -9272,7 +9276,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 10:41:01"
     },
     {
       "fieldName": "address1_composite",
@@ -9314,7 +9319,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "address1_country",
@@ -9378,7 +9384,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-08-08 09:26:28"
     },
     {
       "fieldName": "address1_county",
@@ -9440,7 +9447,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2024-12-03 08:07:26"
     },
     {
       "fieldName": "address1_fax",
@@ -9474,7 +9482,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "address1_line1",
@@ -9536,7 +9545,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2024-12-03 08:07:26"
     },
     {
       "fieldName": "address1_line2",
@@ -9598,7 +9608,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "address1_name",
@@ -9660,7 +9671,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-29 20:05:46"
     },
     {
       "fieldName": "address1_postalcode",
@@ -9697,7 +9709,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2025-08-08 09:26:28"
     },
     {
       "fieldName": "address1_shippingmethodcode",
@@ -9754,7 +9767,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "address1_stateorprovince",
@@ -9914,7 +9928,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "address1_telephone1",
@@ -9953,7 +9968,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "address2_addresstypecode",
@@ -10010,7 +10026,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "address2_shippingmethodcode",
@@ -10067,7 +10084,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "azt_accountleadgen",
@@ -10111,7 +10129,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2024-07-16 18:00:49"
     },
     {
       "fieldName": "azt_addresssearch",
@@ -10184,7 +10203,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "azt_analysisbackground",
@@ -10236,7 +10256,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:00:48"
     },
     {
       "fieldName": "azt_assignedon",
@@ -10292,7 +10313,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2024-12-02 19:15:15"
     },
     {
       "fieldName": "azt_dayssinceassigned",
@@ -10349,7 +10371,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2024-12-02 19:15:15"
     },
     {
       "fieldName": "azt_dayssincecreated",
@@ -10437,7 +10460,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "azt_fiscalyearend",
@@ -10499,7 +10523,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2023-11-30 08:02:26"
     },
     {
       "fieldName": "azt_lastactivitydate",
@@ -10595,7 +10620,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "azt_leadformtype",
@@ -10735,7 +10761,8 @@
             }
           ]
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "azt_leadsource",
@@ -10762,7 +10789,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "azt_leadsourceid",
@@ -10907,7 +10935,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:52:43"
     },
     {
       "fieldName": "azt_leadtemperature",
@@ -11077,7 +11106,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "azt_leadtype",
@@ -11170,7 +11200,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:52:43"
     },
     {
       "fieldName": "azt_nextstepsuggestion",
@@ -11222,7 +11253,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-19 18:32:48"
     },
     {
       "fieldName": "azt_numberofcomputers",
@@ -11284,7 +11316,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2023-11-30 08:02:26"
     },
     {
       "fieldName": "azt_numberofstudents",
@@ -11346,7 +11379,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2023-11-30 08:02:26"
     },
     {
       "fieldName": "azt_opportunityleadid",
@@ -11402,7 +11436,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-10 19:58:15"
     },
     {
       "fieldName": "azt_originatingleadimportid",
@@ -11455,7 +11490,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-12-30 22:02:43"
     },
     {
       "fieldName": "azt_pendingassigmnent",
@@ -11533,7 +11569,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "azt_productsissues",
@@ -11585,7 +11622,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:00:48"
     },
     {
       "fieldName": "azt_qualifiedbyid",
@@ -11636,7 +11674,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:00:48"
     },
     {
       "fieldName": "azt_qualifieddisqualifiedon",
@@ -11710,7 +11749,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "azt_recommendation",
@@ -11762,7 +11802,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:00:48"
     },
     {
       "fieldName": "azt_recordownerid",
@@ -12149,7 +12190,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:52:43"
     },
     {
       "fieldName": "azt_verticalmarket",
@@ -12239,7 +12281,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 10:41:01"
     },
     {
       "fieldName": "companyname",
@@ -12358,7 +12401,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 12:16:21"
     },
     {
       "fieldName": "confirminterest",
@@ -12415,7 +12459,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "contactid",
@@ -12482,7 +12527,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 12:16:21"
     },
     {
       "fieldName": "createdby",
@@ -12586,7 +12632,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "createdon",
@@ -12900,7 +12947,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "customerid",
@@ -13096,7 +13144,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 12:16:21"
     },
     {
       "fieldName": "decisionmaker",
@@ -13153,7 +13202,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "description",
@@ -13251,7 +13301,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:52:43"
     },
     {
       "fieldName": "donotbulkemail",
@@ -13308,7 +13359,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "donotemail",
@@ -13365,7 +13417,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "donotfax",
@@ -13422,7 +13475,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "donotphone",
@@ -13479,7 +13533,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "donotpostalmail",
@@ -13536,7 +13591,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "donotsendmm",
@@ -13593,7 +13649,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "emailaddress1",
@@ -13666,7 +13723,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:52:43"
     },
     {
       "fieldName": "entityimage",
@@ -13693,7 +13751,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Skipped (image)"
     },
     {
       "fieldName": "estimatedclosedate",
@@ -13746,7 +13805,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "estimatedvalue",
@@ -13792,7 +13852,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "evaluatefit",
@@ -13849,7 +13910,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "exchangerate",
@@ -13876,7 +13938,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:52:43"
     },
     {
       "fieldName": "fax",
@@ -13910,7 +13973,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "firstname",
@@ -13965,7 +14029,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:43"
     },
     {
       "fieldName": "followemail",
@@ -14022,7 +14087,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "fullname",
@@ -14188,7 +14254,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:52:43"
     },
     {
       "fieldName": "jobtitle",
@@ -14234,7 +14301,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-10 13:49:50"
     },
     {
       "fieldName": "lastname",
@@ -14289,7 +14357,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:43"
     },
     {
       "fieldName": "leadid",
@@ -14416,7 +14485,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "leadqualitycode",
@@ -14473,7 +14543,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "leadsourcecode",
@@ -14541,7 +14612,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-03-04 00:32:12"
     },
     {
       "fieldName": "mobilephone",
@@ -14617,7 +14689,8 @@
             }
           ]
         }
-      ]
+      ],
+      "lastUpdate": "2026-02-13 15:41:31"
     },
     {
       "fieldName": "modifiedby",
@@ -14654,7 +14727,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "modifiedon",
@@ -14727,7 +14801,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "msdyn_leadkpiid",
@@ -14761,7 +14836,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "msdyn_predictivescoreid",
@@ -14795,7 +14871,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "msdyn_segmentid",
@@ -14829,7 +14906,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "originatingcaseid",
@@ -14863,7 +14941,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "ownerid",
@@ -15298,7 +15377,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "parentaccountid",
@@ -15627,7 +15707,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "parentcontactid",
@@ -15787,7 +15868,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "preferredcontactmethodcode",
@@ -15844,7 +15926,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "prioritycode",
@@ -15901,7 +15984,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "qualifyingopportunityid",
@@ -15976,7 +16060,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:52:43"
     },
     {
       "fieldName": "salesstagecode",
@@ -16033,7 +16118,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "statecode",
@@ -16356,7 +16442,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "statuscode",
@@ -16561,7 +16648,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "subject",
@@ -16861,7 +16949,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:52:44"
     },
     {
       "fieldName": "telephone1",
@@ -16988,7 +17077,8 @@
             }
           ]
         }
-      ]
+      ],
+      "lastUpdate": "2026-02-23 14:21:39"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -17102,7 +17192,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:52:43"
     },
     {
       "fieldName": "websiteurl",
@@ -17164,7 +17255,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2024-04-23 17:28:21"
     }
   ]
 }

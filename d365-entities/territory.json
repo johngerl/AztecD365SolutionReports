@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "OrgOwned",
   "auditEnabled": false,
+  "totalRows": 0,
+  "lastUpdate": "Never",
   "primaryIdField": "territoryid",
   "primaryNameField": null,
   "sections": {
@@ -3057,7 +3059,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "description",
@@ -3138,7 +3141,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "entityimage",
@@ -3165,7 +3169,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Skipped (image)"
     },
     {
       "fieldName": "modifiedon",
@@ -3225,7 +3230,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "name",
@@ -3418,7 +3424,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "parentterritoryid",
@@ -3452,7 +3459,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -3540,7 +3548,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     }
   ]
 }

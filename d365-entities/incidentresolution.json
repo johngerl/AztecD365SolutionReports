@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "",
   "auditEnabled": false,
+  "totalRows": 20574,
+  "lastUpdate": "2026-03-19 20:06:25",
   "primaryIdField": "incidentresolutionid",
   "primaryNameField": null,
   "sections": {
@@ -3102,7 +3104,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-19 20:06:25"
     },
     {
       "fieldName": "activitytypecode",
@@ -3148,7 +3151,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-19 20:06:25"
     },
     {
       "fieldName": "category",
@@ -3201,7 +3205,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "createdon",
@@ -3303,7 +3308,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "customers",
@@ -3345,7 +3351,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (partylist)"
     },
     {
       "fieldName": "description",
@@ -3426,7 +3433,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2023-04-17 23:03:37"
     },
     {
       "fieldName": "incidentid",
@@ -3479,7 +3487,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-19 20:06:25"
     },
     {
       "fieldName": "modifiedon",
@@ -3539,7 +3548,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "ownerid",
@@ -3725,7 +3735,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-19 20:06:25"
     },
     {
       "fieldName": "regardingobjectid",
@@ -3820,7 +3831,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-19 20:06:25"
     },
     {
       "fieldName": "resolutiontypecode",
@@ -3862,7 +3874,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-19 20:06:25"
     },
     {
       "fieldName": "scheduledend",
@@ -3908,7 +3921,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "statecode",
@@ -4080,7 +4094,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-19 20:06:25"
     },
     {
       "fieldName": "statuscode",
@@ -4154,7 +4169,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-19 20:06:25"
     },
     {
       "fieldName": "subject",
@@ -4207,7 +4223,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-19 20:06:25"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -4295,7 +4312,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     }
   ]
 }

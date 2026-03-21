@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "UserOwned",
   "auditEnabled": true,
+  "totalRows": 142028,
+  "lastUpdate": "2026-03-21 00:54:35",
   "primaryIdField": "opportunityproductid",
   "primaryNameField": null,
   "sections": {
@@ -3836,7 +3838,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "azt_discretionarydiscountamt_base",
@@ -3863,7 +3866,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "azt_issaas",
@@ -3935,7 +3939,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "azt_licensetermmonths",
@@ -4171,7 +4176,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "azt_licensetype",
@@ -4489,7 +4495,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "azt_nonsaastype",
@@ -4545,7 +4552,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2022-03-13 18:47:50"
     },
     {
       "fieldName": "azt_pricebookentry",
@@ -4572,7 +4580,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "baseamount",
@@ -4632,7 +4641,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "createdon",
@@ -4741,7 +4751,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "description",
@@ -4822,7 +4833,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "entityimage",
@@ -4849,7 +4861,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Skipped (image)"
     },
     {
       "fieldName": "extendedamount",
@@ -4991,7 +5004,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "ispriceoverridden",
@@ -5065,7 +5079,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "isproductoverridden",
@@ -5132,7 +5147,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "manualdiscountamount",
@@ -5244,7 +5260,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "modifiedon",
@@ -5304,7 +5321,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "opportunityid",
@@ -5596,7 +5614,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "opportunityproductid",
@@ -5763,7 +5782,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "opportunityproductname",
@@ -5821,7 +5841,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "opportunitystatecode",
@@ -5856,7 +5877,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "ownerid",
@@ -6042,7 +6064,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "priceperunit",
@@ -6149,7 +6172,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "productdescription",
@@ -6291,7 +6315,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2024-07-02 11:04:03"
     },
     {
       "fieldName": "productid",
@@ -6592,7 +6617,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "productname",
@@ -6645,7 +6671,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "producttypecode",
@@ -6705,7 +6732,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "quantity",
@@ -6919,7 +6947,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "tax",
@@ -7007,7 +7036,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:35:46"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -7095,7 +7125,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "uomid",
@@ -7183,7 +7214,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 00:54:35"
     }
   ]
 }

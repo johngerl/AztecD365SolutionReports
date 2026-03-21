@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "UserOwned",
   "auditEnabled": true,
+  "totalRows": 20740,
+  "lastUpdate": "2026-03-20 21:12:19",
   "primaryIdField": "incidentid",
   "primaryNameField": null,
   "sections": {
@@ -5803,7 +5805,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 21:12:19"
     },
     {
       "fieldName": "adx_resolution",
@@ -5847,7 +5850,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-19 20:06:26"
     },
     {
       "fieldName": "adx_resolutiondate",
@@ -5899,7 +5903,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-19 20:06:26"
     },
     {
       "fieldName": "azt_aztecproduct",
@@ -5939,7 +5944,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-05-06 13:09:38"
     },
     {
       "fieldName": "azt_customersupportstatus",
@@ -5975,7 +5981,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 21:12:19"
     },
     {
       "fieldName": "azt_daysopen",
@@ -6029,7 +6036,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 21:12:19"
     },
     {
       "fieldName": "azt_engagementid",
@@ -6124,7 +6132,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-19 20:06:26"
     },
     {
       "fieldName": "azt_firstrecordownerassignment",
@@ -6182,7 +6191,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 21:12:19"
     },
     {
       "fieldName": "azt_historicalowner",
@@ -6231,7 +6241,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-12-15 14:30:11"
     },
     {
       "fieldName": "azt_recordownerid",
@@ -6642,7 +6653,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 21:12:19"
     },
     {
       "fieldName": "azt_resolvedbyid",
@@ -6708,7 +6720,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-17 18:22:21"
     },
     {
       "fieldName": "azt_responsibletechnicianid",
@@ -6757,7 +6770,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2026-02-20 19:23:12"
     },
     {
       "fieldName": "azt_utrackcase",
@@ -6799,7 +6813,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2026-02-23 20:38:27"
     },
     {
       "fieldName": "caseorigincode",
@@ -6872,7 +6887,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 21:12:19"
     },
     {
       "fieldName": "casetypecode",
@@ -6980,7 +6996,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 21:12:19"
     },
     {
       "fieldName": "contactid",
@@ -7047,7 +7064,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2024-11-08 19:54:56"
     },
     {
       "fieldName": "contractdetailid",
@@ -7081,7 +7099,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "contractid",
@@ -7115,7 +7134,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "createdby",
@@ -7241,7 +7261,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 21:12:19"
     },
     {
       "fieldName": "createdbyexternalparty",
@@ -7275,7 +7296,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "createdon",
@@ -7446,7 +7468,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "customerid",
@@ -7679,7 +7702,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 21:12:19"
     },
     {
       "fieldName": "description",
@@ -7788,7 +7812,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 21:12:19"
     },
     {
       "fieldName": "entitlementid",
@@ -7822,7 +7847,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "entityimage",
@@ -7849,7 +7875,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Skipped (image)"
     },
     {
       "fieldName": "existingcase",
@@ -7883,7 +7910,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "firstresponsebykpiid",
@@ -7917,7 +7945,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "incidentid",
@@ -8029,7 +8058,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 21:12:19"
     },
     {
       "fieldName": "kbarticleid",
@@ -8078,7 +8108,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "modifiedby",
@@ -8112,7 +8143,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 21:12:19"
     },
     {
       "fieldName": "modifiedbyexternalparty",
@@ -8146,7 +8178,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "modifiedon",
@@ -8206,7 +8239,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "msa_partnercontactid",
@@ -8240,7 +8274,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-02 16:23:02"
     },
     {
       "fieldName": "msa_partnerid",
@@ -8274,7 +8309,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 21:12:19"
     },
     {
       "fieldName": "msdyn_aiagentstatus",
@@ -8308,7 +8344,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "msdyn_iotalert",
@@ -8342,7 +8379,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "ownerid",
@@ -8589,7 +8627,8 @@
             }
           ]
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 21:12:19"
     },
     {
       "fieldName": "owningbusinessunit",
@@ -8623,7 +8662,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 21:12:19"
     },
     {
       "fieldName": "owningteam",
@@ -8665,7 +8705,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 21:12:19"
     },
     {
       "fieldName": "owninguser",
@@ -8707,7 +8748,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 12:26:17"
     },
     {
       "fieldName": "parentcaseid",
@@ -8742,7 +8784,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "primarycontactid",
@@ -8813,7 +8856,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 21:12:19"
     },
     {
       "fieldName": "prioritycode",
@@ -8876,7 +8920,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 21:12:19"
     },
     {
       "fieldName": "productid",
@@ -9163,7 +9208,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-12-15 14:30:11"
     },
     {
       "fieldName": "resolveby",
@@ -9205,7 +9251,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "resolvebykpiid",
@@ -9239,7 +9286,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "responseby",
@@ -9281,7 +9329,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "responsiblecontactid",
@@ -9315,7 +9364,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "slaid",
@@ -9349,7 +9399,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "slainvokedid",
@@ -9383,7 +9434,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "socialprofileid",
@@ -9417,7 +9469,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "statecode",
@@ -9682,7 +9735,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 21:12:19"
     },
     {
       "fieldName": "statuscode",
@@ -9860,7 +9914,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 21:12:19"
     },
     {
       "fieldName": "subjectid",
@@ -9912,7 +9967,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2024-11-10 17:11:10"
     },
     {
       "fieldName": "ticketnumber",
@@ -9984,7 +10040,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 21:12:19"
     },
     {
       "fieldName": "title",
@@ -10114,7 +10171,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 21:12:19"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -10202,7 +10260,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-17 16:31:37"
     }
   ]
 }

@@ -5,6 +5,8 @@
   "objectType": "Custom",
   "ownershipType": "OrgOwned",
   "auditEnabled": false,
+  "totalRows": 16871,
+  "lastUpdate": "2026-03-20 19:06:56",
   "primaryIdField": "azt_orderfulfillmentid",
   "primaryNameField": "bpf_name",
   "sections": {
@@ -4919,7 +4921,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 19:06:56"
     },
     {
       "fieldName": "activestagestartedon",
@@ -4946,7 +4949,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 19:06:56"
     },
     {
       "fieldName": "bpf_duration",
@@ -5007,7 +5011,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 19:06:56"
     },
     {
       "fieldName": "bpf_name",
@@ -5144,7 +5149,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 19:06:56"
     },
     {
       "fieldName": "bpf_salesorderid",
@@ -5258,7 +5264,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 19:06:56"
     },
     {
       "fieldName": "businessprocessflowinstanceid",
@@ -5358,7 +5365,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 19:06:56"
     },
     {
       "fieldName": "completedon",
@@ -5393,7 +5401,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 19:06:56"
     },
     {
       "fieldName": "createdby",
@@ -5612,7 +5621,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 19:06:56"
     },
     {
       "fieldName": "createdon",
@@ -5813,7 +5823,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "createdonbehalfby",
@@ -5840,7 +5851,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "importsequencenumber",
@@ -5867,7 +5879,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "modifiedby",
@@ -5916,7 +5929,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 19:06:56"
     },
     {
       "fieldName": "modifiedon",
@@ -5976,7 +5990,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "modifiedonbehalfby",
@@ -6003,7 +6018,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "organizationid",
@@ -6037,7 +6053,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 19:06:56"
     },
     {
       "fieldName": "overriddencreatedon",
@@ -6064,7 +6081,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "processid",
@@ -6192,7 +6210,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 19:06:56"
     },
     {
       "fieldName": "statecode",
@@ -6533,7 +6552,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 19:06:56"
     },
     {
       "fieldName": "statuscode",
@@ -6746,7 +6766,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 19:06:56"
     },
     {
       "fieldName": "timezoneruleversionnumber",
@@ -6773,7 +6794,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 19:06:56"
     },
     {
       "fieldName": "traversedpath",
@@ -6800,7 +6822,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 19:06:56"
     },
     {
       "fieldName": "utcconversiontimezonecode",
@@ -6827,7 +6850,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 19:06:56"
     }
   ]
 }

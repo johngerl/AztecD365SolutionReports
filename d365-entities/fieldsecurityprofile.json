@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "",
   "auditEnabled": false,
+  "totalRows": 28,
+  "lastUpdate": "2026-03-21 09:52:28",
   "primaryIdField": "fieldsecurityprofileid",
   "primaryNameField": null,
   "sections": {
@@ -3049,7 +3051,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "description",
@@ -3130,7 +3133,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2025-11-19 08:39:19"
     },
     {
       "fieldName": "modifiedon",
@@ -3190,7 +3194,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "name",
@@ -3383,7 +3388,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 09:52:28"
     }
   ]
 }

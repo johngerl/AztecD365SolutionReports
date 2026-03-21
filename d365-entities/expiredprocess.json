@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "OrgOwned",
   "auditEnabled": true,
+  "totalRows": 0,
+  "lastUpdate": "Never",
   "primaryIdField": "expiredprocessid",
   "primaryNameField": null,
   "sections": {
@@ -3151,7 +3153,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "createdon",
@@ -3253,7 +3256,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "knowledgearticleid",
@@ -3280,7 +3284,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "modifiedon",
@@ -3340,7 +3345,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "name",
@@ -3533,7 +3539,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "statecode",
@@ -3705,7 +3712,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "statuscode",
@@ -3779,7 +3787,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -3867,7 +3876,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     }
   ]
 }

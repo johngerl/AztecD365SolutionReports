@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "",
   "auditEnabled": false,
+  "totalRows": 9727,
+  "lastUpdate": "2026-03-21 10:07:12",
   "primaryIdField": "savedqueryid",
   "primaryNameField": null,
   "sections": {
@@ -3049,7 +3051,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "description",
@@ -3130,7 +3133,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 10:07:01"
     },
     {
       "fieldName": "fetchxml",
@@ -3169,7 +3173,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 10:07:12"
     },
     {
       "fieldName": "modifiedon",
@@ -3229,7 +3234,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "name",
@@ -3422,7 +3428,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 10:07:12"
     },
     {
       "fieldName": "statecode",
@@ -3594,7 +3601,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 10:07:12"
     },
     {
       "fieldName": "statuscode",
@@ -3668,7 +3676,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 10:07:12"
     }
   ]
 }

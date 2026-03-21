@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "UserOwned",
   "auditEnabled": false,
+  "totalRows": 6339,
+  "lastUpdate": "2026-03-20 16:28:45",
   "primaryIdField": "taskid",
   "primaryNameField": null,
   "sections": {
@@ -4516,7 +4518,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:28:45"
     },
     {
       "fieldName": "activitytypecode",
@@ -4562,7 +4565,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:28:45"
     },
     {
       "fieldName": "azt_historicalowner",
@@ -4604,7 +4608,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2024-11-11 00:24:51"
     },
     {
       "fieldName": "azt_recordownerid",
@@ -5010,7 +5015,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:28:45"
     },
     {
       "fieldName": "azt_reorderopportunityid",
@@ -5059,7 +5065,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 13:34:04"
     },
     {
       "fieldName": "azt_tasktype",
@@ -5120,7 +5127,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 13:34:04"
     },
     {
       "fieldName": "category",
@@ -5173,7 +5181,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "createdby",
@@ -5217,7 +5226,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:28:45"
     },
     {
       "fieldName": "createdon",
@@ -5319,7 +5329,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "description",
@@ -5400,7 +5411,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:28:45"
     },
     {
       "fieldName": "modifiedon",
@@ -5460,7 +5472,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "ownerid",
@@ -5678,7 +5691,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:28:45"
     },
     {
       "fieldName": "prioritycode",
@@ -5736,7 +5750,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:28:45"
     },
     {
       "fieldName": "regardingobjectid",
@@ -6133,7 +6148,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:28:45"
     },
     {
       "fieldName": "scheduledend",
@@ -6228,7 +6244,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 13:34:04"
     },
     {
       "fieldName": "statecode",
@@ -6422,7 +6439,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:28:45"
     },
     {
       "fieldName": "statuscode",
@@ -6509,7 +6527,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:28:45"
     },
     {
       "fieldName": "subject",
@@ -6605,7 +6624,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:28:45"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -6693,7 +6713,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2025-08-14 15:14:51"
     }
   ]
 }

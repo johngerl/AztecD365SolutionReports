@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "",
   "auditEnabled": false,
+  "totalRows": 2,
+  "lastUpdate": "2019-01-05 16:29:48",
   "primaryIdField": "uomid",
   "primaryNameField": null,
   "sections": {
@@ -3049,7 +3051,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "modifiedon",
@@ -3109,7 +3112,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "name",
@@ -3302,7 +3306,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2019-01-05 16:29:48"
     },
     {
       "fieldName": "quantity",
@@ -3460,7 +3465,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2019-01-05 16:29:48"
     },
     {
       "fieldName": "uomid",
@@ -3548,7 +3554,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2019-01-05 16:29:48"
     }
   ]
 }

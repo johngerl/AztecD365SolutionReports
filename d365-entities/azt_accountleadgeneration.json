@@ -5,6 +5,8 @@
   "objectType": "Custom",
   "ownershipType": "OrgOwned",
   "auditEnabled": false,
+  "totalRows": 13,
+  "lastUpdate": "2026-03-13 18:39:33",
   "primaryIdField": "azt_accountleadgenerationid",
   "primaryNameField": "azt_name",
   "sections": {
@@ -4454,7 +4456,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-13 18:39:33"
     },
     {
       "fieldName": "azt_evaluate",
@@ -4538,7 +4541,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-13 18:39:33"
     },
     {
       "fieldName": "azt_monthstofilteron",
@@ -4614,7 +4618,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-13 18:39:33"
     },
     {
       "fieldName": "azt_name",
@@ -4966,7 +4971,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-13 18:39:33"
     },
     {
       "fieldName": "createdby",
@@ -5137,7 +5143,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-13 18:39:33"
     },
     {
       "fieldName": "createdon",
@@ -5325,7 +5332,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "createdonbehalfby",
@@ -5352,7 +5360,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "importsequencenumber",
@@ -5379,7 +5388,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "modifiedby",
@@ -5428,7 +5438,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-13 18:39:33"
     },
     {
       "fieldName": "modifiedon",
@@ -5488,7 +5499,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "modifiedonbehalfby",
@@ -5515,7 +5527,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "organizationid",
@@ -5549,7 +5562,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-13 18:39:33"
     },
     {
       "fieldName": "overriddencreatedon",
@@ -5576,7 +5590,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "statecode",
@@ -5842,7 +5857,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-13 18:39:33"
     },
     {
       "fieldName": "statuscode",
@@ -6007,7 +6023,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-13 18:39:33"
     },
     {
       "fieldName": "timezoneruleversionnumber",
@@ -6034,7 +6051,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "utcconversiontimezonecode",
@@ -6061,7 +6079,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     }
   ]
 }

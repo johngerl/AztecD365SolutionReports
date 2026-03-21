@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "OrgOwned",
   "auditEnabled": false,
+  "totalRows": 0,
+  "lastUpdate": "Never",
   "primaryIdField": "knowledgebaserecordid",
   "primaryNameField": null,
   "sections": {
@@ -3049,7 +3051,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "modifiedon",
@@ -3109,7 +3112,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "title",
@@ -3155,7 +3159,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -3243,7 +3248,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     }
   ]
 }

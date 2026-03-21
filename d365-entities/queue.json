@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "",
   "auditEnabled": false,
+  "totalRows": 532,
+  "lastUpdate": "2026-03-21 04:05:52",
   "primaryIdField": "queueid",
   "primaryNameField": null,
   "sections": {
@@ -3165,7 +3167,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2025-05-09 16:12:30"
     },
     {
       "fieldName": "createdon",
@@ -3267,7 +3270,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "description",
@@ -3348,7 +3352,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 04:05:52"
     },
     {
       "fieldName": "emailsignature",
@@ -3382,7 +3387,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "modifiedon",
@@ -3442,7 +3448,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "msdyn_assignmentinputcontractid",
@@ -3476,7 +3483,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2023-03-08 08:12:44"
     },
     {
       "fieldName": "msdyn_channelprofileid",
@@ -3510,7 +3518,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "msdyn_inqueueoverflowrulesetid",
@@ -3544,7 +3553,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "msdyn_intentfamilyid",
@@ -3578,7 +3588,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "msdyn_operatinghourid",
@@ -3612,7 +3623,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "msdyn_prequeueoverflowrulesetid",
@@ -3646,7 +3658,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "name",
@@ -3839,7 +3852,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 04:05:52"
     },
     {
       "fieldName": "ownerid",
@@ -4025,7 +4039,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 04:05:52"
     },
     {
       "fieldName": "statecode",
@@ -4197,7 +4212,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 04:05:52"
     },
     {
       "fieldName": "statuscode",
@@ -4271,7 +4287,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 04:05:52"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -4359,7 +4376,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2019-10-24 14:34:17"
     }
   ]
 }

@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "",
   "auditEnabled": false,
+  "totalRows": 16860,
+  "lastUpdate": "2026-02-20 19:23:04",
   "primaryIdField": "sharepointdocumentlocationid",
   "primaryNameField": null,
   "sections": {
@@ -3099,7 +3101,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "description",
@@ -3180,7 +3183,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2025-12-15 14:30:05"
     },
     {
       "fieldName": "modifiedon",
@@ -3240,7 +3244,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "name",
@@ -3433,7 +3438,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-02-20 19:23:04"
     },
     {
       "fieldName": "ownerid",
@@ -3619,7 +3625,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-02-20 19:23:04"
     },
     {
       "fieldName": "regardingobjectid",
@@ -3750,7 +3757,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-02-20 19:23:04"
     },
     {
       "fieldName": "statecode",
@@ -3922,7 +3930,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-02-20 19:23:04"
     },
     {
       "fieldName": "statuscode",
@@ -3996,7 +4005,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-02-20 19:23:04"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -4084,7 +4094,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     }
   ]
 }

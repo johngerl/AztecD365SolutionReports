@@ -5,6 +5,8 @@
   "objectType": "Custom",
   "ownershipType": "UserOwned",
   "auditEnabled": false,
+  "totalRows": 105833,
+  "lastUpdate": "2026-03-21 01:26:58",
   "primaryIdField": "azt_opportunityauditrecordid",
   "primaryNameField": "azt_name",
   "sections": {
@@ -4763,7 +4765,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2024-08-19 14:42:26"
     },
     {
       "fieldName": "azt_name",
@@ -5109,7 +5112,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 01:26:58"
     },
     {
       "fieldName": "azt_newestclosedate",
@@ -5162,7 +5166,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 01:26:58"
     },
     {
       "fieldName": "azt_newestimatedvalue",
@@ -5215,7 +5220,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "azt_newestimatedvalue_base",
@@ -5242,7 +5248,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "azt_newprobability",
@@ -5295,7 +5302,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 17:38:26"
     },
     {
       "fieldName": "azt_opportunityauditrecordid",
@@ -5377,7 +5385,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 01:26:58"
     },
     {
       "fieldName": "azt_opportunityid",
@@ -5472,7 +5481,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 01:26:58"
     },
     {
       "fieldName": "azt_previousestclosedate",
@@ -5525,7 +5535,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 01:26:58"
     },
     {
       "fieldName": "azt_previousestimatedvalue",
@@ -5578,7 +5589,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "azt_previousestimatedvalue_base",
@@ -5605,7 +5617,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "azt_previousprobability",
@@ -5658,7 +5671,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 17:38:26"
     },
     {
       "fieldName": "createdby",
@@ -5822,7 +5836,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 01:26:58"
     },
     {
       "fieldName": "createdon",
@@ -6020,7 +6035,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "createdonbehalfby",
@@ -6047,7 +6063,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 01:26:58"
     },
     {
       "fieldName": "exchangerate",
@@ -6074,7 +6091,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "importsequencenumber",
@@ -6101,7 +6119,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "modifiedby",
@@ -6150,7 +6169,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 01:26:58"
     },
     {
       "fieldName": "modifiedon",
@@ -6210,7 +6230,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "modifiedonbehalfby",
@@ -6237,7 +6258,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 01:26:58"
     },
     {
       "fieldName": "overriddencreatedon",
@@ -6264,7 +6286,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "ownerid",
@@ -6639,7 +6662,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 01:26:58"
     },
     {
       "fieldName": "owningbusinessunit",
@@ -6673,7 +6697,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 01:26:58"
     },
     {
       "fieldName": "owningteam",
@@ -6725,7 +6750,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 00:42:39"
     },
     {
       "fieldName": "owninguser",
@@ -6767,7 +6793,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 01:26:58"
     },
     {
       "fieldName": "statecode",
@@ -7033,7 +7060,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 01:26:58"
     },
     {
       "fieldName": "statuscode",
@@ -7198,7 +7226,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 01:26:58"
     },
     {
       "fieldName": "timezoneruleversionnumber",
@@ -7225,7 +7254,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 01:26:58"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -7421,7 +7451,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 00:54:35"
     },
     {
       "fieldName": "utcconversiontimezonecode",
@@ -7448,7 +7479,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     }
   ]
 }

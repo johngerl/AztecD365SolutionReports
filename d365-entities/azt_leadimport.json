@@ -5,6 +5,8 @@
   "objectType": "Custom",
   "ownershipType": "OrgOwned",
   "auditEnabled": false,
+  "totalRows": 208,
+  "lastUpdate": "2026-01-20 18:23:19",
   "primaryIdField": "azt_leadimportid",
   "primaryNameField": "azt_name",
   "sections": {
@@ -5181,7 +5183,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-01-20 18:23:19"
     },
     {
       "fieldName": "azt_companyname",
@@ -5288,7 +5291,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-01-20 18:23:19"
     },
     {
       "fieldName": "azt_email",
@@ -5395,7 +5399,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-01-20 18:23:19"
     },
     {
       "fieldName": "azt_firstname",
@@ -5488,7 +5493,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-01-20 18:23:19"
     },
     {
       "fieldName": "azt_importname",
@@ -5607,7 +5613,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-01-20 18:23:19"
     },
     {
       "fieldName": "azt_interestrating",
@@ -5692,7 +5699,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-01-20 18:23:19"
     },
     {
       "fieldName": "azt_jobtitle",
@@ -5785,7 +5793,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-01-20 18:23:19"
     },
     {
       "fieldName": "azt_lastname",
@@ -5908,7 +5917,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-01-20 18:23:19"
     },
     {
       "fieldName": "azt_leadimportid",
@@ -6008,7 +6018,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-20 18:23:19"
     },
     {
       "fieldName": "azt_leadsourceid",
@@ -6156,7 +6167,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-01-20 18:23:19"
     },
     {
       "fieldName": "azt_name",
@@ -6471,7 +6483,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-01-20 18:23:19"
     },
     {
       "fieldName": "azt_phone",
@@ -6564,7 +6577,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-01-20 18:23:19"
     },
     {
       "fieldName": "azt_result",
@@ -6657,7 +6671,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-20 18:23:19"
     },
     {
       "fieldName": "azt_stateprovince",
@@ -6750,7 +6765,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-01-20 18:23:19"
     },
     {
       "fieldName": "azt_timeinsession",
@@ -6835,7 +6851,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-01-20 18:23:19"
     },
     {
       "fieldName": "azt_unsubscribe",
@@ -6919,7 +6936,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-01-20 18:23:19"
     },
     {
       "fieldName": "createdby",
@@ -7083,7 +7101,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-20 18:23:19"
     },
     {
       "fieldName": "createdon",
@@ -7323,7 +7342,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "createdonbehalfby",
@@ -7350,7 +7370,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "importsequencenumber",
@@ -7377,7 +7398,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-01-20 18:23:19"
     },
     {
       "fieldName": "modifiedby",
@@ -7426,7 +7448,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-20 18:23:19"
     },
     {
       "fieldName": "modifiedon",
@@ -7486,7 +7509,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "modifiedonbehalfby",
@@ -7513,7 +7537,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "organizationid",
@@ -7547,7 +7572,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-01-20 18:23:19"
     },
     {
       "fieldName": "overriddencreatedon",
@@ -7574,7 +7600,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "statecode",
@@ -7861,7 +7888,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-20 18:23:19"
     },
     {
       "fieldName": "statuscode",
@@ -8026,7 +8054,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-01-20 18:23:19"
     },
     {
       "fieldName": "timezoneruleversionnumber",
@@ -8053,7 +8082,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "utcconversiontimezonecode",
@@ -8080,7 +8110,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     }
   ]
 }

@@ -5,6 +5,8 @@
   "objectType": "Custom",
   "ownershipType": "UserOwned",
   "auditEnabled": false,
+  "totalRows": 11322,
+  "lastUpdate": "2026-03-20 16:30:19",
   "primaryIdField": "azt_commissionpaymentid",
   "primaryNameField": "azt_name",
   "sections": {
@@ -4966,7 +4968,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:30:19"
     },
     {
       "fieldName": "azt_commissionamount_base",
@@ -4993,7 +4996,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:30:19"
     },
     {
       "fieldName": "azt_commissionid",
@@ -5083,7 +5087,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:30:19"
     },
     {
       "fieldName": "azt_commissionpaymentid",
@@ -5178,7 +5183,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:30:19"
     },
     {
       "fieldName": "azt_compgoalid",
@@ -5249,7 +5255,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:30:19"
     },
     {
       "fieldName": "azt_invoiceid",
@@ -5432,7 +5439,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:30:19"
     },
     {
       "fieldName": "azt_name",
@@ -5765,7 +5773,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:30:19"
     },
     {
       "fieldName": "azt_periodend",
@@ -5890,7 +5899,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:30:19"
     },
     {
       "fieldName": "azt_periodstart",
@@ -5985,7 +5995,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:30:19"
     },
     {
       "fieldName": "createdby",
@@ -6149,7 +6160,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:30:19"
     },
     {
       "fieldName": "createdon",
@@ -6294,7 +6306,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "createdonbehalfby",
@@ -6321,7 +6334,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "exchangerate",
@@ -6348,7 +6362,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:30:19"
     },
     {
       "fieldName": "importsequencenumber",
@@ -6375,7 +6390,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "modifiedby",
@@ -6424,7 +6440,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:30:19"
     },
     {
       "fieldName": "modifiedon",
@@ -6484,7 +6501,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "modifiedonbehalfby",
@@ -6511,7 +6529,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-02-13 21:06:54"
     },
     {
       "fieldName": "overriddencreatedon",
@@ -6538,7 +6557,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "ownerid",
@@ -7001,7 +7021,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:30:19"
     },
     {
       "fieldName": "owningbusinessunit",
@@ -7035,7 +7056,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:30:19"
     },
     {
       "fieldName": "owningteam",
@@ -7087,7 +7109,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "owninguser",
@@ -7129,7 +7152,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:30:19"
     },
     {
       "fieldName": "statecode",
@@ -7395,7 +7419,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 16:30:19"
     },
     {
       "fieldName": "statuscode",
@@ -7560,7 +7585,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:30:19"
     },
     {
       "fieldName": "timezoneruleversionnumber",
@@ -7587,7 +7613,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:30:19"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -7790,7 +7817,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 16:30:19"
     },
     {
       "fieldName": "utcconversiontimezonecode",
@@ -7817,7 +7845,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     }
   ]
 }

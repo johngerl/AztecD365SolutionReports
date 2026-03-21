@@ -5,6 +5,8 @@
   "objectType": "Custom",
   "ownershipType": "UserOwned",
   "auditEnabled": false,
+  "totalRows": 86799,
+  "lastUpdate": "2026-03-20 19:01:41",
   "primaryIdField": "azt_orderstageid",
   "primaryNameField": "azt_name",
   "sections": {
@@ -4726,7 +4728,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 19:01:41"
     },
     {
       "fieldName": "azt_ageendedstage",
@@ -4772,7 +4775,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 19:01:41"
     },
     {
       "fieldName": "azt_changinguserid",
@@ -4830,7 +4834,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 19:01:41"
     },
     {
       "fieldName": "azt_dateexitedstage",
@@ -4883,7 +4888,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 19:01:41"
     },
     {
       "fieldName": "azt_name",
@@ -5241,7 +5247,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 19:01:41"
     },
     {
       "fieldName": "azt_orderid",
@@ -5364,7 +5371,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 19:01:41"
     },
     {
       "fieldName": "azt_orderstageid",
@@ -5459,7 +5467,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 19:01:41"
     },
     {
       "fieldName": "createdby",
@@ -5623,7 +5632,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 19:01:41"
     },
     {
       "fieldName": "createdon",
@@ -5837,7 +5847,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "createdonbehalfby",
@@ -5864,7 +5875,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "importsequencenumber",
@@ -5891,7 +5903,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "modifiedby",
@@ -5940,7 +5953,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 19:01:41"
     },
     {
       "fieldName": "modifiedon",
@@ -6000,7 +6014,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "modifiedonbehalfby",
@@ -6027,7 +6042,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-10 13:54:31"
     },
     {
       "fieldName": "overriddencreatedon",
@@ -6054,7 +6070,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "ownerid",
@@ -6423,7 +6440,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 19:01:41"
     },
     {
       "fieldName": "owningbusinessunit",
@@ -6457,7 +6475,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 19:01:41"
     },
     {
       "fieldName": "owningteam",
@@ -6509,7 +6528,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "owninguser",
@@ -6551,7 +6571,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 19:01:41"
     },
     {
       "fieldName": "statecode",
@@ -6817,7 +6838,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 19:01:41"
     },
     {
       "fieldName": "statuscode",
@@ -6982,7 +7004,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 19:01:41"
     },
     {
       "fieldName": "timezoneruleversionnumber",
@@ -7009,7 +7032,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 19:01:41"
     },
     {
       "fieldName": "utcconversiontimezonecode",
@@ -7036,7 +7060,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     }
   ]
 }

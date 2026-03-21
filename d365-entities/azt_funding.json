@@ -5,6 +5,8 @@
   "objectType": "Custom",
   "ownershipType": "OrgOwned",
   "auditEnabled": false,
+  "totalRows": 316,
+  "lastUpdate": "2025-11-20 19:52:27",
   "primaryIdField": "azt_fundingid",
   "primaryNameField": "azt_name",
   "sections": {
@@ -4674,7 +4676,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-11-20 19:52:27"
     },
     {
       "fieldName": "azt_annualspend",
@@ -4733,7 +4736,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-11-20 19:52:27"
     },
     {
       "fieldName": "azt_annualspend_base",
@@ -4760,7 +4764,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-11-20 19:52:27"
     },
     {
       "fieldName": "azt_federalfundingamount",
@@ -4821,7 +4826,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-11-20 19:52:27"
     },
     {
       "fieldName": "azt_federalfundingamount_base",
@@ -4848,7 +4854,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-11-20 19:52:27"
     },
     {
       "fieldName": "azt_fundingdate",
@@ -4875,7 +4882,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "azt_fundingid",
@@ -4970,7 +4978,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2025-11-20 19:52:27"
     },
     {
       "fieldName": "azt_fundingyear",
@@ -5058,7 +5067,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-11-20 19:52:27"
     },
     {
       "fieldName": "azt_name",
@@ -5394,7 +5404,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "azt_otherfundingamount",
@@ -5455,7 +5466,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-11-20 19:52:27"
     },
     {
       "fieldName": "azt_otherfundingamount_base",
@@ -5482,7 +5494,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-11-20 19:52:27"
     },
     {
       "fieldName": "azt_penetration",
@@ -5533,7 +5546,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-11-20 19:52:27"
     },
     {
       "fieldName": "azt_statefundingamount",
@@ -5594,7 +5608,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-11-20 19:52:27"
     },
     {
       "fieldName": "azt_statefundingamount_base",
@@ -5621,7 +5636,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-11-20 19:52:27"
     },
     {
       "fieldName": "azt_totalfunding",
@@ -5680,7 +5696,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-11-20 19:52:27"
     },
     {
       "fieldName": "azt_totalfunding_base",
@@ -5707,7 +5724,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-11-20 19:52:27"
     },
     {
       "fieldName": "azt_year",
@@ -5759,7 +5777,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2025-11-20 19:52:27"
     },
     {
       "fieldName": "createdby",
@@ -5923,7 +5942,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2025-11-20 19:52:27"
     },
     {
       "fieldName": "createdon",
@@ -6121,7 +6141,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "createdonbehalfby",
@@ -6148,7 +6169,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "exchangerate",
@@ -6175,7 +6197,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-11-20 19:52:27"
     },
     {
       "fieldName": "importsequencenumber",
@@ -6202,7 +6225,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "modifiedby",
@@ -6251,7 +6275,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2025-11-20 19:52:27"
     },
     {
       "fieldName": "modifiedon",
@@ -6311,7 +6336,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "modifiedonbehalfby",
@@ -6338,7 +6364,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-11-16 15:18:53"
     },
     {
       "fieldName": "organizationid",
@@ -6372,7 +6399,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-11-20 19:52:27"
     },
     {
       "fieldName": "overriddencreatedon",
@@ -6399,7 +6427,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "statecode",
@@ -6665,7 +6694,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2025-11-20 19:52:27"
     },
     {
       "fieldName": "statuscode",
@@ -6830,7 +6860,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2025-11-20 19:52:27"
     },
     {
       "fieldName": "timezoneruleversionnumber",
@@ -6857,7 +6888,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -7053,7 +7085,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2025-11-20 19:52:27"
     },
     {
       "fieldName": "utcconversiontimezonecode",
@@ -7080,7 +7113,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     }
   ]
 }

@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "",
   "auditEnabled": false,
+  "totalRows": 1,
+  "lastUpdate": "2018-12-21 09:21:31",
   "primaryIdField": "transactioncurrencyid",
   "primaryNameField": null,
   "sections": {
@@ -3113,7 +3115,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "isocurrencycode",
@@ -3152,7 +3155,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2018-12-21 09:21:31"
     },
     {
       "fieldName": "modifiedon",
@@ -3212,7 +3216,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "statecode",
@@ -3384,7 +3389,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2018-12-21 09:21:31"
     },
     {
       "fieldName": "statuscode",
@@ -3458,7 +3464,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2018-12-21 09:21:31"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -3601,7 +3608,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2018-12-21 09:21:31"
     }
   ]
 }

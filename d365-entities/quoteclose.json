@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "UserOwned",
   "auditEnabled": false,
+  "totalRows": 53552,
+  "lastUpdate": "2026-03-20 22:14:09",
   "primaryIdField": "quotecloseid",
   "primaryNameField": null,
   "sections": {
@@ -3279,7 +3281,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:14:09"
     },
     {
       "fieldName": "activitytypecode",
@@ -3325,7 +3328,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:14:09"
     },
     {
       "fieldName": "category",
@@ -3378,7 +3382,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "createdon",
@@ -3480,7 +3485,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "description",
@@ -3561,7 +3567,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 20:01:09"
     },
     {
       "fieldName": "modifiedon",
@@ -3621,7 +3628,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "ownerid",
@@ -3807,7 +3815,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:14:09"
     },
     {
       "fieldName": "quoteid",
@@ -3979,7 +3988,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:14:09"
     },
     {
       "fieldName": "regardingobjectid",
@@ -4165,7 +4175,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:14:09"
     },
     {
       "fieldName": "scheduledend",
@@ -4211,7 +4222,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "statecode",
@@ -4383,7 +4395,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:14:09"
     },
     {
       "fieldName": "statuscode",
@@ -4457,7 +4470,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:14:09"
     },
     {
       "fieldName": "subject",
@@ -4510,7 +4524,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:14:09"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -4598,7 +4613,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     }
   ]
 }

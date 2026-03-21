@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "BusinessOwned",
   "auditEnabled": false,
+  "totalRows": 112822,
+  "lastUpdate": "2026-03-21 04:05:55",
   "primaryIdField": "teamid",
   "primaryNameField": null,
   "sections": {
@@ -3461,7 +3463,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 04:05:55"
     },
     {
       "fieldName": "azt_stateabbreviation",
@@ -3541,7 +3544,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2023-06-19 18:06:26"
     },
     {
       "fieldName": "businessunitid",
@@ -3661,7 +3665,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 04:05:55"
     },
     {
       "fieldName": "createdon",
@@ -3763,7 +3768,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "delegatedauthorizationid",
@@ -3797,7 +3803,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "description",
@@ -3878,7 +3885,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 04:05:55"
     },
     {
       "fieldName": "emailaddress",
@@ -3920,7 +3928,8 @@
         {
           "type": "on_forms_not_in_logic"
         }
-      ]
+      ],
+      "lastUpdate": "2023-03-27 06:53:57"
     },
     {
       "fieldName": "issastokenset",
@@ -3947,7 +3956,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-21 04:05:55"
     },
     {
       "fieldName": "modifiedon",
@@ -4007,7 +4017,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "name",
@@ -4255,7 +4266,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 04:05:55"
     },
     {
       "fieldName": "queueid",
@@ -4301,7 +4313,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 04:05:55"
     },
     {
       "fieldName": "regardingobjectid",
@@ -4389,7 +4402,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 22:34:46"
     },
     {
       "fieldName": "teamid",
@@ -4473,7 +4487,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 04:05:55"
     },
     {
       "fieldName": "teamtype",
@@ -4555,7 +4570,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 04:05:55"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -4643,7 +4659,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2024-07-18 15:52:39"
     }
   ]
 }

@@ -1,6 +1,6 @@
 Refresh Salesforce object schema(s) from the org via REST API.
 
-This is Step 4 of the pipeline. If `$ARGUMENTS` is empty, run for all existing objects. Otherwise run for the specified Salesforce object (use API name, e.g., Account, Opportunity, Custom_Object__c).
+This is Step 5 of the pipeline. If `$ARGUMENTS` is empty, run for all existing objects. Otherwise run for the specified Salesforce object (use API name, e.g., Account, Opportunity, Custom_Object__c).
 
 ```bash
 # Determine argument

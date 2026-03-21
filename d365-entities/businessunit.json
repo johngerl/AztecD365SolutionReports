@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "BusinessOwned",
   "auditEnabled": false,
+  "totalRows": 4,
+  "lastUpdate": "2023-10-25 03:27:14",
   "primaryIdField": "businessunitid",
   "primaryNameField": "name",
   "sections": {
@@ -3695,7 +3697,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "address1_telephone1",
@@ -3753,7 +3756,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "azt_stateabbreviation",
@@ -3825,7 +3829,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "businessunitid",
@@ -3938,7 +3943,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2023-10-25 03:27:14"
     },
     {
       "fieldName": "createdon",
@@ -4040,7 +4046,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "description",
@@ -4121,7 +4128,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "isdisabled",
@@ -4156,7 +4164,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2023-10-25 03:27:14"
     },
     {
       "fieldName": "modifiedon",
@@ -4216,7 +4225,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "name",
@@ -4593,7 +4603,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2023-10-25 03:27:14"
     },
     {
       "fieldName": "parentbusinessunitid",
@@ -4627,7 +4638,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2023-10-25 03:27:14"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -4715,7 +4727,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2023-10-25 03:27:14"
     },
     {
       "fieldName": "websiteurl",
@@ -4761,7 +4774,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     }
   ]
 }

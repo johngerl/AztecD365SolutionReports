@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "BusinessOwned",
   "auditEnabled": true,
+  "totalRows": 1000,
+  "lastUpdate": "2026-03-21 05:15:53",
   "primaryIdField": "roleid",
   "primaryNameField": null,
   "sections": {
@@ -3035,7 +3037,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 05:15:53"
     },
     {
       "fieldName": "createdon",
@@ -3137,7 +3140,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "description",
@@ -3218,7 +3222,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 04:10:27"
     },
     {
       "fieldName": "modifiedon",
@@ -3278,7 +3283,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "name",
@@ -3471,7 +3477,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 05:15:53"
     },
     {
       "fieldName": "roleid",
@@ -3545,7 +3552,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-21 05:15:53"
     }
   ]
 }

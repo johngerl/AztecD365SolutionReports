@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "",
   "auditEnabled": false,
+  "totalRows": 11,
+  "lastUpdate": "2026-01-03 21:06:05",
   "primaryIdField": "pricelevelid",
   "primaryNameField": null,
   "sections": {
@@ -3138,7 +3140,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "description",
@@ -3219,7 +3222,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2025-12-31 14:42:25"
     },
     {
       "fieldName": "freighttermscode",
@@ -3258,7 +3262,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-03 21:06:05"
     },
     {
       "fieldName": "modifiedon",
@@ -3318,7 +3323,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "name",
@@ -3511,7 +3517,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-03 21:06:05"
     },
     {
       "fieldName": "pricelevelid",
@@ -3550,7 +3557,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-03 21:06:05"
     },
     {
       "fieldName": "shippingmethodcode",
@@ -3589,7 +3597,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-03 21:06:05"
     },
     {
       "fieldName": "statecode",
@@ -3761,7 +3770,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-03 21:06:05"
     },
     {
       "fieldName": "statuscode",
@@ -3835,7 +3845,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-03 21:06:05"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -3923,7 +3934,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-01-03 21:06:05"
     }
   ]
 }

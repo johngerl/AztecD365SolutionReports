@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "UnOwned",
   "auditEnabled": true,
+  "totalRows": 20655,
+  "lastUpdate": "2026-03-20 21:42:40",
   "primaryIdField": "queueitemid",
   "primaryNameField": null,
   "sections": {
@@ -3234,7 +3236,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 21:42:40"
     },
     {
       "fieldName": "createdon",
@@ -3336,7 +3339,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "enteredon",
@@ -3400,7 +3404,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "2026-03-20 21:42:40"
     },
     {
       "fieldName": "modifiedon",
@@ -3460,7 +3465,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "msdyn_liveworkstreamid",
@@ -3494,7 +3500,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "objectid",
@@ -3573,7 +3580,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 21:42:40"
     },
     {
       "fieldName": "objecttypecode",
@@ -3631,7 +3639,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 21:42:40"
     },
     {
       "fieldName": "ownerid",
@@ -3817,7 +3826,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 21:42:40"
     },
     {
       "fieldName": "queueid",
@@ -3882,7 +3892,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 21:42:40"
     },
     {
       "fieldName": "queueitemid",
@@ -3940,7 +3951,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 21:42:40"
     },
     {
       "fieldName": "state",
@@ -3975,7 +3987,8 @@
       ],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "statecode",
@@ -4169,7 +4182,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 21:42:40"
     },
     {
       "fieldName": "statuscode",
@@ -4243,7 +4257,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 21:42:40"
     },
     {
       "fieldName": "title",
@@ -4308,7 +4323,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 21:42:40"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -4396,7 +4412,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "workerid",
@@ -4444,7 +4461,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     }
   ]
 }

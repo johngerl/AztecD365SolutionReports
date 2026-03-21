@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "UserOwned",
   "auditEnabled": false,
+  "totalRows": 86,
+  "lastUpdate": "2024-05-13 18:36:30",
   "primaryIdField": "knowledgearticleid",
   "primaryNameField": null,
   "sections": {
@@ -3064,7 +3066,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "description",
@@ -3145,7 +3148,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2024-05-13 18:36:30"
     },
     {
       "fieldName": "modifiedon",
@@ -3205,7 +3209,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "msdyn_contentstore",
@@ -3239,7 +3244,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "msdyn_integratedsearchproviderid",
@@ -3273,7 +3279,8 @@
         }
       ],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "ownerid",
@@ -3459,7 +3466,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2024-05-13 18:36:30"
     },
     {
       "fieldName": "statecode",
@@ -3631,7 +3639,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2024-05-13 18:36:30"
     },
     {
       "fieldName": "statuscode",
@@ -3705,7 +3714,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2024-05-13 18:36:30"
     },
     {
       "fieldName": "title",
@@ -3751,7 +3761,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2024-05-13 18:36:30"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -3839,7 +3850,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     }
   ]
 }

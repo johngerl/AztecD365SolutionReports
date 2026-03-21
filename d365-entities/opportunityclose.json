@@ -5,6 +5,8 @@
   "objectType": "Standard",
   "ownershipType": "UserOwned",
   "auditEnabled": false,
+  "totalRows": 53291,
+  "lastUpdate": "2026-03-20 18:56:22",
   "primaryIdField": "opportunitycloseid",
   "primaryNameField": null,
   "sections": {
@@ -3279,7 +3281,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 18:56:22"
     },
     {
       "fieldName": "activitytypecode",
@@ -3325,7 +3328,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 18:56:22"
     },
     {
       "fieldName": "category",
@@ -3378,7 +3382,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "createdon",
@@ -3480,7 +3485,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (createdon)"
     },
     {
       "fieldName": "description",
@@ -3561,7 +3567,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-19 13:40:01"
     },
     {
       "fieldName": "modifiedon",
@@ -3621,7 +3628,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Skipped (modifiedon)"
     },
     {
       "fieldName": "opportunityid",
@@ -3877,7 +3885,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 18:56:22"
     },
     {
       "fieldName": "opportunitystatuscode",
@@ -3965,7 +3974,8 @@
       "pcfControls": [],
       "relationships": [],
       "ribbon": [],
-      "conflicts": []
+      "conflicts": [],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "ownerid",
@@ -4151,7 +4161,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 18:56:22"
     },
     {
       "fieldName": "regardingobjectid",
@@ -4337,7 +4348,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 18:56:22"
     },
     {
       "fieldName": "scheduledend",
@@ -4383,7 +4395,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "Never"
     },
     {
       "fieldName": "statecode",
@@ -4555,7 +4568,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 18:56:22"
     },
     {
       "fieldName": "statuscode",
@@ -4629,7 +4643,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 18:56:22"
     },
     {
       "fieldName": "subject",
@@ -4682,7 +4697,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 18:56:22"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -4770,7 +4786,8 @@
         {
           "type": "in_code_not_on_forms"
         }
-      ]
+      ],
+      "lastUpdate": "2026-03-20 18:56:22"
     }
   ]
 }

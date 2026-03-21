@@ -172,6 +172,7 @@ Each `mapping/{entity}.csv` contains one row per D365 field with these columns:
 | `dataType` | customizations.xml | D365 field type (Lookup, String, OptionSet, etc.) |
 | `requiredLevel` | customizations.xml | none / recommended / required |
 | `isCustom` | customizations.xml | True if custom field (azt_ prefix) |
+| `lastUpdate` | Dataverse TDS | Last modified date for field data (datetime, "Never", or "Skipped") |
 | `picklistValues` | customizations.xml | Pre-formatted picklist string: `1: Label, 2: Label, ...` |
 | `mappingSuggested` | Computed | `true` if field has usage refs or requiredLevel is not none/empty |
 | `refForms` | Computed | Number of form references for this field |

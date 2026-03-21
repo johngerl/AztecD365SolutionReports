@@ -1,5 +1,5 @@
 # Kbarticle Field Usage Analysis
-> Date: 2026-03-02
+> Date: 2026-03-21
 
 ## Table of Contents
 
@@ -305,13 +305,13 @@ Total fields: **313**
 | 195 | [contactid](#index-contactid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10-plugin-source-code-analysis) |  |  |  |  |
 | 196 | [country](#index-country) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11-pcf-controls) |  |  |  |
 | 197 | [county](#index-county) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11-pcf-controls) |  |  |  |
-| 198 | [createdon](#index-createdon) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10-plugin-source-code-analysis) |  |  |  |  |
+| 198 | [createdon](#index-createdon) | Created On | datetime |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10-plugin-source-code-analysis) |  |  |  |  |
 | 199 | [crm3_expenseamount](#index-crm3_expenseamount) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 200 | [crm3_parentleadid](#index-crm3_parentleadid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 201 | [customerid](#index-customerid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [11](#10-plugin-source-code-analysis) |  |  |  |  |
 | 202 | [datefulfilled](#index-datefulfilled) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 203 | [defaultuomid](#index-defaultuomid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
-| 204 | [description](#index-description) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10-plugin-source-code-analysis) |  |  |  |  |
+| 204 | [description](#index-description) | Description | ntext |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10-plugin-source-code-analysis) |  |  |  |  |
 | 205 | [discountamount](#index-discountamount) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 206 | [discountpercentage](#index-discountpercentage) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 207 | [emailaddress1](#index-emailaddress1) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -344,13 +344,13 @@ Total fields: **313**
 | 234 | [isproductoverridden](#index-isproductoverridden) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
 | 235 | [isrevenuesystemcalculated](#index-isrevenuesystemcalculated) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 236 | [jobtitle](#index-jobtitle) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 237 | [kbarticleid](#index-kbarticleid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
+| 237 | [kbarticleid](#index-kbarticleid) | Article | uniqueidentifier |  | No | required | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
 | 238 | [lastname](#index-lastname) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 239 | [manualdiscountamount](#index-manualdiscountamount) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [9](#10-plugin-source-code-analysis) |  |  |  |  |
 | 240 | [metricid](#index-metricid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 241 | [mimetype](#index-mimetype) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 242 | [mobilephone](#index-mobilephone) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 243 | [modifiedon](#index-modifiedon) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
+| 243 | [modifiedon](#index-modifiedon) | Modified On | datetime |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
 | 244 | [name](#index-name) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [23](#10-plugin-source-code-analysis) |  |  |  |  |
 | 245 | [objectid](#index-objectid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
 | 246 | [objecttypecode](#index-objecttypecode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -402,9 +402,9 @@ Total fields: **313**
 | 292 | [shipto_postalcode](#index-shipto_postalcode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 293 | [shipto_stateorprovince](#index-shipto_stateorprovince) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 294 | [state](#index-state) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11-pcf-controls) |  |  |  |
-| 295 | [statecode](#index-statecode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [20](#10-plugin-source-code-analysis) |  |  |  |  |
+| 295 | [statecode](#index-statecode) | Status  | picklist |  | No | required | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [20](#10-plugin-source-code-analysis) |  |  |  |  |
 | 296 | [stateorprovince](#index-stateorprovince) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
-| 297 | [statuscode](#index-statuscode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10-plugin-source-code-analysis) |  |  |  |  |
+| 297 | [statuscode](#index-statuscode) | Status Reason | picklist |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10-plugin-source-code-analysis) |  |  |  |  |
 | 298 | [street](#index-street) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11-pcf-controls) |  |  |  |
 | 299 | [subject](#index-subject) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
 | 300 | [systemuserid](#index-systemuserid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -412,11 +412,11 @@ Total fields: **313**
 | 302 | [teamid](#index-teamid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
 | 303 | [teamtype](#index-teamtype) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
 | 304 | [telephone1](#index-telephone1) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 305 | [title](#index-title) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
+| 305 | [title](#index-title) | Title | nvarchar |  | No | required | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 306 | [tm.systemuserid](#index-tmsystemuserid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 307 | [to](#index-to) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 308 | [totalamount](#index-totalamount) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
-| 309 | [transactioncurrencyid](#index-transactioncurrencyid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10-plugin-source-code-analysis) |  |  |  |  |
+| 309 | [transactioncurrencyid](#index-transactioncurrencyid) | Currency | lookup |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10-plugin-source-code-analysis) |  |  |  |  |
 | 310 | [uomid](#index-uomid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10-plugin-source-code-analysis) |  |  |  |  |
 | 311 | [value](#index-value) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11-pcf-controls) |  |  |  |
 | 312 | [zipcode](#index-zipcode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11-pcf-controls) |  |  |  |

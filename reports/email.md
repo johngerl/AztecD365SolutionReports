@@ -1,5 +1,5 @@
 # Email Field Usage Analysis
-> Date: 2026-03-02
+> Date: 2026-03-21
 
 ## Table of Contents
 
@@ -158,12 +158,12 @@ Total fields: **330**
 
 | # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
 |---|-------------|-------------|------|-----------------|--------|----------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [acceptingentityid](#index-acceptingentityid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#12-relationships) |  |  |
+| 1 | [acceptingentityid](#index-acceptingentityid) | Accepting Entity | lookup |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#12-relationships) |  |  |
 | 2 | [accountid](#index-accountid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [12](#10-plugin-source-code-analysis) |  |  |  |  |
-| 3 | [activityid](#index-activityid) |  |  |  | No |  | true |  |  |  |  |  |  |  | [11](#3-views) |  |  |  | [3](#7-workflows) |  | [7](#10-plugin-source-code-analysis) |  |  |  |  |
-| 4 | [activitytypecode](#index-activitytypecode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
+| 3 | [activityid](#index-activityid) | Email Message | uniqueidentifier |  | No | required | true |  |  |  |  |  |  |  | [11](#3-views) |  |  |  | [3](#7-workflows) |  | [7](#10-plugin-source-code-analysis) |  |  |  |  |
+| 4 | [activitytypecode](#index-activitytypecode) | Activity Type | entityname |  | No | required | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 5 | [actualclosedate](#index-actualclosedate) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 6 | [actualend](#index-actualend) |  |  |  | No |  | true |  |  |  |  |  |  | [5](#2-forms) | [31](#3-views) |  |  |  |  |  |  |  |  |  |  |
+| 6 | [actualend](#index-actualend) | Actual End | datetime |  | No | none | true |  |  |  |  |  |  | [5](#2-forms) | [31](#3-views) |  |  |  |  |  |  |  |  |  |  |
 | 7 | [address1_stateorprovince](#index-address1_stateorprovince) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
 | 8 | [address1_telephone1](#index-address1_telephone1) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 9 | [adx_resolutiondate](#index-adx_resolutiondate) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -347,8 +347,8 @@ Total fields: **330**
 | 187 | [bpf_salesorderid](#index-bpf_salesorderid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 188 | [businessprocessflowinstanceid](#index-businessprocessflowinstanceid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 189 | [businessunitid](#index-businessunitid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10-plugin-source-code-analysis) |  |  |  |  |
-| 190 | [category](#index-category) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
-| 191 | [cc](#index-cc) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  | [1](#7-workflows) |  |  |  |  |  |  |
+| 190 | [category](#index-category) | Category | nvarchar |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
+| 191 | [cc](#index-cc) | Cc | partylist |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  | [1](#7-workflows) |  |  |  |  |  |  |
 | 192 | [city](#index-city) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11-pcf-controls) |  |  |  |
 | 193 | [closeprobability](#index-closeprobability) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 194 | [companyname](#index-companyname) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -356,20 +356,20 @@ Total fields: **330**
 | 196 | [connectionroleid](#index-connectionroleid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
 | 197 | [consideronlygoalownersrecords](#index-consideronlygoalownersrecords) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 198 | [contactid](#index-contactid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10-plugin-source-code-analysis) |  |  |  |  |
-| 199 | [correlatedactivityid](#index-correlatedactivityid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
-| 200 | [correlatedsubjectchanged](#index-correlatedsubjectchanged) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  | [4](#7-workflows) |  |  |  |  |  |  |
+| 199 | [correlatedactivityid](#index-correlatedactivityid) | Correlated Activity Id | lookup |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
+| 200 | [correlatedsubjectchanged](#index-correlatedsubjectchanged) | Correlated subject changed | bit |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  | [4](#7-workflows) |  |  |  |  |  |  |
 | 201 | [country](#index-country) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11-pcf-controls) |  |  |  |
 | 202 | [county](#index-county) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11-pcf-controls) |  |  |  |
-| 203 | [createdon](#index-createdon) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7-workflows) |  | [10](#10-plugin-source-code-analysis) |  |  |  |  |
+| 203 | [createdon](#index-createdon) | Created On | datetime |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7-workflows) |  | [10](#10-plugin-source-code-analysis) |  |  |  |  |
 | 204 | [crm3_expenseamount](#index-crm3_expenseamount) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 205 | [crm3_parentleadid](#index-crm3_parentleadid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 206 | [customerid](#index-customerid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [11](#10-plugin-source-code-analysis) |  |  |  |  |
 | 207 | [datefulfilled](#index-datefulfilled) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 208 | [defaultuomid](#index-defaultuomid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
-| 209 | [deliveryprioritycode](#index-deliveryprioritycode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  | [10](#7-workflows) |  |  |  |  |  |  |
-| 210 | [description](#index-description) |  |  |  | No |  | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  | [10](#7-workflows) |  | [7](#10-plugin-source-code-analysis) |  |  |  |  |
-| 211 | [descriptionblobid](#index-descriptionblobid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
-| 212 | [directioncode](#index-directioncode) |  |  |  | No |  | true |  |  |  |  |  |  | [4](#2-forms) |  |  |  |  | [10](#7-workflows) |  |  |  |  |  |  |
+| 209 | [deliveryprioritycode](#index-deliveryprioritycode) | Delivery Priority | picklist |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  | [10](#7-workflows) |  |  |  |  |  |  |
+| 210 | [description](#index-description) | Description | ntext |  | No | none | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  | [10](#7-workflows) |  | [7](#10-plugin-source-code-analysis) |  |  |  |  |
+| 211 | [descriptionblobid](#index-descriptionblobid) | Description File Id | virtual |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
+| 212 | [directioncode](#index-directioncode) | Direction | bit |  | No | none | true |  |  |  |  |  |  | [4](#2-forms) |  |  |  |  | [10](#7-workflows) |  |  |  |  |  |  |
 | 213 | [discountamount](#index-discountamount) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 214 | [discountpercentage](#index-discountpercentage) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 215 | [emailaddress1](#index-emailaddress1) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -380,10 +380,10 @@ Total fields: **330**
 | 220 | [fetchxml](#index-fetchxml) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 221 | [filename](#index-filename) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 222 | [firstname](#index-firstname) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 223 | [followemailuserpreference](#index-followemailuserpreference) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  | [10](#7-workflows) |  |  |  |  |  |  |
+| 223 | [followemailuserpreference](#index-followemailuserpreference) | Following | bit |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  | [10](#7-workflows) |  |  |  |  |  |  |
 | 224 | [freightamount](#index-freightamount) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 225 | [freighttermscode](#index-freighttermscode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 226 | [from](#index-from) |  |  |  | No |  | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  | [10](#7-workflows) |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
+| 226 | [from](#index-from) | From | partylist |  | No | none | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  | [10](#7-workflows) |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 227 | [fullname](#index-fullname) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10-plugin-source-code-analysis) |  |  |  |  |
 | 228 | [goalenddate](#index-goalenddate) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
 | 229 | [goalid](#index-goalid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -407,18 +407,18 @@ Total fields: **330**
 | 247 | [lastname](#index-lastname) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 248 | [manualdiscountamount](#index-manualdiscountamount) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [9](#10-plugin-source-code-analysis) |  |  |  |  |
 | 249 | [metricid](#index-metricid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 250 | [mimetype](#index-mimetype) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
+| 250 | [mimetype](#index-mimetype) | Mime Type | nvarchar |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 251 | [mobilephone](#index-mobilephone) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 252 | [modifiedon](#index-modifiedon) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
-| 253 | [msdyn_emailclassificationcategory](#index-msdyn_emailclassificationcategory) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
+| 252 | [modifiedon](#index-modifiedon) | Modified On | datetime |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
+| 253 | [msdyn_emailclassificationcategory](#index-msdyn_emailclassificationcategory) | Email Classification Category | lookup |  | Yes | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
 | 254 | [name](#index-name) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [23](#10-plugin-source-code-analysis) |  |  |  |  |
-| 255 | [notifications](#index-notifications) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  | [10](#7-workflows) |  |  |  |  |  |  |
+| 255 | [notifications](#index-notifications) | Notifications | picklist |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  | [10](#7-workflows) |  |  |  |  |  |  |
 | 256 | [objectid](#index-objectid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
 | 257 | [objecttypecode](#index-objecttypecode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 258 | [opportunityid](#index-opportunityid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [32](#10-plugin-source-code-analysis) |  |  |  |  |
 | 259 | [opportunityproductid](#index-opportunityproductid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [14](#10-plugin-source-code-analysis) |  |  |  |  |
 | 260 | [originatingleadid](#index-originatingleadid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
-| 261 | [ownerid](#index-ownerid) |  |  |  | No |  | true |  |  |  |  |  |  |  | [26](#3-views) | [16](#4-chart-visualizations) |  |  |  |  | [22](#10-plugin-source-code-analysis) |  |  |  |  |
+| 261 | [ownerid](#index-ownerid) | Owner | lookup |  | No | required | true |  |  |  |  |  |  |  | [26](#3-views) | [16](#4-chart-visualizations) |  |  |  |  | [22](#10-plugin-source-code-analysis) |  |  |  |  |
 | 262 | [parentaccountid](#index-parentaccountid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
 | 263 | [parentcontactid](#index-parentcontactid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 264 | [parentcustomerid](#index-parentcustomerid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -429,7 +429,7 @@ Total fields: **330**
 | 269 | [pricelevelid](#index-pricelevelid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 270 | [priceperunit](#index-priceperunit) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10-plugin-source-code-analysis) |  |  |  |  |
 | 271 | [primarycontactid](#index-primarycontactid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
-| 272 | [prioritycode](#index-prioritycode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  | [10](#7-workflows) |  |  |  |  |  |  |
+| 272 | [prioritycode](#index-prioritycode) | Priority | picklist |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  | [10](#7-workflows) |  |  |  |  |  |  |
 | 273 | [prod.productid](#index-prodproductid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 274 | [productdescription](#index-productdescription) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [13](#10-plugin-source-code-analysis) |  |  |  |  |
 | 275 | [productid](#index-productid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [33](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -442,7 +442,7 @@ Total fields: **330**
 | 282 | [queueitemid](#index-queueitemid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 283 | [quotedetailid](#index-quotedetailid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [14](#10-plugin-source-code-analysis) |  |  |  |  |
 | 284 | [quoteid](#index-quoteid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [20](#10-plugin-source-code-analysis) |  |  |  |  |
-| 285 | [receivingmailboxid](#index-receivingmailboxid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
+| 285 | [receivingmailboxid](#index-receivingmailboxid) | Receiving Mailbox | lookup |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
 | 286 | [record1id](#index-record1id) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10-plugin-source-code-analysis) |  |  |  |  |
 | 287 | [record1roleid](#index-record1roleid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
 | 288 | [record2id](#index-record2id) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -458,9 +458,9 @@ Total fields: **330**
 | 298 | [salesorderdetailname](#index-salesorderdetailname) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 299 | [salesorderid](#index-salesorderid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [13](#10-plugin-source-code-analysis) |  |  |  |  |
 | 300 | [salesrepid](#index-salesrepid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 301 | [scheduledend](#index-scheduledend) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
-| 302 | [sensitivitylabelid](#index-sensitivitylabelid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
-| 303 | [senton](#index-senton) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 301 | [scheduledend](#index-scheduledend) | Due Date | datetime |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
+| 302 | [sensitivitylabelid](#index-sensitivitylabelid) | Sensitivity Label | lookup |  | Yes | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
+| 303 | [senton](#index-senton) | Date Sent | datetime |  | No | none | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 304 | [shippingmethodcode](#index-shippingmethodcode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 305 | [shipto_line1](#index-shipto_line1) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 306 | [shipto_line2](#index-shipto_line2) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -469,11 +469,11 @@ Total fields: **330**
 | 309 | [shipto_postalcode](#index-shipto_postalcode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 310 | [shipto_stateorprovince](#index-shipto_stateorprovince) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 311 | [state](#index-state) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11-pcf-controls) |  |  |  |
-| 312 | [statecode](#index-statecode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [20](#10-plugin-source-code-analysis) |  |  |  |  |
+| 312 | [statecode](#index-statecode) | Activity Status | picklist |  | No | required | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [20](#10-plugin-source-code-analysis) |  |  |  |  |
 | 313 | [stateorprovince](#index-stateorprovince) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
-| 314 | [statuscode](#index-statuscode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7-workflows) |  | [6](#10-plugin-source-code-analysis) |  |  |  |  |
+| 314 | [statuscode](#index-statuscode) | Status Reason | picklist |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7-workflows) |  | [6](#10-plugin-source-code-analysis) |  |  |  |  |
 | 315 | [street](#index-street) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11-pcf-controls) |  |  |  |
-| 316 | [subject](#index-subject) |  |  |  | No |  | true |  |  |  |  |  |  | [3](#2-forms) | [11](#3-views) |  |  |  | [10](#7-workflows) |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
+| 316 | [subject](#index-subject) | Subject | nvarchar |  | No | none | true |  |  |  |  |  |  | [3](#2-forms) | [11](#3-views) |  |  |  | [10](#7-workflows) |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
 | 317 | [systemuserid](#index-systemuserid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10-plugin-source-code-analysis) |  |  |  |  |
 | 318 | [tax](#index-tax) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10-plugin-source-code-analysis) |  |  |  |  |
 | 319 | [teamid](#index-teamid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -481,9 +481,9 @@ Total fields: **330**
 | 321 | [telephone1](#index-telephone1) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 322 | [title](#index-title) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 323 | [tm.systemuserid](#index-tmsystemuserid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 324 | [to](#index-to) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  | [10](#7-workflows) |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
+| 324 | [to](#index-to) | To | partylist |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  | [10](#7-workflows) |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 325 | [totalamount](#index-totalamount) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
-| 326 | [transactioncurrencyid](#index-transactioncurrencyid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  | [9](#7-workflows) |  | [8](#10-plugin-source-code-analysis) |  |  |  |  |
+| 326 | [transactioncurrencyid](#index-transactioncurrencyid) | Currency | lookup |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  | [9](#7-workflows) |  | [8](#10-plugin-source-code-analysis) |  |  |  |  |
 | 327 | [uomid](#index-uomid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10-plugin-source-code-analysis) |  |  |  |  |
 | 328 | [value](#index-value) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11-pcf-controls) |  |  |  |
 | 329 | [zipcode](#index-zipcode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11-pcf-controls) |  |  |  |

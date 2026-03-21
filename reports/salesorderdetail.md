@@ -1,5 +1,5 @@
 # Salesorderdetail Field Usage Analysis
-> Date: 2026-03-02
+> Date: 2026-03-21
 
 ## Table of Contents
 
@@ -309,7 +309,7 @@ Total fields: **336**
 | 187 | [azt_trackingnumbers](#index-azt_trackingnumbers) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 188 | [azt_trainingid](#index-azt_trainingid) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 189 | [azt_year](#index-azt_year) |  |  |  | Yes |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 190 | [baseamount](#index-baseamount) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
+| 190 | [baseamount](#index-baseamount) | Amount | money |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
 | 191 | [billto_line1](#index-billto_line1) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 192 | [billto_line2](#index-billto_line2) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 193 | [billto_line3](#index-billto_line3) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -331,13 +331,13 @@ Total fields: **336**
 | 209 | [contactid](#index-contactid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10-plugin-source-code-analysis) |  |  |  |  |
 | 210 | [country](#index-country) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11-pcf-controls) |  |  |  |
 | 211 | [county](#index-county) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11-pcf-controls) |  |  |  |
-| 212 | [createdon](#index-createdon) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10-plugin-source-code-analysis) |  |  |  |  |
+| 212 | [createdon](#index-createdon) | Created On | datetime |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10-plugin-source-code-analysis) |  |  |  |  |
 | 213 | [crm3_expenseamount](#index-crm3_expenseamount) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 214 | [crm3_parentleadid](#index-crm3_parentleadid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 215 | [customerid](#index-customerid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [11](#10-plugin-source-code-analysis) |  |  |  |  |
 | 216 | [datefulfilled](#index-datefulfilled) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 217 | [defaultuomid](#index-defaultuomid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
-| 218 | [description](#index-description) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10-plugin-source-code-analysis) |  |  |  |  |
+| 218 | [description](#index-description) | Description | ntext |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10-plugin-source-code-analysis) |  |  |  |  |
 | 219 | [discountamount](#index-discountamount) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 220 | [discountpercentage](#index-discountpercentage) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 221 | [discounts](#index-discounts) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
@@ -345,7 +345,7 @@ Total fields: **336**
 | 223 | [estimatedclosedate](#index-estimatedclosedate) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
 | 224 | [estimatedvalue](#index-estimatedvalue) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 225 | [ext_amt](#index-ext_amt) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 226 | [extendedamount](#index-extendedamount) |  |  |  | No |  | true |  |  |  |  |  |  |  | [2](#3-views) |  | [1](#5-reports) |  |  |  | [13](#10-plugin-source-code-analysis) |  |  |  |  |
+| 226 | [extendedamount](#index-extendedamount) | Extended Amount | money |  | No | none | true |  |  |  |  |  |  |  | [2](#3-views) |  | [1](#5-reports) |  |  |  | [13](#10-plugin-source-code-analysis) |  |  |  |  |
 | 227 | [fetchxml](#index-fetchxml) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 228 | [filename](#index-filename) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 229 | [firstname](#index-firstname) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -367,23 +367,23 @@ Total fields: **336**
 | 245 | [isamount](#index-isamount) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 246 | [isfiscalperiodgoal](#index-isfiscalperiodgoal) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 247 | [isocurrencycode](#index-isocurrencycode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 248 | [ispriceoverridden](#index-ispriceoverridden) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10-plugin-source-code-analysis) |  |  |  |  |
-| 249 | [isproductoverridden](#index-isproductoverridden) |  |  |  | No |  | true |  |  |  |  |  |  |  | [2](#3-views) |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
+| 248 | [ispriceoverridden](#index-ispriceoverridden) | Pricing | bit |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10-plugin-source-code-analysis) |  |  |  |  |
+| 249 | [isproductoverridden](#index-isproductoverridden) | Select Product | bit |  | No | none | true |  |  |  |  |  |  |  | [2](#3-views) |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
 | 250 | [isrevenuesystemcalculated](#index-isrevenuesystemcalculated) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 251 | [jobtitle](#index-jobtitle) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 252 | [lastname](#index-lastname) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 253 | [manualdiscountamount](#index-manualdiscountamount) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  | [9](#10-plugin-source-code-analysis) |  |  |  |  |
+| 253 | [manualdiscountamount](#index-manualdiscountamount) | Manual Discount | money |  | No | none | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  | [9](#10-plugin-source-code-analysis) |  |  |  |  |
 | 254 | [metricid](#index-metricid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 255 | [mimetype](#index-mimetype) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 256 | [mobilephone](#index-mobilephone) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 257 | [modifiedon](#index-modifiedon) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
+| 257 | [modifiedon](#index-modifiedon) | Modified On | datetime |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
 | 258 | [name](#index-name) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [23](#10-plugin-source-code-analysis) |  |  |  |  |
 | 259 | [objectid](#index-objectid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
 | 260 | [objecttypecode](#index-objecttypecode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 261 | [opportunityid](#index-opportunityid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [32](#10-plugin-source-code-analysis) |  |  |  |  |
 | 262 | [opportunityproductid](#index-opportunityproductid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [14](#10-plugin-source-code-analysis) |  |  |  |  |
 | 263 | [originatingleadid](#index-originatingleadid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
-| 264 | [ownerid](#index-ownerid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [22](#10-plugin-source-code-analysis) |  |  |  |  |
+| 264 | [ownerid](#index-ownerid) | Owner | lookup |  | No | required | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [22](#10-plugin-source-code-analysis) |  |  |  |  |
 | 265 | [parentaccountid](#index-parentaccountid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
 | 266 | [parentcontactid](#index-parentcontactid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 267 | [parentcustomerid](#index-parentcustomerid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -392,29 +392,29 @@ Total fields: **336**
 | 270 | [partyid](#index-partyid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 271 | [phonenumber](#index-phonenumber) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 272 | [pricelevelid](#index-pricelevelid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 273 | [priceperunit](#index-priceperunit) |  |  |  | No |  | true |  |  |  |  |  |  |  | [2](#3-views) |  | [1](#5-reports) |  |  |  | [8](#10-plugin-source-code-analysis) |  |  |  |  |
+| 273 | [priceperunit](#index-priceperunit) | Price Per Unit | money |  | No | none | true |  |  |  |  |  |  |  | [2](#3-views) |  | [1](#5-reports) |  |  |  | [8](#10-plugin-source-code-analysis) |  |  |  |  |
 | 274 | [primarycontactid](#index-primarycontactid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 275 | [prod.productid](#index-prodproductid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 276 | [productdescription](#index-productdescription) |  |  |  | No |  | true |  |  |  |  |  |  |  | [2](#3-views) |  | [1](#5-reports) |  | [1](#7-workflows) |  | [13](#10-plugin-source-code-analysis) |  |  |  |  |
-| 277 | [productid](#index-productid) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) | [4](#3-views) |  | [1](#5-reports) |  |  |  | [33](#10-plugin-source-code-analysis) |  |  |  |  |
-| 278 | [productname](#index-productname) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
-| 279 | [productnumber](#index-productnumber) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  | [1](#5-reports) |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
-| 280 | [producttypecode](#index-producttypecode) |  |  |  | No |  | true |  |  |  |  |  |  |  | [2](#3-views) |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
-| 281 | [quantity](#index-quantity) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) | [2](#3-views) |  | [1](#5-reports) |  |  |  | [18](#10-plugin-source-code-analysis) |  |  |  |  |
-| 282 | [quantitybackordered](#index-quantitybackordered) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 283 | [quantitycancelled](#index-quantitycancelled) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 284 | [quantityshipped](#index-quantityshipped) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 276 | [productdescription](#index-productdescription) | Write-In Product | nvarchar |  | No | none | true |  |  |  |  |  |  |  | [2](#3-views) |  | [1](#5-reports) |  | [1](#7-workflows) |  | [13](#10-plugin-source-code-analysis) |  |  |  |  |
+| 277 | [productid](#index-productid) | Existing Product | lookup |  | No | none | true |  |  |  |  |  |  | [1](#2-forms) | [4](#3-views) |  | [1](#5-reports) |  |  |  | [33](#10-plugin-source-code-analysis) |  |  |  |  |
+| 278 | [productname](#index-productname) | Product Name | nvarchar |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
+| 279 | [productnumber](#index-productnumber) | Product Number | nvarchar |  | No | none | true |  |  |  |  |  |  |  |  |  | [1](#5-reports) |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
+| 280 | [producttypecode](#index-producttypecode) | Product type | picklist |  | No | required | true |  |  |  |  |  |  |  | [2](#3-views) |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
+| 281 | [quantity](#index-quantity) | Quantity | decimal |  | No | required | true |  |  |  |  |  |  | [1](#2-forms) | [2](#3-views) |  | [1](#5-reports) |  |  |  | [18](#10-plugin-source-code-analysis) |  |  |  |  |
+| 282 | [quantitybackordered](#index-quantitybackordered) | Quantity Back Ordered | decimal |  | No | none | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 283 | [quantitycancelled](#index-quantitycancelled) | Quantity Canceled | decimal |  | No | none | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 284 | [quantityshipped](#index-quantityshipped) | Quantity Shipped | decimal |  | No | none | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 285 | [queryentitytype](#index-queryentitytype) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 286 | [queueid](#index-queueid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 287 | [queueitemid](#index-queueitemid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 288 | [quotedetailid](#index-quotedetailid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [14](#10-plugin-source-code-analysis) |  |  |  |  |
+| 288 | [quotedetailid](#index-quotedetailid) | Quote Product Id | lookup |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [14](#10-plugin-source-code-analysis) |  |  |  |  |
 | 289 | [quoteid](#index-quoteid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [20](#10-plugin-source-code-analysis) |  |  |  |  |
 | 290 | [record1id](#index-record1id) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10-plugin-source-code-analysis) |  |  |  |  |
 | 291 | [record1roleid](#index-record1roleid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
 | 292 | [record2id](#index-record2id) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10-plugin-source-code-analysis) |  |  |  |  |
 | 293 | [record2roleid](#index-record2roleid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10-plugin-source-code-analysis) |  |  |  |  |
 | 294 | [regardingobjectid](#index-regardingobjectid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10-plugin-source-code-analysis) |  |  |  |  |
-| 295 | [requestdeliveryby](#index-requestdeliveryby) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
+| 295 | [requestdeliveryby](#index-requestdeliveryby) | Requested Delivery Date | datetime |  | No | none | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 296 | [roleid](#index-roleid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10-plugin-source-code-analysis) |  |  |  |  |
 | 297 | [rolluponlyfromchildgoals](#index-rolluponlyfromchildgoals) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 298 | [rollupqueryactualmoneyid](#index-rollupqueryactualmoneyid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -423,19 +423,19 @@ Total fields: **336**
 | 301 | [rolluprulestep1_3](#index-rolluprulestep1_3) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
 | 302 | [rolluprulestep1_4](#index-rolluprulestep1_4) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
 | 303 | [rolluprulestep1_5](#index-rolluprulestep1_5) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
-| 304 | [salesorderdetailid](#index-salesorderdetailid) |  |  |  | No |  | true |  |  |  |  |  |  |  | [2](#3-views) |  | [1](#5-reports) |  |  |  | [9](#10-plugin-source-code-analysis) |  |  |  |  |
-| 305 | [salesorderdetailname](#index-salesorderdetailname) |  |  |  | No |  | true |  |  |  |  |  |  |  | [2](#3-views) |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 306 | [salesorderid](#index-salesorderid) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) |  |  | [1](#5-reports) |  |  |  | [13](#10-plugin-source-code-analysis) |  |  |  |  |
-| 307 | [salesrepid](#index-salesrepid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
+| 304 | [salesorderdetailid](#index-salesorderdetailid) | Order Product | uniqueidentifier |  | No | required | true |  |  |  |  |  |  |  | [2](#3-views) |  | [1](#5-reports) |  |  |  | [9](#10-plugin-source-code-analysis) |  |  |  |  |
+| 305 | [salesorderdetailname](#index-salesorderdetailname) | Name | nvarchar |  | No | required | true |  |  |  |  |  |  |  | [2](#3-views) |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
+| 306 | [salesorderid](#index-salesorderid) | Order | lookup |  | No | required | true |  |  |  |  |  |  | [1](#2-forms) |  |  | [1](#5-reports) |  |  |  | [13](#10-plugin-source-code-analysis) |  |  |  |  |
+| 307 | [salesrepid](#index-salesrepid) | Salesperson | lookup |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 308 | [scheduledend](#index-scheduledend) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 309 | [shipments](#index-shipments) |  |  |  | No |  | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 310 | [shippingmethodcode](#index-shippingmethodcode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 311 | [shipto_line1](#index-shipto_line1) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 312 | [shipto_line2](#index-shipto_line2) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 313 | [shipto_line3](#index-shipto_line3) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 314 | [shipto_name](#index-shipto_name) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 315 | [shipto_postalcode](#index-shipto_postalcode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 316 | [shipto_stateorprovince](#index-shipto_stateorprovince) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
+| 311 | [shipto_line1](#index-shipto_line1) | Ship To Street 1 | nvarchar |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
+| 312 | [shipto_line2](#index-shipto_line2) | Ship To Street 2 | nvarchar |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
+| 313 | [shipto_line3](#index-shipto_line3) | Ship To Street 3 | nvarchar |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
+| 314 | [shipto_name](#index-shipto_name) | Ship To Name | nvarchar |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
+| 315 | [shipto_postalcode](#index-shipto_postalcode) | Ship To ZIP/Postal Code | nvarchar |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
+| 316 | [shipto_stateorprovince](#index-shipto_stateorprovince) | Ship To State/Province | nvarchar |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 317 | [state](#index-state) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11-pcf-controls) |  |  |  |
 | 318 | [statecode](#index-statecode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [20](#10-plugin-source-code-analysis) |  |  |  |  |
 | 319 | [stateorprovince](#index-stateorprovince) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -443,7 +443,7 @@ Total fields: **336**
 | 321 | [street](#index-street) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11-pcf-controls) |  |  |  |
 | 322 | [subject](#index-subject) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
 | 323 | [systemuserid](#index-systemuserid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10-plugin-source-code-analysis) |  |  |  |  |
-| 324 | [tax](#index-tax) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10-plugin-source-code-analysis) |  |  |  |  |
+| 324 | [tax](#index-tax) | Tax | money |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10-plugin-source-code-analysis) |  |  |  |  |
 | 325 | [teamid](#index-teamid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
 | 326 | [teamtype](#index-teamtype) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
 | 327 | [telephone1](#index-telephone1) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -451,8 +451,8 @@ Total fields: **336**
 | 329 | [tm.systemuserid](#index-tmsystemuserid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 330 | [to](#index-to) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 331 | [totalamount](#index-totalamount) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
-| 332 | [transactioncurrencyid](#index-transactioncurrencyid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10-plugin-source-code-analysis) |  |  |  |  |
-| 333 | [uomid](#index-uomid) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10-plugin-source-code-analysis) |  |  |  |  |
+| 332 | [transactioncurrencyid](#index-transactioncurrencyid) | Currency | lookup |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10-plugin-source-code-analysis) |  |  |  |  |
+| 333 | [uomid](#index-uomid) | Unit | lookup |  | No | none | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10-plugin-source-code-analysis) |  |  |  |  |
 | 334 | [value](#index-value) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11-pcf-controls) |  |  |  |
 | 335 | [zipcode](#index-zipcode) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11-pcf-controls) |  |  |  |
 | 336 | [{0}](#index-0) |  |  |  | No |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |

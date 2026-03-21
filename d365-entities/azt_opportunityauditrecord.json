@@ -5,7 +5,7 @@
   "objectType": "Custom",
   "ownershipType": "UserOwned",
   "auditEnabled": false,
-  "totalRows": 105853,
+  "totalRows": 105839,
   "lastUpdate": "2026-03-21 01:26:58",
   "primaryIdField": "azt_opportunityauditrecordid",
   "primaryNameField": "azt_name",

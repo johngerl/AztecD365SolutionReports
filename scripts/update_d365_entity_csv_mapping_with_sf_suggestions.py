@@ -40,7 +40,7 @@ SF_COLUMNS = [
     "sfSuggestedFieldApiName",
 ]
 
-D365_COLUMNS = ["displayName", "dataType", "requiredLevel", "isCustom"]
+D365_COLUMNS = ["displayName", "dataType", "requiredLevel", "isCustom", "lastUpdate"]
 REPORT_COLUMNS = ["picklistValues", "mappingSuggested"]
 
 # Reference count columns: CSV header -> count_field_references key

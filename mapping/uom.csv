@@ -1,6 +1,6 @@
-fieldName,displayName,dataType,requiredLevel,isCustom,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-createdon,Created On,datetime,none,False,,true,0,0,0,0,0,0,0,10,0,0,0,,,,,,
-modifiedon,Modified On,datetime,none,False,,true,0,0,0,0,0,0,0,4,0,0,0,,,,,,
-name,Name,nvarchar,required,False,,true,0,0,0,0,0,0,0,23,0,0,0,,,,,,
-quantity,Quantity,decimal,required,False,,true,0,0,0,0,0,0,0,18,0,0,0,,,,,,
-uomid,Unit,uniqueidentifier,required,False,,true,0,0,0,0,0,0,0,8,0,0,0,,,,,,
+fieldName,displayName,dataType,requiredLevel,isCustom,lastUpdate,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+createdon,Created On,datetime,none,False,,,true,0,0,0,0,0,0,0,10,0,0,0,,,,,,
+modifiedon,Modified On,datetime,none,False,,,true,0,0,0,0,0,0,0,4,0,0,0,,,,,,
+name,Name,nvarchar,required,False,,,true,0,0,0,0,0,0,0,23,0,0,0,,,,,,
+quantity,Quantity,decimal,required,False,,,true,0,0,0,0,0,0,0,18,0,0,0,,,,,,
+uomid,Unit,uniqueidentifier,required,False,,,true,0,0,0,0,0,0,0,8,0,0,0,,,,,,

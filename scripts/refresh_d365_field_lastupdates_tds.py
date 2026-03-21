@@ -158,6 +158,47 @@ def query_field_last_update(conn, entity_name, field_name, is_string_type):
 
 
 # ---------------------------------------------------------------------------
+# Entity-Level Query
+# ---------------------------------------------------------------------------
+
+def query_entity_stats(conn, entity_name):
+    """Query total row count and MAX(modifiedon) for the entity."""
+    cursor = conn.cursor()
+    try:
+        cursor.execute(f"SELECT COUNT(*), MAX(modifiedon) FROM [{entity_name}]")
+        row = cursor.fetchone()
+        if row:
+            total_rows = row[0] or 0
+            last_update = row[1]
+            if last_update and isinstance(last_update, datetime):
+                last_update = last_update.strftime("%Y-%m-%d %H:%M:%S")
+            elif last_update:
+                last_update = str(last_update)
+            else:
+                last_update = "Never"
+            return total_rows, last_update, None
+        return 0, "Never", None
+    except pyodbc.Error as e:
+        return 0, "Error", str(e)[:200]
+    finally:
+        cursor.close()
+
+
+def insert_after_key(od, after_key, new_key, new_value):
+    """Insert a key-value pair into an OrderedDict after a specific key."""
+    items = list(od.items())
+    new_items = []
+    for k, v in items:
+        new_items.append((k, v))
+        if k == after_key:
+            new_items.append((new_key, new_value))
+    # If after_key not found or new_key already existed, ensure it's set
+    od.clear()
+    for k, v in new_items:
+        od[k] = v
+
+
+# ---------------------------------------------------------------------------
 # Entity Processing
 # ---------------------------------------------------------------------------
 
@@ -180,6 +221,17 @@ def process_entity(config, access_token, entity_json_path, perf_log):
     except Exception as e:
         print(f"  Connection failed for {entity_name}: {e}", file=sys.stderr)
         return False
+
+    # Query entity-level stats and insert after auditEnabled
+    total_rows, entity_last_update, entity_err = query_entity_stats(conn, entity_name)
+    if entity_err:
+        print(f"    Entity stats query error: {entity_err}", file=sys.stderr)
+    # Remove existing keys if present so insert_after_key places them correctly
+    data.pop("totalRows", None)
+    data.pop("lastUpdate", None)
+    insert_after_key(data, "auditEnabled", "totalRows", total_rows)
+    insert_after_key(data, "totalRows", "lastUpdate", entity_last_update)
+    print(f"  Entity stats: {total_rows} rows, last update: {entity_last_update}")
 
     queried = 0
     skipped = 0

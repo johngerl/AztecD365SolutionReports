@@ -1,6 +1,6 @@
 Generate field usage report(s) from d365-entities/*.json and mapping/*.csv.
 
-This is Step 5 of the pipeline. It reads from d365-entities/*.json (not SolutionExtract/ directly) and mapping/*.csv. Run Steps 1-4 first if the JSON, CSV, or SF suggestion data is stale.
+This is Step 6 of the pipeline. It reads from d365-entities/*.json (not SolutionExtract/ directly) and mapping/*.csv. Run Steps 1-5 first if the JSON, CSV, or SF suggestion data is stale.
 
 If `$ARGUMENTS` is empty, run for all entities. Otherwise run for the specified entity.
 
@@ -12,11 +12,11 @@ else
   ARG="$ARGUMENTS"
 fi
 
-python scripts/generate_d365_report_from_json_and_csv_step_05.py $ARG
+python scripts/generate_d365_report_from_json_and_csv.py $ARG
 ```
 
 After completion, report:
 - Number of reports generated (count files in reports/)
 - Any warnings or errors from the run
 
-Note: This script reads mapping/*.csv for display only. To update SF suggestions in the CSVs, run `/update-d365-csv-with-sf` (Step 4) first.
+Note: This script reads mapping/*.csv for display only. To update SF suggestions in the CSVs, run `/update-d365-csv-with-sf` (Step 5) first.

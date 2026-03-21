@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-generate_d365_entity_json_from_solution_step_01.py
+generate_d365_entity_json_from_solution.py
 
 Step 1 of the pipeline.
 
@@ -11,9 +11,9 @@ and writes enriched entity JSON with entity-level sections and per-field referen
 No external dependencies beyond Python 3.6+ stdlib.
 
 Usage:
-    python generate_d365_entity_json_from_solution_step_01.py account
-    python generate_d365_entity_json_from_solution_step_01.py --all
-    python generate_d365_entity_json_from_solution_step_01.py --all --output-dir PATH
+    python generate_d365_entity_json_from_solution.py account
+    python generate_d365_entity_json_from_solution.py --all
+    python generate_d365_entity_json_from_solution.py --all --output-dir PATH
 """
 
 import csv

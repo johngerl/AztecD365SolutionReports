@@ -12,7 +12,7 @@ else
   ARG="$ARGUMENTS"
 fi
 
-python scripts/generate_d365_entity_json_from_solution_step_01.py $ARG
+python scripts/generate_d365_entity_json_from_solution.py $ARG
 ```
 
 After completion, report:

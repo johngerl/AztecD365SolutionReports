@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 """
-update_d365_entity_csv_mapping_with_sf_suggestions_step_04.py
+update_d365_entity_csv_mapping_with_sf_suggestions.py
 
-Step 4 of the pipeline. Run steps 1-3 first.
+Step 5 of the pipeline. Run steps 1-4 first.
 
 Reads enriched D365 entity JSON from d365-entities/, loads SF entity data
 from salesforce-entities/, and updates mapping CSVs with SF suggestions
 and reference counts.
 
 Usage:
-    python update_d365_entity_csv_mapping_with_sf_suggestions_step_04.py <entity> [--mapping-dir <path>]
-    python update_d365_entity_csv_mapping_with_sf_suggestions_step_04.py --all
+    python update_d365_entity_csv_mapping_with_sf_suggestions.py <entity> [--mapping-dir <path>]
+    python update_d365_entity_csv_mapping_with_sf_suggestions.py --all
 """
 
 import csv

@@ -1,7 +1,7 @@
 fieldName,displayName,dataType,requiredLevel,isCustom,lastUpdate,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-businessunitid,Business Unit,lookup,required,False,,,true,0,0,0,0,0,0,0,8,0,0,0,,,,,,
-createdon,Created On,datetime,none,False,,,true,0,0,0,0,0,0,0,10,0,0,0,,,,,,
-description,Description,nvarchar,required,False,,,true,0,0,0,0,0,0,0,7,0,0,0,,,,,,
-modifiedon,Modified On,datetime,none,False,,,true,0,0,0,0,0,0,0,4,0,0,0,,,,,,
-name,Name,nvarchar,required,False,,,true,0,0,0,0,0,0,0,23,0,0,0,,,,,,
-roleid,Role,uniqueidentifier,required,False,,,true,0,0,0,0,0,0,0,6,0,0,0,,,,,,
+businessunitid,Business Unit,lookup,required,False,2026-03-21 05:15:53,,true,0,0,0,0,0,0,0,8,0,0,0,,,,,,
+createdon,Created On,datetime,none,False,Skipped (createdon),,true,0,0,0,0,0,0,0,10,0,0,0,,,,,,
+description,Description,nvarchar,required,False,2026-03-21 04:10:27,,true,0,0,0,0,0,0,0,7,0,0,0,,,,,,
+modifiedon,Modified On,datetime,none,False,Skipped (modifiedon),,true,0,0,0,0,0,0,0,4,0,0,0,,,,,,
+name,Name,nvarchar,required,False,2026-03-21 05:15:53,,true,0,0,0,0,0,0,0,23,0,0,0,,,,,,
+roleid,Role,uniqueidentifier,required,False,2026-03-21 05:15:53,,true,0,0,0,0,0,0,0,6,0,0,0,,,,,,

@@ -1,7 +1,7 @@
 fieldName,displayName,dataType,requiredLevel,isCustom,lastUpdate,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-createdon,Created On,datetime,none,False,,,true,0,0,0,0,0,0,0,10,0,0,0,,,,,,
-isocurrencycode,Currency Code,nvarchar,required,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-modifiedon,Modified On,datetime,none,False,,,true,0,0,0,0,0,0,0,4,0,0,0,,,,,,
-statecode,Status,picklist,required,False,,,true,0,0,0,0,0,0,0,20,0,0,0,,,,,,
-statuscode,Status Reason,picklist,none,False,,,true,0,0,0,0,0,0,0,6,0,0,0,,,,,,
-transactioncurrencyid,Transaction Currency,uniqueidentifier,required,False,,,true,0,0,0,0,0,0,0,8,0,9,0,,,,,,
+createdon,Created On,datetime,none,False,Skipped (createdon),,true,0,0,0,0,0,0,0,10,0,0,0,,,,,,
+isocurrencycode,Currency Code,nvarchar,required,False,2018-12-21 09:21:31,,true,0,0,0,0,0,0,0,1,0,0,0,,,,,,
+modifiedon,Modified On,datetime,none,False,Skipped (modifiedon),,true,0,0,0,0,0,0,0,4,0,0,0,,,,,,
+statecode,Status,picklist,required,False,2018-12-21 09:21:31,,true,0,0,0,0,0,0,0,20,0,0,0,,,,,,
+statuscode,Status Reason,picklist,none,False,2018-12-21 09:21:31,,true,0,0,0,0,0,0,0,6,0,0,0,,,,,,
+transactioncurrencyid,Transaction Currency,uniqueidentifier,required,False,2018-12-21 09:21:31,,true,0,0,0,0,0,0,0,8,0,9,0,,,,,,

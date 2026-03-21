@@ -222,6 +222,7 @@ def write_mapping_csv(mapping_dir, entity_name, fields, sf_mapping,
             "dataType": field.get('data_type', ''),
             "requiredLevel": field.get('required_level', ''),
             "isCustom": str(field.get('is_custom', False)),
+            "lastUpdate": field.get('last_update', ''),
             "picklistValues": pv_str,
             "mappingSuggested": "true" if suggested else "false",
         }

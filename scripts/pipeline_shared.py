@@ -59,6 +59,7 @@ def adapt_json_fields(json_fields):
         'max_length': jf.get('maxLength'),
         'is_audit_enabled': jf.get('auditEnabled', False),
         'is_secured': jf.get('fieldSecurity', False),
+        'last_update': jf.get('lastUpdate', ''),
         'picklist_values': jf.get('picklistValues') or [],
     } for jf in json_fields]
 

@@ -1,6 +1,6 @@
-Run the full pipeline: generate D365 JSON, enrich from API, extract CSV, refresh SF entities, update SF suggestions, and generate reports.
+Run the full pipeline: generate D365 JSON, enrich from API, refresh lastUpdate via TDS, extract CSV, refresh SF entities, update SF suggestions, and generate reports.
 
-Runs Steps 1 → 2 → 3 → 4 → 5 → 6 in sequence.
+Runs Steps 1 → 2 → 3 → 4 → 5 → 6 → 7 in sequence.
 
 If `$ARGUMENTS` is empty, run for all entities. Otherwise run for the specified entity.
 
@@ -12,27 +12,31 @@ if [ -z "$ARGUMENTS" ]; then
   echo "Full Pipeline: All Entities"
   echo "============================================================"
   echo ""
-  echo "Step 1/6: Generating D365 entity JSON from solution..."
+  echo "Step 1/7: Generating D365 entity JSON from solution..."
   echo "------------------------------------------------------------"
   python scripts/generate_d365_entity_json_from_solution.py --all
   echo ""
-  echo "Step 2/6: Enriching D365 entity JSON from Dataverse API..."
+  echo "Step 2/7: Enriching D365 entity JSON from Dataverse API..."
   echo "------------------------------------------------------------"
   python scripts/enrich_d365_entity_json_from_api.py --all
   echo ""
-  echo "Step 3/6: Generating D365 entity CSV mappings..."
+  echo "Step 3/7: Refreshing lastUpdate via Dataverse TDS..."
+  echo "------------------------------------------------------------"
+  python scripts/refresh_d365_field_lastupdates_tds.py --all
+  echo ""
+  echo "Step 4/7: Generating D365 entity CSV mappings..."
   echo "------------------------------------------------------------"
   python scripts/generate_d365_entity_csv_mapping.py --all
   echo ""
-  echo "Step 4/6: Generating SF entity JSON from API..."
+  echo "Step 5/7: Generating SF entity JSON from API..."
   echo "------------------------------------------------------------"
   python scripts/generate_sf_entity_json_from_api.py --all
   echo ""
-  echo "Step 5/6: Updating D365 CSV mappings with SF suggestions..."
+  echo "Step 6/7: Updating D365 CSV mappings with SF suggestions..."
   echo "------------------------------------------------------------"
   python scripts/update_d365_entity_csv_mapping_with_sf_suggestions.py --all
   echo ""
-  echo "Step 6/6: Generating D365 field usage reports..."
+  echo "Step 7/7: Generating D365 field usage reports..."
   echo "------------------------------------------------------------"
   python scripts/generate_d365_report_from_json_and_csv.py --all
 else
@@ -43,27 +47,31 @@ else
   echo "Full Pipeline: $ARG"
   echo "============================================================"
   echo ""
-  echo "Step 1/6: Generating D365 entity JSON from solution..."
+  echo "Step 1/7: Generating D365 entity JSON from solution..."
   echo "------------------------------------------------------------"
   python scripts/generate_d365_entity_json_from_solution.py $ARG
   echo ""
-  echo "Step 2/6: Enriching D365 entity JSON from Dataverse API..."
+  echo "Step 2/7: Enriching D365 entity JSON from Dataverse API..."
   echo "------------------------------------------------------------"
   python scripts/enrich_d365_entity_json_from_api.py $ARG
   echo ""
-  echo "Step 3/6: Generating D365 entity CSV mapping..."
+  echo "Step 3/7: Refreshing lastUpdate via Dataverse TDS..."
+  echo "------------------------------------------------------------"
+  python scripts/refresh_d365_field_lastupdates_tds.py $ARG
+  echo ""
+  echo "Step 4/7: Generating D365 entity CSV mapping..."
   echo "------------------------------------------------------------"
   python scripts/generate_d365_entity_csv_mapping.py $ARG
   echo ""
-  echo "Step 4/6: Generating SF entity JSON from API ($SF_NAME)..."
+  echo "Step 5/7: Generating SF entity JSON from API ($SF_NAME)..."
   echo "------------------------------------------------------------"
   python scripts/generate_sf_entity_json_from_api.py $SF_NAME
   echo ""
-  echo "Step 5/6: Updating D365 CSV mapping with SF suggestions..."
+  echo "Step 6/7: Updating D365 CSV mapping with SF suggestions..."
   echo "------------------------------------------------------------"
   python scripts/update_d365_entity_csv_mapping_with_sf_suggestions.py $ARG
   echo ""
-  echo "Step 6/6: Generating D365 field usage report..."
+  echo "Step 7/7: Generating D365 field usage report..."
   echo "------------------------------------------------------------"
   python scripts/generate_d365_report_from_json_and_csv.py $ARG
 fi
@@ -77,6 +85,7 @@ echo "============================================================"
 After completion, report:
 - Number of entity JSONs generated
 - Number of entity JSONs enriched from API
+- Number of entities refreshed via TDS
 - Number of mapping CSVs updated
 - Number of reports generated
 - Any warnings or errors from the run

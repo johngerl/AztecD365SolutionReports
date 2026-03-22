@@ -9,13 +9,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "WhoId",
@@ -23,13 +17,7 @@
       "required": "No",
       "relatedTo": "Contact, Lead",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "WhatId",
@@ -37,13 +25,7 @@
       "required": "No",
       "relatedTo": "Account, ApprovalSubmission, ApprovalSubmissionDetail, ApprovalWorkItem, Asset, AssetRelationship, CS_Engagement__c, CalculationMatrix, CalculationMatrixVersion, CalculationProcedure, CalculationProcedureVersion, Campaign, Case, ChangeRequest, CommSubscriptionConsent, ContactRequest, Contract, ContractLineItem, EngagementAttendee, EngagementInteraction, EngagementTopic, Entitlement, ExpressionSet, ExpressionSetVersion, Help_Desk__c, Image, Incident, ListEmail, Location, Opportunity, Order, PartyConsent, Problem, ProcessException, Product2, Quote, RecordAlert, Sales_Lead__c, ServiceContract, Solution, WorkOrder, WorkOrderLineItem, WorkPlan, WorkPlanTemplate, WorkPlanTemplateEntry, WorkStep, WorkStepTemplate, dfsle__AgreementConfiguration__c, dfsle__BulkList__c, dfsle__BulkStatus__c, dfsle__CustomParameterMap__c, dfsle__EnvelopeConfiguration__c, dfsle__EnvelopeStatus__c, dfsle__GenTemplate__c, dfsle__Log__c, dfsle__RecipientStatus__c",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "WhoCount",
@@ -51,13 +33,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "WhatCount",
@@ -65,13 +41,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Subject",
@@ -105,13 +75,7 @@
           "value": "Other",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "appointment",
-      "d365SuggestedDisplayName": "Subject",
-      "d365SuggestedInternalName": "subject"
+      ]
     },
     {
       "fieldName": "Location",
@@ -119,13 +83,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "appointment",
-      "d365SuggestedDisplayName": "Location",
-      "d365SuggestedInternalName": "location"
+      "picklistValues": null
     },
     {
       "fieldName": "IsAllDayEvent",
@@ -133,13 +91,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "appointment",
-      "d365SuggestedDisplayName": "All Day Event",
-      "d365SuggestedInternalName": "isalldayevent"
+      "picklistValues": null
     },
     {
       "fieldName": "ActivityDateTime",
@@ -147,13 +99,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "ActivityDate",
@@ -161,13 +107,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "DurationInMinutes",
@@ -175,13 +115,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "StartDateTime",
@@ -189,13 +123,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "appointment",
-      "d365SuggestedDisplayName": "Start Time",
-      "d365SuggestedInternalName": "scheduledstart"
+      "picklistValues": null
     },
     {
       "fieldName": "EndDateTime",
@@ -203,13 +131,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "appointment",
-      "d365SuggestedDisplayName": "End Time",
-      "d365SuggestedInternalName": "scheduledend"
+      "picklistValues": null
     },
     {
       "fieldName": "EndDate",
@@ -217,13 +139,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Description",
@@ -231,13 +147,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 32000,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "appointment",
-      "d365SuggestedDisplayName": "Description",
-      "d365SuggestedInternalName": "description"
+      "picklistValues": null
     },
     {
       "fieldName": "AccountId",
@@ -245,13 +155,7 @@
       "required": "No",
       "relatedTo": "Account",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "OwnerId",
@@ -259,13 +163,7 @@
       "required": "No",
       "relatedTo": "Calendar, User",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "appointment",
-      "d365SuggestedDisplayName": "Owner",
-      "d365SuggestedInternalName": "ownerid"
+      "picklistValues": null
     },
     {
       "fieldName": "Type",
@@ -294,13 +192,7 @@
           "value": "Call",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "IsPrivate",
@@ -308,13 +200,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "appointment",
-      "d365SuggestedDisplayName": "Is Private",
-      "d365SuggestedInternalName": "ismapiprivate"
+      "picklistValues": null
     },
     {
       "fieldName": "ShowAs",
@@ -338,13 +224,7 @@
           "value": "Free",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "IsDeleted",
@@ -352,13 +232,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "IsChild",
@@ -366,13 +240,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "IsGroupEvent",
@@ -380,13 +248,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "GroupEventType",
@@ -415,13 +277,7 @@
           "value": "3",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "CreatedDate",
@@ -429,13 +285,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "appointment",
-      "d365SuggestedDisplayName": "Created On",
-      "d365SuggestedInternalName": "createdon"
+      "picklistValues": null
     },
     {
       "fieldName": "CreatedById",
@@ -443,13 +293,7 @@
       "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "appointment",
-      "d365SuggestedDisplayName": "Created By",
-      "d365SuggestedInternalName": "createdby"
+      "picklistValues": null
     },
     {
       "fieldName": "LastModifiedDate",
@@ -457,13 +301,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "appointment",
-      "d365SuggestedDisplayName": "Modified On",
-      "d365SuggestedInternalName": "modifiedon"
+      "picklistValues": null
     },
     {
       "fieldName": "LastModifiedById",
@@ -471,13 +309,7 @@
       "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "appointment",
-      "d365SuggestedDisplayName": "Modified By",
-      "d365SuggestedInternalName": "modifiedby"
+      "picklistValues": null
     },
     {
       "fieldName": "SystemModstamp",
@@ -485,13 +317,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "IsArchived",
@@ -499,13 +325,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "RecurrenceActivityId",
@@ -513,13 +333,7 @@
       "required": "No",
       "relatedTo": "Event",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "IsRecurrence",
@@ -527,13 +341,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "RecurrenceStartDateTime",
@@ -541,13 +349,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "RecurrenceEndDateOnly",
@@ -555,13 +357,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "RecurrenceTimeZoneSidKey",
@@ -2690,13 +2486,7 @@
           "value": "Pacific/Pago_Pago",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "RecurrenceType",
@@ -2740,13 +2530,7 @@
           "value": "RecursYearlyNth",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "RecurrenceInterval",
@@ -2754,13 +2538,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "RecurrenceDayOfWeekMask",
@@ -2768,13 +2546,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "RecurrenceDayOfMonth",
@@ -2782,13 +2554,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "RecurrenceInstance",
@@ -2822,13 +2588,7 @@
           "value": "Last",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "RecurrenceMonthOfYear",
@@ -2897,13 +2657,7 @@
           "value": "December",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "ReminderDateTime",
@@ -2911,13 +2665,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "IsReminderSet",
@@ -2925,13 +2673,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "EventSubtype",
@@ -2945,13 +2687,7 @@
           "value": "Event",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "IsRecurrence2Exclusion",
@@ -2959,13 +2695,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Recurrence2PatternText",
@@ -2973,13 +2703,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 512,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Recurrence2PatternVersion",
@@ -2998,13 +2722,7 @@
           "value": "2",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "IsRecurrence2",
@@ -3012,13 +2730,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "IsRecurrence2Exception",
@@ -3026,13 +2738,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Recurrence2PatternStartDate",
@@ -3040,13 +2746,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Recurrence2PatternTimeZone",
@@ -3054,13 +2754,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "rcsfl__CALL_UNIQUE_ID__c",
@@ -3068,13 +2762,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "rcsfl__CALL_UUID__c",
@@ -3082,13 +2770,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "rcsfl__RC_Logging_Type__c",
@@ -3096,13 +2778,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "rcsfl__Recording_Information__c",
@@ -3110,13 +2786,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "rcsfl__call_end_time__c",
@@ -3124,13 +2794,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "rcsfl__call_start_time__c",
@@ -3138,13 +2802,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "rcsfl__callee_location__c",
@@ -3152,13 +2810,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "rcsfl__callee_name__c",
@@ -3166,13 +2818,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "rcsfl__caller_location__c",
@@ -3180,13 +2826,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "rcsfl__caller_name__c",
@@ -3194,13 +2834,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "rcsfl__external_whoid__c",
@@ -3208,13 +2842,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "rcsfl__from_number__c",
@@ -3222,13 +2850,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 40,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "rcsfl__hvs_disposition__c",
@@ -3262,13 +2884,7 @@
           "value": "Unqualified",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "rcsfl__key__c",
@@ -3276,13 +2892,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "rcsfl__to_number__c",
@@ -3290,13 +2900,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 40,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "rcsfl__Call_Recording__c",
@@ -3304,13 +2908,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 1300,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Sales_Activity_Type__c",
@@ -3329,13 +2927,7 @@
           "value": "Discovery Meeting",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "Activity_GUID__c",
@@ -3343,13 +2935,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Topic__c",
@@ -3357,13 +2943,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Subject_Prefix__c",
@@ -3371,13 +2951,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     }
   ]
 }

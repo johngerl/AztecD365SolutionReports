@@ -9,13 +9,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "IsDeleted",
@@ -23,13 +17,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Name",
@@ -37,13 +25,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 80,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "CreatedDate",
@@ -51,13 +33,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "CreatedById",
@@ -65,13 +41,7 @@
       "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "LastModifiedDate",
@@ -79,13 +49,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "LastModifiedById",
@@ -93,13 +57,7 @@
       "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "SystemModstamp",
@@ -107,13 +65,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Account__c",
@@ -121,13 +73,7 @@
       "required": "Yes",
       "relatedTo": "Account",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Type__c",
@@ -156,13 +102,7 @@
           "value": "Shipping",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "Address_Phone__c",
@@ -170,13 +110,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 40,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Address__Street__s",
@@ -184,13 +118,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Address__City__s",
@@ -198,13 +126,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 40,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Address__PostalCode__s",
@@ -212,13 +134,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 20,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Address__StateCode__s",
@@ -1907,13 +1823,7 @@
           "value": "33",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "Address__CountryCode__s",
@@ -3117,13 +3027,7 @@
           "value": "ZW",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "Address__Latitude__s",
@@ -3131,13 +3035,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Address__Longitude__s",
@@ -3145,13 +3043,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Address__GeocodeAccuracy__s",
@@ -3215,13 +3107,7 @@
           "value": "Unknown",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "Address__c",
@@ -3229,13 +3115,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "CRM_Account_Number__c",
@@ -3243,13 +3123,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "CRM_Address_Number__c",
@@ -3257,13 +3131,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Contact__c",
@@ -3271,13 +3139,7 @@
       "required": "No",
       "relatedTo": "Contact",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Account_Name__c",
@@ -3285,13 +3147,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 1300,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Is_Partner_Account_Address__c",
@@ -3299,13 +3155,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Parent_Account_Id__c",
@@ -3313,13 +3163,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 1300,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Account_Address_GUID__c",
@@ -3327,13 +3171,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     }
   ]
 }

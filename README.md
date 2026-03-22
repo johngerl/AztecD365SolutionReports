@@ -9,13 +9,14 @@ This analysis feeds a data migration plan for re-platforming from D365CE to Sale
 ```
 .
 ├── scripts/
-│   ├── generate_d365_entity_json_from_solution.py                # Step 1: Enriched D365 entity JSON builder
-│   ├── enrich_d365_entity_json_from_api.py                       # Step 2: Enrich stub fields from Dataverse API
-│   ├── generate_d365_entity_csv_mapping.py                       # Step 3: Extract mapping CSV from enriched JSON
-│   ├── generate_sf_entity_json_from_api.py                       # Step 4: Salesforce schema refresh via REST API
-│   ├── update_d365_entity_csv_mapping_with_sf_suggestions.py     # Step 5: Update CSVs with SF suggestions
-│   ├── generate_d365_report_from_json_and_csv.py                 # Step 6: Field usage Markdown reports
-│   └── pipeline_shared.py                                        # Shared utility functions (steps 5 & 6)
+│   ├── generate_sf_entity_json_from_api.py                       # Step 1: Salesforce schema refresh via REST API
+│   ├── generate_d365_entity_json_from_solution.py                # Step 2: Enriched D365 entity JSON builder
+│   ├── enrich_d365_entity_json_from_api.py                       # Step 3: Enrich stub fields from Dataverse API
+│   ├── refresh_d365_field_lastupdates_tds.py                     # Step 4: Refresh lastUpdate via Dataverse TDS
+│   ├── update_d365_entity_csv_mapping_with_sf_suggestions.py     # Step 5: Update JSONs/CSVs with SF suggestions
+│   ├── generate_d365_entity_csv_mapping.py                       # Step 6: Extract mapping CSV from enriched JSON
+│   ├── generate_d365_report_from_json_and_csv.py                 # Step 7: Field usage Markdown reports
+│   └── pipeline_shared.py                                        # Shared utility functions (steps 5 & 7)
 ├── reports/                       # Generated Markdown reports (94 entities)
 ├── mapping/                       # Field mapping CSVs with SF columns (94 entities)
 ├── d365-entities/                 # Enriched D365 entity JSON (94 entities)
@@ -35,9 +36,22 @@ This analysis feeds a data migration plan for re-platforming from D365CE to Sale
 
 ## Scripts
 
-Pipeline scripts run in order: Step 1 → Step 2 → Step 3 → Step 4 → Step 5 → Step 6.
+Pipeline scripts run in order: Step 1 → 2 → 3 → 4 → 5 → 6 → 7.
 
-### Step 1: generate_d365_entity_json_from_solution.py
+### Step 1: generate_sf_entity_json_from_api.py
+
+Refreshes Salesforce object schema JSON from the org via REST API (SObject Describe). No dependencies on other scripts.
+
+```bash
+python scripts/generate_sf_entity_json_from_api.py Account   # single SF object
+python scripts/generate_sf_entity_json_from_api.py --all     # all existing objects
+```
+
+**Outputs:** `salesforce-entities/{object}.json`
+
+**Prerequisites:** Salesforce Connected App must have `Manage user data via APIs (api)` OAuth scope configured. Credentials are read from `.mcp.json` (`salesforce` server → `SALESFORCE_CLIENT_ID`, `SALESFORCE_CLIENT_SECRET`, `SALESFORCE_INSTANCE_URL`).
+
+### Step 2: generate_d365_entity_json_from_solution.py
 
 Builds enriched per-entity JSON with 13 section datasets (forms, views, charts, reports, dashboards, workflows, JavaScript, formulas, plugins, PCF controls, relationships, ribbon, conflicts).
 
@@ -48,9 +62,9 @@ python scripts/generate_d365_entity_json_from_solution.py --all     # all entiti
 
 **Outputs:** `d365-entities/{entity}.json`
 
-### Step 2: enrich_d365_entity_json_from_api.py
+### Step 3: enrich_d365_entity_json_from_api.py
 
-Queries the Dataverse Web API to enrich stub fields (those with empty dataType) with metadata: dataType, displayName, description, requiredLevel, maxLength, isCustom. Fields already populated by Step 1 are left untouched.
+Queries the Dataverse Web API to enrich stub fields (those with empty dataType) with metadata: dataType, displayName, description, requiredLevel, maxLength, isCustom. Fields already populated by Step 2 are left untouched.
 
 ```bash
 python scripts/enrich_d365_entity_json_from_api.py account         # single entity
@@ -62,9 +76,33 @@ python scripts/enrich_d365_entity_json_from_api.py account --dry-run
 
 **Prerequisites:** `msal` (pip install) and `scripts/config.local.json` with Dataverse credentials.
 
-### Step 3: generate_d365_entity_csv_mapping.py
+### Step 4: refresh_d365_field_lastupdates_tds.py
 
-Extracts mapping CSV from enriched entity JSON. Preserves confirmed SF columns, clears suggested columns.
+Refreshes entity-level and field-level lastUpdate values by querying the D365 Dataverse TDS endpoint.
+
+```bash
+python scripts/refresh_d365_field_lastupdates_tds.py account   # single entity
+python scripts/refresh_d365_field_lastupdates_tds.py --all     # all entities
+```
+
+**Outputs:** `d365-entities/{entity}.json` (with lastUpdate values)
+
+**Prerequisites:** `pyodbc`, `msal`, ODBC Driver 18 for SQL Server, and `scripts/config.local.json` with Dataverse credentials.
+
+### Step 5: update_d365_entity_csv_mapping_with_sf_suggestions.py
+
+5-tier SF field matching (exact, fuzzy, synonym, rule-based, AI). Writes suggestions to `d365-entities/*.json` (source of truth) and updates mapping CSVs.
+
+```bash
+python scripts/update_d365_entity_csv_mapping_with_sf_suggestions.py account   # single entity
+python scripts/update_d365_entity_csv_mapping_with_sf_suggestions.py --all     # all entities
+```
+
+**Outputs:** `d365-entities/{entity}.json` (with sfSuggested* fields), `mapping/{entity}.csv`
+
+### Step 6: generate_d365_entity_csv_mapping.py
+
+Extracts mapping CSV from enriched entity JSON. Preserves confirmed SF columns, reads sfSuggested* from JSON.
 
 ```bash
 python scripts/generate_d365_entity_csv_mapping.py account   # single entity
@@ -73,31 +111,7 @@ python scripts/generate_d365_entity_csv_mapping.py --all     # all entities
 
 **Outputs:** `mapping/{entity}.csv`
 
-### Step 4: generate_sf_entity_json_from_api.py
-
-Refreshes Salesforce object schema JSON from the org via REST API (SObject Describe). Preserves existing d365 cross-reference fields when updating.
-
-```bash
-python scripts/generate_sf_entity_json_from_api.py Account   # single SF object
-python scripts/generate_sf_entity_json_from_api.py --all     # all existing objects
-```
-
-**Outputs:** `salesforce-entities/{object}.json`
-
-**Prerequisites:** Salesforce Connected App must have `Manage user data via APIs (api)` OAuth scope configured. Credentials are read from `.mcp.json` (`salesforce` server → `SALESFORCE_CLIENT_ID`, `SALESFORCE_CLIENT_SECRET`, `SALESFORCE_INSTANCE_URL`).
-
-### Step 5: update_d365_entity_csv_mapping_with_sf_suggestions.py
-
-Updates mapping CSVs with SF suggestions and per-field reference counts sourced from `salesforce-entities/` JSON schemas.
-
-```bash
-python scripts/update_d365_entity_csv_mapping_with_sf_suggestions.py account   # single entity
-python scripts/update_d365_entity_csv_mapping_with_sf_suggestions.py --all     # all entities
-```
-
-**Outputs:** `mapping/{entity}.csv` (with SF suggestion columns populated)
-
-### Step 6: generate_d365_report_from_json_and_csv.py
+### Step 7: generate_d365_report_from_json_and_csv.py
 
 Generates comprehensive Markdown field usage reports with 14 sections. Reads mapping CSVs for SF column display (read-only).
 

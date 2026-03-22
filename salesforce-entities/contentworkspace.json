@@ -9,13 +9,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Name",
@@ -23,13 +17,7 @@
       "required": "Yes",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Description",
@@ -37,13 +25,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 500,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "TagModel",
@@ -67,13 +49,7 @@
           "value": "R",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "CreatedById",
@@ -81,13 +57,7 @@
       "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "CreatedDate",
@@ -95,13 +65,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "LastModifiedById",
@@ -109,13 +73,7 @@
       "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "SystemModstamp",
@@ -123,13 +81,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "LastModifiedDate",
@@ -137,13 +89,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "DefaultRecordTypeId",
@@ -151,13 +97,7 @@
       "required": "No",
       "relatedTo": "RecordType",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "IsRestrictContentTypes",
@@ -165,13 +105,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "IsRestrictLinkedContentTypes",
@@ -179,13 +113,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "WorkspaceType",
@@ -204,13 +132,7 @@
           "value": "B",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "ShouldAddCreatorMembership",
@@ -218,13 +140,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "LastWorkspaceActivityDate",
@@ -232,13 +148,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "RootContentFolderId",
@@ -246,13 +156,7 @@
       "required": "No",
       "relatedTo": "ContentFolder",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "NamespacePrefix",
@@ -260,13 +164,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 15,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "DeveloperName",
@@ -274,13 +172,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 80,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "WorkspaceImageId",
@@ -288,13 +180,7 @@
       "required": "No",
       "relatedTo": "ContentAsset",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     }
   ]
 }

@@ -9,13 +9,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Name",
@@ -23,13 +17,7 @@
       "required": "Yes",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "ProductCode",
@@ -37,13 +25,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "product",
-      "d365SuggestedDisplayName": "Product ID",
-      "d365SuggestedInternalName": "productnumber"
+      "picklistValues": null
     },
     {
       "fieldName": "Description",
@@ -51,13 +33,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 4000,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "QuantityScheduleType",
@@ -76,13 +52,7 @@
           "value": "Repeat",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "QuantityInstallmentPeriod",
@@ -116,13 +86,7 @@
           "value": "Yearly",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "NumberOfQuantityInstallments",
@@ -130,13 +94,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "RevenueScheduleType",
@@ -155,13 +113,7 @@
           "value": "Repeat",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "RevenueInstallmentPeriod",
@@ -195,13 +147,7 @@
           "value": "Yearly",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "NumberOfRevenueInstallments",
@@ -209,13 +155,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "IsActive",
@@ -223,13 +163,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": "product",
-      "d365DisplayName": "statuscodename",
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "CreatedDate",
@@ -237,13 +171,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "product",
-      "d365SuggestedDisplayName": "Created On",
-      "d365SuggestedInternalName": "createdon"
+      "picklistValues": null
     },
     {
       "fieldName": "CreatedById",
@@ -251,13 +179,7 @@
       "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "product",
-      "d365SuggestedDisplayName": "Created By",
-      "d365SuggestedInternalName": "createdby"
+      "picklistValues": null
     },
     {
       "fieldName": "LastModifiedDate",
@@ -265,13 +187,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "product",
-      "d365SuggestedDisplayName": "Modified On",
-      "d365SuggestedInternalName": "modifiedon"
+      "picklistValues": null
     },
     {
       "fieldName": "LastModifiedById",
@@ -279,13 +195,7 @@
       "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "product",
-      "d365SuggestedDisplayName": "Modified By",
-      "d365SuggestedInternalName": "modifiedby"
+      "picklistValues": null
     },
     {
       "fieldName": "SystemModstamp",
@@ -293,13 +203,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Family",
@@ -313,13 +217,7 @@
           "value": "None",
           "active": true
         }
-      ],
-      "d365EntityName": "product",
-      "d365DisplayName": "azt_productfamilyname",
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "RecordTypeId",
@@ -327,13 +225,7 @@
       "required": "No",
       "relatedTo": "RecordType",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "ExternalDataSourceId",
@@ -341,13 +233,7 @@
       "required": "No",
       "relatedTo": "ExternalDataSource",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "ExternalId",
@@ -355,13 +241,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "DisplayUrl",
@@ -369,13 +249,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 1000,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "QuantityUnitOfMeasure",
@@ -389,13 +263,7 @@
           "value": "Each",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "IsDeleted",
@@ -403,13 +271,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "IsArchived",
@@ -417,13 +279,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "LastViewedDate",
@@ -431,13 +287,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "LastReferencedDate",
@@ -445,13 +295,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "StockKeepingUnit",
@@ -459,13 +303,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 180,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Default_Price_List__c",
@@ -504,13 +342,7 @@
           "value": "iGrad",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "Non_Saas_Type__c",
@@ -534,13 +366,7 @@
           "value": "Other",
           "active": true
         }
-      ],
-      "d365EntityName": "product",
-      "d365DisplayName": "azt_nonsaastypename",
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "Product_Type__c",
@@ -629,13 +455,7 @@
           "value": "SLA",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "product",
-      "d365SuggestedDisplayName": "Product Category",
-      "d365SuggestedInternalName": "azt_productcategory"
+      ]
     },
     {
       "fieldName": "Sales_Family__c",
@@ -669,13 +489,7 @@
           "value": "Financial Wellness",
           "active": true
         }
-      ],
-      "d365EntityName": "product",
-      "d365DisplayName": "azt_salesfamilyname",
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "Is_Companion__c",
@@ -683,13 +497,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": "product",
-      "d365DisplayName": "azt_iscompanion",
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Is_Print__c",
@@ -697,13 +505,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": "product",
-      "d365DisplayName": "azt_isprint",
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "List_Price__c",
@@ -711,13 +513,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": "product",
-      "d365DisplayName": "price",
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Product_Families__c",
@@ -1301,13 +1097,7 @@
           "value": "Workforce",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "Product_GUID__c",
@@ -1315,13 +1105,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": "product",
-      "d365DisplayName": "productid",
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Product_ID__c",
@@ -1329,13 +1113,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 180,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "SaaS__c",
@@ -1343,13 +1121,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": "product",
-      "d365DisplayName": "azt_saasname",
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Legacy_Status__c",
@@ -1368,13 +1140,7 @@
           "value": "Inactive",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "Item_Type__c",
@@ -1388,13 +1154,7 @@
           "value": "Non-inventory",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "Product_Line__c",
@@ -1488,13 +1248,7 @@
           "value": "FFG - Other",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "GL_Group__c",
@@ -1518,13 +1272,7 @@
           "value": "Print",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "Frequency__c",
@@ -1573,13 +1321,7 @@
           "value": "As needed",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "Unit_Based__c",
@@ -1618,13 +1360,7 @@
           "value": "Unit: staff",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "Tax_Code__c",
@@ -1632,13 +1368,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Legacy_Item_Id__c",
@@ -1646,13 +1376,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Product_Number__c",
@@ -1660,13 +1384,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Migrated__c",
@@ -1674,13 +1392,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     }
   ]
 }

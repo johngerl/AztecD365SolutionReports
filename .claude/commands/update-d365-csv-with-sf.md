@@ -1,6 +1,6 @@
 Update mapping CSV(s) with SF suggestions from salesforce-entities/*.json.
 
-This is Step 6 of the pipeline. It reads from d365-entities/*.json, salesforce-entities/*.json, and existing mapping/*.csv. Run Steps 1-5 first if the JSON or CSV files are stale.
+This is Step 5 of the pipeline. It reads from d365-entities/*.json, salesforce-entities/*.json, and existing mapping/*.csv. Run Steps 1-4 first if the JSON or CSV files are stale.
 
 If `$ARGUMENTS` is empty, run for all entities. Otherwise run for the specified entity.
 

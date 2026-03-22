@@ -1,6 +1,6 @@
 Generate enriched D365 entity JSON(s) from SolutionExtract/ and plugins/ sources.
 
-This is Step 1 of the pipeline. The enriched JSON contains entity-level `sections` (full parse outputs) and per-field section datasets (13 section arrays per field). No SF mapping data is included — that lives in the mapping CSVs.
+This is Step 2 of the pipeline. The enriched JSON contains entity-level `sections` (full parse outputs) and per-field section datasets (13 section arrays per field). No SF mapping data is included — that lives in the mapping CSVs.
 
 If `$ARGUMENTS` is empty, run for all entities. Otherwise run for the specified entity.
 

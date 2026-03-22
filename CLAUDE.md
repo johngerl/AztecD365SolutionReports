@@ -87,7 +87,7 @@ You are acting as the **most senior Dynamics 365 Customer Engagement (D365CE) pr
 | `SolutionExtract/` | D365CE solution export (customizations.xml, Reports, Workflows, WebResources, Formulas, Controls) | — |
 | `plugins/` | Plugin C# source files | 87 |
 | `d365-entities/` | Enriched D365 entity JSON with entity-level sections and per-field section datasets | 94 |
-| `salesforce-entities/` | Salesforce object describe JSON with d365 cross-reference fields | 50 |
+| `salesforce-entities/` | Salesforce object describe JSON | 50 |
 | `reports/` | Generated Markdown field usage reports (one per entity) | 94 |
 | `mapping/` | Field mapping CSVs with confirmed + suggested SF columns | 94 |
 | `scripts/` | Python analysis and refresh scripts | 8 |
@@ -99,28 +99,32 @@ You are acting as the **most senior Dynamics 365 Customer Engagement (D365CE) pr
 
 ## Scripts
 
-Pipeline execution order: Step 1 → 2 → 3 → 5 → 6 → 4 → 7. (SF refresh and suggestions run before CSV generation so suggestions flow into the CSV from the JSON source of truth.)
+Pipeline execution order: Step 1 → 2 → 3 → 4 → 5 → 6 → 7.
 
 | Step | Script | Input | Output | Purpose |
 |---|---|---|---|---|
-| 1 | `generate_d365_entity_json_from_solution.py` | `SolutionExtract/`, `plugins/` | `d365-entities/*.json` | Parse D365 solution and build enriched JSON with entity-level sections and per-field section datasets. Caches and restores sfSuggested* values across regenerations. |
-| 2 | `enrich_d365_entity_json_from_api.py` | `d365-entities/*.json`, Dataverse Web API | `d365-entities/*.json` (enriched) | Query Dataverse metadata API to fill in dataType, displayName, etc. for stub fields. Also enriches plugin sections with registration metadata (mode, stage, state). |
-| 3 | `refresh_d365_field_lastupdates_tds.py` | `d365-entities/*.json`, Dataverse TDS | `d365-entities/*.json` (in-place) | Query MAX(modifiedon) per field via TDS and update lastUpdate values |
-| 5 | `generate_sf_entity_json_from_api.py` | Salesforce REST API | `salesforce-entities/*.json` | Refresh SF object schemas from org, preserving d365 cross-references |
-| 6 | `update_d365_entity_csv_mapping_with_sf_suggestions.py` | `d365-entities/*.json`, `salesforce-entities/*.json`, `DataTypeCompatibilityMatrix.md` | `d365-entities/*.json` (with sfSuggested*), `mapping/*.csv` | 5-tier SF field matching (exact, fuzzy, synonym, rule-based, Anthropic AI). Writes suggestions to JSON (source of truth) and CSV. |
-| 4 | `generate_d365_entity_csv_mapping.py` | `d365-entities/*.json`, existing `mapping/*.csv` | `mapping/*.csv` | Extract mapping CSV from JSON; reads sfSuggested* from JSON, preserves confirmed SF columns from CSV |
+| 1 | `generate_sf_entity_json_from_api.py` | Salesforce REST API | `salesforce-entities/*.json` | Refresh SF object schemas from org. No dependencies on other scripts. |
+| 2 | `generate_d365_entity_json_from_solution.py` | `SolutionExtract/`, `plugins/` | `d365-entities/*.json` | Parse D365 solution and build enriched JSON with entity-level sections and per-field section datasets. Caches and restores sfSuggested* values across regenerations. |
+| 3 | `enrich_d365_entity_json_from_api.py` | `d365-entities/*.json`, Dataverse Web API | `d365-entities/*.json` (enriched) | Query Dataverse metadata API to fill in dataType, displayName, etc. for stub fields. Also enriches plugin sections with registration metadata (mode, stage, state). |
+| 4 | `refresh_d365_field_lastupdates_tds.py` | `d365-entities/*.json`, Dataverse TDS | `d365-entities/*.json` (in-place) | Query MAX(modifiedon) per field via TDS and update lastUpdate values |
+| 5 | `update_d365_entity_csv_mapping_with_sf_suggestions.py` | `d365-entities/*.json`, `salesforce-entities/*.json`, `DataTypeCompatibilityMatrix.md` | `d365-entities/*.json` (with sfSuggested*), `mapping/*.csv` | 5-tier SF field matching (exact, fuzzy, synonym, rule-based, Anthropic AI). Writes suggestions to JSON (source of truth) and CSV. |
+| 6 | `generate_d365_entity_csv_mapping.py` | `d365-entities/*.json`, existing `mapping/*.csv` | `mapping/*.csv` | Extract mapping CSV from JSON; reads sfSuggested* from JSON, preserves confirmed SF columns from CSV |
 | 7 | `generate_d365_report_from_json_and_csv.py` | `d365-entities/*.json`, `mapping/*.csv` | `reports/*.md` | Generate field usage Markdown reports |
-| — | `pipeline_shared.py` | — | — | Shared utility functions used by steps 6 and 7 |
-| — | `DataTypeCompatibilityMatrix.md` | — | — | User-editable D365→SF data type compatibility rules read by Step 6 |
+| — | `pipeline_shared.py` | — | — | Shared utility functions used by steps 5 and 7 |
+| — | `DataTypeCompatibilityMatrix.md` | — | — | User-editable D365→SF data type compatibility rules read by Step 5 |
 
-All scripts accept a single entity name or `--all`. Python 3.6+ stdlib only (no pip dependencies). `enrich_d365_entity_json_from_api.py` and `refresh_d365_field_lastupdates_tds.py` require `msal` (pip install) and `scripts/config.local.json` with Dataverse credentials. `refresh_d365_field_lastupdates_tds.py` (Step 3) additionally requires `pyodbc` and ODBC Driver 18 for SQL Server. `generate_sf_entity_json_from_api.py` requires network access to the Salesforce org. `generate_d365_entity_json_from_solution.py` contains all SolutionExtract and plugin parsing logic (17+ parse functions).
+All scripts accept a single entity name or `--all`. Python 3.6+ stdlib only (no pip dependencies). `generate_sf_entity_json_from_api.py` (Step 1) requires network access to the Salesforce org and has no dependencies on other scripts. `enrich_d365_entity_json_from_api.py` and `refresh_d365_field_lastupdates_tds.py` require `msal` (pip install) and `scripts/config.local.json` with Dataverse credentials. `refresh_d365_field_lastupdates_tds.py` (Step 4) additionally requires `pyodbc` and ODBC Driver 18 for SQL Server. `generate_d365_entity_json_from_solution.py` contains all SolutionExtract and plugin parsing logic (17+ parse functions).
 
 ---
 
 ## Data Flow
 
 ```
-Step 1: generate_d365_entity_json_from_solution.py
+Step 1: generate_sf_entity_json_from_api.py
+Salesforce REST API ────────────────────> generate_sf_entity_json ──> salesforce-entities/*.json
+                                          _from_api.py
+
+Step 2: generate_d365_entity_json_from_solution.py
 SolutionExtract/customizations.xml ──┐
 SolutionExtract/Reports/*.rdl ───────┤
 SolutionExtract/Workflows/*.xaml ────┤     ┌────────────────────────────────────────┐
@@ -129,33 +133,29 @@ SolutionExtract/Formulas/*.xaml ─────┤     │ _solution.py         
 SolutionExtract/Controls/* ──────────┤     └────────────────────────────────────────┘
 plugins/*.cs ────────────────────────┘
                                                     │
-Step 2: enrich_d365_entity_json_from_api.py         v
+Step 3: enrich_d365_entity_json_from_api.py         v
 d365-entities/*.json ───────────────┐     ┌────────────────────────────────────────┐
 Dataverse Web API ──────────────────┼────>│ enrich_d365_entity_json_from           │──> d365-entities/*.json (enriched)
                                     └     │ _api.py                                │
                                           └────────────────────────────────────────┘
                                                     │
-Step 3: refresh_d365_field_lastupdates_tds.py       v
+Step 4: refresh_d365_field_lastupdates_tds.py       v
 d365-entities/*.json ───────────────┐     ┌────────────────────────────────────────┐
 Dataverse TDS ──────────────────────┼────>│ refresh_d365_field_lastupdates         │──> d365-entities/*.json (with lastUpdate)
                                     └     │ _tds.py                                │
                                           └────────────────────────────────────────┘
                                                     │
-Step 4: generate_d365_entity_csv_mapping.py         v
+Step 5: update_d365_entity_csv_mapping_with_sf_suggestions.py
+d365-entities/*.json ───────────────┐     ┌────────────────────────────────────────┐
+salesforce-entities/*.json ─────────┼────>│ update_d365_entity_csv_mapping_with    │──> d365-entities/*.json (with sfSuggested*)
+                                    └     │ _sf_suggestions.py                     │
+                                          └────────────────────────────────────────┘
+                                                    │
+Step 6: generate_d365_entity_csv_mapping.py         v
 d365-entities/*.json ───────────────────> generate_d365_entity_csv ──> mapping/*.csv
 existing mapping/*.csv (confirmed SF) ──┘ _mapping.py
-
-Step 5: generate_sf_entity_json_from_api.py
-Salesforce REST API ────────────────────> generate_sf_entity_json ──> salesforce-entities/*.json
-                                          _from_api.py
-
-Step 6: update_d365_entity_csv_mapping_with_sf_suggestions.py
-d365-entities/*.json ───────────────┐     ┌────────────────────────────────────────┐
-salesforce-entities/*.json ─────────┼────>│ update_d365_entity_csv_mapping_with    │──> mapping/*.csv (with suggestions)
-mapping/*.csv ──────────────────────┘     │ _sf_suggestions.py                     │
-                                          └────────────────────────────────────────┘
-
-Step 7: generate_d365_report_from_json_and_csv.py
+                                                    │
+Step 7: generate_d365_report_from_json_and_csv.py   v
 d365-entities/*.json ───────────────┐
 mapping/*.csv ──────────────────────┼────> generate_d365_report_from ──> reports/*.md
                                     └──── _json_and_csv.py
@@ -312,19 +312,11 @@ Each `salesforce-entities/{object}.json` contains:
       "required": "Yes|No",
       "relatedTo": "None|ObjectName",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": "account",
-      "d365DisplayName": "Account Name",
-      "d365InternalName": "name",
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     }
   ]
 }
 ```
-
-The `d365*` fields provide reverse cross-references from SF back to D365. Confirmed values come from human review; suggested values from AI matching. `generate_sf_entity_json_from_api.py` preserves these fields when refreshing SF metadata.
 
 ---
 
@@ -332,13 +324,13 @@ The `d365*` fields provide reverse cross-references from SF back to D365. Confir
 
 | Command | Script | Usage |
 |---|---|---|
-| `/generate-d365-json [entity]` | `generate_d365_entity_json_from_solution.py` | Step 1: Generate enriched D365 entity JSON(s) |
-| `/enrich-d365-json [entity]` | `enrich_d365_entity_json_from_api.py` | Step 2: Enrich stub fields with Dataverse API metadata |
-| `/refresh-d365-lastupdates [entity]` | `refresh_d365_field_lastupdates_tds.py` | Step 3: Refresh lastUpdate via Dataverse TDS |
-| `/generate-d365-csv [entity]` | `generate_d365_entity_csv_mapping.py` | Step 4: Extract mapping CSV(s) from enriched JSON (reads sfSuggested* from JSON) |
-| `/generate-sf-json [object]` | `generate_sf_entity_json_from_api.py` | Step 5: Refresh Salesforce object schema(s) from org |
-| `/update-d365-csv-with-sf [entity]` | `update_d365_entity_csv_mapping_with_sf_suggestions.py` | Step 6: 5-tier SF field matching (exact, fuzzy, synonym, rule-based, AI). Writes to JSON and CSV |
+| `/generate-sf-json [object]` | `generate_sf_entity_json_from_api.py` | Step 1: Refresh Salesforce object schema(s) from org |
+| `/generate-d365-json [entity]` | `generate_d365_entity_json_from_solution.py` | Step 2: Generate enriched D365 entity JSON(s) |
+| `/enrich-d365-json [entity]` | `enrich_d365_entity_json_from_api.py` | Step 3: Enrich stub fields with Dataverse API metadata |
+| `/refresh-d365-lastupdates [entity]` | `refresh_d365_field_lastupdates_tds.py` | Step 4: Refresh lastUpdate via Dataverse TDS |
+| `/update-d365-csv-with-sf [entity]` | `update_d365_entity_csv_mapping_with_sf_suggestions.py` | Step 5: 5-tier SF field matching (exact, fuzzy, synonym, rule-based, AI). Writes to JSON and CSV |
+| `/generate-d365-csv [entity]` | `generate_d365_entity_csv_mapping.py` | Step 6: Extract mapping CSV(s) from enriched JSON (reads sfSuggested* from JSON) |
 | `/generate-d365-report [entity]` | `generate_d365_report_from_json_and_csv.py` | Step 7: Generate field usage Markdown report(s) |
-| `/generate-all [entity]` | All pipeline scripts | Run full pipeline (Steps 1 → 2 → 3 → 5 → 6 → 4 → 7) |
+| `/generate-all [entity]` | All pipeline scripts | Run full pipeline (Steps 1 → 2 → 3 → 4 → 5 → 6 → 7) |
 
 All commands default to `--all` when no entity argument is provided.

@@ -9,13 +9,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "ContentDocumentId",
@@ -23,13 +17,7 @@
       "required": "Yes",
       "relatedTo": "ContentDocument",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "IsLatest",
@@ -37,13 +25,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "ContentUrl",
@@ -51,13 +33,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 1333,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "ContentBodyId",
@@ -65,13 +41,7 @@
       "required": "No",
       "relatedTo": "ContentBody",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "VersionNumber",
@@ -79,13 +49,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 20,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Title",
@@ -93,13 +57,7 @@
       "required": "Yes",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "annotation",
-      "d365SuggestedDisplayName": "Title",
-      "d365SuggestedInternalName": "subject"
+      "picklistValues": null
     },
     {
       "fieldName": "Description",
@@ -107,13 +65,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 1000,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "annotation",
-      "d365SuggestedDisplayName": "Description",
-      "d365SuggestedInternalName": "notetext"
+      "picklistValues": null
     },
     {
       "fieldName": "ReasonForChange",
@@ -121,13 +73,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 1000,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "SharingOption",
@@ -146,13 +92,7 @@
           "value": "R",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "SharingPrivacy",
@@ -171,13 +111,7 @@
           "value": "P",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "PathOnClient",
@@ -185,13 +119,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 500,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "RatingCount",
@@ -199,13 +127,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "IsDeleted",
@@ -213,13 +135,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "ContentModifiedDate",
@@ -227,13 +143,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "ContentModifiedById",
@@ -241,13 +151,7 @@
       "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "PositiveRatingCount",
@@ -255,13 +159,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "NegativeRatingCount",
@@ -269,13 +167,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "FeaturedContentBoost",
@@ -283,13 +175,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "FeaturedContentDate",
@@ -297,13 +183,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "OwnerId",
@@ -311,13 +191,7 @@
       "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "annotation",
-      "d365SuggestedDisplayName": "Owner",
-      "d365SuggestedInternalName": "ownerid"
+      "picklistValues": null
     },
     {
       "fieldName": "CreatedById",
@@ -325,13 +199,7 @@
       "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "annotation",
-      "d365SuggestedDisplayName": "Created By",
-      "d365SuggestedInternalName": "createdby"
+      "picklistValues": null
     },
     {
       "fieldName": "CreatedDate",
@@ -339,13 +207,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "annotation",
-      "d365SuggestedDisplayName": "Created On",
-      "d365SuggestedInternalName": "createdon"
+      "picklistValues": null
     },
     {
       "fieldName": "LastModifiedById",
@@ -353,13 +215,7 @@
       "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "annotation",
-      "d365SuggestedDisplayName": "Modified By",
-      "d365SuggestedInternalName": "modifiedby"
+      "picklistValues": null
     },
     {
       "fieldName": "LastModifiedDate",
@@ -367,13 +223,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "annotation",
-      "d365SuggestedDisplayName": "Modified On",
-      "d365SuggestedInternalName": "modifiedon"
+      "picklistValues": null
     },
     {
       "fieldName": "SystemModstamp",
@@ -381,13 +231,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "TagCsv",
@@ -395,13 +239,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 2000,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "FileType",
@@ -409,13 +247,7 @@
       "required": "Yes",
       "relatedTo": "None",
       "maxLength": 20,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "annotation",
-      "d365SuggestedDisplayName": "Mime Type",
-      "d365SuggestedInternalName": "mimetype"
+      "picklistValues": null
     },
     {
       "fieldName": "PublishStatus",
@@ -439,13 +271,7 @@
           "value": "R",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "VersionData",
@@ -453,13 +279,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "annotation",
-      "d365SuggestedDisplayName": "Document",
-      "d365SuggestedInternalName": "documentbody"
+      "picklistValues": null
     },
     {
       "fieldName": "ContentSize",
@@ -467,13 +287,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": "annotation",
-      "d365SuggestedDisplayName": "File Size (Bytes)",
-      "d365SuggestedInternalName": "filesize"
+      "picklistValues": null
     },
     {
       "fieldName": "FileExtension",
@@ -481,13 +295,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 40,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "FirstPublishLocationId",
@@ -495,13 +303,7 @@
       "required": "No",
       "relatedTo": "Account, Account_Address__c, Account_Request__c, ActionPlan, ApiAnomalyEventStore, ApprovalSubmission, ApprovalSubmissionDetail, ApprovalWorkItem, Asset, AssetRelationship, AuthorizationFormText, BatchJob, BatchJobPart, BatchJobPartFailedRecord, CS_Engagement__c, CalcMatrixColumnRange, CalcProcStepRelationship, CalculationMatrix, CalculationMatrixColumn, CalculationMatrixRow, CalculationMatrixVersion, CalculationProcedure, CalculationProcedureStep, CalculationProcedureVariable, CalculationProcedureVersion, Campaign, Case, CaseRelatedIssue, ChangeRequest, ChangeRequestRelatedIssue, ChangeRequestRelatedItem, CodeBuilder__SessionData__c, CodeBuilder__Workspace__c, CollaborationGroup, CommSubscription, CommSubscriptionChannelType, CommSubscriptionConsent, CommSubscriptionTiming, Competitor_Encounter__c, Competitor__c, Contact, ContentWorkspace, Contract, ContractLineItem, CredentialStuffingEventStore, Dashboard, DashboardComponent, EmailMessage, EmailTemplate, EngagementAttendee, EngagementChannelType, EngagementInteraction, EngagementTopic, EnhancedLetterhead, Entitlement, EntityMilestone, Event, Expense_Report__c, Expense__c, ExpressionSet, ExpressionSetVersion, FlowPersonalConfiguration__c, FlowTableViewDefinition__c, Graphics_Pack_Example__c, GuestUserAnomalyEventStore, Help_Desk__c, Image, In_App_Checklist_Settings__c, Incident, IncidentRelatedItem, Invoice_Line__c, Invoice__c, Lead, ListEmail, Location, Opportunity, Order, OrderItem, Organization, PartyConsent, Payment__c, Problem, ProblemIncident, ProblemRelatedItem, Product2, ProfileSkill, ProfileSkillEndorsement, ProfileSkillUser, Quote, RecordAlert, Report, ReportAnomalyEventStore, Sales_Lead__c, SalesforceContract, SalesforceInvoice, SalesforceQuote, ServiceContract, SessionHijackingEventStore, Site, SocialPost, Solution, Task, Territory2Model, ThreatDetectionFeedback, Topic, User, VideoCall, VoiceCall, WorkBadgeDefinition, WorkOrder, WorkOrderLineItem, WorkPlan, WorkPlanTemplate, WorkPlanTemplateEntry, WorkStep, WorkStepTemplate, dfsle__AgreementConfiguration__c, dfsle__BulkList__c, dfsle__BulkStatus__c, dfsle__CustomParameterMap__c, dfsle__CustomRecipient__c, dfsle__Document__c, dfsle__EOS_Type__c, dfsle__EnvelopeConfigurationDocument__c, dfsle__EnvelopeConfigurationRecipient__c, dfsle__EnvelopeConfiguration__c, dfsle__EnvelopeLocalization__c, dfsle__EnvelopeStatus__c, dfsle__Envelope__c, dfsle__GenTemplate__c, dfsle__Jobs__c, dfsle__Log__c, dfsle__RecipientStatus__c, dfsle__Recipient__c, dlrs__DeclarativeLookupRollupSummaries__c, dlrs__LookupChild__c, dlrs__LookupParent__c, dlrs__LookupRollupCalculateJob__c, dlrs__LookupRollupSummaryLog__c, dlrs__LookupRollupSummaryScheduleItems__c, dlrs__LookupRollupSummary__c, rcsfl__AdminSetting__c, rcsfl__AdminUISetting__c, rcsfl__RingCentral_Webinar_Token__c, sf_devops__Async_Operation_Result__c, sf_devops__Back_Sync__c, sf_devops__Branch__c, sf_devops__Change_Bundle_Install__c, sf_devops__Change_Bundle__c, sf_devops__Change_Submission__c, sf_devops__Deploy_Component__c, sf_devops__Deployment_Result__c, sf_devops__Environment__c, sf_devops__Hidden_Remote_Change__c, sf_devops__Merge_Result__c, sf_devops__Object_Activity__c, sf_devops__Pipeline_Stage__c, sf_devops__Pipeline__c, sf_devops__Project__c, sf_devops__Remote_Change__c, sf_devops__Repository__c, sf_devops__Source_Member_Reference__c, sf_devops__Submit_Component__c, sf_devops__Vcs_Synch_State__c, sf_devops__Vcs__c, sf_devops__Work_Item_Promote__c, sf_devops__Work_Item__c",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Origin",
@@ -520,13 +322,7 @@
           "value": "H",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "ContentLocation",
@@ -560,13 +356,7 @@
           "value": "SCS",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "TextPreview",
@@ -574,13 +364,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "ExternalDocumentInfo1",
@@ -588,13 +372,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 1000,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "ExternalDocumentInfo2",
@@ -602,13 +380,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 1000,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "ExternalDataSourceId",
@@ -616,13 +388,7 @@
       "required": "No",
       "relatedTo": "ExternalDataSource",
       "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Checksum",
@@ -630,13 +396,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 50,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "IsMajorVersion",
@@ -644,13 +404,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "IsAssetEnabled",
@@ -658,13 +412,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "VersionDataUrl",
@@ -672,13 +420,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "dfsle__GeneratedFileFormat__c",
@@ -697,13 +439,7 @@
           "value": "PDF",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "dfsle__GeneratedFileSuffix__c",
@@ -727,13 +463,7 @@
           "value": "name_date",
           "active": true
         }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      ]
     },
     {
       "fieldName": "dfsle__GeneratedFileName__c",
@@ -741,13 +471,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "dfsle__Rule__c",
@@ -755,13 +479,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 131072,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     },
     {
       "fieldName": "Guest_Record_fileupload__c",
@@ -769,13 +487,7 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
+      "picklistValues": null
     }
   ]
 }

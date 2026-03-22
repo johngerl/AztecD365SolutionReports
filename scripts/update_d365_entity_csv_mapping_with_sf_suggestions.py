@@ -2,7 +2,7 @@
 """
 update_d365_entity_csv_mapping_with_sf_suggestions.py
 
-Step 6 of the pipeline. Run steps 1-3 and 5 first.
+Step 5 of the pipeline. Run steps 1-4 first.
 
 Reads enriched D365 entity JSON from d365-entities/, loads SF entity data
 from salesforce-entities/, and generates SF field suggestions using a 5-tier
@@ -10,7 +10,7 @@ matching algorithm. Writes suggestions to d365-entities JSON (source of truth)
 and updates mapping CSVs with reference counts.
 
 Matching tiers:
-  1. Exact match (existing SF field by name or d365 cross-reference)
+  1. Exact match (existing SF field by name)
   2. Fuzzy match (SequenceMatcher, data-type-aware, strips prefixes/underscores)
   3. Synonym match (known D365-to-SF field name equivalences)
   4. Rule-based name generation (D365 display name -> SF Pascal_Case__c)
@@ -287,23 +287,15 @@ def load_sf_entity_fields(sf_entities_dir, sf_object_name):
 def build_sf_field_lookup(sf_fields):
     """Build lookup dicts from an SF entity's field list.
 
-    Returns (by_d365_internal, by_d365_suggested, by_name_lower, all_names_lower).
+    Returns (by_name_lower, all_names_lower).
     """
-    by_d365_internal = {}
-    by_d365_suggested = {}
     by_name_lower = {}
     for sf_field in sf_fields:
         fn = sf_field.get('fieldName', '')
         if fn:
             by_name_lower[fn.lower()] = sf_field
-        d365_int = sf_field.get('d365InternalName') or ''
-        if d365_int:
-            by_d365_internal[d365_int.lower()] = sf_field
-        d365_sug = sf_field.get('d365SuggestedInternalName') or ''
-        if d365_sug:
-            by_d365_suggested[d365_sug.lower()] = sf_field
     all_names_lower = set(by_name_lower.keys())
-    return by_d365_internal, by_d365_suggested, by_name_lower, all_names_lower
+    return by_name_lower, all_names_lower
 
 
 def resolve_sf_object(entity_name, mapping_dir, sf_entity_index):
@@ -334,18 +326,17 @@ def resolve_sf_object(entity_name, mapping_dir, sf_entity_index):
 def tier1_exact_match(d365_field_name, d365_type, sf_fields_lookup, compat_matrix):
     """Tier 1: Exact name match against existing SF fields.
 
-    Checks d365InternalName, d365SuggestedInternalName, then SF fieldName.
+    Checks SF fieldName for exact match.
     """
-    by_d365_internal, by_d365_suggested, by_name_lower, _ = sf_fields_lookup
+    by_name_lower, _ = sf_fields_lookup
     key = d365_field_name.lower()
 
-    for lookup in (by_d365_internal, by_d365_suggested, by_name_lower):
-        sf_field = lookup.get(key)
-        if sf_field:
-            sf_type = sf_field.get('dataType', '')
-            if is_type_compatible(d365_type, sf_type, compat_matrix):
-                fn = sf_field.get('fieldName', '')
-                return fn, fn, sf_type, 'exact'
+    sf_field = by_name_lower.get(key)
+    if sf_field:
+        sf_type = sf_field.get('dataType', '')
+        if is_type_compatible(d365_type, sf_type, compat_matrix):
+            fn = sf_field.get('fieldName', '')
+            return fn, fn, sf_type, 'exact'
     return None
 
 
@@ -546,7 +537,7 @@ def generate_suggestions(entity_name, fields, sf_object, sf_fields,
 
     Returns dict of {field_name_lower: {sfSuggested* fields}}.
     """
-    by_d365_internal, by_d365_suggested, by_name_lower, all_names_lower = sf_fields_lookup
+    by_name_lower, all_names_lower = sf_fields_lookup
     suggestions = {}
     fields_for_ai = []
     tier_counts = defaultdict(int)

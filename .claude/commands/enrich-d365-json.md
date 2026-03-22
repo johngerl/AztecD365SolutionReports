@@ -1,6 +1,6 @@
 Enrich stub fields in d365-entities/*.json with metadata from the Dataverse Web API.
 
-This is Step 2 of the pipeline. Runs after Step 1 to fill in dataType, displayName,
+This is Step 3 of the pipeline. Runs after Step 2 to fill in dataType, displayName,
 and other metadata for fields that exist in Dataverse but were not in the solution export.
 
 Requires: msal and scripts/config.local.json with Dataverse credentials.

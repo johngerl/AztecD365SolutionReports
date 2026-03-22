@@ -2,7 +2,7 @@
 """
 generate_sf_entity_json_from_api.py
 
-Step 4 of the pipeline.
+Step 1 of the pipeline. No dependencies on other scripts.
 
 Refreshes Salesforce object schema JSON files in salesforce-entities/
 by calling the Salesforce REST API (SObject Describe).
@@ -10,8 +10,6 @@ by calling the Salesforce REST API (SObject Describe).
 Authentication (tried in order):
   1. Salesforce CLI (`sf org display`) — uses existing authenticated session
   2. OAuth 2.0 Client Credentials — reads from .mcp.json salesforce config
-
-Preserves existing d365 mapping fields when updating.
 
 Usage:
     python generate_sf_entity_json_from_api.py Account           # single SF object
@@ -36,15 +34,6 @@ DEFAULT_OUTPUT_DIR = os.path.join(PROJECT_DIR, "salesforce-entities")
 MCP_CONFIG_PATH = os.path.join(PROJECT_DIR, ".mcp.json")
 
 API_VERSION = "62.0"
-
-D365_MAPPING_FIELDS = [
-    "d365EntityName",
-    "d365DisplayName",
-    "d365InternalName",
-    "d365SuggestedEntityName",
-    "d365SuggestedDisplayName",
-    "d365SuggestedInternalName",
-]
 
 
 # ---------------------------------------------------------------------------
@@ -250,11 +239,8 @@ def describe_sobject(object_name, access_token, instance_url):
 # JSON building
 # ---------------------------------------------------------------------------
 
-def build_field_entry(sf_field, existing_d365):
-    """Build a single field dict from SF describe field metadata.
-
-    Merges d365 mapping fields from existing_d365 dict if available.
-    """
+def build_field_entry(sf_field):
+    """Build a single field dict from SF describe field metadata."""
     field_name = sf_field.get("name", "")
 
     # Determine relatedTo from referenceTo array
@@ -275,7 +261,7 @@ def build_field_entry(sf_field, existing_d365):
             for pv in pv_list
         ]
 
-    entry = {
+    return {
         "fieldName": field_name,
         "dataType": sf_field.get("type", ""),
         "required": required,
@@ -284,35 +270,17 @@ def build_field_entry(sf_field, existing_d365):
         "picklistValues": picklist_values,
     }
 
-    # Merge d365 mapping from existing data
-    d365_data = existing_d365.get(field_name, {})
-    for key in D365_MAPPING_FIELDS:
-        entry[key] = d365_data.get(key)
-
-    return entry
-
 
 def build_entity_json(describe_response, existing_json):
-    """Build the full entity JSON from a describe response.
-
-    Preserves d365 mapping fields from existing_json.
-    """
+    """Build the full entity JSON from a describe response."""
     object_name = describe_response.get("name", "")
     is_custom = describe_response.get("custom", False)
     object_type = "Custom" if is_custom else "Standard"
 
-    # Build lookup of existing d365 mapping by fieldName
-    existing_d365 = {}
-    if existing_json and "fields" in existing_json:
-        for f in existing_json["fields"]:
-            fn = f.get("fieldName", "")
-            if fn:
-                existing_d365[fn] = {k: f.get(k) for k in D365_MAPPING_FIELDS}
-
     # Build fields from describe
     fields = []
     for sf_field in describe_response.get("fields", []):
-        fields.append(build_field_entry(sf_field, existing_d365))
+        fields.append(build_field_entry(sf_field))
 
     return {
         "objectName": object_name,
@@ -433,11 +401,7 @@ def main():
         filepath = save_entity_json(output_dir, obj_name, entity_json)
 
         field_count = len(entity_json.get("fields", []))
-        d365_count = sum(
-            1 for f in entity_json.get("fields", [])
-            if any(f.get(k) for k in D365_MAPPING_FIELDS)
-        )
-        print(f"    {field_count} fields, {d365_count} with d365 mappings")
+        print(f"    {field_count} fields")
         print(f"    -> {filepath}")
         success += 1
 

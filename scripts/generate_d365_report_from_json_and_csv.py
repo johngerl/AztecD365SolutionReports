@@ -35,11 +35,9 @@ DEFAULT_D365_DIR = os.path.join(PROJECT_DIR, "d365-entities")
 
 
 def slugify(text):
-    """Generate Obsidian-compatible heading anchor slug."""
-    text = text.lower().strip()
-    text = text.replace(' ', '-')
-    text = re.sub(r'[^a-z0-9_-]', '', text)
-    return text
+    """Generate Obsidian-compatible heading anchor slug (URL-encoded heading text)."""
+    from urllib.parse import quote
+    return quote(text.strip(), safe='')
 
 
 # ---------------------------------------------------------------------------

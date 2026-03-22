@@ -19,4 +19,4 @@ After completion, report:
 - Number of reports generated (count files in reports/)
 - Any warnings or errors from the run
 
-Note: This script reads mapping/*.csv for display only. To update SF suggestions in the CSVs, run `/update-d365-csv-with-sf` (Step 7) first.
+Note: This script reads mapping/*.csv for display only. To update SF suggestions in the CSVs, run `/generate-d365-sf-suggestions` (Step 7) then `/generate-d365-csv` (Step 8) first.

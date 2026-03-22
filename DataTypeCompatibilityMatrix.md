@@ -1,6 +1,6 @@
 # D365 to Salesforce Data Type Compatibility Matrix
 
-This file is read by Step 6 (`update_d365_entity_csv_mapping_with_sf_suggestions.py`) at runtime to determine data type compatibility during field matching. The first SF type listed per row is the **preferred** type for rule-based name generation.
+This file is read by Step 7 (`generate_d365_sf_suggestions.py`) at runtime to determine data type compatibility during field matching. The first SF type listed per row is the **preferred** type for rule-based name generation.
 
 Edit this file to add, remove, or reorder compatible types without changing code.
 

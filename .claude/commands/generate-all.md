@@ -1,4 +1,4 @@
-Run the full pipeline: refresh SF entities, generate D365 JSON, enrich from API, compute reference counts, refresh lastUpdate via TDS, set SF mapping flags, generate SF suggestions, extract CSV, and generate reports.
+Run the full pipeline: refresh SF entities, generate D365 JSON, enrich from API, compute reference counts, refresh lastUpdate via TDS, evaluate migration eligibility, generate SF suggestions, extract CSV, and generate reports.
 
 Runs Steps 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9 in sequence.
 
@@ -32,13 +32,13 @@ if [ -z "$ARGUMENTS" ]; then
   echo "------------------------------------------------------------"
   python scripts/refresh_d365_field_lastupdates_tds.py --all
   echo ""
-  echo "Step 6/9: Setting sfSuggestedMapping flags..."
+  echo "Step 6/9: Evaluating migration eligibility..."
   echo "------------------------------------------------------------"
-  python scripts/set_d365_sf_suggested_mapping.py --all
+  python scripts/evaluate_d365_migration_eligibility.py --all
   echo ""
   echo "Step 7/9: Generating SF suggestions (5-tier matching)..."
   echo "------------------------------------------------------------"
-  python scripts/update_d365_entity_csv_mapping_with_sf_suggestions.py --all
+  python scripts/generate_d365_sf_suggestions.py --all
   echo ""
   echo "Step 8/9: Generating D365 entity CSV mappings..."
   echo "------------------------------------------------------------"
@@ -75,13 +75,13 @@ else
   echo "------------------------------------------------------------"
   python scripts/refresh_d365_field_lastupdates_tds.py $ARG
   echo ""
-  echo "Step 6/9: Setting sfSuggestedMapping flags..."
+  echo "Step 6/9: Evaluating migration eligibility..."
   echo "------------------------------------------------------------"
-  python scripts/set_d365_sf_suggested_mapping.py $ARG
+  python scripts/evaluate_d365_migration_eligibility.py $ARG
   echo ""
   echo "Step 7/9: Generating SF suggestions (5-tier matching)..."
   echo "------------------------------------------------------------"
-  python scripts/update_d365_entity_csv_mapping_with_sf_suggestions.py $ARG
+  python scripts/generate_d365_sf_suggestions.py $ARG
   echo ""
   echo "Step 8/9: Generating D365 entity CSV mapping..."
   echo "------------------------------------------------------------"

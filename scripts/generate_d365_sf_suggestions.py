@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-update_d365_entity_csv_mapping_with_sf_suggestions.py
+generate_d365_sf_suggestions.py
 
 Step 7 of the pipeline. Run steps 1-6 first.
 
-Reads enriched D365 entity JSON from d365-entities/, loads SF entity data
-from salesforce-entities/, and generates SF field suggestions using a 5-tier
-matching algorithm. Writes suggestions to d365-entities JSON (source of truth).
+Generates SF field suggestions for D365 fields flagged with sfSuggestedMapping=true.
+Uses a 5-tier matching algorithm against salesforce-entities/*.json schemas.
+Writes suggestions to d365-entities JSON (source of truth).
 CSV generation is handled by Step 8.
 
 Matching tiers:
@@ -20,8 +20,8 @@ Suggestions are persisted in d365-entities/*.json. Existing suggestions are
 preserved unless the user manually clears them from the JSON.
 
 Usage:
-    python update_d365_entity_csv_mapping_with_sf_suggestions.py <entity>
-    python update_d365_entity_csv_mapping_with_sf_suggestions.py --all
+    python generate_d365_sf_suggestions.py <entity>
+    python generate_d365_sf_suggestions.py --all
 """
 
 import csv
@@ -694,7 +694,7 @@ def process_entity(entity_name, mapping_dir, sf_entity_index, d365_entities_dir,
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Generate 5-tier SF suggestions and write to d365-entities JSON'
+        description='Step 7: Generate SF field suggestions via 5-tier matching'
     )
     parser.add_argument('entity', nargs='?', default=None,
                         help='Target entity schema name (e.g., account, contact)')

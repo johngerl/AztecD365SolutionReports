@@ -14,8 +14,8 @@ This analysis feeds a data migration plan for re-platforming from D365CE to Sale
 │   ├── enrich_d365_entity_json_from_api.py                       # Step 3: Enrich stub fields from Dataverse API
 │   ├── compute_d365_reference_counts.py                          # Step 4: Pre-compute reference counts
 │   ├── refresh_d365_field_lastupdates_tds.py                     # Step 5: Refresh lastUpdate via Dataverse TDS
-│   ├── set_d365_sf_suggested_mapping.py                          # Step 6: Set sfSuggestedMapping per field
-│   ├── update_d365_entity_csv_mapping_with_sf_suggestions.py     # Step 7: Update JSONs/CSVs with SF suggestions
+│   ├── evaluate_d365_migration_eligibility.py                     # Step 6: Evaluate migration eligibility per field
+│   ├── generate_d365_sf_suggestions.py                            # Step 7: Generate SF field suggestions
 │   ├── generate_d365_entity_csv_mapping.py                       # Step 8: Extract mapping CSV from enriched JSON
 │   ├── generate_d365_report_from_json_and_csv.py                 # Step 9: Field usage Markdown reports
 │   └── pipeline_shared.py                                        # Shared utility functions (steps 6, 7 & 9)
@@ -102,25 +102,25 @@ python scripts/refresh_d365_field_lastupdates_tds.py --all     # all entities
 
 **Prerequisites:** `pyodbc`, `msal`, ODBC Driver 18 for SQL Server, and `scripts/config.local.json` with Dataverse credentials.
 
-### Step 6: set_d365_sf_suggested_mapping.py
+### Step 6: evaluate_d365_migration_eligibility.py
 
 Single source of truth for migration eligibility. Sets `sfSuggestedMapping` (true/false) per field based on staleness + usage + required level. Clears all `sfSuggested*` fields when false.
 
 ```bash
-python scripts/set_d365_sf_suggested_mapping.py account       # single entity
-python scripts/set_d365_sf_suggested_mapping.py --all         # all entities
-python scripts/set_d365_sf_suggested_mapping.py --all --reset # clear all sfSuggested* first
+python scripts/evaluate_d365_migration_eligibility.py account       # single entity
+python scripts/evaluate_d365_migration_eligibility.py --all         # all entities
+python scripts/evaluate_d365_migration_eligibility.py --all --reset # clear all sfSuggested* first
 ```
 
 **Outputs:** `d365-entities/{entity}.json` (with sfSuggestedMapping)
 
-### Step 7: update_d365_entity_csv_mapping_with_sf_suggestions.py
+### Step 7: generate_d365_sf_suggestions.py
 
 5-tier SF field matching (exact, fuzzy, synonym, rule-based, AI). Only processes fields with `sfSuggestedMapping=true`. Writes suggestions to `d365-entities/*.json` (source of truth). CSV generation is handled by Step 8.
 
 ```bash
-python scripts/update_d365_entity_csv_mapping_with_sf_suggestions.py account   # single entity
-python scripts/update_d365_entity_csv_mapping_with_sf_suggestions.py --all     # all entities
+python scripts/generate_d365_sf_suggestions.py account   # single entity
+python scripts/generate_d365_sf_suggestions.py --all     # all entities
 ```
 
 **Outputs:** `d365-entities/{entity}.json` (with sfSuggested* fields)
@@ -184,7 +184,7 @@ The Field Definitions table includes 6 Salesforce mapping columns:
 | `/enrich-d365-json [entity]` | Step 2: Enrich stub fields with Dataverse API metadata |
 | `/generate-d365-csv [entity]` | Step 3: Extract mapping CSV(s) from enriched JSON |
 | `/generate-sf-json [object]` | Step 4: Refresh Salesforce object schema(s) from org |
-| `/update-d365-csv-with-sf [entity]` | Step 5: Update mapping CSV(s) with SF suggestions |
+| `/generate-d365-sf-suggestions [entity]` | Step 7: Generate SF field suggestions |
 | `/generate-d365-report [entity]` | Step 6: Generate field usage Markdown report(s) |
 | `/generate-all [entity]` | Run full pipeline (Steps 1 → 2 → 3 → 4 → 5 → 6) |
 

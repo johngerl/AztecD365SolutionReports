@@ -1,19 +1,20 @@
 #!/usr/bin/env python3
 """
-set_d365_sf_suggested_mapping.py
+evaluate_d365_migration_eligibility.py
 
 Step 6 of the pipeline. Run steps 1-5 first.
 
-Reads d365-entities/*.json and sets sfSuggestedMapping (true/false) on each
-field based on staleness gate + usage references + required level. This is the
-single source of truth for "should this field be suggested for SF migration?"
+Evaluates each D365 field for migration eligibility and sets sfSuggestedMapping
+(true/false) based on staleness gate + usage references + required level. This
+is the single source of truth for "should this field be suggested for SF
+migration?"
 
 When sfSuggestedMapping is set to false, clears all sfSuggested* fields to null.
 
 Usage:
-    python set_d365_sf_suggested_mapping.py account         # single entity
-    python set_d365_sf_suggested_mapping.py --all           # all entities
-    python set_d365_sf_suggested_mapping.py --all --reset   # clear all sfSuggested* first
+    python evaluate_d365_migration_eligibility.py account         # single entity
+    python evaluate_d365_migration_eligibility.py --all           # all entities
+    python evaluate_d365_migration_eligibility.py --all --reset   # clear all sfSuggested* first
 """
 
 import argparse
@@ -146,7 +147,7 @@ def process_entity(entity_name, d365_dir, reset=False):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Step 6: Set sfSuggestedMapping on D365 entity fields"
+        description="Step 6: Evaluate D365 field migration eligibility"
     )
     parser.add_argument("entity", nargs="?", default=None,
                         help="Target entity schema name (e.g., account, contact)")
@@ -172,7 +173,7 @@ def main():
         entities = [args.entity.lower()]
 
     print("=" * 60)
-    print(f"Step 6: Set sfSuggestedMapping")
+    print(f"Step 6: Evaluate Migration Eligibility")
     if args.reset:
         print("  Mode: RESET (clearing all sfSuggested* first)")
     print(f"  Entities: {len(entities)}")

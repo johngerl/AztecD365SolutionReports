@@ -1,4 +1,4 @@
-Set sfSuggestedMapping on D365 entity field(s) based on usage and staleness rules.
+Evaluate D365 field migration eligibility based on usage and staleness rules.
 
 This is Step 6 of the pipeline. Run Steps 1-5 first. This is the single source of truth for "should this field be suggested for SF migration?"
 
@@ -11,7 +11,7 @@ else
   ARG="$ARGUMENTS"
 fi
 
-python scripts/set_d365_sf_suggested_mapping.py $ARG
+python scripts/evaluate_d365_migration_eligibility.py $ARG
 ```
 
 After completion, report:

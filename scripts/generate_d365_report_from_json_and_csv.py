@@ -2,7 +2,7 @@
 """
 generate_d365_report_from_json_and_csv.py
 
-Step 6 of the pipeline. Run steps 1-5 first.
+Step 7 of the pipeline. Run steps 1-6 first.
 
 Reads enriched D365 entity JSON from d365-entities/ and mapping CSVs from
 mapping/, then generates comprehensive Markdown field usage reports.
@@ -82,7 +82,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
         field_index[field_name.lower()].append((section_slug, desc))
 
     def fl(field_name):
-        return f'[{field_name}](#index-{slugify(field_name)})'
+        return f'[{field_name}](#{slugify(field_name)})'
 
     entity_title = entity_name.capitalize()
     today = date.today().isoformat()
@@ -140,12 +140,12 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     # 1. FIELD DEFINITIONS
     a('---')
     a('')
-    a('## <a id="1-field-definitions"></a>1. Field Definitions')
+    a('## 1. Field Definitions')
     a('')
     a(f'Total fields: **{len(fields)}**')
     a('')
-    a('| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |')
-    a('|---|-------------|-------------|------|-----------------|--------|----------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|')
+    a('| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |')
+    a('|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|')
     section_cols = [
         ('forms', '#2-forms'),
         ('views', '#3-views'),
@@ -171,6 +171,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
         custom = 'Yes' if csv_row.get('isCustom', '') == 'True' else (
             'Yes' if field.get('is_custom') else 'No')
         required_level = csv_row.get('requiredLevel', '') or field.get('required_level', '')
+        last_update = csv_row.get('lastUpdate', '') or field.get('last_update', '')
         # Picklist values from CSV (pre-formatted)
         pv_str = csv_row.get('picklistValues', '')
         # SF mapping columns from CSV
@@ -189,14 +190,14 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
             c = refs_for_field.get(key, 0)
             cells.append(f'[{c}]({slug})' if c > 0 else '')
         section_str = ' | '.join(cells)
-        a(f'| {i} | {fl(sn)} | {display_name} | {data_type} | {pv_str} | {custom} | {required_level} | {sf_str} | {section_str} |')
+        a(f'| {i} | {fl(sn)} | {display_name} | {data_type} | {pv_str} | {custom} | {required_level} | {last_update} | {sf_str} | {section_str} |')
         ref(sn, '1-field-definitions', 'Field Definitions')
     a('')
 
     # 2. FORMS
     a('---')
     a('')
-    a('## <a id="2-forms"></a>2. Forms')
+    a('## 2. Forms')
     a('')
     a(f'Total forms: **{len(forms)}**')
     a('')
@@ -205,7 +206,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
         status = "Active" if form['is_active'] else "Inactive"
         heading = f'2.{i}. {form["name"]} ({form["form_type"]}) -- {status}'
         form_slug = slugify(f"2{i} {form['name']} {form['form_type']} {status}")
-        a(f'### <a id="{form_slug}"></a>{heading}')
+        a(f'### {heading}')
         a('')
         a(f'- **Form ID:** `{form["form_id"]}`')
         a(f'- **Presentation:** {form["presentation"]}')
@@ -302,7 +303,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     # 3. VIEWS
     a('---')
     a('')
-    a('## <a id="3-views"></a>3. Views')
+    a('## 3. Views')
     a('')
     a(f'Total views: **{len(views)}**')
     a('')
@@ -310,7 +311,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     for i, view in enumerate(views, 1):
         heading = f'3.{i}. {view["name"]}'
         view_slug = slugify(f"3{i} {view['name']}")
-        a(f'### <a id="{view_slug}"></a>{heading}')
+        a(f'### {heading}')
         a('')
         a(f'- **Type:** {view["query_type_name"]} (querytype={view["query_type"]})')
         a(f'- **Default:** {"Yes" if view["is_default"] else "No"}')
@@ -351,7 +352,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     # 4. CHART VISUALIZATIONS
     a('---')
     a('')
-    a('## <a id="4-chart-visualizations"></a>4. Chart Visualizations')
+    a('## 4. Chart Visualizations')
     a('')
     a(f'Total charts: **{len(chart_visualizations)}**')
     a('')
@@ -359,7 +360,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     for i, chart in enumerate(chart_visualizations, 1):
         heading = f'4.{i}. {chart["name"]}'
         chart_slug = slugify(f"4{i} {chart['name']}")
-        a(f'### <a id="{chart_slug}"></a>{heading}')
+        a(f'### {heading}')
         a('')
         if chart['viz_id']:
             a(f'- **Visualization ID:** `{chart["viz_id"]}`')
@@ -411,7 +412,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     # 5. REPORTS
     a('---')
     a('')
-    a('## <a id="5-reports"></a>5. Reports')
+    a('## 5. Reports')
     a('')
     a(f'Total reports referencing {entity_title}: **{len(reports)}**')
     a('')
@@ -419,7 +420,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     for i, rpt in enumerate(reports, 1):
         heading = f'5.{i}. {rpt["name"]}'
         rpt_slug = slugify(f"5{i} {rpt['name']}")
-        a(f'### <a id="{rpt_slug}"></a>{heading}')
+        a(f'### {heading}')
         a('')
         a(f'- **File:** `{rpt["file"]}`')
         a(f'- **DataSets:** {len(rpt["datasets"])}')
@@ -513,7 +514,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     # 6. DASHBOARDS
     a('---')
     a('')
-    a('## <a id="6-dashboards"></a>6. Dashboards')
+    a('## 6. Dashboards')
     a('')
     a(f'Total dashboards referencing {entity_title}: **{len(dashboards)}**')
     a('')
@@ -521,7 +522,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     for i, dash in enumerate(dashboards, 1):
         heading = f'6.{i}. {dash["name"]}'
         dash_slug = slugify(f"6{i} {dash['name']}")
-        a(f'### <a id="{dash_slug}"></a>{heading}')
+        a(f'### {heading}')
         a('')
         a(f'- **Form ID:** `{dash["form_id"]}`')
         a('')
@@ -536,7 +537,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     # 7. WORKFLOWS
     a('---')
     a('')
-    a('## <a id="7-workflows"></a>7. Workflows')
+    a('## 7. Workflows')
     a('')
     a(f'Total workflows referencing {entity_title}: **{len(workflows)}**')
     a('')
@@ -544,7 +545,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     for i, wf in enumerate(workflows, 1):
         heading = f'7.{i}. {wf["name"]}'
         wf_slug = slugify(f"7{i} {wf['name']}")
-        a(f'### <a id="{wf_slug}"></a>{heading}')
+        a(f'### {heading}')
         a('')
         a(f'- **File:** `{wf["file"]}`')
         a(f'- **Entity References:** {", ".join(wf["entity_refs"])}')
@@ -582,7 +583,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     # 8. JAVASCRIPT
     a('---')
     a('')
-    a('## <a id="8-javascript-web-resources"></a>8. JavaScript Web Resources')
+    a('## 8. JavaScript Web Resources')
     a('')
     a(f'Total JS files referencing {entity_title} fields: **{len(js_files)}**')
     a('')
@@ -590,7 +591,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     for i, js in enumerate(js_files, 1):
         heading = f'8.{i}. {js["clean_name"]}'
         js_slug = slugify(f"8{i} {js['clean_name']}")
-        a(f'### <a id="{js_slug}"></a>{heading}')
+        a(f'### {heading}')
         a('')
         a(f'- **File:** `{js["file"]}`')
         a('')
@@ -623,7 +624,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     # 9. FORMULAS
     a('---')
     a('')
-    a('## <a id="9-formulas-rollups"></a>9. Formulas & Rollups')
+    a('## 9. Formulas & Rollups')
     a('')
     a(f'Total formulas for {entity_title}: **{len(formulas)}**')
     a('')
@@ -658,7 +659,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     # 10. PLUGIN SOURCE CODE ANALYSIS
     a('---')
     a('')
-    a('## <a id="10-plugin-source-code-analysis"></a>10. Plugin Source Code Analysis')
+    a('## 10. Plugin Source Code Analysis')
     a('')
     a(f'Total plugins analyzed: **{len(plugin_refs)}**')
     a('')
@@ -666,7 +667,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     for i, plugin in enumerate(plugin_refs, 1):
         heading = f'10.{i}. {plugin["class_name"]}'
         plugin_slug = slugify(f"10{i} {plugin['class_name']}")
-        a(f'### <a id="{plugin_slug}"></a>{heading}')
+        a(f'### {heading}')
         a('')
         a(f'- **File:** `{plugin["file"]}`')
         if plugin['target_entity']:
@@ -744,7 +745,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     # 11. PCF CONTROLS
     a('---')
     a('')
-    a('## <a id="11-pcf-controls"></a>11. PCF Controls')
+    a('## 11. PCF Controls')
     a('')
 
     controls_slug = '11-pcf-controls'
@@ -783,7 +784,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     # 12. RELATIONSHIPS
     a('---')
     a('')
-    a('## <a id="12-relationships"></a>12. Relationships')
+    a('## 12. Relationships')
     a('')
     a(f'Total relationships involving {entity_title}: **{len(relationships)}**')
     a('')
@@ -802,7 +803,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     # 13. RIBBON
     a('---')
     a('')
-    a('## <a id="13-ribbon-customizations"></a>13. Ribbon Customizations')
+    a('## 13. Ribbon Customizations')
     a('')
 
     if ribbon['custom_actions'] or ribbon['commands']:
@@ -831,7 +832,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     # 14. CONFLICTS & OBSERVATIONS
     a('---')
     a('')
-    a('## <a id="14-conflicts-observations"></a>14. Conflicts & Observations')
+    a('## 14. Conflicts & Observations')
     a('')
 
     a('### 14.1 Per-Form Conflicts')
@@ -878,14 +879,14 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     # INDEX
     a('---')
     a('')
-    a('## <a id="index"></a>Index')
+    a('## Index')
     a('')
     a(f'Alphabetical field index -- {len(field_index)} unique fields referenced.')
     a('')
 
     for field_name in sorted(field_index.keys()):
         refs = field_index[field_name]
-        a(f'**<a id="index-{slugify(field_name)}"></a>`{field_name}`**')
+        a(f'#### {field_name}')
         a('')
         for section_slug, desc in refs:
             a(f'- [{desc}](#{section_slug})')
@@ -983,14 +984,17 @@ def process_entity(entity_name, output_dir, mapping_dir, d365_entities_dir):
         f.write(markdown)
 
     link_targets = set(re.findall(r'\]\(#([^)]+)\)', markdown))
-    anchor_ids = set(re.findall(r'<a id="([^"]+)">', markdown))
-    orphans = link_targets - anchor_ids
+    # Extract heading-based anchors (Obsidian auto-generates from heading text)
+    heading_anchors = set()
+    for m in re.finditer(r'^(#{1,6})\s+(.+)$', markdown, re.MULTILINE):
+        heading_anchors.add(slugify(m.group(2)))
+    orphans = link_targets - heading_anchors
     if orphans:
-        print(f"  WARNING: {len(orphans)} orphan link target(s) with no matching anchor:")
+        print(f"  WARNING: {len(orphans)} orphan link target(s) with no matching heading:")
         for slug in sorted(orphans):
             print(f"    - #{slug}")
     else:
-        print(f"  Link integrity: OK ({len(link_targets)} targets, {len(anchor_ids)} anchors)")
+        print(f"  Link integrity: OK ({len(link_targets)} targets, {len(heading_anchors)} anchors)")
 
     print()
     print(f"  Output: {output_file}")

@@ -1193,6 +1193,11 @@
           "active": true
         },
         {
+          "label": "(GMT+01:00) Western European Summer Time (Africa/Casablanca)",
+          "value": "Africa/Casablanca",
+          "active": true
+        },
+        {
           "label": "(GMT+01:00) Central European Standard Time (Africa/Ceuta)",
           "value": "Africa/Ceuta",
           "active": true
@@ -1200,6 +1205,11 @@
         {
           "label": "(GMT+01:00) West Africa Standard Time (Africa/Douala)",
           "value": "Africa/Douala",
+          "active": true
+        },
+        {
+          "label": "(GMT+01:00) Western European Summer Time (Africa/El_Aaiun)",
+          "value": "Africa/El_Aaiun",
           "active": true
         },
         {
@@ -1433,11 +1443,6 @@
           "active": true
         },
         {
-          "label": "(GMT+00:00) Western European Standard Time (Africa/Casablanca)",
-          "value": "Africa/Casablanca",
-          "active": true
-        },
-        {
           "label": "(GMT+00:00) Greenwich Mean Time (Africa/Conakry)",
           "value": "Africa/Conakry",
           "active": true
@@ -1445,11 +1450,6 @@
         {
           "label": "(GMT+00:00) Greenwich Mean Time (Africa/Dakar)",
           "value": "Africa/Dakar",
-          "active": true
-        },
-        {
-          "label": "(GMT+00:00) Western European Standard Time (Africa/El_Aaiun)",
-          "value": "Africa/El_Aaiun",
           "active": true
         },
         {
@@ -1568,6 +1568,11 @@
           "active": true
         },
         {
+          "label": "(GMT-02:00) St Pierre & Miquelon Daylight Time (America/Miquelon)",
+          "value": "America/Miquelon",
+          "active": true
+        },
+        {
           "label": "(GMT-02:00) Fernando de Noronha Standard Time (America/Noronha)",
           "value": "America/Noronha",
           "active": true
@@ -1580,6 +1585,11 @@
         {
           "label": "(GMT-02:00) South Georgia Time (Atlantic/South_Georgia)",
           "value": "Atlantic/South_Georgia",
+          "active": true
+        },
+        {
+          "label": "(GMT-02:30) Newfoundland Daylight Time (America/St_Johns)",
+          "value": "America/St_Johns",
           "active": true
         },
         {
@@ -1663,6 +1673,21 @@
           "active": true
         },
         {
+          "label": "(GMT-03:00) Atlantic Daylight Time (America/Glace_Bay)",
+          "value": "America/Glace_Bay",
+          "active": true
+        },
+        {
+          "label": "(GMT-03:00) Atlantic Daylight Time (America/Goose_Bay)",
+          "value": "America/Goose_Bay",
+          "active": true
+        },
+        {
+          "label": "(GMT-03:00) Atlantic Daylight Time (America/Halifax)",
+          "value": "America/Halifax",
+          "active": true
+        },
+        {
           "label": "(GMT-03:00) Argentina Standard Time (America/Jujuy)",
           "value": "America/Jujuy",
           "active": true
@@ -1678,8 +1703,8 @@
           "active": true
         },
         {
-          "label": "(GMT-03:00) St Pierre & Miquelon Standard Time (America/Miquelon)",
-          "value": "America/Miquelon",
+          "label": "(GMT-03:00) Atlantic Daylight Time (America/Moncton)",
+          "value": "America/Moncton",
           "active": true
         },
         {
@@ -1718,6 +1743,11 @@
           "active": true
         },
         {
+          "label": "(GMT-03:00) Atlantic Daylight Time (America/Thule)",
+          "value": "America/Thule",
+          "active": true
+        },
+        {
           "label": "(GMT-03:00) Chile Standard Time (Antarctica/Palmer)",
           "value": "Antarctica/Palmer",
           "active": true
@@ -1728,13 +1758,13 @@
           "active": true
         },
         {
-          "label": "(GMT-03:00) Falkland Islands Standard Time (Atlantic/Stanley)",
-          "value": "Atlantic/Stanley",
+          "label": "(GMT-03:00) Atlantic Daylight Time (Atlantic/Bermuda)",
+          "value": "Atlantic/Bermuda",
           "active": true
         },
         {
-          "label": "(GMT-03:30) Newfoundland Standard Time (America/St_Johns)",
-          "value": "America/St_Johns",
+          "label": "(GMT-03:00) Falkland Islands Standard Time (Atlantic/Stanley)",
+          "value": "Atlantic/Stanley",
           "active": true
         },
         {
@@ -1788,18 +1818,18 @@
           "active": true
         },
         {
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Detroit)",
+          "value": "America/Detroit",
+          "active": true
+        },
+        {
           "label": "(GMT-04:00) Atlantic Standard Time (America/Dominica)",
           "value": "America/Dominica",
           "active": true
         },
         {
-          "label": "(GMT-04:00) Atlantic Standard Time (America/Glace_Bay)",
-          "value": "America/Glace_Bay",
-          "active": true
-        },
-        {
-          "label": "(GMT-04:00) Atlantic Standard Time (America/Goose_Bay)",
-          "value": "America/Goose_Bay",
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Grand_Turk)",
+          "value": "America/Grand_Turk",
           "active": true
         },
         {
@@ -1818,8 +1848,43 @@
           "active": true
         },
         {
-          "label": "(GMT-04:00) Atlantic Standard Time (America/Halifax)",
-          "value": "America/Halifax",
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Indiana/Indianapolis)",
+          "value": "America/Indiana/Indianapolis",
+          "active": true
+        },
+        {
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Indiana/Marengo)",
+          "value": "America/Indiana/Marengo",
+          "active": true
+        },
+        {
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Indiana/Petersburg)",
+          "value": "America/Indiana/Petersburg",
+          "active": true
+        },
+        {
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Indiana/Vevay)",
+          "value": "America/Indiana/Vevay",
+          "active": true
+        },
+        {
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Indiana/Vincennes)",
+          "value": "America/Indiana/Vincennes",
+          "active": true
+        },
+        {
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Indiana/Winamac)",
+          "value": "America/Indiana/Winamac",
+          "active": true
+        },
+        {
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Iqaluit)",
+          "value": "America/Iqaluit",
+          "active": true
+        },
+        {
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Kentucky/Monticello)",
+          "value": "America/Kentucky/Monticello",
           "active": true
         },
         {
@@ -1830,6 +1895,11 @@
         {
           "label": "(GMT-04:00) Bolivia Time (America/La_Paz)",
           "value": "America/La_Paz",
+          "active": true
+        },
+        {
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Louisville)",
+          "value": "America/Louisville",
           "active": true
         },
         {
@@ -1853,13 +1923,38 @@
           "active": true
         },
         {
-          "label": "(GMT-04:00) Atlantic Standard Time (America/Moncton)",
-          "value": "America/Moncton",
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Montreal)",
+          "value": "America/Montreal",
           "active": true
         },
         {
           "label": "(GMT-04:00) Atlantic Standard Time (America/Montserrat)",
           "value": "America/Montserrat",
+          "active": true
+        },
+        {
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Nassau)",
+          "value": "America/Nassau",
+          "active": true
+        },
+        {
+          "label": "(GMT-04:00) Eastern Daylight Time (America/New_York)",
+          "value": "America/New_York",
+          "active": true
+        },
+        {
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Nipigon)",
+          "value": "America/Nipigon",
+          "active": true
+        },
+        {
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Pangnirtung)",
+          "value": "America/Pangnirtung",
+          "active": true
+        },
+        {
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Port-au-Prince)",
+          "value": "America/Port-au-Prince",
           "active": true
         },
         {
@@ -1908,18 +2003,18 @@
           "active": true
         },
         {
-          "label": "(GMT-04:00) Atlantic Standard Time (America/Thule)",
-          "value": "America/Thule",
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Thunder_Bay)",
+          "value": "America/Thunder_Bay",
+          "active": true
+        },
+        {
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Toronto)",
+          "value": "America/Toronto",
           "active": true
         },
         {
           "label": "(GMT-04:00) Atlantic Standard Time (America/Tortola)",
           "value": "America/Tortola",
-          "active": true
-        },
-        {
-          "label": "(GMT-04:00) Atlantic Standard Time (Atlantic/Bermuda)",
-          "value": "Atlantic/Bermuda",
           "active": true
         },
         {
@@ -1938,13 +2033,13 @@
           "active": true
         },
         {
-          "label": "(GMT-05:00) Eastern Standard Time (America/Coral_Harbour)",
-          "value": "America/Coral_Harbour",
+          "label": "(GMT-05:00) Central Daylight Time (America/Chicago)",
+          "value": "America/Chicago",
           "active": true
         },
         {
-          "label": "(GMT-05:00) Eastern Standard Time (America/Detroit)",
-          "value": "America/Detroit",
+          "label": "(GMT-05:00) Eastern Standard Time (America/Coral_Harbour)",
+          "value": "America/Coral_Harbour",
           "active": true
         },
         {
@@ -1953,48 +2048,18 @@
           "active": true
         },
         {
-          "label": "(GMT-05:00) Eastern Standard Time (America/Grand_Turk)",
-          "value": "America/Grand_Turk",
-          "active": true
-        },
-        {
           "label": "(GMT-05:00) Ecuador Time (America/Guayaquil)",
           "value": "America/Guayaquil",
           "active": true
         },
         {
-          "label": "(GMT-05:00) Eastern Standard Time (America/Indiana/Indianapolis)",
-          "value": "America/Indiana/Indianapolis",
+          "label": "(GMT-05:00) Central Daylight Time (America/Indiana/Knox)",
+          "value": "America/Indiana/Knox",
           "active": true
         },
         {
-          "label": "(GMT-05:00) Eastern Standard Time (America/Indiana/Marengo)",
-          "value": "America/Indiana/Marengo",
-          "active": true
-        },
-        {
-          "label": "(GMT-05:00) Eastern Standard Time (America/Indiana/Petersburg)",
-          "value": "America/Indiana/Petersburg",
-          "active": true
-        },
-        {
-          "label": "(GMT-05:00) Eastern Standard Time (America/Indiana/Vevay)",
-          "value": "America/Indiana/Vevay",
-          "active": true
-        },
-        {
-          "label": "(GMT-05:00) Eastern Standard Time (America/Indiana/Vincennes)",
-          "value": "America/Indiana/Vincennes",
-          "active": true
-        },
-        {
-          "label": "(GMT-05:00) Eastern Standard Time (America/Indiana/Winamac)",
-          "value": "America/Indiana/Winamac",
-          "active": true
-        },
-        {
-          "label": "(GMT-05:00) Eastern Standard Time (America/Iqaluit)",
-          "value": "America/Iqaluit",
+          "label": "(GMT-05:00) Central Daylight Time (America/Indiana/Tell_City)",
+          "value": "America/Indiana/Tell_City",
           "active": true
         },
         {
@@ -2003,38 +2068,38 @@
           "active": true
         },
         {
-          "label": "(GMT-05:00) Eastern Standard Time (America/Kentucky/Monticello)",
-          "value": "America/Kentucky/Monticello",
-          "active": true
-        },
-        {
           "label": "(GMT-05:00) Peru Standard Time (America/Lima)",
           "value": "America/Lima",
           "active": true
         },
         {
-          "label": "(GMT-05:00) Eastern Standard Time (America/Louisville)",
-          "value": "America/Louisville",
+          "label": "(GMT-05:00) Central Daylight Time (America/Matamoros)",
+          "value": "America/Matamoros",
           "active": true
         },
         {
-          "label": "(GMT-05:00) Eastern Standard Time (America/Montreal)",
-          "value": "America/Montreal",
+          "label": "(GMT-05:00) Central Daylight Time (America/Menominee)",
+          "value": "America/Menominee",
           "active": true
         },
         {
-          "label": "(GMT-05:00) Eastern Standard Time (America/Nassau)",
-          "value": "America/Nassau",
+          "label": "(GMT-05:00) Central Daylight Time (America/North_Dakota/Beulah)",
+          "value": "America/North_Dakota/Beulah",
           "active": true
         },
         {
-          "label": "(GMT-05:00) Eastern Standard Time (America/New_York)",
-          "value": "America/New_York",
+          "label": "(GMT-05:00) Central Daylight Time (America/North_Dakota/Center)",
+          "value": "America/North_Dakota/Center",
           "active": true
         },
         {
-          "label": "(GMT-05:00) Eastern Standard Time (America/Nipigon)",
-          "value": "America/Nipigon",
+          "label": "(GMT-05:00) Central Daylight Time (America/North_Dakota/New_Salem)",
+          "value": "America/North_Dakota/New_Salem",
+          "active": true
+        },
+        {
+          "label": "(GMT-05:00) Mountain Daylight Time (America/Ojinaga)",
+          "value": "America/Ojinaga",
           "active": true
         },
         {
@@ -2043,13 +2108,18 @@
           "active": true
         },
         {
-          "label": "(GMT-05:00) Eastern Standard Time (America/Pangnirtung)",
-          "value": "America/Pangnirtung",
+          "label": "(GMT-05:00) Central Daylight Time (America/Rainy_River)",
+          "value": "America/Rainy_River",
           "active": true
         },
         {
-          "label": "(GMT-05:00) Eastern Standard Time (America/Port-au-Prince)",
-          "value": "America/Port-au-Prince",
+          "label": "(GMT-05:00) Central Daylight Time (America/Rankin_Inlet)",
+          "value": "America/Rankin_Inlet",
+          "active": true
+        },
+        {
+          "label": "(GMT-05:00) Central Daylight Time (America/Resolute)",
+          "value": "America/Resolute",
           "active": true
         },
         {
@@ -2058,13 +2128,8 @@
           "active": true
         },
         {
-          "label": "(GMT-05:00) Eastern Standard Time (America/Thunder_Bay)",
-          "value": "America/Thunder_Bay",
-          "active": true
-        },
-        {
-          "label": "(GMT-05:00) Eastern Standard Time (America/Toronto)",
-          "value": "America/Toronto",
+          "label": "(GMT-05:00) Central Daylight Time (America/Winnipeg)",
+          "value": "America/Winnipeg",
           "active": true
         },
         {
@@ -2083,8 +2148,13 @@
           "active": true
         },
         {
-          "label": "(GMT-06:00) Central Standard Time (America/Chicago)",
-          "value": "America/Chicago",
+          "label": "(GMT-06:00) Mountain Daylight Time (America/Boise)",
+          "value": "America/Boise",
+          "active": true
+        },
+        {
+          "label": "(GMT-06:00) Mountain Daylight Time (America/Cambridge_Bay)",
+          "value": "America/Cambridge_Bay",
           "active": true
         },
         {
@@ -2098,6 +2168,16 @@
           "active": true
         },
         {
+          "label": "(GMT-06:00) Mountain Daylight Time (America/Denver)",
+          "value": "America/Denver",
+          "active": true
+        },
+        {
+          "label": "(GMT-06:00) Mountain Daylight Time (America/Edmonton)",
+          "value": "America/Edmonton",
+          "active": true
+        },
+        {
           "label": "(GMT-06:00) Central Standard Time (America/El_Salvador)",
           "value": "America/El_Salvador",
           "active": true
@@ -2108,28 +2188,13 @@
           "active": true
         },
         {
-          "label": "(GMT-06:00) Central Standard Time (America/Indiana/Knox)",
-          "value": "America/Indiana/Knox",
-          "active": true
-        },
-        {
-          "label": "(GMT-06:00) Central Standard Time (America/Indiana/Tell_City)",
-          "value": "America/Indiana/Tell_City",
+          "label": "(GMT-06:00) Mountain Daylight Time (America/Inuvik)",
+          "value": "America/Inuvik",
           "active": true
         },
         {
           "label": "(GMT-06:00) Central Standard Time (America/Managua)",
           "value": "America/Managua",
-          "active": true
-        },
-        {
-          "label": "(GMT-06:00) Central Standard Time (America/Matamoros)",
-          "value": "America/Matamoros",
-          "active": true
-        },
-        {
-          "label": "(GMT-06:00) Central Standard Time (America/Menominee)",
-          "value": "America/Menominee",
           "active": true
         },
         {
@@ -2148,43 +2213,8 @@
           "active": true
         },
         {
-          "label": "(GMT-06:00) Central Standard Time (America/North_Dakota/Beulah)",
-          "value": "America/North_Dakota/Beulah",
-          "active": true
-        },
-        {
-          "label": "(GMT-06:00) Central Standard Time (America/North_Dakota/Center)",
-          "value": "America/North_Dakota/Center",
-          "active": true
-        },
-        {
-          "label": "(GMT-06:00) Central Standard Time (America/North_Dakota/New_Salem)",
-          "value": "America/North_Dakota/New_Salem",
-          "active": true
-        },
-        {
-          "label": "(GMT-06:00) Mountain Standard Time (America/Ojinaga)",
-          "value": "America/Ojinaga",
-          "active": true
-        },
-        {
-          "label": "(GMT-06:00) Central Standard Time (America/Rainy_River)",
-          "value": "America/Rainy_River",
-          "active": true
-        },
-        {
-          "label": "(GMT-06:00) Central Standard Time (America/Rankin_Inlet)",
-          "value": "America/Rankin_Inlet",
-          "active": true
-        },
-        {
           "label": "(GMT-06:00) Central Standard Time (America/Regina)",
           "value": "America/Regina",
-          "active": true
-        },
-        {
-          "label": "(GMT-06:00) Central Standard Time (America/Resolute)",
-          "value": "America/Resolute",
           "active": true
         },
         {
@@ -2198,23 +2228,13 @@
           "active": true
         },
         {
-          "label": "(GMT-06:00) Central Standard Time (America/Winnipeg)",
-          "value": "America/Winnipeg",
+          "label": "(GMT-06:00) Mountain Daylight Time (America/Yellowknife)",
+          "value": "America/Yellowknife",
           "active": true
         },
         {
           "label": "(GMT-06:00) Galapagos Time (Pacific/Galapagos)",
           "value": "Pacific/Galapagos",
-          "active": true
-        },
-        {
-          "label": "(GMT-07:00) Mountain Standard Time (America/Boise)",
-          "value": "America/Boise",
-          "active": true
-        },
-        {
-          "label": "(GMT-07:00) Mountain Standard Time (America/Cambridge_Bay)",
-          "value": "America/Cambridge_Bay",
           "active": true
         },
         {
@@ -2233,16 +2253,6 @@
           "active": true
         },
         {
-          "label": "(GMT-07:00) Mountain Standard Time (America/Denver)",
-          "value": "America/Denver",
-          "active": true
-        },
-        {
-          "label": "(GMT-07:00) Mountain Standard Time (America/Edmonton)",
-          "value": "America/Edmonton",
-          "active": true
-        },
-        {
           "label": "(GMT-07:00) Mountain Standard Time (America/Fort_Nelson)",
           "value": "America/Fort_Nelson",
           "active": true
@@ -2253,8 +2263,8 @@
           "active": true
         },
         {
-          "label": "(GMT-07:00) Mountain Standard Time (America/Inuvik)",
-          "value": "America/Inuvik",
+          "label": "(GMT-07:00) Pacific Daylight Time (America/Los_Angeles)",
+          "value": "America/Los_Angeles",
           "active": true
         },
         {
@@ -2268,33 +2278,53 @@
           "active": true
         },
         {
+          "label": "(GMT-07:00) Northwest Mexico Daylight Time (America/Santa_Isabel)",
+          "value": "America/Santa_Isabel",
+          "active": true
+        },
+        {
+          "label": "(GMT-07:00) Pacific Daylight Time (America/Tijuana)",
+          "value": "America/Tijuana",
+          "active": true
+        },
+        {
+          "label": "(GMT-07:00) Pacific Daylight Time (America/Vancouver)",
+          "value": "America/Vancouver",
+          "active": true
+        },
+        {
           "label": "(GMT-07:00) Yukon Time (America/Whitehorse)",
           "value": "America/Whitehorse",
           "active": true
         },
         {
-          "label": "(GMT-07:00) Mountain Standard Time (America/Yellowknife)",
-          "value": "America/Yellowknife",
+          "label": "(GMT-08:00) Alaska Daylight Time (America/Anchorage)",
+          "value": "America/Anchorage",
           "active": true
         },
         {
-          "label": "(GMT-08:00) Pacific Standard Time (America/Los_Angeles)",
-          "value": "America/Los_Angeles",
+          "label": "(GMT-08:00) Alaska Daylight Time (America/Juneau)",
+          "value": "America/Juneau",
           "active": true
         },
         {
-          "label": "(GMT-08:00) Northwest Mexico Standard Time (America/Santa_Isabel)",
-          "value": "America/Santa_Isabel",
+          "label": "(GMT-08:00) Alaska Daylight Time (America/Metlakatla)",
+          "value": "America/Metlakatla",
           "active": true
         },
         {
-          "label": "(GMT-08:00) Pacific Standard Time (America/Tijuana)",
-          "value": "America/Tijuana",
+          "label": "(GMT-08:00) Alaska Daylight Time (America/Nome)",
+          "value": "America/Nome",
           "active": true
         },
         {
-          "label": "(GMT-08:00) Pacific Standard Time (America/Vancouver)",
-          "value": "America/Vancouver",
+          "label": "(GMT-08:00) Alaska Daylight Time (America/Sitka)",
+          "value": "America/Sitka",
+          "active": true
+        },
+        {
+          "label": "(GMT-08:00) Alaska Daylight Time (America/Yakutat)",
+          "value": "America/Yakutat",
           "active": true
         },
         {
@@ -2303,33 +2333,8 @@
           "active": true
         },
         {
-          "label": "(GMT-09:00) Alaska Standard Time (America/Anchorage)",
-          "value": "America/Anchorage",
-          "active": true
-        },
-        {
-          "label": "(GMT-09:00) Alaska Standard Time (America/Juneau)",
-          "value": "America/Juneau",
-          "active": true
-        },
-        {
-          "label": "(GMT-09:00) Alaska Standard Time (America/Metlakatla)",
-          "value": "America/Metlakatla",
-          "active": true
-        },
-        {
-          "label": "(GMT-09:00) Alaska Standard Time (America/Nome)",
-          "value": "America/Nome",
-          "active": true
-        },
-        {
-          "label": "(GMT-09:00) Alaska Standard Time (America/Sitka)",
-          "value": "America/Sitka",
-          "active": true
-        },
-        {
-          "label": "(GMT-09:00) Alaska Standard Time (America/Yakutat)",
-          "value": "America/Yakutat",
+          "label": "(GMT-09:00) Hawaii-Aleutian Daylight Time (America/Adak)",
+          "value": "America/Adak",
           "active": true
         },
         {
@@ -2340,11 +2345,6 @@
         {
           "label": "(GMT-09:30) Marquesas Time (Pacific/Marquesas)",
           "value": "Pacific/Marquesas",
-          "active": true
-        },
-        {
-          "label": "(GMT-10:00) Hawaii-Aleutian Standard Time (America/Adak)",
-          "value": "America/Adak",
           "active": true
         },
         {

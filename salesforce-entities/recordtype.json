@@ -96,26 +96,6 @@
       "picklistValues": [
         {
           "label": null,
-          "value": "AbnExperiment",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "AbnExperimentCohort",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "AbnExperimentCohortAttrVal",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "AbnExperimentEngmtSgnlMtrc",
-          "active": true
-        },
-        {
-          "label": null,
           "value": "Account",
           "active": true
         },
@@ -176,26 +156,6 @@
         },
         {
           "label": null,
-          "value": "ActivationTarget",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "ActivationTargetPlatform",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "ActivationTargetSecureFTP",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "ActivationTrgtIntOrgAccess",
-          "active": true
-        },
-        {
-          "label": null,
           "value": "Actor",
           "active": true
         },
@@ -216,27 +176,12 @@
         },
         {
           "label": null,
-          "value": "ActvTgtPlatformFieldValue",
+          "value": "Address",
           "active": true
         },
         {
           "label": null,
           "value": "AIError",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "AiGroundingFileRef",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "AiGroundingSourceStage",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "AiGroundingWebRef",
           "active": true
         },
         {
@@ -302,11 +247,6 @@
         {
           "label": null,
           "value": "AITenantProvisionedFeature",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "AlternativePaymentMethod",
           "active": true
         },
         {
@@ -401,7 +341,7 @@
         },
         {
           "label": null,
-          "value": "CalculatedInsightRangeBound",
+          "value": "CalculationMatrixActionLog",
           "active": true
         },
         {
@@ -426,27 +366,37 @@
         },
         {
           "label": null,
-          "value": "CampaignTemplate",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "CardPaymentMethod",
-          "active": true
-        },
-        {
-          "label": null,
           "value": "Case",
           "active": true
         },
         {
           "label": null,
-          "value": "CatalogedSharedKey",
+          "value": "CaseRelatedIssue",
+          "active": true
+        },
+        {
+          "label": null,
+          "value": "CaseServiceProcess",
           "active": true
         },
         {
           "label": null,
           "value": "CdnTaskConfiguration",
+          "active": true
+        },
+        {
+          "label": null,
+          "value": "ChangeRequest",
+          "active": true
+        },
+        {
+          "label": null,
+          "value": "ChangeRequestRelatedIssue",
+          "active": true
+        },
+        {
+          "label": null,
+          "value": "ChangeRequestRelatedItem",
           "active": true
         },
         {
@@ -571,11 +521,6 @@
         },
         {
           "label": null,
-          "value": "ConsentPrefRevokedTkn",
-          "active": true
-        },
-        {
-          "label": null,
           "value": "Contact",
           "active": true
         },
@@ -636,52 +581,17 @@
         },
         {
           "label": null,
+          "value": "ContractLineItem",
+          "active": true
+        },
+        {
+          "label": null,
           "value": "ConvCoachingRecommendation",
           "active": true
         },
         {
           "label": null,
-          "value": "ConvEntryRelatedRecordCopy",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "ConversationApiLog",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "ConversationApiLogObjSum",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "ConversationEntryCopy",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "ConvMsgSessionAuthResult",
-          "active": true
-        },
-        {
-          "label": null,
           "value": "CredentialStuffingEventStore",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "CreditMemo",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "CreditMemoInvApplication",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "CreditMemoLine",
           "active": true
         },
         {
@@ -692,21 +602,6 @@
         {
           "label": null,
           "value": "Customer",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataAction",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataActionJobSummary",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataActionTarget",
           "active": true
         },
         {
@@ -722,21 +617,6 @@
         {
           "label": null,
           "value": "DataAssetUsageTrackingInfo",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataCommCapActvTarget",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataCommunicationCap",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataContentLensSource",
           "active": true
         },
         {
@@ -806,112 +686,7 @@
         },
         {
           "label": null,
-          "value": "DataGraph",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataHarmonizedModelObjRef",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataKitDeploymentLog",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataKnowledgeSpace",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataKnowledgeSpaceSession",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataKnowledgeSrcFileRef",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataLakeObjectInstance",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataLineageDefSyncLog",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataLineageNodeDefSyncLog",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataMceUmaMigrationStatus",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataMceUmaMigStrmStatus",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataModelRelationConstraint",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataObjSecondaryIndex",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataPackageKit",
-          "active": true
-        },
-        {
-          "label": null,
           "value": "DataPrepServiceLocator",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataQueryWorkspace",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataQueryWorkspaceTab",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataQuickAttribute",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataSemanticSearch",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataSourceBundle",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataSpace",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "DataStream",
           "active": true
         },
         {
@@ -942,6 +717,16 @@
         {
           "label": null,
           "value": "DcvrRecipeStepProgress",
+          "active": true
+        },
+        {
+          "label": null,
+          "value": "DecisionTblFileImportData",
+          "active": true
+        },
+        {
+          "label": null,
+          "value": "DevopsActivityLog",
           "active": true
         },
         {
@@ -1041,11 +826,6 @@
         },
         {
           "label": null,
-          "value": "DigitalWallet",
-          "active": true
-        },
-        {
-          "label": null,
           "value": "dlrs__LookupChild__c",
           "active": true
         },
@@ -1096,22 +876,42 @@
         },
         {
           "label": null,
+          "value": "Employee",
+          "active": true
+        },
+        {
+          "label": null,
+          "value": "EmpUserProvisioningProcess",
+          "active": true
+        },
+        {
+          "label": null,
+          "value": "EmpUserProvisionProcessErr",
+          "active": true
+        },
+        {
+          "label": null,
           "value": "EngagementChannelType",
           "active": true
         },
         {
           "label": null,
-          "value": "EngagementSignal",
+          "value": "EngagementInteraction",
           "active": true
         },
         {
           "label": null,
-          "value": "EngagementSignalCmpndMetric",
+          "value": "Entitlement",
           "active": true
         },
         {
           "label": null,
-          "value": "EngagementSignalMetric",
+          "value": "EntitlementContact",
+          "active": true
+        },
+        {
+          "label": null,
+          "value": "EntityMilestone",
           "active": true
         },
         {
@@ -1147,16 +947,6 @@
         {
           "label": null,
           "value": "ExpressionFilterCriteria",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "ExtDataShare",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "ExtDataShareTarget",
           "active": true
         },
         {
@@ -1276,56 +1066,6 @@
         },
         {
           "label": null,
-          "value": "GenOpPlan",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "GenOpPlanError",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "GenOpPlanParam",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "GenOpPlanReferenceRecord",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "GenOpPlanRequest",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "GenOpPlanStep",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "GenOpPlanStepSource",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "GoalAssignment",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "GoalAssignmentRecommendation",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "GoalDefinition",
-          "active": true
-        },
-        {
-          "label": null,
           "value": "Graphics_Pack_Example__c",
           "active": true
         },
@@ -1351,12 +1091,17 @@
         },
         {
           "label": null,
-          "value": "IdentityResolution",
+          "value": "Image",
           "active": true
         },
         {
           "label": null,
-          "value": "Image",
+          "value": "Incident",
+          "active": true
+        },
+        {
+          "label": null,
+          "value": "IncidentRelatedItem",
           "active": true
         },
         {
@@ -1366,17 +1111,7 @@
         },
         {
           "label": null,
-          "value": "Insight",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "InsightUserValue",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "Invoice",
+          "value": "InternalOrganizationUnit",
           "active": true
         },
         {
@@ -1387,11 +1122,6 @@
         {
           "label": null,
           "value": "Invoice_Line__c",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "InvoiceLine",
           "active": true
         },
         {
@@ -1501,36 +1231,6 @@
         },
         {
           "label": null,
-          "value": "MarketSegment",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "MarketSegmentActivation",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "MarketSegmentField",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "MessagingEndUser",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "MessagingSession",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "MessagingSessionMetrics",
-          "active": true
-        },
-        {
-          "label": null,
           "value": "MgmtOrgProvisioningAttempt",
           "active": true
         },
@@ -1542,71 +1242,6 @@
         {
           "label": null,
           "value": "MgmtOrgProvisioningRequest",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "MktCalculatedInsight",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "MktDataTransform",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "MktDataTransformSvcLocator",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "MktMLModel",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "MktMLModelPartitionRun",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "MktMLModelSetupRun",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "MktMLPredictionJob",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "MktSgmntActvtnAudAttribute",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "MktSgmntActvtnContactPoint",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "MktSgmtActvContactPtField",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "MktSgmtActvContactPtSrc",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "MktSgmtActvDataModelFld",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "MktSgmtActvDataSource",
           "active": true
         },
         {
@@ -1627,11 +1262,6 @@
         {
           "label": null,
           "value": "MLModel",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "MLModelDataAlert",
           "active": true
         },
         {
@@ -1662,6 +1292,11 @@
         {
           "label": null,
           "value": "ObjectDataImportReference",
+          "active": true
+        },
+        {
+          "label": null,
+          "value": "ObjectMilestonePauseTime",
           "active": true
         },
         {
@@ -1716,47 +1351,7 @@
         },
         {
           "label": null,
-          "value": "Payment",
-          "active": true
-        },
-        {
-          "label": null,
           "value": "Payment__c",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "PaymentAuthAdjustment",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "PaymentAuthorization",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "PaymentGateway",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "PaymentGatewayLog",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "PaymentGroup",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "PaymentLineInvoice",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "PersonalizationAttribute",
           "active": true
         },
         {
@@ -1766,12 +1361,22 @@
         },
         {
           "label": null,
-          "value": "PersonalizationSchema",
+          "value": "Pricebook2",
           "active": true
         },
         {
           "label": null,
-          "value": "Pricebook2",
+          "value": "Problem",
+          "active": true
+        },
+        {
+          "label": null,
+          "value": "ProblemIncident",
+          "active": true
+        },
+        {
+          "label": null,
+          "value": "ProblemRelatedItem",
           "active": true
         },
         {
@@ -1836,6 +1441,11 @@
         },
         {
           "label": null,
+          "value": "RealTimeClassificationModel",
+          "active": true
+        },
+        {
+          "label": null,
           "value": "RebatePayoutSnapshot",
           "active": true
         },
@@ -1861,22 +1471,22 @@
         },
         {
           "label": null,
+          "value": "RecordAlert",
+          "active": true
+        },
+        {
+          "label": null,
+          "value": "RecordAlertActionableTarget",
+          "active": true
+        },
+        {
+          "label": null,
           "value": "RecordMergeHistory",
           "active": true
         },
         {
           "label": null,
           "value": "RecordOrigin",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "Refund",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "RefundLinePayment",
           "active": true
         },
         {
@@ -1941,11 +1551,6 @@
         },
         {
           "label": null,
-          "value": "SearchPromotionRule",
-          "active": true
-        },
-        {
-          "label": null,
           "value": "SearchRecencyIndexingJob",
           "active": true
         },
@@ -1966,12 +1571,7 @@
         },
         {
           "label": null,
-          "value": "SenderEmailAddress",
-          "active": true
-        },
-        {
-          "label": null,
-          "value": "ServiceAiState",
+          "value": "ServiceContract",
           "active": true
         },
         {
@@ -2196,6 +1796,21 @@
         },
         {
           "label": null,
+          "value": "SvcCatalogReqExtdAttrVal",
+          "active": true
+        },
+        {
+          "label": null,
+          "value": "SvcCatalogReqRelatedItem",
+          "active": true
+        },
+        {
+          "label": null,
+          "value": "SvcCatalogRequest",
+          "active": true
+        },
+        {
+          "label": null,
           "value": "SyncTransactionLog",
           "active": true
         },
@@ -2366,12 +1981,42 @@
         },
         {
           "label": null,
+          "value": "WorkflowSLAAction",
+          "active": true
+        },
+        {
+          "label": null,
           "value": "WorkOrder",
           "active": true
         },
         {
           "label": null,
           "value": "WorkOrderLineItem",
+          "active": true
+        },
+        {
+          "label": null,
+          "value": "WorkPlan",
+          "active": true
+        },
+        {
+          "label": null,
+          "value": "WorkPlanTemplate",
+          "active": true
+        },
+        {
+          "label": null,
+          "value": "WorkPlanTemplateEntry",
+          "active": true
+        },
+        {
+          "label": null,
+          "value": "WorkStep",
+          "active": true
+        },
+        {
+          "label": null,
+          "value": "WorkStepTemplate",
           "active": true
         },
         {

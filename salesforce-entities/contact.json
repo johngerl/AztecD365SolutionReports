@@ -520,6 +520,16 @@
           "active": true
         },
         {
+          "label": "Cold Call by Sales rep",
+          "value": "Cold Call by Sales rep",
+          "active": true
+        },
+        {
+          "label": "Cold email by Sales rep",
+          "value": "Cold email by Sales rep",
+          "active": true
+        },
+        {
           "label": "Conference",
           "value": "Conference",
           "active": true
@@ -535,8 +545,23 @@
           "active": true
         },
         {
+          "label": "Downloaded a Resource",
+          "value": "Downloaded a Resource",
+          "active": true
+        },
+        {
+          "label": "Email",
+          "value": "Email",
+          "active": true
+        },
+        {
           "label": "Email Outreach",
           "value": "Email Outreach",
+          "active": true
+        },
+        {
+          "label": "Event",
+          "value": "Event",
           "active": true
         },
         {
@@ -557,6 +582,11 @@
         {
           "label": "LinkedIn",
           "value": "linkedin",
+          "active": true
+        },
+        {
+          "label": "Lost Opportunity",
+          "value": "Lost Opportunity",
           "active": true
         },
         {
@@ -590,8 +620,13 @@
           "active": true
         },
         {
-          "label": "Social media Other (Instagram, Facebook, Twitter)",
-          "value": "Social media Other (Instagram, Facebook, Twitter)",
+          "label": "Social Media",
+          "value": "Social Media",
+          "active": true
+        },
+        {
+          "label": "Web Form",
+          "value": "Web Form",
           "active": true
         },
         {
@@ -600,28 +635,13 @@
           "active": true
         },
         {
-          "label": "Cold Call by Sales rep",
-          "value": "Cold Call by Sales rep",
-          "active": true
-        },
-        {
-          "label": "Downloaded a Resource",
-          "value": "Downloaded a Resource",
-          "active": true
-        },
-        {
-          "label": "Cold email by Sales rep",
-          "value": "Cold email by Sales rep",
+          "label": "Web Search",
+          "value": "Web Search",
           "active": true
         },
         {
           "label": "Zoominfo",
           "value": "Zoominfo",
-          "active": true
-        },
-        {
-          "label": "Lost Opportunity",
-          "value": "Lost Opportunity",
           "active": true
         }
       ],

@@ -67,33 +67,23 @@
       "maxLength": 255,
       "picklistValues": [
         {
-          "label": "Competitor",
-          "value": "Competitor",
-          "active": true
-        },
-        {
           "label": "Customer",
           "value": "Customer",
           "active": true
         },
         {
-          "label": "Integrator",
-          "value": "Integrator",
+          "label": "Expired Customer",
+          "value": "Expired Customer",
           "active": true
         },
         {
-          "label": "Investor",
-          "value": "Investor",
+          "label": "Former Customer",
+          "value": "Former Customer",
           "active": true
         },
         {
           "label": "Partner",
           "value": "Partner",
-          "active": true
-        },
-        {
-          "label": "Press",
-          "value": "Press",
           "active": true
         },
         {
@@ -104,6 +94,31 @@
         {
           "label": "Reseller",
           "value": "Reseller",
+          "active": true
+        },
+        {
+          "label": "Reseller - Sub",
+          "value": "Reseller - Sub",
+          "active": true
+        },
+        {
+          "label": "Trade Show",
+          "value": "Trade Show",
+          "active": true
+        },
+        {
+          "label": "VAR",
+          "value": "VAR",
+          "active": true
+        },
+        {
+          "label": "VAR - Sub",
+          "value": "VAR - Sub",
+          "active": true
+        },
+        {
+          "label": "Vendor",
+          "value": "Vendor",
           "active": true
         },
         {
@@ -1018,6 +1033,20 @@
       "d365SuggestedInternalName": null
     },
     {
+      "fieldName": "SourceSystemIdentifier",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 85,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
       "fieldName": "Jigsaw",
       "dataType": "string",
       "required": "No",
@@ -1083,6 +1112,16 @@
           "active": true
         },
         {
+          "label": "Cold Call by Sales rep",
+          "value": "Cold Call by Sales rep",
+          "active": true
+        },
+        {
+          "label": "Cold email by Sales rep",
+          "value": "Cold email by Sales rep",
+          "active": true
+        },
+        {
           "label": "Conference",
           "value": "Conference",
           "active": true
@@ -1098,8 +1137,23 @@
           "active": true
         },
         {
+          "label": "Downloaded a Resource",
+          "value": "Downloaded a Resource",
+          "active": true
+        },
+        {
+          "label": "Email",
+          "value": "Email",
+          "active": true
+        },
+        {
           "label": "Email Outreach",
           "value": "Email Outreach",
+          "active": true
+        },
+        {
+          "label": "Event",
+          "value": "Event",
           "active": true
         },
         {
@@ -1120,6 +1174,11 @@
         {
           "label": "LinkedIn",
           "value": "linkedin",
+          "active": true
+        },
+        {
+          "label": "Lost Opportunity",
+          "value": "Lost Opportunity",
           "active": true
         },
         {
@@ -1153,8 +1212,13 @@
           "active": true
         },
         {
-          "label": "Social media Other (Instagram, Facebook, Twitter)",
-          "value": "Social media Other (Instagram, Facebook, Twitter)",
+          "label": "Social Media",
+          "value": "Social Media",
+          "active": true
+        },
+        {
+          "label": "Web Form",
+          "value": "Web Form",
           "active": true
         },
         {
@@ -1163,28 +1227,13 @@
           "active": true
         },
         {
-          "label": "Cold Call by Sales rep",
-          "value": "Cold Call by Sales rep",
-          "active": true
-        },
-        {
-          "label": "Downloaded a Resource",
-          "value": "Downloaded a Resource",
-          "active": true
-        },
-        {
-          "label": "Cold email by Sales rep",
-          "value": "Cold email by Sales rep",
+          "label": "Web Search",
+          "value": "Web Search",
           "active": true
         },
         {
           "label": "Zoominfo",
           "value": "Zoominfo",
-          "active": true
-        },
-        {
-          "label": "Lost Opportunity",
-          "value": "Lost Opportunity",
           "active": true
         }
       ],
@@ -1245,11 +1294,6 @@
       "maxLength": 255,
       "picklistValues": [
         {
-          "label": "Prospect",
-          "value": "Prospect",
-          "active": true
-        },
-        {
           "label": "Active",
           "value": "Active",
           "active": true
@@ -1263,41 +1307,6 @@
       "d365EntityName": "account",
       "d365DisplayName": "Account Type",
       "d365InternalName": "azt_accounttype",
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
-    },
-    {
-      "fieldName": "CRM_Business_Unit__c",
-      "dataType": "picklist",
-      "required": "No",
-      "relatedTo": "None",
-      "maxLength": 255,
-      "picklistValues": [
-        {
-          "label": "Aztec Software",
-          "value": "Aztec Software",
-          "active": true
-        },
-        {
-          "label": "Workforce",
-          "value": "Workforce",
-          "active": true
-        },
-        {
-          "label": "iGrad",
-          "value": "iGrad",
-          "active": true
-        },
-        {
-          "label": "CTE",
-          "value": "CTE",
-          "active": true
-        }
-      ],
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
       "d365SuggestedEntityName": null,
       "d365SuggestedDisplayName": null,
       "d365SuggestedInternalName": null
@@ -1742,20 +1751,6 @@
       "d365SuggestedInternalName": null
     },
     {
-      "fieldName": "Account_GUID__c",
-      "dataType": "string",
-      "required": "No",
-      "relatedTo": "None",
-      "maxLength": 180,
-      "picklistValues": null,
-      "d365EntityName": "account",
-      "d365DisplayName": "GUID",
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
-    },
-    {
       "fieldName": "CRM_Account_Classification__c",
       "dataType": "string",
       "required": "No",
@@ -1784,221 +1779,11 @@
       "d365SuggestedInternalName": null
     },
     {
-      "fieldName": "CRM_Account_Type__c",
-      "dataType": "string",
-      "required": "No",
-      "relatedTo": "None",
-      "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
-    },
-    {
-      "fieldName": "CRM_Created_By__c",
-      "dataType": "string",
-      "required": "No",
-      "relatedTo": "None",
-      "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
-    },
-    {
-      "fieldName": "CRM_Created_Date__c",
-      "dataType": "date",
-      "required": "No",
-      "relatedTo": "None",
-      "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
-    },
-    {
-      "fieldName": "CRM_Last_Modified_By__c",
-      "dataType": "string",
-      "required": "No",
-      "relatedTo": "None",
-      "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
-    },
-    {
-      "fieldName": "CRM_Last_Modified_Date__c",
-      "dataType": "date",
-      "required": "No",
-      "relatedTo": "None",
-      "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
-    },
-    {
-      "fieldName": "CRM_Last_Print_Purchase__c",
-      "dataType": "date",
-      "required": "No",
-      "relatedTo": "None",
-      "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
-    },
-    {
-      "fieldName": "CRM_Last_SaaS_Purchase__c",
-      "dataType": "date",
-      "required": "No",
-      "relatedTo": "None",
-      "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
-    },
-    {
-      "fieldName": "CRM_Non_SaaS_Status__c",
-      "dataType": "string",
-      "required": "No",
-      "relatedTo": "None",
-      "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
-    },
-    {
-      "fieldName": "CRM_Owner__c",
-      "dataType": "string",
-      "required": "No",
-      "relatedTo": "None",
-      "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
-    },
-    {
-      "fieldName": "CRM_Partner_c__c",
-      "dataType": "string",
-      "required": "No",
-      "relatedTo": "None",
-      "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
-    },
-    {
-      "fieldName": "CRM_SaaS_Status__c",
-      "dataType": "string",
-      "required": "No",
-      "relatedTo": "None",
-      "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
-    },
-    {
-      "fieldName": "CRM_Vertical_Market__c",
-      "dataType": "string",
-      "required": "No",
-      "relatedTo": "None",
-      "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
-    },
-    {
-      "fieldName": "CS_Agent__c",
-      "dataType": "reference",
-      "required": "No",
-      "relatedTo": "User",
-      "maxLength": 18,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
-    },
-    {
       "fieldName": "CTE__c",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
-    },
-    {
-      "fieldName": "Client_Admin_Password__c",
-      "dataType": "string",
-      "required": "No",
-      "relatedTo": "None",
-      "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
-    },
-    {
-      "fieldName": "Client_Admin_Username__c",
-      "dataType": "string",
-      "required": "No",
-      "relatedTo": "None",
-      "maxLength": 255,
       "picklistValues": null,
       "d365EntityName": null,
       "d365DisplayName": null,
@@ -2031,48 +1816,6 @@
       "d365EntityName": "account",
       "d365DisplayName": "Executive Summary",
       "d365InternalName": "azt_executivesummary",
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
-    },
-    {
-      "fieldName": "Ext__c",
-      "dataType": "string",
-      "required": "No",
-      "relatedTo": "None",
-      "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": "account",
-      "d365DisplayName": "Ext",
-      "d365InternalName": "azt_extension",
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
-    },
-    {
-      "fieldName": "FSR_Admin_Password__c",
-      "dataType": "string",
-      "required": "No",
-      "relatedTo": "None",
-      "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": "account",
-      "d365DisplayName": "FSR Admin Password",
-      "d365InternalName": "azt_fsradminpassword",
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
-    },
-    {
-      "fieldName": "FSR_Admin_Username__c",
-      "dataType": "string",
-      "required": "No",
-      "relatedTo": "None",
-      "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": "account",
-      "d365DisplayName": "FSR Admin Username",
-      "d365InternalName": "azt_fsradminusername",
       "d365SuggestedEntityName": null,
       "d365SuggestedDisplayName": null,
       "d365SuggestedInternalName": null
@@ -2162,20 +1905,6 @@
       "d365SuggestedInternalName": null
     },
     {
-      "fieldName": "Plus_Account_Name__c",
-      "dataType": "string",
-      "required": "No",
-      "relatedTo": "None",
-      "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
-    },
-    {
       "fieldName": "Programs_Offered__c",
       "dataType": "multipicklist",
       "required": "No",
@@ -2230,34 +1959,6 @@
       "required": "No",
       "relatedTo": "None",
       "maxLength": null,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
-    },
-    {
-      "fieldName": "CRM_Contact_GUID__c",
-      "dataType": "string",
-      "required": "No",
-      "relatedTo": "None",
-      "maxLength": 255,
-      "picklistValues": null,
-      "d365EntityName": "account",
-      "d365DisplayName": "Contact GUID",
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
-    },
-    {
-      "fieldName": "CRM_Contact_Name__c",
-      "dataType": "string",
-      "required": "No",
-      "relatedTo": "None",
-      "maxLength": 255,
       "picklistValues": null,
       "d365EntityName": null,
       "d365DisplayName": null,
@@ -5797,6 +5498,20 @@
       "required": "No",
       "relatedTo": "User",
       "maxLength": 18,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "Account_18_Digits_ID__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 1300,
       "picklistValues": null,
       "d365EntityName": null,
       "d365DisplayName": null,

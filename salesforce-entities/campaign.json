@@ -395,7 +395,7 @@
     {
       "fieldName": "OwnerId",
       "dataType": "reference",
-      "required": "No",
+      "required": "Yes",
       "relatedTo": "User",
       "maxLength": 18,
       "picklistValues": null,

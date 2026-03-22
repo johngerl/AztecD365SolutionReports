@@ -674,20 +674,6 @@
       "d365SuggestedEntityName": null,
       "d365SuggestedDisplayName": null,
       "d365SuggestedInternalName": null
-    },
-    {
-      "fieldName": "Product_Type__c",
-      "dataType": "string",
-      "required": "No",
-      "relatedTo": "None",
-      "maxLength": 1300,
-      "picklistValues": null,
-      "d365EntityName": null,
-      "d365DisplayName": null,
-      "d365InternalName": null,
-      "d365SuggestedEntityName": null,
-      "d365SuggestedDisplayName": null,
-      "d365SuggestedInternalName": null
     }
   ]
 }

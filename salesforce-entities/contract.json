@@ -1070,6 +1070,11 @@
       "maxLength": 255,
       "picklistValues": [
         {
+          "label": "15",
+          "value": "15",
+          "active": true
+        },
+        {
           "label": "30",
           "value": "30",
           "active": true
@@ -1228,6 +1233,11 @@
       "relatedTo": "None",
       "maxLength": 255,
       "picklistValues": [
+        {
+          "label": "Net 15",
+          "value": "Net 15",
+          "active": true
+        },
         {
           "label": "Net 30",
           "value": "Net 30",

@@ -307,6 +307,111 @@
       "d365SuggestedInternalName": "caseorigincode"
     },
     {
+      "fieldName": "Language",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 40,
+      "picklistValues": [
+        {
+          "label": "English",
+          "value": "en_US",
+          "active": true
+        },
+        {
+          "label": "German",
+          "value": "de",
+          "active": true
+        },
+        {
+          "label": "Spanish",
+          "value": "es",
+          "active": true
+        },
+        {
+          "label": "French",
+          "value": "fr",
+          "active": true
+        },
+        {
+          "label": "Italian",
+          "value": "it",
+          "active": true
+        },
+        {
+          "label": "Japanese",
+          "value": "ja",
+          "active": true
+        },
+        {
+          "label": "Swedish",
+          "value": "sv",
+          "active": true
+        },
+        {
+          "label": "Korean",
+          "value": "ko",
+          "active": true
+        },
+        {
+          "label": "Chinese (Traditional)",
+          "value": "zh_TW",
+          "active": true
+        },
+        {
+          "label": "Chinese (Simplified)",
+          "value": "zh_CN",
+          "active": true
+        },
+        {
+          "label": "Portuguese (Brazil)",
+          "value": "pt_BR",
+          "active": true
+        },
+        {
+          "label": "Dutch",
+          "value": "nl_NL",
+          "active": true
+        },
+        {
+          "label": "Danish",
+          "value": "da",
+          "active": true
+        },
+        {
+          "label": "Thai",
+          "value": "th",
+          "active": true
+        },
+        {
+          "label": "Finnish",
+          "value": "fi",
+          "active": true
+        },
+        {
+          "label": "Russian",
+          "value": "ru",
+          "active": true
+        },
+        {
+          "label": "Spanish (Mexico)",
+          "value": "es_MX",
+          "active": true
+        },
+        {
+          "label": "Norwegian",
+          "value": "no",
+          "active": true
+        }
+      ],
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
       "fieldName": "Subject",
       "dataType": "string",
       "required": "No",

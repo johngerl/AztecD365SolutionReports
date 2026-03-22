@@ -163,7 +163,48 @@
       "required": "Yes",
       "relatedTo": "None",
       "maxLength": 40,
-      "picklistValues": null,
+      "picklistValues": [
+        {
+          "label": "Building",
+          "value": "Building",
+          "active": true
+        },
+        {
+          "label": "Warehouse",
+          "value": "Warehouse",
+          "active": true
+        },
+        {
+          "label": "Site",
+          "value": "Site",
+          "active": true
+        },
+        {
+          "label": "Plant",
+          "value": "Plant",
+          "active": true
+        },
+        {
+          "label": "Store",
+          "value": "Store",
+          "active": true
+        },
+        {
+          "label": "Campus",
+          "value": "Campus",
+          "active": true
+        },
+        {
+          "label": "Floor",
+          "value": "Floor",
+          "active": true
+        },
+        {
+          "label": "Space",
+          "value": "Space",
+          "active": true
+        }
+      ],
       "d365EntityName": null,
       "d365DisplayName": null,
       "d365InternalName": null,

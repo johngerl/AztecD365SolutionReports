@@ -520,6 +520,16 @@
           "active": true
         },
         {
+          "label": "Cold Call by Sales rep",
+          "value": "Cold Call by Sales rep",
+          "active": true
+        },
+        {
+          "label": "Cold email by Sales rep",
+          "value": "Cold email by Sales rep",
+          "active": true
+        },
+        {
           "label": "Conference",
           "value": "Conference",
           "active": true
@@ -535,8 +545,23 @@
           "active": true
         },
         {
+          "label": "Downloaded a Resource",
+          "value": "Downloaded a Resource",
+          "active": true
+        },
+        {
+          "label": "Email",
+          "value": "Email",
+          "active": true
+        },
+        {
           "label": "Email Outreach",
           "value": "Email Outreach",
+          "active": true
+        },
+        {
+          "label": "Event",
+          "value": "Event",
           "active": true
         },
         {
@@ -557,6 +582,11 @@
         {
           "label": "LinkedIn",
           "value": "linkedin",
+          "active": true
+        },
+        {
+          "label": "Lost Opportunity",
+          "value": "Lost Opportunity",
           "active": true
         },
         {
@@ -590,8 +620,13 @@
           "active": true
         },
         {
-          "label": "Social media Other (Instagram, Facebook, Twitter)",
-          "value": "Social media Other (Instagram, Facebook, Twitter)",
+          "label": "Social Media",
+          "value": "Social Media",
+          "active": true
+        },
+        {
+          "label": "Web Form",
+          "value": "Web Form",
           "active": true
         },
         {
@@ -600,28 +635,13 @@
           "active": true
         },
         {
-          "label": "Cold Call by Sales rep",
-          "value": "Cold Call by Sales rep",
-          "active": true
-        },
-        {
-          "label": "Downloaded a Resource",
-          "value": "Downloaded a Resource",
-          "active": true
-        },
-        {
-          "label": "Cold email by Sales rep",
-          "value": "Cold email by Sales rep",
+          "label": "Web Search",
+          "value": "Web Search",
           "active": true
         },
         {
           "label": "Zoominfo",
           "value": "Zoominfo",
-          "active": true
-        },
-        {
-          "label": "Lost Opportunity",
-          "value": "Lost Opportunity",
           "active": true
         }
       ],
@@ -1515,18 +1535,18 @@
       "maxLength": 4099,
       "picklistValues": [
         {
-          "label": "Legitimate interest - prospect/lead",
-          "value": "Legitimate interest - prospect/lead",
+          "label": "Legitimate interest - Lead",
+          "value": "Legitimate interest - Lead",
           "active": true
         },
         {
-          "label": "Legitimate interest - existing customer",
-          "value": "Legitimate interest - existing customer",
+          "label": "Legitimate interest - Customer",
+          "value": "Legitimate interest - Customer",
           "active": true
         },
         {
-          "label": "Legitimate interest - other",
-          "value": "Legitimate interest - other",
+          "label": "Legitimate interest - Other",
+          "value": "Legitimate interest - Other",
           "active": true
         },
         {
@@ -3089,11 +3109,6 @@
           "label": "Add-On",
           "value": "Add-On",
           "active": true
-        },
-        {
-          "label": "Print",
-          "value": "Print",
-          "active": true
         }
       ],
       "d365EntityName": null,
@@ -3549,6 +3564,26 @@
           "label": "Went with Competitor",
           "value": "Went with Competitor",
           "active": true
+        },
+        {
+          "label": "SPAM",
+          "value": "SPAM",
+          "active": true
+        },
+        {
+          "label": "Left Organization",
+          "value": "Left Organization",
+          "active": true
+        },
+        {
+          "label": "Current Client",
+          "value": "Current Client",
+          "active": true
+        },
+        {
+          "label": "Other",
+          "value": "Other",
+          "active": true
         }
       ],
       "d365EntityName": null,
@@ -3627,6 +3662,20 @@
       "d365SuggestedInternalName": null
     },
     {
+      "fieldName": "Lead_ID_18_Digits__c",
+      "dataType": "string",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 1300,
+      "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
       "fieldName": "Recycled_From_Opportunity__c",
       "dataType": "boolean",
       "required": "No",
@@ -3647,6 +3696,51 @@
       "relatedTo": "Opportunity",
       "maxLength": 18,
       "picklistValues": null,
+      "d365EntityName": null,
+      "d365DisplayName": null,
+      "d365InternalName": null,
+      "d365SuggestedEntityName": null,
+      "d365SuggestedDisplayName": null,
+      "d365SuggestedInternalName": null
+    },
+    {
+      "fieldName": "How_did_you_hear_about_us__c",
+      "dataType": "picklist",
+      "required": "No",
+      "relatedTo": "None",
+      "maxLength": 255,
+      "picklistValues": [
+        {
+          "label": "Email",
+          "value": "Email",
+          "active": true
+        },
+        {
+          "label": "Event",
+          "value": "Event",
+          "active": true
+        },
+        {
+          "label": "Referral",
+          "value": "Referral",
+          "active": true
+        },
+        {
+          "label": "Social Media",
+          "value": "Social Media",
+          "active": true
+        },
+        {
+          "label": "Web Search",
+          "value": "Web Search",
+          "active": true
+        },
+        {
+          "label": "Other",
+          "value": "Other",
+          "active": true
+        }
+      ],
       "d365EntityName": null,
       "d365DisplayName": null,
       "d365InternalName": null,

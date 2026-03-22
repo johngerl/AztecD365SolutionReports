@@ -129,7 +129,7 @@ Total fields: **9**
 | 6 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none | 2026-02-20 19:23:04 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [7](#12.%20Relationships) |  |  |
 | 7 | [statecode](#statecode) | Status | picklist |  | No | required | 2026-02-20 19:23:04 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 8 | [statuscode](#statuscode) | Status Reason | picklist |  | No | none | 2026-02-20 19:23:04 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 9 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 9 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 
 ---
 

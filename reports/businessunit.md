@@ -147,18 +147,18 @@ Total fields: **12**
 
 | # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
 |---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [address1_stateorprovince](#address1_stateorprovince) | Bill To State/Province | nvarchar |  | No | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 2 | [address1_telephone1](#address1_telephone1) | Main Phone | nvarchar |  | No | none | Never | C R U L Re | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 3 | [azt_stateabbreviation](#azt_stateabbreviation) | State Abbreviation | nvarchar |  | Yes | none | Never | C R U S Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [4](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 4 | [businessunitid](#businessunitid) | Business Unit | uniqueidentifier |  | No | required | 2023-10-25 03:27:14 |  | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 1 | [address1_stateorprovince](#address1_stateorprovince) | Bill To State/Province | nvarchar |  | No | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 2 | [address1_telephone1](#address1_telephone1) | Main Phone | nvarchar |  | No | none | Never | C R U L Re | false |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 3 | [azt_stateabbreviation](#azt_stateabbreviation) | State Abbreviation | nvarchar |  | Yes | none | Never | C R U S Re | false |  |  |  |  |  |  | [1](#2.%20Forms) | [4](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 4 | [businessunitid](#businessunitid) | Business Unit | uniqueidentifier |  | No | required | 2023-10-25 03:27:14 |  | false |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 5 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 6 | [description](#description) | Description | ntext |  | No | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 7 | [isdisabled](#isdisabled) | Is Disabled | bit |  | No | required | 2023-10-25 03:27:14 |  | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 6 | [description](#description) | Description | ntext |  | No | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 7 | [isdisabled](#isdisabled) | Is Disabled | bit |  | No | required | 2023-10-25 03:27:14 |  | false |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 | 8 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none | Skipped (modifiedon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 9 | [name](#name) | Name | nvarchar |  | No | systemrequired | 2023-10-25 03:27:14 | C R U S Re | true |  |  |  |  |  |  |  | [7](#3.%20Views) |  |  |  | [16](#7.%20Workflows) |  | [23](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 10 | [parentbusinessunitid](#parentbusinessunitid) | Parent Business | lookup |  | No | required | 2023-10-25 03:27:14 |  | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 11 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none | 2023-10-25 03:27:14 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 12 | [websiteurl](#websiteurl) | Website | nvarchar |  | No | none | Never | C R U Re | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 9 | [name](#name) | Name | nvarchar |  | No | systemrequired | 2023-10-25 03:27:14 | C R U S Re | false |  |  |  |  |  |  |  | [7](#3.%20Views) |  |  |  | [16](#7.%20Workflows) |  | [23](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 10 | [parentbusinessunitid](#parentbusinessunitid) | Parent Business | lookup |  | No | required | 2023-10-25 03:27:14 |  | false |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 11 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none | 2023-10-25 03:27:14 |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 12 | [websiteurl](#websiteurl) | Website | nvarchar |  | No | none | Never | C R U Re | false |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 
 ---
 

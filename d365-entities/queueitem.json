@@ -4399,7 +4399,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 21:42:40"
+      "lastUpdate": "2026-03-20 21:42:40",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "createdon",
@@ -4513,7 +4518,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (createdon)"
+      "lastUpdate": "Skipped (createdon)",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "enteredon",
@@ -4589,7 +4599,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 21:42:40"
+      "lastUpdate": "2026-03-20 21:42:40",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "modifiedon",
@@ -4661,7 +4676,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (modifiedon)"
+      "lastUpdate": "Skipped (modifiedon)",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "msdyn_liveworkstreamid",
@@ -4707,7 +4727,12 @@
       ],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "Never"
+      "lastUpdate": "Never",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "objectid",
@@ -4798,7 +4823,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 21:42:40"
+      "lastUpdate": "2026-03-20 21:42:40",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "objecttypecode",
@@ -4868,7 +4898,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 21:42:40"
+      "lastUpdate": "2026-03-20 21:42:40",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "ownerid",
@@ -5066,7 +5101,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 21:42:40"
+      "lastUpdate": "2026-03-20 21:42:40",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "queueid",
@@ -5143,7 +5183,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 21:42:40"
+      "lastUpdate": "2026-03-20 21:42:40",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "queueitemid",
@@ -5213,7 +5258,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 21:42:40"
+      "lastUpdate": "2026-03-20 21:42:40",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "state",
@@ -5260,7 +5310,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "Never"
+      "lastUpdate": "Never",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "statecode",
@@ -5466,7 +5521,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 21:42:40"
+      "lastUpdate": "2026-03-20 21:42:40",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "statuscode",
@@ -5552,7 +5612,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 21:42:40"
+      "lastUpdate": "2026-03-20 21:42:40",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "title",
@@ -5629,7 +5694,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 21:42:40"
+      "lastUpdate": "2026-03-20 21:42:40",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -5729,7 +5799,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Never"
+      "lastUpdate": "Never",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "workerid",
@@ -5789,7 +5864,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "Never"
+      "lastUpdate": "Never",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     }
   ]
 }

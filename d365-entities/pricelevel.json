@@ -4303,7 +4303,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (createdon)"
+      "lastUpdate": "Skipped (createdon)",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "description",
@@ -4396,7 +4401,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2025-12-31 14:42:25"
+      "lastUpdate": "2025-12-31 14:42:25",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "freighttermscode",
@@ -4447,7 +4457,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-01-03 21:06:05"
+      "lastUpdate": "2026-01-03 21:06:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "modifiedon",
@@ -4519,7 +4534,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (modifiedon)"
+      "lastUpdate": "Skipped (modifiedon)",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "name",
@@ -4724,7 +4744,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-01-03 21:06:05"
+      "lastUpdate": "2026-01-03 21:06:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "pricelevelid",
@@ -4775,7 +4800,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-01-03 21:06:05"
+      "lastUpdate": "2026-01-03 21:06:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "shippingmethodcode",
@@ -4826,7 +4856,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-01-03 21:06:05"
+      "lastUpdate": "2026-01-03 21:06:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "statecode",
@@ -5010,7 +5045,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-01-03 21:06:05"
+      "lastUpdate": "2026-01-03 21:06:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "statuscode",
@@ -5096,7 +5136,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-01-03 21:06:05"
+      "lastUpdate": "2026-01-03 21:06:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -5196,7 +5241,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-01-03 21:06:05"
+      "lastUpdate": "2026-01-03 21:06:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     }
   ]
 }

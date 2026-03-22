@@ -4151,7 +4151,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2022-12-26 10:23:10"
+      "lastUpdate": "2022-12-26 10:23:10",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "createdon",
@@ -4265,7 +4270,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (createdon)"
+      "lastUpdate": "Skipped (createdon)",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "description",
@@ -4358,7 +4368,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2018-12-21 08:07:09"
+      "lastUpdate": "2018-12-21 08:07:09",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "isamount",
@@ -4409,7 +4424,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2022-12-26 10:23:10"
+      "lastUpdate": "2022-12-26 10:23:10",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "metricid",
@@ -4460,7 +4480,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2022-12-26 10:23:10"
+      "lastUpdate": "2022-12-26 10:23:10",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "modifiedon",
@@ -4532,7 +4557,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (modifiedon)"
+      "lastUpdate": "Skipped (modifiedon)",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "name",
@@ -4737,7 +4767,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2022-12-26 10:23:10"
+      "lastUpdate": "2022-12-26 10:23:10",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "statecode",
@@ -4921,7 +4956,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2022-12-26 10:23:10"
+      "lastUpdate": "2022-12-26 10:23:10",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "statuscode",
@@ -5007,7 +5047,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2022-12-26 10:23:10"
+      "lastUpdate": "2022-12-26 10:23:10",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     }
   ]
 }

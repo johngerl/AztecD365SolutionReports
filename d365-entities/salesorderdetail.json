@@ -5131,7 +5131,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_discretionarydiscount_base",
@@ -5170,7 +5175,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_discretionarydiscountamt",
@@ -5235,7 +5245,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 17:39:34"
+      "lastUpdate": "2026-03-20 17:39:34",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_discretionarydiscountamt_base",
@@ -5274,7 +5289,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 17:39:34"
+      "lastUpdate": "2026-03-20 17:39:34",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_estfulfillmentdate",
@@ -5345,7 +5365,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2019-08-01 22:24:43"
+      "lastUpdate": "2019-08-01 22:24:43",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_hasloadingdock",
@@ -5408,7 +5433,12 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_issaas",
@@ -5482,7 +5512,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_itemstatus",
@@ -5549,7 +5584,12 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_licenseenddate",
@@ -5603,7 +5643,12 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "2026-03-19 11:33:50"
+      "lastUpdate": "2026-03-19 11:33:50",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_licensestartdate",
@@ -5657,7 +5702,12 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "2026-03-19 11:33:50"
+      "lastUpdate": "2026-03-19 11:33:50",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_licensetermmonths",
@@ -5882,7 +5932,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_licensetype",
@@ -6182,7 +6237,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_lsebookfilesprovidedon",
@@ -6236,7 +6296,12 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "Never"
+      "lastUpdate": "Never",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_lsebooksfile",
@@ -6299,7 +6364,12 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "Never"
+      "lastUpdate": "Never",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_lsecustomartapproved",
@@ -6362,7 +6432,12 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "Never"
+      "lastUpdate": "Never",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_lsecustomartapprovedon",
@@ -6416,7 +6491,12 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "Never"
+      "lastUpdate": "Never",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_lseproductionstartdate",
@@ -6470,7 +6550,12 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "2019-07-23 14:22:16"
+      "lastUpdate": "2019-07-23 14:22:16",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_nonsaastype",
@@ -6545,7 +6630,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2023-07-03 19:38:36"
+      "lastUpdate": "2023-07-03 19:38:36",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_orderdate",
@@ -6609,7 +6699,12 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "2019-08-01 22:24:43"
+      "lastUpdate": "2019-08-01 22:24:43",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_ordertype",
@@ -6704,7 +6799,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_shippingdate",
@@ -6758,7 +6858,12 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "2019-07-23 14:22:16"
+      "lastUpdate": "2019-07-23 14:22:16",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_softwarelicenseid",
@@ -6869,7 +6974,12 @@
       ],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "baseamount",
@@ -6941,7 +7051,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "createdon",
@@ -7055,7 +7170,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (createdon)"
+      "lastUpdate": "Skipped (createdon)",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "description",
@@ -7148,7 +7268,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-19 16:54:34"
+      "lastUpdate": "2026-03-19 16:54:34",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "extendedamount",
@@ -7303,7 +7428,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "ispriceoverridden",
@@ -7389,7 +7519,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "isproductoverridden",
@@ -7474,7 +7609,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "manualdiscountamount",
@@ -7588,7 +7728,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 17:39:34"
+      "lastUpdate": "2026-03-20 17:39:34",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "modifiedon",
@@ -7660,7 +7805,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (modifiedon)"
+      "lastUpdate": "Skipped (modifiedon)",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "ownerid",
@@ -7858,7 +8008,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "priceperunit",
@@ -7978,7 +8133,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "productdescription",
@@ -8139,7 +8299,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2021-07-22 22:38:03"
+      "lastUpdate": "2021-07-22 22:38:03",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "productid",
@@ -8453,7 +8618,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "productname",
@@ -8518,7 +8688,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "productnumber",
@@ -8592,7 +8767,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "producttypecode",
@@ -8670,7 +8850,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "quantity",
@@ -8867,7 +9052,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "quantitybackordered",
@@ -8921,7 +9111,12 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "Never"
+      "lastUpdate": "Never",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "quantitycancelled",
@@ -8975,7 +9170,12 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "Never"
+      "lastUpdate": "Never",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "quantityshipped",
@@ -9029,7 +9229,12 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "Never"
+      "lastUpdate": "Never",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "quotedetailid",
@@ -9171,7 +9376,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "requestdeliveryby",
@@ -9229,7 +9439,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "Never"
+      "lastUpdate": "Never",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "salesorderdetailid",
@@ -9356,7 +9571,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "salesorderdetailname",
@@ -9420,7 +9640,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "salesorderid",
@@ -9571,7 +9796,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "salesrepid",
@@ -9622,7 +9852,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Never"
+      "lastUpdate": "Never",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "shipto_line1",
@@ -9673,7 +9908,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 15:58:10"
+      "lastUpdate": "2026-03-20 15:58:10",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "shipto_line2",
@@ -9724,7 +9964,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-17 14:53:51"
+      "lastUpdate": "2026-03-17 14:53:51",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "shipto_line3",
@@ -9775,7 +10020,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-12 17:31:11"
+      "lastUpdate": "2026-03-12 17:31:11",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "shipto_name",
@@ -9826,7 +10076,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 15:58:10"
+      "lastUpdate": "2026-03-20 15:58:10",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "shipto_postalcode",
@@ -9877,7 +10132,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 15:58:10"
+      "lastUpdate": "2026-03-20 15:58:10",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "shipto_stateorprovince",
@@ -9928,7 +10188,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 15:58:10"
+      "lastUpdate": "2026-03-20 15:58:10",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "tax",
@@ -10028,7 +10293,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-19 15:28:01"
+      "lastUpdate": "2026-03-19 15:28:01",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -10128,7 +10398,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "uomid",
@@ -10228,7 +10503,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 19:07:05"
+      "lastUpdate": "2026-03-20 19:07:05",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     }
   ]
 }

@@ -125,7 +125,7 @@ Total fields: **26**
 
 | # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
 |---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [actualstring](#actualstring) | Actual | nvarchar |  | No | none | Never |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 1 | [actualstring](#actualstring) | Actual | nvarchar |  | No | none | Never |  | false |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 | 2 | [amountdatatype](#amountdatatype) | Amount Data Type | picklist |  | No | none | 2026-03-22 09:20:29 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 3 | [azt_goaltype](#azt_goaltype) | Goal Type | picklist | 327630000: Actual SaaS, 327630001: Actual Print, 327630002: Actual Combined, 327630003: SaaS Opportunity, 327630004: Print Opportunity, 327630005: Initial, 327630006: Add-On, 327630007: Win-Back, 327630008: Renewals, 327630009: Print + | Yes | recommended | 2026-03-22 09:20:29 | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 4 | [azt_isprint](#azt_isprint) | Is Print? | bit | 1: Yes, 0: No | Yes | none | 2026-03-22 09:20:29 | C R U | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
@@ -136,7 +136,7 @@ Total fields: **26**
 | 9 | [goalid](#goalid) | Goal | uniqueidentifier |  | No | required | 2026-03-22 09:20:29 |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 10 | [goalownerid](#goalownerid) | Goal Owner | lookup |  | No | required | 2026-03-22 09:20:29 |  | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 11 | [goalstartdate](#goalstartdate) | From | datetime |  | No | none | 2026-03-22 09:20:29 |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 12 | [inprogressstring](#inprogressstring) | In-Progress | nvarchar |  | No | none | Never |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 12 | [inprogressstring](#inprogressstring) | In-Progress | nvarchar |  | No | none | Never |  | false |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 | 13 | [isamount](#isamount) | Metric Type | bit |  | No | required | 2026-03-22 09:20:29 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 14 | [isfiscalperiodgoal](#isfiscalperiodgoal) | Goal Period Type | bit |  | No | none | 2026-03-22 09:20:29 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 15 | [metricid](#metricid) | Goal Metric | lookup |  | No | required | 2026-03-22 09:20:29 |  | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
@@ -148,7 +148,7 @@ Total fields: **26**
 | 21 | [rollupqueryactualmoneyid](#rollupqueryactualmoneyid) | Rollup Query - Actual(Money) | lookup |  | No | none | 2026-03-22 09:20:29 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 22 | [statecode](#statecode) | Status | picklist |  | No | required | 2026-03-22 09:20:29 |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 23 | [statuscode](#statuscode) | Status Reason | picklist |  | No | none | 2026-03-22 09:20:29 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 24 | [targetstring](#targetstring) | Target | nvarchar |  | No | none | Never |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 24 | [targetstring](#targetstring) | Target | nvarchar |  | No | none | Never |  | false |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 | 25 | [title](#title) | Name | nvarchar |  | No | required | 2026-03-22 09:20:29 |  | true |  |  |  |  |  |  |  | [4](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 26 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none | 2026-03-22 09:20:29 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 

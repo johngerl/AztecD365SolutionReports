@@ -124,8 +124,8 @@ Total fields: **10**
 | 1 | [category](#category) | Category | picklist |  | No | required | 2026-03-21 05:22:49 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 2 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 3 | [description](#description) | Description | ntext |  | No | none | 2026-03-21 04:24:14 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 4 | [licensee](#licensee) | Licensee | lookup |  | No | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 5 | [licenseentitledby](#licenseentitledby) | License entitled by | lookup |  | No | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 4 | [licensee](#licensee) | Licensee | lookup |  | No | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 5 | [licenseentitledby](#licenseentitledby) | License entitled by | lookup |  | No | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
 | 6 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none | Skipped (modifiedon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 7 | [name](#name) | Process Name | nvarchar |  | No | required | 2026-03-21 05:22:49 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [23](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 8 | [ownerid](#ownerid) | Owner | lookup |  | No | required | 2026-03-21 05:22:49 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |

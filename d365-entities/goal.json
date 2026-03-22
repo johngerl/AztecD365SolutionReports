@@ -4483,7 +4483,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "Never"
+      "lastUpdate": "Never",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "amountdatatype",
@@ -4534,7 +4539,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 09:20:29"
+      "lastUpdate": "2026-03-22 09:20:29",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_goaltype",
@@ -4653,7 +4663,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-22 09:20:29"
+      "lastUpdate": "2026-03-22 09:20:29",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_isprint",
@@ -4727,7 +4742,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 09:20:29"
+      "lastUpdate": "2026-03-22 09:20:29",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_month",
@@ -4781,7 +4801,12 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "2026-03-22 09:20:29"
+      "lastUpdate": "2026-03-22 09:20:29",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "consideronlygoalownersrecords",
@@ -4832,7 +4857,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 09:20:29"
+      "lastUpdate": "2026-03-22 09:20:29",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "createdon",
@@ -4946,7 +4976,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (createdon)"
+      "lastUpdate": "Skipped (createdon)",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "goalenddate",
@@ -5025,7 +5060,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 09:20:29"
+      "lastUpdate": "2026-03-22 09:20:29",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "goalid",
@@ -5089,7 +5129,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 09:20:29"
+      "lastUpdate": "2026-03-22 09:20:29",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "goalownerid",
@@ -5155,7 +5200,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 09:20:29"
+      "lastUpdate": "2026-03-22 09:20:29",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "goalstartdate",
@@ -5234,7 +5284,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 09:20:29"
+      "lastUpdate": "2026-03-22 09:20:29",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "inprogressstring",
@@ -5286,7 +5341,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "Never"
+      "lastUpdate": "Never",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "isamount",
@@ -5337,7 +5397,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 09:20:29"
+      "lastUpdate": "2026-03-22 09:20:29",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "isfiscalperiodgoal",
@@ -5388,7 +5453,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 09:20:29"
+      "lastUpdate": "2026-03-22 09:20:29",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "metricid",
@@ -5446,7 +5516,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 09:20:29"
+      "lastUpdate": "2026-03-22 09:20:29",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "modifiedon",
@@ -5518,7 +5593,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (modifiedon)"
+      "lastUpdate": "Skipped (modifiedon)",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "ownerid",
@@ -5716,7 +5796,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 09:20:29"
+      "lastUpdate": "2026-03-22 09:20:29",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "parentgoalid",
@@ -5787,7 +5872,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 09:20:29"
+      "lastUpdate": "2026-03-22 09:20:29",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "percentage",
@@ -5839,7 +5929,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-22 09:20:29"
+      "lastUpdate": "2026-03-22 09:20:29",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "rolluponlyfromchildgoals",
@@ -5890,7 +5985,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 09:20:29"
+      "lastUpdate": "2026-03-22 09:20:29",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "rollupqueryactualmoneyid",
@@ -5941,7 +6041,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 09:20:29"
+      "lastUpdate": "2026-03-22 09:20:29",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "statecode",
@@ -6140,7 +6245,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 09:20:29"
+      "lastUpdate": "2026-03-22 09:20:29",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "statuscode",
@@ -6226,7 +6336,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 09:20:29"
+      "lastUpdate": "2026-03-22 09:20:29",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "targetstring",
@@ -6278,7 +6393,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "Never"
+      "lastUpdate": "Never",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "title",
@@ -6361,7 +6481,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 09:20:29"
+      "lastUpdate": "2026-03-22 09:20:29",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -6461,7 +6586,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 09:20:29"
+      "lastUpdate": "2026-03-22 09:20:29",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     }
   ]
 }

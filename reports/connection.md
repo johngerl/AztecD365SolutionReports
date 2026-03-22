@@ -130,8 +130,8 @@ Total fields: **16**
 | 2 | [connectionid](#connectionid) | Connection | uniqueidentifier |  | No | required | 2026-03-21 00:42:12 |  | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 3 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 4 | [description](#description) | Description | ntext |  | No | none | 2026-03-20 18:09:53 |  | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 5 | [effectiveend](#effectiveend) | Ending | datetime |  | No | none | Never |  | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 6 | [effectivestart](#effectivestart) | Starting | datetime |  | No | none | 2020-02-24 13:30:33 |  | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 5 | [effectiveend](#effectiveend) | Ending | datetime |  | No | none | Never |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 6 | [effectivestart](#effectivestart) | Starting | datetime |  | No | none | 2020-02-24 13:30:33 |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 7 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none | Skipped (modifiedon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 8 | [name](#name) | Connection Name | nvarchar |  | No | none | 2026-03-21 00:42:12 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [23](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 9 | [ownerid](#ownerid) | Owner | lookup |  | No | required | 2026-03-21 00:42:12 |  | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |

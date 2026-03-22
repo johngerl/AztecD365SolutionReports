@@ -173,7 +173,7 @@ Total fields: **30**
 | 5 | [azt_productfamily](#azt_productfamily) | Product Family | multiselectpicklist |  | Yes | none | 2026-03-03 19:38:44 | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 | 6 | [azt_productgroup](#azt_productgroup) | Product Group | picklist | 327630000: CASAS, 327630007: CTE Supplemental, 327630002: Comprehensive, 327630008: GED Comprehensive, 327630004: Credential, 327630011: Foundations, 327630010: Fundamentals, 327630003: GED Supplemental, 327630009: HiSET, 327630006: Non Re-entry, 327630012: Pre-HSE, 327630005: Re-entry, 327630001: TABE, 327630013: Vouchers, 327630014: Other | Yes | none | 2026-03-03 19:38:44 | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 7 | [azt_productlanguage](#azt_productlanguage) | Product Language | picklist | 327630000: English, 327630001: Spanish | Yes | none | 2026-03-03 19:38:44 | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 8 | [azt_replacementproductid](#azt_replacementproductid) | Replacement Product | lookup |  | Yes | none | 2024-03-22 06:50:30 | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 8 | [azt_replacementproductid](#azt_replacementproductid) | Replacement Product | lookup |  | Yes | none | 2024-03-22 06:50:30 | C R U | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
 | 9 | [azt_saas](#azt_saas) | SAAS | bit | 1: Yes, 0: No | Yes | required | 2026-03-03 19:38:44 | C R U Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [5](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 10 | [azt_salesfamily](#azt_salesfamily) | Sales Family | picklist | 327630000: Academic, 327630001: Workforce, 327630002: Financial Wellness, 327630003: CTE, 327630004: Other | Yes | none | 2026-03-03 19:38:44 | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 11 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
@@ -181,10 +181,10 @@ Total fields: **30**
 | 13 | [description](#description) | Description | ntext |  | No | none | 2026-01-03 04:10:34 | C R U Re | true |  | Description |  |  |  |  |  | [1](#3.%20Views) |  |  |  | [14](#7.%20Workflows) |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 14 | [entityimage](#entityimage) | Entity Image | image |  | No | none | Skipped (image) | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 15 | [exchangerate](#exchangerate) | Exchange Rate | decimal |  | No | none | 2026-03-03 19:38:44 | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 16 | [hierarchypath](#hierarchypath) | Hierarchy Path | nvarchar |  | No | none | 2024-03-22 06:50:30 | R Re | true |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 16 | [hierarchypath](#hierarchypath) | Hierarchy Path | nvarchar |  | No | none | 2024-03-22 06:50:30 | R Re | false |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 | 17 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none | Skipped (modifiedon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 18 | [name](#name) | Name | nvarchar |  | No | required | 2026-03-03 19:38:44 | C R U S Re | true |  | Name |  |  |  |  |  | [12](#3.%20Views) |  |  |  | [16](#7.%20Workflows) |  | [23](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 19 | [parentproductid](#parentproductid) | Parent | lookup |  | No | none | 2024-03-22 06:50:30 |  | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 19 | [parentproductid](#parentproductid) | Parent | lookup |  | No | none | 2024-03-22 06:50:30 |  | false |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 | 20 | [price](#price) | List Price | money |  | No | none | 2026-03-03 19:38:44 | C R U Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 | 21 | [pricelevelid](#pricelevelid) | Default Price List | lookup |  | No | recommended | 2026-03-03 19:38:44 |  | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 22 | [productid](#productid) | Product | uniqueidentifier |  | No | required | 2026-03-03 19:38:44 |  | true |  |  |  |  |  |  |  | [6](#3.%20Views) |  | [8](#5.%20Reports) |  |  |  | [33](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
@@ -194,8 +194,8 @@ Total fields: **30**
 | 26 | [statecode](#statecode) | Status | state |  | No | systemrequired | 2026-03-03 19:38:44 | C R U Re | true |  |  |  |  |  |  |  | [4](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 27 | [statuscode](#statuscode) | Status Reason | picklist |  | No | none | 2026-03-03 19:38:44 |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 28 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none | 2026-03-03 19:38:44 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 29 | [validfromdate](#validfromdate) | Valid From | datetime |  | No | none | 2024-03-22 06:43:42 |  | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 30 | [validtodate](#validtodate) | Valid To | datetime |  | No | none | 2024-03-22 06:43:42 |  | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 29 | [validfromdate](#validfromdate) | Valid From | datetime |  | No | none | 2024-03-22 06:43:42 |  | false |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 30 | [validtodate](#validtodate) | Valid To | datetime |  | No | none | 2024-03-22 06:43:42 |  | false |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 
 ---
 

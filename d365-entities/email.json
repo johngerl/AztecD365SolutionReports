@@ -6546,7 +6546,12 @@
       ],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-02-24 18:48:18"
+      "lastUpdate": "2026-02-24 18:48:18",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "activityid",
@@ -6722,7 +6727,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:21:54"
+      "lastUpdate": "2026-03-21 00:21:54",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "activitytypecode",
@@ -6780,7 +6790,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:21:54"
+      "lastUpdate": "2026-03-21 00:21:54",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "actualend",
@@ -7068,7 +7083,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:21:54"
+      "lastUpdate": "2026-03-21 00:21:54",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "category",
@@ -7133,7 +7153,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Never"
+      "lastUpdate": "Never",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "cc",
@@ -7182,7 +7207,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (partylist)"
+      "lastUpdate": "Skipped (partylist)",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "correlatedactivityid",
@@ -7228,7 +7258,12 @@
       ],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "Never"
+      "lastUpdate": "Never",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "correlatedsubjectchanged",
@@ -7292,7 +7327,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:21:54"
+      "lastUpdate": "2026-03-21 00:21:54",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "createdon",
@@ -7417,7 +7457,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (createdon)"
+      "lastUpdate": "Skipped (createdon)",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "deliveryprioritycode",
@@ -7511,7 +7556,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:21:54"
+      "lastUpdate": "2026-03-21 00:21:54",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "description",
@@ -7672,7 +7722,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "Error"
+      "lastUpdate": "Error",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "descriptionblobid",
@@ -7718,7 +7773,12 @@
       ],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 16:52:39"
+      "lastUpdate": "2026-03-20 16:52:39",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "directioncode",
@@ -7849,7 +7909,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:21:54"
+      "lastUpdate": "2026-03-21 00:21:54",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "followemailuserpreference",
@@ -7943,7 +8008,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:21:54"
+      "lastUpdate": "2026-03-21 00:21:54",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "from",
@@ -8069,7 +8139,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "Skipped (partylist)"
+      "lastUpdate": "Skipped (partylist)",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "issafedescriptiontruncated",
@@ -8108,7 +8183,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "Error"
+      "lastUpdate": "Error",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "mimetype",
@@ -8159,7 +8239,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Never"
+      "lastUpdate": "Never",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "modifiedon",
@@ -8231,7 +8316,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (modifiedon)"
+      "lastUpdate": "Skipped (modifiedon)",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "msdyn_emailclassificationcategory",
@@ -8277,7 +8367,12 @@
       ],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "Never"
+      "lastUpdate": "Never",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "notifications",
@@ -8371,7 +8466,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:21:54"
+      "lastUpdate": "2026-03-21 00:21:54",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "ownerid",
@@ -8827,7 +8927,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:21:54"
+      "lastUpdate": "2026-03-21 00:21:54",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "prioritycode",
@@ -8921,7 +9026,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:21:54"
+      "lastUpdate": "2026-03-21 00:21:54",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "receivingmailboxid",
@@ -8967,7 +9077,12 @@
       ],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:21:54"
+      "lastUpdate": "2026-03-21 00:21:54",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "regardingobjectid",
@@ -9352,7 +9467,12 @@
       ],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:21:54"
+      "lastUpdate": "2026-03-21 00:21:54",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "related",
@@ -9391,7 +9511,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "Skipped (partylist)"
+      "lastUpdate": "Skipped (partylist)",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "scheduledend",
@@ -9449,7 +9574,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2023-09-19 20:20:46"
+      "lastUpdate": "2023-09-19 20:20:46",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "sensitivitylabelid",
@@ -9495,7 +9625,12 @@
       ],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "Never"
+      "lastUpdate": "Never",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "senton",
@@ -9549,7 +9684,12 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "2026-03-20 21:12:26"
+      "lastUpdate": "2026-03-20 21:12:26",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "statecode",
@@ -9733,7 +9873,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:21:54"
+      "lastUpdate": "2026-03-21 00:21:54",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "statuscode",
@@ -9830,7 +9975,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:21:54"
+      "lastUpdate": "2026-03-21 00:21:54",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "subject",
@@ -10040,7 +10190,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:21:54"
+      "lastUpdate": "2026-03-21 00:21:54",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "to",
@@ -10149,7 +10304,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (partylist)"
+      "lastUpdate": "Skipped (partylist)",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -10295,7 +10455,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 21:12:26"
+      "lastUpdate": "2026-03-20 21:12:26",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     }
   ]
 }

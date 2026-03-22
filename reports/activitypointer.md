@@ -144,7 +144,7 @@ Total fields: **21**
 | 1 | [activityid](#activityid) | Activity | uniqueidentifier |  | No | required | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [14](#3.%20Views) |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 2 | [activitytypecode](#activitytypecode) | Activity Type | entityname |  | No | required | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [21](#3.%20Views) | [1](#4.%20Chart%20Visualizations) |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 3 | [actualend](#actualend) | Actual End | datetime |  | No | none | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 4 | [community](#community) | Social Channel | picklist |  | No | none | Never |  | true |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 4 | [community](#community) | Social Channel | picklist |  | No | none | Never |  | false |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 | 5 | [createdby](#createdby) | Created By | lookup |  | No | none | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 | 6 | [createdon](#createdon) | Date Created | datetime |  | No | none | Skipped (createdon) |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 7 | [description](#description) | Description | ntext |  | No | none | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |

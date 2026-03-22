@@ -1,7 +1,7 @@
 fieldName,displayName,dataType,requiredLevel,isCustom,lastUpdate,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
 activityid,Letter,uniqueidentifier,required,False,2026-03-21 04:27:30,,true,0,0,0,0,0,0,0,7,0,0,0,,,,,,
 activitytypecode,Activity Type,entityname,required,False,2026-03-21 04:27:30,,true,0,0,0,0,0,0,0,2,0,0,0,,,,,,
-category,Category,nvarchar,none,False,Never,,true,0,0,0,0,0,0,0,3,0,0,0,,,,,,
+category,Category,nvarchar,none,False,Never,,false,0,0,0,0,0,0,0,3,0,0,0,,,,,,
 createdon,Created On,datetime,none,False,Skipped (createdon),,true,0,0,0,0,0,0,0,10,0,0,0,,,,,,
 description,Description,ntext,none,False,2026-03-18 13:19:20,,true,0,0,0,0,0,14,0,7,0,0,0,,,,,,
 modifiedon,Modified On,datetime,none,False,Skipped (modifiedon),,true,0,0,0,0,0,0,0,4,0,0,0,,,,,,

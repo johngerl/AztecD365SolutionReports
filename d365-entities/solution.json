@@ -4214,7 +4214,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (createdon)"
+      "lastUpdate": "Skipped (createdon)",
+      "sfSuggestedObjectName": "Solution",
+      "sfSuggestedFieldDisplayName": "CreatedDate",
+      "sfSuggestedFieldApiName": "CreatedDate",
+      "sfSuggestedDataType": "datetime",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "description",
@@ -4307,7 +4312,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 08:38:35"
+      "lastUpdate": "2026-03-22 08:38:35",
+      "sfSuggestedObjectName": "Solution",
+      "sfSuggestedFieldDisplayName": "Description",
+      "sfSuggestedFieldApiName": "Description__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "modifiedon",
@@ -4379,7 +4389,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (modifiedon)"
+      "lastUpdate": "Skipped (modifiedon)",
+      "sfSuggestedObjectName": "Solution",
+      "sfSuggestedFieldDisplayName": "LastModifiedDate",
+      "sfSuggestedFieldApiName": "LastModifiedDate",
+      "sfSuggestedDataType": "datetime",
+      "sfSuggestedMatchTier": "synonym"
     }
   ]
 }

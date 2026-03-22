@@ -5681,7 +5681,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 16:28:45"
+      "lastUpdate": "2026-03-20 16:28:45",
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Activity_GUID__c",
+      "sfSuggestedFieldApiName": "Activity_GUID__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "activitytypecode",
@@ -5739,7 +5744,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 16:28:45"
+      "lastUpdate": "2026-03-20 16:28:45",
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Activity Type",
+      "sfSuggestedFieldApiName": "Activity_Type__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_historicalowner",
@@ -5793,7 +5803,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2024-11-11 00:24:51"
+      "lastUpdate": "2024-11-11 00:24:51",
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Historical Owner",
+      "sfSuggestedFieldApiName": "Historical_Owner__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_recordownerid",
@@ -6211,7 +6226,12 @@
       ],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 16:28:45"
+      "lastUpdate": "2026-03-20 16:28:45",
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "RecordTypeId",
+      "sfSuggestedFieldApiName": "RecordTypeId",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "azt_reorderopportunityid",
@@ -6272,7 +6292,12 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "2026-03-20 13:34:04"
+      "lastUpdate": "2026-03-20 13:34:04",
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Reorder Opportunity",
+      "sfSuggestedFieldApiName": "Reorder_Opportunity__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_tasktype",
@@ -6345,7 +6370,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 13:34:04"
+      "lastUpdate": "2026-03-20 13:34:04",
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "TaskSubtype",
+      "sfSuggestedFieldApiName": "TaskSubtype",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "category",
@@ -6410,7 +6440,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Never"
+      "lastUpdate": "Never",
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Category",
+      "sfSuggestedFieldApiName": "Category__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "createdby",
@@ -6466,7 +6501,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 16:28:45"
+      "lastUpdate": "2026-03-20 16:28:45",
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "CreatedById",
+      "sfSuggestedFieldApiName": "CreatedById",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "exact"
     },
     {
       "fieldName": "createdon",
@@ -6580,7 +6620,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (createdon)"
+      "lastUpdate": "Skipped (createdon)",
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "CreatedDate",
+      "sfSuggestedFieldApiName": "CreatedDate",
+      "sfSuggestedDataType": "datetime",
+      "sfSuggestedMatchTier": "exact"
     },
     {
       "fieldName": "description",
@@ -6673,7 +6718,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 16:28:45"
+      "lastUpdate": "2026-03-20 16:28:45",
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Description",
+      "sfSuggestedFieldApiName": "Description",
+      "sfSuggestedDataType": "textarea",
+      "sfSuggestedMatchTier": "exact"
     },
     {
       "fieldName": "modifiedon",
@@ -6745,7 +6795,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (modifiedon)"
+      "lastUpdate": "Skipped (modifiedon)",
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "LastModifiedDate",
+      "sfSuggestedFieldApiName": "LastModifiedDate",
+      "sfSuggestedDataType": "datetime",
+      "sfSuggestedMatchTier": "exact"
     },
     {
       "fieldName": "ownerid",
@@ -6975,7 +7030,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 16:28:45"
+      "lastUpdate": "2026-03-20 16:28:45",
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "OwnerId",
+      "sfSuggestedFieldApiName": "OwnerId",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "exact"
     },
     {
       "fieldName": "prioritycode",
@@ -7045,7 +7105,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 16:28:45"
+      "lastUpdate": "2026-03-20 16:28:45",
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Priority",
+      "sfSuggestedFieldApiName": "Priority",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "exact"
     },
     {
       "fieldName": "regardingobjectid",
@@ -7454,7 +7519,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 16:28:45"
+      "lastUpdate": "2026-03-20 16:28:45",
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "WhatId",
+      "sfSuggestedFieldApiName": "WhatId",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "synonym"
     },
     {
       "fieldName": "scheduledend",
@@ -7561,7 +7631,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 13:34:04"
+      "lastUpdate": "2026-03-20 13:34:04",
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "ActivityDate",
+      "sfSuggestedFieldApiName": "ActivityDate",
+      "sfSuggestedDataType": "date",
+      "sfSuggestedMatchTier": "exact"
     },
     {
       "fieldName": "statecode",
@@ -7767,7 +7842,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 16:28:45"
+      "lastUpdate": "2026-03-20 16:28:45",
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Status",
+      "sfSuggestedFieldApiName": "Status",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "synonym"
     },
     {
       "fieldName": "statuscode",
@@ -7866,7 +7946,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 16:28:45"
+      "lastUpdate": "2026-03-20 16:28:45",
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Status",
+      "sfSuggestedFieldApiName": "Status",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "subject",
@@ -7974,7 +8059,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 16:28:45"
+      "lastUpdate": "2026-03-20 16:28:45",
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Subject",
+      "sfSuggestedFieldApiName": "Subject__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -8074,7 +8164,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2025-08-14 15:14:51"
+      "lastUpdate": "2025-08-14 15:14:51",
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Currency",
+      "sfSuggestedFieldApiName": "Currency__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     }
   ]
 }

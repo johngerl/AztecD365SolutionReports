@@ -4278,7 +4278,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (createdon)"
+      "lastUpdate": "Skipped (createdon)",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "isocurrencycode",
@@ -4329,7 +4334,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2018-12-21 09:21:31"
+      "lastUpdate": "2018-12-21 09:21:31",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "modifiedon",
@@ -4401,7 +4411,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (modifiedon)"
+      "lastUpdate": "Skipped (modifiedon)",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "statecode",
@@ -4585,7 +4600,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2018-12-21 09:21:31"
+      "lastUpdate": "2018-12-21 09:21:31",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "statuscode",
@@ -4671,7 +4691,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2018-12-21 09:21:31"
+      "lastUpdate": "2018-12-21 09:21:31",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -4826,7 +4851,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2018-12-21 09:21:31"
+      "lastUpdate": "2018-12-21 09:21:31",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     }
   ]
 }

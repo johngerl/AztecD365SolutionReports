@@ -122,12 +122,12 @@ Total fields: **7**
 | # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
 |---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
 | 1 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 2 | [description](#description) | Description | ntext |  | No | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 2 | [description](#description) | Description | ntext |  | No | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 3 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none | Skipped (modifiedon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 4 | [name](#name) | Name | nvarchar |  | No | required | 2023-11-13 19:04:23 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [23](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 5 | [statecode](#statecode) | Status | picklist |  | No | required | 2023-11-13 19:04:23 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 6 | [statuscode](#statuscode) | Status Reason | picklist |  | No | none | 2023-11-13 19:04:23 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 7 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none | 2023-05-19 16:15:46 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 4 | [name](#name) | Name | nvarchar |  | No | required | 2023-11-13 19:04:23 |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [23](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 5 | [statecode](#statecode) | Status | picklist |  | No | required | 2023-11-13 19:04:23 |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 6 | [statuscode](#statuscode) | Status Reason | picklist |  | No | none | 2023-11-13 19:04:23 |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 7 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none | 2023-05-19 16:15:46 |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 
 ---
 

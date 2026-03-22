@@ -125,19 +125,19 @@ Total fields: **16**
 | 1 | [businessunitid](#businessunitid) | Business Unit | lookup |  | No | none | 2025-05-09 16:12:30 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 2 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 3 | [description](#description) | Description | ntext |  | No | none | 2026-03-22 04:01:26 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 4 | [emailsignature](#emailsignature) | Email Signature | lookup |  | No | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 4 | [emailsignature](#emailsignature) | Email Signature | lookup |  | No | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
 | 5 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none | Skipped (modifiedon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 6 | [msdyn_assignmentinputcontractid](#msdyn_assignmentinputcontractid) | Assignment Input Contract Id | lookup |  | Yes | none | 2023-03-08 08:12:44 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 7 | [msdyn_channelprofileid](#msdyn_channelprofileid) | Channel Profile Id | lookup |  | Yes | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 8 | [msdyn_inqueueoverflowrulesetid](#msdyn_inqueueoverflowrulesetid) | Inqueue Overflow Ruleset | lookup |  | Yes | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 9 | [msdyn_intentfamilyid](#msdyn_intentfamilyid) | intentfamilyid | lookup |  | Yes | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 10 | [msdyn_operatinghourid](#msdyn_operatinghourid) | Operating Hours | lookup |  | Yes | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 11 | [msdyn_prequeueoverflowrulesetid](#msdyn_prequeueoverflowrulesetid) | Prequeue Overflow Ruleset | lookup |  | Yes | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 6 | [msdyn_assignmentinputcontractid](#msdyn_assignmentinputcontractid) | Assignment Input Contract Id | lookup |  | Yes | none | 2023-03-08 08:12:44 |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 7 | [msdyn_channelprofileid](#msdyn_channelprofileid) | Channel Profile Id | lookup |  | Yes | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 8 | [msdyn_inqueueoverflowrulesetid](#msdyn_inqueueoverflowrulesetid) | Inqueue Overflow Ruleset | lookup |  | Yes | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 9 | [msdyn_intentfamilyid](#msdyn_intentfamilyid) | intentfamilyid | lookup |  | Yes | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 10 | [msdyn_operatinghourid](#msdyn_operatinghourid) | Operating Hours | lookup |  | Yes | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 11 | [msdyn_prequeueoverflowrulesetid](#msdyn_prequeueoverflowrulesetid) | Prequeue Overflow Ruleset | lookup |  | Yes | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
 | 12 | [name](#name) | Name | nvarchar |  | No | required | 2026-03-22 04:01:26 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [23](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 13 | [ownerid](#ownerid) | Owner | lookup |  | No | required | 2026-03-22 04:01:26 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 14 | [statecode](#statecode) | Status | picklist |  | No | required | 2026-03-22 04:01:26 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 15 | [statuscode](#statuscode) | Status Reason | picklist |  | No | required | 2026-03-22 04:01:26 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 16 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none | 2019-10-24 14:34:17 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 16 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none | 2019-10-24 14:34:17 |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 
 ---
 

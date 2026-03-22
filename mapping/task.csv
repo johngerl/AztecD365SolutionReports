@@ -1,20 +1,20 @@
 fieldName,displayName,dataType,requiredLevel,isCustom,lastUpdate,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-activityid,Task,uniqueidentifier,required,False,2026-03-20 16:28:45,,true,0,5,0,0,0,0,0,7,0,0,0,,,,,,
-activitytypecode,Activity Type,entityname,required,False,2026-03-20 16:28:45,,true,0,0,0,0,0,0,0,2,0,0,0,,,,,,
-azt_historicalowner,Historical Owner,nvarchar,none,True,2024-11-11 00:24:51,,true,0,0,0,0,0,2,0,0,0,0,0,,,,,,
-azt_recordownerid,Record Owner,lookup,none,True,2026-03-20 16:28:45,,true,1,6,0,0,0,37,0,9,0,1,0,,,,,,
-azt_reorderopportunityid,Reorder Opportunity,lookup,none,True,2026-03-20 13:34:04,,true,1,0,0,0,0,0,0,0,0,1,0,,,,,,
-azt_tasktype,Task Type,picklist,none,True,2026-03-20 13:34:04,"327630000: Standard Task, 327630001: Reorder Task",true,1,2,0,0,0,0,0,0,0,0,0,,,,,,
-category,Category,nvarchar,none,False,Never,,true,0,0,0,0,0,0,0,3,0,0,0,,,,,,
+activityid,Task,uniqueidentifier,required,False,2026-03-20 16:28:45,,true,0,5,0,0,0,0,0,7,0,0,0,,,,Task,Activity_GUID__c,Activity_GUID__c
+activitytypecode,Activity Type,entityname,required,False,2026-03-20 16:28:45,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Task,Activity Type,Activity_Type__c
+azt_historicalowner,Historical Owner,nvarchar,none,True,2024-11-11 00:24:51,,false,0,0,0,0,0,2,0,0,0,0,0,,,,Task,Historical Owner,Historical_Owner__c
+azt_recordownerid,Record Owner,lookup,none,True,2026-03-20 16:28:45,,true,1,6,0,0,0,37,0,9,0,1,0,,,,Task,RecordTypeId,RecordTypeId
+azt_reorderopportunityid,Reorder Opportunity,lookup,none,True,2026-03-20 13:34:04,,true,1,0,0,0,0,0,0,0,0,1,0,,,,Task,Reorder Opportunity,Reorder_Opportunity__c
+azt_tasktype,Task Type,picklist,none,True,2026-03-20 13:34:04,"327630000: Standard Task, 327630001: Reorder Task",true,1,2,0,0,0,0,0,0,0,0,0,,,,Task,TaskSubtype,TaskSubtype
+category,Category,nvarchar,none,False,Never,,false,0,0,0,0,0,0,0,3,0,0,0,,,,Task,Category,Category__c
 createdby,Created By,lookup,none,False,2026-03-20 16:28:45,,true,0,1,0,0,0,1,0,0,0,0,0,,,,Task,CreatedById,CreatedById
 createdon,Created On,datetime,none,False,Skipped (createdon),,true,0,0,0,0,0,0,0,10,0,0,0,,,,Task,CreatedDate,CreatedDate
 description,Description,ntext,none,False,2026-03-20 16:28:45,,true,0,0,0,0,0,0,0,7,0,0,0,,,,Task,Description,Description
 modifiedon,Modified On,datetime,none,False,Skipped (modifiedon),,true,0,0,0,0,0,0,0,4,0,0,0,,,,Task,LastModifiedDate,LastModifiedDate
 ownerid,Owner,lookup,required,False,2026-03-20 16:28:45,,true,0,4,0,0,0,1,0,22,0,0,0,,,,Task,OwnerId,OwnerId
 prioritycode,Priority,picklist,none,False,2026-03-20 16:28:45,,true,0,5,0,0,0,0,0,0,0,0,0,,,,Task,Priority,Priority
-regardingobjectid,Regarding,lookup,none,False,2026-03-20 16:28:45,,true,0,5,0,0,0,14,0,8,0,32,0,,,,,,
+regardingobjectid,Regarding,lookup,none,False,2026-03-20 16:28:45,,true,0,5,0,0,0,14,0,8,0,32,0,,,,Task,WhatId,WhatId
 scheduledend,Due Date,datetime,none,False,2026-03-20 13:34:04,,true,0,8,0,0,0,0,0,2,0,0,0,,,,Task,ActivityDate,ActivityDate
-statecode,Activity Status,picklist,required,False,2026-03-20 16:28:45,,true,0,3,0,0,0,0,0,20,0,0,0,,,,,,
-statuscode,Status Reason,picklist,none,False,2026-03-20 16:28:45,,true,0,2,0,0,0,0,0,6,0,0,0,,,,,,
-subject,Subject,nvarchar,required,False,2026-03-20 16:28:45,,true,0,7,0,0,0,0,0,3,0,0,0,,,,Task,Subject,Subject
-transactioncurrencyid,Currency,lookup,none,False,2025-08-14 15:14:51,,true,0,0,0,0,0,0,0,8,0,0,0,,,,,,
+statecode,Activity Status,picklist,required,False,2026-03-20 16:28:45,,true,0,3,0,0,0,0,0,20,0,0,0,,,,Task,Status,Status
+statuscode,Status Reason,picklist,none,False,2026-03-20 16:28:45,,true,0,2,0,0,0,0,0,6,0,0,0,,,,Task,Status,Status
+subject,Subject,nvarchar,required,False,2026-03-20 16:28:45,,true,0,7,0,0,0,0,0,3,0,0,0,,,,Task,Subject,Subject__c
+transactioncurrencyid,Currency,lookup,none,False,2025-08-14 15:14:51,,true,0,0,0,0,0,0,0,8,0,0,0,,,,Task,Currency,Currency__c

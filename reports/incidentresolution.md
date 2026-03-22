@@ -124,20 +124,20 @@ Total fields: **16**
 |---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
 | 1 | [activityid](#activityid) | Case Resolution | uniqueidentifier |  | No | required | 2026-03-19 20:06:25 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 2 | [activitytypecode](#activitytypecode) | Activity Type | entityname |  | No | required | 2026-03-19 20:06:25 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 3 | [category](#category) | Category | nvarchar |  | No | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 3 | [category](#category) | Category | nvarchar |  | No | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 4 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 5 | [customers](#customers) | Customers | partylist |  | No | none | Skipped (partylist) |  | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 6 | [description](#description) | Remarks | ntext |  | No | none | 2023-04-17 23:03:37 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 6 | [description](#description) | Remarks | ntext |  | No | none | 2023-04-17 23:03:37 |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 7 | [incidentid](#incidentid) | Case | lookup |  | No | none | 2026-03-19 20:06:25 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
 | 8 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none | Skipped (modifiedon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 9 | [ownerid](#ownerid) | Owner | lookup |  | No | required | 2026-03-19 20:06:25 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 10 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none | 2026-03-19 20:06:25 |  | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 11 | [resolutiontypecode](#resolutiontypecode) | Resolution Type | picklist |  | No | none | 2026-03-19 20:06:25 |  | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 12 | [scheduledend](#scheduledend) | Scheduled End | datetime |  | No | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 12 | [scheduledend](#scheduledend) | Scheduled End | datetime |  | No | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 13 | [statecode](#statecode) | Status | picklist |  | No | required | 2026-03-19 20:06:25 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 14 | [statuscode](#statuscode) | Status Reason | picklist |  | No | none | 2026-03-19 20:06:25 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 15 | [subject](#subject) | Subject | nvarchar |  | No | required | 2026-03-19 20:06:25 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 16 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 16 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 
 ---
 

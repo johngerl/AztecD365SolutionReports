@@ -5001,7 +5001,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:54:35"
+      "lastUpdate": "2026-03-21 00:54:35",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Discretionary Discount Amt",
+      "sfSuggestedFieldApiName": "Discretionary_Discount_Amt__c",
+      "sfSuggestedDataType": "currency",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_discretionarydiscountamt_base",
@@ -5040,7 +5045,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:54:35"
+      "lastUpdate": "2026-03-21 00:54:35",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_issaas",
@@ -5124,7 +5134,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:54:35"
+      "lastUpdate": "2026-03-21 00:54:35",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Is Saas",
+      "sfSuggestedFieldApiName": "Is_Saas__c",
+      "sfSuggestedDataType": "boolean",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_licensetermmonths",
@@ -5372,7 +5387,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:54:35"
+      "lastUpdate": "2026-03-21 00:54:35",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "License Term Months",
+      "sfSuggestedFieldApiName": "License_Term_Months__c",
+      "sfSuggestedDataType": "int",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_licensetype",
@@ -5702,7 +5722,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:54:35"
+      "lastUpdate": "2026-03-21 00:54:35",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "License Type",
+      "sfSuggestedFieldApiName": "License_Type__c",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_nonsaastype",
@@ -5770,7 +5795,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2022-03-13 18:47:50"
+      "lastUpdate": "2022-03-13 18:47:50",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Nonsaas Type",
+      "sfSuggestedFieldApiName": "Nonsaas_Type__c",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_pricebookentry",
@@ -5809,7 +5839,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "Never"
+      "lastUpdate": "Never",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "baseamount",
@@ -5881,7 +5916,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:54:35"
+      "lastUpdate": "2026-03-21 00:54:35",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Amount",
+      "sfSuggestedFieldApiName": "Amount__c",
+      "sfSuggestedDataType": "currency",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "createdon",
@@ -6002,7 +6042,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (createdon)"
+      "lastUpdate": "Skipped (createdon)",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Created On",
+      "sfSuggestedFieldApiName": "Created_On__c",
+      "sfSuggestedDataType": "datetime",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "description",
@@ -6095,7 +6140,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Never"
+      "lastUpdate": "Never",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Description",
+      "sfSuggestedFieldApiName": "Description__c",
+      "sfSuggestedDataType": "textarea",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "entityimage",
@@ -6134,7 +6184,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "Skipped (image)"
+      "lastUpdate": "Skipped (image)",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "extendedamount",
@@ -6288,7 +6343,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:54:35"
+      "lastUpdate": "2026-03-21 00:54:35",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Extended Amount",
+      "sfSuggestedFieldApiName": "Extended_Amount__c",
+      "sfSuggestedDataType": "currency",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "ispriceoverridden",
@@ -6374,7 +6434,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:54:35"
+      "lastUpdate": "2026-03-21 00:54:35",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Price Overridden",
+      "sfSuggestedFieldApiName": "Price_Overridden__c",
+      "sfSuggestedDataType": "boolean",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "isproductoverridden",
@@ -6453,7 +6518,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:54:35"
+      "lastUpdate": "2026-03-21 00:54:35",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Select Product",
+      "sfSuggestedFieldApiName": "Select_Product__c",
+      "sfSuggestedDataType": "boolean",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "manualdiscountamount",
@@ -6577,7 +6647,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:54:35"
+      "lastUpdate": "2026-03-21 00:54:35",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Manual Discount Amount",
+      "sfSuggestedFieldApiName": "Manual_Discount_Amount__c",
+      "sfSuggestedDataType": "currency",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "modifiedon",
@@ -6649,7 +6724,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (modifiedon)"
+      "lastUpdate": "Skipped (modifiedon)",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Modified On",
+      "sfSuggestedFieldApiName": "Modified_On__c",
+      "sfSuggestedDataType": "datetime",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "opportunityid",
@@ -6953,7 +7033,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:54:35"
+      "lastUpdate": "2026-03-21 00:54:35",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Opportunity",
+      "sfSuggestedFieldApiName": "Opportunity__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "opportunityproductid",
@@ -7132,7 +7217,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:54:35"
+      "lastUpdate": "2026-03-21 00:54:35",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Opportunity Product",
+      "sfSuggestedFieldApiName": "Opportunity_Product__c",
+      "sfSuggestedDataType": "id",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "opportunityproductname",
@@ -7202,7 +7292,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:54:35"
+      "lastUpdate": "2026-03-21 00:54:35",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Name CRM",
+      "sfSuggestedFieldApiName": "Name_CRM__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "opportunitystatecode",
@@ -7249,7 +7344,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:54:35"
+      "lastUpdate": "2026-03-21 00:54:35",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Opportunity Status",
+      "sfSuggestedFieldApiName": "Opportunity_Status__c",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "ownerid",
@@ -7447,7 +7547,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:54:35"
+      "lastUpdate": "2026-03-21 00:54:35",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Owner CRM",
+      "sfSuggestedFieldApiName": "Owner_CRM__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "priceperunit",
@@ -7566,7 +7671,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:54:35"
+      "lastUpdate": "2026-03-21 00:54:35",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Price Per Unit",
+      "sfSuggestedFieldApiName": "Price_Per_Unit__c",
+      "sfSuggestedDataType": "currency",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "productdescription",
@@ -7720,7 +7830,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2024-07-02 11:04:03"
+      "lastUpdate": "2024-07-02 11:04:03",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Writein Product",
+      "sfSuggestedFieldApiName": "Writein_Product__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "productid",
@@ -8033,7 +8148,12 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:54:35"
+      "lastUpdate": "2026-03-21 00:54:35",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Existing Product",
+      "sfSuggestedFieldApiName": "Existing_Product__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "productname",
@@ -8098,7 +8218,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:54:35"
+      "lastUpdate": "2026-03-21 00:54:35",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Product Name",
+      "sfSuggestedFieldApiName": "Product_Name__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "producttypecode",
@@ -8170,7 +8295,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:54:35"
+      "lastUpdate": "2026-03-21 00:54:35",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Product Type",
+      "sfSuggestedFieldApiName": "Product_Type__c",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "quantity",
@@ -8396,7 +8526,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:54:35"
+      "lastUpdate": "2026-03-21 00:54:35",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Quantity",
+      "sfSuggestedFieldApiName": "Quantity__c",
+      "sfSuggestedDataType": "double",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "tax",
@@ -8496,7 +8631,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:46"
+      "lastUpdate": "2026-03-20 22:35:46",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Tax",
+      "sfSuggestedFieldApiName": "Tax__c",
+      "sfSuggestedDataType": "currency",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -8596,7 +8736,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:54:35"
+      "lastUpdate": "2026-03-21 00:54:35",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Currency",
+      "sfSuggestedFieldApiName": "Currency__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "uomid",
@@ -8696,7 +8841,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:54:35"
+      "lastUpdate": "2026-03-21 00:54:35",
+      "sfSuggestedObjectName": "Opportunity Product",
+      "sfSuggestedFieldDisplayName": "Unit",
+      "sfSuggestedFieldApiName": "Unit__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     }
   ]
 }

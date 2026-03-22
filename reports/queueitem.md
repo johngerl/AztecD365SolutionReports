@@ -129,18 +129,18 @@ Total fields: **16**
 | 2 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 3 | [enteredon](#enteredon) | Entered Queue | datetime |  | No | none | 2026-03-20 21:42:40 |  | true |  |  |  |  |  |  |  | [6](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 | 4 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none | Skipped (modifiedon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 5 | [msdyn_liveworkstreamid](#msdyn_liveworkstreamid) | Live workstream | lookup |  | Yes | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 5 | [msdyn_liveworkstreamid](#msdyn_liveworkstreamid) | Live workstream | lookup |  | Yes | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
 | 6 | [objectid](#objectid) | Object | lookup |  | No | required | 2026-03-20 21:42:40 |  | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 7 | [objecttypecode](#objecttypecode) | Type | picklist |  | No | none | 2026-03-20 21:42:40 |  | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 8 | [ownerid](#ownerid) | Owner | lookup |  | No | required | 2026-03-20 21:42:40 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 9 | [queueid](#queueid) | Queue | lookup |  | No | required | 2026-03-20 21:42:40 |  | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 10 | [queueitemid](#queueitemid) | Queue Item | uniqueidentifier |  | No | required | 2026-03-20 21:42:40 |  | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 11 | [state](#state) | Status (deprecated) | int |  | No | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11.%20PCF%20Controls) |  |  |  |
+| 11 | [state](#state) | Status (deprecated) | int |  | No | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11.%20PCF%20Controls) |  |  |  |
 | 12 | [statecode](#statecode) | Status | picklist |  | No | required | 2026-03-20 21:42:40 |  | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 13 | [statuscode](#statuscode) | Status Reason | picklist |  | No | required | 2026-03-20 21:42:40 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 14 | [title](#title) | Title | nvarchar |  | No | none | 2026-03-20 21:42:40 |  | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 15 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 16 | [workerid](#workerid) | Worked By | lookup |  | No | none | Never |  | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 15 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 16 | [workerid](#workerid) | Worked By | lookup |  | No | none | Never |  | false |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 
 ---
 

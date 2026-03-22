@@ -7,7 +7,7 @@ azt_federalfundingamount_base,Federal Funding Amount (Base),money,none,True,2025
 azt_fundingdate,Funding Date,datetime,none,True,Never,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
 azt_fundingid,Funding,primarykey,systemrequired,False,2025-11-20 19:52:27,,true,0,8,0,0,0,0,0,2,0,0,0,,,,,,
 azt_fundingyear,Year,int,required,True,2025-11-20 19:52:27,,true,2,4,0,0,0,0,0,2,0,0,0,,,,,,
-azt_name,Name,nvarchar,recommended,True,Never,,true,2,10,0,0,0,9,0,18,0,0,0,,,,,,
+azt_name,Name,nvarchar,recommended,True,Never,,false,2,10,0,0,0,9,0,18,0,0,0,,,,,,
 azt_otherfundingamount,Other Funding Amount,money,none,True,2025-11-20 19:52:27,,true,2,2,0,0,0,0,0,0,0,0,0,,,,,,
 azt_otherfundingamount_base,Other Funding Amount (Base),money,none,True,2025-11-20 19:52:27,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
 azt_penetration,Penetration %,decimal,none,True,2025-11-20 19:52:27,,true,1,2,0,0,0,0,0,0,0,0,0,,,,,,

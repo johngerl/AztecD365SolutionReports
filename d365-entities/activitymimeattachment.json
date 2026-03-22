@@ -4193,7 +4193,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Error"
+      "lastUpdate": "Error",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "body",
@@ -4244,7 +4249,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Error"
+      "lastUpdate": "Error",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "filename",
@@ -4295,7 +4305,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Error"
+      "lastUpdate": "Error",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "mimetype",
@@ -4346,7 +4361,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Error"
+      "lastUpdate": "Error",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "objectid",
@@ -4418,7 +4438,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Error"
+      "lastUpdate": "Error",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "objecttypecode",
@@ -4469,7 +4494,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Error"
+      "lastUpdate": "Error",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "ownerid",
@@ -4667,7 +4697,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Error"
+      "lastUpdate": "Error",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "subject",
@@ -4732,7 +4767,12 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Error"
+      "lastUpdate": "Error",
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     }
   ]
 }

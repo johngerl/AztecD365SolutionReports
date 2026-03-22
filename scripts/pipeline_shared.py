@@ -71,6 +71,11 @@ def adapt_json_fields(json_fields):
         'is_logical': jf.get('isLogical', False),
         'is_retrievable': jf.get('isRetrievable', False),
         'is_data_source_secret': jf.get('isDataSourceSecret', False),
+        'sf_suggested_object': jf.get('sfSuggestedObjectName') or '',
+        'sf_suggested_display': jf.get('sfSuggestedFieldDisplayName') or '',
+        'sf_suggested_api': jf.get('sfSuggestedFieldApiName') or '',
+        'sf_suggested_data_type': jf.get('sfSuggestedDataType') or '',
+        'sf_suggested_match_tier': jf.get('sfSuggestedMatchTier') or '',
         'picklist_values': jf.get('picklistValues') or [],
     } for jf in json_fields]
 

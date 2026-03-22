@@ -1,65 +1,65 @@
 fieldName,displayName,dataType,requiredLevel,isCustom,lastUpdate,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
 accountid,Account,lookup,none,False,2026-03-22 00:58:02,,true,0,0,0,0,0,0,0,12,0,0,0,,,,Contact,AccountId,AccountId
-address1_addresstypecode,Address 1: Address Type,picklist,none,False,2026-03-20 21:31:00,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
-address1_city,Main Address: City,nvarchar,none,False,2026-03-20 21:31:00,,true,2,1,0,0,0,3,0,0,0,0,0,,,,,,
-address1_composite,Address 1,ntext,none,False,2026-03-20 21:31:00,,true,0,1,0,0,0,0,0,0,0,0,0,,,,,,
-address1_fax,Address 1: Fax,nvarchar,none,False,2026-03-19 13:23:45,,true,0,1,0,0,0,0,0,0,0,0,0,,,,,,
-address1_line1,Main Address: Line 1,nvarchar,none,False,2026-03-20 21:31:00,,true,2,0,0,0,0,2,0,0,0,0,0,,,,,,
-address1_line2,Main Address: Street 2,nvarchar,none,False,2026-03-20 15:39:06,,true,1,0,0,0,0,1,0,0,0,0,0,,,,,,
-address1_name,Address 1: Name,nvarchar,none,False,2026-03-22 00:58:02,,true,1,1,0,0,0,0,0,0,0,0,0,,,,,,
-address1_postalcode,Main Address: Zip,nvarchar,none,False,2026-03-20 21:31:00,,true,2,0,0,0,0,2,0,0,0,0,0,,,,,,
-address1_stateorprovince,Main Address: State/Province,nvarchar,none,False,2026-03-20 21:31:00,,true,1,0,0,0,0,10,0,4,0,0,0,,,,,,
-address1_telephone1,Address 1: Phone,nvarchar,none,False,2026-03-20 14:51:56,,true,0,1,0,0,0,0,0,1,0,0,0,,,,,,
-address2_country,Main Address: Country,nvarchar,none,False,2026-03-20 16:13:50,,true,1,0,0,0,0,1,0,0,0,0,0,,,,,,
-address2_county,Main Address: County,nvarchar,none,False,2026-03-20 16:13:50,,true,1,0,0,0,0,1,0,0,0,0,0,,,,,,
-address2_line1,Address 2: Street 1,nvarchar,none,False,Never,,true,0,0,0,1,0,0,0,0,0,0,0,,,,,,
-adx_preferredlanguageid,Preferred Language,lookup,none,True,2021-01-01 01:34:00,,true,0,0,0,0,0,0,0,0,0,1,0,,,,,,
+address1_addresstypecode,Address 1: Address Type,picklist,none,False,2026-03-20 21:31:00,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Contact,Address 1 Address Type,Address_1_Address_Type__c
+address1_city,Main Address: City,nvarchar,none,False,2026-03-20 21:31:00,,true,2,1,0,0,0,3,0,0,0,0,0,,,,Contact,Main Address City,Main_Address_City__c
+address1_composite,Address 1,ntext,none,False,2026-03-20 21:31:00,,true,0,1,0,0,0,0,0,0,0,0,0,,,,Contact,Address 1,Address_1__c
+address1_fax,Address 1: Fax,nvarchar,none,False,2026-03-19 13:23:45,,true,0,1,0,0,0,0,0,0,0,0,0,,,,Contact,Address 1 Fax,Address_1_Fax__c
+address1_line1,Main Address: Line 1,nvarchar,none,False,2026-03-20 21:31:00,,true,2,0,0,0,0,2,0,0,0,0,0,,,,Contact,Main Address Line 1,Main_Address_Line_1__c
+address1_line2,Main Address: Street 2,nvarchar,none,False,2026-03-20 15:39:06,,true,1,0,0,0,0,1,0,0,0,0,0,,,,Contact,Main Address Street 2,Main_Address_Street_2__c
+address1_name,Address 1: Name,nvarchar,none,False,2026-03-22 00:58:02,,true,1,1,0,0,0,0,0,0,0,0,0,,,,Contact,Address 1 Name,Address_1_Name__c
+address1_postalcode,Main Address: Zip,nvarchar,none,False,2026-03-20 21:31:00,,true,2,0,0,0,0,2,0,0,0,0,0,,,,Contact,Main Address Zip,Main_Address_Zip__c
+address1_stateorprovince,Main Address: State/Province,nvarchar,none,False,2026-03-20 21:31:00,,true,1,0,0,0,0,10,0,4,0,0,0,,,,Contact,Main Address Stateprovince,Main_Address_Stateprovince__c
+address1_telephone1,Address 1: Phone,nvarchar,none,False,2026-03-20 14:51:56,,true,0,1,0,0,0,0,0,1,0,0,0,,,,Contact,Address 1 Phone,Address_1_Phone__c
+address2_country,Main Address: Country,nvarchar,none,False,2026-03-20 16:13:50,,true,1,0,0,0,0,1,0,0,0,0,0,,,,Contact,Main Address Country,Main_Address_Country__c
+address2_county,Main Address: County,nvarchar,none,False,2026-03-20 16:13:50,,true,1,0,0,0,0,1,0,0,0,0,0,,,,Contact,Main Address County,Main_Address_County__c
+address2_line1,Address 2: Street 1,nvarchar,none,False,Never,,false,0,0,0,1,0,0,0,0,0,0,0,,,,Contact,Address 2 Street 1,Address_2_Street_1__c
+adx_preferredlanguageid,Preferred Language,lookup,none,True,2021-01-01 01:34:00,,false,0,0,0,0,0,0,0,0,0,1,0,,,,Contact,Preferred Language,Preferred_Language__c
 assistantname,Assistant,nvarchar,none,False,2026-03-16 23:04:11,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Contact,AssistantName,AssistantName
-assistantphone,Assistant Phone,nvarchar,none,False,2026-03-16 23:04:11,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_addresssearch,Address Search,nvarchar,none,True,2025-05-08 15:08:33,,true,1,0,0,0,0,0,0,2,0,0,0,,,,,,
-azt_dupbasedonemailandcustomer,Dup Based On Email and Customer,bit,none,True,2026-03-20 21:36:12,"1: Yes, 0: No",true,0,1,0,0,0,0,0,0,0,0,0,,,,,,
-azt_dupbasedonemailnocustomer,Dup Based On Email No Customer,bit,none,True,2026-03-20 21:36:12,"1: Yes, 0: No",true,0,1,0,0,0,0,0,0,0,0,0,,,,,,
-azt_excludefromautoassign,Exclude from Auto-Assign?,bit,none,True,2026-03-20 21:36:12,"1: Yes, 0: No",true,1,0,0,0,0,3,0,0,0,0,0,,,,,,
-azt_extension,Extension,nvarchar,none,True,2026-03-20 12:52:19,,true,1,2,0,0,0,0,0,1,0,0,0,Contact,Phone Extension,Phone_Ext__c,,,
-azt_isduplicate,Is Duplicate?,bit,none,True,2026-03-20 21:36:12,"1: Yes, 0: No",true,0,1,0,0,0,0,0,0,0,0,0,,,,,,
-azt_recordownerid,Record Owner,lookup,none,True,2026-03-20 21:31:00,,true,1,0,0,4,0,37,0,9,0,1,0,Contact,Contact Owner,OwnerId,,,
-birthdate,Birthday,datetime,none,False,2026-03-16 22:57:48,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
-contactid,Contact,uniqueidentifier,required,False,2026-03-22 00:58:02,,true,0,8,0,1,0,3,0,5,0,0,0,,,,,,
-createdby,Created By,lookup,none,False,2026-03-22 00:58:02,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Contact,Legacy_Created_By__c,Legacy_Created_By__c
-createdon,Created On,datetime,none,False,Skipped (createdon),,true,0,0,0,0,0,0,0,10,0,0,0,,,,Contact,Legacy_Created_On__c,Legacy_Created_On__c
-defaultpricelevelid,Price List,lookup,none,False,Never,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
+assistantphone,Assistant Phone,nvarchar,none,False,2026-03-16 23:04:11,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Contact,AssistantName,AssistantName
+azt_addresssearch,Address Search,nvarchar,none,True,2025-05-08 15:08:33,,true,1,0,0,0,0,0,0,2,0,0,0,,,,Contact,Address Search,Address_Search__c
+azt_dupbasedonemailandcustomer,Dup Based On Email and Customer,bit,none,True,2026-03-20 21:36:12,"1: Yes, 0: No",true,0,1,0,0,0,0,0,0,0,0,0,,,,Contact,Dup Based On Email And Customer,Dup_Based_On_Email_And_Customer__c
+azt_dupbasedonemailnocustomer,Dup Based On Email No Customer,bit,none,True,2026-03-20 21:36:12,"1: Yes, 0: No",true,0,1,0,0,0,0,0,0,0,0,0,,,,Contact,Dup Based On Email No Customer,Dup_Based_On_Email_No_Customer__c
+azt_excludefromautoassign,Exclude from Auto-Assign?,bit,none,True,2026-03-20 21:36:12,"1: Yes, 0: No",true,1,0,0,0,0,3,0,0,0,0,0,,,,Contact,Exclude From Autoassign,Exclude_From_Autoassign__c
+azt_extension,Extension,nvarchar,none,True,2026-03-20 12:52:19,,true,1,2,0,0,0,0,0,1,0,0,0,Contact,Phone Extension,Phone_Ext__c,Contact,Phone_Ext__c,Phone_Ext__c
+azt_isduplicate,Is Duplicate?,bit,none,True,2026-03-20 21:36:12,"1: Yes, 0: No",true,0,1,0,0,0,0,0,0,0,0,0,,,,Contact,Is Duplicate,Is_Duplicate__c
+azt_recordownerid,Record Owner,lookup,none,True,2026-03-20 21:31:00,,true,1,0,0,4,0,37,0,9,0,1,0,Contact,Contact Owner,OwnerId,Contact,OwnerId,OwnerId
+birthdate,Birthday,datetime,none,False,2026-03-16 22:57:48,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Contact,Birthday,Birthday__c
+contactid,Contact,uniqueidentifier,required,False,2026-03-22 00:58:02,,true,0,8,0,1,0,3,0,5,0,0,0,,,,Contact,Contact_GUID__c,Contact_GUID__c
+createdby,Created By,lookup,none,False,2026-03-22 00:58:02,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Contact,CreatedById,CreatedById
+createdon,Created On,datetime,none,False,Skipped (createdon),,true,0,0,0,0,0,0,0,10,0,0,0,,,,Contact,CreatedDate,CreatedDate
+defaultpricelevelid,Price List,lookup,none,False,Never,,false,1,0,0,0,0,0,0,0,0,0,0,,,,Contact,Price List,Price_List__c
 description,Description,ntext,none,False,2026-03-19 15:06:48,,true,2,0,0,0,0,0,0,7,0,0,0,,,,Contact,Description,Description
-donotsendmm,Send Marketing Materials,bit,none,False,2026-03-22 00:58:02,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
+donotsendmm,Send Marketing Materials,bit,none,False,2026-03-22 00:58:02,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Contact,Send Marketing Materials,Send_Marketing_Materials__c
 emailaddress1,Email,nvarchar,none,False,2026-03-22 00:58:02,,true,2,10,0,0,0,0,0,2,0,0,0,,,,Contact,Email,Email
-familystatuscode,Marital Status,picklist,none,False,2025-08-18 13:15:01,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
+familystatuscode,Marital Status,picklist,none,False,2025-08-18 13:15:01,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Contact,Marital Status,Marital_Status__c
 fax,Fax,nvarchar,none,False,2026-03-19 13:23:45,,true,0,1,0,0,0,0,0,0,0,0,0,,,,Contact,Fax,Fax
 firstname,First Name,nvarchar,recommended,False,2026-03-22 00:58:02,,true,1,0,0,1,0,2,0,1,0,0,0,,,,Contact,FirstName,FirstName
-fullname,Full Name,nvarchar,none,False,2026-03-22 00:58:02,,true,0,12,0,5,0,0,0,7,0,0,0,,,,,,
+fullname,Full Name,nvarchar,none,False,2026-03-22 00:58:02,,true,0,12,0,5,0,0,0,7,0,0,0,,,,Contact,Name,Name
 jobtitle,Job Title,nvarchar,none,False,2026-03-22 00:58:02,,true,2,4,0,1,0,0,0,1,0,0,0,,,,Contact,Title,Title
 lastname,Last Name,nvarchar,required,False,2026-03-22 00:58:02,,true,1,0,0,0,0,2,0,1,0,0,0,,,,Contact,LastName,LastName
-lastusedincampaign,Last Date Included in Campaign,datetime,none,False,Never,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
-managername,Manager,nvarchar,none,False,2026-03-16 23:02:36,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
-managerphone,Manager Phone,nvarchar,none,False,2026-03-16 23:04:11,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
+lastusedincampaign,Last Date Included in Campaign,datetime,none,False,Never,,false,1,0,0,0,0,0,0,0,0,0,0,,,,Contact,Last Date Included In Campaign,Last_Date_Included_In_Campaign__c
+managername,Manager,nvarchar,none,False,2026-03-16 23:02:36,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Contact,Manager,Manager__c
+managerphone,Manager Phone,nvarchar,none,False,2026-03-16 23:04:11,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Contact,Manager Phone,Manager_Phone__c
 mobilephone,Mobile Phone,nvarchar,none,False,2026-03-20 16:52:46,,true,2,0,0,0,0,0,0,1,0,0,0,,,,Contact,MobilePhone,MobilePhone
 modifiedon,Modified On,datetime,none,False,Skipped (modifiedon),,true,0,0,0,0,0,0,0,4,0,0,0,,,,Contact,LastModifiedDate,LastModifiedDate
-msa_managingpartnerid,Managing Partner,lookup,none,True,2026-03-20 21:31:00,,true,0,0,0,0,0,0,0,0,0,1,0,,,,,,
-msdyn_contactkpiid,KPI,lookup,none,True,Never,,true,0,0,0,0,0,0,0,0,0,1,0,,,,,,
-msdyn_segmentid,Segment Id,lookup,none,True,Never,,true,0,0,0,0,0,0,0,0,0,1,0,,,,,,
-nickname,Nickname,nvarchar,none,False,2025-08-18 13:15:01,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
-numberofchildren,No. of Children,int,none,False,2025-08-18 13:15:01,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
-originatingleadid,Originating Lead,lookup,none,False,2026-03-16 23:03:20,,true,1,0,0,0,0,0,0,2,0,0,0,,,,,,
+msa_managingpartnerid,Managing Partner,lookup,none,True,2026-03-20 21:31:00,,true,0,0,0,0,0,0,0,0,0,1,0,,,,Contact,Managing Partner,Managing_Partner__c
+msdyn_contactkpiid,KPI,lookup,none,True,Never,,false,0,0,0,0,0,0,0,0,0,1,0,,,,Contact,Kpi,Kpi__c
+msdyn_segmentid,Segment Id,lookup,none,True,Never,,false,0,0,0,0,0,0,0,0,0,1,0,,,,Contact,Segment Id,Segment_Id__c
+nickname,Nickname,nvarchar,none,False,2025-08-18 13:15:01,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Contact,Name,Name
+numberofchildren,No. of Children,int,none,False,2025-08-18 13:15:01,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Contact,No Of Children,No_Of_Children__c
+originatingleadid,Originating Lead,lookup,none,False,2026-03-16 23:03:20,,true,1,0,0,0,0,0,0,2,0,0,0,,,,Contact,Originating Lead,Originating_Lead__c
 ownerid,Owner,lookup,required,False,2026-03-22 00:58:02,,true,0,2,0,2,0,3,0,22,0,0,0,,,,Contact,OwnerId,OwnerId
-parent_contactid,parent_contactid,lookup,none,True,2025-04-17 14:48:14,,true,0,0,0,0,0,0,0,0,0,1,0,,,,,,
-parentcontactid,Parent Contact,lookup,none,False,2025-09-22 16:50:05,,true,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-parentcustomerid,Company Name,customer,required,False,2026-03-22 00:58:02,,true,1,5,0,0,0,5,0,7,0,1,0,Contact,Account name,AccountId,,,
-preferredappointmentdaycode,Preferred Day,picklist,none,False,Never,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
-preferredappointmenttimecode,Preferred Time,picklist,none,False,2026-03-22 00:58:02,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
-preferredequipmentid,Preferred Facility/Equipment,lookup,none,False,Never,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
-preferredserviceid,Preferred Service,lookup,none,False,Never,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
-preferredsystemuserid,Preferred User,lookup,none,False,Never,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
-shippingmethodcode,Shipping Method,picklist,none,False,2026-03-22 00:58:02,,true,0,0,0,1,0,0,0,1,0,0,0,,,,,,
-spousesname,Spouse/Partner Name,nvarchar,none,False,2026-03-16 22:54:01,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
-statecode,Status,state,systemrequired,False,2026-03-22 00:58:02,,true,0,7,0,0,0,10,0,20,0,0,0,,,,,,
-statuscode,Status Reason,status,none,False,2026-03-22 00:58:02,,true,0,0,0,1,0,5,0,6,0,0,0,,,,,,
+parent_contactid,parent_contactid,lookup,none,True,2025-04-17 14:48:14,,true,0,0,0,0,0,0,0,0,0,1,0,,,,Contact,Parentcontactid,Parentcontactid__c
+parentcontactid,Parent Contact,lookup,none,False,2025-09-22 16:50:05,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Contact,ReportsToId,ReportsToId
+parentcustomerid,Company Name,customer,required,False,2026-03-22 00:58:02,,true,1,5,0,0,0,5,0,7,0,1,0,Contact,Account name,AccountId,Contact,AccountId,AccountId
+preferredappointmentdaycode,Preferred Day,picklist,none,False,Never,,false,1,0,0,0,0,0,0,0,0,0,0,,,,Contact,Preferred Day,Preferred_Day__c
+preferredappointmenttimecode,Preferred Time,picklist,none,False,2026-03-22 00:58:02,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Contact,Preferred Time,Preferred_Time__c
+preferredequipmentid,Preferred Facility/Equipment,lookup,none,False,Never,,false,1,0,0,0,0,0,0,0,0,0,0,,,,Contact,Preferred Facilityequipment,Preferred_Facilityequipment__c
+preferredserviceid,Preferred Service,lookup,none,False,Never,,false,1,0,0,0,0,0,0,0,0,0,0,,,,Contact,Preferred Service,Preferred_Service__c
+preferredsystemuserid,Preferred User,lookup,none,False,Never,,false,1,0,0,0,0,0,0,0,0,0,0,,,,Contact,Preferred User,Preferred_User__c
+shippingmethodcode,Shipping Method,picklist,none,False,2026-03-22 00:58:02,,true,0,0,0,1,0,0,0,1,0,0,0,,,,Contact,Shipping Method,Shipping_Method__c
+spousesname,Spouse/Partner Name,nvarchar,none,False,2026-03-16 22:54:01,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Contact,Spousepartner Name,Spousepartner_Name__c
+statecode,Status,state,systemrequired,False,2026-03-22 00:58:02,,true,0,7,0,0,0,10,0,20,0,0,0,,,,Contact,Status CRM,Status_CRM__c
+statuscode,Status Reason,status,none,False,2026-03-22 00:58:02,,true,0,0,0,1,0,5,0,6,0,0,0,,,,Contact,Status Reason,Status_Reason__c
 telephone1,Business Phone,nvarchar,none,False,2026-03-22 00:58:02,,true,3,6,0,0,0,0,0,1,0,0,0,,,,Contact,OtherPhone,OtherPhone
-transactioncurrencyid,Currency,lookup,none,False,2026-03-20 21:31:00,,true,0,0,0,0,0,0,0,8,0,0,0,,,,,,
+transactioncurrencyid,Currency,lookup,none,False,2026-03-20 21:31:00,,true,0,0,0,0,0,0,0,8,0,0,0,,,,Contact,Currency,Currency__c

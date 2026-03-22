@@ -121,15 +121,15 @@ Total fields: **9**
 
 | # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
 |---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [amountdatatype](#amountdatatype) | Amount Data Type | picklist |  | No | none | 2022-12-26 10:23:10 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 1 | [amountdatatype](#amountdatatype) | Amount Data Type | picklist |  | No | none | 2022-12-26 10:23:10 |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 2 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 3 | [description](#description) | Description | ntext |  | No | none | 2018-12-21 08:07:09 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 4 | [isamount](#isamount) | Metric Type | bit |  | No | required | 2022-12-26 10:23:10 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 5 | [metricid](#metricid) | Goal Metric | uniqueidentifier |  | No | required | 2022-12-26 10:23:10 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 3 | [description](#description) | Description | ntext |  | No | none | 2018-12-21 08:07:09 |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 4 | [isamount](#isamount) | Metric Type | bit |  | No | required | 2022-12-26 10:23:10 |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 5 | [metricid](#metricid) | Goal Metric | uniqueidentifier |  | No | required | 2022-12-26 10:23:10 |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 6 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none | Skipped (modifiedon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 7 | [name](#name) | Name | nvarchar |  | No | required | 2022-12-26 10:23:10 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [23](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 8 | [statecode](#statecode) | Status | picklist |  | No | required | 2022-12-26 10:23:10 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 9 | [statuscode](#statuscode) | Status Reason | picklist |  | No | none | 2022-12-26 10:23:10 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 7 | [name](#name) | Name | nvarchar |  | No | required | 2022-12-26 10:23:10 |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [23](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 8 | [statecode](#statecode) | Status | picklist |  | No | required | 2022-12-26 10:23:10 |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 9 | [statuscode](#statuscode) | Status Reason | picklist |  | No | none | 2022-12-26 10:23:10 |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 
 ---
 

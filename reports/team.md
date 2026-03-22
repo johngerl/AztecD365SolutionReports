@@ -130,12 +130,12 @@ Total fields: **15**
 | # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
 |---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
 | 1 | [azt_regionalteam](#azt_regionalteam) | Regional Team? | bit | 1: Yes, 0: No | Yes | none | 2026-03-21 04:05:55 | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 2 | [azt_stateabbreviation](#azt_stateabbreviation) | State Abbreviation | nvarchar |  | Yes | none | 2023-06-19 18:06:26 | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) | [5](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 2 | [azt_stateabbreviation](#azt_stateabbreviation) | State Abbreviation | nvarchar |  | Yes | none | 2023-06-19 18:06:26 | C R U | false |  |  |  |  |  |  | [1](#2.%20Forms) | [5](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 3 | [businessunitid](#businessunitid) | Business Unit | lookup |  | No | required | 2026-03-21 04:05:55 |  | true |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 4 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 5 | [delegatedauthorizationid](#delegatedauthorizationid) | Delegated authorization | lookup |  | No | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 5 | [delegatedauthorizationid](#delegatedauthorizationid) | Delegated authorization | lookup |  | No | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
 | 6 | [description](#description) | Description | ntext |  | No | none | 2026-03-21 04:05:55 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 7 | [emailaddress](#emailaddress) | Email | nvarchar |  | No | none | 2023-03-27 06:53:57 |  | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 7 | [emailaddress](#emailaddress) | Email | nvarchar |  | No | none | 2023-03-27 06:53:57 |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 8 | [issastokenset](#issastokenset) |  | bit |  | No | none | 2026-03-21 04:05:55 | R L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 9 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none | Skipped (modifiedon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 10 | [name](#name) | Team Name | nvarchar |  | No | required | 2026-03-21 04:05:55 |  | true |  |  |  |  |  |  |  | [8](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [23](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
@@ -143,7 +143,7 @@ Total fields: **15**
 | 12 | [regardingobjectid](#regardingobjectid) | Regarding Object Id | lookup |  | No | none | 2026-03-20 22:34:46 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 13 | [teamid](#teamid) | Team | uniqueidentifier |  | No | required | 2026-03-21 04:05:55 |  | true |  |  |  |  |  |  |  | [4](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 14 | [teamtype](#teamtype) | Team Type | picklist |  | No | required | 2026-03-21 04:05:55 |  | true |  |  |  |  |  |  |  | [4](#3.%20Views) |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 15 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none | 2024-07-18 15:52:39 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 15 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none | 2024-07-18 15:52:39 |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 
 ---
 

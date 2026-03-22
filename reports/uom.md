@@ -123,9 +123,9 @@ Total fields: **5**
 |---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
 | 1 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 2 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none | Skipped (modifiedon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 3 | [name](#name) | Name | nvarchar |  | No | required | 2019-01-05 16:29:48 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [23](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 4 | [quantity](#quantity) | Quantity | decimal |  | No | required | 2019-01-05 16:29:48 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [18](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 5 | [uomid](#uomid) | Unit | uniqueidentifier |  | No | required | 2019-01-05 16:29:48 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 3 | [name](#name) | Name | nvarchar |  | No | required | 2019-01-05 16:29:48 |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [23](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 4 | [quantity](#quantity) | Quantity | decimal |  | No | required | 2019-01-05 16:29:48 |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [18](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 5 | [uomid](#uomid) | Unit | uniqueidentifier |  | No | required | 2019-01-05 16:29:48 |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 
 ---
 

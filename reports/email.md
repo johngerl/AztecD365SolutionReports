@@ -175,9 +175,9 @@ Total fields: **33**
 | 2 | [activityid](#activityid) | Email Message | uniqueidentifier |  | No | required | 2026-03-21 00:21:54 |  | true |  |  |  |  |  |  |  | [11](#3.%20Views) |  |  |  | [3](#7.%20Workflows) |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 3 | [activitytypecode](#activitytypecode) | Activity Type | entityname |  | No | required | 2026-03-21 00:21:54 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 4 | [actualend](#actualend) | Actual End | datetime |  | No | none | 2026-03-21 00:21:54 |  | true |  |  |  |  |  |  | [5](#2.%20Forms) | [31](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 5 | [category](#category) | Category | nvarchar |  | No | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 5 | [category](#category) | Category | nvarchar |  | No | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 6 | [cc](#cc) | Cc | partylist |  | No | none | Skipped (partylist) |  | true |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 7 | [correlatedactivityid](#correlatedactivityid) | Correlated Activity Id | lookup |  | No | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 7 | [correlatedactivityid](#correlatedactivityid) | Correlated Activity Id | lookup |  | No | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
 | 8 | [correlatedsubjectchanged](#correlatedsubjectchanged) | Correlated subject changed | bit |  | No | none | 2026-03-21 00:21:54 |  | true |  |  |  |  |  |  |  |  |  |  |  | [4](#7.%20Workflows) |  |  |  |  |  |  |
 | 9 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) |  | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 10 | [deliveryprioritycode](#deliveryprioritycode) | Delivery Priority | picklist |  | No | none | 2026-03-21 00:21:54 |  | true |  |  |  |  |  |  |  |  |  |  |  | [10](#7.%20Workflows) |  |  |  |  |  |  |
@@ -187,17 +187,17 @@ Total fields: **33**
 | 14 | [followemailuserpreference](#followemailuserpreference) | Following | bit |  | No | none | 2026-03-21 00:21:54 |  | true |  |  |  |  |  |  |  |  |  |  |  | [10](#7.%20Workflows) |  |  |  |  |  |  |
 | 15 | [from](#from) | From | partylist |  | No | none | Skipped (partylist) |  | true |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  | [10](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 16 | [issafedescriptiontruncated](#issafedescriptiontruncated) | IsSafeDescriptionTruncated | int |  | No | none | Error | L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 17 | [mimetype](#mimetype) | Mime Type | nvarchar |  | No | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 17 | [mimetype](#mimetype) | Mime Type | nvarchar |  | No | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 18 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none | Skipped (modifiedon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 19 | [msdyn_emailclassificationcategory](#msdyn_emailclassificationcategory) | Email Classification Category | lookup |  | Yes | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 19 | [msdyn_emailclassificationcategory](#msdyn_emailclassificationcategory) | Email Classification Category | lookup |  | Yes | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
 | 20 | [notifications](#notifications) | Notifications | picklist |  | No | none | 2026-03-21 00:21:54 |  | true |  |  |  |  |  |  |  |  |  |  |  | [10](#7.%20Workflows) |  |  |  |  |  |  |
 | 21 | [ownerid](#ownerid) | Owner | lookup |  | No | required | 2026-03-21 00:21:54 |  | true |  |  |  |  |  |  |  | [26](#3.%20Views) | [16](#4.%20Chart%20Visualizations) |  |  |  |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 22 | [prioritycode](#prioritycode) | Priority | picklist |  | No | none | 2026-03-21 00:21:54 |  | true |  |  |  |  |  |  |  |  |  |  |  | [10](#7.%20Workflows) |  |  |  |  |  |  |
 | 23 | [receivingmailboxid](#receivingmailboxid) | Receiving Mailbox | lookup |  | No | none | 2026-03-21 00:21:54 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
 | 24 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none | 2026-03-21 00:21:54 | C R U Re | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [14](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [32](#12.%20Relationships) |  |  |
 | 25 | [related](#related) | Related | partylist |  | No | none | Skipped (partylist) | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 26 | [scheduledend](#scheduledend) | Due Date | datetime |  | No | none | 2023-09-19 20:20:46 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 27 | [sensitivitylabelid](#sensitivitylabelid) | Sensitivity Label | lookup |  | Yes | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 26 | [scheduledend](#scheduledend) | Due Date | datetime |  | No | none | 2023-09-19 20:20:46 |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 27 | [sensitivitylabelid](#sensitivitylabelid) | Sensitivity Label | lookup |  | Yes | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
 | 28 | [senton](#senton) | Date Sent | datetime |  | No | none | 2026-03-20 21:12:26 |  | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 29 | [statecode](#statecode) | Activity Status | picklist |  | No | required | 2026-03-21 00:21:54 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 30 | [statuscode](#statuscode) | Status Reason | picklist |  | No | none | 2026-03-21 00:21:54 |  | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |

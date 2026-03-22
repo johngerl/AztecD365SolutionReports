@@ -1,137 +1,464 @@
 fieldName,displayName,dataType,requiredLevel,isCustom,lastUpdate,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-accountclassificationcode,Account Classification,picklist,none,False,2026-03-20 21:14:01,"1: A, 276530000: B, 276530001: C, 100000001: D, 100000000: E, 276530002: S, 276530003: N/A, 276530004: aa, 276530005: bb, 276530006: cc, 276530007: ss",true,2,12,0,0,0,0,0,0,0,0,0,Account,CRM Account Classification,CRM_Account_Classification__c,,,
-accountid,Account,uniqueidentifier,required,False,2026-03-21 01:28:31,,true,0,23,0,1,0,8,0,12,0,0,0,,,,,,
-accountnumber,Sequence Number,nvarchar,none,False,2026-03-10 20:08:23,,true,0,1,0,0,0,0,0,0,0,0,0,,,,Account,AccountNumber,AccountNumber
-address1_addresstypecode,Physical Address Type,picklist,none,False,2026-03-21 01:28:31,"3: Physical, 1: Bill To, 2: Ship To, 4: Other",true,2,0,0,0,0,5,0,0,0,0,0,,,,,,
-address1_city,Physical Address City,nvarchar,none,False,2026-03-21 01:28:31,,true,2,17,0,0,0,3,0,0,0,0,0,,,,,,
-address1_composite,Physical Address,ntext,none,False,2026-03-21 01:28:31,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
-address1_country,Physical Address Country/Region,nvarchar,recommended,False,2026-03-21 01:28:31,,true,2,0,0,0,0,2,0,0,0,0,0,,,,,,
-address1_county,Physical Address County,nvarchar,none,False,2026-03-21 01:28:31,,true,0,0,0,0,0,1,0,0,0,0,0,,,,,,
-address1_fax,Physical Address Fax,nvarchar,none,False,Never,,true,0,1,0,0,0,0,0,0,0,0,0,,,,,,
-address1_freighttermscode,Physical Address Freight Terms,picklist,none,False,2026-03-10 20:01:05,"1: FOB, 2: No Charge",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-address1_latitude,Physical Address Latitude,float,none,False,2026-03-21 01:28:31,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-address1_line1,Physical Address Street 1,nvarchar,none,False,2026-03-21 01:28:31,,true,3,0,0,0,0,1,0,0,0,0,0,,,,,,
-address1_line2,Physical Address Street 2,nvarchar,none,False,2026-03-20 15:33:16,,true,2,0,0,0,0,1,0,0,0,0,0,,,,,,
-address1_line3,Physical Address Street 3,nvarchar,none,False,2026-03-20 20:23:34,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-address1_longitude,Physical Address Longitude,float,none,False,2026-03-21 01:28:31,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-address1_name,Physical Address Name,nvarchar,none,False,2026-03-21 01:28:31,,true,2,1,0,0,0,2,0,0,0,0,0,,,,,,
-address1_postalcode,Physical Address ZIP/Postal Code,nvarchar,none,False,2026-03-21 01:28:31,,true,2,0,0,0,0,2,0,0,0,0,0,,,,,,
-address1_postofficebox,Physical Address Post Office Box,nvarchar,none,False,Never,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-address1_primarycontactname,Physical Address Primary Contact Name,nvarchar,none,False,Never,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-address1_shippingmethodcode,Physical Address Shipping Method,picklist,none,False,2026-03-10 20:01:05,"1: Airborne, 2: DHL, 3: FedEx, 4: UPS, 5: Postal Mail, 6: Full Load, 7: Will Call",true,0,0,0,0,0,5,0,0,0,0,0,,,,,,
-address1_stateorprovince,Physical Address State/Province,nvarchar,recommended,False,2026-03-21 01:28:31,,true,2,15,0,0,0,10,0,4,0,0,0,,,,,,
-address1_telephone1,Physical Address Phone,nvarchar,none,False,Never,,true,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-address1_telephone2,Physical Address Telephone 2,nvarchar,none,False,Never,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-address1_telephone3,Physical Address Telephone 3,nvarchar,none,False,Never,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-address1_upszone,Physical Address UPS Zone,nvarchar,none,False,Never,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-address1_utcoffset,Physical Address UTC Offset,int,none,False,Never,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-address2_addresstypecode,Bill To Address Type,picklist,none,False,2026-03-21 01:28:31,"3: Physical, 1: Bill To, 2: Ship To, 4: Other",true,0,0,0,0,0,5,0,0,0,0,0,,,,,,
-address2_city,Bill To City,nvarchar,none,False,2026-03-21 01:28:31,,false,0,0,0,0,0,0,0,0,0,0,0,Account,BillingCity,BillingCity,,,
-address2_composite,Bill To Address,ntext,none,False,2026-03-21 01:28:31,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-address2_country,Bill To Country/Region,nvarchar,none,False,2026-03-21 01:28:31,,true,0,0,0,0,0,1,0,0,0,0,0,Account,BillingCountry,BillingCountry,,,
-address2_county,Bill To County,nvarchar,none,False,2026-03-19 19:41:31,,true,0,0,0,0,0,1,0,0,0,0,0,,,,,,
-address2_fax,Bill To Fax,nvarchar,none,False,Never,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-address2_freighttermscode,Bill To Freight Terms,picklist,none,False,2026-03-21 01:28:31,1: Default Value,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-address2_latitude,Bill To Latitude,float,none,False,2026-03-10 20:01:05,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-address2_line1,Bill To Street 1,nvarchar,none,False,2026-03-21 01:28:31,,true,0,0,0,1,0,0,0,0,0,0,0,Account,BillingStreet,BillingStreet,,,
-address2_line2,Bill To Street 2,nvarchar,none,False,2026-03-20 15:33:16,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-address2_line3,Bill To Street 3,nvarchar,none,False,2026-03-19 02:27:01,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-address2_longitude,Bill To Longitude,float,none,False,2026-03-10 20:01:05,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-address2_name,Bill To Address Name,nvarchar,none,False,2026-03-21 01:28:31,,true,0,0,0,0,0,2,0,0,0,0,0,,,,,,
-address2_postalcode,Bill To ZIP/Postal Code,nvarchar,none,False,2026-03-21 01:28:31,,false,0,0,0,0,0,0,0,0,0,0,0,Account,BillingPostalCode,BillingPostalCode,,,
-address2_postofficebox,Bill To Post Office Box,nvarchar,none,False,Never,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-address2_primarycontactname,Bill To Primary Contact Name,nvarchar,none,False,Never,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-address2_shippingmethodcode,Bill To Shipping Method,picklist,none,False,2026-03-21 01:28:31,1: Default Value,true,0,0,0,0,0,5,0,0,0,0,0,,,,,,
-address2_stateorprovince,Bill To State/Province,nvarchar,none,False,2026-03-21 01:28:31,,false,0,0,0,0,0,0,0,0,0,0,0,Account,BillingState,BillingState,,,
-address2_telephone1,Bill To Telephone 1,nvarchar,none,False,Never,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-address2_telephone2,Bill To Telephone 2,nvarchar,none,False,Never,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-address2_telephone3,Bill To Telephone 3,nvarchar,none,False,Never,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-address2_upszone,Bill To UPS Zone,nvarchar,none,False,Never,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-address2_utcoffset,Bill To UTC Offset,int,none,False,Never,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_accountalert,Account Alert,nvarchar,none,True,2026-03-19 18:49:26,,true,2,0,0,0,0,0,0,0,0,0,0,Account,Account Alert,Account_Alert__c,,,
-azt_accountleadgenname,Account Lead Gen Name,nvarchar,none,True,2026-03-17 12:50:21,,true,0,0,0,0,0,1,0,1,0,0,0,,,,,,
-azt_accountnumber,Account Number,nvarchar,none,True,2026-03-21 01:28:31,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_accountspend,Lifetime Spend,money,none,True,2026-03-21 01:28:31,,true,1,0,0,0,0,0,1,0,0,0,0,,,,,,
-azt_accountspend_base,Account Spend (Base),money,none,True,2026-03-21 01:28:31,,false,0,0,0,0,0,0,0,0,0,0,0,Account,CRM Account Spend (Base),CRM_Account_Spend__c,,,
-azt_accounttype,Account Type,picklist,none,True,2026-03-21 01:28:31,"276530000: Active Account, 276530001: Expired Account, 276530007: Prospect, 276530005: Trade Show, 276530003: Partner, 276530006: Vendor, 276530004: Pilot, 276530002: Other, 100000000: Active",true,5,11,0,0,0,0,0,1,0,0,0,Account,Account Status,Account_Status__c,,,
-azt_addresssearch,Address Search,nvarchar,none,True,2026-03-17 12:51:08,,true,2,0,0,0,0,0,0,2,0,0,0,,,,,,
-azt_addresssearch2,Address Search 2,nvarchar,none,True,2026-02-02 16:03:14,,true,0,0,0,0,0,0,0,2,0,0,0,,,,,,
-azt_aeflafunding,AEFLA Funding,bit,none,True,2026-03-20 20:23:34,"1: Yes, 0: No",true,2,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_customerintrocompletedby,Customer Intro Completed By,nvarchar,none,True,2026-03-20 16:12:24,,true,0,0,0,0,0,1,0,0,0,0,0,,,,,,
-azt_customerintrocompletedon,Customer Intro Completed On,nvarchar,none,True,2026-03-20 16:12:24,,true,0,0,0,0,0,1,0,0,0,0,0,,,,,,
-azt_customerintroductioncompleted,Customer Introduction Completed,bit,none,True,2026-03-20 21:14:01,"1: Yes, 0: No",true,0,1,0,0,0,1,0,0,0,0,0,,,,,,
-azt_customernumber,Customer Number,nvarchar,recommended,True,2026-03-21 01:28:31,,true,4,5,0,0,0,0,0,0,0,0,0,Account,Customer Number,Customer_Number__c,,,
-azt_customerof,Customer Of,picklist,none,True,2026-03-20 20:23:34,"276530000: Aztec, 276530001: Life Skills, 276530002: Aztec & Life Skills",true,2,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_digitalstatus,Digital Status,picklist,none,True,2026-03-19 01:47:33,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_duplicate,Duplicate?,nvarchar,none,True,2026-03-16 15:50:13,,true,0,1,0,0,0,0,0,0,0,0,0,,,,,,
-azt_excludefromautoassign,Exclude from Autoassign?,bit,none,True,2026-03-21 01:28:31,"1: Yes, 0: No",true,2,0,0,0,0,3,0,0,0,0,0,,,,,,
-azt_executivesummary,Executive Summary,ntext,none,True,2026-03-21 01:28:31,,true,2,0,0,0,0,2,0,0,0,0,0,Account,Executive Summary,Executive_Summary__c,,,
-azt_extension,Ext,nvarchar,none,True,2026-03-20 17:22:24,,true,2,0,0,0,0,0,0,1,0,0,0,Account,Ext,Ext__c,,,
-azt_fiscalyearend,Fiscal Year End,picklist,none,True,2026-03-20 20:23:34,,true,1,0,0,0,0,0,0,0,0,0,0,Account,Fiscal Year End,Fiscal_Year_End__c,,,
-azt_fsradminpassword,FSR Admin Password,nvarchar,none,True,2026-03-20 20:23:34,,false,0,0,0,0,0,0,0,0,0,0,0,Account,FSR Admin Password,FSR_Admin_Password__c,,,
-azt_fsradminusername,FSR Admin Username,nvarchar,none,True,2026-03-20 20:23:34,,false,0,0,0,0,0,0,0,0,0,0,0,Account,FSR Admin Username,FSR_Admin_Username__c,,,
-azt_gedprintnoflashplay,GED Print NO Flash/Play,bit,none,True,2026-03-20 21:14:01,"1: Yes, 0: No",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_gedprintnogedsoftware,GED Print - NO GED Software,bit,none,True,2026-03-20 21:14:01,"1: Yes, 0: No",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_historicalowner,Historical Owner,nvarchar,none,True,2026-03-20 15:01:37,,true,2,0,0,0,0,2,0,0,0,0,0,,,,,,
-azt_isautoduplicate,Is Auto Duplicate?,bit,none,True,2026-03-20 21:14:01,"1: Yes, 0: No",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_isduplicate,Is Duplicate,bit,none,True,2026-03-20 18:32:49,"1: Yes, 0: No",true,0,1,0,0,0,0,0,0,0,0,0,,,,,,
-azt_isinquickbooks,Is In Quickbooks?,picklist,none,True,2026-03-19 14:27:05,"0: Yes, 1: No, 2: Possible",true,0,1,0,0,0,0,0,0,0,0,0,,,,,,
-azt_ismatched,Is Matched?,bit,none,True,2026-03-20 21:14:01,"1: Yes, 0: No",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_lastactivitydate,Last Activity Date,datetime,none,True,Never,,true,0,2,0,0,0,0,0,1,0,0,0,,,,,,
-azt_lastprintpurchase,Last Print Purchase,datetime,none,True,2026-03-20 21:14:01,,true,3,5,0,0,0,0,0,0,0,0,0,Account,CRM Last Print Purchase,CRM_Last_Print_Purchase__c,,,
-azt_lastsaaspurchase,Last SaaS Purchase,datetime,none,True,2026-03-20 21:14:01,,true,3,5,0,0,0,0,0,0,0,0,0,Account,CRM Last SaaS Purchase,CRM_Last_SaaS_Purchase__c,,,
-azt_lastsuccessfulconnection,Last Successful Connection,datetime,none,True,2026-03-21 01:28:31,,true,2,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_lastyearspend,Last Year Spend,money,none,True,2026-03-21 01:28:31,,true,1,0,0,0,0,0,1,0,0,0,0,,,,,,
-azt_lastyearspend_base,Last Year Spend (Base),money,none,True,2026-03-21 01:28:31,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_leadsourceid,Lead Source,lookup,none,True,2026-03-20 20:23:34,,true,2,0,0,0,0,8,0,2,0,1,0,Account,Account Source,AccountSource,,,
-azt_nomatch,No Match?,bit,none,True,2026-03-21 01:28:31,"1: Yes, 0: No",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_nonsaasstatus,Non-SaaS Status,picklist,none,True,2026-03-20 21:14:01,,true,2,0,0,0,0,0,0,2,0,0,0,Account,CRM Non-SaaS Status,Non_SaaS_Status__c,,,
-azt_numberofcomputers,# Computers,int,none,True,2026-03-19 02:08:44,,true,1,0,0,0,0,0,0,0,0,0,0,Account,# Computers,NumofComputers__c,,,
-azt_numberofstudents,# Students,int,none,True,2026-03-19 02:27:00,,true,2,0,0,0,0,0,0,0,0,0,0,Account,# Students,NumofStudents__c,,,
-azt_oldbusinessunit,Old Business Unit,nvarchar,none,True,2026-03-21 01:28:31,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_parentaccountspend,Parent Account Spend,money,none,True,2026-03-20 15:01:37,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_parentaccountspend_base,Parent Account Spend (Base),money,none,True,2026-03-20 15:01:37,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_parentlastyearspend,Parent Last Year Spend,money,none,True,2026-03-20 15:01:37,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_parentlastyearspend_base,Parent Last Year Spend (Base),money,none,True,2026-03-20 15:01:37,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_parentytdspend,Parent YTD Spend,money,none,True,2026-03-20 15:01:37,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_parentytdspend_base,Parent YTD Spend (Base),money,none,True,2026-03-20 15:01:37,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_possiblematchid,Possible Match,lookup,none,True,2026-03-10 20:07:36,,true,1,0,0,0,0,0,0,0,0,1,0,,,,,,
-azt_productfamilies,Product Families,multiselectpicklist,none,True,2026-03-20 21:14:01,,true,2,2,0,0,0,0,0,0,0,0,0,,,,,,
-azt_recordownerid,Record Owner,lookup,none,True,2026-03-20 21:14:01,,true,2,6,0,2,0,37,0,9,0,1,0,Account,Record Owner,OwnerId,,,
-azt_saasstatus,SaaS Status,picklist,none,True,2026-03-20 21:14:01,,true,2,0,0,0,0,0,0,2,0,0,0,Account,CRM SaaS Status,CRM_SaaS_Status__c,,,
-azt_score,Score,nvarchar,none,True,2026-03-19 16:55:19,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_tax_exempt_certificate__c,Tax_Exempt_Certificate__c,bit,none,True,2026-03-21 01:28:31,"1: Yes, 0: No",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_taxexemptcertificate,Tax Exempt Certificate #,nvarchar,none,True,2026-03-20 21:14:01,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Account,Tax_Exempt__c,Tax_Exempt__c
-azt_ttprintnotto,TTPrint - No TTO,bit,none,True,2026-03-20 21:14:01,"1: Yes, 0: No",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_type,Type,nvarchar,none,True,2026-03-21 01:28:31,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_verticalmarket,Vertical Market,picklist,none,True,2026-03-21 01:28:31,,true,5,0,0,0,0,2,0,0,0,0,0,,Industry,,,,
-azt_yearbeforelastspend,Year Before Last Spend,money,none,True,2026-03-21 01:28:31,,true,1,0,0,0,0,0,1,0,0,0,0,,,,,,
-azt_yearbeforelastspend_base,Year Before Last Spend (Base),money,none,True,2026-03-21 01:28:31,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_ytdspend,YTD Spend,money,none,True,2026-03-21 01:28:31,,true,1,0,0,0,0,0,1,0,0,0,0,,,,,,
-azt_ytdspend_base,YTD Spend (Base),money,none,True,2026-03-21 01:28:31,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-createdby,Created By,lookup,none,False,2026-03-21 01:28:31,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Account,Legacy_Created_By__c,Legacy_Created_By__c
-createdon,Created On,datetime,none,False,Skipped (createdon),,true,0,0,0,0,0,0,0,10,0,0,0,,,,Account,Legacy_Created_On_Date__c,Legacy_Created_On_Date__c
-description,Description,ntext,none,False,2026-03-19 14:32:19,,true,2,0,0,0,0,0,0,7,0,0,0,,,,Account,Description,Description
-donotsendmm,Send Marketing Materials,bit,none,False,2026-03-21 01:28:31,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
-emailaddress1,Email,nvarchar,none,False,2025-11-17 17:18:21,,true,0,2,0,0,0,0,0,2,0,0,0,,,,,,
-fax,Fax,nvarchar,none,False,2026-03-20 16:12:24,,true,0,1,0,0,0,0,0,0,0,0,0,,,,,,
-lastusedincampaign,Last Date Included in Campaign,datetime,none,False,Never,,true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
-modifiedon,Modified On,datetime,none,False,Skipped (modifiedon),,true,0,0,0,0,0,0,0,4,0,0,0,,,,Account,Legacy_Modified_On__c,Legacy_Modified_On__c
-msa_managingpartnerid,Managing Partner,lookup,none,True,2026-03-19 02:18:42,,true,0,0,0,0,0,0,0,0,0,2,0,,,,,,
-msdyn_accountkpiid,KPI,lookup,none,True,Never,,true,0,0,0,0,0,0,0,0,0,1,0,,,,,,
-msdyn_salesaccelerationinsightid,Sales Acceleration Insights ID,lookup,none,True,Never,,true,0,0,0,0,0,0,0,0,0,1,0,,,,,,
-msdyn_segmentid,Segment Id,lookup,none,True,Never,,true,0,0,0,0,0,0,0,0,0,1,0,,,,,,
-name,Account Name,nvarchar,required,False,2026-03-21 01:28:31,,true,3,46,0,3,0,16,0,23,0,0,0,Account,Account Name,Name,,,
-new_sharedwith,Shared With,lookup,none,True,2026-03-19 19:19:43,,true,2,0,0,0,0,0,0,0,0,1,0,,,,,,
-originatingleadid,Originating Lead,lookup,none,False,Never,,true,3,0,0,0,0,0,0,2,0,1,0,,,,,,
-ownerid,Owner,owner,systemrequired,False,2026-03-21 01:28:31,,true,3,9,0,1,0,24,0,22,0,0,0,Account,Record type,RecordType,,,
-owningteam,Owning Team,lookup,none,False,2026-03-21 01:28:31,,true,0,0,0,0,0,1,0,1,0,0,0,,,,,,
-parentaccountid,Parent Account,lookup,none,False,2026-03-19 19:24:25,,true,2,1,0,0,0,12,0,4,0,2,0,Account,ParentId,ParentId,,,
-primarycontactid,Primary Contact,lookup,none,False,2026-03-20 20:23:34,,true,2,0,0,0,0,2,0,2,0,0,0,,,,,,
-shippingmethodcode,Shipping Method,picklist,none,False,2026-03-21 01:28:31,,true,0,0,0,1,0,0,0,1,0,0,0,,,,,,
-statecode,Status,state,systemrequired,False,2026-03-21 01:28:31,,true,0,17,0,0,0,10,3,20,0,0,0,,,,,,
-statuscode,Status Reason,picklist,none,False,2026-03-21 01:28:31,,true,0,0,0,0,0,0,0,6,0,0,0,,,,,,
-telephone1,Main Phone,nvarchar,none,False,2026-03-21 01:28:31,,true,3,23,0,0,0,0,0,1,0,0,0,,Phone,,,,
-telephone2,Other Phone,nvarchar,none,False,2026-03-19 14:30:50,,false,0,0,0,0,0,0,0,0,0,0,0,Account,Other Phone,OtherPhone__c,,,
-transactioncurrencyid,Currency,lookup,none,False,2026-03-21 01:28:31,,true,0,0,0,0,0,0,0,8,0,0,0,,,,,,
-websiteurl,Website,nvarchar,none,False,2026-03-20 21:14:01,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Account,Website,Website
+accessrightsmask,,,,False,,,true,0,0,0,3,0,0,0,0,0,0,0,,,,Account,Accessrightsmask,Accessrightsmask__c
+accessteam,,,,False,,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Account,Accessteam,Accessteam__c
+accountcasessgrid,,,,False,,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Account,Account_Alert__c,Account_Alert__c
+accountclassificationcode,Account Classification,picklist,none,False,,"1: A, 276530000: B, 276530001: C, 100000001: D, 100000000: E, 276530002: S, 276530003: N/A, 276530004: aa, 276530005: bb, 276530006: cc, 276530007: ss",true,2,12,0,0,0,0,0,0,0,0,0,Account,CRM Account Classification,CRM_Account_Classification__c,Account,Account_Classification__c,Account_Classification__c
+accountid,,,,False,,,true,0,23,0,1,0,8,0,12,0,0,0,,,,Account,Account_18_Digits_ID__c,Account_18_Digits_ID__c
+accountnumber,Sequence Number,nvarchar,none,False,,,true,0,1,0,0,0,0,0,0,0,0,0,,,,Account,AccountNumber,AccountNumber
+accountopportunitiesgrid,,,,False,,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Account,Accountopportunitiesgrid,Accountopportunitiesgrid__c
+activityid,,,,False,,,true,0,0,0,0,0,0,0,7,0,0,0,,,,Account,LastActivityDate,LastActivityDate
+activitytypecode,,,,False,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Activitytypecode,Activitytypecode__c
+actualclosedate,,,,False,,,true,0,0,0,0,0,0,3,1,0,0,0,,,,Account,Actualclosedate,Actualclosedate__c
+actualend,,,,False,,,true,0,0,0,0,0,0,2,0,0,0,0,,,,Account,Actualend,Actualend__c
+actualrevenue,,,,False,,,true,0,0,0,0,0,0,1,0,0,0,0,,,,Account,AnnualRevenue,AnnualRevenue
+actualvalue,,,,False,,,true,0,0,0,0,0,0,3,0,0,0,0,,,,Account,Actualvalue,Actualvalue__c
+address1_addresstypecode,Physical Address Type,picklist,none,False,,"3: Physical, 1: Bill To, 2: Ship To, 4: Other",true,2,0,0,0,0,5,0,0,0,0,0,,,,Account,Physical Address Type,Physical_Address_Type__c
+address1_city,Physical Address City,nvarchar,none,False,,,true,2,17,0,0,0,3,0,0,0,0,0,,,,Account,Business_Address__City__s,Business_Address__City__s
+address1_composite,Physical Address,ntext,none,False,,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Account,Physical Address,Physical_Address__c
+address1_country,Physical Address Country/Region,nvarchar,recommended,False,,,true,2,0,0,0,0,2,0,0,0,0,0,,,,Account,BillingCountry,BillingCountry
+address1_county,Physical Address County,nvarchar,none,False,,,true,0,0,0,0,0,1,0,0,0,0,0,,,,Account,Physical Address County,Physical_Address_County__c
+address1_fax,Physical Address Fax,nvarchar,none,False,,,true,0,1,0,0,0,0,0,0,0,0,0,,,,Account,Physical Address Fax,Physical_Address_Fax__c
+address1_freighttermscode,Physical Address Freight Terms,picklist,none,False,,"1: FOB, 2: No Charge",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+address1_latitude,Physical Address Latitude,float,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+address1_line1,Physical Address Street 1,nvarchar,none,False,,,true,3,0,0,0,0,1,0,0,0,0,0,,,,Account,BillingStreet,BillingStreet
+address1_line2,Physical Address Street 2,nvarchar,none,False,,,true,2,0,0,0,0,1,0,0,0,0,0,,,,Account,Physical Address Street 2,Physical_Address_Street_2__c
+address1_line3,Physical Address Street 3,nvarchar,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+address1_longitude,Physical Address Longitude,float,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+address1_name,Physical Address Name,nvarchar,none,False,,,true,2,1,0,0,0,2,0,0,0,0,0,,,,Account,Physical Address Name,Physical_Address_Name__c
+address1_postalcode,Physical Address ZIP/Postal Code,nvarchar,none,False,,,true,2,0,0,0,0,2,0,0,0,0,0,,,,Account,Business_Address__PostalCode__s,Business_Address__PostalCode__s
+address1_postofficebox,Physical Address Post Office Box,nvarchar,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+address1_primarycontactname,Physical Address Primary Contact Name,nvarchar,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+address1_shippingmethodcode,Physical Address Shipping Method,picklist,none,False,,"1: Airborne, 2: DHL, 3: FedEx, 4: UPS, 5: Postal Mail, 6: Full Load, 7: Will Call",true,0,0,0,0,0,5,0,0,0,0,0,,,,Account,Physical Address Shipping Method,Physical_Address_Shipping_Method__c
+address1_stateorprovince,Physical Address State/Province,nvarchar,recommended,False,,,true,2,15,0,0,0,10,0,4,0,0,0,,,,Account,BillingState,BillingState
+address1_telephone1,Physical Address Phone,nvarchar,none,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Physical Address Phone,Physical_Address_Phone__c
+address1_telephone2,Physical Address Telephone 2,nvarchar,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+address1_telephone3,Physical Address Telephone 3,nvarchar,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+address1_upszone,Physical Address UPS Zone,nvarchar,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+address1_utcoffset,Physical Address UTC Offset,int,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+address2_addresstypecode,Bill To Address Type,picklist,none,False,,"3: Physical, 1: Bill To, 2: Ship To, 4: Other",true,0,0,0,0,0,5,0,0,0,0,0,,,,Account,Bill To Address Type,Bill_To_Address_Type__c
+address2_city,Bill To City,nvarchar,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,Account,BillingCity,BillingCity,,,
+address2_composite,Bill To Address,ntext,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+address2_country,Bill To Country/Region,nvarchar,none,False,,,true,0,0,0,0,0,1,0,0,0,0,0,Account,BillingCountry,BillingCountry,Account,BillingCountry,BillingCountry
+address2_county,Bill To County,nvarchar,none,False,,,true,0,0,0,0,0,1,0,0,0,0,0,,,,Account,Bill To County,Bill_To_County__c
+address2_fax,Bill To Fax,nvarchar,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+address2_freighttermscode,Bill To Freight Terms,picklist,none,False,,1: Default Value,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+address2_latitude,Bill To Latitude,float,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+address2_line1,Bill To Street 1,nvarchar,none,False,,,true,0,0,0,1,0,0,0,0,0,0,0,Account,BillingStreet,BillingStreet,Account,BillingStreet,BillingStreet
+address2_line2,Bill To Street 2,nvarchar,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+address2_line3,Bill To Street 3,nvarchar,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+address2_longitude,Bill To Longitude,float,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+address2_name,Bill To Address Name,nvarchar,none,False,,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Account,Bill To Address Name,Bill_To_Address_Name__c
+address2_postalcode,Bill To ZIP/Postal Code,nvarchar,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,Account,BillingPostalCode,BillingPostalCode,,,
+address2_postofficebox,Bill To Post Office Box,nvarchar,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+address2_primarycontactname,Bill To Primary Contact Name,nvarchar,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+address2_shippingmethodcode,Bill To Shipping Method,picklist,none,False,,1: Default Value,true,0,0,0,0,0,5,0,0,0,0,0,,,,Account,Bill To Shipping Method,Bill_To_Shipping_Method__c
+address2_stateorprovince,Bill To State/Province,nvarchar,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,Account,BillingState,BillingState,,,
+address2_telephone1,Bill To Telephone 1,nvarchar,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+address2_telephone2,Bill To Telephone 2,nvarchar,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+address2_telephone3,Bill To Telephone 3,nvarchar,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+address2_upszone,Bill To UPS Zone,nvarchar,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+address2_utcoffset,Bill To UTC Offset,int,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+addresses,,,,False,,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Account,Addresses,Addresses__c
+adx_resolutiondate,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Adx Resolutiondate,Adx_Resolutiondate__c
+allocations,,,,False,,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Account,Allocations,Allocations__c
+amountdatatype,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Amountdatatype,Amountdatatype__c
+annotationid,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Annotationid,Annotationid__c
+azt_account,,,,True,,,true,0,0,0,0,0,0,0,1,0,1,0,,,,Account,Account_Alert__c,Account_Alert__c
+azt_accountalert,Account Alert,nvarchar,none,True,,,true,2,0,0,0,0,0,0,0,0,0,0,Account,Account Alert,Account_Alert__c,Account,Account_Alert__c,Account_Alert__c
+azt_accountid,,,,True,,,true,0,5,0,0,0,0,0,6,0,5,0,,,,Account,Account_18_Digits_ID__c,Account_18_Digits_ID__c
+azt_accountleadgenerationid,,,,True,,,true,0,0,0,0,0,0,0,3,0,0,0,,,,Account,Accountleadgenerationid,Accountleadgenerationid__c
+azt_accountleadgenname,Account Lead Gen Name,nvarchar,none,True,,,true,0,0,0,0,0,1,0,1,0,0,0,,,,Account,Account Lead Gen Name,Account_Lead_Gen_Name__c
+azt_accountnumber,Account Number,nvarchar,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_accountspend,Lifetime Spend,money,none,True,,,true,1,0,0,0,0,0,1,0,0,0,0,,,,Account,Lifetime Spend,Lifetime_Spend__c
+azt_accountspend_base,Account Spend (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,Account,CRM Account Spend (Base),CRM_Account_Spend__c,,,
+azt_accounttype,Account Type,picklist,none,True,,"276530000: Active Account, 276530001: Expired Account, 276530007: Prospect, 276530005: Trade Show, 276530003: Partner, 276530006: Vendor, 276530004: Pilot, 276530002: Other, 100000000: Active",true,5,11,0,0,0,0,0,1,0,0,0,Account,Account Status,Account_Status__c,Account,Account_Status__c,Account_Status__c
+azt_addresssearch,Address Search,nvarchar,none,True,,,true,2,0,0,0,0,0,0,2,0,0,0,,,,Account,Address Search,Address_Search__c
+azt_addresssearch2,Address Search 2,nvarchar,none,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Address Search 2,Address_Search_2__c
+azt_aeflafunding,AEFLA Funding,bit,none,True,,"1: Yes, 0: No",true,2,0,0,0,0,0,0,0,0,0,0,,,,Account,Aefla Funding,Aefla_Funding__c
+azt_ageendedstage,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Ageendedstage,Ageendedstage__c
+azt_allocatedtoid,,,,True,,,true,0,0,0,0,0,0,0,2,0,1,0,,,,Account,Allocatedtoid,Allocatedtoid__c
+azt_allocationtype,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Allocationtype,Allocationtype__c
+azt_amount,,,,True,,,true,0,0,0,0,0,0,0,7,0,0,0,,,,Account,Amount,Amount__c
+azt_annualspend,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,AnnualRevenue,AnnualRevenue
+azt_approvalstatus,,,,True,,,true,0,0,0,0,0,0,0,3,0,0,0,,,,Account,Approvalstatus,Approvalstatus__c
+azt_autonumberid,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,AccountNumber,AccountNumber
+azt_bookingurl,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Bookingurl,Bookingurl__c
+azt_caseid,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Caseid,Caseid__c
+azt_commissionamount,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Commissionamount,Commissionamount__c
+azt_commissionid,,,,True,,,true,0,0,0,0,0,0,0,4,0,0,0,,,,Account,Commissionid,Commissionid__c
+azt_commissionpaymentid,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Commissionpaymentid,Commissionpaymentid__c
+azt_companyname,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Companyname,Companyname__c
+azt_compcompleted,,,,True,,,true,0,0,0,0,0,0,0,5,0,0,0,,,,Account,Compcompleted,Compcompleted__c
+azt_compgoalid,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Compgoalid,Compgoalid__c
+azt_compgoaltypeid,,,,True,,,true,0,0,0,0,0,0,0,3,0,0,0,,,,Account,Compgoaltypeid,Compgoaltypeid__c
+azt_compplanamountid,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Compplanamountid,Compplanamountid__c
+azt_concurrentusers,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Concurrentusers,Concurrentusers__c
+azt_currentnumber,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,AccountNumber,AccountNumber
+azt_customerid,,,,True,,,true,0,0,0,0,0,0,0,5,0,4,0,,,,Account,Customer_Number__c,Customer_Number__c
+azt_customerintrocompletedby,Customer Intro Completed By,nvarchar,none,True,,,true,0,0,0,0,0,1,0,0,0,0,0,,,,Account,Customer Intro Completed By,Customer_Intro_Completed_By__c
+azt_customerintrocompletedon,Customer Intro Completed On,nvarchar,none,True,,,true,0,0,0,0,0,1,0,0,0,0,0,,,,Account,Customer Intro Completed On,Customer_Intro_Completed_On__c
+azt_customerintroductioncompleted,Customer Introduction Completed,bit,none,True,,"1: Yes, 0: No",true,0,1,0,0,0,1,0,0,0,0,0,,,,Account,Customer Introduction Completed,Customer_Introduction_Completed__c
+azt_customernumber,Customer Number,nvarchar,recommended,True,,,true,4,5,0,0,0,0,0,0,0,0,0,Account,Customer Number,Customer_Number__c,Account,Customer_Number__c,Customer_Number__c
+azt_customerof,Customer Of,picklist,none,True,,"276530000: Aztec, 276530001: Life Skills, 276530002: Aztec & Life Skills",true,2,0,0,0,0,0,0,0,0,0,0,,,,Account,Customer_Number__c,Customer_Number__c
+azt_customertrainingid,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Customertrainingid,Customertrainingid__c
+azt_dateexitedstage,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Dateexitedstage,Dateexitedstage__c
+azt_defaultfreightamount,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Defaultfreightamount,Defaultfreightamount__c
+azt_description,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Description,Description
+azt_digitalstatus,Digital Status,picklist,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_discountamount,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Discountamount,Discountamount__c
+azt_discretionarydiscount,,,,True,,,true,0,0,0,1,0,0,0,0,0,0,0,,,,Account,Discretionarydiscount,Discretionarydiscount__c
+azt_discretionarydiscountamt,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Discretionarydiscountamt,Discretionarydiscountamt__c
+azt_duplicate,Duplicate?,nvarchar,none,True,,,true,0,1,0,0,0,0,0,0,0,0,0,,,,Account,Duplicate,Duplicate__c
+azt_effectivedate,,,,True,,,true,0,0,0,0,0,0,0,4,0,0,0,,,,Account,Effectivedate,Effectivedate__c
+azt_email,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Email,Email__c
+azt_enddate,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,CreatedDate,CreatedDate
+azt_engagementid,,,,True,,,true,0,0,0,0,0,0,0,4,0,0,0,,,,Account,Engagementid,Engagementid__c
+azt_estfulfillmentdate,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Estfulfillmentdate,Estfulfillmentdate__c
+azt_evaluate,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Evaluate,Evaluate__c
+azt_excludefromautoassign,Exclude from Autoassign?,bit,none,True,,"1: Yes, 0: No",true,2,0,0,0,0,3,0,0,0,0,0,,,,Account,Exclude From Autoassign,Exclude_From_Autoassign__c
+azt_executivesummary,Executive Summary,ntext,none,True,,,true,2,0,0,0,0,2,0,0,0,0,0,Account,Executive Summary,Executive_Summary__c,Account,Executive_Summary__c,Executive_Summary__c
+azt_expenseamount,,,,True,,,true,0,0,0,0,0,0,0,3,0,0,0,,,,Account,Expenseamount,Expenseamount__c
+azt_expenseid,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Expenseid,Expenseid__c
+azt_expensereportid,,,,True,,,true,0,0,0,0,0,0,0,5,0,0,0,,,,Account,Expensereportid,Expensereportid__c
+azt_expensetype,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Expensetype,Expensetype__c
+azt_expirationdate,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Expirationdate,Expirationdate__c
+azt_extension,Ext,nvarchar,none,True,,,true,2,0,0,0,0,0,0,1,0,0,0,Account,Ext,Ext__c,Account,Ext,Ext__c
+azt_fieldtoautonumber,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Fieldtoautonumber,Fieldtoautonumber__c
+azt_firstname,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Firstname,Firstname__c
+azt_fiscalperiodend,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Fiscal_Year_End__c,Fiscal_Year_End__c
+azt_fiscalperiodstart,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Fiscalperiodstart,Fiscalperiodstart__c
+azt_fiscalyearend,Fiscal Year End,picklist,none,True,,,true,1,0,0,0,0,0,0,0,0,0,0,Account,Fiscal Year End,Fiscal_Year_End__c,Account,Fiscal_Year_End__c,Fiscal_Year_End__c
+azt_freightamtapproved,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Freightamtapproved,Freightamtapproved__c
+azt_fsradminpassword,FSR Admin Password,nvarchar,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,Account,FSR Admin Password,FSR_Admin_Password__c,,,
+azt_fsradminusername,FSR Admin Username,nvarchar,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,Account,FSR Admin Username,FSR_Admin_Username__c,,,
+azt_fsrassignedon,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Fsrassignedon,Fsrassignedon__c
+azt_fsremail,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Fsremail,Fsremail__c
+azt_fsrid,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Fsrid,Fsrid__c
+azt_fsrmobiletelephone,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Fsrmobiletelephone,Fsrmobiletelephone__c
+azt_fsrtelephone,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Fsrtelephone,Fsrtelephone__c
+azt_fsrtelephoneextension,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Fsrtelephoneextension,Fsrtelephoneextension__c
+azt_fundingid,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Fundingid,Fundingid__c
+azt_fundingyear,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Fundingyear,Fundingyear__c
+azt_gedprintnoflashplay,GED Print NO Flash/Play,bit,none,True,,"1: Yes, 0: No",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_gedprintnogedsoftware,GED Print - NO GED Software,bit,none,True,,"1: Yes, 0: No",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_goaltype,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Type,Type
+azt_historicalowner,Historical Owner,nvarchar,none,True,,,true,2,0,0,0,0,2,0,0,0,0,0,,,,Account,Historical Owner,Historical_Owner__c
+azt_importname,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Importname,Importname__c
+azt_invoiceid,,,,True,,,true,0,0,0,0,0,0,0,10,0,0,0,,,,Account,Invoiceid,Invoiceid__c
+azt_invoiceproductid,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Invoiceproductid,Invoiceproductid__c
+azt_isautoduplicate,Is Auto Duplicate?,bit,none,True,,"1: Yes, 0: No",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_isbn,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Isbn,Isbn__c
+azt_iscompanion,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,JigsawCompanyId,JigsawCompanyId
+azt_isduplicate,Is Duplicate,bit,none,True,,"1: Yes, 0: No",true,0,1,0,0,0,0,0,0,0,0,0,,,,Account,Is Duplicate,Is_Duplicate__c
+azt_isinquickbooks,Is In Quickbooks?,picklist,none,True,,"0: Yes, 1: No, 2: Possible",true,0,1,0,0,0,0,0,0,0,0,0,,,,Account,Is In Quickbooks,Is_In_Quickbooks__c
+azt_ismatched,Is Matched?,bit,none,True,,"1: Yes, 0: No",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_isprint,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Isprint,Isprint__c
+azt_issaas,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Issaas,Issaas__c
+azt_jobrole,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Jobrole,Jobrole__c
+azt_jobtitle,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Jobtitle,Jobtitle__c
+azt_lastactivitydate,Last Activity Date,datetime,none,True,,,true,0,2,0,0,0,0,0,1,0,0,0,,,,Account,LastActivityDate,LastActivityDate
+azt_lastmodifiedbyid,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,LastModifiedById,LastModifiedById
+azt_lastname,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Name,Name
+azt_lastprintpurchase,Last Print Purchase,datetime,none,True,,,true,3,5,0,0,0,0,0,0,0,0,0,Account,CRM Last Print Purchase,CRM_Last_Print_Purchase__c,Account,Last_Print_Purchase__c,Last_Print_Purchase__c
+azt_lastsaaspurchase,Last SaaS Purchase,datetime,none,True,,,true,3,5,0,0,0,0,0,0,0,0,0,Account,CRM Last SaaS Purchase,CRM_Last_SaaS_Purchase__c,Account,Last_SaaS_Purchase__c,Last_SaaS_Purchase__c
+azt_lastsuccessfulconnection,Last Successful Connection,datetime,none,True,,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Account,Last Successful Connection,Last_Successful_Connection__c
+azt_lastyearspend,Last Year Spend,money,none,True,,,true,1,0,0,0,0,0,1,0,0,0,0,,,,Account,Last Year Spend,Last_Year_Spend__c
+azt_lastyearspend_base,Last Year Spend (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_leadimportid,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Leadimportid,Leadimportid__c
+azt_leadsourceid,Lead Source,lookup,none,True,,,true,2,0,0,0,0,8,0,2,0,1,0,Account,Account Source,AccountSource,Account,Lead Source,Lead_Source__c
+azt_licensestatus,,,,True,,,true,0,10,0,0,0,0,0,2,0,0,0,,,,Account,Licensestatus,Licensestatus__c
+azt_licenseterm,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Licenseterm,Licenseterm__c
+azt_licensetermmonths,,,,True,,,true,0,0,0,0,0,0,0,22,0,0,0,,,,Account,Licensetermmonths,Licensetermmonths__c
+azt_licensetype,,,,True,,,true,0,0,0,0,0,0,0,25,0,0,0,,,,Account,Licensetype,Licensetype__c
+azt_masecommission,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Masecommission,Masecommission__c
+azt_mileage,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Mileage,Mileage__c
+azt_monthstofilteron,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Monthstofilteron,Monthstofilteron__c
+azt_name,,,,True,,,true,0,0,0,0,0,0,0,18,0,0,0,,,,Account,Name,Name
+azt_newestclosedate,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Newestclosedate,Newestclosedate__c
+azt_newestimatedvalue,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Newestimatedvalue,Newestimatedvalue__c
+azt_newownerid,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,OwnerId,OwnerId
+azt_newprobability,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Newprobability,Newprobability__c
+azt_nomatch,No Match?,bit,none,True,,"1: Yes, 0: No",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_nonsaasstatus,Non-SaaS Status,picklist,none,True,,,true,2,0,0,0,0,0,0,2,0,0,0,Account,CRM Non-SaaS Status,Non_SaaS_Status__c,Account,Nonsaas Status,Nonsaas_Status__c
+azt_nonsaastype,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Nonsaastype,Nonsaastype__c
+azt_numberofcomputers,# Computers,int,none,True,,,true,1,0,0,0,0,0,0,0,0,0,0,Account,# Computers,NumofComputers__c,Account,NumofComputers__c,NumofComputers__c
+azt_numberoflicenses,,,,True,,,true,0,0,0,0,0,0,0,3,0,0,0,,,,Account,NumberOfEmployees,NumberOfEmployees
+azt_numberofstudents,# Students,int,none,True,,,true,2,0,0,0,0,0,0,0,0,0,0,Account,# Students,NumofStudents__c,Account,NumofStudents__c,NumofStudents__c
+azt_oldbusinessunit,Old Business Unit,nvarchar,none,True,,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Account,Old Business Unit,Old_Business_Unit__c
+azt_opportunityauditrecordid,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Opportunityauditrecordid,Opportunityauditrecordid__c
+azt_opportunityid,,,,True,,,true,0,0,0,0,0,0,0,7,0,0,0,,,,Account,Open_Opportunity_Count__c,Open_Opportunity_Count__c
+azt_opportunityproductid,,,,True,,,true,0,0,0,0,0,0,0,10,0,0,0,,,,Account,Open_Opportunity_Count__c,Open_Opportunity_Count__c
+azt_orderid,,,,True,,,true,0,0,0,0,0,0,0,8,0,0,0,,,,Account,OwnerId,OwnerId
+azt_orderlineid,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Orderlineid,Orderlineid__c
+azt_orderproductid,,,,True,,,true,0,0,0,0,0,0,0,3,0,0,0,,,,Account,Orderproductid,Orderproductid__c
+azt_orderstageid,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Orderstageid,Orderstageid__c
+azt_ordertemplatelines,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Ordertemplatelines,Ordertemplatelines__c
+azt_ordertype,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,RecordTypeId,RecordTypeId
+azt_originatingleadimportid,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Originatingleadimportid,Originatingleadimportid__c
+azt_paid,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,ParentId,ParentId
+azt_paidon,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Paidon,Paidon__c
+azt_parentaccountid,,,,True,,,true,0,0,0,0,0,0,0,0,0,1,0,,,,Account,ParentId,ParentId
+azt_parentaccountspend,Parent Account Spend,money,none,True,,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Account,Parent Account Spend,Parent_Account_Spend__c
+azt_parentaccountspend_base,Parent Account Spend (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_parentlastyearspend,Parent Last Year Spend,money,none,True,,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Account,Parent Last Year Spend,Parent_Last_Year_Spend__c
+azt_parentlastyearspend_base,Parent Last Year Spend (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_parentopportunityid,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Open_Opportunity_Count__c,Open_Opportunity_Count__c
+azt_parentorderid,,,,True,,,true,0,0,0,0,0,0,0,3,0,0,0,,,,Account,ParentId,ParentId
+azt_parentytdspend,Parent YTD Spend,money,none,True,,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Account,Parent Ytd Spend,Parent_Ytd_Spend__c
+azt_parentytdspend_base,Parent YTD Spend (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_payablecommission,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Payablecommission,Payablecommission__c
+azt_paymentdate,,,,True,,,true,0,0,0,0,0,0,0,3,0,0,0,,,,Account,Paymentdate,Paymentdate__c
+azt_paymentid,,,,True,,,true,0,0,0,0,0,0,0,3,0,0,0,,,,Account,ParentId,ParentId
+azt_percentage,,,,True,,,true,0,0,0,0,0,0,0,4,0,0,0,,,,Account,Percentage,Percentage__c
+azt_percentagepaid,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Percentagepaid,Percentagepaid__c
+azt_periodend,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Periodend,Periodend__c
+azt_periodstart,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Periodstart,Periodstart__c
+azt_phone,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Phone,Phone
+azt_ponumber,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,AccountNumber,AccountNumber
+azt_possiblematchid,Possible Match,lookup,none,True,,,true,1,0,0,0,0,0,0,0,0,1,0,,,,Account,Possible Match,Possible_Match__c
+azt_prefix,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Prefix,Prefix__c
+azt_prefixhasseparator,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Prefixhasseparator,Prefixhasseparator__c
+azt_prefixseparator,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Prefixseparator,Prefixseparator__c
+azt_prefixseparatorisspace,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Prefixseparatorisspace,Prefixseparatorisspace__c
+azt_previousestclosedate,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Previousestclosedate,Previousestclosedate__c
+azt_previousestimatedvalue,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Previousestimatedvalue,Previousestimatedvalue__c
+azt_previousownerid,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Previousownerid,Previousownerid__c
+azt_previousprobability,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Previousprobability,Previousprobability__c
+azt_printproductid,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Printproductid,Printproductid__c
+azt_printpurchaseid,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Last_Print_Purchase__c,Last_Print_Purchase__c
+azt_probability,,,,True,,,true,0,0,0,0,0,0,0,5,0,0,0,,,,Account,Probability,Probability__c
+azt_probabilitychangedon,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Probabilitychangedon,Probabilitychangedon__c
+azt_probabilityincreased,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Probabilityincreased,Probabilityincreased__c
+azt_productdiscountid,,,,True,,,true,0,0,0,0,0,0,0,11,0,0,0,,,,Account,Productdiscountid,Productdiscountid__c
+azt_productfamilies,Product Families,multiselectpicklist,none,True,,,true,2,2,0,0,0,0,0,0,0,0,0,,,,Account,Product Families,Product_Families__c
+azt_producttype,,,,True,,,true,0,0,0,0,0,0,0,6,0,0,0,,,,Account,Producttype,Producttype__c
+azt_purchasedate,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Purchasedate,Purchasedate__c
+azt_quantity,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Quantity,Quantity__c
+azt_quotenumber,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Customer_Number__c,Customer_Number__c
+azt_quoteproductid,,,,True,,,true,0,0,0,0,0,0,0,9,0,0,0,,,,Account,Quoteproductid,Quoteproductid__c
+azt_reasonforexpense,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Reasonforexpense,Reasonforexpense__c
+azt_recapnotes,,,,True,,,true,0,0,0,1,0,0,0,0,0,0,0,,,,Account,Recapnotes,Recapnotes__c
+azt_recordowner,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Recordowner,Recordowner__c
+azt_recordownerid,Record Owner,lookup,none,True,,,true,2,6,0,2,0,37,0,9,0,1,0,Account,Record Owner,OwnerId,Account,OwnerId,OwnerId
+azt_replacementproductid,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Replacementproductid,Replacementproductid__c
+azt_requestedfreightamt,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Requestedfreightamt,Requestedfreightamt__c
+azt_resolvedbyid,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,CreatedById,CreatedById
+azt_result,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Result,Result__c
+azt_saas,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Saas,Saas__c
+azt_saasstatus,SaaS Status,picklist,none,True,,,true,2,0,0,0,0,0,0,2,0,0,0,Account,CRM SaaS Status,CRM_SaaS_Status__c,Account,Saas Status,Saas_Status__c
+azt_salesrepid,,,,True,,,true,0,0,0,0,0,0,0,6,0,0,0,,,,Account,Salesrepid,Salesrepid__c
+azt_score,Score,nvarchar,none,True,,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Account,Score,Score__c
+azt_softwarelicenseid,,,,True,,,true,0,5,0,0,0,0,0,6,0,0,0,,,,Account,Softwarelicenseid,Softwarelicenseid__c
+azt_softwareproductid,,,,True,,,true,0,6,0,0,0,0,0,2,0,0,0,,,,Account,Softwareproductid,Softwareproductid__c
+azt_startdate,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Startdate,Startdate__c
+azt_stateabbreviation,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Stateabbreviation,Stateabbreviation__c
+azt_stateprovince,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Stateprovince,Stateprovince__c
+azt_suffix,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Suffix,Suffix__c
+azt_suffixhasseparator,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Suffixhasseparator,Suffixhasseparator__c
+azt_suffixseparator,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Suffixseparator,Suffixseparator__c
+azt_suffixseparatorisspace,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Suffixseparatorisspace,Suffixseparatorisspace__c
+azt_supportexpirationdate,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Supportexpirationdate,Supportexpirationdate__c
+azt_tax_exempt_certificate__c,Tax_Exempt_Certificate__c,bit,none,True,,"1: Yes, 0: No",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_taxamount,,,,True,,,true,0,0,0,1,0,0,0,0,0,0,0,,,,Account,Taxamount,Taxamount__c
+azt_taxexemptcertificate,Tax Exempt Certificate #,nvarchar,none,True,,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Account,Tax Exempt Certificate,Tax_Exempt_Certificate__c
+azt_total,,,,True,,,true,0,0,0,0,0,0,0,3,0,0,0,,,,Account,Total_Spend__c,Total_Spend__c
+azt_totalamountpaid,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Totalamountpaid,Totalamountpaid__c
+azt_totalfunding,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Totalfunding,Totalfunding__c
+azt_trackingnumber,,,,True,,,true,0,0,0,0,0,0,0,4,0,0,0,,,,Account,AccountNumber,AccountNumber
+azt_trackingnumbers,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Trackingnumbers,Trackingnumbers__c
+azt_trainingid,,,,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Trainingid,Trainingid__c
+azt_ttprintnotto,TTPrint - No TTO,bit,none,True,,"1: Yes, 0: No",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_type,Type,nvarchar,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_verticalmarket,Vertical Market,picklist,none,True,,,true,5,0,0,0,0,2,0,0,0,0,0,,Industry,,Account,Vertical_Market__c,Vertical_Market__c
+azt_year,,,,True,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Year,Year__c
+azt_yearbeforelastspend,Year Before Last Spend,money,none,True,,,true,1,0,0,0,0,0,1,0,0,0,0,,,,Account,Year Before Last Spend,Year_Before_Last_Spend__c
+azt_yearbeforelastspend_base,Year Before Last Spend (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_ytdspend,YTD Spend,money,none,True,,,true,1,0,0,0,0,0,1,0,0,0,0,,,,Account,Total_Spend__c,Total_Spend__c
+azt_ytdspend_base,YTD Spend (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+baseamount,,,,False,,,true,0,0,0,1,0,0,0,4,0,0,0,,,,Account,Baseamount,Baseamount__c
+billto_city,,,,False,,,true,0,0,0,1,0,0,0,0,0,0,0,,,,Account,BillingCity,BillingCity
+billto_line1,,,,False,,,true,0,0,0,1,0,0,0,1,0,0,0,,,,Account,Billto Line1,Billto_Line1__c
+billto_line2,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Billto Line2,Billto_Line2__c
+billto_line3,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Billto Line3,Billto_Line3__c
+billto_name,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Billto Name,Billto_Name__c
+billto_postalcode,,,,False,,,true,0,0,0,1,0,0,0,1,0,0,0,,,,Account,BillingPostalCode,BillingPostalCode
+billto_stateorprovince,,,,False,,,true,0,0,0,1,0,0,0,1,0,0,0,,,,Account,Billto Stateorprovince,Billto_Stateorprovince__c
+body,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Body,Body__c
+bpf_duration,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Bpf Duration,Bpf_Duration__c
+bpf_salesorderid,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Bpf Salesorderid,Bpf_Salesorderid__c
+businessprocessflowinstanceid,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Business_Address__PostalCode__s,Business_Address__PostalCode__s
+businessunitid,,,,False,,,true,0,0,0,0,0,0,0,8,0,0,0,,,,Account,Businessunitid,Businessunitid__c
+category,,,,False,,,true,0,0,0,0,0,0,0,3,0,0,0,,,,Account,Category,Category__c
+changedon,,,,False,,,true,0,0,0,1,0,0,0,0,0,0,0,,,,Account,Changedon,Changedon__c
+childaccounts,,,,False,,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Account,Childaccounts,Childaccounts__c
+city,,,,False,,,true,0,0,0,0,0,0,0,0,1,0,0,,,,Account,City,City__c
+closeprobability,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Closeprobability,Closeprobability__c
+companyname,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Companyname,Companyname__c
+connectionid,,,,False,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Connectionid,Connectionid__c
+connectionroleid,,,,False,,,true,0,0,0,0,0,0,0,4,0,0,0,,,,Account,Connectionroleid,Connectionroleid__c
+connections,,,,False,,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Account,Connections,Connections__c
+consideronlygoalownersrecords,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Consideronlygoalownersrecords,Consideronlygoalownersrecords__c
+contactid,,,,False,,,true,0,0,0,0,0,0,0,5,0,0,0,,,,Account,Contactid,Contactid__c
+contacts,,,,False,,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Account,Account_Status__c,Account_Status__c
+country,,,,False,,,true,0,0,0,0,0,0,0,0,1,0,0,,,,Account,BillingCountry,BillingCountry
+county,,,,False,,,true,0,0,0,0,0,0,0,0,1,0,0,,,,Account,County,County__c
+createdby,,,,False,,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Account,CreatedById,CreatedById
+createdon,,,,False,,,true,0,0,0,0,0,0,0,10,0,0,0,,,,Account,CreatedDate,CreatedDate
+customerid,,,,False,,,true,0,0,0,1,0,0,0,11,0,6,0,,,,Account,Customer_Number__c,Customer_Number__c
+datefulfilled,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Datefulfilled,Datefulfilled__c
+defaultuomid,,,,False,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Defaultuomid,Defaultuomid__c
+description,,,,False,,,true,2,0,0,0,0,0,0,7,0,0,0,,,,Account,Description,Description
+discountamount,,,,False,,,true,0,0,0,1,0,0,0,2,0,0,0,,,,Account,Discountamount,Discountamount__c
+discountpercentage,,,,False,,,true,0,0,0,1,0,0,0,1,0,0,0,,,,Account,Discountpercentage,Discountpercentage__c
+documentssubgrid,,,,False,,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Account,Documentssubgrid,Documentssubgrid__c
+donotsendmm,,,,False,,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Account,Send Marketing Materials,Send_Marketing_Materials__c
+effectivefrom,,,,False,,,true,0,0,0,1,0,0,0,0,0,0,0,,,,Account,Effectivefrom,Effectivefrom__c
+effectiveto,,,,False,,,true,0,0,0,1,0,0,0,0,0,0,0,,,,Account,Effectiveto,Effectiveto__c
+emailaddress1,Email,nvarchar,none,False,,,true,0,2,0,0,0,0,0,2,0,0,0,,,,Account,Email,Email__c
+engagementcontacts,,,,False,,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Account,Engagementcontacts,Engagementcontacts__c
+engagements,,,,False,,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Account,Segment__c,Segment__c
+estimatedclosedate,,,,False,,,true,0,0,0,0,0,0,0,3,0,0,0,,,,Account,Estimatedclosedate,Estimatedclosedate__c
+estimatedvalue,,,,False,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Estimatedvalue,Estimatedvalue__c
+ext_amt,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Ext Amt,Ext_Amt__c
+extendedamount,,,,False,,,true,0,0,0,0,0,0,0,13,0,0,0,,,,Account,Extendedamount,Extendedamount__c
+fax,,,,False,,,true,0,1,0,0,0,0,0,0,0,0,0,,,,Account,Fax,Fax__c
+fetchxml,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Fetchxml,Fetchxml__c
+filename,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Name,Name
+firstname,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Firstname,Firstname__c
+freightamount,,,,False,,,true,0,0,0,1,0,0,0,1,0,0,0,,,,Account,Freightamount,Freightamount__c
+freighttermscode,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Freighttermscode,Freighttermscode__c
+fullname,,,,False,,,true,0,1,0,2,0,0,0,7,0,0,0,,,,Account,Name,Name
+funding,,,,False,,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Account,Funding,Funding__c
+fundinggrid,,,,False,,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Account,Fundinggrid,Fundinggrid__c
+goalenddate,,,,False,,,true,0,0,0,0,0,0,0,3,0,0,0,,,,Account,Goalenddate,Goalenddate__c
+goalid,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Goalid,Goalid__c
+goalownerid,,,,False,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,OwnerId,OwnerId
+goalrollupqueryid,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Goalrollupqueryid,Goalrollupqueryid__c
+goalstartdate,,,,False,,,true,0,0,0,0,0,0,0,3,0,0,0,,,,Account,Goalstartdate,Goalstartdate__c
+incidentid,,,,False,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Incidentid,Incidentid__c
+internalemailaddress,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Internalemailaddress,Internalemailaddress__c
+invline.productid,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Invline.productid,Invline.productid__c
+invoicedetailid,,,,False,,,true,0,0,0,0,0,0,0,4,0,0,0,,,,Account,Invoicedetailid,Invoicedetailid__c
+invoiceid,,,,False,,,true,0,0,0,0,0,0,0,8,0,0,0,,,,Account,Invoiceid,Invoiceid__c
+invoicenumber,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Invoicenumber,Invoicenumber__c
+invoices,,,,False,,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Account,Invoices,Invoices__c
+isamount,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Isamount,Isamount__c
+isfiscalperiodgoal,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Isfiscalperiodgoal,Isfiscalperiodgoal__c
+isocurrencycode,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Isocurrencycode,Isocurrencycode__c
+ispriceoverridden,,,,False,,,true,0,0,0,0,0,0,0,6,0,0,0,,,,Account,Ispriceoverridden,Ispriceoverridden__c
+isproductoverridden,,,,False,,,true,0,0,0,0,0,0,0,4,0,0,0,,,,Account,Isproductoverridden,Isproductoverridden__c
+isrevenuesystemcalculated,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Isrevenuesystemcalculated,Isrevenuesystemcalculated__c
+jobtitle,,,,False,,,true,0,0,0,1,0,0,0,1,0,0,0,,,,Account,Jobtitle,Jobtitle__c
+lastname,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Name,Name
+lastusedincampaign,,,,False,,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Account,Last Date Included In Campaign,Last_Date_Included_In_Campaign__c
+manualdiscountamount,,,,False,,,true,0,0,0,1,0,0,0,9,0,0,0,,,,Account,Manualdiscountamount,Manualdiscountamount__c
+mapcontrol,,,,False,,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Account,Mapcontrol,Mapcontrol__c
+metricid,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Metricid,Metricid__c
+mimetype,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Type,Type
+mobilephone,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,OtherPhone__c,OtherPhone__c
+modifiedon,,,,False,,,true,0,0,0,0,0,0,0,4,0,0,0,,,,Account,LastModifiedDate,LastModifiedDate
+msa_managingpartnerid,,,,False,,,true,0,0,0,0,0,0,0,0,0,2,0,,,,Account,Managing Partner,Managing_Partner__c
+msa_partnerid,,,,False,,,true,0,0,0,0,0,0,0,0,0,2,0,,,,Account,IsPartner__c,IsPartner__c
+msdyn_accountkpiid,,,,False,,,true,0,0,0,0,0,0,0,0,0,1,0,,,,Account,Kpi,Kpi__c
+msdyn_salesaccelerationinsightid,,,,False,,,true,0,0,0,0,0,0,0,0,0,1,0,,,,Account,Sales Acceleration Insights Id,Sales_Acceleration_Insights_Id__c
+msdyn_segmentid,Segment Id,lookup,none,True,,,true,0,0,0,0,0,0,0,0,0,1,0,,,,Account,Segment Id,Segment_Id__c
+name,Account Name,nvarchar,required,False,,,true,3,46,0,3,0,16,0,23,0,0,0,Account,Account Name,Name,Account,Name,Name
+new_sharedwith,Shared With,lookup,none,True,,,true,2,0,0,0,0,0,0,0,0,1,0,,,,Account,Shared With,Shared_With__c
+notescontrol,,,,False,,,true,3,0,0,0,0,0,0,0,0,0,0,,,,Account,Notescontrol,Notescontrol__c
+objectid,,,,False,,,true,0,0,0,1,0,0,0,4,0,1,0,,,,Account,Objectid,Objectid__c
+objecttypecode,,,,False,,,true,0,0,0,4,0,0,0,1,0,0,0,,,,Account,Objecttypecode,Objecttypecode__c
+opportunities,,,,False,,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Account,Opportunities,Opportunities__c
+opportunityid,,,,False,,,true,0,0,0,0,0,0,0,32,0,0,0,,,,Account,Open_Opportunity_Count__c,Open_Opportunity_Count__c
+opportunityproductid,,,,False,,,true,0,0,0,0,0,0,0,14,0,0,0,,,,Account,Open_Opportunity_Count__c,Open_Opportunity_Count__c
+orders,,,,False,,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Account,Orders,Orders__c
+originatingleadid,,,,False,,,true,3,0,0,0,0,0,0,2,0,1,0,,,,Account,Originating Lead,Originating_Lead__c
+ownerid,Owner,owner,systemrequired,False,,,true,3,9,0,1,0,24,0,22,0,0,0,Account,Record type,RecordType,Account,OwnerId,OwnerId
+owningteam,,,,False,,,true,0,0,0,0,0,1,0,1,0,0,0,,,,Account,OwnerId,OwnerId
+parentaccountid,Parent Account,lookup,none,False,,,true,2,1,0,0,0,12,0,4,0,2,0,Account,ParentId,ParentId,Account,ParentId,ParentId
+parentcontactid,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,ParentId,ParentId
+parentcustomerid,,,,False,,,true,0,0,0,0,0,0,0,7,0,1,0,,,,Account,ParentId,ParentId
+parentgoalid,,,,False,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,ParentId,ParentId
+parentid,,,,False,,,true,0,0,0,0,0,0,0,0,0,1,0,,,,Account,ParentId,ParentId
+parentsystemuserid,,,,False,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Parentsystemuserid,Parentsystemuserid__c
+previews,,,,False,,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Account,Previews,Previews__c
+pricelevelid,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Pricelevelid,Pricelevelid__c
+priceperunit,,,,False,,,true,0,0,0,0,0,0,0,8,0,0,0,,,,Account,Priceperunit,Priceperunit__c
+primarycontactid,Primary Contact,lookup,none,False,,,true,2,0,0,0,0,2,0,2,0,0,0,,,,Account,Primary Contact,Primary_Contact__c
+print,,,,False,,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Account,Print,Print__c
+prod.productid,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Prod.productid,Prod.productid__c
+productdescription,,,,False,,,true,0,0,0,0,0,0,0,13,0,0,0,,,,Account,Description,Description
+productid,,,,False,,,true,0,0,0,0,0,0,0,33,0,0,0,,,,Account,Productid,Productid__c
+productname,,,,False,,,true,0,0,0,0,0,0,0,3,0,0,0,,,,Account,Productname,Productname__c
+productnumber,,,,False,,,true,0,7,0,0,0,0,0,3,0,0,0,,,,Account,AccountNumber,AccountNumber
+producttypecode,,,,False,,,true,0,0,0,0,0,0,0,3,0,0,0,,,,Account,Producttypecode,Producttypecode__c
+purchasedsoftware,,,,False,,,true,3,0,0,0,0,0,0,0,0,0,0,,,,Account,Purchasedsoftware,Purchasedsoftware__c
+quantity,,,,False,,,true,0,0,0,0,0,0,0,18,0,0,0,,,,Account,Quantity,Quantity__c
+queryentitytype,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Queryentitytype,Queryentitytype__c
+quotedetailid,,,,False,,,true,0,0,0,0,0,0,0,14,0,0,0,,,,Account,Quotedetailid,Quotedetailid__c
+quoteid,,,,False,,,true,0,0,0,1,0,0,0,20,0,0,0,,,,Account,Quoteid,Quoteid__c
+quotenumber,,,,False,,,true,0,0,0,1,0,0,0,0,0,0,0,,,,Account,Customer_Number__c,Customer_Number__c
+quotes,,,,False,,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Account,Quotes,Quotes__c
+record1id,,,,False,,,true,0,1,0,0,0,0,0,5,0,0,0,,,,Account,RecordTypeId,RecordTypeId
+record1roleid,,,,False,,,true,0,0,0,0,0,0,0,3,0,0,0,,,,Account,RecordTypeId,RecordTypeId
+record2id,,,,False,,,true,0,0,0,0,0,0,0,6,0,0,0,,,,Account,RecordTypeId,RecordTypeId
+record2roleid,,,,False,,,true,0,0,0,0,0,0,0,5,0,0,0,,,,Account,RecordTypeId,RecordTypeId
+regardingobjectid,,,,False,,,true,0,0,0,0,0,0,0,8,0,8,0,,,,Account,Regardingobjectid,Regardingobjectid__c
+requestdeliveryby,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Requestdeliveryby,Requestdeliveryby__c
+ricontainer_charts,,,,False,,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Account,Ricontainer Charts,Ricontainer_Charts__c
+roleid,,,,False,,,true,0,0,0,0,0,0,0,6,0,0,0,,,,Account,Roleid,Roleid__c
+rolluponlyfromchildgoals,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Rolluponlyfromchildgoals,Rolluponlyfromchildgoals__c
+rollupqueryactualmoneyid,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Rollupqueryactualmoneyid,Rollupqueryactualmoneyid__c
+rolluprulestep1_1,,,,False,,,true,0,0,0,0,0,0,4,0,0,0,0,,,,Account,Rolluprulestep1 1,Rolluprulestep1_1__c
+rolluprulestep1_10,,,,False,,,true,0,0,0,0,0,0,1,0,0,0,0,,,,Account,Rolluprulestep1 10,Rolluprulestep1_10__c
+rolluprulestep1_11,,,,False,,,true,0,0,0,0,0,0,1,0,0,0,0,,,,Account,Rolluprulestep1 11,Rolluprulestep1_11__c
+rolluprulestep1_12,,,,False,,,true,0,0,0,0,0,0,1,0,0,0,0,,,,Account,Rolluprulestep1 12,Rolluprulestep1_12__c
+rolluprulestep1_13,,,,False,,,true,0,0,0,0,0,0,1,0,0,0,0,,,,Account,Rolluprulestep1 13,Rolluprulestep1_13__c
+rolluprulestep1_2,,,,False,,,true,0,0,0,0,0,0,4,0,0,0,0,,,,Account,Rolluprulestep1 2,Rolluprulestep1_2__c
+rolluprulestep1_3,,,,False,,,true,0,0,0,0,0,0,4,0,0,0,0,,,,Account,Rolluprulestep1 3,Rolluprulestep1_3__c
+rolluprulestep1_4,,,,False,,,true,0,0,0,0,0,0,4,0,0,0,0,,,,Account,Rolluprulestep1 4,Rolluprulestep1_4__c
+rolluprulestep1_5,,,,False,,,true,0,0,0,0,0,0,4,0,0,0,0,,,,Account,Rolluprulestep1 5,Rolluprulestep1_5__c
+rolluprulestep1_6,,,,False,,,true,0,0,0,0,0,0,3,0,0,0,0,,,,Account,Rolluprulestep1 6,Rolluprulestep1_6__c
+rolluprulestep1_7,,,,False,,,true,0,0,0,0,0,0,3,0,0,0,0,,,,Account,Rolluprulestep1 7,Rolluprulestep1_7__c
+rolluprulestep1_8,,,,False,,,true,0,0,0,0,0,0,3,0,0,0,0,,,,Account,Rolluprulestep1 8,Rolluprulestep1_8__c
+rolluprulestep1_9,,,,False,,,true,0,0,0,0,0,0,3,0,0,0,0,,,,Account,Rolluprulestep1 9,Rolluprulestep1_9__c
+salesorderdetailid,,,,False,,,true,0,0,0,0,0,0,0,9,0,0,0,,,,Account,Salesorderdetailid,Salesorderdetailid__c
+salesorderdetailname,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Salesorderdetailname,Salesorderdetailname__c
+salesorderid,,,,False,,,true,0,0,0,0,0,0,0,13,0,0,0,,,,Account,Salesorderid,Salesorderid__c
+salesrepid,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Salesrepid,Salesrepid__c
+scheduledend,,,,False,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Scheduledend,Scheduledend__c
+shareduser.fullname,,,,False,,,true,0,1,0,0,0,0,0,0,0,0,0,,,,Account,Shareduser.fullname,Shareduser.fullname__c
+sharedwith,,,,False,,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Account,Sharedwith,Sharedwith__c
+shippingmethodcode,,,,False,,,true,0,0,0,1,0,0,0,1,0,0,0,,,,Account,ShippingPostalCode,ShippingPostalCode
+shipto_city,,,,False,,,true,0,0,0,1,0,0,0,0,0,0,0,,,,Account,ShippingCity,ShippingCity
+shipto_contactname,,,,False,,,true,0,0,0,1,0,0,0,0,0,0,0,,,,Account,Shipto Contactname,Shipto_Contactname__c
+shipto_country,,,,False,,,true,0,0,0,1,0,0,0,0,0,0,0,,,,Account,ShippingCountry,ShippingCountry
+shipto_line1,,,,False,,,true,0,0,0,1,0,0,0,1,0,0,0,,,,Account,Shipto Line1,Shipto_Line1__c
+shipto_line2,,,,False,,,true,0,0,0,1,0,0,0,1,0,0,0,,,,Account,Shipto Line2,Shipto_Line2__c
+shipto_line3,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Shipto Line3,Shipto_Line3__c
+shipto_name,,,,False,,,true,0,0,0,1,0,0,0,1,0,0,0,,,,Account,Shipto Name,Shipto_Name__c
+shipto_postalcode,,,,False,,,true,0,0,0,1,0,0,0,1,0,0,0,,,,Account,ShippingPostalCode,ShippingPostalCode
+shipto_stateorprovince,,,,False,,,true,0,0,0,1,0,0,0,1,0,0,0,,,,Account,Shipto Stateorprovince,Shipto_Stateorprovince__c
+softwarelicenseallocations,,,,False,,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Account,Softwarelicenseallocations,Softwarelicenseallocations__c
+state,,,,False,,,true,0,0,0,0,0,0,0,0,1,0,0,,,,Account,Site,Site
+statecode,Status,state,systemrequired,False,,,true,0,17,0,0,0,10,3,20,0,0,0,,,,Account,Status CRM,Status_CRM__c
+statuscode,,,,False,,,true,0,0,0,0,0,0,0,6,0,0,0,,,,Account,Status Reason,Status_Reason__c
+street,,,,False,,,true,0,0,0,0,0,0,0,0,1,0,0,,,,Account,Street,Street__c
+subject,,,,False,,,true,0,0,0,0,0,0,0,3,0,0,0,,,,Account,Subject,Subject__c
+systemuserid,,,,False,,,true,0,0,0,0,0,0,0,7,0,0,0,,,,Account,Systemuserid,Systemuserid__c
+tax,,,,False,,,true,0,0,0,0,0,0,0,8,0,0,0,,,,Account,Tax,Tax__c
+teamid,,,,False,,,true,0,0,0,0,0,0,0,3,0,0,0,,,,Account,Team__c,Team__c
+teamtype,,,,False,,,true,0,0,0,0,0,0,0,3,0,0,0,,,,Account,Type,Type
+telephone1,Main Phone,nvarchar,none,False,,,true,3,23,0,0,0,0,0,1,0,0,0,,Phone,,Account,OtherPhone__c,OtherPhone__c
+telephone2,Other Phone,nvarchar,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,Account,Other Phone,OtherPhone__c,,,
+title,,,,False,,,true,0,0,0,1,0,0,0,2,0,0,0,,,,Account,Site,Site
+tm.systemuserid,,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,Tm.systemuserid,Tm.systemuserid__c
+totalamount,,,,False,,,true,0,0,0,1,0,0,0,4,0,0,0,,,,Account,Totalamount,Totalamount__c
+totallineitemamount,,,,False,,,true,0,0,0,1,0,0,0,0,0,0,0,,,,Account,Totallineitemamount,Totallineitemamount__c
+transactioncurrencyid,,,,False,,,true,0,0,0,0,0,0,0,8,0,0,0,,,,Account,Currency,Currency__c
+uomid,,,,False,,,true,0,0,0,0,0,0,0,8,0,0,0,,,,Account,Uomid,Uomid__c
+value,,,,False,,,true,0,0,0,0,0,0,0,0,1,0,0,,,,Account,Value,Value__c
+webresource_recordwall,,,,False,,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Account,Webresource Recordwall,Webresource_Recordwall__c
+websiteurl,,,,False,,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Account,Website,Website
+writeteam,,,,False,,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Account,Writeteam,Writeteam__c
+zipcode,,,,False,,,true,0,0,0,0,0,0,0,0,1,0,0,,,,Account,Zipcode,Zipcode__c
+{0},,,,False,,,true,0,0,0,0,0,0,0,1,0,0,0,,,,Account,{0},{0}__c

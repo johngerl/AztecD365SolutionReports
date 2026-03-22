@@ -6,7 +6,7 @@ azt_printproductid,Print Product,lookup,none,True,2026-03-20 17:39:37,,true,2,15
 azt_printpurchaseid,Print Purchase,primarykey,systemrequired,False,2026-03-20 17:39:37,,true,0,8,0,0,0,0,0,1,0,1,0,,,,,,
 azt_purchasedate,Purchase Date,datetime,none,True,2026-03-20 17:39:37,,true,1,14,0,0,0,1,0,2,0,0,0,,,,,,
 azt_quantity,Quantity,int,required,True,2026-03-20 17:39:37,,true,2,7,0,0,0,0,0,1,0,0,0,,,,,,
-azt_recordownerid,Record Owner,lookup,none,True,Never,,true,1,0,0,0,0,37,0,9,0,1,0,,,,,,
+azt_recordownerid,Record Owner,lookup,none,True,Never,,false,1,0,0,0,0,37,0,9,0,1,0,,,,,,
 azt_writeinproduct,Write-In Product,nvarchar,none,True,2026-02-20 18:47:25,,true,1,1,0,0,0,0,0,0,0,0,0,,,,,,
 createdby,Created By,lookup,none,False,2026-03-20 17:39:37,,true,0,0,0,0,0,25,0,0,0,1,0,,,,,,
 createdon,Created On,datetime,none,False,Skipped (createdon),,true,1,0,0,0,0,7,0,10,0,0,0,,,,,,

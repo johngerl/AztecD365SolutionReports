@@ -24,7 +24,7 @@ modifiedonbehalfby,Modified By (Delegate),lookup,none,False,Never,,false,0,0,0,0
 overriddencreatedon,Record Created On,datetime,none,False,Never,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
 ownerid,Sales Rep,owner,systemrequired,False,2026-02-20 20:40:00,,true,4,12,0,0,0,24,0,22,0,1,0,,,,,,
 owningbusinessunit,Owning Business Unit,lookup,none,False,2026-02-20 20:40:00,,true,0,0,0,0,0,0,0,0,0,1,0,,,,,,
-owningteam,Owning Team,lookup,none,False,Never,,true,0,0,0,0,0,1,0,1,0,1,0,,,,,,
+owningteam,Owning Team,lookup,none,False,Never,,false,0,0,0,0,0,1,0,1,0,1,0,,,,,,
 owninguser,Owning User,lookup,none,False,2026-02-20 20:40:00,,true,0,0,0,0,0,0,0,1,0,1,0,,,,,,
 statecode,Status,state,systemrequired,False,2026-02-20 20:40:00,,true,0,6,0,0,0,10,0,20,0,0,0,,,,,,
 statuscode,Status Reason,status,none,False,2026-02-20 20:40:00,,true,1,0,0,0,0,5,0,6,0,0,0,,,,,,

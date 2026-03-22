@@ -2303,6 +2303,12 @@ def enrich_entity(entity_name, root, property_to_field, class_to_entity):
             'isRetrievable': fdef.get('is_retrievable', False),
             'isDataSourceSecret': fdef.get('is_data_source_secret', False),
             'picklistValues': pv if pv else None,
+            # SF suggestion fields (populated by Step 6, preserved across runs)
+            'sfSuggestedObjectName': None,
+            'sfSuggestedFieldDisplayName': None,
+            'sfSuggestedFieldApiName': None,
+            'sfSuggestedDataType': None,
+            'sfSuggestedMatchTier': None,
         }
 
         # 13 section datasets (no SF columns)
@@ -2406,6 +2412,38 @@ def main():
             continue
 
         output_file = os.path.join(output_dir, f"{entity_name}.json")
+
+        # Cache existing sfSuggested* values from previous JSON (if any)
+        sf_cache = {}
+        if os.path.isfile(output_file):
+            try:
+                with open(output_file, 'r', encoding='utf-8') as f:
+                    old_data = json.load(f)
+                for old_field in old_data.get('fields', []):
+                    fn = old_field.get('fieldName', '').lower()
+                    if fn and old_field.get('sfSuggestedObjectName'):
+                        sf_cache[fn] = {
+                            k: old_field.get(k)
+                            for k in ('sfSuggestedObjectName', 'sfSuggestedFieldDisplayName',
+                                      'sfSuggestedFieldApiName', 'sfSuggestedDataType',
+                                      'sfSuggestedMatchTier')
+                        }
+            except (json.JSONDecodeError, IOError):
+                pass
+
+        # Restore cached sfSuggested* values to matching fields
+        if sf_cache:
+            restored = 0
+            for field_out in enriched.get('fields', []):
+                fn = field_out.get('fieldName', '').lower()
+                cached = sf_cache.get(fn)
+                if cached:
+                    for k, v in cached.items():
+                        field_out[k] = v
+                    restored += 1
+            if restored:
+                print(f"  Restored {restored} cached SF suggestions")
+
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(enriched, f, indent=2, ensure_ascii=False, default=json_serializer)
 

@@ -142,11 +142,11 @@ Total fields: **23**
 | 16 | [ownerid](#ownerid) | Owner | lookup |  | No | required | 2026-03-22 00:58:03 |  | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 17 | [parentid](#parentid) | Parent | lookup |  | No | required | 2026-03-22 00:58:03 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
 | 18 | [postalcode](#postalcode) | ZIP/Postal Code | nvarchar |  | No | none | 2026-03-20 18:32:49 |  | true |  |  |  |  |  |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 19 | [primarycontactname](#primarycontactname) | Address Contact | nvarchar |  | No | none | Never |  | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 19 | [primarycontactname](#primarycontactname) | Address Contact | nvarchar |  | No | none | Never |  | false |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 | 20 | [shippingmethodcode](#shippingmethodcode) | Shipping Method | picklist |  | No | none | 2025-12-03 14:28:20 |  | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 21 | [stateorprovince](#stateorprovince) | State/Province | nvarchar |  | No | none | 2026-03-20 18:32:49 |  | true |  |  |  |  |  |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 22 | [telephone1](#telephone1) | Main Phone | nvarchar |  | No | none | 2026-03-19 13:23:45 |  | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 23 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none | 2019-01-25 23:21:37 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 23 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none | 2019-01-25 23:21:37 |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 
 ---
 

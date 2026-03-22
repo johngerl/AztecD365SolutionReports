@@ -7,4 +7,4 @@ ownerid,Owner,lookup,required,False,2026-02-20 19:23:04,,true,0,0,0,0,0,0,0,22,0
 regardingobjectid,Regarding,lookup,none,False,2026-02-20 19:23:04,,true,0,0,0,0,0,0,0,8,0,7,0,,,,,,
 statecode,Status,picklist,required,False,2026-02-20 19:23:04,,true,0,0,0,0,0,0,0,20,0,0,0,,,,,,
 statuscode,Status Reason,picklist,none,False,2026-02-20 19:23:04,,true,0,0,0,0,0,0,0,6,0,0,0,,,,,,
-transactioncurrencyid,Currency,lookup,none,False,Never,,true,0,0,0,0,0,0,0,8,0,0,0,,,,,,
+transactioncurrencyid,Currency,lookup,none,False,Never,,false,0,0,0,0,0,0,0,8,0,0,0,,,,,,

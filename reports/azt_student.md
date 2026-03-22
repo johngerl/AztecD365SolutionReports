@@ -182,27 +182,27 @@ Total fields: **23**
 
 | # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
 |---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [azt_age](#azt_age) | Age | int |  | Yes | none | Never | C R U | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 2 | [azt_city](#azt_city) | City | nvarchar |  | Yes | none | Never | C R U | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 3 | [azt_email](#azt_email) | Email | nvarchar |  | Yes | none | Never | C R U | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 4 | [azt_firstname](#azt_firstname) | First Name | nvarchar |  | Yes | none | Never | C R U | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 5 | [azt_lastname](#azt_lastname) | Last Name | nvarchar |  | Yes | none | Never | C R U | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 6 | [azt_lessonid](#azt_lessonid) | Lesson | lookup |  | Yes | none | Never | C R U | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 1 | [azt_age](#azt_age) | Age | int |  | Yes | none | Never | C R U | false |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 2 | [azt_city](#azt_city) | City | nvarchar |  | Yes | none | Never | C R U | false |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 3 | [azt_email](#azt_email) | Email | nvarchar |  | Yes | none | Never | C R U | false |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 4 | [azt_firstname](#azt_firstname) | First Name | nvarchar |  | Yes | none | Never | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 5 | [azt_lastname](#azt_lastname) | Last Name | nvarchar |  | Yes | none | Never | C R U | false |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 6 | [azt_lessonid](#azt_lessonid) | Lesson | lookup |  | Yes | none | Never | C R U | false |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
 | 7 | [azt_lessonnumberid](#azt_lessonnumberid) | Lesson Number ID | int |  | Yes | none | Never | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 8 | [azt_name](#azt_name) | Name | nvarchar |  | Yes | required | Never | C R U S Re | true |  |  |  |  |  |  | [3](#2.%20Forms) | [10](#3.%20Views) |  |  |  | [9](#7.%20Workflows) |  | [18](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 9 | [azt_studentid](#azt_studentid) | Student | primarykey |  | No | systemrequired | Never | C R F Re | true |  |  |  |  |  |  |  | [7](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 8 | [azt_name](#azt_name) | Name | nvarchar |  | Yes | required | Never | C R U S Re | false |  |  |  |  |  |  | [3](#2.%20Forms) | [10](#3.%20Views) |  |  |  | [9](#7.%20Workflows) |  | [18](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 9 | [azt_studentid](#azt_studentid) | Student | primarykey |  | No | systemrequired | Never | C R F Re | false |  |  |  |  |  |  |  | [7](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 | 10 | [azt_studentnumberid](#azt_studentnumberid) | Student Number ID | int |  | Yes | none | Never | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 11 | [createdby](#createdby) | Created By | lookup |  | No | none | Never | R | true |  |  |  |  |  |  |  |  |  |  |  | [25](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
+| 11 | [createdby](#createdby) | Created By | lookup |  | No | none | Never | R | false |  |  |  |  |  |  |  |  |  |  |  | [25](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
 | 12 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) | R F Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [5](#3.%20Views) |  |  |  | [7](#7.%20Workflows) |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 13 | [createdonbehalfby](#createdonbehalfby) | Created By (Delegate) | lookup |  | No | none | Never | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 14 | [importsequencenumber](#importsequencenumber) | Import Sequence Number | int |  | No | none | Never | C R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 15 | [modifiedby](#modifiedby) | Modified By | lookup |  | No | none | Never | R | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
+| 15 | [modifiedby](#modifiedby) | Modified By | lookup |  | No | none | Never | R | false |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
 | 16 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none | Skipped (modifiedon) | R F Re | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 17 | [modifiedonbehalfby](#modifiedonbehalfby) | Modified By (Delegate) | lookup |  | No | none | Never | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 18 | [organizationid](#organizationid) | Organization Id | lookup |  | No | none | Never | R | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 18 | [organizationid](#organizationid) | Organization Id | lookup |  | No | none | Never | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
 | 19 | [overriddencreatedon](#overriddencreatedon) | Record Created On | datetime |  | No | none | Never | C R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 20 | [statecode](#statecode) | Status | state |  | No | systemrequired | Never | R U F | true |  |  |  |  |  |  |  | [6](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 21 | [statuscode](#statuscode) | Status Reason | status |  | No | none | Never | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [5](#7.%20Workflows) |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 20 | [statecode](#statecode) | Status | state |  | No | systemrequired | Never | R U F | false |  |  |  |  |  |  |  | [6](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 21 | [statuscode](#statuscode) | Status Reason | status |  | No | none | Never | C R U | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [5](#7.%20Workflows) |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 22 | [timezoneruleversionnumber](#timezoneruleversionnumber) | Time Zone Rule Version Number | int |  | No | none | Never | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 23 | [utcconversiontimezonecode](#utcconversiontimezonecode) | UTC Conversion Time Zone Code | int |  | No | none | Never | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 

@@ -8,7 +8,7 @@ azt_historicalowner,Historical Owner,nvarchar,none,True,2025-11-23 14:40:12,,tru
 azt_isleadershipappointment,Is Leadership Appointment,bit,none,True,2026-03-20 20:16:59,"1: Yes, 0: No",true,1,0,0,0,0,0,0,0,0,0,0,,,,,,
 azt_leadershipcallwithid,Leadership Call With,lookup,none,True,2026-03-20 10:38:38,,true,1,0,0,0,0,0,0,0,0,1,0,,,,,,
 azt_recordownerid,Record Owner,lookup,none,True,2026-03-20 20:16:59,,true,1,36,46,1,0,37,0,9,0,1,0,,,,,,
-category,Category,nvarchar,none,False,Never,,true,0,0,0,0,0,0,0,3,0,0,0,,,,,,
+category,Category,nvarchar,none,False,Never,,false,0,0,0,0,0,0,0,3,0,0,0,,,,,,
 createdby,Created By,lookup,none,False,2026-03-20 20:16:59,,true,0,2,0,2,0,2,0,0,0,0,0,,,,,,
 createdon,Created On,datetime,none,False,Skipped (createdon),,true,0,0,0,3,0,0,0,10,0,0,0,,,,,,
 description,Description,ntext,none,False,2026-03-20 20:16:59,,true,0,0,0,0,0,1,0,7,0,0,0,,,,,,

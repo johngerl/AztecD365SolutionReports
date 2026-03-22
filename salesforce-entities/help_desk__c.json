@@ -1,10 +1,12 @@
 {
   "objectName": "Help_Desk__c",
+  "displayName": "SF Support",
   "objectType": "Custom",
   "recordCount": 0,
   "fields": [
     {
       "fieldName": "Id",
+      "displayName": "Record ID",
       "dataType": "id",
       "required": "No",
       "relatedTo": "None",
@@ -13,6 +15,7 @@
     },
     {
       "fieldName": "OwnerId",
+      "displayName": "Owner ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Group, User",
@@ -21,6 +24,7 @@
     },
     {
       "fieldName": "IsDeleted",
+      "displayName": "Deleted",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -29,6 +33,7 @@
     },
     {
       "fieldName": "Name",
+      "displayName": "Help Desk Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -37,6 +42,7 @@
     },
     {
       "fieldName": "RecordTypeId",
+      "displayName": "Record Type ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "RecordType",
@@ -45,6 +51,7 @@
     },
     {
       "fieldName": "CreatedDate",
+      "displayName": "Created Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -53,6 +60,7 @@
     },
     {
       "fieldName": "CreatedById",
+      "displayName": "Created By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -61,6 +69,7 @@
     },
     {
       "fieldName": "LastModifiedDate",
+      "displayName": "Last Modified Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -69,6 +78,7 @@
     },
     {
       "fieldName": "LastModifiedById",
+      "displayName": "Last Modified By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -77,6 +87,7 @@
     },
     {
       "fieldName": "SystemModstamp",
+      "displayName": "System Modstamp",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -85,6 +96,7 @@
     },
     {
       "fieldName": "LastActivityDate",
+      "displayName": "Last Activity Date",
       "dataType": "date",
       "required": "No",
       "relatedTo": "None",
@@ -93,6 +105,7 @@
     },
     {
       "fieldName": "LastViewedDate",
+      "displayName": "Last Viewed Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -101,6 +114,7 @@
     },
     {
       "fieldName": "LastReferencedDate",
+      "displayName": "Last Referenced Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -109,6 +123,7 @@
     },
     {
       "fieldName": "Associated_User__c",
+      "displayName": "Associated User",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -117,6 +132,7 @@
     },
     {
       "fieldName": "Company_Name__c",
+      "displayName": "Company Name",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -136,6 +152,7 @@
     },
     {
       "fieldName": "Ticket_Status__c",
+      "displayName": "Ticket Status",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -170,6 +187,7 @@
     },
     {
       "fieldName": "Date_Needed_By__c",
+      "displayName": "Date Needed By",
       "dataType": "date",
       "required": "No",
       "relatedTo": "None",
@@ -178,6 +196,7 @@
     },
     {
       "fieldName": "Support_Type__c",
+      "displayName": "Support Type",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -232,6 +251,7 @@
     },
     {
       "fieldName": "Date_of_Training__c",
+      "displayName": "Date of Training",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -240,6 +260,7 @@
     },
     {
       "fieldName": "User_Name__c",
+      "displayName": "User Name",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",
@@ -248,6 +269,7 @@
     },
     {
       "fieldName": "Date_Time_Opened__c",
+      "displayName": "Date/Time Opened",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -256,6 +278,7 @@
     },
     {
       "fieldName": "Date_Time_Closed__c",
+      "displayName": "Date/Time Closed",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -264,6 +287,7 @@
     },
     {
       "fieldName": "Subject__c",
+      "displayName": "Subject",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -272,6 +296,7 @@
     },
     {
       "fieldName": "Description__c",
+      "displayName": "Description",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",
@@ -280,6 +305,7 @@
     },
     {
       "fieldName": "AccountID__c",
+      "displayName": "Account Name",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Account",
@@ -288,6 +314,7 @@
     },
     {
       "fieldName": "OpportunityID__c",
+      "displayName": "Opportunity Name",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Opportunity",
@@ -296,6 +323,7 @@
     },
     {
       "fieldName": "QuoteNumber__c",
+      "displayName": "Quote Number",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Quote",
@@ -304,6 +332,7 @@
     },
     {
       "fieldName": "Related_User_Email__c",
+      "displayName": "Related User Email",
       "dataType": "email",
       "required": "No",
       "relatedTo": "None",
@@ -312,6 +341,7 @@
     },
     {
       "fieldName": "Priority__c",
+      "displayName": "Priority",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -336,6 +366,7 @@
     },
     {
       "fieldName": "Report_Name__c",
+      "displayName": "Report Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -344,6 +375,7 @@
     },
     {
       "fieldName": "Report_Type__c",
+      "displayName": "Report Type",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -363,6 +395,7 @@
     },
     {
       "fieldName": "Type_of_Training__c",
+      "displayName": "Type of Training",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -387,6 +420,7 @@
     },
     {
       "fieldName": "Error_Received_on__c",
+      "displayName": "Error Category",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -421,6 +455,7 @@
     },
     {
       "fieldName": "Related_Record_Type__c",
+      "displayName": "Related Record Type",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -470,6 +505,7 @@
     },
     {
       "fieldName": "Related_Record_Link__c",
+      "displayName": "Related Record Link",
       "dataType": "url",
       "required": "No",
       "relatedTo": "None",
@@ -478,6 +514,7 @@
     },
     {
       "fieldName": "Type_of_the__c",
+      "displayName": "User Account Request Type",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",

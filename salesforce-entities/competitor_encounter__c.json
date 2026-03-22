@@ -1,10 +1,12 @@
 {
   "objectName": "Competitor_Encounter__c",
+  "displayName": "Competitor Encounter",
   "objectType": "Custom",
   "recordCount": 0,
   "fields": [
     {
       "fieldName": "Id",
+      "displayName": "Record ID",
       "dataType": "id",
       "required": "No",
       "relatedTo": "None",
@@ -13,6 +15,7 @@
     },
     {
       "fieldName": "OwnerId",
+      "displayName": "Owner ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Group, User",
@@ -21,6 +24,7 @@
     },
     {
       "fieldName": "IsDeleted",
+      "displayName": "Deleted",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -29,6 +33,7 @@
     },
     {
       "fieldName": "Name",
+      "displayName": "Competitor Encounter Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -37,6 +42,7 @@
     },
     {
       "fieldName": "CreatedDate",
+      "displayName": "Created Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -45,6 +51,7 @@
     },
     {
       "fieldName": "CreatedById",
+      "displayName": "Created By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -53,6 +60,7 @@
     },
     {
       "fieldName": "LastModifiedDate",
+      "displayName": "Last Modified Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -61,6 +69,7 @@
     },
     {
       "fieldName": "LastModifiedById",
+      "displayName": "Last Modified By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -69,6 +78,7 @@
     },
     {
       "fieldName": "SystemModstamp",
+      "displayName": "System Modstamp",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -77,6 +87,7 @@
     },
     {
       "fieldName": "Type__c",
+      "displayName": "Type",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -96,6 +107,7 @@
     },
     {
       "fieldName": "Account__c",
+      "displayName": "Account",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Account",
@@ -104,6 +116,7 @@
     },
     {
       "fieldName": "Competitor__c",
+      "displayName": "Competitor",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Competitor__c",
@@ -112,6 +125,7 @@
     },
     {
       "fieldName": "Date_Documented__c",
+      "displayName": "Date Documented",
       "dataType": "date",
       "required": "No",
       "relatedTo": "None",
@@ -120,6 +134,7 @@
     },
     {
       "fieldName": "Notes__c",
+      "displayName": "Notes",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",
@@ -128,6 +143,7 @@
     },
     {
       "fieldName": "Opportunity__c",
+      "displayName": "Opportunity",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Opportunity",

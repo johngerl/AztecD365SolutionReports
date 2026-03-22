@@ -1,10 +1,12 @@
 {
   "objectName": "Sales_Lead__c",
+  "displayName": "Sales Lead",
   "objectType": "Custom",
   "recordCount": 0,
   "fields": [
     {
       "fieldName": "Id",
+      "displayName": "Record ID",
       "dataType": "id",
       "required": "No",
       "relatedTo": "None",
@@ -13,6 +15,7 @@
     },
     {
       "fieldName": "OwnerId",
+      "displayName": "Owner ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Group, User",
@@ -21,6 +24,7 @@
     },
     {
       "fieldName": "IsDeleted",
+      "displayName": "Deleted",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -29,6 +33,7 @@
     },
     {
       "fieldName": "Name",
+      "displayName": "Sales Lead Topic",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -37,6 +42,7 @@
     },
     {
       "fieldName": "RecordTypeId",
+      "displayName": "Record Type ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "RecordType",
@@ -45,6 +51,7 @@
     },
     {
       "fieldName": "CreatedDate",
+      "displayName": "Created Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -53,6 +60,7 @@
     },
     {
       "fieldName": "CreatedById",
+      "displayName": "Created By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -61,6 +69,7 @@
     },
     {
       "fieldName": "LastModifiedDate",
+      "displayName": "Last Modified Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -69,6 +78,7 @@
     },
     {
       "fieldName": "LastModifiedById",
+      "displayName": "Last Modified By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -77,6 +87,7 @@
     },
     {
       "fieldName": "SystemModstamp",
+      "displayName": "System Modstamp",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -85,6 +96,7 @@
     },
     {
       "fieldName": "LastActivityDate",
+      "displayName": "Last Activity Date",
       "dataType": "date",
       "required": "No",
       "relatedTo": "None",
@@ -93,6 +105,7 @@
     },
     {
       "fieldName": "LastViewedDate",
+      "displayName": "Last Viewed Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -101,6 +114,7 @@
     },
     {
       "fieldName": "LastReferencedDate",
+      "displayName": "Last Referenced Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -109,6 +123,7 @@
     },
     {
       "fieldName": "Lead_Source__c",
+      "displayName": "Lead Source",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -148,6 +163,7 @@
     },
     {
       "fieldName": "Meeting_Type__c",
+      "displayName": "Meeting Type",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -167,6 +183,7 @@
     },
     {
       "fieldName": "Status__c",
+      "displayName": "Status",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -191,6 +208,7 @@
     },
     {
       "fieldName": "Temperature__c",
+      "displayName": "Temperature",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -225,6 +243,7 @@
     },
     {
       "fieldName": "Type__c",
+      "displayName": "Type",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -249,6 +268,7 @@
     },
     {
       "fieldName": "Account__c",
+      "displayName": "Account",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Account",
@@ -257,6 +277,7 @@
     },
     {
       "fieldName": "Analysis_Background__c",
+      "displayName": "Analysis Background",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",
@@ -265,6 +286,7 @@
     },
     {
       "fieldName": "Annual_Revenue__c",
+      "displayName": "Annual Revenue",
       "dataType": "currency",
       "required": "No",
       "relatedTo": "None",
@@ -273,6 +295,7 @@
     },
     {
       "fieldName": "Assigned_On__c",
+      "displayName": "Assigned On",
       "dataType": "date",
       "required": "No",
       "relatedTo": "None",
@@ -281,6 +304,7 @@
     },
     {
       "fieldName": "Assigned_To__c",
+      "displayName": "Assigned To",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -289,6 +313,7 @@
     },
     {
       "fieldName": "Budget__c",
+      "displayName": "Budget",
       "dataType": "currency",
       "required": "No",
       "relatedTo": "None",
@@ -297,6 +322,7 @@
     },
     {
       "fieldName": "CRM_City__c",
+      "displayName": "CRM City",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -305,6 +331,7 @@
     },
     {
       "fieldName": "CRM_Company_Name__c",
+      "displayName": "CRM Company Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -313,6 +340,7 @@
     },
     {
       "fieldName": "CRM_Created_On__c",
+      "displayName": "CRM Created On",
       "dataType": "date",
       "required": "No",
       "relatedTo": "None",
@@ -321,6 +349,7 @@
     },
     {
       "fieldName": "CRM_Customer__c",
+      "displayName": "CRM_Customer",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -329,6 +358,7 @@
     },
     {
       "fieldName": "CRM_Email__c",
+      "displayName": "CRM Email",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -337,6 +367,7 @@
     },
     {
       "fieldName": "CRM_First_Name__c",
+      "displayName": "CRM First Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -345,6 +376,7 @@
     },
     {
       "fieldName": "CRM_Job_Title__c",
+      "displayName": "CRM Job Title",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -353,6 +385,7 @@
     },
     {
       "fieldName": "CRM_Last_Name__c",
+      "displayName": "CRM Last Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -361,6 +394,7 @@
     },
     {
       "fieldName": "CRM_Lead_Source__c",
+      "displayName": "CRM Lead Source",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -369,6 +403,7 @@
     },
     {
       "fieldName": "CRM_Mobile_Phone__c",
+      "displayName": "CRM Mobile Phone",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -377,6 +412,7 @@
     },
     {
       "fieldName": "CRM_Need__c",
+      "displayName": "CRM Need",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",
@@ -385,6 +421,7 @@
     },
     {
       "fieldName": "CRM_Number_of_Computers__c",
+      "displayName": "CRM Number of Computers",
       "dataType": "double",
       "required": "No",
       "relatedTo": "None",
@@ -393,6 +430,7 @@
     },
     {
       "fieldName": "CRM_Number_of_Students__c",
+      "displayName": "CRM Number of Students",
       "dataType": "double",
       "required": "No",
       "relatedTo": "None",
@@ -401,6 +439,7 @@
     },
     {
       "fieldName": "CRM_Owner__c",
+      "displayName": "CRM Owner",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -409,6 +448,7 @@
     },
     {
       "fieldName": "CRM_Pending_Assignment__c",
+      "displayName": "CRM Pending Assignment",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -417,6 +457,7 @@
     },
     {
       "fieldName": "CRM_Purchase_Timeframe__c",
+      "displayName": "CRM Purchase Timeframe",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -425,6 +466,7 @@
     },
     {
       "fieldName": "CRM_Qualification_Comments__c",
+      "displayName": "CRM Qualification Comments",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",
@@ -433,6 +475,7 @@
     },
     {
       "fieldName": "CRM_Qualified_By__c",
+      "displayName": "CRM Qualified By",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -441,6 +484,7 @@
     },
     {
       "fieldName": "CRM_Qualifying_Opportunity_Name__c",
+      "displayName": "CRM Qualifying Opportunity Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -449,6 +493,7 @@
     },
     {
       "fieldName": "CRM_Recommendation__c",
+      "displayName": "CRM Recommendation",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",
@@ -457,6 +502,7 @@
     },
     {
       "fieldName": "CRM_Vertical_Market__c",
+      "displayName": "CRM Vertical Market",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -465,6 +511,7 @@
     },
     {
       "fieldName": "CRM_Zip_Code__c",
+      "displayName": "CRM Zip Code",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -473,6 +520,7 @@
     },
     {
       "fieldName": "Contact__c",
+      "displayName": "Contact",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Contact",
@@ -481,6 +529,7 @@
     },
     {
       "fieldName": "Created_Date__c",
+      "displayName": "Created Date",
       "dataType": "date",
       "required": "No",
       "relatedTo": "None",
@@ -489,6 +538,7 @@
     },
     {
       "fieldName": "Description__c",
+      "displayName": "Description",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",
@@ -497,6 +547,7 @@
     },
     {
       "fieldName": "Email__c",
+      "displayName": "Email",
       "dataType": "email",
       "required": "No",
       "relatedTo": "None",
@@ -505,6 +556,7 @@
     },
     {
       "fieldName": "Interested_In__c",
+      "displayName": "Interested In",
       "dataType": "multipicklist",
       "required": "No",
       "relatedTo": "None",
@@ -569,6 +621,7 @@
     },
     {
       "fieldName": "Last_Activity_Date__c",
+      "displayName": "Last Activity Date",
       "dataType": "date",
       "required": "No",
       "relatedTo": "None",
@@ -577,6 +630,7 @@
     },
     {
       "fieldName": "Lead_Detail__c",
+      "displayName": "Lead Detail",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",
@@ -585,6 +639,7 @@
     },
     {
       "fieldName": "Lead_Source_Campaign__c",
+      "displayName": "Lead Source Campaign",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Campaign",
@@ -593,6 +648,7 @@
     },
     {
       "fieldName": "Lead_Source_Detail__c",
+      "displayName": "Lead Source Detail",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -601,6 +657,7 @@
     },
     {
       "fieldName": "Marketing_Lead__c",
+      "displayName": "Marketing Lead",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Lead",
@@ -609,6 +666,7 @@
     },
     {
       "fieldName": "Meeting_Date__c",
+      "displayName": "Meeting Date",
       "dataType": "date",
       "required": "No",
       "relatedTo": "None",
@@ -617,6 +675,7 @@
     },
     {
       "fieldName": "Next_Step__c",
+      "displayName": "Next Step",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",
@@ -625,6 +684,7 @@
     },
     {
       "fieldName": "Opportunity__c",
+      "displayName": "Opportunity",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Opportunity",
@@ -633,6 +693,7 @@
     },
     {
       "fieldName": "Product_Families__c",
+      "displayName": "Product Families",
       "dataType": "multipicklist",
       "required": "No",
       "relatedTo": "None",
@@ -1217,6 +1278,7 @@
     },
     {
       "fieldName": "Qualified_Disqualified_On__c",
+      "displayName": "Qualified/Disqualified On",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -1225,6 +1287,7 @@
     },
     {
       "fieldName": "Qualified__c",
+      "displayName": "Qualified",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -1233,6 +1296,7 @@
     },
     {
       "fieldName": "Sales_Lead_GUID__c",
+      "displayName": "Sales Lead GUID",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -1241,6 +1305,7 @@
     },
     {
       "fieldName": "Website__c",
+      "displayName": "Website",
       "dataType": "url",
       "required": "No",
       "relatedTo": "None",
@@ -1249,6 +1314,7 @@
     },
     {
       "fieldName": "Status_Reason__c",
+      "displayName": "Status Reason",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -1303,6 +1369,7 @@
     },
     {
       "fieldName": "CRM_Contact_GUID__c",
+      "displayName": "CRM Contact GUID",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -1311,6 +1378,7 @@
     },
     {
       "fieldName": "CRM_Contact_Name__c",
+      "displayName": "CRM Contact Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -1319,6 +1387,7 @@
     },
     {
       "fieldName": "Qualification_Date__c",
+      "displayName": "Qualification Date",
       "dataType": "date",
       "required": "No",
       "relatedTo": "None",

@@ -1,10 +1,12 @@
 {
   "objectName": "Account_Request__c",
+  "displayName": "Account Request",
   "objectType": "Custom",
   "recordCount": 0,
   "fields": [
     {
       "fieldName": "Id",
+      "displayName": "Record ID",
       "dataType": "id",
       "required": "No",
       "relatedTo": "None",
@@ -13,6 +15,7 @@
     },
     {
       "fieldName": "OwnerId",
+      "displayName": "Owner ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Group, User",
@@ -21,6 +24,7 @@
     },
     {
       "fieldName": "IsDeleted",
+      "displayName": "Deleted",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -29,6 +33,7 @@
     },
     {
       "fieldName": "Name",
+      "displayName": "Account Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -37,6 +42,7 @@
     },
     {
       "fieldName": "CreatedDate",
+      "displayName": "Created Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -45,6 +51,7 @@
     },
     {
       "fieldName": "CreatedById",
+      "displayName": "Created By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -53,6 +60,7 @@
     },
     {
       "fieldName": "LastModifiedDate",
+      "displayName": "Last Modified Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -61,6 +69,7 @@
     },
     {
       "fieldName": "LastModifiedById",
+      "displayName": "Last Modified By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -69,6 +78,7 @@
     },
     {
       "fieldName": "SystemModstamp",
+      "displayName": "System Modstamp",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -77,6 +87,7 @@
     },
     {
       "fieldName": "LastViewedDate",
+      "displayName": "Last Viewed Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -85,6 +96,7 @@
     },
     {
       "fieldName": "LastReferencedDate",
+      "displayName": "Last Referenced Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -93,6 +105,7 @@
     },
     {
       "fieldName": "Account_Type_Requested__c",
+      "displayName": "Account Type Requested",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -112,6 +125,7 @@
     },
     {
       "fieldName": "Is_there_an_existing_parent_account__c",
+      "displayName": "Is there an existing parent account?",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -136,6 +150,7 @@
     },
     {
       "fieldName": "Status__c",
+      "displayName": "Status",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -160,6 +175,7 @@
     },
     {
       "fieldName": "Reason_for_Request__c",
+      "displayName": "Reason for Request",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",
@@ -168,6 +184,7 @@
     },
     {
       "fieldName": "Website__c",
+      "displayName": "Website",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -176,6 +193,7 @@
     },
     {
       "fieldName": "Current_User_Created_By__c",
+      "displayName": "Current User Created By",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -184,6 +202,7 @@
     },
     {
       "fieldName": "Business_Address__Street__s",
+      "displayName": "Business Address (Street)",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",
@@ -192,6 +211,7 @@
     },
     {
       "fieldName": "Business_Address__City__s",
+      "displayName": "Business Address (City)",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -200,6 +220,7 @@
     },
     {
       "fieldName": "Business_Address__PostalCode__s",
+      "displayName": "Business Address (ZIP/Postal Code)",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -208,6 +229,7 @@
     },
     {
       "fieldName": "Business_Address__StateCode__s",
+      "displayName": "Business Address (State/Province)",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -1897,6 +1919,7 @@
     },
     {
       "fieldName": "Business_Address__CountryCode__s",
+      "displayName": "Business Address (Country/Territory)",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -3101,6 +3124,7 @@
     },
     {
       "fieldName": "Business_Address__Latitude__s",
+      "displayName": "Business Address (Latitude)",
       "dataType": "double",
       "required": "No",
       "relatedTo": "None",
@@ -3109,6 +3133,7 @@
     },
     {
       "fieldName": "Business_Address__Longitude__s",
+      "displayName": "Business Address (Longitude)",
       "dataType": "double",
       "required": "No",
       "relatedTo": "None",
@@ -3117,6 +3142,7 @@
     },
     {
       "fieldName": "Business_Address__GeocodeAccuracy__s",
+      "displayName": "Business Address (Geocode Accuracy)",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -3181,6 +3207,7 @@
     },
     {
       "fieldName": "Business_Address__c",
+      "displayName": "Business Address",
       "dataType": "address",
       "required": "No",
       "relatedTo": "None",

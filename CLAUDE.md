@@ -359,11 +359,13 @@ Each `salesforce-entities/{object}.json` contains:
 ```json
 {
   "objectName": "Account",
+  "displayName": "Account",
   "objectType": "Standard|Custom",
   "recordCount": 0,
   "fields": [
     {
       "fieldName": "Name",
+      "displayName": "Account Name",
       "dataType": "string",
       "required": "Yes|No",
       "relatedTo": "None|ObjectName",

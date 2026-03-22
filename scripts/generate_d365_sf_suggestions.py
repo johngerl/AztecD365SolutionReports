@@ -302,7 +302,8 @@ def tier1_exact_match(d365_field_name, d365_type, sf_fields_lookup, compat_matri
         sf_type = sf_field.get('dataType', '')
         if is_type_compatible(d365_type, sf_type, compat_matrix):
             fn = sf_field.get('fieldName', '')
-            return fn, fn, sf_type, 'exact'
+            display = sf_field.get('displayName', '') or fn
+            return display, fn, sf_type, 'exact'
     return None
 
 
@@ -338,8 +339,9 @@ def tier2_fuzzy_match(d365_field_name, d365_type, sf_fields, compat_matrix):
 
     if best_score >= 0.65 and best_field:
         fn = best_field.get('fieldName', '')
+        display = best_field.get('displayName', '') or fn
         sf_type = best_field.get('dataType', '')
-        return fn, fn, sf_type, 'fuzzy'
+        return display, fn, sf_type, 'fuzzy'
     return None
 
 
@@ -355,7 +357,8 @@ def tier3_synonym_match(d365_field_name, d365_type, by_name_lower, compat_matrix
         sf_type = sf_field.get('dataType', '')
         if is_type_compatible(d365_type, sf_type, compat_matrix):
             fn = sf_field.get('fieldName', '')
-            return fn, fn, sf_type, 'synonym'
+            display = sf_field.get('displayName', '') or fn
+            return display, fn, sf_type, 'synonym'
     return None
 
 

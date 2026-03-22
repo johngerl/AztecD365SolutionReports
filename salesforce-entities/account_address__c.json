@@ -1,10 +1,12 @@
 {
   "objectName": "Account_Address__c",
+  "displayName": "Account Address",
   "objectType": "Custom",
   "recordCount": 0,
   "fields": [
     {
       "fieldName": "Id",
+      "displayName": "Record ID",
       "dataType": "id",
       "required": "No",
       "relatedTo": "None",
@@ -13,6 +15,7 @@
     },
     {
       "fieldName": "IsDeleted",
+      "displayName": "Deleted",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -21,6 +24,7 @@
     },
     {
       "fieldName": "Name",
+      "displayName": "Account Address Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -29,6 +33,7 @@
     },
     {
       "fieldName": "CreatedDate",
+      "displayName": "Created Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -37,6 +42,7 @@
     },
     {
       "fieldName": "CreatedById",
+      "displayName": "Created By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -45,6 +51,7 @@
     },
     {
       "fieldName": "LastModifiedDate",
+      "displayName": "Last Modified Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -53,6 +60,7 @@
     },
     {
       "fieldName": "LastModifiedById",
+      "displayName": "Last Modified By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -61,6 +69,7 @@
     },
     {
       "fieldName": "SystemModstamp",
+      "displayName": "System Modstamp",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -69,6 +78,7 @@
     },
     {
       "fieldName": "Account__c",
+      "displayName": "Account",
       "dataType": "reference",
       "required": "Yes",
       "relatedTo": "Account",
@@ -77,6 +87,7 @@
     },
     {
       "fieldName": "Type__c",
+      "displayName": "Address Type",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -106,6 +117,7 @@
     },
     {
       "fieldName": "Address_Phone__c",
+      "displayName": "Address Phone",
       "dataType": "phone",
       "required": "No",
       "relatedTo": "None",
@@ -114,6 +126,7 @@
     },
     {
       "fieldName": "Address__Street__s",
+      "displayName": "Address (Street)",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",
@@ -122,6 +135,7 @@
     },
     {
       "fieldName": "Address__City__s",
+      "displayName": "Address (City)",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -130,6 +144,7 @@
     },
     {
       "fieldName": "Address__PostalCode__s",
+      "displayName": "Address (ZIP/Postal Code)",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -138,6 +153,7 @@
     },
     {
       "fieldName": "Address__StateCode__s",
+      "displayName": "Address (State/Province)",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -1827,6 +1843,7 @@
     },
     {
       "fieldName": "Address__CountryCode__s",
+      "displayName": "Address (Country/Territory)",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -3031,6 +3048,7 @@
     },
     {
       "fieldName": "Address__Latitude__s",
+      "displayName": "Address (Latitude)",
       "dataType": "double",
       "required": "No",
       "relatedTo": "None",
@@ -3039,6 +3057,7 @@
     },
     {
       "fieldName": "Address__Longitude__s",
+      "displayName": "Address (Longitude)",
       "dataType": "double",
       "required": "No",
       "relatedTo": "None",
@@ -3047,6 +3066,7 @@
     },
     {
       "fieldName": "Address__GeocodeAccuracy__s",
+      "displayName": "Address (Geocode Accuracy)",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -3111,6 +3131,7 @@
     },
     {
       "fieldName": "Address__c",
+      "displayName": "Address",
       "dataType": "address",
       "required": "No",
       "relatedTo": "None",
@@ -3119,6 +3140,7 @@
     },
     {
       "fieldName": "CRM_Account_Number__c",
+      "displayName": "CRM Account Number",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -3127,6 +3149,7 @@
     },
     {
       "fieldName": "CRM_Address_Number__c",
+      "displayName": "CRM Address Number",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -3135,6 +3158,7 @@
     },
     {
       "fieldName": "Contact__c",
+      "displayName": "Contact",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Contact",
@@ -3143,6 +3167,7 @@
     },
     {
       "fieldName": "Account_Name__c",
+      "displayName": "Account Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -3151,6 +3176,7 @@
     },
     {
       "fieldName": "Is_Partner_Account_Address__c",
+      "displayName": "Is Partner Account Address",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -3159,6 +3185,7 @@
     },
     {
       "fieldName": "Parent_Account_Id__c",
+      "displayName": "Parent Account Id",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -3167,6 +3194,7 @@
     },
     {
       "fieldName": "Account_Address_GUID__c",
+      "displayName": "Account Address GUID",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",

@@ -1,10 +1,12 @@
 {
   "objectName": "OrderItem",
+  "displayName": "Order Product",
   "objectType": "Standard",
   "recordCount": 0,
   "fields": [
     {
       "fieldName": "Id",
+      "displayName": "Order Product ID",
       "dataType": "id",
       "required": "No",
       "relatedTo": "None",
@@ -13,6 +15,7 @@
     },
     {
       "fieldName": "Product2Id",
+      "displayName": "Product ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Product2",
@@ -21,6 +24,7 @@
     },
     {
       "fieldName": "IsDeleted",
+      "displayName": "Deleted",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -29,6 +33,7 @@
     },
     {
       "fieldName": "OrderId",
+      "displayName": "Order ID",
       "dataType": "reference",
       "required": "Yes",
       "relatedTo": "Order",
@@ -37,6 +42,7 @@
     },
     {
       "fieldName": "PricebookEntryId",
+      "displayName": "Price Book Entry ID",
       "dataType": "reference",
       "required": "Yes",
       "relatedTo": "PricebookEntry",
@@ -45,6 +51,7 @@
     },
     {
       "fieldName": "OriginalOrderItemId",
+      "displayName": "Original Order Item ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "OrderItem",
@@ -53,6 +60,7 @@
     },
     {
       "fieldName": "QuoteLineItemId",
+      "displayName": "Quote Line Item ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "QuoteLineItem",
@@ -61,6 +69,7 @@
     },
     {
       "fieldName": "AvailableQuantity",
+      "displayName": "Available Quantity",
       "dataType": "double",
       "required": "No",
       "relatedTo": "None",
@@ -69,6 +78,7 @@
     },
     {
       "fieldName": "Quantity",
+      "displayName": "Quantity",
       "dataType": "double",
       "required": "Yes",
       "relatedTo": "None",
@@ -77,6 +87,7 @@
     },
     {
       "fieldName": "UnitPrice",
+      "displayName": "Unit Price",
       "dataType": "currency",
       "required": "No",
       "relatedTo": "None",
@@ -85,6 +96,7 @@
     },
     {
       "fieldName": "ListPrice",
+      "displayName": "List Price",
       "dataType": "currency",
       "required": "No",
       "relatedTo": "None",
@@ -93,6 +105,7 @@
     },
     {
       "fieldName": "TotalPrice",
+      "displayName": "Total Price",
       "dataType": "currency",
       "required": "No",
       "relatedTo": "None",
@@ -101,6 +114,7 @@
     },
     {
       "fieldName": "ServiceDate",
+      "displayName": "Start Date",
       "dataType": "date",
       "required": "No",
       "relatedTo": "None",
@@ -109,6 +123,7 @@
     },
     {
       "fieldName": "EndDate",
+      "displayName": "End Date",
       "dataType": "date",
       "required": "No",
       "relatedTo": "None",
@@ -117,6 +132,7 @@
     },
     {
       "fieldName": "Description",
+      "displayName": "Line Description",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -125,6 +141,7 @@
     },
     {
       "fieldName": "CreatedDate",
+      "displayName": "Created Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -133,6 +150,7 @@
     },
     {
       "fieldName": "CreatedById",
+      "displayName": "Created By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -141,6 +159,7 @@
     },
     {
       "fieldName": "LastModifiedDate",
+      "displayName": "Last Modified Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -149,6 +168,7 @@
     },
     {
       "fieldName": "LastModifiedById",
+      "displayName": "Last Modified By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -157,6 +177,7 @@
     },
     {
       "fieldName": "SystemModstamp",
+      "displayName": "System Modstamp",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -165,6 +186,7 @@
     },
     {
       "fieldName": "OrderItemNumber",
+      "displayName": "Order Product Number",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -173,6 +195,7 @@
     },
     {
       "fieldName": "License_Type__c",
+      "displayName": "License Type",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -207,6 +230,7 @@
     },
     {
       "fieldName": "Product_Name__c",
+      "displayName": "Product Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -215,6 +239,7 @@
     },
     {
       "fieldName": "Asset__c",
+      "displayName": "Asset",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Asset",
@@ -223,6 +248,7 @@
     },
     {
       "fieldName": "Fulfillment_Completed_By__c",
+      "displayName": "Fulfillment Completed By",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -231,6 +257,7 @@
     },
     {
       "fieldName": "Fulfillment_Completed_Date__c",
+      "displayName": "Fulfillment Completed Date",
       "dataType": "date",
       "required": "No",
       "relatedTo": "None",
@@ -239,6 +266,7 @@
     },
     {
       "fieldName": "Fulfillment_Completed__c",
+      "displayName": "Fulfillment Completed",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -247,6 +275,7 @@
     },
     {
       "fieldName": "License_Term_Months__c",
+      "displayName": "License Term (Months)",
       "dataType": "double",
       "required": "No",
       "relatedTo": "None",
@@ -255,6 +284,7 @@
     },
     {
       "fieldName": "Print__c",
+      "displayName": "Print",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -263,6 +293,7 @@
     },
     {
       "fieldName": "IsPrint__c",
+      "displayName": "IsPrint",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -271,6 +302,7 @@
     },
     {
       "fieldName": "Pending_Fulfillment__c",
+      "displayName": "Pending Fulfillment",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -279,6 +311,7 @@
     },
     {
       "fieldName": "Product_Id__c",
+      "displayName": "Product Id",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -287,6 +320,7 @@
     },
     {
       "fieldName": "SaaS__c",
+      "displayName": "SaaS",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -295,6 +329,7 @@
     },
     {
       "fieldName": "Sales_Rep_Order_Product__c",
+      "displayName": "Sales Rep",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -303,6 +338,7 @@
     },
     {
       "fieldName": "Discount_Amount__c",
+      "displayName": "Discount Amount",
       "dataType": "currency",
       "required": "No",
       "relatedTo": "None",
@@ -311,6 +347,7 @@
     },
     {
       "fieldName": "Discount_Percentage__c",
+      "displayName": "Discount (Percentage)",
       "dataType": "percent",
       "required": "No",
       "relatedTo": "None",
@@ -319,6 +356,7 @@
     },
     {
       "fieldName": "Order_Product_Total__c",
+      "displayName": "Order Product Total",
       "dataType": "currency",
       "required": "No",
       "relatedTo": "None",
@@ -327,6 +365,7 @@
     },
     {
       "fieldName": "Frequency__c",
+      "displayName": "Frequency",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -366,6 +405,7 @@
     },
     {
       "fieldName": "Product_Frequency__c",
+      "displayName": "Product Frequency",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -415,6 +455,7 @@
     },
     {
       "fieldName": "Sales_Price__c",
+      "displayName": "Sales Price",
       "dataType": "currency",
       "required": "No",
       "relatedTo": "None",
@@ -423,6 +464,7 @@
     },
     {
       "fieldName": "Uplift_Amount__c",
+      "displayName": "Uplift Amount",
       "dataType": "currency",
       "required": "No",
       "relatedTo": "None",

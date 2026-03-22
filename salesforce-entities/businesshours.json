@@ -1,10 +1,12 @@
 {
   "objectName": "BusinessHours",
+  "displayName": "Business Hours",
   "objectType": "Standard",
   "recordCount": 1,
   "fields": [
     {
       "fieldName": "Id",
+      "displayName": "Business Hours ID",
       "dataType": "id",
       "required": "No",
       "relatedTo": "None",
@@ -13,6 +15,7 @@
     },
     {
       "fieldName": "Name",
+      "displayName": "Business Hours Name",
       "dataType": "string",
       "required": "Yes",
       "relatedTo": "None",
@@ -21,6 +24,7 @@
     },
     {
       "fieldName": "IsActive",
+      "displayName": "Active",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -29,6 +33,7 @@
     },
     {
       "fieldName": "IsDefault",
+      "displayName": "Default Business Hours",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -37,6 +42,7 @@
     },
     {
       "fieldName": "SundayStartTime",
+      "displayName": "Sunday Start",
       "dataType": "time",
       "required": "No",
       "relatedTo": "None",
@@ -45,6 +51,7 @@
     },
     {
       "fieldName": "SundayEndTime",
+      "displayName": "Sunday End",
       "dataType": "time",
       "required": "No",
       "relatedTo": "None",
@@ -53,6 +60,7 @@
     },
     {
       "fieldName": "MondayStartTime",
+      "displayName": "Monday Start",
       "dataType": "time",
       "required": "No",
       "relatedTo": "None",
@@ -61,6 +69,7 @@
     },
     {
       "fieldName": "MondayEndTime",
+      "displayName": "Monday End",
       "dataType": "time",
       "required": "No",
       "relatedTo": "None",
@@ -69,6 +78,7 @@
     },
     {
       "fieldName": "TuesdayStartTime",
+      "displayName": "Tuesday Start",
       "dataType": "time",
       "required": "No",
       "relatedTo": "None",
@@ -77,6 +87,7 @@
     },
     {
       "fieldName": "TuesdayEndTime",
+      "displayName": "Tuesday End",
       "dataType": "time",
       "required": "No",
       "relatedTo": "None",
@@ -85,6 +96,7 @@
     },
     {
       "fieldName": "WednesdayStartTime",
+      "displayName": "Wednesday Start",
       "dataType": "time",
       "required": "No",
       "relatedTo": "None",
@@ -93,6 +105,7 @@
     },
     {
       "fieldName": "WednesdayEndTime",
+      "displayName": "Wednesday End",
       "dataType": "time",
       "required": "No",
       "relatedTo": "None",
@@ -101,6 +114,7 @@
     },
     {
       "fieldName": "ThursdayStartTime",
+      "displayName": "Thursday Start",
       "dataType": "time",
       "required": "No",
       "relatedTo": "None",
@@ -109,6 +123,7 @@
     },
     {
       "fieldName": "ThursdayEndTime",
+      "displayName": "Thursday End",
       "dataType": "time",
       "required": "No",
       "relatedTo": "None",
@@ -117,6 +132,7 @@
     },
     {
       "fieldName": "FridayStartTime",
+      "displayName": "Friday Start",
       "dataType": "time",
       "required": "No",
       "relatedTo": "None",
@@ -125,6 +141,7 @@
     },
     {
       "fieldName": "FridayEndTime",
+      "displayName": "Friday End",
       "dataType": "time",
       "required": "No",
       "relatedTo": "None",
@@ -133,6 +150,7 @@
     },
     {
       "fieldName": "SaturdayStartTime",
+      "displayName": "Saturday Start",
       "dataType": "time",
       "required": "No",
       "relatedTo": "None",
@@ -141,6 +159,7 @@
     },
     {
       "fieldName": "SaturdayEndTime",
+      "displayName": "Saturday End",
       "dataType": "time",
       "required": "No",
       "relatedTo": "None",
@@ -149,6 +168,7 @@
     },
     {
       "fieldName": "TimeZoneSidKey",
+      "displayName": "Time Zone",
       "dataType": "picklist",
       "required": "Yes",
       "relatedTo": "None",
@@ -2278,6 +2298,7 @@
     },
     {
       "fieldName": "SystemModstamp",
+      "displayName": "System Modstamp",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -2286,6 +2307,7 @@
     },
     {
       "fieldName": "CreatedDate",
+      "displayName": "Created Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -2294,6 +2316,7 @@
     },
     {
       "fieldName": "CreatedById",
+      "displayName": "Created By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -2302,6 +2325,7 @@
     },
     {
       "fieldName": "LastModifiedDate",
+      "displayName": "Last Modified Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -2310,6 +2334,7 @@
     },
     {
       "fieldName": "LastModifiedById",
+      "displayName": "Last Modified By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -2318,6 +2343,7 @@
     },
     {
       "fieldName": "LastViewedDate",
+      "displayName": "Last Viewed Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",

@@ -1,10 +1,12 @@
 {
   "objectName": "UserRole",
+  "displayName": "Role",
   "objectType": "Standard",
   "recordCount": 0,
   "fields": [
     {
       "fieldName": "Id",
+      "displayName": "Role ID",
       "dataType": "id",
       "required": "No",
       "relatedTo": "None",
@@ -13,6 +15,7 @@
     },
     {
       "fieldName": "Name",
+      "displayName": "Name",
       "dataType": "string",
       "required": "Yes",
       "relatedTo": "None",
@@ -21,6 +24,7 @@
     },
     {
       "fieldName": "ParentRoleId",
+      "displayName": "Parent Role ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "UserRole",
@@ -29,6 +33,7 @@
     },
     {
       "fieldName": "RollupDescription",
+      "displayName": "Description",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -37,6 +42,7 @@
     },
     {
       "fieldName": "OpportunityAccessForAccountOwner",
+      "displayName": "Opportunity Access Level for Account Owner",
       "dataType": "picklist",
       "required": "Yes",
       "relatedTo": "None",
@@ -61,6 +67,7 @@
     },
     {
       "fieldName": "CaseAccessForAccountOwner",
+      "displayName": "Case Access Level for Account Owner",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -85,6 +92,7 @@
     },
     {
       "fieldName": "ContactAccessForAccountOwner",
+      "displayName": "Contact Access Level for Account Owner",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -109,6 +117,7 @@
     },
     {
       "fieldName": "ForecastUserId",
+      "displayName": "User ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -117,6 +126,7 @@
     },
     {
       "fieldName": "MayForecastManagerShare",
+      "displayName": "May Forecast Manager Share",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -125,6 +135,7 @@
     },
     {
       "fieldName": "LastModifiedDate",
+      "displayName": "Last Modified Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -133,6 +144,7 @@
     },
     {
       "fieldName": "LastModifiedById",
+      "displayName": "Last Modified By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -141,6 +153,7 @@
     },
     {
       "fieldName": "SystemModstamp",
+      "displayName": "System Modstamp",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -149,6 +162,7 @@
     },
     {
       "fieldName": "DeveloperName",
+      "displayName": "Developer Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -157,6 +171,7 @@
     },
     {
       "fieldName": "PortalAccountId",
+      "displayName": "Account ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Account",
@@ -165,6 +180,7 @@
     },
     {
       "fieldName": "PortalType",
+      "displayName": "Portal Type",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -189,6 +205,7 @@
     },
     {
       "fieldName": "PortalAccountOwnerId",
+      "displayName": "User ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",

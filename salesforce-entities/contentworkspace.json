@@ -1,10 +1,12 @@
 {
   "objectName": "ContentWorkspace",
+  "displayName": "Library",
   "objectType": "Standard",
   "recordCount": 1,
   "fields": [
     {
       "fieldName": "Id",
+      "displayName": "Library ID",
       "dataType": "id",
       "required": "No",
       "relatedTo": "None",
@@ -13,6 +15,7 @@
     },
     {
       "fieldName": "Name",
+      "displayName": "Name",
       "dataType": "string",
       "required": "Yes",
       "relatedTo": "None",
@@ -21,6 +24,7 @@
     },
     {
       "fieldName": "Description",
+      "displayName": "Description",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",
@@ -29,6 +33,7 @@
     },
     {
       "fieldName": "TagModel",
+      "displayName": "Tag Model",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -53,6 +58,7 @@
     },
     {
       "fieldName": "CreatedById",
+      "displayName": "Created By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -61,6 +67,7 @@
     },
     {
       "fieldName": "CreatedDate",
+      "displayName": "Created Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -69,6 +76,7 @@
     },
     {
       "fieldName": "LastModifiedById",
+      "displayName": "Last Modified By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -77,6 +85,7 @@
     },
     {
       "fieldName": "SystemModstamp",
+      "displayName": "System Modstamp",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -85,6 +94,7 @@
     },
     {
       "fieldName": "LastModifiedDate",
+      "displayName": "Last Modified Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -93,6 +103,7 @@
     },
     {
       "fieldName": "DefaultRecordTypeId",
+      "displayName": "Record Type ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "RecordType",
@@ -101,6 +112,7 @@
     },
     {
       "fieldName": "IsRestrictContentTypes",
+      "displayName": "Restrict Record Types",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -109,6 +121,7 @@
     },
     {
       "fieldName": "IsRestrictLinkedContentTypes",
+      "displayName": "Restrict Linked Record Types",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -117,6 +130,7 @@
     },
     {
       "fieldName": "WorkspaceType",
+      "displayName": "Library Type",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -136,6 +150,7 @@
     },
     {
       "fieldName": "ShouldAddCreatorMembership",
+      "displayName": "Add Creator Membership",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -144,6 +159,7 @@
     },
     {
       "fieldName": "LastWorkspaceActivityDate",
+      "displayName": "Last Activity",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -152,6 +168,7 @@
     },
     {
       "fieldName": "RootContentFolderId",
+      "displayName": "Content Folder ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "ContentFolder",
@@ -160,6 +177,7 @@
     },
     {
       "fieldName": "NamespacePrefix",
+      "displayName": "Namespace Prefix",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -168,6 +186,7 @@
     },
     {
       "fieldName": "DeveloperName",
+      "displayName": "Unique Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -176,6 +195,7 @@
     },
     {
       "fieldName": "WorkspaceImageId",
+      "displayName": "Asset File ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "ContentAsset",

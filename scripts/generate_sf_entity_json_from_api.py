@@ -263,6 +263,7 @@ def build_field_entry(sf_field):
 
     return {
         "fieldName": field_name,
+        "displayName": sf_field.get("label", ""),
         "dataType": sf_field.get("type", ""),
         "required": required,
         "relatedTo": related_to,
@@ -284,6 +285,7 @@ def build_entity_json(describe_response, existing_json):
 
     return {
         "objectName": object_name,
+        "displayName": describe_response.get("label", ""),
         "objectType": object_type,
         "recordCount": existing_json.get("recordCount", 0) if existing_json else 0,
         "fields": fields,

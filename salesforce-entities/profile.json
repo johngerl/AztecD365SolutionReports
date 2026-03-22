@@ -1,10 +1,12 @@
 {
   "objectName": "Profile",
+  "displayName": "Profile",
   "objectType": "Standard",
   "recordCount": 32,
   "fields": [
     {
       "fieldName": "Id",
+      "displayName": "Profile ID",
       "dataType": "id",
       "required": "No",
       "relatedTo": "None",
@@ -13,6 +15,7 @@
     },
     {
       "fieldName": "Name",
+      "displayName": "Name",
       "dataType": "string",
       "required": "Yes",
       "relatedTo": "None",
@@ -21,6 +24,7 @@
     },
     {
       "fieldName": "PermissionsEmailSingle",
+      "displayName": "Send Email",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -29,6 +33,7 @@
     },
     {
       "fieldName": "PermissionsEmailMass",
+      "displayName": "Mass Email",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -37,6 +42,7 @@
     },
     {
       "fieldName": "PermissionsEditTask",
+      "displayName": "Edit Tasks",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -45,6 +51,7 @@
     },
     {
       "fieldName": "PermissionsEditEvent",
+      "displayName": "Edit Events",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -53,6 +60,7 @@
     },
     {
       "fieldName": "PermissionsExportReport",
+      "displayName": "Export Reports",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -61,6 +69,7 @@
     },
     {
       "fieldName": "PermissionsImportPersonal",
+      "displayName": "Import Personal Contacts",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -69,6 +78,7 @@
     },
     {
       "fieldName": "PermissionsDataExport",
+      "displayName": "Weekly Data Export",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -77,6 +87,7 @@
     },
     {
       "fieldName": "PermissionsManageUsers",
+      "displayName": "Manage Users",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -85,6 +96,7 @@
     },
     {
       "fieldName": "PermissionsEditPublicFilters",
+      "displayName": "Manage Public List Views",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -93,6 +105,7 @@
     },
     {
       "fieldName": "PermissionsEditPublicTemplates",
+      "displayName": "Manage Public Classic Email Templates",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -101,6 +114,7 @@
     },
     {
       "fieldName": "PermissionsModifyAllData",
+      "displayName": "Modify All Data",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -109,6 +123,7 @@
     },
     {
       "fieldName": "PermissionsEditBillingInfo",
+      "displayName": "Manage Billing",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -117,6 +132,7 @@
     },
     {
       "fieldName": "PermissionsManageCases",
+      "displayName": "Manage Cases",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -125,6 +141,7 @@
     },
     {
       "fieldName": "PermissionsMassInlineEdit",
+      "displayName": "Mass Edits from Lists",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -133,6 +150,7 @@
     },
     {
       "fieldName": "PermissionsManageSolutions",
+      "displayName": "Manage Published Solutions",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -141,6 +159,7 @@
     },
     {
       "fieldName": "PermissionsCustomizeApplication",
+      "displayName": "Customize Application",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -149,6 +168,7 @@
     },
     {
       "fieldName": "PermissionsEditReadonlyFields",
+      "displayName": "Edit Read Only Fields",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -157,6 +177,7 @@
     },
     {
       "fieldName": "PermissionsRunReports",
+      "displayName": "Run Reports",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -165,6 +186,7 @@
     },
     {
       "fieldName": "PermissionsViewSetup",
+      "displayName": "View Setup and Configuration",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -173,6 +195,7 @@
     },
     {
       "fieldName": "PermissionsTransferAnyEntity",
+      "displayName": "Transfer Record",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -181,6 +204,7 @@
     },
     {
       "fieldName": "PermissionsNewReportBuilder",
+      "displayName": "Report Builder",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -189,6 +213,7 @@
     },
     {
       "fieldName": "PermissionsActivateContract",
+      "displayName": "Activate Contracts",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -197,6 +222,7 @@
     },
     {
       "fieldName": "PermissionsActivateOrder",
+      "displayName": "Activate Orders",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -205,6 +231,7 @@
     },
     {
       "fieldName": "PermissionsImportLeads",
+      "displayName": "Import Leads",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -213,6 +240,7 @@
     },
     {
       "fieldName": "PermissionsManageLeads",
+      "displayName": "Manage Leads",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -221,6 +249,7 @@
     },
     {
       "fieldName": "PermissionsTransferAnyLead",
+      "displayName": "Transfer Leads",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -229,6 +258,7 @@
     },
     {
       "fieldName": "PermissionsViewAllData",
+      "displayName": "View All Data",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -237,6 +267,7 @@
     },
     {
       "fieldName": "PermissionsEditPublicDocuments",
+      "displayName": "Manage Public Documents",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -245,6 +276,7 @@
     },
     {
       "fieldName": "PermissionsViewEncryptedData",
+      "displayName": "View Encrypted Data",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -253,6 +285,7 @@
     },
     {
       "fieldName": "PermissionsEditBrandTemplates",
+      "displayName": "Manage Letterheads",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -261,6 +294,7 @@
     },
     {
       "fieldName": "PermissionsEditHtmlTemplates",
+      "displayName": "Edit HTML Templates",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -269,6 +303,7 @@
     },
     {
       "fieldName": "PermissionsChatterInternalUser",
+      "displayName": "Chatter Internal User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -277,6 +312,7 @@
     },
     {
       "fieldName": "PermissionsManageEncryptionKeys",
+      "displayName": "Manage Encryption Keys",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -285,6 +321,7 @@
     },
     {
       "fieldName": "PermissionsDeleteActivatedContract",
+      "displayName": "Delete Activated Contracts",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -293,6 +330,7 @@
     },
     {
       "fieldName": "PermissionsChatterInviteExternalUsers",
+      "displayName": "Invite Customers To Chatter",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -301,6 +339,7 @@
     },
     {
       "fieldName": "PermissionsSendSitRequests",
+      "displayName": "Send Stay-in-Touch Requests",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -309,6 +348,7 @@
     },
     {
       "fieldName": "PermissionsOverrideForecasts",
+      "displayName": "Override Forecasts",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -317,6 +357,7 @@
     },
     {
       "fieldName": "PermissionsViewAllForecasts",
+      "displayName": "View All Forecasts",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -325,6 +366,7 @@
     },
     {
       "fieldName": "PermissionsApiUserOnly",
+      "displayName": "API Only User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -333,6 +375,7 @@
     },
     {
       "fieldName": "PermissionsManageRemoteAccess",
+      "displayName": "Manage Connected Apps",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -341,6 +384,7 @@
     },
     {
       "fieldName": "PermissionsCanUseNewDashboardBuilder",
+      "displayName": "Drag-and-Drop Dashboard Builder",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -349,6 +393,7 @@
     },
     {
       "fieldName": "PermissionsManageCategories",
+      "displayName": "Manage Categories",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -357,6 +402,7 @@
     },
     {
       "fieldName": "PermissionsConvertLeads",
+      "displayName": "Convert Leads",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -365,6 +411,7 @@
     },
     {
       "fieldName": "PermissionsPasswordNeverExpires",
+      "displayName": "Password Never Expires",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -373,6 +420,7 @@
     },
     {
       "fieldName": "PermissionsUseTeamReassignWizards",
+      "displayName": "Use Team Reassignment Wizards",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -381,6 +429,7 @@
     },
     {
       "fieldName": "PermissionsEditActivatedOrders",
+      "displayName": "Edit Activated Orders",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -389,6 +438,7 @@
     },
     {
       "fieldName": "PermissionsInstallMultiforce",
+      "displayName": "Download AppExchange Packages",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -397,6 +447,7 @@
     },
     {
       "fieldName": "PermissionsPublishMultiforce",
+      "displayName": "Upload AppExchange Packages",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -405,6 +456,7 @@
     },
     {
       "fieldName": "PermissionsChatterOwnGroups",
+      "displayName": "Create and Own New Chatter Groups",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -413,6 +465,7 @@
     },
     {
       "fieldName": "PermissionsEditOppLineItemUnitPrice",
+      "displayName": "Edit Opportunity Product Sales Price",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -421,6 +474,7 @@
     },
     {
       "fieldName": "PermissionsManageTerritories",
+      "displayName": "Manage Territories",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -429,6 +483,7 @@
     },
     {
       "fieldName": "PermissionsCreateMultiforce",
+      "displayName": "Create AppExchange Packages",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -437,6 +492,7 @@
     },
     {
       "fieldName": "PermissionsBulkApiHardDelete",
+      "displayName": "Bulk API Hard Delete",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -445,6 +501,7 @@
     },
     {
       "fieldName": "PermissionsInboundMigrationToolsUser",
+      "displayName": "Deploy Change Sets",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -453,6 +510,7 @@
     },
     {
       "fieldName": "PermissionsSolutionImport",
+      "displayName": "Import Solutions",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -461,6 +519,7 @@
     },
     {
       "fieldName": "PermissionsManageCallCenters",
+      "displayName": "Manage Call Centers",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -469,6 +528,7 @@
     },
     {
       "fieldName": "PermissionsManageSynonyms",
+      "displayName": "Manage Synonyms",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -477,6 +537,7 @@
     },
     {
       "fieldName": "PermissionsOutboundMigrationToolsUser",
+      "displayName": "Create and Upload Change Sets",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -485,6 +546,7 @@
     },
     {
       "fieldName": "PermissionsViewContent",
+      "displayName": "View Content in Portals",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -493,6 +555,7 @@
     },
     {
       "fieldName": "PermissionsManageEmailClientConfig",
+      "displayName": "Manage Email Client Configurations",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -501,6 +564,7 @@
     },
     {
       "fieldName": "PermissionsEnableNotifications",
+      "displayName": "Send Outbound Messages",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -509,6 +573,7 @@
     },
     {
       "fieldName": "PermissionsManageDataIntegrations",
+      "displayName": "Manage Data Integrations",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -517,6 +582,7 @@
     },
     {
       "fieldName": "PermissionsDistributeFromPersWksp",
+      "displayName": "Create Content Deliveries",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -525,6 +591,7 @@
     },
     {
       "fieldName": "PermissionsViewDataCategories",
+      "displayName": "View Data Categories in Setup",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -533,6 +600,7 @@
     },
     {
       "fieldName": "PermissionsManageDataCategories",
+      "displayName": "Manage Data Categories",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -541,6 +609,7 @@
     },
     {
       "fieldName": "PermissionsAuthorApex",
+      "displayName": "Author Apex",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -549,6 +618,7 @@
     },
     {
       "fieldName": "PermissionsManageMobile",
+      "displayName": "Manage Mobile Configurations",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -557,6 +627,7 @@
     },
     {
       "fieldName": "PermissionsApiEnabled",
+      "displayName": "API Enabled",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -565,6 +636,7 @@
     },
     {
       "fieldName": "PermissionsManageCustomReportTypes",
+      "displayName": "Manage Custom Report Types",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -573,6 +645,7 @@
     },
     {
       "fieldName": "PermissionsEditCaseComments",
+      "displayName": "Edit Case Comments",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -581,6 +654,7 @@
     },
     {
       "fieldName": "PermissionsTransferAnyCase",
+      "displayName": "Transfer Cases",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -589,6 +663,7 @@
     },
     {
       "fieldName": "PermissionsContentAdministrator",
+      "displayName": "Manage Salesforce CRM Content",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -597,6 +672,7 @@
     },
     {
       "fieldName": "PermissionsCreateWorkspaces",
+      "displayName": "Create Libraries",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -605,6 +681,7 @@
     },
     {
       "fieldName": "PermissionsManageContentPermissions",
+      "displayName": "Manage Content Permissions",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -613,6 +690,7 @@
     },
     {
       "fieldName": "PermissionsManageContentProperties",
+      "displayName": "Manage Content Properties",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -621,6 +699,7 @@
     },
     {
       "fieldName": "PermissionsManageContentTypes",
+      "displayName": "Manage record types and layouts for Files",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -629,6 +708,7 @@
     },
     {
       "fieldName": "PermissionsScheduleJob",
+      "displayName": "Schedule Dashboards",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -637,6 +717,7 @@
     },
     {
       "fieldName": "PermissionsManageExchangeConfig",
+      "displayName": "Manage Lightning Sync",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -645,6 +726,7 @@
     },
     {
       "fieldName": "PermissionsManageAnalyticSnapshots",
+      "displayName": "Manage Reporting Snapshots",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -653,6 +735,7 @@
     },
     {
       "fieldName": "PermissionsScheduleReports",
+      "displayName": "Schedule Reports",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -661,6 +744,7 @@
     },
     {
       "fieldName": "PermissionsManageBusinessHourHolidays",
+      "displayName": "Manage Business Hours Holidays",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -669,6 +753,7 @@
     },
     {
       "fieldName": "PermissionsManageEntitlements",
+      "displayName": "Manage Entitlements",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -677,6 +762,7 @@
     },
     {
       "fieldName": "PermissionsManageDynamicDashboards",
+      "displayName": "Manage Dynamic Dashboards",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -685,6 +771,7 @@
     },
     {
       "fieldName": "PermissionsCustomSidebarOnAllPages",
+      "displayName": "Show Custom Sidebar On All Pages",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -693,6 +780,7 @@
     },
     {
       "fieldName": "PermissionsManageInteraction",
+      "displayName": "Manage Flow",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -701,6 +789,7 @@
     },
     {
       "fieldName": "PermissionsViewMyTeamsDashboards",
+      "displayName": "View My Team's Dashboards",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -709,6 +798,7 @@
     },
     {
       "fieldName": "PermissionsModerateChatter",
+      "displayName": "Moderate Chatter",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -717,6 +807,7 @@
     },
     {
       "fieldName": "PermissionsResetPasswords",
+      "displayName": "Reset User Passwords and Unlock Users",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -725,6 +816,7 @@
     },
     {
       "fieldName": "PermissionsFlowUFLRequired",
+      "displayName": "Require Flow User Feature License",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -733,6 +825,7 @@
     },
     {
       "fieldName": "PermissionsCanInsertFeedSystemFields",
+      "displayName": "Insert System Field Values for Chatter Feeds",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -741,6 +834,7 @@
     },
     {
       "fieldName": "PermissionsActivitiesAccess",
+      "displayName": "Access Activities",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -749,6 +843,7 @@
     },
     {
       "fieldName": "PermissionsEmailTemplateManagement",
+      "displayName": "Manage Email Templates",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -757,6 +852,7 @@
     },
     {
       "fieldName": "PermissionsEmailAdministration",
+      "displayName": "Email Administration",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -765,6 +861,7 @@
     },
     {
       "fieldName": "PermissionsManageChatterMessages",
+      "displayName": "Manage Chatter Messages and Direct Messages",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -773,6 +870,7 @@
     },
     {
       "fieldName": "PermissionsAllowEmailIC",
+      "displayName": "Email-Based Identity Verification Option",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -781,6 +879,7 @@
     },
     {
       "fieldName": "PermissionsChatterFileLink",
+      "displayName": "Create Public Links",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -789,6 +888,7 @@
     },
     {
       "fieldName": "PermissionsForceTwoFactor",
+      "displayName": "Multi-Factor Authentication for User Interface Logins",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -797,6 +897,7 @@
     },
     {
       "fieldName": "PermissionsViewEventLogFiles",
+      "displayName": "View Event Log Files",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -805,6 +906,7 @@
     },
     {
       "fieldName": "PermissionsManageNetworks",
+      "displayName": "Create and Set Up Experiences",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -813,6 +915,7 @@
     },
     {
       "fieldName": "PermissionsViewCaseInteraction",
+      "displayName": "Use Case Feed",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -821,6 +924,7 @@
     },
     {
       "fieldName": "PermissionsManageAuthProviders",
+      "displayName": "Manage Auth. Providers",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -829,6 +933,7 @@
     },
     {
       "fieldName": "PermissionsRunFlow",
+      "displayName": "Run Flows",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -837,6 +942,7 @@
     },
     {
       "fieldName": "PermissionsManageQuotas",
+      "displayName": "Manage Quotas",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -845,6 +951,7 @@
     },
     {
       "fieldName": "PermissionsCreateCustomizeDashboards",
+      "displayName": "Create and Customize Dashboards",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -853,6 +960,7 @@
     },
     {
       "fieldName": "PermissionsCreateDashboardFolders",
+      "displayName": "Create Dashboard Folders",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -861,6 +969,7 @@
     },
     {
       "fieldName": "PermissionsViewPublicDashboards",
+      "displayName": "View Dashboards in Public Folders",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -869,6 +978,7 @@
     },
     {
       "fieldName": "PermissionsManageDashbdsInPubFolders",
+      "displayName": "Manage Dashboards in Public Folders",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -877,6 +987,7 @@
     },
     {
       "fieldName": "PermissionsCreateCustomizeReports",
+      "displayName": "Create and Customize Reports",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -885,6 +996,7 @@
     },
     {
       "fieldName": "PermissionsCreateReportFolders",
+      "displayName": "Create Report Folders",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -893,6 +1005,7 @@
     },
     {
       "fieldName": "PermissionsViewPublicReports",
+      "displayName": "View Reports in Public Folders",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -901,6 +1014,7 @@
     },
     {
       "fieldName": "PermissionsManageReportsInPubFolders",
+      "displayName": "Manage Reports in Public Folders",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -909,6 +1023,7 @@
     },
     {
       "fieldName": "PermissionsEditMyDashboards",
+      "displayName": "Edit My Dashboards",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -917,6 +1032,7 @@
     },
     {
       "fieldName": "PermissionsEditMyReports",
+      "displayName": "Edit My Reports",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -925,6 +1041,7 @@
     },
     {
       "fieldName": "PermissionsViewAllUsers",
+      "displayName": "View All Users",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -933,6 +1050,7 @@
     },
     {
       "fieldName": "PermissionsConnectOrgToEnvironmentHub",
+      "displayName": "Connect Organization to Environment Hub",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -941,6 +1059,7 @@
     },
     {
       "fieldName": "PermissionsCreateCustomizeFilters",
+      "displayName": "Create and Customize List Views",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -949,6 +1068,7 @@
     },
     {
       "fieldName": "PermissionsContentHubUser",
+      "displayName": "Files Connect Cloud",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -957,6 +1077,7 @@
     },
     {
       "fieldName": "PermissionsGovernNetworks",
+      "displayName": "Manage Experiences",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -965,6 +1086,7 @@
     },
     {
       "fieldName": "PermissionsSalesConsole",
+      "displayName": "Sales Console",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -973,6 +1095,7 @@
     },
     {
       "fieldName": "PermissionsTwoFactorApi",
+      "displayName": "Multi-Factor Authentication for API Logins",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -981,6 +1104,7 @@
     },
     {
       "fieldName": "PermissionsDeleteTopics",
+      "displayName": "Delete Topics",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -989,6 +1113,7 @@
     },
     {
       "fieldName": "PermissionsEditTopics",
+      "displayName": "Edit Topics",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -997,6 +1122,7 @@
     },
     {
       "fieldName": "PermissionsCreateTopics",
+      "displayName": "Create Topics",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1005,6 +1131,7 @@
     },
     {
       "fieldName": "PermissionsAssignTopics",
+      "displayName": "Assign Topics",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1013,6 +1140,7 @@
     },
     {
       "fieldName": "PermissionsIdentityEnabled",
+      "displayName": "Use Identity Features",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1021,6 +1149,7 @@
     },
     {
       "fieldName": "PermissionsIdentityConnect",
+      "displayName": "Use Identity Connect",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1029,6 +1158,7 @@
     },
     {
       "fieldName": "PermissionsContentWorkspaces",
+      "displayName": "Access Libraries",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1037,6 +1167,7 @@
     },
     {
       "fieldName": "PermissionsCreateWorkBadgeDefinition",
+      "displayName": "Create custom Badge Definitions",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1045,6 +1176,7 @@
     },
     {
       "fieldName": "PermissionsCustomMobileAppsAccess",
+      "displayName": "Access Custom Mobile Apps",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1053,6 +1185,7 @@
     },
     {
       "fieldName": "PermissionsViewHelpLink",
+      "displayName": "View Help Link",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1061,6 +1194,7 @@
     },
     {
       "fieldName": "PermissionsManageProfilesPermissionsets",
+      "displayName": "Manage Profiles and Permission Sets",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1069,6 +1203,7 @@
     },
     {
       "fieldName": "PermissionsAssignPermissionSets",
+      "displayName": "Assign Permission Sets",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1077,6 +1212,7 @@
     },
     {
       "fieldName": "PermissionsManageRoles",
+      "displayName": "Manage Roles",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1085,6 +1221,7 @@
     },
     {
       "fieldName": "PermissionsManageIpAddresses",
+      "displayName": "Manage IP Addresses",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1093,6 +1230,7 @@
     },
     {
       "fieldName": "PermissionsManageSharing",
+      "displayName": "Manage Sharing",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1101,6 +1239,7 @@
     },
     {
       "fieldName": "PermissionsManageInternalUsers",
+      "displayName": "Manage Internal Users",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1109,6 +1248,7 @@
     },
     {
       "fieldName": "PermissionsManagePasswordPolicies",
+      "displayName": "Manage Password Policies",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1117,6 +1257,7 @@
     },
     {
       "fieldName": "PermissionsManageLoginAccessPolicies",
+      "displayName": "Manage Login Access Policies",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1125,6 +1266,7 @@
     },
     {
       "fieldName": "PermissionsViewPlatformEvents",
+      "displayName": "View Login Forensics Events",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1133,6 +1275,7 @@
     },
     {
       "fieldName": "PermissionsManageCustomPermissions",
+      "displayName": "Manage Custom Permissions",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1141,6 +1284,7 @@
     },
     {
       "fieldName": "PermissionsCanVerifyComment",
+      "displayName": "Verify Answers to Chatter Questions",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1149,6 +1293,7 @@
     },
     {
       "fieldName": "PermissionsManageUnlistedGroups",
+      "displayName": "Manage Unlisted Groups",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1157,6 +1302,7 @@
     },
     {
       "fieldName": "PermissionsStdAutomaticActivityCapture",
+      "displayName": "Use Einstein Activity Capture Standard",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1165,6 +1311,7 @@
     },
     {
       "fieldName": "PermissionsFreezeUsers",
+      "displayName": "Freeze Users",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1173,6 +1320,7 @@
     },
     {
       "fieldName": "PermissionsInsightsAppDashboardEditor",
+      "displayName": "Create and Edit CRM Analytics Dashboards",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1181,6 +1329,7 @@
     },
     {
       "fieldName": "PermissionsManageTwoFactor",
+      "displayName": "Manage MFA in API",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1189,6 +1338,7 @@
     },
     {
       "fieldName": "PermissionsInsightsAppUser",
+      "displayName": "Use CRM Analytics",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1197,6 +1347,7 @@
     },
     {
       "fieldName": "PermissionsInsightsAppAdmin",
+      "displayName": "Manage CRM Analytics",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1205,6 +1356,7 @@
     },
     {
       "fieldName": "PermissionsInsightsAppEltEditor",
+      "displayName": "Edit CRM Analytics Dataflows",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1213,6 +1365,7 @@
     },
     {
       "fieldName": "PermissionsInsightsAppUploadUser",
+      "displayName": "Upload External Data to CRM Analytics",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1221,6 +1374,7 @@
     },
     {
       "fieldName": "PermissionsInsightsCreateApplication",
+      "displayName": "Create CRM Analytics Apps",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1229,6 +1383,7 @@
     },
     {
       "fieldName": "PermissionsLightningExperienceUser",
+      "displayName": "Lightning Experience User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1237,6 +1392,7 @@
     },
     {
       "fieldName": "PermissionsViewDataLeakageEvents",
+      "displayName": "View Real-Time Event Monitoring Data",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1245,6 +1401,7 @@
     },
     {
       "fieldName": "PermissionsConfigCustomRecs",
+      "displayName": "Configure Custom Recommendations",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1253,6 +1410,7 @@
     },
     {
       "fieldName": "PermissionsSubmitMacrosAllowed",
+      "displayName": "Manage Macros Users Can't Undo",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1261,6 +1419,7 @@
     },
     {
       "fieldName": "PermissionsBulkMacrosAllowed",
+      "displayName": "Run Macros on Multiple Records",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1269,6 +1428,7 @@
     },
     {
       "fieldName": "PermissionsManageSessionPermissionSets",
+      "displayName": "Manage Session Permission Set Activations",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1277,6 +1437,7 @@
     },
     {
       "fieldName": "PermissionsManageTemplatedApp",
+      "displayName": "Manage CRM Analytics Templated Apps",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1285,6 +1446,7 @@
     },
     {
       "fieldName": "PermissionsUseTemplatedApp",
+      "displayName": "Use CRM Analytics Templated Apps",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1293,6 +1455,7 @@
     },
     {
       "fieldName": "PermissionsSendAnnouncementEmails",
+      "displayName": "Send announcement emails",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1301,6 +1464,7 @@
     },
     {
       "fieldName": "PermissionsChatterEditOwnPost",
+      "displayName": "Edit My Own Posts",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1309,6 +1473,7 @@
     },
     {
       "fieldName": "PermissionsChatterEditOwnRecordPost",
+      "displayName": "Edit Posts on Records I Own",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1317,6 +1482,7 @@
     },
     {
       "fieldName": "PermissionsAdminAnalyticsUser",
+      "displayName": "Access Event Monitoring Analytics Templates and Apps",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1325,6 +1491,7 @@
     },
     {
       "fieldName": "PermissionsCreateAuditFields",
+      "displayName": "Set Audit Fields upon Record Creation",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1333,6 +1500,7 @@
     },
     {
       "fieldName": "PermissionsUpdateWithInactiveOwner",
+      "displayName": "Update Records with Inactive Owners",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1341,6 +1509,7 @@
     },
     {
       "fieldName": "PermissionsWaveTabularDownload",
+      "displayName": "Download CRM Analytics Data",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1349,6 +1518,7 @@
     },
     {
       "fieldName": "PermissionsWaveCommunityUser",
+      "displayName": "View CRM Analytics on Experience Cloud site pages.",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1357,6 +1527,7 @@
     },
     {
       "fieldName": "PermissionsManageSandboxes",
+      "displayName": "Manage Sandboxes",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1365,6 +1536,7 @@
     },
     {
       "fieldName": "PermissionsAutomaticActivityCapture",
+      "displayName": "Use Einstein Activity Capture",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1373,6 +1545,7 @@
     },
     {
       "fieldName": "PermissionsImportCustomObjects",
+      "displayName": "Import Custom Objects",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1381,6 +1554,7 @@
     },
     {
       "fieldName": "PermissionsSalesforceIQInbox",
+      "displayName": "Use Inbox",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1389,6 +1563,7 @@
     },
     {
       "fieldName": "PermissionsDelegatedTwoFactor",
+      "displayName": "Manage MFA in User Interface",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1397,6 +1572,7 @@
     },
     {
       "fieldName": "PermissionsChatterComposeUiCodesnippet",
+      "displayName": "Allow Inclusion of Code Snippets from UI",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1405,6 +1581,7 @@
     },
     {
       "fieldName": "PermissionsSelectFilesFromSalesforce",
+      "displayName": "Select Files from Salesforce",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1413,6 +1590,7 @@
     },
     {
       "fieldName": "PermissionsModerateNetworkUsers",
+      "displayName": "Moderate Experience Cloud Site Users",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1421,6 +1599,7 @@
     },
     {
       "fieldName": "PermissionsMergeTopics",
+      "displayName": "Merge Topics",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1429,6 +1608,7 @@
     },
     {
       "fieldName": "PermissionsSubscribeToLightningReports",
+      "displayName": "Subscribe to Reports",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1437,6 +1617,7 @@
     },
     {
       "fieldName": "PermissionsManagePvtRptsAndDashbds",
+      "displayName": "Manage All Private Reports and Dashboards",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1445,6 +1626,7 @@
     },
     {
       "fieldName": "PermissionsAllowLightningLogin",
+      "displayName": "Lightning Login User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1453,6 +1635,7 @@
     },
     {
       "fieldName": "PermissionsCampaignInfluence2",
+      "displayName": "Campaign Influence",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1461,6 +1644,7 @@
     },
     {
       "fieldName": "PermissionsViewDataAssessment",
+      "displayName": "Access to view Data Assessment",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1469,6 +1653,7 @@
     },
     {
       "fieldName": "PermissionsRemoveDirectMessageMembers",
+      "displayName": "Remove People from Direct Messages",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1477,6 +1662,7 @@
     },
     {
       "fieldName": "PermissionsCanApproveFeedPost",
+      "displayName": "Can Approve Feed Post and Comment",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1485,6 +1671,7 @@
     },
     {
       "fieldName": "PermissionsAddDirectMessageMembers",
+      "displayName": "Add People to Direct Messages",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1493,6 +1680,7 @@
     },
     {
       "fieldName": "PermissionsAllowViewEditConvertedLeads",
+      "displayName": "View and Edit Converted Leads",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1501,6 +1689,7 @@
     },
     {
       "fieldName": "PermissionsShowCompanyNameAsUserBadge",
+      "displayName": "Show Company Name as Site Role",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1509,6 +1698,7 @@
     },
     {
       "fieldName": "PermissionsAccessCMC",
+      "displayName": "Access Experience Management",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1517,6 +1707,7 @@
     },
     {
       "fieldName": "PermissionsViewHealthCheck",
+      "displayName": "View Health Check",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1525,6 +1716,7 @@
     },
     {
       "fieldName": "PermissionsManageHealthCheck",
+      "displayName": "Manage Health Check",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1533,6 +1725,7 @@
     },
     {
       "fieldName": "PermissionsPackaging2",
+      "displayName": "Create and Update Second-Generation Packages",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1541,6 +1734,7 @@
     },
     {
       "fieldName": "PermissionsManageCertificates",
+      "displayName": "Manage Certificates",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1549,6 +1743,7 @@
     },
     {
       "fieldName": "PermissionsCreateReportInLightning",
+      "displayName": "Report Builder (Lightning Experience)",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1557,6 +1752,7 @@
     },
     {
       "fieldName": "PermissionsPreventClassicExperience",
+      "displayName": "Hide Option to Switch to Salesforce Classic",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1565,6 +1761,7 @@
     },
     {
       "fieldName": "PermissionsHideReadByList",
+      "displayName": "Hide the Seen By List",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1573,6 +1770,7 @@
     },
     {
       "fieldName": "PermissionsListEmailSend",
+      "displayName": "Allow sending of List Emails",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1581,6 +1779,7 @@
     },
     {
       "fieldName": "PermissionsFeedPinning",
+      "displayName": "Pin Posts in Feeds",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1589,6 +1788,7 @@
     },
     {
       "fieldName": "PermissionsChangeDashboardColors",
+      "displayName": "Change Dashboard Colors",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1597,6 +1797,7 @@
     },
     {
       "fieldName": "PermissionsManageRecommendationStrategies",
+      "displayName": "Manage Next Best Action Strategies",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1605,6 +1806,7 @@
     },
     {
       "fieldName": "PermissionsManagePropositions",
+      "displayName": "Manage Next Best Action Recommendations",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1613,6 +1815,7 @@
     },
     {
       "fieldName": "PermissionsPipelineInspectorUser",
+      "displayName": "Pipeline Inspection User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1621,6 +1824,7 @@
     },
     {
       "fieldName": "PermissionsCloseConversations",
+      "displayName": "Close Conversation Threads",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1629,6 +1833,7 @@
     },
     {
       "fieldName": "PermissionsSubscribeReportRolesGrps",
+      "displayName": "Subscribe to Reports: Send to Groups and Roles",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1637,6 +1842,7 @@
     },
     {
       "fieldName": "PermissionsSubscribeDashboardRolesGrps",
+      "displayName": "Subscribe to Dashboards: Send to Groups and Roles",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1645,6 +1851,7 @@
     },
     {
       "fieldName": "PermissionsUseWebLink",
+      "displayName": "Allow Access to Customized Actions",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1653,6 +1860,7 @@
     },
     {
       "fieldName": "PermissionsHasUnlimitedNBAExecutions",
+      "displayName": "User Has Unlimited Next Best Action Strategy Executions",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1661,6 +1869,7 @@
     },
     {
       "fieldName": "PermissionsViewOnlyEmbeddedAppUser",
+      "displayName": "Access to View-Only Licensed Templates and Apps",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1669,6 +1878,7 @@
     },
     {
       "fieldName": "PermissionsViewAllActivities",
+      "displayName": "View All Activities",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1677,6 +1887,7 @@
     },
     {
       "fieldName": "PermissionsSubscribeReportToOtherUsers",
+      "displayName": "Subscribe to Reports: Add Recipients",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1685,6 +1896,7 @@
     },
     {
       "fieldName": "PermissionsLightningConsoleAllowedForUser",
+      "displayName": "Lightning Console User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1693,6 +1905,7 @@
     },
     {
       "fieldName": "PermissionsSubscribeReportsRunAsUser",
+      "displayName": "Subscribe to Reports: Set Running User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1701,6 +1914,7 @@
     },
     {
       "fieldName": "PermissionsSubscribeToLightningDashboards",
+      "displayName": "Subscribe to Dashboards",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1709,6 +1923,7 @@
     },
     {
       "fieldName": "PermissionsSubscribeDashboardToOtherUsers",
+      "displayName": "Subscribe to Dashboards: Add Recipients",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1717,6 +1932,7 @@
     },
     {
       "fieldName": "PermissionsCreateLtngTempInPub",
+      "displayName": "Manage Public Lightning Email Templates",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1725,6 +1941,7 @@
     },
     {
       "fieldName": "PermissionsTransactionalEmailSend",
+      "displayName": "Send Non-Commercial Email",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1733,6 +1950,7 @@
     },
     {
       "fieldName": "PermissionsViewPrivateStaticResources",
+      "displayName": "View Private Static Resources",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1741,6 +1959,7 @@
     },
     {
       "fieldName": "PermissionsCreateLtngTempFolder",
+      "displayName": "Create Folders for Lightning Email Templates",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1749,6 +1968,7 @@
     },
     {
       "fieldName": "PermissionsApexRestServices",
+      "displayName": "Apex REST Services",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1757,6 +1977,7 @@
     },
     {
       "fieldName": "PermissionsGiveRecognitionBadge",
+      "displayName": "Give Recognition Badges in Experience Builder Sites",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1765,6 +1986,7 @@
     },
     {
       "fieldName": "PermissionsSalesforceIQInternal",
+      "displayName": "Allows the Cloud Integration User to perform SalesforceIQ internal operations",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1773,6 +1995,7 @@
     },
     {
       "fieldName": "PermissionsUseMySearch",
+      "displayName": "Einstein Search",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1781,6 +2004,7 @@
     },
     {
       "fieldName": "PermissionsLtngPromoReserved01UserPerm",
+      "displayName": "Remain in Salesforce Classic",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1789,6 +2013,7 @@
     },
     {
       "fieldName": "PermissionsManageSubscriptions",
+      "displayName": "Manage CRM Analytics Subscriptions",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1797,6 +2022,7 @@
     },
     {
       "fieldName": "PermissionsWaveManagePrivateAssetsUser",
+      "displayName": "Manage CRM Analytics Private Assets",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1805,6 +2031,7 @@
     },
     {
       "fieldName": "PermissionsCanEditDataPrepRecipe",
+      "displayName": "Edit Dataset Recipes",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1813,6 +2040,7 @@
     },
     {
       "fieldName": "PermissionsAddAnalyticsRemoteConnections",
+      "displayName": "Add CRM Analytics Remote Connections",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1821,6 +2049,7 @@
     },
     {
       "fieldName": "PermissionsManageSurveys",
+      "displayName": "Manage Surveys",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1829,6 +2058,7 @@
     },
     {
       "fieldName": "PermissionsUseAssistantDialog",
+      "displayName": "Instant Actionable Results",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1837,6 +2067,7 @@
     },
     {
       "fieldName": "PermissionsUseQuerySuggestions",
+      "displayName": "Natural Language Search",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1845,6 +2076,7 @@
     },
     {
       "fieldName": "PermissionsRecordVisibilityAPI",
+      "displayName": "Enable RecordVisibility API",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1853,6 +2085,7 @@
     },
     {
       "fieldName": "PermissionsViewRoles",
+      "displayName": "View Roles and Role Hierarchy",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1861,6 +2094,7 @@
     },
     {
       "fieldName": "PermissionsCanManageMaps",
+      "displayName": "Manage CRM Analytics Custom Maps",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1869,6 +2103,7 @@
     },
     {
       "fieldName": "PermissionsLMOutboundMessagingUserPerm",
+      "displayName": "Agent Initiated Outbound Messaging",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1877,6 +2112,7 @@
     },
     {
       "fieldName": "PermissionsModifyDataClassification",
+      "displayName": "Modify Data Classification",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1885,6 +2121,7 @@
     },
     {
       "fieldName": "PermissionsPrivacyDataAccess",
+      "displayName": "Allow user to access privacy data",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1893,6 +2130,7 @@
     },
     {
       "fieldName": "PermissionsQueryAllFiles",
+      "displayName": "Query All Files",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1901,6 +2139,7 @@
     },
     {
       "fieldName": "PermissionsModifyMetadata",
+      "displayName": "Modify Metadata Through Metadata API Functions",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1909,6 +2148,7 @@
     },
     {
       "fieldName": "PermissionsManageCMS",
+      "displayName": "Create CMS Workspaces and Channels",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1917,6 +2157,7 @@
     },
     {
       "fieldName": "PermissionsSandboxTestingInCommunityApp",
+      "displayName": "Test Sandboxes in Mobile Publisher for Experience Cloud",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1925,6 +2166,7 @@
     },
     {
       "fieldName": "PermissionsCanEditPrompts",
+      "displayName": "Design and Deliver In-App Guidance",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1933,6 +2175,7 @@
     },
     {
       "fieldName": "PermissionsViewUserPII",
+      "displayName": "View Concealed Field Data",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1941,6 +2184,7 @@
     },
     {
       "fieldName": "PermissionsManageHubConnections",
+      "displayName": "Connect Org to Customer 360 Data Manager",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1949,6 +2193,7 @@
     },
     {
       "fieldName": "PermissionsB2BMarketingAnalyticsUser",
+      "displayName": "Create B2B Marketing Analytics Apps",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1957,6 +2202,7 @@
     },
     {
       "fieldName": "PermissionsTraceXdsQueries",
+      "displayName": "Access Tracer for External Data Sources",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1965,6 +2211,7 @@
     },
     {
       "fieldName": "PermissionsViewAllCustomSettings",
+      "displayName": "View All Custom Settings",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1973,6 +2220,7 @@
     },
     {
       "fieldName": "PermissionsViewAllForeignKeyNames",
+      "displayName": "View All Lookup Record Names",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1981,6 +2229,7 @@
     },
     {
       "fieldName": "PermissionsAddWaveNotificationRecipients",
+      "displayName": "Add Recipients to CRM Analytics Notifications",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1989,6 +2238,7 @@
     },
     {
       "fieldName": "PermissionsHeadlessCMSAccess",
+      "displayName": "Enable Salesforce CMS Integration",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -1997,6 +2247,7 @@
     },
     {
       "fieldName": "PermissionsLMEndMessagingSessionUserPerm",
+      "displayName": "End Messaging Session",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2005,6 +2256,7 @@
     },
     {
       "fieldName": "PermissionsConsentApiUpdate",
+      "displayName": "Update Consent Preferences Using REST API",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2013,6 +2265,7 @@
     },
     {
       "fieldName": "PermissionsAccessContentBuilder",
+      "displayName": "Access drag-and-drop content builder",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2021,6 +2274,7 @@
     },
     {
       "fieldName": "PermissionsEmployeeExperience",
+      "displayName": "Access Employee Experience",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2029,6 +2283,7 @@
     },
     {
       "fieldName": "PermissionsViewAnomalyEvents",
+      "displayName": "View Threat Detection Events",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2037,6 +2292,7 @@
     },
     {
       "fieldName": "PermissionsManageC360AConnections",
+      "displayName": "Connect Org to Data Cloud",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2045,6 +2301,7 @@
     },
     {
       "fieldName": "PermissionsManageReleaseUpdates",
+      "displayName": "Manage Release Updates",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2053,6 +2310,7 @@
     },
     {
       "fieldName": "PermissionsViewAllProfiles",
+      "displayName": "View All Profiles",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2061,6 +2319,7 @@
     },
     {
       "fieldName": "PermissionsSkipIdentityConfirmation",
+      "displayName": "Skip Device Activation at Login",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2069,6 +2328,7 @@
     },
     {
       "fieldName": "PermissionsSendCustomNotifications",
+      "displayName": "Send Custom Notifications",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2077,6 +2337,7 @@
     },
     {
       "fieldName": "PermissionsPackaging2Delete",
+      "displayName": "Delete Second-Generation Packages",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2085,6 +2346,7 @@
     },
     {
       "fieldName": "PermissionsCallCoachingUser",
+      "displayName": "Use Conversation Insights for Sales",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2093,6 +2355,7 @@
     },
     {
       "fieldName": "PermissionsViewRestrictionAndScopingRules",
+      "displayName": "View Restriction and Scoping Rules",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2101,6 +2364,7 @@
     },
     {
       "fieldName": "PermissionsDecisionTableExecUserAccess",
+      "displayName": "Run Decision Tables",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2109,6 +2373,7 @@
     },
     {
       "fieldName": "PermissionsManageTrustMeasures",
+      "displayName": "Manage Trust Measures",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2117,6 +2382,7 @@
     },
     {
       "fieldName": "PermissionsViewTrustMeasures",
+      "displayName": "View Trust Measures",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2125,6 +2391,7 @@
     },
     {
       "fieldName": "PermissionsVideoConferenceZoomUser",
+      "displayName": "Use Video Conferencing with Zoom",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2133,6 +2400,7 @@
     },
     {
       "fieldName": "PermissionsServiceECIUser",
+      "displayName": "Use Conversation Insights for Service",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2141,6 +2409,7 @@
     },
     {
       "fieldName": "PermissionsIsotopeCToCUser",
+      "displayName": "Salesforce Anywhere Integration Access",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2149,6 +2418,7 @@
     },
     {
       "fieldName": "PermissionsUseSvcCatalog",
+      "displayName": "Use Service Catalog",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2157,6 +2427,7 @@
     },
     {
       "fieldName": "PermissionsManageSvcCatalog",
+      "displayName": "Manage Service Catalog",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2165,6 +2436,7 @@
     },
     {
       "fieldName": "PermissionsHasUnlimitedErbScoringRequests",
+      "displayName": "User Has Unlimited Erb Model Scoring",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2173,6 +2445,7 @@
     },
     {
       "fieldName": "PermissionsFSCAlertFrameworkUserAccess",
+      "displayName": "Access Record Alerts",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2181,6 +2454,7 @@
     },
     {
       "fieldName": "PermissionsIsotopeAccess",
+      "displayName": "Salesforce Anywhere on Mobile",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2189,6 +2463,7 @@
     },
     {
       "fieldName": "PermissionsIsotopeLEX",
+      "displayName": "Salesforce Anywhere in Lightning Experience",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2197,6 +2472,7 @@
     },
     {
       "fieldName": "PermissionsExplainabilityUserAccess",
+      "displayName": "Provides internal Org users with access to Decision Explainer features and APIs.",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2205,6 +2481,7 @@
     },
     {
       "fieldName": "PermissionsExplainabilityCmtyAccess",
+      "displayName": "Provides site users with access to Decision Explainers features and APIs.",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2213,6 +2490,7 @@
     },
     {
       "fieldName": "PermissionsQuipMetricsAccess",
+      "displayName": "Quip Metrics",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2221,6 +2499,7 @@
     },
     {
       "fieldName": "PermissionsQuipUserEngagementMetrics",
+      "displayName": "Quip User Engagement Metrics",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2229,6 +2508,7 @@
     },
     {
       "fieldName": "PermissionsIdentityVerificationUserAccess",
+      "displayName": "Permission to access Identity Verification",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2237,6 +2517,7 @@
     },
     {
       "fieldName": "PermissionsServiceExcellencePlatformUser",
+      "displayName": "Service Excellence Platform User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2245,6 +2526,7 @@
     },
     {
       "fieldName": "PermissionsTransactionSecurityExempt",
+      "displayName": "Exempt from Transaction Security",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2253,6 +2535,7 @@
     },
     {
       "fieldName": "PermissionsInteractionCalcUserPerm",
+      "displayName": "Grant users access to Industries Interaction Calculation features.",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2261,6 +2544,7 @@
     },
     {
       "fieldName": "PermissionsInteractionCalcAdminPerm",
+      "displayName": "Grant administrators access to Industries Interaction Calculation features.",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2269,6 +2553,7 @@
     },
     {
       "fieldName": "PermissionsManageExternalConnections",
+      "displayName": "Allow user to modify Private Connections",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2277,6 +2562,7 @@
     },
     {
       "fieldName": "PermissionsManageUserAccessPolicies",
+      "displayName": "Manage User Access Policies",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2285,6 +2571,7 @@
     },
     {
       "fieldName": "PermissionsUseSubscriptionEmails",
+      "displayName": "Subscribe to CRM Analytics Assets",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2293,6 +2580,7 @@
     },
     {
       "fieldName": "PermissionsAIViewInsightObjects",
+      "displayName": "View AI Insight Objects",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2301,6 +2589,7 @@
     },
     {
       "fieldName": "PermissionsAICreateInsightObjects",
+      "displayName": "Create AI Insight Objects",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2309,6 +2598,7 @@
     },
     {
       "fieldName": "PermissionsViewMLModels",
+      "displayName": "Allow users to view MLModels and related Entities",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2317,6 +2607,7 @@
     },
     {
       "fieldName": "PermissionsEnablementUser",
+      "displayName": "Take Enablement Programs",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2325,6 +2616,7 @@
     },
     {
       "fieldName": "PermissionsNativeWebviewScrolling",
+      "displayName": "Salesforce Mobile App: Native scrolling on webviews",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2333,6 +2625,7 @@
     },
     {
       "fieldName": "PermissionsViewDeveloperName",
+      "displayName": "View Developer Name",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2341,6 +2634,7 @@
     },
     {
       "fieldName": "PermissionsBypassMFAForUiLogins",
+      "displayName": "Waive Multi-Factor Authentication for Exempt Users",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2349,6 +2643,7 @@
     },
     {
       "fieldName": "PermissionsClientSecretRotation",
+      "displayName": "Allow consumer key and secret rotation",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2357,6 +2652,7 @@
     },
     {
       "fieldName": "PermissionsEventLogReadAccess",
+      "displayName": "View Event Log Object Data",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2365,6 +2661,7 @@
     },
     {
       "fieldName": "PermissionsUpdateReportTypeReferences",
+      "displayName": "Update Report Type References in Semantic Search",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2373,6 +2670,7 @@
     },
     {
       "fieldName": "PermissionsAccessToServiceProcess",
+      "displayName": "Service Process User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2381,6 +2679,7 @@
     },
     {
       "fieldName": "PermissionsManageOrchInstsAndWorkItems",
+      "displayName": "Manage Orchestration Runs and Work Items",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2389,6 +2688,7 @@
     },
     {
       "fieldName": "PermissionsCMSECEAuthoringAccess",
+      "displayName": "Migrate Enablement Content",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2397,6 +2697,7 @@
     },
     {
       "fieldName": "PermissionsEnablementAdmin",
+      "displayName": "Design and Deliver Enablement Programs",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2405,6 +2706,7 @@
     },
     {
       "fieldName": "PermissionsVideoConferenceTeamsUser",
+      "displayName": "Use Video Conferencing with Teams",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2413,6 +2715,7 @@
     },
     {
       "fieldName": "PermissionsManageDataspaceScope",
+      "displayName": "Manage Dataspace Scope",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2421,6 +2724,7 @@
     },
     {
       "fieldName": "PermissionsConfigureDataspaceScope",
+      "displayName": "Configure Dataspace Scope",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2429,6 +2733,7 @@
     },
     {
       "fieldName": "PermissionsViewClientSecret",
+      "displayName": "View External Client App Consumer Secrets in Metadata",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2437,6 +2742,7 @@
     },
     {
       "fieldName": "PermissionsManageDevSandboxes",
+      "displayName": "Manage Dev Sandboxes",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2445,6 +2751,7 @@
     },
     {
       "fieldName": "PermissionsCdcReportingCreateReports",
+      "displayName": "Allow access to creating and editing reports in Data Cloud Reporting",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2453,6 +2760,7 @@
     },
     {
       "fieldName": "PermissionsCdcReportingViewReports",
+      "displayName": "Allow access to viewing reports in Data Cloud Reporting",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2461,6 +2769,7 @@
     },
     {
       "fieldName": "PermissionsCdcReportingManageFolders",
+      "displayName": "Allow access to managing folders in Data Cloud Reporting",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2469,6 +2778,7 @@
     },
     {
       "fieldName": "PermissionsExternalClientAppDeveloper",
+      "displayName": "Create, edit, and delete External Client Apps",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2477,6 +2787,7 @@
     },
     {
       "fieldName": "PermissionsExternalClientAppAdmin",
+      "displayName": "View all External Client Apps, view their settings, and edit their policies",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2485,6 +2796,7 @@
     },
     {
       "fieldName": "PermissionsExternalClientAppViewer",
+      "displayName": "View all External Client Apps",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2493,6 +2805,7 @@
     },
     {
       "fieldName": "PermissionsVideoConferenceMeetUser",
+      "displayName": "Use Video Conferencing with Google Meet",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2501,6 +2814,7 @@
     },
     {
       "fieldName": "PermissionsDeleteCrMemoAndInvoice",
+      "displayName": "Delete Credit Memo and Invoice",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2509,6 +2823,7 @@
     },
     {
       "fieldName": "PermissionsManageForecastingCustomData",
+      "displayName": "Manage Forecasts Custom Data",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2517,6 +2832,7 @@
     },
     {
       "fieldName": "PermissionsManageNamedCredentials",
+      "displayName": "Allows users to modify Named Credentials and External Credentials",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2525,6 +2841,7 @@
     },
     {
       "fieldName": "PermissionsCanUpdateEmailMessage",
+      "displayName": "Update Email Messages",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2533,6 +2850,7 @@
     },
     {
       "fieldName": "PermissionsDownloadPackageVersionZips",
+      "displayName": "Download Package Version Zip Files",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2541,6 +2859,7 @@
     },
     {
       "fieldName": "PermissionsCodeBuilderUser",
+      "displayName": "Code Builder User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2549,6 +2868,7 @@
     },
     {
       "fieldName": "PermissionsViewContentTaxonomy",
+      "displayName": "View Content Taxonomy",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2557,6 +2877,7 @@
     },
     {
       "fieldName": "PermissionsManageContentTaxonomy",
+      "displayName": "Manage Content Taxonomy",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2565,6 +2886,7 @@
     },
     {
       "fieldName": "PermissionsReassignOrchestrationWorkItems",
+      "displayName": "Reassign Orchestration Work Items",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2573,6 +2895,7 @@
     },
     {
       "fieldName": "PermissionsManageOrchestrationRuns",
+      "displayName": "Manage Orchestration Runs",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2581,6 +2904,7 @@
     },
     {
       "fieldName": "PermissionsDigitalLendingUser",
+      "displayName": "Digital Lending User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2589,6 +2913,7 @@
     },
     {
       "fieldName": "PermissionsManageCertificatesExpiration",
+      "displayName": "Receive Certificate Expiration Notifications",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2597,6 +2922,7 @@
     },
     {
       "fieldName": "PermissionsEnblLiteUser",
+      "displayName": "Take Enablement Lite Programs",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2605,6 +2931,7 @@
     },
     {
       "fieldName": "PermissionsEnblLiteAdmin",
+      "displayName": "Design and Deliver Enablement Lite Programs",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2613,6 +2940,7 @@
     },
     {
       "fieldName": "PermissionsEnableIPFSUpload",
+      "displayName": "Allow blockchain data upload",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2621,6 +2949,7 @@
     },
     {
       "fieldName": "PermissionsEnableBCTransactionPolling",
+      "displayName": "Enable blockchain transaction polling API",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2629,6 +2958,7 @@
     },
     {
       "fieldName": "PermissionsLobbyManagementUserAccess",
+      "displayName": "Let greeters access the Lobby Management tab.",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2637,6 +2967,7 @@
     },
     {
       "fieldName": "PermissionsOrgPerformanceAccess",
+      "displayName": "Org Performance Access",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2645,6 +2976,7 @@
     },
     {
       "fieldName": "PermissionsPerformanceAnalysisAccess",
+      "displayName": "Performance Analysis Access",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2653,6 +2985,7 @@
     },
     {
       "fieldName": "PermissionsMonitorLoginHistory",
+      "displayName": "Monitor Login History",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2661,6 +2994,7 @@
     },
     {
       "fieldName": "PermissionsRunDecisionMatrix",
+      "displayName": "Run Decision Matrices",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2669,6 +3003,7 @@
     },
     {
       "fieldName": "PermissionsRunExpressionSet",
+      "displayName": "Run Expression Sets",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2677,6 +3012,7 @@
     },
     {
       "fieldName": "PermissionsEnhancedSalesMobileExp",
+      "displayName": "Salesforce Mobile App: Native Seller Experience",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2685,6 +3021,7 @@
     },
     {
       "fieldName": "PermissionsCanViewDataPrepRecipe",
+      "displayName": "Recipes View Only",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2693,6 +3030,7 @@
     },
     {
       "fieldName": "PermissionsSimpleCsvDataImportUser",
+      "displayName": "Basic Csv Data Import User Permission ",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2701,6 +3039,7 @@
     },
     {
       "fieldName": "PermissionsAdvancedCsvDataImportUser",
+      "displayName": "Advanced Csv Data Import User Permission ",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2709,6 +3048,7 @@
     },
     {
       "fieldName": "PermissionsAccessToComplaintMgmt",
+      "displayName": "Public Complaint Management User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2717,6 +3057,7 @@
     },
     {
       "fieldName": "PermissionsAccessToDisputeManagement",
+      "displayName": "Dispute Management User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2725,6 +3066,7 @@
     },
     {
       "fieldName": "PermissionsPersonalizedFinanceUserAccess",
+      "displayName": "Data Cloud FlexCards for Financial Services Cloud",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2733,6 +3075,7 @@
     },
     {
       "fieldName": "PermissionsBREAlertsUserAccess",
+      "displayName": "Access Record Alerts for Business Rules Engine",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2741,6 +3084,7 @@
     },
     {
       "fieldName": "PermissionsCustomAppsOnFSMobile",
+      "displayName": "Custom Applications for Field Service Mobile",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2749,6 +3093,7 @@
     },
     {
       "fieldName": "PermissionsStageManagementDesignUser",
+      "displayName": "Stage Management Designer User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2757,6 +3102,7 @@
     },
     {
       "fieldName": "PermissionsSegmentIntelligenceUser",
+      "displayName": "Segment Intelligence User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2765,6 +3111,7 @@
     },
     {
       "fieldName": "PermissionsFSCArcGraphCommunityUser",
+      "displayName": "Access Actionable Relationship Center for partner users",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2773,6 +3120,7 @@
     },
     {
       "fieldName": "PermissionsManageCdpMlModels",
+      "displayName": "Allow users to manage models in Einstein Studio",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2781,6 +3129,7 @@
     },
     {
       "fieldName": "PermissionsDigitalLendingAdminUser",
+      "displayName": "Digital Lending Admin User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2789,6 +3138,7 @@
     },
     {
       "fieldName": "PermissionsActivateSystemModeFlows",
+      "displayName": "Enable System Mode Flow Activation",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2797,6 +3147,7 @@
     },
     {
       "fieldName": "PermissionsPersonalizationPlatform",
+      "displayName": "Access Personalization Platform",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2805,6 +3156,7 @@
     },
     {
       "fieldName": "PermissionsLeadInspectorUser",
+      "displayName": "Access Lead Intelligence View in Partner Sites",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2813,6 +3165,7 @@
     },
     {
       "fieldName": "PermissionsContactInspectorUser",
+      "displayName": "Access Contact Intelligence View in Partner Sites",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2821,6 +3174,7 @@
     },
     {
       "fieldName": "PermissionsManageIntegrationConnections",
+      "displayName": "Manage Integration Connections",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2829,6 +3183,7 @@
     },
     {
       "fieldName": "PermissionsTableauCreateDashboard",
+      "displayName": "Access to create Tableau Next dashboards",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2837,6 +3192,7 @@
     },
     {
       "fieldName": "PermissionsTableauViewDashboard",
+      "displayName": "Access to view Tableau Next dashboards",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2845,6 +3201,7 @@
     },
     {
       "fieldName": "PermissionsManageFilesAndAttachments",
+      "displayName": "Manage Policies' Files And Attachments",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2853,6 +3210,7 @@
     },
     {
       "fieldName": "PermissionsUseServiceCatalogForGuest",
+      "displayName": "Use Service Catalog As A Guest User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2861,6 +3219,7 @@
     },
     {
       "fieldName": "PermissionsRunCatalogItemsOnBehalfOf",
+      "displayName": "Run Catalog Items As User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2869,6 +3228,7 @@
     },
     {
       "fieldName": "PermissionsTableauCreateVisualization",
+      "displayName": "Access to create Tableau Next visualizations",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2877,6 +3237,7 @@
     },
     {
       "fieldName": "PermissionsTableauViewVisualization",
+      "displayName": "Access to view Tableau Next visualizations",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2885,6 +3246,7 @@
     },
     {
       "fieldName": "PermissionsManageCustomDomains",
+      "displayName": "Manage Custom Domains",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2893,6 +3255,7 @@
     },
     {
       "fieldName": "PermissionsEngagementConfigUser",
+      "displayName": "Engagement Config User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2901,6 +3264,7 @@
     },
     {
       "fieldName": "PermissionsUserHasStarterDCRAccess",
+      "displayName": "User Can Access Data Cloud Reports in Starter",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2909,6 +3273,7 @@
     },
     {
       "fieldName": "PermissionsPersonalizationIntelUser",
+      "displayName": "Personalization Intelligence User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2917,6 +3282,7 @@
     },
     {
       "fieldName": "PermissionsAttributionModelUser",
+      "displayName": "Attribution Model User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2925,6 +3291,7 @@
     },
     {
       "fieldName": "PermissionsTableauCreateWorkspace",
+      "displayName": "Access to create Tableau Next workspaces",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2933,6 +3300,7 @@
     },
     {
       "fieldName": "PermissionsTableauViewWorkspace",
+      "displayName": "Access to view Tableau Next workspaces",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2941,6 +3309,7 @@
     },
     {
       "fieldName": "PermissionsAccessDisputePrompts",
+      "displayName": "Provides access to Financial Services Email prompt templates",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2949,6 +3318,7 @@
     },
     {
       "fieldName": "PermissionsQueryNonVetoedFiles",
+      "displayName": "Query Non Vetoed Files",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2957,6 +3327,7 @@
     },
     {
       "fieldName": "PermissionsViewAllCalls",
+      "displayName": "View All Voice And Video Calls",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2965,6 +3336,7 @@
     },
     {
       "fieldName": "PermissionsMetadataStudioUser",
+      "displayName": "Metadata studio User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2973,6 +3345,7 @@
     },
     {
       "fieldName": "PermissionsDigitalLendingWorkbench",
+      "displayName": "Digital Lending Workbench",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2981,6 +3354,7 @@
     },
     {
       "fieldName": "PermissionsDigitalLendingEditReadOnly",
+      "displayName": "Digital Lending Edit Read Only Party Related Records",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2989,6 +3363,7 @@
     },
     {
       "fieldName": "PermissionsPrmExtIntPrtnrAdminUser",
+      "displayName": "Set Up Partner Connect for a Partner Org",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -2997,6 +3372,7 @@
     },
     {
       "fieldName": "PermissionsUseServicePartReturn",
+      "displayName": "Manufacturing Cloud Service Part Return Management User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -3005,6 +3381,7 @@
     },
     {
       "fieldName": "PermissionsHeadlessPublishNudges",
+      "displayName": "Headless Publish Nudges User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -3013,6 +3390,7 @@
     },
     {
       "fieldName": "PermissionsApprovalAdmin",
+      "displayName": "Approval Admin",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -3021,6 +3399,7 @@
     },
     {
       "fieldName": "PermissionsApprovalDesigner",
+      "displayName": "Approval Designer",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -3029,6 +3408,7 @@
     },
     {
       "fieldName": "PermissionsYourAccountCDAPublishEvents",
+      "displayName": "Your Account Cache Durable Architecture Publish Events",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -3037,6 +3417,7 @@
     },
     {
       "fieldName": "PermissionsAccessServiceEinstein",
+      "displayName": "Access Service Einstein",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -3045,6 +3426,7 @@
     },
     {
       "fieldName": "PermissionsViewRecommendations",
+      "displayName": "View Recommendations",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -3053,6 +3435,7 @@
     },
     {
       "fieldName": "PermissionsPrismPlaygroundUser",
+      "displayName": "Prism Playground User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -3061,6 +3444,7 @@
     },
     {
       "fieldName": "PermissionsModifyAllPolicyCenterPolicies",
+      "displayName": "Modify All Policy Center Policies",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -3069,6 +3453,7 @@
     },
     {
       "fieldName": "PermissionsViewAllPolicyCenterPolicies",
+      "displayName": "View All Policy Center Policies",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -3077,6 +3462,7 @@
     },
     {
       "fieldName": "PermissionsAccessSfDrive",
+      "displayName": "Grant users permission to SfDrive",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -3085,6 +3471,7 @@
     },
     {
       "fieldName": "PermissionsAppFrameworkManageApp",
+      "displayName": "Access to manage the template framework apps",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -3093,6 +3480,7 @@
     },
     {
       "fieldName": "PermissionsAppFrameworkViewApp",
+      "displayName": "Access to view templated apps and assets",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -3101,6 +3489,7 @@
     },
     {
       "fieldName": "PermissionsAgentforceServiceAgentUser",
+      "displayName": "Agentforce Service Agent User",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -3109,6 +3498,7 @@
     },
     {
       "fieldName": "PermissionsManageAgentforceServiceAgent",
+      "displayName": "Manage Agentforce Service Agents",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -3117,6 +3507,7 @@
     },
     {
       "fieldName": "PermissionsManageAccessPolicies",
+      "displayName": "Manage Access Policies",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -3125,6 +3516,7 @@
     },
     {
       "fieldName": "PermissionsViewAccessPolicies",
+      "displayName": "View Access Policies",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -3133,6 +3525,7 @@
     },
     {
       "fieldName": "PermissionsViewOrchestrationsInAutomApp",
+      "displayName": "View Orchestrations in Automation App",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -3141,6 +3534,7 @@
     },
     {
       "fieldName": "PermissionsSalesInsightsUser",
+      "displayName": "Sales Insights Admin",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -3149,6 +3543,7 @@
     },
     {
       "fieldName": "PermissionsUserHasALMSimpleDeployAccess",
+      "displayName": "Enable ALM Simple Deploy User Permission ",
       "dataType": "boolean",
       "required": "Yes",
       "relatedTo": "None",
@@ -3157,6 +3552,7 @@
     },
     {
       "fieldName": "UserLicenseId",
+      "displayName": "User License ID",
       "dataType": "reference",
       "required": "Yes",
       "relatedTo": "UserLicense",
@@ -3165,6 +3561,7 @@
     },
     {
       "fieldName": "UserType",
+      "displayName": "User Type",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -3214,6 +3611,7 @@
     },
     {
       "fieldName": "CreatedDate",
+      "displayName": "Created Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -3222,6 +3620,7 @@
     },
     {
       "fieldName": "CreatedById",
+      "displayName": "Created By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -3230,6 +3629,7 @@
     },
     {
       "fieldName": "LastModifiedDate",
+      "displayName": "Last Modified Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -3238,6 +3638,7 @@
     },
     {
       "fieldName": "LastModifiedById",
+      "displayName": "Last Modified By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -3246,6 +3647,7 @@
     },
     {
       "fieldName": "SystemModstamp",
+      "displayName": "System Modstamp",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -3254,6 +3656,7 @@
     },
     {
       "fieldName": "Description",
+      "displayName": "Description",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -3262,6 +3665,7 @@
     },
     {
       "fieldName": "LastViewedDate",
+      "displayName": "Last Viewed Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -3270,6 +3674,7 @@
     },
     {
       "fieldName": "LastReferencedDate",
+      "displayName": "Last Referenced Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",

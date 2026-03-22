@@ -1,10 +1,12 @@
 {
   "objectName": "Group",
+  "displayName": "Group",
   "objectType": "Standard",
   "recordCount": 177,
   "fields": [
     {
       "fieldName": "Id",
+      "displayName": "Group ID",
       "dataType": "id",
       "required": "No",
       "relatedTo": "None",
@@ -13,6 +15,7 @@
     },
     {
       "fieldName": "Name",
+      "displayName": "Name",
       "dataType": "string",
       "required": "Yes",
       "relatedTo": "None",
@@ -21,6 +24,7 @@
     },
     {
       "fieldName": "DeveloperName",
+      "displayName": "Developer Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -29,6 +33,7 @@
     },
     {
       "fieldName": "RelatedId",
+      "displayName": "Related ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Territory2, User, UserRole",
@@ -37,6 +42,7 @@
     },
     {
       "fieldName": "Type",
+      "displayName": "Type",
       "dataType": "picklist",
       "required": "Yes",
       "relatedTo": "None",
@@ -131,6 +137,7 @@
     },
     {
       "fieldName": "Email",
+      "displayName": "Email",
       "dataType": "email",
       "required": "No",
       "relatedTo": "None",
@@ -139,6 +146,7 @@
     },
     {
       "fieldName": "OwnerId",
+      "displayName": "Owner ID",
       "dataType": "reference",
       "required": "Yes",
       "relatedTo": "Organization, User",
@@ -147,6 +155,7 @@
     },
     {
       "fieldName": "DoesSendEmailToMembers",
+      "displayName": "Send Email to Members",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -155,6 +164,7 @@
     },
     {
       "fieldName": "DoesIncludeBosses",
+      "displayName": "Include Bosses",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -163,6 +173,7 @@
     },
     {
       "fieldName": "CreatedDate",
+      "displayName": "Created Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -171,6 +182,7 @@
     },
     {
       "fieldName": "CreatedById",
+      "displayName": "Created By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -179,6 +191,7 @@
     },
     {
       "fieldName": "LastModifiedDate",
+      "displayName": "Last Modified Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -187,6 +200,7 @@
     },
     {
       "fieldName": "LastModifiedById",
+      "displayName": "Last Modified By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -195,6 +209,7 @@
     },
     {
       "fieldName": "SystemModstamp",
+      "displayName": "System Modstamp",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -203,6 +218,7 @@
     },
     {
       "fieldName": "Description",
+      "displayName": "Description",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",

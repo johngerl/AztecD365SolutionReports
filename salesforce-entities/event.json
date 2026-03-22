@@ -1,10 +1,12 @@
 {
   "objectName": "Event",
+  "displayName": "Event",
   "objectType": "Standard",
   "recordCount": 0,
   "fields": [
     {
       "fieldName": "Id",
+      "displayName": "Activity ID",
       "dataType": "id",
       "required": "No",
       "relatedTo": "None",
@@ -13,6 +15,7 @@
     },
     {
       "fieldName": "WhoId",
+      "displayName": "Name ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Contact, Lead",
@@ -21,6 +24,7 @@
     },
     {
       "fieldName": "WhatId",
+      "displayName": "Related To ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Account, ApprovalSubmission, ApprovalSubmissionDetail, ApprovalWorkItem, Asset, AssetRelationship, CS_Engagement__c, CalculationMatrix, CalculationMatrixVersion, CalculationProcedure, CalculationProcedureVersion, Campaign, Case, ChangeRequest, CommSubscriptionConsent, ContactRequest, Contract, ContractLineItem, EngagementAttendee, EngagementInteraction, EngagementTopic, Entitlement, ExpressionSet, ExpressionSetVersion, Help_Desk__c, Image, Incident, ListEmail, Location, Opportunity, Order, PartyConsent, Problem, ProcessException, Product2, Quote, RecordAlert, Sales_Lead__c, ServiceContract, Solution, WorkOrder, WorkOrderLineItem, WorkPlan, WorkPlanTemplate, WorkPlanTemplateEntry, WorkStep, WorkStepTemplate, dfsle__AgreementConfiguration__c, dfsle__BulkList__c, dfsle__BulkStatus__c, dfsle__CustomParameterMap__c, dfsle__EnvelopeConfiguration__c, dfsle__EnvelopeStatus__c, dfsle__GenTemplate__c, dfsle__Log__c, dfsle__RecipientStatus__c",
@@ -29,6 +33,7 @@
     },
     {
       "fieldName": "WhoCount",
+      "displayName": "Relation Count",
       "dataType": "int",
       "required": "No",
       "relatedTo": "None",
@@ -37,6 +42,7 @@
     },
     {
       "fieldName": "WhatCount",
+      "displayName": "Related To Count",
       "dataType": "int",
       "required": "No",
       "relatedTo": "None",
@@ -45,6 +51,7 @@
     },
     {
       "fieldName": "Subject",
+      "displayName": "Subject",
       "dataType": "combobox",
       "required": "No",
       "relatedTo": "None",
@@ -79,6 +86,7 @@
     },
     {
       "fieldName": "Location",
+      "displayName": "Location",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -87,6 +95,7 @@
     },
     {
       "fieldName": "IsAllDayEvent",
+      "displayName": "All-Day Event",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -95,6 +104,7 @@
     },
     {
       "fieldName": "ActivityDateTime",
+      "displayName": "Due Date Time",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -103,6 +113,7 @@
     },
     {
       "fieldName": "ActivityDate",
+      "displayName": "Due Date Only",
       "dataType": "date",
       "required": "No",
       "relatedTo": "None",
@@ -111,6 +122,7 @@
     },
     {
       "fieldName": "DurationInMinutes",
+      "displayName": "Duration",
       "dataType": "int",
       "required": "No",
       "relatedTo": "None",
@@ -119,6 +131,7 @@
     },
     {
       "fieldName": "StartDateTime",
+      "displayName": "Start Date Time",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -127,6 +140,7 @@
     },
     {
       "fieldName": "EndDateTime",
+      "displayName": "End Date Time",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -135,6 +149,7 @@
     },
     {
       "fieldName": "EndDate",
+      "displayName": "End Date",
       "dataType": "date",
       "required": "No",
       "relatedTo": "None",
@@ -143,6 +158,7 @@
     },
     {
       "fieldName": "Description",
+      "displayName": "Description",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",
@@ -151,6 +167,7 @@
     },
     {
       "fieldName": "AccountId",
+      "displayName": "Account ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Account",
@@ -159,6 +176,7 @@
     },
     {
       "fieldName": "OwnerId",
+      "displayName": "Assigned To ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Calendar, User",
@@ -167,6 +185,7 @@
     },
     {
       "fieldName": "Type",
+      "displayName": "Type",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -196,6 +215,7 @@
     },
     {
       "fieldName": "IsPrivate",
+      "displayName": "Private",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -204,6 +224,7 @@
     },
     {
       "fieldName": "ShowAs",
+      "displayName": "Show Time As",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -228,6 +249,7 @@
     },
     {
       "fieldName": "IsDeleted",
+      "displayName": "Deleted",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -236,6 +258,7 @@
     },
     {
       "fieldName": "IsChild",
+      "displayName": "Is Child",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -244,6 +267,7 @@
     },
     {
       "fieldName": "IsGroupEvent",
+      "displayName": "Is Group Event",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -252,6 +276,7 @@
     },
     {
       "fieldName": "GroupEventType",
+      "displayName": "Group Event Type",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -281,6 +306,7 @@
     },
     {
       "fieldName": "CreatedDate",
+      "displayName": "Created Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -289,6 +315,7 @@
     },
     {
       "fieldName": "CreatedById",
+      "displayName": "Created By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -297,6 +324,7 @@
     },
     {
       "fieldName": "LastModifiedDate",
+      "displayName": "Last Modified Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -305,6 +333,7 @@
     },
     {
       "fieldName": "LastModifiedById",
+      "displayName": "Last Modified By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -313,6 +342,7 @@
     },
     {
       "fieldName": "SystemModstamp",
+      "displayName": "System Modstamp",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -321,6 +351,7 @@
     },
     {
       "fieldName": "IsArchived",
+      "displayName": "Archived",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -329,6 +360,7 @@
     },
     {
       "fieldName": "RecurrenceActivityId",
+      "displayName": "Recurrence Activity ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Event",
@@ -337,6 +369,7 @@
     },
     {
       "fieldName": "IsRecurrence",
+      "displayName": "Create Recurring Series of Events",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -345,6 +378,7 @@
     },
     {
       "fieldName": "RecurrenceStartDateTime",
+      "displayName": "Recurrence Start",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -353,6 +387,7 @@
     },
     {
       "fieldName": "RecurrenceEndDateOnly",
+      "displayName": "Recurrence End",
       "dataType": "date",
       "required": "No",
       "relatedTo": "None",
@@ -361,6 +396,7 @@
     },
     {
       "fieldName": "RecurrenceTimeZoneSidKey",
+      "displayName": "Recurrence Time Zone",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -2490,6 +2526,7 @@
     },
     {
       "fieldName": "RecurrenceType",
+      "displayName": "Recurrence Type",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -2534,6 +2571,7 @@
     },
     {
       "fieldName": "RecurrenceInterval",
+      "displayName": "Recurrence Interval",
       "dataType": "int",
       "required": "No",
       "relatedTo": "None",
@@ -2542,6 +2580,7 @@
     },
     {
       "fieldName": "RecurrenceDayOfWeekMask",
+      "displayName": "Recurrence Day of Week Mask",
       "dataType": "int",
       "required": "No",
       "relatedTo": "None",
@@ -2550,6 +2589,7 @@
     },
     {
       "fieldName": "RecurrenceDayOfMonth",
+      "displayName": "Recurrence Day of Month",
       "dataType": "int",
       "required": "No",
       "relatedTo": "None",
@@ -2558,6 +2598,7 @@
     },
     {
       "fieldName": "RecurrenceInstance",
+      "displayName": "Recurrence Instance",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -2592,6 +2633,7 @@
     },
     {
       "fieldName": "RecurrenceMonthOfYear",
+      "displayName": "Recurrence Month of Year",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -2661,6 +2703,7 @@
     },
     {
       "fieldName": "ReminderDateTime",
+      "displayName": "Reminder Date/Time",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -2669,6 +2712,7 @@
     },
     {
       "fieldName": "IsReminderSet",
+      "displayName": "Reminder Set",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -2677,6 +2721,7 @@
     },
     {
       "fieldName": "EventSubtype",
+      "displayName": "Event Subtype",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -2691,6 +2736,7 @@
     },
     {
       "fieldName": "IsRecurrence2Exclusion",
+      "displayName": "Historical Event, Not Following Recurrence",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -2699,6 +2745,7 @@
     },
     {
       "fieldName": "Recurrence2PatternText",
+      "displayName": "Recurrence Pattern",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",
@@ -2707,6 +2754,7 @@
     },
     {
       "fieldName": "Recurrence2PatternVersion",
+      "displayName": "Pattern Version",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -2726,6 +2774,7 @@
     },
     {
       "fieldName": "IsRecurrence2",
+      "displayName": "Repeat",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -2734,6 +2783,7 @@
     },
     {
       "fieldName": "IsRecurrence2Exception",
+      "displayName": "Is Exception",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -2742,6 +2792,7 @@
     },
     {
       "fieldName": "Recurrence2PatternStartDate",
+      "displayName": "Recurrence Pattern Start Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -2750,6 +2801,7 @@
     },
     {
       "fieldName": "Recurrence2PatternTimeZone",
+      "displayName": "Recurrence Pattern Time Zone Reference",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -2758,6 +2810,7 @@
     },
     {
       "fieldName": "rcsfl__CALL_UNIQUE_ID__c",
+      "displayName": "CALL_UNIQUE_ID",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -2766,6 +2819,7 @@
     },
     {
       "fieldName": "rcsfl__CALL_UUID__c",
+      "displayName": "CALL_UUID",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -2774,6 +2828,7 @@
     },
     {
       "fieldName": "rcsfl__RC_Logging_Type__c",
+      "displayName": "RC Logging Type",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -2782,6 +2837,7 @@
     },
     {
       "fieldName": "rcsfl__Recording_Information__c",
+      "displayName": "Recording Information",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -2790,6 +2846,7 @@
     },
     {
       "fieldName": "rcsfl__call_end_time__c",
+      "displayName": "Call End Time",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -2798,6 +2855,7 @@
     },
     {
       "fieldName": "rcsfl__call_start_time__c",
+      "displayName": "Call Start Time",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -2806,6 +2864,7 @@
     },
     {
       "fieldName": "rcsfl__callee_location__c",
+      "displayName": "Callee Location",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -2814,6 +2873,7 @@
     },
     {
       "fieldName": "rcsfl__callee_name__c",
+      "displayName": "Callee Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -2822,6 +2882,7 @@
     },
     {
       "fieldName": "rcsfl__caller_location__c",
+      "displayName": "Caller Location",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -2830,6 +2891,7 @@
     },
     {
       "fieldName": "rcsfl__caller_name__c",
+      "displayName": "Caller Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -2838,6 +2900,7 @@
     },
     {
       "fieldName": "rcsfl__external_whoid__c",
+      "displayName": "external_whoid",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -2846,6 +2909,7 @@
     },
     {
       "fieldName": "rcsfl__from_number__c",
+      "displayName": "From Number",
       "dataType": "phone",
       "required": "No",
       "relatedTo": "None",
@@ -2854,6 +2918,7 @@
     },
     {
       "fieldName": "rcsfl__hvs_disposition__c",
+      "displayName": "Sales Engagement Disposition",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -2888,6 +2953,7 @@
     },
     {
       "fieldName": "rcsfl__key__c",
+      "displayName": "key",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -2896,6 +2962,7 @@
     },
     {
       "fieldName": "rcsfl__to_number__c",
+      "displayName": "To Number",
       "dataType": "phone",
       "required": "No",
       "relatedTo": "None",
@@ -2904,6 +2971,7 @@
     },
     {
       "fieldName": "rcsfl__Call_Recording__c",
+      "displayName": "Call Recording",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -2912,6 +2980,7 @@
     },
     {
       "fieldName": "Sales_Activity_Type__c",
+      "displayName": "Sales Activity Type",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -2931,6 +3000,7 @@
     },
     {
       "fieldName": "Activity_GUID__c",
+      "displayName": "Activity GUID",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -2939,6 +3009,7 @@
     },
     {
       "fieldName": "Topic__c",
+      "displayName": "Topic",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -2947,6 +3018,7 @@
     },
     {
       "fieldName": "Subject_Prefix__c",
+      "displayName": "Subject Prefix",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",

@@ -1,10 +1,12 @@
 {
   "objectName": "Case",
+  "displayName": "Case",
   "objectType": "Standard",
   "recordCount": 0,
   "fields": [
     {
       "fieldName": "Id",
+      "displayName": "Case ID",
       "dataType": "id",
       "required": "No",
       "relatedTo": "None",
@@ -13,6 +15,7 @@
     },
     {
       "fieldName": "IsDeleted",
+      "displayName": "Deleted",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -21,6 +24,7 @@
     },
     {
       "fieldName": "MasterRecordId",
+      "displayName": "Master Record ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Case",
@@ -29,6 +33,7 @@
     },
     {
       "fieldName": "CaseNumber",
+      "displayName": "Case Number",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -37,6 +42,7 @@
     },
     {
       "fieldName": "ContactId",
+      "displayName": "Contact ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Contact",
@@ -45,6 +51,7 @@
     },
     {
       "fieldName": "AccountId",
+      "displayName": "Account ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Account",
@@ -53,6 +60,7 @@
     },
     {
       "fieldName": "ParentId",
+      "displayName": "Parent Case ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Case",
@@ -61,6 +69,7 @@
     },
     {
       "fieldName": "SuppliedName",
+      "displayName": "Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -69,6 +78,7 @@
     },
     {
       "fieldName": "SuppliedEmail",
+      "displayName": "Email Address",
       "dataType": "email",
       "required": "No",
       "relatedTo": "None",
@@ -77,6 +87,7 @@
     },
     {
       "fieldName": "SuppliedPhone",
+      "displayName": "Phone",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -85,6 +96,7 @@
     },
     {
       "fieldName": "SuppliedCompany",
+      "displayName": "Company",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -93,6 +105,7 @@
     },
     {
       "fieldName": "Type",
+      "displayName": "Case Type",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -112,6 +125,7 @@
     },
     {
       "fieldName": "RecordTypeId",
+      "displayName": "Record Type ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "RecordType",
@@ -120,6 +134,7 @@
     },
     {
       "fieldName": "Status",
+      "displayName": "Status",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -154,6 +169,7 @@
     },
     {
       "fieldName": "Reason",
+      "displayName": "Case Reason",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -188,6 +204,7 @@
     },
     {
       "fieldName": "Origin",
+      "displayName": "Case Origin",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -212,6 +229,7 @@
     },
     {
       "fieldName": "Language",
+      "displayName": "Language",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -311,6 +329,7 @@
     },
     {
       "fieldName": "Subject",
+      "displayName": "Subject",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -319,6 +338,7 @@
     },
     {
       "fieldName": "Priority",
+      "displayName": "Priority",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -343,6 +363,7 @@
     },
     {
       "fieldName": "Description",
+      "displayName": "Description",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",
@@ -351,6 +372,7 @@
     },
     {
       "fieldName": "IsClosed",
+      "displayName": "Closed",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -359,6 +381,7 @@
     },
     {
       "fieldName": "ClosedDate",
+      "displayName": "Closed Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -367,6 +390,7 @@
     },
     {
       "fieldName": "IsEscalated",
+      "displayName": "Escalated",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -375,6 +399,7 @@
     },
     {
       "fieldName": "OwnerId",
+      "displayName": "Owner ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Group, User",
@@ -383,6 +408,7 @@
     },
     {
       "fieldName": "CreatedDate",
+      "displayName": "Created Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -391,6 +417,7 @@
     },
     {
       "fieldName": "CreatedById",
+      "displayName": "Created By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -399,6 +426,7 @@
     },
     {
       "fieldName": "LastModifiedDate",
+      "displayName": "Last Modified Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -407,6 +435,7 @@
     },
     {
       "fieldName": "LastModifiedById",
+      "displayName": "Last Modified By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -415,6 +444,7 @@
     },
     {
       "fieldName": "SystemModstamp",
+      "displayName": "System Modstamp",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -423,6 +453,7 @@
     },
     {
       "fieldName": "ContactPhone",
+      "displayName": "Contact Phone",
       "dataType": "phone",
       "required": "No",
       "relatedTo": "None",
@@ -431,6 +462,7 @@
     },
     {
       "fieldName": "ContactMobile",
+      "displayName": "Contact Mobile",
       "dataType": "phone",
       "required": "No",
       "relatedTo": "None",
@@ -439,6 +471,7 @@
     },
     {
       "fieldName": "ContactEmail",
+      "displayName": "Contact Email",
       "dataType": "email",
       "required": "No",
       "relatedTo": "None",
@@ -447,6 +480,7 @@
     },
     {
       "fieldName": "ContactFax",
+      "displayName": "Contact Fax",
       "dataType": "phone",
       "required": "No",
       "relatedTo": "None",
@@ -455,6 +489,7 @@
     },
     {
       "fieldName": "Comments",
+      "displayName": "Internal Comments",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",
@@ -463,6 +498,7 @@
     },
     {
       "fieldName": "LastViewedDate",
+      "displayName": "Last Viewed Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -471,6 +507,7 @@
     },
     {
       "fieldName": "LastReferencedDate",
+      "displayName": "Last Referenced Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -479,6 +516,7 @@
     },
     {
       "fieldName": "Case_GUID__c",
+      "displayName": "Case GUID",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -487,6 +525,7 @@
     },
     {
       "fieldName": "Team_City_Case_Number__c",
+      "displayName": "Team City Case Number",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -495,6 +534,7 @@
     },
     {
       "fieldName": "CRM_Case_Number__c",
+      "displayName": "CRM Case Number",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -503,6 +543,7 @@
     },
     {
       "fieldName": "CRM_Case_Origin__c",
+      "displayName": "CRM Case Origin",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -511,6 +552,7 @@
     },
     {
       "fieldName": "CRM_Case_Title__c",
+      "displayName": "CRM Case Title",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -519,6 +561,7 @@
     },
     {
       "fieldName": "CRM_Case_Type__c",
+      "displayName": "CRM Case Type",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -527,6 +570,7 @@
     },
     {
       "fieldName": "CRM_Created_By__c",
+      "displayName": "CRM Created By",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -535,6 +579,7 @@
     },
     {
       "fieldName": "CRM_Created_On__c",
+      "displayName": "CRM Created On",
       "dataType": "date",
       "required": "No",
       "relatedTo": "None",
@@ -543,6 +588,7 @@
     },
     {
       "fieldName": "CRM_Customer_Support_Status__c",
+      "displayName": "CRM Customer Support Status",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -551,6 +597,7 @@
     },
     {
       "fieldName": "CRM_Engagement__c",
+      "displayName": "CRM Engagement",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -559,6 +606,7 @@
     },
     {
       "fieldName": "CRM_Escalated_On__c",
+      "displayName": "CRM Escalated On",
       "dataType": "date",
       "required": "No",
       "relatedTo": "None",
@@ -567,6 +615,7 @@
     },
     {
       "fieldName": "CRM_Historical_Owner__c",
+      "displayName": "CRM Historical Owner",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -575,6 +624,7 @@
     },
     {
       "fieldName": "CRM_Is_Escalated__c",
+      "displayName": "CRM Is Escalated",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -583,6 +633,7 @@
     },
     {
       "fieldName": "CRM_Last_Interaction__c",
+      "displayName": "CRM Last Interaction",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -591,6 +642,7 @@
     },
     {
       "fieldName": "CRM_Modified_By__c",
+      "displayName": "CRM Modified By",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -599,6 +651,7 @@
     },
     {
       "fieldName": "CRM_Modified_On__c",
+      "displayName": "CRM Modified On",
       "dataType": "date",
       "required": "No",
       "relatedTo": "None",
@@ -607,6 +660,7 @@
     },
     {
       "fieldName": "CRM_Owner__c",
+      "displayName": "CRM Owner",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -615,6 +669,7 @@
     },
     {
       "fieldName": "CRM_Owning_Business_Unit__c",
+      "displayName": "CRM Owning Business Unit",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -623,6 +678,7 @@
     },
     {
       "fieldName": "CRM_Partner__c",
+      "displayName": "CRM Partner",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -631,6 +687,7 @@
     },
     {
       "fieldName": "CRM_Priority__c",
+      "displayName": "CRM Priority",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -639,6 +696,7 @@
     },
     {
       "fieldName": "CRM_Record_Created_On__c",
+      "displayName": "CRM Record Created On",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -647,6 +705,7 @@
     },
     {
       "fieldName": "CRM_Record_Owner__c",
+      "displayName": "CRM Record Owner",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -655,6 +714,7 @@
     },
     {
       "fieldName": "CRM_Resolution_Date__c",
+      "displayName": "CRM Resolution Date",
       "dataType": "date",
       "required": "No",
       "relatedTo": "None",
@@ -663,6 +723,7 @@
     },
     {
       "fieldName": "CRM_Resolution__c",
+      "displayName": "CRM Resolution",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",
@@ -671,6 +732,7 @@
     },
     {
       "fieldName": "CRM_Resolve_By__c",
+      "displayName": "CRM Resolve By",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -679,6 +741,7 @@
     },
     {
       "fieldName": "CRM_Resolved_By__c",
+      "displayName": "CRM Resolved By",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -687,6 +750,7 @@
     },
     {
       "fieldName": "CRM_Responsible_Rep__c",
+      "displayName": "CRM Responsible Rep",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -695,6 +759,7 @@
     },
     {
       "fieldName": "CRM_Service_Stage__c",
+      "displayName": "CRM Service Stage",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -703,6 +768,7 @@
     },
     {
       "fieldName": "CRM_Status_Reason__c",
+      "displayName": "CRM Status Reason",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -711,6 +777,7 @@
     },
     {
       "fieldName": "CRM_Status__c",
+      "displayName": "CRM Status",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -719,6 +786,7 @@
     },
     {
       "fieldName": "CRM_Contact_GUID__c",
+      "displayName": "CRM Contact GUID",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -727,6 +795,7 @@
     },
     {
       "fieldName": "CRM_Contact_Name__c",
+      "displayName": "CRM Contact Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",

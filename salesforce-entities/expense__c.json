@@ -1,10 +1,12 @@
 {
   "objectName": "Expense__c",
+  "displayName": "Expense",
   "objectType": "Custom",
   "recordCount": 0,
   "fields": [
     {
       "fieldName": "Id",
+      "displayName": "Record ID",
       "dataType": "id",
       "required": "No",
       "relatedTo": "None",
@@ -13,6 +15,7 @@
     },
     {
       "fieldName": "IsDeleted",
+      "displayName": "Deleted",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -21,6 +24,7 @@
     },
     {
       "fieldName": "Name",
+      "displayName": "Expense Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -29,6 +33,7 @@
     },
     {
       "fieldName": "CreatedDate",
+      "displayName": "Created Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -37,6 +42,7 @@
     },
     {
       "fieldName": "CreatedById",
+      "displayName": "Created By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -45,6 +51,7 @@
     },
     {
       "fieldName": "LastModifiedDate",
+      "displayName": "Last Modified Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -53,6 +60,7 @@
     },
     {
       "fieldName": "LastModifiedById",
+      "displayName": "Last Modified By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -61,6 +69,7 @@
     },
     {
       "fieldName": "SystemModstamp",
+      "displayName": "System Modstamp",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -69,6 +78,7 @@
     },
     {
       "fieldName": "LastViewedDate",
+      "displayName": "Last Viewed Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -77,6 +87,7 @@
     },
     {
       "fieldName": "LastReferencedDate",
+      "displayName": "Last Referenced Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -85,6 +96,7 @@
     },
     {
       "fieldName": "Expense_Report__c",
+      "displayName": "Expense Report",
       "dataType": "reference",
       "required": "Yes",
       "relatedTo": "Expense_Report__c",
@@ -93,6 +105,7 @@
     },
     {
       "fieldName": "Reason_for_Expense__c",
+      "displayName": "Reason for Expense",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -137,6 +150,7 @@
     },
     {
       "fieldName": "Status__c",
+      "displayName": "Status",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -166,6 +180,7 @@
     },
     {
       "fieldName": "Type__c",
+      "displayName": "Type",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -260,6 +275,7 @@
     },
     {
       "fieldName": "Account__c",
+      "displayName": "Account",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Account",
@@ -268,6 +284,7 @@
     },
     {
       "fieldName": "Amount__c",
+      "displayName": "Amount",
       "dataType": "currency",
       "required": "No",
       "relatedTo": "None",
@@ -276,6 +293,7 @@
     },
     {
       "fieldName": "Approved__c",
+      "displayName": "Approved",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -284,6 +302,7 @@
     },
     {
       "fieldName": "Campaign__c",
+      "displayName": "Campaign or Project",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Campaign",
@@ -292,6 +311,7 @@
     },
     {
       "fieldName": "Employee__c",
+      "displayName": "Employee",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -300,6 +320,7 @@
     },
     {
       "fieldName": "Merchant_Name__c",
+      "displayName": "Merchant Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",

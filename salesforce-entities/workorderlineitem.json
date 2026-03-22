@@ -1,10 +1,12 @@
 {
   "objectName": "WorkOrderLineItem",
+  "displayName": "Work Order Line Item",
   "objectType": "Standard",
   "recordCount": 0,
   "fields": [
     {
       "fieldName": "Id",
+      "displayName": "Work Order Line Item ID",
       "dataType": "id",
       "required": "No",
       "relatedTo": "None",
@@ -13,6 +15,7 @@
     },
     {
       "fieldName": "IsDeleted",
+      "displayName": "Deleted",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -21,6 +24,7 @@
     },
     {
       "fieldName": "LineItemNumber",
+      "displayName": "Work Order Line Item Number",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -29,6 +33,7 @@
     },
     {
       "fieldName": "CreatedDate",
+      "displayName": "Created Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -37,6 +42,7 @@
     },
     {
       "fieldName": "CreatedById",
+      "displayName": "Created By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -45,6 +51,7 @@
     },
     {
       "fieldName": "LastModifiedDate",
+      "displayName": "Last Modified Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -53,6 +60,7 @@
     },
     {
       "fieldName": "LastModifiedById",
+      "displayName": "Last Modified By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -61,6 +69,7 @@
     },
     {
       "fieldName": "SystemModstamp",
+      "displayName": "System Modstamp",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -69,6 +78,7 @@
     },
     {
       "fieldName": "LastViewedDate",
+      "displayName": "Last Viewed Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -77,6 +87,7 @@
     },
     {
       "fieldName": "LastReferencedDate",
+      "displayName": "Last Referenced Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -85,6 +96,7 @@
     },
     {
       "fieldName": "WorkOrderId",
+      "displayName": "Work Order ID",
       "dataType": "reference",
       "required": "Yes",
       "relatedTo": "WorkOrder",
@@ -93,6 +105,7 @@
     },
     {
       "fieldName": "ParentWorkOrderLineItemId",
+      "displayName": "Parent Work Order Line Item ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "WorkOrderLineItem",
@@ -101,6 +114,7 @@
     },
     {
       "fieldName": "Product2Id",
+      "displayName": "Product ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Product2",
@@ -109,6 +123,7 @@
     },
     {
       "fieldName": "AssetId",
+      "displayName": "Asset ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Asset",
@@ -117,6 +132,7 @@
     },
     {
       "fieldName": "OrderId",
+      "displayName": "Order ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Order",
@@ -125,6 +141,7 @@
     },
     {
       "fieldName": "RootWorkOrderLineItemId",
+      "displayName": "Root Work Order Line Item ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "WorkOrderLineItem",
@@ -133,6 +150,7 @@
     },
     {
       "fieldName": "Description",
+      "displayName": "Description",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",
@@ -141,6 +159,7 @@
     },
     {
       "fieldName": "StartDate",
+      "displayName": "Start Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -149,6 +168,7 @@
     },
     {
       "fieldName": "EndDate",
+      "displayName": "End Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -157,6 +177,7 @@
     },
     {
       "fieldName": "Status",
+      "displayName": "Status",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -201,6 +222,7 @@
     },
     {
       "fieldName": "PricebookEntryId",
+      "displayName": "Product ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "PricebookEntry",
@@ -209,6 +231,7 @@
     },
     {
       "fieldName": "Quantity",
+      "displayName": "Quantity",
       "dataType": "double",
       "required": "No",
       "relatedTo": "None",
@@ -217,6 +240,7 @@
     },
     {
       "fieldName": "UnitPrice",
+      "displayName": "Unit Price",
       "dataType": "currency",
       "required": "No",
       "relatedTo": "None",
@@ -225,6 +249,7 @@
     },
     {
       "fieldName": "Discount",
+      "displayName": "Discount",
       "dataType": "percent",
       "required": "No",
       "relatedTo": "None",
@@ -233,6 +258,7 @@
     },
     {
       "fieldName": "ListPrice",
+      "displayName": "List Price",
       "dataType": "currency",
       "required": "No",
       "relatedTo": "None",
@@ -241,6 +267,7 @@
     },
     {
       "fieldName": "Subtotal",
+      "displayName": "Subtotal",
       "dataType": "currency",
       "required": "No",
       "relatedTo": "None",
@@ -249,6 +276,7 @@
     },
     {
       "fieldName": "TotalPrice",
+      "displayName": "Total Price",
       "dataType": "currency",
       "required": "No",
       "relatedTo": "None",
@@ -257,6 +285,7 @@
     },
     {
       "fieldName": "Duration",
+      "displayName": "Duration",
       "dataType": "double",
       "required": "No",
       "relatedTo": "None",
@@ -265,6 +294,7 @@
     },
     {
       "fieldName": "DurationType",
+      "displayName": "Duration Type",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -284,6 +314,7 @@
     },
     {
       "fieldName": "DurationInMinutes",
+      "displayName": "Duration in Minutes",
       "dataType": "double",
       "required": "No",
       "relatedTo": "None",
@@ -292,6 +323,7 @@
     },
     {
       "fieldName": "Street",
+      "displayName": "Street",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",
@@ -300,6 +332,7 @@
     },
     {
       "fieldName": "City",
+      "displayName": "City",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -308,6 +341,7 @@
     },
     {
       "fieldName": "State",
+      "displayName": "State/Province",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -316,6 +350,7 @@
     },
     {
       "fieldName": "PostalCode",
+      "displayName": "Zip/Postal Code",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -324,6 +359,7 @@
     },
     {
       "fieldName": "Country",
+      "displayName": "Country",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -332,6 +368,7 @@
     },
     {
       "fieldName": "Latitude",
+      "displayName": "Latitude",
       "dataType": "double",
       "required": "No",
       "relatedTo": "None",
@@ -340,6 +377,7 @@
     },
     {
       "fieldName": "Longitude",
+      "displayName": "Longitude",
       "dataType": "double",
       "required": "No",
       "relatedTo": "None",
@@ -348,6 +386,7 @@
     },
     {
       "fieldName": "GeocodeAccuracy",
+      "displayName": "Geocode Accuracy",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -412,6 +451,7 @@
     },
     {
       "fieldName": "Address",
+      "displayName": "Address",
       "dataType": "address",
       "required": "No",
       "relatedTo": "None",
@@ -420,6 +460,7 @@
     },
     {
       "fieldName": "Subject",
+      "displayName": "Subject",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -428,6 +469,7 @@
     },
     {
       "fieldName": "StatusCategory",
+      "displayName": "Status Category",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -477,6 +519,7 @@
     },
     {
       "fieldName": "IsClosed",
+      "displayName": "Is Closed",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -485,6 +528,7 @@
     },
     {
       "fieldName": "Priority",
+      "displayName": "Priority",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -514,6 +558,7 @@
     },
     {
       "fieldName": "ServiceAppointmentCount",
+      "displayName": "Service Appointment Count",
       "dataType": "int",
       "required": "No",
       "relatedTo": "None",
@@ -522,6 +567,7 @@
     },
     {
       "fieldName": "LocationId",
+      "displayName": "Location ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Location",

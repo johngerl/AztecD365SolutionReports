@@ -1,10 +1,12 @@
 {
   "objectName": "Solution",
+  "displayName": "Solution",
   "objectType": "Standard",
   "recordCount": 0,
   "fields": [
     {
       "fieldName": "Id",
+      "displayName": "Solution ID",
       "dataType": "id",
       "required": "No",
       "relatedTo": "None",
@@ -13,6 +15,7 @@
     },
     {
       "fieldName": "IsDeleted",
+      "displayName": "Deleted",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -21,6 +24,7 @@
     },
     {
       "fieldName": "SolutionNumber",
+      "displayName": "Solution Number",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -29,6 +33,7 @@
     },
     {
       "fieldName": "SolutionName",
+      "displayName": "Title",
       "dataType": "string",
       "required": "Yes",
       "relatedTo": "None",
@@ -37,6 +42,7 @@
     },
     {
       "fieldName": "IsPublished",
+      "displayName": "Public",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -45,6 +51,7 @@
     },
     {
       "fieldName": "IsPublishedInPublicKb",
+      "displayName": "Visible in Public Knowledge Base",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -53,6 +60,7 @@
     },
     {
       "fieldName": "Status",
+      "displayName": "Status",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -77,6 +85,7 @@
     },
     {
       "fieldName": "IsReviewed",
+      "displayName": "Reviewed",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -85,6 +94,7 @@
     },
     {
       "fieldName": "SolutionNote",
+      "displayName": "Description",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",
@@ -93,6 +103,7 @@
     },
     {
       "fieldName": "OwnerId",
+      "displayName": "Owner ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -101,6 +112,7 @@
     },
     {
       "fieldName": "CreatedDate",
+      "displayName": "Created Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -109,6 +121,7 @@
     },
     {
       "fieldName": "CreatedById",
+      "displayName": "Created By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -117,6 +130,7 @@
     },
     {
       "fieldName": "LastModifiedDate",
+      "displayName": "Last Modified Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -125,6 +139,7 @@
     },
     {
       "fieldName": "LastModifiedById",
+      "displayName": "Last Modified By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -133,6 +148,7 @@
     },
     {
       "fieldName": "SystemModstamp",
+      "displayName": "System Modstamp",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -141,6 +157,7 @@
     },
     {
       "fieldName": "TimesUsed",
+      "displayName": "Num Related Cases",
       "dataType": "int",
       "required": "Yes",
       "relatedTo": "None",
@@ -149,6 +166,7 @@
     },
     {
       "fieldName": "LastViewedDate",
+      "displayName": "Last Viewed Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -157,6 +175,7 @@
     },
     {
       "fieldName": "LastReferencedDate",
+      "displayName": "Last Referenced Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -165,6 +184,7 @@
     },
     {
       "fieldName": "IsHtml",
+      "displayName": "Is Html",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",

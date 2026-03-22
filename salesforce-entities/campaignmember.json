@@ -1,10 +1,12 @@
 {
   "objectName": "CampaignMember",
+  "displayName": "Campaign Member",
   "objectType": "Standard",
   "recordCount": 0,
   "fields": [
     {
       "fieldName": "Id",
+      "displayName": "Campaign Member ID",
       "dataType": "id",
       "required": "No",
       "relatedTo": "None",
@@ -13,6 +15,7 @@
     },
     {
       "fieldName": "IsDeleted",
+      "displayName": "Deleted",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -21,6 +24,7 @@
     },
     {
       "fieldName": "CampaignId",
+      "displayName": "Campaign ID",
       "dataType": "reference",
       "required": "Yes",
       "relatedTo": "Campaign",
@@ -29,6 +33,7 @@
     },
     {
       "fieldName": "LeadId",
+      "displayName": "Lead ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Lead",
@@ -37,6 +42,7 @@
     },
     {
       "fieldName": "ContactId",
+      "displayName": "Contact ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Contact",
@@ -45,6 +51,7 @@
     },
     {
       "fieldName": "Status",
+      "displayName": "Status",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -64,6 +71,7 @@
     },
     {
       "fieldName": "HasResponded",
+      "displayName": "Responded",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -72,6 +80,7 @@
     },
     {
       "fieldName": "CreatedDate",
+      "displayName": "Created Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -80,6 +89,7 @@
     },
     {
       "fieldName": "CreatedById",
+      "displayName": "Created By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -88,6 +98,7 @@
     },
     {
       "fieldName": "LastModifiedDate",
+      "displayName": "Last Modified Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -96,6 +107,7 @@
     },
     {
       "fieldName": "LastModifiedById",
+      "displayName": "Last Modified By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -104,6 +116,7 @@
     },
     {
       "fieldName": "SystemModstamp",
+      "displayName": "System Modstamp",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -112,6 +125,7 @@
     },
     {
       "fieldName": "FirstRespondedDate",
+      "displayName": "First Responded Date",
       "dataType": "date",
       "required": "No",
       "relatedTo": "None",
@@ -120,6 +134,7 @@
     },
     {
       "fieldName": "Salutation",
+      "displayName": "Salutation",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -159,6 +174,7 @@
     },
     {
       "fieldName": "Name",
+      "displayName": "Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -167,6 +183,7 @@
     },
     {
       "fieldName": "FirstName",
+      "displayName": "First Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -175,6 +192,7 @@
     },
     {
       "fieldName": "LastName",
+      "displayName": "Last Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -183,6 +201,7 @@
     },
     {
       "fieldName": "Title",
+      "displayName": "Title",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -191,6 +210,7 @@
     },
     {
       "fieldName": "Street",
+      "displayName": "Street",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -199,6 +219,7 @@
     },
     {
       "fieldName": "City",
+      "displayName": "City",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -207,6 +228,7 @@
     },
     {
       "fieldName": "State",
+      "displayName": "State/Province",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -215,6 +237,7 @@
     },
     {
       "fieldName": "PostalCode",
+      "displayName": "Zip/Postal Code",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -223,6 +246,7 @@
     },
     {
       "fieldName": "Country",
+      "displayName": "Country",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -231,6 +255,7 @@
     },
     {
       "fieldName": "Email",
+      "displayName": "Email",
       "dataType": "email",
       "required": "No",
       "relatedTo": "None",
@@ -239,6 +264,7 @@
     },
     {
       "fieldName": "Phone",
+      "displayName": "Phone",
       "dataType": "phone",
       "required": "No",
       "relatedTo": "None",
@@ -247,6 +273,7 @@
     },
     {
       "fieldName": "Fax",
+      "displayName": "Fax",
       "dataType": "phone",
       "required": "No",
       "relatedTo": "None",
@@ -255,6 +282,7 @@
     },
     {
       "fieldName": "MobilePhone",
+      "displayName": "Mobile",
       "dataType": "phone",
       "required": "No",
       "relatedTo": "None",
@@ -263,6 +291,7 @@
     },
     {
       "fieldName": "Description",
+      "displayName": "Description",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",
@@ -271,6 +300,7 @@
     },
     {
       "fieldName": "DoNotCall",
+      "displayName": "Do Not Call",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -279,6 +309,7 @@
     },
     {
       "fieldName": "HasOptedOutOfEmail",
+      "displayName": "Email Opt Out",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -287,6 +318,7 @@
     },
     {
       "fieldName": "HasOptedOutOfFax",
+      "displayName": "Fax Opt Out",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -295,6 +327,7 @@
     },
     {
       "fieldName": "LeadSource",
+      "displayName": "Lead Source",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -459,6 +492,7 @@
     },
     {
       "fieldName": "CompanyOrAccount",
+      "displayName": "Company (Account)",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -467,6 +501,7 @@
     },
     {
       "fieldName": "Type",
+      "displayName": "Type",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -475,6 +510,7 @@
     },
     {
       "fieldName": "LeadOrContactId",
+      "displayName": "Related Record ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Account, Contact, Lead",
@@ -483,6 +519,7 @@
     },
     {
       "fieldName": "LeadOrContactOwnerId",
+      "displayName": "Related Record Owner ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Group, User",

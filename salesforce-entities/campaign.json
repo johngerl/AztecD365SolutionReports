@@ -1,10 +1,12 @@
 {
   "objectName": "Campaign",
+  "displayName": "Campaign",
   "objectType": "Standard",
   "recordCount": 0,
   "fields": [
     {
       "fieldName": "Id",
+      "displayName": "Campaign ID",
       "dataType": "id",
       "required": "No",
       "relatedTo": "None",
@@ -13,6 +15,7 @@
     },
     {
       "fieldName": "IsDeleted",
+      "displayName": "Deleted",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -21,6 +24,7 @@
     },
     {
       "fieldName": "Name",
+      "displayName": "Name",
       "dataType": "string",
       "required": "Yes",
       "relatedTo": "None",
@@ -29,6 +33,7 @@
     },
     {
       "fieldName": "ParentId",
+      "displayName": "Parent Campaign ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Campaign",
@@ -37,6 +42,7 @@
     },
     {
       "fieldName": "Type",
+      "displayName": "Type",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -91,6 +97,7 @@
     },
     {
       "fieldName": "Status",
+      "displayName": "Status",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -120,6 +127,7 @@
     },
     {
       "fieldName": "StartDate",
+      "displayName": "Start Date",
       "dataType": "date",
       "required": "No",
       "relatedTo": "None",
@@ -128,6 +136,7 @@
     },
     {
       "fieldName": "EndDate",
+      "displayName": "End Date",
       "dataType": "date",
       "required": "No",
       "relatedTo": "None",
@@ -136,6 +145,7 @@
     },
     {
       "fieldName": "ExpectedRevenue",
+      "displayName": "Expected Revenue in Campaign",
       "dataType": "currency",
       "required": "No",
       "relatedTo": "None",
@@ -144,6 +154,7 @@
     },
     {
       "fieldName": "BudgetedCost",
+      "displayName": "Budgeted Cost in Campaign",
       "dataType": "currency",
       "required": "No",
       "relatedTo": "None",
@@ -152,6 +163,7 @@
     },
     {
       "fieldName": "ActualCost",
+      "displayName": "Actual Cost in Campaign",
       "dataType": "currency",
       "required": "No",
       "relatedTo": "None",
@@ -160,6 +172,7 @@
     },
     {
       "fieldName": "ExpectedResponse",
+      "displayName": "Expected Response (%)",
       "dataType": "percent",
       "required": "No",
       "relatedTo": "None",
@@ -168,6 +181,7 @@
     },
     {
       "fieldName": "NumberSent",
+      "displayName": "Num Sent in Campaign",
       "dataType": "double",
       "required": "No",
       "relatedTo": "None",
@@ -176,6 +190,7 @@
     },
     {
       "fieldName": "IsActive",
+      "displayName": "Active",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -184,6 +199,7 @@
     },
     {
       "fieldName": "Description",
+      "displayName": "Description",
       "dataType": "textarea",
       "required": "No",
       "relatedTo": "None",
@@ -192,6 +208,7 @@
     },
     {
       "fieldName": "NumberOfLeads",
+      "displayName": "Leads in Campaign",
       "dataType": "int",
       "required": "Yes",
       "relatedTo": "None",
@@ -200,6 +217,7 @@
     },
     {
       "fieldName": "NumberOfConvertedLeads",
+      "displayName": "Converted Leads in Campaign",
       "dataType": "int",
       "required": "Yes",
       "relatedTo": "None",
@@ -208,6 +226,7 @@
     },
     {
       "fieldName": "NumberOfContacts",
+      "displayName": "Contacts in Campaign",
       "dataType": "int",
       "required": "Yes",
       "relatedTo": "None",
@@ -216,6 +235,7 @@
     },
     {
       "fieldName": "NumberOfResponses",
+      "displayName": "Responses in Campaign",
       "dataType": "int",
       "required": "Yes",
       "relatedTo": "None",
@@ -224,6 +244,7 @@
     },
     {
       "fieldName": "NumberOfOpportunities",
+      "displayName": "Opportunities in Campaign",
       "dataType": "int",
       "required": "Yes",
       "relatedTo": "None",
@@ -232,6 +253,7 @@
     },
     {
       "fieldName": "NumberOfWonOpportunities",
+      "displayName": "Won Opportunities in Campaign",
       "dataType": "int",
       "required": "Yes",
       "relatedTo": "None",
@@ -240,6 +262,7 @@
     },
     {
       "fieldName": "AmountAllOpportunities",
+      "displayName": "Value Opportunities in Campaign",
       "dataType": "currency",
       "required": "Yes",
       "relatedTo": "None",
@@ -248,6 +271,7 @@
     },
     {
       "fieldName": "AmountWonOpportunities",
+      "displayName": "Value Won Opportunities in Campaign",
       "dataType": "currency",
       "required": "Yes",
       "relatedTo": "None",
@@ -256,6 +280,7 @@
     },
     {
       "fieldName": "OwnerId",
+      "displayName": "Owner ID",
       "dataType": "reference",
       "required": "Yes",
       "relatedTo": "User",
@@ -264,6 +289,7 @@
     },
     {
       "fieldName": "CreatedDate",
+      "displayName": "Created Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -272,6 +298,7 @@
     },
     {
       "fieldName": "CreatedById",
+      "displayName": "Created By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -280,6 +307,7 @@
     },
     {
       "fieldName": "LastModifiedDate",
+      "displayName": "Last Modified Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -288,6 +316,7 @@
     },
     {
       "fieldName": "LastModifiedById",
+      "displayName": "Last Modified By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -296,6 +325,7 @@
     },
     {
       "fieldName": "SystemModstamp",
+      "displayName": "System Modstamp",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -304,6 +334,7 @@
     },
     {
       "fieldName": "LastActivityDate",
+      "displayName": "Last Activity",
       "dataType": "date",
       "required": "No",
       "relatedTo": "None",
@@ -312,6 +343,7 @@
     },
     {
       "fieldName": "LastViewedDate",
+      "displayName": "Last Viewed Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -320,6 +352,7 @@
     },
     {
       "fieldName": "LastReferencedDate",
+      "displayName": "Last Referenced Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -328,6 +361,7 @@
     },
     {
       "fieldName": "CampaignMemberRecordTypeId",
+      "displayName": "Record Type ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "RecordType",

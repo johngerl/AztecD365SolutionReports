@@ -1,10 +1,12 @@
 {
   "objectName": "Expense_Report__c",
+  "displayName": "Expense Report",
   "objectType": "Custom",
   "recordCount": 0,
   "fields": [
     {
       "fieldName": "Id",
+      "displayName": "Record ID",
       "dataType": "id",
       "required": "No",
       "relatedTo": "None",
@@ -13,6 +15,7 @@
     },
     {
       "fieldName": "OwnerId",
+      "displayName": "Owner ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Group, User",
@@ -21,6 +24,7 @@
     },
     {
       "fieldName": "IsDeleted",
+      "displayName": "Deleted",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -29,6 +33,7 @@
     },
     {
       "fieldName": "Name",
+      "displayName": "Expense Report Name",
       "dataType": "string",
       "required": "No",
       "relatedTo": "None",
@@ -37,6 +42,7 @@
     },
     {
       "fieldName": "CreatedDate",
+      "displayName": "Created Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -45,6 +51,7 @@
     },
     {
       "fieldName": "CreatedById",
+      "displayName": "Created By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -53,6 +60,7 @@
     },
     {
       "fieldName": "LastModifiedDate",
+      "displayName": "Last Modified Date",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -61,6 +69,7 @@
     },
     {
       "fieldName": "LastModifiedById",
+      "displayName": "Last Modified By ID",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "User",
@@ -69,6 +78,7 @@
     },
     {
       "fieldName": "SystemModstamp",
+      "displayName": "System Modstamp",
       "dataType": "datetime",
       "required": "No",
       "relatedTo": "None",
@@ -77,6 +87,7 @@
     },
     {
       "fieldName": "Status__c",
+      "displayName": "Status",
       "dataType": "picklist",
       "required": "No",
       "relatedTo": "None",
@@ -116,6 +127,7 @@
     },
     {
       "fieldName": "Count_of_Expenses_in_Report__c",
+      "displayName": "Count of Expenses in Report",
       "dataType": "double",
       "required": "No",
       "relatedTo": "None",
@@ -124,6 +136,7 @@
     },
     {
       "fieldName": "Account__c",
+      "displayName": "Account",
       "dataType": "reference",
       "required": "No",
       "relatedTo": "Account",
@@ -132,6 +145,7 @@
     },
     {
       "fieldName": "Approved__c",
+      "displayName": "Approved",
       "dataType": "boolean",
       "required": "No",
       "relatedTo": "None",
@@ -140,6 +154,7 @@
     },
     {
       "fieldName": "Total_Expenses_Approved__c",
+      "displayName": "Total Expenses Approved",
       "dataType": "currency",
       "required": "No",
       "relatedTo": "None",
@@ -148,6 +163,7 @@
     },
     {
       "fieldName": "Total_Expenses__c",
+      "displayName": "Total Expenses",
       "dataType": "currency",
       "required": "No",
       "relatedTo": "None",

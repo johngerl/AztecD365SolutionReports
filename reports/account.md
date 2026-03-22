@@ -1,29 +1,29 @@
 # Account Field Usage Analysis
 > Date: 2026-03-22
 
-| Property | Value |
-|---|---|
-| **Entity Name** | account |
-| **Display Name** | Account |
-| **Description** | Business that represents a customer or potential customer. The company that is billed in business transactions. |
-| **Object Type** | Standard |
-| **Ownership Type** | UserOwned |
-| **Audit Enabled** | True |
-| **Total Rows** |  |
-| **Last Update** |  |
-| **Primary ID Field** | accountid |
-| **Primary Name Field** | name |
-| **Count Forms** | 155 |
-| **Count Views** | 245 |
-| **Count Chart Visualizations** | 0 |
-| **Count Reports** | 49 |
-| **Count Dashboards** | 0 |
-| **Count Workflows** | 179 |
-| **Count Formulas & Rollups** | 52 |
-| **Count Plugins** | 977 |
-| **Count PCF Controls** | 7 |
-| **Count Relationships** | 43 |
-| **Count Ribbon Customizations** | 0 |
+| Property                        | Value                                                                                                           |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| **Entity Name**                 | account                                                                                                         |
+| **Display Name**                | Account                                                                                                         |
+| **Description**                 | Business that represents a customer or potential customer. The company that is billed in business transactions. |
+| **Object Type**                 | Standard                                                                                                        |
+| **Ownership Type**              | UserOwned                                                                                                       |
+| **Audit Enabled**               | True                                                                                                            |
+| **Total Rows**                  |                                                                                                                 |
+| **Last Update**                 |                                                                                                                 |
+| **Primary ID Field**            | accountid                                                                                                       |
+| **Primary Name Field**          | name                                                                                                            |
+| **Count Forms**                 | 155                                                                                                             |
+| **Count Views**                 | 245                                                                                                             |
+| **Count Chart Visualizations**  | 0                                                                                                               |
+| **Count Reports**               | 49                                                                                                              |
+| **Count Dashboards**            | 0                                                                                                               |
+| **Count Workflows**             | 179                                                                                                             |
+| **Count Formulas & Rollups**    | 52                                                                                                              |
+| **Count Plugins**               | 977                                                                                                             |
+| **Count PCF Controls**          | 7                                                                                                               |
+| **Count Relationships**         | 43                                                                                                              |
+| **Count Ribbon Customizations** | 0                                                                                                               |
 
 ## Table of Contents
 

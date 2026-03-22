@@ -7733,11 +7733,11 @@
       ],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Account ID",
+      "sfSuggestedFieldApiName": "AccountId",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "exact"
     },
     {
       "fieldName": "azt_defaultfreightamount",
@@ -7846,11 +7846,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Default Freight Amount",
+      "sfSuggestedFieldApiName": "Default_Freight_Amount__c",
+      "sfSuggestedDataType": "currency",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_defaultfreightamount_base",
@@ -8010,11 +8010,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Discretionary Discount",
+      "sfSuggestedFieldApiName": "Discretionary_Discount__c",
+      "sfSuggestedDataType": "currency",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_discretionarydiscount_base",
@@ -8323,11 +8323,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Freight Approved",
+      "sfSuggestedFieldApiName": "Freight_Approved__c",
+      "sfSuggestedDataType": "boolean",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "azt_historicalowner",
@@ -8406,11 +8406,11 @@
       "conflicts": [],
       "lastUpdate": "2026-02-13 16:44:19",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Historical Owner",
+      "sfSuggestedFieldApiName": "Historical_Owner__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_ponumber",
@@ -8511,11 +8511,11 @@
       "conflicts": [],
       "lastUpdate": "2026-01-22 16:04:03",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "PO Number",
+      "sfSuggestedFieldApiName": "PO_Number__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "azt_quoteapproval",
@@ -8595,11 +8595,11 @@
       ],
       "lastUpdate": "2026-01-21 01:13:24",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Quote Approval",
+      "sfSuggestedFieldApiName": "Quote_Approval__c",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_quotedcontactid",
@@ -8692,11 +8692,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Contact ID",
+      "sfSuggestedFieldApiName": "ContactId",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "azt_recapnotes",
@@ -8797,11 +8797,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Recap Notes",
+      "sfSuggestedFieldApiName": "Recap_Notes__c",
+      "sfSuggestedDataType": "textarea",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_recapnotescannedoptions",
@@ -8917,11 +8917,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Recap Notes Canned Options",
+      "sfSuggestedFieldApiName": "Recap_Notes_Canned_Options__c",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_recordownerid",
@@ -9340,11 +9340,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Record Type ID",
+      "sfSuggestedFieldApiName": "RecordTypeId",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "azt_requestedfreightamt",
@@ -9449,11 +9449,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-19 15:27:57",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Requested Freight Amt",
+      "sfSuggestedFieldApiName": "Requested_Freight_Amt__c",
+      "sfSuggestedDataType": "currency",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_requestedfreightamt_base",
@@ -9576,11 +9576,11 @@
       ],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Ship To Country",
+      "sfSuggestedFieldApiName": "ShippingCountry",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "azt_signedquotereceived",
@@ -9738,11 +9738,11 @@
       "conflicts": [],
       "lastUpdate": "2026-02-24 16:32:32",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Tax Amount",
+      "sfSuggestedFieldApiName": "Tax_Amount__c",
+      "sfSuggestedDataType": "currency",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_taxamount_base",
@@ -9896,11 +9896,11 @@
       ],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Bill To City",
+      "sfSuggestedFieldApiName": "BillingCity",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "billto_contactname",
@@ -10052,11 +10052,11 @@
       ],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Bill To Country",
+      "sfSuggestedFieldApiName": "BillingCountry",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "billto_fax",
@@ -10240,11 +10240,11 @@
       ],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Bill To Street 1",
+      "sfSuggestedFieldApiName": "Bill_To_Street_1__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "billto_line2",
@@ -10332,11 +10332,11 @@
       ],
       "lastUpdate": "2026-03-20 16:28:01",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Bill To Street 2",
+      "sfSuggestedFieldApiName": "Bill_To_Street_2__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "billto_line3",
@@ -10407,11 +10407,11 @@
       ],
       "lastUpdate": "2026-03-20 21:44:41",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Bill To Street 3",
+      "sfSuggestedFieldApiName": "Bill_To_Street_3__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "billto_name",
@@ -10493,11 +10493,11 @@
       ],
       "lastUpdate": "2026-01-21 01:13:24",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Client: Bill To Name",
+      "sfSuggestedFieldApiName": "Client_Bill_To_Name__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "billto_postalcode",
@@ -10603,11 +10603,11 @@
       ],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Bill To Zip/Postal Code",
+      "sfSuggestedFieldApiName": "BillingPostalCode",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "billto_stateorprovince",
@@ -10713,11 +10713,11 @@
       ],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Bill To Stateprovince",
+      "sfSuggestedFieldApiName": "Bill_To_Stateprovince__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "billto_telephone",
@@ -10933,11 +10933,11 @@
       ],
       "lastUpdate": "2026-03-20 22:14:10",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Closed On",
+      "sfSuggestedFieldApiName": "Closed_On__c",
+      "sfSuggestedDataType": "datetime",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "contactid",
@@ -11029,11 +11029,11 @@
       ],
       "lastUpdate": "2026-01-20 19:16:35",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Contact ID",
+      "sfSuggestedFieldApiName": "ContactId",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "exact"
     },
     {
       "fieldName": "createdby",
@@ -11100,11 +11100,11 @@
       ],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Created By ID",
+      "sfSuggestedFieldApiName": "CreatedById",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "createdon",
@@ -11294,11 +11294,11 @@
       "conflicts": [],
       "lastUpdate": "Skipped (createdon)",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Created Date",
+      "sfSuggestedFieldApiName": "CreatedDate",
+      "sfSuggestedDataType": "datetime",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "customerid",
@@ -11586,11 +11586,11 @@
       ],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Potential Customer",
+      "sfSuggestedFieldApiName": "Potential_Customer__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "description",
@@ -11696,11 +11696,11 @@
       ],
       "lastUpdate": "2026-03-20 21:44:41",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Description",
+      "sfSuggestedFieldApiName": "Description",
+      "sfSuggestedDataType": "textarea",
+      "sfSuggestedMatchTier": "exact"
     },
     {
       "fieldName": "discountamount",
@@ -11797,11 +11797,11 @@
       "conflicts": [],
       "lastUpdate": "2026-02-20 19:23:10",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Quote Discount Amount",
+      "sfSuggestedFieldApiName": "Quote_Discount_Amount__c",
+      "sfSuggestedDataType": "currency",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "discountpercentage",
@@ -11891,11 +11891,11 @@
       "conflicts": [],
       "lastUpdate": "2025-07-09 16:14:07",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Quote Discount",
+      "sfSuggestedFieldApiName": "Quote_Discount__c",
+      "sfSuggestedDataType": "double",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "effectivefrom",
@@ -11993,11 +11993,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Effective From",
+      "sfSuggestedFieldApiName": "Effective_From__c",
+      "sfSuggestedDataType": "datetime",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "effectiveto",
@@ -12107,11 +12107,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Effective To",
+      "sfSuggestedFieldApiName": "Effective_To__c",
+      "sfSuggestedDataType": "datetime",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "emailaddress",
@@ -12410,11 +12410,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Freight Amount",
+      "sfSuggestedFieldApiName": "Freight_Amount__c",
+      "sfSuggestedDataType": "currency",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "freightamount_base",
@@ -12545,11 +12545,11 @@
       ],
       "lastUpdate": "2026-03-20 22:27:06",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Freight Terms CRM",
+      "sfSuggestedFieldApiName": "Freight_Terms_CRM__c",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "modifiedon",
@@ -12634,11 +12634,11 @@
       ],
       "lastUpdate": "Skipped (modifiedon)",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Last Modified Date",
+      "sfSuggestedFieldApiName": "LastModifiedDate",
+      "sfSuggestedDataType": "datetime",
+      "sfSuggestedMatchTier": "synonym"
     },
     {
       "fieldName": "name",
@@ -13117,11 +13117,11 @@
       ],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Quote Name",
+      "sfSuggestedFieldApiName": "Name",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "exact"
     },
     {
       "fieldName": "opportunityid",
@@ -13427,11 +13427,11 @@
       ],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Opportunity ID",
+      "sfSuggestedFieldApiName": "OpportunityId",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "exact"
     },
     {
       "fieldName": "ownerid",
@@ -13667,11 +13667,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Owner ID",
+      "sfSuggestedFieldApiName": "OwnerId",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "exact"
     },
     {
       "fieldName": "paymenttermscode",
@@ -13738,11 +13738,11 @@
       ],
       "lastUpdate": "2025-07-18 12:45:13",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Payment Terms",
+      "sfSuggestedFieldApiName": "Payment_Terms__c",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "pricelevelid",
@@ -13817,11 +13817,11 @@
       ],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Price List",
+      "sfSuggestedFieldApiName": "Price_List__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "quoteid",
@@ -14097,11 +14097,11 @@
       ],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Quote GUID",
+      "sfSuggestedFieldApiName": "Quote_GUID__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "quotenumber",
@@ -14220,11 +14220,11 @@
       ],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Quote Number",
+      "sfSuggestedFieldApiName": "QuoteNumber",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "exact"
     },
     {
       "fieldName": "requestdeliveryby",
@@ -14391,11 +14391,11 @@
       ],
       "lastUpdate": "2026-03-20 22:27:06",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Ship To Zip/Postal Code",
+      "sfSuggestedFieldApiName": "ShippingPostalCode",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "shipto_city",
@@ -14475,11 +14475,11 @@
       ],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Ship To City",
+      "sfSuggestedFieldApiName": "ShippingCity",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "shipto_contactname",
@@ -14577,11 +14577,11 @@
       "conflicts": [],
       "lastUpdate": "2025-08-12 17:04:53",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Shipping Contact",
+      "sfSuggestedFieldApiName": "Shipping_Contact__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "shipto_country",
@@ -14661,11 +14661,11 @@
       ],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Ship To Country",
+      "sfSuggestedFieldApiName": "ShippingCountry",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "shipto_fax",
@@ -14902,11 +14902,11 @@
       ],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Ship To Street 1",
+      "sfSuggestedFieldApiName": "Ship_To_Street_1__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "shipto_line2",
@@ -14994,11 +14994,11 @@
       ],
       "lastUpdate": "2026-03-20 16:28:01",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Ship To Street 2",
+      "sfSuggestedFieldApiName": "Ship_To_Street_2__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "shipto_line3",
@@ -15080,11 +15080,11 @@
       ],
       "lastUpdate": "2026-03-20 22:14:10",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Ship To Street 3",
+      "sfSuggestedFieldApiName": "Ship_To_Street_3__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "shipto_name",
@@ -15179,11 +15179,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Ship To Name",
+      "sfSuggestedFieldApiName": "ShippingName",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "shipto_postalcode",
@@ -15271,11 +15271,11 @@
       ],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Ship To Zip/Postal Code",
+      "sfSuggestedFieldApiName": "ShippingPostalCode",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "shipto_stateorprovince",
@@ -15363,11 +15363,11 @@
       ],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Ship To Stateprovince",
+      "sfSuggestedFieldApiName": "Ship_To_Stateprovince__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "shipto_telephone",
@@ -15752,11 +15752,11 @@
       ],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Status",
+      "sfSuggestedFieldApiName": "Status",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "synonym"
     },
     {
       "fieldName": "statuscode",
@@ -15952,11 +15952,11 @@
       ],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Status",
+      "sfSuggestedFieldApiName": "Status",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "totalamount",
@@ -16117,11 +16117,11 @@
       ],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Total Amount",
+      "sfSuggestedFieldApiName": "Total_Amount__c",
+      "sfSuggestedDataType": "currency",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "totallineitemamount",
@@ -16196,11 +16196,11 @@
       ],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Total Detail Amount",
+      "sfSuggestedFieldApiName": "Total_Detail_Amount__c",
+      "sfSuggestedDataType": "currency",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -16319,11 +16319,11 @@
       ],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Currency",
+      "sfSuggestedFieldApiName": "Currency__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "willcall",
@@ -16392,11 +16392,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Quote",
+      "sfSuggestedFieldDisplayName": "Ship To",
+      "sfSuggestedFieldApiName": "Ship_To__c",
+      "sfSuggestedDataType": "boolean",
+      "sfSuggestedMatchTier": "generated"
     }
   ]
 }

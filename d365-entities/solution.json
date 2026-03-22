@@ -4238,11 +4238,11 @@
       ],
       "lastUpdate": "Skipped (createdon)",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Solution",
+      "sfSuggestedFieldDisplayName": "Created Date",
+      "sfSuggestedFieldApiName": "CreatedDate",
+      "sfSuggestedDataType": "datetime",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "description",
@@ -4348,11 +4348,11 @@
       ],
       "lastUpdate": "2026-03-22 08:38:35",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Solution",
+      "sfSuggestedFieldDisplayName": "Description",
+      "sfSuggestedFieldApiName": "Description__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "modifiedon",
@@ -4437,11 +4437,11 @@
       ],
       "lastUpdate": "Skipped (modifiedon)",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Solution",
+      "sfSuggestedFieldDisplayName": "Last Modified Date",
+      "sfSuggestedFieldApiName": "LastModifiedDate",
+      "sfSuggestedDataType": "datetime",
+      "sfSuggestedMatchTier": "synonym"
     }
   ]
 }

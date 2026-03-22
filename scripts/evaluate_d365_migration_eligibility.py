@@ -41,6 +41,9 @@ def compute_sf_suggested_mapping(field):
 
     Returns True if the field has usage or is required AND is not stale.
     """
+    if not field.get("dataType"):
+        return False
+
     staleness = is_stale(field.get("lastUpdate"))
     if staleness is True:
         return False

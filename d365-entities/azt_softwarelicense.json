@@ -7709,11 +7709,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-22 07:16:11",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Customer",
+      "sfSuggestedFieldApiName": "Customer__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_azteccompanionserial",
@@ -7808,11 +7808,11 @@
       "conflicts": [],
       "lastUpdate": "2026-02-28 05:15:24",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Aztec Companion Serial",
+      "sfSuggestedFieldApiName": "Aztec_Companion_Serial__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_azteccompaniontype",
@@ -8065,11 +8065,11 @@
       ],
       "lastUpdate": "2026-03-22 07:16:11",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Certificate Issued",
+      "sfSuggestedFieldApiName": "Certificate_Issued__c",
+      "sfSuggestedDataType": "boolean",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_certificateissuedon",
@@ -8415,11 +8415,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-22 07:16:11",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Concurrent Users",
+      "sfSuggestedFieldApiName": "Concurrent_Users__c",
+      "sfSuggestedDataType": "int",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_contactid",
@@ -8584,11 +8584,11 @@
       ],
       "lastUpdate": "2026-02-20 18:47:21",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Cpu",
+      "sfSuggestedFieldApiName": "Cpu__c",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_donationlicense",
@@ -8664,11 +8664,11 @@
       ],
       "lastUpdate": "2026-03-22 07:16:11",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Donation License",
+      "sfSuggestedFieldApiName": "Donation_License__c",
+      "sfSuggestedDataType": "boolean",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_eligiblecomputers",
@@ -8923,11 +8923,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-22 07:16:11",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "License Status",
+      "sfSuggestedFieldApiName": "License_Status__c",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_licensetermmonths",
@@ -9170,11 +9170,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-22 07:16:11",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "License Term Months",
+      "sfSuggestedFieldApiName": "License_Term_Months__c",
+      "sfSuggestedDataType": "int",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_licensetype",
@@ -9528,11 +9528,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-22 07:16:11",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "License Type",
+      "sfSuggestedFieldApiName": "License_Type__c",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_name",
@@ -9944,11 +9944,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-22 07:16:11",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Name CRM",
+      "sfSuggestedFieldApiName": "Name_CRM__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_notes",
@@ -10015,11 +10015,11 @@
       ],
       "lastUpdate": "2026-03-20 14:36:55",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Notes",
+      "sfSuggestedFieldApiName": "Notes__c",
+      "sfSuggestedDataType": "textarea",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_nucram",
@@ -11419,11 +11419,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:34:08",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Parent Account",
+      "sfSuggestedFieldApiName": "Parent_Account__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_purchasedate",
@@ -11615,11 +11615,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-22 07:16:11",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Start Date",
+      "sfSuggestedFieldApiName": "Start_Date__c",
+      "sfSuggestedDataType": "datetime",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_recordownerid",
@@ -12234,11 +12234,11 @@
       ],
       "lastUpdate": "2026-03-22 07:16:11",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Software License",
+      "sfSuggestedFieldApiName": "Software_License__c",
+      "sfSuggestedDataType": "id",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_softwareproductid",
@@ -12420,11 +12420,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-22 07:16:11",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Software Product",
+      "sfSuggestedFieldApiName": "Software_Product__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_softwareversionnumber",
@@ -12491,11 +12491,11 @@
       ],
       "lastUpdate": "2026-02-20 18:47:21",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Software Version",
+      "sfSuggestedFieldApiName": "Software_Version__c",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_softwareversiontype",
@@ -12582,11 +12582,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-22 07:16:11",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Software Version Type",
+      "sfSuggestedFieldApiName": "Software_Version_Type__c",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_source",
@@ -12682,11 +12682,11 @@
       ],
       "lastUpdate": "2026-03-20 16:52:42",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Source",
+      "sfSuggestedFieldApiName": "Source__c",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_splitallocations",
@@ -13052,11 +13052,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-22 07:16:11",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "End Date",
+      "sfSuggestedFieldApiName": "End_Date__c",
+      "sfSuggestedDataType": "datetime",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_totalusers",
@@ -13123,11 +13123,11 @@
       ],
       "lastUpdate": "2026-03-20 16:52:42",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Total Users",
+      "sfSuggestedFieldApiName": "Total_Users__c",
+      "sfSuggestedDataType": "int",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_username",
@@ -13201,11 +13201,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:34:08",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "User Name",
+      "sfSuggestedFieldApiName": "User_Name__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_voucherissued",
@@ -13291,11 +13291,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-22 07:16:11",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Voucher Issued",
+      "sfSuggestedFieldApiName": "Voucher_Issued__c",
+      "sfSuggestedDataType": "boolean",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_voucherissuedby",
@@ -13372,11 +13372,11 @@
       "conflicts": [],
       "lastUpdate": "2025-06-30 04:15:16",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Voucher Issued By",
+      "sfSuggestedFieldApiName": "Voucher_Issued_By__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_voucherissuedon",
@@ -13453,11 +13453,11 @@
       "conflicts": [],
       "lastUpdate": "2025-06-30 04:15:16",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Voucher Issued On",
+      "sfSuggestedFieldApiName": "Voucher_Issued_On__c",
+      "sfSuggestedDataType": "datetime",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_vouchernumber",
@@ -13524,11 +13524,11 @@
       ],
       "lastUpdate": "2026-03-13 04:15:07",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Voucher",
+      "sfSuggestedFieldApiName": "Voucher__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "createdby",
@@ -13717,11 +13717,11 @@
       ],
       "lastUpdate": "2026-03-22 07:16:11",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Created By",
+      "sfSuggestedFieldApiName": "Created_By__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "createdon",
@@ -13940,11 +13940,11 @@
       "conflicts": [],
       "lastUpdate": "Skipped (createdon)",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Created On",
+      "sfSuggestedFieldApiName": "Created_On__c",
+      "sfSuggestedDataType": "datetime",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "createdonbehalfby",
@@ -14130,11 +14130,11 @@
       ],
       "lastUpdate": "2026-03-22 07:16:11",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Modified By",
+      "sfSuggestedFieldApiName": "Modified_By__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "modifiedon",
@@ -14219,11 +14219,11 @@
       ],
       "lastUpdate": "Skipped (modifiedon)",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Modified On",
+      "sfSuggestedFieldApiName": "Modified_On__c",
+      "sfSuggestedDataType": "datetime",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "modifiedonbehalfby",
@@ -14729,11 +14729,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-22 07:16:11",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Owner CRM",
+      "sfSuggestedFieldApiName": "Owner_CRM__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "owningbusinessunit",
@@ -14792,11 +14792,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-22 07:16:11",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Owning Business Unit",
+      "sfSuggestedFieldApiName": "Owning_Business_Unit__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "owningteam",
@@ -14873,11 +14873,11 @@
       ],
       "lastUpdate": "2026-03-22 07:16:11",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Owning Team",
+      "sfSuggestedFieldApiName": "Owning_Team__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "owninguser",
@@ -14944,11 +14944,11 @@
       "conflicts": [],
       "lastUpdate": "2025-11-30 05:15:28",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Owning User",
+      "sfSuggestedFieldApiName": "Owning_User__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "statecode",
@@ -15239,11 +15239,11 @@
       ],
       "lastUpdate": "2026-03-22 07:16:11",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Status CRM",
+      "sfSuggestedFieldApiName": "Status_CRM__c",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "statuscode",
@@ -15433,11 +15433,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-22 07:16:11",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Assets",
+      "sfSuggestedFieldDisplayName": "Status Reason",
+      "sfSuggestedFieldApiName": "Status_Reason__c",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "timezoneruleversionnumber",

@@ -8320,11 +8320,11 @@
       ],
       "lastUpdate": "2026-03-22 00:58:02",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Account ID",
+      "sfSuggestedFieldApiName": "AccountId",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "exact"
     },
     {
       "fieldName": "address1_addresstypecode",
@@ -8391,11 +8391,11 @@
       ],
       "lastUpdate": "2026-03-20 21:31:00",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Address 1 Address Type",
+      "sfSuggestedFieldApiName": "Address_1_Address_Type__c",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "address1_city",
@@ -8505,11 +8505,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 21:31:00",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Main Address City",
+      "sfSuggestedFieldApiName": "Main_Address_City__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "address1_composite",
@@ -8568,11 +8568,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 21:31:00",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Address 1",
+      "sfSuggestedFieldApiName": "Address_1__c",
+      "sfSuggestedDataType": "textarea",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "address1_fax",
@@ -8631,11 +8631,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-19 13:23:45",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Address 1 Fax",
+      "sfSuggestedFieldApiName": "Address_1_Fax__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "address1_line1",
@@ -8733,11 +8733,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 21:31:00",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Main Address Line 1",
+      "sfSuggestedFieldApiName": "Main_Address_Line_1__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "address1_line2",
@@ -8820,11 +8820,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 15:39:06",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Main Address Street 2",
+      "sfSuggestedFieldApiName": "Main_Address_Street_2__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "address1_name",
@@ -8894,11 +8894,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-22 00:58:02",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Address 1 Name",
+      "sfSuggestedFieldApiName": "Address_1_Name__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "address1_postalcode",
@@ -8996,11 +8996,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 21:31:00",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Main Address Zip",
+      "sfSuggestedFieldApiName": "Main_Address_Zip__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "address1_stateorprovince",
@@ -9170,11 +9170,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 21:31:00",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Main Address Stateprovince",
+      "sfSuggestedFieldApiName": "Main_Address_Stateprovince__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "address1_telephone1",
@@ -9245,11 +9245,11 @@
       ],
       "lastUpdate": "2026-03-20 14:51:56",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Address 1 Phone",
+      "sfSuggestedFieldApiName": "Address_1_Phone__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "address2_country",
@@ -9318,11 +9318,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 16:13:50",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Main Address Country",
+      "sfSuggestedFieldApiName": "Main_Address_Country__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "address2_county",
@@ -9391,11 +9391,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 16:13:50",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Main Address County",
+      "sfSuggestedFieldApiName": "Main_Address_County__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "address2_line1",
@@ -9590,11 +9590,11 @@
       ],
       "lastUpdate": "2026-03-16 23:04:11",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Assistant's Name",
+      "sfSuggestedFieldApiName": "AssistantName",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "exact"
     },
     {
       "fieldName": "assistantphone",
@@ -9661,11 +9661,11 @@
       ],
       "lastUpdate": "2026-03-16 23:04:11",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Assistant's Name",
+      "sfSuggestedFieldApiName": "AssistantName",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "azt_addresssearch",
@@ -9743,11 +9743,11 @@
       "conflicts": [],
       "lastUpdate": "2025-05-08 15:08:33",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Address Search",
+      "sfSuggestedFieldApiName": "Address_Search__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_dupbasedonemailandcustomer",
@@ -9816,11 +9816,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 21:36:12",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Dup Based On Email And Customer",
+      "sfSuggestedFieldApiName": "Dup_Based_On_Email_And_Customer__c",
+      "sfSuggestedDataType": "boolean",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_dupbasedonemailnocustomer",
@@ -9889,11 +9889,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 21:36:12",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Dup Based On Email No Customer",
+      "sfSuggestedFieldApiName": "Dup_Based_On_Email_No_Customer__c",
+      "sfSuggestedDataType": "boolean",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_excludefromautoassign",
@@ -9995,11 +9995,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 21:36:12",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Exclude From Autoassign",
+      "sfSuggestedFieldApiName": "Exclude_From_Autoassign__c",
+      "sfSuggestedDataType": "boolean",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_extension",
@@ -10083,11 +10083,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 12:52:19",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Extension",
+      "sfSuggestedFieldApiName": "Extension__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_isduplicate",
@@ -10156,11 +10156,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 21:36:12",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Is Duplicate",
+      "sfSuggestedFieldApiName": "Is_Duplicate__c",
+      "sfSuggestedDataType": "boolean",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_recordownerid",
@@ -10579,11 +10579,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 21:31:00",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Owner ID",
+      "sfSuggestedFieldApiName": "OwnerId",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "birthdate",
@@ -10650,11 +10650,11 @@
       ],
       "lastUpdate": "2026-03-16 22:57:48",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Birthday",
+      "sfSuggestedFieldApiName": "Birthday__c",
+      "sfSuggestedDataType": "datetime",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "contactid",
@@ -10820,11 +10820,11 @@
       ],
       "lastUpdate": "2026-03-22 00:58:02",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Contact GUID",
+      "sfSuggestedFieldApiName": "Contact_GUID__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "createdby",
@@ -10891,11 +10891,11 @@
       ],
       "lastUpdate": "2026-03-22 00:58:02",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Created By ID",
+      "sfSuggestedFieldApiName": "CreatedById",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "createdon",
@@ -11022,11 +11022,11 @@
       ],
       "lastUpdate": "Skipped (createdon)",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Created Date",
+      "sfSuggestedFieldApiName": "CreatedDate",
+      "sfSuggestedDataType": "datetime",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "defaultpricelevelid",
@@ -11220,11 +11220,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-19 15:06:48",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Contact Description",
+      "sfSuggestedFieldApiName": "Description",
+      "sfSuggestedDataType": "textarea",
+      "sfSuggestedMatchTier": "exact"
     },
     {
       "fieldName": "donotsendmm",
@@ -11291,11 +11291,11 @@
       ],
       "lastUpdate": "2026-03-22 00:58:02",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Send Marketing Materials",
+      "sfSuggestedFieldApiName": "Send_Marketing_Materials__c",
+      "sfSuggestedDataType": "boolean",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "emailaddress1",
@@ -11444,11 +11444,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-22 00:58:02",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Email",
+      "sfSuggestedFieldApiName": "Email",
+      "sfSuggestedDataType": "email",
+      "sfSuggestedMatchTier": "synonym"
     },
     {
       "fieldName": "familystatuscode",
@@ -11515,11 +11515,11 @@
       ],
       "lastUpdate": "2025-08-18 13:15:01",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Marital Status",
+      "sfSuggestedFieldApiName": "Marital_Status__c",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "fax",
@@ -11578,11 +11578,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-19 13:23:45",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Business Fax",
+      "sfSuggestedFieldApiName": "Fax",
+      "sfSuggestedDataType": "phone",
+      "sfSuggestedMatchTier": "exact"
     },
     {
       "fieldName": "firstname",
@@ -11673,11 +11673,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-22 00:58:02",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "First Name",
+      "sfSuggestedFieldApiName": "FirstName",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "exact"
     },
     {
       "fieldName": "fullname",
@@ -11895,11 +11895,11 @@
       ],
       "lastUpdate": "2026-03-22 00:58:02",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Full Name",
+      "sfSuggestedFieldApiName": "Name",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "jobtitle",
@@ -12014,11 +12014,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-22 00:58:02",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Title",
+      "sfSuggestedFieldApiName": "Title",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "lastname",
@@ -12100,11 +12100,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-22 00:58:02",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Last Name",
+      "sfSuggestedFieldApiName": "LastName",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "exact"
     },
     {
       "fieldName": "lastusedincampaign",
@@ -12242,11 +12242,11 @@
       ],
       "lastUpdate": "2026-03-16 23:02:36",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Manager",
+      "sfSuggestedFieldApiName": "Manager__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "managerphone",
@@ -12313,11 +12313,11 @@
       ],
       "lastUpdate": "2026-03-16 23:04:11",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Manager Phone",
+      "sfSuggestedFieldApiName": "Manager_Phone__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "mobilephone",
@@ -12398,11 +12398,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 16:52:46",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Mobile Phone",
+      "sfSuggestedFieldApiName": "MobilePhone",
+      "sfSuggestedDataType": "phone",
+      "sfSuggestedMatchTier": "exact"
     },
     {
       "fieldName": "modifiedon",
@@ -12487,11 +12487,11 @@
       ],
       "lastUpdate": "Skipped (modifiedon)",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Qualified On",
+      "sfSuggestedFieldApiName": "Qualified_On__c",
+      "sfSuggestedDataType": "date",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "msa_managingpartnerid",
@@ -12550,11 +12550,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 21:31:00",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Managing Partner",
+      "sfSuggestedFieldApiName": "Managing_Partner__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "msdyn_contactkpiid",
@@ -12747,11 +12747,11 @@
       ],
       "lastUpdate": "2025-08-18 13:15:01",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Full Name",
+      "sfSuggestedFieldApiName": "Name",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "numberofchildren",
@@ -12818,11 +12818,11 @@
       ],
       "lastUpdate": "2025-08-18 13:15:01",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "No Of Children",
+      "sfSuggestedFieldApiName": "No_Of_Children__c",
+      "sfSuggestedDataType": "int",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "originatingleadid",
@@ -12900,11 +12900,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-16 23:03:20",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Originating Lead",
+      "sfSuggestedFieldApiName": "Originating_Lead__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "ownerid",
@@ -13159,11 +13159,11 @@
       ],
       "lastUpdate": "2026-03-22 00:58:02",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Owner ID",
+      "sfSuggestedFieldApiName": "OwnerId",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "exact"
     },
     {
       "fieldName": "parent_contactid",
@@ -13222,11 +13222,11 @@
       "conflicts": [],
       "lastUpdate": "2025-04-17 14:48:14",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Parentcontactid",
+      "sfSuggestedFieldApiName": "Parentcontactid__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "parentcontactid",
@@ -13290,11 +13290,11 @@
       ],
       "lastUpdate": "2025-09-22 16:50:05",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Reports To ID",
+      "sfSuggestedFieldApiName": "ReportsToId",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "synonym"
     },
     {
       "fieldName": "parentcustomerid",
@@ -13471,11 +13471,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-22 00:58:02",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Company Name",
+      "sfSuggestedFieldApiName": "Company_Name__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "preferredappointmentdaycode",
@@ -13613,11 +13613,11 @@
       ],
       "lastUpdate": "2026-03-22 00:58:02",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Preferred Time",
+      "sfSuggestedFieldApiName": "Preferred_Time__c",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "preferredequipmentid",
@@ -13901,11 +13901,11 @@
       ],
       "lastUpdate": "2026-03-22 00:58:02",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Shipping Method",
+      "sfSuggestedFieldApiName": "Shipping_Method__c",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "spousesname",
@@ -13972,11 +13972,11 @@
       ],
       "lastUpdate": "2026-03-16 22:54:01",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Spousepartner Name",
+      "sfSuggestedFieldApiName": "Spousepartner_Name__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "statecode",
@@ -14273,11 +14273,11 @@
       ],
       "lastUpdate": "2026-03-22 00:58:02",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Status CRM",
+      "sfSuggestedFieldApiName": "Status_CRM__c",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "statuscode",
@@ -14467,11 +14467,11 @@
       ],
       "lastUpdate": "2026-03-22 00:58:02",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Status Reason",
+      "sfSuggestedFieldApiName": "Status_Reason__c",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "telephone1",
@@ -14599,11 +14599,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-22 00:58:02",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Other Phone",
+      "sfSuggestedFieldApiName": "OtherPhone",
+      "sfSuggestedDataType": "phone",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -14716,11 +14716,11 @@
       ],
       "lastUpdate": "2026-03-20 21:31:00",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Contact",
+      "sfSuggestedFieldDisplayName": "Currency",
+      "sfSuggestedFieldApiName": "Currency__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     }
   ]
 }

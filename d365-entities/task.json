@@ -5705,11 +5705,11 @@
       ],
       "lastUpdate": "2026-03-20 16:28:45",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Activity GUID",
+      "sfSuggestedFieldApiName": "Activity_GUID__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "activitytypecode",
@@ -5780,11 +5780,11 @@
       ],
       "lastUpdate": "2026-03-20 16:28:45",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Activity Type",
+      "sfSuggestedFieldApiName": "Activity_Type__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_historicalowner",
@@ -6286,11 +6286,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 16:28:45",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Task Record Type ID",
+      "sfSuggestedFieldApiName": "RecordTypeId",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "azt_reorderopportunityid",
@@ -6364,11 +6364,11 @@
       ],
       "lastUpdate": "2026-03-20 13:34:04",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Reorder Opportunity",
+      "sfSuggestedFieldApiName": "Reorder_Opportunity__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "azt_tasktype",
@@ -6454,11 +6454,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 13:34:04",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Task Subtype",
+      "sfSuggestedFieldApiName": "TaskSubtype",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "category",
@@ -6609,11 +6609,11 @@
       ],
       "lastUpdate": "2026-03-20 16:28:45",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Created By ID",
+      "sfSuggestedFieldApiName": "CreatedById",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "createdon",
@@ -6740,11 +6740,11 @@
       ],
       "lastUpdate": "Skipped (createdon)",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Created Date",
+      "sfSuggestedFieldApiName": "CreatedDate",
+      "sfSuggestedDataType": "datetime",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "description",
@@ -6850,11 +6850,11 @@
       ],
       "lastUpdate": "2026-03-20 16:28:45",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Description",
+      "sfSuggestedFieldApiName": "Description",
+      "sfSuggestedDataType": "textarea",
+      "sfSuggestedMatchTier": "exact"
     },
     {
       "fieldName": "modifiedon",
@@ -6939,11 +6939,11 @@
       ],
       "lastUpdate": "Skipped (modifiedon)",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Last Modified Date",
+      "sfSuggestedFieldApiName": "LastModifiedDate",
+      "sfSuggestedDataType": "datetime",
+      "sfSuggestedMatchTier": "synonym"
     },
     {
       "fieldName": "ownerid",
@@ -7186,11 +7186,11 @@
       ],
       "lastUpdate": "2026-03-20 16:28:45",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Assigned To ID",
+      "sfSuggestedFieldApiName": "OwnerId",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "exact"
     },
     {
       "fieldName": "prioritycode",
@@ -7273,11 +7273,11 @@
       "conflicts": [],
       "lastUpdate": "2026-03-20 16:28:45",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Priority",
+      "sfSuggestedFieldApiName": "Priority",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "regardingobjectid",
@@ -7699,11 +7699,11 @@
       ],
       "lastUpdate": "2026-03-20 16:28:45",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Related To ID",
+      "sfSuggestedFieldApiName": "WhatId",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "synonym"
     },
     {
       "fieldName": "scheduledend",
@@ -7823,11 +7823,11 @@
       ],
       "lastUpdate": "2026-03-20 13:34:04",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Due Date",
+      "sfSuggestedFieldApiName": "Due_Date__c",
+      "sfSuggestedDataType": "datetime",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "statecode",
@@ -8046,11 +8046,11 @@
       ],
       "lastUpdate": "2026-03-20 16:28:45",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Status",
+      "sfSuggestedFieldApiName": "Status",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "synonym"
     },
     {
       "fieldName": "statuscode",
@@ -8162,11 +8162,11 @@
       ],
       "lastUpdate": "2026-03-20 16:28:45",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Status",
+      "sfSuggestedFieldApiName": "Status",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "fuzzy"
     },
     {
       "fieldName": "subject",
@@ -8287,11 +8287,11 @@
       ],
       "lastUpdate": "2026-03-20 16:28:45",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Subject",
+      "sfSuggestedFieldApiName": "Subject__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "generated"
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -8404,11 +8404,11 @@
       ],
       "lastUpdate": "2025-08-14 15:14:51",
       "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null
+      "sfSuggestedObjectName": "Task",
+      "sfSuggestedFieldDisplayName": "Currency",
+      "sfSuggestedFieldApiName": "Currency__c",
+      "sfSuggestedDataType": "reference",
+      "sfSuggestedMatchTier": "generated"
     }
   ]
 }

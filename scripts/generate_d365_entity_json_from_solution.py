@@ -2358,6 +2358,8 @@ def enrich_entity(entity_name, root, property_to_field, class_to_entity):
         'objectType': "Custom" if entity_name.startswith("azt_") else "Standard",
         'ownershipType': entity_meta['ownership_type'],
         'auditEnabled': entity_meta['is_audit_enabled'],
+        'totalRows': 0,
+        'lastUpdate': '',
         'primaryIdField': f"{entity_name}id",
         'primaryNameField': primary_name_field,
         # Reference count properties (computed by Step 4, initialized to 0)

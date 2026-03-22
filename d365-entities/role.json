@@ -4201,6 +4201,7 @@
         }
       ],
       "lastUpdate": "2026-03-22 04:15:44",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -4320,6 +4321,7 @@
         }
       ],
       "lastUpdate": "Skipped (createdon)",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -4418,6 +4420,7 @@
         }
       ],
       "lastUpdate": "2026-03-22 04:15:44",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -4495,6 +4498,7 @@
         }
       ],
       "lastUpdate": "Skipped (modifiedon)",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -4705,6 +4709,7 @@
         }
       ],
       "lastUpdate": "2026-03-22 04:15:44",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -4796,6 +4801,7 @@
         }
       ],
       "lastUpdate": "2026-03-22 04:15:44",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,

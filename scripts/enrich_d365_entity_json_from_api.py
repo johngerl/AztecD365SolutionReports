@@ -2,12 +2,12 @@
 """
 enrich_d365_entity_json_from_api.py
 
-Step 2 of the pipeline. Runs after Step 1.
+Step 3 of the pipeline. Runs after Step 2.
 
 Queries the Dataverse Web API EntityDefinitions/Attributes endpoint to get
 metadata for ALL real attributes, then updates stub fields (those with empty
 dataType) in d365-entities/*.json in-place. Fields that already have metadata
-from Step 1 (customizations.xml) are left untouched.
+from Step 2 (customizations.xml) are left untouched.
 
 Requires: msal (pip install msal) and scripts/config.local.json with Dataverse
 credentials.
@@ -422,7 +422,7 @@ def process_entity(api_base, headers, entity_json_path, dry_run, plugin_step_loo
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Enrich stub fields in d365-entities/*.json with Dataverse Web API metadata (Step 2)."
+        description="Enrich stub fields in d365-entities/*.json with Dataverse Web API metadata (Step 3)."
     )
     parser.add_argument("entity", nargs="?", help="Entity name (e.g. account)")
     parser.add_argument("--all", action="store_true", help="Process all entities")

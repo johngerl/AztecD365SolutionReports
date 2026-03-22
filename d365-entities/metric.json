@@ -4152,6 +4152,7 @@
         }
       ],
       "lastUpdate": "2022-12-26 10:23:10",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -4271,6 +4272,7 @@
         }
       ],
       "lastUpdate": "Skipped (createdon)",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -4369,6 +4371,7 @@
         }
       ],
       "lastUpdate": "2018-12-21 08:07:09",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -4425,6 +4428,7 @@
         }
       ],
       "lastUpdate": "2022-12-26 10:23:10",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -4481,6 +4485,7 @@
         }
       ],
       "lastUpdate": "2022-12-26 10:23:10",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -4558,6 +4563,7 @@
         }
       ],
       "lastUpdate": "Skipped (modifiedon)",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -4768,6 +4774,7 @@
         }
       ],
       "lastUpdate": "2022-12-26 10:23:10",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -4957,6 +4964,7 @@
         }
       ],
       "lastUpdate": "2022-12-26 10:23:10",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -5048,6 +5056,7 @@
         }
       ],
       "lastUpdate": "2022-12-26 10:23:10",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,

@@ -15426,11 +15426,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "AccountId",
-      "sfSuggestedFieldApiName": "AccountId",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "actualclosedate",
@@ -15706,11 +15707,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 20:16:40",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "CloseDate",
-      "sfSuggestedFieldApiName": "CloseDate",
-      "sfSuggestedDataType": "date",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "actualvalue",
@@ -15864,11 +15866,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 20:16:40",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Actual Revenue",
-      "sfSuggestedFieldApiName": "Actual_Revenue__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "actualvalue_base",
@@ -15921,11 +15924,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 20:16:40",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Actual Revenue Base",
-      "sfSuggestedFieldApiName": "Actual_Revenue_Base__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_accountclassification",
@@ -16081,11 +16085,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 21:44:40",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Account Classification",
-      "sfSuggestedFieldApiName": "Account_Classification__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_addonopportunitytotal",
@@ -16155,11 +16160,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "CRM_Initial_Opportunity_Total__c",
-      "sfSuggestedFieldApiName": "CRM_Initial_Opportunity_Total__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_addonopportunitytotal_base",
@@ -16199,6 +16205,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -16265,11 +16272,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 00:56:55",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Assigned Am",
-      "sfSuggestedFieldApiName": "Assigned_Am__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_committoestimatedclose",
@@ -16355,11 +16363,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Commit To Pipeline",
-      "sfSuggestedFieldApiName": "Commit_To_Pipeline__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_dayssincecreated",
@@ -16448,11 +16457,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Days Since Created",
-      "sfSuggestedFieldApiName": "Days_Since_Created__c",
-      "sfSuggestedDataType": "int",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_dayssinceprobabilitychanged",
@@ -16548,11 +16558,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Days Since Probability Changed",
-      "sfSuggestedFieldApiName": "Days_Since_Probability_Changed__c",
-      "sfSuggestedDataType": "int",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_defaultfreightamount",
@@ -16652,11 +16663,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Freight_Amount__c",
-      "sfSuggestedFieldApiName": "Freight_Amount__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_defaultfreightamount_base",
@@ -16696,6 +16708,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -16809,11 +16822,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 00:56:55",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Delivery Type",
-      "sfSuggestedFieldApiName": "Delivery_Type__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_discretionarydiscount",
@@ -16883,11 +16897,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "CRM_Discretionary_Discount__c",
-      "sfSuggestedFieldApiName": "CRM_Discretionary_Discount__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_discretionarydiscount_base",
@@ -16927,6 +16942,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -17007,11 +17023,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-02-27 20:44:28",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "CRM_Discretionary_Discount__c",
-      "sfSuggestedFieldApiName": "CRM_Discretionary_Discount__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_discretionarydiscountamt_base",
@@ -17051,6 +17068,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-02-27 20:44:28",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -17180,11 +17198,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 21:44:40",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Expected_Renewal_Amount__c",
-      "sfSuggestedFieldApiName": "Expected_Renewal_Amount__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_expectedrenewalvalue_base",
@@ -17224,6 +17243,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 21:44:40",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -17333,11 +17353,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Freight Amt Approved",
-      "sfSuggestedFieldApiName": "Freight_Amt_Approved__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_fundingsource",
@@ -17466,11 +17487,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 21:44:40",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Funding_Source__c",
-      "sfSuggestedFieldApiName": "Funding_Source__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_historicalowner",
@@ -17530,11 +17552,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 15:49:24",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Historical Owner",
-      "sfSuggestedFieldApiName": "Historical_Owner__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_initialopportunitytotal",
@@ -17604,11 +17627,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "CRM_Initial_Opportunity_Total__c",
-      "sfSuggestedFieldApiName": "CRM_Initial_Opportunity_Total__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_initialopportunitytotal_base",
@@ -17648,6 +17672,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -17714,11 +17739,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 21:16:46",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "CRM_Internal_Aztec_Notes__c",
-      "sfSuggestedFieldApiName": "CRM_Internal_Aztec_Notes__c",
-      "sfSuggestedDataType": "textarea",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_invoicenumber",
@@ -17758,6 +17784,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -17836,11 +17863,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Cross_Sell__c",
-      "sfSuggestedFieldApiName": "Cross_Sell__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_lastactivitydate",
@@ -17916,11 +17944,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "LastActivityDate",
-      "sfSuggestedFieldApiName": "LastActivityDate",
-      "sfSuggestedDataType": "date",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_lastmodifiedbyid",
@@ -18010,11 +18039,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "LastModifiedById",
-      "sfSuggestedFieldApiName": "LastModifiedById",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_leadsource",
@@ -18054,6 +18084,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 16:52:47",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -18180,11 +18211,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 00:56:55",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Lead Source",
-      "sfSuggestedFieldApiName": "Lead_Source__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_opportunitynumber",
@@ -18289,11 +18321,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Opportunity_Summary__c",
-      "sfSuggestedFieldApiName": "Opportunity_Summary__c",
-      "sfSuggestedDataType": "textarea",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_opportunityproductcategory",
@@ -18561,11 +18594,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 17:38:23",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Opportunity Product Category",
-      "sfSuggestedFieldApiName": "Opportunity_Product_Category__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_opportunitytype",
@@ -19073,11 +19107,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Type",
-      "sfSuggestedFieldApiName": "Type",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_otheropportunitytotal",
@@ -19147,11 +19182,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "CRM_Initial_Opportunity_Total__c",
-      "sfSuggestedFieldApiName": "CRM_Initial_Opportunity_Total__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_otheropportunitytotal_base",
@@ -19191,6 +19227,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -19267,11 +19304,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 21:44:40",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Parent_Opportunity__c",
-      "sfSuggestedFieldApiName": "Parent_Opportunity__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_pilotopportunitytotal",
@@ -19341,11 +19379,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "CRM_Initial_Opportunity_Total__c",
-      "sfSuggestedFieldApiName": "CRM_Initial_Opportunity_Total__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_pilotopportunitytotal_base",
@@ -19385,6 +19424,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -19657,11 +19697,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 00:56:55",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "StageName",
-      "sfSuggestedFieldApiName": "StageName",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_previewcompleted",
@@ -19710,6 +19751,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2025-11-21 19:17:05",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -19766,11 +19808,12 @@
         }
       ],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "CRM_Probability__c",
-      "sfSuggestedFieldApiName": "CRM_Probability__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_printopportunitytotal",
@@ -19840,11 +19883,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "CRM_Initial_Opportunity_Total__c",
-      "sfSuggestedFieldApiName": "CRM_Initial_Opportunity_Total__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_printopportunitytotal_base",
@@ -19884,6 +19928,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -20270,11 +20315,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "CRM_Probability__c",
-      "sfSuggestedFieldApiName": "CRM_Probability__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_probabilitychangedon",
@@ -20379,11 +20425,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Probability_Last_Changed__c",
-      "sfSuggestedFieldApiName": "Probability_Last_Changed__c",
-      "sfSuggestedDataType": "date",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_probabilityincreased",
@@ -20452,11 +20499,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Probability Increased",
-      "sfSuggestedFieldApiName": "Probability_Increased__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_quotesent",
@@ -20505,6 +20553,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2025-11-21 19:16:23",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -21559,11 +21608,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "OwnerId",
-      "sfSuggestedFieldApiName": "OwnerId",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_renewalnotes",
@@ -21628,11 +21678,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 20:21:37",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Renewal_Notes__c",
-      "sfSuggestedFieldApiName": "Renewal_Notes__c",
-      "sfSuggestedDataType": "textarea",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_renewalopportunitytotal",
@@ -21702,11 +21753,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "CRM_Renewal_Opportunity_Total__c",
-      "sfSuggestedFieldApiName": "CRM_Renewal_Opportunity_Total__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_renewalopportunitytotal_base",
@@ -21746,6 +21798,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -21846,11 +21899,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2025-04-02 16:39:05",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Requested Freight Amt",
-      "sfSuggestedFieldApiName": "Requested_Freight_Amt__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_requestedfreightamt_base",
@@ -21890,6 +21944,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2025-04-02 16:39:05",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -21944,11 +21999,12 @@
         }
       ],
       "lastUpdate": "2026-03-02 14:12:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Sales Stage",
-      "sfSuggestedFieldApiName": "Sales_Stage__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_webinarpresentationcompleted",
@@ -21997,6 +22053,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2025-11-21 19:17:05",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -22071,11 +22128,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "CRM_Win_Back_Opportunity_Total__c",
-      "sfSuggestedFieldApiName": "CRM_Win_Back_Opportunity_Total__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_winbackopportunitytotal_base",
@@ -22115,6 +22173,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -22191,11 +22250,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 21:44:40",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Budget_Amount__c",
-      "sfSuggestedFieldApiName": "Budget_Amount__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "budgetstatus",
@@ -22250,11 +22310,12 @@
         }
       ],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Status__c",
-      "sfSuggestedFieldApiName": "Status__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "captureproposalfeedback",
@@ -22309,11 +22370,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Proposal Feedback Captured",
-      "sfSuggestedFieldApiName": "Proposal_Feedback_Captured__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "closeprobability",
@@ -22425,11 +22487,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Probability Number",
-      "sfSuggestedFieldApiName": "Probability_Number__c",
-      "sfSuggestedDataType": "int",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "completefinalproposal",
@@ -22484,11 +22547,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Final Proposal Ready",
-      "sfSuggestedFieldApiName": "Final_Proposal_Ready__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "completeinternalreview",
@@ -22543,11 +22607,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Complete Internal Review",
-      "sfSuggestedFieldApiName": "Complete_Internal_Review__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "confirminterest",
@@ -22602,11 +22667,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Confirm Interest",
-      "sfSuggestedFieldApiName": "Confirm_Interest__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "contactid",
@@ -22686,11 +22752,12 @@
         }
       ],
       "lastUpdate": "2026-03-05 02:19:28",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "ContactId",
-      "sfSuggestedFieldApiName": "ContactId",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "createdby",
@@ -22899,11 +22966,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "CreatedById",
-      "sfSuggestedFieldApiName": "CreatedById",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "createdon",
@@ -23313,11 +23381,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Skipped (createdon)",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "CreatedDate",
-      "sfSuggestedFieldApiName": "CreatedDate",
-      "sfSuggestedDataType": "datetime",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "currentsituation",
@@ -23389,11 +23458,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 22:27:05",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "NextStep",
-      "sfSuggestedFieldApiName": "NextStep",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "customerid",
@@ -23896,11 +23966,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Potential Customer",
-      "sfSuggestedFieldApiName": "Potential_Customer__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "customerneed",
@@ -23967,11 +24038,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 22:27:05",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Customer Need",
-      "sfSuggestedFieldApiName": "Customer_Need__c",
-      "sfSuggestedDataType": "textarea",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "customerpainpoints",
@@ -24026,11 +24098,12 @@
         }
       ],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Customer Pain Points",
-      "sfSuggestedFieldApiName": "Customer_Pain_Points__c",
-      "sfSuggestedDataType": "textarea",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "decisionmaker",
@@ -24085,11 +24158,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Decision Maker",
-      "sfSuggestedFieldApiName": "Decision_Maker__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "description",
@@ -24201,11 +24275,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Description",
-      "sfSuggestedFieldApiName": "Description",
-      "sfSuggestedDataType": "textarea",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "developproposal",
@@ -24260,11 +24335,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Develop Proposal",
-      "sfSuggestedFieldApiName": "Develop_Proposal__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "discountamount",
@@ -24340,11 +24416,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-09 21:14:59",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Discount_Amount__c",
-      "sfSuggestedFieldApiName": "Discount_Amount__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "discountpercentage",
@@ -24414,11 +24491,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2025-11-21 19:17:58",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Opportunity Discount",
-      "sfSuggestedFieldApiName": "Opportunity_Discount__c",
-      "sfSuggestedDataType": "double",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "emailaddress",
@@ -24473,11 +24551,12 @@
         }
       ],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Email Address",
-      "sfSuggestedFieldApiName": "Email_Address__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "estimatedclosedate",
@@ -25134,11 +25213,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Expected_Close_Date__c",
-      "sfSuggestedFieldApiName": "Expected_Close_Date__c",
-      "sfSuggestedDataType": "date",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "estimatedvalue",
@@ -25541,11 +25621,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Estimated_Revenue__c",
-      "sfSuggestedFieldApiName": "Estimated_Revenue__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "evaluatefit",
@@ -25600,11 +25681,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Evaluate Fit",
-      "sfSuggestedFieldApiName": "Evaluate_Fit__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "filedebrief",
@@ -25659,11 +25741,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "File Debrief",
-      "sfSuggestedFieldApiName": "File_Debrief__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "freightamount",
@@ -25732,11 +25815,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Freight_Amount__c",
-      "sfSuggestedFieldApiName": "Freight_Amount__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "identifycompetitors",
@@ -25791,11 +25875,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Identify Competitors",
-      "sfSuggestedFieldApiName": "Identify_Competitors__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "identifycustomercontacts",
@@ -25850,11 +25935,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Identify Customer Contacts",
-      "sfSuggestedFieldApiName": "Identify_Customer_Contacts__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "identifypursuitteam",
@@ -25909,11 +25995,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Identify Sales Team",
-      "sfSuggestedFieldApiName": "Identify_Sales_Team__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "initialcommunication",
@@ -25968,11 +26055,12 @@
         }
       ],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Initial Communication",
-      "sfSuggestedFieldApiName": "Initial_Communication__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "isrevenuesystemcalculated",
@@ -26061,11 +26149,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Revenue",
-      "sfSuggestedFieldApiName": "Revenue__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "modifiedon",
@@ -26145,11 +26234,12 @@
         }
       ],
       "lastUpdate": "Skipped (modifiedon)",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "LastModifiedDate",
-      "sfSuggestedFieldApiName": "LastModifiedDate",
-      "sfSuggestedDataType": "datetime",
-      "sfSuggestedMatchTier": "synonym"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "msa_partnerid",
@@ -26196,11 +26286,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Partner",
-      "sfSuggestedFieldApiName": "Partner__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "msa_partneroppid",
@@ -26247,11 +26338,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-01-20 19:08:41",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Partner Contact",
-      "sfSuggestedFieldApiName": "Partner_Contact__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "msdyn_forecastcategory",
@@ -26306,11 +26398,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "ForecastCategory",
-      "sfSuggestedFieldApiName": "ForecastCategory",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "msdyn_opportunitykpiid",
@@ -26357,11 +26450,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Kpi",
-      "sfSuggestedFieldApiName": "Kpi__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "msdyn_predictivescoreid",
@@ -26408,11 +26502,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Predictive Score",
-      "sfSuggestedFieldApiName": "Predictive_Score__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "msdyn_segmentid",
@@ -26459,11 +26554,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Segment Id",
-      "sfSuggestedFieldApiName": "Segment_Id__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "name",
@@ -27294,11 +27390,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Name",
-      "sfSuggestedFieldApiName": "Name",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "need",
@@ -27353,11 +27450,12 @@
         }
       ],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Need",
-      "sfSuggestedFieldApiName": "Need__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "opportunityid",
@@ -28080,11 +28178,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "OpportunityId__c",
-      "sfSuggestedFieldApiName": "OpportunityId__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "opportunityratingcode",
@@ -28139,11 +28238,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "OpportunityId__c",
-      "sfSuggestedFieldApiName": "OpportunityId__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "originatingleadid",
@@ -28226,11 +28326,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 20:30:47",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Sales_Lead__c",
-      "sfSuggestedFieldApiName": "Sales_Lead__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "ownerid",
@@ -28857,11 +28958,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "RecordTypeId",
-      "sfSuggestedFieldApiName": "RecordTypeId",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "owningbusinessunit",
@@ -28932,11 +29034,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Owning Business Unit",
-      "sfSuggestedFieldApiName": "Owning_Business_Unit__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "parentaccountid",
@@ -29178,11 +29281,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "AccountId",
-      "sfSuggestedFieldApiName": "AccountId",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "parentcontactid",
@@ -29340,11 +29444,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "ContactId",
-      "sfSuggestedFieldApiName": "ContactId",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "presentfinalproposal",
@@ -29399,11 +29504,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Present Final Proposal",
-      "sfSuggestedFieldApiName": "Present_Final_Proposal__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "presentproposal",
@@ -29458,11 +29564,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Presented Proposal",
-      "sfSuggestedFieldApiName": "Presented_Proposal__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "pricelevelid",
@@ -29589,11 +29696,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Pricebook2Id",
-      "sfSuggestedFieldApiName": "Pricebook2Id",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "prioritycode",
@@ -29648,11 +29756,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Priority",
-      "sfSuggestedFieldApiName": "Priority__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "proposedsolution",
@@ -29714,11 +29823,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 22:27:05",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Proposed_Solution__c",
-      "sfSuggestedFieldApiName": "Proposed_Solution__c",
-      "sfSuggestedDataType": "textarea",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "purchaseprocess",
@@ -29790,11 +29900,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 21:44:40",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Purchase_Process__c",
-      "sfSuggestedFieldApiName": "Purchase_Process__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "purchasetimeframe",
@@ -29866,11 +29977,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "CRM_Purchase_Timeframe__c",
-      "sfSuggestedFieldApiName": "CRM_Purchase_Timeframe__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "pursuitdecision",
@@ -29925,11 +30037,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Decide Gonogo",
-      "sfSuggestedFieldApiName": "Decide_Gonogo__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "qualificationcomments",
@@ -29984,11 +30097,12 @@
         }
       ],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Qualification_Meeting_Notes__c",
-      "sfSuggestedFieldApiName": "Qualification_Meeting_Notes__c",
-      "sfSuggestedDataType": "textarea",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "quotecomments",
@@ -30043,11 +30157,12 @@
         }
       ],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Quote Comments",
-      "sfSuggestedFieldApiName": "Quote_Comments__c",
-      "sfSuggestedDataType": "textarea",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "resolvefeedback",
@@ -30102,11 +30217,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Feedback Resolved",
-      "sfSuggestedFieldApiName": "Feedback_Resolved__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "salesstage",
@@ -30146,6 +30262,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 20:16:40",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -30205,11 +30322,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Process Code",
-      "sfSuggestedFieldApiName": "Process_Code__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "sendthankyounote",
@@ -30264,11 +30382,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Send Thank You Note",
-      "sfSuggestedFieldApiName": "Send_Thank_You_Note__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "statecode",
@@ -30918,11 +31037,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Status CRM",
-      "sfSuggestedFieldApiName": "Status_CRM__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "statuscode",
@@ -31154,11 +31274,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Status__c",
-      "sfSuggestedFieldApiName": "Status__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "totalamount",
@@ -31238,11 +31359,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "CRM_Total_Amount__c",
-      "sfSuggestedFieldApiName": "CRM_Total_Amount__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "totalamountlessfreight",
@@ -31297,11 +31419,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Total Prefreight Amount",
-      "sfSuggestedFieldApiName": "Total_Prefreight_Amount__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "totallineitemamount",
@@ -31356,11 +31479,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "CRM_Total_Line_Item_Discount_Amount__c",
-      "sfSuggestedFieldApiName": "CRM_Total_Line_Item_Discount_Amount__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "totaltax",
@@ -31415,11 +31539,12 @@
         }
       ],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Total Tax",
-      "sfSuggestedFieldApiName": "Total_Tax__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -31548,11 +31673,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 01:27:04",
-      "sfSuggestedObjectName": "Opportunity",
-      "sfSuggestedFieldDisplayName": "Currency",
-      "sfSuggestedFieldApiName": "Currency__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     }
   ]
 }

@@ -4215,6 +4215,7 @@
         }
       ],
       "lastUpdate": "Skipped (createdon)",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -4313,6 +4314,7 @@
         }
       ],
       "lastUpdate": "2025-11-19 08:39:19",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -4390,6 +4392,7 @@
         }
       ],
       "lastUpdate": "Skipped (modifiedon)",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -4600,6 +4603,7 @@
         }
       ],
       "lastUpdate": "2026-03-21 09:52:28",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,

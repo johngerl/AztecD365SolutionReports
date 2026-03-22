@@ -6883,11 +6883,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Account",
-      "sfSuggestedFieldApiName": "Account__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_actualopportunitycommission",
@@ -6927,6 +6928,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -6971,6 +6973,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -7035,11 +7038,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Actual Total Commission",
-      "sfSuggestedFieldApiName": "Actual_Total_Commission__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_actualtotalcommission_base",
@@ -7079,6 +7083,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:18:15",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -7163,11 +7168,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Additional Fees",
-      "sfSuggestedFieldApiName": "Additional_Fees__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_additionalfees_base",
@@ -7207,6 +7213,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:18:15",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -7271,11 +7278,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Amount Paid",
-      "sfSuggestedFieldApiName": "Amount_Paid__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_amountpaid_base",
@@ -7315,6 +7323,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:18:15",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -7379,11 +7388,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-18 15:34:39",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Balance",
-      "sfSuggestedFieldApiName": "Balance__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_balance_base",
@@ -7423,6 +7433,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-18 15:34:39",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -7467,6 +7478,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -7511,6 +7523,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -7555,6 +7568,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -7599,6 +7613,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -7643,6 +7658,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -7687,6 +7703,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -7731,6 +7748,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -7831,11 +7849,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Comp Completed",
-      "sfSuggestedFieldApiName": "Comp_Completed__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_discretionarydiscountamt",
@@ -7920,11 +7939,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2024-08-16 18:11:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Discretionary Discount Amt",
-      "sfSuggestedFieldApiName": "Discretionary_Discount_Amt__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_discretionarydiscountamt_base",
@@ -7964,6 +7984,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2024-08-16 18:11:15",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -8008,6 +8029,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -8052,6 +8074,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -8096,6 +8119,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -8153,11 +8177,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Invoice Date",
-      "sfSuggestedFieldApiName": "Invoice_Date__c",
-      "sfSuggestedDataType": "datetime",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_masecomm1",
@@ -8206,6 +8231,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:18:15",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -8259,6 +8285,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:18:15",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -8329,11 +8356,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2025-07-10 03:30:59",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Payments",
-      "sfSuggestedFieldApiName": "Payments__c",
-      "sfSuggestedDataType": "int",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_paid",
@@ -8411,11 +8439,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-18 15:34:39",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Paid",
-      "sfSuggestedFieldApiName": "Paid__c",
-      "sfSuggestedDataType": "double",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_paidon",
@@ -8494,11 +8523,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-18 15:34:39",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Paid On",
-      "sfSuggestedFieldApiName": "Paid_On__c",
-      "sfSuggestedDataType": "datetime",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_paymentsalreadysplit",
@@ -8573,11 +8603,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Payments Already Split",
-      "sfSuggestedFieldApiName": "Payments_Already_Split__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_paymenttype",
@@ -8634,11 +8665,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2021-07-11 16:00:49",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Payment Type",
-      "sfSuggestedFieldApiName": "Payment_Type__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_ponumber",
@@ -8741,11 +8773,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Po Number",
-      "sfSuggestedFieldApiName": "Po_Number__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_poreceiveddate",
@@ -8809,11 +8842,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Po Received Date",
-      "sfSuggestedFieldApiName": "Po_Received_Date__c",
-      "sfSuggestedDataType": "datetime",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_quickbooksinvoicedate",
@@ -8877,11 +8911,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Intacct Invoice Date",
-      "sfSuggestedFieldApiName": "Intacct_Invoice_Date__c",
-      "sfSuggestedDataType": "datetime",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_quickbooksinvoicenumber",
@@ -8952,11 +8987,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Intacct Invoice",
-      "sfSuggestedFieldApiName": "Intacct_Invoice__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_quotenumber",
@@ -9036,11 +9072,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Quote Number",
-      "sfSuggestedFieldApiName": "Quote_Number__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_recordownerid",
@@ -9438,11 +9475,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Record Owner",
-      "sfSuggestedFieldApiName": "Record_Owner__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_totalamountpaid",
@@ -9509,11 +9547,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-18 15:34:39",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Total Amount Paid",
-      "sfSuggestedFieldApiName": "Total_Amount_Paid__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_totalamountpaid_base",
@@ -9553,6 +9592,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-18 15:34:39",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -9617,11 +9657,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Total Commissionable Amount",
-      "sfSuggestedFieldApiName": "Total_Commissionable_Amount__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_totalcommissionableamount_base",
@@ -9661,6 +9702,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:18:15",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -9717,11 +9759,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Bill To Street 1",
-      "sfSuggestedFieldApiName": "Bill_To_Street_1__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "billto_line2",
@@ -9773,11 +9816,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 17:46:13",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Bill To Street 2",
-      "sfSuggestedFieldApiName": "Bill_To_Street_2__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "billto_line3",
@@ -9829,11 +9873,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Bill To Street 3",
-      "sfSuggestedFieldApiName": "Bill_To_Street_3__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "billto_name",
@@ -9885,11 +9930,12 @@
         }
       ],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Bill To Name",
-      "sfSuggestedFieldApiName": "Bill_To_Name__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "billto_postalcode",
@@ -9941,11 +9987,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Bill To Zippostal Code",
-      "sfSuggestedFieldApiName": "Bill_To_Zippostal_Code__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "billto_stateorprovince",
@@ -9997,11 +10044,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Bill To Stateprovince",
-      "sfSuggestedFieldApiName": "Bill_To_Stateprovince__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "contactid",
@@ -10081,11 +10129,12 @@
         }
       ],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Contact",
-      "sfSuggestedFieldApiName": "Contact__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "createdon",
@@ -10219,11 +10268,12 @@
         }
       ],
       "lastUpdate": "Skipped (createdon)",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Created On",
-      "sfSuggestedFieldApiName": "Created_On__c",
-      "sfSuggestedDataType": "datetime",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "customerid",
@@ -10488,11 +10538,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Customer",
-      "sfSuggestedFieldApiName": "Customer__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "description",
@@ -10586,11 +10637,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Description",
-      "sfSuggestedFieldApiName": "Description__c",
-      "sfSuggestedDataType": "textarea",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "discountamount",
@@ -10656,11 +10708,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-02-12 16:41:21",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Invoice Discount Amount",
-      "sfSuggestedFieldApiName": "Invoice_Discount_Amount__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "duedate",
@@ -10713,11 +10766,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2025-01-15 14:15:36",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Due Date",
-      "sfSuggestedFieldApiName": "Due_Date__c",
-      "sfSuggestedDataType": "datetime",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "entityimage",
@@ -10757,6 +10811,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Skipped (image)",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -10813,11 +10868,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Freight Amount",
-      "sfSuggestedFieldApiName": "Freight_Amount__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "invoiceid",
@@ -10974,11 +11030,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Invoice",
-      "sfSuggestedFieldApiName": "Invoice__c",
-      "sfSuggestedDataType": "id",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "invoicenumber",
@@ -11036,11 +11093,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Invoice Id",
-      "sfSuggestedFieldApiName": "Invoice_Id__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "modifiedon",
@@ -11120,11 +11178,12 @@
         }
       ],
       "lastUpdate": "Skipped (modifiedon)",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Modified On",
-      "sfSuggestedFieldApiName": "Modified_On__c",
-      "sfSuggestedDataType": "datetime",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "name",
@@ -11550,11 +11609,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Name CRM",
-      "sfSuggestedFieldApiName": "Name_CRM__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "opportunityid",
@@ -11843,11 +11903,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Opportunity",
-      "sfSuggestedFieldApiName": "Opportunity__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "ownerid",
@@ -12108,11 +12169,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Owner CRM",
-      "sfSuggestedFieldApiName": "Owner_CRM__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "paymenttermscode",
@@ -12167,11 +12229,12 @@
         }
       ],
       "lastUpdate": "2025-08-13 16:00:40",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Payment Terms",
-      "sfSuggestedFieldApiName": "Payment_Terms__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "pricelevelid",
@@ -12223,11 +12286,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Price List",
-      "sfSuggestedFieldApiName": "Price_List__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "salesorderid",
@@ -12383,11 +12447,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Order",
-      "sfSuggestedFieldApiName": "Order__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "shippingmethodcode",
@@ -12439,11 +12504,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Shipping Method",
-      "sfSuggestedFieldApiName": "Shipping_Method__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "shipto_line1",
@@ -12495,11 +12561,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Ship To Street 1",
-      "sfSuggestedFieldApiName": "Ship_To_Street_1__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "shipto_line2",
@@ -12551,11 +12618,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 17:46:13",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Ship To Street 2",
-      "sfSuggestedFieldApiName": "Ship_To_Street_2__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "shipto_line3",
@@ -12607,11 +12675,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Ship To Street 3",
-      "sfSuggestedFieldApiName": "Ship_To_Street_3__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "shipto_name",
@@ -12663,11 +12732,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Ship To Name",
-      "sfSuggestedFieldApiName": "Ship_To_Name__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "shipto_postalcode",
@@ -12719,11 +12789,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Ship To Zippostal Code",
-      "sfSuggestedFieldApiName": "Ship_To_Zippostal_Code__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "shipto_stateorprovince",
@@ -12775,11 +12846,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Ship To Stateprovince",
-      "sfSuggestedFieldApiName": "Ship_To_Stateprovince__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "statecode",
@@ -13058,11 +13130,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Status CRM",
-      "sfSuggestedFieldApiName": "Status_CRM__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "statuscode",
@@ -13272,11 +13345,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Status Reason",
-      "sfSuggestedFieldApiName": "Status_Reason__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "totalamount",
@@ -13435,11 +13509,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Total Amount",
-      "sfSuggestedFieldApiName": "Total_Amount__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "totaltax",
@@ -13494,11 +13569,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Total Tax",
-      "sfSuggestedFieldApiName": "Total_Tax__c",
-      "sfSuggestedDataType": "currency",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -13599,11 +13675,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 19:18:15",
-      "sfSuggestedObjectName": "Invoice - Custom",
-      "sfSuggestedFieldDisplayName": "Currency",
-      "sfSuggestedFieldApiName": "Currency__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     }
   ]
 }

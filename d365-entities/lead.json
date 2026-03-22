@@ -10285,11 +10285,12 @@
         }
       ],
       "lastUpdate": "2026-03-19 19:05:35",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Account__c",
-      "sfSuggestedFieldApiName": "Account__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "address1_addresstypecode",
@@ -10386,11 +10387,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Address 1 Address Type",
-      "sfSuggestedFieldApiName": "Address_1_Address_Type__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "address1_city",
@@ -10472,11 +10474,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "City",
-      "sfSuggestedFieldApiName": "City",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "address1_composite",
@@ -10531,11 +10534,12 @@
         }
       ],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Address 1",
-      "sfSuggestedFieldApiName": "Address_1__c",
-      "sfSuggestedDataType": "textarea",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "address1_country",
@@ -10612,11 +10616,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2025-08-08 09:26:28",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Country",
-      "sfSuggestedFieldApiName": "Country",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "address1_county",
@@ -10691,11 +10696,12 @@
         }
       ],
       "lastUpdate": "2024-12-03 08:07:26",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Address 1 County",
-      "sfSuggestedFieldApiName": "Address_1_County__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "address1_fax",
@@ -10742,11 +10748,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Address 1 Fax",
-      "sfSuggestedFieldApiName": "Address_1_Fax__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "address1_line1",
@@ -10821,11 +10828,12 @@
         }
       ],
       "lastUpdate": "2024-12-03 08:07:26",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Street",
-      "sfSuggestedFieldApiName": "Street",
-      "sfSuggestedDataType": "textarea",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "address1_line2",
@@ -10900,11 +10908,12 @@
         }
       ],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Street 2",
-      "sfSuggestedFieldApiName": "Street_2__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "address1_name",
@@ -10979,11 +10988,12 @@
         }
       ],
       "lastUpdate": "2026-01-29 20:05:46",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Address 1 Name",
-      "sfSuggestedFieldApiName": "Address_1_Name__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "address1_postalcode",
@@ -11033,11 +11043,12 @@
         }
       ],
       "lastUpdate": "2025-08-08 09:26:28",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "PostalCode",
-      "sfSuggestedFieldApiName": "PostalCode",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "address1_shippingmethodcode",
@@ -11107,11 +11118,12 @@
         }
       ],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Address 1 Shipping Method",
-      "sfSuggestedFieldApiName": "Address_1_Shipping_Method__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "address1_stateorprovince",
@@ -11284,11 +11296,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "State",
-      "sfSuggestedFieldApiName": "State",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "address1_telephone1",
@@ -11340,11 +11353,12 @@
         }
       ],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Address 1 Telephone 1",
-      "sfSuggestedFieldApiName": "Address_1_Telephone_1__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "address2_addresstypecode",
@@ -11414,11 +11428,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 16:52:44",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Address 2 Address Type",
-      "sfSuggestedFieldApiName": "Address_2_Address_Type__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "address2_shippingmethodcode",
@@ -11488,11 +11503,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 16:52:44",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Address 2 Shipping Method",
-      "sfSuggestedFieldApiName": "Address_2_Shipping_Method__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_accountleadgen",
@@ -11549,11 +11565,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2024-07-16 18:00:49",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Account Lead Gen",
-      "sfSuggestedFieldApiName": "Account_Lead_Gen__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_addresssearch",
@@ -11639,11 +11656,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Address Search",
-      "sfSuggestedFieldApiName": "Address_Search__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_analysisbackground",
@@ -11708,11 +11726,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 16:00:48",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Analysis_Background__c",
-      "sfSuggestedFieldApiName": "Analysis_Background__c",
-      "sfSuggestedDataType": "textarea",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_assignedon",
@@ -11781,11 +11800,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2024-12-02 19:15:15",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Assigned On",
-      "sfSuggestedFieldApiName": "Assigned_On__c",
-      "sfSuggestedDataType": "datetime",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_dayssinceassigned",
@@ -11855,11 +11875,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2024-12-02 19:15:15",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Days Since Assigned",
-      "sfSuggestedFieldApiName": "Days_Since_Assigned__c",
-      "sfSuggestedDataType": "int",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_dayssincecreated",
@@ -11960,11 +11981,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Days Since Created",
-      "sfSuggestedFieldApiName": "Days_Since_Created__c",
-      "sfSuggestedDataType": "int",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_fiscalyearend",
@@ -12039,11 +12061,12 @@
         }
       ],
       "lastUpdate": "2023-11-30 08:02:26",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Fiscal Year End",
-      "sfSuggestedFieldApiName": "Fiscal_Year_End__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_lastactivitydate",
@@ -12152,11 +12175,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 16:52:44",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "LastActivityDate",
-      "sfSuggestedFieldApiName": "LastActivityDate",
-      "sfSuggestedDataType": "date",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_leadformtype",
@@ -12309,11 +12333,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 16:52:44",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Lead_Type__c",
-      "sfSuggestedFieldApiName": "Lead_Type__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_leadsource",
@@ -12353,6 +12378,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -12515,11 +12541,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Lead_Source_Campaign__c",
-      "sfSuggestedFieldApiName": "Lead_Source_Campaign__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_leadtemperature",
@@ -12702,11 +12729,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Lead Temperature",
-      "sfSuggestedFieldApiName": "Lead_Temperature__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_leadtype",
@@ -12812,11 +12840,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 16:52:43",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Lead_Type__c",
-      "sfSuggestedFieldApiName": "Lead_Type__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_nextstepsuggestion",
@@ -12881,11 +12910,12 @@
         }
       ],
       "lastUpdate": "2026-03-19 18:32:48",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Next Step Suggestion",
-      "sfSuggestedFieldApiName": "Next_Step_Suggestion__c",
-      "sfSuggestedDataType": "textarea",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_numberofcomputers",
@@ -12960,11 +12990,12 @@
         }
       ],
       "lastUpdate": "2023-11-30 08:02:26",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "NumberOfEmployees",
-      "sfSuggestedFieldApiName": "NumberOfEmployees",
-      "sfSuggestedDataType": "int",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_numberofstudents",
@@ -13039,11 +13070,12 @@
         }
       ],
       "lastUpdate": "2023-11-30 08:02:26",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "How_Many_Customers_Members__c",
-      "sfSuggestedFieldApiName": "How_Many_Customers_Members__c",
-      "sfSuggestedDataType": "double",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_opportunityleadid",
@@ -13112,11 +13144,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-10 19:58:15",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "ConvertedOpportunityId",
-      "sfSuggestedFieldApiName": "ConvertedOpportunityId",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_originatingleadimportid",
@@ -13182,11 +13215,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2025-12-30 22:02:43",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Originating Lead Import",
-      "sfSuggestedFieldApiName": "Originating_Lead_Import__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_pendingassigmnent",
@@ -13277,11 +13311,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Pending Assigmnent",
-      "sfSuggestedFieldApiName": "Pending_Assigmnent__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_productsissues",
@@ -13346,11 +13381,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 16:00:48",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Products Issues",
-      "sfSuggestedFieldApiName": "Products_Issues__c",
-      "sfSuggestedDataType": "textarea",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_qualifiedbyid",
@@ -13414,11 +13450,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "LastModifiedById",
-      "sfSuggestedFieldApiName": "LastModifiedById",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_qualifieddisqualifiedon",
@@ -13505,11 +13542,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Qualified_Disqualified_On__c",
-      "sfSuggestedFieldApiName": "Qualified_Disqualified_On__c",
-      "sfSuggestedDataType": "date",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_recommendation",
@@ -13574,11 +13612,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 16:00:48",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Next_Step__c",
-      "sfSuggestedFieldApiName": "Next_Step__c",
-      "sfSuggestedDataType": "textarea",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_recordownerid",
@@ -13978,11 +14017,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 16:52:43",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "RecordTypeId",
-      "sfSuggestedFieldApiName": "RecordTypeId",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_verticalmarket",
@@ -14085,11 +14125,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Vertical_Market__c",
-      "sfSuggestedFieldApiName": "Vertical_Market__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "companyname",
@@ -14221,11 +14262,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Company",
-      "sfSuggestedFieldApiName": "Company",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "confirminterest",
@@ -14295,11 +14337,12 @@
         }
       ],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Confirm Interest",
-      "sfSuggestedFieldApiName": "Confirm_Interest__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "contactid",
@@ -14379,11 +14422,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 12:16:21",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "ConvertedAccountId",
-      "sfSuggestedFieldApiName": "ConvertedAccountId",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "createdby",
@@ -14500,11 +14544,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "CreatedById",
-      "sfSuggestedFieldApiName": "CreatedById",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "createdon",
@@ -14831,11 +14876,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Skipped (createdon)",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "CreatedDate",
-      "sfSuggestedFieldApiName": "CreatedDate",
-      "sfSuggestedDataType": "datetime",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "customerid",
@@ -15044,11 +15090,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 12:16:21",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Customer",
-      "sfSuggestedFieldApiName": "Customer__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "decisionmaker",
@@ -15118,11 +15165,12 @@
         }
       ],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Decision Maker",
-      "sfSuggestedFieldApiName": "Decision_Maker__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "description",
@@ -15233,11 +15281,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 16:52:43",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Description",
-      "sfSuggestedFieldApiName": "Description",
-      "sfSuggestedDataType": "textarea",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "donotbulkemail",
@@ -15307,11 +15356,12 @@
         }
       ],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Do Not Allow Bulk Emails",
-      "sfSuggestedFieldApiName": "Do_Not_Allow_Bulk_Emails__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "donotemail",
@@ -15381,11 +15431,12 @@
         }
       ],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "HasOptedOutOfEmail",
-      "sfSuggestedFieldApiName": "HasOptedOutOfEmail",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "donotfax",
@@ -15455,11 +15506,12 @@
         }
       ],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "HasOptedOutOfFax",
-      "sfSuggestedFieldApiName": "HasOptedOutOfFax",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "donotphone",
@@ -15529,11 +15581,12 @@
         }
       ],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "DoNotCall",
-      "sfSuggestedFieldApiName": "DoNotCall",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "donotpostalmail",
@@ -15603,11 +15656,12 @@
         }
       ],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "DoNotCall",
-      "sfSuggestedFieldApiName": "DoNotCall",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "donotsendmm",
@@ -15677,11 +15731,12 @@
         }
       ],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Marketing Material",
-      "sfSuggestedFieldApiName": "Marketing_Material__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "emailaddress1",
@@ -15767,11 +15822,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 16:52:43",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Email",
-      "sfSuggestedFieldApiName": "Email",
-      "sfSuggestedDataType": "email",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "entityimage",
@@ -15811,6 +15867,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Skipped (image)",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -15881,11 +15938,12 @@
         }
       ],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Est Close Date",
-      "sfSuggestedFieldApiName": "Est_Close_Date__c",
-      "sfSuggestedDataType": "datetime",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "estimatedvalue",
@@ -15944,11 +16002,12 @@
         }
       ],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Est Value Deprecated",
-      "sfSuggestedFieldApiName": "Est_Value_Deprecated__c",
-      "sfSuggestedDataType": "double",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "evaluatefit",
@@ -16018,11 +16077,12 @@
         }
       ],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Evaluate Fit",
-      "sfSuggestedFieldApiName": "Evaluate_Fit__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "exchangerate",
@@ -16062,6 +16122,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 01:02:18",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -16113,11 +16174,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Fax",
-      "sfSuggestedFieldApiName": "Fax",
-      "sfSuggestedDataType": "phone",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "firstname",
@@ -16185,11 +16247,12 @@
         }
       ],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "FirstName",
-      "sfSuggestedFieldApiName": "FirstName",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "followemail",
@@ -16259,11 +16322,12 @@
         }
       ],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Follow Email Activity",
-      "sfSuggestedFieldApiName": "Follow_Email_Activity__c",
-      "sfSuggestedDataType": "boolean",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "fullname",
@@ -16442,11 +16506,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Name",
-      "sfSuggestedFieldApiName": "Name",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "jobtitle",
@@ -16505,11 +16570,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-10 13:49:50",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Title",
-      "sfSuggestedFieldApiName": "Title",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "lastname",
@@ -16577,11 +16643,12 @@
         }
       ],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "LastName",
-      "sfSuggestedFieldApiName": "LastName",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "leadid",
@@ -16721,11 +16788,12 @@
         }
       ],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Lead",
-      "sfSuggestedFieldApiName": "Lead__c",
-      "sfSuggestedDataType": "id",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "leadqualitycode",
@@ -16795,11 +16863,12 @@
         }
       ],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Rating",
-      "sfSuggestedFieldApiName": "Rating",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "leadsourcecode",
@@ -16880,6 +16949,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2025-03-04 00:32:12",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -16973,11 +17043,12 @@
         }
       ],
       "lastUpdate": "2026-02-13 15:41:31",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "MobilePhone",
-      "sfSuggestedFieldApiName": "MobilePhone",
-      "sfSuggestedDataType": "phone",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "modifiedby",
@@ -17027,11 +17098,12 @@
         }
       ],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "LastModifiedById",
-      "sfSuggestedFieldApiName": "LastModifiedById",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "modifiedon",
@@ -17117,11 +17189,12 @@
         }
       ],
       "lastUpdate": "Skipped (modifiedon)",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "LastModifiedDate",
-      "sfSuggestedFieldApiName": "LastModifiedDate",
-      "sfSuggestedDataType": "datetime",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "msdyn_leadkpiid",
@@ -17168,11 +17241,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Kpi",
-      "sfSuggestedFieldApiName": "Kpi__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "msdyn_predictivescoreid",
@@ -17219,11 +17293,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Predictive Score",
-      "sfSuggestedFieldApiName": "Predictive_Score__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "msdyn_segmentid",
@@ -17270,11 +17345,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Segment Id",
-      "sfSuggestedFieldApiName": "Segment_Id__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "originatingcaseid",
@@ -17321,11 +17397,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Originating Case",
-      "sfSuggestedFieldApiName": "Originating_Case__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "ownerid",
@@ -17773,11 +17850,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "OwnerId",
-      "sfSuggestedFieldApiName": "OwnerId",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "parentaccountid",
@@ -18119,11 +18197,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "ConvertedAccountId",
-      "sfSuggestedFieldApiName": "ConvertedAccountId",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "parentcontactid",
@@ -18296,11 +18375,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "ConvertedContactId",
-      "sfSuggestedFieldApiName": "ConvertedContactId",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "preferredcontactmethodcode",
@@ -18370,11 +18450,12 @@
         }
       ],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Preferred Method Of Contact",
-      "sfSuggestedFieldApiName": "Preferred_Method_Of_Contact__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "prioritycode",
@@ -18444,11 +18525,12 @@
         }
       ],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Priority",
-      "sfSuggestedFieldApiName": "Priority__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "qualifyingopportunityid",
@@ -18536,11 +18618,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 16:52:43",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Qualifying Opportunity",
-      "sfSuggestedFieldApiName": "Qualifying_Opportunity__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "salesstagecode",
@@ -18610,11 +18693,12 @@
         }
       ],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Sales Stage Code",
-      "sfSuggestedFieldApiName": "Sales_Stage_Code__c",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "statecode",
@@ -18950,11 +19034,12 @@
         }
       ],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "PostalCode",
-      "sfSuggestedFieldApiName": "PostalCode",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "statuscode",
@@ -19172,11 +19257,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Status",
-      "sfSuggestedFieldApiName": "Status",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "subject",
@@ -19489,11 +19575,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Topic",
-      "sfSuggestedFieldApiName": "Topic__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "telephone1",
@@ -19633,11 +19720,12 @@
         }
       ],
       "lastUpdate": "2026-02-23 14:21:39",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Phone",
-      "sfSuggestedFieldApiName": "Phone",
-      "sfSuggestedDataType": "phone",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -19764,11 +19852,12 @@
         }
       ],
       "lastUpdate": "2026-03-22 01:02:18",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Currency",
-      "sfSuggestedFieldApiName": "Currency__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "websiteurl",
@@ -19843,11 +19932,12 @@
         }
       ],
       "lastUpdate": "2024-04-23 17:28:21",
-      "sfSuggestedObjectName": "Lead",
-      "sfSuggestedFieldDisplayName": "Website",
-      "sfSuggestedFieldApiName": "Website",
-      "sfSuggestedDataType": "url",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     }
   ]
 }

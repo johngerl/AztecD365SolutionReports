@@ -4345,6 +4345,7 @@
         }
       ],
       "lastUpdate": "Skipped (createdon)",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -4389,6 +4390,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-03 19:38:13",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -4466,6 +4468,7 @@
         }
       ],
       "lastUpdate": "Skipped (modifiedon)",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -4522,6 +4525,7 @@
         }
       ],
       "lastUpdate": "2026-03-03 19:38:13",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -4839,6 +4843,7 @@
         }
       ],
       "lastUpdate": "2026-03-03 19:38:13",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -4928,6 +4933,7 @@
         }
       ],
       "lastUpdate": "2026-03-03 19:38:13",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -4991,6 +4997,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-03 19:38:13",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -5096,6 +5103,7 @@
         }
       ],
       "lastUpdate": "2026-03-03 19:38:13",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -5220,6 +5228,7 @@
         }
       ],
       "lastUpdate": "2026-03-03 19:38:13",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,

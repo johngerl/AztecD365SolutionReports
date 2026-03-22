@@ -7435,6 +7435,7 @@
         }
       ],
       "lastUpdate": "2026-03-22 02:48:16",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -7498,6 +7499,7 @@
         }
       ],
       "lastUpdate": "2026-03-22 02:48:16",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -7717,6 +7719,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 02:48:16",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -7803,6 +7806,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 02:48:16",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -7890,6 +7894,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 02:48:16",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -7993,6 +7998,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 21:42:40",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -8071,6 +8077,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 21:24:01",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -8157,6 +8164,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 02:48:16",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -8243,6 +8251,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 02:48:16",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -8309,6 +8318,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-02-13 16:44:14",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -8366,6 +8376,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2021-11-09 03:52:20",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -8925,6 +8936,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 02:48:16",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -9001,6 +9013,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 02:48:16",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -9071,6 +9084,7 @@
         }
       ],
       "lastUpdate": "Never",
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -9148,6 +9162,7 @@
         }
       ],
       "lastUpdate": "2026-03-22 02:48:16",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -9267,6 +9282,7 @@
         }
       ],
       "lastUpdate": "Skipped (createdon)",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -9436,6 +9452,7 @@
         }
       ],
       "lastUpdate": "2026-03-22 02:48:16",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -9490,6 +9507,7 @@
         }
       ],
       "lastUpdate": "2026-03-22 02:48:16",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -9559,6 +9577,7 @@
         }
       ],
       "lastUpdate": "Skipped (partylist)",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -9613,6 +9632,7 @@
         }
       ],
       "lastUpdate": "2026-03-22 02:48:16",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -9690,6 +9710,7 @@
         }
       ],
       "lastUpdate": "Skipped (modifiedon)",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -9926,6 +9947,7 @@
         }
       ],
       "lastUpdate": "2026-03-22 02:48:16",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -10008,6 +10030,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-21 23:15:31",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -10081,6 +10104,7 @@
         }
       ],
       "lastUpdate": "2026-03-22 02:48:16",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -10507,6 +10531,7 @@
         }
       ],
       "lastUpdate": "2026-03-22 02:48:16",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -10607,6 +10632,7 @@
         }
       ],
       "lastUpdate": "2026-03-22 02:48:16",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -10824,6 +10850,7 @@
         }
       ],
       "lastUpdate": "2026-03-22 02:48:16",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -10915,6 +10942,7 @@
         }
       ],
       "lastUpdate": "2026-03-22 02:48:16",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -11134,6 +11162,7 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-22 02:48:16",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -11222,6 +11251,7 @@
         }
       ],
       "lastUpdate": "Skipped (partylist)",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,
@@ -11327,6 +11357,7 @@
         }
       ],
       "lastUpdate": "2026-01-27 23:59:03",
+      "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
       "sfSuggestedFieldApiName": null,

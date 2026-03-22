@@ -13,10 +13,11 @@ This analysis feeds a data migration plan for re-platforming from D365CE to Sale
 │   ├── generate_d365_entity_json_from_solution.py                # Step 2: Enriched D365 entity JSON builder
 │   ├── enrich_d365_entity_json_from_api.py                       # Step 3: Enrich stub fields from Dataverse API
 │   ├── refresh_d365_field_lastupdates_tds.py                     # Step 4: Refresh lastUpdate via Dataverse TDS
-│   ├── update_d365_entity_csv_mapping_with_sf_suggestions.py     # Step 5: Update JSONs/CSVs with SF suggestions
-│   ├── generate_d365_entity_csv_mapping.py                       # Step 6: Extract mapping CSV from enriched JSON
-│   ├── generate_d365_report_from_json_and_csv.py                 # Step 7: Field usage Markdown reports
-│   └── pipeline_shared.py                                        # Shared utility functions (steps 5 & 7)
+│   ├── set_d365_sf_suggested_mapping.py                          # Step 5: Set sfSuggestedMapping per field
+│   ├── update_d365_entity_csv_mapping_with_sf_suggestions.py     # Step 6: Update JSONs/CSVs with SF suggestions
+│   ├── generate_d365_entity_csv_mapping.py                       # Step 7: Extract mapping CSV from enriched JSON
+│   ├── generate_d365_report_from_json_and_csv.py                 # Step 8: Field usage Markdown reports
+│   └── pipeline_shared.py                                        # Shared utility functions (steps 5, 6 & 8)
 ├── reports/                       # Generated Markdown reports (94 entities)
 ├── mapping/                       # Field mapping CSVs with SF columns (94 entities)
 ├── d365-entities/                 # Enriched D365 entity JSON (94 entities)
@@ -36,7 +37,7 @@ This analysis feeds a data migration plan for re-platforming from D365CE to Sale
 
 ## Scripts
 
-Pipeline scripts run in order: Step 1 → 2 → 3 → 4 → 5 → 6 → 7.
+Pipeline scripts run in order: Step 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8.
 
 ### Step 1: generate_sf_entity_json_from_api.py
 
@@ -89,9 +90,21 @@ python scripts/refresh_d365_field_lastupdates_tds.py --all     # all entities
 
 **Prerequisites:** `pyodbc`, `msal`, ODBC Driver 18 for SQL Server, and `scripts/config.local.json` with Dataverse credentials.
 
-### Step 5: update_d365_entity_csv_mapping_with_sf_suggestions.py
+### Step 5: set_d365_sf_suggested_mapping.py
 
-5-tier SF field matching (exact, fuzzy, synonym, rule-based, AI). Writes suggestions to `d365-entities/*.json` (source of truth) and updates mapping CSVs.
+Single source of truth for migration eligibility. Sets `sfSuggestedMapping` (true/false) per field based on staleness + usage + required level. Clears all `sfSuggested*` fields when false.
+
+```bash
+python scripts/set_d365_sf_suggested_mapping.py account       # single entity
+python scripts/set_d365_sf_suggested_mapping.py --all         # all entities
+python scripts/set_d365_sf_suggested_mapping.py --all --reset # clear all sfSuggested* first
+```
+
+**Outputs:** `d365-entities/{entity}.json` (with sfSuggestedMapping)
+
+### Step 6: update_d365_entity_csv_mapping_with_sf_suggestions.py
+
+5-tier SF field matching (exact, fuzzy, synonym, rule-based, AI). Only processes fields with `sfSuggestedMapping=true`. Writes suggestions to `d365-entities/*.json` (source of truth) and updates mapping CSVs.
 
 ```bash
 python scripts/update_d365_entity_csv_mapping_with_sf_suggestions.py account   # single entity
@@ -100,9 +113,9 @@ python scripts/update_d365_entity_csv_mapping_with_sf_suggestions.py --all     #
 
 **Outputs:** `d365-entities/{entity}.json` (with sfSuggested* fields), `mapping/{entity}.csv`
 
-### Step 6: generate_d365_entity_csv_mapping.py
+### Step 7: generate_d365_entity_csv_mapping.py
 
-Extracts mapping CSV from enriched entity JSON. Preserves confirmed SF columns, reads sfSuggested* from JSON.
+Extracts mapping CSV from enriched entity JSON. Preserves confirmed SF columns, reads sfSuggested* and sfSuggestedMapping from JSON.
 
 ```bash
 python scripts/generate_d365_entity_csv_mapping.py account   # single entity
@@ -111,7 +124,7 @@ python scripts/generate_d365_entity_csv_mapping.py --all     # all entities
 
 **Outputs:** `mapping/{entity}.csv`
 
-### Step 7: generate_d365_report_from_json_and_csv.py
+### Step 8: generate_d365_report_from_json_and_csv.py
 
 Generates comprehensive Markdown field usage reports with 14 sections. Reads mapping CSVs for SF column display (read-only).
 

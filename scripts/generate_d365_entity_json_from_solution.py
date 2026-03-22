@@ -2,7 +2,7 @@
 """
 generate_d365_entity_json_from_solution.py
 
-Step 1 of the pipeline.
+Step 2 of the pipeline.
 
 Sole owner of SolutionExtract/plugins parsing. Derives entity/field definitions
 from customizations.xml, parses all 13 sections, augments with inferred fields,
@@ -2303,7 +2303,8 @@ def enrich_entity(entity_name, root, property_to_field, class_to_entity):
             'isRetrievable': fdef.get('is_retrievable', False),
             'isDataSourceSecret': fdef.get('is_data_source_secret', False),
             'picklistValues': pv if pv else None,
-            # SF suggestion fields (populated by Step 6, preserved across runs)
+            # SF suggestion fields (sfSuggestedMapping set by Step 5, others by Step 6)
+            'sfSuggestedMapping': False,
             'sfSuggestedObjectName': None,
             'sfSuggestedFieldDisplayName': None,
             'sfSuggestedFieldApiName': None,
@@ -2421,10 +2422,11 @@ def main():
                     old_data = json.load(f)
                 for old_field in old_data.get('fields', []):
                     fn = old_field.get('fieldName', '').lower()
-                    if fn and old_field.get('sfSuggestedObjectName'):
+                    if fn and (old_field.get('sfSuggestedMapping') or old_field.get('sfSuggestedObjectName')):
                         sf_cache[fn] = {
                             k: old_field.get(k)
-                            for k in ('sfSuggestedObjectName', 'sfSuggestedFieldDisplayName',
+                            for k in ('sfSuggestedMapping',
+                                      'sfSuggestedObjectName', 'sfSuggestedFieldDisplayName',
                                       'sfSuggestedFieldApiName', 'sfSuggestedDataType',
                                       'sfSuggestedMatchTier')
                         }

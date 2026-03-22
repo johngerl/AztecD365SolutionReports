@@ -2,7 +2,7 @@
 """
 generate_d365_report_from_json_and_csv.py
 
-Step 7 of the pipeline. Run steps 1-6 first.
+Step 8 of the pipeline. Run steps 1-7 first.
 
 Reads enriched D365 entity JSON from d365-entities/ and mapping CSVs from
 mapping/, then generates comprehensive Markdown field usage reports.

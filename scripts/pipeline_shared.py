@@ -2,17 +2,67 @@
 """
 pipeline_shared.py
 
-Shared utility functions used by pipeline steps 04 and 05.
+Shared utility functions used by multiple pipeline steps.
 
 Functions:
     camel_to_snake        — Convert camelCase to snake_case
     convert_keys_to_snake — Recursively convert dict keys from camelCase to snake_case
     adapt_json_fields     — Convert enriched JSON field dicts to parse-output key format
     count_field_references — Pre-compute per-field reference counts for each section
+    is_stale              — Check if a lastUpdate value indicates stale data
+
+Constants:
+    SECTION_KEYS      — JSON section keys used for usage-based mapping decisions
+    STALENESS_CUTOFF  — timedelta for staleness threshold (365 days)
+    SF_SUGGESTED_KEYS — JSON keys for sfSuggested* fields
 """
 
 import re
 from collections import defaultdict
+from datetime import datetime, timedelta
+
+
+# ---------------------------------------------------------------------------
+# Shared constants
+# ---------------------------------------------------------------------------
+
+# JSON section keys used for usage-based mapping decisions
+SECTION_KEYS = [
+    "forms", "views", "chartVisualizations", "reports", "dashboards",
+    "workflows", "javaScript", "formulas", "plugins", "pcfControls",
+    "relationships", "ribbon",
+]
+
+# sfSuggested* JSON keys (excluding sfSuggestedMapping)
+SF_SUGGESTED_KEYS = [
+    "sfSuggestedObjectName",
+    "sfSuggestedFieldDisplayName",
+    "sfSuggestedFieldApiName",
+    "sfSuggestedDataType",
+    "sfSuggestedMatchTier",
+]
+
+STALENESS_CUTOFF = timedelta(days=365)
+
+
+# ---------------------------------------------------------------------------
+# Staleness check
+# ---------------------------------------------------------------------------
+
+def is_stale(last_update_str):
+    """Check if a lastUpdate value indicates stale data.
+
+    Returns True (stale), False (recent), or None (unknown/unparseable).
+    """
+    if not last_update_str:
+        return None
+    if last_update_str == "Never":
+        return True
+    try:
+        last_dt = datetime.strptime(last_update_str, "%Y-%m-%d %H:%M:%S")
+        return (datetime.now() - last_dt) > STALENESS_CUTOFF
+    except (ValueError, TypeError):
+        return None
 
 
 # ---------------------------------------------------------------------------
@@ -71,6 +121,7 @@ def adapt_json_fields(json_fields):
         'is_logical': jf.get('isLogical', False),
         'is_retrievable': jf.get('isRetrievable', False),
         'is_data_source_secret': jf.get('isDataSourceSecret', False),
+        'sf_suggested_mapping': jf.get('sfSuggestedMapping', False),
         'sf_suggested_object': jf.get('sfSuggestedObjectName') or '',
         'sf_suggested_display': jf.get('sfSuggestedFieldDisplayName') or '',
         'sf_suggested_api': jf.get('sfSuggestedFieldApiName') or '',

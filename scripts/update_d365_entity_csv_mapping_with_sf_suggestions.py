@@ -2,7 +2,7 @@
 """
 update_d365_entity_csv_mapping_with_sf_suggestions.py
 
-Step 5 of the pipeline. Run steps 1-4 first.
+Step 6 of the pipeline. Run steps 1-5 first.
 
 Reads enriched D365 entity JSON from d365-entities/, loads SF entity data
 from salesforce-entities/, and generates SF field suggestions using a 5-tier
@@ -711,13 +711,18 @@ def process_entity(entity_name, mapping_dir, sf_entity_index, d365_entities_dir,
         plugin_refs, controls, relationships, ribbon, conflicts
     )
 
-    # 3. Check which fields already have suggestions in JSON (preserve them)
+    # 3. Check which fields already have suggestions or need new ones
     existing_suggestions = {}
     fields_needing_suggestions = []
     preserved = 0
 
     for i, raw_field in enumerate(raw_fields):
         fn_lower = raw_field.get('fieldName', '').lower()
+
+        # Skip fields not flagged for mapping (set by Step 5)
+        if not raw_field.get('sfSuggestedMapping', False):
+            continue
+
         has_existing = (
             raw_field.get('sfSuggestedObjectName') and
             raw_field.get('sfSuggestedFieldDisplayName') and
@@ -733,15 +738,8 @@ def process_entity(entity_name, mapping_dir, sf_entity_index, d365_entities_dir,
             }
             preserved += 1
         else:
-            # Check if field has usage (only suggest for used fields)
-            refs = field_ref_counts.get(fn_lower, {})
-            has_usage = any(refs.get(k, 0) > 0 for k in refs)
-            req = raw_field.get('requiredLevel', '') or ''
-            is_required = req.lower() not in ('', 'none')
-            if has_usage or is_required:
-                fields_needing_suggestions.append(fields[i] if i < len(fields) else None)
-
-    fields_needing_suggestions = [f for f in fields_needing_suggestions if f]
+            if i < len(fields) and fields[i]:
+                fields_needing_suggestions.append(fields[i])
 
     if preserved:
         print(f"  Preserved existing suggestions: {preserved}")
@@ -787,14 +785,11 @@ def process_entity(entity_name, mapping_dir, sf_entity_index, d365_entities_dir,
     # 7. Load confirmed mappings from CSV and write updated CSV
     sf_confirmed = load_mapping_csv(mapping_dir, entity_name)
 
+    # Read sfSuggestedMapping from JSON (set by Step 5)
     field_mapping_suggested = {}
-    for field in fields:
-        sn_lower = field['schema_name'].lower()
-        refs = field_ref_counts.get(sn_lower, {})
-        has_usage = any(refs.get(k, 0) > 0 for k in refs)
-        req = field.get('required_level', '') or ''
-        is_required = req.lower() not in ('', 'none')
-        field_mapping_suggested[sn_lower] = has_usage or is_required
+    for raw_field in raw_fields:
+        fn_lower = raw_field.get('fieldName', '').lower()
+        field_mapping_suggested[fn_lower] = raw_field.get('sfSuggestedMapping', False)
 
     write_mapping_csv(mapping_dir, entity_name, fields, sf_confirmed,
                       all_suggestions, field_mapping_suggested, field_ref_counts)

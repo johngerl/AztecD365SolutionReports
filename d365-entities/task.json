@@ -5682,11 +5682,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 16:28:45",
-      "sfSuggestedObjectName": "Task",
-      "sfSuggestedFieldDisplayName": "Activity_GUID__c",
-      "sfSuggestedFieldApiName": "Activity_GUID__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "activitytypecode",
@@ -5745,11 +5746,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 16:28:45",
-      "sfSuggestedObjectName": "Task",
-      "sfSuggestedFieldDisplayName": "Activity Type",
-      "sfSuggestedFieldApiName": "Activity_Type__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_historicalowner",
@@ -5804,11 +5806,12 @@
         }
       ],
       "lastUpdate": "2024-11-11 00:24:51",
-      "sfSuggestedObjectName": "Task",
-      "sfSuggestedFieldDisplayName": "Historical Owner",
-      "sfSuggestedFieldApiName": "Historical_Owner__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_recordownerid",
@@ -6227,11 +6230,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 16:28:45",
-      "sfSuggestedObjectName": "Task",
-      "sfSuggestedFieldDisplayName": "RecordTypeId",
-      "sfSuggestedFieldApiName": "RecordTypeId",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_reorderopportunityid",
@@ -6293,11 +6297,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 13:34:04",
-      "sfSuggestedObjectName": "Task",
-      "sfSuggestedFieldDisplayName": "Reorder Opportunity",
-      "sfSuggestedFieldApiName": "Reorder_Opportunity__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "azt_tasktype",
@@ -6371,11 +6376,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 13:34:04",
-      "sfSuggestedObjectName": "Task",
-      "sfSuggestedFieldDisplayName": "TaskSubtype",
-      "sfSuggestedFieldApiName": "TaskSubtype",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "category",
@@ -6441,11 +6447,12 @@
         }
       ],
       "lastUpdate": "Never",
-      "sfSuggestedObjectName": "Task",
-      "sfSuggestedFieldDisplayName": "Category",
-      "sfSuggestedFieldApiName": "Category__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "createdby",
@@ -6502,11 +6509,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 16:28:45",
-      "sfSuggestedObjectName": "Task",
-      "sfSuggestedFieldDisplayName": "CreatedById",
-      "sfSuggestedFieldApiName": "CreatedById",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "createdon",
@@ -6621,11 +6629,12 @@
         }
       ],
       "lastUpdate": "Skipped (createdon)",
-      "sfSuggestedObjectName": "Task",
-      "sfSuggestedFieldDisplayName": "CreatedDate",
-      "sfSuggestedFieldApiName": "CreatedDate",
-      "sfSuggestedDataType": "datetime",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "description",
@@ -6719,11 +6728,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 16:28:45",
-      "sfSuggestedObjectName": "Task",
-      "sfSuggestedFieldDisplayName": "Description",
-      "sfSuggestedFieldApiName": "Description",
-      "sfSuggestedDataType": "textarea",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "modifiedon",
@@ -6796,11 +6806,12 @@
         }
       ],
       "lastUpdate": "Skipped (modifiedon)",
-      "sfSuggestedObjectName": "Task",
-      "sfSuggestedFieldDisplayName": "LastModifiedDate",
-      "sfSuggestedFieldApiName": "LastModifiedDate",
-      "sfSuggestedDataType": "datetime",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "ownerid",
@@ -7031,11 +7042,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 16:28:45",
-      "sfSuggestedObjectName": "Task",
-      "sfSuggestedFieldDisplayName": "OwnerId",
-      "sfSuggestedFieldApiName": "OwnerId",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "prioritycode",
@@ -7106,11 +7118,12 @@
       "ribbon": [],
       "conflicts": [],
       "lastUpdate": "2026-03-20 16:28:45",
-      "sfSuggestedObjectName": "Task",
-      "sfSuggestedFieldDisplayName": "Priority",
-      "sfSuggestedFieldApiName": "Priority",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "regardingobjectid",
@@ -7520,11 +7533,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 16:28:45",
-      "sfSuggestedObjectName": "Task",
-      "sfSuggestedFieldDisplayName": "WhatId",
-      "sfSuggestedFieldApiName": "WhatId",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "synonym"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "scheduledend",
@@ -7632,11 +7646,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 13:34:04",
-      "sfSuggestedObjectName": "Task",
-      "sfSuggestedFieldDisplayName": "ActivityDate",
-      "sfSuggestedFieldApiName": "ActivityDate",
-      "sfSuggestedDataType": "date",
-      "sfSuggestedMatchTier": "exact"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "statecode",
@@ -7843,11 +7858,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 16:28:45",
-      "sfSuggestedObjectName": "Task",
-      "sfSuggestedFieldDisplayName": "Status",
-      "sfSuggestedFieldApiName": "Status",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "synonym"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "statuscode",
@@ -7947,11 +7963,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 16:28:45",
-      "sfSuggestedObjectName": "Task",
-      "sfSuggestedFieldDisplayName": "Status",
-      "sfSuggestedFieldApiName": "Status",
-      "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "fuzzy"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "subject",
@@ -8060,11 +8077,12 @@
         }
       ],
       "lastUpdate": "2026-03-20 16:28:45",
-      "sfSuggestedObjectName": "Task",
-      "sfSuggestedFieldDisplayName": "Subject",
-      "sfSuggestedFieldApiName": "Subject__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     },
     {
       "fieldName": "transactioncurrencyid",
@@ -8165,11 +8183,12 @@
         }
       ],
       "lastUpdate": "2025-08-14 15:14:51",
-      "sfSuggestedObjectName": "Task",
-      "sfSuggestedFieldDisplayName": "Currency",
-      "sfSuggestedFieldApiName": "Currency__c",
-      "sfSuggestedDataType": "reference",
-      "sfSuggestedMatchTier": "generated"
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null
     }
   ]
 }

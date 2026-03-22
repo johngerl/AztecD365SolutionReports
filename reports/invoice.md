@@ -1,5 +1,5 @@
 # Invoice Field Usage Analysis
-> Date: 2026-03-21
+> Date: 2026-03-22
 
 | Property | Value |
 |---|---|
@@ -201,85 +201,85 @@
 
 Total fields: **77**
 
-| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
-|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [accountid](#accountid) | Account | lookup |  | No | none | 2026-03-20 19:18:15 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [12](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 2 | [azt_actualopportunitycommission](#azt_actualopportunitycommission) | Actual Opportunity Commission | money |  | Yes | none | Never | false | Invoice - Custom | CRM Actual Opportunity Commission | CRM_Actual_Opportunity Commission__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 3 | [azt_actualopportunitycommission_base](#azt_actualopportunitycommission_base) | Actual Opportunity Commission (Base) | money |  | Yes | none | Never | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 4 | [azt_actualtotalcommission](#azt_actualtotalcommission) | Actual Total Commission | money |  | Yes | none | 2026-03-20 19:18:15 | true | Invoice - Custom | CRM Actual Total Commission | CRM_Actual_Total_Commission__c |  |  |  | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 5 | [azt_actualtotalcommission_base](#azt_actualtotalcommission_base) | Actual Total Commission (Base) | money |  | Yes | none | 2026-03-20 19:18:15 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 6 | [azt_additionalfees](#azt_additionalfees) | Additional Fees | money |  | Yes | none | 2026-03-20 19:18:15 | true | Invoice - Custom | CRM Additional Fees | CRM_Additional_Fees__c |  |  |  | [1](#2.%20Forms) |  |  |  |  | [4](#7.%20Workflows) | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 7 | [azt_additionalfees_base](#azt_additionalfees_base) | Additional Fees (Base) | money |  | Yes | none | 2026-03-20 19:18:15 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 8 | [azt_amountpaid](#azt_amountpaid) | Amount Paid | money |  | Yes | none | 2026-03-20 19:18:15 | true | Invoice - Custom | CRM Amount Paid | CRM_Amount_Paid__c |  |  |  | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 9 | [azt_amountpaid_base](#azt_amountpaid_base) | Amount Paid (Base) | money |  | Yes | none | 2026-03-20 19:18:15 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 10 | [azt_balance](#azt_balance) | Balance | money |  | Yes | none | 2026-03-18 15:34:39 | true | Invoice - Custom | CRM Balance | CRM_Balance__c |  |  |  | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 11 | [azt_balance_base](#azt_balance_base) | Balance (Base) | money |  | Yes | none | 2026-03-18 15:34:39 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 12 | [azt_checkdatecommission](#azt_checkdatecommission) | Check Date Commission | datetime |  | Yes | none | Never | false | Invoice - Custom | CRM Check Date Commission | CRM_Check_Date_Commission__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 13 | [azt_commissionableamount1](#azt_commissionableamount1) | Commissionable Amount (1) | money |  | Yes | none | Never | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 14 | [azt_commissionableamount1_base](#azt_commissionableamount1_base) | Commissionable Amount (1) (Base) | money |  | Yes | none | Never | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 15 | [azt_commissionableamount2](#azt_commissionableamount2) | Commissionable Amount (2) | money |  | Yes | none | Never | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 16 | [azt_commissionableamount2_base](#azt_commissionableamount2_base) | Commissionable Amount (2) (Base) | money |  | Yes | none | Never | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 17 | [azt_commissionpercentage1](#azt_commissionpercentage1) | Commission Percentage (1) | decimal |  | Yes | none | Never | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 18 | [azt_commissionpercentage2](#azt_commissionpercentage2) | Commission Percentage (2) | decimal |  | Yes | none | Never | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 19 | [azt_compcompleted](#azt_compcompleted) | Comp Completed | bit | 1: Yes, 0: No | Yes | none | 2026-03-20 19:18:15 | true | Invoice - Custom | CRM Comp Completed | CRM_Comp_Completed__c |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 20 | [azt_discretionarydiscountamt](#azt_discretionarydiscountamt) | Discretionary Discount Amt | money |  | Yes | none | 2024-08-16 18:11:15 | true | Invoice - Custom | CRM Discretionary Discount Amount | CRM_Discretionary_Discount_Amount__c |  |  |  | [1](#2.%20Forms) | [3](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 21 | [azt_discretionarydiscountamt_base](#azt_discretionarydiscountamt_base) | Discretionary Discount Amt (Base) | money |  | Yes | none | 2024-08-16 18:11:15 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 22 | [azt_estimatedopportunitycommission](#azt_estimatedopportunitycommission) | Estimated Opportunity Commission | money |  | Yes | none | Never | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 23 | [azt_estimatedopportunitycommission_base](#azt_estimatedopportunitycommission_base) | Estimated Opportunity Commission (Base) | money |  | Yes | none | Never | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 24 | [azt_invoicealert](#azt_invoicealert) | Invoice Alert | nvarchar |  | Yes | none | Never | false | Invoice - Custom | CRM Invoice Alert | CRM_Invoice_Alert__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 25 | [azt_invoicedate](#azt_invoicedate) | Invoice Date | datetime |  | Yes | none | Never | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 26 | [azt_masecomm1](#azt_masecomm1) | MASE Comm 1? | bit | 1: Yes, 0: No | Yes | none | 2026-03-20 19:18:15 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 27 | [azt_masecomm2](#azt_masecomm2) | MASE Comm 2? | bit | 1: Yes, 0: No | Yes | none | 2026-03-20 19:18:15 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 28 | [azt_numberofpayments](#azt_numberofpayments) | # Payments | int |  | Yes | none | 2025-07-10 03:30:59 | true | Invoice - Custom | CRM No Payments | CRM_No_Payments__c |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 29 | [azt_paid](#azt_paid) | Paid % | decimal |  | Yes | none | 2026-03-18 15:34:39 | true | Invoice - Custom | CRM Paid Pct | CRM_Paid_Pct__c |  |  |  | [1](#2.%20Forms) | [3](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 30 | [azt_paidon](#azt_paidon) | Paid On | datetime |  | Yes | none | 2026-03-18 15:34:39 | true | Invoice - Custom | CRM Paid On | CRM_Paid_On__c |  |  |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 31 | [azt_paymentsalreadysplit](#azt_paymentsalreadysplit) | Payments Already Split | bit | 1: Yes, 0: No | Yes | none | 2026-03-20 19:18:15 | true | Invoice - Custom | CRM Payments Already Split | CRM_Payments_Already_Split__c |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 32 | [azt_paymenttype](#azt_paymenttype) | Payment Type | picklist |  | Yes | none | 2021-07-11 16:00:49 | true | Invoice - Custom | CRM Payment Type | CRM_Payment_Type__c |  |  |  | [1](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 33 | [azt_ponumber](#azt_ponumber) | PO Number | nvarchar |  | Yes | none | 2026-03-20 19:18:15 | true | Invoice - Custom | PO Number | PO_Number__c |  |  |  | [1](#2.%20Forms) | [4](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 34 | [azt_poreceiveddate](#azt_poreceiveddate) | PO Received Date | datetime |  | Yes | none | 2026-03-20 19:18:15 | true | Invoice - Custom | PO Received Date | PO_Received_Date__c |  |  |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 35 | [azt_quickbooksinvoicedate](#azt_quickbooksinvoicedate) | Intacct Invoice Date | datetime |  | Yes | none | 2026-03-20 19:18:15 | true |  |  |  |  |  |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 36 | [azt_quickbooksinvoicenumber](#azt_quickbooksinvoicenumber) | Intacct Invoice # | nvarchar |  | Yes | none | 2026-03-20 19:18:15 | true |  |  |  |  |  |  | [1](#2.%20Forms) | [3](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 37 | [azt_quotenumber](#azt_quotenumber) | Quote Number | nvarchar |  | Yes | none | 2026-03-20 19:18:15 | true | Invoice - Custom | CRM Quote Number | CRM_Quote_Number__c |  |  |  | [1](#2.%20Forms) | [1](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 38 | [azt_recordownerid](#azt_recordownerid) | Record Owner | lookup |  | Yes | none | 2026-03-20 19:18:15 | true | Invoice - Custom | Owner | OwenrId |  |  |  | [2](#2.%20Forms) | [1](#3.%20Views) |  |  |  | [37](#7.%20Workflows) |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 39 | [azt_totalamountpaid](#azt_totalamountpaid) | Total Amount Paid | money |  | Yes | none | 2026-03-18 15:34:39 | true | Invoice - Custom | CRM Total Amount Paid | CRM_Total_Amount_Paid__c |  |  |  | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 40 | [azt_totalamountpaid_base](#azt_totalamountpaid_base) | Total Amount Paid (Base) | money |  | Yes | none | 2026-03-18 15:34:39 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 41 | [azt_totalcommissionableamount](#azt_totalcommissionableamount) | Total Commissionable Amount | money |  | Yes | none | 2026-03-20 19:18:15 | true | Invoice - Custom | CRM Total Commissionable Amount | CRM_Total_Commissionable_Amount__c |  |  |  | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 42 | [azt_totalcommissionableamount_base](#azt_totalcommissionableamount_base) | Total Commissionable Amount (Base) | money |  | Yes | none | 2026-03-20 19:18:15 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 43 | [billto_line1](#billto_line1) | Bill To Street 1 | nvarchar |  | No | none | 2026-03-20 19:18:15 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 44 | [billto_line2](#billto_line2) | Bill To Street 2 | nvarchar |  | No | none | 2026-03-20 17:46:13 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 45 | [billto_line3](#billto_line3) | Bill To Street 3 | nvarchar |  | No | none | 2026-03-20 19:18:15 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 46 | [billto_name](#billto_name) | Bill To Name | nvarchar |  | No | none | Never | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 47 | [billto_postalcode](#billto_postalcode) | Bill To ZIP/Postal Code | nvarchar |  | No | none | 2026-03-20 19:18:15 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 48 | [billto_stateorprovince](#billto_stateorprovince) | Bill To State/Province | nvarchar |  | No | none | 2026-03-20 19:18:15 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 49 | [contactid](#contactid) | Contact | lookup |  | No | none | Never | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 50 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 51 | [customerid](#customerid) | Customer | customer |  | No | required | 2026-03-20 19:18:15 | true | Invoice - Custom | Account | AccountID |  |  |  | [1](#2.%20Forms) | [8](#3.%20Views) |  |  |  | [13](#7.%20Workflows) |  | [11](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 52 | [description](#description) | Description | ntext |  | No | none | 2026-03-20 19:18:15 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 53 | [discountamount](#discountamount) | Invoice Discount Amount | money |  | No | none | 2026-02-12 16:41:21 | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 54 | [duedate](#duedate) | Due Date | datetime |  | No | none | 2025-01-15 14:15:36 | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 55 | [entityimage](#entityimage) | Entity Image | image |  | No | none | Skipped (image) | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 56 | [freightamount](#freightamount) | Freight Amount | money |  | No | none | 2026-03-20 19:18:15 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 57 | [invoiceid](#invoiceid) | Invoice | uniqueidentifier |  | No | required | 2026-03-20 19:18:15 | true |  |  |  |  |  |  |  | [7](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 58 | [invoicenumber](#invoicenumber) | Invoice ID | nvarchar |  | No | required | 2026-03-20 19:18:15 | true |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 59 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none | Skipped (modifiedon) | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 60 | [name](#name) | Name | nvarchar |  | No | required | 2026-03-20 19:18:15 | true | Invoice - Custom | CRM Invoice Name | CRM_Invoice_Name__c |  |  |  |  | [13](#3.%20Views) |  |  |  | [16](#7.%20Workflows) |  | [23](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 61 | [opportunityid](#opportunityid) | Opportunity | lookup |  | No | none | 2026-03-20 19:18:15 | true |  |  |  |  |  |  | [1](#2.%20Forms) | [1](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [32](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 62 | [ownerid](#ownerid) | Owner | lookup |  | No | required | 2026-03-20 19:18:15 | true |  |  |  |  |  |  | [2](#2.%20Forms) | [5](#3.%20Views) | [1](#4.%20Chart%20Visualizations) |  |  | [1](#7.%20Workflows) |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 63 | [paymenttermscode](#paymenttermscode) | Payment Terms | picklist |  | No | none | 2025-08-13 16:00:40 | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 64 | [pricelevelid](#pricelevelid) | Price List | lookup |  | No | required | 2026-03-20 19:18:15 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 65 | [salesorderid](#salesorderid) | Order | lookup |  | No | none | 2026-03-20 19:18:15 | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  | [13](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 66 | [shippingmethodcode](#shippingmethodcode) | Shipping Method | picklist |  | No | none | 2026-03-20 19:18:15 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 67 | [shipto_line1](#shipto_line1) | Ship To Street 1 | nvarchar |  | No | none | 2026-03-20 19:18:15 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 68 | [shipto_line2](#shipto_line2) | Ship To Street 2 | nvarchar |  | No | none | 2026-03-20 17:46:13 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 69 | [shipto_line3](#shipto_line3) | Ship To Street 3 | nvarchar |  | No | none | 2026-03-20 19:18:15 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 70 | [shipto_name](#shipto_name) | Ship To Name | nvarchar |  | No | none | 2026-03-20 19:18:15 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 71 | [shipto_postalcode](#shipto_postalcode) | Ship To ZIP/Postal Code | nvarchar |  | No | none | 2026-03-20 19:18:15 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 72 | [shipto_stateorprovince](#shipto_stateorprovince) | Ship To State/Province | nvarchar |  | No | none | 2026-03-20 19:18:15 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 73 | [statecode](#statecode) | Status | state |  | No | systemrequired | 2026-03-20 19:18:15 | true | Invoice - Custom | CRM Status | CRM_Status__c |  |  |  | [1](#2.%20Forms) | [5](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 74 | [statuscode](#statuscode) | Status Reason | status |  | No | none | 2026-03-20 19:18:15 | true | Invoice - Custom | CRM Status Reason | CRM_Status_Reason__c |  |  |  |  | [5](#3.%20Views) |  |  |  | [5](#7.%20Workflows) | [1](#9.%20Formulas%20and%20Rollups) | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 75 | [totalamount](#totalamount) | Total Amount | money |  | No | none | 2026-03-20 19:18:15 | true | Invoice - Custom | Amount Invoiced | Amount_Invoiced__c |  |  |  | [1](#2.%20Forms) | [7](#3.%20Views) | [1](#4.%20Chart%20Visualizations) |  |  |  | [2](#9.%20Formulas%20and%20Rollups) | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 76 | [totaltax](#totaltax) | Total Tax | money |  | No | none | 2026-03-20 19:18:15 | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 77 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | required | 2026-03-20 19:18:15 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
+|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
+| 1 | [accountid](#accountid) | Account | lookup |  | No | none | 2026-03-20 19:18:15 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [12](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 2 | [azt_actualopportunitycommission](#azt_actualopportunitycommission) | Actual Opportunity Commission | money |  | Yes | none | Never | C R U | false | Invoice - Custom | CRM Actual Opportunity Commission | CRM_Actual_Opportunity Commission__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 3 | [azt_actualopportunitycommission_base](#azt_actualopportunitycommission_base) | Actual Opportunity Commission (Base) | money |  | Yes | none | Never | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 4 | [azt_actualtotalcommission](#azt_actualtotalcommission) | Actual Total Commission | money |  | Yes | none | 2026-03-20 19:18:15 | R | true | Invoice - Custom | CRM Actual Total Commission | CRM_Actual_Total_Commission__c |  |  |  | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 5 | [azt_actualtotalcommission_base](#azt_actualtotalcommission_base) | Actual Total Commission (Base) | money |  | Yes | none | 2026-03-20 19:18:15 | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 6 | [azt_additionalfees](#azt_additionalfees) | Additional Fees | money |  | Yes | none | 2026-03-20 19:18:15 | C R U | true | Invoice - Custom | CRM Additional Fees | CRM_Additional_Fees__c |  |  |  | [1](#2.%20Forms) |  |  |  |  | [4](#7.%20Workflows) | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 7 | [azt_additionalfees_base](#azt_additionalfees_base) | Additional Fees (Base) | money |  | Yes | none | 2026-03-20 19:18:15 | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 8 | [azt_amountpaid](#azt_amountpaid) | Amount Paid | money |  | Yes | none | 2026-03-20 19:18:15 | R | true | Invoice - Custom | CRM Amount Paid | CRM_Amount_Paid__c |  |  |  | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 9 | [azt_amountpaid_base](#azt_amountpaid_base) | Amount Paid (Base) | money |  | Yes | none | 2026-03-20 19:18:15 | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 10 | [azt_balance](#azt_balance) | Balance | money |  | Yes | none | 2026-03-18 15:34:39 | C R U | true | Invoice - Custom | CRM Balance | CRM_Balance__c |  |  |  | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 11 | [azt_balance_base](#azt_balance_base) | Balance (Base) | money |  | Yes | none | 2026-03-18 15:34:39 | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 12 | [azt_checkdatecommission](#azt_checkdatecommission) | Check Date Commission | datetime |  | Yes | none | Never | C R U | false | Invoice - Custom | CRM Check Date Commission | CRM_Check_Date_Commission__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 13 | [azt_commissionableamount1](#azt_commissionableamount1) | Commissionable Amount (1) | money |  | Yes | none | Never | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 14 | [azt_commissionableamount1_base](#azt_commissionableamount1_base) | Commissionable Amount (1) (Base) | money |  | Yes | none | Never | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 15 | [azt_commissionableamount2](#azt_commissionableamount2) | Commissionable Amount (2) | money |  | Yes | none | Never | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 16 | [azt_commissionableamount2_base](#azt_commissionableamount2_base) | Commissionable Amount (2) (Base) | money |  | Yes | none | Never | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 17 | [azt_commissionpercentage1](#azt_commissionpercentage1) | Commission Percentage (1) | decimal |  | Yes | none | Never | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 18 | [azt_commissionpercentage2](#azt_commissionpercentage2) | Commission Percentage (2) | decimal |  | Yes | none | Never | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 19 | [azt_compcompleted](#azt_compcompleted) | Comp Completed | bit | 1: Yes, 0: No | Yes | none | 2026-03-20 19:18:15 | C R U | true | Invoice - Custom | CRM Comp Completed | CRM_Comp_Completed__c |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 20 | [azt_discretionarydiscountamt](#azt_discretionarydiscountamt) | Discretionary Discount Amt | money |  | Yes | none | 2024-08-16 18:11:15 | C R U | true | Invoice - Custom | CRM Discretionary Discount Amount | CRM_Discretionary_Discount_Amount__c |  |  |  | [1](#2.%20Forms) | [3](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 21 | [azt_discretionarydiscountamt_base](#azt_discretionarydiscountamt_base) | Discretionary Discount Amt (Base) | money |  | Yes | none | 2024-08-16 18:11:15 | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 22 | [azt_estimatedopportunitycommission](#azt_estimatedopportunitycommission) | Estimated Opportunity Commission | money |  | Yes | none | Never | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 23 | [azt_estimatedopportunitycommission_base](#azt_estimatedopportunitycommission_base) | Estimated Opportunity Commission (Base) | money |  | Yes | none | Never | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 24 | [azt_invoicealert](#azt_invoicealert) | Invoice Alert | nvarchar |  | Yes | none | Never | C R U | false | Invoice - Custom | CRM Invoice Alert | CRM_Invoice_Alert__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 25 | [azt_invoicedate](#azt_invoicedate) | Invoice Date | datetime |  | Yes | none | Never | C R U | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 26 | [azt_masecomm1](#azt_masecomm1) | MASE Comm 1? | bit | 1: Yes, 0: No | Yes | none | 2026-03-20 19:18:15 | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 27 | [azt_masecomm2](#azt_masecomm2) | MASE Comm 2? | bit | 1: Yes, 0: No | Yes | none | 2026-03-20 19:18:15 | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 28 | [azt_numberofpayments](#azt_numberofpayments) | # Payments | int |  | Yes | none | 2025-07-10 03:30:59 | C R U | true | Invoice - Custom | CRM No Payments | CRM_No_Payments__c |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 29 | [azt_paid](#azt_paid) | Paid % | decimal |  | Yes | none | 2026-03-18 15:34:39 | C R U | true | Invoice - Custom | CRM Paid Pct | CRM_Paid_Pct__c |  |  |  | [1](#2.%20Forms) | [3](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 30 | [azt_paidon](#azt_paidon) | Paid On | datetime |  | Yes | none | 2026-03-18 15:34:39 | C R U | true | Invoice - Custom | CRM Paid On | CRM_Paid_On__c |  |  |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 31 | [azt_paymentsalreadysplit](#azt_paymentsalreadysplit) | Payments Already Split | bit | 1: Yes, 0: No | Yes | none | 2026-03-20 19:18:15 | C R U | true | Invoice - Custom | CRM Payments Already Split | CRM_Payments_Already_Split__c |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 32 | [azt_paymenttype](#azt_paymenttype) | Payment Type | picklist |  | Yes | none | 2021-07-11 16:00:49 | C R U | true | Invoice - Custom | CRM Payment Type | CRM_Payment_Type__c |  |  |  | [1](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 33 | [azt_ponumber](#azt_ponumber) | PO Number | nvarchar |  | Yes | none | 2026-03-20 19:18:15 | C R U S | true | Invoice - Custom | PO Number | PO_Number__c |  |  |  | [1](#2.%20Forms) | [4](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 34 | [azt_poreceiveddate](#azt_poreceiveddate) | PO Received Date | datetime |  | Yes | none | 2026-03-20 19:18:15 | C R U | true | Invoice - Custom | PO Received Date | PO_Received_Date__c |  |  |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 35 | [azt_quickbooksinvoicedate](#azt_quickbooksinvoicedate) | Intacct Invoice Date | datetime |  | Yes | none | 2026-03-20 19:18:15 | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 36 | [azt_quickbooksinvoicenumber](#azt_quickbooksinvoicenumber) | Intacct Invoice # | nvarchar |  | Yes | none | 2026-03-20 19:18:15 | C R U S | true |  |  |  |  |  |  | [1](#2.%20Forms) | [3](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 37 | [azt_quotenumber](#azt_quotenumber) | Quote Number | nvarchar |  | Yes | none | 2026-03-20 19:18:15 | C R U S | true | Invoice - Custom | CRM Quote Number | CRM_Quote_Number__c |  |  |  | [1](#2.%20Forms) | [1](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 38 | [azt_recordownerid](#azt_recordownerid) | Record Owner | lookup |  | Yes | none | 2026-03-20 19:18:15 | C R U | true | Invoice - Custom | Owner | OwenrId |  |  |  | [2](#2.%20Forms) | [1](#3.%20Views) |  |  |  | [37](#7.%20Workflows) |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 39 | [azt_totalamountpaid](#azt_totalamountpaid) | Total Amount Paid | money |  | Yes | none | 2026-03-18 15:34:39 | C R U | true | Invoice - Custom | CRM Total Amount Paid | CRM_Total_Amount_Paid__c |  |  |  | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 40 | [azt_totalamountpaid_base](#azt_totalamountpaid_base) | Total Amount Paid (Base) | money |  | Yes | none | 2026-03-18 15:34:39 | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 41 | [azt_totalcommissionableamount](#azt_totalcommissionableamount) | Total Commissionable Amount | money |  | Yes | none | 2026-03-20 19:18:15 | R | true | Invoice - Custom | CRM Total Commissionable Amount | CRM_Total_Commissionable_Amount__c |  |  |  | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 42 | [azt_totalcommissionableamount_base](#azt_totalcommissionableamount_base) | Total Commissionable Amount (Base) | money |  | Yes | none | 2026-03-20 19:18:15 | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 43 | [billto_line1](#billto_line1) | Bill To Street 1 | nvarchar |  | No | none | 2026-03-20 19:18:15 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 44 | [billto_line2](#billto_line2) | Bill To Street 2 | nvarchar |  | No | none | 2026-03-20 17:46:13 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 45 | [billto_line3](#billto_line3) | Bill To Street 3 | nvarchar |  | No | none | 2026-03-20 19:18:15 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 46 | [billto_name](#billto_name) | Bill To Name | nvarchar |  | No | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 47 | [billto_postalcode](#billto_postalcode) | Bill To ZIP/Postal Code | nvarchar |  | No | none | 2026-03-20 19:18:15 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 48 | [billto_stateorprovince](#billto_stateorprovince) | Bill To State/Province | nvarchar |  | No | none | 2026-03-20 19:18:15 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 49 | [contactid](#contactid) | Contact | lookup |  | No | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 50 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) |  | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 51 | [customerid](#customerid) | Customer | customer |  | No | required | 2026-03-20 19:18:15 | C R U So G Re | true | Invoice - Custom | Account | AccountID |  |  |  | [1](#2.%20Forms) | [8](#3.%20Views) |  |  |  | [13](#7.%20Workflows) |  | [11](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 52 | [description](#description) | Description | ntext |  | No | none | 2026-03-20 19:18:15 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 53 | [discountamount](#discountamount) | Invoice Discount Amount | money |  | No | none | 2026-02-12 16:41:21 |  | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 54 | [duedate](#duedate) | Due Date | datetime |  | No | none | 2025-01-15 14:15:36 |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 55 | [entityimage](#entityimage) | Entity Image | image |  | No | none | Skipped (image) | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 56 | [freightamount](#freightamount) | Freight Amount | money |  | No | none | 2026-03-20 19:18:15 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 57 | [invoiceid](#invoiceid) | Invoice | uniqueidentifier |  | No | required | 2026-03-20 19:18:15 |  | true |  |  |  |  |  |  |  | [7](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 58 | [invoicenumber](#invoicenumber) | Invoice ID | nvarchar |  | No | required | 2026-03-20 19:18:15 |  | true |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 59 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none | Skipped (modifiedon) |  | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 60 | [name](#name) | Name | nvarchar |  | No | required | 2026-03-20 19:18:15 | C R U S Re | true | Invoice - Custom | CRM Invoice Name | CRM_Invoice_Name__c |  |  |  |  | [13](#3.%20Views) |  |  |  | [16](#7.%20Workflows) |  | [23](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 61 | [opportunityid](#opportunityid) | Opportunity | lookup |  | No | none | 2026-03-20 19:18:15 |  | true |  |  |  |  |  |  | [1](#2.%20Forms) | [1](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [32](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 62 | [ownerid](#ownerid) | Owner | lookup |  | No | required | 2026-03-20 19:18:15 |  | true |  |  |  |  |  |  | [2](#2.%20Forms) | [5](#3.%20Views) | [1](#4.%20Chart%20Visualizations) |  |  | [1](#7.%20Workflows) |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 63 | [paymenttermscode](#paymenttermscode) | Payment Terms | picklist |  | No | none | 2025-08-13 16:00:40 |  | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 64 | [pricelevelid](#pricelevelid) | Price List | lookup |  | No | required | 2026-03-20 19:18:15 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 65 | [salesorderid](#salesorderid) | Order | lookup |  | No | none | 2026-03-20 19:18:15 |  | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  | [13](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 66 | [shippingmethodcode](#shippingmethodcode) | Shipping Method | picklist |  | No | none | 2026-03-20 19:18:15 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 67 | [shipto_line1](#shipto_line1) | Ship To Street 1 | nvarchar |  | No | none | 2026-03-20 19:18:15 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 68 | [shipto_line2](#shipto_line2) | Ship To Street 2 | nvarchar |  | No | none | 2026-03-20 17:46:13 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 69 | [shipto_line3](#shipto_line3) | Ship To Street 3 | nvarchar |  | No | none | 2026-03-20 19:18:15 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 70 | [shipto_name](#shipto_name) | Ship To Name | nvarchar |  | No | none | 2026-03-20 19:18:15 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 71 | [shipto_postalcode](#shipto_postalcode) | Ship To ZIP/Postal Code | nvarchar |  | No | none | 2026-03-20 19:18:15 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 72 | [shipto_stateorprovince](#shipto_stateorprovince) | Ship To State/Province | nvarchar |  | No | none | 2026-03-20 19:18:15 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 73 | [statecode](#statecode) | Status | state |  | No | systemrequired | 2026-03-20 19:18:15 | R U | true | Invoice - Custom | CRM Status | CRM_Status__c |  |  |  | [1](#2.%20Forms) | [5](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 74 | [statuscode](#statuscode) | Status Reason | status |  | No | none | 2026-03-20 19:18:15 | C R U Re | true | Invoice - Custom | CRM Status Reason | CRM_Status_Reason__c |  |  |  |  | [5](#3.%20Views) |  |  |  | [5](#7.%20Workflows) | [1](#9.%20Formulas%20and%20Rollups) | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 75 | [totalamount](#totalamount) | Total Amount | money |  | No | none | 2026-03-20 19:18:15 | R U So G Re | true | Invoice - Custom | Amount Invoiced | Amount_Invoiced__c |  |  |  | [1](#2.%20Forms) | [7](#3.%20Views) | [1](#4.%20Chart%20Visualizations) |  |  |  | [2](#9.%20Formulas%20and%20Rollups) | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 76 | [totaltax](#totaltax) | Total Tax | money |  | No | none | 2026-03-20 19:18:15 |  | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 77 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | required | 2026-03-20 19:18:15 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 
 ---
 
@@ -1767,6 +1767,12 @@ Total plugins analyzed: **81**
 - **Message:** Update
 - **Entity Images:** Post
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Asynchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [accountid](#accountid)
@@ -1813,6 +1819,12 @@ Total plugins analyzed: **81**
 - **File:** `AccountLeadGenAssociate.cs`
 - **Target entity:** azt_accountleadgeneration
 - **Message:** Associate
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Associate | Asynchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -1870,6 +1882,12 @@ Total plugins analyzed: **81**
 - **Message:** Update
 - **Entity Images:** Post
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Asynchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_nonsaasstatus](#azt_nonsaasstatus)
@@ -1890,6 +1908,12 @@ Total plugins analyzed: **81**
 - **File:** `ActivateOrReviseQuote.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [quotedetailid](#quotedetailid)
@@ -1904,6 +1928,14 @@ Total plugins analyzed: **81**
 - **File:** `ActivitiesCreatedDueDatesInPast.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Pre-Operation | Enabled |  | 1 |
+| Create | Synchronous | Pre-Operation | Enabled |  | 1 |
+| Create | Synchronous | Pre-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [scheduledend](#scheduledend)
@@ -1913,6 +1945,13 @@ Total plugins analyzed: **81**
 - **File:** `ActivityCloseForceRecordOwner.cs`
 - **Message:** Update
 - **Entity Images:** Pre
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Pre-Operation | Enabled |  | 1 |
+| Update | Synchronous | Pre-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -1939,6 +1978,15 @@ Total plugins analyzed: **81**
 - **File:** `AddressSearchCleanupFields.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Pre-Operation | Disabled |  | 1 |
+| Update | Synchronous | Pre-Operation | Disabled |  | 1 |
+| Create | Synchronous | Pre-Operation | Disabled |  | 1 |
+| Create | Synchronous | Pre-Operation | Disabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_addresssearch](#azt_addresssearch)
@@ -1954,6 +2002,13 @@ Total plugins analyzed: **81**
 - **File:** `AllocationValidation.cs`
 - **Message:** Create
 - **Entity Images:** Post
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -1973,6 +2028,17 @@ Total plugins analyzed: **81**
 - **Target entity:** customeraddress
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Pre-Validation | Enabled |  | 1 |
+| Create | Synchronous | Pre-Validation | Enabled |  | 1 |
+| Create | Synchronous | Pre-Validation | Enabled |  | 1 |
+| Update | Synchronous | Pre-Validation | Enabled |  | 1 |
+| Update | Synchronous | Pre-Validation | Enabled |  | 1 |
+| Update | Synchronous | Pre-Validation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [address1_stateorprovince](#address1_stateorprovince)
@@ -1987,6 +2053,12 @@ Total plugins analyzed: **81**
 
 - **File:** `AutoNumber.cs`
 - **Message:** Create
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Pre-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2017,6 +2089,13 @@ Total plugins analyzed: **81**
 - **Message:** Create
 - **Entity Images:** Pre
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Pre-Operation | Disabled |  | 1 |
+| Update | Synchronous | Pre-Operation | Disabled |  | 1 |
+
 **Fields Read:**
 
 - [ownerid](#ownerid)
@@ -2031,6 +2110,13 @@ Total plugins analyzed: **81**
 
 - **File:** `CaseClose.cs`
 - **Message:** SetState
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2068,6 +2154,12 @@ Total plugins analyzed: **81**
 - **File:** `CloneExpenseLine.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_customerid](#azt_customerid)
@@ -2100,6 +2192,12 @@ Total plugins analyzed: **81**
 - **File:** `CompGoalCreate.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Pre-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_invoiceid](#azt_invoiceid)
@@ -2115,6 +2213,12 @@ Total plugins analyzed: **81**
 
 - **File:** `ContactSetConnectionRole.cs`
 - **Message:** azt_ContactSetConnectionRole
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| azt_ContactSetConnectionRole | Synchronous | Pre-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2188,6 +2292,13 @@ Total plugins analyzed: **81**
 - **Message:** Update
 - **Entity Images:** Post
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Asynchronous | Post-Operation | Disabled |  | 2 |
+| Update | Asynchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_iscompanion](#azt_iscompanion)
@@ -2251,6 +2362,12 @@ Total plugins analyzed: **81**
 
 - **File:** `CreateUserGoals.cs`
 - **Message:** Create (inferred)
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| azt_GoalAutoCreate | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2344,6 +2461,14 @@ Total plugins analyzed: **81**
 - **Message:** Delete
 - **Entity Images:** Post
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
+| Delete | Synchronous | Pre-Operation | Enabled |  | 1 |
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_discountamount](#azt_discountamount)
@@ -2400,6 +2525,13 @@ Total plugins analyzed: **81**
 - **File:** `EngagementFSRAssignedOn.cs`
 - **Message:** Update
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_engagementid](#azt_engagementid)
@@ -2415,6 +2547,13 @@ Total plugins analyzed: **81**
 - **File:** `EngagementSetEndDate.cs`
 - **Message:** SetState
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| SetStateDynamicEntity | Synchronous | Pre-Operation | Enabled |  | 1 |
+| SetState | Synchronous | Pre-Operation | Enabled |  | 1 |
+
 **Fields Written:**
 
 - [azt_enddate](#azt_enddate)
@@ -2426,6 +2565,13 @@ Total plugins analyzed: **81**
 - **Target entity:** azt_expense
 - **Message:** Create
 - **Entity Images:** Post
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2451,6 +2597,12 @@ Total plugins analyzed: **81**
 
 - **File:** `ExpenseRestrictVisibility.cs`
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| RetrieveMultiple | Synchronous | Pre-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [businessunitid](#businessunitid)
@@ -2463,6 +2615,12 @@ Total plugins analyzed: **81**
 
 - **File:** `FundingSetAnnualSpend.cs`
 - **Message:** Create
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2488,6 +2646,13 @@ Total plugins analyzed: **81**
 - **Message:** Create
 - **Entity Images:** Post
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Written:**
 
 - [azt_fundingid](#azt_fundingid)
@@ -2497,6 +2662,13 @@ Total plugins analyzed: **81**
 
 - **File:** `FundingYearSync.cs`
 - **Message:** Create
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Pre-Operation | Enabled |  | 1 |
+| Update | Synchronous | Pre-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2540,6 +2712,12 @@ Total plugins analyzed: **81**
 
 - **File:** `GetUserHasRoleToAction.cs`
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| azt_GetHasRole | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [roleid](#roleid)
@@ -2560,6 +2738,12 @@ Total plugins analyzed: **81**
 - **Message:** Update
 - **Entity Images:** Pre
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_amount](#azt_amount)
@@ -2573,6 +2757,12 @@ Total plugins analyzed: **81**
 
 - **File:** `InvoiceCompCompleted.cs`
 - **Message:** Update
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Asynchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2629,6 +2819,12 @@ Total plugins analyzed: **81**
 - **File:** `LeadImport.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Asynchronous | Post-Operation | Enabled |  | 2 |
+
 **Fields Read:**
 
 - [accountid](#accountid)
@@ -2679,6 +2875,12 @@ Total plugins analyzed: **81**
 - **File:** `LeadImportPopulateName.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Pre-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_email](#azt_email)
@@ -2693,6 +2895,13 @@ Total plugins analyzed: **81**
 - **File:** `LeadQualify.cs`
 - **Message:** QualifyLead
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| QualifyLead | Synchronous | Pre-Operation | Enabled |  | 1 |
+| QualifyLead | Synchronous | Post-Operation | Disabled |  | 1 |
+
 **Fields Read:**
 
 - [parentaccountid](#parentaccountid)
@@ -2702,6 +2911,12 @@ Total plugins analyzed: **81**
 - **File:** `LeadQualifyParentStakeholderContacts.cs`
 - **Target entity:** account
 - **Message:** Create
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2729,6 +2944,15 @@ Total plugins analyzed: **81**
 
 - **File:** `ManualDiscountKill.cs`
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Pre-Operation | Disabled |  | 1 |
+| Update | Synchronous | Pre-Operation | Disabled |  | 1 |
+| Create | Synchronous | Pre-Operation | Disabled |  | 1 |
+| Update | Synchronous | Pre-Operation | Disabled |  | 1 |
+
 **Fields Read:**
 
 - [manualdiscountamount](#manualdiscountamount)
@@ -2750,6 +2974,12 @@ Total plugins analyzed: **81**
 - **File:** `OpportunityAssignFromLead.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 3 |
+
 **Fields Read:**
 
 - [originatingleadid](#originatingleadid)
@@ -2764,6 +2994,12 @@ Total plugins analyzed: **81**
 - **File:** `OpportunityAudit.cs`
 - **Message:** Update
 - **Entity Images:** Pre, Post
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2794,6 +3030,12 @@ Total plugins analyzed: **81**
 
 - **File:** `OpportunityClone.cs`
 - **Message:** Create (inferred)
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| azt_CloneOpportunity | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2835,6 +3077,20 @@ Total plugins analyzed: **81**
 - **File:** `OpportunityLastActivityDate.cs`
 - **Message:** Update
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| SetStateDynamicEntity | Synchronous | Pre-Operation | Enabled |  | 1 |
+| Update | Synchronous | Pre-Operation | Enabled |  | 1 |
+| SetState | Synchronous | Pre-Operation | Enabled |  | 1 |
+| SetState | Synchronous | Pre-Operation | Enabled |  | 1 |
+| SetStateDynamicEntity | Synchronous | Pre-Operation | Enabled |  | 1 |
+| SetStateDynamicEntity | Synchronous | Pre-Operation | Enabled |  | 1 |
+| SetState | Synchronous | Pre-Operation | Enabled |  | 1 |
+| SetState | Synchronous | Pre-Operation | Enabled |  | 1 |
+| SetStateDynamicEntity | Synchronous | Pre-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_probability](#azt_probability)
@@ -2852,6 +3108,12 @@ Total plugins analyzed: **81**
 - **File:** `OpportunityLineSyncToQuote.cs`
 - **Message:** Update
 - **Entity Images:** Pre, Post
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2895,6 +3157,12 @@ Total plugins analyzed: **81**
 - **File:** `OpportunityPreventCreateQuote.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Pre-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_approvalstatus](#azt_approvalstatus)
@@ -2911,6 +3179,13 @@ Total plugins analyzed: **81**
 - **File:** `OpportunityProbabilityChange.cs`
 - **Message:** Create
 - **Entity Images:** Pre
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Pre-Operation | Enabled |  | 1 |
+| Create | Synchronous | Pre-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2929,6 +3204,13 @@ Total plugins analyzed: **81**
 
 - **File:** `OpportunityProbabilityNumber.cs`
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_probability](#azt_probability)
@@ -2942,6 +3224,12 @@ Total plugins analyzed: **81**
 
 - **File:** `OpptyToQuoteFieldMappings.cs`
 - **Message:** Create
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Asynchronous | Post-Operation | Enabled |  | 100 |
 
 **Fields Read:**
 
@@ -2989,6 +3277,12 @@ Total plugins analyzed: **81**
 - **File:** `OrderClone.cs`
 - **Message:** Create (inferred)
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| azt_CloneOrder | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_licensetermmonths](#azt_licensetermmonths)
@@ -3027,6 +3321,12 @@ Total plugins analyzed: **81**
 - **File:** `OrderFSRSetTemplateFields.cs`
 - **Message:** Update
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Pre-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [address1_telephone1](#address1_telephone1)
@@ -3049,6 +3349,12 @@ Total plugins analyzed: **81**
 - **File:** `OrderLinePopulateLicType.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_licenseterm](#azt_licenseterm)
@@ -3066,6 +3372,12 @@ Total plugins analyzed: **81**
 
 - **File:** `OrderLinePopulateTemplateFields.cs`
 - **Message:** Create
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Asynchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3089,6 +3401,12 @@ Total plugins analyzed: **81**
 
 - **File:** `OrderManuallyCreateSoftwareLicense.cs`
 - **Message:** Create (inferred)
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| azt_CreateSoftwareLicense | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3120,6 +3438,12 @@ Total plugins analyzed: **81**
 
 - **File:** `OrderSplit.cs`
 - **Message:** Create (inferred)
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| azt_OrderSplit | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3192,6 +3516,12 @@ Total plugins analyzed: **81**
 - **File:** `OrderStageTracking.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_orderid](#azt_orderid)
@@ -3221,6 +3551,12 @@ Total plugins analyzed: **81**
 - **Message:** Update
 - **Entity Images:** Post
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_amount](#azt_amount)
@@ -3237,6 +3573,13 @@ Total plugins analyzed: **81**
 - **Target entity:** team
 - **Message:** Create
 - **Entity Images:** Post
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
+| Update | Synchronous | Pre-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3292,6 +3635,13 @@ Total plugins analyzed: **81**
 - **Message:** Create
 - **Entity Images:** Pre
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Pre-Operation | Enabled |  | 1 |
+| Update | Synchronous | Pre-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_quoteproductid](#azt_quoteproductid)
@@ -3302,6 +3652,12 @@ Total plugins analyzed: **81**
 
 - **File:** `QuoteCloneAndDelete.cs`
 - **Message:** Delete (inferred)
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| azt_CloneAndDeleteQuote | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3336,6 +3692,14 @@ Total plugins analyzed: **81**
 - **Target entity:** quote
 - **Message:** Create
 - **Entity Images:** Pre, Post
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Asynchronous | Post-Operation | Enabled |  | 1 |
+| Update | Asynchronous | Post-Operation | Enabled |  | 1 |
+| Delete | Asynchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3376,6 +3740,13 @@ Total plugins analyzed: **81**
 - **File:** `QuoteOrderProductsTrackDiscount.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Asynchronous | Post-Operation | Enabled |  | 1 |
+| Create | Asynchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_opportunityproductid](#azt_opportunityproductid)
@@ -3402,6 +3773,13 @@ Total plugins analyzed: **81**
 
 - **File:** `QuotePreventActivateUnapprovedDiscounts.cs`
 - **Message:** SetState
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| SetStateDynamicEntity | Synchronous | Pre-Operation | Enabled |  | 1 |
+| SetState | Synchronous | Pre-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3455,6 +3833,13 @@ Total plugins analyzed: **81**
 - **File:** `QuotePreventActivateUnapprovedFreight.cs`
 - **Message:** SetState
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| SetState | Synchronous | Pre-Operation | Enabled |  | 1 |
+| SetStateDynamicEntity | Synchronous | Pre-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_defaultfreightamount](#azt_defaultfreightamount)
@@ -3467,6 +3852,12 @@ Total plugins analyzed: **81**
 - **File:** `QuoteSyncTotalToOpportunity.cs`
 - **Message:** Update
 - **Entity Images:** Post
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Asynchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3485,6 +3876,12 @@ Total plugins analyzed: **81**
 - **Message:** Update
 - **Entity Images:** Pre
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Pre-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_opportunityid](#azt_opportunityid)
@@ -3498,6 +3895,12 @@ Total plugins analyzed: **81**
 
 - **File:** `RestrictCreateQuote.cs`
 - **Message:** Create
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3517,6 +3920,12 @@ Total plugins analyzed: **81**
 - **File:** `RestrictProductLookups.cs`
 - **Message:** RetrieveMultiple
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| RetrieveMultiple | Synchronous | Pre-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_jobrole](#azt_jobrole)
@@ -3530,6 +3939,12 @@ Total plugins analyzed: **81**
 
 - **File:** `RestrictWinOpportunities.cs`
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Win | Synchronous | Post-Operation | Disabled |  | 1 |
+
 **Fields Read:**
 
 - [businessunitid](#businessunitid)
@@ -3537,6 +3952,12 @@ Total plugins analyzed: **81**
 ### 10.71. RestrictWinQuote
 
 - **File:** `RestrictWinQuote.cs`
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Win | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3546,6 +3967,12 @@ Total plugins analyzed: **81**
 
 - **File:** `ReviseQuoteDiscountMove.cs`
 - **Message:** Create
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3578,6 +4005,12 @@ Total plugins analyzed: **81**
 
 - **File:** `SendQuoteReport.cs`
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| azt_SendQuote | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Written:**
 
 - [body](#body)
@@ -3591,6 +4024,12 @@ Total plugins analyzed: **81**
 
 - **File:** `SetOppProductDefaults.cs`
 - **Message:** Create
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3610,6 +4049,13 @@ Total plugins analyzed: **81**
 
 - **File:** `SetPrimaryContact.cs`
 - **Message:** Create
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| azt_ContactSetPrimary | Synchronous | Pre-Operation | Enabled |  | 1 |
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3655,6 +4101,18 @@ Total plugins analyzed: **81**
 - **File:** `ShareBasedOnAccessTeam.cs`
 - **Message:** GrantAccess (inferred)
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Asynchronous | Post-Operation | Disabled |  | 1 |
+| Create | Asynchronous | Post-Operation | Disabled |  | 1 |
+| Create | Asynchronous | Post-Operation | Disabled |  | 1 |
+| Create | Asynchronous | Post-Operation | Disabled |  | 1 |
+| Create | Asynchronous | Post-Operation | Disabled |  | 1 |
+| Create | Asynchronous | Post-Operation | Disabled |  | 1 |
+| Create | Asynchronous | Post-Operation | Disabled |  | 1 |
+
 **Fields Read:**
 
 - [activityid](#activityid)
@@ -3693,6 +4151,16 @@ Total plugins analyzed: **81**
 - **File:** `ShareFromAccountShares.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Asynchronous | Post-Operation | Enabled |  | 1 |
+| Create | Asynchronous | Post-Operation | Enabled |  | 1 |
+| Create | Asynchronous | Post-Operation | Enabled |  | 1 |
+| Create | Asynchronous | Post-Operation | Enabled |  | 1 |
+| Create | Asynchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [customerid](#customerid)
@@ -3725,6 +4193,13 @@ Total plugins analyzed: **81**
 
 - **File:** `ShipmentSetTrackingNumber.cs`
 - **Message:** Create
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 

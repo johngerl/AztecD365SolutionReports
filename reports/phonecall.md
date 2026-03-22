@@ -1,5 +1,5 @@
 # Phonecall Field Usage Analysis
-> Date: 2026-03-21
+> Date: 2026-03-22
 
 | Property | Value |
 |---|---|
@@ -9,8 +9,8 @@
 | **Object Type** | Standard |
 | **Ownership Type** | UserOwned |
 | **Audit Enabled** | False |
-| **Total Rows** | 214108 |
-| **Last Update** | 2026-03-21 01:27:28 |
+| **Total Rows** | 214131 |
+| **Last Update** | 2026-03-22 02:48:16 |
 | **Primary ID Field** | phonecallid |
 | **Primary Name Field** | None |
 
@@ -211,39 +211,39 @@
 
 Total fields: **31**
 
-| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
-|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [activityid](#activityid) | Phone Call | uniqueidentifier |  | No | required | 2026-03-21 01:27:28 | true |  |  |  |  |  |  |  | [15](#3.%20Views) |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 2 | [activitytypecode](#activitytypecode) | Activity Type | entityname |  | No | required | 2026-03-21 01:27:28 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 3 | [actualend](#actualend) | Actual End | datetime |  | No | none | 2026-03-21 01:27:28 | true |  |  |  |  |  |  |  | [24](#3.%20Views) | [3](#4.%20Chart%20Visualizations) |  |  |  |  |  |  |  |  |  |
-| 4 | [azt_addtocrtqueue](#azt_addtocrtqueue) | Add to CRT Queue? | bit | 1: Yes, 0: No | Yes | none | 2026-03-21 01:27:28 | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 5 | [azt_autocreatecallback](#azt_autocreatecallback) | Autocreate Callback? | bit | 1: Yes, 0: No | Yes | none | 2026-03-21 01:27:28 | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 6 | [azt_callbackin](#azt_callbackin) | Callback In: | picklist | 276530000: 1 Day, 276530001: 2 Days, 276530002: 3 Days, 276530003: 1 Week, 276530004: 1 Month, 276530005: Specific Date | Yes | none | 2026-03-20 21:42:40 | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 7 | [azt_callbackon](#azt_callbackon) | Callback On | datetime |  | Yes | none | 2026-03-20 21:24:01 | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 8 | [azt_copydescription](#azt_copydescription) | Copy Description? | bit | 1: Yes, 0: No | Yes | none | 2026-03-21 01:27:28 | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 9 | [azt_copysubject](#azt_copysubject) | Copy Subject? | bit | 1: Yes, 0: No | Yes | none | 2026-03-21 01:27:28 | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 10 | [azt_historicalowner](#azt_historicalowner) | Historical Owner | nvarchar |  | Yes | none | 2026-02-13 16:44:14 | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 11 | [azt_phonecallstatus](#azt_phonecallstatus) | Phonecall Status | picklist | 276530000: Active, 276530001: Failed, 276530002: Qualified | Yes | none | 2021-11-09 03:52:20 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 12 | [azt_recordownerid](#azt_recordownerid) | Record Owner | lookup |  | Yes | none | 2026-03-21 01:27:28 | true |  |  |  |  |  |  | [1](#2.%20Forms) | [15](#3.%20Views) | [13](#4.%20Chart%20Visualizations) |  |  | [37](#7.%20Workflows) |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 13 | [azt_result](#azt_result) | Result | picklist | 327630000: Connected, 327630001: Left VM, 327630002: No Answer | Yes | none | 2026-03-20 21:42:40 | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 14 | [category](#category) | Category | nvarchar |  | No | none | Never | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 15 | [createdby](#createdby) | Created By | lookup |  | No | none | 2026-03-21 01:27:28 | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  | [3](#7.%20Workflows) |  |  |  |  |  |  |
-| 16 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 17 | [description](#description) | Description | ntext |  | No | none | 2026-03-21 01:27:28 | true |  |  |  |  |  |  |  |  |  |  |  | [14](#7.%20Workflows) |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 18 | [directioncode](#directioncode) | Direction | bit |  | No | none | 2026-03-21 01:27:28 | true |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 19 | [from](#from) | Call From | partylist |  | No | required | Skipped (partylist) | true |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 20 | [leftvoicemail](#leftvoicemail) | Left Voice Mail | bit |  | No | none | 2026-03-21 01:27:28 | true |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 21 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none | Skipped (modifiedon) | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 22 | [ownerid](#ownerid) | Owner | lookup |  | No | required | 2026-03-21 01:27:28 | true |  |  |  |  |  |  |  | [4](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 23 | [phonenumber](#phonenumber) | Phone Number | nvarchar |  | No | none | 2026-03-20 21:02:02 | true |  |  |  |  |  |  | [1](#2.%20Forms) | [3](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 24 | [prioritycode](#prioritycode) | Priority | picklist |  | No | none | 2026-03-21 01:27:28 | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 25 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none | 2026-03-21 01:27:28 | true |  |  |  |  |  |  |  | [4](#3.%20Views) |  |  |  | [14](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [35](#12.%20Relationships) |  |  |
-| 26 | [scheduledend](#scheduledend) | Due | datetime |  | No | none | 2026-03-20 21:42:40 | true |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 27 | [statecode](#statecode) | Activity Status | picklist |  | No | required | 2026-03-21 01:27:28 | true |  |  |  |  |  |  |  | [4](#3.%20Views) |  |  |  |  |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 28 | [statuscode](#statuscode) | Status Reason | picklist |  | No | none | 2026-03-21 01:27:28 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 29 | [subject](#subject) | Subject | nvarchar |  | No | required | 2026-03-21 01:27:28 | true |  |  |  |  |  |  | [2](#2.%20Forms) | [20](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 30 | [to](#to) | Call To | partylist |  | No | required | Skipped (partylist) | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 31 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none | 2026-01-27 23:59:03 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
+|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
+| 1 | [activityid](#activityid) | Phone Call | uniqueidentifier |  | No | required | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [15](#3.%20Views) |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 2 | [activitytypecode](#activitytypecode) | Activity Type | entityname |  | No | required | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 3 | [actualend](#actualend) | Actual End | datetime |  | No | none | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [24](#3.%20Views) | [3](#4.%20Chart%20Visualizations) |  |  |  |  |  |  |  |  |  |
+| 4 | [azt_addtocrtqueue](#azt_addtocrtqueue) | Add to CRT Queue? | bit | 1: Yes, 0: No | Yes | none | 2026-03-22 02:48:16 | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 5 | [azt_autocreatecallback](#azt_autocreatecallback) | Autocreate Callback? | bit | 1: Yes, 0: No | Yes | none | 2026-03-22 02:48:16 | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 6 | [azt_callbackin](#azt_callbackin) | Callback In: | picklist | 276530000: 1 Day, 276530001: 2 Days, 276530002: 3 Days, 276530003: 1 Week, 276530004: 1 Month, 276530005: Specific Date | Yes | none | 2026-03-20 21:42:40 | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 7 | [azt_callbackon](#azt_callbackon) | Callback On | datetime |  | Yes | none | 2026-03-20 21:24:01 | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 8 | [azt_copydescription](#azt_copydescription) | Copy Description? | bit | 1: Yes, 0: No | Yes | none | 2026-03-22 02:48:16 | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 9 | [azt_copysubject](#azt_copysubject) | Copy Subject? | bit | 1: Yes, 0: No | Yes | none | 2026-03-22 02:48:16 | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 10 | [azt_historicalowner](#azt_historicalowner) | Historical Owner | nvarchar |  | Yes | none | 2026-02-13 16:44:14 | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 11 | [azt_phonecallstatus](#azt_phonecallstatus) | Phonecall Status | picklist | 276530000: Active, 276530001: Failed, 276530002: Qualified | Yes | none | 2021-11-09 03:52:20 | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 12 | [azt_recordownerid](#azt_recordownerid) | Record Owner | lookup |  | Yes | none | 2026-03-22 02:48:16 | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) | [15](#3.%20Views) | [13](#4.%20Chart%20Visualizations) |  |  | [37](#7.%20Workflows) |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 13 | [azt_result](#azt_result) | Result | picklist | 327630000: Connected, 327630001: Left VM, 327630002: No Answer | Yes | none | 2026-03-22 02:48:16 | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 14 | [category](#category) | Category | nvarchar |  | No | none | Never |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 15 | [createdby](#createdby) | Created By | lookup |  | No | none | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  | [3](#7.%20Workflows) |  |  |  |  |  |  |
+| 16 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 17 | [description](#description) | Description | ntext |  | No | none | 2026-03-22 02:48:16 | C R U | true |  |  |  |  |  |  |  |  |  |  |  | [14](#7.%20Workflows) |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 18 | [directioncode](#directioncode) | Direction | bit |  | No | none | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 19 | [from](#from) | Call From | partylist |  | No | required | Skipped (partylist) |  | true |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 20 | [leftvoicemail](#leftvoicemail) | Left Voice Mail | bit |  | No | none | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 21 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none | Skipped (modifiedon) |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 22 | [ownerid](#ownerid) | Owner | lookup |  | No | required | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [4](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 23 | [phonenumber](#phonenumber) | Phone Number | nvarchar |  | No | none | 2026-03-21 23:15:31 |  | true |  |  |  |  |  |  | [1](#2.%20Forms) | [3](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 24 | [prioritycode](#prioritycode) | Priority | picklist |  | No | none | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 25 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none | 2026-03-22 02:48:16 | C R U Re | true |  |  |  |  |  |  |  | [4](#3.%20Views) |  |  |  | [14](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [35](#12.%20Relationships) |  |  |
+| 26 | [scheduledend](#scheduledend) | Due | datetime |  | No | none | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 27 | [statecode](#statecode) | Activity Status | picklist |  | No | required | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [4](#3.%20Views) |  |  |  |  |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 28 | [statuscode](#statuscode) | Status Reason | picklist |  | No | none | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 29 | [subject](#subject) | Subject | nvarchar |  | No | required | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  | [2](#2.%20Forms) | [20](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 30 | [to](#to) | Call To | partylist |  | No | required | Skipped (partylist) |  | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 31 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none | 2026-01-27 23:59:03 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 
 ---
 
@@ -1811,6 +1811,12 @@ Total plugins analyzed: **81**
 - **Message:** Update
 - **Entity Images:** Post
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Asynchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [accountid](#accountid)
@@ -1857,6 +1863,12 @@ Total plugins analyzed: **81**
 - **File:** `AccountLeadGenAssociate.cs`
 - **Target entity:** azt_accountleadgeneration
 - **Message:** Associate
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Associate | Asynchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -1914,6 +1926,12 @@ Total plugins analyzed: **81**
 - **Message:** Update
 - **Entity Images:** Post
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Asynchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_nonsaasstatus](#azt_nonsaasstatus)
@@ -1934,6 +1952,12 @@ Total plugins analyzed: **81**
 - **File:** `ActivateOrReviseQuote.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [quotedetailid](#quotedetailid)
@@ -1948,6 +1972,14 @@ Total plugins analyzed: **81**
 - **File:** `ActivitiesCreatedDueDatesInPast.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Pre-Operation | Enabled |  | 1 |
+| Create | Synchronous | Pre-Operation | Enabled |  | 1 |
+| Create | Synchronous | Pre-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [scheduledend](#scheduledend)
@@ -1957,6 +1989,13 @@ Total plugins analyzed: **81**
 - **File:** `ActivityCloseForceRecordOwner.cs`
 - **Message:** Update
 - **Entity Images:** Pre
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Pre-Operation | Enabled |  | 1 |
+| Update | Synchronous | Pre-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -1983,6 +2022,15 @@ Total plugins analyzed: **81**
 - **File:** `AddressSearchCleanupFields.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Pre-Operation | Disabled |  | 1 |
+| Update | Synchronous | Pre-Operation | Disabled |  | 1 |
+| Create | Synchronous | Pre-Operation | Disabled |  | 1 |
+| Create | Synchronous | Pre-Operation | Disabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_addresssearch](#azt_addresssearch)
@@ -1998,6 +2046,13 @@ Total plugins analyzed: **81**
 - **File:** `AllocationValidation.cs`
 - **Message:** Create
 - **Entity Images:** Post
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2017,6 +2072,17 @@ Total plugins analyzed: **81**
 - **Target entity:** customeraddress
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Pre-Validation | Enabled |  | 1 |
+| Create | Synchronous | Pre-Validation | Enabled |  | 1 |
+| Create | Synchronous | Pre-Validation | Enabled |  | 1 |
+| Update | Synchronous | Pre-Validation | Enabled |  | 1 |
+| Update | Synchronous | Pre-Validation | Enabled |  | 1 |
+| Update | Synchronous | Pre-Validation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [address1_stateorprovince](#address1_stateorprovince)
@@ -2031,6 +2097,12 @@ Total plugins analyzed: **81**
 
 - **File:** `AutoNumber.cs`
 - **Message:** Create
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Pre-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2061,6 +2133,13 @@ Total plugins analyzed: **81**
 - **Message:** Create
 - **Entity Images:** Pre
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Pre-Operation | Disabled |  | 1 |
+| Update | Synchronous | Pre-Operation | Disabled |  | 1 |
+
 **Fields Read:**
 
 - [ownerid](#ownerid)
@@ -2075,6 +2154,13 @@ Total plugins analyzed: **81**
 
 - **File:** `CaseClose.cs`
 - **Message:** SetState
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2112,6 +2198,12 @@ Total plugins analyzed: **81**
 - **File:** `CloneExpenseLine.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_customerid](#azt_customerid)
@@ -2144,6 +2236,12 @@ Total plugins analyzed: **81**
 - **File:** `CompGoalCreate.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Pre-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_invoiceid](#azt_invoiceid)
@@ -2159,6 +2257,12 @@ Total plugins analyzed: **81**
 
 - **File:** `ContactSetConnectionRole.cs`
 - **Message:** azt_ContactSetConnectionRole
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| azt_ContactSetConnectionRole | Synchronous | Pre-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2232,6 +2336,13 @@ Total plugins analyzed: **81**
 - **Message:** Update
 - **Entity Images:** Post
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Asynchronous | Post-Operation | Disabled |  | 2 |
+| Update | Asynchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_iscompanion](#azt_iscompanion)
@@ -2295,6 +2406,12 @@ Total plugins analyzed: **81**
 
 - **File:** `CreateUserGoals.cs`
 - **Message:** Create (inferred)
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| azt_GoalAutoCreate | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2388,6 +2505,14 @@ Total plugins analyzed: **81**
 - **Message:** Delete
 - **Entity Images:** Post
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
+| Delete | Synchronous | Pre-Operation | Enabled |  | 1 |
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_discountamount](#azt_discountamount)
@@ -2444,6 +2569,13 @@ Total plugins analyzed: **81**
 - **File:** `EngagementFSRAssignedOn.cs`
 - **Message:** Update
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_engagementid](#azt_engagementid)
@@ -2459,6 +2591,13 @@ Total plugins analyzed: **81**
 - **File:** `EngagementSetEndDate.cs`
 - **Message:** SetState
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| SetStateDynamicEntity | Synchronous | Pre-Operation | Enabled |  | 1 |
+| SetState | Synchronous | Pre-Operation | Enabled |  | 1 |
+
 **Fields Written:**
 
 - [azt_enddate](#azt_enddate)
@@ -2470,6 +2609,13 @@ Total plugins analyzed: **81**
 - **Target entity:** azt_expense
 - **Message:** Create
 - **Entity Images:** Post
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2495,6 +2641,12 @@ Total plugins analyzed: **81**
 
 - **File:** `ExpenseRestrictVisibility.cs`
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| RetrieveMultiple | Synchronous | Pre-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [businessunitid](#businessunitid)
@@ -2507,6 +2659,12 @@ Total plugins analyzed: **81**
 
 - **File:** `FundingSetAnnualSpend.cs`
 - **Message:** Create
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2532,6 +2690,13 @@ Total plugins analyzed: **81**
 - **Message:** Create
 - **Entity Images:** Post
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Written:**
 
 - [azt_fundingid](#azt_fundingid)
@@ -2541,6 +2706,13 @@ Total plugins analyzed: **81**
 
 - **File:** `FundingYearSync.cs`
 - **Message:** Create
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Pre-Operation | Enabled |  | 1 |
+| Update | Synchronous | Pre-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2584,6 +2756,12 @@ Total plugins analyzed: **81**
 
 - **File:** `GetUserHasRoleToAction.cs`
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| azt_GetHasRole | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [roleid](#roleid)
@@ -2604,6 +2782,12 @@ Total plugins analyzed: **81**
 - **Message:** Update
 - **Entity Images:** Pre
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_amount](#azt_amount)
@@ -2617,6 +2801,12 @@ Total plugins analyzed: **81**
 
 - **File:** `InvoiceCompCompleted.cs`
 - **Message:** Update
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Asynchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2673,6 +2863,12 @@ Total plugins analyzed: **81**
 - **File:** `LeadImport.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Asynchronous | Post-Operation | Enabled |  | 2 |
+
 **Fields Read:**
 
 - [accountid](#accountid)
@@ -2723,6 +2919,12 @@ Total plugins analyzed: **81**
 - **File:** `LeadImportPopulateName.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Pre-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_email](#azt_email)
@@ -2737,6 +2939,13 @@ Total plugins analyzed: **81**
 - **File:** `LeadQualify.cs`
 - **Message:** QualifyLead
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| QualifyLead | Synchronous | Pre-Operation | Enabled |  | 1 |
+| QualifyLead | Synchronous | Post-Operation | Disabled |  | 1 |
+
 **Fields Read:**
 
 - [parentaccountid](#parentaccountid)
@@ -2746,6 +2955,12 @@ Total plugins analyzed: **81**
 - **File:** `LeadQualifyParentStakeholderContacts.cs`
 - **Target entity:** account
 - **Message:** Create
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2773,6 +2988,15 @@ Total plugins analyzed: **81**
 
 - **File:** `ManualDiscountKill.cs`
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Pre-Operation | Disabled |  | 1 |
+| Update | Synchronous | Pre-Operation | Disabled |  | 1 |
+| Create | Synchronous | Pre-Operation | Disabled |  | 1 |
+| Update | Synchronous | Pre-Operation | Disabled |  | 1 |
+
 **Fields Read:**
 
 - [manualdiscountamount](#manualdiscountamount)
@@ -2794,6 +3018,12 @@ Total plugins analyzed: **81**
 - **File:** `OpportunityAssignFromLead.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 3 |
+
 **Fields Read:**
 
 - [originatingleadid](#originatingleadid)
@@ -2808,6 +3038,12 @@ Total plugins analyzed: **81**
 - **File:** `OpportunityAudit.cs`
 - **Message:** Update
 - **Entity Images:** Pre, Post
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2838,6 +3074,12 @@ Total plugins analyzed: **81**
 
 - **File:** `OpportunityClone.cs`
 - **Message:** Create (inferred)
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| azt_CloneOpportunity | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2879,6 +3121,20 @@ Total plugins analyzed: **81**
 - **File:** `OpportunityLastActivityDate.cs`
 - **Message:** Update
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| SetStateDynamicEntity | Synchronous | Pre-Operation | Enabled |  | 1 |
+| Update | Synchronous | Pre-Operation | Enabled |  | 1 |
+| SetState | Synchronous | Pre-Operation | Enabled |  | 1 |
+| SetState | Synchronous | Pre-Operation | Enabled |  | 1 |
+| SetStateDynamicEntity | Synchronous | Pre-Operation | Enabled |  | 1 |
+| SetStateDynamicEntity | Synchronous | Pre-Operation | Enabled |  | 1 |
+| SetState | Synchronous | Pre-Operation | Enabled |  | 1 |
+| SetState | Synchronous | Pre-Operation | Enabled |  | 1 |
+| SetStateDynamicEntity | Synchronous | Pre-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_probability](#azt_probability)
@@ -2896,6 +3152,12 @@ Total plugins analyzed: **81**
 - **File:** `OpportunityLineSyncToQuote.cs`
 - **Message:** Update
 - **Entity Images:** Pre, Post
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2939,6 +3201,12 @@ Total plugins analyzed: **81**
 - **File:** `OpportunityPreventCreateQuote.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Pre-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_approvalstatus](#azt_approvalstatus)
@@ -2955,6 +3223,13 @@ Total plugins analyzed: **81**
 - **File:** `OpportunityProbabilityChange.cs`
 - **Message:** Create
 - **Entity Images:** Pre
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Pre-Operation | Enabled |  | 1 |
+| Create | Synchronous | Pre-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -2973,6 +3248,13 @@ Total plugins analyzed: **81**
 
 - **File:** `OpportunityProbabilityNumber.cs`
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_probability](#azt_probability)
@@ -2986,6 +3268,12 @@ Total plugins analyzed: **81**
 
 - **File:** `OpptyToQuoteFieldMappings.cs`
 - **Message:** Create
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Asynchronous | Post-Operation | Enabled |  | 100 |
 
 **Fields Read:**
 
@@ -3033,6 +3321,12 @@ Total plugins analyzed: **81**
 - **File:** `OrderClone.cs`
 - **Message:** Create (inferred)
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| azt_CloneOrder | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_licensetermmonths](#azt_licensetermmonths)
@@ -3071,6 +3365,12 @@ Total plugins analyzed: **81**
 - **File:** `OrderFSRSetTemplateFields.cs`
 - **Message:** Update
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Pre-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [address1_telephone1](#address1_telephone1)
@@ -3093,6 +3393,12 @@ Total plugins analyzed: **81**
 - **File:** `OrderLinePopulateLicType.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_licenseterm](#azt_licenseterm)
@@ -3110,6 +3416,12 @@ Total plugins analyzed: **81**
 
 - **File:** `OrderLinePopulateTemplateFields.cs`
 - **Message:** Create
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Asynchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3133,6 +3445,12 @@ Total plugins analyzed: **81**
 
 - **File:** `OrderManuallyCreateSoftwareLicense.cs`
 - **Message:** Create (inferred)
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| azt_CreateSoftwareLicense | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3164,6 +3482,12 @@ Total plugins analyzed: **81**
 
 - **File:** `OrderSplit.cs`
 - **Message:** Create (inferred)
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| azt_OrderSplit | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3236,6 +3560,12 @@ Total plugins analyzed: **81**
 - **File:** `OrderStageTracking.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_orderid](#azt_orderid)
@@ -3265,6 +3595,12 @@ Total plugins analyzed: **81**
 - **Message:** Update
 - **Entity Images:** Post
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_amount](#azt_amount)
@@ -3281,6 +3617,13 @@ Total plugins analyzed: **81**
 - **Target entity:** team
 - **Message:** Create
 - **Entity Images:** Post
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
+| Update | Synchronous | Pre-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3336,6 +3679,13 @@ Total plugins analyzed: **81**
 - **Message:** Create
 - **Entity Images:** Pre
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Pre-Operation | Enabled |  | 1 |
+| Update | Synchronous | Pre-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_quoteproductid](#azt_quoteproductid)
@@ -3346,6 +3696,12 @@ Total plugins analyzed: **81**
 
 - **File:** `QuoteCloneAndDelete.cs`
 - **Message:** Delete (inferred)
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| azt_CloneAndDeleteQuote | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3380,6 +3736,14 @@ Total plugins analyzed: **81**
 - **Target entity:** quote
 - **Message:** Create
 - **Entity Images:** Pre, Post
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Asynchronous | Post-Operation | Enabled |  | 1 |
+| Update | Asynchronous | Post-Operation | Enabled |  | 1 |
+| Delete | Asynchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3420,6 +3784,13 @@ Total plugins analyzed: **81**
 - **File:** `QuoteOrderProductsTrackDiscount.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Asynchronous | Post-Operation | Enabled |  | 1 |
+| Create | Asynchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_opportunityproductid](#azt_opportunityproductid)
@@ -3446,6 +3817,13 @@ Total plugins analyzed: **81**
 
 - **File:** `QuotePreventActivateUnapprovedDiscounts.cs`
 - **Message:** SetState
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| SetStateDynamicEntity | Synchronous | Pre-Operation | Enabled |  | 1 |
+| SetState | Synchronous | Pre-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3499,6 +3877,13 @@ Total plugins analyzed: **81**
 - **File:** `QuotePreventActivateUnapprovedFreight.cs`
 - **Message:** SetState
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| SetState | Synchronous | Pre-Operation | Enabled |  | 1 |
+| SetStateDynamicEntity | Synchronous | Pre-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_defaultfreightamount](#azt_defaultfreightamount)
@@ -3511,6 +3896,12 @@ Total plugins analyzed: **81**
 - **File:** `QuoteSyncTotalToOpportunity.cs`
 - **Message:** Update
 - **Entity Images:** Post
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Update | Asynchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3529,6 +3920,12 @@ Total plugins analyzed: **81**
 - **Message:** Update
 - **Entity Images:** Pre
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Pre-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_opportunityid](#azt_opportunityid)
@@ -3542,6 +3939,12 @@ Total plugins analyzed: **81**
 
 - **File:** `RestrictCreateQuote.cs`
 - **Message:** Create
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3561,6 +3964,12 @@ Total plugins analyzed: **81**
 - **File:** `RestrictProductLookups.cs`
 - **Message:** RetrieveMultiple
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| RetrieveMultiple | Synchronous | Pre-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [azt_jobrole](#azt_jobrole)
@@ -3574,6 +3983,12 @@ Total plugins analyzed: **81**
 
 - **File:** `RestrictWinOpportunities.cs`
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Win | Synchronous | Post-Operation | Disabled |  | 1 |
+
 **Fields Read:**
 
 - [businessunitid](#businessunitid)
@@ -3581,6 +3996,12 @@ Total plugins analyzed: **81**
 ### 10.71. RestrictWinQuote
 
 - **File:** `RestrictWinQuote.cs`
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Win | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3590,6 +4011,12 @@ Total plugins analyzed: **81**
 
 - **File:** `ReviseQuoteDiscountMove.cs`
 - **Message:** Create
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3622,6 +4049,12 @@ Total plugins analyzed: **81**
 
 - **File:** `SendQuoteReport.cs`
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| azt_SendQuote | Synchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Written:**
 
 - [body](#body)
@@ -3635,6 +4068,12 @@ Total plugins analyzed: **81**
 
 - **File:** `SetOppProductDefaults.cs`
 - **Message:** Create
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3654,6 +4093,13 @@ Total plugins analyzed: **81**
 
 - **File:** `SetPrimaryContact.cs`
 - **Message:** Create
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| azt_ContactSetPrimary | Synchronous | Pre-Operation | Enabled |  | 1 |
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 
@@ -3699,6 +4145,18 @@ Total plugins analyzed: **81**
 - **File:** `ShareBasedOnAccessTeam.cs`
 - **Message:** GrantAccess (inferred)
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Asynchronous | Post-Operation | Disabled |  | 1 |
+| Create | Asynchronous | Post-Operation | Disabled |  | 1 |
+| Create | Asynchronous | Post-Operation | Disabled |  | 1 |
+| Create | Asynchronous | Post-Operation | Disabled |  | 1 |
+| Create | Asynchronous | Post-Operation | Disabled |  | 1 |
+| Create | Asynchronous | Post-Operation | Disabled |  | 1 |
+| Create | Asynchronous | Post-Operation | Disabled |  | 1 |
+
 **Fields Read:**
 
 - [activityid](#activityid)
@@ -3737,6 +4195,16 @@ Total plugins analyzed: **81**
 - **File:** `ShareFromAccountShares.cs`
 - **Message:** Create
 
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Asynchronous | Post-Operation | Enabled |  | 1 |
+| Create | Asynchronous | Post-Operation | Enabled |  | 1 |
+| Create | Asynchronous | Post-Operation | Enabled |  | 1 |
+| Create | Asynchronous | Post-Operation | Enabled |  | 1 |
+| Create | Asynchronous | Post-Operation | Enabled |  | 1 |
+
 **Fields Read:**
 
 - [customerid](#customerid)
@@ -3769,6 +4237,13 @@ Total plugins analyzed: **81**
 
 - **File:** `ShipmentSetTrackingNumber.cs`
 - **Message:** Create
+
+**Registered Steps:**
+
+| Message | Mode | Stage | State | Filtering Attributes | Rank |
+|---------|------|-------|-------|----------------------|------|
+| Create | Synchronous | Post-Operation | Enabled |  | 1 |
+| Update | Synchronous | Post-Operation | Enabled |  | 1 |
 
 **Fields Read:**
 

@@ -60,6 +60,17 @@ def adapt_json_fields(json_fields):
         'is_audit_enabled': jf.get('auditEnabled', False),
         'is_secured': jf.get('fieldSecurity', False),
         'last_update': jf.get('lastUpdate', ''),
+        'display_mask': jf.get('displayMask', ''),
+        'valid_for_create': jf.get('validForCreate', False),
+        'valid_for_read': jf.get('validForRead', False),
+        'valid_for_update': jf.get('validForUpdate', False),
+        'is_searchable': jf.get('isSearchable', False),
+        'is_filterable': jf.get('isFilterable', False),
+        'is_sortable': jf.get('isSortable', False),
+        'is_global_filter_enabled': jf.get('isGlobalFilterEnabled', False),
+        'is_logical': jf.get('isLogical', False),
+        'is_retrievable': jf.get('isRetrievable', False),
+        'is_data_source_secret': jf.get('isDataSourceSecret', False),
         'picklist_values': jf.get('picklistValues') or [],
     } for jf in json_fields]
 

@@ -186,8 +186,8 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     a('')
     a(f'Total fields: **{len(fields)}**')
     a('')
-    a('| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |')
-    a('|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|')
+    a('| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |')
+    a('|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|')
     section_cols = [
         ('forms', f'#{section_slug(2)}'),
         ('views', f'#{section_slug(3)}'),
@@ -214,6 +214,19 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
             'Yes' if field.get('is_custom') else 'No')
         required_level = csv_row.get('requiredLevel', '') or field.get('required_level', '')
         last_update = csv_row.get('lastUpdate', '') or field.get('last_update', '')
+        # Field capability flags (abbreviated: C=Create R=Read U=Update S=Search F=Filter So=Sort G=Global L=Logical Re=Retrieve Se=Secret)
+        flag_items = []
+        if field.get('valid_for_create'): flag_items.append('C')
+        if field.get('valid_for_read'): flag_items.append('R')
+        if field.get('valid_for_update'): flag_items.append('U')
+        if field.get('is_searchable'): flag_items.append('S')
+        if field.get('is_filterable'): flag_items.append('F')
+        if field.get('is_sortable'): flag_items.append('So')
+        if field.get('is_global_filter_enabled'): flag_items.append('G')
+        if field.get('is_logical'): flag_items.append('L')
+        if field.get('is_retrievable'): flag_items.append('Re')
+        if field.get('is_data_source_secret'): flag_items.append('Se')
+        flags_str = ' '.join(flag_items)
         # Picklist values from CSV (pre-formatted)
         pv_str = csv_row.get('picklistValues', '')
         # SF mapping columns from CSV
@@ -232,7 +245,7 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
             c = refs_for_field.get(key, 0)
             cells.append(f'[{c}]({slug})' if c > 0 else '')
         section_str = ' | '.join(cells)
-        a(f'| {i} | {fl(sn)} | {display_name} | {data_type} | {pv_str} | {custom} | {required_level} | {last_update} | {sf_str} | {section_str} |')
+        a(f'| {i} | {fl(sn)} | {display_name} | {data_type} | {pv_str} | {custom} | {required_level} | {last_update} | {flags_str} | {sf_str} | {section_str} |')
         ref(sn, section_slug(1), 'Field Definitions')
     a('')
 
@@ -725,6 +738,16 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
             if plugin['has_post_image']:
                 images.append('Post')
             a(f'- **Entity Images:** {", ".join(images)}')
+        # Plugin registration metadata (from Dataverse API enrichment)
+        regs = plugin.get('registrations', [])
+        if regs:
+            a('')
+            a('**Registered Steps:**')
+            a('')
+            a('| Message | Mode | Stage | State | Filtering Attributes | Rank |')
+            a('|---------|------|-------|-------|----------------------|------|')
+            for reg in regs:
+                a(f'| {reg.get("message", "")} | {reg.get("mode", "")} | {reg.get("stage", "")} | {reg.get("state", "")} | {reg.get("filteringAttributes", "")} | {reg.get("rank", "")} |')
         a('')
 
         if plugin['fields_read']:

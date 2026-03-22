@@ -252,7 +252,75 @@ def get_entity_attributes(api_base, headers, entity_name):
     return lookup
 
 
-def process_entity(api_base, headers, entity_json_path, dry_run):
+MODE_MAP = {0: "Synchronous", 1: "Asynchronous"}
+STAGE_MAP = {10: "Pre-Validation", 20: "Pre-Operation", 40: "Post-Operation"}
+STATE_MAP = {0: "Enabled", 1: "Disabled"}
+
+
+def get_all_plugin_steps(api_base, headers):
+    """Query all SdkMessageProcessingStep records from Dataverse.
+
+    Returns a dict keyed by lowercase plugin type name (class name) -> list of step dicts.
+    Each step dict contains: message, mode, stage, state, filteringAttributes, rank.
+    """
+    url = (
+        f"{api_base}/sdkmessageprocessingsteps"
+        f"?$select=name,mode,stage,statecode,asyncautodelete,filteringattributes,rank"
+        f"&$expand=sdkmessageid($select=name),plugintypeid($select=name)"
+    )
+    try:
+        steps = api_request(url, headers)
+    except Exception as e:
+        print(f"  WARNING: Failed to query plugin steps: {e}")
+        return {}
+
+    lookup = {}
+    for step in steps:
+        plugin_type = step.get("plugintypeid")
+        if not plugin_type:
+            continue
+        full_name = plugin_type.get("name", "")
+        if not full_name:
+            continue
+        # Use short class name (last segment after dot) for matching
+        class_name = full_name.rsplit('.', 1)[-1].lower()
+        message = step.get("sdkmessageid", {}).get("name", "")
+        entry = {
+            "message": message,
+            "mode": MODE_MAP.get(step.get("mode"), str(step.get("mode", ""))),
+            "stage": STAGE_MAP.get(step.get("stage"), str(step.get("stage", ""))),
+            "state": STATE_MAP.get(step.get("statecode"), str(step.get("statecode", ""))),
+            "filteringAttributes": step.get("filteringattributes") or "",
+            "rank": step.get("rank", 0),
+        }
+        lookup.setdefault(class_name, []).append(entry)
+
+    return lookup
+
+
+def enrich_plugin_sections(data, plugin_step_lookup):
+    """Enrich entity sections.plugins with registration metadata from the API.
+
+    Matches by class name. Adds registrations array to each plugin entry.
+    Returns count of plugins enriched.
+    """
+    sections = data.get("sections", {})
+    plugins = sections.get("plugins", [])
+    enriched = 0
+
+    for plugin in plugins:
+        class_name = plugin.get("className", "").lower()
+        steps = plugin_step_lookup.get(class_name, [])
+        if steps:
+            plugin["registrations"] = steps
+            enriched += 1
+        else:
+            plugin["registrations"] = []
+
+    return enriched
+
+
+def process_entity(api_base, headers, entity_json_path, dry_run, plugin_step_lookup=None):
     """Load entity JSON, match stubs against API, enrich, and save.
 
     Returns (stub_count, enriched_count, removed_count) or None on error.
@@ -264,12 +332,27 @@ def process_entity(api_base, headers, entity_json_path, dry_run):
     entity_name = data.get("entityName", os.path.splitext(os.path.basename(entity_json_path))[0])
     fields = data.get("fields", [])
 
+    # Enrich plugin sections with registration metadata
+    plugins_enriched = 0
+    if plugin_step_lookup:
+        plugins_enriched = enrich_plugin_sections(data, plugin_step_lookup)
+        if plugins_enriched:
+            print(f"  Plugin registrations matched: {plugins_enriched}")
+
     # Identify stub fields (empty dataType)
     stub_indices = [i for i, f in enumerate(fields) if f.get("dataType", "") == ""]
     stub_count = len(stub_indices)
 
+    if stub_count == 0 and plugins_enriched == 0:
+        print(f"  No stub fields, no plugin updates, skipping.")
+        return (0, 0, 0)
     if stub_count == 0:
-        print(f"  No stub fields, skipping.")
+        # No stubs but plugins were enriched — save and return
+        if not dry_run:
+            with open(entity_json_path, "w", encoding="utf-8") as f:
+                json.dump(data, f, indent=2, ensure_ascii=False)
+                f.write("\n")
+        print(f"  No stub fields.")
         return (0, 0, 0)
 
     print(f"  Stub fields: {stub_count}")
@@ -406,6 +489,11 @@ def main():
         json_files = [json_path]
         print(f"Processing entity: {args.entity}")
 
+    # Query all plugin step registrations once
+    print("\nQuerying plugin step registrations...")
+    plugin_step_lookup = get_all_plugin_steps(api_base, headers)
+    print(f"  Plugin types found: {len(plugin_step_lookup)}")
+
     # Process entities
     successful = 0
     failed = 0
@@ -416,7 +504,7 @@ def main():
         entity = os.path.splitext(os.path.basename(json_path))[0]
         print(f"\n--- {entity} ---")
         try:
-            result = process_entity(api_base, headers, json_path, args.dry_run)
+            result = process_entity(api_base, headers, json_path, args.dry_run, plugin_step_lookup)
             if result is not None:
                 successful += 1
                 total_enriched += result[1]

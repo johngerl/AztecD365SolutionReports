@@ -1,11 +1,24 @@
 # Task Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | task |
+| **Display Name** | Task |
+| **Description** | Generic activity representing work needed to be done. |
+| **Object Type** | Standard |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 6339 |
+| **Last Update** | 2026-03-20 16:28:45 |
+| **Primary ID Field** | taskid |
+| **Primary Name Field** | None |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Task (main) -- Active](#21-task-main-active)
+  - [2.1. Task - main - Active](#21-task---main---active)
 - [3. Views](#3-views)
   - [3.1. All Reorder Tasks](#31-all-reorder-tasks)
   - [3.2. All Tasks](#32-all-tasks)
@@ -70,7 +83,7 @@
   - [8.5. azt_orderlibrary](#85-azt_orderlibrary)
   - [8.6. azt_phonecalllibrary](#86-azt_phonecalllibrary)
   - [8.7. azt_quotelibrary](#87-azt_quotelibrary)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -156,7 +169,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -193,7 +206,7 @@ Total fields: **19**
 
 Total forms: **1**
 
-### 2.1. Task (main) -- Active
+### 2.1. Task - main - Active
 
 - **Form ID:** `{16654191-19ad-48ca-9e46-c4b4fbdad76f}`
 - **Presentation:** UCI/Tablet
@@ -1019,7 +1032,7 @@ Total JS files referencing Task fields: **7**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Task: **0**
 
@@ -3210,7 +3223,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -4391,7 +4404,7 @@ Alphabetical field index -- 321 unique fields referenced.
 #### azt_recordownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Task > TASK_TAB > task details](#21-task-main-active)
+- [Form: Task > TASK_TAB > task details](#21-task---main---active)
 - [View: All Reorder Tasks](#31-all-reorder-tasks)
 - [View: All Tasks](#32-all-tasks)
 - [View: My Active Reorder Tasks](#33-my-active-reorder-tasks)
@@ -4455,7 +4468,7 @@ Alphabetical field index -- 321 unique fields referenced.
 #### azt_reorderopportunityid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Task > TASK_TAB > task details](#21-task-main-active)
+- [Form: Task > TASK_TAB > task details](#21-task---main---active)
 - [Relationship: azt_opportunity_task](#12-relationships)
 
 #### azt_replacementproductid
@@ -4545,7 +4558,7 @@ Alphabetical field index -- 321 unique fields referenced.
 #### azt_tasktype
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Task > TASK_TAB > task details](#21-task-main-active)
+- [Form: Task > TASK_TAB > task details](#21-task---main---active)
 - [View: All Reorder Tasks](#31-all-reorder-tasks)
 - [View: All Reorder Tasks (Filter)](#31-all-reorder-tasks)
 

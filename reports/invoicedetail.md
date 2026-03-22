@@ -1,11 +1,24 @@
 # Invoicedetail Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | invoicedetail |
+| **Display Name** | Invoice Product |
+| **Description** | Line item in an invoice containing detailed billing information for a product. |
+| **Object Type** | Standard |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 71651 |
+| **Last Update** | 2026-03-20 18:58:39 |
+| **Primary ID Field** | invoicedetailid |
+| **Primary Name Field** | None |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Invoice Product (main) -- Active](#21-invoice-product-main-active)
+  - [2.1. Invoice Product - main - Active](#21-invoice-product---main---active)
 - [3. Views](#3-views)
   - [3.1. All Invoice Products](#31-all-invoice-products)
   - [3.2. Invoice Product Associated View](#32-invoice-product-associated-view)
@@ -22,7 +35,7 @@
   - [8.2. azt_opportunitylibrary](#82-azt_opportunitylibrary)
   - [8.3. azt_opportunityproductlibrary](#83-azt_opportunityproductlibrary)
   - [8.4. azt_splitallocation](#84-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -108,7 +121,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -119,7 +132,7 @@ Total fields: **43**
 
 | # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
 |---|-------------|-------------|------|-----------------|--------|----------|-------------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [azt_discretionarydiscount](#azt_discretionarydiscount) | Discretionary Discount | money |  | Yes | none | 2026-03-20 18:58:39 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 1 | [azt_discretionarydiscount](#azt_discretionarydiscount) | Discretionary Discount | money |  | Yes | none | 2026-03-20 18:58:39 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 2 | [azt_discretionarydiscount_base](#azt_discretionarydiscount_base) | Discretionary Discount (Base) | money |  | Yes | none | 2026-03-20 18:58:39 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 3 | [azt_discretionarydiscountamt](#azt_discretionarydiscountamt) | Discretionary Discount Amt | money |  | Yes | none | 2026-03-19 13:30:01 | true |  |  |  |  |  |  | [1](#2-forms) | [2](#3-views) |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 4 | [azt_discretionarydiscountamt_base](#azt_discretionarydiscountamt_base) | Discretionary Discount Amt (Base) | money |  | Yes | none | 2026-03-19 13:30:01 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -130,12 +143,12 @@ Total fields: **43**
 | 9 | [azt_licensetype](#azt_licensetype) | License Type | picklist |  | Yes | none | 2026-03-20 18:58:39 | true |  |  |  |  |  |  | [1](#2-forms) | [1](#3-views) |  |  |  | [1](#7-workflows) |  | [25](#10-plugin-source-code-analysis) |  |  |  |  |
 | 10 | [azt_nonsaastype](#azt_nonsaastype) | Non-SaaS Type | picklist | 276530000: Life Skills, 276530001: Kaplan Books, 276530002: GED Vouchers, 276530003: Other | Yes | none | 2022-11-04 15:01:40 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 11 | [azt_softwarelicenseid](#azt_softwarelicenseid) | Software License | lookup |  | Yes | none | 2026-03-19 13:30:01 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  | [2](#7-workflows) |  | [6](#10-plugin-source-code-analysis) |  | [1](#12-relationships) |  |  |
-| 12 | [azt_unitprice](#azt_unitprice) | Unit Price | money |  | Yes | none | 2026-03-20 18:58:39 | true |  |  |  |  |  |  |  | [1](#3-views) |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 12 | [azt_unitprice](#azt_unitprice) | Unit Price | money |  | Yes | none | 2026-03-20 18:58:39 | true |  |  |  |  |  |  |  | [1](#3-views) |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 13 | [azt_unitprice_base](#azt_unitprice_base) | Unit Price (Base) | money |  | Yes | none | 2026-03-20 18:58:39 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 14 | [baseamount](#baseamount) | Amount | money |  | No | none | 2026-03-20 18:58:39 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
 | 15 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10-plugin-source-code-analysis) |  |  |  |  |
 | 16 | [description](#description) | Description | ntext |  | No | none | 2026-03-18 17:44:35 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10-plugin-source-code-analysis) |  |  |  |  |
-| 17 | [extendedamount](#extendedamount) | Extended Amount | money |  | No | none | 2026-03-20 18:58:39 | true |  |  |  |  |  |  |  | [2](#3-views) |  |  |  |  | [1](#9-formulas-rollups) | [13](#10-plugin-source-code-analysis) |  |  |  |  |
+| 17 | [extendedamount](#extendedamount) | Extended Amount | money |  | No | none | 2026-03-20 18:58:39 | true |  |  |  |  |  |  |  | [2](#3-views) |  |  |  |  | [1](#9-formulas-and-rollups) | [13](#10-plugin-source-code-analysis) |  |  |  |  |
 | 18 | [invoicedetailid](#invoicedetailid) | Invoice Product | uniqueidentifier |  | No | required | 2026-03-20 18:58:39 | true |  |  |  |  |  |  |  | [2](#3-views) |  |  |  |  |  | [4](#10-plugin-source-code-analysis) |  |  |  |  |
 | 19 | [invoicedetailname](#invoicedetailname) | Name | nvarchar |  | No | required | 2026-03-20 18:58:39 | true |  |  |  |  |  |  |  | [1](#3-views) |  |  |  |  |  |  |  |  |  |  |
 | 20 | [invoiceid](#invoiceid) | Invoice ID | lookup |  | No | systemrequired | 2026-03-20 18:58:39 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  | [1](#7-workflows) |  | [8](#10-plugin-source-code-analysis) |  | [1](#12-relationships) |  |  |
@@ -150,7 +163,7 @@ Total fields: **43**
 | 29 | [productname](#productname) | Product Name | nvarchar |  | No | none | 2026-03-20 18:58:39 | true |  |  |  |  |  |  |  | [1](#3-views) |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
 | 30 | [productnumber](#productnumber) | Product Number | nvarchar |  | No | none | 2026-03-20 18:58:39 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
 | 31 | [producttypecode](#producttypecode) | Product type | picklist |  | No | required | 2026-03-20 18:58:39 | true |  |  |  |  |  |  |  | [1](#3-views) |  |  |  |  |  | [3](#10-plugin-source-code-analysis) |  |  |  |  |
-| 32 | [quantity](#quantity) | Quantity | decimal |  | No | required | 2026-03-20 18:58:39 | true |  |  |  |  |  |  |  | [2](#3-views) |  |  |  |  | [1](#9-formulas-rollups) | [18](#10-plugin-source-code-analysis) |  |  |  |  |
+| 32 | [quantity](#quantity) | Quantity | decimal |  | No | required | 2026-03-20 18:58:39 | true |  |  |  |  |  |  |  | [2](#3-views) |  |  |  |  | [1](#9-formulas-and-rollups) | [18](#10-plugin-source-code-analysis) |  |  |  |  |
 | 33 | [salesorderdetailid](#salesorderdetailid) | Order Product Id | lookup |  | No | none | 2026-03-20 18:58:39 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [9](#10-plugin-source-code-analysis) |  |  |  |  |
 | 34 | [salesrepid](#salesrepid) | Salesperson | lookup |  | No | none | Never | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 35 | [shipto_line1](#shipto_line1) | Ship To Street 1 | nvarchar |  | No | none | 2026-03-19 13:30:01 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -169,7 +182,7 @@ Total fields: **43**
 
 Total forms: **1**
 
-### 2.1. Invoice Product (main) -- Active
+### 2.1. Invoice Product - main - Active
 
 - **Form ID:** `{684b159c-c312-4248-8b0f-0c164abe7d9e}`
 - **Presentation:** Classic
@@ -428,7 +441,7 @@ Total JS files referencing Invoicedetail fields: **4**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Invoicedetail: **2**
 
@@ -2625,7 +2638,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -3077,7 +3090,7 @@ Alphabetical field index -- 336 unique fields referenced.
 
 #### azt_approvalstatus
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 - [Plugin: OpportunityPreventCreateQuote (Read)](#1047-opportunitypreventcreatequote)
 - [Plugin: OpptyToQuoteFieldMappings (Read)](#1050-opptytoquotefieldmappings)
 - [Plugin: QuotePreventActivateUnapprovedDiscounts (Read)](#1064-quotepreventactivateunapproveddiscounts)
@@ -3201,14 +3214,14 @@ Alphabetical field index -- 336 unique fields referenced.
 
 #### azt_discountamount
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 - [Plugin: DiscretionaryDiscountSetHeader (Read)](#1023-discretionarydiscountsetheader)
 
 #### azt_discretionarydiscount
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Invoice Product > general > pricing](#21-invoice-product-main-active)
-- [Formula: azt_discretionarydiscount (Target)](#9-formulas-rollups)
+- [Form: Invoice Product > general > pricing](#21-invoice-product---main---active)
+- [Formula: azt_discretionarydiscount (Target)](#9-formulas-and-rollups)
 
 #### azt_discretionarydiscount_base
 
@@ -3217,7 +3230,7 @@ Alphabetical field index -- 336 unique fields referenced.
 #### azt_discretionarydiscountamt
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Invoice Product > general > pricing](#21-invoice-product-main-active)
+- [Form: Invoice Product > general > pricing](#21-invoice-product---main---active)
 - [View: All Invoice Products](#31-all-invoice-products)
 - [View: Invoice Product Associated View](#32-invoice-product-associated-view)
 - [Plugin: DiscretionaryDiscountSetHeader (Write)](#1023-discretionarydiscountsetheader)
@@ -3396,7 +3409,7 @@ Alphabetical field index -- 336 unique fields referenced.
 #### azt_issaas
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Invoice Product > general > invoice detail information](#21-invoice-product-main-active)
+- [Form: Invoice Product > general > invoice detail information](#21-invoice-product---main---active)
 - [Plugin: CreateUserGoals (Filter)](#1022-createusergoals)
 - [Plugin: SetOppProductDefaults (Write)](#1074-setoppproductdefaults)
 
@@ -3437,7 +3450,7 @@ Alphabetical field index -- 336 unique fields referenced.
 #### azt_licensestartdate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Invoice Product > general > invoice detail information](#21-invoice-product-main-active)
+- [Form: Invoice Product > general > invoice detail information](#21-invoice-product---main---active)
 
 #### azt_licensestatus
 
@@ -3451,7 +3464,7 @@ Alphabetical field index -- 336 unique fields referenced.
 #### azt_licensetermmonths
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Invoice Product > general > invoice detail information](#21-invoice-product-main-active)
+- [Form: Invoice Product > general > invoice detail information](#21-invoice-product---main---active)
 - [View: All Invoice Products](#31-all-invoice-products)
 - [View: Invoice Product Associated View](#32-invoice-product-associated-view)
 - [Workflow: CloneLicense (Write)](#71-clonelicense)
@@ -3482,7 +3495,7 @@ Alphabetical field index -- 336 unique fields referenced.
 #### azt_licensetype
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Invoice Product > general > invoice detail information](#21-invoice-product-main-active)
+- [Form: Invoice Product > general > invoice detail information](#21-invoice-product---main---active)
 - [View: All Invoice Products](#31-all-invoice-products)
 - [Workflow: CloneLicense (Write)](#71-clonelicense)
 - [JS: azt_opportunitylibrary > onLoad()](#82-azt_opportunitylibrary)
@@ -3576,7 +3589,7 @@ Alphabetical field index -- 336 unique fields referenced.
 #### azt_nonsaastype
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Invoice Product > general > invoice detail information](#21-invoice-product-main-active)
+- [Form: Invoice Product > general > invoice detail information](#21-invoice-product---main---active)
 - [Plugin: CreateSoftwareLicenses (Read)](#1021-createsoftwarelicenses)
 
 #### azt_numberoflicenses
@@ -3882,7 +3895,7 @@ Alphabetical field index -- 336 unique fields referenced.
 #### azt_softwarelicenseid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Invoice Product > general > invoice detail information](#21-invoice-product-main-active)
+- [Form: Invoice Product > general > invoice detail information](#21-invoice-product---main---active)
 - [Workflow: CloneLicense (Read)](#71-clonelicense)
 - [Workflow: CreateSoftwareLicense (Read)](#72-createsoftwarelicense)
 - [Plugin: AccountReassignmentShareRecords (Read)](#104-accountreassignmentsharerecords)
@@ -3970,7 +3983,7 @@ Alphabetical field index -- 336 unique fields referenced.
 
 - [Field Definitions](#1-field-definitions)
 - [View: All Invoice Products](#31-all-invoice-products)
-- [Formula: azt_unitprice (Target)](#9-formulas-rollups)
+- [Formula: azt_unitprice (Target)](#9-formulas-and-rollups)
 
 #### azt_unitprice_base
 
@@ -4059,7 +4072,7 @@ Alphabetical field index -- 336 unique fields referenced.
 
 #### conditionbranchstep2_1
 
-- [Formula: azt_unitprice](#9-formulas-rollups)
+- [Formula: azt_unitprice](#9-formulas-and-rollups)
 
 #### connectionid
 
@@ -4161,7 +4174,7 @@ Alphabetical field index -- 336 unique fields referenced.
 
 #### discounts
 
-- [Form: Invoice Product > Discretionary Discounts > Section](#21-invoice-product-main-active)
+- [Form: Invoice Product > Discretionary Discounts > Section](#21-invoice-product---main---active)
 
 #### emailaddress1
 
@@ -4188,7 +4201,7 @@ Alphabetical field index -- 336 unique fields referenced.
 - [Field Definitions](#1-field-definitions)
 - [View: All Invoice Products](#31-all-invoice-products)
 - [View: Invoice Product Associated View](#32-invoice-product-associated-view)
-- [Formula: azt_unitprice](#9-formulas-rollups)
+- [Formula: azt_unitprice](#9-formulas-and-rollups)
 - [Plugin: CreateCompGoals (Read)](#1020-createcompgoals)
 - [Plugin: CreateUserGoals (Read)](#1022-createusergoals)
 - [Plugin: OpportunityClone (Read)](#1044-opportunityclone)
@@ -4298,7 +4311,7 @@ Alphabetical field index -- 336 unique fields referenced.
 #### invoiceid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Invoice Product (Header)](#21-invoice-product-main-active)
+- [Form: Invoice Product (Header)](#21-invoice-product---main---active)
 - [Workflow: InvoiceCreateCompGoalsRecords (Read)](#73-invoicecreatecompgoalsrecords)
 - [JS: azt_cloneorder > getHasInvoices()](#81-azt_cloneorder)
 - [Plugin: AccountLeadGen (Join)](#102-accountleadgen)
@@ -4361,7 +4374,7 @@ Alphabetical field index -- 336 unique fields referenced.
 #### manualdiscountamount
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Invoice Product > general > pricing](#21-invoice-product-main-active)
+- [Form: Invoice Product > general > pricing](#21-invoice-product---main---active)
 - [Plugin: DiscretionaryDiscountSetHeader (Write)](#1023-discretionarydiscountsetheader)
 - [Plugin: ManualDiscountKill (Read)](#1040-manualdiscountkill)
 - [Plugin: OpportunityClone (Read)](#1044-opportunityclone)
@@ -4675,7 +4688,7 @@ Alphabetical field index -- 336 unique fields referenced.
 - [Field Definitions](#1-field-definitions)
 - [View: All Invoice Products](#31-all-invoice-products)
 - [View: Invoice Product Associated View](#32-invoice-product-associated-view)
-- [Formula: azt_unitprice](#9-formulas-rollups)
+- [Formula: azt_unitprice](#9-formulas-and-rollups)
 - [Plugin: CreateSoftwareLicenses (Read)](#1021-createsoftwarelicenses)
 - [Plugin: CreateUserGoals (Read)](#1022-createusergoals)
 - [Plugin: OpportunityClone (Read)](#1044-opportunityclone)
@@ -4813,23 +4826,23 @@ Alphabetical field index -- 336 unique fields referenced.
 
 #### rolluprulestep1_1
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 
 #### rolluprulestep1_2
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 
 #### rolluprulestep1_3
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 
 #### rolluprulestep1_4
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 
 #### rolluprulestep1_5
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 
 #### salesorderdetailid
 
@@ -4876,23 +4889,23 @@ Alphabetical field index -- 336 unique fields referenced.
 
 #### setattributevaluestep4_1
 
-- [Formula: azt_unitprice](#9-formulas-rollups)
+- [Formula: azt_unitprice](#9-formulas-and-rollups)
 
 #### setattributevaluestep4_2
 
-- [Formula: azt_unitprice](#9-formulas-rollups)
+- [Formula: azt_unitprice](#9-formulas-and-rollups)
 
 #### setattributevaluestep4_3
 
-- [Formula: azt_unitprice](#9-formulas-rollups)
+- [Formula: azt_unitprice](#9-formulas-and-rollups)
 
 #### setattributevaluestep4_4
 
-- [Formula: azt_unitprice](#9-formulas-rollups)
+- [Formula: azt_unitprice](#9-formulas-and-rollups)
 
 #### setattributevaluestep4_5
 
-- [Formula: azt_unitprice](#9-formulas-rollups)
+- [Formula: azt_unitprice](#9-formulas-and-rollups)
 
 #### shippingmethodcode
 

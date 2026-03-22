@@ -1,13 +1,26 @@
 # Azt_lesson Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_lesson |
+| **Display Name** | Lesson |
+| **Description** |  |
+| **Object Type** | Custom |
+| **Ownership Type** | OrgOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 3 |
+| **Last Update** | 2024-11-22 07:25:13 |
+| **Primary ID Field** | azt_lessonid |
+| **Primary Name Field** | azt_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (card) -- Active](#21-information-card-active)
-  - [2.2. Information (main) -- Active](#22-information-main-active)
-  - [2.3. Information (quick) -- Active](#23-information-quick-active)
+  - [2.1. Information - card - Active](#21-information---card---active)
+  - [2.2. Information - main - Active](#22-information---main---active)
+  - [2.3. Information - quick - Active](#23-information---quick---active)
 - [3. Views](#3-views)
   - [3.1. Active Lessons](#31-active-lessons)
   - [3.2. Inactive Lessons](#32-inactive-lessons)
@@ -72,7 +85,7 @@
   - [8.3. azt_paymentlibrary](#83-azt_paymentlibrary)
   - [8.4. azt_productdiscountlibrary](#84-azt_productdiscountlibrary)
   - [8.5. azt_splitallocation](#85-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -158,7 +171,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -196,7 +209,7 @@ Total fields: **20**
 
 Total forms: **3**
 
-### 2.1. Information (card) -- Active
+### 2.1. Information - card - Active
 
 - **Form ID:** `{9f5c0a69-a376-4d77-8608-3bd7ebc61eed}`
 - **Presentation:** UCI/Tablet
@@ -224,7 +237,7 @@ Total forms: **3**
 |-------|-------|----------|---------|
 | [createdon](#createdon) | Created On | No | Yes |
 
-### 2.2. Information (main) -- Active
+### 2.2. Information - main - Active
 
 - **Form ID:** `{1823c7c5-08d3-45ee-98ed-88592b847fa8}`
 - **Presentation:** UCI/Tablet
@@ -238,7 +251,7 @@ Total forms: **3**
 |-------|-------|----------|---------|
 | [azt_name](#azt_name) | Name | No | Yes |
 
-### 2.3. Information (quick) -- Active
+### 2.3. Information - quick - Active
 
 - **Form ID:** `{17fca2d7-e14b-495f-a41e-8b80dbdc19b1}`
 - **Presentation:** UCI/Tablet
@@ -1059,7 +1072,7 @@ Total JS files referencing Azt_lesson fields: **5**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_lesson: **0**
 
@@ -3220,7 +3233,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -4112,9 +4125,9 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Details](#21-information-card-active)
-- [Form: Information > General > General](#22-information-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Details](#21-information---card---active)
+- [Form: Information > General > General](#22-information---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Inactive Lessons](#32-inactive-lessons)
 - [View: Inactive Lessons (Sort)](#32-inactive-lessons)
 - [View: Lesson Advanced Find View](#33-lesson-advanced-find-view)
@@ -4713,7 +4726,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
+- [Form: Information > general > Footer](#21-information---card---active)
 - [View: Inactive Lessons](#32-inactive-lessons)
 - [View: Lesson Advanced Find View](#33-lesson-advanced-find-view)
 - [View: Lesson Associated View](#34-lesson-associated-view)
@@ -5541,7 +5554,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Header](#21-information-card-active)
+- [Form: Information > general > Header](#21-information---card---active)
 - [Workflow: BatchCreateEngagements (Write)](#74-batchcreateengagements)
 - [Workflow: CloneOrder (Write)](#712-cloneorder)
 - [Workflow: EmailDeleteSendQuoteDrafts (Read)](#719-emaildeletesendquotedrafts)

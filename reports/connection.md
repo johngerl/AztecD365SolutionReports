@@ -1,11 +1,24 @@
 # Connection Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | connection |
+| **Display Name** | Connection |
+| **Description** | Relationship between two entities. |
+| **Object Type** | Standard |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | True |
+| **Total Rows** | 151896 |
+| **Last Update** | 2026-03-21 00:42:12 |
+| **Primary ID Field** | connectionid |
+| **Primary Name Field** | None |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (main) -- Active](#21-information-main-active)
+  - [2.1. Information - main - Active](#21-information---main---active)
 - [3. Views](#3-views)
   - [3.1. Active Connection Associated View](#31-active-connection-associated-view)
   - [3.2. Active Connections](#32-active-connections)
@@ -16,7 +29,7 @@
 - [7. Workflows](#7-workflows)
 - [8. JavaScript Web Resources](#8-javascript-web-resources)
   - [8.1. azt_connectionlibrary](#81-azt_connectionlibrary)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -102,7 +115,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -136,7 +149,7 @@ Total fields: **16**
 
 Total forms: **1**
 
-### 2.1. Information (main) -- Active
+### 2.1. Information - main - Active
 
 - **Form ID:** `{108e1be5-be0b-4b9f-9827-80841cdd5f48}`
 - **Presentation:** Classic
@@ -308,7 +321,7 @@ Total JS files referencing Connection fields: **1**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Connection: **0**
 
@@ -2545,7 +2558,7 @@ Total relationships involving Connection: **76**
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -3839,7 +3852,7 @@ Alphabetical field index -- 319 unique fields referenced.
 #### azt_verticalname
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > Connection Info > Connected To](#21-information-main-active)
+- [Form: Information > Connection Info > Connected To](#21-information---main---active)
 - [View: Active Connection Associated View](#31-active-connection-associated-view)
 - [View: Active Connections](#32-active-connections)
 
@@ -4031,12 +4044,12 @@ Alphabetical field index -- 319 unique fields referenced.
 #### effectiveend
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > Connection Info > Details](#21-information-main-active)
+- [Form: Information > Connection Info > Details](#21-information---main---active)
 
 #### effectivestart
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > Connection Info > Details](#21-information-main-active)
+- [Form: Information > Connection Info > Details](#21-information---main---active)
 
 #### emailaddress1
 
@@ -4343,7 +4356,7 @@ Alphabetical field index -- 319 unique fields referenced.
 #### ownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > Connection Info > Details](#21-information-main-active)
+- [Form: Information > Connection Info > Details](#21-information---main---active)
 - [Plugin: AccountReassignmentShareRecords (Read)](#104-accountreassignmentsharerecords)
 - [Plugin: ActivityRegardingGetState (Read)](#109-activityregardinggetstate)
 - [Plugin: CaseAudit (Read)](#1014-caseaudit)
@@ -4585,7 +4598,7 @@ Alphabetical field index -- 319 unique fields referenced.
 #### record1id
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > Connection Info > Connected From](#21-information-main-active)
+- [Form: Information > Connection Info > Connected From](#21-information---main---active)
 - [Plugin: ContactSetConnectionRole (Write)](#1019-contactsetconnectionrole)
 - [Plugin: LeadQualifyParentStakeholderContacts (Filter)](#1039-leadqualifyparentstakeholdercontacts)
 - [Plugin: SetPrimaryContact (Read)](#1075-setprimarycontact)
@@ -4633,7 +4646,7 @@ Alphabetical field index -- 319 unique fields referenced.
 #### record1roleid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > Connection Info > Connected From](#21-information-main-active)
+- [Form: Information > Connection Info > Connected From](#21-information---main---active)
 - [Plugin: ContactSetConnectionRole (Write)](#1019-contactsetconnectionrole)
 - [Plugin: SetPrimaryContact (Read)](#1075-setprimarycontact)
 - [Plugin: SetPrimaryContact (Write)](#1075-setprimarycontact)
@@ -4641,7 +4654,7 @@ Alphabetical field index -- 319 unique fields referenced.
 #### record2id
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > Connection Info > Connected To](#21-information-main-active)
+- [Form: Information > Connection Info > Connected To](#21-information---main---active)
 - [View: Active Connection Associated View](#31-active-connection-associated-view)
 - [View: Active Connection Associated View (Sort)](#31-active-connection-associated-view)
 - [View: Active Connections](#32-active-connections)

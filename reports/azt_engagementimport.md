@@ -1,13 +1,26 @@
 # Azt_engagementimport Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_engagementimport |
+| **Display Name** | Engagement Import |
+| **Description** |  |
+| **Object Type** | Custom |
+| **Ownership Type** | OrgOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 1093 |
+| **Last Update** | 2024-02-05 09:27:02 |
+| **Primary ID Field** | azt_engagementimportid |
+| **Primary Name Field** | azt_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (card) -- Active](#21-information-card-active)
-  - [2.2. Information (main) -- Active](#22-information-main-active)
-  - [2.3. Information (quick) -- Active](#23-information-quick-active)
+  - [2.1. Information - card - Active](#21-information---card---active)
+  - [2.2. Information - main - Active](#22-information---main---active)
+  - [2.3. Information - quick - Active](#23-information---quick---active)
 - [3. Views](#3-views)
   - [3.1. Active Engagement Imports](#31-active-engagement-imports)
   - [3.2. Engagement Import Advanced Find View](#32-engagement-import-advanced-find-view)
@@ -72,7 +85,7 @@
   - [8.3. azt_paymentlibrary](#83-azt_paymentlibrary)
   - [8.4. azt_productdiscountlibrary](#84-azt_productdiscountlibrary)
   - [8.5. azt_splitallocation](#85-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -158,7 +171,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -193,7 +206,7 @@ Total fields: **17**
 
 Total forms: **3**
 
-### 2.1. Information (card) -- Active
+### 2.1. Information - card - Active
 
 - **Form ID:** `{c69fdb9d-fdcb-4936-9f3b-d78f569441c8}`
 - **Presentation:** UCI/Tablet
@@ -221,7 +234,7 @@ Total forms: **3**
 |-------|-------|----------|---------|
 | [createdon](#createdon) | Created On | No | Yes |
 
-### 2.2. Information (main) -- Active
+### 2.2. Information - main - Active
 
 - **Form ID:** `{e9cba9c8-4736-4d89-88ec-0c0c80980349}`
 - **Presentation:** UCI/Tablet
@@ -237,7 +250,7 @@ Total forms: **3**
 | [azt_accountnumber](#azt_accountnumber) | Account Number | No | Yes |
 | [azt_fsr](#azt_fsr) | FSR | No | Yes |
 
-### 2.3. Information (quick) -- Active
+### 2.3. Information - quick - Active
 
 - **Form ID:** `{30392eb1-57f3-4098-8755-9ef2b6b34ee4}`
 - **Presentation:** UCI/Tablet
@@ -1061,7 +1074,7 @@ Total JS files referencing Azt_engagementimport fields: **5**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_engagementimport: **0**
 
@@ -3221,7 +3234,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -3630,7 +3643,7 @@ Alphabetical field index -- 328 unique fields referenced.
 #### azt_accountnumber
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > General > General](#22-information-main-active)
+- [Form: Information > General > General](#22-information---main---active)
 - [View: Engagement Import Advanced Find View](#32-engagement-import-advanced-find-view)
 
 #### azt_accounttype
@@ -3916,7 +3929,7 @@ Alphabetical field index -- 328 unique fields referenced.
 #### azt_fsr
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > General > General](#22-information-main-active)
+- [Form: Information > General > General](#22-information---main---active)
 - [View: Engagement Import Advanced Find View](#32-engagement-import-advanced-find-view)
 
 #### azt_fsrassignedon
@@ -4108,9 +4121,9 @@ Alphabetical field index -- 328 unique fields referenced.
 #### azt_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Details](#21-information-card-active)
-- [Form: Information > General > General](#22-information-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Details](#21-information---card---active)
+- [Form: Information > General > General](#22-information---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Active Engagement Imports](#31-active-engagement-imports)
 - [View: Active Engagement Imports (Sort)](#31-active-engagement-imports)
 - [View: Engagement Import Advanced Find View](#32-engagement-import-advanced-find-view)
@@ -4707,7 +4720,7 @@ Alphabetical field index -- 328 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
+- [Form: Information > general > Footer](#21-information---card---active)
 - [View: Active Engagement Imports](#31-active-engagement-imports)
 - [View: Engagement Import Associated View](#33-engagement-import-associated-view)
 - [View: Engagement Import Lookup View](#34-engagement-import-lookup-view)
@@ -5535,7 +5548,7 @@ Alphabetical field index -- 328 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Header](#21-information-card-active)
+- [Form: Information > general > Header](#21-information---card---active)
 - [Workflow: BatchCreateEngagements (Write)](#74-batchcreateengagements)
 - [Workflow: CloneOrder (Write)](#712-cloneorder)
 - [Workflow: EmailDeleteSendQuoteDrafts (Read)](#719-emaildeletesendquotedrafts)

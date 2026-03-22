@@ -1,11 +1,24 @@
 # Azt_orderfulfillment Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_orderfulfillment |
+| **Display Name** | Order Fulfillment |
+| **Description** | Base entity for process Order Fulfillment |
+| **Object Type** | Custom |
+| **Ownership Type** | OrgOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 16871 |
+| **Last Update** | 2026-03-20 19:06:56 |
+| **Primary ID Field** | azt_orderfulfillmentid |
+| **Primary Name Field** | bpf_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (main) -- Active](#21-information-main-active)
+  - [2.1. Information - main - Active](#21-information---main---active)
 - [3. Views](#3-views)
   - [3.1. Active Order Fulfillment on my Orders](#31-active-order-fulfillment-on-my-orders)
   - [3.2. Active Order Fulfillment](#32-active-order-fulfillment)
@@ -65,7 +78,7 @@
   - [7.42. iGradPhone-callAuto-assign](#742-igradphone-callauto-assign)
 - [8. JavaScript Web Resources](#8-javascript-web-resources)
   - [8.1. azt_expensereportlibrary](#81-azt_expensereportlibrary)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -151,7 +164,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -164,13 +177,13 @@ Total fields: **22**
 |---|-------------|-------------|------|-----------------|--------|----------|-------------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
 | 1 | [activestageid](#activestageid) | Active Stage | lookup |  | No | none | 2026-03-20 19:06:56 | true |  |  |  |  |  |  |  | [10](#3-views) |  |  |  | [3](#7-workflows) |  |  |  | [1](#12-relationships) |  |  |
 | 2 | [activestagestartedon](#activestagestartedon) | Active Stage Started On | datetime |  | No | none | 2026-03-20 19:06:56 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 3 | [bpf_duration](#bpf_duration) | Duration | int |  | Yes | none | 2026-03-20 19:06:56 | true |  |  |  |  |  |  |  | [2](#3-views) |  |  |  |  | [1](#9-formulas-rollups) | [1](#10-plugin-source-code-analysis) |  |  |  |  |
+| 3 | [bpf_duration](#bpf_duration) | Duration | int |  | Yes | none | 2026-03-20 19:06:56 | true |  |  |  |  |  |  |  | [2](#3-views) |  |  |  |  | [1](#9-formulas-and-rollups) | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 4 | [bpf_name](#bpf_name) | Name | nvarchar |  | Yes | required | 2026-03-20 19:06:56 | true |  |  |  |  |  |  |  | [18](#3-views) |  |  |  |  |  |  |  |  |  |  |
 | 5 | [bpf_salesorderid](#bpf_salesorderid) | Salesorder | lookup |  | Yes | none | 2026-03-20 19:06:56 | true |  |  |  |  |  |  |  | [10](#3-views) |  |  |  | [1](#7-workflows) |  | [1](#10-plugin-source-code-analysis) |  | [1](#12-relationships) |  |  |
 | 6 | [businessprocessflowinstanceid](#businessprocessflowinstanceid) | Order Fulfillment | primarykey |  | No | systemrequired | 2026-03-20 19:06:56 | true |  |  |  |  |  |  |  | [10](#3-views) |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 7 | [completedon](#completedon) | Completed On | datetime |  | No | none | 2026-03-20 19:06:56 | true |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 7 | [completedon](#completedon) | Completed On | datetime |  | No | none | 2026-03-20 19:06:56 | true |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 8 | [createdby](#createdby) | Created By | lookup |  | No | none | 2026-03-20 19:06:56 | true |  |  |  |  |  |  |  | [9](#3-views) |  |  |  | [25](#7-workflows) |  |  |  | [1](#12-relationships) |  |  |
-| 9 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) | true |  |  |  |  |  |  |  | [9](#3-views) |  |  |  | [7](#7-workflows) | [1](#9-formulas-rollups) | [10](#10-plugin-source-code-analysis) |  |  |  |  |
+| 9 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) | true |  |  |  |  |  |  |  | [9](#3-views) |  |  |  | [7](#7-workflows) | [1](#9-formulas-and-rollups) | [10](#10-plugin-source-code-analysis) |  |  |  |  |
 | 10 | [createdonbehalfby](#createdonbehalfby) | Created By (Delegate) | lookup |  | No | none | Never | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 11 | [importsequencenumber](#importsequencenumber) | Import Sequence Number | int |  | No | none | Never | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 12 | [modifiedby](#modifiedby) | Modified By | lookup |  | No | none | 2026-03-20 19:06:56 | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7-workflows) |  |  |  | [1](#12-relationships) |  |  |
@@ -191,7 +204,7 @@ Total fields: **22**
 
 Total forms: **1**
 
-### 2.1. Information (main) -- Active
+### 2.1. Information - main - Active
 
 - **Form ID:** `{a0754469-69d2-4ef6-86f4-a83d13b910d0}`
 - **Presentation:** UCI/Tablet
@@ -1124,7 +1137,7 @@ Total JS files referencing Azt_orderfulfillment fields: **1**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_orderfulfillment: **1**
 
@@ -3305,7 +3318,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -3771,11 +3784,11 @@ Alphabetical field index -- 362 unique fields referenced.
 
 #### azt_actualnucshipdate
 
-- [Form: Information > Saas Fulfillment > Saas Fulfillment](#21-information-main-active)
+- [Form: Information > Saas Fulfillment > Saas Fulfillment](#21-information---main---active)
 
 #### azt_actualprintshipdate
 
-- [Form: Information > Non-Saas Fulfillment > Non-Saas Fulfillment](#21-information-main-active)
+- [Form: Information > Non-Saas Fulfillment > Non-Saas Fulfillment](#21-information---main---active)
 
 #### azt_addresssearch
 
@@ -3802,7 +3815,7 @@ Alphabetical field index -- 362 unique fields referenced.
 
 #### azt_allocationconfirmation
 
-- [Form: Information > Confirmation > Confirmation](#21-information-main-active)
+- [Form: Information > Confirmation > Confirmation](#21-information---main---active)
 
 #### azt_allocationtype
 
@@ -3811,7 +3824,7 @@ Alphabetical field index -- 362 unique fields referenced.
 
 #### azt_alternatecovers
 
-- [Form: Information > Confirmation > Confirmation](#21-information-main-active)
+- [Form: Information > Confirmation > Confirmation](#21-information---main---active)
 
 #### azt_amount
 
@@ -3939,20 +3952,20 @@ Alphabetical field index -- 362 unique fields referenced.
 
 #### azt_customfilesreceived
 
-- [Form: Information > Non-Saas Fulfillment > Non-Saas Fulfillment](#21-information-main-active)
+- [Form: Information > Non-Saas Fulfillment > Non-Saas Fulfillment](#21-information---main---active)
 
 #### azt_customfilesreceivedon
 
-- [Form: Information > Non-Saas Fulfillment > Non-Saas Fulfillment](#21-information-main-active)
+- [Form: Information > Non-Saas Fulfillment > Non-Saas Fulfillment](#21-information---main---active)
 
 #### azt_customizationdate
 
-- [Form: Information > Confirmation > Confirmation](#21-information-main-active)
-- [Form: Information > Non-Saas Fulfillment > Non-Saas Fulfillment](#21-information-main-active)
+- [Form: Information > Confirmation > Confirmation](#21-information---main---active)
+- [Form: Information > Non-Saas Fulfillment > Non-Saas Fulfillment](#21-information---main---active)
 
 #### azt_customizationrequired
 
-- [Form: Information > Confirmation > Confirmation](#21-information-main-active)
+- [Form: Information > Confirmation > Confirmation](#21-information---main---active)
 
 #### azt_dateexitedstage
 
@@ -3998,11 +4011,11 @@ Alphabetical field index -- 362 unique fields referenced.
 
 #### azt_engagementcreatedbyid
 
-- [Form: Information > Post-Fulfillment > Post-Fulfillment](#21-information-main-active)
+- [Form: Information > Post-Fulfillment > Post-Fulfillment](#21-information---main---active)
 
 #### azt_engagementcreatedon
 
-- [Form: Information > Post-Fulfillment > Post-Fulfillment](#21-information-main-active)
+- [Form: Information > Post-Fulfillment > Post-Fulfillment](#21-information---main---active)
 
 #### azt_engagementid
 
@@ -4018,15 +4031,15 @@ Alphabetical field index -- 362 unique fields referenced.
 
 #### azt_estnucshipdate
 
-- [Form: Information > Saas Fulfillment > Saas Fulfillment](#21-information-main-active)
+- [Form: Information > Saas Fulfillment > Saas Fulfillment](#21-information---main---active)
 
 #### azt_estprintdate
 
-- [Form: Information > Non-Saas Fulfillment > Non-Saas Fulfillment](#21-information-main-active)
+- [Form: Information > Non-Saas Fulfillment > Non-Saas Fulfillment](#21-information---main---active)
 
 #### azt_estshipdate
 
-- [Form: Information > Non-Saas Fulfillment > Non-Saas Fulfillment](#21-information-main-active)
+- [Form: Information > Non-Saas Fulfillment > Non-Saas Fulfillment](#21-information---main---active)
 
 #### azt_evaluate
 
@@ -4067,7 +4080,7 @@ Alphabetical field index -- 362 unique fields referenced.
 
 #### azt_externalprintorderplacedon
 
-- [Form: Information > Non-Saas Fulfillment > Non-Saas Fulfillment](#21-information-main-active)
+- [Form: Information > Non-Saas Fulfillment > Non-Saas Fulfillment](#21-information---main---active)
 
 #### azt_fieldtoautonumber
 
@@ -4117,7 +4130,7 @@ Alphabetical field index -- 362 unique fields referenced.
 
 #### azt_fuactivitiescreatedon
 
-- [Form: Information > Post-Fulfillment > Post-Fulfillment](#21-information-main-active)
+- [Form: Information > Post-Fulfillment > Post-Fulfillment](#21-information---main---active)
 
 #### azt_fundingid
 
@@ -4141,7 +4154,7 @@ Alphabetical field index -- 362 unique fields referenced.
 
 #### azt_invoicecreated
 
-- [Form: Information > Confirmation > Confirmation](#21-information-main-active)
+- [Form: Information > Confirmation > Confirmation](#21-information---main---active)
 
 #### azt_invoiceid
 
@@ -4210,7 +4223,7 @@ Alphabetical field index -- 362 unique fields referenced.
 
 #### azt_licensescompleted
 
-- [Form: Information > Saas Fulfillment > Saas Fulfillment](#21-information-main-active)
+- [Form: Information > Saas Fulfillment > Saas Fulfillment](#21-information---main---active)
 
 #### azt_licensestatus
 
@@ -4445,7 +4458,7 @@ Alphabetical field index -- 362 unique fields referenced.
 
 #### azt_paymentreceivedon
 
-- [Form: Information > Initializing > Initializing](#21-information-main-active)
+- [Form: Information > Initializing > Initializing](#21-information---main---active)
 
 #### azt_percentage
 
@@ -4479,11 +4492,11 @@ Alphabetical field index -- 362 unique fields referenced.
 
 #### azt_poreceivedconfirmationsent
 
-- [Form: Information > Confirmation > Confirmation](#21-information-main-active)
+- [Form: Information > Confirmation > Confirmation](#21-information---main---active)
 
 #### azt_poreceivedon
 
-- [Form: Information > Initializing > Initializing](#21-information-main-active)
+- [Form: Information > Initializing > Initializing](#21-information---main---active)
 
 #### azt_prefix
 
@@ -4519,7 +4532,7 @@ Alphabetical field index -- 362 unique fields referenced.
 
 #### azt_printconfirmation
 
-- [Form: Information > Post-Fulfillment > Post-Fulfillment](#21-information-main-active)
+- [Form: Information > Post-Fulfillment > Post-Fulfillment](#21-information---main---active)
 
 #### azt_printproductid
 
@@ -4653,7 +4666,7 @@ Alphabetical field index -- 362 unique fields referenced.
 
 #### azt_shippingaddressconfirmed
 
-- [Form: Information > Confirmation > Confirmation](#21-information-main-active)
+- [Form: Information > Confirmation > Confirmation](#21-information---main---active)
 
 #### azt_softwarelicenseid
 
@@ -4671,11 +4684,11 @@ Alphabetical field index -- 362 unique fields referenced.
 
 #### azt_sqreceivedon
 
-- [Form: Information > Initializing > Initializing](#21-information-main-active)
+- [Form: Information > Initializing > Initializing](#21-information---main---active)
 
 #### azt_staples
 
-- [Form: Information > Confirmation > Confirmation](#21-information-main-active)
+- [Form: Information > Confirmation > Confirmation](#21-information---main---active)
 
 #### azt_startdate
 
@@ -4713,7 +4726,7 @@ Alphabetical field index -- 362 unique fields referenced.
 
 #### azt_swlicalloccreatedon
 
-- [Form: Information > Post-Fulfillment > Post-Fulfillment](#21-information-main-active)
+- [Form: Information > Post-Fulfillment > Post-Fulfillment](#21-information---main---active)
 
 #### azt_total
 
@@ -4735,8 +4748,8 @@ Alphabetical field index -- 362 unique fields referenced.
 
 #### azt_trackingnumber
 
-- [Form: Information > Saas Fulfillment > Saas Fulfillment](#21-information-main-active)
-- [Form: Information > Non-Saas Fulfillment > Non-Saas Fulfillment](#21-information-main-active)
+- [Form: Information > Saas Fulfillment > Saas Fulfillment](#21-information---main---active)
+- [Form: Information > Non-Saas Fulfillment > Non-Saas Fulfillment](#21-information---main---active)
 - [Plugin: OrderSplit (Read)](#1056-ordersplit)
 - [Plugin: OrderSplit (Write)](#1056-ordersplit)
 - [Plugin: ShipmentSetTrackingNumber (Read)](#1079-shipmentsettrackingnumber)
@@ -4795,7 +4808,7 @@ Alphabetical field index -- 362 unique fields referenced.
 - [Field Definitions](#1-field-definitions)
 - [View: Inactive Order Fulfillment on my Orders](#34-inactive-order-fulfillment-on-my-orders)
 - [View: Inactive Order Fulfillment](#35-inactive-order-fulfillment)
-- [Formula: bpf_duration (Target)](#9-formulas-rollups)
+- [Formula: bpf_duration (Target)](#9-formulas-and-rollups)
 - [Plugin: OrderStageTracking (Read)](#1057-orderstagetracking)
 
 #### bpf_name
@@ -4884,11 +4897,11 @@ Alphabetical field index -- 362 unique fields referenced.
 #### completedon
 
 - [Field Definitions](#1-field-definitions)
-- [Formula: bpf_duration](#9-formulas-rollups)
+- [Formula: bpf_duration](#9-formulas-and-rollups)
 
 #### conditionbranchstep2_1
 
-- [Formula: bpf_duration](#9-formulas-rollups)
+- [Formula: bpf_duration](#9-formulas-and-rollups)
 
 #### connectionid
 
@@ -4980,7 +4993,7 @@ Alphabetical field index -- 362 unique fields referenced.
 - [Workflow: EmailRemoveUnsentEmails (Read)](#715-emailremoveunsentemails)
 - [Workflow: FSRLeadDistibutionNotification (Read)](#718-fsrleaddistibutionnotification)
 - [Workflow: NewFSRLeadNotification (Read)](#721-newfsrleadnotification)
-- [Formula: bpf_duration](#9-formulas-rollups)
+- [Formula: bpf_duration](#9-formulas-and-rollups)
 - [Plugin: AccountLeadGen (Filter)](#102-accountleadgen)
 - [Plugin: ChangeLicenseType (Sort)](#1016-changelicensetype)
 - [Plugin: CreateUserGoals (Read)](#1022-createusergoals)
@@ -5738,23 +5751,23 @@ Alphabetical field index -- 362 unique fields referenced.
 
 #### setattributevaluestep4_1
 
-- [Formula: bpf_duration](#9-formulas-rollups)
+- [Formula: bpf_duration](#9-formulas-and-rollups)
 
 #### setattributevaluestep4_2
 
-- [Formula: bpf_duration](#9-formulas-rollups)
+- [Formula: bpf_duration](#9-formulas-and-rollups)
 
 #### setattributevaluestep4_3
 
-- [Formula: bpf_duration](#9-formulas-rollups)
+- [Formula: bpf_duration](#9-formulas-and-rollups)
 
 #### setattributevaluestep4_4
 
-- [Formula: bpf_duration](#9-formulas-rollups)
+- [Formula: bpf_duration](#9-formulas-and-rollups)
 
 #### setattributevaluestep4_5
 
-- [Formula: bpf_duration](#9-formulas-rollups)
+- [Formula: bpf_duration](#9-formulas-and-rollups)
 
 #### shippingmethodcode
 

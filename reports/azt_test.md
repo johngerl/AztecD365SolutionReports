@@ -1,13 +1,26 @@
 # Azt_test Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_test |
+| **Display Name** | Test |
+| **Description** |  |
+| **Object Type** | Custom |
+| **Ownership Type** | OrgOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 4 |
+| **Last Update** | 2024-10-04 15:17:01 |
+| **Primary ID Field** | azt_testid |
+| **Primary Name Field** | azt_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (card) -- Active](#21-information-card-active)
-  - [2.2. Information (main) -- Active](#22-information-main-active)
-  - [2.3. Information (quick) -- Active](#23-information-quick-active)
+  - [2.1. Information - card - Active](#21-information---card---active)
+  - [2.2. Information - main - Active](#22-information---main---active)
+  - [2.3. Information - quick - Active](#23-information---quick---active)
 - [3. Views](#3-views)
   - [3.1. Active Tests](#31-active-tests)
   - [3.2. Inactive Tests](#32-inactive-tests)
@@ -72,7 +85,7 @@
   - [8.3. azt_paymentlibrary](#83-azt_paymentlibrary)
   - [8.4. azt_productdiscountlibrary](#84-azt_productdiscountlibrary)
   - [8.5. azt_splitallocation](#85-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -158,7 +171,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -192,7 +205,7 @@ Total fields: **16**
 
 Total forms: **3**
 
-### 2.1. Information (card) -- Active
+### 2.1. Information - card - Active
 
 - **Form ID:** `{6cb6995c-bcbb-4b58-845d-1a72c930f05b}`
 - **Presentation:** UCI/Tablet
@@ -220,7 +233,7 @@ Total forms: **3**
 |-------|-------|----------|---------|
 | [createdon](#createdon) | Created On | No | Yes |
 
-### 2.2. Information (main) -- Active
+### 2.2. Information - main - Active
 
 - **Form ID:** `{811c207a-9ded-4953-b92d-7a204f8cddcb}`
 - **Presentation:** UCI/Tablet
@@ -235,7 +248,7 @@ Total forms: **3**
 | [azt_name](#azt_name) | Name | No | Yes |
 | [azt_temperature](#azt_temperature) | Temperature | No | Yes |
 
-### 2.3. Information (quick) -- Active
+### 2.3. Information - quick - Active
 
 - **Form ID:** `{c0561f3e-40c6-44e0-8bda-c43c8fdc54e6}`
 - **Presentation:** UCI/Tablet
@@ -1058,7 +1071,7 @@ Total JS files referencing Azt_test fields: **5**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_test: **0**
 
@@ -3218,7 +3231,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -4082,9 +4095,9 @@ Alphabetical field index -- 327 unique fields referenced.
 #### azt_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Details](#21-information-card-active)
-- [Form: Information > General > General](#22-information-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Details](#21-information---card---active)
+- [Form: Information > General > General](#22-information---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Active Tests](#31-active-tests)
 - [View: Active Tests (Sort)](#31-active-tests)
 - [View: Inactive Tests](#32-inactive-tests)
@@ -4505,7 +4518,7 @@ Alphabetical field index -- 327 unique fields referenced.
 #### azt_temperature
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > General > General](#22-information-main-active)
+- [Form: Information > General > General](#22-information---main---active)
 - [View: Active Tests](#31-active-tests)
 
 #### azt_testid
@@ -4698,7 +4711,7 @@ Alphabetical field index -- 327 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
+- [Form: Information > general > Footer](#21-information---card---active)
 - [View: Inactive Tests](#32-inactive-tests)
 - [View: Quick Find Active Tests](#33-quick-find-active-tests)
 - [View: Test Advanced Find View](#34-test-advanced-find-view)
@@ -5526,7 +5539,7 @@ Alphabetical field index -- 327 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Header](#21-information-card-active)
+- [Form: Information > general > Header](#21-information---card---active)
 - [Workflow: BatchCreateEngagements (Write)](#74-batchcreateengagements)
 - [Workflow: CloneOrder (Write)](#712-cloneorder)
 - [Workflow: EmailDeleteSendQuoteDrafts (Read)](#719-emaildeletesendquotedrafts)

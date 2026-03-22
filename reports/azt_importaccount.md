@@ -1,13 +1,26 @@
 # Azt_importaccount Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_importaccount |
+| **Display Name** | Import Account |
+| **Description** |  |
+| **Object Type** | Custom |
+| **Ownership Type** | OrgOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 750 |
+| **Last Update** | 2024-02-28 07:23:14 |
+| **Primary ID Field** | azt_importaccountid |
+| **Primary Name Field** | azt_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (card) -- Active](#21-information-card-active)
-  - [2.2. Account Import (main) -- Active](#22-account-import-main-active)
-  - [2.3. Information (quick) -- Active](#23-information-quick-active)
+  - [2.1. Information - card - Active](#21-information---card---active)
+  - [2.2. Account Import - main - Active](#22-account-import---main---active)
+  - [2.3. Information - quick - Active](#23-information---quick---active)
 - [3. Views](#3-views)
   - [3.1. Active Import Accounts](#31-active-import-accounts)
   - [3.2. Import Account Advanced Find View](#32-import-account-advanced-find-view)
@@ -72,7 +85,7 @@
   - [8.3. azt_paymentlibrary](#83-azt_paymentlibrary)
   - [8.4. azt_productdiscountlibrary](#84-azt_productdiscountlibrary)
   - [8.5. azt_splitallocation](#85-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -158,7 +171,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -201,7 +214,7 @@ Total fields: **25**
 
 Total forms: **3**
 
-### 2.1. Information (card) -- Active
+### 2.1. Information - card - Active
 
 - **Form ID:** `{365f848b-ad15-4df1-be74-b186bd048dca}`
 - **Presentation:** UCI/Tablet
@@ -229,7 +242,7 @@ Total forms: **3**
 |-------|-------|----------|---------|
 | [createdon](#createdon) | Created On | No | Yes |
 
-### 2.2. Account Import (main) -- Active
+### 2.2. Account Import - main - Active
 
 - **Form ID:** `{cf3de8dc-9b1b-4b07-bedd-4721421cf149}`
 - **Presentation:** UCI/Tablet
@@ -271,7 +284,7 @@ Total forms: **3**
 | [azt_zip](#azt_zip) | Zip | No | Yes |
 | [azt_country](#azt_country) | Country | No | Yes |
 
-### 2.3. Information (quick) -- Active
+### 2.3. Information - quick - Active
 
 - **Form ID:** `{48e55383-6372-4d7f-9494-39f39a66bc6e}`
 - **Presentation:** UCI/Tablet
@@ -1105,7 +1118,7 @@ Total JS files referencing Azt_importaccount fields: **5**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_importaccount: **0**
 
@@ -3265,7 +3278,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -3676,7 +3689,7 @@ Alphabetical field index -- 334 unique fields referenced.
 #### azt_addressline1
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account Import > General > Address Info](#22-account-import-main-active)
+- [Form: Account Import > General > Address Info](#22-account-import---main---active)
 - [View: Active Import Accounts](#31-active-import-accounts)
 
 #### azt_addresssearch
@@ -3760,8 +3773,8 @@ Alphabetical field index -- 334 unique fields referenced.
 #### azt_city
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account Import (Header)](#22-account-import-main-active)
-- [Form: Account Import > General > Address Info](#22-account-import-main-active)
+- [Form: Account Import (Header)](#22-account-import---main---active)
+- [Form: Account Import > General > Address Info](#22-account-import---main---active)
 - [View: Active Import Accounts](#31-active-import-accounts)
 
 #### azt_commissionamount
@@ -3824,7 +3837,7 @@ Alphabetical field index -- 334 unique fields referenced.
 #### azt_country
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account Import > General > Address Info](#22-account-import-main-active)
+- [Form: Account Import > General > Address Info](#22-account-import---main---active)
 - [View: Active Import Accounts](#31-active-import-accounts)
 
 #### azt_currentnumber
@@ -3885,13 +3898,13 @@ Alphabetical field index -- 334 unique fields referenced.
 #### azt_emailaddress1
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account Import > General > Contact Info](#22-account-import-main-active)
+- [Form: Account Import > General > Contact Info](#22-account-import---main---active)
 - [View: Active Import Accounts](#31-active-import-accounts)
 
 #### azt_emailaddress2
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account Import > General > Contact Info](#22-account-import-main-active)
+- [Form: Account Import > General > Contact Info](#22-account-import---main---active)
 - [View: Active Import Accounts](#31-active-import-accounts)
 
 #### azt_enddate
@@ -3954,7 +3967,7 @@ Alphabetical field index -- 334 unique fields referenced.
 #### azt_firstname
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account Import > General > Contact Info](#22-account-import-main-active)
+- [Form: Account Import > General > Contact Info](#22-account-import---main---active)
 - [View: Active Import Accounts](#31-active-import-accounts)
 - [Plugin: LeadImport (Read)](#1036-leadimport)
 
@@ -4082,7 +4095,7 @@ Alphabetical field index -- 334 unique fields referenced.
 #### azt_lastname
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account Import > General > Contact Info](#22-account-import-main-active)
+- [Form: Account Import > General > Contact Info](#22-account-import---main---active)
 - [View: Active Import Accounts](#31-active-import-accounts)
 - [Plugin: LeadImport (Read)](#1036-leadimport)
 
@@ -4175,10 +4188,10 @@ Alphabetical field index -- 334 unique fields referenced.
 #### azt_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Details](#21-information-card-active)
-- [Form: Account Import (Header)](#22-account-import-main-active)
-- [Form: Account Import > General > General](#22-account-import-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Details](#21-information---card---active)
+- [Form: Account Import (Header)](#22-account-import---main---active)
+- [Form: Account Import > General > General](#22-account-import---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Active Import Accounts](#31-active-import-accounts)
 - [View: Active Import Accounts (Sort)](#31-active-import-accounts)
 - [View: Import Account Advanced Find View](#32-import-account-advanced-find-view)
@@ -4574,8 +4587,8 @@ Alphabetical field index -- 334 unique fields referenced.
 #### azt_stateorprovince
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account Import (Header)](#22-account-import-main-active)
-- [Form: Account Import > General > Address Info](#22-account-import-main-active)
+- [Form: Account Import (Header)](#22-account-import---main---active)
+- [Form: Account Import > General > Address Info](#22-account-import---main---active)
 - [View: Active Import Accounts](#31-active-import-accounts)
 
 #### azt_stateprovince
@@ -4606,7 +4619,7 @@ Alphabetical field index -- 334 unique fields referenced.
 #### azt_telephone
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account Import > General > Contact Info](#22-account-import-main-active)
+- [Form: Account Import > General > Contact Info](#22-account-import---main---active)
 - [View: Active Import Accounts](#31-active-import-accounts)
 
 #### azt_total
@@ -4650,7 +4663,7 @@ Alphabetical field index -- 334 unique fields referenced.
 #### azt_zip
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account Import > General > Address Info](#22-account-import-main-active)
+- [Form: Account Import > General > Address Info](#22-account-import---main---active)
 - [View: Active Import Accounts](#31-active-import-accounts)
 
 #### baseamount
@@ -4794,7 +4807,7 @@ Alphabetical field index -- 334 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
+- [Form: Information > general > Footer](#21-information---card---active)
 - [View: Active Import Accounts](#31-active-import-accounts)
 - [View: Active Import Accounts (Sort)](#31-active-import-accounts)
 - [View: Import Account Advanced Find View](#32-import-account-advanced-find-view)
@@ -5624,7 +5637,7 @@ Alphabetical field index -- 334 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Header](#21-information-card-active)
+- [Form: Information > general > Header](#21-information---card---active)
 - [Workflow: BatchCreateEngagements (Write)](#74-batchcreateengagements)
 - [Workflow: CloneOrder (Write)](#712-cloneorder)
 - [Workflow: EmailDeleteSendQuoteDrafts (Read)](#719-emaildeletesendquotedrafts)

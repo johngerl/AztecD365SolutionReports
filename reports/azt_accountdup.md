@@ -1,13 +1,26 @@
 # Azt_accountdup Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_accountdup |
+| **Display Name** | Account Dup |
+| **Description** |  |
+| **Object Type** | Custom |
+| **Ownership Type** | OrgOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 0 |
+| **Last Update** | Never |
+| **Primary ID Field** | azt_accountdupid |
+| **Primary Name Field** | azt_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (card) -- Active](#21-information-card-active)
-  - [2.2. Information (main) -- Active](#22-information-main-active)
-  - [2.3. Information (quick) -- Active](#23-information-quick-active)
+  - [2.1. Information - card - Active](#21-information---card---active)
+  - [2.2. Information - main - Active](#22-information---main---active)
+  - [2.3. Information - quick - Active](#23-information---quick---active)
 - [3. Views](#3-views)
   - [3.1. Account Dup Advanced Find View](#31-account-dup-advanced-find-view)
   - [3.2. Account Dup Associated View](#32-account-dup-associated-view)
@@ -72,7 +85,7 @@
   - [8.3. azt_paymentlibrary](#83-azt_paymentlibrary)
   - [8.4. azt_productdiscountlibrary](#84-azt_productdiscountlibrary)
   - [8.5. azt_splitallocation](#85-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -158,7 +171,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -193,7 +206,7 @@ Total fields: **17**
 
 Total forms: **3**
 
-### 2.1. Information (card) -- Active
+### 2.1. Information - card - Active
 
 - **Form ID:** `{c4d92b9d-98d6-480e-9573-2d5efadb804c}`
 - **Presentation:** UCI/Tablet
@@ -221,7 +234,7 @@ Total forms: **3**
 |-------|-------|----------|---------|
 | [createdon](#createdon) | Created On | No | Yes |
 
-### 2.2. Information (main) -- Active
+### 2.2. Information - main - Active
 
 - **Form ID:** `{c34ccd07-3774-4ac0-8777-d4f6d3e7e096}`
 - **Presentation:** UCI/Tablet
@@ -237,7 +250,7 @@ Total forms: **3**
 | [azt_scoredecimal](#azt_scoredecimal) | Score Decimal | No | Yes |
 | [azt_scorestring](#azt_scorestring) | Score String | No | Yes |
 
-### 2.3. Information (quick) -- Active
+### 2.3. Information - quick - Active
 
 - **Form ID:** `{4388a8f0-5f4f-4109-9137-2825b89adb17}`
 - **Presentation:** UCI/Tablet
@@ -1060,7 +1073,7 @@ Total JS files referencing Azt_accountdup fields: **5**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_accountdup: **0**
 
@@ -3220,7 +3233,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -4100,9 +4113,9 @@ Alphabetical field index -- 328 unique fields referenced.
 #### azt_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Details](#21-information-card-active)
-- [Form: Information > General > General](#22-information-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Details](#21-information---card---active)
+- [Form: Information > General > General](#22-information---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Account Dup Advanced Find View](#31-account-dup-advanced-find-view)
 - [View: Account Dup Advanced Find View (Sort)](#31-account-dup-advanced-find-view)
 - [View: Account Dup Associated View](#32-account-dup-associated-view)
@@ -4475,12 +4488,12 @@ Alphabetical field index -- 328 unique fields referenced.
 #### azt_scoredecimal
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > General > General](#22-information-main-active)
+- [Form: Information > General > General](#22-information---main---active)
 
 #### azt_scorestring
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > General > General](#22-information-main-active)
+- [Form: Information > General > General](#22-information---main---active)
 
 #### azt_softwarelicenseid
 
@@ -4709,7 +4722,7 @@ Alphabetical field index -- 328 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
+- [Form: Information > general > Footer](#21-information---card---active)
 - [View: Account Dup Advanced Find View](#31-account-dup-advanced-find-view)
 - [View: Account Dup Associated View](#32-account-dup-associated-view)
 - [View: Account Dup Lookup View](#33-account-dup-lookup-view)
@@ -5538,7 +5551,7 @@ Alphabetical field index -- 328 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Header](#21-information-card-active)
+- [Form: Information > general > Header](#21-information---card---active)
 - [Workflow: BatchCreateEngagements (Write)](#74-batchcreateengagements)
 - [Workflow: CloneOrder (Write)](#712-cloneorder)
 - [Workflow: EmailDeleteSendQuoteDrafts (Read)](#719-emaildeletesendquotedrafts)

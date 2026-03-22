@@ -1,11 +1,24 @@
 # Quotedetail Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | quotedetail |
+| **Display Name** | Quote Product |
+| **Description** | Product line item in a quote. The details include such information as product ID, description, quantity, and cost. |
+| **Object Type** | Standard |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 238053 |
+| **Last Update** | 2026-03-20 22:35:37 |
+| **Primary ID Field** | quotedetailid |
+| **Primary Name Field** | None |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Quote Product (main) -- Active](#21-quote-product-main-active)
+  - [2.1. Quote Product - main - Active](#21-quote-product---main---active)
 - [3. Views](#3-views)
   - [3.1. All Quote Products](#31-all-quote-products)
 - [4. Chart Visualizations](#4-chart-visualizations)
@@ -26,7 +39,7 @@
   - [8.2. azt_opportunityproductlibrary](#82-azt_opportunityproductlibrary)
   - [8.3. azt_productdiscountlibrary](#83-azt_productdiscountlibrary)
   - [8.4. azt_splitallocation](#84-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -112,7 +125,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -123,7 +136,7 @@ Total fields: **43**
 
 | # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
 |---|-------------|-------------|------|-----------------|--------|----------|-------------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [azt_discretionarydiscount](#azt_discretionarydiscount) | Discretionary Discount | money |  | Yes | none | 2026-03-20 22:35:37 | true |  |  |  |  |  |  | [1](#2-forms) |  |  | [3](#5-reports) |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 1 | [azt_discretionarydiscount](#azt_discretionarydiscount) | Discretionary Discount | money |  | Yes | none | 2026-03-20 22:35:37 | true |  |  |  |  |  |  | [1](#2-forms) |  |  | [3](#5-reports) |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 2 | [azt_discretionarydiscount_base](#azt_discretionarydiscount_base) | Discretionary Discount (Base) | money |  | Yes | none | 2026-03-20 22:35:37 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 3 | [azt_discretionarydiscountamt](#azt_discretionarydiscountamt) | Discretionary Discount Amt | money |  | Yes | none | 2026-03-20 21:16:47 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 4 | [azt_discretionarydiscountamt_base](#azt_discretionarydiscountamt_base) | Discretionary Discount Amt (Base) | money |  | Yes | none | 2026-03-20 21:16:47 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -173,7 +186,7 @@ Total fields: **43**
 
 Total forms: **1**
 
-### 2.1. Quote Product (main) -- Active
+### 2.1. Quote Product - main - Active
 
 - **Form ID:** `{1ff13845-48d3-4744-bc69-43b691931a6e}`
 - **Presentation:** Classic
@@ -940,7 +953,7 @@ Total JS files referencing Quotedetail fields: **4**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Quotedetail: **1**
 
@@ -3118,7 +3131,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -3584,7 +3597,7 @@ Alphabetical field index -- 338 unique fields referenced.
 
 #### azt_approvalstatus
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 - [Plugin: OpportunityPreventCreateQuote (Read)](#1047-opportunitypreventcreatequote)
 - [Plugin: OpptyToQuoteFieldMappings (Read)](#1050-opptytoquotefieldmappings)
 - [Plugin: QuotePreventActivateUnapprovedDiscounts (Read)](#1064-quotepreventactivateunapproveddiscounts)
@@ -3708,17 +3721,17 @@ Alphabetical field index -- 338 unique fields referenced.
 
 #### azt_discountamount
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 - [Plugin: DiscretionaryDiscountSetHeader (Read)](#1023-discretionarydiscountsetheader)
 
 #### azt_discretionarydiscount
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote Product > general > pricing](#21-quote-product-main-active)
+- [Form: Quote Product > general > pricing](#21-quote-product---main---active)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#51-paquotereport)
 - [Report: SummaryQuoteReport > QuoteHeader (Select)](#54-summaryquotereport)
 - [Report: iGradQuoteReport > QuoteHeader (Select)](#56-igradquotereport)
-- [Formula: azt_discretionarydiscount (Target)](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount (Target)](#9-formulas-and-rollups)
 
 #### azt_discretionarydiscount_base
 
@@ -3727,7 +3740,7 @@ Alphabetical field index -- 338 unique fields referenced.
 #### azt_discretionarydiscountamt
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote Product > general > pricing](#21-quote-product-main-active)
+- [Form: Quote Product > general > pricing](#21-quote-product---main---active)
 - [Plugin: DiscretionaryDiscountSetHeader (Write)](#1023-discretionarydiscountsetheader)
 - [Plugin: OpptyToQuoteFieldMappings (Write)](#1050-opptytoquotefieldmappings)
 
@@ -3903,7 +3916,7 @@ Alphabetical field index -- 338 unique fields referenced.
 #### azt_issaas
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote Product > general > quote detail information](#21-quote-product-main-active)
+- [Form: Quote Product > general > quote detail information](#21-quote-product---main---active)
 - [Plugin: CreateUserGoals (Filter)](#1022-createusergoals)
 - [Plugin: SetOppProductDefaults (Write)](#1074-setoppproductdefaults)
 
@@ -3949,7 +3962,7 @@ Alphabetical field index -- 338 unique fields referenced.
 #### azt_licensetermmonths
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote Product > general > quote detail information](#21-quote-product-main-active)
+- [Form: Quote Product > general > quote detail information](#21-quote-product---main---active)
 - [Workflow: CloneLicense (Write)](#71-clonelicense)
 - [JS: azt_splitallocation > splitAllocation()](#84-azt_splitallocation)
 - [Plugin: CreateSoftwareLicenses (Read)](#1021-createsoftwarelicenses)
@@ -3978,7 +3991,7 @@ Alphabetical field index -- 338 unique fields referenced.
 #### azt_licensetype
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote Product > general > quote detail information](#21-quote-product-main-active)
+- [Form: Quote Product > general > quote detail information](#21-quote-product---main---active)
 - [View: All Quote Products](#31-all-quote-products)
 - [Workflow: CloneLicense (Write)](#71-clonelicense)
 - [JS: azt_opportunitylibrary > onLoad()](#81-azt_opportunitylibrary)
@@ -4072,7 +4085,7 @@ Alphabetical field index -- 338 unique fields referenced.
 #### azt_nonsaastype
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote Product > general > quote detail information](#21-quote-product-main-active)
+- [Form: Quote Product > general > quote detail information](#21-quote-product---main---active)
 - [Plugin: CreateSoftwareLicenses (Read)](#1021-createsoftwarelicenses)
 
 #### azt_numberoflicenses
@@ -4098,7 +4111,7 @@ Alphabetical field index -- 338 unique fields referenced.
 #### azt_opportunityproductid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote Product (Footer)](#21-quote-product-main-active)
+- [Form: Quote Product (Footer)](#21-quote-product---main---active)
 - [JS: azt_productdiscountlibrary > onLoad()](#83-azt_productdiscountlibrary)
 - [Plugin: DiscretionaryDiscountSetHeader (Read)](#1023-discretionarydiscountsetheader)
 - [Plugin: DiscretionaryDiscountSetHeader (Write)](#1023-discretionarydiscountsetheader)
@@ -4688,7 +4701,7 @@ Alphabetical field index -- 338 unique fields referenced.
 
 #### discounts
 
-- [Form: Quote Product > Discretionary Discounts > Section](#21-quote-product-main-active)
+- [Form: Quote Product > Discretionary Discounts > Section](#21-quote-product---main---active)
 
 #### effectivefrom
 
@@ -4892,7 +4905,7 @@ Alphabetical field index -- 338 unique fields referenced.
 #### manualdiscountamount
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote Product > general > pricing](#21-quote-product-main-active)
+- [Form: Quote Product > general > pricing](#21-quote-product---main---active)
 - [Report: PAQuoteReport > QuoteHeader > quotedetail](#51-paquotereport)
 - [Report: SummaryQuoteReport > QuoteHeader > quotedetail](#54-summaryquotereport)
 - [Report: iGradQuoteReport > QuoteHeader > quotedetail](#56-igradquotereport)
@@ -5294,7 +5307,7 @@ Alphabetical field index -- 338 unique fields referenced.
 #### quoteid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote Product (Header)](#21-quote-product-main-active)
+- [Form: Quote Product (Header)](#21-quote-product---main---active)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#51-paquotereport)
 - [Report: PAQuoteSubReport > QuoteLines (Filter)](#52-paquotesubreport)
 - [Report: SoleSourceLetterSub-Report > QuoteLineData (Filter)](#53-solesourcelettersub-report)
@@ -5395,23 +5408,23 @@ Alphabetical field index -- 338 unique fields referenced.
 
 #### rolluprulestep1_1
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 
 #### rolluprulestep1_2
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 
 #### rolluprulestep1_3
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 
 #### rolluprulestep1_4
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 
 #### rolluprulestep1_5
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 
 #### salesorderdetailid
 

@@ -1,13 +1,26 @@
 # Azt_caseaudit Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_caseaudit |
+| **Display Name** | Case Audit |
+| **Description** |  |
+| **Object Type** | Custom |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 0 |
+| **Last Update** | Never |
+| **Primary ID Field** | azt_caseauditid |
+| **Primary Name Field** | azt_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (card) -- Active](#21-information-card-active)
-  - [2.2. Case Audit (main) -- Active](#22-case-audit-main-active)
-  - [2.3. Information (quick) -- Active](#23-information-quick-active)
+  - [2.1. Information - card - Active](#21-information---card---active)
+  - [2.2. Case Audit - main - Active](#22-case-audit---main---active)
+  - [2.3. Information - quick - Active](#23-information---quick---active)
 - [3. Views](#3-views)
   - [3.1. Active Case Audits](#31-active-case-audits)
   - [3.2. Case Audit Advanced Find View](#32-case-audit-advanced-find-view)
@@ -85,7 +98,7 @@
   - [8.4. azt_paymentlibrary](#84-azt_paymentlibrary)
   - [8.5. azt_productdiscountlibrary](#85-azt_productdiscountlibrary)
   - [8.6. azt_splitallocation](#86-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -171,7 +184,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -210,7 +223,7 @@ Total fields: **21**
 
 Total forms: **3**
 
-### 2.1. Information (card) -- Active
+### 2.1. Information - card - Active
 
 - **Form ID:** `{ab06d9ac-d021-4e57-9177-d30fd0e25ad5}`
 - **Presentation:** UCI/Tablet
@@ -239,7 +252,7 @@ Total forms: **3**
 | [ownerid](#ownerid) | Owner | No | Yes |
 | [createdon](#createdon) | Created On | No | Yes |
 
-### 2.2. Case Audit (main) -- Active
+### 2.2. Case Audit - main - Active
 
 - **Form ID:** `{19158311-bc4b-4157-915a-873cfa16432e}`
 - **Presentation:** UCI/Tablet
@@ -271,7 +284,7 @@ Total forms: **3**
 | [azt_name](#azt_name) | Name | No | Yes |
 | [ownerid](#ownerid) | Owner | No | Yes |
 
-### 2.3. Information (quick) -- Active
+### 2.3. Information - quick - Active
 
 - **Form ID:** `{9fb145d2-ec37-46d6-bf39-6b3d493e81bc}`
 - **Presentation:** UCI/Tablet
@@ -1291,7 +1304,7 @@ Total JS files referencing Azt_caseaudit fields: **6**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_caseaudit: **0**
 
@@ -3457,7 +3470,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -4332,9 +4345,9 @@ Alphabetical field index -- 326 unique fields referenced.
 #### azt_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Details](#21-information-card-active)
-- [Form: Case Audit > Administration > Section](#22-case-audit-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Details](#21-information---card---active)
+- [Form: Case Audit > Administration > Section](#22-case-audit---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Active Case Audits](#31-active-case-audits)
 - [View: Active Case Audits (Sort)](#31-active-case-audits)
 - [View: Case Audit Advanced Find View](#32-case-audit-advanced-find-view)
@@ -4390,8 +4403,8 @@ Alphabetical field index -- 326 unique fields referenced.
 #### azt_newownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case Audit (Header)](#22-case-audit-main-active)
-- [Form: Case Audit > General > General](#22-case-audit-main-active)
+- [Form: Case Audit (Header)](#22-case-audit---main---active)
+- [Form: Case Audit > General > General](#22-case-audit---main---active)
 - [View: Related Case Audits](#38-related-case-audits)
 - [Plugin: CaseAudit (Write)](#1014-caseaudit)
 - [Relationship: azt_systemuser_azt_caseaudit](#12-relationships)
@@ -4574,8 +4587,8 @@ Alphabetical field index -- 326 unique fields referenced.
 #### azt_previousownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case Audit (Header)](#22-case-audit-main-active)
-- [Form: Case Audit > General > General](#22-case-audit-main-active)
+- [Form: Case Audit (Header)](#22-case-audit---main---active)
+- [Form: Case Audit > General > General](#22-case-audit---main---active)
 - [View: Related Case Audits](#38-related-case-audits)
 - [Plugin: CaseAudit (Write)](#1014-caseaudit)
 - [Relationship: azt_previousowner_azt_caseaudit](#12-relationships)
@@ -4941,7 +4954,7 @@ Alphabetical field index -- 326 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
+- [Form: Information > general > Footer](#21-information---card---active)
 - [View: Active Case Audits](#31-active-case-audits)
 - [View: Case Audit Advanced Find View](#32-case-audit-advanced-find-view)
 - [View: Case Audit Associated View](#33-case-audit-associated-view)
@@ -5234,7 +5247,7 @@ Alphabetical field index -- 326 unique fields referenced.
 #### modifiedon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case Audit (Header)](#22-case-audit-main-active)
+- [Form: Case Audit (Header)](#22-case-audit---main---active)
 - [View: Related Case Audits](#38-related-case-audits)
 - [View: Related Case Audits (Sort)](#38-related-case-audits)
 - [Plugin: AccountReassignmentShareRecords (Sort)](#104-accountreassignmentsharerecords)
@@ -5347,9 +5360,9 @@ Alphabetical field index -- 326 unique fields referenced.
 #### ownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
-- [Form: Case Audit > Administration > Section](#22-case-audit-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Footer](#21-information---card---active)
+- [Form: Case Audit > Administration > Section](#22-case-audit---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: My Case Audits (Filter)](#36-my-case-audits)
 - [Workflow: AllocationsAssigntoTeam (Read)](#73-allocationsassigntoteam)
 - [Workflow: AppointmentAuto-Assign (Read)](#74-appointmentauto-assign)
@@ -5809,7 +5822,7 @@ Alphabetical field index -- 326 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Header](#21-information-card-active)
+- [Form: Information > general > Header](#21-information---card---active)
 - [Workflow: BatchCreateEngagements (Write)](#76-batchcreateengagements)
 - [Workflow: CloneOrder (Write)](#717-cloneorder)
 - [Workflow: EmailDeleteSendQuoteDrafts (Read)](#724-emaildeletesendquotedrafts)

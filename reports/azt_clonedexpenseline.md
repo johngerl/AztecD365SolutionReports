@@ -1,13 +1,26 @@
 # Azt_clonedexpenseline Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_clonedexpenseline |
+| **Display Name** | Cloned Expense Line |
+| **Description** |  |
+| **Object Type** | Custom |
+| **Ownership Type** | OrgOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 0 |
+| **Last Update** | Never |
+| **Primary ID Field** | azt_clonedexpenselineid |
+| **Primary Name Field** | azt_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (card) -- Active](#21-information-card-active)
-  - [2.2. Information (main) -- Active](#22-information-main-active)
-  - [2.3. Information (quick) -- Active](#23-information-quick-active)
+  - [2.1. Information - card - Active](#21-information---card---active)
+  - [2.2. Information - main - Active](#22-information---main---active)
+  - [2.3. Information - quick - Active](#23-information---quick---active)
 - [3. Views](#3-views)
   - [3.1. Active Cloned Expense Lines](#31-active-cloned-expense-lines)
   - [3.2. Cloned Expense Line Advanced Find View](#32-cloned-expense-line-advanced-find-view)
@@ -72,7 +85,7 @@
   - [8.3. azt_paymentlibrary](#83-azt_paymentlibrary)
   - [8.4. azt_productdiscountlibrary](#84-azt_productdiscountlibrary)
   - [8.5. azt_splitallocation](#85-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -158,7 +171,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -191,7 +204,7 @@ Total fields: **15**
 
 Total forms: **3**
 
-### 2.1. Information (card) -- Active
+### 2.1. Information - card - Active
 
 - **Form ID:** `{a681ac8b-b491-4050-bfc0-53c2bdc4ef3b}`
 - **Presentation:** UCI/Tablet
@@ -220,7 +233,7 @@ Total forms: **3**
 | [ownerid](#ownerid) |  | No | Yes |
 | [createdon](#createdon) | Created On | No | Yes |
 
-### 2.2. Information (main) -- Active
+### 2.2. Information - main - Active
 
 - **Form ID:** `{53d3e781-caa2-4e1c-bc32-126b33ca3d63}`
 - **Presentation:** UCI/Tablet
@@ -234,7 +247,7 @@ Total forms: **3**
 |-------|-------|----------|---------|
 | [azt_name](#azt_name) | Cloned Expense Line ID | No | Yes |
 
-### 2.3. Information (quick) -- Active
+### 2.3. Information - quick - Active
 
 - **Form ID:** `{d69b907a-1476-475c-89cc-7c0ad440fe29}`
 - **Presentation:** UCI/Tablet
@@ -1057,7 +1070,7 @@ Total JS files referencing Azt_clonedexpenseline fields: **5**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_clonedexpenseline: **0**
 
@@ -3217,7 +3230,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -4091,9 +4104,9 @@ Alphabetical field index -- 326 unique fields referenced.
 #### azt_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Details](#21-information-card-active)
-- [Form: Information > General > General](#22-information-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Details](#21-information---card---active)
+- [Form: Information > General > General](#22-information---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Active Cloned Expense Lines](#31-active-cloned-expense-lines)
 - [View: Active Cloned Expense Lines (Sort)](#31-active-cloned-expense-lines)
 - [View: Cloned Expense Line Advanced Find View](#32-cloned-expense-line-advanced-find-view)
@@ -4690,7 +4703,7 @@ Alphabetical field index -- 326 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
+- [Form: Information > general > Footer](#21-information---card---active)
 - [View: Active Cloned Expense Lines](#31-active-cloned-expense-lines)
 - [View: Cloned Expense Line Advanced Find View](#32-cloned-expense-line-advanced-find-view)
 - [View: Cloned Expense Line Associated View](#33-cloned-expense-line-associated-view)
@@ -5097,7 +5110,7 @@ Alphabetical field index -- 326 unique fields referenced.
 
 #### ownerid
 
-- [Form: Information > general > Footer](#21-information-card-active)
+- [Form: Information > general > Footer](#21-information---card---active)
 - [Plugin: AccountReassignmentShareRecords (Read)](#104-accountreassignmentsharerecords)
 - [Plugin: ActivityRegardingGetState (Read)](#109-activityregardinggetstate)
 - [Plugin: CaseAudit (Read)](#1014-caseaudit)
@@ -5520,7 +5533,7 @@ Alphabetical field index -- 326 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Header](#21-information-card-active)
+- [Form: Information > general > Header](#21-information---card---active)
 - [Workflow: BatchCreateEngagements (Write)](#74-batchcreateengagements)
 - [Workflow: CloneOrder (Write)](#712-cloneorder)
 - [Workflow: EmailDeleteSendQuoteDrafts (Read)](#719-emaildeletesendquotedrafts)

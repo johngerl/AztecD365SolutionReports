@@ -1,11 +1,24 @@
 # Quote Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | quote |
+| **Display Name** | Quote |
+| **Description** | Formal offer for products and/or services, proposed at specific prices and related payment terms, which is sent to a prospective customer. |
+| **Object Type** | Standard |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | True |
+| **Total Rows** | 54199 |
+| **Last Update** | 2026-03-20 22:35:47 |
+| **Primary ID Field** | quoteid |
+| **Primary Name Field** | name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Quote (main) -- Active](#21-quote-main-active)
+  - [2.1. Quote - main - Active](#21-quote---main---active)
 - [3. Views](#3-views)
   - [3.1. Active Quotes](#31-active-quotes)
   - [3.2. All Quotes](#32-all-quotes)
@@ -93,7 +106,7 @@
   - [8.11. azt_quotelibrary](#811-azt_quotelibrary)
   - [8.12. azt_sendquote](#812-azt_sendquote)
   - [8.13. azt_splitinvoice](#813-azt_splitinvoice)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -179,7 +192,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -193,9 +206,9 @@ Total fields: **76**
 | 1 | [accountid](#accountid) | Account | lookup |  | No | none | 2026-03-20 22:35:47 | true |  |  |  | Quote | AccountId | AccountId |  |  |  |  |  |  |  | [12](#10-plugin-source-code-analysis) |  |  |  |  |
 | 2 | [azt_defaultfreightamount](#azt_defaultfreightamount) | Default Freight Amount | money |  | Yes | none | 2026-03-20 22:35:47 | true |  |  |  |  |  |  | [1](#2-forms) | [1](#3-views) |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 3 | [azt_defaultfreightamount_base](#azt_defaultfreightamount_base) | Default Freight Amount (Base) | money |  | Yes | none | 2026-03-20 22:35:47 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 4 | [azt_discretionarydiscount](#azt_discretionarydiscount) | Discretionary Discount | money |  | Yes | none | 2026-03-20 22:35:47 | true |  |  |  |  |  |  | [1](#2-forms) | [2](#3-views) |  | [3](#5-reports) |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 4 | [azt_discretionarydiscount](#azt_discretionarydiscount) | Discretionary Discount | money |  | Yes | none | 2026-03-20 22:35:47 | true |  |  |  |  |  |  | [1](#2-forms) | [2](#3-views) |  | [3](#5-reports) |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 5 | [azt_discretionarydiscount_base](#azt_discretionarydiscount_base) | Discretionary Discount (Base) | money |  | Yes | none | 2026-03-20 22:35:47 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 6 | [azt_discretionarydiscountamt](#azt_discretionarydiscountamt) | Discretionary Discount Amt | money |  | Yes | none | 2024-11-10 17:15:24 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  | [1](#9-formulas-rollups) | [2](#10-plugin-source-code-analysis) |  |  |  |  |
+| 6 | [azt_discretionarydiscountamt](#azt_discretionarydiscountamt) | Discretionary Discount Amt | money |  | Yes | none | 2024-11-10 17:15:24 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  | [1](#9-formulas-and-rollups) | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 7 | [azt_discretionarydiscountamt_base](#azt_discretionarydiscountamt_base) | Discretionary Discount Amt (Base) | money |  | Yes | none | 2024-11-10 17:15:24 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 8 | [azt_freightamtapproved](#azt_freightamtapproved) | Freight Amt Approved? | bit | 1: Yes, 0: No | Yes | none | 2026-03-20 22:35:47 | true |  |  |  | Quote | Freight_Approved__c | Freight_Approved__c | [1](#2-forms) |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 9 | [azt_historicalowner](#azt_historicalowner) | Historical Owner | nvarchar |  | Yes | none | 2026-02-13 16:44:19 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  | [3](#7-workflows) |  |  |  |  |  |  |
@@ -273,7 +286,7 @@ Total fields: **76**
 
 Total forms: **1**
 
-### 2.1. Quote (main) -- Active
+### 2.1. Quote - main - Active
 
 - **Form ID:** `{54076a2d-d043-4a1b-b061-4d06846371a9}`
 - **Presentation:** UCI/Tablet
@@ -2113,7 +2126,7 @@ Total JS files referencing Quote fields: **13**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Quote: **1**
 
@@ -4302,7 +4315,7 @@ Total relationships involving Quote: **5**
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -4641,7 +4654,7 @@ Alphabetical field index -- 361 unique fields referenced.
 
 #### accessteam
 
-- [Form: Quote > Summary_tab > description_section](#21-quote-main-active)
+- [Form: Quote > Summary_tab > description_section](#21-quote---main---active)
 
 #### accountid
 
@@ -4896,7 +4909,7 @@ Alphabetical field index -- 361 unique fields referenced.
 #### azt_defaultfreightamount
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote > Summary_tab > Freight](#21-quote-main-active)
+- [Form: Quote > Summary_tab > Freight](#21-quote---main---active)
 - [View: Quotes Needing Freight Approval](#35-quotes-needing-freight-approval)
 - [JS: azt_opportunitylibrary > setFreightAmt()](#88-azt_opportunitylibrary)
 - [JS: azt_quotelibrary > setFreight()](#811-azt_quotelibrary)
@@ -4918,13 +4931,13 @@ Alphabetical field index -- 361 unique fields referenced.
 #### azt_discretionarydiscount
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote > Summary_tab > totals](#21-quote-main-active)
+- [Form: Quote > Summary_tab > totals](#21-quote---main---active)
 - [View: Active Quotes](#31-active-quotes)
 - [View: All Quotes](#32-all-quotes)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#51-paquotereport)
 - [Report: SummaryQuoteReport > QuoteHeader (Select)](#54-summaryquotereport)
 - [Report: iGradQuoteReport > QuoteHeader (Select)](#55-igradquotereport)
-- [Formula: azt_discretionarydiscount (Target)](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount (Target)](#9-formulas-and-rollups)
 
 #### azt_discretionarydiscount_base
 
@@ -4933,8 +4946,8 @@ Alphabetical field index -- 361 unique fields referenced.
 #### azt_discretionarydiscountamt
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote > Summary_tab > totals](#21-quote-main-active)
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Form: Quote > Summary_tab > totals](#21-quote---main---active)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 - [Plugin: DiscretionaryDiscountSetHeader (Write)](#1023-discretionarydiscountsetheader)
 - [Plugin: OpptyToQuoteFieldMappings (Write)](#1050-opptytoquotefieldmappings)
 
@@ -5032,7 +5045,7 @@ Alphabetical field index -- 361 unique fields referenced.
 #### azt_freightamtapproved
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote > Summary_tab > Freight](#21-quote-main-active)
+- [Form: Quote > Summary_tab > Freight](#21-quote---main---active)
 - [JS: azt_opportunitylibrary > setFreightAmt()](#88-azt_opportunitylibrary)
 - [JS: azt_quotelibrary > setFreight()](#811-azt_quotelibrary)
 - [Plugin: QuotePreventActivateUnapprovedFreight (Read)](#1065-quotepreventactivateunapprovedfreight)
@@ -5079,7 +5092,7 @@ Alphabetical field index -- 361 unique fields referenced.
 #### azt_historicalowner
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote (Footer)](#21-quote-main-active)
+- [Form: Quote (Footer)](#21-quote---main---active)
 - [Workflow: CloneAndDeleteQuote (Read)](#715-cloneanddeletequote)
 - [Workflow: CloneAndDeleteQuote (Write)](#715-cloneanddeletequote)
 - [Workflow: CloneOpportunity (Write)](#717-cloneopportunity)
@@ -5413,7 +5426,7 @@ Alphabetical field index -- 361 unique fields referenced.
 #### azt_ponumber
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote > Summary_tab > quote information](#21-quote-main-active)
+- [Form: Quote > Summary_tab > quote information](#21-quote---main---active)
 - [Report: PackingSlip > OrderHeader (Select)](#52-packingslip)
 - [Workflow: CloneAndDeleteQuote (Read)](#715-cloneanddeletequote)
 - [Workflow: CloneAndDeleteQuote (Write)](#715-cloneanddeletequote)
@@ -5518,7 +5531,7 @@ Alphabetical field index -- 361 unique fields referenced.
 #### azt_quotedcontactid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote > Summary_tab > quote information](#21-quote-main-active)
+- [Form: Quote > Summary_tab > quote information](#21-quote---main---active)
 - [Report: SoleSourceLetter > QuoteHeader (Select)](#53-solesourceletter)
 - [Workflow: CloneAndDeleteQuote (Read)](#715-cloneanddeletequote)
 - [Workflow: CloneAndDeleteQuote (Write)](#715-cloneanddeletequote)
@@ -5550,7 +5563,7 @@ Alphabetical field index -- 361 unique fields referenced.
 #### azt_recapnotes
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote > Summary_tab > Section](#21-quote-main-active)
+- [Form: Quote > Summary_tab > Section](#21-quote---main---active)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#51-paquotereport)
 - [Report: SummaryQuoteReport > QuoteHeader (Select)](#54-summaryquotereport)
 - [Report: iGradQuoteReport > QuoteHeader (Select)](#55-igradquotereport)
@@ -5560,7 +5573,7 @@ Alphabetical field index -- 361 unique fields referenced.
 #### azt_recapnotescannedoptions
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote > Summary_tab > Section](#21-quote-main-active)
+- [Form: Quote > Summary_tab > Section](#21-quote---main---active)
 
 #### azt_recordowner
 
@@ -5569,7 +5582,7 @@ Alphabetical field index -- 361 unique fields referenced.
 #### azt_recordownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote > Summary_tab > quote information](#21-quote-main-active)
+- [Form: Quote > Summary_tab > quote information](#21-quote---main---active)
 - [View: My Quotes (Filter)](#33-my-quotes)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#51-paquotereport)
 - [Report: SummaryQuoteReport > QuoteHeader (Select)](#54-summaryquotereport)
@@ -5634,7 +5647,7 @@ Alphabetical field index -- 361 unique fields referenced.
 #### azt_requestedfreightamt
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote > Summary_tab > Freight](#21-quote-main-active)
+- [Form: Quote > Summary_tab > Freight](#21-quote---main---active)
 - [View: Quotes Needing Freight Approval](#35-quotes-needing-freight-approval)
 - [JS: azt_opportunitylibrary > setFreightAmt()](#88-azt_opportunitylibrary)
 - [JS: azt_quotelibrary > setFreight()](#811-azt_quotelibrary)
@@ -5675,7 +5688,7 @@ Alphabetical field index -- 361 unique fields referenced.
 #### azt_shippingcompany
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote > Summary_tab > quote information](#21-quote-main-active)
+- [Form: Quote > Summary_tab > quote information](#21-quote---main---active)
 
 #### azt_signedquotereceived
 
@@ -5732,7 +5745,7 @@ Alphabetical field index -- 361 unique fields referenced.
 #### azt_taxamount
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote > Summary_tab > sales_information](#21-quote-main-active)
+- [Form: Quote > Summary_tab > sales_information](#21-quote---main---active)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#51-paquotereport)
 - [Report: SummaryQuoteReport > QuoteHeader (Select)](#54-summaryquotereport)
 - [Report: iGradQuoteReport > QuoteHeader (Select)](#55-igradquotereport)
@@ -5989,7 +6002,7 @@ Alphabetical field index -- 361 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote > details_tab > tab_2_section_2](#21-quote-main-active)
+- [Form: Quote > details_tab > tab_2_section_2](#21-quote---main---active)
 - [View: Active Quotes](#31-active-quotes)
 - [View: Active Quotes (Sort)](#31-active-quotes)
 - [View: My Quotes](#33-my-quotes)
@@ -6084,7 +6097,7 @@ Alphabetical field index -- 361 unique fields referenced.
 #### discountamount
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote > Summary_tab > totals](#21-quote-main-active)
+- [Form: Quote > Summary_tab > totals](#21-quote---main---active)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#51-paquotereport)
 - [Report: SummaryQuoteReport > QuoteHeader (Select)](#54-summaryquotereport)
 - [Report: iGradQuoteReport > QuoteHeader (Select)](#55-igradquotereport)
@@ -6094,7 +6107,7 @@ Alphabetical field index -- 361 unique fields referenced.
 #### discountpercentage
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote > Summary_tab > totals](#21-quote-main-active)
+- [Form: Quote > Summary_tab > totals](#21-quote---main---active)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#51-paquotereport)
 - [Report: SummaryQuoteReport > QuoteHeader (Select)](#54-summaryquotereport)
 - [Report: iGradQuoteReport > QuoteHeader (Select)](#55-igradquotereport)
@@ -6103,7 +6116,7 @@ Alphabetical field index -- 361 unique fields referenced.
 #### effectivefrom
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote > details_tab > tab_2_section_2](#21-quote-main-active)
+- [Form: Quote > details_tab > tab_2_section_2](#21-quote---main---active)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#51-paquotereport)
 - [Report: SummaryQuoteReport > QuoteHeader (Select)](#54-summaryquotereport)
 - [Report: iGradQuoteReport > QuoteHeader (Select)](#55-igradquotereport)
@@ -6114,7 +6127,7 @@ Alphabetical field index -- 361 unique fields referenced.
 #### effectiveto
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote > details_tab > tab_2_section_2](#21-quote-main-active)
+- [Form: Quote > details_tab > tab_2_section_2](#21-quote---main---active)
 - [View: Quotes Needing Freight Approval](#35-quotes-needing-freight-approval)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#51-paquotereport)
 - [Report: SummaryQuoteReport > QuoteHeader (Select)](#54-summaryquotereport)
@@ -6194,7 +6207,7 @@ Alphabetical field index -- 361 unique fields referenced.
 #### freightamount
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote > Summary_tab > totals](#21-quote-main-active)
+- [Form: Quote > Summary_tab > totals](#21-quote---main---active)
 - [View: Quotes Needing Freight Approval](#35-quotes-needing-freight-approval)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#51-paquotereport)
 - [Report: PackingSlip > OrderHeader (Select)](#52-packingslip)
@@ -6519,7 +6532,7 @@ Alphabetical field index -- 361 unique fields referenced.
 #### ownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote > Summary_tab > description_section](#21-quote-main-active)
+- [Form: Quote > Summary_tab > description_section](#21-quote---main---active)
 - [Report: SummaryQuoteReport > QuoteHeader (Select)](#54-summaryquotereport)
 - [Workflow: CloneAndDeleteQuote (Read)](#715-cloneanddeletequote)
 - [Workflow: CloneAndDeleteQuote (Write)](#715-cloneanddeletequote)
@@ -6754,7 +6767,7 @@ Alphabetical field index -- 361 unique fields referenced.
 
 #### quotedetailsgrid
 
-- [Form: Quote > Administration > Section](#21-quote-main-active)
+- [Form: Quote > Administration > Section](#21-quote---main---active)
 
 #### quoteid
 
@@ -6795,7 +6808,7 @@ Alphabetical field index -- 361 unique fields referenced.
 
 #### quotelines
 
-- [Form: Quote > Summary_tab > products](#21-quote-main-active)
+- [Form: Quote > Summary_tab > products](#21-quote---main---active)
 
 #### quotenumber
 
@@ -6877,11 +6890,11 @@ Alphabetical field index -- 361 unique fields referenced.
 
 #### rolluprulestep1_1
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 
 #### rolluprulestep1_2
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 
 #### salesorderdetailid
 
@@ -6945,7 +6958,7 @@ Alphabetical field index -- 361 unique fields referenced.
 #### shipto_contactname
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote > Summary_tab > quote information](#21-quote-main-active)
+- [Form: Quote > Summary_tab > quote information](#21-quote---main---active)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#51-paquotereport)
 - [Report: PackingSlip > OrderHeader (Select)](#52-packingslip)
 - [Report: iGradQuoteReport > QuoteHeader (Select)](#55-igradquotereport)
@@ -7003,7 +7016,7 @@ Alphabetical field index -- 361 unique fields referenced.
 #### shipto_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote > Summary_tab > quote information](#21-quote-main-active)
+- [Form: Quote > Summary_tab > quote information](#21-quote---main---active)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#51-paquotereport)
 - [Report: PackingSlip > OrderHeader (Select)](#52-packingslip)
 - [Workflow: CloneAndDeleteQuote (Read)](#715-cloneanddeletequote)
@@ -7232,7 +7245,7 @@ Alphabetical field index -- 361 unique fields referenced.
 #### willcall
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Quote > Summary_tab > addresses](#21-quote-main-active)
+- [Form: Quote > Summary_tab > addresses](#21-quote---main---active)
 - [Workflow: CloneAndDeleteQuote (Write)](#715-cloneanddeletequote)
 
 #### zipcode

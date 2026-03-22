@@ -1,13 +1,26 @@
 # Azt_customertraining Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_customertraining |
+| **Display Name** | Customer Training |
+| **Description** | Represents each training the contact for the company attends a training. |
+| **Object Type** | Custom |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 2640 |
+| **Last Update** | 2025-12-15 14:30:06 |
+| **Primary ID Field** | azt_customertrainingid |
+| **Primary Name Field** | azt_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (card) -- Active](#21-information-card-active)
-  - [2.2. Customer Training (main) -- Active](#22-customer-training-main-active)
-  - [2.3. Information (quick) -- Active](#23-information-quick-active)
+  - [2.1. Information - card - Active](#21-information---card---active)
+  - [2.2. Customer Training - main - Active](#22-customer-training---main---active)
+  - [2.3. Information - quick - Active](#23-information---quick---active)
 - [3. Views](#3-views)
   - [3.1. Active Customer Trainings](#31-active-customer-trainings)
   - [3.2. Customer Training Advanced Find View](#32-customer-training-advanced-find-view)
@@ -84,7 +97,7 @@
   - [8.4. azt_paymentlibrary](#84-azt_paymentlibrary)
   - [8.5. azt_productdiscountlibrary](#85-azt_productdiscountlibrary)
   - [8.6. azt_splitallocation](#86-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -170,7 +183,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -210,7 +223,7 @@ Total fields: **22**
 
 Total forms: **3**
 
-### 2.1. Information (card) -- Active
+### 2.1. Information - card - Active
 
 - **Form ID:** `{5e286c63-e48e-4b75-b43e-c5912f0695ea}`
 - **Presentation:** UCI/Tablet
@@ -239,7 +252,7 @@ Total forms: **3**
 | [ownerid](#ownerid) | Owner | No | Yes |
 | [createdon](#createdon) | Created On | No | Yes |
 
-### 2.2. Customer Training (main) -- Active
+### 2.2. Customer Training - main - Active
 
 - **Form ID:** `{805bd442-f960-4b40-bce3-b4c71f5d4317}`
 - **Presentation:** UCI/Tablet
@@ -263,7 +276,7 @@ Total forms: **3**
 | [azt_contactid](#azt_contactid) | Contact | No | Yes |
 | [azt_dateoftraining](#azt_dateoftraining) | Date of Training | No | Yes |
 
-### 2.3. Information (quick) -- Active
+### 2.3. Information - quick - Active
 
 - **Form ID:** `{a15dd342-cba8-4422-ae75-13716a7813b1}`
 - **Presentation:** UCI/Tablet
@@ -1308,7 +1321,7 @@ Total JS files referencing Azt_customertraining fields: **6**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_customertraining: **0**
 
@@ -3474,7 +3487,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -3862,7 +3875,7 @@ Alphabetical field index -- 327 unique fields referenced.
 #### azt_accountid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Customer Training > General > General](#22-customer-training-main-active)
+- [Form: Customer Training > General > General](#22-customer-training---main---active)
 - [View: Active Customer Trainings](#31-active-customer-trainings)
 - [View: Customer Training Advanced Find View](#32-customer-training-advanced-find-view)
 - [View: Customer Training Associated View](#33-customer-training-associated-view)
@@ -4033,7 +4046,7 @@ Alphabetical field index -- 327 unique fields referenced.
 #### azt_contactid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Customer Training > General > General](#22-customer-training-main-active)
+- [Form: Customer Training > General > General](#22-customer-training---main---active)
 - [View: Active Customer Trainings](#31-active-customer-trainings)
 - [View: Customer Training Advanced Find View](#32-customer-training-advanced-find-view)
 - [View: Customer Training Associated View](#33-customer-training-associated-view)
@@ -4083,7 +4096,7 @@ Alphabetical field index -- 327 unique fields referenced.
 #### azt_dateoftraining
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Customer Training > General > General](#22-customer-training-main-active)
+- [Form: Customer Training > General > General](#22-customer-training---main---active)
 - [View: Active Customer Trainings](#31-active-customer-trainings)
 - [View: Active Customer Trainings (Sort)](#31-active-customer-trainings)
 - [View: Customer Training Advanced Find View](#32-customer-training-advanced-find-view)
@@ -4392,9 +4405,9 @@ Alphabetical field index -- 327 unique fields referenced.
 #### azt_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Details](#21-information-card-active)
-- [Form: Customer Training > General > General](#22-customer-training-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Details](#21-information---card---active)
+- [Form: Customer Training > General > General](#22-customer-training---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Active Customer Trainings](#31-active-customer-trainings)
 - [View: Customer Training Advanced Find View](#32-customer-training-advanced-find-view)
 - [View: Customer Training Advanced Find View (Sort)](#32-customer-training-advanced-find-view)
@@ -4841,7 +4854,7 @@ Alphabetical field index -- 327 unique fields referenced.
 #### azt_trainingid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Customer Training (Header)](#22-customer-training-main-active)
+- [Form: Customer Training (Header)](#22-customer-training---main---active)
 - [View: Active Customer Trainings](#31-active-customer-trainings)
 - [View: Customer Training Advanced Find View](#32-customer-training-advanced-find-view)
 - [View: Quick Find Active Customer Trainings](#37-quick-find-active-customer-trainings)
@@ -4995,7 +5008,7 @@ Alphabetical field index -- 327 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
+- [Form: Information > general > Footer](#21-information---card---active)
 - [View: Inactive Customer Trainings](#35-inactive-customer-trainings)
 - [Workflow: CasePendingAssignmentNotification (Read)](#77-casependingassignmentnotification)
 - [Workflow: CaseRecordOwnerAssignmentNotification (Read)](#710-caserecordownerassignmentnotification)
@@ -5393,9 +5406,9 @@ Alphabetical field index -- 327 unique fields referenced.
 #### ownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
-- [Form: Customer Training > General > General](#22-customer-training-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Footer](#21-information---card---active)
+- [Form: Customer Training > General > General](#22-customer-training---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Active Customer Trainings](#31-active-customer-trainings)
 - [View: Customer Training Advanced Find View](#32-customer-training-advanced-find-view)
 - [View: Customer Training Associated View](#33-customer-training-associated-view)
@@ -5859,7 +5872,7 @@ Alphabetical field index -- 327 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Header](#21-information-card-active)
+- [Form: Information > general > Header](#21-information---card---active)
 - [Workflow: BatchCreateEngagements (Write)](#76-batchcreateengagements)
 - [Workflow: CloneOrder (Write)](#717-cloneorder)
 - [Workflow: EmailDeleteSendQuoteDrafts (Read)](#724-emaildeletesendquotedrafts)

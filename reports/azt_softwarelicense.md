@@ -1,13 +1,26 @@
 # Azt_softwarelicense Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_softwarelicense |
+| **Display Name** | Software License |
+| **Description** |  |
+| **Object Type** | Custom |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | True |
+| **Total Rows** | 49016 |
+| **Last Update** | 2026-03-21 07:15:14 |
+| **Primary ID Field** | azt_softwarelicenseid |
+| **Primary Name Field** | azt_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (card) -- Active](#21-information-card-active)
-  - [2.2. Software License (main) -- Active](#22-software-license-main-active)
-  - [2.3. Information (quick) -- Active](#23-information-quick-active)
+  - [2.1. Information - card - Active](#21-information---card---active)
+  - [2.2. Software License - main - Active](#22-software-license---main---active)
+  - [2.3. Information - quick - Active](#23-information---quick---active)
 - [3. Views](#3-views)
   - [3.1. Account Software Licenses](#31-account-software-licenses)
   - [3.2. Accounts With Expired Licenses Last 90 Days](#32-accounts-with-expired-licenses-last-90-days)
@@ -107,7 +120,7 @@
   - [8.12. azt_quotelibrary](#812-azt_quotelibrary)
   - [8.13. azt_softwarelicenselibrary](#813-azt_softwarelicenselibrary)
   - [8.14. azt_splitallocation](#814-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -193,7 +206,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -277,7 +290,7 @@ Total fields: **66**
 
 Total forms: **3**
 
-### 2.1. Information (card) -- Active
+### 2.1. Information - card - Active
 
 - **Form ID:** `{0fea99c7-30ea-4737-806b-a7d433a7768b}`
 - **Presentation:** UCI/Tablet
@@ -306,7 +319,7 @@ Total forms: **3**
 | [ownerid](#ownerid) | Owner | No | Yes |
 | [createdon](#createdon) | Created On | No | Yes |
 
-### 2.2. Software License (main) -- Active
+### 2.2. Software License - main - Active
 
 - **Form ID:** `{0e1e5231-0cd4-4aa3-a60a-a45683586257}`
 - **Presentation:** UCI/Tablet
@@ -415,7 +428,7 @@ Total forms: **3**
 | onchange | azt_numberoflicenses | `ALL.AllocationFunctions.validateNumberOfLicenses` | `azt_allocationgridlibrary` | true |
 | onchange | azt_voucherissued | `SL.LicenseFunctions.setVoucherIssued` | `azt_softwarelicenselibrary` | true |
 
-### 2.3. Information (quick) -- Active
+### 2.3. Information - quick - Active
 
 - **Form ID:** `{3063c261-af77-4acb-b631-a35da0c76da1}`
 - **Presentation:** UCI/Tablet
@@ -2054,7 +2067,7 @@ Total JS files referencing Azt_softwarelicense fields: **14**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_softwarelicense: **0**
 
@@ -4242,7 +4255,7 @@ Total relationships involving Azt_softwarelicense: **19**
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -4637,8 +4650,8 @@ Alphabetical field index -- 366 unique fields referenced.
 #### azt_accountid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License (Header)](#22-software-license-main-active)
-- [Form: Software License > Administration > Section](#22-software-license-main-active)
+- [Form: Software License (Header)](#22-software-license---main---active)
+- [Form: Software License > Administration > Section](#22-software-license---main---active)
 - [View: Accounts With Expired Licenses Last 90 Days](#32-accounts-with-expired-licenses-last-90-days)
 - [View: Accounts With Expired Licenses Last 90 Days (Sort)](#32-accounts-with-expired-licenses-last-90-days)
 - [View: Accounts With Expired Licenses This Year](#33-accounts-with-expired-licenses-this-year)
@@ -4751,7 +4764,7 @@ Alphabetical field index -- 366 unique fields referenced.
 #### azt_azteccompanionserial
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License > General > LAN](#22-software-license-main-active)
+- [Form: Software License > General > LAN](#22-software-license---main---active)
 - [View: Active Companions](#36-active-companions)
 - [View: Active Companions (Filter)](#36-active-companions)
 - [View: Quick Find Active Software Licenses (Filter)](#311-quick-find-active-software-licenses)
@@ -4761,7 +4774,7 @@ Alphabetical field index -- 366 unique fields referenced.
 #### azt_azteccompaniontype
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License > General > LAN](#22-software-license-main-active)
+- [Form: Software License > General > LAN](#22-software-license---main---active)
 - [View: Active Companions](#36-active-companions)
 - [Workflow: CloneLicense (Read)](#717-clonelicense)
 - [Workflow: CloneLicense (Write)](#717-clonelicense)
@@ -4796,19 +4809,19 @@ Alphabetical field index -- 366 unique fields referenced.
 #### azt_certificateissued
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License > User License > User License Details](#22-software-license-main-active)
+- [Form: Software License > User License > User License Details](#22-software-license---main---active)
 
 #### azt_certificateissuedon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License > User License > User License Details](#22-software-license-main-active)
+- [Form: Software License > User License > User License Details](#22-software-license---main---active)
 - [Workflow: CloneLicense (Read)](#717-clonelicense)
 - [Workflow: CloneLicense (Write)](#717-clonelicense)
 
 #### azt_certificatesignedby
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License > User License > User License Details](#22-software-license-main-active)
+- [Form: Software License > User License > User License Details](#22-software-license---main---active)
 - [Workflow: CloneLicense (Read)](#717-clonelicense)
 - [Workflow: CloneLicense (Write)](#717-clonelicense)
 
@@ -4863,9 +4876,9 @@ Alphabetical field index -- 366 unique fields referenced.
 #### azt_concurrentusers
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License (Header)](#22-software-license-main-active)
-- [Form: Software License > General > License Summary](#22-software-license-main-active)
-- [Form: Software License > Administration > Section](#22-software-license-main-active)
+- [Form: Software License (Header)](#22-software-license---main---active)
+- [Form: Software License > General > License Summary](#22-software-license---main---active)
+- [Form: Software License > Administration > Section](#22-software-license---main---active)
 - [View: Account Software Licenses](#31-account-software-licenses)
 - [View: Active Software Licenses](#37-active-software-licenses)
 - [View: All Software Licenses](#38-all-software-licenses)
@@ -4885,7 +4898,7 @@ Alphabetical field index -- 366 unique fields referenced.
 #### azt_contactid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License > User License > User License Details](#22-software-license-main-active)
+- [Form: Software License > User License > User License Details](#22-software-license---main---active)
 - [Workflow: CloneLicense (Read)](#717-clonelicense)
 - [Workflow: CloneLicense (Write)](#717-clonelicense)
 - [Relationship: azt_contact_azt_softwarelicense](#12-relationships)
@@ -4946,7 +4959,7 @@ Alphabetical field index -- 366 unique fields referenced.
 #### azt_donationlicense
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License > General > License Summary](#22-software-license-main-active)
+- [Form: Software License > General > License Summary](#22-software-license---main---active)
 
 #### azt_duedate
 
@@ -5157,7 +5170,7 @@ Alphabetical field index -- 366 unique fields referenced.
 #### azt_licensestatus
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License > General > License Summary](#22-software-license-main-active)
+- [Form: Software License > General > License Summary](#22-software-license---main---active)
 - [View: Account Software Licenses](#31-account-software-licenses)
 - [View: Accounts With Expired Licenses Last 90 Days (Filter)](#32-accounts-with-expired-licenses-last-90-days)
 - [View: Accounts With Expired Licenses This Year (Filter)](#33-accounts-with-expired-licenses-this-year)
@@ -5185,7 +5198,7 @@ Alphabetical field index -- 366 unique fields referenced.
 #### azt_licensetermmonths
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License > General > General](#22-software-license-main-active)
+- [Form: Software License > General > General](#22-software-license---main---active)
 - [Workflow: CloneLicense (Read)](#717-clonelicense)
 - [Workflow: CloneLicense (Write)](#717-clonelicense)
 - [JS: azt_splitallocation > splitAllocation()](#814-azt_splitallocation)
@@ -5215,7 +5228,7 @@ Alphabetical field index -- 366 unique fields referenced.
 #### azt_licensetype
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License > General > General](#22-software-license-main-active)
+- [Form: Software License > General > General](#22-software-license---main---active)
 - [View: Account Software Licenses](#31-account-software-licenses)
 - [View: Accounts With Expiring Licenses This Month](#35-accounts-with-expiring-licenses-this-month)
 - [View: Active Software Licenses](#37-active-software-licenses)
@@ -5275,9 +5288,9 @@ Alphabetical field index -- 366 unique fields referenced.
 #### azt_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Details](#21-information-card-active)
-- [Form: Software License > General > General](#22-software-license-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Details](#21-information---card---active)
+- [Form: Software License > General > General](#22-software-license---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Account Software Licenses](#31-account-software-licenses)
 - [View: Accounts With Expired Licenses Last 90 Days](#32-accounts-with-expired-licenses-last-90-days)
 - [View: Accounts With Expired Licenses This Year](#33-accounts-with-expired-licenses-this-year)
@@ -5355,12 +5368,12 @@ Alphabetical field index -- 366 unique fields referenced.
 #### azt_notes
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License > General > Notes](#22-software-license-main-active)
+- [Form: Software License > General > Notes](#22-software-license---main---active)
 
 #### azt_nucram
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License > General > LAN](#22-software-license-main-active)
+- [Form: Software License > General > LAN](#22-software-license---main---active)
 - [View: Active Companions](#36-active-companions)
 - [Workflow: CloneLicense (Read)](#717-clonelicense)
 - [Workflow: CloneLicense (Write)](#717-clonelicense)
@@ -5368,7 +5381,7 @@ Alphabetical field index -- 366 unique fields referenced.
 #### azt_nucversion
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License > General > LAN](#22-software-license-main-active)
+- [Form: Software License > General > LAN](#22-software-license---main---active)
 - [View: Active Companions](#36-active-companions)
 - [Workflow: CloneLicense (Read)](#717-clonelicense)
 - [Workflow: CloneLicense (Write)](#717-clonelicense)
@@ -5476,7 +5489,7 @@ Alphabetical field index -- 366 unique fields referenced.
 #### azt_orderlineid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License > General > General](#22-software-license-main-active)
+- [Form: Software License > General > General](#22-software-license---main---active)
 - [Plugin: OrderManuallyCreateSoftwareLicense (Write)](#1055-ordermanuallycreatesoftwarelicense)
 - [Plugin: ShipmentSetTrackingNumber (Sort)](#1079-shipmentsettrackingnumber)
 - [Relationship: azt_salesorderdetail_azt_softwarelicense](#12-relationships)
@@ -5516,7 +5529,7 @@ Alphabetical field index -- 366 unique fields referenced.
 #### azt_parentaccountid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License (Footer)](#22-software-license-main-active)
+- [Form: Software License (Footer)](#22-software-license---main---active)
 - [Workflow: CloneLicense (Read)](#717-clonelicense)
 - [Workflow: CloneLicense (Write)](#717-clonelicense)
 - [Relationship: azt_parentaccount_azt_softwarelicense](#12-relationships)
@@ -5660,8 +5673,8 @@ Alphabetical field index -- 366 unique fields referenced.
 #### azt_purchasedate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License > General > General](#22-software-license-main-active)
-- [Form: Software License > User License > User License Details](#22-software-license-main-active)
+- [Form: Software License > General > General](#22-software-license---main---active)
+- [Form: Software License > User License > User License Details](#22-software-license---main---active)
 - [View: Account Software Licenses](#31-account-software-licenses)
 - [View: Accounts With Expired Licenses Last 90 Days](#32-accounts-with-expired-licenses-last-90-days)
 - [View: Accounts With Expired Licenses This Year](#33-accounts-with-expired-licenses-this-year)
@@ -5714,7 +5727,7 @@ Alphabetical field index -- 366 unique fields referenced.
 #### azt_recordownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License > Administration > Section](#22-software-license-main-active)
+- [Form: Software License > Administration > Section](#22-software-license---main---active)
 - [Workflow: 0ChangeQuoteRecordOwner (Write)](#71-0changequoterecordowner)
 - [Workflow: AccountAuto-Assign (Write)](#73-accountauto-assign)
 - [Workflow: AppointmentAuto-Assign (Write)](#75-appointmentauto-assign)
@@ -5838,8 +5851,8 @@ Alphabetical field index -- 366 unique fields referenced.
 #### azt_softwareproductid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License (Header)](#22-software-license-main-active)
-- [Form: Software License > Administration > Section](#22-software-license-main-active)
+- [Form: Software License (Header)](#22-software-license---main---active)
+- [Form: Software License > Administration > Section](#22-software-license---main---active)
 - [View: Account Software Licenses](#31-account-software-licenses)
 - [View: Active Companions](#36-active-companions)
 - [View: Active Software Licenses](#37-active-software-licenses)
@@ -5866,7 +5879,7 @@ Alphabetical field index -- 366 unique fields referenced.
 #### azt_softwareversiontype
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License > General > License Summary](#22-software-license-main-active)
+- [Form: Software License > General > License Summary](#22-software-license---main---active)
 - [View: Account Software Licenses](#31-account-software-licenses)
 - [View: Software License Advanced Find View](#312-software-license-advanced-find-view)
 - [Workflow: CloneLicense (Read)](#717-clonelicense)
@@ -5881,7 +5894,7 @@ Alphabetical field index -- 366 unique fields referenced.
 #### azt_splitallocations
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License > General > License Allocations](#22-software-license-main-active)
+- [Form: Software License > General > License Allocations](#22-software-license---main---active)
 - [JS: azt_softwarelicenselibrary > onSave()](#813-azt_softwarelicenselibrary)
 - [JS: azt_splitallocation > splitAllocation()](#814-azt_splitallocation)
 
@@ -5917,8 +5930,8 @@ Alphabetical field index -- 366 unique fields referenced.
 #### azt_supportexpirationdate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License > General > General](#22-software-license-main-active)
-- [Form: Software License > User License > User License Details](#22-software-license-main-active)
+- [Form: Software License > General > General](#22-software-license---main---active)
+- [Form: Software License > User License > User License Details](#22-software-license---main---active)
 - [View: Account Software Licenses](#31-account-software-licenses)
 - [View: Account Software Licenses (Sort)](#31-account-software-licenses)
 - [View: Accounts With Expired Licenses Last 90 Days](#32-accounts-with-expired-licenses-last-90-days)
@@ -5995,32 +6008,32 @@ Alphabetical field index -- 366 unique fields referenced.
 #### azt_username
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License > User License > User License Details](#22-software-license-main-active)
+- [Form: Software License > User License > User License Details](#22-software-license---main---active)
 - [Workflow: CloneLicense (Read)](#717-clonelicense)
 - [Workflow: CloneLicense (Write)](#717-clonelicense)
 
 #### azt_voucherissued
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License > User License > User License Details](#22-software-license-main-active)
+- [Form: Software License > User License > User License Details](#22-software-license---main---active)
 - [JS: azt_softwarelicenselibrary > setVoucherIssued()](#813-azt_softwarelicenselibrary)
 
 #### azt_voucherissuedby
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License > User License > User License Details](#22-software-license-main-active)
+- [Form: Software License > User License > User License Details](#22-software-license---main---active)
 - [JS: azt_softwarelicenselibrary > setVoucherIssued()](#813-azt_softwarelicenselibrary)
 
 #### azt_voucherissuedon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License > User License > User License Details](#22-software-license-main-active)
+- [Form: Software License > User License > User License Details](#22-software-license---main---active)
 - [JS: azt_softwarelicenselibrary > setVoucherIssued()](#813-azt_softwarelicenselibrary)
 
 #### azt_vouchernumber
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Software License > User License > User License Details](#22-software-license-main-active)
+- [Form: Software License > User License > User License Details](#22-software-license---main---active)
 
 #### azt_year
 
@@ -6116,7 +6129,7 @@ Alphabetical field index -- 366 unique fields referenced.
 
 #### connections
 
-- [Form: Software License > General > Connections](#22-software-license-main-active)
+- [Form: Software License > General > Connections](#22-software-license---main---active)
 
 #### consideronlygoalownersrecords
 
@@ -6171,7 +6184,7 @@ Alphabetical field index -- 366 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
+- [Form: Information > general > Footer](#21-information---card---active)
 - [View: Account Software Licenses](#31-account-software-licenses)
 - [View: Active Software Licenses](#37-active-software-licenses)
 - [View: All Software Licenses](#38-all-software-licenses)
@@ -6434,7 +6447,7 @@ Alphabetical field index -- 366 unique fields referenced.
 
 #### licenseallocations
 
-- [Form: Software License > General > License Allocations](#22-software-license-main-active)
+- [Form: Software License > General > License Allocations](#22-software-license---main---active)
 
 #### manualdiscountamount
 
@@ -6581,9 +6594,9 @@ Alphabetical field index -- 366 unique fields referenced.
 #### ownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
-- [Form: Software License > Administration > Section](#22-software-license-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Footer](#21-information---card---active)
+- [Form: Software License > Administration > Section](#22-software-license---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: My Software Licenses (Filter)](#310-my-software-licenses)
 - [Workflow: AllocationsAssigntoTeam (Read)](#74-allocationsassigntoteam)
 - [Workflow: AppointmentAuto-Assign (Read)](#75-appointmentauto-assign)
@@ -7045,7 +7058,7 @@ Alphabetical field index -- 366 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Header](#21-information-card-active)
+- [Form: Information > general > Header](#21-information---card---active)
 - [Workflow: BatchCreateEngagements (Write)](#77-batchcreateengagements)
 - [Workflow: CloneOrder (Write)](#719-cloneorder)
 - [Workflow: EmailDeleteSendQuoteDrafts (Read)](#726-emaildeletesendquotedrafts)

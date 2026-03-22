@@ -1,11 +1,24 @@
 # Goal Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | goal |
+| **Display Name** | Goal |
+| **Description** | Target objective for a user or a team for a specified time period. |
+| **Object Type** | Standard |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | True |
+| **Total Rows** | 2175 |
+| **Last Update** | 2026-03-21 09:20:18 |
+| **Primary ID Field** | goalid |
+| **Primary Name Field** | None |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (main) -- Active](#21-information-main-active)
+  - [2.1. Information - main - Active](#21-information---main---active)
 - [3. Views](#3-views)
   - [3.1. Active Goals](#31-active-goals)
   - [3.2. My Goals for This Period](#32-my-goals-for-this-period)
@@ -15,7 +28,7 @@
 - [7. Workflows](#7-workflows)
 - [8. JavaScript Web Resources](#8-javascript-web-resources)
   - [8.1. azt_opportunityproductlibrary](#81-azt_opportunityproductlibrary)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -101,7 +114,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -145,7 +158,7 @@ Total fields: **26**
 
 Total forms: **1**
 
-### 2.1. Information (main) -- Active
+### 2.1. Information - main - Active
 
 - **Form ID:** `{a091897e-d685-4487-b61c-98158391015e}`
 - **Presentation:** Classic
@@ -315,7 +328,7 @@ Total JS files referencing Goal fields: **1**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Goal: **0**
 
@@ -2469,7 +2482,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -3192,7 +3205,7 @@ Alphabetical field index -- 321 unique fields referenced.
 #### azt_goaltype
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > information](#21-information-main-active)
+- [Form: Information > general > information](#21-information---main---active)
 - [View: Active Goals](#31-active-goals)
 - [View: My Goals for This Period](#32-my-goals-for-this-period)
 - [Plugin: CreateUserGoals (Write)](#1022-createusergoals)
@@ -3345,7 +3358,7 @@ Alphabetical field index -- 321 unique fields referenced.
 #### azt_month
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > {349a439d-6ed5-bae8-7c7d-3721869367ca} > {3a5c2dc2-2ee7-848c-83eb-a2b1e4d1c703}](#21-information-main-active)
+- [Form: Information > {349a439d-6ed5-bae8-7c7d-3721869367ca} > {3a5c2dc2-2ee7-848c-83eb-a2b1e4d1c703}](#21-information---main---active)
 
 #### azt_monthstofilteron
 

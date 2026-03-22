@@ -1,13 +1,26 @@
 # Azt_productimport Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_productimport |
+| **Display Name** | Product Import |
+| **Description** |  |
+| **Object Type** | Custom |
+| **Ownership Type** | OrgOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 1393 |
+| **Last Update** | 2024-03-15 06:04:05 |
+| **Primary ID Field** | azt_productimportid |
+| **Primary Name Field** | azt_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (card) -- Active](#21-information-card-active)
-  - [2.2. Product Import (main) -- Active](#22-product-import-main-active)
-  - [2.3. Information (quick) -- Active](#23-information-quick-active)
+  - [2.1. Information - card - Active](#21-information---card---active)
+  - [2.2. Product Import - main - Active](#22-product-import---main---active)
+  - [2.3. Information - quick - Active](#23-information---quick---active)
 - [3. Views](#3-views)
   - [3.1. Active Product Imports](#31-active-product-imports)
   - [3.2. Inactive Product Imports](#32-inactive-product-imports)
@@ -72,7 +85,7 @@
   - [8.3. azt_paymentlibrary](#83-azt_paymentlibrary)
   - [8.4. azt_productdiscountlibrary](#84-azt_productdiscountlibrary)
   - [8.5. azt_splitallocation](#85-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -158,7 +171,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -195,7 +208,7 @@ Total fields: **19**
 
 Total forms: **3**
 
-### 2.1. Information (card) -- Active
+### 2.1. Information - card - Active
 
 - **Form ID:** `{d39a31c3-2a3d-47c3-b4c0-db7fcef3e9f9}`
 - **Presentation:** UCI/Tablet
@@ -223,7 +236,7 @@ Total forms: **3**
 |-------|-------|----------|---------|
 | [createdon](#createdon) | Created On | No | Yes |
 
-### 2.2. Product Import (main) -- Active
+### 2.2. Product Import - main - Active
 
 - **Form ID:** `{05fddcd0-42ce-47d9-8b6e-021e4ec94e47}`
 - **Presentation:** UCI/Tablet
@@ -241,7 +254,7 @@ Total forms: **3**
 | [azt_salesfamilies](#azt_salesfamilies) | Sales Families | No | Yes |
 | [azt_productfamilies](#azt_productfamilies) | Product Families | No | Yes |
 
-### 2.3. Information (quick) -- Active
+### 2.3. Information - quick - Active
 
 - **Form ID:** `{4eaf9479-4198-4d47-94eb-c6b6e03d976e}`
 - **Presentation:** UCI/Tablet
@@ -1071,7 +1084,7 @@ Total JS files referencing Azt_productimport fields: **5**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_productimport: **0**
 
@@ -3231,7 +3244,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -3803,7 +3816,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_description
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Product Import > General > General](#22-product-import-main-active)
+- [Form: Product Import > General > General](#22-product-import---main---active)
 - [View: Active Product Imports](#31-active-product-imports)
 - [View: Product Import Advanced Find View](#33-product-import-advanced-find-view)
 - [Plugin: CloneExpenseLine (Read)](#1017-cloneexpenseline)
@@ -4098,9 +4111,9 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Details](#21-information-card-active)
-- [Form: Product Import > General > General](#22-product-import-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Details](#21-information---card---active)
+- [Form: Product Import > General > General](#22-product-import---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Active Product Imports](#31-active-product-imports)
 - [View: Active Product Imports (Sort)](#31-active-product-imports)
 - [View: Inactive Product Imports](#32-inactive-product-imports)
@@ -4381,14 +4394,14 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_productfamilies
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Product Import > General > General](#22-product-import-main-active)
+- [Form: Product Import > General > General](#22-product-import---main---active)
 - [View: Active Product Imports](#31-active-product-imports)
 - [View: Product Import Advanced Find View](#33-product-import-advanced-find-view)
 
 #### azt_productid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Product Import > General > General](#22-product-import-main-active)
+- [Form: Product Import > General > General](#22-product-import---main---active)
 - [View: Active Product Imports](#31-active-product-imports)
 - [View: Product Import Advanced Find View](#33-product-import-advanced-find-view)
 
@@ -4489,7 +4502,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_salesfamilies
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Product Import > General > General](#22-product-import-main-active)
+- [Form: Product Import > General > General](#22-product-import---main---active)
 - [View: Product Import Advanced Find View](#33-product-import-advanced-find-view)
 
 #### azt_salesrepid
@@ -4728,7 +4741,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
+- [Form: Information > general > Footer](#21-information---card---active)
 - [View: Active Product Imports](#31-active-product-imports)
 - [View: Inactive Product Imports](#32-inactive-product-imports)
 - [View: Product Import Advanced Find View](#33-product-import-advanced-find-view)
@@ -5557,7 +5570,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Header](#21-information-card-active)
+- [Form: Information > general > Header](#21-information---card---active)
 - [Workflow: BatchCreateEngagements (Write)](#74-batchcreateengagements)
 - [Workflow: CloneOrder (Write)](#712-cloneorder)
 - [Workflow: EmailDeleteSendQuoteDrafts (Read)](#719-emaildeletesendquotedrafts)

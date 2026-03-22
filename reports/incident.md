@@ -1,14 +1,27 @@
 # Incident Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | incident |
+| **Display Name** | Case |
+| **Description** | Service request case associated with a contract. |
+| **Object Type** | Standard |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | True |
+| **Total Rows** | 20740 |
+| **Last Update** | 2026-03-20 21:12:19 |
+| **Primary ID Field** | incidentid |
+| **Primary Name Field** | None |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Case for Interactive experience (main) -- Active](#21-case-for-interactive-experience-main-active)
-  - [2.2. Case (main) -- Active](#22-case-main-active)
-  - [2.3. Information (main) -- Inactive](#23-information-main-inactive)
-  - [2.4. Case Quick Create (quickCreate) -- Active](#24-case-quick-create-quickcreate-active)
+  - [2.1. Case for Interactive experience - main - Active](#21-case-for-interactive-experience---main---active)
+  - [2.2. Case - main - Active](#22-case---main---active)
+  - [2.3. Information - main - Inactive](#23-information---main---inactive)
+  - [2.4. Case Quick Create - quickCreate - Active](#24-case-quick-create---quickcreate---active)
 - [3. Views](#3-views)
   - [3.1. Active Cases](#31-active-cases)
   - [3.2. All Cases](#32-all-cases)
@@ -86,7 +99,7 @@
   - [8.6. azt_opportunitylibrary](#86-azt_opportunitylibrary)
   - [8.7. azt_orderlibrary](#87-azt_orderlibrary)
   - [8.8. azt_quotelibrary](#88-azt_quotelibrary)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -172,7 +185,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -188,7 +201,7 @@ Total fields: **57**
 | 3 | [adx_resolutiondate](#adx_resolutiondate) | Resolution Date | datetime |  | Yes | none | 2026-03-19 20:06:26 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  | [1](#7-workflows) |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 4 | [azt_aztecproduct](#azt_aztecproduct) | Aztec Product | picklist | 100000000: P6 - Testing Platform, 100000001: P12 - Learning Platform, 100000003: Legacy | Yes | none | 2025-05-06 13:09:38 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 5 | [azt_customersupportstatus](#azt_customersupportstatus) | Customer Support Status | bit | 1: Active, 0: Expired | Yes | none | 2026-03-20 21:12:19 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 6 | [azt_daysopen](#azt_daysopen) | Days Open | int |  | Yes | none | 2026-03-20 21:12:19 | true |  |  |  |  |  |  | [1](#2-forms) | [1](#3-views) |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 6 | [azt_daysopen](#azt_daysopen) | Days Open | int |  | Yes | none | 2026-03-20 21:12:19 | true |  |  |  |  |  |  | [1](#2-forms) | [1](#3-views) |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 7 | [azt_engagementid](#azt_engagementid) | Engagement | lookup |  | Yes | none | 2026-03-19 20:06:26 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  | [4](#7-workflows) |  | [4](#10-plugin-source-code-analysis) |  | [1](#12-relationships) |  |  |
 | 8 | [azt_firstrecordownerassignment](#azt_firstrecordownerassignment) | First Record Owner Assignment | bit | 0: No, 1: Yes | Yes | none | 2026-03-20 21:12:19 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
 | 9 | [azt_historicalowner](#azt_historicalowner) | Historical Owner | nvarchar |  | Yes | none | 2025-12-15 14:30:11 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
@@ -203,7 +216,7 @@ Total fields: **57**
 | 18 | [contractid](#contractid) | Contract | lookup |  | No | none | Never | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
 | 19 | [createdby](#createdby) | Created By | lookup |  | No | none | 2026-03-20 21:12:19 | true |  |  |  |  |  |  | [1](#2-forms) | [4](#3-views) | [4](#4-chart-visualizations) |  |  | [6](#7-workflows) |  |  |  | [1](#12-relationships) |  |  |
 | 20 | [createdbyexternalparty](#createdbyexternalparty) | Created By (External Party) | lookup |  | No | none | Never | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
-| 21 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) | true |  |  |  |  |  |  |  | [8](#3-views) |  |  |  | [2](#7-workflows) | [1](#9-formulas-rollups) | [10](#10-plugin-source-code-analysis) |  |  |  |  |
+| 21 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) | true |  |  |  |  |  |  |  | [8](#3-views) |  |  |  | [2](#7-workflows) | [1](#9-formulas-and-rollups) | [10](#10-plugin-source-code-analysis) |  |  |  |  |
 | 22 | [customerid](#customerid) | Customer | customer |  | No | systemrequired | 2026-03-20 21:12:19 | true |  |  |  |  |  |  |  | [5](#3-views) |  |  |  | [13](#7-workflows) |  | [11](#10-plugin-source-code-analysis) |  | [2](#12-relationships) |  |  |
 | 23 | [description](#description) | Description | ntext |  | No | none | 2026-03-20 21:12:19 | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  | [2](#7-workflows) |  | [7](#10-plugin-source-code-analysis) |  |  |  |  |
 | 24 | [entitlementid](#entitlementid) | Entitlement | lookup |  | No | none | Never | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
@@ -247,7 +260,7 @@ Total fields: **57**
 
 Total forms: **4**
 
-### 2.1. Case for Interactive experience (main) -- Active
+### 2.1. Case for Interactive experience - main - Active
 
 - **Form ID:** `{915f6055-2e07-4276-ae08-2b96c8d02c57}`
 - **Presentation:** Other
@@ -282,7 +295,7 @@ Total forms: **4**
 
 ##### Section: KnowledgeArticles
 
-### 2.2. Case (main) -- Active
+### 2.2. Case - main - Active
 
 - **Form ID:** `{4a63c8d1-6c1e-48ec-9db4-3e6c7155334c}`
 - **Presentation:** UCI/Tablet
@@ -389,7 +402,7 @@ Total forms: **4**
 | onload |  | `Mscrm.CSIntelligence.CopilotCaseSummary.setVisibilityOfCaseSummary` | `msdyn_CopilotCaseSummaryLibrary.js` | true |
 | onload |  | `C.CaseFunctions.onLoad` | `azt_caselibrary` | true |
 
-### 2.3. Information (main) -- Inactive
+### 2.3. Information - main - Inactive
 
 - **Form ID:** `{f658c846-f74c-459b-b591-b97558958106}`
 - **Presentation:** Classic
@@ -415,7 +428,7 @@ Total forms: **4**
 |-------|-------|----------|---------|
 | [WebResource_RecordWall](#webresource_recordwall) | RecordWall | No | Yes |
 
-### 2.4. Case Quick Create (quickCreate) -- Active
+### 2.4. Case Quick Create - quickCreate - Active
 
 - **Form ID:** `{8e10b902-0b3e-441c-8b12-88e6c1793848}`
 - **Presentation:** Classic
@@ -1543,7 +1556,7 @@ Total JS files referencing Incident fields: **8**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Incident: **1**
 
@@ -3761,7 +3774,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -4102,7 +4115,7 @@ Alphabetical field index -- 367 unique fields referenced.
 
 #### accessteam
 
-- [Form: Case > general > Customer](#22-case-main-active)
+- [Form: Case > general > Customer](#22-case---main---active)
 
 #### accountid
 
@@ -4157,13 +4170,13 @@ Alphabetical field index -- 367 unique fields referenced.
 #### adx_resolution
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case > general > Details](#22-case-main-active)
+- [Form: Case > general > Details](#22-case---main---active)
 - [Workflow: BatchCaseResolution (Write)](#74-batchcaseresolution)
 
 #### adx_resolutiondate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case > general > Details](#22-case-main-active)
+- [Form: Case > general > Details](#22-case---main---active)
 - [Workflow: BatchCaseResolution (Write)](#74-batchcaseresolution)
 - [Plugin: CaseClose (Write)](#1015-caseclose)
 
@@ -4182,7 +4195,7 @@ Alphabetical field index -- 367 unique fields referenced.
 
 #### audit
 
-- [Form: Case > general > Customer](#22-case-main-active)
+- [Form: Case > general > Customer](#22-case---main---active)
 
 #### azt_account
 
@@ -4379,9 +4392,9 @@ Alphabetical field index -- 367 unique fields referenced.
 #### azt_daysopen
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case (Header)](#22-case-main-active)
+- [Form: Case (Header)](#22-case---main---active)
 - [View: Active Cases](#31-active-cases)
-- [Formula: azt_daysopen (Target)](#9-formulas-rollups)
+- [Formula: azt_daysopen (Target)](#9-formulas-and-rollups)
 
 #### azt_defaultfreightamount
 
@@ -4424,7 +4437,7 @@ Alphabetical field index -- 367 unique fields referenced.
 #### azt_engagementid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case > general > Details](#22-case-main-active)
+- [Form: Case > general > Details](#22-case---main---active)
 - [Workflow: AppointmentAuto-Assign (Read)](#73-appointmentauto-assign)
 - [Workflow: EngagementRecordOwnerTeam (Read)](#725-engagementrecordownerteam)
 - [Workflow: PhonecallAuto-Assign (Read)](#733-phonecallauto-assign)
@@ -4488,7 +4501,7 @@ Alphabetical field index -- 367 unique fields referenced.
 #### azt_firstrecordownerassignment
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case > general > Section](#22-case-main-active)
+- [Form: Case > general > Section](#22-case---main---active)
 - [Workflow: CaseRecordOwnerAssignmentNotification (Read)](#711-caserecordownerassignmentnotification)
 - [Workflow: CaseRecordOwnerAssignmentNotification (Write)](#711-caserecordownerassignmentnotification)
 
@@ -4548,7 +4561,7 @@ Alphabetical field index -- 367 unique fields referenced.
 #### azt_historicalowner
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case (Footer)](#22-case-main-active)
+- [Form: Case (Footer)](#22-case---main---active)
 - [Workflow: CloneAndDeleteQuote (Write)](#713-cloneanddeletequote)
 - [Workflow: CloneOpportunity (Write)](#715-cloneopportunity)
 
@@ -5002,8 +5015,8 @@ Alphabetical field index -- 367 unique fields referenced.
 #### azt_recordownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case (Header)](#22-case-main-active)
-- [Form: Case > general > Section](#22-case-main-active)
+- [Form: Case (Header)](#22-case---main---active)
+- [Form: Case > general > Section](#22-case---main---active)
 - [View: Active Cases](#31-active-cases)
 - [View: All Cases](#32-all-cases)
 - [View: My Active Cases (Filter)](#36-my-active-cases)
@@ -5074,7 +5087,7 @@ Alphabetical field index -- 367 unique fields referenced.
 #### azt_resolvedbyid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case > general > Details](#22-case-main-active)
+- [Form: Case > general > Details](#22-case---main---active)
 - [Workflow: BatchCaseResolution (Write)](#74-batchcaseresolution)
 - [Plugin: CaseClose (Read)](#1015-caseclose)
 - [Plugin: CaseClose (Write)](#1015-caseclose)
@@ -5083,7 +5096,7 @@ Alphabetical field index -- 367 unique fields referenced.
 #### azt_responsibletechnicianid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case > general > Section](#22-case-main-active)
+- [Form: Case > general > Section](#22-case---main---active)
 - [Relationship: azt_systemuserresptech_incident](#12-relationships)
 
 #### azt_result
@@ -5194,7 +5207,7 @@ Alphabetical field index -- 367 unique fields referenced.
 #### azt_utrackcase
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case > general > Details](#22-case-main-active)
+- [Form: Case > general > Details](#22-case---main---active)
 
 #### azt_year
 
@@ -5261,8 +5274,8 @@ Alphabetical field index -- 367 unique fields referenced.
 #### caseorigincode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case > general > Details](#22-case-main-active)
-- [Form: Case Quick Create > tab_1 > tab_1_column_1_section_1](#24-case-quick-create-quickcreate-active)
+- [Form: Case > general > Details](#22-case---main---active)
+- [Form: Case Quick Create > tab_1 > tab_1_column_1_section_1](#24-case-quick-create---quickcreate---active)
 - [View: Active Cases](#31-active-cases)
 - [View: All Cases](#32-all-cases)
 - [View: My Active Cases](#36-my-active-cases)
@@ -5271,7 +5284,7 @@ Alphabetical field index -- 367 unique fields referenced.
 #### casetypecode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case > general > Details](#22-case-main-active)
+- [Form: Case > general > Details](#22-case---main---active)
 - [View: Active Cases](#31-active-cases)
 - [View: Active Cases (Filter)](#31-active-cases)
 - [Workflow: CasePendingAssignmentNotification (Read)](#78-casependingassignmentnotification)
@@ -5297,7 +5310,7 @@ Alphabetical field index -- 367 unique fields referenced.
 
 #### conditionbranchstep2_1
 
-- [Formula: azt_daysopen](#9-formulas-rollups)
+- [Formula: azt_daysopen](#9-formulas-and-rollups)
 
 #### connectionid
 
@@ -5345,7 +5358,7 @@ Alphabetical field index -- 367 unique fields referenced.
 #### createdby
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case > ADDITIONALDETAILS_TAB > responses](#22-case-main-active)
+- [Form: Case > ADDITIONALDETAILS_TAB > responses](#22-case---main---active)
 - [View: FSR Cases Closed This Month](#34-fsr-cases-closed-this-month)
 - [View: FSR Cases Closed This Month (Sort)](#34-fsr-cases-closed-this-month)
 - [View: FSR Cases Created This Month](#35-fsr-cases-created-this-month)
@@ -5380,7 +5393,7 @@ Alphabetical field index -- 367 unique fields referenced.
 - [View: My Resolved Cases](#37-my-resolved-cases)
 - [Workflow: CasePendingAssignmentNotification (Read)](#78-casependingassignmentnotification)
 - [Workflow: CaseRecordOwnerAssignmentNotification (Read)](#711-caserecordownerassignmentnotification)
-- [Formula: azt_daysopen](#9-formulas-rollups)
+- [Formula: azt_daysopen](#9-formulas-and-rollups)
 - [Plugin: AccountLeadGen (Filter)](#102-accountleadgen)
 - [Plugin: ChangeLicenseType (Sort)](#1016-changelicensetype)
 - [Plugin: CreateUserGoals (Read)](#1022-createusergoals)
@@ -5449,8 +5462,8 @@ Alphabetical field index -- 367 unique fields referenced.
 #### description
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case > general > ](#22-case-main-active)
-- [Form: Case Quick Create > tab_1 > tab_1_column_3_section_1](#24-case-quick-create-quickcreate-active)
+- [Form: Case > general > ](#22-case---main---active)
+- [Form: Case Quick Create > tab_1 > tab_1_column_3_section_1](#24-case-quick-create---quickcreate---active)
 - [Workflow: CasePendingAssignmentNotification (Read)](#78-casependingassignmentnotification)
 - [Workflow: CaseRecordOwnerAssignmentNotification (Read)](#711-caserecordownerassignmentnotification)
 - [Plugin: ContactSetConnectionRole (Write)](#1019-contactsetconnectionrole)
@@ -5675,13 +5688,13 @@ Alphabetical field index -- 367 unique fields referenced.
 #### kbarticleid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case for Interactive experience > Summary > Case Details Summary](#21-case-for-interactive-experience-main-active)
+- [Form: Case for Interactive experience > Summary > Case Details Summary](#21-case-for-interactive-experience---main---active)
 - [Relationship: kbarticle_incidents](#12-relationships)
 
 #### knowledgebase
 
-- [Form: Case > general > TabsControl](#22-case-main-active)
-- [Form: Case > general > TabsControl](#22-case-main-active)
+- [Form: Case > general > TabsControl](#22-case---main---active)
+- [Form: Case > general > TabsControl](#22-case---main---active)
 
 #### lastname
 
@@ -5777,7 +5790,7 @@ Alphabetical field index -- 367 unique fields referenced.
 
 #### notescontrol
 
-- [Form: Case > general > TabsControl](#22-case-main-active)
+- [Form: Case > general > TabsControl](#22-case---main---active)
 
 #### objectid
 
@@ -5855,8 +5868,8 @@ Alphabetical field index -- 367 unique fields referenced.
 #### ownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case > ADDITIONALDETAILS_TAB > responses](#22-case-main-active)
-- [Form: Case Quick Create > tab_1 > tab_1_column_2_section_1](#24-case-quick-create-quickcreate-active)
+- [Form: Case > ADDITIONALDETAILS_TAB > responses](#22-case---main---active)
+- [Form: Case Quick Create > tab_1 > tab_1_column_2_section_1](#24-case-quick-create---quickcreate---active)
 - [View: Active Cases](#31-active-cases)
 - [View: Case Lookup View](#33-case-lookup-view)
 - [Workflow: CasePendingAssignmentNotification (Read)](#78-casependingassignmentnotification)
@@ -5963,7 +5976,7 @@ Alphabetical field index -- 367 unique fields referenced.
 #### primarycontactid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case Quick Create > tab_1 > tab_1_column_1_section_1](#24-case-quick-create-quickcreate-active)
+- [Form: Case Quick Create > tab_1 > tab_1_column_1_section_1](#24-case-quick-create---quickcreate---active)
 - [Workflow: CreateLeadFromLeadGen (Write)](#718-createleadfromleadgen)
 - [Workflow: CreateLeadfromAccount (Write)](#719-createleadfromaccount)
 - [Plugin: SetPrimaryContact (Read)](#1075-setprimarycontact)
@@ -5973,7 +5986,7 @@ Alphabetical field index -- 367 unique fields referenced.
 #### prioritycode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case > general > Details](#22-case-main-active)
+- [Form: Case > general > Details](#22-case---main---active)
 - [View: Active Cases](#31-active-cases)
 - [View: All Cases](#32-all-cases)
 - [View: My Active Cases](#36-my-active-cases)
@@ -6002,8 +6015,8 @@ Alphabetical field index -- 367 unique fields referenced.
 #### productid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case > general > Details](#22-case-main-active)
-- [Form: Case Quick Create > tab_1 > tab_1_column_2_section_1](#24-case-quick-create-quickcreate-active)
+- [Form: Case > general > Details](#22-case---main---active)
+- [Form: Case Quick Create > tab_1 > tab_1_column_2_section_1](#24-case-quick-create---quickcreate---active)
 - [Plugin: AccountLeadGen (Read)](#102-accountleadgen)
 - [Plugin: AccountLeadGen (Write)](#102-accountleadgen)
 - [Plugin: AccountLeadGen (Filter)](#102-accountleadgen)
@@ -6190,7 +6203,7 @@ Alphabetical field index -- 367 unique fields referenced.
 #### resolveby
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case Quick Create > tab_1 > tab_1_column_2_section_1](#24-case-quick-create-quickcreate-active)
+- [Form: Case Quick Create > tab_1 > tab_1_column_2_section_1](#24-case-quick-create---quickcreate---active)
 
 #### resolvebykpiid
 
@@ -6200,7 +6213,7 @@ Alphabetical field index -- 367 unique fields referenced.
 #### responseby
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case Quick Create > tab_1 > tab_1_column_2_section_1](#24-case-quick-create-quickcreate-active)
+- [Form: Case Quick Create > tab_1 > tab_1_column_2_section_1](#24-case-quick-create---quickcreate---active)
 
 #### responsiblecontactid
 
@@ -6267,23 +6280,23 @@ Alphabetical field index -- 367 unique fields referenced.
 
 #### setattributevaluestep4_1
 
-- [Formula: azt_daysopen](#9-formulas-rollups)
+- [Formula: azt_daysopen](#9-formulas-and-rollups)
 
 #### setattributevaluestep4_2
 
-- [Formula: azt_daysopen](#9-formulas-rollups)
+- [Formula: azt_daysopen](#9-formulas-and-rollups)
 
 #### setattributevaluestep4_3
 
-- [Formula: azt_daysopen](#9-formulas-rollups)
+- [Formula: azt_daysopen](#9-formulas-and-rollups)
 
 #### setattributevaluestep4_4
 
-- [Formula: azt_daysopen](#9-formulas-rollups)
+- [Formula: azt_daysopen](#9-formulas-and-rollups)
 
 #### setattributevaluestep4_5
 
-- [Formula: azt_daysopen](#9-formulas-rollups)
+- [Formula: azt_daysopen](#9-formulas-and-rollups)
 
 #### shippingmethodcode
 
@@ -6380,7 +6393,7 @@ Alphabetical field index -- 367 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case (Header)](#22-case-main-active)
+- [Form: Case (Header)](#22-case---main---active)
 - [View: Active Cases](#31-active-cases)
 - [View: My Active Cases](#36-my-active-cases)
 - [Workflow: BatchCreateEngagements (Write)](#76-batchcreateengagements)
@@ -6415,8 +6428,8 @@ Alphabetical field index -- 367 unique fields referenced.
 #### subjectid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Case > general > Details](#22-case-main-active)
-- [Form: Case Quick Create > tab_1 > tab_1_column_2_section_1](#24-case-quick-create-quickcreate-active)
+- [Form: Case > general > Details](#22-case---main---active)
+- [Form: Case Quick Create > tab_1 > tab_1_column_2_section_1](#24-case-quick-create---quickcreate---active)
 
 #### systemuserid
 
@@ -6531,7 +6544,7 @@ Alphabetical field index -- 367 unique fields referenced.
 
 #### webresource_recordwall
 
-- [Form: Information > What's New > Section](#23-information-main-inactive)
+- [Form: Information > What's New > Section](#23-information---main---inactive)
 
 #### zipcode
 

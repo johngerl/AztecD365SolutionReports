@@ -1,13 +1,26 @@
 # Azt_opportunityauditrecord Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_opportunityauditrecord |
+| **Display Name** | Opportunity Audit Record |
+| **Description** |  |
+| **Object Type** | Custom |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 105833 |
+| **Last Update** | 2026-03-21 01:26:58 |
+| **Primary ID Field** | azt_opportunityauditrecordid |
+| **Primary Name Field** | azt_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (card) -- Active](#21-information-card-active)
-  - [2.2. Opportunity Audit (main) -- Active](#22-opportunity-audit-main-active)
-  - [2.3. Information (quick) -- Active](#23-information-quick-active)
+  - [2.1. Information - card - Active](#21-information---card---active)
+  - [2.2. Opportunity Audit - main - Active](#22-opportunity-audit---main---active)
+  - [2.3. Information - quick - Active](#23-information---quick---active)
 - [3. Views](#3-views)
   - [3.1. Active Opportunity Audit Records](#31-active-opportunity-audit-records)
   - [3.2. Inactive Opportunity Audit Records](#32-inactive-opportunity-audit-records)
@@ -88,7 +101,7 @@
   - [8.4. azt_paymentlibrary](#84-azt_paymentlibrary)
   - [8.5. azt_productdiscountlibrary](#85-azt_productdiscountlibrary)
   - [8.6. azt_splitallocation](#86-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -174,7 +187,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -222,7 +235,7 @@ Total fields: **30**
 
 Total forms: **3**
 
-### 2.1. Information (card) -- Active
+### 2.1. Information - card - Active
 
 - **Form ID:** `{d5a1b1cf-e4ad-4174-b390-242446f67163}`
 - **Presentation:** UCI/Tablet
@@ -251,7 +264,7 @@ Total forms: **3**
 | [ownerid](#ownerid) | Changed By | No | Yes |
 | [createdon](#createdon) | Changed On | No | Yes |
 
-### 2.2. Opportunity Audit (main) -- Active
+### 2.2. Opportunity Audit - main - Active
 
 - **Form ID:** `{23cde397-03ee-4c51-8347-0d99b0aad5cd}`
 - **Presentation:** UCI/Tablet
@@ -294,7 +307,7 @@ Total forms: **3**
 | [azt_previousprobability](#azt_previousprobability) | Previous Probability | No | Yes |
 | [azt_newprobability](#azt_newprobability) | New Probability | No | Yes |
 
-### 2.3. Information (quick) -- Active
+### 2.3. Information - quick - Active
 
 - **Form ID:** `{b73f1b01-eb3d-4800-8a6c-996f590fd0c3}`
 - **Presentation:** UCI/Tablet
@@ -1368,7 +1381,7 @@ Total JS files referencing Azt_opportunityauditrecord fields: **6**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_opportunityauditrecord: **0**
 
@@ -3533,7 +3546,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -4394,9 +4407,9 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Details](#21-information-card-active)
-- [Form: Opportunity Audit > General > General](#22-opportunity-audit-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Details](#21-information---card---active)
+- [Form: Opportunity Audit > General > General](#22-opportunity-audit---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Inactive Opportunity Audit Records](#32-inactive-opportunity-audit-records)
 - [View: Inactive Opportunity Audit Records (Sort)](#32-inactive-opportunity-audit-records)
 - [View: Opportunity Audit Record Advanced Find View](#34-opportunity-audit-record-advanced-find-view)
@@ -4442,14 +4455,14 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_newestclosedate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Opportunity Audit > General > Estimated Close Date](#22-opportunity-audit-main-active)
+- [Form: Opportunity Audit > General > Estimated Close Date](#22-opportunity-audit---main---active)
 - [View: Active Opportunity Audit Records](#31-active-opportunity-audit-records)
 - [Plugin: OpportunityAudit (Write)](#1043-opportunityaudit)
 
 #### azt_newestimatedvalue
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Opportunity Audit > General > Estimated Value](#22-opportunity-audit-main-active)
+- [Form: Opportunity Audit > General > Estimated Value](#22-opportunity-audit---main---active)
 - [View: Active Opportunity Audit Records](#31-active-opportunity-audit-records)
 - [Plugin: OpportunityAudit (Write)](#1043-opportunityaudit)
 
@@ -4464,7 +4477,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_newprobability
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Opportunity Audit > General > Probability](#22-opportunity-audit-main-active)
+- [Form: Opportunity Audit > General > Probability](#22-opportunity-audit---main---active)
 - [View: Active Opportunity Audit Records](#31-active-opportunity-audit-records)
 - [Plugin: OpportunityAudit (Write)](#1043-opportunityaudit)
 
@@ -4498,7 +4511,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_opportunityid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Opportunity Audit (Header)](#22-opportunity-audit-main-active)
+- [Form: Opportunity Audit (Header)](#22-opportunity-audit---main---active)
 - [Plugin: CreateCompGoals (Write)](#1020-createcompgoals)
 - [Plugin: DiscretionaryDiscountSetHeader (Read)](#1023-discretionarydiscountsetheader)
 - [Plugin: DiscretionaryDiscountSetHeader (Write)](#1023-discretionarydiscountsetheader)
@@ -4645,14 +4658,14 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_previousestclosedate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Opportunity Audit > General > Estimated Close Date](#22-opportunity-audit-main-active)
+- [Form: Opportunity Audit > General > Estimated Close Date](#22-opportunity-audit---main---active)
 - [View: Active Opportunity Audit Records](#31-active-opportunity-audit-records)
 - [Plugin: OpportunityAudit (Write)](#1043-opportunityaudit)
 
 #### azt_previousestimatedvalue
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Opportunity Audit > General > Estimated Value](#22-opportunity-audit-main-active)
+- [Form: Opportunity Audit > General > Estimated Value](#22-opportunity-audit---main---active)
 - [View: Active Opportunity Audit Records](#31-active-opportunity-audit-records)
 - [Plugin: OpportunityAudit (Write)](#1043-opportunityaudit)
 
@@ -4667,7 +4680,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_previousprobability
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Opportunity Audit > General > Probability](#22-opportunity-audit-main-active)
+- [Form: Opportunity Audit > General > Probability](#22-opportunity-audit---main---active)
 - [View: Active Opportunity Audit Records](#31-active-opportunity-audit-records)
 - [Plugin: OpportunityAudit (Write)](#1043-opportunityaudit)
 
@@ -5028,8 +5041,8 @@ Alphabetical field index -- 329 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
-- [Form: Opportunity Audit > General > General](#22-opportunity-audit-main-active)
+- [Form: Information > general > Footer](#21-information---card---active)
+- [Form: Opportunity Audit > General > General](#22-opportunity-audit---main---active)
 - [View: Active Opportunity Audit Records](#31-active-opportunity-audit-records)
 - [View: Active Opportunity Audit Records (Sort)](#31-active-opportunity-audit-records)
 - [View: Inactive Opportunity Audit Records](#32-inactive-opportunity-audit-records)
@@ -5437,9 +5450,9 @@ Alphabetical field index -- 329 unique fields referenced.
 #### ownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
-- [Form: Opportunity Audit > General > General](#22-opportunity-audit-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Footer](#21-information---card---active)
+- [Form: Opportunity Audit > General > General](#22-opportunity-audit---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Active Opportunity Audit Records](#31-active-opportunity-audit-records)
 - [View: My Opportunity Audit Records (Filter)](#33-my-opportunity-audit-records)
 - [Workflow: AllocationsAssigntoTeam (Read)](#73-allocationsassigntoteam)
@@ -5900,7 +5913,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Header](#21-information-card-active)
+- [Form: Information > general > Header](#21-information---card---active)
 - [Workflow: BatchCreateEngagements (Write)](#76-batchcreateengagements)
 - [Workflow: CloneOrder (Write)](#718-cloneorder)
 - [Workflow: EmailDeleteSendQuoteDrafts (Read)](#725-emaildeletesendquotedrafts)

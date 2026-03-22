@@ -1,13 +1,26 @@
 # Azt_expensereport Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_expensereport |
+| **Display Name** | Expense Report |
+| **Description** |  |
+| **Object Type** | Custom |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | True |
+| **Total Rows** | 1826 |
+| **Last Update** | 2026-03-19 15:35:17 |
+| **Primary ID Field** | azt_expensereportid |
+| **Primary Name Field** | azt_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (card) -- Active](#21-information-card-active)
-  - [2.2. Expense Report (main) -- Active](#22-expense-report-main-active)
-  - [2.3. Information (quick) -- Active](#23-information-quick-active)
+  - [2.1. Information - card - Active](#21-information---card---active)
+  - [2.2. Expense Report - main - Active](#22-expense-report---main---active)
+  - [2.3. Information - quick - Active](#23-information---quick---active)
 - [3. Views](#3-views)
   - [3.1. Active Expense Reports](#31-active-expense-reports)
   - [3.2. All Expense Reports](#32-all-expense-reports)
@@ -96,7 +109,7 @@
   - [8.4. azt_paymentlibrary](#84-azt_paymentlibrary)
   - [8.5. azt_productdiscountlibrary](#85-azt_productdiscountlibrary)
   - [8.6. azt_splitallocation](#86-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -182,7 +195,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -241,7 +254,7 @@ Total fields: **41**
 
 Total forms: **3**
 
-### 2.1. Information (card) -- Active
+### 2.1. Information - card - Active
 
 - **Form ID:** `{995f36bc-d0d5-4f74-bc31-a6035b428414}`
 - **Presentation:** UCI/Tablet
@@ -270,7 +283,7 @@ Total forms: **3**
 | [ownerid](#ownerid) | Owner | No | Yes |
 | [createdon](#createdon) | Created On | No | Yes |
 
-### 2.2. Expense Report (main) -- Active
+### 2.2. Expense Report - main - Active
 
 - **Form ID:** `{a4f94408-eeac-49d4-b395-e57d03eb949a}`
 - **Presentation:** UCI/Tablet
@@ -370,7 +383,7 @@ Total forms: **3**
 | onchange | azt_corporateapproved | `E.ExpenseReportFunctions.onLoad` | `azt_expensereportlibrary` | true |
 | onchange | azt_ispaid | `E.ExpenseReportFunctions.setPaid` | `azt_expensereportlibrary` | true |
 
-### 2.3. Information (quick) -- Active
+### 2.3. Information - quick - Active
 
 - **Form ID:** `{38c9be42-7f96-4110-a3e7-79811857b920}`
 - **Presentation:** UCI/Tablet
@@ -1808,7 +1821,7 @@ Total JS files referencing Azt_expensereport fields: **6**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_expensereport: **0**
 
@@ -3995,7 +4008,7 @@ Total relationships involving Azt_expensereport: **20**
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -4466,14 +4479,14 @@ Alphabetical field index -- 347 unique fields referenced.
 #### azt_approvingcorporatemanagerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Expense Report > Approval Process > Corporate Approval](#22-expense-report-main-active)
+- [Form: Expense Report > Approval Process > Corporate Approval](#22-expense-report---main---active)
 - [JS: azt_expensereportlibrary > corporateApprove()](#82-azt_expensereportlibrary)
 - [Relationship: azt_corporate_azt_expensereport](#12-relationships)
 
 #### azt_approvingmanagerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Expense Report > Approval Process > Manager Approval](#22-expense-report-main-active)
+- [Form: Expense Report > Approval Process > Manager Approval](#22-expense-report---main---active)
 - [JS: azt_expensereportlibrary > onLoad()](#82-azt_expensereportlibrary)
 - [JS: azt_expensereportlibrary > setManagerApproval()](#82-azt_expensereportlibrary)
 - [Relationship: azt_manager_azt_expensereport](#12-relationships)
@@ -4568,7 +4581,7 @@ Alphabetical field index -- 347 unique fields referenced.
 #### azt_corporateapproved
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Expense Report > Approval Process > Corporate Approval](#22-expense-report-main-active)
+- [Form: Expense Report > Approval Process > Corporate Approval](#22-expense-report---main---active)
 - [JS: azt_expensereportlibrary > corporateApprove()](#82-azt_expensereportlibrary)
 - [JS: azt_expensereportlibrary > onLoad()](#82-azt_expensereportlibrary)
 
@@ -4592,7 +4605,7 @@ Alphabetical field index -- 347 unique fields referenced.
 #### azt_datecorporateapproved
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Expense Report > Approval Process > Corporate Approval](#22-expense-report-main-active)
+- [Form: Expense Report > Approval Process > Corporate Approval](#22-expense-report---main---active)
 - [JS: azt_expensereportlibrary > corporateApprove()](#82-azt_expensereportlibrary)
 
 #### azt_dateexitedstage
@@ -4602,7 +4615,7 @@ Alphabetical field index -- 347 unique fields referenced.
 #### azt_datemanagerapproved
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Expense Report > Approval Process > Manager Approval](#22-expense-report-main-active)
+- [Form: Expense Report > Approval Process > Manager Approval](#22-expense-report---main---active)
 - [JS: azt_expensereportlibrary > getManager()](#82-azt_expensereportlibrary)
 - [JS: azt_expensereportlibrary > onLoad()](#82-azt_expensereportlibrary)
 - [JS: azt_expensereportlibrary > setManagerApproval()](#82-azt_expensereportlibrary)
@@ -4610,14 +4623,14 @@ Alphabetical field index -- 347 unique fields referenced.
 #### azt_datepaid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Expense Report > Approval Process > Paid](#22-expense-report-main-active)
+- [Form: Expense Report > Approval Process > Paid](#22-expense-report---main---active)
 - [View: Paid Expense Reports](#314-paid-expense-reports)
 - [JS: azt_expensereportlibrary > setPaid()](#82-azt_expensereportlibrary)
 
 #### azt_datesubmitted
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Expense Report > General > Submittal](#22-expense-report-main-active)
+- [Form: Expense Report > General > Submittal](#22-expense-report---main---active)
 - [View: All Expense Reports](#32-all-expense-reports)
 - [View: Draft Expense Reports](#33-draft-expense-reports)
 - [View: Expense Report Advanced Find View](#34-expense-report-advanced-find-view)
@@ -4674,7 +4687,7 @@ Alphabetical field index -- 347 unique fields referenced.
 #### azt_enddate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Expense Report > General > General](#22-expense-report-main-active)
+- [Form: Expense Report > General > General](#22-expense-report---main---active)
 - [View: All Expense Reports](#32-all-expense-reports)
 - [View: Draft Expense Reports](#33-draft-expense-reports)
 - [View: Expense Report Advanced Find View](#34-expense-report-advanced-find-view)
@@ -4714,7 +4727,7 @@ Alphabetical field index -- 347 unique fields referenced.
 #### azt_expenseid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Expense Report > General > General](#22-expense-report-main-active)
+- [Form: Expense Report > General > General](#22-expense-report---main---active)
 - [View: All Expense Reports](#32-all-expense-reports)
 - [View: Draft Expense Reports](#33-draft-expense-reports)
 - [View: Expense Report Advanced Find View](#34-expense-report-advanced-find-view)
@@ -4865,7 +4878,7 @@ Alphabetical field index -- 347 unique fields referenced.
 #### azt_ispaid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Expense Report > Approval Process > Paid](#22-expense-report-main-active)
+- [Form: Expense Report > Approval Process > Paid](#22-expense-report---main---active)
 - [View: Expense Reports Pending Reimbursement (Filter)](#39-expense-reports-pending-reimbursement)
 - [View: Paid Expense Reports (Filter)](#314-paid-expense-reports)
 - [JS: azt_expensereportlibrary > onLoad()](#82-azt_expensereportlibrary)
@@ -4975,7 +4988,7 @@ Alphabetical field index -- 347 unique fields referenced.
 #### azt_managerapproved
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Expense Report > Approval Process > Manager Approval](#22-expense-report-main-active)
+- [Form: Expense Report > Approval Process > Manager Approval](#22-expense-report---main---active)
 - [View: My Expense Reports](#312-my-expense-reports)
 - [View: My Pending Expense Reports](#313-my-pending-expense-reports)
 - [JS: azt_expensereportlibrary > corporateApprove()](#82-azt_expensereportlibrary)
@@ -5002,9 +5015,9 @@ Alphabetical field index -- 347 unique fields referenced.
 #### azt_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Details](#21-information-card-active)
-- [Form: Expense Report > General > General](#22-expense-report-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Details](#21-information---card---active)
+- [Form: Expense Report > General > General](#22-expense-report---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Active Expense Reports](#31-active-expense-reports)
 - [View: All Expense Reports](#32-all-expense-reports)
 - [View: All Expense Reports (Sort)](#32-all-expense-reports)
@@ -5161,7 +5174,7 @@ Alphabetical field index -- 347 unique fields referenced.
 #### azt_paidbyid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Expense Report > Approval Process > Paid](#22-expense-report-main-active)
+- [Form: Expense Report > Approval Process > Paid](#22-expense-report---main---active)
 - [JS: azt_expensereportlibrary > setPaid()](#82-azt_expensereportlibrary)
 - [Relationship: azt_paidby_azt_expensereport](#12-relationships)
 
@@ -5356,7 +5369,7 @@ Alphabetical field index -- 347 unique fields referenced.
 #### azt_reject
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Expense Report > General > Submittal](#22-expense-report-main-active)
+- [Form: Expense Report > General > Submittal](#22-expense-report---main---active)
 - [Workflow: ExpenseReportRejectedNotification (Read)](#729-expensereportrejectednotification)
 - [Workflow: ExpenseReportRejectedNotification (Write)](#729-expensereportrejectednotification)
 - [JS: azt_expensereportlibrary > getCanApprove()](#82-azt_expensereportlibrary)
@@ -5415,7 +5428,7 @@ Alphabetical field index -- 347 unique fields referenced.
 #### azt_startdate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Expense Report > General > General](#22-expense-report-main-active)
+- [Form: Expense Report > General > General](#22-expense-report---main---active)
 - [View: All Expense Reports](#32-all-expense-reports)
 - [View: Draft Expense Reports](#33-draft-expense-reports)
 - [View: Expense Report Advanced Find View](#34-expense-report-advanced-find-view)
@@ -5443,7 +5456,7 @@ Alphabetical field index -- 347 unique fields referenced.
 #### azt_submitted
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Expense Report > General > Submittal](#22-expense-report-main-active)
+- [Form: Expense Report > General > Submittal](#22-expense-report---main---active)
 - [View: All Expense Reports](#32-all-expense-reports)
 - [View: Draft Expense Reports](#33-draft-expense-reports)
 - [View: Expense Report Advanced Find View](#34-expense-report-advanced-find-view)
@@ -5464,7 +5477,7 @@ Alphabetical field index -- 347 unique fields referenced.
 #### azt_submittedbyid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Expense Report > General > Submittal](#22-expense-report-main-active)
+- [Form: Expense Report > General > Submittal](#22-expense-report---main---active)
 - [View: All Expense Reports](#32-all-expense-reports)
 - [View: Draft Expense Reports](#33-draft-expense-reports)
 - [View: Draft Expense Reports (Sort)](#33-draft-expense-reports)
@@ -5525,8 +5538,8 @@ Alphabetical field index -- 347 unique fields referenced.
 #### azt_totalreimbursement
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Expense Report (Header)](#22-expense-report-main-active)
-- [Form: Expense Report > General > General](#22-expense-report-main-active)
+- [Form: Expense Report (Header)](#22-expense-report---main---active)
+- [Form: Expense Report > General > General](#22-expense-report---main---active)
 - [View: Active Expense Reports](#31-active-expense-reports)
 - [View: All Expense Reports](#32-all-expense-reports)
 - [View: Draft Expense Reports](#33-draft-expense-reports)
@@ -5682,7 +5695,7 @@ Alphabetical field index -- 347 unique fields referenced.
 #### createdby
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Expense Report (Header)](#22-expense-report-main-active)
+- [Form: Expense Report (Header)](#22-expense-report---main---active)
 - [Workflow: AccountAuto-Assign (Read)](#72-accountauto-assign)
 - [Workflow: CasePendingAssignmentNotification (Read)](#78-casependingassignmentnotification)
 - [Workflow: CaseRecordOwnerAssign (Read)](#710-caserecordownerassign)
@@ -5713,7 +5726,7 @@ Alphabetical field index -- 347 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
+- [Form: Information > general > Footer](#21-information---card---active)
 - [View: Active Expense Reports](#31-active-expense-reports)
 - [View: Active Expense Reports (Sort)](#31-active-expense-reports)
 - [View: All Expense Reports](#32-all-expense-reports)
@@ -5828,7 +5841,7 @@ Alphabetical field index -- 347 unique fields referenced.
 
 #### expenses
 
-- [Form: Expense Report > General > Expenses](#22-expense-report-main-active)
+- [Form: Expense Report > General > Expenses](#22-expense-report---main---active)
 
 #### ext_amt
 
@@ -6064,7 +6077,7 @@ Alphabetical field index -- 347 unique fields referenced.
 
 #### notescontrol
 
-- [Form: Expense Report > Notes > Notes](#22-expense-report-main-active)
+- [Form: Expense Report > Notes > Notes](#22-expense-report---main---active)
 
 #### objectid
 
@@ -6142,10 +6155,10 @@ Alphabetical field index -- 347 unique fields referenced.
 #### ownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
-- [Form: Expense Report (Header)](#22-expense-report-main-active)
-- [Form: Expense Report > Administration > Section](#22-expense-report-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Footer](#21-information---card---active)
+- [Form: Expense Report (Header)](#22-expense-report---main---active)
+- [Form: Expense Report > Administration > Section](#22-expense-report---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Active Expense Reports](#31-active-expense-reports)
 - [View: Active Expense Reports (Sort)](#31-active-expense-reports)
 - [View: My Expense Reports (Filter)](#311-my-expense-reports)
@@ -6632,8 +6645,8 @@ Alphabetical field index -- 347 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Header](#21-information-card-active)
-- [Form: Expense Report > General > General](#22-expense-report-main-active)
+- [Form: Information > general > Header](#21-information---card---active)
+- [Form: Expense Report > General > General](#22-expense-report---main---active)
 - [View: Active Expense Reports](#31-active-expense-reports)
 - [View: All Expense Reports](#32-all-expense-reports)
 - [View: Draft Expense Reports](#33-draft-expense-reports)
@@ -6750,7 +6763,7 @@ Alphabetical field index -- 347 unique fields referenced.
 #### transactioncurrencyid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Expense Report > Administration > Section](#22-expense-report-main-active)
+- [Form: Expense Report > Administration > Section](#22-expense-report---main---active)
 - [Workflow: BatchConverttoLead (Write)](#75-batchconverttolead)
 - [Workflow: BatchOpportunityTransfer (Write)](#77-batchopportunitytransfer)
 - [Workflow: CasePendingAssignmentNotification (Write)](#78-casependingassignmentnotification)

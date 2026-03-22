@@ -1,12 +1,25 @@
 # Systemuser Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | systemuser |
+| **Display Name** | User |
+| **Description** | Person with access to the Microsoft CRM system and who owns objects in the Microsoft CRM database. |
+| **Object Type** | Standard |
+| **Ownership Type** | BusinessOwned |
+| **Audit Enabled** | True |
+| **Total Rows** | 401 |
+| **Last Update** | 2026-03-21 09:58:05 |
+| **Primary ID Field** | systemuserid |
+| **Primary Name Field** | None |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. User (main) -- Active](#21-user-main-active)
-  - [2.2. Information (main) -- Inactive](#22-information-main-inactive)
+  - [2.1. User - main - Active](#21-user---main---active)
+  - [2.2. Information - main - Inactive](#22-information---main---inactive)
 - [3. Views](#3-views)
   - [3.1. Associated Record Team Members](#31-associated-record-team-members)
   - [3.2. Client Success Team](#32-client-success-team)
@@ -52,7 +65,7 @@
   - [7.27. iGradLeadAuto-Assign](#727-igradleadauto-assign)
   - [7.28. iGradPhone-callAuto-assign](#728-igradphone-callauto-assign)
 - [8. JavaScript Web Resources](#8-javascript-web-resources)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -138,7 +151,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -193,7 +206,7 @@ Total fields: **37**
 
 Total forms: **2**
 
-### 2.1. User (main) -- Active
+### 2.1. User - main - Active
 
 - **Form ID:** `{c2cd9e55-d4b4-4b55-9951-16ead79643e5}`
 - **Presentation:** UCI/Tablet
@@ -285,7 +298,7 @@ Total forms: **2**
 |-------|-------|----------|---------|
 | [expensereports](#expensereports) | Expense Reports | No | Yes |
 
-### 2.2. Information (main) -- Inactive
+### 2.2. Information - main - Inactive
 
 - **Form ID:** `{c0d7d7dd-afd0-4675-85fe-1cc5a48be6df}`
 - **Presentation:** Classic
@@ -1431,7 +1444,7 @@ Total JS files referencing Systemuser fields: **0**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Systemuser: **0**
 
@@ -3743,7 +3756,7 @@ Total relationships involving Systemuser: **136**
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -4226,7 +4239,7 @@ Alphabetical field index -- 372 unique fields referenced.
 #### azt_addoncomp
 
 - [Field Definitions](#1-field-definitions)
-- [Form: User > Commission > Comp Goal %](#21-user-main-active)
+- [Form: User > Commission > Comp Goal %](#21-user---main---active)
 
 #### azt_addresssearch
 
@@ -4308,7 +4321,7 @@ Alphabetical field index -- 372 unique fields referenced.
 #### azt_bookingurl
 
 - [Field Definitions](#1-field-definitions)
-- [Form: User > SUMMARY_TAB > user information](#21-user-main-active)
+- [Form: User > SUMMARY_TAB > user information](#21-user---main---active)
 - [Plugin: OrderFSRSetTemplateFields (Read)](#1052-orderfsrsettemplatefields)
 - [Plugin: OrderFSRSetTemplateFields (Write)](#1052-orderfsrsettemplatefields)
 
@@ -4413,7 +4426,7 @@ Alphabetical field index -- 372 unique fields referenced.
 #### azt_defaultpricelistid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: User > SUMMARY_TAB > user information](#21-user-main-active)
+- [Form: User > SUMMARY_TAB > user information](#21-user---main---active)
 - [Workflow: SetDefaultPriceListonOpportunities (Read)](#713-setdefaultpricelistonopportunities)
 - [Workflow: TempSetDefaultPricelist (Read)](#715-tempsetdefaultpricelist)
 - [Relationship: azt_pricelevel_systemuser](#12-relationships)
@@ -4504,7 +4517,7 @@ Alphabetical field index -- 372 unique fields referenced.
 #### azt_expenseteamid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: User > SUMMARY_TAB > organization information](#21-user-main-active)
+- [Form: User > SUMMARY_TAB > organization information](#21-user---main---active)
 - [Relationship: azt_team_systemuser](#12-relationships)
 
 #### azt_expensetype
@@ -4520,7 +4533,7 @@ Alphabetical field index -- 372 unique fields referenced.
 #### azt_extension
 
 - [Field Definitions](#1-field-definitions)
-- [Form: User > SUMMARY_TAB > user information](#21-user-main-active)
+- [Form: User > SUMMARY_TAB > user information](#21-user---main---active)
 - [Plugin: OrderFSRSetTemplateFields (Read)](#1052-orderfsrsettemplatefields)
 
 #### azt_fieldtoautonumber
@@ -4588,7 +4601,7 @@ Alphabetical field index -- 372 unique fields referenced.
 #### azt_igradnonsaas
 
 - [Field Definitions](#1-field-definitions)
-- [Form: User > Commission > Comp Goal %](#21-user-main-active)
+- [Form: User > Commission > Comp Goal %](#21-user---main---active)
 
 #### azt_importname
 
@@ -4598,12 +4611,12 @@ Alphabetical field index -- 372 unique fields referenced.
 #### azt_individuallicensecomp
 
 - [Field Definitions](#1-field-definitions)
-- [Form: User > Commission > Comp Goal %](#21-user-main-active)
+- [Form: User > Commission > Comp Goal %](#21-user---main---active)
 
 #### azt_initialcomp
 
 - [Field Definitions](#1-field-definitions)
-- [Form: User > Commission > Comp Goal %](#21-user-main-active)
+- [Form: User > Commission > Comp Goal %](#21-user---main---active)
 
 #### azt_invoiceid
 
@@ -4643,7 +4656,7 @@ Alphabetical field index -- 372 unique fields referenced.
 #### azt_jobrole
 
 - [Field Definitions](#1-field-definitions)
-- [Form: User > SUMMARY_TAB > user information](#21-user-main-active)
+- [Form: User > SUMMARY_TAB > user information](#21-user---main---active)
 - [View: Client Success Team](#32-client-success-team)
 - [View: Client Success Team (Filter)](#32-client-success-team)
 - [View: Enabled Users](#33-enabled-users)
@@ -4991,7 +5004,7 @@ Alphabetical field index -- 372 unique fields referenced.
 #### azt_printcomp
 
 - [Field Definitions](#1-field-definitions)
-- [Form: User > Commission > Comp Goal %](#21-user-main-active)
+- [Form: User > Commission > Comp Goal %](#21-user---main---active)
 
 #### azt_printproductid
 
@@ -5121,7 +5134,7 @@ Alphabetical field index -- 372 unique fields referenced.
 #### azt_renewalcomp
 
 - [Field Definitions](#1-field-definitions)
-- [Form: User > Commission > Comp Goal %](#21-user-main-active)
+- [Form: User > Commission > Comp Goal %](#21-user---main---active)
 
 #### azt_replacementproductid
 
@@ -5264,7 +5277,7 @@ Alphabetical field index -- 372 unique fields referenced.
 #### azt_winbackcomp
 
 - [Field Definitions](#1-field-definitions)
-- [Form: User > Commission > Comp Goal %](#21-user-main-active)
+- [Form: User > Commission > Comp Goal %](#21-user---main---active)
 
 #### azt_year
 
@@ -5387,11 +5400,11 @@ Alphabetical field index -- 372 unique fields referenced.
 
 #### commissionpayments
 
-- [Form: User > Commission > Commission Payments](#21-user-main-active)
+- [Form: User > Commission > Commission Payments](#21-user---main---active)
 
 #### commissions
 
-- [Form: User > Commission > Commission Records](#21-user-main-active)
+- [Form: User > Commission > Commission Records](#21-user---main---active)
 
 #### companyname
 
@@ -5580,7 +5593,7 @@ Alphabetical field index -- 372 unique fields referenced.
 
 #### expensereports
 
-- [Form: User > Expense Report > Section](#21-user-main-active)
+- [Form: User > Expense Report > Section](#21-user---main---active)
 
 #### ext_amt
 
@@ -5706,7 +5719,7 @@ Alphabetical field index -- 372 unique fields referenced.
 #### incomingemaildeliverymethod
 
 - [Field Definitions](#1-field-definitions)
-- [Form: User > ADMINISTRATION_TAB > administration](#21-user-main-active)
+- [Form: User > ADMINISTRATION_TAB > administration](#21-user---main---active)
 
 #### instancetypecode
 
@@ -6000,7 +6013,7 @@ Alphabetical field index -- 372 unique fields referenced.
 #### outgoingemaildeliverymethod
 
 - [Field Definitions](#1-field-definitions)
-- [Form: User > ADMINISTRATION_TAB > administration](#21-user-main-active)
+- [Form: User > ADMINISTRATION_TAB > administration](#21-user---main---active)
 
 #### ownerid
 
@@ -6625,7 +6638,7 @@ Alphabetical field index -- 372 unique fields referenced.
 
 #### webresource_recordwall
 
-- [Form: Information > What's New > Section](#22-information-main-inactive)
+- [Form: Information > What's New > Section](#22-information---main---inactive)
 
 #### zipcode
 

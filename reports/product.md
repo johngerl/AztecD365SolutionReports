@@ -1,16 +1,29 @@
 # Product Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | product |
+| **Display Name** | Product |
+| **Description** | Information about products and their pricing information. |
+| **Object Type** | Standard |
+| **Ownership Type** | OrgOwned |
+| **Audit Enabled** | True |
+| **Total Rows** | 1571 |
+| **Last Update** | 2026-03-03 19:38:44 |
+| **Primary ID Field** | productid |
+| **Primary Name Field** | name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Product (main) -- Active](#21-product-main-active)
+  - [2.1. Product - main - Active](#21-product---main---active)
 - [3. Views](#3-views)
   - [3.1. Active Print Products](#31-active-print-products)
   - [3.2. Active Products](#32-active-products)
   - [3.3. Active SaaS Products](#33-active-saas-products)
-  - [3.4. All Products, Families & Bundles](#34-all-products-families-bundles)
+  - [3.4. All Products, Families & Bundles](#34-all-products-families--bundles)
   - [3.5. All Products](#35-all-products)
   - [3.6. Quick Find All Products](#36-quick-find-all-products)
 - [4. Chart Visualizations](#4-chart-visualizations)
@@ -56,7 +69,7 @@
   - [8.4. azt_opportunityproductlibrary](#84-azt_opportunityproductlibrary)
   - [8.5. azt_opportunitytrackdiscount](#85-azt_opportunitytrackdiscount)
   - [8.6. azt_sendquote](#86-azt_sendquote)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -142,7 +155,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -190,7 +203,7 @@ Total fields: **30**
 
 Total forms: **1**
 
-### 2.1. Product (main) -- Active
+### 2.1. Product - main - Active
 
 - **Form ID:** `{a640be62-63f6-4027-90d7-48c014a7c6f3}`
 - **Presentation:** UCI/Tablet
@@ -1113,7 +1126,7 @@ Total JS files referencing Product fields: **6**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Product: **0**
 
@@ -3275,7 +3288,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -4022,16 +4035,16 @@ Alphabetical field index -- 330 unique fields referenced.
 #### azt_iscompanion
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Product > product_details > product information](#21-product-main-active)
+- [Form: Product > product_details > product information](#21-product---main---active)
 - [Plugin: CreateSoftwareLicenses (Read)](#1021-createsoftwarelicenses)
 
 #### azt_isprint
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Product > product_details > product information](#21-product-main-active)
+- [Form: Product > product_details > product information](#21-product---main---active)
 - [View: Active Print Products (Filter)](#31-active-print-products)
 - [View: Active Products](#32-active-products)
-- [View: All Products, Families & Bundles](#34-all-products-families-bundles)
+- [View: All Products, Families & Bundles](#34-all-products-families--bundles)
 - [JS: azt_opportunityproductlibrary > addProduct()](#84-azt_opportunityproductlibrary)
 - [Plugin: CreateSoftwareLicenses (Read)](#1021-createsoftwarelicenses)
 
@@ -4192,7 +4205,7 @@ Alphabetical field index -- 330 unique fields referenced.
 #### azt_nonsaastype
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Product > product_details > product information](#21-product-main-active)
+- [Form: Product > product_details > product information](#21-product---main---active)
 - [Plugin: CreateSoftwareLicenses (Read)](#1021-createsoftwarelicenses)
 
 #### azt_numberoflicenses
@@ -4393,7 +4406,7 @@ Alphabetical field index -- 330 unique fields referenced.
 #### azt_productcategory
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Product > product_details > product information](#21-product-main-active)
+- [Form: Product > product_details > product information](#21-product---main---active)
 
 #### azt_productdiscountid
 
@@ -4412,19 +4425,19 @@ Alphabetical field index -- 330 unique fields referenced.
 #### azt_productfamily
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Product > product_details > product information](#21-product-main-active)
+- [Form: Product > product_details > product information](#21-product---main---active)
 - [View: Active Products](#32-active-products)
 - [View: All Products](#35-all-products)
 
 #### azt_productgroup
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Product > product_details > product information](#21-product-main-active)
+- [Form: Product > product_details > product information](#21-product---main---active)
 
 #### azt_productlanguage
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Product > product_details > product information](#21-product-main-active)
+- [Form: Product > product_details > product information](#21-product---main---active)
 
 #### azt_producttype
 
@@ -4485,7 +4498,7 @@ Alphabetical field index -- 330 unique fields referenced.
 #### azt_replacementproductid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Product > price_list_items > msdynsales_pricing_information](#21-product-main-active)
+- [Form: Product > price_list_items > msdynsales_pricing_information](#21-product---main---active)
 - [Plugin: Utility (Read)](#1081-utility)
 - [Relationship: azt_product_product](#12-relationships)
 
@@ -4505,10 +4518,10 @@ Alphabetical field index -- 330 unique fields referenced.
 #### azt_saas
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Product > product_details > product information](#21-product-main-active)
+- [Form: Product > product_details > product information](#21-product---main---active)
 - [View: Active Products](#32-active-products)
 - [View: Active SaaS Products (Filter)](#33-active-saas-products)
-- [View: All Products, Families & Bundles](#34-all-products-families-bundles)
+- [View: All Products, Families & Bundles](#34-all-products-families--bundles)
 - [View: All Products](#35-all-products)
 - [View: Quick Find All Products](#36-quick-find-all-products)
 - [Plugin: CreateSoftwareLicenses (Read)](#1021-createsoftwarelicenses)
@@ -4522,7 +4535,7 @@ Alphabetical field index -- 330 unique fields referenced.
 #### azt_salesfamily
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Product > product_details > product information](#21-product-main-active)
+- [Form: Product > product_details > product information](#21-product---main---active)
 
 #### azt_salesrepid
 
@@ -4928,8 +4941,8 @@ Alphabetical field index -- 330 unique fields referenced.
 - [Field Definitions](#1-field-definitions)
 - [View: Active Print Products](#31-active-print-products)
 - [View: Active SaaS Products](#33-active-saas-products)
-- [View: All Products, Families & Bundles](#34-all-products-families-bundles)
-- [View: All Products, Families & Bundles (Sort)](#34-all-products-families-bundles)
+- [View: All Products, Families & Bundles](#34-all-products-families--bundles)
+- [View: All Products, Families & Bundles (Sort)](#34-all-products-families--bundles)
 - [View: Quick Find All Products](#36-quick-find-all-products)
 
 #### incidentid
@@ -5048,7 +5061,7 @@ Alphabetical field index -- 330 unique fields referenced.
 - [View: Active Products (Sort)](#32-active-products)
 - [View: Active SaaS Products](#33-active-saas-products)
 - [View: Active SaaS Products (Sort)](#33-active-saas-products)
-- [View: All Products, Families & Bundles](#34-all-products-families-bundles)
+- [View: All Products, Families & Bundles](#34-all-products-families--bundles)
 - [View: All Products](#35-all-products)
 - [View: All Products (Sort)](#35-all-products)
 - [View: Quick Find All Products](#36-quick-find-all-products)
@@ -5230,7 +5243,7 @@ Alphabetical field index -- 330 unique fields referenced.
 #### parentproductid
 
 - [Field Definitions](#1-field-definitions)
-- [View: All Products, Families & Bundles](#34-all-products-families-bundles)
+- [View: All Products, Families & Bundles](#34-all-products-families--bundles)
 
 #### parentsystemuserid
 
@@ -5248,7 +5261,7 @@ Alphabetical field index -- 330 unique fields referenced.
 #### price
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Product > price_list_items > msdynsales_pricing_information](#21-product-main-active)
+- [Form: Product > price_list_items > msdynsales_pricing_information](#21-product---main---active)
 - [View: Quick Find All Products](#36-quick-find-all-products)
 
 #### pricelevelid
@@ -5256,7 +5269,7 @@ Alphabetical field index -- 330 unique fields referenced.
 - [Field Definitions](#1-field-definitions)
 - [View: Active Print Products](#31-active-print-products)
 - [View: Active SaaS Products](#33-active-saas-products)
-- [View: All Products, Families & Bundles](#34-all-products-families-bundles)
+- [View: All Products, Families & Bundles](#34-all-products-families--bundles)
 - [Plugin: OrderSplit (Write)](#1056-ordersplit)
 
 #### priceperunit
@@ -5309,7 +5322,7 @@ Alphabetical field index -- 330 unique fields referenced.
 - [View: Active Print Products](#31-active-print-products)
 - [View: Active Products](#32-active-products)
 - [View: Active SaaS Products](#33-active-saas-products)
-- [View: All Products, Families & Bundles](#34-all-products-families-bundles)
+- [View: All Products, Families & Bundles](#34-all-products-families--bundles)
 - [View: All Products](#35-all-products)
 - [View: Quick Find All Products](#36-quick-find-all-products)
 - [Report: PAQuoteSubReport > QuoteLines (Select)](#51-paquotesubreport)
@@ -5369,7 +5382,7 @@ Alphabetical field index -- 330 unique fields referenced.
 - [View: Active Print Products](#31-active-print-products)
 - [View: Active Products](#32-active-products)
 - [View: Active SaaS Products](#33-active-saas-products)
-- [View: All Products, Families & Bundles](#34-all-products-families-bundles)
+- [View: All Products, Families & Bundles](#34-all-products-families--bundles)
 - [View: All Products](#35-all-products)
 - [View: Quick Find All Products](#36-quick-find-all-products)
 - [View: Quick Find All Products (Filter)](#36-quick-find-all-products)
@@ -5388,18 +5401,18 @@ Alphabetical field index -- 330 unique fields referenced.
 - [View: Active Print Products](#31-active-print-products)
 - [View: Active Products (Filter)](#32-active-products)
 - [View: Active SaaS Products](#33-active-saas-products)
-- [View: All Products, Families & Bundles](#34-all-products-families-bundles)
+- [View: All Products, Families & Bundles](#34-all-products-families--bundles)
 - [View: All Products (Filter)](#35-all-products)
 - [View: Quick Find All Products](#36-quick-find-all-products)
 
 #### producttypecode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Product > product_details > product information](#21-product-main-active)
+- [Form: Product > product_details > product information](#21-product---main---active)
 - [View: Active Print Products](#31-active-print-products)
 - [View: Active Products](#32-active-products)
 - [View: Active SaaS Products](#33-active-saas-products)
-- [View: All Products, Families & Bundles](#34-all-products-families-bundles)
+- [View: All Products, Families & Bundles](#34-all-products-families--bundles)
 - [View: All Products](#35-all-products)
 - [View: Quick Find All Products](#36-quick-find-all-products)
 - [Plugin: OpportunityClone (Read)](#1044-opportunityclone)
@@ -5633,7 +5646,7 @@ Alphabetical field index -- 330 unique fields referenced.
 
 - [Field Definitions](#1-field-definitions)
 - [View: Active Products (Filter)](#32-active-products)
-- [View: All Products, Families & Bundles](#34-all-products-families-bundles)
+- [View: All Products, Families & Bundles](#34-all-products-families--bundles)
 - [View: All Products](#35-all-products)
 - [View: Quick Find All Products](#36-quick-find-all-products)
 - [Workflow: BatchConverttoLead (Write)](#74-batchconverttolead)
@@ -5783,14 +5796,14 @@ Alphabetical field index -- 330 unique fields referenced.
 - [Field Definitions](#1-field-definitions)
 - [View: Active Print Products](#31-active-print-products)
 - [View: Active SaaS Products](#33-active-saas-products)
-- [View: All Products, Families & Bundles](#34-all-products-families-bundles)
+- [View: All Products, Families & Bundles](#34-all-products-families--bundles)
 
 #### validtodate
 
 - [Field Definitions](#1-field-definitions)
 - [View: Active Print Products](#31-active-print-products)
 - [View: Active SaaS Products](#33-active-saas-products)
-- [View: All Products, Families & Bundles](#34-all-products-families-bundles)
+- [View: All Products, Families & Bundles](#34-all-products-families--bundles)
 
 #### value
 

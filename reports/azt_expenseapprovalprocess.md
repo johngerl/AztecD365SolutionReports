@@ -1,11 +1,24 @@
 # Azt_expenseapprovalprocess Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_expenseapprovalprocess |
+| **Display Name** | Expense Approval Process |
+| **Description** | Base entity for process Expense Approval Process |
+| **Object Type** | Custom |
+| **Ownership Type** | OrgOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 1763 |
+| **Last Update** | 2026-03-17 12:52:43 |
+| **Primary ID Field** | azt_expenseapprovalprocessid |
+| **Primary Name Field** | bpf_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (main) -- Active](#21-information-main-active)
+  - [2.1. Information - main - Active](#21-information---main---active)
 - [3. Views](#3-views)
   - [3.1. Active Expense Approval Process on my Expense Reports](#31-active-expense-approval-process-on-my-expense-reports)
   - [3.2. Active Expense Approval Process](#32-active-expense-approval-process)
@@ -65,7 +78,7 @@
   - [7.42. iGradPhone-callAuto-assign](#742-igradphone-callauto-assign)
 - [8. JavaScript Web Resources](#8-javascript-web-resources)
   - [8.1. azt_expensereportlibrary](#81-azt_expensereportlibrary)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -151,7 +164,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -165,12 +178,12 @@ Total fields: **22**
 | 1 | [activestageid](#activestageid) | Active Stage | lookup |  | No | none | 2026-03-17 12:52:43 | true |  |  |  |  |  |  |  | [9](#3-views) |  |  |  | [3](#7-workflows) |  |  |  | [1](#12-relationships) |  |  |
 | 2 | [activestagestartedon](#activestagestartedon) | Active Stage Started On | datetime |  | No | none | 2026-03-17 12:52:43 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 3 | [bpf_azt_expensereportid](#bpf_azt_expensereportid) | Azt_Expensereport | lookup |  | Yes | none | 2026-03-17 12:52:43 | true |  |  |  |  |  |  |  | [9](#3-views) |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
-| 4 | [bpf_duration](#bpf_duration) | Duration | int |  | Yes | none | Never | true |  |  |  |  |  |  |  | [2](#3-views) |  |  |  |  | [1](#9-formulas-rollups) | [1](#10-plugin-source-code-analysis) |  |  |  |  |
+| 4 | [bpf_duration](#bpf_duration) | Duration | int |  | Yes | none | Never | true |  |  |  |  |  |  |  | [2](#3-views) |  |  |  |  | [1](#9-formulas-and-rollups) | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 5 | [bpf_name](#bpf_name) | Name | nvarchar |  | Yes | required | 2026-03-17 12:52:43 | true |  |  |  |  |  |  |  | [18](#3-views) |  |  |  |  |  |  |  |  |  |  |
 | 6 | [businessprocessflowinstanceid](#businessprocessflowinstanceid) | Expense Approval Process | primarykey |  | No | systemrequired | 2026-03-17 12:52:43 | true |  |  |  |  |  |  |  | [10](#3-views) |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 7 | [completedon](#completedon) | Completed On | datetime |  | No | none | Never | true |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 7 | [completedon](#completedon) | Completed On | datetime |  | No | none | Never | true |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 8 | [createdby](#createdby) | Created By | lookup |  | No | none | 2026-03-17 12:52:43 | true |  |  |  |  |  |  |  |  |  |  |  | [25](#7-workflows) |  |  |  | [1](#12-relationships) |  |  |
-| 9 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) | true |  |  |  |  |  |  |  | [9](#3-views) |  |  |  | [7](#7-workflows) | [1](#9-formulas-rollups) | [10](#10-plugin-source-code-analysis) |  |  |  |  |
+| 9 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) | true |  |  |  |  |  |  |  | [9](#3-views) |  |  |  | [7](#7-workflows) | [1](#9-formulas-and-rollups) | [10](#10-plugin-source-code-analysis) |  |  |  |  |
 | 10 | [createdonbehalfby](#createdonbehalfby) | Created By (Delegate) | lookup |  | No | none | Never | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 11 | [importsequencenumber](#importsequencenumber) | Import Sequence Number | int |  | No | none | Never | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 12 | [modifiedby](#modifiedby) | Modified By | lookup |  | No | none | 2026-03-17 12:52:43 | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7-workflows) |  |  |  | [1](#12-relationships) |  |  |
@@ -191,7 +204,7 @@ Total fields: **22**
 
 Total forms: **1**
 
-### 2.1. Information (main) -- Active
+### 2.1. Information - main - Active
 
 - **Form ID:** `{8ccf86c5-c4fc-4a7f-b782-4e20df8f26b6}`
 - **Presentation:** UCI/Tablet
@@ -1083,7 +1096,7 @@ Total JS files referencing Azt_expenseapprovalprocess fields: **1**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_expenseapprovalprocess: **1**
 
@@ -3264,7 +3277,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -3755,7 +3768,7 @@ Alphabetical field index -- 341 unique fields referenced.
 
 #### azt_approvingcorporatemanagerid
 
-- [Form: Information > Corporate Approval > Corporate Approval](#21-information-main-active)
+- [Form: Information > Corporate Approval > Corporate Approval](#21-information---main---active)
 
 #### azt_autocreatecallback
 
@@ -4046,7 +4059,7 @@ Alphabetical field index -- 341 unique fields referenced.
 
 #### azt_ispaid
 
-- [Form: Information > Pending Payment > Pending Payment](#21-information-main-active)
+- [Form: Information > Pending Payment > Pending Payment](#21-information---main---active)
 
 #### azt_isprint
 
@@ -4539,7 +4552,7 @@ Alphabetical field index -- 341 unique fields referenced.
 
 #### azt_submittedbyid
 
-- [Form: Information > Draft > Draft](#21-information-main-active)
+- [Form: Information > Draft > Draft](#21-information---main---active)
 
 #### azt_suffix
 
@@ -4654,7 +4667,7 @@ Alphabetical field index -- 341 unique fields referenced.
 - [Field Definitions](#1-field-definitions)
 - [View: Inactive Expense Approval Process on my Expense Reports](#38-inactive-expense-approval-process-on-my-expense-reports)
 - [View: Inactive Expense Approval Process](#39-inactive-expense-approval-process)
-- [Formula: bpf_duration (Target)](#9-formulas-rollups)
+- [Formula: bpf_duration (Target)](#9-formulas-and-rollups)
 - [Plugin: OrderStageTracking (Read)](#1057-orderstagetracking)
 
 #### bpf_name
@@ -4730,11 +4743,11 @@ Alphabetical field index -- 341 unique fields referenced.
 #### completedon
 
 - [Field Definitions](#1-field-definitions)
-- [Formula: bpf_duration](#9-formulas-rollups)
+- [Formula: bpf_duration](#9-formulas-and-rollups)
 
 #### conditionbranchstep2_1
 
-- [Formula: bpf_duration](#9-formulas-rollups)
+- [Formula: bpf_duration](#9-formulas-and-rollups)
 
 #### connectionid
 
@@ -4817,7 +4830,7 @@ Alphabetical field index -- 341 unique fields referenced.
 - [Workflow: EmailRemoveUnsentEmails (Read)](#715-emailremoveunsentemails)
 - [Workflow: FSRLeadDistibutionNotification (Read)](#718-fsrleaddistibutionnotification)
 - [Workflow: NewFSRLeadNotification (Read)](#721-newfsrleadnotification)
-- [Formula: bpf_duration](#9-formulas-rollups)
+- [Formula: bpf_duration](#9-formulas-and-rollups)
 - [Plugin: AccountLeadGen (Filter)](#102-accountleadgen)
 - [Plugin: ChangeLicenseType (Sort)](#1016-changelicensetype)
 - [Plugin: CreateUserGoals (Read)](#1022-createusergoals)
@@ -5575,23 +5588,23 @@ Alphabetical field index -- 341 unique fields referenced.
 
 #### setattributevaluestep4_1
 
-- [Formula: bpf_duration](#9-formulas-rollups)
+- [Formula: bpf_duration](#9-formulas-and-rollups)
 
 #### setattributevaluestep4_2
 
-- [Formula: bpf_duration](#9-formulas-rollups)
+- [Formula: bpf_duration](#9-formulas-and-rollups)
 
 #### setattributevaluestep4_3
 
-- [Formula: bpf_duration](#9-formulas-rollups)
+- [Formula: bpf_duration](#9-formulas-and-rollups)
 
 #### setattributevaluestep4_4
 
-- [Formula: bpf_duration](#9-formulas-rollups)
+- [Formula: bpf_duration](#9-formulas-and-rollups)
 
 #### setattributevaluestep4_5
 
-- [Formula: bpf_duration](#9-formulas-rollups)
+- [Formula: bpf_duration](#9-formulas-and-rollups)
 
 #### shippingmethodcode
 
@@ -5628,7 +5641,7 @@ Alphabetical field index -- 341 unique fields referenced.
 #### statecode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > Manager Approval > Manager Approval](#21-information-main-active)
+- [Form: Information > Manager Approval > Manager Approval](#21-information---main---active)
 - [View: Active Expense Approval Process on my Expense Reports](#31-active-expense-approval-process-on-my-expense-reports)
 - [View: Active Expense Approval Process on my Expense Reports (Filter)](#31-active-expense-approval-process-on-my-expense-reports)
 - [View: Active Expense Approval Process](#32-active-expense-approval-process)

@@ -1,19 +1,32 @@
 # Opportunity Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | opportunity |
+| **Display Name** | Opportunity |
+| **Description** | Potential revenue-generating event, or sale to an account, which needs to be tracked through a sales process to completion. |
+| **Object Type** | Standard |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | True |
+| **Total Rows** | 53257 |
+| **Last Update** | 2026-03-21 01:27:04 |
+| **Primary ID Field** | opportunityid |
+| **Primary Name Field** | name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. AI for Sales (main) -- Active](#21-ai-for-sales-main-active)
-  - [2.2. iGrad (main) -- Active](#22-igrad-main-active)
-  - [2.3. Opportunity (main) -- Active](#23-opportunity-main-active)
-  - [2.4. Information (main) -- Inactive](#24-information-main-inactive)
-  - [2.5. Opportunity (quickCreate) -- Active](#25-opportunity-quickcreate-active)
-  - [2.6. Opportunity Quick (quickCreate) -- Active](#26-opportunity-quick-quickcreate-active)
-  - [2.7. Opportunity Record Owner (quick) -- Active](#27-opportunity-record-owner-quick-active)
-  - [2.8. Opportunity Owner Quick View (quick) -- Active](#28-opportunity-owner-quick-view-quick-active)
-  - [2.9. Order Opportunity Owner Quick View (quick) -- Active](#29-order-opportunity-owner-quick-view-quick-active)
+  - [2.1. AI for Sales - main - Active](#21-ai-for-sales---main---active)
+  - [2.2. iGrad - main - Active](#22-igrad---main---active)
+  - [2.3. Opportunity - main - Active](#23-opportunity---main---active)
+  - [2.4. Information - main - Inactive](#24-information---main---inactive)
+  - [2.5. Opportunity - quickCreate - Active](#25-opportunity---quickcreate---active)
+  - [2.6. Opportunity Quick - quickCreate - Active](#26-opportunity-quick---quickcreate---active)
+  - [2.7. Opportunity Record Owner - quick - Active](#27-opportunity-record-owner---quick---active)
+  - [2.8. Opportunity Owner Quick View - quick - Active](#28-opportunity-owner-quick-view---quick---active)
+  - [2.9. Order Opportunity Owner Quick View - quick - Active](#29-order-opportunity-owner-quick-view---quick---active)
 - [3. Views](#3-views)
   - [3.1. All Opportunities](#31-all-opportunities)
   - [3.2. Closed Opportunities in Current Fiscal Year](#32-closed-opportunities-in-current-fiscal-year)
@@ -66,8 +79,8 @@
   - [3.49. Opportunity Advanced Find View](#349-opportunity-advanced-find-view)
   - [3.50. Opportunity Associated View](#350-opportunity-associated-view)
   - [3.51. Opportunity Lookup View](#351-opportunity-lookup-view)
-  - [3.52. Out of Territory Opportunities - Open](#352-out-of-territory-opportunities-open)
-  - [3.53. Overdue Opportunities > 45 Days](#353-overdue-opportunities-45-days)
+  - [3.52. Out of Territory Opportunities - Open](#352-out-of-territory-opportunities---open)
+  - [3.53. Overdue Opportunities > 45 Days](#353-overdue-opportunities--45-days)
   - [3.54. Quick Find Open Opportunities](#354-quick-find-open-opportunities)
   - [3.55. Recent Opportunities](#355-recent-opportunities)
   - [3.56. Self Sourced Pipeline per rep in Last 30 Days](#356-self-sourced-pipeline-per-rep-in-last-30-days)
@@ -220,7 +233,7 @@
   - [8.13. azt_productdiscountlibrary](#813-azt_productdiscountlibrary)
   - [8.14. azt_quotelibrary](#814-azt_quotelibrary)
   - [8.15. azt_sendquote](#815-azt_sendquote)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -306,7 +319,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -322,16 +335,16 @@ Total fields: **126**
 | 3 | [actualvalue](#actualvalue) | Actual Revenue | money |  | No | none | 2026-03-20 20:16:40 | true |  |  |  |  |  |  |  | [15](#3-views) | [2](#4-chart-visualizations) |  |  | [1](#7-workflows) |  |  |  |  |  |  |
 | 4 | [actualvalue_base](#actualvalue_base) | Actual Revenue (Base) | money |  | No | none | 2026-03-20 20:16:40 | true |  |  |  |  |  |  |  | [2](#3-views) |  |  |  |  |  |  |  |  |  |  |
 | 5 | [azt_accountclassification](#azt_accountclassification) | Account Classification | picklist | 276530000: A, 276530001: B, 276530002: C, 100000001: D, 100000000: E, 276530003: S, 276530004: N/A | Yes | none | 2026-03-20 21:44:40 | true | Opportunity | CRM Account Classification | CRM_Account_Classification__c |  |  |  | [2](#2-forms) | [9](#3-views) |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
-| 6 | [azt_addonopportunitytotal](#azt_addonopportunitytotal) | Add-On Opportunity Total | money |  | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | CRM Add On Opportunity Total | CRM_Add_On_Opportunity_Total__c |  |  |  | [2](#2-forms) |  |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 6 | [azt_addonopportunitytotal](#azt_addonopportunitytotal) | Add-On Opportunity Total | money |  | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | CRM Add On Opportunity Total | CRM_Add_On_Opportunity_Total__c |  |  |  | [2](#2-forms) |  |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 7 | [azt_addonopportunitytotal_base](#azt_addonopportunitytotal_base) | Add-On Opportunity Total (Base) | money |  | Yes | none | 2026-03-21 01:27:04 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 8 | [azt_assignedamid](#azt_assignedamid) | Assigned AM | lookup |  | Yes | none | 2026-03-21 00:56:55 | true | Opportunity | CRM Assigned AM | CRM_Assigned_AM__c |  |  |  | [1](#2-forms) |  |  |  |  |  |  |  |  | [1](#12-relationships) |  |  |
 | 9 | [azt_committoestimatedclose](#azt_committoestimatedclose) | Commit to Pipeline? | bit | 1: Yes, 0: No | Yes | none | 2026-03-21 01:27:04 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
-| 10 | [azt_dayssincecreated](#azt_dayssincecreated) | Days Since Created | int |  | Yes | none | 2026-03-21 01:27:04 | true |  |  |  |  |  |  | [2](#2-forms) | [3](#3-views) |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
-| 11 | [azt_dayssinceprobabilitychanged](#azt_dayssinceprobabilitychanged) | Days Since Probability Changed | int |  | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | CRM Days Since Probability Changed | CRM_Days_Since_Probability_Changed__c |  |  |  | [2](#2-forms) | [4](#3-views) |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 10 | [azt_dayssincecreated](#azt_dayssincecreated) | Days Since Created | int |  | Yes | none | 2026-03-21 01:27:04 | true |  |  |  |  |  |  | [2](#2-forms) | [3](#3-views) |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
+| 11 | [azt_dayssinceprobabilitychanged](#azt_dayssinceprobabilitychanged) | Days Since Probability Changed | int |  | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | CRM Days Since Probability Changed | CRM_Days_Since_Probability_Changed__c |  |  |  | [2](#2-forms) | [4](#3-views) |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 12 | [azt_defaultfreightamount](#azt_defaultfreightamount) | Default Freight Amount | money |  | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | CRM Default Freight Amount | CRM_Default_Freight_Amount__c |  |  |  | [2](#2-forms) |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 13 | [azt_defaultfreightamount_base](#azt_defaultfreightamount_base) | Default Freight Amount (Base) | money |  | Yes | none | 2026-03-21 01:27:04 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 14 | [azt_deliverytype](#azt_deliverytype) | Delivery Type | picklist | 276530000: Internet, 276530001: LAN, 276530002: Print, 276530003: LAN & Print, 276530004: Internet & Print, 276530005: Internet Year 2, 276530006: Internet Year 3+, 276530007: SA, 276530008: WAN | Yes | none | 2026-03-21 00:56:55 | true | Opportunity | CRM Delivery Type | CRM_Delivery_Type__c |  |  |  | [2](#2-forms) |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
-| 15 | [azt_discretionarydiscount](#azt_discretionarydiscount) | Discretionary Discount | money |  | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | CRM Discretionary Discount | CRM_Discretionary_Discount__c |  |  |  | [2](#2-forms) |  |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 15 | [azt_discretionarydiscount](#azt_discretionarydiscount) | Discretionary Discount | money |  | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | CRM Discretionary Discount | CRM_Discretionary_Discount__c |  |  |  | [2](#2-forms) |  |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 16 | [azt_discretionarydiscount_base](#azt_discretionarydiscount_base) | Discretionary Discount (Base) | money |  | Yes | none | 2026-03-21 01:27:04 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 17 | [azt_discretionarydiscountamt](#azt_discretionarydiscountamt) | Discretionary Discount Amt | money |  | Yes | none | 2026-02-27 20:44:28 | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 18 | [azt_discretionarydiscountamt_base](#azt_discretionarydiscountamt_base) | Discretionary Discount Amt (Base) | money |  | Yes | none | 2026-02-27 20:44:28 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -340,7 +353,7 @@ Total fields: **126**
 | 21 | [azt_freightamtapproved](#azt_freightamtapproved) | Freight Amt Approved? | bit | 1: Yes, 0: No | Yes | none | 2026-03-21 01:27:04 | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 22 | [azt_fundingsource](#azt_fundingsource) | Funding Source | picklist | 276530000: Annual Budget, 276530001: Discretionary Budget, 276530002: Grant - Federal, 276530003: Grant - Private, 276530004: Grant - State, 276530005: Grant - Perkins, 276530006: Title 1 Funds, 276530007: Other, 276530008: Use or Lose Funds | Yes | none | 2026-03-20 21:44:40 | true | Opportunity | Funding Source | Funding_Source__c |  |  |  | [4](#2-forms) |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
 | 23 | [azt_historicalowner](#azt_historicalowner) | Historical Owner | nvarchar |  | Yes | none | 2026-03-20 15:49:24 | true | Opportunity | CRM Historical Owner | CRM_Historical_Owner__c |  |  |  |  |  |  |  |  | [3](#7-workflows) |  |  |  |  |  |  |
-| 24 | [azt_initialopportunitytotal](#azt_initialopportunitytotal) | Initial Opportunity Total | money |  | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | CRM Initial Opportunity Total | CRM_Initial_Opportunity_Total__c |  |  |  | [2](#2-forms) |  |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 24 | [azt_initialopportunitytotal](#azt_initialopportunitytotal) | Initial Opportunity Total | money |  | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | CRM Initial Opportunity Total | CRM_Initial_Opportunity_Total__c |  |  |  | [2](#2-forms) |  |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 25 | [azt_initialopportunitytotal_base](#azt_initialopportunitytotal_base) | Initial Opportunity Total (Base) | money |  | Yes | none | 2026-03-21 01:27:04 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 26 | [azt_internalaztecnotes](#azt_internalaztecnotes) | Internal Aztec Notes | ntext |  | Yes | none | 2026-03-20 21:16:46 | true | Opportunity | CRM Internal Aztec Notes | CRM_Internal_Aztec_Notes__c |  |  |  | [1](#2-forms) |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
 | 27 | [azt_invoicenumber](#azt_invoicenumber) | Invoice Number | nvarchar |  | Yes | none | Never | false | Opportunity | CRM Invoice Number | CRM_Invoice_Number__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -352,29 +365,29 @@ Total fields: **126**
 | 33 | [azt_opportunitynumber](#azt_opportunitynumber) | Opp# | nvarchar |  | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | CRM Opportunity Number | CRM_Opportunity_Number__c |  |  |  | [2](#2-forms) | [7](#3-views) |  |  |  |  |  |  |  |  |  |  |
 | 34 | [azt_opportunityproductcategory](#azt_opportunityproductcategory) | Opportunity Product Category | picklist | 276530000: P12 & Legacy, 276530001: Kaplan Book, 276530002: GED Flash, 276530003: P12 Prep, 276530004: Legacy, 276530005: APT - Free, 276530006: APT - Paid, 276530007: OPT - Free, 276530008: OPT - Paid, 276530009: Workbooks, 276530010: LSE Booklets | Yes | none | 2026-03-20 17:38:23 | true | Opportunity | CRM Opportunity Product Category | CRM_Opportunity_Product_Category__c |  |  |  | [2](#2-forms) | [25](#3-views) |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
 | 35 | [azt_opportunitytype](#azt_opportunitytype) | Opportunity Type | picklist | 276530005: Renewal, 276530004: Initial, 276530002: Print, 276530003: Add-On, 276530001: Vouchers, 276530000: Pilot, 276530008: Professional Development, 276530006: Monthly, 100000000: Win Back, 327630000: Sample, 100000001: PA, 276530007: Other, 327630001: Add On - Reseller | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | Type | Type |  |  |  | [4](#2-forms) | [57](#3-views) |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
-| 36 | [azt_otheropportunitytotal](#azt_otheropportunitytotal) | Other Opportunity Total | money |  | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | CRM Other Opportunity Total | CRM_Other_Opportunity_Total__c |  |  |  | [2](#2-forms) |  |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 36 | [azt_otheropportunitytotal](#azt_otheropportunitytotal) | Other Opportunity Total | money |  | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | CRM Other Opportunity Total | CRM_Other_Opportunity_Total__c |  |  |  | [2](#2-forms) |  |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 37 | [azt_otheropportunitytotal_base](#azt_otheropportunitytotal_base) | Other Opportunity Total (Base) | money |  | Yes | none | 2026-03-21 01:27:04 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 38 | [azt_parentopportunityid](#azt_parentopportunityid) | Parent Opportunity | lookup |  | Yes | none | 2026-03-20 21:44:40 | true | Opportunity | CRM Parent Opportunity Name | CRM_Parent_Opportunity_Name__c |  |  |  |  |  |  |  |  | [1](#7-workflows) |  | [2](#10-plugin-source-code-analysis) |  | [1](#12-relationships) |  |  |
-| 39 | [azt_pilotopportunitytotal](#azt_pilotopportunitytotal) | Pilot Opportunity Total | money |  | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | CRM Pilot Opportunity Total | CRM_Pilot_Opportunity_Total__c |  |  |  | [2](#2-forms) |  |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 39 | [azt_pilotopportunitytotal](#azt_pilotopportunitytotal) | Pilot Opportunity Total | money |  | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | CRM Pilot Opportunity Total | CRM_Pilot_Opportunity_Total__c |  |  |  | [2](#2-forms) |  |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 40 | [azt_pilotopportunitytotal_base](#azt_pilotopportunitytotal_base) | Pilot Opportunity Total (Base) | money |  | Yes | none | 2026-03-21 01:27:04 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 41 | [azt_pipelinestage](#azt_pipelinestage) | Pipeline Stage | picklist | 276530000: Identify, 276530001: Qualified, 276530002: Prospecting, 276530003: Cultivating, 276530004: Proposing, 276530005: Closing, 276530006: Delivering, 276530007: Awaiting Payment, 276530008: Won | Yes | none | 2026-03-21 00:56:55 | true | Opportunity | Stage | StageName |  |  |  | [4](#2-forms) | [23](#3-views) |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
 | 42 | [azt_previewcompleted](#azt_previewcompleted) | Preview Completed | picklist | 276530000: Yes, 276530001: No | Yes | none | 2025-11-21 19:17:05 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 43 | [azt_previousprobability](#azt_previousprobability) | Previous Probability | nvarchar |  | Yes | none | Never | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 44 | [azt_printopportunitytotal](#azt_printopportunitytotal) | Print Opportunity Total | money |  | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | CRM Print Opportunity Total | CRM_Print_Opportunity_Total__c |  |  |  | [2](#2-forms) |  |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 44 | [azt_printopportunitytotal](#azt_printopportunitytotal) | Print Opportunity Total | money |  | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | CRM Print Opportunity Total | CRM_Print_Opportunity_Total__c |  |  |  | [2](#2-forms) |  |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 45 | [azt_printopportunitytotal_base](#azt_printopportunitytotal_base) | Print Opportunity Total (Base) | money |  | Yes | none | 2026-03-21 01:27:04 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 46 | [azt_probability](#azt_probability) | Probability | picklist | 276530010: 1%, 276530000: 10%, 276530001: 20%, 276530002: 30%, 100000001: 35%, 276530003: 40%, 276530004: 50%, 100000000: 55%, 276530005: 60%, 276530006: 70%, 100530010: 75%, 276530007: 80%, 276530008: 90%, 327630000: 95%, 276530009: 99% | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | CRM Probability | CRM_Probability__c |  |  |  | [4](#2-forms) | [32](#3-views) |  |  |  | [2](#7-workflows) |  | [5](#10-plugin-source-code-analysis) |  |  |  |  |
-| 47 | [azt_probabilitychangedon](#azt_probabilitychangedon) | Probability Changed On | datetime |  | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | Probability Last Changed | Probability_Last_Changed__c |  |  |  |  | [7](#3-views) |  |  |  |  | [1](#9-formulas-rollups) | [1](#10-plugin-source-code-analysis) |  |  |  |  |
+| 47 | [azt_probabilitychangedon](#azt_probabilitychangedon) | Probability Changed On | datetime |  | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | Probability Last Changed | Probability_Last_Changed__c |  |  |  |  | [7](#3-views) |  |  |  |  | [1](#9-formulas-and-rollups) | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 48 | [azt_probabilityincreased](#azt_probabilityincreased) | Probability Increased? | bit | 1: Yes, 0: No | Yes | none | 2026-03-21 01:27:04 | true |  |  |  |  |  |  |  | [1](#3-views) |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 49 | [azt_quotesent](#azt_quotesent) | Quote Sent | picklist | 276530000: Yes, 276530001: No | Yes | none | 2025-11-21 19:16:23 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 50 | [azt_recordownerid](#azt_recordownerid) | Record Owner | lookup |  | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | Record Owner | OwnerId |  |  |  | [6](#2-forms) | [66](#3-views) | [32](#4-chart-visualizations) |  |  | [39](#7-workflows) |  | [9](#10-plugin-source-code-analysis) |  | [1](#12-relationships) |  |  |
 | 51 | [azt_renewalnotes](#azt_renewalnotes) | Renewal Notes | nvarchar |  | Yes | none | 2026-03-20 20:21:37 | true | Opportunity | Renewal Notes | Renewal_Notes__c |  |  |  | [2](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 52 | [azt_renewalopportunitytotal](#azt_renewalopportunitytotal) | Renewal Opportunity Total | money |  | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | CRM Renewal Opportunity Total | CRM_Renewal_Opportunity_Total__c |  |  |  | [2](#2-forms) |  |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 52 | [azt_renewalopportunitytotal](#azt_renewalopportunitytotal) | Renewal Opportunity Total | money |  | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | CRM Renewal Opportunity Total | CRM_Renewal_Opportunity_Total__c |  |  |  | [2](#2-forms) |  |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 53 | [azt_renewalopportunitytotal_base](#azt_renewalopportunitytotal_base) | Renewal Opportunity Total (Base) | money |  | Yes | none | 2026-03-21 01:27:04 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 54 | [azt_requestedfreightamt](#azt_requestedfreightamt) | Requested Freight Amt | money |  | Yes | none | 2025-04-02 16:39:05 | true | Opportunity | CRM Requested Freight Amount | CRM_Requested_Freight_Amount__c |  |  |  | [2](#2-forms) |  |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 55 | [azt_requestedfreightamt_base](#azt_requestedfreightamt_base) | Requested Freight Amt (Base) | money |  | Yes | none | 2025-04-02 16:39:05 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 56 | [azt_salesstage](#azt_salesstage) | Sales Stage | picklist |  | Yes | none | 2026-03-02 14:12:04 | true |  |  |  |  |  |  |  |  |  |  |  | [1](#7-workflows) |  |  |  |  |  |  |
 | 57 | [azt_webinarpresentationcompleted](#azt_webinarpresentationcompleted) | Webinar/Presentation Completed | picklist | 276530000: Yes, 276530001: No | Yes | none | 2025-11-21 19:17:05 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 58 | [azt_winbackopportunitytotal](#azt_winbackopportunitytotal) | Win-Back Opportunity Total | money |  | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | CRM Win Back Opportunity Total | CRM_Win_Back_Opportunity_Total__c |  |  |  | [2](#2-forms) |  |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 58 | [azt_winbackopportunitytotal](#azt_winbackopportunitytotal) | Win-Back Opportunity Total | money |  | Yes | none | 2026-03-21 01:27:04 | true | Opportunity | CRM Win Back Opportunity Total | CRM_Win_Back_Opportunity_Total__c |  |  |  | [2](#2-forms) |  |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 59 | [azt_winbackopportunitytotal_base](#azt_winbackopportunitytotal_base) | Win-Back Opportunity Total (Base) | money |  | Yes | none | 2026-03-21 01:27:04 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 60 | [budgetamount](#budgetamount) | Budget amount | money |  | No | none | 2026-03-20 21:44:40 | true |  |  |  | Opportunity | Budget_Amount__c | Budget_Amount__c | [2](#2-forms) |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
 | 61 | [budgetstatus](#budgetstatus) | Budget | picklist |  | No | none | Never | true |  |  |  | Opportunity | Budget_Confirmed__c | Budget_Confirmed__c |  |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
@@ -385,7 +398,7 @@ Total fields: **126**
 | 66 | [confirminterest](#confirminterest) | Confirm Interest | bit |  | No | none | 2026-03-21 01:27:04 | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
 | 67 | [contactid](#contactid) | Contact | lookup |  | No | none | 2026-03-05 02:19:28 | true |  |  |  | Opportunity | ContactId | ContactId |  |  |  |  |  |  |  | [5](#10-plugin-source-code-analysis) |  |  |  |  |
 | 68 | [createdby](#createdby) | Created By | lookup |  | No | none | 2026-03-21 01:27:04 | true |  |  |  | Opportunity | Legacy_Created_By__c | Legacy_Created_By__c | [2](#2-forms) | [9](#3-views) | [14](#4-chart-visualizations) |  |  | [1](#7-workflows) |  |  |  |  |  |  |
-| 69 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) | true |  |  |  | Opportunity | Legacy_Created_On__c | Legacy_Created_On__c | [2](#2-forms) | [39](#3-views) | [3](#4-chart-visualizations) |  |  |  | [1](#9-formulas-rollups) | [10](#10-plugin-source-code-analysis) |  |  |  |  |
+| 69 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) | true |  |  |  | Opportunity | Legacy_Created_On__c | Legacy_Created_On__c | [2](#2-forms) | [39](#3-views) | [3](#4-chart-visualizations) |  |  |  | [1](#9-formulas-and-rollups) | [10](#10-plugin-source-code-analysis) |  |  |  |  |
 | 70 | [currentsituation](#currentsituation) | Current Situation | ntext |  | No | none | 2026-03-20 22:27:05 | true |  |  |  | Opportunity | NextStep | NextStep | [2](#2-forms) |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
 | 71 | [customerid](#customerid) | Potential Customer | customer |  | No | required | 2026-03-21 01:27:04 | true |  |  |  |  |  |  |  | [48](#3-views) |  |  |  | [14](#7-workflows) |  | [11](#10-plugin-source-code-analysis) |  | [1](#12-relationships) |  |  |
 | 72 | [customerneed](#customerneed) | Customer Need | ntext |  | No | none | 2026-03-20 22:27:05 | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  | [1](#7-workflows) |  |  |  |  |  |  |
@@ -450,7 +463,7 @@ Total fields: **126**
 
 Total forms: **9**
 
-### 2.1. AI for Sales (main) -- Active
+### 2.1. AI for Sales - main - Active
 
 - **Form ID:** `{595978a6-704c-4aec-aab8-34f3927c1cda}`
 - **Presentation:** UCI/Tablet
@@ -488,7 +501,7 @@ Total forms: **9**
 
 ##### Section: linkedin_v2_tab_section_3
 
-### 2.2. iGrad (main) -- Active
+### 2.2. iGrad - main - Active
 
 - **Form ID:** `{62b5695a-d153-4bdc-9638-79409d3abcc1}`
 - **Presentation:** UCI/Tablet
@@ -726,7 +739,7 @@ Total forms: **9**
 | onrecordselect |  | `DSC.DiscountFunctions.gridSelectRow` | `azt_discountgridfunctions` | true |
 | onchange | azt_freightamtapproved | `OPP.OPPFunctions.setFreightAmt` | `azt_opportunitylibrary` | true |
 
-### 2.3. Opportunity (main) -- Active
+### 2.3. Opportunity - main - Active
 
 - **Form ID:** `{a837e4a7-01b8-4f82-a475-be9abd67e667}`
 - **Presentation:** UCI/Tablet
@@ -917,7 +930,7 @@ Total forms: **9**
 | onrecordselect |  | `DSC.DiscountFunctions.gridSelectRow` | `azt_discountgridfunctions` | true |
 | onchange | azt_freightamtapproved | `OPP.OPPFunctions.setFreightAmt` | `azt_opportunitylibrary` | true |
 
-### 2.4. Information (main) -- Inactive
+### 2.4. Information - main - Inactive
 
 - **Form ID:** `{a2a56263-ec37-4991-a3b0-e7b37a71d818}`
 - **Presentation:** Classic
@@ -951,7 +964,7 @@ Total forms: **9**
 |-------|-------|----------|---------|
 | [WebResource_RecordWall](#webresource_recordwall) | RecordWall | No | Yes |
 
-### 2.5. Opportunity (quickCreate) -- Active
+### 2.5. Opportunity - quickCreate - Active
 
 - **Form ID:** `{e3c588ee-8e11-49da-a5fe-3800f3f683de}`
 - **Presentation:** Classic
@@ -976,7 +989,7 @@ Total forms: **9**
 | [ownerid](#ownerid) | Owner | No | Yes |
 | [estimatedvalue](#estimatedvalue) | Est. Revenue | No | Yes |
 
-### 2.6. Opportunity Quick (quickCreate) -- Active
+### 2.6. Opportunity Quick - quickCreate - Active
 
 - **Form ID:** `{1f4f9cba-78e3-4bf7-b194-65d71fa84200}`
 - **Presentation:** UCI/Tablet
@@ -1007,7 +1020,7 @@ Total forms: **9**
 |-------|-------|----------|---------|
 | [customerneed](#customerneed) | Customer Need | No | Yes |
 
-### 2.7. Opportunity Record Owner (quick) -- Active
+### 2.7. Opportunity Record Owner - quick - Active
 
 - **Form ID:** `{7305dc75-69b6-4d33-8caa-82516d20a507}`
 - **Presentation:** UCI/Tablet
@@ -1021,7 +1034,7 @@ Total forms: **9**
 |-------|-------|----------|---------|
 | [azt_recordownerid](#azt_recordownerid) | Record Owner | No | Yes |
 
-### 2.8. Opportunity Owner Quick View (quick) -- Active
+### 2.8. Opportunity Owner Quick View - quick - Active
 
 - **Form ID:** `{087cefcf-a5f8-4eb0-bb5a-8f30fbce0ac8}`
 - **Presentation:** UCI/Tablet
@@ -1036,7 +1049,7 @@ Total forms: **9**
 | [azt_recordownerid](#azt_recordownerid) | Record Owner | No | Yes |
 | [ownerid](#ownerid) | Opportunity Owner | No | No |
 
-### 2.9. Order Opportunity Owner Quick View (quick) -- Active
+### 2.9. Order Opportunity Owner Quick View - quick - Active
 
 - **Form ID:** `{8ae9ecb5-a042-4c4d-b1f4-df762846bbcf}`
 - **Presentation:** UCI/Tablet
@@ -5363,7 +5376,7 @@ Total JS files referencing Opportunity fields: **15**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Opportunity: **10**
 
@@ -7738,7 +7751,7 @@ Total relationships involving Opportunity: **20**
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -8184,12 +8197,12 @@ Alphabetical field index -- 446 unique fields referenced.
 
 #### actioncards
 
-- [Form: iGrad > Summary > Assistant](#22-igrad-main-active)
+- [Form: iGrad > Summary > Assistant](#22-igrad---main---active)
 
 #### activities
 
-- [Form: iGrad > Forecast/Activities > Section](#22-igrad-main-active)
-- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity-main-active)
+- [Form: iGrad > Forecast/Activities > Section](#22-igrad---main---active)
+- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity---main---active)
 
 #### activityid
 
@@ -8209,8 +8222,8 @@ Alphabetical field index -- 446 unique fields referenced.
 #### actualclosedate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad (Footer)](#22-igrad-main-active)
-- [Form: Opportunity (Footer)](#23-opportunity-main-active)
+- [Form: iGrad (Footer)](#22-igrad---main---active)
+- [Form: Opportunity (Footer)](#23-opportunity---main---active)
 - [View: All Opportunities](#31-all-opportunities)
 - [View: Closed Opportunities in Current Fiscal Year](#32-closed-opportunities-in-current-fiscal-year)
 - [View: Closed Opportunities in Current Fiscal Year (Filter)](#32-closed-opportunities-in-current-fiscal-year)
@@ -8355,8 +8368,8 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_accountclassification
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Summary > Opportunity Information](#22-igrad-main-active)
-- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity-main-active)
+- [Form: iGrad > Summary > Opportunity Information](#22-igrad---main---active)
+- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity---main---active)
 - [View: My Initial/Add-on Opportunities Added Last Week](#310-my-initialadd-on-opportunities-added-last-week)
 - [View: My Initial/Add-on Opportunities Added This Month](#311-my-initialadd-on-opportunities-added-this-month)
 - [View: My Initial/Add-on Opportunities Added This Week](#312-my-initialadd-on-opportunities-added-this-week)
@@ -8395,9 +8408,9 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_addonopportunitytotal
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Summary > Rollup Totals](#22-igrad-main-active)
-- [Form: Opportunity > Summary > Rollup Totals](#23-opportunity-main-active)
-- [Formula: azt_addonopportunitytotal (Target)](#9-formulas-rollups)
+- [Form: iGrad > Summary > Rollup Totals](#22-igrad---main---active)
+- [Form: Opportunity > Summary > Rollup Totals](#23-opportunity---main---active)
+- [Formula: azt_addonopportunitytotal (Target)](#9-formulas-and-rollups)
 
 #### azt_addonopportunitytotal_base
 
@@ -8447,7 +8460,7 @@ Alphabetical field index -- 446 unique fields referenced.
 
 #### azt_approvalstatus
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 - [Plugin: OpportunityPreventCreateQuote (Read)](#1047-opportunitypreventcreatequote)
 - [Plugin: OpptyToQuoteFieldMappings (Read)](#1050-opptytoquotefieldmappings)
 - [Plugin: QuotePreventActivateUnapprovedDiscounts (Read)](#1064-quotepreventactivateunapproveddiscounts)
@@ -8455,7 +8468,7 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_assignedamid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity-main-active)
+- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity---main---active)
 - [Relationship: azt_amsystemuser_opportunity](#12-relationships)
 
 #### azt_autocreatecallback
@@ -8507,7 +8520,7 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_committoestimatedclose
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity-main-active)
+- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity---main---active)
 - [Workflow: CloneOpportunity (Write)](#719-cloneopportunity)
 - [Workflow: QualifyLead (Write)](#745-qualifylead)
 - [JS: azt_opportunitylibrary > onLoad()](#810-azt_opportunitylibrary)
@@ -8577,29 +8590,29 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_dayssincecreated
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Summary > Rollup Totals](#22-igrad-main-active)
-- [Form: Opportunity > Summary > Rollup Totals](#23-opportunity-main-active)
+- [Form: iGrad > Summary > Rollup Totals](#22-igrad---main---active)
+- [Form: Opportunity > Summary > Rollup Totals](#23-opportunity---main---active)
 - [View: My Aged or Stuck Opportunities](#38-my-aged-or-stuck-opportunities)
 - [View: Open Opportunities](#332-open-opportunities)
-- [View: Out of Territory Opportunities - Open](#352-out-of-territory-opportunities-open)
-- [Formula: azt_dayssincecreated (Target)](#9-formulas-rollups)
+- [View: Out of Territory Opportunities - Open](#352-out-of-territory-opportunities---open)
+- [Formula: azt_dayssincecreated (Target)](#9-formulas-and-rollups)
 
 #### azt_dayssinceprobabilitychanged
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Forecast/Activities > Section](#22-igrad-main-active)
-- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity-main-active)
+- [Form: iGrad > Forecast/Activities > Section](#22-igrad---main---active)
+- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity---main---active)
 - [View: My Aged or Stuck Opportunities](#38-my-aged-or-stuck-opportunities)
 - [View: My Aged or Stuck Opportunities (Filter)](#38-my-aged-or-stuck-opportunities)
 - [View: Open Opportunities](#332-open-opportunities)
-- [View: Out of Territory Opportunities - Open](#352-out-of-territory-opportunities-open)
-- [Formula: azt_dayssinceprobabilitychanged (Target)](#9-formulas-rollups)
+- [View: Out of Territory Opportunities - Open](#352-out-of-territory-opportunities---open)
+- [Formula: azt_dayssinceprobabilitychanged (Target)](#9-formulas-and-rollups)
 
 #### azt_defaultfreightamount
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Product line items > Freight](#22-igrad-main-active)
-- [Form: Opportunity > Products > Freight](#23-opportunity-main-active)
+- [Form: iGrad > Product line items > Freight](#22-igrad---main---active)
+- [Form: Opportunity > Products > Freight](#23-opportunity---main---active)
 - [JS: azt_opportunitylibrary > setFreightAmt()](#810-azt_opportunitylibrary)
 - [JS: azt_quotelibrary > setFreight()](#814-azt_quotelibrary)
 - [Plugin: QuotePreventActivateUnapprovedFreight (Read)](#1065-quotepreventactivateunapprovedfreight)
@@ -8611,8 +8624,8 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_deliverytype
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Summary > Opportunity Information](#22-igrad-main-active)
-- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity-main-active)
+- [Form: iGrad > Summary > Opportunity Information](#22-igrad---main---active)
+- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity---main---active)
 - [Workflow: CloneOpportunity (Read)](#719-cloneopportunity)
 - [Workflow: CloneOpportunity (Write)](#719-cloneopportunity)
 
@@ -8623,15 +8636,15 @@ Alphabetical field index -- 446 unique fields referenced.
 
 #### azt_discountamount
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 - [Plugin: DiscretionaryDiscountSetHeader (Read)](#1023-discretionarydiscountsetheader)
 
 #### azt_discretionarydiscount
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Product line items > Product Line Item Totals](#22-igrad-main-active)
-- [Form: Opportunity > Products > Product Line Item Totals](#23-opportunity-main-active)
-- [Formula: azt_discretionarydiscount (Target)](#9-formulas-rollups)
+- [Form: iGrad > Product line items > Product Line Item Totals](#22-igrad---main---active)
+- [Form: Opportunity > Products > Product Line Item Totals](#23-opportunity---main---active)
+- [Formula: azt_discretionarydiscount (Target)](#9-formulas-and-rollups)
 
 #### azt_discretionarydiscount_base
 
@@ -8640,8 +8653,8 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_discretionarydiscountamt
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Product line items > Product Line Item Totals](#22-igrad-main-active)
-- [Form: Opportunity > Products > Product Line Item Totals](#23-opportunity-main-active)
+- [Form: iGrad > Product line items > Product Line Item Totals](#22-igrad---main---active)
+- [Form: Opportunity > Products > Product Line Item Totals](#23-opportunity---main---active)
 - [Plugin: DiscretionaryDiscountSetHeader (Write)](#1023-discretionarydiscountsetheader)
 - [Plugin: OpptyToQuoteFieldMappings (Write)](#1050-opptytoquotefieldmappings)
 
@@ -8689,8 +8702,8 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_expectedrenewalvalue
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Summary > Opportunity Information](#22-igrad-main-active)
-- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity-main-active)
+- [Form: iGrad > Summary > Opportunity Information](#22-igrad---main---active)
+- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity---main---active)
 - [View: Open Renewal Opps 90 Days Past Due](#333-open-renewal-opps-90-days-past-due)
 - [View: Open Renewal Opps Close Date Last Month](#334-open-renewal-opps-close-date-last-month)
 - [View: Open Renewal Opps Closing Next Month](#335-open-renewal-opps-closing-next-month)
@@ -8758,8 +8771,8 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_freightamtapproved
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Product line items > Freight](#22-igrad-main-active)
-- [Form: Opportunity > Products > Freight](#23-opportunity-main-active)
+- [Form: iGrad > Product line items > Freight](#22-igrad---main---active)
+- [Form: Opportunity > Products > Freight](#23-opportunity---main---active)
 - [JS: azt_opportunitylibrary > setFreightAmt()](#810-azt_opportunitylibrary)
 - [JS: azt_quotelibrary > setFreight()](#814-azt_quotelibrary)
 - [Plugin: QuotePreventActivateUnapprovedFreight (Read)](#1065-quotepreventactivateunapprovedfreight)
@@ -8796,10 +8809,10 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_fundingsource
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Forecast/Activities > Section](#22-igrad-main-active)
-- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity-main-active)
-- [Form: Opportunity > newOpportunity > quickOpportunity_column2](#25-opportunity-quickcreate-active)
-- [Form: Opportunity Quick > Tab > section](#26-opportunity-quick-quickcreate-active)
+- [Form: iGrad > Forecast/Activities > Section](#22-igrad---main---active)
+- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity---main---active)
+- [Form: Opportunity > newOpportunity > quickOpportunity_column2](#25-opportunity---quickcreate---active)
+- [Form: Opportunity Quick > Tab > section](#26-opportunity-quick---quickcreate---active)
 - [Workflow: CloneOpportunity (Read)](#719-cloneopportunity)
 - [Workflow: CloneOpportunity (Write)](#719-cloneopportunity)
 
@@ -8828,9 +8841,9 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_initialopportunitytotal
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Summary > Rollup Totals](#22-igrad-main-active)
-- [Form: Opportunity > Summary > Rollup Totals](#23-opportunity-main-active)
-- [Formula: azt_initialopportunitytotal (Target)](#9-formulas-rollups)
+- [Form: iGrad > Summary > Rollup Totals](#22-igrad---main---active)
+- [Form: Opportunity > Summary > Rollup Totals](#23-opportunity---main---active)
+- [Formula: azt_initialopportunitytotal (Target)](#9-formulas-and-rollups)
 
 #### azt_initialopportunitytotal_base
 
@@ -8839,7 +8852,7 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_internalaztecnotes
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Opportunity > Summary > Opportunity Details](#23-opportunity-main-active)
+- [Form: Opportunity > Summary > Opportunity Details](#23-opportunity---main---active)
 - [Workflow: CloneOpportunity (Read)](#719-cloneopportunity)
 - [Workflow: CloneOpportunity (Write)](#719-cloneopportunity)
 
@@ -8876,8 +8889,8 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_iscrossselloppty
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Summary > Opportunity Information](#22-igrad-main-active)
-- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity-main-active)
+- [Form: iGrad > Summary > Opportunity Information](#22-igrad---main---active)
+- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity---main---active)
 
 #### azt_isprint
 
@@ -8921,16 +8934,16 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_lastactivitydate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Forecast/Activities > Section](#22-igrad-main-active)
-- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity-main-active)
+- [Form: iGrad > Forecast/Activities > Section](#22-igrad---main---active)
+- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity---main---active)
 - [View: My Aged or Stuck Opportunities](#38-my-aged-or-stuck-opportunities)
 - [Plugin: OpportunityLastActivityDate (Write)](#1045-opportunitylastactivitydate)
 
 #### azt_lastmodifiedbyid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Forecast/Activities > Section](#22-igrad-main-active)
-- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity-main-active)
+- [Form: iGrad > Forecast/Activities > Section](#22-igrad---main---active)
+- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity---main---active)
 - [JS: azt_opportunitylibrary > onLoad()](#810-azt_opportunitylibrary)
 - [Plugin: OpportunityAudit (Read)](#1043-opportunityaudit)
 - [Relationship: azt_systemusermodified_opportunity](#12-relationships)
@@ -8950,7 +8963,7 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_leadsourceid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity-main-active)
+- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity---main---active)
 - [View: Self Sourced Pipeline per rep in Last 30 Days (Filter)](#356-self-sourced-pipeline-per-rep-in-last-30-days)
 - [Workflow: BatchConverttoLead (Write)](#76-batchconverttolead)
 - [Workflow: BulkChangeLeadSource (Write)](#710-bulkchangeleadsource)
@@ -9000,13 +9013,13 @@ Alphabetical field index -- 446 unique fields referenced.
 
 #### azt_licensetype
 
-- [Formula: azt_addonopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_initialopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_otheropportunitytotal](#9-formulas-rollups)
-- [Formula: azt_pilotopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_printopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_renewalopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_winbackopportunitytotal](#9-formulas-rollups)
+- [Formula: azt_addonopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_initialopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_otheropportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_pilotopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_printopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_renewalopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_winbackopportunitytotal](#9-formulas-and-rollups)
 - [Plugin: ChangeLicenseType (Write)](#1016-changelicensetype)
 - [Plugin: CreateCompGoals (Read)](#1020-createcompgoals)
 - [Plugin: CreateSoftwareLicenses (Read)](#1021-createsoftwarelicenses)
@@ -9124,8 +9137,8 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_opportunitynumber
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Summary > Opportunity Information](#22-igrad-main-active)
-- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity-main-active)
+- [Form: iGrad > Summary > Opportunity Information](#22-igrad---main---active)
+- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity---main---active)
 - [View: All Opportunities](#31-all-opportunities)
 - [View: Closed Opportunities](#33-closed-opportunities)
 - [View: Lost Opportunities](#37-lost-opportunities)
@@ -9137,8 +9150,8 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_opportunityproductcategory
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Summary > Opportunity Information](#22-igrad-main-active)
-- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity-main-active)
+- [Form: iGrad > Summary > Opportunity Information](#22-igrad---main---active)
+- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity---main---active)
 - [View: All Opportunities](#31-all-opportunities)
 - [View: Closed Opportunities in Current Fiscal Year](#32-closed-opportunities-in-current-fiscal-year)
 - [View: Closed Opportunities](#33-closed-opportunities)
@@ -9183,10 +9196,10 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_opportunitytype
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Summary > Opportunity Information](#22-igrad-main-active)
-- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity-main-active)
-- [Form: Opportunity > newOpportunity > quickOpportunity_column2](#25-opportunity-quickcreate-active)
-- [Form: Opportunity Quick > Tab > section](#26-opportunity-quick-quickcreate-active)
+- [Form: iGrad > Summary > Opportunity Information](#22-igrad---main---active)
+- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity---main---active)
+- [Form: Opportunity > newOpportunity > quickOpportunity_column2](#25-opportunity---quickcreate---active)
+- [Form: Opportunity Quick > Tab > section](#26-opportunity-quick---quickcreate---active)
 - [View: All Opportunities](#31-all-opportunities)
 - [View: Closed Opportunities in Current Fiscal Year](#32-closed-opportunities-in-current-fiscal-year)
 - [View: Closed Opportunities](#33-closed-opportunities)
@@ -9231,9 +9244,9 @@ Alphabetical field index -- 446 unique fields referenced.
 - [View: Opportunities Opened This Week](#347-opportunities-opened-this-week)
 - [View: Opportunity Advanced Find View](#349-opportunity-advanced-find-view)
 - [View: Opportunity Associated View](#350-opportunity-associated-view)
-- [View: Out of Territory Opportunities - Open](#352-out-of-territory-opportunities-open)
-- [View: Overdue Opportunities > 45 Days](#353-overdue-opportunities-45-days)
-- [View: Overdue Opportunities > 45 Days (Filter)](#353-overdue-opportunities-45-days)
+- [View: Out of Territory Opportunities - Open](#352-out-of-territory-opportunities---open)
+- [View: Overdue Opportunities > 45 Days](#353-overdue-opportunities--45-days)
+- [View: Overdue Opportunities > 45 Days (Filter)](#353-overdue-opportunities--45-days)
 - [View: Quick Find Open Opportunities](#354-quick-find-open-opportunities)
 - [View: Quick Find Open Opportunities (Filter)](#354-quick-find-open-opportunities)
 - [View: Recent Opportunities](#355-recent-opportunities)
@@ -9289,9 +9302,9 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_otheropportunitytotal
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Summary > Rollup Totals](#22-igrad-main-active)
-- [Form: Opportunity > Summary > Rollup Totals](#23-opportunity-main-active)
-- [Formula: azt_otheropportunitytotal (Target)](#9-formulas-rollups)
+- [Form: iGrad > Summary > Rollup Totals](#22-igrad---main---active)
+- [Form: Opportunity > Summary > Rollup Totals](#23-opportunity---main---active)
+- [Formula: azt_otheropportunitytotal (Target)](#9-formulas-and-rollups)
 
 #### azt_otheropportunitytotal_base
 
@@ -9364,9 +9377,9 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_pilotopportunitytotal
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Summary > Rollup Totals](#22-igrad-main-active)
-- [Form: Opportunity > Summary > Rollup Totals](#23-opportunity-main-active)
-- [Formula: azt_pilotopportunitytotal (Target)](#9-formulas-rollups)
+- [Form: iGrad > Summary > Rollup Totals](#22-igrad---main---active)
+- [Form: Opportunity > Summary > Rollup Totals](#23-opportunity---main---active)
+- [Formula: azt_pilotopportunitytotal (Target)](#9-formulas-and-rollups)
 
 #### azt_pilotopportunitytotal_base
 
@@ -9375,10 +9388,10 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_pipelinestage
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Summary > Opportunity Information](#22-igrad-main-active)
-- [Form: iGrad > Forecast/Activities > Section](#22-igrad-main-active)
-- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity-main-active)
-- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity-main-active)
+- [Form: iGrad > Summary > Opportunity Information](#22-igrad---main---active)
+- [Form: iGrad > Forecast/Activities > Section](#22-igrad---main---active)
+- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity---main---active)
+- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity---main---active)
 - [View: All Opportunities](#31-all-opportunities)
 - [View: GEDSRM Opps](#36-gedsrm-opps)
 - [View: My Aged or Stuck Opportunities](#38-my-aged-or-stuck-opportunities)
@@ -9399,7 +9412,7 @@ Alphabetical field index -- 446 unique fields referenced.
 - [View: Opportunities Opened This Week](#347-opportunities-opened-this-week)
 - [View: Opportunity Advanced Find View](#349-opportunity-advanced-find-view)
 - [View: Opportunity Associated View](#350-opportunity-associated-view)
-- [View: Out of Territory Opportunities - Open](#352-out-of-territory-opportunities-open)
+- [View: Out of Territory Opportunities - Open](#352-out-of-territory-opportunities---open)
 - [View: Quick Find Open Opportunities](#354-quick-find-open-opportunities)
 - [View: Recent Opportunities](#355-recent-opportunities)
 - [Workflow: CloneOpportunity (Read)](#719-cloneopportunity)
@@ -9450,9 +9463,9 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_printopportunitytotal
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Summary > Rollup Totals](#22-igrad-main-active)
-- [Form: Opportunity > Summary > Rollup Totals](#23-opportunity-main-active)
-- [Formula: azt_printopportunitytotal (Target)](#9-formulas-rollups)
+- [Form: iGrad > Summary > Rollup Totals](#22-igrad---main---active)
+- [Form: Opportunity > Summary > Rollup Totals](#23-opportunity---main---active)
+- [Formula: azt_printopportunitytotal (Target)](#9-formulas-and-rollups)
 
 #### azt_printopportunitytotal_base
 
@@ -9469,10 +9482,10 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_probability
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Forecast/Activities > Section](#22-igrad-main-active)
-- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity-main-active)
-- [Form: Opportunity > newOpportunity > quickOpportunity_column2](#25-opportunity-quickcreate-active)
-- [Form: Opportunity Quick > Tab > section](#26-opportunity-quick-quickcreate-active)
+- [Form: iGrad > Forecast/Activities > Section](#22-igrad---main---active)
+- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity---main---active)
+- [Form: Opportunity > newOpportunity > quickOpportunity_column2](#25-opportunity---quickcreate---active)
+- [Form: Opportunity Quick > Tab > section](#26-opportunity-quick---quickcreate---active)
 - [View: All Opportunities](#31-all-opportunities)
 - [View: Executive Sales Measure 30 Day Pipeline](#34-executive-sales-measure-30-day-pipeline)
 - [View: Executive Sales Measure Advanced 30 Day Pipeline](#35-executive-sales-measure-advanced-30-day-pipeline)
@@ -9499,8 +9512,8 @@ Alphabetical field index -- 446 unique fields referenced.
 - [View: Opportunities Opened This Week](#347-opportunities-opened-this-week)
 - [View: Opportunity Advanced Find View](#349-opportunity-advanced-find-view)
 - [View: Opportunity Associated View](#350-opportunity-associated-view)
-- [View: Out of Territory Opportunities - Open](#352-out-of-territory-opportunities-open)
-- [View: Overdue Opportunities > 45 Days](#353-overdue-opportunities-45-days)
+- [View: Out of Territory Opportunities - Open](#352-out-of-territory-opportunities---open)
+- [View: Overdue Opportunities > 45 Days](#353-overdue-opportunities--45-days)
 - [View: Quick Find Open Opportunities](#354-quick-find-open-opportunities)
 - [View: Recent Opportunities](#355-recent-opportunities)
 - [View: Self Sourced Pipeline per rep in Last 30 Days](#356-self-sourced-pipeline-per-rep-in-last-30-days)
@@ -9523,7 +9536,7 @@ Alphabetical field index -- 446 unique fields referenced.
 - [View: My Overdue Opps](#328-my-overdue-opps)
 - [View: My Stalled Opportunities](#329-my-stalled-opportunities)
 - [View: My Stalled Opportunities (Filter)](#329-my-stalled-opportunities)
-- [Formula: azt_dayssinceprobabilitychanged](#9-formulas-rollups)
+- [Formula: azt_dayssinceprobabilitychanged](#9-formulas-and-rollups)
 - [Plugin: OpportunityProbabilityChange (Write)](#1048-opportunityprobabilitychange)
 
 #### azt_probabilityincreased
@@ -9597,12 +9610,12 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_recordownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad (Header)](#22-igrad-main-active)
-- [Form: iGrad > Summary > Opportunity Information](#22-igrad-main-active)
-- [Form: Opportunity (Header)](#23-opportunity-main-active)
-- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity-main-active)
-- [Form: Opportunity Record Owner > Tab > section](#27-opportunity-record-owner-quick-active)
-- [Form: Opportunity Owner Quick View > Opportunity Owner > Opportunity Owner](#28-opportunity-owner-quick-view-quick-active)
+- [Form: iGrad (Header)](#22-igrad---main---active)
+- [Form: iGrad > Summary > Opportunity Information](#22-igrad---main---active)
+- [Form: Opportunity (Header)](#23-opportunity---main---active)
+- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity---main---active)
+- [Form: Opportunity Record Owner > Tab > section](#27-opportunity-record-owner---quick---active)
+- [Form: Opportunity Owner Quick View > Opportunity Owner > Opportunity Owner](#28-opportunity-owner-quick-view---quick---active)
 - [View: All Opportunities](#31-all-opportunities)
 - [View: Closed Opportunities in Current Fiscal Year](#32-closed-opportunities-in-current-fiscal-year)
 - [View: Closed Opportunities](#33-closed-opportunities)
@@ -9655,8 +9668,8 @@ Alphabetical field index -- 446 unique fields referenced.
 - [View: Opportunities Closing This Month (Sort)](#340-opportunities-closing-this-month)
 - [View: Opportunities Closing This Week](#341-opportunities-closing-this-week)
 - [View: Opportunities Closing This Week (Sort)](#341-opportunities-closing-this-week)
-- [View: Overdue Opportunities > 45 Days](#353-overdue-opportunities-45-days)
-- [View: Overdue Opportunities > 45 Days (Sort)](#353-overdue-opportunities-45-days)
+- [View: Overdue Opportunities > 45 Days](#353-overdue-opportunities--45-days)
+- [View: Overdue Opportunities > 45 Days (Sort)](#353-overdue-opportunities--45-days)
 - [View: Self Sourced Pipeline per rep in Last 30 Days](#356-self-sourced-pipeline-per-rep-in-last-30-days)
 - [View: Self Sourced Pipeline per rep in Last 30 Days (Sort)](#356-self-sourced-pipeline-per-rep-in-last-30-days)
 - [View: Won Opportunities This Month](#358-won-opportunities-this-month)
@@ -9759,15 +9772,15 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_renewalnotes
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Summary > Opportunity Details](#22-igrad-main-active)
-- [Form: Opportunity > Summary > Opportunity Details](#23-opportunity-main-active)
+- [Form: iGrad > Summary > Opportunity Details](#22-igrad---main---active)
+- [Form: Opportunity > Summary > Opportunity Details](#23-opportunity---main---active)
 
 #### azt_renewalopportunitytotal
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Summary > Rollup Totals](#22-igrad-main-active)
-- [Form: Opportunity > Summary > Rollup Totals](#23-opportunity-main-active)
-- [Formula: azt_renewalopportunitytotal (Target)](#9-formulas-rollups)
+- [Form: iGrad > Summary > Rollup Totals](#22-igrad---main---active)
+- [Form: Opportunity > Summary > Rollup Totals](#23-opportunity---main---active)
+- [Formula: azt_renewalopportunitytotal (Target)](#9-formulas-and-rollups)
 
 #### azt_renewalopportunitytotal_base
 
@@ -9784,8 +9797,8 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_requestedfreightamt
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Product line items > Freight](#22-igrad-main-active)
-- [Form: Opportunity > Products > Freight](#23-opportunity-main-active)
+- [Form: iGrad > Product line items > Freight](#22-igrad---main---active)
+- [Form: Opportunity > Products > Freight](#23-opportunity---main---active)
 - [JS: azt_opportunitylibrary > setFreightAmt()](#810-azt_opportunitylibrary)
 - [JS: azt_quotelibrary > setFreight()](#814-azt_quotelibrary)
 - [Plugin: QuotePreventActivateUnapprovedFreight (Read)](#1065-quotepreventactivateunapprovedfreight)
@@ -9922,9 +9935,9 @@ Alphabetical field index -- 446 unique fields referenced.
 #### azt_winbackopportunitytotal
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Summary > Rollup Totals](#22-igrad-main-active)
-- [Form: Opportunity > Summary > Rollup Totals](#23-opportunity-main-active)
-- [Formula: azt_winbackopportunitytotal (Target)](#9-formulas-rollups)
+- [Form: iGrad > Summary > Rollup Totals](#22-igrad---main---active)
+- [Form: Opportunity > Summary > Rollup Totals](#23-opportunity---main---active)
+- [Formula: azt_winbackopportunitytotal (Target)](#9-formulas-and-rollups)
 
 #### azt_winbackopportunitytotal_base
 
@@ -9980,8 +9993,8 @@ Alphabetical field index -- 446 unique fields referenced.
 #### budgetamount
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Forecast/Activities > Section](#22-igrad-main-active)
-- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity-main-active)
+- [Form: iGrad > Forecast/Activities > Section](#22-igrad---main---active)
+- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity---main---active)
 - [Workflow: CloneOpportunity (Read)](#719-cloneopportunity)
 - [Workflow: CloneOpportunity (Write)](#719-cloneopportunity)
 
@@ -10008,7 +10021,7 @@ Alphabetical field index -- 446 unique fields referenced.
 
 #### cadencewidgetcontrol
 
-- [Form: iGrad > Summary > Up next](#22-igrad-main-active)
+- [Form: iGrad > Summary > Up next](#22-igrad---main---active)
 
 #### captureproposalfeedback
 
@@ -10029,8 +10042,8 @@ Alphabetical field index -- 446 unique fields referenced.
 #### closeprobability
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Forecast/Activities > Section](#22-igrad-main-active)
-- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity-main-active)
+- [Form: iGrad > Forecast/Activities > Section](#22-igrad---main---active)
+- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity---main---active)
 - [View: My Open Renewal Opportunities as Account Owner](#317-my-open-renewal-opportunities-as-account-owner)
 - [View: Open Opportunities by Sales Rep](#331-open-opportunities-by-sales-rep)
 - [Chart: Sales Pipeline (Group-By)](#421-sales-pipeline)
@@ -10046,9 +10059,9 @@ Alphabetical field index -- 446 unique fields referenced.
 
 #### competitors
 
-- [Form: iGrad > Summary > Opportunity Information](#22-igrad-main-active)
-- [Form: iGrad > Summary > Competitors](#22-igrad-main-active)
-- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity-main-active)
+- [Form: iGrad > Summary > Opportunity Information](#22-igrad---main---active)
+- [Form: iGrad > Summary > Competitors](#22-igrad---main---active)
+- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity---main---active)
 
 #### completefinalproposal
 
@@ -10064,8 +10077,8 @@ Alphabetical field index -- 446 unique fields referenced.
 
 #### conditionbranchstep2_1
 
-- [Formula: azt_dayssincecreated](#9-formulas-rollups)
-- [Formula: azt_dayssinceprobabilitychanged](#9-formulas-rollups)
+- [Formula: azt_dayssincecreated](#9-formulas-and-rollups)
+- [Formula: azt_dayssinceprobabilitychanged](#9-formulas-and-rollups)
 
 #### confirminterest
 
@@ -10109,8 +10122,8 @@ Alphabetical field index -- 446 unique fields referenced.
 #### createdby
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad (Footer)](#22-igrad-main-active)
-- [Form: Opportunity (Footer)](#23-opportunity-main-active)
+- [Form: iGrad (Footer)](#22-igrad---main---active)
+- [Form: Opportunity (Footer)](#23-opportunity---main---active)
 - [View: My Opportunities Created This Quarter](#323-my-opportunities-created-this-quarter)
 - [View: My Opportunities Created This Quarter (Filter)](#323-my-opportunities-created-this-quarter)
 - [View: My Opportunities Created This Year (Filter)](#324-my-opportunities-created-this-year)
@@ -10139,8 +10152,8 @@ Alphabetical field index -- 446 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad (Footer)](#22-igrad-main-active)
-- [Form: Opportunity (Footer)](#23-opportunity-main-active)
+- [Form: iGrad (Footer)](#22-igrad---main---active)
+- [Form: Opportunity (Footer)](#23-opportunity---main---active)
 - [View: All Opportunities](#31-all-opportunities)
 - [View: Executive Sales Measure 30 Day Pipeline](#34-executive-sales-measure-30-day-pipeline)
 - [View: Executive Sales Measure 30 Day Pipeline (Filter)](#34-executive-sales-measure-30-day-pipeline)
@@ -10183,7 +10196,7 @@ Alphabetical field index -- 446 unique fields referenced.
 - [Chart: My Opportunities Created This Year By Quarter (Group-By)](#415-my-opportunities-created-this-year-by-quarter)
 - [Chart: My Open Opportunities Created This Year By Quarter (Group-By)](#416-my-open-opportunities-created-this-year-by-quarter)
 - [Chart: Opportunities Created This Year By Owner (Group-By)](#418-opportunities-created-this-year-by-owner)
-- [Formula: azt_dayssincecreated](#9-formulas-rollups)
+- [Formula: azt_dayssincecreated](#9-formulas-and-rollups)
 - [Plugin: AccountLeadGen (Filter)](#102-accountleadgen)
 - [Plugin: ChangeLicenseType (Sort)](#1016-changelicensetype)
 - [Plugin: CreateUserGoals (Read)](#1022-createusergoals)
@@ -10207,8 +10220,8 @@ Alphabetical field index -- 446 unique fields referenced.
 #### currentsituation
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Summary > Opportunity Details](#22-igrad-main-active)
-- [Form: Opportunity > Summary > Opportunity Details](#23-opportunity-main-active)
+- [Form: iGrad > Summary > Opportunity Details](#22-igrad---main---active)
+- [Form: Opportunity > Summary > Opportunity Details](#23-opportunity---main---active)
 - [Workflow: CloneOpportunity (Read)](#719-cloneopportunity)
 - [Workflow: CloneOpportunity (Write)](#719-cloneopportunity)
 
@@ -10253,8 +10266,8 @@ Alphabetical field index -- 446 unique fields referenced.
 - [View: Opportunity Advanced Find View](#349-opportunity-advanced-find-view)
 - [View: Opportunity Associated View](#350-opportunity-associated-view)
 - [View: Opportunity Lookup View](#351-opportunity-lookup-view)
-- [View: Out of Territory Opportunities - Open](#352-out-of-territory-opportunities-open)
-- [View: Overdue Opportunities > 45 Days](#353-overdue-opportunities-45-days)
+- [View: Out of Territory Opportunities - Open](#352-out-of-territory-opportunities---open)
+- [View: Overdue Opportunities > 45 Days](#353-overdue-opportunities--45-days)
 - [View: Quick Find Open Opportunities](#354-quick-find-open-opportunities)
 - [View: Recent Opportunities](#355-recent-opportunities)
 - [View: Self Sourced Pipeline per rep in Last 30 Days](#356-self-sourced-pipeline-per-rep-in-last-30-days)
@@ -10294,8 +10307,8 @@ Alphabetical field index -- 446 unique fields referenced.
 #### customerneed
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Opportunity > Summary > Opportunity Details](#23-opportunity-main-active)
-- [Form: Opportunity Quick > Tab > Customer Info](#26-opportunity-quick-quickcreate-active)
+- [Form: Opportunity > Summary > Opportunity Details](#23-opportunity---main---active)
+- [Form: Opportunity Quick > Tab > Customer Info](#26-opportunity-quick---quickcreate---active)
 - [Workflow: CloneOpportunity (Write)](#719-cloneopportunity)
 
 #### customerpainpoints
@@ -10322,7 +10335,7 @@ Alphabetical field index -- 446 unique fields referenced.
 #### description
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Opportunity > Summary > Opportunity Details](#23-opportunity-main-active)
+- [Form: Opportunity > Summary > Opportunity Details](#23-opportunity---main---active)
 - [Workflow: CloneOpportunity (Read)](#719-cloneopportunity)
 - [Workflow: CloneOpportunity (Write)](#719-cloneopportunity)
 - [Plugin: ContactSetConnectionRole (Write)](#1019-contactsetconnectionrole)
@@ -10342,36 +10355,36 @@ Alphabetical field index -- 446 unique fields referenced.
 #### discountamount
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Product line items > Product Line Item Totals](#22-igrad-main-active)
-- [Form: Opportunity > Products > Product Line Item Totals](#23-opportunity-main-active)
+- [Form: iGrad > Product line items > Product Line Item Totals](#22-igrad---main---active)
+- [Form: Opportunity > Products > Product Line Item Totals](#23-opportunity---main---active)
 - [Plugin: QuoteLinesSyncToOppty (Read)](#1062-quotelinessynctooppty)
 - [Plugin: ReviseQuoteDiscountMove (Write)](#1072-revisequotediscountmove)
 
 #### discountpercentage
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Product line items > Product Line Item Totals](#22-igrad-main-active)
+- [Form: iGrad > Product line items > Product Line Item Totals](#22-igrad---main---active)
 - [Workflow: CloneOpportunity (Read)](#719-cloneopportunity)
 - [Workflow: CloneOpportunity (Write)](#719-cloneopportunity)
 - [Plugin: QuoteLinesSyncToOppty (Read)](#1062-quotelinessynctooppty)
 
 #### discounts
 
-- [Form: iGrad > Discretionary Discounts > Section](#22-igrad-main-active)
-- [Form: Opportunity > Discretionary Discounts > Section](#23-opportunity-main-active)
+- [Form: iGrad > Discretionary Discounts > Section](#22-igrad---main---active)
+- [Form: Opportunity > Discretionary Discounts > Section](#23-opportunity---main---active)
 
 #### documents
 
-- [Form: iGrad > Documents > Section](#22-igrad-main-active)
-- [Form: Opportunity > Documents > Section](#23-opportunity-main-active)
+- [Form: iGrad > Documents > Section](#22-igrad---main---active)
+- [Form: Opportunity > Documents > Section](#23-opportunity---main---active)
 
 #### documentssubgrid
 
-- [Form: iGrad > Files > Documents Section](#22-igrad-main-active)
+- [Form: iGrad > Files > Documents Section](#22-igrad---main---active)
 
 #### dynamicpropertieslist_linkcontrol
 
-- [Form: iGrad > Product line items > Dynamic properties](#22-igrad-main-active)
+- [Form: iGrad > Product line items > Dynamic properties](#22-igrad---main---active)
 
 #### emailaddress
 
@@ -10387,9 +10400,9 @@ Alphabetical field index -- 446 unique fields referenced.
 #### estimatedclosedate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Forecast/Activities > Section](#22-igrad-main-active)
-- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity-main-active)
-- [Form: Opportunity Quick > Tab > section](#26-opportunity-quick-quickcreate-active)
+- [Form: iGrad > Forecast/Activities > Section](#22-igrad---main---active)
+- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity---main---active)
+- [Form: Opportunity Quick > Tab > section](#26-opportunity-quick---quickcreate---active)
 - [View: All Opportunities](#31-all-opportunities)
 - [View: All Opportunities (Sort)](#31-all-opportunities)
 - [View: Executive Sales Measure 30 Day Pipeline](#34-executive-sales-measure-30-day-pipeline)
@@ -10461,10 +10474,10 @@ Alphabetical field index -- 446 unique fields referenced.
 - [View: Opportunities Opened This Week](#348-opportunities-opened-this-week)
 - [View: Opportunity Advanced Find View](#349-opportunity-advanced-find-view)
 - [View: Opportunity Associated View](#350-opportunity-associated-view)
-- [View: Out of Territory Opportunities - Open](#352-out-of-territory-opportunities-open)
-- [View: Overdue Opportunities > 45 Days](#353-overdue-opportunities-45-days)
-- [View: Overdue Opportunities > 45 Days (Filter)](#353-overdue-opportunities-45-days)
-- [View: Overdue Opportunities > 45 Days (Sort)](#353-overdue-opportunities-45-days)
+- [View: Out of Territory Opportunities - Open](#352-out-of-territory-opportunities---open)
+- [View: Overdue Opportunities > 45 Days](#353-overdue-opportunities--45-days)
+- [View: Overdue Opportunities > 45 Days (Filter)](#353-overdue-opportunities--45-days)
+- [View: Overdue Opportunities > 45 Days (Sort)](#353-overdue-opportunities--45-days)
 - [View: Quick Find Open Opportunities](#354-quick-find-open-opportunities)
 - [View: Recent Opportunities](#355-recent-opportunities)
 - [View: Recent Opportunities (Sort)](#355-recent-opportunities)
@@ -10486,10 +10499,10 @@ Alphabetical field index -- 446 unique fields referenced.
 #### estimatedvalue
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad (Header)](#22-igrad-main-active)
-- [Form: iGrad > Forecast/Activities > Section](#22-igrad-main-active)
-- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity-main-active)
-- [Form: Opportunity > newOpportunity > quickOpportunity_column3](#25-opportunity-quickcreate-active)
+- [Form: iGrad (Header)](#22-igrad---main---active)
+- [Form: iGrad > Forecast/Activities > Section](#22-igrad---main---active)
+- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity---main---active)
+- [Form: Opportunity > newOpportunity > quickOpportunity_column3](#25-opportunity---quickcreate---active)
 - [View: All Opportunities](#31-all-opportunities)
 - [View: Executive Sales Measure 30 Day Pipeline](#34-executive-sales-measure-30-day-pipeline)
 - [View: Executive Sales Measure Advanced 30 Day Pipeline](#35-executive-sales-measure-advanced-30-day-pipeline)
@@ -10525,8 +10538,8 @@ Alphabetical field index -- 446 unique fields referenced.
 - [View: Opportunities Opened This Week](#348-opportunities-opened-this-week)
 - [View: Opportunity Advanced Find View](#349-opportunity-advanced-find-view)
 - [View: Opportunity Associated View](#350-opportunity-associated-view)
-- [View: Out of Territory Opportunities - Open](#352-out-of-territory-opportunities-open)
-- [View: Overdue Opportunities > 45 Days](#353-overdue-opportunities-45-days)
+- [View: Out of Territory Opportunities - Open](#352-out-of-territory-opportunities---open)
+- [View: Overdue Opportunities > 45 Days](#353-overdue-opportunities--45-days)
 - [View: Quick Find Open Opportunities](#354-quick-find-open-opportunities)
 - [View: Recent Opportunities](#355-recent-opportunities)
 - [View: Self Sourced Pipeline per rep in Last 30 Days](#356-self-sourced-pipeline-per-rep-in-last-30-days)
@@ -10556,13 +10569,13 @@ Alphabetical field index -- 446 unique fields referenced.
 
 #### extendedamount
 
-- [Formula: azt_addonopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_initialopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_otheropportunitytotal](#9-formulas-rollups)
-- [Formula: azt_pilotopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_printopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_renewalopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_winbackopportunitytotal](#9-formulas-rollups)
+- [Formula: azt_addonopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_initialopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_otheropportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_pilotopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_printopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_renewalopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_winbackopportunitytotal](#9-formulas-and-rollups)
 - [Plugin: CreateCompGoals (Read)](#1020-createcompgoals)
 - [Plugin: CreateUserGoals (Read)](#1022-createusergoals)
 - [Plugin: OpportunityClone (Read)](#1044-opportunityclone)
@@ -10602,8 +10615,8 @@ Alphabetical field index -- 446 unique fields referenced.
 #### freightamount
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Product line items > Product Line Item Totals](#22-igrad-main-active)
-- [Form: Opportunity > Products > Product Line Item Totals](#23-opportunity-main-active)
+- [Form: iGrad > Product line items > Product Line Item Totals](#22-igrad---main---active)
+- [Form: Opportunity > Products > Product Line Item Totals](#23-opportunity---main---active)
 - [Plugin: QuoteSyncTotalToOpportunity (Read)](#1066-quotesynctotaltoopportunity)
 
 #### freighttermscode
@@ -10740,8 +10753,8 @@ Alphabetical field index -- 446 unique fields referenced.
 #### isrevenuesystemcalculated
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Product line items > Opportunity Products](#22-igrad-main-active)
-- [Form: Opportunity > Products > Opportunity Products](#23-opportunity-main-active)
+- [Form: iGrad > Product line items > Opportunity Products](#22-igrad---main---active)
+- [Form: Opportunity > Products > Opportunity Products](#23-opportunity---main---active)
 - [Workflow: CloneOpportunity (Write)](#719-cloneopportunity)
 - [Workflow: QualifyLead (Write)](#745-qualifylead)
 - [Plugin: QuoteSyncTotalToOpportunity (Write)](#1066-quotesynctotaltoopportunity)
@@ -10800,7 +10813,7 @@ Alphabetical field index -- 446 unique fields referenced.
 #### msdyn_forecastcategory
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Summary > Opportunity Information](#22-igrad-main-active)
+- [Form: iGrad > Summary > Opportunity Information](#22-igrad---main---active)
 
 #### msdyn_opportunitykpiid
 
@@ -10820,8 +10833,8 @@ Alphabetical field index -- 446 unique fields referenced.
 #### name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Summary > Opportunity Information](#22-igrad-main-active)
-- [Form: Opportunity Quick > Tab > section](#26-opportunity-quick-quickcreate-active)
+- [Form: iGrad > Summary > Opportunity Information](#22-igrad---main---active)
+- [Form: Opportunity Quick > Tab > section](#26-opportunity-quick---quickcreate---active)
 - [View: All Opportunities](#31-all-opportunities)
 - [View: All Opportunities (Sort)](#31-all-opportunities)
 - [View: Closed Opportunities in Current Fiscal Year](#32-closed-opportunities-in-current-fiscal-year)
@@ -10879,9 +10892,9 @@ Alphabetical field index -- 446 unique fields referenced.
 - [View: Opportunity Associated View (Sort)](#350-opportunity-associated-view)
 - [View: Opportunity Lookup View](#351-opportunity-lookup-view)
 - [View: Opportunity Lookup View (Sort)](#351-opportunity-lookup-view)
-- [View: Out of Territory Opportunities - Open](#352-out-of-territory-opportunities-open)
-- [View: Out of Territory Opportunities - Open (Sort)](#352-out-of-territory-opportunities-open)
-- [View: Overdue Opportunities > 45 Days](#353-overdue-opportunities-45-days)
+- [View: Out of Territory Opportunities - Open](#352-out-of-territory-opportunities---open)
+- [View: Out of Territory Opportunities - Open (Sort)](#352-out-of-territory-opportunities---open)
+- [View: Overdue Opportunities > 45 Days](#353-overdue-opportunities--45-days)
 - [View: Quick Find Open Opportunities](#354-quick-find-open-opportunities)
 - [View: Quick Find Open Opportunities (Filter)](#354-quick-find-open-opportunities)
 - [View: Quick Find Open Opportunities (Sort)](#354-quick-find-open-opportunities)
@@ -10953,12 +10966,12 @@ Alphabetical field index -- 446 unique fields referenced.
 
 #### new_sharedwith
 
-- [View: Out of Territory Opportunities - Open (Filter)](#352-out-of-territory-opportunities-open)
+- [View: Out of Territory Opportunities - Open (Filter)](#352-out-of-territory-opportunities---open)
 
 #### notescontrol
 
-- [Form: iGrad > Notes > Notes pane](#22-igrad-main-active)
-- [Form: Opportunity > Notes > Notes pane](#23-opportunity-main-active)
+- [Form: iGrad > Notes > Notes pane](#22-igrad---main---active)
+- [Form: Opportunity > Notes > Notes pane](#23-opportunity---main---active)
 
 #### objectid
 
@@ -10973,8 +10986,8 @@ Alphabetical field index -- 446 unique fields referenced.
 
 #### opportunityaudit
 
-- [Form: iGrad > Summary > Opportunity Audit](#22-igrad-main-active)
-- [Form: Opportunity > Summary > Opportunity Audit](#23-opportunity-main-active)
+- [Form: iGrad > Summary > Opportunity Audit](#22-igrad---main---active)
+- [Form: Opportunity > Summary > Opportunity Audit](#23-opportunity---main---active)
 
 #### opportunityid
 
@@ -11030,8 +11043,8 @@ Alphabetical field index -- 446 unique fields referenced.
 - [View: Opportunity Advanced Find View](#349-opportunity-advanced-find-view)
 - [View: Opportunity Associated View](#350-opportunity-associated-view)
 - [View: Opportunity Lookup View](#351-opportunity-lookup-view)
-- [View: Out of Territory Opportunities - Open](#352-out-of-territory-opportunities-open)
-- [View: Overdue Opportunities > 45 Days](#353-overdue-opportunities-45-days)
+- [View: Out of Territory Opportunities - Open](#352-out-of-territory-opportunities---open)
+- [View: Overdue Opportunities > 45 Days](#353-overdue-opportunities--45-days)
 - [View: Quick Find Open Opportunities](#354-quick-find-open-opportunities)
 - [View: Recent Opportunities](#355-recent-opportunities)
 - [View: Self Sourced Pipeline per rep in Last 30 Days](#356-self-sourced-pipeline-per-rep-in-last-30-days)
@@ -11108,8 +11121,8 @@ Alphabetical field index -- 446 unique fields referenced.
 
 #### opportunityproductsgrid
 
-- [Form: iGrad > Product line items > Opportunity Products](#22-igrad-main-active)
-- [Form: Opportunity > Products > Opportunity Products](#23-opportunity-main-active)
+- [Form: iGrad > Product line items > Opportunity Products](#22-igrad---main---active)
+- [Form: Opportunity > Products > Opportunity Products](#23-opportunity---main---active)
 
 #### opportunityratingcode
 
@@ -11120,8 +11133,8 @@ Alphabetical field index -- 446 unique fields referenced.
 #### originatingleadid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Summary > Opportunity Information](#22-igrad-main-active)
-- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity-main-active)
+- [Form: iGrad > Summary > Opportunity Information](#22-igrad---main---active)
+- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity---main---active)
 - [Plugin: LeadQualifyParentStakeholderContacts (Read)](#1039-leadqualifyparentstakeholdercontacts)
 - [Plugin: OpportunityAssignFromLead (Read)](#1042-opportunityassignfromlead)
 - [Relationship: opportunity_originating_lead](#12-relationships)
@@ -11129,10 +11142,10 @@ Alphabetical field index -- 446 unique fields referenced.
 #### ownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad (Header)](#22-igrad-main-active)
-- [Form: Opportunity > newOpportunity > quickOpportunity_column3](#25-opportunity-quickcreate-active)
-- [Form: Opportunity Owner Quick View > Opportunity Owner > Opportunity Owner](#28-opportunity-owner-quick-view-quick-active)
-- [Form: Order Opportunity Owner Quick View > Tab > section](#29-order-opportunity-owner-quick-view-quick-active)
+- [Form: iGrad (Header)](#22-igrad---main---active)
+- [Form: Opportunity > newOpportunity > quickOpportunity_column3](#25-opportunity---quickcreate---active)
+- [Form: Opportunity Owner Quick View > Opportunity Owner > Opportunity Owner](#28-opportunity-owner-quick-view---quick---active)
+- [Form: Order Opportunity Owner Quick View > Tab > section](#29-order-opportunity-owner-quick-view---quick---active)
 - [View: All Opportunities](#31-all-opportunities)
 - [View: Closed Opportunities in Current Fiscal Year](#32-closed-opportunities-in-current-fiscal-year)
 - [View: Closed Opportunities](#33-closed-opportunities)
@@ -11153,7 +11166,7 @@ Alphabetical field index -- 446 unique fields referenced.
 - [View: Opportunities Opened This Week (Sort)](#348-opportunities-opened-this-week)
 - [View: Opportunity Advanced Find View](#349-opportunity-advanced-find-view)
 - [View: Opportunity Associated View](#350-opportunity-associated-view)
-- [View: Out of Territory Opportunities - Open](#352-out-of-territory-opportunities-open)
+- [View: Out of Territory Opportunities - Open](#352-out-of-territory-opportunities---open)
 - [View: Quick Find Open Opportunities](#354-quick-find-open-opportunities)
 - [View: Recent Opportunities](#355-recent-opportunities)
 - [View: Upcoming Internet Renewals](#357-upcoming-internet-renewals)
@@ -11225,7 +11238,7 @@ Alphabetical field index -- 446 unique fields referenced.
 - [View: Executive Sales Measure 30 Day Pipeline](#34-executive-sales-measure-30-day-pipeline)
 - [View: Executive Sales Measure Advanced 30 Day Pipeline](#35-executive-sales-measure-advanced-30-day-pipeline)
 - [View: Executive Sales Measure Advanced 30 Day Pipeline (Sort)](#35-executive-sales-measure-advanced-30-day-pipeline)
-- [View: Overdue Opportunities > 45 Days](#353-overdue-opportunities-45-days)
+- [View: Overdue Opportunities > 45 Days](#353-overdue-opportunities--45-days)
 - [View: Self Sourced Pipeline per rep in Last 30 Days](#356-self-sourced-pipeline-per-rep-in-last-30-days)
 
 #### owningteam
@@ -11239,11 +11252,11 @@ Alphabetical field index -- 446 unique fields referenced.
 #### parentaccountid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad (Header)](#22-igrad-main-active)
-- [Form: iGrad > Summary > Opportunity Information](#22-igrad-main-active)
-- [Form: iGrad > LinkedIn Sales Navigator > LinkedIn Account Profile](#22-igrad-main-active)
-- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity-main-active)
-- [Form: Opportunity Quick > Tab > section](#26-opportunity-quick-quickcreate-active)
+- [Form: iGrad (Header)](#22-igrad---main---active)
+- [Form: iGrad > Summary > Opportunity Information](#22-igrad---main---active)
+- [Form: iGrad > LinkedIn Sales Navigator > LinkedIn Account Profile](#22-igrad---main---active)
+- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity---main---active)
+- [Form: Opportunity Quick > Tab > section](#26-opportunity-quick---quickcreate---active)
 - [View: Quick Find Open Opportunities (Filter)](#354-quick-find-open-opportunities)
 - [Workflow: AppointmentAuto-Assign (Read)](#75-appointmentauto-assign)
 - [Workflow: BatchConverttoLead (Write)](#76-batchconverttolead)
@@ -11270,11 +11283,11 @@ Alphabetical field index -- 446 unique fields referenced.
 #### parentcontactid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Summary > Opportunity Information](#22-igrad-main-active)
-- [Form: iGrad > LinkedIn Sales Navigator > LinkedIn Member Profile](#22-igrad-main-active)
-- [Form: iGrad > LinkedIn Sales Navigator > LinkedIn InMail](#22-igrad-main-active)
-- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity-main-active)
-- [Form: Opportunity Quick > Tab > section](#26-opportunity-quick-quickcreate-active)
+- [Form: iGrad > Summary > Opportunity Information](#22-igrad---main---active)
+- [Form: iGrad > LinkedIn Sales Navigator > LinkedIn Member Profile](#22-igrad---main---active)
+- [Form: iGrad > LinkedIn Sales Navigator > LinkedIn InMail](#22-igrad---main---active)
+- [Form: Opportunity > Summary > Opportunity Information](#23-opportunity---main---active)
+- [Form: Opportunity Quick > Tab > section](#26-opportunity-quick---quickcreate---active)
 - [View: Quick Find Open Opportunities (Filter)](#354-quick-find-open-opportunities)
 - [Workflow: BatchConverttoLead (Read)](#76-batchconverttolead)
 - [Workflow: CloneOpportunity (Read)](#719-cloneopportunity)
@@ -11331,8 +11344,8 @@ Alphabetical field index -- 446 unique fields referenced.
 #### pricelevelid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Product line items > Opportunity Products](#22-igrad-main-active)
-- [Form: Opportunity > Products > Opportunity Products](#23-opportunity-main-active)
+- [Form: iGrad > Product line items > Opportunity Products](#22-igrad---main---active)
+- [Form: Opportunity > Products > Opportunity Products](#23-opportunity---main---active)
 - [Workflow: CloneAndDeleteQuote (Write)](#716-cloneanddeletequote)
 - [Workflow: CloneOpportunity (Read)](#719-cloneopportunity)
 - [Workflow: CloneOpportunity (Write)](#719-cloneopportunity)
@@ -11436,7 +11449,7 @@ Alphabetical field index -- 446 unique fields referenced.
 
 #### productsuggestions_linkcontrol
 
-- [Form: iGrad > Product line items > Suggestions](#22-igrad-main-active)
+- [Form: iGrad > Product line items > Suggestions](#22-igrad---main---active)
 
 #### producttypecode
 
@@ -11447,30 +11460,30 @@ Alphabetical field index -- 446 unique fields referenced.
 #### proposedsolution
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Opportunity > Summary > Opportunity Details](#23-opportunity-main-active)
+- [Form: Opportunity > Summary > Opportunity Details](#23-opportunity---main---active)
 - [Workflow: CloneOpportunity (Read)](#719-cloneopportunity)
 - [Workflow: CloneOpportunity (Write)](#719-cloneopportunity)
 
 #### purchaseprocess
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Forecast/Activities > Section](#22-igrad-main-active)
-- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity-main-active)
+- [Form: iGrad > Forecast/Activities > Section](#22-igrad---main---active)
+- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity---main---active)
 - [Workflow: CloneOpportunity (Read)](#719-cloneopportunity)
 - [Workflow: CloneOpportunity (Write)](#719-cloneopportunity)
 
 #### purchasetimeframe
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Forecast/Activities > Section](#22-igrad-main-active)
-- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity-main-active)
+- [Form: iGrad > Forecast/Activities > Section](#22-igrad---main---active)
+- [Form: Opportunity > Forecast/Activities > Section](#23-opportunity---main---active)
 - [Workflow: CloneOpportunity (Read)](#719-cloneopportunity)
 - [Workflow: CloneOpportunity (Write)](#719-cloneopportunity)
 
 #### pursuit_team
 
-- [Form: iGrad > Summary > Sales Team](#22-igrad-main-active)
-- [Form: Opportunity > Summary > Sales Team](#23-opportunity-main-active)
+- [Form: iGrad > Summary > Sales Team](#22-igrad---main---active)
+- [Form: Opportunity > Summary > Sales Team](#23-opportunity---main---active)
 
 #### pursuitdecision
 
@@ -11520,7 +11533,7 @@ Alphabetical field index -- 446 unique fields referenced.
 
 #### quote
 
-- [Form: iGrad > Quotes > Quotes](#22-igrad-main-active)
+- [Form: iGrad > Quotes > Quotes](#22-igrad---main---active)
 
 #### quotecomments
 
@@ -11623,7 +11636,7 @@ Alphabetical field index -- 446 unique fields referenced.
 
 #### ricontainer_charts
 
-- [Form: AI for Sales > RAV2 > RAV2_section_1](#21-ai-for-sales-main-active)
+- [Form: AI for Sales > RAV2 > RAV2_section_1](#21-ai-for-sales---main---active)
 
 #### roleid
 
@@ -11644,58 +11657,58 @@ Alphabetical field index -- 446 unique fields referenced.
 
 #### rolluprulestep1_1
 
-- [Formula: azt_addonopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
-- [Formula: azt_initialopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_otheropportunitytotal](#9-formulas-rollups)
-- [Formula: azt_pilotopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_printopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_renewalopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_winbackopportunitytotal](#9-formulas-rollups)
+- [Formula: azt_addonopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
+- [Formula: azt_initialopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_otheropportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_pilotopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_printopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_renewalopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_winbackopportunitytotal](#9-formulas-and-rollups)
 
 #### rolluprulestep1_2
 
-- [Formula: azt_addonopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
-- [Formula: azt_initialopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_otheropportunitytotal](#9-formulas-rollups)
-- [Formula: azt_pilotopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_printopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_renewalopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_winbackopportunitytotal](#9-formulas-rollups)
+- [Formula: azt_addonopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
+- [Formula: azt_initialopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_otheropportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_pilotopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_printopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_renewalopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_winbackopportunitytotal](#9-formulas-and-rollups)
 
 #### rolluprulestep1_3
 
-- [Formula: azt_addonopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
-- [Formula: azt_initialopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_otheropportunitytotal](#9-formulas-rollups)
-- [Formula: azt_pilotopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_printopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_renewalopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_winbackopportunitytotal](#9-formulas-rollups)
+- [Formula: azt_addonopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
+- [Formula: azt_initialopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_otheropportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_pilotopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_printopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_renewalopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_winbackopportunitytotal](#9-formulas-and-rollups)
 
 #### rolluprulestep1_4
 
-- [Formula: azt_addonopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
-- [Formula: azt_initialopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_otheropportunitytotal](#9-formulas-rollups)
-- [Formula: azt_pilotopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_printopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_renewalopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_winbackopportunitytotal](#9-formulas-rollups)
+- [Formula: azt_addonopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
+- [Formula: azt_initialopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_otheropportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_pilotopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_printopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_renewalopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_winbackopportunitytotal](#9-formulas-and-rollups)
 
 #### rolluprulestep1_5
 
-- [Formula: azt_addonopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
-- [Formula: azt_initialopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_otheropportunitytotal](#9-formulas-rollups)
-- [Formula: azt_pilotopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_printopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_renewalopportunitytotal](#9-formulas-rollups)
-- [Formula: azt_winbackopportunitytotal](#9-formulas-rollups)
+- [Formula: azt_addonopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
+- [Formula: azt_initialopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_otheropportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_pilotopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_printopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_renewalopportunitytotal](#9-formulas-and-rollups)
+- [Formula: azt_winbackopportunitytotal](#9-formulas-and-rollups)
 
 #### salesorderdetailid
 
@@ -11756,28 +11769,28 @@ Alphabetical field index -- 446 unique fields referenced.
 
 #### setattributevaluestep4_1
 
-- [Formula: azt_dayssincecreated](#9-formulas-rollups)
-- [Formula: azt_dayssinceprobabilitychanged](#9-formulas-rollups)
+- [Formula: azt_dayssincecreated](#9-formulas-and-rollups)
+- [Formula: azt_dayssinceprobabilitychanged](#9-formulas-and-rollups)
 
 #### setattributevaluestep4_2
 
-- [Formula: azt_dayssincecreated](#9-formulas-rollups)
-- [Formula: azt_dayssinceprobabilitychanged](#9-formulas-rollups)
+- [Formula: azt_dayssincecreated](#9-formulas-and-rollups)
+- [Formula: azt_dayssinceprobabilitychanged](#9-formulas-and-rollups)
 
 #### setattributevaluestep4_3
 
-- [Formula: azt_dayssincecreated](#9-formulas-rollups)
-- [Formula: azt_dayssinceprobabilitychanged](#9-formulas-rollups)
+- [Formula: azt_dayssincecreated](#9-formulas-and-rollups)
+- [Formula: azt_dayssinceprobabilitychanged](#9-formulas-and-rollups)
 
 #### setattributevaluestep4_4
 
-- [Formula: azt_dayssincecreated](#9-formulas-rollups)
-- [Formula: azt_dayssinceprobabilitychanged](#9-formulas-rollups)
+- [Formula: azt_dayssincecreated](#9-formulas-and-rollups)
+- [Formula: azt_dayssinceprobabilitychanged](#9-formulas-and-rollups)
 
 #### setattributevaluestep4_5
 
-- [Formula: azt_dayssincecreated](#9-formulas-rollups)
-- [Formula: azt_dayssinceprobabilitychanged](#9-formulas-rollups)
+- [Formula: azt_dayssincecreated](#9-formulas-and-rollups)
+- [Formula: azt_dayssinceprobabilitychanged](#9-formulas-and-rollups)
 
 #### shippingmethodcode
 
@@ -11809,7 +11822,7 @@ Alphabetical field index -- 446 unique fields referenced.
 
 #### stakeholders
 
-- [Form: iGrad > Summary > Sales Team](#22-igrad-main-active)
+- [Form: iGrad > Summary > Sales Team](#22-igrad---main---active)
 
 #### state
 
@@ -11861,8 +11874,8 @@ Alphabetical field index -- 446 unique fields referenced.
 - [View: Opportunities in Current Fiscal Year (Filter)](#343-opportunities-in-current-fiscal-year)
 - [View: Opportunities Opened This Week (Filter)](#348-opportunities-opened-this-week)
 - [View: Opportunity Lookup View (Filter)](#351-opportunity-lookup-view)
-- [View: Out of Territory Opportunities - Open (Filter)](#352-out-of-territory-opportunities-open)
-- [View: Overdue Opportunities > 45 Days (Filter)](#353-overdue-opportunities-45-days)
+- [View: Out of Territory Opportunities - Open (Filter)](#352-out-of-territory-opportunities---open)
+- [View: Overdue Opportunities > 45 Days (Filter)](#353-overdue-opportunities--45-days)
 - [View: Quick Find Open Opportunities (Filter)](#354-quick-find-open-opportunities)
 - [View: Recent Opportunities](#355-recent-opportunities)
 - [View: Recent Opportunities (Filter)](#355-recent-opportunities)
@@ -11924,7 +11937,7 @@ Alphabetical field index -- 446 unique fields referenced.
 - [View: My Closed Opportunities in Current Fiscal Year](#39-my-closed-opportunities-in-current-fiscal-year)
 - [View: My Won Opps this Year](#330-my-won-opps-this-year)
 - [View: Opportunity Advanced Find View](#349-opportunity-advanced-find-view)
-- [View: Out of Territory Opportunities - Open](#352-out-of-territory-opportunities-open)
+- [View: Out of Territory Opportunities - Open](#352-out-of-territory-opportunities---open)
 - [View: Upcoming Internet Renewals](#357-upcoming-internet-renewals)
 - [View: Won Opportunities](#362-won-opportunities)
 - [Workflow: BatchCreateEngagements (Write)](#77-batchcreateengagements)
@@ -12010,7 +12023,7 @@ Alphabetical field index -- 446 unique fields referenced.
 #### totalamount
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Product line items > Product Line Item Totals](#22-igrad-main-active)
+- [Form: iGrad > Product line items > Product Line Item Totals](#22-igrad---main---active)
 - [Plugin: FundingSetAnnualSpend (Read)](#1028-fundingsetannualspend)
 - [Plugin: InvoiceClosePaidOnPercentage (Read)](#1034-invoiceclosepaidonpercentage)
 - [Plugin: PaymentUpdate (Read)](#1058-paymentupdate)
@@ -12019,23 +12032,23 @@ Alphabetical field index -- 446 unique fields referenced.
 #### totalamountlessfreight
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Product line items > Product Line Item Totals](#22-igrad-main-active)
+- [Form: iGrad > Product line items > Product Line Item Totals](#22-igrad---main---active)
 
 #### totallineitemamount
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Product line items > Product Line Item Totals](#22-igrad-main-active)
+- [Form: iGrad > Product line items > Product Line Item Totals](#22-igrad---main---active)
 
 #### totaltax
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Product line items > Product Line Item Totals](#22-igrad-main-active)
+- [Form: iGrad > Product line items > Product Line Item Totals](#22-igrad---main---active)
 
 #### transactioncurrencyid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad > Product line items > Product Line Item Totals](#22-igrad-main-active)
-- [Form: Opportunity > Products > Product Line Item Totals](#23-opportunity-main-active)
+- [Form: iGrad > Product line items > Product Line Item Totals](#22-igrad---main---active)
+- [Form: Opportunity > Products > Product Line Item Totals](#23-opportunity---main---active)
 - [Workflow: CloneOpportunity (Write)](#719-cloneopportunity)
 - [Workflow: QualifyLead (Write)](#745-qualifylead)
 - [Plugin: CloneExpenseLine (Read)](#1017-cloneexpenseline)
@@ -12064,7 +12077,7 @@ Alphabetical field index -- 446 unique fields referenced.
 
 #### webresource_recordwall
 
-- [Form: Information > What's New > Section](#24-information-main-inactive)
+- [Form: Information > What's New > Section](#24-information---main---inactive)
 
 #### zipcode
 

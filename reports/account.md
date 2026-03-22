@@ -1,22 +1,35 @@
 # Account Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | account |
+| **Display Name** | Account |
+| **Description** | Business that represents a customer or potential customer. The company that is billed in business transactions. |
+| **Object Type** | Standard |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | True |
+| **Total Rows** | 32265 |
+| **Last Update** | 2026-03-21 01:28:31 |
+| **Primary ID Field** | accountid |
+| **Primary Name Field** | name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. TimelineWallControl - Account- Main (main) -- Active](#21-timelinewallcontrol-account-main-main-active)
-  - [2.2. iGrad Account (main) -- Active](#22-igrad-account-main-active)
-  - [2.3. AI for Sales (main) -- Inactive](#23-ai-for-sales-main-inactive)
-  - [2.4. Information (main) -- Inactive](#24-information-main-inactive)
-  - [2.5. Account (main) -- Active](#25-account-main-active)
-  - [2.6. Purchased Software Licenses (quick) -- Active](#26-purchased-software-licenses-quick-active)
-  - [2.7. Account Owner Card (quick) -- Active](#27-account-owner-card-quick-active)
-  - [2.8. Last Purchase Dates Quick View (quick) -- Active](#28-last-purchase-dates-quick-view-quick-active)
-  - [2.9. Allocated Software Licenses (quick) -- Active](#29-allocated-software-licenses-quick-active)
-  - [2.10. Account Lead Quick View (quick) -- Active](#210-account-lead-quick-view-quick-active)
-  - [2.11. Account Owner Quick View (quick) -- Active](#211-account-owner-quick-view-quick-active)
-  - [2.12. Engagement Contacts (quick) -- Active](#212-engagement-contacts-quick-active)
+  - [2.1. TimelineWallControl - Account- Main - main - Active](#21-timelinewallcontrol---account--main---main---active)
+  - [2.2. iGrad Account - main - Active](#22-igrad-account---main---active)
+  - [2.3. AI for Sales - main - Inactive](#23-ai-for-sales---main---inactive)
+  - [2.4. Information - main - Inactive](#24-information---main---inactive)
+  - [2.5. Account - main - Active](#25-account---main---active)
+  - [2.6. Purchased Software Licenses - quick - Active](#26-purchased-software-licenses---quick---active)
+  - [2.7. Account Owner Card - quick - Active](#27-account-owner-card---quick---active)
+  - [2.8. Last Purchase Dates Quick View - quick - Active](#28-last-purchase-dates-quick-view---quick---active)
+  - [2.9. Allocated Software Licenses - quick - Active](#29-allocated-software-licenses---quick---active)
+  - [2.10. Account Lead Quick View - quick - Active](#210-account-lead-quick-view---quick---active)
+  - [2.11. Account Owner Quick View - quick - Active](#211-account-owner-quick-view---quick---active)
+  - [2.12. Engagement Contacts - quick - Active](#212-engagement-contacts---quick---active)
 - [3. Views](#3-views)
   - [3.1. Account Advanced Find View](#31-account-advanced-find-view)
   - [3.2. Account Associated View](#32-account-associated-view)
@@ -132,7 +145,7 @@
   - [8.13. azt_productdiscountlibrary](#813-azt_productdiscountlibrary)
   - [8.14. azt_quotelibrary](#814-azt_quotelibrary)
   - [8.15. azt_sendquote](#815-azt_sendquote)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -218,7 +231,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -281,7 +294,7 @@ Total fields: **136**
 | 50 | [azt_accountalert](#azt_accountalert) | Account Alert | nvarchar |  | Yes | none | 2026-03-19 18:49:26 | true | Account | Account Alert | Account_Alert__c |  |  |  | [2](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 51 | [azt_accountleadgenname](#azt_accountleadgenname) | Account Lead Gen Name | nvarchar |  | Yes | none | 2026-03-17 12:50:21 | true |  |  |  |  |  |  |  |  |  |  |  | [1](#7-workflows) |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 52 | [azt_accountnumber](#azt_accountnumber) | Account Number | nvarchar |  | Yes | none | 2026-03-21 01:28:31 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 53 | [azt_accountspend](#azt_accountspend) | Lifetime Spend | money |  | Yes | none | 2026-03-21 01:28:31 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 53 | [azt_accountspend](#azt_accountspend) | Lifetime Spend | money |  | Yes | none | 2026-03-21 01:28:31 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 54 | [azt_accountspend_base](#azt_accountspend_base) | Account Spend (Base) | money |  | Yes | none | 2026-03-21 01:28:31 | false | Account | CRM Account Spend (Base) | CRM_Account_Spend__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 55 | [azt_accounttype](#azt_accounttype) | Account Type | picklist | 276530000: Active Account, 276530001: Expired Account, 276530007: Prospect, 276530005: Trade Show, 276530003: Partner, 276530006: Vendor, 276530004: Pilot, 276530002: Other, 100000000: Active | Yes | none | 2026-03-21 01:28:31 | true | Account | Account Status | Account_Status__c |  |  |  | [5](#2-forms) | [11](#3-views) |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 56 | [azt_addresssearch](#azt_addresssearch) | Address Search | nvarchar |  | Yes | none | 2026-03-17 12:51:08 | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -311,7 +324,7 @@ Total fields: **136**
 | 80 | [azt_lastprintpurchase](#azt_lastprintpurchase) | Last Print Purchase | datetime |  | Yes | none | 2026-03-20 21:14:01 | true | Account | CRM Last Print Purchase | CRM_Last_Print_Purchase__c |  |  |  | [3](#2-forms) | [5](#3-views) |  |  |  |  |  |  |  |  |  |  |
 | 81 | [azt_lastsaaspurchase](#azt_lastsaaspurchase) | Last SaaS Purchase | datetime |  | Yes | none | 2026-03-20 21:14:01 | true | Account | CRM Last SaaS Purchase | CRM_Last_SaaS_Purchase__c |  |  |  | [3](#2-forms) | [5](#3-views) |  |  |  |  |  |  |  |  |  |  |
 | 82 | [azt_lastsuccessfulconnection](#azt_lastsuccessfulconnection) | Last Successful Connection | datetime |  | Yes | none | 2026-03-21 01:28:31 | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 83 | [azt_lastyearspend](#azt_lastyearspend) | Last Year Spend | money |  | Yes | none | 2026-03-21 01:28:31 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 83 | [azt_lastyearspend](#azt_lastyearspend) | Last Year Spend | money |  | Yes | none | 2026-03-21 01:28:31 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 84 | [azt_lastyearspend_base](#azt_lastyearspend_base) | Last Year Spend (Base) | money |  | Yes | none | 2026-03-21 01:28:31 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 85 | [azt_leadsourceid](#azt_leadsourceid) | Lead Source | lookup |  | Yes | none | 2026-03-20 20:23:34 | true | Account | Account Source | AccountSource |  |  |  | [2](#2-forms) |  |  |  |  | [8](#7-workflows) |  | [2](#10-plugin-source-code-analysis) |  | [1](#12-relationships) |  |  |
 | 86 | [azt_nomatch](#azt_nomatch) | No Match? | bit | 1: Yes, 0: No | Yes | none | 2026-03-21 01:28:31 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -335,9 +348,9 @@ Total fields: **136**
 | 104 | [azt_ttprintnotto](#azt_ttprintnotto) | TTPrint - No TTO | bit | 1: Yes, 0: No | Yes | none | 2026-03-20 21:14:01 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 105 | [azt_type](#azt_type) | Type | nvarchar |  | Yes | none | 2026-03-21 01:28:31 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 106 | [azt_verticalmarket](#azt_verticalmarket) | Vertical Market | picklist |  | Yes | none | 2026-03-21 01:28:31 | true |  | Industry |  |  |  |  | [5](#2-forms) |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
-| 107 | [azt_yearbeforelastspend](#azt_yearbeforelastspend) | Year Before Last Spend | money |  | Yes | none | 2026-03-21 01:28:31 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 107 | [azt_yearbeforelastspend](#azt_yearbeforelastspend) | Year Before Last Spend | money |  | Yes | none | 2026-03-21 01:28:31 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 108 | [azt_yearbeforelastspend_base](#azt_yearbeforelastspend_base) | Year Before Last Spend (Base) | money |  | Yes | none | 2026-03-21 01:28:31 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 109 | [azt_ytdspend](#azt_ytdspend) | YTD Spend | money |  | Yes | none | 2026-03-21 01:28:31 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 109 | [azt_ytdspend](#azt_ytdspend) | YTD Spend | money |  | Yes | none | 2026-03-21 01:28:31 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 110 | [azt_ytdspend_base](#azt_ytdspend_base) | YTD Spend (Base) | money |  | Yes | none | 2026-03-21 01:28:31 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 111 | [createdby](#createdby) | Created By | lookup |  | No | none | 2026-03-21 01:28:31 | true |  |  |  | Account | Legacy_Created_By__c | Legacy_Created_By__c |  |  |  |  |  | [2](#7-workflows) |  |  |  |  |  |  |
 | 112 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) | true |  |  |  | Account | Legacy_Created_On_Date__c | Legacy_Created_On_Date__c |  |  |  |  |  |  |  | [10](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -359,7 +372,7 @@ Total fields: **136**
 | 128 | [parentaccountid](#parentaccountid) | Parent Account | lookup |  | No | none | 2026-03-19 19:24:25 | true | Account | ParentId | ParentId |  |  |  | [2](#2-forms) | [1](#3-views) |  |  |  | [12](#7-workflows) |  | [4](#10-plugin-source-code-analysis) |  | [2](#12-relationships) |  |  |
 | 129 | [primarycontactid](#primarycontactid) | Primary Contact | lookup |  | No | none | 2026-03-20 20:23:34 | true |  |  |  |  |  |  | [2](#2-forms) |  |  |  |  | [2](#7-workflows) |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 130 | [shippingmethodcode](#shippingmethodcode) | Shipping Method | picklist |  | No | none | 2026-03-21 01:28:31 | true |  |  |  |  |  |  |  |  |  | [1](#5-reports) |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 131 | [statecode](#statecode) | Status | state |  | No | systemrequired | 2026-03-21 01:28:31 | true |  |  |  |  |  |  |  | [17](#3-views) |  |  |  | [10](#7-workflows) | [3](#9-formulas-rollups) | [20](#10-plugin-source-code-analysis) |  |  |  |  |
+| 131 | [statecode](#statecode) | Status | state |  | No | systemrequired | 2026-03-21 01:28:31 | true |  |  |  |  |  |  |  | [17](#3-views) |  |  |  | [10](#7-workflows) | [3](#9-formulas-and-rollups) | [20](#10-plugin-source-code-analysis) |  |  |  |  |
 | 132 | [statuscode](#statuscode) | Status Reason | picklist |  | No | none | 2026-03-21 01:28:31 | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10-plugin-source-code-analysis) |  |  |  |  |
 | 133 | [telephone1](#telephone1) | Main Phone | nvarchar |  | No | none | 2026-03-21 01:28:31 | true |  | Phone |  |  |  |  | [3](#2-forms) | [23](#3-views) |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 134 | [telephone2](#telephone2) | Other Phone | nvarchar |  | No | none | 2026-03-19 14:30:50 | false | Account | Other Phone | OtherPhone__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -372,7 +385,7 @@ Total fields: **136**
 
 Total forms: **12**
 
-### 2.1. TimelineWallControl - Account- Main (main) -- Active
+### 2.1. TimelineWallControl - Account- Main - main - Active
 
 - **Form ID:** `{6df8e8ce-7655-468c-925e-660d59aa7f4c}`
 - **Presentation:** UCI/Tablet
@@ -386,7 +399,7 @@ Total forms: **12**
 |-------|-------|----------|---------|
 | [notescontrol](#notescontrol) | Notes Properties | No | Yes |
 
-### 2.2. iGrad Account (main) -- Active
+### 2.2. iGrad Account - main - Active
 
 - **Form ID:** `{a7fc2a6c-bdca-4294-9533-77d161f541b1}`
 - **Presentation:** UCI/Tablet
@@ -649,7 +662,7 @@ Total forms: **12**
 | onload |  | `Sales.DocumentsTabController.shouldShowDocumentsTab` | `Sales/ClientCommon/Sales_ClientCommon.js` | true |
 | onchange | address1_addresstypecode | `A.AccountFunctions.setPrimAddressName` | `azt_accountlibrary` | true |
 
-### 2.3. AI for Sales (main) -- Inactive
+### 2.3. AI for Sales - main - Inactive
 
 - **Form ID:** `{cb430327-bcc1-416d-959d-db7592e685af}`
 - **Presentation:** UCI/Tablet
@@ -682,7 +695,7 @@ Total forms: **12**
 
 ##### Section: BILLING
 
-### 2.4. Information (main) -- Inactive
+### 2.4. Information - main - Inactive
 
 - **Form ID:** `{b053a39a-041a-4356-acef-ddf00182762b}`
 - **Presentation:** Classic
@@ -722,7 +735,7 @@ Total forms: **12**
 |-------|-------|----------|---------|
 | [WebResource_RecordWall](#webresource_recordwall) | RecordWall | No | Yes |
 
-### 2.5. Account (main) -- Active
+### 2.5. Account - main - Active
 
 - **Form ID:** `{8448b78f-8f42-454e-8e2a-f8196b0419af}`
 - **Presentation:** UCI/Tablet
@@ -984,7 +997,7 @@ Total forms: **12**
 | onload |  | `A.AccountFunctions.onLoad` | `azt_accountlibrary` | true |
 | onchange | address1_addresstypecode | `A.AccountFunctions.setPrimAddressName` | `azt_accountlibrary` | true |
 
-### 2.6. Purchased Software Licenses (quick) -- Active
+### 2.6. Purchased Software Licenses - quick - Active
 
 - **Form ID:** `{0f2248fc-4264-4bf9-9f9b-49c807c7c276}`
 - **Presentation:** UCI/Tablet
@@ -998,7 +1011,7 @@ Total forms: **12**
 |-------|-------|----------|---------|
 | [purchasedsoftware](#purchasedsoftware) | Purchased Software | No | Yes |
 
-### 2.7. Account Owner Card (quick) -- Active
+### 2.7. Account Owner Card - quick - Active
 
 - **Form ID:** `{b6e88028-6990-40e6-ba5b-562bf68e363a}`
 - **Presentation:** UCI/Tablet
@@ -1012,7 +1025,7 @@ Total forms: **12**
 |-------|-------|----------|---------|
 | [ownerid](#ownerid) | Account Owner | No | Yes |
 
-### 2.8. Last Purchase Dates Quick View (quick) -- Active
+### 2.8. Last Purchase Dates Quick View - quick - Active
 
 - **Form ID:** `{a3764c0b-4fd3-482e-ac69-6585b3532833}`
 - **Presentation:** UCI/Tablet
@@ -1034,7 +1047,7 @@ Total forms: **12**
 |-------|-------|----------|---------|
 | [fundinggrid](#fundinggrid) | fundinggrid | No | Yes |
 
-### 2.9. Allocated Software Licenses (quick) -- Active
+### 2.9. Allocated Software Licenses - quick - Active
 
 - **Form ID:** `{b7be8bd7-c202-4f04-b412-8dcce39af644}`
 - **Presentation:** UCI/Tablet
@@ -1048,7 +1061,7 @@ Total forms: **12**
 |-------|-------|----------|---------|
 | [softwarelicenseallocations](#softwarelicenseallocations) | Software License Allocations | No | Yes |
 
-### 2.10. Account Lead Quick View (quick) -- Active
+### 2.10. Account Lead Quick View - quick - Active
 
 - **Form ID:** `{75c9e52b-54cd-46c3-8d52-ba6f22026631}`
 - **Presentation:** UCI/Tablet
@@ -1067,7 +1080,7 @@ Total forms: **12**
 | [parentaccountid](#parentaccountid) | Parent Account | No | Yes |
 | [address1_composite](#address1_composite) | Physical Address | No | Yes |
 
-### 2.11. Account Owner Quick View (quick) -- Active
+### 2.11. Account Owner Quick View - quick - Active
 
 - **Form ID:** `{ef3fdf29-170b-49dc-8107-dc01b314b785}`
 - **Presentation:** UCI/Tablet
@@ -1082,7 +1095,7 @@ Total forms: **12**
 | [azt_customernumber](#azt_customernumber) | Customer Number | No | Yes |
 | [ownerid](#ownerid) | Account Owner | No | Yes |
 
-### 2.12. Engagement Contacts (quick) -- Active
+### 2.12. Engagement Contacts - quick - Active
 
 - **Form ID:** `{4d5a456e-575a-4b58-b668-e31386e38e47}`
 - **Presentation:** UCI/Tablet
@@ -3244,7 +3257,7 @@ Total JS files referencing Account fields: **15**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Account: **4**
 
@@ -5550,7 +5563,7 @@ Total relationships involving Account: **43**
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -5943,19 +5956,19 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### accessteam
 
-- [Form: iGrad Account > Details > section](#22-igrad-account-main-active)
-- [Form: Account > DETAILS_TAB > section](#25-account-main-active)
+- [Form: iGrad Account > Details > section](#22-igrad-account---main---active)
+- [Form: Account > DETAILS_TAB > section](#25-account---main---active)
 
 #### accountcasessgrid
 
-- [Form: iGrad Account > Summary > Section](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > SUMMARY_TAB_section_6](#25-account-main-active)
+- [Form: iGrad Account > Summary > Section](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > SUMMARY_TAB_section_6](#25-account---main---active)
 
 #### accountclassificationcode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account > SUMMARY_TAB > ACCOUNT_INFORMATION](#25-account-main-active)
-- [Form: Account Lead Quick View > Tab > section](#210-account-lead-quick-view-quick-active)
+- [Form: Account > SUMMARY_TAB > ACCOUNT_INFORMATION](#25-account---main---active)
+- [Form: Account Lead Quick View > Tab > section](#210-account-lead-quick-view---quick---active)
 - [View: Accounts With Product Family Purchases](#37-accounts-with-product-family-purchases)
 - [View: Active Accounts in Quickbooks](#39-active-accounts-in-quickbooks)
 - [View: Active Accounts](#310-active-accounts)
@@ -6024,8 +6037,8 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### accountopportunitiesgrid
 
-- [Form: iGrad Account > Summary > Section](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > SUMMARY_TAB_section_6](#25-account-main-active)
+- [Form: iGrad Account > Summary > Section](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > SUMMARY_TAB_section_6](#25-account---main---active)
 
 #### activityid
 
@@ -6044,31 +6057,31 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### actualclosedate
 
-- [Formula: azt_lastyearspend](#9-formulas-rollups)
-- [Formula: azt_lastyearspend](#9-formulas-rollups)
-- [Formula: azt_ytdspend](#9-formulas-rollups)
+- [Formula: azt_lastyearspend](#9-formulas-and-rollups)
+- [Formula: azt_lastyearspend](#9-formulas-and-rollups)
+- [Formula: azt_ytdspend](#9-formulas-and-rollups)
 - [Plugin: CreateUserGoals (Filter)](#1022-createusergoals)
 
 #### actualend
 
-- [Formula: azt_yearbeforelastspend](#9-formulas-rollups)
-- [Formula: azt_yearbeforelastspend](#9-formulas-rollups)
+- [Formula: azt_yearbeforelastspend](#9-formulas-and-rollups)
+- [Formula: azt_yearbeforelastspend](#9-formulas-and-rollups)
 
 #### actualrevenue
 
-- [Formula: azt_yearbeforelastspend](#9-formulas-rollups)
+- [Formula: azt_yearbeforelastspend](#9-formulas-and-rollups)
 
 #### actualvalue
 
-- [Formula: azt_accountspend](#9-formulas-rollups)
-- [Formula: azt_lastyearspend](#9-formulas-rollups)
-- [Formula: azt_ytdspend](#9-formulas-rollups)
+- [Formula: azt_accountspend](#9-formulas-and-rollups)
+- [Formula: azt_lastyearspend](#9-formulas-and-rollups)
+- [Formula: azt_ytdspend](#9-formulas-and-rollups)
 
 #### address1_addresstypecode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Summary > PHYSICAL ADDRESS](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > PHYSICAL ADDRESS](#25-account-main-active)
+- [Form: iGrad Account > Summary > PHYSICAL ADDRESS](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > PHYSICAL ADDRESS](#25-account---main---active)
 - [Workflow: BatchConverttoLead (Write)](#77-batchconverttolead)
 - [Workflow: CreateLeadFromLeadGen (Write)](#725-createleadfromleadgen)
 - [Workflow: CreateLeadfromAccount (Write)](#726-createleadfromaccount)
@@ -6080,8 +6093,8 @@ Alphabetical field index -- 484 unique fields referenced.
 #### address1_city
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Summary > Section](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > Section](#25-account-main-active)
+- [Form: iGrad Account > Summary > Section](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > Section](#25-account---main---active)
 - [View: Account Lookup View](#35-account-lookup-view)
 - [View: Accounts With Product Family Purchases](#37-accounts-with-product-family-purchases)
 - [View: Accounts: No Orders in Last 6 Months](#38-accounts-no-orders-in-last-6-months)
@@ -6107,13 +6120,13 @@ Alphabetical field index -- 484 unique fields referenced.
 #### address1_composite
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account Lead Quick View > Tab > section](#210-account-lead-quick-view-quick-active)
+- [Form: Account Lead Quick View > Tab > section](#210-account-lead-quick-view---quick---active)
 
 #### address1_country
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Summary > Section](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > Section](#25-account-main-active)
+- [Form: iGrad Account > Summary > Section](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > Section](#25-account---main---active)
 - [Workflow: AccountAuto-Assign (Read)](#73-accountauto-assign)
 - [Workflow: CreateLeadFromLeadGen (Read)](#725-createleadfromleadgen)
 - [JS: azt_addresslibrary > addAddress()](#83-azt_addresslibrary)
@@ -6139,17 +6152,17 @@ Alphabetical field index -- 484 unique fields referenced.
 #### address1_line1
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Summary > Address](#22-igrad-account-main-active)
-- [Form: iGrad Account > Summary > Section](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > Section](#25-account-main-active)
+- [Form: iGrad Account > Summary > Address](#22-igrad-account---main---active)
+- [Form: iGrad Account > Summary > Section](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > Section](#25-account---main---active)
 - [Workflow: ContactMapAddresses (Read)](#724-contactmapaddresses)
 - [JS: azt_addresslibrary > addAddress()](#83-azt_addresslibrary)
 
 #### address1_line2
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Summary > Section](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > Section](#25-account-main-active)
+- [Form: iGrad Account > Summary > Section](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > Section](#25-account---main---active)
 - [Workflow: ContactMapAddresses (Read)](#724-contactmapaddresses)
 - [JS: azt_addresslibrary > addAddress()](#83-azt_addresslibrary)
 
@@ -6164,8 +6177,8 @@ Alphabetical field index -- 484 unique fields referenced.
 #### address1_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Summary > PHYSICAL ADDRESS](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > PHYSICAL ADDRESS](#25-account-main-active)
+- [Form: iGrad Account > Summary > PHYSICAL ADDRESS](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > PHYSICAL ADDRESS](#25-account---main---active)
 - [View: Account Lookup View](#35-account-lookup-view)
 - [Workflow: SetPhysicalAddressNameField (Read)](#750-setphysicaladdressnamefield)
 - [Workflow: SetPhysicalAddressNameField (Write)](#750-setphysicaladdressnamefield)
@@ -6175,8 +6188,8 @@ Alphabetical field index -- 484 unique fields referenced.
 #### address1_postalcode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Summary > Section](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > Section](#25-account-main-active)
+- [Form: iGrad Account > Summary > Section](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > Section](#25-account---main---active)
 - [Workflow: ContactMapAddresses (Read)](#724-contactmapaddresses)
 - [Workflow: CreateLeadFromLeadGen (Read)](#725-createleadfromleadgen)
 - [JS: azt_addresslibrary > addAddress()](#83-azt_addresslibrary)
@@ -6201,8 +6214,8 @@ Alphabetical field index -- 484 unique fields referenced.
 #### address1_stateorprovince
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Summary > Section](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > Section](#25-account-main-active)
+- [Form: iGrad Account > Summary > Section](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > Section](#25-account---main---active)
 - [View: Accounts With Product Family Purchases](#37-accounts-with-product-family-purchases)
 - [View: Active Accounts in Quickbooks](#39-active-accounts-in-quickbooks)
 - [View: Active Accounts](#310-active-accounts)
@@ -6367,8 +6380,8 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### addresses
 
-- [Form: iGrad Account > Summary > SOCIAL PANE](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > SOCIAL_PANE_TAB](#25-account-main-active)
+- [Form: iGrad Account > Summary > SOCIAL PANE](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > SOCIAL_PANE_TAB](#25-account---main---active)
 
 #### adx_resolutiondate
 
@@ -6376,8 +6389,8 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### allocations
 
-- [Form: iGrad Account > Allocations > Section](#22-igrad-account-main-active)
-- [Form: Account > Allocations > Section](#25-account-main-active)
+- [Form: iGrad Account > Allocations > Section](#22-igrad-account---main---active)
+- [Form: Account > Allocations > Section](#25-account---main---active)
 
 #### amountdatatype
 
@@ -6400,8 +6413,8 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_accountalert
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Account Alert > Section](#22-igrad-account-main-active)
-- [Form: Account > Account Alert > Section](#25-account-main-active)
+- [Form: iGrad Account > Account Alert > Section](#22-igrad-account---main---active)
+- [Form: Account > Account Alert > Section](#25-account---main---active)
 - [JS: azt_accountlibrary > accountAlert()](#82-azt_accountlibrary)
 
 #### azt_accountid
@@ -6442,9 +6455,9 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_accountspend
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account > Administration > Section](#25-account-main-active)
+- [Form: Account > Administration > Section](#25-account---main---active)
 - [JS: azt_accountlibrary > parentAccountSpend()](#82-azt_accountlibrary)
-- [Formula: azt_accountspend (Target)](#9-formulas-rollups)
+- [Formula: azt_accountspend (Target)](#9-formulas-and-rollups)
 
 #### azt_accountspend_base
 
@@ -6453,11 +6466,11 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_accounttype
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account (Header)](#22-igrad-account-main-active)
-- [Form: iGrad Account > Summary > Account Status](#22-igrad-account-main-active)
-- [Form: Account (Header)](#25-account-main-active)
-- [Form: Account > SUMMARY_TAB > Account Status](#25-account-main-active)
-- [Form: Account Lead Quick View > Tab > section](#210-account-lead-quick-view-quick-active)
+- [Form: iGrad Account (Header)](#22-igrad-account---main---active)
+- [Form: iGrad Account > Summary > Account Status](#22-igrad-account---main---active)
+- [Form: Account (Header)](#25-account---main---active)
+- [Form: Account > SUMMARY_TAB > Account Status](#25-account---main---active)
+- [Form: Account Lead Quick View > Tab > section](#210-account-lead-quick-view---quick---active)
 - [View: Accounts With Product Family Purchases](#37-accounts-with-product-family-purchases)
 - [View: Active Accounts in Quickbooks](#39-active-accounts-in-quickbooks)
 - [View: Active Accounts](#310-active-accounts)
@@ -6475,8 +6488,8 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_addresssearch
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Summary > PHYSICAL ADDRESS](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > PHYSICAL ADDRESS](#25-account-main-active)
+- [Form: iGrad Account > Summary > PHYSICAL ADDRESS](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > PHYSICAL ADDRESS](#25-account---main---active)
 - [Plugin: AddressSearchCleanupFields (Read)](#1010-addresssearchcleanupfields)
 - [Plugin: AddressSearchCleanupFields (Write)](#1010-addresssearchcleanupfields)
 
@@ -6493,8 +6506,8 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_aeflafunding
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account > SUMMARY_TAB > COMPANY PROFILE](#25-account-main-active)
-- [Form: Last Purchase Dates Quick View > Tab > section](#28-last-purchase-dates-quick-view-quick-active)
+- [Form: Account > SUMMARY_TAB > COMPANY PROFILE](#25-account---main---active)
+- [Form: Last Purchase Dates Quick View > Tab > section](#28-last-purchase-dates-quick-view---quick---active)
 
 #### azt_ageendedstage
 
@@ -6659,10 +6672,10 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_customernumber
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Summary > ACCOUNT INFORMATION](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > ACCOUNT_INFORMATION](#25-account-main-active)
-- [Form: Account Lead Quick View > Tab > section](#210-account-lead-quick-view-quick-active)
-- [Form: Account Owner Quick View > Tab > section](#211-account-owner-quick-view-quick-active)
+- [Form: iGrad Account > Summary > ACCOUNT INFORMATION](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > ACCOUNT_INFORMATION](#25-account---main---active)
+- [Form: Account Lead Quick View > Tab > section](#210-account-lead-quick-view---quick---active)
+- [Form: Account Owner Quick View > Tab > section](#211-account-owner-quick-view---quick---active)
 - [View: Accounts With Product Family Purchases](#37-accounts-with-product-family-purchases)
 - [View: Active Accounts in Quickbooks](#39-active-accounts-in-quickbooks)
 - [View: Active Accounts](#310-active-accounts)
@@ -6672,8 +6685,8 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_customerof
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Summary > ACCOUNT INFORMATION](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > ACCOUNT_INFORMATION](#25-account-main-active)
+- [Form: iGrad Account > Summary > ACCOUNT INFORMATION](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > ACCOUNT_INFORMATION](#25-account---main---active)
 
 #### azt_customertrainingid
 
@@ -6754,8 +6767,8 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_excludefromautoassign
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Summary > ACCOUNT INFORMATION](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > ACCOUNT_INFORMATION](#25-account-main-active)
+- [Form: iGrad Account > Summary > ACCOUNT INFORMATION](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > ACCOUNT_INFORMATION](#25-account---main---active)
 - [Workflow: AccountAuto-Assign (Read)](#73-accountauto-assign)
 - [Workflow: ContactAuto-Assign (Read)](#723-contactauto-assign)
 - [Workflow: MarkAccountsExcludefromAuto-assign (Write)](#735-markaccountsexcludefromauto-assign)
@@ -6764,8 +6777,8 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_executivesummary
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Summary > Executive Summary](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > Executive Summary](#25-account-main-active)
+- [Form: iGrad Account > Summary > Executive Summary](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > Executive Summary](#25-account---main---active)
 - [Workflow: BatchCreateEngagements (Write)](#78-batchcreateengagements)
 - [Workflow: SoftwareLicenseCreateEngagement (Write)](#752-softwarelicensecreateengagement)
 
@@ -6800,8 +6813,8 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_extension
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Summary > ACCOUNT INFORMATION](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > ACCOUNT_INFORMATION](#25-account-main-active)
+- [Form: iGrad Account > Summary > ACCOUNT INFORMATION](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > ACCOUNT_INFORMATION](#25-account---main---active)
 - [Plugin: OrderFSRSetTemplateFields (Read)](#1052-orderfsrsettemplatefields)
 
 #### azt_fieldtoautonumber
@@ -6825,7 +6838,7 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_fiscalyearend
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account > SUMMARY_TAB > COMPANY PROFILE](#25-account-main-active)
+- [Form: Account > SUMMARY_TAB > COMPANY PROFILE](#25-account---main---active)
 
 #### azt_freightamtapproved
 
@@ -6889,8 +6902,8 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_historicalowner
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account (Footer)](#22-igrad-account-main-active)
-- [Form: Account (Footer)](#25-account-main-active)
+- [Form: iGrad Account (Footer)](#22-igrad-account---main---active)
+- [Form: Account (Footer)](#25-account---main---active)
 - [Workflow: CloneAndDeleteQuote (Write)](#718-cloneanddeletequote)
 - [Workflow: CloneOpportunity (Write)](#721-cloneopportunity)
 
@@ -6979,9 +6992,9 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_lastprintpurchase
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Details > Description](#22-igrad-account-main-active)
-- [Form: Account > DETAILS_TAB > DETAILS_TAB_section_6](#25-account-main-active)
-- [Form: Last Purchase Dates Quick View > Tab > section](#28-last-purchase-dates-quick-view-quick-active)
+- [Form: iGrad Account > Details > Description](#22-igrad-account---main---active)
+- [Form: Account > DETAILS_TAB > DETAILS_TAB_section_6](#25-account---main---active)
+- [Form: Last Purchase Dates Quick View > Tab > section](#28-last-purchase-dates-quick-view---quick---active)
 - [View: Active Accounts](#310-active-accounts)
 - [View: My Active Customers With Purchase Dates](#319-my-active-customers-with-purchase-dates)
 - [View: My Active Customers With Purchase Dates (Filter)](#319-my-active-customers-with-purchase-dates)
@@ -6991,9 +7004,9 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_lastsaaspurchase
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Details > Description](#22-igrad-account-main-active)
-- [Form: Account > DETAILS_TAB > DETAILS_TAB_section_6](#25-account-main-active)
-- [Form: Last Purchase Dates Quick View > Tab > section](#28-last-purchase-dates-quick-view-quick-active)
+- [Form: iGrad Account > Details > Description](#22-igrad-account---main---active)
+- [Form: Account > DETAILS_TAB > DETAILS_TAB_section_6](#25-account---main---active)
+- [Form: Last Purchase Dates Quick View > Tab > section](#28-last-purchase-dates-quick-view---quick---active)
 - [View: Active Accounts](#310-active-accounts)
 - [View: My Active Customers With Purchase Dates](#319-my-active-customers-with-purchase-dates)
 - [View: My Active Customers With Purchase Dates (Filter)](#319-my-active-customers-with-purchase-dates)
@@ -7003,14 +7016,14 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_lastsuccessfulconnection
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account (Header)](#22-igrad-account-main-active)
-- [Form: Account (Header)](#25-account-main-active)
+- [Form: iGrad Account (Header)](#22-igrad-account---main---active)
+- [Form: Account (Header)](#25-account---main---active)
 
 #### azt_lastyearspend
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account > Administration > Section](#25-account-main-active)
-- [Formula: azt_lastyearspend (Target)](#9-formulas-rollups)
+- [Form: Account > Administration > Section](#25-account---main---active)
+- [Formula: azt_lastyearspend (Target)](#9-formulas-and-rollups)
 
 #### azt_lastyearspend_base
 
@@ -7023,8 +7036,8 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_leadsourceid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Summary > ACCOUNT INFORMATION](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > ACCOUNT_INFORMATION](#25-account-main-active)
+- [Form: iGrad Account > Summary > ACCOUNT INFORMATION](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > ACCOUNT_INFORMATION](#25-account---main---active)
 - [Workflow: BatchConverttoLead (Write)](#77-batchconverttolead)
 - [Workflow: BulkChangeLeadSource (Write)](#712-bulkchangeleadsource)
 - [Workflow: CreateLeadfromAccount (Write)](#726-createleadfromaccount)
@@ -7168,8 +7181,8 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_nonsaasstatus
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Summary > Account Status](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > Account Status](#25-account-main-active)
+- [Form: iGrad Account > Summary > Account Status](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > Account Status](#25-account---main---active)
 - [Plugin: AccountTypeSet (Read)](#105-accounttypeset)
 - [Plugin: AccountTypeSet (Image)](#105-accounttypeset)
 
@@ -7180,7 +7193,7 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_numberofcomputers
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account > SUMMARY_TAB > COMPANY PROFILE](#25-account-main-active)
+- [Form: Account > SUMMARY_TAB > COMPANY PROFILE](#25-account---main---active)
 
 #### azt_numberoflicenses
 
@@ -7191,13 +7204,13 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_numberofstudents
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Summary > COMPANY PROFILE](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > COMPANY PROFILE](#25-account-main-active)
+- [Form: iGrad Account > Summary > COMPANY PROFILE](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > COMPANY PROFILE](#25-account---main---active)
 
 #### azt_oldbusinessunit
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account > Administration > Section](#25-account-main-active)
+- [Form: Account > Administration > Section](#25-account---main---active)
 
 #### azt_opportunityauditrecordid
 
@@ -7281,7 +7294,7 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_parentaccountspend
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account > Administration > Section](#25-account-main-active)
+- [Form: Account > Administration > Section](#25-account---main---active)
 - [JS: azt_accountlibrary > parentAccountSpend()](#82-azt_accountlibrary)
 
 #### azt_parentaccountspend_base
@@ -7291,7 +7304,7 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_parentlastyearspend
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account > Administration > Section](#25-account-main-active)
+- [Form: Account > Administration > Section](#25-account---main---active)
 
 #### azt_parentlastyearspend_base
 
@@ -7311,7 +7324,7 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_parentytdspend
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account > Administration > Section](#25-account-main-active)
+- [Form: Account > Administration > Section](#25-account---main---active)
 
 #### azt_parentytdspend_base
 
@@ -7366,7 +7379,7 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_possiblematchid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account > Administration > Section](#25-account-main-active)
+- [Form: Account > Administration > Section](#25-account---main---active)
 - [Relationship: azt_account_account](#12-relationships)
 
 #### azt_prefix
@@ -7442,8 +7455,8 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_productfamilies
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Details > Description](#22-igrad-account-main-active)
-- [Form: Account > DETAILS_TAB > DETAILS_TAB_section_6](#25-account-main-active)
+- [Form: iGrad Account > Details > Description](#22-igrad-account---main---active)
+- [Form: Account > DETAILS_TAB > DETAILS_TAB_section_6](#25-account---main---active)
 - [View: Accounts With Product Family Purchases](#37-accounts-with-product-family-purchases)
 - [View: Accounts With Product Family Purchases (Filter)](#37-accounts-with-product-family-purchases)
 
@@ -7498,8 +7511,8 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_recordownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Summary > ACCOUNT INFORMATION](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > ACCOUNT_INFORMATION](#25-account-main-active)
+- [Form: iGrad Account > Summary > ACCOUNT INFORMATION](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > ACCOUNT_INFORMATION](#25-account---main---active)
 - [View: Accounts With Product Family Purchases](#37-accounts-with-product-family-purchases)
 - [View: All Accounts](#311-all-accounts)
 - [View: All Accounts (Sort)](#311-all-accounts)
@@ -7587,8 +7600,8 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_saasstatus
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Summary > Account Status](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > Account Status](#25-account-main-active)
+- [Form: iGrad Account > Summary > Account Status](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > Account Status](#25-account---main---active)
 - [Plugin: AccountTypeSet (Read)](#105-accounttypeset)
 - [Plugin: AccountTypeSet (Image)](#105-accounttypeset)
 
@@ -7604,7 +7617,7 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_score
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account > Administration > Section](#25-account-main-active)
+- [Form: Account > Administration > Section](#25-account---main---active)
 
 #### azt_softwarelicenseid
 
@@ -7676,8 +7689,8 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_taxexemptcertificate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Summary > ACCOUNT INFORMATION](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > ACCOUNT_INFORMATION](#25-account-main-active)
+- [Form: iGrad Account > Summary > ACCOUNT INFORMATION](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > ACCOUNT_INFORMATION](#25-account---main---active)
 
 #### azt_total
 
@@ -7724,11 +7737,11 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_verticalmarket
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account (Header)](#22-igrad-account-main-active)
-- [Form: iGrad Account > Summary > COMPANY PROFILE](#22-igrad-account-main-active)
-- [Form: Account (Header)](#25-account-main-active)
-- [Form: Account > SUMMARY_TAB > COMPANY PROFILE](#25-account-main-active)
-- [Form: Account Lead Quick View > Tab > section](#210-account-lead-quick-view-quick-active)
+- [Form: iGrad Account (Header)](#22-igrad-account---main---active)
+- [Form: iGrad Account > Summary > COMPANY PROFILE](#22-igrad-account---main---active)
+- [Form: Account (Header)](#25-account---main---active)
+- [Form: Account > SUMMARY_TAB > COMPANY PROFILE](#25-account---main---active)
+- [Form: Account Lead Quick View > Tab > section](#210-account-lead-quick-view---quick---active)
 - [Workflow: CreateLeadFromLeadGen (Read)](#725-createleadfromleadgen)
 - [Workflow: CreateLeadfromAccount (Read)](#726-createleadfromaccount)
 - [JS: azt_accountlibrary > setNonIgradVerticalMarket()](#82-azt_accountlibrary)
@@ -7741,8 +7754,8 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_yearbeforelastspend
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account > Administration > Section](#25-account-main-active)
-- [Formula: azt_yearbeforelastspend (Target)](#9-formulas-rollups)
+- [Form: Account > Administration > Section](#25-account---main---active)
+- [Formula: azt_yearbeforelastspend (Target)](#9-formulas-and-rollups)
 
 #### azt_yearbeforelastspend_base
 
@@ -7751,8 +7764,8 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_ytdspend
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Account > Administration > Section](#25-account-main-active)
-- [Formula: azt_ytdspend (Target)](#9-formulas-rollups)
+- [Form: Account > Administration > Section](#25-account---main---active)
+- [Formula: azt_ytdspend (Target)](#9-formulas-and-rollups)
 
 #### azt_ytdspend_base
 
@@ -7836,8 +7849,8 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### childaccounts
 
-- [Form: iGrad Account > Summary > CHILD ACCOUNTS](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > CHILD ACCOUNTS](#25-account-main-active)
+- [Form: iGrad Account > Summary > CHILD ACCOUNTS](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > CHILD ACCOUNTS](#25-account---main---active)
 
 #### city
 
@@ -7865,8 +7878,8 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### connections
 
-- [Form: iGrad Account > Summary > Section](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > SUMMARY_TAB_section_6](#25-account-main-active)
+- [Form: iGrad Account > Summary > Section](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > SUMMARY_TAB_section_6](#25-account---main---active)
 
 #### consideronlygoalownersrecords
 
@@ -7882,8 +7895,8 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### contacts
 
-- [Form: iGrad Account > Summary > Section](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > SUMMARY_TAB_section_6](#25-account-main-active)
+- [Form: iGrad Account > Summary > Section](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > SUMMARY_TAB_section_6](#25-account---main---active)
 
 #### country
 
@@ -7955,8 +7968,8 @@ Alphabetical field index -- 484 unique fields referenced.
 #### description
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Details > Description](#22-igrad-account-main-active)
-- [Form: Account > DETAILS_TAB > DETAILS_TAB_section_6](#25-account-main-active)
+- [Form: iGrad Account > Details > Description](#22-igrad-account---main---active)
+- [Form: Account > DETAILS_TAB > DETAILS_TAB_section_6](#25-account---main---active)
 - [Plugin: ContactSetConnectionRole (Write)](#1019-contactsetconnectionrole)
 - [Plugin: OpportunityClone (Read)](#1044-opportunityclone)
 - [Plugin: OrderClone (Read)](#1051-orderclone)
@@ -7978,12 +7991,12 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### documentssubgrid
 
-- [Form: iGrad Account > Files > Documents Section](#22-igrad-account-main-active)
+- [Form: iGrad Account > Files > Documents Section](#22-igrad-account---main---active)
 
 #### donotsendmm
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Details > MARKETING](#22-igrad-account-main-active)
+- [Form: iGrad Account > Details > MARKETING](#22-igrad-account---main---active)
 
 #### effectivefrom
 
@@ -8003,12 +8016,12 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### engagementcontacts
 
-- [Form: Engagement Contacts > Tab > section](#212-engagement-contacts-quick-active)
+- [Form: Engagement Contacts > Tab > section](#212-engagement-contacts---quick---active)
 
 #### engagements
 
-- [Form: iGrad Account > Engagements > Section](#22-igrad-account-main-active)
-- [Form: Account > Engagements > Section](#25-account-main-active)
+- [Form: iGrad Account > Engagements > Section](#22-igrad-account---main---active)
+- [Form: Account > Engagements > Section](#25-account---main---active)
 
 #### estimatedclosedate
 
@@ -8091,11 +8104,11 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### funding
 
-- [Form: Account > SUMMARY_TAB > Funding](#25-account-main-active)
+- [Form: Account > SUMMARY_TAB > Funding](#25-account---main---active)
 
 #### fundinggrid
 
-- [Form: Last Purchase Dates Quick View > Tab > Funding](#28-last-purchase-dates-quick-view-quick-active)
+- [Form: Last Purchase Dates Quick View > Tab > Funding](#28-last-purchase-dates-quick-view---quick---active)
 
 #### goalenddate
 
@@ -8159,8 +8172,8 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### invoices
 
-- [Form: iGrad Account > Quotes Orders Invoices > Section](#22-igrad-account-main-active)
-- [Form: Account > Quotes Orders Invoices > Section](#25-account-main-active)
+- [Form: iGrad Account > Quotes Orders Invoices > Section](#22-igrad-account---main---active)
+- [Form: Account > Quotes Orders Invoices > Section](#25-account---main---active)
 
 #### isamount
 
@@ -8206,7 +8219,7 @@ Alphabetical field index -- 484 unique fields referenced.
 #### lastusedincampaign
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Details > MARKETING](#22-igrad-account-main-active)
+- [Form: iGrad Account > Details > MARKETING](#22-igrad-account---main---active)
 
 #### manualdiscountamount
 
@@ -8223,7 +8236,7 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### mapcontrol
 
-- [Form: iGrad Account > Summary > MapSection](#22-igrad-account-main-active)
+- [Form: iGrad Account > Summary > MapSection](#22-igrad-account---main---active)
 
 #### metricid
 
@@ -8274,9 +8287,9 @@ Alphabetical field index -- 484 unique fields referenced.
 #### name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Summary > ACCOUNT INFORMATION](#22-igrad-account-main-active)
-- [Form: iGrad Account > Assets and Locations > Assets and Locations](#22-igrad-account-main-active)
-- [Form: iGrad Account > LinkedIn Sales Navigator > LinkedIn Account Profile](#22-igrad-account-main-active)
+- [Form: iGrad Account > Summary > ACCOUNT INFORMATION](#22-igrad-account---main---active)
+- [Form: iGrad Account > Assets and Locations > Assets and Locations](#22-igrad-account---main---active)
+- [Form: iGrad Account > LinkedIn Sales Navigator > LinkedIn Account Profile](#22-igrad-account---main---active)
 - [View: Account Advanced Find View](#31-account-advanced-find-view)
 - [View: Account Advanced Find View (Sort)](#31-account-advanced-find-view)
 - [View: Account Associated View](#32-account-associated-view)
@@ -8374,15 +8387,15 @@ Alphabetical field index -- 484 unique fields referenced.
 #### new_sharedwith
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Details > Description](#22-igrad-account-main-active)
-- [Form: Account > DETAILS_TAB > DETAILS_TAB_section_6](#25-account-main-active)
+- [Form: iGrad Account > Details > Description](#22-igrad-account---main---active)
+- [Form: Account > DETAILS_TAB > DETAILS_TAB_section_6](#25-account---main---active)
 - [Relationship: new_systemuser_account_SharedWith](#12-relationships)
 
 #### notescontrol
 
-- [Form: TimelineWallControl - Account- Main > SUMMARY_TAB > SOCIAL_PANE_TAB](#21-timelinewallcontrol-account-main-main-active)
-- [Form: iGrad Account > Summary > SOCIAL PANE](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > SOCIAL_PANE_TAB](#25-account-main-active)
+- [Form: TimelineWallControl - Account- Main > SUMMARY_TAB > SOCIAL_PANE_TAB](#21-timelinewallcontrol---account--main---main---active)
+- [Form: iGrad Account > Summary > SOCIAL PANE](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > SOCIAL_PANE_TAB](#25-account---main---active)
 
 #### objectid
 
@@ -8403,8 +8416,8 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### opportunities
 
-- [Form: iGrad Account > Opportunities > Section](#22-igrad-account-main-active)
-- [Form: Account > Opportunities > Section](#25-account-main-active)
+- [Form: iGrad Account > Opportunities > Section](#22-igrad-account---main---active)
+- [Form: Account > Opportunities > Section](#25-account---main---active)
 
 #### opportunityid
 
@@ -8460,15 +8473,15 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### orders
 
-- [Form: iGrad Account > Quotes Orders Invoices > Section](#22-igrad-account-main-active)
-- [Form: Account > Quotes Orders Invoices > Section](#25-account-main-active)
+- [Form: iGrad Account > Quotes Orders Invoices > Section](#22-igrad-account---main---active)
+- [Form: Account > Quotes Orders Invoices > Section](#25-account---main---active)
 
 #### originatingleadid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Details > Description](#22-igrad-account-main-active)
-- [Form: iGrad Account > Details > MARKETING](#22-igrad-account-main-active)
-- [Form: Account > DETAILS_TAB > DETAILS_TAB_section_6](#25-account-main-active)
+- [Form: iGrad Account > Details > Description](#22-igrad-account---main---active)
+- [Form: iGrad Account > Details > MARKETING](#22-igrad-account---main---active)
+- [Form: Account > DETAILS_TAB > DETAILS_TAB_section_6](#25-account---main---active)
 - [Plugin: LeadQualifyParentStakeholderContacts (Read)](#1039-leadqualifyparentstakeholdercontacts)
 - [Plugin: OpportunityAssignFromLead (Read)](#1042-opportunityassignfromlead)
 - [Relationship: account_originating_lead](#12-relationships)
@@ -8476,9 +8489,9 @@ Alphabetical field index -- 484 unique fields referenced.
 #### ownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account (Header)](#22-igrad-account-main-active)
-- [Form: Account Owner Card > Tab > section](#27-account-owner-card-quick-active)
-- [Form: Account Owner Quick View > Tab > section](#211-account-owner-quick-view-quick-active)
+- [Form: iGrad Account (Header)](#22-igrad-account---main---active)
+- [Form: Account Owner Card > Tab > section](#27-account-owner-card---quick---active)
+- [Form: Account Owner Quick View > Tab > section](#211-account-owner-quick-view---quick---active)
 - [View: Active Accounts in Quickbooks](#39-active-accounts-in-quickbooks)
 - [View: Active Accounts](#310-active-accounts)
 - [View: GED Customers Without Kaplan](#313-ged-customers-without-kaplan)
@@ -8551,8 +8564,8 @@ Alphabetical field index -- 484 unique fields referenced.
 #### parentaccountid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Summary > ACCOUNT INFORMATION](#22-igrad-account-main-active)
-- [Form: Account Lead Quick View > Tab > section](#210-account-lead-quick-view-quick-active)
+- [Form: iGrad Account > Summary > ACCOUNT INFORMATION](#22-igrad-account---main---active)
+- [Form: Account Lead Quick View > Tab > section](#210-account-lead-quick-view---quick---active)
 - [View: Old Duplicate Accounts View](#322-old-duplicate-accounts-view)
 - [Workflow: AppointmentAuto-Assign (Read)](#76-appointmentauto-assign)
 - [Workflow: BatchConverttoLead (Write)](#77-batchconverttolead)
@@ -8615,7 +8628,7 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### previews
 
-- [Form: Account > SUMMARY_TAB > Previews](#25-account-main-active)
+- [Form: Account > SUMMARY_TAB > Previews](#25-account---main---active)
 
 #### pricelevelid
 
@@ -8635,8 +8648,8 @@ Alphabetical field index -- 484 unique fields referenced.
 #### primarycontactid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > LinkedIn Sales Navigator > LinkedIn Member Profile](#22-igrad-account-main-active)
-- [Form: iGrad Account > LinkedIn Sales Navigator > LinkedIn InMail](#22-igrad-account-main-active)
+- [Form: iGrad Account > LinkedIn Sales Navigator > LinkedIn Member Profile](#22-igrad-account---main---active)
+- [Form: iGrad Account > LinkedIn Sales Navigator > LinkedIn InMail](#22-igrad-account---main---active)
 - [Workflow: CreateLeadFromLeadGen (Read)](#725-createleadfromleadgen)
 - [Workflow: CreateLeadfromAccount (Read)](#726-createleadfromaccount)
 - [Plugin: SetPrimaryContact (Read)](#1075-setprimarycontact)
@@ -8644,8 +8657,8 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### print
 
-- [Form: iGrad Account > Print > Section](#22-igrad-account-main-active)
-- [Form: Account > Print > Section](#25-account-main-active)
+- [Form: iGrad Account > Print > Section](#22-igrad-account---main---active)
+- [Form: Account > Print > Section](#25-account---main---active)
 
 #### prod.productid
 
@@ -8730,9 +8743,9 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### purchasedsoftware
 
-- [Form: iGrad Account > Software > Purchased Software](#22-igrad-account-main-active)
-- [Form: Account > Software > Purchased Software](#25-account-main-active)
-- [Form: Purchased Software Licenses > Tab > section](#26-purchased-software-licenses-quick-active)
+- [Form: iGrad Account > Software > Purchased Software](#22-igrad-account---main---active)
+- [Form: Account > Software > Purchased Software](#25-account---main---active)
+- [Form: Purchased Software Licenses > Tab > section](#26-purchased-software-licenses---quick---active)
 
 #### quantity
 
@@ -8815,8 +8828,8 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### quotes
 
-- [Form: iGrad Account > Quotes Orders Invoices > Section](#22-igrad-account-main-active)
-- [Form: Account > Quotes Orders Invoices > Section](#25-account-main-active)
+- [Form: iGrad Account > Quotes Orders Invoices > Section](#22-igrad-account---main---active)
+- [Form: Account > Quotes Orders Invoices > Section](#25-account---main---active)
 
 #### record1id
 
@@ -8875,7 +8888,7 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### ricontainer_charts
 
-- [Form: AI for Sales > RAV2 > RAV2_section_1](#23-ai-for-sales-main-inactive)
+- [Form: AI for Sales > RAV2 > RAV2_section_1](#23-ai-for-sales---main---inactive)
 
 #### roleid
 
@@ -8896,78 +8909,78 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### rolluprulestep1_1
 
-- [Formula: azt_accountspend](#9-formulas-rollups)
-- [Formula: azt_lastyearspend](#9-formulas-rollups)
-- [Formula: azt_yearbeforelastspend](#9-formulas-rollups)
-- [Formula: azt_ytdspend](#9-formulas-rollups)
+- [Formula: azt_accountspend](#9-formulas-and-rollups)
+- [Formula: azt_lastyearspend](#9-formulas-and-rollups)
+- [Formula: azt_yearbeforelastspend](#9-formulas-and-rollups)
+- [Formula: azt_ytdspend](#9-formulas-and-rollups)
 
 #### rolluprulestep1_10
 
-- [Formula: azt_lastyearspend](#9-formulas-rollups)
+- [Formula: azt_lastyearspend](#9-formulas-and-rollups)
 
 #### rolluprulestep1_11
 
-- [Formula: azt_lastyearspend](#9-formulas-rollups)
+- [Formula: azt_lastyearspend](#9-formulas-and-rollups)
 
 #### rolluprulestep1_12
 
-- [Formula: azt_lastyearspend](#9-formulas-rollups)
+- [Formula: azt_lastyearspend](#9-formulas-and-rollups)
 
 #### rolluprulestep1_13
 
-- [Formula: azt_lastyearspend](#9-formulas-rollups)
+- [Formula: azt_lastyearspend](#9-formulas-and-rollups)
 
 #### rolluprulestep1_2
 
-- [Formula: azt_accountspend](#9-formulas-rollups)
-- [Formula: azt_lastyearspend](#9-formulas-rollups)
-- [Formula: azt_yearbeforelastspend](#9-formulas-rollups)
-- [Formula: azt_ytdspend](#9-formulas-rollups)
+- [Formula: azt_accountspend](#9-formulas-and-rollups)
+- [Formula: azt_lastyearspend](#9-formulas-and-rollups)
+- [Formula: azt_yearbeforelastspend](#9-formulas-and-rollups)
+- [Formula: azt_ytdspend](#9-formulas-and-rollups)
 
 #### rolluprulestep1_3
 
-- [Formula: azt_accountspend](#9-formulas-rollups)
-- [Formula: azt_lastyearspend](#9-formulas-rollups)
-- [Formula: azt_yearbeforelastspend](#9-formulas-rollups)
-- [Formula: azt_ytdspend](#9-formulas-rollups)
+- [Formula: azt_accountspend](#9-formulas-and-rollups)
+- [Formula: azt_lastyearspend](#9-formulas-and-rollups)
+- [Formula: azt_yearbeforelastspend](#9-formulas-and-rollups)
+- [Formula: azt_ytdspend](#9-formulas-and-rollups)
 
 #### rolluprulestep1_4
 
-- [Formula: azt_accountspend](#9-formulas-rollups)
-- [Formula: azt_lastyearspend](#9-formulas-rollups)
-- [Formula: azt_yearbeforelastspend](#9-formulas-rollups)
-- [Formula: azt_ytdspend](#9-formulas-rollups)
+- [Formula: azt_accountspend](#9-formulas-and-rollups)
+- [Formula: azt_lastyearspend](#9-formulas-and-rollups)
+- [Formula: azt_yearbeforelastspend](#9-formulas-and-rollups)
+- [Formula: azt_ytdspend](#9-formulas-and-rollups)
 
 #### rolluprulestep1_5
 
-- [Formula: azt_accountspend](#9-formulas-rollups)
-- [Formula: azt_lastyearspend](#9-formulas-rollups)
-- [Formula: azt_yearbeforelastspend](#9-formulas-rollups)
-- [Formula: azt_ytdspend](#9-formulas-rollups)
+- [Formula: azt_accountspend](#9-formulas-and-rollups)
+- [Formula: azt_lastyearspend](#9-formulas-and-rollups)
+- [Formula: azt_yearbeforelastspend](#9-formulas-and-rollups)
+- [Formula: azt_ytdspend](#9-formulas-and-rollups)
 
 #### rolluprulestep1_6
 
-- [Formula: azt_lastyearspend](#9-formulas-rollups)
-- [Formula: azt_yearbeforelastspend](#9-formulas-rollups)
-- [Formula: azt_ytdspend](#9-formulas-rollups)
+- [Formula: azt_lastyearspend](#9-formulas-and-rollups)
+- [Formula: azt_yearbeforelastspend](#9-formulas-and-rollups)
+- [Formula: azt_ytdspend](#9-formulas-and-rollups)
 
 #### rolluprulestep1_7
 
-- [Formula: azt_lastyearspend](#9-formulas-rollups)
-- [Formula: azt_yearbeforelastspend](#9-formulas-rollups)
-- [Formula: azt_ytdspend](#9-formulas-rollups)
+- [Formula: azt_lastyearspend](#9-formulas-and-rollups)
+- [Formula: azt_yearbeforelastspend](#9-formulas-and-rollups)
+- [Formula: azt_ytdspend](#9-formulas-and-rollups)
 
 #### rolluprulestep1_8
 
-- [Formula: azt_lastyearspend](#9-formulas-rollups)
-- [Formula: azt_yearbeforelastspend](#9-formulas-rollups)
-- [Formula: azt_ytdspend](#9-formulas-rollups)
+- [Formula: azt_lastyearspend](#9-formulas-and-rollups)
+- [Formula: azt_yearbeforelastspend](#9-formulas-and-rollups)
+- [Formula: azt_ytdspend](#9-formulas-and-rollups)
 
 #### rolluprulestep1_9
 
-- [Formula: azt_lastyearspend](#9-formulas-rollups)
-- [Formula: azt_yearbeforelastspend](#9-formulas-rollups)
-- [Formula: azt_ytdspend](#9-formulas-rollups)
+- [Formula: azt_lastyearspend](#9-formulas-and-rollups)
+- [Formula: azt_yearbeforelastspend](#9-formulas-and-rollups)
+- [Formula: azt_ytdspend](#9-formulas-and-rollups)
 
 #### salesorderdetailid
 
@@ -9016,8 +9029,8 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### sharedwith
 
-- [Form: iGrad Account > Details > Section](#22-igrad-account-main-active)
-- [Form: Account > DETAILS_TAB > Section](#25-account-main-active)
+- [Form: iGrad Account > Details > Section](#22-igrad-account---main---active)
+- [Form: Account > DETAILS_TAB > Section](#25-account---main---active)
 
 #### shippingmethodcode
 
@@ -9068,7 +9081,7 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### softwarelicenseallocations
 
-- [Form: Allocated Software Licenses > Tab > section](#29-allocated-software-licenses-quick-active)
+- [Form: Allocated Software Licenses > Tab > section](#29-allocated-software-licenses---quick---active)
 
 #### state
 
@@ -9104,9 +9117,9 @@ Alphabetical field index -- 484 unique fields referenced.
 - [Workflow: OpportunityAuditRemoval (Read)](#737-opportunityauditremoval)
 - [Workflow: TaskCreateReorderLead (Write)](#755-taskcreatereorderlead)
 - [Workflow: WonOpportunityEmail (Read)](#756-wonopportunityemail)
-- [Formula: azt_accountspend](#9-formulas-rollups)
-- [Formula: azt_lastyearspend](#9-formulas-rollups)
-- [Formula: azt_ytdspend](#9-formulas-rollups)
+- [Formula: azt_accountspend](#9-formulas-and-rollups)
+- [Formula: azt_lastyearspend](#9-formulas-and-rollups)
+- [Formula: azt_ytdspend](#9-formulas-and-rollups)
 - [Plugin: AccountLeadGen (Filter)](#102-accountleadgen)
 - [Plugin: ActivityCloseForceRecordOwner (Read)](#108-activitycloseforcerecordowner)
 - [Plugin: AllocationValidation (Filter)](#1011-allocationvalidation)
@@ -9189,9 +9202,9 @@ Alphabetical field index -- 484 unique fields referenced.
 #### telephone1
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Summary > ACCOUNT INFORMATION](#22-igrad-account-main-active)
-- [Form: iGrad Account > Summary > ACCOUNT INFORMATION](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > ACCOUNT_INFORMATION](#25-account-main-active)
+- [Form: iGrad Account > Summary > ACCOUNT INFORMATION](#22-igrad-account---main---active)
+- [Form: iGrad Account > Summary > ACCOUNT INFORMATION](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > ACCOUNT_INFORMATION](#25-account---main---active)
 - [View: Account Advanced Find View](#31-account-advanced-find-view)
 - [View: Account Associated View](#32-account-associated-view)
 - [View: Account BulkOperation View](#33-account-bulkoperation-view)
@@ -9280,18 +9293,18 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### webresource_recordwall
 
-- [Form: Information > What's New > Section](#24-information-main-inactive)
+- [Form: Information > What's New > Section](#24-information---main---inactive)
 
 #### websiteurl
 
 - [Field Definitions](#1-field-definitions)
-- [Form: iGrad Account > Summary > ACCOUNT INFORMATION](#22-igrad-account-main-active)
-- [Form: Account > SUMMARY_TAB > ACCOUNT_INFORMATION](#25-account-main-active)
+- [Form: iGrad Account > Summary > ACCOUNT INFORMATION](#22-igrad-account---main---active)
+- [Form: Account > SUMMARY_TAB > ACCOUNT_INFORMATION](#25-account---main---active)
 
 #### writeteam
 
-- [Form: iGrad Account > Details > section](#22-igrad-account-main-active)
-- [Form: Account > DETAILS_TAB > section](#25-account-main-active)
+- [Form: iGrad Account > Details > section](#22-igrad-account---main---active)
+- [Form: Account > DETAILS_TAB > section](#25-account---main---active)
 
 #### zipcode
 

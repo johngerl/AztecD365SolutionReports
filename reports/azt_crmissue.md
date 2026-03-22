@@ -1,13 +1,26 @@
 # Azt_crmissue Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_crmissue |
+| **Display Name** | CRM Issue |
+| **Description** | Place where CRM users can report issues with CRM |
+| **Object Type** | Custom |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 1 |
+| **Last Update** | 2024-01-29 05:17:14 |
+| **Primary ID Field** | azt_crmissueid |
+| **Primary Name Field** | azt_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (card) -- Active](#21-information-card-active)
-  - [2.2. CRM Issue (main) -- Active](#22-crm-issue-main-active)
-  - [2.3. Information (quick) -- Active](#23-information-quick-active)
+  - [2.1. Information - card - Active](#21-information---card---active)
+  - [2.2. CRM Issue - main - Active](#22-crm-issue---main---active)
+  - [2.3. Information - quick - Active](#23-information---quick---active)
 - [3. Views](#3-views)
   - [3.1. Active CRM Issues](#31-active-crm-issues)
   - [3.2. CRM Issue Advanced Find View](#32-crm-issue-advanced-find-view)
@@ -84,7 +97,7 @@
   - [8.4. azt_paymentlibrary](#84-azt_paymentlibrary)
   - [8.5. azt_productdiscountlibrary](#85-azt_productdiscountlibrary)
   - [8.6. azt_splitallocation](#86-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -170,7 +183,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -208,7 +221,7 @@ Total fields: **20**
 
 Total forms: **3**
 
-### 2.1. Information (card) -- Active
+### 2.1. Information - card - Active
 
 - **Form ID:** `{49e6833e-1475-4fb3-a09c-a2fdbbe85a04}`
 - **Presentation:** UCI/Tablet
@@ -237,7 +250,7 @@ Total forms: **3**
 | [ownerid](#ownerid) | Owner | No | Yes |
 | [createdon](#createdon) | Reported On | No | Yes |
 
-### 2.2. CRM Issue (main) -- Active
+### 2.2. CRM Issue - main - Active
 
 - **Form ID:** `{68ce547f-041a-48c5-afa3-ccbdcb4065e4}`
 - **Presentation:** UCI/Tablet
@@ -257,7 +270,7 @@ Total forms: **3**
 | [statuscode](#statuscode) | Status Reason | No | Yes |
 | [ownerid](#ownerid) | Owner | No | Yes |
 
-### 2.3. Information (quick) -- Active
+### 2.3. Information - quick - Active
 
 - **Form ID:** `{10e11833-e3f3-4c46-ba52-8e0049cda050}`
 - **Presentation:** UCI/Tablet
@@ -1260,7 +1273,7 @@ Total JS files referencing Azt_crmissue fields: **6**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_crmissue: **0**
 
@@ -3424,7 +3437,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -3883,7 +3896,7 @@ Alphabetical field index -- 327 unique fields referenced.
 #### azt_approved
 
 - [Field Definitions](#1-field-definitions)
-- [Form: CRM Issue > General > General](#22-crm-issue-main-active)
+- [Form: CRM Issue > General > General](#22-crm-issue---main---active)
 - [View: Active CRM Issues](#31-active-crm-issues)
 
 #### azt_autocreatecallback
@@ -4012,7 +4025,7 @@ Alphabetical field index -- 327 unique fields referenced.
 #### azt_description
 
 - [Field Definitions](#1-field-definitions)
-- [Form: CRM Issue > General > General](#22-crm-issue-main-active)
+- [Form: CRM Issue > General > General](#22-crm-issue---main---active)
 - [View: Active CRM Issues](#31-active-crm-issues)
 - [Plugin: CloneExpenseLine (Read)](#1017-cloneexpenseline)
 - [Plugin: CloneExpenseLine (Write)](#1017-cloneexpenseline)
@@ -4306,9 +4319,9 @@ Alphabetical field index -- 327 unique fields referenced.
 #### azt_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Details](#21-information-card-active)
-- [Form: CRM Issue > General > General](#22-crm-issue-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Details](#21-information---card---active)
+- [Form: CRM Issue > General > General](#22-crm-issue---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Active CRM Issues](#31-active-crm-issues)
 - [View: Active CRM Issues (Sort)](#31-active-crm-issues)
 - [View: CRM Issue Advanced Find View](#32-crm-issue-advanced-find-view)
@@ -4875,7 +4888,7 @@ Alphabetical field index -- 327 unique fields referenced.
 #### createdby
 
 - [Field Definitions](#1-field-definitions)
-- [Form: CRM Issue > General > General](#22-crm-issue-main-active)
+- [Form: CRM Issue > General > General](#22-crm-issue---main---active)
 - [View: Active CRM Issues](#31-active-crm-issues)
 - [Workflow: AccountAuto-Assign (Read)](#72-accountauto-assign)
 - [Workflow: CasePendingAssignmentNotification (Read)](#77-casependingassignmentnotification)
@@ -4907,8 +4920,8 @@ Alphabetical field index -- 327 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
-- [Form: CRM Issue > General > General](#22-crm-issue-main-active)
+- [Form: Information > general > Footer](#21-information---card---active)
+- [Form: CRM Issue > General > General](#22-crm-issue---main---active)
 - [View: Active CRM Issues](#31-active-crm-issues)
 - [View: CRM Issue Advanced Find View](#32-crm-issue-advanced-find-view)
 - [View: CRM Issue Associated View](#33-crm-issue-associated-view)
@@ -5312,9 +5325,9 @@ Alphabetical field index -- 327 unique fields referenced.
 #### ownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
-- [Form: CRM Issue > General > General](#22-crm-issue-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Footer](#21-information---card---active)
+- [Form: CRM Issue > General > General](#22-crm-issue---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: My CRM Issues (Filter)](#36-my-crm-issues)
 - [Workflow: AllocationsAssigntoTeam (Read)](#73-allocationsassigntoteam)
 - [Workflow: AppointmentAuto-Assign (Read)](#74-appointmentauto-assign)
@@ -5774,8 +5787,8 @@ Alphabetical field index -- 327 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Header](#21-information-card-active)
-- [Form: CRM Issue > General > General](#22-crm-issue-main-active)
+- [Form: Information > general > Header](#21-information---card---active)
+- [Form: CRM Issue > General > General](#22-crm-issue---main---active)
 - [Workflow: BatchCreateEngagements (Write)](#76-batchcreateengagements)
 - [Workflow: CloneOrder (Write)](#717-cloneorder)
 - [Workflow: EmailDeleteSendQuoteDrafts (Read)](#724-emaildeletesendquotedrafts)

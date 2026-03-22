@@ -1,11 +1,24 @@
 # Queueitem Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | queueitem |
+| **Display Name** | Queue Item |
+| **Description** | A specific item in a queue, such as a case record or an activity record. |
+| **Object Type** | Standard |
+| **Ownership Type** | UnOwned |
+| **Audit Enabled** | True |
+| **Total Rows** | 20655 |
+| **Last Update** | 2026-03-20 21:42:40 |
+| **Primary ID Field** | queueitemid |
+| **Primary Name Field** | None |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (main) -- Active](#21-information-main-active)
+  - [2.1. Information - main - Active](#21-information---main---active)
 - [3. Views](#3-views)
   - [3.1. All Items](#31-all-items)
   - [3.2. Items available to work on](#32-items-available-to-work-on)
@@ -15,7 +28,7 @@
 - [6. Dashboards](#6-dashboards)
 - [7. Workflows](#7-workflows)
 - [8. JavaScript Web Resources](#8-javascript-web-resources)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -101,7 +114,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -135,7 +148,7 @@ Total fields: **16**
 
 Total forms: **1**
 
-### 2.1. Information (main) -- Active
+### 2.1. Information - main - Active
 
 - **Form ID:** `{6e47949e-8d77-4f99-8de2-aa6e88d88967}`
 - **Presentation:** Classic
@@ -279,7 +292,7 @@ Total JS files referencing Queueitem fields: **0**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Queueitem: **0**
 
@@ -2437,7 +2450,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -3028,7 +3041,7 @@ Alphabetical field index -- 320 unique fields referenced.
 #### azt_duedate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > information](#21-information-main-active)
+- [Form: Information > general > information](#21-information---main---active)
 - [View: All Items](#31-all-items)
 - [View: Items available to work on](#32-items-available-to-work-on)
 - [View: Items I am working on](#33-items-i-am-working-on)

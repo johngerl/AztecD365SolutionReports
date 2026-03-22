@@ -1,13 +1,26 @@
 # Opportunityproduct Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | opportunityproduct |
+| **Display Name** | Opportunity Product |
+| **Description** | Association between an opportunity and a product. |
+| **Object Type** | Standard |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | True |
+| **Total Rows** | 142028 |
+| **Last Update** | 2026-03-21 00:54:35 |
+| **Primary ID Field** | opportunityproductid |
+| **Primary Name Field** | None |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (main) -- Active](#21-information-main-active)
-  - [2.2. OpportunityProduct (main) -- Active](#22-opportunityproduct-main-active)
-  - [2.3. OpportunityProduct (quickCreate) -- Active](#23-opportunityproduct-quickcreate-active)
+  - [2.1. Information - main - Active](#21-information---main---active)
+  - [2.2. OpportunityProduct - main - Active](#22-opportunityproduct---main---active)
+  - [2.3. OpportunityProduct - quickCreate - Active](#23-opportunityproduct---quickcreate---active)
 - [3. Views](#3-views)
   - [3.1. All Opportunity Products](#31-all-opportunity-products)
   - [3.2. ePub Open Opps](#32-epub-open-opps)
@@ -28,7 +41,7 @@
   - [8.1. azt_opportunitylibrary](#81-azt_opportunitylibrary)
   - [8.2. azt_opportunityproductlibrary](#82-azt_opportunityproductlibrary)
   - [8.3. azt_splitallocation](#83-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -114,7 +127,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -162,7 +175,7 @@ Total fields: **30**
 
 Total forms: **3**
 
-### 2.1. Information (main) -- Active
+### 2.1. Information - main - Active
 
 - **Form ID:** `{666886f9-1785-435d-ae22-0ee428b3bf89}`
 - **Presentation:** Classic
@@ -178,7 +191,7 @@ Total forms: **3**
 |-------|-------|----------|---------|
 | [manualdiscountamount](#manualdiscountamount) |  | Yes | Yes |
 
-### 2.2. OpportunityProduct (main) -- Active
+### 2.2. OpportunityProduct - main - Active
 
 - **Form ID:** `{6e9a1c27-c09c-461b-8542-9ffef891f7ab}`
 - **Presentation:** UCI/Tablet
@@ -230,7 +243,7 @@ Total forms: **3**
 |-------|-----------|----------|---------|---------|
 | onchange | productid | `OP.OppLineFunctions.addProduct` | `azt_opportunityproductlibrary` | true |
 
-### 2.3. OpportunityProduct (quickCreate) -- Active
+### 2.3. OpportunityProduct - quickCreate - Active
 
 - **Form ID:** `{af3eb0ba-d100-4181-9843-f5d9b5731b5e}`
 - **Presentation:** Classic
@@ -571,7 +584,7 @@ Total JS files referencing Opportunityproduct fields: **3**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Opportunityproduct: **0**
 
@@ -2730,7 +2743,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -3328,7 +3341,7 @@ Alphabetical field index -- 326 unique fields referenced.
 #### azt_discretionarydiscountamt
 
 - [Field Definitions](#1-field-definitions)
-- [Form: OpportunityProduct > general > pricing](#22-opportunityproduct-main-active)
+- [Form: OpportunityProduct > general > pricing](#22-opportunityproduct---main---active)
 - [Plugin: DiscretionaryDiscountSetHeader (Write)](#1023-discretionarydiscountsetheader)
 - [Plugin: OpptyToQuoteFieldMappings (Write)](#1050-opptytoquotefieldmappings)
 
@@ -3504,8 +3517,8 @@ Alphabetical field index -- 326 unique fields referenced.
 #### azt_issaas
 
 - [Field Definitions](#1-field-definitions)
-- [Form: OpportunityProduct > general > opportunity product information](#22-opportunityproduct-main-active)
-- [Form: OpportunityProduct > newOpportunityProduct > pricing](#23-opportunityproduct-quickcreate-active)
+- [Form: OpportunityProduct > general > opportunity product information](#22-opportunityproduct---main---active)
+- [Form: OpportunityProduct > newOpportunityProduct > pricing](#23-opportunityproduct---quickcreate---active)
 - [Plugin: CreateUserGoals (Filter)](#1022-createusergoals)
 - [Plugin: SetOppProductDefaults (Write)](#1074-setoppproductdefaults)
 
@@ -3551,8 +3564,8 @@ Alphabetical field index -- 326 unique fields referenced.
 #### azt_licensetermmonths
 
 - [Field Definitions](#1-field-definitions)
-- [Form: OpportunityProduct > general > opportunity product information](#22-opportunityproduct-main-active)
-- [Form: OpportunityProduct > newOpportunityProduct > pricing](#23-opportunityproduct-quickcreate-active)
+- [Form: OpportunityProduct > general > opportunity product information](#22-opportunityproduct---main---active)
+- [Form: OpportunityProduct > newOpportunityProduct > pricing](#23-opportunityproduct---quickcreate---active)
 - [View: Opportunity Product Associated View](#34-opportunity-product-associated-view)
 - [View: Opportunity Product Line Items](#35-opportunity-product-line-items)
 - [Workflow: CloneLicense (Write)](#71-clonelicense)
@@ -3583,8 +3596,8 @@ Alphabetical field index -- 326 unique fields referenced.
 #### azt_licensetype
 
 - [Field Definitions](#1-field-definitions)
-- [Form: OpportunityProduct > general > opportunity product information](#22-opportunityproduct-main-active)
-- [Form: OpportunityProduct > newOpportunityProduct > pricing](#23-opportunityproduct-quickcreate-active)
+- [Form: OpportunityProduct > general > opportunity product information](#22-opportunityproduct---main---active)
+- [Form: OpportunityProduct > newOpportunityProduct > pricing](#23-opportunityproduct---quickcreate---active)
 - [View: All Opportunity Products](#31-all-opportunity-products)
 - [View: ePub Open Opps (Filter)](#32-epub-open-opps)
 - [View: ePub Won Opps (Filter)](#33-epub-won-opps)
@@ -4260,7 +4273,7 @@ Alphabetical field index -- 326 unique fields referenced.
 
 #### discounts
 
-- [Form: OpportunityProduct > Discretionary Discounts > Section](#22-opportunityproduct-main-active)
+- [Form: OpportunityProduct > Discretionary Discounts > Section](#22-opportunityproduct---main---active)
 
 #### emailaddress1
 
@@ -4452,8 +4465,8 @@ Alphabetical field index -- 326 unique fields referenced.
 #### manualdiscountamount
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > pricing](#21-information-main-active)
-- [Form: OpportunityProduct > general > pricing](#22-opportunityproduct-main-active)
+- [Form: Information > general > pricing](#21-information---main---active)
+- [Form: OpportunityProduct > general > pricing](#22-opportunityproduct---main---active)
 - [Plugin: DiscretionaryDiscountSetHeader (Write)](#1023-discretionarydiscountsetheader)
 - [Plugin: ManualDiscountKill (Read)](#1040-manualdiscountkill)
 - [Plugin: OpportunityClone (Read)](#1044-opportunityclone)
@@ -4527,8 +4540,8 @@ Alphabetical field index -- 326 unique fields referenced.
 #### opportunityid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: OpportunityProduct (Header)](#22-opportunityproduct-main-active)
-- [Form: OpportunityProduct > editproductpropertiesinlinetab > productpropertiessection](#22-opportunityproduct-main-active)
+- [Form: OpportunityProduct (Header)](#22-opportunityproduct---main---active)
+- [Form: OpportunityProduct > editproductpropertiesinlinetab > productpropertiessection](#22-opportunityproduct---main---active)
 - [View: All Opportunity Products](#31-all-opportunity-products)
 - [View: All Opportunity Products (Sort)](#31-all-opportunity-products)
 - [View: Opportunity Product Lookup View](#36-opportunity-product-lookup-view)
@@ -4733,7 +4746,7 @@ Alphabetical field index -- 326 unique fields referenced.
 #### productid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: OpportunityProduct > general > opportunity product information](#22-opportunityproduct-main-active)
+- [Form: OpportunityProduct > general > opportunity product information](#22-opportunityproduct---main---active)
 - [View: All Opportunity Products](#31-all-opportunity-products)
 - [View: All Opportunity Products (Sort)](#31-all-opportunity-products)
 - [View: Opportunity Product Associated View](#34-opportunity-product-associated-view)

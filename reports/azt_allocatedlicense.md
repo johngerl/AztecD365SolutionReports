@@ -1,13 +1,26 @@
 # Azt_allocatedlicense Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_allocatedlicense |
+| **Display Name** | Allocation |
+| **Description** |  |
+| **Object Type** | Custom |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 69987 |
+| **Last Update** | 2026-03-20 19:07:10 |
+| **Primary ID Field** | azt_allocatedlicenseid |
+| **Primary Name Field** | azt_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (card) -- Active](#21-information-card-active)
-  - [2.2. Allocations (main) -- Active](#22-allocations-main-active)
-  - [2.3. Information (quick) -- Active](#23-information-quick-active)
+  - [2.1. Information - card - Active](#21-information---card---active)
+  - [2.2. Allocations - main - Active](#22-allocations---main---active)
+  - [2.3. Information - quick - Active](#23-information---quick---active)
 - [3. Views](#3-views)
   - [3.1. Active Account License Allocations](#31-active-account-license-allocations)
   - [3.2. Active License Allocations](#32-active-license-allocations)
@@ -102,7 +115,7 @@
   - [8.12. azt_productdiscountlibrary](#812-azt_productdiscountlibrary)
   - [8.13. azt_quotelibrary](#813-azt_quotelibrary)
   - [8.14. azt_splitallocation](#814-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -188,7 +201,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -241,7 +254,7 @@ Total fields: **35**
 
 Total forms: **3**
 
-### 2.1. Information (card) -- Active
+### 2.1. Information - card - Active
 
 - **Form ID:** `{883e7667-032b-45bf-ae6b-8e9cf13bfad3}`
 - **Presentation:** UCI/Tablet
@@ -270,7 +283,7 @@ Total forms: **3**
 | [ownerid](#ownerid) | Owner | No | Yes |
 | [createdon](#createdon) | Created On | No | Yes |
 
-### 2.2. Allocations (main) -- Active
+### 2.2. Allocations - main - Active
 
 - **Form ID:** `{974e606d-ce3b-4577-9897-e67091e13f67}`
 - **Presentation:** UCI/Tablet
@@ -334,7 +347,7 @@ Total forms: **3**
 |-------|-----------|----------|---------|---------|
 | onload |  | `A.AllocationFunctions.onLoad` | `azt_allocationlibrary` | true |
 
-### 2.3. Information (quick) -- Active
+### 2.3. Information - quick - Active
 
 - **Form ID:** `{0abee61e-4dc3-48d1-a3eb-5168af284beb}`
 - **Presentation:** UCI/Tablet
@@ -1789,7 +1802,7 @@ Total JS files referencing Azt_allocatedlicense fields: **14**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_allocatedlicense: **0**
 
@@ -3959,7 +3972,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -4390,8 +4403,8 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_allocatedtoid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Allocations > General > Allocation](#22-allocations-main-active)
-- [Form: Allocations > General > Print](#22-allocations-main-active)
+- [Form: Allocations > General > Allocation](#22-allocations---main---active)
+- [Form: Allocations > General > Print](#22-allocations---main---active)
 - [View: Active Account License Allocations](#31-active-account-license-allocations)
 - [View: All Allocated Licenses](#33-all-allocated-licenses)
 - [View: Allocated License Associated View](#35-allocated-license-associated-view)
@@ -4404,8 +4417,8 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_allocationtype
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Allocations (Header)](#22-allocations-main-active)
-- [Form: Allocations > General > Allocation](#22-allocations-main-active)
+- [Form: Allocations (Header)](#22-allocations---main---active)
+- [Form: Allocations > General > Allocation](#22-allocations---main---active)
 - [View: Active Account License Allocations](#31-active-account-license-allocations)
 - [View: Active Account License Allocations (Filter)](#31-active-account-license-allocations)
 - [View: Active License Allocations](#32-active-license-allocations)
@@ -4482,7 +4495,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_companionid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Allocations > General > Software](#22-allocations-main-active)
+- [Form: Allocations > General > Software](#22-allocations---main---active)
 - [View: Active License Allocations](#32-active-license-allocations)
 - [Relationship: azt_azt_slcompanion_azt_allocatedlicense](#12-relationships)
 
@@ -4535,8 +4548,8 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_customerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Allocations (Header)](#22-allocations-main-active)
-- [Form: Allocations > Administration > Section](#22-allocations-main-active)
+- [Form: Allocations (Header)](#22-allocations---main---active)
+- [Form: Allocations > Administration > Section](#22-allocations---main---active)
 - [View: Active Account License Allocations](#31-active-account-license-allocations)
 - [View: Active License Allocations](#32-active-license-allocations)
 - [View: All Allocated Licenses](#33-all-allocated-licenses)
@@ -4644,7 +4657,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_expirationdate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Allocations > General > Software](#22-allocations-main-active)
+- [Form: Allocations > General > Software](#22-allocations---main---active)
 - [View: Active Account License Allocations](#31-active-account-license-allocations)
 - [View: Active Account License Allocations (Sort)](#31-active-account-license-allocations)
 - [View: Active License Allocations](#32-active-license-allocations)
@@ -4751,7 +4764,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_isbn
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Allocations > General > Print](#22-allocations-main-active)
+- [Form: Allocations > General > Print](#22-allocations---main---active)
 - [Plugin: CreateSoftwareLicenses (Write)](#1021-createsoftwarelicenses)
 
 #### azt_iscompanion
@@ -4800,7 +4813,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_licensestatus
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Allocations > General > Software](#22-allocations-main-active)
+- [Form: Allocations > General > Software](#22-allocations---main---active)
 - [View: Active Account License Allocations](#31-active-account-license-allocations)
 - [View: Active Account License Allocations (Filter)](#31-active-account-license-allocations)
 - [View: Active License Allocations](#32-active-license-allocations)
@@ -4821,7 +4834,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_licensetermmonths
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Allocations > General > Software](#22-allocations-main-active)
+- [Form: Allocations > General > Software](#22-allocations---main---active)
 - [Workflow: CloneLicense (Write)](#717-clonelicense)
 - [JS: azt_splitallocation > splitAllocation()](#814-azt_splitallocation)
 - [Plugin: CreateSoftwareLicenses (Read)](#1021-createsoftwarelicenses)
@@ -4850,7 +4863,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_licensetype
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Allocations > General > Software](#22-allocations-main-active)
+- [Form: Allocations > General > Software](#22-allocations---main---active)
 - [Workflow: CloneLicense (Write)](#717-clonelicense)
 - [JS: azt_opportunitylibrary > onLoad()](#88-azt_opportunitylibrary)
 - [JS: azt_opportunityproductlibrary > addProduct()](#89-azt_opportunityproductlibrary)
@@ -4901,9 +4914,9 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Details](#21-information-card-active)
-- [Form: Allocations > General > Allocation](#22-allocations-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Details](#21-information---card---active)
+- [Form: Allocations > General > Allocation](#22-allocations---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Active Account License Allocations](#31-active-account-license-allocations)
 - [View: Active License Allocations](#32-active-license-allocations)
 - [View: All Allocated Licenses](#33-all-allocated-licenses)
@@ -4980,8 +4993,8 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_numberoflicenses
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Allocations > General > Software](#22-allocations-main-active)
-- [Form: Allocations > General > Print](#22-allocations-main-active)
+- [Form: Allocations > General > Software](#22-allocations---main---active)
+- [Form: Allocations > General > Print](#22-allocations---main---active)
 - [View: Active Account License Allocations](#31-active-account-license-allocations)
 - [View: Active License Allocations](#32-active-license-allocations)
 - [View: All Allocated Licenses](#33-all-allocated-licenses)
@@ -5167,7 +5180,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_printpurchaseid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Allocations > General > Print](#22-allocations-main-active)
+- [Form: Allocations > General > Print](#22-allocations---main---active)
 - [Plugin: CreateSoftwareLicenses (Write)](#1021-createsoftwarelicenses)
 - [Relationship: azt_azt_printpurchase_azt_allocatedlicense](#12-relationships)
 
@@ -5248,7 +5261,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_recordownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Allocations > Administration > Section](#22-allocations-main-active)
+- [Form: Allocations > Administration > Section](#22-allocations---main---active)
 - [Workflow: 0ChangeQuoteRecordOwner (Write)](#71-0changequoterecordowner)
 - [Workflow: AccountAuto-Assign (Write)](#73-accountauto-assign)
 - [Workflow: AppointmentAuto-Assign (Write)](#75-appointmentauto-assign)
@@ -5342,7 +5355,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_softwarelicenseid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Allocations > General > Software](#22-allocations-main-active)
+- [Form: Allocations > General > Software](#22-allocations---main---active)
 - [View: Active Account License Allocations](#31-active-account-license-allocations)
 - [View: Active License Allocations](#32-active-license-allocations)
 - [View: All Allocated Licenses](#33-all-allocated-licenses)
@@ -5365,7 +5378,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_softwareproductid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Allocations (Header)](#22-allocations-main-active)
+- [Form: Allocations (Header)](#22-allocations---main---active)
 - [View: Active Account License Allocations](#31-active-account-license-allocations)
 - [View: Active License Allocations](#32-active-license-allocations)
 - [View: Active License Allocations (Sort)](#32-active-license-allocations)
@@ -5386,7 +5399,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_softwareversionnumber
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Allocations > General > Software](#22-allocations-main-active)
+- [Form: Allocations > General > Software](#22-allocations---main---active)
 - [View: Active License Allocations](#32-active-license-allocations)
 - [View: All Allocated Licenses](#33-all-allocated-licenses)
 - [View: Allocated License Advanced Find View](#34-allocated-license-advanced-find-view)
@@ -5397,7 +5410,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_softwareversiontype
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Allocations > General > Software](#22-allocations-main-active)
+- [Form: Allocations > General > Software](#22-allocations---main---active)
 - [View: All Allocated Licenses](#33-all-allocated-licenses)
 - [View: Allocated License Advanced Find View](#34-allocated-license-advanced-find-view)
 - [View: Allocated License Associated View](#35-allocated-license-associated-view)
@@ -5407,7 +5420,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### azt_startdate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Allocations > General > Software](#22-allocations-main-active)
+- [Form: Allocations > General > Software](#22-allocations---main---active)
 - [View: Active Account License Allocations](#31-active-account-license-allocations)
 - [View: Active License Allocations](#32-active-license-allocations)
 - [View: All Allocated Licenses](#33-all-allocated-licenses)
@@ -5628,7 +5641,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
+- [Form: Information > general > Footer](#21-information---card---active)
 - [View: Inactive Allocated Licenses](#37-inactive-allocated-licenses)
 - [View: Inactive Allocated Licenses (Sort)](#37-inactive-allocated-licenses)
 - [Workflow: CasePendingAssignmentNotification (Read)](#79-casependingassignmentnotification)
@@ -6027,9 +6040,9 @@ Alphabetical field index -- 329 unique fields referenced.
 #### ownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
-- [Form: Allocations > Administration > Section](#22-allocations-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Footer](#21-information---card---active)
+- [Form: Allocations > Administration > Section](#22-allocations---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: My Allocated Licenses (Filter)](#38-my-allocated-licenses)
 - [Workflow: AllocationsAssigntoTeam (Read)](#74-allocationsassigntoteam)
 - [Workflow: AppointmentAuto-Assign (Read)](#75-appointmentauto-assign)
@@ -6491,7 +6504,7 @@ Alphabetical field index -- 329 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Header](#21-information-card-active)
+- [Form: Information > general > Header](#21-information---card---active)
 - [View: Allocated License Lookup View](#36-allocated-license-lookup-view)
 - [View: Inactive Allocated Licenses](#37-inactive-allocated-licenses)
 - [Workflow: BatchCreateEngagements (Write)](#77-batchcreateengagements)

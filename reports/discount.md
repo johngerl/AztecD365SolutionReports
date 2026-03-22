@@ -1,6 +1,19 @@
 # Discount Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | discount |
+| **Display Name** |  |
+| **Description** |  |
+| **Object Type** | Standard |
+| **Ownership Type** |  |
+| **Audit Enabled** | False |
+| **Total Rows** | 41 |
+| **Last Update** | 2023-11-13 19:05:36 |
+| **Primary ID Field** | discountid |
+| **Primary Name Field** | None |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
@@ -11,7 +24,7 @@
 - [6. Dashboards](#6-dashboards)
 - [7. Workflows](#7-workflows)
 - [8. JavaScript Web Resources](#8-javascript-web-resources)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -97,7 +110,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -158,7 +171,7 @@ Total JS files referencing Discount fields: **0**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Discount: **0**
 
@@ -2312,7 +2325,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 

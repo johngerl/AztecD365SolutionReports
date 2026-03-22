@@ -1,14 +1,27 @@
 # Azt_funding Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_funding |
+| **Display Name** | Funding |
+| **Description** | Funding tracking year over year |
+| **Object Type** | Custom |
+| **Ownership Type** | OrgOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 316 |
+| **Last Update** | 2025-11-20 19:52:27 |
+| **Primary ID Field** | azt_fundingid |
+| **Primary Name Field** | azt_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (card) -- Active](#21-information-card-active)
-  - [2.2. Funding (main) -- Active](#22-funding-main-active)
-  - [2.3. Funding Quick Create (quickCreate) -- Active](#23-funding-quick-create-quickcreate-active)
-  - [2.4. Information (quick) -- Active](#24-information-quick-active)
+  - [2.1. Information - card - Active](#21-information---card---active)
+  - [2.2. Funding - main - Active](#22-funding---main---active)
+  - [2.3. Funding Quick Create - quickCreate - Active](#23-funding-quick-create---quickcreate---active)
+  - [2.4. Information - quick - Active](#24-information---quick---active)
 - [3. Views](#3-views)
   - [3.1. Active Fundings](#31-active-fundings)
   - [3.2. Funding Advanced Find View](#32-funding-advanced-find-view)
@@ -80,7 +93,7 @@
   - [8.3. azt_paymentlibrary](#83-azt_paymentlibrary)
   - [8.4. azt_productdiscountlibrary](#84-azt_productdiscountlibrary)
   - [8.5. azt_splitallocation](#85-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -166,7 +179,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -216,7 +229,7 @@ Total fields: **32**
 
 Total forms: **4**
 
-### 2.1. Information (card) -- Active
+### 2.1. Information - card - Active
 
 - **Form ID:** `{f06bd615-ecca-49b1-9b68-0b1d621e3631}`
 - **Presentation:** UCI/Tablet
@@ -244,7 +257,7 @@ Total forms: **4**
 |-------|-------|----------|---------|
 | [createdon](#createdon) | Created On | No | Yes |
 
-### 2.2. Funding (main) -- Active
+### 2.2. Funding - main - Active
 
 - **Form ID:** `{e76a9e9b-d33b-4a7a-8564-073ceac60e98}`
 - **Presentation:** UCI/Tablet
@@ -271,7 +284,7 @@ Total forms: **4**
 | [azt_totalfunding](#azt_totalfunding) | Total Funding | Yes | Yes |
 | [azt_otherfundingamount](#azt_otherfundingamount) | Other Funding Amount | No | Yes |
 
-### 2.3. Funding Quick Create (quickCreate) -- Active
+### 2.3. Funding Quick Create - quickCreate - Active
 
 - **Form ID:** `{52d855bd-b6bd-f011-bbd3-6045bdd41229}`
 - **Presentation:** UCI/Tablet
@@ -294,7 +307,7 @@ Total forms: **4**
 ##### Section: New Section
 *Hidden section*
 
-### 2.4. Information (quick) -- Active
+### 2.4. Information - quick - Active
 
 - **Form ID:** `{7c879121-55a5-4317-b3e1-bc7202552d3a}`
 - **Presentation:** UCI/Tablet
@@ -1244,7 +1257,7 @@ Total JS files referencing Azt_funding fields: **5**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_funding: **0**
 
@@ -3406,7 +3419,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -3797,7 +3810,7 @@ Alphabetical field index -- 339 unique fields referenced.
 #### azt_account
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Funding (Header)](#22-funding-main-active)
+- [Form: Funding (Header)](#22-funding---main---active)
 - [View: Active Fundings](#31-active-fundings)
 - [Plugin: FundingSetAnnualSpend (Read)](#1028-fundingsetannualspend)
 - [Relationship: azt_Funding_Account_Account](#12-relationships)
@@ -3870,7 +3883,7 @@ Alphabetical field index -- 339 unique fields referenced.
 #### azt_annualspend
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Funding > General > General](#22-funding-main-active)
+- [Form: Funding > General > General](#22-funding---main---active)
 - [View: Active Fundings](#31-active-fundings)
 - [View: Related Funding](#38-related-funding)
 - [Plugin: FundingSetAnnualSpend (Write)](#1028-fundingsetannualspend)
@@ -4083,8 +4096,8 @@ Alphabetical field index -- 339 unique fields referenced.
 #### azt_federalfundingamount
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Funding > General > General](#22-funding-main-active)
-- [Form: Funding Quick Create > New Tab > Funding](#23-funding-quick-create-quickcreate-active)
+- [Form: Funding > General > General](#22-funding---main---active)
+- [Form: Funding Quick Create > New Tab > Funding](#23-funding-quick-create---quickcreate---active)
 - [View: Active Fundings](#31-active-fundings)
 - [View: Related Funding](#38-related-funding)
 
@@ -4159,8 +4172,8 @@ Alphabetical field index -- 339 unique fields referenced.
 #### azt_fundingyear
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Funding > General > General](#22-funding-main-active)
-- [Form: Funding Quick Create > New Tab > Funding](#23-funding-quick-create-quickcreate-active)
+- [Form: Funding > General > General](#22-funding---main---active)
+- [Form: Funding Quick Create > New Tab > Funding](#23-funding-quick-create---quickcreate---active)
 - [View: Active Fundings](#31-active-fundings)
 - [View: Active Fundings (Sort)](#31-active-fundings)
 - [View: Related Funding](#38-related-funding)
@@ -4323,8 +4336,8 @@ Alphabetical field index -- 339 unique fields referenced.
 #### azt_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Details](#21-information-card-active)
-- [Form: Information >  > GENERAL](#24-information-quick-active)
+- [Form: Information > general > Details](#21-information---card---active)
+- [Form: Information >  > GENERAL](#24-information---quick---active)
 - [View: Funding Advanced Find View](#32-funding-advanced-find-view)
 - [View: Funding Advanced Find View (Sort)](#32-funding-advanced-find-view)
 - [View: Funding Associated View](#33-funding-associated-view)
@@ -4467,8 +4480,8 @@ Alphabetical field index -- 339 unique fields referenced.
 #### azt_otherfundingamount
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Funding > General > General](#22-funding-main-active)
-- [Form: Funding Quick Create > New Tab > Funding](#23-funding-quick-create-quickcreate-active)
+- [Form: Funding > General > General](#22-funding---main---active)
+- [Form: Funding Quick Create > New Tab > Funding](#23-funding-quick-create---quickcreate---active)
 - [View: Active Fundings](#31-active-fundings)
 - [View: Related Funding](#38-related-funding)
 
@@ -4515,7 +4528,7 @@ Alphabetical field index -- 339 unique fields referenced.
 #### azt_penetration
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Funding > General > General](#22-funding-main-active)
+- [Form: Funding > General > General](#22-funding---main---active)
 - [View: Active Fundings](#31-active-fundings)
 - [View: Related Funding](#38-related-funding)
 
@@ -4737,8 +4750,8 @@ Alphabetical field index -- 339 unique fields referenced.
 #### azt_statefundingamount
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Funding > General > General](#22-funding-main-active)
-- [Form: Funding Quick Create > New Tab > Funding](#23-funding-quick-create-quickcreate-active)
+- [Form: Funding > General > General](#22-funding---main---active)
+- [Form: Funding Quick Create > New Tab > Funding](#23-funding-quick-create---quickcreate---active)
 - [View: Active Fundings](#31-active-fundings)
 - [View: Related Funding](#38-related-funding)
 
@@ -4784,7 +4797,7 @@ Alphabetical field index -- 339 unique fields referenced.
 #### azt_totalfunding
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Funding > General > General](#22-funding-main-active)
+- [Form: Funding > General > General](#22-funding---main---active)
 - [View: Active Fundings](#31-active-fundings)
 - [View: Related Funding](#38-related-funding)
 - [Plugin: FundingTotalAmt (Write)](#1029-fundingtotalamt)
@@ -4961,8 +4974,8 @@ Alphabetical field index -- 339 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
-- [Form: Funding (Header)](#22-funding-main-active)
+- [Form: Information > general > Footer](#21-information---card---active)
+- [Form: Funding (Header)](#22-funding---main---active)
 - [View: Active Fundings](#31-active-fundings)
 - [View: Funding Advanced Find View](#32-funding-advanced-find-view)
 - [View: Funding Associated View](#33-funding-associated-view)
@@ -5796,7 +5809,7 @@ Alphabetical field index -- 339 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Header](#21-information-card-active)
+- [Form: Information > general > Header](#21-information---card---active)
 - [Workflow: BatchCreateEngagements (Write)](#74-batchcreateengagements)
 - [Workflow: CloneOrder (Write)](#715-cloneorder)
 - [Workflow: EmailDeleteSendQuoteDrafts (Read)](#722-emaildeletesendquotedrafts)

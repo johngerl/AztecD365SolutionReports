@@ -1,12 +1,25 @@
 # Appointment Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | appointment |
+| **Display Name** | Appointment |
+| **Description** | Commitment representing a time interval with start/end times and duration. |
+| **Object Type** | Standard |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 16052 |
+| **Last Update** | 2026-03-20 20:16:59 |
+| **Primary ID Field** | appointmentid |
+| **Primary Name Field** | None |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Appointment (main) -- Active](#21-appointment-main-active)
-  - [2.2. Appointment quick create form. (quickCreate) -- Active](#22-appointment-quick-create-form-quickcreate-active)
+  - [2.1. Appointment - main - Active](#21-appointment---main---active)
+  - [2.2. Appointment quick create form. - quickCreate - Active](#22-appointment-quick-create-form---quickcreate---active)
 - [3. Views](#3-views)
   - [3.1. Appointment Advanced Find View](#31-appointment-advanced-find-view)
   - [3.2. Conference Calls This Month](#32-conference-calls-this-month)
@@ -141,7 +154,7 @@
   - [8.6. azt_orderlibrary](#86-azt_orderlibrary)
   - [8.7. azt_phonecalllibrary](#87-azt_phonecalllibrary)
   - [8.8. azt_quotelibrary](#88-azt_quotelibrary)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -227,7 +240,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -272,7 +285,7 @@ Total fields: **27**
 
 Total forms: **2**
 
-### 2.1. Appointment (main) -- Active
+### 2.1. Appointment - main - Active
 
 - **Form ID:** `{549a8aa3-c349-4ab9-8bac-4873fa9a7a5c}`
 - **Presentation:** UCI/Tablet
@@ -340,7 +353,7 @@ Total forms: **2**
 | onload |  | `APP.AppointmentLibraryFunctions.onLoad` | `azt_appointmentlibrary` | true |
 | onchange | azt_isleadershipappointment | `APP.AppointmentLibraryFunctions.setVisibleLeadership` | `azt_appointmentlibrary` | true |
 
-### 2.2. Appointment quick create form. (quickCreate) -- Active
+### 2.2. Appointment quick create form. - quickCreate - Active
 
 - **Form ID:** `{5895e983-598b-4834-80f9-68a4e9f4f744}`
 - **Presentation:** UCI/Tablet
@@ -2727,7 +2740,7 @@ Total JS files referencing Appointment fields: **8**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Appointment: **0**
 
@@ -4919,7 +4932,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -5258,7 +5271,7 @@ Alphabetical field index -- 332 unique fields referenced.
 
 #### accessteam
 
-- [Form: Appointment > appointment > Write Access Team](#21-appointment-main-active)
+- [Form: Appointment > appointment > Write Access Team](#21-appointment---main---active)
 
 #### accountid
 
@@ -5455,8 +5468,8 @@ Alphabetical field index -- 332 unique fields referenced.
 #### azt_appointmenttype
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Appointment > appointment > general information](#21-appointment-main-active)
-- [Form: Appointment quick create form. > tab_1 > tab_1_column_1_section_1](#22-appointment-quick-create-form-quickcreate-active)
+- [Form: Appointment > appointment > general information](#21-appointment---main---active)
+- [Form: Appointment quick create form. > tab_1 > tab_1_column_1_section_1](#22-appointment-quick-create-form---quickcreate---active)
 - [View: Conference Calls This Month (Filter)](#32-conference-calls-this-month)
 - [View: Conference Calls This Quarter (Filter)](#33-conference-calls-this-quarter)
 - [View: Conference Calls This Week (Filter)](#34-conference-calls-this-week)
@@ -5756,7 +5769,7 @@ Alphabetical field index -- 332 unique fields referenced.
 #### azt_historicalowner
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Appointment (Footer)](#21-appointment-main-active)
+- [Form: Appointment (Footer)](#21-appointment---main---active)
 - [Workflow: CloneAndDeleteQuote (Write)](#713-cloneanddeletequote)
 - [Workflow: CloneOpportunity (Write)](#715-cloneopportunity)
 
@@ -5794,7 +5807,7 @@ Alphabetical field index -- 332 unique fields referenced.
 #### azt_isleadershipappointment
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Appointment > appointment > general information](#21-appointment-main-active)
+- [Form: Appointment > appointment > general information](#21-appointment---main---active)
 - [JS: azt_appointmentlibrary > setVisibleLeadership()](#81-azt_appointmentlibrary)
 
 #### azt_isprint
@@ -5862,7 +5875,7 @@ Alphabetical field index -- 332 unique fields referenced.
 #### azt_leadershipcallwithid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Appointment > appointment > general information](#21-appointment-main-active)
+- [Form: Appointment > appointment > general information](#21-appointment---main---active)
 - [JS: azt_appointmentlibrary > setVisibleLeadership()](#81-azt_appointmentlibrary)
 - [Relationship: azt_systemuser_appointment](#12-relationships)
 
@@ -6254,7 +6267,7 @@ Alphabetical field index -- 332 unique fields referenced.
 #### azt_recordownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Appointment > appointment > general information](#21-appointment-main-active)
+- [Form: Appointment > appointment > general information](#21-appointment---main---active)
 - [View: Appointment Advanced Find View](#31-appointment-advanced-find-view)
 - [View: Conference Calls This Month](#32-conference-calls-this-month)
 - [View: Conference Calls This Quarter](#33-conference-calls-this-quarter)
@@ -6866,7 +6879,7 @@ Alphabetical field index -- 332 unique fields referenced.
 #### isonlinemeeting
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Appointment quick create form. > tab_1 > tab_1_column_1_section_1](#22-appointment-quick-create-form-quickcreate-active)
+- [Form: Appointment quick create form. > tab_1 > tab_1_column_1_section_1](#22-appointment-quick-create-form---quickcreate---active)
 
 #### ispriceoverridden
 
@@ -7385,7 +7398,7 @@ Alphabetical field index -- 332 unique fields referenced.
 #### requiredattendees
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Appointment > appointment > general information](#21-appointment-main-active)
+- [Form: Appointment > appointment > general information](#21-appointment---main---active)
 
 #### roleid
 
@@ -7587,8 +7600,8 @@ Alphabetical field index -- 332 unique fields referenced.
 #### subject
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Appointment > tab_ci_call_summary > tab_ci_section_call_summary](#21-appointment-main-active)
-- [Form: Appointment > tab_ci_notes > tab_ci_section_notes](#21-appointment-main-active)
+- [Form: Appointment > tab_ci_call_summary > tab_ci_section_call_summary](#21-appointment---main---active)
+- [Form: Appointment > tab_ci_notes > tab_ci_section_notes](#21-appointment---main---active)
 - [View: Appointment Advanced Find View](#31-appointment-advanced-find-view)
 - [View: Appointment Advanced Find View (Sort)](#31-appointment-advanced-find-view)
 - [View: Conference Calls This Month](#32-conference-calls-this-month)

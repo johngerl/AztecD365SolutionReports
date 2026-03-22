@@ -1,18 +1,31 @@
 # Expiredprocess Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | expiredprocess |
+| **Display Name** |  |
+| **Description** |  |
+| **Object Type** | Standard |
+| **Ownership Type** | OrgOwned |
+| **Audit Enabled** | True |
+| **Total Rows** | 0 |
+| **Last Update** | Never |
+| **Primary ID Field** | expiredprocessid |
+| **Primary Name Field** | None |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. ExpiredProcess (main) -- Active](#21-expiredprocess-main-active)
+  - [2.1. ExpiredProcess - main - Active](#21-expiredprocess---main---active)
 - [3. Views](#3-views)
 - [4. Chart Visualizations](#4-chart-visualizations)
 - [5. Reports](#5-reports)
 - [6. Dashboards](#6-dashboards)
 - [7. Workflows](#7-workflows)
 - [8. JavaScript Web Resources](#8-javascript-web-resources)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -98,7 +111,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -124,7 +137,7 @@ Total fields: **8**
 
 Total forms: **1**
 
-### 2.1. ExpiredProcess (main) -- Active
+### 2.1. ExpiredProcess - main - Active
 
 - **Form ID:** `{9774341b-77d1-44b8-b7fa-2ad3aadefa62}`
 - **Presentation:** Classic
@@ -208,7 +221,7 @@ Total JS files referencing Expiredprocess fields: **0**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Expiredprocess: **0**
 
@@ -2362,7 +2375,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -3855,12 +3868,12 @@ Alphabetical field index -- 321 unique fields referenced.
 
 #### expirationdate
 
-- [Form: ExpiredProcess > Publish > Publish](#21-expiredprocess-main-active)
-- [Form: ExpiredProcess > Publish > Publish](#21-expiredprocess-main-active)
+- [Form: ExpiredProcess > Publish > Publish](#21-expiredprocess---main---active)
+- [Form: ExpiredProcess > Publish > Publish](#21-expiredprocess---main---active)
 
 #### expiredreviewoptions
 
-- [Form: ExpiredProcess > Review > Review](#21-expiredprocess-main-active)
+- [Form: ExpiredProcess > Review > Review](#21-expiredprocess---main---active)
 
 #### ext_amt
 
@@ -4498,8 +4511,8 @@ Alphabetical field index -- 321 unique fields referenced.
 
 #### setproductassociations
 
-- [Form: ExpiredProcess > Publish > Publish](#21-expiredprocess-main-active)
-- [Form: ExpiredProcess > Publish > Publish](#21-expiredprocess-main-active)
+- [Form: ExpiredProcess > Publish > Publish](#21-expiredprocess---main---active)
+- [Form: ExpiredProcess > Publish > Publish](#21-expiredprocess---main---active)
 
 #### shippingmethodcode
 
@@ -4665,7 +4678,7 @@ Alphabetical field index -- 321 unique fields referenced.
 
 #### updatecontent
 
-- [Form: ExpiredProcess > Update Content > Update Content](#21-expiredprocess-main-active)
+- [Form: ExpiredProcess > Update Content > Update Content](#21-expiredprocess---main---active)
 
 #### value
 

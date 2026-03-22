@@ -1,11 +1,24 @@
 # Customeraddress Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | customeraddress |
+| **Display Name** | Address |
+| **Description** | Address and shipping information. Used to store additional addresses for an account or contact. |
+| **Object Type** | Standard |
+| **Ownership Type** | UnOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 93578 |
+| **Last Update** | 2026-03-20 18:32:49 |
+| **Primary ID Field** | customeraddressid |
+| **Primary Name Field** | None |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (main) -- Active](#21-information-main-active)
+  - [2.1. Information - main - Active](#21-information---main---active)
 - [3. Views](#3-views)
   - [3.1. All Customer Addresses](#31-all-customer-addresses)
   - [3.2. Customer Address Lookup View](#32-customer-address-lookup-view)
@@ -14,7 +27,7 @@
 - [6. Dashboards](#6-dashboards)
 - [7. Workflows](#7-workflows)
 - [8. JavaScript Web Resources](#8-javascript-web-resources)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -100,7 +113,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -141,7 +154,7 @@ Total fields: **23**
 
 Total forms: **1**
 
-### 2.1. Information (main) -- Active
+### 2.1. Information - main - Active
 
 - **Form ID:** `{df5bef3a-9237-40bd-a27c-2cd7fd434706}`
 - **Presentation:** Classic
@@ -263,7 +276,7 @@ Total JS files referencing Customeraddress fields: **0**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Customeraddress: **0**
 
@@ -2431,7 +2444,7 @@ Total relationships involving Customeraddress: **1**
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -2802,7 +2815,7 @@ Alphabetical field index -- 325 unique fields referenced.
 #### addressnumber
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Address Information](#21-information-main-active)
+- [Form: Information > general > Address Information](#21-information---main---active)
 
 #### adx_resolutiondate
 
@@ -2851,7 +2864,7 @@ Alphabetical field index -- 325 unique fields referenced.
 #### azt_addresssearch
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Search for Address](#21-information-main-active)
+- [Form: Information > general > Search for Address](#21-information---main---active)
 - [Plugin: AddressSearchCleanupFields (Read)](#1010-addresssearchcleanupfields)
 - [Plugin: AddressSearchCleanupFields (Write)](#1010-addresssearchcleanupfields)
 
@@ -3800,7 +3813,7 @@ Alphabetical field index -- 325 unique fields referenced.
 #### city
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Address Information](#21-information-main-active)
+- [Form: Information > general > Address Information](#21-information---main---active)
 - [View: All Customer Addresses](#31-all-customer-addresses)
 - [View: Customer Address Lookup View](#32-customer-address-lookup-view)
 - [PCF: Bing Address Autocomplete](#11-pcf-controls)
@@ -3840,7 +3853,7 @@ Alphabetical field index -- 325 unique fields referenced.
 #### country
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Address Information](#21-information-main-active)
+- [Form: Information > general > Address Information](#21-information---main---active)
 - [View: Customer Address Lookup View](#32-customer-address-lookup-view)
 - [PCF: Bing Address Autocomplete](#11-pcf-controls)
 
@@ -4105,14 +4118,14 @@ Alphabetical field index -- 325 unique fields referenced.
 #### line1
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Address Information](#21-information-main-active)
+- [Form: Information > general > Address Information](#21-information---main---active)
 - [View: All Customer Addresses](#31-all-customer-addresses)
 - [View: Customer Address Lookup View](#32-customer-address-lookup-view)
 
 #### line2
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Address Information](#21-information-main-active)
+- [Form: Information > general > Address Information](#21-information---main---active)
 - [View: All Customer Addresses](#31-all-customer-addresses)
 - [View: Customer Address Lookup View](#32-customer-address-lookup-view)
 
@@ -4256,7 +4269,7 @@ Alphabetical field index -- 325 unique fields referenced.
 #### ownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Address Information](#21-information-main-active)
+- [Form: Information > general > Address Information](#21-information---main---active)
 - [Plugin: AccountReassignmentShareRecords (Read)](#104-accountreassignmentsharerecords)
 - [Plugin: ActivityRegardingGetState (Read)](#109-activityregardinggetstate)
 - [Plugin: CaseAudit (Read)](#1014-caseaudit)
@@ -4335,7 +4348,7 @@ Alphabetical field index -- 325 unique fields referenced.
 #### postalcode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Address Information](#21-information-main-active)
+- [Form: Information > general > Address Information](#21-information---main---active)
 - [View: All Customer Addresses](#31-all-customer-addresses)
 - [View: Customer Address Lookup View](#32-customer-address-lookup-view)
 
@@ -4676,7 +4689,7 @@ Alphabetical field index -- 325 unique fields referenced.
 #### stateorprovince
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Address Information](#21-information-main-active)
+- [Form: Information > general > Address Information](#21-information---main---active)
 - [View: All Customer Addresses](#31-all-customer-addresses)
 - [View: Customer Address Lookup View](#32-customer-address-lookup-view)
 - [Plugin: AutoAssignStateAbb (Read)](#1012-autoassignstateabb)

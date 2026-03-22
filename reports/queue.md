@@ -1,18 +1,31 @@
 # Queue Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | queue |
+| **Display Name** |  |
+| **Description** |  |
+| **Object Type** | Standard |
+| **Ownership Type** |  |
+| **Audit Enabled** | False |
+| **Total Rows** | 532 |
+| **Last Update** | 2026-03-21 04:05:52 |
+| **Primary ID Field** | queueid |
+| **Primary Name Field** | None |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Queue (main) -- Active](#21-queue-main-active)
+  - [2.1. Queue - main - Active](#21-queue---main---active)
 - [3. Views](#3-views)
 - [4. Chart Visualizations](#4-chart-visualizations)
 - [5. Reports](#5-reports)
 - [6. Dashboards](#6-dashboards)
 - [7. Workflows](#7-workflows)
 - [8. JavaScript Web Resources](#8-javascript-web-resources)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -98,7 +111,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -132,7 +145,7 @@ Total fields: **16**
 
 Total forms: **1**
 
-### 2.1. Queue (main) -- Active
+### 2.1. Queue - main - Active
 
 - **Form ID:** `{6ed25386-e3ec-4e2b-bc5e-6a2a7803c8f3}`
 - **Presentation:** UCI/Tablet
@@ -193,7 +206,7 @@ Total JS files referencing Queue fields: **0**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Queue: **0**
 
@@ -2358,7 +2371,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -4375,7 +4388,7 @@ Alphabetical field index -- 325 unique fields referenced.
 
 #### queuemembersgrid
 
-- [Form: Queue > general > QueueMembers](#21-queue-main-active)
+- [Form: Queue > general > QueueMembers](#21-queue---main---active)
 
 #### quotedetailid
 

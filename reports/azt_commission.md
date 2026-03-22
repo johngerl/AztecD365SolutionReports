@@ -1,13 +1,26 @@
 # Azt_commission Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_commission |
+| **Display Name** | Commission |
+| **Description** |  |
+| **Object Type** | Custom |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 133 |
+| **Last Update** | 2026-02-20 20:40:00 |
+| **Primary ID Field** | azt_commissionid |
+| **Primary Name Field** | azt_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (card) -- Active](#21-information-card-active)
-  - [2.2. Commission (main) -- Active](#22-commission-main-active)
-  - [2.3. Information (quick) -- Active](#23-information-quick-active)
+  - [2.1. Information - card - Active](#21-information---card---active)
+  - [2.2. Commission - main - Active](#22-commission---main---active)
+  - [2.3. Information - quick - Active](#23-information---quick---active)
 - [3. Views](#3-views)
   - [3.1. Active Commissions](#31-active-commissions)
   - [3.2. Commission Advanced Find View](#32-commission-advanced-find-view)
@@ -89,7 +102,7 @@
   - [8.4. azt_paymentlibrary](#84-azt_paymentlibrary)
   - [8.5. azt_productdiscountlibrary](#85-azt_productdiscountlibrary)
   - [8.6. azt_splitallocation](#86-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -175,7 +188,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -188,17 +201,17 @@ Total fields: **32**
 |---|-------------|-------------|------|-----------------|--------|----------|-------------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
 | 1 | [azt_bonuspoolamount](#azt_bonuspoolamount) | Bonus Pool Amount | money |  | Yes | none | Never | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 2 | [azt_bonuspoolamount_base](#azt_bonuspoolamount_base) | Bonus Pool Amount (Base) | money |  | Yes | none | Never | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 3 | [azt_combinedsales](#azt_combinedsales) | Combined Sales | money |  | Yes | none | 2026-02-20 20:40:00 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 3 | [azt_combinedsales](#azt_combinedsales) | Combined Sales | money |  | Yes | none | 2026-02-20 20:40:00 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 4 | [azt_combinedsales_base](#azt_combinedsales_base) | Combined Sales (Base) | money |  | Yes | none | 2026-02-20 20:40:00 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 5 | [azt_commissionid](#azt_commissionid) | Commission | primarykey |  | No | systemrequired | 2026-02-20 20:40:00 | true |  |  |  |  |  |  |  | [8](#3-views) |  |  |  | [2](#7-workflows) |  | [4](#10-plugin-source-code-analysis) |  | [2](#12-relationships) |  |  |
 | 6 | [azt_fiscalperiodend](#azt_fiscalperiodend) | Fiscal Period End | datetime |  | Yes | required | 2026-02-20 20:40:00 | true |  |  |  |  |  |  | [1](#2-forms) | [5](#3-views) |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 7 | [azt_fiscalperiodstart](#azt_fiscalperiodstart) | Fiscal Period Start | datetime |  | Yes | required | 2026-02-20 20:40:00 | true |  |  |  |  |  |  | [1](#2-forms) | [8](#3-views) |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 8 | [azt_name](#azt_name) | Name | nvarchar |  | Yes | required | 2026-02-20 20:40:00 | true |  |  |  |  |  |  | [3](#2-forms) | [5](#3-views) |  |  |  | [9](#7-workflows) |  | [18](#10-plugin-source-code-analysis) |  |  |  |  |
-| 9 | [azt_nonsaassales](#azt_nonsaassales) | Non-SaaS Sales | money |  | Yes | none | 2026-02-20 20:40:00 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 9 | [azt_nonsaassales](#azt_nonsaassales) | Non-SaaS Sales | money |  | Yes | none | 2026-02-20 20:40:00 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 10 | [azt_nonsaassales_base](#azt_nonsaassales_base) | Non-SaaS Sales (Base) | money |  | Yes | none | 2026-02-20 20:40:00 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 11 | [azt_saassales](#azt_saassales) | SaaS Sales Q1 | money |  | Yes | none | 2026-02-20 20:40:00 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 11 | [azt_saassales](#azt_saassales) | SaaS Sales Q1 | money |  | Yes | none | 2026-02-20 20:40:00 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 12 | [azt_saassales_base](#azt_saassales_base) | SaaS Sales (Base) | money |  | Yes | none | 2026-02-20 20:40:00 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 13 | [azt_ytdcommissionamt](#azt_ytdcommissionamt) | YTD Commission Amt | money |  | Yes | none | 2026-02-20 20:40:00 | true |  |  |  |  |  |  | [1](#2-forms) | [3](#3-views) |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 13 | [azt_ytdcommissionamt](#azt_ytdcommissionamt) | YTD Commission Amt | money |  | Yes | none | 2026-02-20 20:40:00 | true |  |  |  |  |  |  | [1](#2-forms) | [3](#3-views) |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 14 | [azt_ytdcommissionamt_base](#azt_ytdcommissionamt_base) | YTD Commission Amt (Base) | money |  | Yes | none | 2026-02-20 20:40:00 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 15 | [createdby](#createdby) | Created By | lookup |  | No | none | 2026-02-20 20:40:00 | true |  |  |  |  |  |  |  |  |  |  |  | [25](#7-workflows) |  |  |  | [1](#12-relationships) |  |  |
 | 16 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) | true |  |  |  |  |  |  | [1](#2-forms) | [2](#3-views) |  |  |  | [7](#7-workflows) |  | [10](#10-plugin-source-code-analysis) |  |  |  |  |
@@ -225,7 +238,7 @@ Total fields: **32**
 
 Total forms: **3**
 
-### 2.1. Information (card) -- Active
+### 2.1. Information - card - Active
 
 - **Form ID:** `{dec05dc5-4e85-4f8d-99d0-9b979ef9ed13}`
 - **Presentation:** UCI/Tablet
@@ -254,7 +267,7 @@ Total forms: **3**
 | [ownerid](#ownerid) | Sales Rep | No | Yes |
 | [createdon](#createdon) | Created On | No | Yes |
 
-### 2.2. Commission (main) -- Active
+### 2.2. Commission - main - Active
 
 - **Form ID:** `{99af4fb0-ca32-4307-8a91-cfa773d7b979}`
 - **Presentation:** UCI/Tablet
@@ -307,7 +320,7 @@ Total forms: **3**
 | [azt_name](#azt_name) | Name | No | Yes |
 | [transactioncurrencyid](#transactioncurrencyid) | Currency | No | Yes |
 
-### 2.3. Information (quick) -- Active
+### 2.3. Information - quick - Active
 
 - **Form ID:** `{3c6ef789-462a-47f5-aadb-41f907618383}`
 - **Presentation:** UCI/Tablet
@@ -1414,7 +1427,7 @@ Total JS files referencing Azt_commission fields: **6**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_commission: **4**
 
@@ -3650,7 +3663,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -4091,9 +4104,9 @@ Alphabetical field index -- 344 unique fields referenced.
 
 #### azt_amount
 
-- [Formula: azt_combinedsales](#9-formulas-rollups)
-- [Formula: azt_nonsaassales](#9-formulas-rollups)
-- [Formula: azt_saassales](#9-formulas-rollups)
+- [Formula: azt_combinedsales](#9-formulas-and-rollups)
+- [Formula: azt_nonsaassales](#9-formulas-and-rollups)
+- [Formula: azt_saassales](#9-formulas-and-rollups)
 - [Plugin: CreateCompGoals (Write)](#1020-createcompgoals)
 - [Plugin: CreateUserGoals (Read)](#1022-createusergoals)
 - [Plugin: InvoiceClosePaidOnPercentage (Read)](#1034-invoiceclosepaidonpercentage)
@@ -4153,8 +4166,8 @@ Alphabetical field index -- 344 unique fields referenced.
 #### azt_combinedsales
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Commission > General > Totals](#22-commission-main-active)
-- [Formula: azt_combinedsales (Target)](#9-formulas-rollups)
+- [Form: Commission > General > Totals](#22-commission---main---active)
+- [Formula: azt_combinedsales (Target)](#9-formulas-and-rollups)
 
 #### azt_combinedsales_base
 
@@ -4162,7 +4175,7 @@ Alphabetical field index -- 344 unique fields referenced.
 
 #### azt_commissionamount
 
-- [Formula: azt_ytdcommissionamt](#9-formulas-rollups)
+- [Formula: azt_ytdcommissionamt](#9-formulas-and-rollups)
 - [Plugin: InvoiceCompCompleted (Write)](#1035-invoicecompcompleted)
 
 #### azt_commissionid
@@ -4350,7 +4363,7 @@ Alphabetical field index -- 344 unique fields referenced.
 #### azt_fiscalperiodend
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Commission > General > Fiscal Period](#22-commission-main-active)
+- [Form: Commission > General > Fiscal Period](#22-commission---main---active)
 - [View: Active Commissions](#31-active-commissions)
 - [View: Commission Associated View](#33-commission-associated-view)
 - [View: Inactive Commissions](#35-inactive-commissions)
@@ -4362,7 +4375,7 @@ Alphabetical field index -- 344 unique fields referenced.
 #### azt_fiscalperiodstart
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Commission > General > Fiscal Period](#22-commission-main-active)
+- [Form: Commission > General > Fiscal Period](#22-commission---main---active)
 - [View: Active Commissions](#31-active-commissions)
 - [View: Active Commissions (Sort)](#31-active-commissions)
 - [View: Commission Associated View](#33-commission-associated-view)
@@ -4567,9 +4580,9 @@ Alphabetical field index -- 344 unique fields referenced.
 #### azt_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Details](#21-information-card-active)
-- [Form: Commission > Administration > Section](#22-commission-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Details](#21-information---card---active)
+- [Form: Commission > Administration > Section](#22-commission---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Commission Advanced Find View](#32-commission-advanced-find-view)
 - [View: Commission Associated View](#33-commission-associated-view)
 - [View: Commission Associated View (Sort)](#33-commission-associated-view)
@@ -4626,8 +4639,8 @@ Alphabetical field index -- 344 unique fields referenced.
 #### azt_nonsaassales
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Commission > General > Totals](#22-commission-main-active)
-- [Formula: azt_nonsaassales (Target)](#9-formulas-rollups)
+- [Form: Commission > General > Totals](#22-commission---main---active)
+- [Formula: azt_nonsaassales (Target)](#9-formulas-and-rollups)
 
 #### azt_nonsaassales_base
 
@@ -4852,8 +4865,8 @@ Alphabetical field index -- 344 unique fields referenced.
 
 #### azt_producttype
 
-- [Formula: azt_nonsaassales](#9-formulas-rollups)
-- [Formula: azt_saassales](#9-formulas-rollups)
+- [Formula: azt_nonsaassales](#9-formulas-and-rollups)
+- [Formula: azt_saassales](#9-formulas-and-rollups)
 - [Plugin: CreateCompGoals (Write)](#1020-createcompgoals)
 - [Plugin: CreateUserGoals (Read)](#1022-createusergoals)
 - [Plugin: CreateUserGoals (Filter)](#1022-createusergoals)
@@ -4933,8 +4946,8 @@ Alphabetical field index -- 344 unique fields referenced.
 #### azt_saassales
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Commission > General > Totals](#22-commission-main-active)
-- [Formula: azt_saassales (Target)](#9-formulas-rollups)
+- [Form: Commission > General > Totals](#22-commission---main---active)
+- [Formula: azt_saassales (Target)](#9-formulas-and-rollups)
 
 #### azt_saassales_base
 
@@ -5043,11 +5056,11 @@ Alphabetical field index -- 344 unique fields referenced.
 #### azt_ytdcommissionamt
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Commission > General > Commission/Bonus Pool](#22-commission-main-active)
+- [Form: Commission > General > Commission/Bonus Pool](#22-commission---main---active)
 - [View: Active Commissions](#31-active-commissions)
 - [View: Commission Associated View](#33-commission-associated-view)
 - [View: Sales Rep Commissions](#38-sales-rep-commissions)
-- [Formula: azt_ytdcommissionamt (Target)](#9-formulas-rollups)
+- [Formula: azt_ytdcommissionamt (Target)](#9-formulas-and-rollups)
 
 #### azt_ytdcommissionamt_base
 
@@ -5127,7 +5140,7 @@ Alphabetical field index -- 344 unique fields referenced.
 
 #### commissionableorders
 
-- [Form: Commission > Commissionable Orders > Section](#22-commission-main-active)
+- [Form: Commission > Commissionable Orders > Section](#22-commission---main---active)
 
 #### companyname
 
@@ -5198,7 +5211,7 @@ Alphabetical field index -- 344 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
+- [Form: Information > general > Footer](#21-information---card---active)
 - [View: Commission Advanced Find View](#32-commission-advanced-find-view)
 - [View: Commission Lookup View](#34-commission-lookup-view)
 - [Workflow: CasePendingAssignmentNotification (Read)](#78-casependingassignmentnotification)
@@ -5601,10 +5614,10 @@ Alphabetical field index -- 344 unique fields referenced.
 #### ownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
-- [Form: Commission (Header)](#22-commission-main-active)
-- [Form: Commission > Administration > Section](#22-commission-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Footer](#21-information---card---active)
+- [Form: Commission (Header)](#22-commission---main---active)
+- [Form: Commission > Administration > Section](#22-commission---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Active Commissions](#31-active-commissions)
 - [View: Active Commissions (Sort)](#31-active-commissions)
 - [View: Commission Advanced Find View](#32-commission-advanced-find-view)
@@ -5956,40 +5969,40 @@ Alphabetical field index -- 344 unique fields referenced.
 
 #### rolluprulestep1_1
 
-- [Formula: azt_combinedsales](#9-formulas-rollups)
-- [Formula: azt_nonsaassales](#9-formulas-rollups)
-- [Formula: azt_saassales](#9-formulas-rollups)
-- [Formula: azt_ytdcommissionamt](#9-formulas-rollups)
+- [Formula: azt_combinedsales](#9-formulas-and-rollups)
+- [Formula: azt_nonsaassales](#9-formulas-and-rollups)
+- [Formula: azt_saassales](#9-formulas-and-rollups)
+- [Formula: azt_ytdcommissionamt](#9-formulas-and-rollups)
 
 #### rolluprulestep1_2
 
-- [Formula: azt_combinedsales](#9-formulas-rollups)
-- [Formula: azt_nonsaassales](#9-formulas-rollups)
-- [Formula: azt_saassales](#9-formulas-rollups)
-- [Formula: azt_ytdcommissionamt](#9-formulas-rollups)
+- [Formula: azt_combinedsales](#9-formulas-and-rollups)
+- [Formula: azt_nonsaassales](#9-formulas-and-rollups)
+- [Formula: azt_saassales](#9-formulas-and-rollups)
+- [Formula: azt_ytdcommissionamt](#9-formulas-and-rollups)
 
 #### rolluprulestep1_3
 
-- [Formula: azt_nonsaassales](#9-formulas-rollups)
-- [Formula: azt_saassales](#9-formulas-rollups)
+- [Formula: azt_nonsaassales](#9-formulas-and-rollups)
+- [Formula: azt_saassales](#9-formulas-and-rollups)
 
 #### rolluprulestep1_4
 
-- [Formula: azt_nonsaassales](#9-formulas-rollups)
-- [Formula: azt_saassales](#9-formulas-rollups)
+- [Formula: azt_nonsaassales](#9-formulas-and-rollups)
+- [Formula: azt_saassales](#9-formulas-and-rollups)
 
 #### rolluprulestep1_5
 
-- [Formula: azt_nonsaassales](#9-formulas-rollups)
-- [Formula: azt_saassales](#9-formulas-rollups)
+- [Formula: azt_nonsaassales](#9-formulas-and-rollups)
+- [Formula: azt_saassales](#9-formulas-and-rollups)
 
 #### rolluprulestep1_6
 
-- [Formula: azt_saassales](#9-formulas-rollups)
+- [Formula: azt_saassales](#9-formulas-and-rollups)
 
 #### rolluprulestep1_7
 
-- [Formula: azt_saassales](#9-formulas-rollups)
+- [Formula: azt_saassales](#9-formulas-and-rollups)
 
 #### salesorderdetailid
 
@@ -6112,7 +6125,7 @@ Alphabetical field index -- 344 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Header](#21-information-card-active)
+- [Form: Information > general > Header](#21-information---card---active)
 - [Workflow: BatchCreateEngagements (Write)](#76-batchcreateengagements)
 - [Workflow: CloneOrder (Write)](#718-cloneorder)
 - [Workflow: EmailDeleteSendQuoteDrafts (Read)](#725-emaildeletesendquotedrafts)
@@ -6207,7 +6220,7 @@ Alphabetical field index -- 344 unique fields referenced.
 #### transactioncurrencyid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Commission > Administration > Section](#22-commission-main-active)
+- [Form: Commission > Administration > Section](#22-commission---main---active)
 - [Workflow: BatchConverttoLead (Write)](#75-batchconverttolead)
 - [Workflow: BatchOpportunityTransfer (Write)](#77-batchopportunitytransfer)
 - [Workflow: CasePendingAssignmentNotification (Write)](#78-casependingassignmentnotification)

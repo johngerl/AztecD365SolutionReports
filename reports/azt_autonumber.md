@@ -1,13 +1,26 @@
 # Azt_autonumber Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_autonumber |
+| **Display Name** | Autonumber |
+| **Description** |  |
+| **Object Type** | Custom |
+| **Ownership Type** | OrgOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 1 |
+| **Last Update** | 2026-03-17 12:52:42 |
+| **Primary ID Field** | azt_autonumberid |
+| **Primary Name Field** | azt_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (card) -- Active](#21-information-card-active)
-  - [2.2. Autonumber (main) -- Active](#22-autonumber-main-active)
-  - [2.3. Information (quick) -- Active](#23-information-quick-active)
+  - [2.1. Information - card - Active](#21-information---card---active)
+  - [2.2. Autonumber - main - Active](#22-autonumber---main---active)
+  - [2.3. Information - quick - Active](#23-information---quick---active)
 - [3. Views](#3-views)
   - [3.1. Active Autonumbers](#31-active-autonumbers)
   - [3.2. Autonumber Advanced Find View](#32-autonumber-advanced-find-view)
@@ -73,7 +86,7 @@
   - [8.4. azt_paymentlibrary](#84-azt_paymentlibrary)
   - [8.5. azt_productdiscountlibrary](#85-azt_productdiscountlibrary)
   - [8.6. azt_splitallocation](#86-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -159,7 +172,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -202,7 +215,7 @@ Total fields: **25**
 
 Total forms: **3**
 
-### 2.1. Information (card) -- Active
+### 2.1. Information - card - Active
 
 - **Form ID:** `{a5f96a5d-0f18-4789-9704-696389a6a243}`
 - **Presentation:** UCI/Tablet
@@ -231,7 +244,7 @@ Total forms: **3**
 | [ownerid](#ownerid) |  | No | Yes |
 | [createdon](#createdon) | Created On | No | Yes |
 
-### 2.2. Autonumber (main) -- Active
+### 2.2. Autonumber - main - Active
 
 - **Form ID:** `{a9b9e30e-4afe-416f-8a73-633d8fcf92c7}`
 - **Presentation:** UCI/Tablet
@@ -281,7 +294,7 @@ Total forms: **3**
 | onchange | azt_suffixhasseparator | `AutonumberLibrary` | `azt_autonumberlibrary` | true |
 | onchange | azt_suffixseparatorisspace | `AutonumberLibrary` | `azt_autonumberlibrary` | true |
 
-### 2.3. Information (quick) -- Active
+### 2.3. Information - quick - Active
 
 - **Form ID:** `{ef261311-eb52-45c2-9b73-06538fc3a98f}`
 - **Presentation:** UCI/Tablet
@@ -1137,7 +1150,7 @@ Total JS files referencing Azt_autonumber fields: **6**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_autonumber: **0**
 
@@ -3298,7 +3311,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -3843,7 +3856,7 @@ Alphabetical field index -- 325 unique fields referenced.
 #### azt_currentnumber
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Autonumber > Autonumber > General](#22-autonumber-main-active)
+- [Form: Autonumber > Autonumber > General](#22-autonumber---main---active)
 - [Plugin: AutoNumber (Read)](#1013-autonumber)
 - [Plugin: AutoNumber (Write)](#1013-autonumber)
 
@@ -3953,7 +3966,7 @@ Alphabetical field index -- 325 unique fields referenced.
 #### azt_fieldtoautonumber
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Autonumber > Autonumber > General](#22-autonumber-main-active)
+- [Form: Autonumber > Autonumber > General](#22-autonumber---main---active)
 - [Plugin: AutoNumber (Read)](#1013-autonumber)
 
 #### azt_firstname
@@ -4163,9 +4176,9 @@ Alphabetical field index -- 325 unique fields referenced.
 #### azt_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Details](#21-information-card-active)
-- [Form: Autonumber > Autonumber > General](#22-autonumber-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Details](#21-information---card---active)
+- [Form: Autonumber > Autonumber > General](#22-autonumber---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Active Autonumbers](#31-active-autonumbers)
 - [View: Active Autonumbers (Sort)](#31-active-autonumbers)
 - [View: Autonumber Advanced Find View](#32-autonumber-advanced-find-view)
@@ -4376,21 +4389,21 @@ Alphabetical field index -- 325 unique fields referenced.
 #### azt_prefix
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Autonumber > Autonumber > Prefix](#22-autonumber-main-active)
+- [Form: Autonumber > Autonumber > Prefix](#22-autonumber---main---active)
 - [JS: azt_autonumberlibrary > AutonumberLibrary()](#81-azt_autonumberlibrary)
 - [Plugin: AutoNumber (Read)](#1013-autonumber)
 
 #### azt_prefixhasseparator
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Autonumber > Autonumber > Prefix](#22-autonumber-main-active)
+- [Form: Autonumber > Autonumber > Prefix](#22-autonumber---main---active)
 - [JS: azt_autonumberlibrary > AutonumberLibrary()](#81-azt_autonumberlibrary)
 - [Plugin: AutoNumber (Read)](#1013-autonumber)
 
 #### azt_prefixseparator
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Autonumber > Autonumber > Prefix](#22-autonumber-main-active)
+- [Form: Autonumber > Autonumber > Prefix](#22-autonumber---main---active)
 - [JS: azt_autonumberlibrary > AutonumberLibrary()](#81-azt_autonumberlibrary)
 - [JS: azt_autonumberlibrary > setPrefixSeparatorVisiblility()](#81-azt_autonumberlibrary)
 - [Plugin: AutoNumber (Read)](#1013-autonumber)
@@ -4398,7 +4411,7 @@ Alphabetical field index -- 325 unique fields referenced.
 #### azt_prefixseparatorisspace
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Autonumber > Autonumber > Prefix](#22-autonumber-main-active)
+- [Form: Autonumber > Autonumber > Prefix](#22-autonumber---main---active)
 - [JS: azt_autonumberlibrary > AutonumberLibrary()](#81-azt_autonumberlibrary)
 - [JS: azt_autonumberlibrary > setPrefixSeparatorVisiblility()](#81-azt_autonumberlibrary)
 - [Plugin: AutoNumber (Read)](#1013-autonumber)
@@ -4579,21 +4592,21 @@ Alphabetical field index -- 325 unique fields referenced.
 #### azt_suffix
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Autonumber > Autonumber > Suffix](#22-autonumber-main-active)
+- [Form: Autonumber > Autonumber > Suffix](#22-autonumber---main---active)
 - [JS: azt_autonumberlibrary > AutonumberLibrary()](#81-azt_autonumberlibrary)
 - [Plugin: AutoNumber (Read)](#1013-autonumber)
 
 #### azt_suffixhasseparator
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Autonumber > Autonumber > Suffix](#22-autonumber-main-active)
+- [Form: Autonumber > Autonumber > Suffix](#22-autonumber---main---active)
 - [JS: azt_autonumberlibrary > AutonumberLibrary()](#81-azt_autonumberlibrary)
 - [Plugin: AutoNumber (Read)](#1013-autonumber)
 
 #### azt_suffixseparator
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Autonumber > Autonumber > Suffix](#22-autonumber-main-active)
+- [Form: Autonumber > Autonumber > Suffix](#22-autonumber---main---active)
 - [JS: azt_autonumberlibrary > AutonumberLibrary()](#81-azt_autonumberlibrary)
 - [JS: azt_autonumberlibrary > setSuffixSeparatorVisiblility()](#81-azt_autonumberlibrary)
 - [Plugin: AutoNumber (Read)](#1013-autonumber)
@@ -4601,7 +4614,7 @@ Alphabetical field index -- 325 unique fields referenced.
 #### azt_suffixseparatorisspace
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Autonumber > Autonumber > Suffix](#22-autonumber-main-active)
+- [Form: Autonumber > Autonumber > Suffix](#22-autonumber---main---active)
 - [JS: azt_autonumberlibrary > AutonumberLibrary()](#81-azt_autonumberlibrary)
 - [JS: azt_autonumberlibrary > setSuffixSeparatorVisiblility()](#81-azt_autonumberlibrary)
 - [Plugin: AutoNumber (Read)](#1013-autonumber)
@@ -4790,7 +4803,7 @@ Alphabetical field index -- 325 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
+- [Form: Information > general > Footer](#21-information---card---active)
 - [View: Active Autonumbers](#31-active-autonumbers)
 - [View: Autonumber Advanced Find View](#32-autonumber-advanced-find-view)
 - [View: Autonumber Associated View](#33-autonumber-associated-view)
@@ -5198,7 +5211,7 @@ Alphabetical field index -- 325 unique fields referenced.
 
 #### ownerid
 
-- [Form: Information > general > Footer](#21-information-card-active)
+- [Form: Information > general > Footer](#21-information---card---active)
 - [Plugin: AccountReassignmentShareRecords (Read)](#104-accountreassignmentsharerecords)
 - [Plugin: ActivityRegardingGetState (Read)](#109-activityregardinggetstate)
 - [Plugin: CaseAudit (Read)](#1014-caseaudit)
@@ -5621,7 +5634,7 @@ Alphabetical field index -- 325 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Header](#21-information-card-active)
+- [Form: Information > general > Header](#21-information---card---active)
 - [Workflow: BatchCreateEngagements (Write)](#74-batchcreateengagements)
 - [Workflow: CloneOrder (Write)](#712-cloneorder)
 - [Workflow: EmailDeleteSendQuoteDrafts (Read)](#719-emaildeletesendquotedrafts)

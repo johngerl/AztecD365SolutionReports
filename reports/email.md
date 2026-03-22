@@ -1,15 +1,28 @@
 # Email Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | email |
+| **Display Name** | Email |
+| **Description** | Activity that is delivered using email protocols. |
+| **Object Type** | Standard |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 407117 |
+| **Last Update** | 2026-03-21 00:21:54 |
+| **Primary ID Field** | emailid |
+| **Primary Name Field** | None |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. New Form (card) -- Active](#21-new-form-card-active)
-  - [2.2. Email card (card) -- Active](#22-email-card-card-active)
-  - [2.3. Email Card form (card) -- Active](#23-email-card-form-card-active)
-  - [2.4. Aztec Email Card (card) -- Active](#24-aztec-email-card-card-active)
-  - [2.5. Email (main) -- Active](#25-email-main-active)
+  - [2.1. New Form - card - Active](#21-new-form---card---active)
+  - [2.2. Email card - card - Active](#22-email-card---card---active)
+  - [2.3. Email Card form - card - Active](#23-email-card-form---card---active)
+  - [2.4. Aztec Email Card - card - Active](#24-aztec-email-card---card---active)
+  - [2.5. Email - main - Active](#25-email---main---active)
 - [3. Views](#3-views)
   - [3.1. Emails Sent This Month](#31-emails-sent-this-month)
   - [3.2. Emails Sent This Quarter](#32-emails-sent-this-quarter)
@@ -61,7 +74,7 @@
   - [7.16. WonOpportunityEmail](#716-wonopportunityemail)
 - [8. JavaScript Web Resources](#8-javascript-web-resources)
   - [8.1. azt_phonecalllibrary](#81-azt_phonecalllibrary)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -147,7 +160,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -198,7 +211,7 @@ Total fields: **33**
 
 Total forms: **5**
 
-### 2.1. New Form (card) -- Active
+### 2.1. New Form - card - Active
 
 - **Form ID:** `{d52901b6-fe25-4eac-86a6-2aebaa5dc8eb}`
 - **Presentation:** UCI/Tablet
@@ -225,7 +238,7 @@ Total forms: **5**
 
 ##### Section: Footer
 
-### 2.2. Email card (card) -- Active
+### 2.2. Email card - card - Active
 
 - **Form ID:** `{4b2778f9-e9c6-40f5-9383-42f04feb3f11}`
 - **Presentation:** UCI/Tablet
@@ -241,7 +254,7 @@ Total forms: **5**
 | [actualend](#actualend) | Actual End | No | Yes |
 | [directioncode](#directioncode) | Direction | No | Yes |
 
-### 2.3. Email Card form (card) -- Active
+### 2.3. Email Card form - card - Active
 
 - **Form ID:** `{e5538bb9-77ec-4d24-bc5f-8cb2d825f664}`
 - **Presentation:** UCI/Tablet
@@ -266,7 +279,7 @@ Total forms: **5**
 
 ##### Section: CardFooter
 
-### 2.4. Aztec Email Card (card) -- Active
+### 2.4. Aztec Email Card - card - Active
 
 - **Form ID:** `{ce14d763-2e33-483f-8a59-a3685ebaefad}`
 - **Presentation:** UCI/Tablet
@@ -294,7 +307,7 @@ Total forms: **5**
 
 ##### Section: Footer
 
-### 2.5. Email (main) -- Active
+### 2.5. Email - main - Active
 
 - **Form ID:** `{0d1e47ff-12b2-4f53-9090-bee951b98cb4}`
 - **Presentation:** UCI/Tablet
@@ -1226,7 +1239,7 @@ Total JS files referencing Email fields: **1**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Email: **0**
 
@@ -3422,7 +3435,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -3810,11 +3823,11 @@ Alphabetical field index -- 334 unique fields referenced.
 #### actualend
 
 - [Field Definitions](#1-field-definitions)
-- [Form: New Form > Card > Header](#21-new-form-card-active)
-- [Form: Email card >  > CardHeader](#22-email-card-card-active)
-- [Form: Email Card form >  > CardHeader](#23-email-card-form-card-active)
-- [Form: Email Card form >  > CardDetails](#23-email-card-form-card-active)
-- [Form: Aztec Email Card > Card > Header](#24-aztec-email-card-card-active)
+- [Form: New Form > Card > Header](#21-new-form---card---active)
+- [Form: Email card >  > CardHeader](#22-email-card---card---active)
+- [Form: Email Card form >  > CardHeader](#23-email-card-form---card---active)
+- [Form: Email Card form >  > CardDetails](#23-email-card-form---card---active)
+- [Form: Aztec Email Card > Card > Header](#24-aztec-email-card---card---active)
 - [View: Emails Sent This Month](#31-emails-sent-this-month)
 - [View: Emails Sent This Month (Filter)](#31-emails-sent-this-month)
 - [View: Emails Sent This Month (Sort)](#31-emails-sent-this-month)
@@ -4984,8 +4997,8 @@ Alphabetical field index -- 334 unique fields referenced.
 #### description
 
 - [Field Definitions](#1-field-definitions)
-- [Form: New Form > Card > Details](#21-new-form-card-active)
-- [Form: Aztec Email Card > Card > Details](#24-aztec-email-card-card-active)
+- [Form: New Form > Card > Details](#21-new-form---card---active)
+- [Form: Aztec Email Card > Card > Details](#24-aztec-email-card---card---active)
 - [Workflow: BatchOpportunityTransfer (Write)](#73-batchopportunitytransfer)
 - [Workflow: CasePendingAssignmentNotification (Write)](#74-casependingassignmentnotification)
 - [Workflow: CaseRecordOwnerAssignmentNotification (Write)](#75-caserecordownerassignmentnotification)
@@ -5012,10 +5025,10 @@ Alphabetical field index -- 334 unique fields referenced.
 #### directioncode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: New Form > Card > Details](#21-new-form-card-active)
-- [Form: Email card >  > CardHeader](#22-email-card-card-active)
-- [Form: Email Card form >  > CardHeader](#23-email-card-form-card-active)
-- [Form: Aztec Email Card > Card > Details](#24-aztec-email-card-card-active)
+- [Form: New Form > Card > Details](#21-new-form---card---active)
+- [Form: Email card >  > CardHeader](#22-email-card---card---active)
+- [Form: Email Card form >  > CardHeader](#23-email-card-form---card---active)
+- [Form: Aztec Email Card > Card > Details](#24-aztec-email-card---card---active)
 - [Workflow: BatchOpportunityTransfer (Write)](#73-batchopportunitytransfer)
 - [Workflow: CasePendingAssignmentNotification (Write)](#74-casependingassignmentnotification)
 - [Workflow: CaseRecordOwnerAssignmentNotification (Write)](#75-caserecordownerassignmentnotification)
@@ -5113,8 +5126,8 @@ Alphabetical field index -- 334 unique fields referenced.
 #### from
 
 - [Field Definitions](#1-field-definitions)
-- [Form: New Form > Card > Header](#21-new-form-card-active)
-- [Form: Aztec Email Card > Card > Header](#24-aztec-email-card-card-active)
+- [Form: New Form > Card > Header](#21-new-form---card---active)
+- [Form: Aztec Email Card > Card > Header](#24-aztec-email-card---card---active)
 - [Workflow: BatchOpportunityTransfer (Write)](#73-batchopportunitytransfer)
 - [Workflow: CasePendingAssignmentNotification (Write)](#74-casependingassignmentnotification)
 - [Workflow: CaseRecordOwnerAssignmentNotification (Write)](#75-caserecordownerassignmentnotification)
@@ -5724,7 +5737,7 @@ Alphabetical field index -- 334 unique fields referenced.
 #### regardingobjectid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Aztec Email Card > Card > Details](#24-aztec-email-card-card-active)
+- [Form: Aztec Email Card > Card > Details](#24-aztec-email-card---card---active)
 - [Workflow: AppointmentAuto-Assign (Read)](#71-appointmentauto-assign)
 - [Workflow: BatchCreateIntroCall (Write)](#72-batchcreateintrocall)
 - [Workflow: BatchOpportunityTransfer (Write)](#73-batchopportunitytransfer)
@@ -5808,7 +5821,7 @@ Alphabetical field index -- 334 unique fields referenced.
 
 #### salesliterature
 
-- [Form: Email > Email > attachments](#25-email-main-active)
+- [Form: Email > Email > attachments](#25-email---main---active)
 
 #### salesorderdetailid
 
@@ -5860,7 +5873,7 @@ Alphabetical field index -- 334 unique fields referenced.
 #### senton
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Email (Header)](#25-email-main-active)
+- [Form: Email (Header)](#25-email---main---active)
 
 #### shippingmethodcode
 
@@ -5942,9 +5955,9 @@ Alphabetical field index -- 334 unique fields referenced.
 #### subject
 
 - [Field Definitions](#1-field-definitions)
-- [Form: New Form > Card > Details](#21-new-form-card-active)
-- [Form: Email card >  > CardHeader](#22-email-card-card-active)
-- [Form: Aztec Email Card > Card > Details](#24-aztec-email-card-card-active)
+- [Form: New Form > Card > Details](#21-new-form---card---active)
+- [Form: Email card >  > CardHeader](#22-email-card---card---active)
+- [Form: Aztec Email Card > Card > Details](#24-aztec-email-card---card---active)
 - [View: Emails Sent This Month](#31-emails-sent-this-month)
 - [View: Emails Sent This Quarter](#32-emails-sent-this-quarter)
 - [View: Emails Sent This Week](#33-emails-sent-this-week)

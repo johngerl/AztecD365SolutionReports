@@ -1,11 +1,24 @@
 # Azt_engagementprocess Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_engagementprocess |
+| **Display Name** | Engagement Process |
+| **Description** | Base entity for process Engagement Process |
+| **Object Type** | Custom |
+| **Ownership Type** | OrgOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 14920 |
+| **Last Update** | 2026-03-20 19:05:16 |
+| **Primary ID Field** | azt_engagementprocessid |
+| **Primary Name Field** | bpf_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (main) -- Active](#21-information-main-active)
+  - [2.1. Information - main - Active](#21-information---main---active)
 - [3. Views](#3-views)
   - [3.1. Active Engagement Process on my Engagements](#31-active-engagement-process-on-my-engagements)
   - [3.2. Active Engagement Process](#32-active-engagement-process)
@@ -65,7 +78,7 @@
   - [7.42. iGradPhone-callAuto-assign](#742-igradphone-callauto-assign)
 - [8. JavaScript Web Resources](#8-javascript-web-resources)
   - [8.1. azt_expensereportlibrary](#81-azt_expensereportlibrary)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -151,7 +164,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -165,12 +178,12 @@ Total fields: **22**
 | 1 | [activestageid](#activestageid) | Active Stage | lookup |  | No | none | 2026-03-20 19:05:16 | true |  |  |  |  |  |  |  | [9](#3-views) |  |  |  | [3](#7-workflows) |  |  |  | [1](#12-relationships) |  |  |
 | 2 | [activestagestartedon](#activestagestartedon) | Active Stage Started On | datetime |  | No | none | 2026-03-20 19:05:16 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 3 | [bpf_azt_engagementid](#bpf_azt_engagementid) | Azt_Engagement | lookup |  | Yes | none | 2026-03-20 19:05:16 | true |  |  |  |  |  |  |  | [9](#3-views) |  |  |  | [2](#7-workflows) |  |  |  | [1](#12-relationships) |  |  |
-| 4 | [bpf_duration](#bpf_duration) | Duration | int |  | Yes | none | Never | true |  |  |  |  |  |  |  | [2](#3-views) |  |  |  |  | [1](#9-formulas-rollups) | [1](#10-plugin-source-code-analysis) |  |  |  |  |
+| 4 | [bpf_duration](#bpf_duration) | Duration | int |  | Yes | none | Never | true |  |  |  |  |  |  |  | [2](#3-views) |  |  |  |  | [1](#9-formulas-and-rollups) | [1](#10-plugin-source-code-analysis) |  |  |  |  |
 | 5 | [bpf_name](#bpf_name) | Name | nvarchar |  | Yes | required | 2026-03-20 19:05:16 | true |  |  |  |  |  |  |  | [18](#3-views) |  |  |  |  |  |  |  |  |  |  |
 | 6 | [businessprocessflowinstanceid](#businessprocessflowinstanceid) | Engagement Process | primarykey |  | No | systemrequired | 2026-03-20 19:05:16 | true |  |  |  |  |  |  |  | [10](#3-views) |  |  |  |  |  | [1](#10-plugin-source-code-analysis) |  |  |  |  |
-| 7 | [completedon](#completedon) | Completed On | datetime |  | No | none | Never | true |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 7 | [completedon](#completedon) | Completed On | datetime |  | No | none | Never | true |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 8 | [createdby](#createdby) | Created By | lookup |  | No | none | 2026-03-20 19:05:16 | true |  |  |  |  |  |  |  |  |  |  |  | [25](#7-workflows) |  |  |  | [1](#12-relationships) |  |  |
-| 9 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) | true |  |  |  |  |  |  |  | [9](#3-views) |  |  |  | [7](#7-workflows) | [1](#9-formulas-rollups) | [10](#10-plugin-source-code-analysis) |  |  |  |  |
+| 9 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) | true |  |  |  |  |  |  |  | [9](#3-views) |  |  |  | [7](#7-workflows) | [1](#9-formulas-and-rollups) | [10](#10-plugin-source-code-analysis) |  |  |  |  |
 | 10 | [createdonbehalfby](#createdonbehalfby) | Created By (Delegate) | lookup |  | No | none | Never | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 11 | [importsequencenumber](#importsequencenumber) | Import Sequence Number | int |  | No | none | Never | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 12 | [modifiedby](#modifiedby) | Modified By | lookup |  | No | none | 2026-03-20 19:05:16 | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7-workflows) |  |  |  | [1](#12-relationships) |  |  |
@@ -191,7 +204,7 @@ Total fields: **22**
 
 Total forms: **1**
 
-### 2.1. Information (main) -- Active
+### 2.1. Information - main - Active
 
 - **Form ID:** `{2e616b6a-8ffe-4dbc-b500-aca1f2dd3228}`
 - **Presentation:** UCI/Tablet
@@ -1134,7 +1147,7 @@ Total JS files referencing Azt_engagementprocess fields: **1**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_engagementprocess: **1**
 
@@ -3315,7 +3328,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -3769,11 +3782,11 @@ Alphabetical field index -- 352 unique fields referenced.
 
 #### azt_activelyusing
 
-- [Form: Information > Monitoring > Monitoring](#21-information-main-active)
+- [Form: Information > Monitoring > Monitoring](#21-information---main---active)
 
 #### azt_activestudents
 
-- [Form: Information > Monitoring > Monitoring](#21-information-main-active)
+- [Form: Information > Monitoring > Monitoring](#21-information---main---active)
 
 #### azt_addresssearch
 
@@ -3791,7 +3804,7 @@ Alphabetical field index -- 352 unique fields referenced.
 
 #### azt_advancedfeaturesenabled
 
-- [Form: Information > Planning > Planning](#21-information-main-active)
+- [Form: Information > Planning > Planning](#21-information---main---active)
 
 #### azt_ageendedstage
 
@@ -3982,9 +3995,9 @@ Alphabetical field index -- 352 unique fields referenced.
 
 #### azt_engagementstatus
 
-- [Form: Information > Escalated To Mgmt > Escalated To Mgmt](#21-information-main-active)
-- [Form: Information > Stalled > Stalled](#21-information-main-active)
-- [Form: Information > Hold (Cust Req) > Hold (Cust Req)](#21-information-main-active)
+- [Form: Information > Escalated To Mgmt > Escalated To Mgmt](#21-information---main---active)
+- [Form: Information > Stalled > Stalled](#21-information---main---active)
+- [Form: Information > Hold (Cust Req) > Hold (Cust Req)](#21-information---main---active)
 
 #### azt_estfulfillmentdate
 
@@ -4052,7 +4065,7 @@ Alphabetical field index -- 352 unique fields referenced.
 
 #### azt_fsrassignedon
 
-- [Form: Information > Pending Assignment > Pending Assignment](#21-information-main-active)
+- [Form: Information > Pending Assignment > Pending Assignment](#21-information---main---active)
 - [Plugin: EngagementFSRAssignedOn (Write)](#1024-engagementfsrassignedon)
 
 #### azt_fsremail
@@ -4153,11 +4166,11 @@ Alphabetical field index -- 352 unique fields referenced.
 
 #### azt_lastresearchdate
 
-- [Form: Information > Monitoring > Monitoring](#21-information-main-active)
+- [Form: Information > Monitoring > Monitoring](#21-information---main---active)
 
 #### azt_lasttrainingdate
 
-- [Form: Information > Training/Documentation > Training/Documentation](#21-information-main-active)
+- [Form: Information > Training/Documentation > Training/Documentation](#21-information---main---active)
 
 #### azt_leadimportid
 
@@ -4284,7 +4297,7 @@ Alphabetical field index -- 352 unique fields referenced.
 
 #### azt_nexttrainingdate
 
-- [Form: Information > Training/Documentation > Training/Documentation](#21-information-main-active)
+- [Form: Information > Training/Documentation > Training/Documentation](#21-information---main---active)
 
 #### azt_nonsaasstatus
 
@@ -4297,11 +4310,11 @@ Alphabetical field index -- 352 unique fields referenced.
 
 #### azt_numberadmins
 
-- [Form: Information > Monitoring > Monitoring](#21-information-main-active)
+- [Form: Information > Monitoring > Monitoring](#21-information---main---active)
 
 #### azt_numberofhours
 
-- [Form: Information > Monitoring > Monitoring](#21-information-main-active)
+- [Form: Information > Monitoring > Monitoring](#21-information---main---active)
 
 #### azt_numberoflicenses
 
@@ -4311,11 +4324,11 @@ Alphabetical field index -- 352 unique fields referenced.
 
 #### azt_numberteachers
 
-- [Form: Information > Monitoring > Monitoring](#21-information-main-active)
+- [Form: Information > Monitoring > Monitoring](#21-information---main---active)
 
 #### azt_objective
 
-- [Form: Information > Planning > Planning](#21-information-main-active)
+- [Form: Information > Planning > Planning](#21-information---main---active)
 
 #### azt_opportunityauditrecordid
 
@@ -4661,7 +4674,7 @@ Alphabetical field index -- 352 unique fields referenced.
 
 #### azt_systemintroductioncomplete
 
-- [Form: Information > Initiating > Initiating](#21-information-main-active)
+- [Form: Information > Initiating > Initiating](#21-information---main---active)
 
 #### azt_total
 
@@ -4699,11 +4712,11 @@ Alphabetical field index -- 352 unique fields referenced.
 
 #### azt_usingcustomclasses
 
-- [Form: Information > Planning > Planning](#21-information-main-active)
+- [Form: Information > Planning > Planning](#21-information---main---active)
 
 #### azt_usingtags
 
-- [Form: Information > Planning > Planning](#21-information-main-active)
+- [Form: Information > Planning > Planning](#21-information---main---active)
 
 #### azt_year
 
@@ -4765,7 +4778,7 @@ Alphabetical field index -- 352 unique fields referenced.
 - [Field Definitions](#1-field-definitions)
 - [View: Inactive Engagement Process on my Engagements](#38-inactive-engagement-process-on-my-engagements)
 - [View: Inactive Engagement Process](#39-inactive-engagement-process)
-- [Formula: bpf_duration (Target)](#9-formulas-rollups)
+- [Formula: bpf_duration (Target)](#9-formulas-and-rollups)
 - [Plugin: OrderStageTracking (Read)](#1057-orderstagetracking)
 
 #### bpf_name
@@ -4841,11 +4854,11 @@ Alphabetical field index -- 352 unique fields referenced.
 #### completedon
 
 - [Field Definitions](#1-field-definitions)
-- [Formula: bpf_duration](#9-formulas-rollups)
+- [Formula: bpf_duration](#9-formulas-and-rollups)
 
 #### conditionbranchstep2_1
 
-- [Formula: bpf_duration](#9-formulas-rollups)
+- [Formula: bpf_duration](#9-formulas-and-rollups)
 
 #### connectionid
 
@@ -4928,7 +4941,7 @@ Alphabetical field index -- 352 unique fields referenced.
 - [Workflow: EmailRemoveUnsentEmails (Read)](#715-emailremoveunsentemails)
 - [Workflow: FSRLeadDistibutionNotification (Read)](#718-fsrleaddistibutionnotification)
 - [Workflow: NewFSRLeadNotification (Read)](#721-newfsrleadnotification)
-- [Formula: bpf_duration](#9-formulas-rollups)
+- [Formula: bpf_duration](#9-formulas-and-rollups)
 - [Plugin: AccountLeadGen (Filter)](#102-accountleadgen)
 - [Plugin: ChangeLicenseType (Sort)](#1016-changelicensetype)
 - [Plugin: CreateUserGoals (Read)](#1022-createusergoals)
@@ -5322,7 +5335,7 @@ Alphabetical field index -- 352 unique fields referenced.
 
 #### ownerid
 
-- [Form: Information > Pending Assignment > Pending Assignment](#21-information-main-active)
+- [Form: Information > Pending Assignment > Pending Assignment](#21-information---main---active)
 - [View: Active Engagement Process on my Engagements (Filter)](#31-active-engagement-process-on-my-engagements)
 - [View: Inactive Engagement Process on my Engagements (Filter)](#38-inactive-engagement-process-on-my-engagements)
 - [Plugin: AccountReassignmentShareRecords (Read)](#104-accountreassignmentsharerecords)
@@ -5687,23 +5700,23 @@ Alphabetical field index -- 352 unique fields referenced.
 
 #### setattributevaluestep4_1
 
-- [Formula: bpf_duration](#9-formulas-rollups)
+- [Formula: bpf_duration](#9-formulas-and-rollups)
 
 #### setattributevaluestep4_2
 
-- [Formula: bpf_duration](#9-formulas-rollups)
+- [Formula: bpf_duration](#9-formulas-and-rollups)
 
 #### setattributevaluestep4_3
 
-- [Formula: bpf_duration](#9-formulas-rollups)
+- [Formula: bpf_duration](#9-formulas-and-rollups)
 
 #### setattributevaluestep4_4
 
-- [Formula: bpf_duration](#9-formulas-rollups)
+- [Formula: bpf_duration](#9-formulas-and-rollups)
 
 #### setattributevaluestep4_5
 
-- [Formula: bpf_duration](#9-formulas-rollups)
+- [Formula: bpf_duration](#9-formulas-and-rollups)
 
 #### shippingmethodcode
 

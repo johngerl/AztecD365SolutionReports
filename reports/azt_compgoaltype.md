@@ -1,14 +1,27 @@
 # Azt_compgoaltype Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_compgoaltype |
+| **Display Name** | Comp Goal Type |
+| **Description** |  |
+| **Object Type** | Custom |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 6856 |
+| **Last Update** | 2026-03-20 16:30:19 |
+| **Primary ID Field** | azt_compgoaltypeid |
+| **Primary Name Field** | azt_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (card) -- Active](#21-information-card-active)
-  - [2.2. Comp Goal Type (main) -- Active](#22-comp-goal-type-main-active)
-  - [2.3. Comp Goal (quickCreate) -- Active](#23-comp-goal-quickcreate-active)
-  - [2.4. Information (quick) -- Active](#24-information-quick-active)
+  - [2.1. Information - card - Active](#21-information---card---active)
+  - [2.2. Comp Goal Type - main - Active](#22-comp-goal-type---main---active)
+  - [2.3. Comp Goal - quickCreate - Active](#23-comp-goal---quickcreate---active)
+  - [2.4. Information - quick - Active](#24-information---quick---active)
 - [3. Views](#3-views)
   - [3.1. Active Comp Goal Types](#31-active-comp-goal-types)
   - [3.2. Comp Goal Type Advanced Find View](#32-comp-goal-type-advanced-find-view)
@@ -91,7 +104,7 @@
   - [8.5. azt_paymentlibrary](#85-azt_paymentlibrary)
   - [8.6. azt_productdiscountlibrary](#86-azt_productdiscountlibrary)
   - [8.7. azt_splitallocation](#87-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -177,7 +190,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -230,7 +243,7 @@ Total fields: **35**
 
 Total forms: **4**
 
-### 2.1. Information (card) -- Active
+### 2.1. Information - card - Active
 
 - **Form ID:** `{8edf6494-2fc6-4336-b02e-0650b976d4a0}`
 - **Presentation:** UCI/Tablet
@@ -259,7 +272,7 @@ Total forms: **4**
 | [ownerid](#ownerid) | Owner | No | Yes |
 | [createdon](#createdon) | Created On | No | Yes |
 
-### 2.2. Comp Goal Type (main) -- Active
+### 2.2. Comp Goal Type - main - Active
 
 - **Form ID:** `{d8fdf13d-7d09-42d7-b276-601080b5c7f4}`
 - **Presentation:** UCI/Tablet
@@ -317,7 +330,7 @@ Total forms: **4**
 | onchange | azt_amount | `CG.CompGoalFunctions.calculateTotal` | `azt_compgoaltypelibrary` | true |
 | onchange | azt_percentage | `CG.CompGoalFunctions.calculateTotal` | `azt_compgoaltypelibrary` | true |
 
-### 2.3. Comp Goal (quickCreate) -- Active
+### 2.3. Comp Goal - quickCreate - Active
 
 - **Form ID:** `{af2c523b-9558-49a3-853f-d9294d268a88}`
 - **Presentation:** UCI/Tablet
@@ -340,7 +353,7 @@ Total forms: **4**
 
 ##### Section: section
 
-### 2.4. Information (quick) -- Active
+### 2.4. Information - quick - Active
 
 - **Form ID:** `{19b5633c-f55a-4b95-90ab-7099580afdce}`
 - **Presentation:** UCI/Tablet
@@ -1504,7 +1517,7 @@ Total JS files referencing Azt_compgoaltype fields: **7**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_compgoaltype: **0**
 
@@ -3684,7 +3697,7 @@ Total relationships involving Azt_compgoaltype: **13**
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -4121,8 +4134,8 @@ Alphabetical field index -- 331 unique fields referenced.
 #### azt_amount
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Comp Goal Type > General > Comp Details](#22-comp-goal-type-main-active)
-- [Form: Comp Goal > General > General](#23-comp-goal-quickcreate-active)
+- [Form: Comp Goal Type > General > Comp Details](#22-comp-goal-type---main---active)
+- [Form: Comp Goal > General > General](#23-comp-goal---quickcreate---active)
 - [View: Active Comp Goal Types](#31-active-comp-goal-types)
 - [View: Comp Goal Type Advanced Find View](#32-comp-goal-type-advanced-find-view)
 - [View: Comp Goal Type Associated View](#33-comp-goal-type-associated-view)
@@ -4150,7 +4163,7 @@ Alphabetical field index -- 331 unique fields referenced.
 #### azt_applybonus
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Comp Goal Type > General > Comp Details](#22-comp-goal-type-main-active)
+- [Form: Comp Goal Type > General > Comp Details](#22-comp-goal-type---main---active)
 
 #### azt_approvalstatus
 
@@ -4195,7 +4208,7 @@ Alphabetical field index -- 331 unique fields referenced.
 #### azt_commissionid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Comp Goal Type > Administration > Administration](#22-comp-goal-type-main-active)
+- [Form: Comp Goal Type > Administration > Administration](#22-comp-goal-type---main---active)
 - [Workflow: CloneCommissionPayment (Write)](#714-clonecommissionpayment)
 - [Workflow: CloneCompGoal (Read)](#715-clonecompgoal)
 - [Workflow: CloneCompGoal (Write)](#715-clonecompgoal)
@@ -4295,7 +4308,7 @@ Alphabetical field index -- 331 unique fields referenced.
 #### azt_details
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Comp Goal Type > General > Details](#22-comp-goal-type-main-active)
+- [Form: Comp Goal Type > General > Details](#22-comp-goal-type---main---active)
 
 #### azt_discountamount
 
@@ -4309,7 +4322,7 @@ Alphabetical field index -- 331 unique fields referenced.
 #### azt_donotaddtogoal
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Comp Goal Type > General > Comp Details](#22-comp-goal-type-main-active)
+- [Form: Comp Goal Type > General > Comp Details](#22-comp-goal-type---main---active)
 
 #### azt_duedate
 
@@ -4318,8 +4331,8 @@ Alphabetical field index -- 331 unique fields referenced.
 #### azt_effectivedate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Comp Goal Type > General > General](#22-comp-goal-type-main-active)
-- [Form: Comp Goal > General > General](#23-comp-goal-quickcreate-active)
+- [Form: Comp Goal Type > General > General](#22-comp-goal-type---main---active)
+- [Form: Comp Goal > General > General](#23-comp-goal---quickcreate---active)
 - [View: Active Comp Goal Types](#31-active-comp-goal-types)
 - [View: Active Comp Goal Types (Sort)](#31-active-comp-goal-types)
 - [View: Comp Goal Type Advanced Find View](#32-comp-goal-type-advanced-find-view)
@@ -4462,7 +4475,7 @@ Alphabetical field index -- 331 unique fields referenced.
 #### azt_invoiceid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Comp Goal Type (Header)](#22-comp-goal-type-main-active)
+- [Form: Comp Goal Type (Header)](#22-comp-goal-type---main---active)
 - [View: Active Comp Goal Types](#31-active-comp-goal-types)
 - [View: Comp Goal Type Advanced Find View](#32-comp-goal-type-advanced-find-view)
 - [View: Comp Goal Type Associated View](#33-comp-goal-type-associated-view)
@@ -4614,9 +4627,9 @@ Alphabetical field index -- 331 unique fields referenced.
 #### azt_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Details](#21-information-card-active)
-- [Form: Comp Goal Type > Administration > Administration](#22-comp-goal-type-main-active)
-- [Form: Information >  > GENERAL](#24-information-quick-active)
+- [Form: Information > general > Details](#21-information---card---active)
+- [Form: Comp Goal Type > Administration > Administration](#22-comp-goal-type---main---active)
+- [Form: Information >  > GENERAL](#24-information---quick---active)
 - [View: Comp Goal Type Lookup View](#34-comp-goal-type-lookup-view)
 - [View: Comp Goal Type Lookup View (Sort)](#34-comp-goal-type-lookup-view)
 - [View: Quick Find Active Comp Goal Types](#38-quick-find-active-comp-goal-types)
@@ -4693,7 +4706,7 @@ Alphabetical field index -- 331 unique fields referenced.
 #### azt_opportunityid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Comp Goal Type > General > General](#22-comp-goal-type-main-active)
+- [Form: Comp Goal Type > General > General](#22-comp-goal-type---main---active)
 - [Plugin: CreateCompGoals (Write)](#1020-createcompgoals)
 - [Plugin: DiscretionaryDiscountSetHeader (Read)](#1023-discretionarydiscountsetheader)
 - [Plugin: DiscretionaryDiscountSetHeader (Write)](#1023-discretionarydiscountsetheader)
@@ -4719,7 +4732,7 @@ Alphabetical field index -- 331 unique fields referenced.
 #### azt_orderid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Comp Goal Type > General > General](#22-comp-goal-type-main-active)
+- [Form: Comp Goal Type > General > General](#22-comp-goal-type---main---active)
 - [View: Active Comp Goal Types](#31-active-comp-goal-types)
 - [View: Comp Goal Type Advanced Find View](#32-comp-goal-type-advanced-find-view)
 - [View: Comp Goal Type Associated View](#33-comp-goal-type-associated-view)
@@ -4803,8 +4816,8 @@ Alphabetical field index -- 331 unique fields referenced.
 #### azt_percentage
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Comp Goal Type > General > Comp Details](#22-comp-goal-type-main-active)
-- [Form: Comp Goal > General > General](#23-comp-goal-quickcreate-active)
+- [Form: Comp Goal Type > General > Comp Details](#22-comp-goal-type---main---active)
+- [Form: Comp Goal > General > General](#23-comp-goal---quickcreate---active)
 - [View: Active Comp Goal Types](#31-active-comp-goal-types)
 - [View: Comp Goal Type Advanced Find View](#32-comp-goal-type-advanced-find-view)
 - [View: Comp Goal Type Associated View](#33-comp-goal-type-associated-view)
@@ -4914,8 +4927,8 @@ Alphabetical field index -- 331 unique fields referenced.
 #### azt_producttype
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Comp Goal Type > General > Comp Details](#22-comp-goal-type-main-active)
-- [Form: Comp Goal > General > General](#23-comp-goal-quickcreate-active)
+- [Form: Comp Goal Type > General > Comp Details](#22-comp-goal-type---main---active)
+- [Form: Comp Goal > General > General](#23-comp-goal---quickcreate---active)
 - [View: Active Comp Goal Types](#31-active-comp-goal-types)
 - [View: Active Comp Goal Types (Sort)](#31-active-comp-goal-types)
 - [View: Comp Goal Type Advanced Find View](#32-comp-goal-type-advanced-find-view)
@@ -5011,8 +5024,8 @@ Alphabetical field index -- 331 unique fields referenced.
 #### azt_salesrepid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Comp Goal Type (Header)](#22-comp-goal-type-main-active)
-- [Form: Comp Goal > General > General](#23-comp-goal-quickcreate-active)
+- [Form: Comp Goal Type (Header)](#22-comp-goal-type---main---active)
+- [Form: Comp Goal > General > General](#23-comp-goal---quickcreate---active)
 - [View: Active Comp Goal Types](#31-active-comp-goal-types)
 - [View: Comp Goal Type Advanced Find View](#32-comp-goal-type-advanced-find-view)
 - [View: Comp Goal Type Advanced Find View (Sort)](#32-comp-goal-type-advanced-find-view)
@@ -5082,8 +5095,8 @@ Alphabetical field index -- 331 unique fields referenced.
 #### azt_total
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Comp Goal Type > General > Comp Details](#22-comp-goal-type-main-active)
-- [Form: Comp Goal > General > General](#23-comp-goal-quickcreate-active)
+- [Form: Comp Goal Type > General > Comp Details](#22-comp-goal-type---main---active)
+- [Form: Comp Goal > General > General](#23-comp-goal---quickcreate---active)
 - [View: Active Comp Goal Types](#31-active-comp-goal-types)
 - [View: Comp Goal Type Advanced Find View](#32-comp-goal-type-advanced-find-view)
 - [View: Comp Goal Type Associated View](#33-comp-goal-type-associated-view)
@@ -5273,7 +5286,7 @@ Alphabetical field index -- 331 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
+- [Form: Information > general > Footer](#21-information---card---active)
 - [View: Quick Find Active Comp Goal Types](#38-quick-find-active-comp-goal-types)
 - [Workflow: CasePendingAssignmentNotification (Read)](#78-casependingassignmentnotification)
 - [Workflow: CaseRecordOwnerAssignmentNotification (Read)](#711-caserecordownerassignmentnotification)
@@ -5675,9 +5688,9 @@ Alphabetical field index -- 331 unique fields referenced.
 #### ownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
-- [Form: Comp Goal Type > Administration > Administration](#22-comp-goal-type-main-active)
-- [Form: Information >  > GENERAL](#24-information-quick-active)
+- [Form: Information > general > Footer](#21-information---card---active)
+- [Form: Comp Goal Type > Administration > Administration](#22-comp-goal-type---main---active)
+- [Form: Information >  > GENERAL](#24-information---quick---active)
 - [View: My Comp Goal Types (Filter)](#37-my-comp-goal-types)
 - [Workflow: AllocationsAssigntoTeam (Read)](#73-allocationsassigntoteam)
 - [Workflow: AppointmentAuto-Assign (Read)](#74-appointmentauto-assign)
@@ -6137,8 +6150,8 @@ Alphabetical field index -- 331 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Header](#21-information-card-active)
-- [Form: Comp Goal Type (Header)](#22-comp-goal-type-main-active)
+- [Form: Information > general > Header](#21-information---card---active)
+- [Form: Comp Goal Type (Header)](#22-comp-goal-type---main---active)
 - [View: Comp Goal Type Advanced Find View](#32-comp-goal-type-advanced-find-view)
 - [View: Comp Goal Type Associated View](#33-comp-goal-type-associated-view)
 - [View: Invoice Comp Goal Types](#36-invoice-comp-goal-types)

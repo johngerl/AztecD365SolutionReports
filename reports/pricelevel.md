@@ -1,18 +1,31 @@
 # Pricelevel Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | pricelevel |
+| **Display Name** |  |
+| **Description** |  |
+| **Object Type** | Standard |
+| **Ownership Type** |  |
+| **Audit Enabled** | False |
+| **Total Rows** | 11 |
+| **Last Update** | 2026-01-03 21:06:05 |
+| **Primary ID Field** | pricelevelid |
+| **Primary Name Field** | None |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Price Level (main) -- Active](#21-price-level-main-active)
+  - [2.1. Price Level - main - Active](#21-price-level---main---active)
 - [3. Views](#3-views)
 - [4. Chart Visualizations](#4-chart-visualizations)
 - [5. Reports](#5-reports)
 - [6. Dashboards](#6-dashboards)
 - [7. Workflows](#7-workflows)
 - [8. JavaScript Web Resources](#8-javascript-web-resources)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -98,7 +111,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -126,7 +139,7 @@ Total fields: **10**
 
 Total forms: **1**
 
-### 2.1. Price Level (main) -- Active
+### 2.1. Price Level - main - Active
 
 - **Form ID:** `{fd57cc72-a5b1-4e65-a5db-0127da5941f7}`
 - **Presentation:** UCI/Tablet
@@ -188,7 +201,7 @@ Total JS files referencing Pricelevel fields: **0**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Pricelevel: **0**
 
@@ -2346,7 +2359,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -4204,7 +4217,7 @@ Alphabetical field index -- 318 unique fields referenced.
 
 #### pricelistitemsgrid
 
-- [Form: Price Level > Price_List_Items > pricelistbyproduct](#21-price-level-main-active)
+- [Form: Price Level > Price_List_Items > pricelistbyproduct](#21-price-level---main---active)
 
 #### priceperunit
 

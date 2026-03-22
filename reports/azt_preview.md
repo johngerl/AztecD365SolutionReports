@@ -1,13 +1,26 @@
 # Azt_preview Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_preview |
+| **Display Name** | Preview |
+| **Description** |  |
+| **Object Type** | Custom |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | True |
+| **Total Rows** | 2265 |
+| **Last Update** | 2026-02-20 19:23:05 |
+| **Primary ID Field** | azt_previewid |
+| **Primary Name Field** | azt_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (card) -- Active](#21-information-card-active)
-  - [2.2. Preview (main) -- Active](#22-preview-main-active)
-  - [2.3. Information (quick) -- Active](#23-information-quick-active)
+  - [2.1. Information - card - Active](#21-information---card---active)
+  - [2.2. Preview - main - Active](#22-preview---main---active)
+  - [2.3. Information - quick - Active](#23-information---quick---active)
 - [3. Views](#3-views)
   - [3.1. Active Previews](#31-active-previews)
   - [3.2. Inactive Previews](#32-inactive-previews)
@@ -84,7 +97,7 @@
   - [8.4. azt_paymentlibrary](#84-azt_paymentlibrary)
   - [8.5. azt_productdiscountlibrary](#85-azt_productdiscountlibrary)
   - [8.6. azt_splitallocation](#86-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -170,7 +183,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -213,7 +226,7 @@ Total fields: **25**
 
 Total forms: **3**
 
-### 2.1. Information (card) -- Active
+### 2.1. Information - card - Active
 
 - **Form ID:** `{e7288b8a-51db-4584-b432-dc1f3801aa45}`
 - **Presentation:** UCI/Tablet
@@ -242,7 +255,7 @@ Total forms: **3**
 | [ownerid](#ownerid) | Owner | No | Yes |
 | [createdon](#createdon) | Created On | No | Yes |
 
-### 2.2. Preview (main) -- Active
+### 2.2. Preview - main - Active
 
 - **Form ID:** `{8af4ce13-abbf-4920-b34a-7fc47fb42547}`
 - **Presentation:** UCI/Tablet
@@ -286,7 +299,7 @@ Total forms: **3**
 |-------|-------|----------|---------|
 | [previewproducts](#previewproducts) | Products | No | Yes |
 
-### 2.3. Information (quick) -- Active
+### 2.3. Information - quick - Active
 
 - **Form ID:** `{ba8fbfac-b5ad-4bbb-8825-92137d33e38f}`
 - **Presentation:** UCI/Tablet
@@ -1331,7 +1344,7 @@ Total JS files referencing Azt_preview fields: **6**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_preview: **0**
 
@@ -3497,7 +3510,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -3889,7 +3902,7 @@ Alphabetical field index -- 332 unique fields referenced.
 #### azt_accountid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Preview > General > General](#22-preview-main-active)
+- [Form: Preview > General > General](#22-preview---main---active)
 - [View: Active Previews](#31-active-previews)
 - [View: Inactive Previews](#32-inactive-previews)
 - [View: Preview Advanced Find View](#34-preview-advanced-find-view)
@@ -4093,7 +4106,7 @@ Alphabetical field index -- 332 unique fields referenced.
 #### azt_description
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Preview > Description > Section](#22-preview-main-active)
+- [Form: Preview > Description > Section](#22-preview---main---active)
 - [Plugin: CloneExpenseLine (Read)](#1017-cloneexpenseline)
 - [Plugin: CloneExpenseLine (Write)](#1017-cloneexpenseline)
 
@@ -4174,7 +4187,7 @@ Alphabetical field index -- 332 unique fields referenced.
 #### azt_extendedexpirationdate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Preview > General > General](#22-preview-main-active)
+- [Form: Preview > General > General](#22-preview---main---active)
 
 #### azt_extension
 
@@ -4391,9 +4404,9 @@ Alphabetical field index -- 332 unique fields referenced.
 #### azt_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Details](#21-information-card-active)
-- [Form: Preview > General > General](#22-preview-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Details](#21-information---card---active)
+- [Form: Preview > General > General](#22-preview---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Active Previews](#31-active-previews)
 - [View: Active Previews (Sort)](#31-active-previews)
 - [View: Inactive Previews](#32-inactive-previews)
@@ -4621,7 +4634,7 @@ Alphabetical field index -- 332 unique fields referenced.
 #### azt_previewexpirationdate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Preview > General > General](#22-preview-main-active)
+- [Form: Preview > General > General](#22-preview---main---active)
 - [View: Active Previews](#31-active-previews)
 - [View: Inactive Previews](#32-inactive-previews)
 - [View: Preview Advanced Find View](#34-preview-advanced-find-view)
@@ -4641,12 +4654,12 @@ Alphabetical field index -- 332 unique fields referenced.
 #### azt_previewstartdate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Preview > General > General](#22-preview-main-active)
+- [Form: Preview > General > General](#22-preview---main---active)
 
 #### azt_previewuserid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Preview (Header)](#22-preview-main-active)
+- [Form: Preview (Header)](#22-preview---main---active)
 - [View: Quick Find Active Previews (Filter)](#37-quick-find-active-previews)
 - [Relationship: azt_contact_azt_preview](#12-relationships)
 
@@ -4669,7 +4682,7 @@ Alphabetical field index -- 332 unique fields referenced.
 #### azt_primarysalesrepid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Preview > General > General](#22-preview-main-active)
+- [Form: Preview > General > General](#22-preview---main---active)
 - [View: Active Previews](#31-active-previews)
 - [View: Inactive Previews](#32-inactive-previews)
 - [View: Preview Advanced Find View](#34-preview-advanced-find-view)
@@ -5005,7 +5018,7 @@ Alphabetical field index -- 332 unique fields referenced.
 #### createdby
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Preview > General > General](#22-preview-main-active)
+- [Form: Preview > General > General](#22-preview---main---active)
 - [Workflow: AccountAuto-Assign (Read)](#72-accountauto-assign)
 - [Workflow: CasePendingAssignmentNotification (Read)](#77-casependingassignmentnotification)
 - [Workflow: CaseRecordOwnerAssign (Read)](#79-caserecordownerassign)
@@ -5036,7 +5049,7 @@ Alphabetical field index -- 332 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
+- [Form: Information > general > Footer](#21-information---card---active)
 - [View: Active Previews](#31-active-previews)
 - [View: Inactive Previews](#32-inactive-previews)
 - [View: Preview Advanced Find View](#34-preview-advanced-find-view)
@@ -5322,7 +5335,7 @@ Alphabetical field index -- 332 unique fields referenced.
 #### modifiedby
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Preview > General > General](#22-preview-main-active)
+- [Form: Preview > General > General](#22-preview---main---active)
 - [Workflow: LeadQualifyDisqualifyDate (Read)](#730-leadqualifydisqualifydate)
 - [Workflow: Order-CreateOrderStageTracking (Write)](#734-order-createorderstagetracking)
 - [Relationship: lk_azt_preview_modifiedby](#12-relationships)
@@ -5440,9 +5453,9 @@ Alphabetical field index -- 332 unique fields referenced.
 #### ownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
-- [Form: Preview > General > General](#22-preview-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Footer](#21-information---card---active)
+- [Form: Preview > General > General](#22-preview---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: My Previews (Filter)](#33-my-previews)
 - [Workflow: AllocationsAssigntoTeam (Read)](#73-allocationsassigntoteam)
 - [Workflow: AppointmentAuto-Assign (Read)](#74-appointmentauto-assign)
@@ -5552,7 +5565,7 @@ Alphabetical field index -- 332 unique fields referenced.
 
 #### previewproducts
 
-- [Form: Preview > Preview Products > Section](#22-preview-main-active)
+- [Form: Preview > Preview Products > Section](#22-preview---main---active)
 
 #### pricelevelid
 
@@ -5906,7 +5919,7 @@ Alphabetical field index -- 332 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Header](#21-information-card-active)
+- [Form: Information > general > Header](#21-information---card---active)
 - [View: Active Previews](#31-active-previews)
 - [View: Inactive Previews](#32-inactive-previews)
 - [View: Preview Advanced Find View](#34-preview-advanced-find-view)

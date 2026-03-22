@@ -1,13 +1,26 @@
 # Azt_printpurchase Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_printpurchase |
+| **Display Name** | Print Purchase |
+| **Description** |  |
+| **Object Type** | Custom |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 58442 |
+| **Last Update** | 2026-03-20 17:39:37 |
+| **Primary ID Field** | azt_printpurchaseid |
+| **Primary Name Field** | azt_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (card) -- Active](#21-information-card-active)
-  - [2.2. Print Purchase (main) -- Active](#22-print-purchase-main-active)
-  - [2.3. Information (quick) -- Active](#23-information-quick-active)
+  - [2.1. Information - card - Active](#21-information---card---active)
+  - [2.2. Print Purchase - main - Active](#22-print-purchase---main---active)
+  - [2.3. Information - quick - Active](#23-information---quick---active)
 - [3. Views](#3-views)
   - [3.1. Active Account Print Purchases](#31-active-account-print-purchases)
   - [3.2. Active Print Purchases](#32-active-print-purchases)
@@ -96,7 +109,7 @@
   - [8.9. azt_productdiscountlibrary](#89-azt_productdiscountlibrary)
   - [8.10. azt_quotelibrary](#810-azt_quotelibrary)
   - [8.11. azt_splitallocation](#811-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -182,7 +195,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -225,7 +238,7 @@ Total fields: **25**
 
 Total forms: **3**
 
-### 2.1. Information (card) -- Active
+### 2.1. Information - card - Active
 
 - **Form ID:** `{7a8a3a03-a813-4d98-8c2a-c1597b8d3d00}`
 - **Presentation:** UCI/Tablet
@@ -254,7 +267,7 @@ Total forms: **3**
 | [ownerid](#ownerid) | Owner | No | Yes |
 | [createdon](#createdon) | Created On | No | Yes |
 
-### 2.2. Print Purchase (main) -- Active
+### 2.2. Print Purchase - main - Active
 
 - **Form ID:** `{aec411f1-8a4b-474e-82d2-b06d6da62797}`
 - **Presentation:** UCI/Tablet
@@ -291,7 +304,7 @@ Total forms: **3**
 | [ownerid](#ownerid) | Owner | No | Yes |
 | [azt_recordownerid](#azt_recordownerid) | Record Owner | No | Yes |
 
-### 2.3. Information (quick) -- Active
+### 2.3. Information - quick - Active
 
 - **Form ID:** `{7d21ab17-ca90-42cb-889c-be7df67d1184}`
 - **Presentation:** UCI/Tablet
@@ -1584,7 +1597,7 @@ Total JS files referencing Azt_printpurchase fields: **11**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_printpurchase: **0**
 
@@ -3751,7 +3764,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -4298,8 +4311,8 @@ Alphabetical field index -- 326 unique fields referenced.
 #### azt_customerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Print Purchase (Header)](#22-print-purchase-main-active)
-- [Form: Print Purchase > General > Information](#22-print-purchase-main-active)
+- [Form: Print Purchase (Header)](#22-print-purchase---main---active)
+- [Form: Print Purchase > General > Information](#22-print-purchase---main---active)
 - [View: Active Print Purchases](#32-active-print-purchases)
 - [View: Inactive Print Purchases](#33-inactive-print-purchases)
 - [View: Print Purchase Advanced Find View](#35-print-purchase-advanced-find-view)
@@ -4497,7 +4510,7 @@ Alphabetical field index -- 326 unique fields referenced.
 #### azt_isbn
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Print Purchase > General > Information](#22-print-purchase-main-active)
+- [Form: Print Purchase > General > Information](#22-print-purchase---main---active)
 - [View: Active Account Print Purchases](#31-active-account-print-purchases)
 - [View: Active Print Purchases](#32-active-print-purchases)
 - [View: Inactive Print Purchases](#33-inactive-print-purchases)
@@ -4631,9 +4644,9 @@ Alphabetical field index -- 326 unique fields referenced.
 #### azt_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Details](#21-information-card-active)
-- [Form: Print Purchase > Administration > Section](#22-print-purchase-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Details](#21-information---card---active)
+- [Form: Print Purchase > Administration > Section](#22-print-purchase---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Print Purchase Lookup View](#37-print-purchase-lookup-view)
 - [Workflow: 0EngagementNames (Write)](#72-0engagementnames)
 - [Workflow: BatchCreateEngagements (Write)](#77-batchcreateengagements)
@@ -4865,8 +4878,8 @@ Alphabetical field index -- 326 unique fields referenced.
 #### azt_printproductid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Print Purchase (Header)](#22-print-purchase-main-active)
-- [Form: Print Purchase > General > Information](#22-print-purchase-main-active)
+- [Form: Print Purchase (Header)](#22-print-purchase---main---active)
+- [Form: Print Purchase > General > Information](#22-print-purchase---main---active)
 - [View: Active Account Print Purchases](#31-active-account-print-purchases)
 - [View: Active Account Print Purchases (Sort)](#31-active-account-print-purchases)
 - [View: Active Print Purchases](#32-active-print-purchases)
@@ -4941,7 +4954,7 @@ Alphabetical field index -- 326 unique fields referenced.
 #### azt_purchasedate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Print Purchase > General > Information](#22-print-purchase-main-active)
+- [Form: Print Purchase > General > Information](#22-print-purchase---main---active)
 - [View: Active Account Print Purchases](#31-active-account-print-purchases)
 - [View: Active Account Print Purchases (Sort)](#31-active-account-print-purchases)
 - [View: Active Print Purchases](#32-active-print-purchases)
@@ -4964,8 +4977,8 @@ Alphabetical field index -- 326 unique fields referenced.
 #### azt_quantity
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Print Purchase (Header)](#22-print-purchase-main-active)
-- [Form: Print Purchase > General > Information](#22-print-purchase-main-active)
+- [Form: Print Purchase (Header)](#22-print-purchase---main---active)
+- [Form: Print Purchase > General > Information](#22-print-purchase---main---active)
 - [View: Active Account Print Purchases](#31-active-account-print-purchases)
 - [View: Active Print Purchases](#32-active-print-purchases)
 - [View: Inactive Print Purchases](#33-inactive-print-purchases)
@@ -5004,7 +5017,7 @@ Alphabetical field index -- 326 unique fields referenced.
 #### azt_recordownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Print Purchase > Administration > Section](#22-print-purchase-main-active)
+- [Form: Print Purchase > Administration > Section](#22-print-purchase---main---active)
 - [Workflow: 0ChangeQuoteRecordOwner (Write)](#71-0changequoterecordowner)
 - [Workflow: AccountAuto-Assign (Write)](#73-accountauto-assign)
 - [Workflow: AppointmentAuto-Assign (Write)](#75-appointmentauto-assign)
@@ -5180,7 +5193,7 @@ Alphabetical field index -- 326 unique fields referenced.
 #### azt_writeinproduct
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Print Purchase > General > Information](#22-print-purchase-main-active)
+- [Form: Print Purchase > General > Information](#22-print-purchase---main---active)
 - [View: Active Account Print Purchases](#31-active-account-print-purchases)
 
 #### azt_year
@@ -5328,7 +5341,7 @@ Alphabetical field index -- 326 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
+- [Form: Information > general > Footer](#21-information---card---active)
 - [Workflow: CasePendingAssignmentNotification (Read)](#79-casependingassignmentnotification)
 - [Workflow: CaseRecordOwnerAssignmentNotification (Read)](#712-caserecordownerassignmentnotification)
 - [Workflow: EffectiveTo (Read)](#725-effectiveto)
@@ -5725,9 +5738,9 @@ Alphabetical field index -- 326 unique fields referenced.
 #### ownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
-- [Form: Print Purchase > Administration > Section](#22-print-purchase-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Footer](#21-information---card---active)
+- [Form: Print Purchase > Administration > Section](#22-print-purchase---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: My Print Purchases (Filter)](#34-my-print-purchases)
 - [Workflow: AllocationsAssigntoTeam (Read)](#74-allocationsassigntoteam)
 - [Workflow: AppointmentAuto-Assign (Read)](#75-appointmentauto-assign)
@@ -6188,7 +6201,7 @@ Alphabetical field index -- 326 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Header](#21-information-card-active)
+- [Form: Information > general > Header](#21-information---card---active)
 - [Workflow: BatchCreateEngagements (Write)](#77-batchcreateengagements)
 - [Workflow: CloneOrder (Write)](#719-cloneorder)
 - [Workflow: EmailDeleteSendQuoteDrafts (Read)](#726-emaildeletesendquotedrafts)

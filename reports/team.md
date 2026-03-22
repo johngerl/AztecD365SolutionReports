@@ -1,11 +1,24 @@
 # Team Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | team |
+| **Display Name** |  |
+| **Description** |  |
+| **Object Type** | Standard |
+| **Ownership Type** | BusinessOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 112822 |
+| **Last Update** | 2026-03-21 04:05:55 |
+| **Primary ID Field** | teamid |
+| **Primary Name Field** | None |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Team (main) -- Active](#21-team-main-active)
+  - [2.1. Team - main - Active](#21-team---main---active)
 - [3. Views](#3-views)
   - [3.1. All Owner Teams](#31-all-owner-teams)
   - [3.2. Local Business Owner Teams](#32-local-business-owner-teams)
@@ -19,7 +32,7 @@
   - [7.2. ContactAuto-Assign](#72-contactauto-assign)
   - [7.3. NewFSRLeadNotification](#73-newfsrleadnotification)
 - [8. JavaScript Web Resources](#8-javascript-web-resources)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -105,7 +118,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -138,7 +151,7 @@ Total fields: **15**
 
 Total forms: **1**
 
-### 2.1. Team (main) -- Active
+### 2.1. Team - main - Active
 
 - **Form ID:** `{7ba7fac1-1418-4335-935f-f7f8dfd73fcc}`
 - **Presentation:** UCI/Tablet
@@ -336,7 +349,7 @@ Total JS files referencing Team fields: **0**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Team: **0**
 
@@ -2517,7 +2530,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -3700,7 +3713,7 @@ Alphabetical field index -- 321 unique fields referenced.
 #### azt_regionalteam
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Team > general > General](#21-team-main-active)
+- [Form: Team > general > General](#21-team---main---active)
 
 #### azt_replacementproductid
 
@@ -3760,7 +3773,7 @@ Alphabetical field index -- 321 unique fields referenced.
 #### azt_stateabbreviation
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Team > general > General](#21-team-main-active)
+- [Form: Team > general > General](#21-team---main---active)
 - [View: All Owner Teams (Filter)](#31-all-owner-teams)
 - [View: Local Business Owner Teams](#32-local-business-owner-teams)
 - [View: My Owner Teams (Filter)](#33-my-owner-teams)
@@ -4019,7 +4032,7 @@ Alphabetical field index -- 321 unique fields referenced.
 #### emailaddress
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Team > general > General](#21-team-main-active)
+- [Form: Team > general > General](#21-team---main---active)
 
 #### emailaddress1
 

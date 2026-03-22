@@ -1,11 +1,24 @@
 # Salesorderdetail Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | salesorderdetail |
+| **Display Name** | Order Product |
+| **Description** | Line item in a sales order. |
+| **Object Type** | Standard |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 78378 |
+| **Last Update** | 2026-03-20 19:07:05 |
+| **Primary ID Field** | salesorderdetailid |
+| **Primary Name Field** | None |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. SalesOrderDetail (main) -- Active](#21-salesorderdetail-main-active)
+  - [2.1. SalesOrderDetail - main - Active](#21-salesorderdetail---main---active)
 - [3. Views](#3-views)
   - [3.1. All Order Products](#31-all-order-products)
   - [3.2. Related Order Products](#32-related-order-products)
@@ -23,7 +36,7 @@
   - [8.2. azt_opportunityproductlibrary](#82-azt_opportunityproductlibrary)
   - [8.3. azt_orderlinelibrary](#83-azt_orderlinelibrary)
   - [8.4. azt_splitallocation](#84-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -109,7 +122,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -120,7 +133,7 @@ Total fields: **56**
 
 | # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
 |---|-------------|-------------|------|-----------------|--------|----------|-------------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [azt_discretionarydiscount](#azt_discretionarydiscount) | Discretionary Discount | money |  | Yes | none | 2026-03-20 19:07:05 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  | [1](#9-formulas-rollups) |  |  |  |  |  |
+| 1 | [azt_discretionarydiscount](#azt_discretionarydiscount) | Discretionary Discount | money |  | Yes | none | 2026-03-20 19:07:05 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  | [1](#9-formulas-and-rollups) |  |  |  |  |  |
 | 2 | [azt_discretionarydiscount_base](#azt_discretionarydiscount_base) | Discretionary Discount (Base) | money |  | Yes | none | 2026-03-20 19:07:05 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 3 | [azt_discretionarydiscountamt](#azt_discretionarydiscountamt) | Discretionary Discount Amt | money |  | Yes | none | 2026-03-20 17:39:34 | true |  |  |  |  |  |  | [1](#2-forms) |  |  |  |  |  |  | [2](#10-plugin-source-code-analysis) |  |  |  |  |
 | 4 | [azt_discretionarydiscountamt_base](#azt_discretionarydiscountamt_base) | Discretionary Discount Amt (Base) | money |  | Yes | none | 2026-03-20 17:39:34 | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -183,7 +196,7 @@ Total fields: **56**
 
 Total forms: **1**
 
-### 2.1. SalesOrderDetail (main) -- Active
+### 2.1. SalesOrderDetail - main - Active
 
 - **Form ID:** `{2bb64321-6da0-4a1a-8466-62b40cc6bc7a}`
 - **Presentation:** Classic
@@ -536,7 +549,7 @@ Total JS files referencing Salesorderdetail fields: **4**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Salesorderdetail: **1**
 
@@ -2716,7 +2729,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -3177,7 +3190,7 @@ Alphabetical field index -- 340 unique fields referenced.
 
 #### azt_approvalstatus
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 - [Plugin: OpportunityPreventCreateQuote (Read)](#1047-opportunitypreventcreatequote)
 - [Plugin: OpptyToQuoteFieldMappings (Read)](#1050-opptytoquotefieldmappings)
 - [Plugin: QuotePreventActivateUnapprovedDiscounts (Read)](#1064-quotepreventactivateunapproveddiscounts)
@@ -3301,14 +3314,14 @@ Alphabetical field index -- 340 unique fields referenced.
 
 #### azt_discountamount
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 - [Plugin: DiscretionaryDiscountSetHeader (Read)](#1023-discretionarydiscountsetheader)
 
 #### azt_discretionarydiscount
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > general > pricing](#21-salesorderdetail-main-active)
-- [Formula: azt_discretionarydiscount (Target)](#9-formulas-rollups)
+- [Form: SalesOrderDetail > general > pricing](#21-salesorderdetail---main---active)
+- [Formula: azt_discretionarydiscount (Target)](#9-formulas-and-rollups)
 
 #### azt_discretionarydiscount_base
 
@@ -3317,7 +3330,7 @@ Alphabetical field index -- 340 unique fields referenced.
 #### azt_discretionarydiscountamt
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > general > pricing](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > general > pricing](#21-salesorderdetail---main---active)
 - [Plugin: DiscretionaryDiscountSetHeader (Write)](#1023-discretionarydiscountsetheader)
 - [Plugin: OpptyToQuoteFieldMappings (Write)](#1050-opptytoquotefieldmappings)
 
@@ -3355,7 +3368,7 @@ Alphabetical field index -- 340 unique fields referenced.
 #### azt_estfulfillmentdate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > Delivery > Fulfillment](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > Delivery > Fulfillment](#21-salesorderdetail---main---active)
 - [Workflow: CloneOrder (Write)](#72-cloneorder)
 - [Plugin: OrderSplit (Read)](#1056-ordersplit)
 - [Plugin: OrderSplit (Write)](#1056-ordersplit)
@@ -3461,7 +3474,7 @@ Alphabetical field index -- 340 unique fields referenced.
 #### azt_hasloadingdock
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > Kaplan Process > Section](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > Kaplan Process > Section](#21-salesorderdetail---main---active)
 
 #### azt_importname
 
@@ -3501,14 +3514,14 @@ Alphabetical field index -- 340 unique fields referenced.
 #### azt_issaas
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > general > sales order detail information](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > general > sales order detail information](#21-salesorderdetail---main---active)
 - [Plugin: CreateUserGoals (Filter)](#1022-createusergoals)
 - [Plugin: SetOppProductDefaults (Write)](#1074-setoppproductdefaults)
 
 #### azt_itemstatus
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail (Header)](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail (Header)](#21-salesorderdetail---main---active)
 
 #### azt_jobrole
 
@@ -3543,12 +3556,12 @@ Alphabetical field index -- 340 unique fields referenced.
 #### azt_licenseenddate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > general > sales order detail information](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > general > sales order detail information](#21-salesorderdetail---main---active)
 
 #### azt_licensestartdate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > general > sales order detail information](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > general > sales order detail information](#21-salesorderdetail---main---active)
 
 #### azt_licensestatus
 
@@ -3562,7 +3575,7 @@ Alphabetical field index -- 340 unique fields referenced.
 #### azt_licensetermmonths
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > general > sales order detail information](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > general > sales order detail information](#21-salesorderdetail---main---active)
 - [Workflow: CloneLicense (Write)](#71-clonelicense)
 - [JS: azt_splitallocation > splitAllocation()](#84-azt_splitallocation)
 - [Plugin: CreateSoftwareLicenses (Read)](#1021-createsoftwarelicenses)
@@ -3591,7 +3604,7 @@ Alphabetical field index -- 340 unique fields referenced.
 #### azt_licensetype
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > general > sales order detail information](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > general > sales order detail information](#21-salesorderdetail---main---active)
 - [View: All Order Products](#31-all-order-products)
 - [View: Related Order Products](#32-related-order-products)
 - [Workflow: CloneLicense (Write)](#71-clonelicense)
@@ -3629,27 +3642,27 @@ Alphabetical field index -- 340 unique fields referenced.
 #### azt_lsebookfilesprovidedon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > LSE Process > Section](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > LSE Process > Section](#21-salesorderdetail---main---active)
 
 #### azt_lsebooksfile
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > LSE Process > Section](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > LSE Process > Section](#21-salesorderdetail---main---active)
 
 #### azt_lsecustomartapproved
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > LSE Process > Section](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > LSE Process > Section](#21-salesorderdetail---main---active)
 
 #### azt_lsecustomartapprovedon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > LSE Process > Section](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > LSE Process > Section](#21-salesorderdetail---main---active)
 
 #### azt_lseproductionstartdate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > LSE Process > Section](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > LSE Process > Section](#21-salesorderdetail---main---active)
 
 #### azt_masecommission
 
@@ -3711,7 +3724,7 @@ Alphabetical field index -- 340 unique fields referenced.
 #### azt_nonsaastype
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > general > sales order detail information](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > general > sales order detail information](#21-salesorderdetail---main---active)
 - [Plugin: CreateSoftwareLicenses (Read)](#1021-createsoftwarelicenses)
 
 #### azt_numberoflicenses
@@ -3750,8 +3763,8 @@ Alphabetical field index -- 340 unique fields referenced.
 #### azt_orderdate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > Delivery > Fulfillment](#21-salesorderdetail-main-active)
-- [Form: SalesOrderDetail > Kaplan Process > Section](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > Delivery > Fulfillment](#21-salesorderdetail---main---active)
+- [Form: SalesOrderDetail > Kaplan Process > Section](#21-salesorderdetail---main---active)
 
 #### azt_orderid
 
@@ -3790,7 +3803,7 @@ Alphabetical field index -- 340 unique fields referenced.
 #### azt_ordertype
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail (Header)](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail (Header)](#21-salesorderdetail---main---active)
 - [Workflow: CloneOrder (Write)](#72-cloneorder)
 - [JS: azt_orderlinelibrary > onLoad()](#83-azt_orderlinelibrary)
 - [Plugin: CreateSoftwareLicenses (Write)](#1021-createsoftwarelicenses)
@@ -4030,12 +4043,12 @@ Alphabetical field index -- 340 unique fields referenced.
 #### azt_shippingdate
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > LSE Process > Section](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > LSE Process > Section](#21-salesorderdetail---main---active)
 
 #### azt_softwarelicenseid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > general > sales order detail information](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > general > sales order detail information](#21-salesorderdetail---main---active)
 - [Workflow: CloneLicense (Read)](#71-clonelicense)
 - [Workflow: CreateSoftwareLicense (Read)](#73-createsoftwarelicense)
 - [Plugin: AccountReassignmentShareRecords (Read)](#104-accountreassignmentsharerecords)
@@ -4300,7 +4313,7 @@ Alphabetical field index -- 340 unique fields referenced.
 
 #### discounts
 
-- [Form: SalesOrderDetail > Discretionary Discounts > Section](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > Discretionary Discounts > Section](#21-salesorderdetail---main---active)
 
 #### emailaddress1
 
@@ -4488,7 +4501,7 @@ Alphabetical field index -- 340 unique fields referenced.
 #### manualdiscountamount
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > general > pricing](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > general > pricing](#21-salesorderdetail---main---active)
 - [Plugin: DiscretionaryDiscountSetHeader (Write)](#1023-discretionarydiscountsetheader)
 - [Plugin: ManualDiscountKill (Read)](#1040-manualdiscountkill)
 - [Plugin: OpportunityClone (Read)](#1044-opportunityclone)
@@ -4738,7 +4751,7 @@ Alphabetical field index -- 340 unique fields referenced.
 #### productid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > general > sales order detail information](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > general > sales order detail information](#21-salesorderdetail---main---active)
 - [View: All Order Products](#31-all-order-products)
 - [View: All Order Products (Sort)](#31-all-order-products)
 - [View: Related Order Products](#32-related-order-products)
@@ -4805,7 +4818,7 @@ Alphabetical field index -- 340 unique fields referenced.
 #### quantity
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > general > pricing](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > general > pricing](#21-salesorderdetail---main---active)
 - [View: All Order Products](#31-all-order-products)
 - [View: Related Order Products](#32-related-order-products)
 - [Report: PackingSlipSubReport > OrderLines (Select)](#51-packingslipsubreport)
@@ -4831,17 +4844,17 @@ Alphabetical field index -- 340 unique fields referenced.
 #### quantitybackordered
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > Delivery > Fulfillment](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > Delivery > Fulfillment](#21-salesorderdetail---main---active)
 
 #### quantitycancelled
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > Delivery > Fulfillment](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > Delivery > Fulfillment](#21-salesorderdetail---main---active)
 
 #### quantityshipped
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > Delivery > Fulfillment](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > Delivery > Fulfillment](#21-salesorderdetail---main---active)
 
 #### queryentitytype
 
@@ -4942,7 +4955,7 @@ Alphabetical field index -- 340 unique fields referenced.
 #### requestdeliveryby
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail > Kaplan Process > Section](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > Kaplan Process > Section](#21-salesorderdetail---main---active)
 - [Plugin: OrderSplit (Write)](#1056-ordersplit)
 
 #### roleid
@@ -4964,23 +4977,23 @@ Alphabetical field index -- 340 unique fields referenced.
 
 #### rolluprulestep1_1
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 
 #### rolluprulestep1_2
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 
 #### rolluprulestep1_3
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 
 #### rolluprulestep1_4
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 
 #### rolluprulestep1_5
 
-- [Formula: azt_discretionarydiscount](#9-formulas-rollups)
+- [Formula: azt_discretionarydiscount](#9-formulas-and-rollups)
 
 #### salesorderdetailid
 
@@ -5008,7 +5021,7 @@ Alphabetical field index -- 340 unique fields referenced.
 #### salesorderid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: SalesOrderDetail (Header)](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail (Header)](#21-salesorderdetail---main---active)
 - [Report: PackingSlipSubReport > OrderLines (Filter)](#51-packingslipsubreport)
 - [Plugin: CompGoalCreate (Read)](#1018-compgoalcreate)
 - [Plugin: CreateSoftwareLicenses (Read)](#1021-createsoftwarelicenses)
@@ -5036,7 +5049,7 @@ Alphabetical field index -- 340 unique fields referenced.
 
 #### shipments
 
-- [Form: SalesOrderDetail > Shipments > delivery information](#21-salesorderdetail-main-active)
+- [Form: SalesOrderDetail > Shipments > delivery information](#21-salesorderdetail---main---active)
 
 #### shippingmethodcode
 

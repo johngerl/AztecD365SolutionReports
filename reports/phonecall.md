@@ -1,11 +1,24 @@
 # Phonecall Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | phonecall |
+| **Display Name** | Phone Call |
+| **Description** | Activity to track a telephone call. |
+| **Object Type** | Standard |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 214108 |
+| **Last Update** | 2026-03-21 01:27:28 |
+| **Primary ID Field** | phonecallid |
+| **Primary Name Field** | None |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Phone Call (main) -- Active](#21-phone-call-main-active)
+  - [2.1. Phone Call - main - Active](#21-phone-call---main---active)
 - [3. Views](#3-views)
   - [3.1. Completed CR Team Phonecalls](#31-completed-cr-team-phonecalls)
   - [3.2. FSR Phone Calls This Month](#32-fsr-phone-calls-this-month)
@@ -103,7 +116,7 @@
   - [8.5. azt_orderlibrary](#85-azt_orderlibrary)
   - [8.6. azt_phonecalllibrary](#86-azt_phonecalllibrary)
   - [8.7. azt_quotelibrary](#87-azt_quotelibrary)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -189,7 +202,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -238,7 +251,7 @@ Total fields: **31**
 
 Total forms: **1**
 
-### 2.1. Phone Call (main) -- Active
+### 2.1. Phone Call - main - Active
 
 - **Form ID:** `{a91390a5-99bb-4d10-9eee-3a5c87f841f1}`
 - **Presentation:** UCI/Tablet
@@ -1762,7 +1775,7 @@ Total JS files referencing Phonecall fields: **7**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Phonecall: **0**
 
@@ -3955,7 +3968,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -4277,7 +4290,7 @@ Alphabetical field index -- 324 unique fields referenced.
 
 #### accessteam
 
-- [Form: Phone Call > phonecall > Access Team](#21-phone-call-main-active)
+- [Form: Phone Call > phonecall > Access Team](#21-phone-call---main---active)
 
 #### accountid
 
@@ -4429,7 +4442,7 @@ Alphabetical field index -- 324 unique fields referenced.
 #### azt_addtocrtqueue
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Phone Call > phonecall > Auto-Create Callback](#21-phone-call-main-active)
+- [Form: Phone Call > phonecall > Auto-Create Callback](#21-phone-call---main---active)
 - [JS: azt_phonecalllibrary > setAutoCallbackVisibility()](#86-azt_phonecalllibrary)
 - [Plugin: PhonecallCreateCallback (Read)](#1059-phonecallcreatecallback)
 
@@ -4470,7 +4483,7 @@ Alphabetical field index -- 324 unique fields referenced.
 #### azt_autocreatecallback
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Phone Call > phonecall > Auto-Create Callback](#21-phone-call-main-active)
+- [Form: Phone Call > phonecall > Auto-Create Callback](#21-phone-call---main---active)
 - [JS: azt_phonecalllibrary > setAutoCallbackVisibility()](#86-azt_phonecalllibrary)
 - [Plugin: PhonecallCreateCallback (Read)](#1059-phonecallcreatecallback)
 
@@ -4491,14 +4504,14 @@ Alphabetical field index -- 324 unique fields referenced.
 #### azt_callbackin
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Phone Call > phonecall > Auto-Create Callback](#21-phone-call-main-active)
+- [Form: Phone Call > phonecall > Auto-Create Callback](#21-phone-call---main---active)
 - [JS: azt_phonecalllibrary > setAutoCallbackVisibility()](#86-azt_phonecalllibrary)
 - [Plugin: PhonecallCreateCallback (Read)](#1059-phonecallcreatecallback)
 
 #### azt_callbackon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Phone Call > phonecall > Auto-Create Callback](#21-phone-call-main-active)
+- [Form: Phone Call > phonecall > Auto-Create Callback](#21-phone-call---main---active)
 - [JS: azt_phonecalllibrary > setAutoCallbackVisibility()](#86-azt_phonecalllibrary)
 - [Plugin: PhonecallCreateCallback (Read)](#1059-phonecallcreatecallback)
 
@@ -4558,14 +4571,14 @@ Alphabetical field index -- 324 unique fields referenced.
 #### azt_copydescription
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Phone Call > phonecall > Auto-Create Callback](#21-phone-call-main-active)
+- [Form: Phone Call > phonecall > Auto-Create Callback](#21-phone-call---main---active)
 - [JS: azt_phonecalllibrary > setAutoCallbackVisibility()](#86-azt_phonecalllibrary)
 - [Plugin: PhonecallCreateCallback (Read)](#1059-phonecallcreatecallback)
 
 #### azt_copysubject
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Phone Call > phonecall > Auto-Create Callback](#21-phone-call-main-active)
+- [Form: Phone Call > phonecall > Auto-Create Callback](#21-phone-call---main---active)
 - [JS: azt_phonecalllibrary > setAutoCallbackVisibility()](#86-azt_phonecalllibrary)
 - [Plugin: PhonecallCreateCallback (Read)](#1059-phonecallcreatecallback)
 
@@ -4741,7 +4754,7 @@ Alphabetical field index -- 324 unique fields referenced.
 #### azt_historicalowner
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Phone Call (Footer)](#21-phone-call-main-active)
+- [Form: Phone Call (Footer)](#21-phone-call---main---active)
 - [Workflow: CloneAndDeleteQuote (Write)](#714-cloneanddeletequote)
 - [Workflow: CloneOpportunity (Write)](#716-cloneopportunity)
 
@@ -5208,7 +5221,7 @@ Alphabetical field index -- 324 unique fields referenced.
 #### azt_recordownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Phone Call > phonecall > general information](#21-phone-call-main-active)
+- [Form: Phone Call > phonecall > general information](#21-phone-call---main---active)
 - [View: FSR Phone Calls This Month](#32-fsr-phone-calls-this-month)
 - [View: FSR Phone Calls This Week](#34-fsr-phone-calls-this-week)
 - [View: FSR Phone Calls This Week (Sort)](#34-fsr-phone-calls-this-week)
@@ -5307,7 +5320,7 @@ Alphabetical field index -- 324 unique fields referenced.
 #### azt_result
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Phone Call > phonecall > general information](#21-phone-call-main-active)
+- [Form: Phone Call > phonecall > general information](#21-phone-call---main---active)
 - [Plugin: LeadImport (Write)](#1036-leadimport)
 
 #### azt_saas
@@ -6003,7 +6016,7 @@ Alphabetical field index -- 324 unique fields referenced.
 #### phonenumber
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Phone Call > phonecall > general information](#21-phone-call-main-active)
+- [Form: Phone Call > phonecall > general information](#21-phone-call---main---active)
 - [View: Completed CR Team Phonecalls](#31-completed-cr-team-phonecalls)
 - [View: My Open Phonecalls](#39-my-open-phonecalls)
 - [View: Pending CR Team Phonecalls](#310-pending-cr-team-phonecalls)
@@ -6433,8 +6446,8 @@ Alphabetical field index -- 324 unique fields referenced.
 #### subject
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Phone Call > tab_ci_call_summary > tab_ci_section_call_summary](#21-phone-call-main-active)
-- [Form: Phone Call > tab_ci_notes > tab_ci_section_notes](#21-phone-call-main-active)
+- [Form: Phone Call > tab_ci_call_summary > tab_ci_section_call_summary](#21-phone-call---main---active)
+- [Form: Phone Call > tab_ci_notes > tab_ci_section_notes](#21-phone-call---main---active)
 - [View: Completed CR Team Phonecalls](#31-completed-cr-team-phonecalls)
 - [View: FSR Phone Calls This Month](#32-fsr-phone-calls-this-month)
 - [View: FSR Phone Calls This Month (Sort)](#32-fsr-phone-calls-this-month)

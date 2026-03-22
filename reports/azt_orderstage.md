@@ -1,13 +1,26 @@
 # Azt_orderstage Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_orderstage |
+| **Display Name** | Order Stage |
+| **Description** |  |
+| **Object Type** | Custom |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 86799 |
+| **Last Update** | 2026-03-20 19:01:41 |
+| **Primary ID Field** | azt_orderstageid |
+| **Primary Name Field** | azt_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (card) -- Active](#21-information-card-active)
-  - [2.2. Order Stage (main) -- Active](#22-order-stage-main-active)
-  - [2.3. Information (quick) -- Active](#23-information-quick-active)
+  - [2.1. Information - card - Active](#21-information---card---active)
+  - [2.2. Order Stage - main - Active](#22-order-stage---main---active)
+  - [2.3. Information - quick - Active](#23-information---quick---active)
 - [3. Views](#3-views)
   - [3.1. Active Order Stages](#31-active-order-stages)
   - [3.2. Inactive Order Stages](#32-inactive-order-stages)
@@ -85,7 +98,7 @@
   - [8.4. azt_paymentlibrary](#84-azt_paymentlibrary)
   - [8.5. azt_productdiscountlibrary](#85-azt_productdiscountlibrary)
   - [8.6. azt_splitallocation](#86-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -171,7 +184,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -212,7 +225,7 @@ Total fields: **23**
 
 Total forms: **3**
 
-### 2.1. Information (card) -- Active
+### 2.1. Information - card - Active
 
 - **Form ID:** `{7934d714-231d-40e8-b0ab-e9fc34cceb53}`
 - **Presentation:** UCI/Tablet
@@ -241,7 +254,7 @@ Total forms: **3**
 | [ownerid](#ownerid) | Owner | No | Yes |
 | [createdon](#createdon) | Created On | No | Yes |
 
-### 2.2. Order Stage (main) -- Active
+### 2.2. Order Stage - main - Active
 
 - **Form ID:** `{27af2f5a-d4c5-4068-8235-15315fed6e7e}`
 - **Presentation:** UCI/Tablet
@@ -277,7 +290,7 @@ Total forms: **3**
 | [azt_name](#azt_name) | Name | No | Yes |
 | [ownerid](#ownerid) | Owner | No | Yes |
 
-### 2.3. Information (quick) -- Active
+### 2.3. Information - quick - Active
 
 - **Form ID:** `{0299fa7c-9771-4856-a180-a4619980c88b}`
 - **Presentation:** UCI/Tablet
@@ -1305,7 +1318,7 @@ Total JS files referencing Azt_orderstage fields: **6**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_orderstage: **0**
 
@@ -3471,7 +3484,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -3881,8 +3894,8 @@ Alphabetical field index -- 327 unique fields referenced.
 #### azt_activestageid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Order Stage (Header)](#22-order-stage-main-active)
-- [Form: Order Stage > General > General](#22-order-stage-main-active)
+- [Form: Order Stage (Header)](#22-order-stage---main---active)
+- [Form: Order Stage > General > General](#22-order-stage---main---active)
 - [View: Related Order Stages](#38-related-order-stages)
 - [Workflow: Order-CreateOrderStageTracking (Write)](#734-order-createorderstagetracking)
 - [Relationship: azt_processstage_azt_orderstage](#12-relationships)
@@ -3904,7 +3917,7 @@ Alphabetical field index -- 327 unique fields referenced.
 #### azt_ageendedstage
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Order Stage > General > General](#22-order-stage-main-active)
+- [Form: Order Stage > General > General](#22-order-stage---main---active)
 - [Plugin: OrderStageTracking (Write)](#1057-orderstagetracking)
 
 #### azt_allocatedtoid
@@ -3970,7 +3983,7 @@ Alphabetical field index -- 327 unique fields referenced.
 #### azt_changinguserid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Order Stage > General > General](#22-order-stage-main-active)
+- [Form: Order Stage > General > General](#22-order-stage---main---active)
 - [View: Related Order Stages](#38-related-order-stages)
 - [Workflow: Order-CreateOrderStageTracking (Write)](#734-order-createorderstagetracking)
 - [Relationship: azt_systemuser_azt_orderstage](#12-relationships)
@@ -4052,7 +4065,7 @@ Alphabetical field index -- 327 unique fields referenced.
 #### azt_dateexitedstage
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Order Stage > General > General](#22-order-stage-main-active)
+- [Form: Order Stage > General > General](#22-order-stage---main---active)
 - [View: Related Order Stages](#38-related-order-stages)
 - [Plugin: OrderStageTracking (Write)](#1057-orderstagetracking)
 
@@ -4354,9 +4367,9 @@ Alphabetical field index -- 327 unique fields referenced.
 #### azt_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Details](#21-information-card-active)
-- [Form: Order Stage > Administration > Section](#22-order-stage-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Details](#21-information---card---active)
+- [Form: Order Stage > Administration > Section](#22-order-stage---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Active Order Stages](#31-active-order-stages)
 - [View: Active Order Stages (Sort)](#31-active-order-stages)
 - [View: Inactive Order Stages](#32-inactive-order-stages)
@@ -4462,8 +4475,8 @@ Alphabetical field index -- 327 unique fields referenced.
 #### azt_orderid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Order Stage (Header)](#22-order-stage-main-active)
-- [Form: Order Stage > General > General](#22-order-stage-main-active)
+- [Form: Order Stage (Header)](#22-order-stage---main---active)
+- [Form: Order Stage > General > General](#22-order-stage---main---active)
 - [Workflow: CloneCompGoal (Write)](#714-clonecompgoal)
 - [Workflow: Order-CreateOrderStageTracking (Write)](#734-order-createorderstagetracking)
 - [Plugin: CompGoalCreate (Write)](#1018-compgoalcreate)
@@ -4968,9 +4981,9 @@ Alphabetical field index -- 327 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
-- [Form: Order Stage (Header)](#22-order-stage-main-active)
-- [Form: Order Stage > General > General](#22-order-stage-main-active)
+- [Form: Information > general > Footer](#21-information---card---active)
+- [Form: Order Stage (Header)](#22-order-stage---main---active)
+- [Form: Order Stage > General > General](#22-order-stage---main---active)
 - [View: Active Order Stages](#31-active-order-stages)
 - [View: Inactive Order Stages](#32-inactive-order-stages)
 - [View: Order Stage Advanced Find View](#34-order-stage-advanced-find-view)
@@ -5375,9 +5388,9 @@ Alphabetical field index -- 327 unique fields referenced.
 #### ownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
-- [Form: Order Stage > Administration > Section](#22-order-stage-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Footer](#21-information---card---active)
+- [Form: Order Stage > Administration > Section](#22-order-stage---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: My Order Stages (Filter)](#33-my-order-stages)
 - [Workflow: AllocationsAssigntoTeam (Read)](#73-allocationsassigntoteam)
 - [Workflow: AppointmentAuto-Assign (Read)](#74-appointmentauto-assign)
@@ -5837,7 +5850,7 @@ Alphabetical field index -- 327 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Header](#21-information-card-active)
+- [Form: Information > general > Header](#21-information---card---active)
 - [Workflow: BatchCreateEngagements (Write)](#76-batchcreateengagements)
 - [Workflow: CloneOrder (Write)](#717-cloneorder)
 - [Workflow: EmailDeleteSendQuoteDrafts (Read)](#724-emaildeletesendquotedrafts)

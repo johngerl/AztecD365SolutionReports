@@ -1,13 +1,26 @@
 # Azt_leadsource Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_leadsource |
+| **Display Name** | Lead Source |
+| **Description** |  |
+| **Object Type** | Custom |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 293 |
+| **Last Update** | 2026-02-02 15:18:17 |
+| **Primary ID Field** | azt_leadsourceid |
+| **Primary Name Field** | azt_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (card) -- Active](#21-information-card-active)
-  - [2.2. Lead Source (main) -- Active](#22-lead-source-main-active)
-  - [2.3. Information (quick) -- Active](#23-information-quick-active)
+  - [2.1. Information - card - Active](#21-information---card---active)
+  - [2.2. Lead Source - main - Active](#22-lead-source---main---active)
+  - [2.3. Information - quick - Active](#23-information---quick---active)
 - [3. Views](#3-views)
   - [3.1. Active Lead Sources](#31-active-lead-sources)
   - [3.2. Inactive Lead Sources](#32-inactive-lead-sources)
@@ -87,7 +100,7 @@
   - [8.4. azt_paymentlibrary](#84-azt_paymentlibrary)
   - [8.5. azt_productdiscountlibrary](#85-azt_productdiscountlibrary)
   - [8.6. azt_splitallocation](#86-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -173,7 +186,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -210,7 +223,7 @@ Total fields: **19**
 
 Total forms: **3**
 
-### 2.1. Information (card) -- Active
+### 2.1. Information - card - Active
 
 - **Form ID:** `{6c1373ee-8f33-4e84-9612-a2e1cfe2a8bf}`
 - **Presentation:** UCI/Tablet
@@ -239,7 +252,7 @@ Total forms: **3**
 | [ownerid](#ownerid) | Owner | No | Yes |
 | [createdon](#createdon) | Created On | No | Yes |
 
-### 2.2. Lead Source (main) -- Active
+### 2.2. Lead Source - main - Active
 
 - **Form ID:** `{01bacce6-76d5-4430-9b2a-08b1d8c14a21}`
 - **Presentation:** UCI/Tablet
@@ -262,7 +275,7 @@ Total forms: **3**
 | [new_description](#new_description) | Description | No | Yes |
 | [ownerid](#ownerid) | Owner | No | Yes |
 
-### 2.3. Information (quick) -- Active
+### 2.3. Information - quick - Active
 
 - **Form ID:** `{3f46c99c-a975-4c66-aabf-f81aad5a01a5}`
 - **Presentation:** UCI/Tablet
@@ -1299,7 +1312,7 @@ Total JS files referencing Azt_leadsource fields: **6**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_leadsource: **0**
 
@@ -3466,7 +3479,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -4349,9 +4362,9 @@ Alphabetical field index -- 326 unique fields referenced.
 #### azt_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Details](#21-information-card-active)
-- [Form: Lead Source > General > General](#22-lead-source-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Details](#21-information---card---active)
+- [Form: Lead Source > General > General](#22-lead-source---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Active Lead Sources](#31-active-lead-sources)
 - [View: Active Lead Sources (Sort)](#31-active-lead-sources)
 - [View: Inactive Lead Sources](#32-inactive-lead-sources)
@@ -4949,7 +4962,7 @@ Alphabetical field index -- 326 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
+- [Form: Information > general > Footer](#21-information---card---active)
 - [View: Active Lead Sources](#31-active-lead-sources)
 - [View: Inactive Lead Sources](#32-inactive-lead-sources)
 - [View: Lead Source Advanced Find View](#33-lead-source-advanced-find-view)
@@ -5280,7 +5293,7 @@ Alphabetical field index -- 326 unique fields referenced.
 #### new_description
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Lead Source > General > General](#22-lead-source-main-active)
+- [Form: Lead Source > General > General](#22-lead-source---main---active)
 - [View: Active Lead Sources](#31-active-lead-sources)
 
 #### objectid
@@ -5358,9 +5371,9 @@ Alphabetical field index -- 326 unique fields referenced.
 #### ownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
-- [Form: Lead Source > General > General](#22-lead-source-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Footer](#21-information---card---active)
+- [Form: Lead Source > General > General](#22-lead-source---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: My Lead Sources (Filter)](#36-my-lead-sources)
 - [Workflow: AllocationsAssigntoTeam (Read)](#73-allocationsassigntoteam)
 - [Workflow: AppointmentAuto-Assign (Read)](#74-appointmentauto-assign)
@@ -5775,7 +5788,7 @@ Alphabetical field index -- 326 unique fields referenced.
 #### statecode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Lead Source (Header)](#22-lead-source-main-active)
+- [Form: Lead Source (Header)](#22-lead-source---main---active)
 - [View: Active Lead Sources (Filter)](#31-active-lead-sources)
 - [View: Inactive Lead Sources (Filter)](#32-inactive-lead-sources)
 - [View: Lead Source Associated View (Filter)](#34-lead-source-associated-view)
@@ -5821,8 +5834,8 @@ Alphabetical field index -- 326 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Header](#21-information-card-active)
-- [Form: Lead Source (Header)](#22-lead-source-main-active)
+- [Form: Information > general > Header](#21-information---card---active)
+- [Form: Lead Source (Header)](#22-lead-source---main---active)
 - [Workflow: BatchCreateEngagements (Write)](#76-batchcreateengagements)
 - [Workflow: CloneOrder (Write)](#718-cloneorder)
 - [Workflow: EmailDeleteSendQuoteDrafts (Read)](#725-emaildeletesendquotedrafts)

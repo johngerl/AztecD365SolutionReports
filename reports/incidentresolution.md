@@ -1,18 +1,31 @@
 # Incidentresolution Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | incidentresolution |
+| **Display Name** |  |
+| **Description** |  |
+| **Object Type** | Standard |
+| **Ownership Type** |  |
+| **Audit Enabled** | False |
+| **Total Rows** | 20574 |
+| **Last Update** | 2026-03-19 20:06:25 |
+| **Primary ID Field** | incidentresolutionid |
+| **Primary Name Field** | None |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (main) -- Active](#21-information-main-active)
+  - [2.1. Information - main - Active](#21-information---main---active)
 - [3. Views](#3-views)
 - [4. Chart Visualizations](#4-chart-visualizations)
 - [5. Reports](#5-reports)
 - [6. Dashboards](#6-dashboards)
 - [7. Workflows](#7-workflows)
 - [8. JavaScript Web Resources](#8-javascript-web-resources)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -98,7 +111,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -132,7 +145,7 @@ Total fields: **16**
 
 Total forms: **1**
 
-### 2.1. Information (main) -- Active
+### 2.1. Information - main - Active
 
 - **Form ID:** `{74d16ac1-ff56-46ac-a0ae-1102197649c3}`
 - **Presentation:** Classic
@@ -191,7 +204,7 @@ Total JS files referencing Incidentresolution fields: **0**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Incidentresolution: **0**
 
@@ -2349,7 +2362,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -3798,7 +3811,7 @@ Alphabetical field index -- 318 unique fields referenced.
 #### customers
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > information](#21-information-main-active)
+- [Form: Information > general > information](#21-information---main---active)
 
 #### datefulfilled
 
@@ -4407,7 +4420,7 @@ Alphabetical field index -- 318 unique fields referenced.
 #### regardingobjectid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information (Header)](#21-information-main-active)
+- [Form: Information (Header)](#21-information---main---active)
 - [Plugin: AccountReassignmentShareRecords (Filter)](#104-accountreassignmentsharerecords)
 - [Plugin: ActivityRegardingGetState (Read)](#109-activityregardinggetstate)
 - [Plugin: OpportunityLastActivityDate (Read)](#1045-opportunitylastactivitydate)
@@ -4424,7 +4437,7 @@ Alphabetical field index -- 318 unique fields referenced.
 #### resolutiontypecode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > information](#21-information-main-active)
+- [Form: Information > general > information](#21-information---main---active)
 
 #### roleid
 

@@ -1,13 +1,26 @@
 # Azt_productdiscount Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_productdiscount |
+| **Display Name** | Product Discount |
+| **Description** |  |
+| **Object Type** | Custom |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 25957 |
+| **Last Update** | 2026-03-21 00:54:34 |
+| **Primary ID Field** | azt_productdiscountid |
+| **Primary Name Field** | azt_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (card) -- Active](#21-information-card-active)
-  - [2.2. Discount (main) -- Active](#22-discount-main-active)
-  - [2.3. Information (quick) -- Active](#23-information-quick-active)
+  - [2.1. Information - card - Active](#21-information---card---active)
+  - [2.2. Discount - main - Active](#22-discount---main---active)
+  - [2.3. Information - quick - Active](#23-information---quick---active)
 - [3. Views](#3-views)
   - [3.1. Active Product Discounts](#31-active-product-discounts)
   - [3.2. Discounts Pending Approval](#32-discounts-pending-approval)
@@ -90,7 +103,7 @@
   - [8.4. azt_paymentlibrary](#84-azt_paymentlibrary)
   - [8.5. azt_productdiscountlibrary](#85-azt_productdiscountlibrary)
   - [8.6. azt_splitallocation](#86-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -176,7 +189,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -223,7 +236,7 @@ Total fields: **29**
 
 Total forms: **3**
 
-### 2.1. Information (card) -- Active
+### 2.1. Information - card - Active
 
 - **Form ID:** `{3d6130ba-3906-455f-bb11-67969c1dee52}`
 - **Presentation:** UCI/Tablet
@@ -252,7 +265,7 @@ Total forms: **3**
 | [ownerid](#ownerid) | Owner | No | Yes |
 | [createdon](#createdon) | Created On | No | Yes |
 
-### 2.2. Discount (main) -- Active
+### 2.2. Discount - main - Active
 
 - **Form ID:** `{052dbdc4-e8af-484b-8992-1a93ab965876}`
 - **Presentation:** UCI/Tablet
@@ -304,7 +317,7 @@ Total forms: **3**
 | onload |  | `setName` | `azt_productdiscountlibrary` | true |
 | onchange | ownerid | `setName` | `azt_productdiscountlibrary` | true |
 
-### 2.3. Information (quick) -- Active
+### 2.3. Information - quick - Active
 
 - **Form ID:** `{e5e881bf-93b0-48ee-b610-941438811c75}`
 - **Presentation:** UCI/Tablet
@@ -1476,7 +1489,7 @@ Total JS files referencing Azt_productdiscount fields: **6**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_productdiscount: **0**
 
@@ -3646,7 +3659,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -3965,7 +3978,7 @@ Alphabetical field index -- 328 unique fields referenced.
 
 #### accessteam
 
-- [Form: Discount > Administration > Section](#22-discount-main-active)
+- [Form: Discount > Administration > Section](#22-discount---main---active)
 
 #### accountid
 
@@ -4101,7 +4114,7 @@ Alphabetical field index -- 328 unique fields referenced.
 #### azt_approvalstatus
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Discount > General > General](#22-discount-main-active)
+- [Form: Discount > General > General](#22-discount---main---active)
 - [View: Active Product Discounts](#31-active-product-discounts)
 - [View: Discounts Pending Approval (Filter)](#32-discounts-pending-approval)
 - [View: Inactive Product Discounts](#33-inactive-product-discounts)
@@ -4204,7 +4217,7 @@ Alphabetical field index -- 328 unique fields referenced.
 #### azt_customerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Discount > Administration > Section](#22-discount-main-active)
+- [Form: Discount > Administration > Section](#22-discount---main---active)
 - [Workflow: PrintPurchaseAssigntoTeam (Read)](#740-printpurchaseassigntoteam)
 - [Plugin: CloneExpenseLine (Read)](#1017-cloneexpenseline)
 - [Plugin: CloneExpenseLine (Write)](#1017-cloneexpenseline)
@@ -4233,8 +4246,8 @@ Alphabetical field index -- 328 unique fields referenced.
 #### azt_discountamount
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Discount (Header)](#22-discount-main-active)
-- [Form: Discount > General > General](#22-discount-main-active)
+- [Form: Discount (Header)](#22-discount---main---active)
+- [Form: Discount > General > General](#22-discount---main---active)
 - [View: Active Product Discounts](#31-active-product-discounts)
 - [View: Discounts Pending Approval](#32-discounts-pending-approval)
 - [View: Inactive Product Discounts](#33-inactive-product-discounts)
@@ -4405,7 +4418,7 @@ Alphabetical field index -- 328 unique fields referenced.
 #### azt_invoiceproductid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Discount > Administration > Section](#22-discount-main-active)
+- [Form: Discount > Administration > Section](#22-discount---main---active)
 - [View: Active Product Discounts](#31-active-product-discounts)
 - [View: Discounts Pending Approval](#32-discounts-pending-approval)
 - [View: Inactive Product Discounts](#33-inactive-product-discounts)
@@ -4547,9 +4560,9 @@ Alphabetical field index -- 328 unique fields referenced.
 #### azt_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Details](#21-information-card-active)
-- [Form: Discount > Administration > Section](#22-discount-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Details](#21-information---card---active)
+- [Form: Discount > Administration > Section](#22-discount---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Active Product Discounts](#31-active-product-discounts)
 - [View: Active Product Discounts (Sort)](#31-active-product-discounts)
 - [View: Discounts Pending Approval](#32-discounts-pending-approval)
@@ -4636,8 +4649,8 @@ Alphabetical field index -- 328 unique fields referenced.
 #### azt_opportunityid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Discount (Header)](#22-discount-main-active)
-- [Form: Discount > General > General](#22-discount-main-active)
+- [Form: Discount (Header)](#22-discount---main---active)
+- [Form: Discount > General > General](#22-discount---main---active)
 - [View: Active Product Discounts](#31-active-product-discounts)
 - [Plugin: CreateCompGoals (Write)](#1020-createcompgoals)
 - [Plugin: DiscretionaryDiscountSetHeader (Read)](#1023-discretionarydiscountsetheader)
@@ -4651,7 +4664,7 @@ Alphabetical field index -- 328 unique fields referenced.
 #### azt_opportunityproductid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Discount > Administration > Section](#22-discount-main-active)
+- [Form: Discount > Administration > Section](#22-discount---main---active)
 - [View: Active Product Discounts](#31-active-product-discounts)
 - [View: Discounts Pending Approval](#32-discounts-pending-approval)
 - [View: Inactive Product Discounts](#33-inactive-product-discounts)
@@ -4692,7 +4705,7 @@ Alphabetical field index -- 328 unique fields referenced.
 #### azt_orderproductid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Discount > Administration > Section](#22-discount-main-active)
+- [Form: Discount > Administration > Section](#22-discount---main---active)
 - [View: Active Product Discounts](#31-active-product-discounts)
 - [View: Discounts Pending Approval](#32-discounts-pending-approval)
 - [View: Inactive Product Discounts](#33-inactive-product-discounts)
@@ -4896,7 +4909,7 @@ Alphabetical field index -- 328 unique fields referenced.
 #### azt_quoteproductid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Discount > Administration > Section](#22-discount-main-active)
+- [Form: Discount > Administration > Section](#22-discount---main---active)
 - [View: Active Product Discounts](#31-active-product-discounts)
 - [View: Discounts Pending Approval](#32-discounts-pending-approval)
 - [View: Inactive Product Discounts](#33-inactive-product-discounts)
@@ -5201,7 +5214,7 @@ Alphabetical field index -- 328 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
+- [Form: Information > general > Footer](#21-information---card---active)
 - [View: Active Product Discounts](#31-active-product-discounts)
 - [View: Discounts Pending Approval](#32-discounts-pending-approval)
 - [View: Discounts Pending Approval (Sort)](#32-discounts-pending-approval)
@@ -5610,10 +5623,10 @@ Alphabetical field index -- 328 unique fields referenced.
 #### ownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
-- [Form: Discount (Header)](#22-discount-main-active)
-- [Form: Discount > Administration > Section](#22-discount-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Footer](#21-information---card---active)
+- [Form: Discount (Header)](#22-discount---main---active)
+- [Form: Discount > Administration > Section](#22-discount---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: My Product Discounts (Filter)](#34-my-product-discounts)
 - [View: Quick Find Active Product Discounts (Filter)](#39-quick-find-active-product-discounts)
 - [Workflow: AllocationsAssigntoTeam (Read)](#73-allocationsassigntoteam)
@@ -6074,7 +6087,7 @@ Alphabetical field index -- 328 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Header](#21-information-card-active)
+- [Form: Information > general > Header](#21-information---card---active)
 - [Workflow: BatchCreateEngagements (Write)](#76-batchcreateengagements)
 - [Workflow: CloneOrder (Write)](#718-cloneorder)
 - [Workflow: EmailDeleteSendQuoteDrafts (Read)](#725-emaildeletesendquotedrafts)

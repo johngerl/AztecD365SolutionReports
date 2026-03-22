@@ -1,13 +1,26 @@
 # Azt_engagementresearch Field Usage Analysis
 > Date: 2026-03-21
 
+| Property | Value |
+|---|---|
+| **Entity Name** | azt_engagementresearch |
+| **Display Name** | Engagement Research |
+| **Description** | Specifies what type of research is done for an Engagement |
+| **Object Type** | Custom |
+| **Ownership Type** | UserOwned |
+| **Audit Enabled** | False |
+| **Total Rows** | 7896 |
+| **Last Update** | 2025-06-13 19:12:37 |
+| **Primary ID Field** | azt_engagementresearchid |
+| **Primary Name Field** | azt_name |
+
 ## Table of Contents
 
 - [1. Field Definitions](#1-field-definitions)
 - [2. Forms](#2-forms)
-  - [2.1. Information (card) -- Active](#21-information-card-active)
-  - [2.2. Research (main) -- Active](#22-research-main-active)
-  - [2.3. Information (quick) -- Active](#23-information-quick-active)
+  - [2.1. Information - card - Active](#21-information---card---active)
+  - [2.2. Research - main - Active](#22-research---main---active)
+  - [2.3. Information - quick - Active](#23-information---quick---active)
 - [3. Views](#3-views)
   - [3.1. Active Engagement Researches](#31-active-engagement-researches)
   - [3.2. Engagement Research Advanced Find View](#32-engagement-research-advanced-find-view)
@@ -85,7 +98,7 @@
   - [8.4. azt_paymentlibrary](#84-azt_paymentlibrary)
   - [8.5. azt_productdiscountlibrary](#85-azt_productdiscountlibrary)
   - [8.6. azt_splitallocation](#86-azt_splitallocation)
-- [9. Formulas & Rollups](#9-formulas-rollups)
+- [9. Formulas and Rollups](#9-formulas-and-rollups)
 - [10. Plugin Source Code Analysis](#10-plugin-source-code-analysis)
   - [10.1. AccountAutoAssign](#101-accountautoassign)
   - [10.2. AccountLeadGen](#102-accountleadgen)
@@ -171,7 +184,7 @@
 - [11. PCF Controls](#11-pcf-controls)
 - [12. Relationships](#12-relationships)
 - [13. Ribbon Customizations](#13-ribbon-customizations)
-- [14. Conflicts & Observations](#14-conflicts-observations)
+- [14. Conflicts and Observations](#14-conflicts-and-observations)
 - [Index](#index)
 
 ---
@@ -209,7 +222,7 @@ Total fields: **20**
 
 Total forms: **3**
 
-### 2.1. Information (card) -- Active
+### 2.1. Information - card - Active
 
 - **Form ID:** `{5e845850-a679-4c1e-86a5-7d8dedc6afc7}`
 - **Presentation:** UCI/Tablet
@@ -238,7 +251,7 @@ Total forms: **3**
 | [ownerid](#ownerid) | Owner | No | Yes |
 | [createdon](#createdon) | Created On | No | Yes |
 
-### 2.2. Research (main) -- Active
+### 2.2. Research - main - Active
 
 - **Form ID:** `{a98ab3ab-0948-40cd-86d4-87eb9dd51e96}`
 - **Presentation:** UCI/Tablet
@@ -273,7 +286,7 @@ Total forms: **3**
 |-------|-------|----------|---------|
 | [ownerid](#ownerid) | Owner | No | Yes |
 
-### 2.3. Information (quick) -- Active
+### 2.3. Information - quick - Active
 
 - **Form ID:** `{d0b382c3-8920-425f-bf6d-857a15284887}`
 - **Presentation:** UCI/Tablet
@@ -1287,7 +1300,7 @@ Total JS files referencing Azt_engagementresearch fields: **6**
 
 ---
 
-## 9. Formulas & Rollups
+## 9. Formulas and Rollups
 
 Total formulas for Azt_engagementresearch: **0**
 
@@ -3451,7 +3464,7 @@ No custom ribbon actions found.
 
 ---
 
-## 14. Conflicts & Observations
+## 14. Conflicts and Observations
 
 ### 14.1 Per-Form Conflicts
 
@@ -4057,7 +4070,7 @@ Alphabetical field index -- 327 unique fields referenced.
 #### azt_engagementid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Research (Header)](#22-research-main-active)
+- [Form: Research (Header)](#22-research---main---active)
 - [Workflow: AppointmentAuto-Assign (Read)](#74-appointmentauto-assign)
 - [Workflow: EngagementRecordOwnerTeam (Read)](#727-engagementrecordownerteam)
 - [Workflow: PhonecallAuto-Assign (Read)](#737-phonecallauto-assign)
@@ -4332,9 +4345,9 @@ Alphabetical field index -- 327 unique fields referenced.
 #### azt_name
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Details](#21-information-card-active)
-- [Form: Research > General > General](#22-research-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Details](#21-information---card---active)
+- [Form: Research > General > General](#22-research---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: Active Engagement Researches](#31-active-engagement-researches)
 - [View: Active Engagement Researches (Sort)](#31-active-engagement-researches)
 - [View: Engagement Research Advanced Find View](#32-engagement-research-advanced-find-view)
@@ -4679,7 +4692,7 @@ Alphabetical field index -- 327 unique fields referenced.
 #### azt_researchsummary
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Research > General > Research Summary](#22-research-main-active)
+- [Form: Research > General > Research Summary](#22-research---main---active)
 - [View: Active Engagement Researches](#31-active-engagement-researches)
 
 #### azt_resolvedbyid
@@ -4937,7 +4950,7 @@ Alphabetical field index -- 327 unique fields referenced.
 #### createdon
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
+- [Form: Information > general > Footer](#21-information---card---active)
 - [View: Active Engagement Researches](#31-active-engagement-researches)
 - [View: Engagement Research Advanced Find View](#32-engagement-research-advanced-find-view)
 - [View: Engagement Research Associated View](#33-engagement-research-associated-view)
@@ -5340,10 +5353,10 @@ Alphabetical field index -- 327 unique fields referenced.
 #### ownerid
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Footer](#21-information-card-active)
-- [Form: Research (Header)](#22-research-main-active)
-- [Form: Research > Administration > Section](#22-research-main-active)
-- [Form: Information >  > GENERAL](#23-information-quick-active)
+- [Form: Information > general > Footer](#21-information---card---active)
+- [Form: Research (Header)](#22-research---main---active)
+- [Form: Research > Administration > Section](#22-research---main---active)
+- [Form: Information >  > GENERAL](#23-information---quick---active)
 - [View: My Engagement Researches (Filter)](#36-my-engagement-researches)
 - [Workflow: AllocationsAssigntoTeam (Read)](#73-allocationsassigntoteam)
 - [Workflow: AppointmentAuto-Assign (Read)](#74-appointmentauto-assign)
@@ -5803,7 +5816,7 @@ Alphabetical field index -- 327 unique fields referenced.
 #### statuscode
 
 - [Field Definitions](#1-field-definitions)
-- [Form: Information > general > Header](#21-information-card-active)
+- [Form: Information > general > Header](#21-information---card---active)
 - [Workflow: BatchCreateEngagements (Write)](#76-batchcreateengagements)
 - [Workflow: CloneOrder (Write)](#717-cloneorder)
 - [Workflow: EmailDeleteSendQuoteDrafts (Read)](#724-emaildeletesendquotedrafts)

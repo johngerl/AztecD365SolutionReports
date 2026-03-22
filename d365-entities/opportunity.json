@@ -6,7 +6,7 @@
   "ownershipType": "UserOwned",
   "auditEnabled": true,
   "totalRows": 53257,
-  "lastUpdate": "2026-03-21 01:27:04",
+  "lastUpdate": "2026-03-22 22:06:40",
   "primaryIdField": "opportunityid",
   "primaryNameField": "name",
   "countForms": 133,
@@ -15447,7 +15447,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Account ID",
@@ -16236,7 +16236,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "CRM Initial Opportunity Total",
@@ -16292,7 +16292,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -16370,7 +16370,7 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "2026-03-21 00:56:55",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Assigned Am",
@@ -16472,7 +16472,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Commit To Pipeline",
@@ -16577,7 +16577,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Days Since Created",
@@ -16689,7 +16689,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Days Since Probability Changed",
@@ -16805,7 +16805,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Freight Amount",
@@ -16861,7 +16861,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -16986,7 +16986,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:56:55",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Delivery Type",
@@ -17072,7 +17072,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "CRM Discretionary Discount",
@@ -17128,7 +17128,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -17594,7 +17594,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Freight Amt Approved",
@@ -17901,7 +17901,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "CRM Initial Opportunity Total",
@@ -17957,7 +17957,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -18035,7 +18035,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 21:16:46",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "CRM Internal Aztec Notes",
@@ -18181,7 +18181,7 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Cross-Sell",
@@ -18273,7 +18273,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Last Activity",
@@ -18379,7 +18379,7 @@
       ],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Last Modified By ID",
@@ -18573,7 +18573,7 @@
       ],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:56:55",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Lead Source",
@@ -18694,7 +18694,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Opportunity Summary",
@@ -19502,7 +19502,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Opportunity Type",
@@ -19588,7 +19588,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "CRM Initial Opportunity Total",
@@ -19644,7 +19644,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -19818,7 +19818,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "CRM Initial Opportunity Total",
@@ -19874,7 +19874,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -20158,7 +20158,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:56:55",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Pipeline Stage",
@@ -20377,7 +20377,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "CRM Initial Opportunity Total",
@@ -20433,7 +20433,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -20831,7 +20831,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "CRM Probability",
@@ -20952,7 +20952,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Probability Last Changed",
@@ -21037,7 +21037,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Probability Increased",
@@ -22168,7 +22168,7 @@
       ],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Record Type ID",
@@ -22335,7 +22335,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "CRM Renewal Opportunity Total",
@@ -22391,7 +22391,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -22776,7 +22776,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "CRM Win Back Opportunity Total",
@@ -22832,7 +22832,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -23062,7 +23062,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Proposal Feedback Captured",
@@ -23190,7 +23190,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Probability Number",
@@ -23261,7 +23261,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Final Proposal Ready",
@@ -23332,7 +23332,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Complete Internal Review",
@@ -23403,7 +23403,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Confirm Interest",
@@ -23724,7 +23724,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Created By ID",
@@ -24757,7 +24757,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Potential Customer",
@@ -24982,7 +24982,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Decision Maker",
@@ -25110,7 +25110,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Description",
@@ -25181,7 +25181,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Develop Proposal",
@@ -26103,7 +26103,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Expected Close Date",
@@ -26522,7 +26522,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Estimated Revenue",
@@ -26593,7 +26593,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Evaluate Fit",
@@ -26664,7 +26664,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "File Debrief",
@@ -26749,7 +26749,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Freight Amount",
@@ -26820,7 +26820,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Identify Competitors",
@@ -26891,7 +26891,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Identify Customer Contacts",
@@ -26962,7 +26962,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Identify Sales Team",
@@ -27138,7 +27138,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Revenue",
@@ -27297,7 +27297,7 @@
       ],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 18:57:42",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Partner",
@@ -27431,7 +27431,7 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Forecast Category",
@@ -28467,7 +28467,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Name",
@@ -29277,7 +29277,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "OpportunityId",
@@ -29348,7 +29348,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "OpportunityId",
@@ -29447,7 +29447,7 @@
       ],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 20:30:47",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Originating Lead",
@@ -30090,7 +30090,7 @@
           ]
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Owner ID",
@@ -30177,7 +30177,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Owning Business Unit",
@@ -30435,7 +30435,7 @@
       ],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Account ID",
@@ -30609,7 +30609,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Contact ID",
@@ -30680,7 +30680,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Present Final Proposal",
@@ -30751,7 +30751,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Presented Proposal",
@@ -30894,7 +30894,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Price List",
@@ -30965,7 +30965,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Priority",
@@ -31219,7 +31219,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "CRM Purchase Timeframe",
@@ -31290,7 +31290,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Decide Gonogo",
@@ -31503,7 +31503,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Feedback Resolved",
@@ -31630,7 +31630,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Process Code",
@@ -31701,7 +31701,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Send Thank You Note",
@@ -32367,7 +32367,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Status CRM",
@@ -32615,7 +32615,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Status",
@@ -32711,7 +32711,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "CRM Total Amount",
@@ -32782,7 +32782,7 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Total Prefreight Amount",
@@ -32853,7 +32853,7 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "CRM Total Line Item Discount Amount",
@@ -32924,7 +32924,7 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Total Tax",
@@ -33069,7 +33069,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 01:27:04",
+      "lastUpdate": "2026-03-22 22:06:40",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity",
       "sfSuggestedFieldDisplayName": "Currency",

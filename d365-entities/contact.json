@@ -6,7 +6,7 @@
   "ownershipType": "UserOwned",
   "auditEnabled": true,
   "totalRows": 92222,
-  "lastUpdate": "2026-03-22 00:58:02",
+  "lastUpdate": "2026-03-22 22:54:49",
   "primaryIdField": "contactid",
   "primaryNameField": null,
   "countForms": 48,
@@ -8318,7 +8318,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 00:58:02",
+      "lastUpdate": "2026-03-22 22:54:49",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Account ID",
@@ -8389,7 +8389,7 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "2026-03-20 21:31:00",
+      "lastUpdate": "2026-03-22 22:12:56",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Address 1 Address Type",
@@ -8503,7 +8503,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 21:31:00",
+      "lastUpdate": "2026-03-22 22:12:56",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Main Address City",
@@ -8566,7 +8566,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 21:31:00",
+      "lastUpdate": "2026-03-22 22:12:56",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Address 1",
@@ -8731,7 +8731,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 21:31:00",
+      "lastUpdate": "2026-03-22 22:12:56",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Main Address Line 1",
@@ -8892,7 +8892,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-22 00:58:02",
+      "lastUpdate": "2026-03-22 22:12:56",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Address 1 Name",
@@ -8994,7 +8994,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 21:31:00",
+      "lastUpdate": "2026-03-22 22:12:56",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Main Address Zip",
@@ -9168,7 +9168,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 21:31:00",
+      "lastUpdate": "2026-03-22 22:12:56",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Main Address Stateprovince",
@@ -9814,7 +9814,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 21:36:12",
+      "lastUpdate": "2026-03-22 22:12:56",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Dup Based On Email And Customer",
@@ -9887,7 +9887,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 21:36:12",
+      "lastUpdate": "2026-03-22 22:12:56",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Dup Based On Email No Customer",
@@ -9993,7 +9993,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 21:36:12",
+      "lastUpdate": "2026-03-22 22:12:56",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Exclude From Autoassign",
@@ -10154,7 +10154,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 21:36:12",
+      "lastUpdate": "2026-03-22 22:12:56",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Is Duplicate",
@@ -10577,7 +10577,7 @@
       ],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 21:31:00",
+      "lastUpdate": "2026-03-22 22:12:56",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Owner ID",
@@ -10818,7 +10818,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 00:58:02",
+      "lastUpdate": "2026-03-22 22:54:49",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Contact GUID",
@@ -10889,7 +10889,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 00:58:02",
+      "lastUpdate": "2026-03-22 22:54:49",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Created By ID",
@@ -11289,7 +11289,7 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "2026-03-22 00:58:02",
+      "lastUpdate": "2026-03-22 22:54:49",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Send Marketing Materials",
@@ -11442,7 +11442,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-22 00:58:02",
+      "lastUpdate": "2026-03-22 22:54:49",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Email",
@@ -11671,7 +11671,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-22 00:58:02",
+      "lastUpdate": "2026-03-22 22:54:49",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "First Name",
@@ -11893,7 +11893,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 00:58:02",
+      "lastUpdate": "2026-03-22 22:54:49",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Full Name",
@@ -12098,7 +12098,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-22 00:58:02",
+      "lastUpdate": "2026-03-22 22:54:49",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Last Name",
@@ -12396,7 +12396,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 16:52:46",
+      "lastUpdate": "2026-03-22 22:54:49",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Mobile Phone",
@@ -12548,7 +12548,7 @@
       ],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 21:31:00",
+      "lastUpdate": "2026-03-22 22:54:49",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Managing Partner",
@@ -13157,7 +13157,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 00:58:02",
+      "lastUpdate": "2026-03-22 22:54:49",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Owner ID",
@@ -13469,7 +13469,7 @@
       ],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-22 00:58:02",
+      "lastUpdate": "2026-03-22 22:54:49",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Company Name",
@@ -13611,7 +13611,7 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "2026-03-22 00:58:02",
+      "lastUpdate": "2026-03-22 22:54:49",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Preferred Time",
@@ -13899,7 +13899,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 00:58:02",
+      "lastUpdate": "2026-03-22 22:54:49",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Shipping Method",
@@ -14271,7 +14271,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 00:58:02",
+      "lastUpdate": "2026-03-22 22:54:49",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Status CRM",
@@ -14465,7 +14465,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 00:58:02",
+      "lastUpdate": "2026-03-22 22:54:49",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Status Reason",
@@ -14597,7 +14597,7 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-22 00:58:02",
+      "lastUpdate": "2026-03-22 22:54:49",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Other Phone",
@@ -14714,7 +14714,7 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 21:31:00",
+      "lastUpdate": "2026-03-22 22:54:49",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Contact",
       "sfSuggestedFieldDisplayName": "Currency",

@@ -582,7 +582,7 @@ def process_entity(entity_name, mapping_dir, sf_entity_index, d365_entities_dir,
     json_path = os.path.join(d365_entities_dir, f"{entity_name}.json")
     if not os.path.isfile(json_path):
         print(f"  ERROR: JSON not found: {json_path}")
-        return False
+        return None
 
     with open(json_path, 'r', encoding='utf-8') as f:
         entity_data = json.load(f, object_pairs_hook=OrderedDict)
@@ -692,7 +692,7 @@ def process_entity(entity_name, mapping_dir, sf_entity_index, d365_entities_dir,
     print(f"  New suggestions: {len(new_suggestions)}")
     print(f"  Total with suggestions: {len(all_suggestions)}")
 
-    return True
+    return tier_counts
 
 
 def main():
@@ -737,32 +737,48 @@ def main():
     sf_entity_index = build_sf_entity_index(SF_ENTITIES_DIR)
     print(f"    SF objects: {len(sf_entity_index)}")
 
+    total_tier_counts = defaultdict(int)
+
     if args.all:
         entities = sorted(f[:-5] for f in os.listdir(d365_dir) if f.endswith('.json'))
         print(f"\nDiscovered {len(entities)} entities in {d365_dir}.")
         success = 0
         for entity_name in entities:
-            if process_entity(entity_name, mapping_dir,
-                              sf_entity_index=sf_entity_index,
-                              d365_entities_dir=d365_dir,
-                              compat_matrix=compat_matrix,
-                              api_key=api_key):
+            result = process_entity(entity_name, mapping_dir,
+                                    sf_entity_index=sf_entity_index,
+                                    d365_entities_dir=d365_dir,
+                                    compat_matrix=compat_matrix,
+                                    api_key=api_key)
+            if result is not None:
+                for tier, count in result.items():
+                    total_tier_counts[tier] += count
                 success += 1
         print()
         print("=" * 60)
         print(f"Update complete! {success}/{len(entities)} entities processed.")
+        if total_tier_counts:
+            total = sum(total_tier_counts.values())
+            print(f"  Total suggestions: {total}")
+            for tier, count in sorted(total_tier_counts.items()):
+                print(f"    {tier}: {count}")
         print("=" * 60)
     else:
         entity_name = args.entity.lower()
-        if not process_entity(entity_name, mapping_dir,
-                              sf_entity_index=sf_entity_index,
-                              d365_entities_dir=d365_dir,
-                              compat_matrix=compat_matrix,
-                              api_key=api_key):
+        result = process_entity(entity_name, mapping_dir,
+                                sf_entity_index=sf_entity_index,
+                                d365_entities_dir=d365_dir,
+                                compat_matrix=compat_matrix,
+                                api_key=api_key)
+        if result is None:
             sys.exit(1)
         print()
         print("=" * 60)
         print("Update complete!")
+        if result:
+            total = sum(result.values())
+            print(f"  Total suggestions: {total}")
+            for tier, count in sorted(result.items()):
+                print(f"    {tier}: {count}")
         print("=" * 60)
 
 

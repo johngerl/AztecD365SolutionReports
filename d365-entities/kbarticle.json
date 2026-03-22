@@ -4128,6 +4128,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Skipped (createdon)",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -4244,7 +4245,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (createdon)",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -4259,6 +4259,7 @@
       "dataType": "ntext",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Never",
       "introducedVersion": "",
       "maxLength": 2000,
       "fieldSecurity": false,
@@ -4354,7 +4355,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Never",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -4369,6 +4369,7 @@
       "dataType": "uniqueidentifier",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "Never",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -4417,7 +4418,6 @@
       ],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "Never",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -4432,6 +4432,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Skipped (modifiedon)",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -4506,7 +4507,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (modifiedon)",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -4521,6 +4521,7 @@
       "dataType": "picklist",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "Never",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -4707,7 +4708,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Never",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -4722,6 +4722,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Never",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -4810,7 +4811,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Never",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -4825,6 +4825,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "Never",
       "introducedVersion": "",
       "maxLength": 500,
       "fieldSecurity": false,
@@ -4885,7 +4886,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Never",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -4900,6 +4900,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Never",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -5002,7 +5003,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Never",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,

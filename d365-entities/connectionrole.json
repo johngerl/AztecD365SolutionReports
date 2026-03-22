@@ -4120,6 +4120,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-21 08:50:30",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -4187,7 +4188,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 08:50:30",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -4202,6 +4202,7 @@
       "dataType": "uniqueidentifier",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2026-03-21 08:50:30",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -4276,7 +4277,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 08:50:30",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -4291,6 +4291,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Skipped (createdon)",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -4407,7 +4408,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (createdon)",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -4422,6 +4422,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-21 08:01:41",
       "introducedVersion": "",
       "maxLength": 1000,
       "fieldSecurity": false,
@@ -4517,7 +4518,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 08:01:41",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -4532,6 +4532,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Skipped (modifiedon)",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -4606,7 +4607,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (modifiedon)",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -4621,6 +4621,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2026-03-21 08:50:30",
       "introducedVersion": "",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -4828,7 +4829,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 08:50:30",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -4843,6 +4843,7 @@
       "dataType": "picklist",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2026-03-21 08:50:30",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -5029,7 +5030,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 08:50:30",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -5044,6 +5044,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-21 08:50:30",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -5132,7 +5133,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 08:50:30",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,

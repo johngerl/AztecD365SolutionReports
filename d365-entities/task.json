@@ -5577,6 +5577,7 @@
       "dataType": "uniqueidentifier",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 16:28:45",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -5703,7 +5704,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 16:28:45",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Task",
       "sfSuggestedFieldDisplayName": "Activity GUID",
@@ -5718,6 +5718,7 @@
       "dataType": "entityname",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 16:28:45",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -5778,7 +5779,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 16:28:45",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Task",
       "sfSuggestedFieldDisplayName": "Activity Type",
@@ -5793,6 +5793,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2024-11-11 00:24:51",
       "introducedVersion": "1.0.0.0",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -5849,7 +5850,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2024-11-11 00:24:51",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -5864,6 +5864,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-03-20 16:28:45",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -6284,7 +6285,6 @@
       ],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 16:28:45",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Task",
       "sfSuggestedFieldDisplayName": "Task Record Type ID",
@@ -6299,6 +6299,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-03-20 13:34:04",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -6362,7 +6363,6 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "2026-03-20 13:34:04",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Task",
       "sfSuggestedFieldDisplayName": "Reorder Opportunity",
@@ -6377,6 +6377,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-03-20 13:34:04",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -6452,7 +6453,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 13:34:04",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Task",
       "sfSuggestedFieldDisplayName": "Task Subtype",
@@ -6467,6 +6467,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Never",
       "introducedVersion": "",
       "maxLength": 250,
       "fieldSecurity": false,
@@ -6534,7 +6535,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Never",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -6549,6 +6549,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 16:28:45",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -6607,7 +6608,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 16:28:45",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Task",
       "sfSuggestedFieldDisplayName": "Created By ID",
@@ -6622,6 +6622,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Skipped (createdon)",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -6738,7 +6739,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (createdon)",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Task",
       "sfSuggestedFieldDisplayName": "Created Date",
@@ -6753,6 +6753,7 @@
       "dataType": "ntext",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 16:28:45",
       "introducedVersion": "",
       "maxLength": 2000,
       "fieldSecurity": false,
@@ -6848,7 +6849,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 16:28:45",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Task",
       "sfSuggestedFieldDisplayName": "Description",
@@ -6863,6 +6863,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Skipped (modifiedon)",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -6937,7 +6938,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (modifiedon)",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Task",
       "sfSuggestedFieldDisplayName": "Last Modified Date",
@@ -6952,6 +6952,7 @@
       "dataType": "lookup",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 16:28:45",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -7184,7 +7185,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 16:28:45",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Task",
       "sfSuggestedFieldDisplayName": "Assigned To ID",
@@ -7199,6 +7199,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 16:28:45",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -7271,7 +7272,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 16:28:45",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Task",
       "sfSuggestedFieldDisplayName": "Priority",
@@ -7286,6 +7286,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 16:28:45",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -7697,7 +7698,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 16:28:45",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Task",
       "sfSuggestedFieldDisplayName": "Related To ID",
@@ -7712,6 +7712,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 13:34:04",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -7821,7 +7822,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 13:34:04",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Task",
       "sfSuggestedFieldDisplayName": "Due Date",
@@ -7836,6 +7836,7 @@
       "dataType": "picklist",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 16:28:45",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -8044,7 +8045,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 16:28:45",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Task",
       "sfSuggestedFieldDisplayName": "Status",
@@ -8059,6 +8059,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 16:28:45",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -8160,7 +8161,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 16:28:45",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Task",
       "sfSuggestedFieldDisplayName": "Status",
@@ -8175,6 +8175,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 16:28:45",
       "introducedVersion": "",
       "maxLength": 200,
       "fieldSecurity": false,
@@ -8285,7 +8286,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 16:28:45",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Task",
       "sfSuggestedFieldDisplayName": "Subject",
@@ -8300,6 +8300,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2025-08-14 15:14:51",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -8402,7 +8403,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2025-08-14 15:14:51",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Task",
       "sfSuggestedFieldDisplayName": "Currency",

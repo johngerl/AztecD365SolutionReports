@@ -4956,6 +4956,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-03-21 00:54:35",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": true,
@@ -5023,7 +5024,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:54:35",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity Product",
       "sfSuggestedFieldDisplayName": "Discretionary Discount Amt",
@@ -5038,6 +5038,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-03-21 00:54:35",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -5079,7 +5080,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:54:35",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -5094,6 +5094,7 @@
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-03-21 00:54:35",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -5180,7 +5181,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:54:35",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity Product",
       "sfSuggestedFieldDisplayName": "Is Saas",
@@ -5195,6 +5195,7 @@
       "dataType": "int",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-03-21 00:54:35",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -5445,7 +5446,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:54:35",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity Product",
       "sfSuggestedFieldDisplayName": "License Term Months",
@@ -5460,6 +5460,7 @@
       "dataType": "picklist",
       "requiredLevel": "required",
       "isCustom": true,
+      "lastUpdate": "2026-03-21 00:54:35",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -5792,7 +5793,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:54:35",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity Product",
       "sfSuggestedFieldDisplayName": "License Type",
@@ -5807,6 +5807,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2022-03-13 18:47:50",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -5877,7 +5878,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2022-03-13 18:47:50",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -5892,6 +5892,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "Never",
       "introducedVersion": "1.0.0.0",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -5933,7 +5934,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "Never",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -5948,6 +5948,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-21 00:54:35",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -6022,7 +6023,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:54:35",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity Product",
       "sfSuggestedFieldDisplayName": "Amount",
@@ -6037,6 +6037,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Skipped (createdon)",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -6160,7 +6161,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (createdon)",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity Product",
       "sfSuggestedFieldDisplayName": "Created On",
@@ -6175,6 +6175,7 @@
       "dataType": "ntext",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Never",
       "introducedVersion": "",
       "maxLength": 2000,
       "fieldSecurity": false,
@@ -6270,7 +6271,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Never",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -6285,6 +6285,7 @@
       "dataType": "image",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Skipped (image)",
       "introducedVersion": "6.0.0.0",
       "maxLength": 9437328,
       "fieldSecurity": false,
@@ -6326,7 +6327,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "Skipped (image)",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -6341,6 +6341,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-21 00:54:35",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -6497,7 +6498,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:54:35",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity Product",
       "sfSuggestedFieldDisplayName": "Extended Amount",
@@ -6512,6 +6512,7 @@
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-21 00:54:35",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -6600,7 +6601,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:54:35",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity Product",
       "sfSuggestedFieldDisplayName": "Price Overridden",
@@ -6615,6 +6615,7 @@
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-21 00:54:35",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -6696,7 +6697,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:54:35",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity Product",
       "sfSuggestedFieldDisplayName": "Select Product",
@@ -6711,6 +6711,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-21 00:54:35",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -6837,7 +6838,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:54:35",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity Product",
       "sfSuggestedFieldDisplayName": "Manual Discount Amount",
@@ -6852,6 +6852,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Skipped (modifiedon)",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -6926,7 +6927,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (modifiedon)",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity Product",
       "sfSuggestedFieldDisplayName": "Modified On",
@@ -6941,6 +6941,7 @@
       "dataType": "lookup",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2026-03-21 00:54:35",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -7247,7 +7248,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:54:35",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity Product",
       "sfSuggestedFieldDisplayName": "Opportunity",
@@ -7262,6 +7262,7 @@
       "dataType": "uniqueidentifier",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2026-03-21 00:54:35",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -7443,7 +7444,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:54:35",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity Product",
       "sfSuggestedFieldDisplayName": "Opportunity Product",
@@ -7458,6 +7458,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2026-03-21 00:54:35",
       "introducedVersion": "",
       "maxLength": 500,
       "fieldSecurity": false,
@@ -7530,7 +7531,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:54:35",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity Product",
       "sfSuggestedFieldDisplayName": "Name CRM",
@@ -7545,6 +7545,7 @@
       "dataType": "picklist",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2026-03-21 00:54:35",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -7594,7 +7595,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:54:35",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity Product",
       "sfSuggestedFieldDisplayName": "Opportunity Status",
@@ -7609,6 +7609,7 @@
       "dataType": "lookup",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2026-03-21 00:54:35",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -7809,7 +7810,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:54:35",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity Product",
       "sfSuggestedFieldDisplayName": "Owner CRM",
@@ -7824,6 +7824,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-21 00:54:35",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -7945,7 +7946,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:54:35",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity Product",
       "sfSuggestedFieldDisplayName": "Price Per Unit",
@@ -7960,6 +7960,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2024-07-02 11:04:03",
       "introducedVersion": "",
       "maxLength": 500,
       "fieldSecurity": false,
@@ -8116,7 +8117,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2024-07-02 11:04:03",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -8131,6 +8131,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-21 00:54:35",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -8446,7 +8447,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-21 00:54:35",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity Product",
       "sfSuggestedFieldDisplayName": "Existing Product",
@@ -8461,6 +8461,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-21 00:54:35",
       "introducedVersion": "",
       "maxLength": 500,
       "fieldSecurity": false,
@@ -8528,7 +8529,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:54:35",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity Product",
       "sfSuggestedFieldDisplayName": "Product Name",
@@ -8543,6 +8543,7 @@
       "dataType": "picklist",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2026-03-21 00:54:35",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -8617,7 +8618,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:54:35",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity Product",
       "sfSuggestedFieldDisplayName": "Product Type",
@@ -8632,6 +8632,7 @@
       "dataType": "decimal",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2026-03-21 00:54:35",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -8860,7 +8861,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:54:35",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity Product",
       "sfSuggestedFieldDisplayName": "Quantity",
@@ -8875,6 +8875,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:46",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -8977,7 +8978,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:46",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity Product",
       "sfSuggestedFieldDisplayName": "Tax",
@@ -8992,6 +8992,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-21 00:54:35",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -9094,7 +9095,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:54:35",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity Product",
       "sfSuggestedFieldDisplayName": "Currency",
@@ -9109,6 +9109,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-21 00:54:35",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -9211,7 +9212,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-21 00:54:35",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Opportunity Product",
       "sfSuggestedFieldDisplayName": "Unit",

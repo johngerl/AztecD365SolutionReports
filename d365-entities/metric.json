@@ -4120,6 +4120,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2022-12-26 10:23:10",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -4173,7 +4174,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2022-12-26 10:23:10",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -4188,6 +4188,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Skipped (createdon)",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -4304,7 +4305,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (createdon)",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -4319,6 +4319,7 @@
       "dataType": "ntext",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2018-12-21 08:07:09",
       "introducedVersion": "",
       "maxLength": 2000,
       "fieldSecurity": false,
@@ -4414,7 +4415,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2018-12-21 08:07:09",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -4429,6 +4429,7 @@
       "dataType": "bit",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2022-12-26 10:23:10",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -4482,7 +4483,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2022-12-26 10:23:10",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -4497,6 +4497,7 @@
       "dataType": "uniqueidentifier",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2022-12-26 10:23:10",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -4550,7 +4551,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2022-12-26 10:23:10",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -4565,6 +4565,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Skipped (modifiedon)",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -4639,7 +4640,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (modifiedon)",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -4654,6 +4654,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2022-12-26 10:23:10",
       "introducedVersion": "",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -4861,7 +4862,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2022-12-26 10:23:10",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -4876,6 +4876,7 @@
       "dataType": "picklist",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2022-12-26 10:23:10",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -5062,7 +5063,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2022-12-26 10:23:10",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -5077,6 +5077,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2022-12-26 10:23:10",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -5165,7 +5166,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2022-12-26 10:23:10",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,

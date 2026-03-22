@@ -2286,6 +2286,7 @@ def enrich_entity(entity_name, root, property_to_field, class_to_entity):
             'dataType': fdef['data_type'],
             'requiredLevel': fdef['required_level'],
             'isCustom': fdef['is_custom'],
+            'lastUpdate': '',
             'introducedVersion': fdef['introduced_version'],
             'maxLength': fdef.get('max_length'),
             'fieldSecurity': fdef.get('is_secured', False),

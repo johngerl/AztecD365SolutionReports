@@ -4120,6 +4120,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Skipped (createdon)",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -4236,7 +4237,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (createdon)",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Solution",
       "sfSuggestedFieldDisplayName": "Created Date",
@@ -4251,6 +4251,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-22 08:38:35",
       "introducedVersion": "",
       "maxLength": 2000,
       "fieldSecurity": false,
@@ -4346,7 +4347,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-22 08:38:35",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Solution",
       "sfSuggestedFieldDisplayName": "Description",
@@ -4361,6 +4361,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Skipped (modifiedon)",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -4435,7 +4436,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (modifiedon)",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Solution",
       "sfSuggestedFieldDisplayName": "Last Modified Date",

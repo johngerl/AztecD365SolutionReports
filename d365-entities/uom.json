@@ -4120,6 +4120,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Skipped (createdon)",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -4236,7 +4237,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (createdon)",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -4251,6 +4251,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Skipped (modifiedon)",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -4325,7 +4326,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (modifiedon)",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -4340,6 +4340,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2019-01-05 16:29:48",
       "introducedVersion": "",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -4547,7 +4548,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2019-01-05 16:29:48",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -4562,6 +4562,7 @@
       "dataType": "decimal",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2019-01-05 16:29:48",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -4734,7 +4735,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2019-01-05 16:29:48",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -4749,6 +4749,7 @@
       "dataType": "uniqueidentifier",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2019-01-05 16:29:48",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -4851,7 +4852,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2019-01-05 16:29:48",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,

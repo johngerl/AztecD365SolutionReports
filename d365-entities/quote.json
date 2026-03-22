@@ -7601,6 +7601,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -7731,7 +7732,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Account ID",
@@ -7746,6 +7746,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -7844,7 +7845,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Default Freight Amount",
@@ -7859,6 +7859,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -7900,7 +7901,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -7915,6 +7915,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -8008,7 +8009,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Discretionary Discount",
@@ -8023,6 +8023,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -8064,7 +8065,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -8079,6 +8079,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2024-11-10 17:15:24",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": true,
@@ -8154,7 +8155,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2024-11-10 17:15:24",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -8169,6 +8169,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2024-11-10 17:15:24",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -8210,7 +8211,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2024-11-10 17:15:24",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -8225,6 +8225,7 @@
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": true,
@@ -8321,7 +8322,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Freight Approved",
@@ -8336,6 +8336,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-02-13 16:44:19",
       "introducedVersion": "1.0.0.0",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -8404,7 +8405,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-02-13 16:44:19",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Historical Owner",
@@ -8419,6 +8419,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-01-22 16:04:03",
       "introducedVersion": "1.0.0.0",
       "maxLength": 100,
       "fieldSecurity": true,
@@ -8509,7 +8510,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-01-22 16:04:03",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "PO Number",
@@ -8524,6 +8524,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-01-21 01:13:24",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -8593,7 +8594,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-01-21 01:13:24",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Quote Approval",
@@ -8608,6 +8608,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -8690,7 +8691,6 @@
       ],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Contact ID",
@@ -8705,6 +8705,7 @@
       "dataType": "ntext",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "1.0.0.0",
       "maxLength": 5000,
       "fieldSecurity": false,
@@ -8795,7 +8796,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Recap Notes",
@@ -8810,6 +8810,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -8915,7 +8916,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Recap Notes Canned Options",
@@ -8930,6 +8930,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -9338,7 +9339,6 @@
       ],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Record Type ID",
@@ -9353,6 +9353,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-03-19 15:27:57",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -9447,7 +9448,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-19 15:27:57",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Requested Freight Amt",
@@ -9462,6 +9462,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-03-19 15:27:57",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -9503,7 +9504,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-19 15:27:57",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -9518,6 +9518,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "1.0.0.0",
       "maxLength": 200,
       "fieldSecurity": false,
@@ -9574,7 +9575,6 @@
           "type": "on_forms_not_in_logic"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Ship To Country",
@@ -9589,6 +9589,7 @@
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -9639,7 +9640,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -9654,6 +9654,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-02-24 16:32:32",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -9736,7 +9737,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-02-24 16:32:32",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Tax Amount",
@@ -9751,6 +9751,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
+      "lastUpdate": "2026-02-24 16:32:32",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -9792,7 +9793,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-02-24 16:32:32",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -9807,6 +9807,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "",
       "maxLength": 80,
       "fieldSecurity": false,
@@ -9894,7 +9895,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Bill To City",
@@ -9909,6 +9909,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2024-11-08 03:09:28",
       "introducedVersion": "",
       "maxLength": 150,
       "fieldSecurity": false,
@@ -9972,7 +9973,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2024-11-08 03:09:28",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -9987,6 +9987,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "",
       "maxLength": 80,
       "fieldSecurity": false,
@@ -10050,7 +10051,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Bill To Country",
@@ -10065,6 +10065,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Never",
       "introducedVersion": "",
       "maxLength": 50,
       "fieldSecurity": false,
@@ -10128,7 +10129,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Never",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -10143,6 +10143,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "",
       "maxLength": 250,
       "fieldSecurity": false,
@@ -10238,7 +10239,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Bill To Street 1",
@@ -10253,6 +10253,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 16:28:01",
       "introducedVersion": "",
       "maxLength": 250,
       "fieldSecurity": false,
@@ -10330,7 +10331,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 16:28:01",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Bill To Street 2",
@@ -10345,6 +10345,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 21:44:41",
       "introducedVersion": "",
       "maxLength": 250,
       "fieldSecurity": false,
@@ -10405,7 +10406,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 21:44:41",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Bill To Street 3",
@@ -10420,6 +10420,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-01-21 01:13:24",
       "introducedVersion": "",
       "maxLength": 200,
       "fieldSecurity": false,
@@ -10491,7 +10492,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-01-21 01:13:24",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Client: Bill To Name",
@@ -10506,6 +10506,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "",
       "maxLength": 20,
       "fieldSecurity": false,
@@ -10601,7 +10602,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Bill To Zip/Postal Code",
@@ -10616,6 +10616,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "",
       "maxLength": 50,
       "fieldSecurity": false,
@@ -10711,7 +10712,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Bill To Stateprovince",
@@ -10726,6 +10726,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2021-09-07 02:22:59",
       "introducedVersion": "",
       "maxLength": 50,
       "fieldSecurity": false,
@@ -10789,7 +10790,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2021-09-07 02:22:59",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -10804,6 +10804,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Never",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -10860,7 +10861,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Never",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -10875,6 +10875,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:14:10",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -10931,7 +10932,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:14:10",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Closed On",
@@ -10946,6 +10946,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-01-20 19:16:35",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -11027,7 +11028,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-01-20 19:16:35",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Contact ID",
@@ -11042,6 +11042,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -11098,7 +11099,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Created By ID",
@@ -11113,6 +11113,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Skipped (createdon)",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -11292,7 +11293,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "Skipped (createdon)",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Created Date",
@@ -11307,6 +11307,7 @@
       "dataType": "customer",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -11584,7 +11585,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Potential Customer",
@@ -11599,6 +11599,7 @@
       "dataType": "ntext",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 21:44:41",
       "introducedVersion": "",
       "maxLength": 2000,
       "fieldSecurity": false,
@@ -11694,7 +11695,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 21:44:41",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Description",
@@ -11709,6 +11709,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-02-20 19:23:10",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -11795,7 +11796,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-02-20 19:23:10",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Quote Discount Amount",
@@ -11810,6 +11810,7 @@
       "dataType": "decimal",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2025-07-09 16:14:07",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -11889,7 +11890,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2025-07-09 16:14:07",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Quote Discount",
@@ -11904,6 +11904,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -11991,7 +11992,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Effective From",
@@ -12006,6 +12006,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -12105,7 +12106,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Effective To",
@@ -12120,6 +12120,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Never",
       "introducedVersion": "",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -12176,7 +12177,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Never",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -12191,6 +12191,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Never",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -12247,7 +12248,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Never",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -12262,6 +12262,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -12408,7 +12409,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Freight Amount",
@@ -12423,6 +12423,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -12464,7 +12465,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -12479,6 +12479,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:27:06",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -12543,7 +12544,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:27:06",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Freight Terms CRM",
@@ -12558,6 +12558,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Skipped (modifiedon)",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -12632,7 +12633,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Skipped (modifiedon)",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Last Modified Date",
@@ -12647,6 +12647,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "5.0.0.0",
       "maxLength": 300,
       "fieldSecurity": false,
@@ -13115,7 +13116,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Quote Name",
@@ -13130,6 +13130,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -13425,7 +13426,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Opportunity ID",
@@ -13440,6 +13440,7 @@
       "dataType": "lookup",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -13665,7 +13666,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Owner ID",
@@ -13680,6 +13680,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2025-07-18 12:45:13",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -13736,7 +13737,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2025-07-18 12:45:13",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Payment Terms",
@@ -13751,6 +13751,7 @@
       "dataType": "lookup",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -13815,7 +13816,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Price List",
@@ -13830,6 +13830,7 @@
       "dataType": "uniqueidentifier",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -14095,7 +14096,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Quote GUID",
@@ -14110,6 +14110,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "systemrequired",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "5.0.0.0",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -14218,7 +14219,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Quote Number",
@@ -14233,6 +14233,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Never",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -14297,7 +14298,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Never",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -14312,6 +14312,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:27:06",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -14389,7 +14390,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:27:06",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Ship To Zip/Postal Code",
@@ -14404,6 +14404,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "",
       "maxLength": 80,
       "fieldSecurity": false,
@@ -14473,7 +14474,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Ship To City",
@@ -14488,6 +14488,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2025-08-12 17:04:53",
       "introducedVersion": "5.0.0.0",
       "maxLength": 150,
       "fieldSecurity": false,
@@ -14575,7 +14576,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2025-08-12 17:04:53",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Shipping Contact",
@@ -14590,6 +14590,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "",
       "maxLength": 80,
       "fieldSecurity": false,
@@ -14659,7 +14660,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Ship To Country",
@@ -14674,6 +14674,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Never",
       "introducedVersion": "",
       "maxLength": 50,
       "fieldSecurity": false,
@@ -14737,7 +14738,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Never",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -14752,6 +14752,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "Never",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -14808,7 +14809,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "Never",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -14823,6 +14823,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "",
       "maxLength": 250,
       "fieldSecurity": false,
@@ -14900,7 +14901,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Ship To Street 1",
@@ -14915,6 +14915,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 16:28:01",
       "introducedVersion": "",
       "maxLength": 250,
       "fieldSecurity": false,
@@ -14992,7 +14993,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 16:28:01",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Ship To Street 2",
@@ -15007,6 +15007,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:14:10",
       "introducedVersion": "",
       "maxLength": 250,
       "fieldSecurity": false,
@@ -15078,7 +15079,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:14:10",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Ship To Street 3",
@@ -15093,6 +15093,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "",
       "maxLength": 200,
       "fieldSecurity": false,
@@ -15177,7 +15178,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Ship To Name",
@@ -15192,6 +15192,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "",
       "maxLength": 20,
       "fieldSecurity": false,
@@ -15269,7 +15270,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Ship To Zip/Postal Code",
@@ -15284,6 +15284,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "",
       "maxLength": 50,
       "fieldSecurity": false,
@@ -15361,7 +15362,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Ship To Stateprovince",
@@ -15376,6 +15376,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2021-05-31 23:15:13",
       "introducedVersion": "",
       "maxLength": 50,
       "fieldSecurity": false,
@@ -15439,7 +15440,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2021-05-31 23:15:13",
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -15454,6 +15454,7 @@
       "dataType": "state",
       "requiredLevel": "systemrequired",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -15750,7 +15751,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Status",
@@ -15765,6 +15765,7 @@
       "dataType": "status",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -15950,7 +15951,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Status",
@@ -15965,6 +15965,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -16115,7 +16116,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Total Amount",
@@ -16130,6 +16130,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -16194,7 +16195,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Total Detail Amount",
@@ -16209,6 +16209,7 @@
       "dataType": "lookup",
       "requiredLevel": "required",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -16317,7 +16318,6 @@
           "type": "in_code_not_on_forms"
         }
       ],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Currency",
@@ -16332,6 +16332,7 @@
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": false,
+      "lastUpdate": "2026-03-20 22:35:47",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -16390,7 +16391,6 @@
       "relationships": [],
       "ribbon": [],
       "conflicts": [],
-      "lastUpdate": "2026-03-20 22:35:47",
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Quote",
       "sfSuggestedFieldDisplayName": "Ship To",

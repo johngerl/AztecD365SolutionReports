@@ -2,7 +2,7 @@
 """
 generate_d365_report_from_json_and_csv.py
 
-Step 8 of the pipeline. Run steps 1-7 first.
+Step 9 of the pipeline. Run steps 1-8 first.
 
 Reads enriched D365 entity JSON from d365-entities/ and mapping CSVs from
 mapping/, then generates comprehensive Markdown field usage reports.
@@ -25,7 +25,6 @@ from datetime import date
 from pipeline_shared import (
     convert_keys_to_snake,
     adapt_json_fields,
-    count_field_references,
 )
 
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -69,11 +68,21 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
                       sf_mapping=None, field_mapping_suggested=None,
                       entity_meta=None):
     field_index = defaultdict(list)
-    field_ref_counts = count_field_references(
-        entity_name, forms, views, chart_visualizations,
-        reports, dashboards, workflows, formulas,
-        plugin_refs, controls, relationships, ribbon, conflicts
-    )
+    # Build field_ref_counts from pre-computed count properties (set by Step 4)
+    field_ref_counts = defaultdict(lambda: defaultdict(int))
+    for f in fields:
+        sn = f['schema_name'].lower()
+        field_ref_counts[sn]['forms'] = f.get('count_forms', 0)
+        field_ref_counts[sn]['views'] = f.get('count_views', 0)
+        field_ref_counts[sn]['charts'] = f.get('count_chart_visualizations', 0)
+        field_ref_counts[sn]['reports'] = f.get('count_reports', 0)
+        field_ref_counts[sn]['dashboards'] = f.get('count_dashboards', 0)
+        field_ref_counts[sn]['workflows'] = f.get('count_workflows', 0)
+        field_ref_counts[sn]['formulas'] = f.get('count_formulas_and_rollups', 0)
+        field_ref_counts[sn]['plugins'] = f.get('count_plugins', 0)
+        field_ref_counts[sn]['pcf'] = f.get('count_pcf_controls', 0)
+        field_ref_counts[sn]['rels'] = f.get('count_relationships', 0)
+        field_ref_counts[sn]['ribbon'] = f.get('count_ribbon_customizations', 0)
     lines = []
     a = lines.append
 
@@ -103,6 +112,17 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     a(f'| **Last Update** | {meta.get("lastUpdate", "")} |')
     a(f'| **Primary ID Field** | {meta.get("primaryIdField", "")} |')
     a(f'| **Primary Name Field** | {meta.get("primaryNameField", "")} |')
+    a(f'| **Count Forms** | {meta.get("countForms", 0)} |')
+    a(f'| **Count Views** | {meta.get("countViews", 0)} |')
+    a(f'| **Count Chart Visualizations** | {meta.get("countChartVisualizations", 0)} |')
+    a(f'| **Count Reports** | {meta.get("countReports", 0)} |')
+    a(f'| **Count Dashboards** | {meta.get("countDashboards", 0)} |')
+    a(f'| **Count Workflows** | {meta.get("countWorkflows", 0)} |')
+    a(f'| **Count Formulas & Rollups** | {meta.get("countFormulasAndRollups", 0)} |')
+    a(f'| **Count Plugins** | {meta.get("countPlugins", 0)} |')
+    a(f'| **Count PCF Controls** | {meta.get("countPCFControls", 0)} |')
+    a(f'| **Count Relationships** | {meta.get("countRelationships", 0)} |')
+    a(f'| **Count Ribbon Customizations** | {meta.get("countRibbonCustomizations", 0)} |')
     a('')
 
     # --- Section heading builders ---

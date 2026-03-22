@@ -1,6 +1,6 @@
 Refresh entity-level and field-level lastUpdate values in d365-entities/*.json by querying the D365 Dataverse TDS endpoint.
 
-This is Step 4 of the pipeline. It connects to Dataverse via TDS, queries entity-level totalRows and MAX(modifiedon) (inserted after auditEnabled), then queries MAX(modifiedon) per field, and updates the JSON in-place.
+This is Step 5 of the pipeline. It connects to Dataverse via TDS, queries entity-level totalRows and MAX(modifiedon) (inserted after auditEnabled), then queries MAX(modifiedon) per field, and updates the JSON in-place.
 
 Requires: pyodbc, msal, ODBC Driver 18 for SQL Server, and scripts/config.local.json with Dataverse credentials.
 

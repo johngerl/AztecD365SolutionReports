@@ -90,31 +90,32 @@ You are acting as the **most senior Dynamics 365 Customer Engagement (D365CE) pr
 | `salesforce-entities/` | Salesforce object describe JSON | 50 |
 | `reports/` | Generated Markdown field usage reports (one per entity) | 94 |
 | `mapping/` | Field mapping CSVs with confirmed + suggested SF columns | 94 |
-| `scripts/` | Python analysis and refresh scripts | 9 |
+| `scripts/` | Python analysis and refresh scripts | 10 |
 | `plans/` | Architecture and implementation plans | — |
-| `.claude/commands/` | Claude Code slash commands | 10 |
+| `.claude/commands/` | Claude Code slash commands | 11 |
 | `DataTypeCompatibilityMatrix.md` | User-editable D365→SF data type compatibility rules | — |
 
 ---
 
 ## Scripts
 
-Pipeline execution order: Step 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8.
+Pipeline execution order: Step 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9.
 
 | Step | Script | Input | Output | Purpose |
 |---|---|---|---|---|
 | 1 | `generate_sf_entity_json_from_api.py` | Salesforce REST API | `salesforce-entities/*.json` | Refresh SF object schemas from org. No dependencies on other scripts. |
 | 2 | `generate_d365_entity_json_from_solution.py` | `SolutionExtract/`, `plugins/` | `d365-entities/*.json` | Parse D365 solution and build enriched JSON with entity-level sections and per-field section datasets. Caches and restores sfSuggested* values across regenerations. |
 | 3 | `enrich_d365_entity_json_from_api.py` | `d365-entities/*.json`, Dataverse Web API | `d365-entities/*.json` (enriched) | Query Dataverse metadata API to fill in dataType, displayName, etc. for stub fields. Also enriches plugin sections with registration metadata (mode, stage, state). |
-| 4 | `refresh_d365_field_lastupdates_tds.py` | `d365-entities/*.json`, Dataverse TDS | `d365-entities/*.json` (in-place) | Query MAX(modifiedon) per field via TDS and update lastUpdate values |
-| 5 | `set_d365_sf_suggested_mapping.py` | `d365-entities/*.json` | `d365-entities/*.json` (with sfSuggestedMapping) | Single source of truth for migration eligibility. Sets sfSuggestedMapping per field based on staleness + usage + required level. Clears sfSuggested* when false. |
-| 6 | `update_d365_entity_csv_mapping_with_sf_suggestions.py` | `d365-entities/*.json`, `salesforce-entities/*.json`, `DataTypeCompatibilityMatrix.md` | `d365-entities/*.json` (with sfSuggested*), `mapping/*.csv` | 5-tier SF field matching (exact, fuzzy, synonym, rule-based, Anthropic AI). Only processes fields with sfSuggestedMapping=true. |
-| 7 | `generate_d365_entity_csv_mapping.py` | `d365-entities/*.json`, existing `mapping/*.csv` | `mapping/*.csv` | Extract mapping CSV from JSON; reads sfSuggested* and sfSuggestedMapping from JSON, preserves confirmed SF columns from CSV |
-| 8 | `generate_d365_report_from_json_and_csv.py` | `d365-entities/*.json`, `mapping/*.csv` | `reports/*.md` | Generate field usage Markdown reports |
-| — | `pipeline_shared.py` | — | — | Shared utility functions and constants (SECTION_KEYS, is_stale, SF_SUGGESTED_KEYS) used by steps 5, 6, and 8 |
-| — | `DataTypeCompatibilityMatrix.md` | — | — | User-editable D365→SF data type compatibility rules read by Step 6 |
+| 4 | `compute_d365_reference_counts.py` | `d365-entities/*.json` | `d365-entities/*.json` (with count properties) | Pre-compute reference counts at entity and field level from per-field section arrays. Downstream steps read these instead of recomputing. |
+| 5 | `refresh_d365_field_lastupdates_tds.py` | `d365-entities/*.json`, Dataverse TDS | `d365-entities/*.json` (in-place) | Query MAX(modifiedon) per field via TDS and update lastUpdate values |
+| 6 | `set_d365_sf_suggested_mapping.py` | `d365-entities/*.json` | `d365-entities/*.json` (with sfSuggestedMapping) | Single source of truth for migration eligibility. Sets sfSuggestedMapping per field based on staleness + usage + required level. Clears sfSuggested* when false. |
+| 7 | `update_d365_entity_csv_mapping_with_sf_suggestions.py` | `d365-entities/*.json`, `salesforce-entities/*.json`, `DataTypeCompatibilityMatrix.md` | `d365-entities/*.json` (with sfSuggested*) | 5-tier SF field matching (exact, fuzzy, synonym, rule-based, Anthropic AI). Writes suggestions to JSON only. Only processes fields with sfSuggestedMapping=true. |
+| 8 | `generate_d365_entity_csv_mapping.py` | `d365-entities/*.json`, existing `mapping/*.csv` | `mapping/*.csv` | Extract mapping CSV from JSON; reads sfSuggested* and sfSuggestedMapping from JSON, preserves confirmed SF columns from CSV |
+| 9 | `generate_d365_report_from_json_and_csv.py` | `d365-entities/*.json`, `mapping/*.csv` | `reports/*.md` | Generate field usage Markdown reports |
+| — | `pipeline_shared.py` | — | — | Shared utility functions and constants (SECTION_KEYS, is_stale, SF_SUGGESTED_KEYS) used by steps 6, 7, and 9 |
+| — | `DataTypeCompatibilityMatrix.md` | — | — | User-editable D365→SF data type compatibility rules read by Step 7 |
 
-All scripts accept a single entity name or `--all`. Python 3.6+ stdlib only (no pip dependencies). `generate_sf_entity_json_from_api.py` (Step 1) requires network access to the Salesforce org and has no dependencies on other scripts. `enrich_d365_entity_json_from_api.py` and `refresh_d365_field_lastupdates_tds.py` require `msal` (pip install) and `scripts/config.local.json` with Dataverse credentials. `refresh_d365_field_lastupdates_tds.py` (Step 4) additionally requires `pyodbc` and ODBC Driver 18 for SQL Server. `set_d365_sf_suggested_mapping.py` (Step 5) is the single source of truth for `sfSuggestedMapping`; downstream steps read this flag instead of recomputing it. `generate_d365_entity_json_from_solution.py` contains all SolutionExtract and plugin parsing logic (17+ parse functions).
+All scripts accept a single entity name or `--all`. Python 3.6+ stdlib only (no pip dependencies). `generate_sf_entity_json_from_api.py` (Step 1) requires network access to the Salesforce org and has no dependencies on other scripts. `enrich_d365_entity_json_from_api.py` and `refresh_d365_field_lastupdates_tds.py` require `msal` (pip install) and `scripts/config.local.json` with Dataverse credentials. `refresh_d365_field_lastupdates_tds.py` (Step 5) additionally requires `pyodbc` and ODBC Driver 18 for SQL Server. `set_d365_sf_suggested_mapping.py` (Step 6) is the single source of truth for `sfSuggestedMapping`; downstream steps read this flag instead of recomputing it. `generate_d365_entity_json_from_solution.py` contains all SolutionExtract and plugin parsing logic (17+ parse functions).
 
 ---
 
@@ -140,27 +141,31 @@ Dataverse Web API ──────────────────┼─�
                                     └     │ _api.py                                │
                                           └────────────────────────────────────────┘
                                                     │
-Step 4: refresh_d365_field_lastupdates_tds.py       v
+Step 4: compute_d365_reference_counts.py            v
+d365-entities/*.json ───────────────────> compute_d365_reference   ──> d365-entities/*.json (with count properties)
+                                          _counts.py
+                                                    │
+Step 5: refresh_d365_field_lastupdates_tds.py       v
 d365-entities/*.json ───────────────┐     ┌────────────────────────────────────────┐
 Dataverse TDS ──────────────────────┼────>│ refresh_d365_field_lastupdates         │──> d365-entities/*.json (with lastUpdate)
                                     └     │ _tds.py                                │
                                           └────────────────────────────────────────┘
                                                     │
-Step 5: set_d365_sf_suggested_mapping.py            v
+Step 6: set_d365_sf_suggested_mapping.py            v
 d365-entities/*.json ───────────────────> set_d365_sf_suggested    ──> d365-entities/*.json (with sfSuggestedMapping)
                                           _mapping.py
                                                     │
-Step 6: update_d365_entity_csv_mapping_with_sf_suggestions.py
+Step 7: update_d365_entity_csv_mapping_with_sf_suggestions.py
 d365-entities/*.json ───────────────┐     ┌────────────────────────────────────────┐
 salesforce-entities/*.json ─────────┼────>│ update_d365_entity_csv_mapping_with    │──> d365-entities/*.json (with sfSuggested*)
                                     └     │ _sf_suggestions.py                     │
                                           └────────────────────────────────────────┘
                                                     │
-Step 7: generate_d365_entity_csv_mapping.py         v
+Step 8: generate_d365_entity_csv_mapping.py         v
 d365-entities/*.json ───────────────────> generate_d365_entity_csv ──> mapping/*.csv
 existing mapping/*.csv (confirmed SF) ──┘ _mapping.py
                                                     │
-Step 8: generate_d365_report_from_json_and_csv.py   v
+Step 9: generate_d365_report_from_json_and_csv.py   v
 d365-entities/*.json ───────────────┐
 mapping/*.csv ──────────────────────┼────> generate_d365_report_from ──> reports/*.md
                                     └──── _json_and_csv.py
@@ -181,7 +186,7 @@ Each `mapping/{entity}.csv` contains one row per D365 field with these columns:
 | `isCustom` | customizations.xml | True if custom field (azt_ prefix) |
 | `lastUpdate` | Dataverse TDS | Last modified date for field data (datetime, "Never", or "Skipped") |
 | `picklistValues` | customizations.xml | Pre-formatted picklist string: `1: Label, 2: Label, ...` |
-| `mappingSuggested` | d365-entities JSON | Read from `sfSuggestedMapping` (set by Step 5 based on staleness + usage + required level) |
+| `mappingSuggested` | d365-entities JSON | Read from `sfSuggestedMapping` (set by Step 6 based on staleness + usage + required level) |
 | `refForms` | Computed | Number of form references for this field |
 | `refViews` | Computed | Number of view references for this field |
 | `refChartVisualizations` | Computed | Number of chart visualization references |
@@ -200,7 +205,7 @@ Each `mapping/{entity}.csv` contains one row per D365 field with these columns:
 | `sfSuggestedFieldDisplayName` | AI-generated | Suggested SF field label (fuzzy match) |
 | `sfSuggestedFieldApiName` | AI-generated | Suggested SF field API name (fuzzy match) |
 
-**Source of truth rule:** The `d365-entities/*.json` is the authoritative source for SF suggested mapping data (`sfSuggested*` fields per field). Suggestions are generated by Step 6 using 5-tier matching (exact, fuzzy, synonym, rule-based, AI) and persisted in the JSON. Existing suggestions are preserved across pipeline runs — Step 1 caches and restores them, Step 6 skips fields that already have suggestions. To regenerate a suggestion, clear the `sfSuggested*` fields from the JSON manually. Confirmed SF columns (`sfObjectName`, `sfFieldDisplayName`, `sfFieldApiName`) are preserved in the CSV by Step 4. The CSV and reports copy `sfSuggested*` values from the JSON.
+**Source of truth rule:** The `d365-entities/*.json` is the authoritative source for SF suggested mapping data (`sfSuggested*` fields per field). Suggestions are generated by Step 7 using 5-tier matching (exact, fuzzy, synonym, rule-based, AI) and persisted in the JSON. Existing suggestions are preserved across pipeline runs — Step 1 caches and restores them, Step 7 skips fields that already have suggestions. To regenerate a suggestion, clear the `sfSuggested*` fields from the JSON manually. Confirmed SF columns (`sfObjectName`, `sfFieldDisplayName`, `sfFieldApiName`) are preserved in the CSV by Step 5. The CSV and reports copy `sfSuggested*` values from the JSON.
 
 ---
 
@@ -218,6 +223,17 @@ Each `d365-entities/{entity}.json` contains:
   "auditEnabled": true,
   "primaryIdField": "accountid",
   "primaryNameField": "name",
+  "countForms": 0,
+  "countViews": 0,
+  "countChartVisualizations": 0,
+  "countReports": 0,
+  "countDashboards": 0,
+  "countWorkflows": 0,
+  "countFormulasAndRollups": 0,
+  "countPlugins": 0,
+  "countPCFControls": 0,
+  "countRelationships": 0,
+  "countRibbonCustomizations": 0,
   "sections": {
     "forms": [],
     "views": [],
@@ -247,6 +263,17 @@ Each `d365-entities/{entity}.json` contains:
       "auditEnabled": true,
       "relatedTo": null,
       "picklistValues": null,
+      "countForms": 0,
+      "countViews": 0,
+      "countChartVisualizations": 0,
+      "countReports": 0,
+      "countDashboards": 0,
+      "countWorkflows": 0,
+      "countFormulasAndRollups": 0,
+      "countPlugins": 0,
+      "countPCFControls": 0,
+      "countRelationships": 0,
+      "countRibbonCustomizations": 0,
       "sfSuggestedMapping": false,
       "sfSuggestedObjectName": null,
       "sfSuggestedFieldDisplayName": null,
@@ -283,6 +310,17 @@ Each `d365-entities/{entity}.json` contains:
 | `auditEnabled` | `<IsAuditEnabled>` | Whether entity-level auditing is enabled |
 | `primaryIdField` | Convention | `{entityname}id` |
 | `primaryNameField` | `<DisplayMask>` | Field whose DisplayMask contains `PrimaryName` |
+| `countForms` | Step 4 | Total form references across all fields |
+| `countViews` | Step 4 | Total view references across all fields |
+| `countChartVisualizations` | Step 4 | Total chart visualization references across all fields |
+| `countReports` | Step 4 | Total report references across all fields |
+| `countDashboards` | Step 4 | Total dashboard references across all fields |
+| `countWorkflows` | Step 4 | Total workflow references across all fields |
+| `countFormulasAndRollups` | Step 4 | Total formula/rollup references across all fields |
+| `countPlugins` | Step 4 | Total plugin references across all fields |
+| `countPCFControls` | Step 4 | Total PCF control references across all fields |
+| `countRelationships` | Step 4 | Total relationship references across all fields |
+| `countRibbonCustomizations` | Step 4 | Total ribbon customization references across all fields |
 | `sections` | Parsed from SolutionExtract/ + plugins/ | Full entity-level parse outputs (forms, views, charts, reports, dashboards, workflows, JS, formulas, plugins, PCF controls, relationships, ribbon, conflicts) |
 
 ### Per-field properties
@@ -294,12 +332,23 @@ Each `d365-entities/{entity}.json` contains:
 | `fieldSecurity` | `<IsSecured>` | Whether field-level security is enabled |
 | `auditEnabled` | Field `<IsAuditEnabled>` | Whether field-level auditing is enabled |
 | `relatedTo` | Relationships section | Referenced entity name from first relationship, or null |
-| `sfSuggestedMapping` | Step 5 | Whether this field should be suggested for SF migration (true/false). Set based on staleness + usage + required level. |
-| `sfSuggestedObjectName` | Step 6 (5-tier matching) | Suggested SF target object name, or null |
-| `sfSuggestedFieldDisplayName` | Step 6 | Suggested SF field display name, or null |
-| `sfSuggestedFieldApiName` | Step 6 | Suggested SF field API name (e.g., `Account_Alert__c`), or null |
-| `sfSuggestedDataType` | Step 6 | Expected SF data type from compatibility matrix, or null |
-| `sfSuggestedMatchTier` | Step 6 | Which tier matched: `exact`, `fuzzy`, `synonym`, `generated`, `ai` |
+| `countForms` | Step 4 | Number of form references for this field |
+| `countViews` | Step 4 | Number of view references for this field |
+| `countChartVisualizations` | Step 4 | Number of chart visualization references for this field |
+| `countReports` | Step 4 | Number of report references for this field |
+| `countDashboards` | Step 4 | Number of dashboard references for this field |
+| `countWorkflows` | Step 4 | Number of workflow references for this field |
+| `countFormulasAndRollups` | Step 4 | Number of formula/rollup references for this field |
+| `countPlugins` | Step 4 | Number of plugin references for this field |
+| `countPCFControls` | Step 4 | Number of PCF control references for this field |
+| `countRelationships` | Step 4 | Number of relationship references for this field |
+| `countRibbonCustomizations` | Step 4 | Number of ribbon customization references for this field |
+| `sfSuggestedMapping` | Step 6 | Whether this field should be suggested for SF migration (true/false). Set based on staleness + usage + required level. |
+| `sfSuggestedObjectName` | Step 7 (5-tier matching) | Suggested SF target object name, or null |
+| `sfSuggestedFieldDisplayName` | Step 7 | Suggested SF field display name, or null |
+| `sfSuggestedFieldApiName` | Step 7 | Suggested SF field API name (e.g., `Account_Alert__c`), or null |
+| `sfSuggestedDataType` | Step 7 | Expected SF data type from compatibility matrix, or null |
+| `sfSuggestedMatchTier` | Step 7 | Which tier matched: `exact`, `fuzzy`, `synonym`, `generated`, `ai` |
 
 ---
 
@@ -334,11 +383,12 @@ Each `salesforce-entities/{object}.json` contains:
 | `/generate-sf-json [object]` | `generate_sf_entity_json_from_api.py` | Step 1: Refresh Salesforce object schema(s) from org |
 | `/generate-d365-json [entity]` | `generate_d365_entity_json_from_solution.py` | Step 2: Generate enriched D365 entity JSON(s) |
 | `/enrich-d365-json [entity]` | `enrich_d365_entity_json_from_api.py` | Step 3: Enrich stub fields with Dataverse API metadata |
-| `/refresh-d365-lastupdates [entity]` | `refresh_d365_field_lastupdates_tds.py` | Step 4: Refresh lastUpdate via Dataverse TDS |
-| `/set-d365-sf-mapping [entity]` | `set_d365_sf_suggested_mapping.py` | Step 5: Set sfSuggestedMapping per field (staleness + usage + required). Clears sfSuggested* when false. |
-| `/update-d365-csv-with-sf [entity]` | `update_d365_entity_csv_mapping_with_sf_suggestions.py` | Step 6: 5-tier SF field matching. Only processes fields with sfSuggestedMapping=true. |
-| `/generate-d365-csv [entity]` | `generate_d365_entity_csv_mapping.py` | Step 7: Extract mapping CSV(s) from enriched JSON (reads sfSuggested* from JSON) |
-| `/generate-d365-report [entity]` | `generate_d365_report_from_json_and_csv.py` | Step 8: Generate field usage Markdown report(s) |
-| `/generate-all [entity]` | All pipeline scripts | Run full pipeline (Steps 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8) |
+| `/compute-d365-ref-counts [entity]` | `compute_d365_reference_counts.py` | Step 4: Pre-compute reference counts at entity and field level |
+| `/refresh-d365-lastupdates [entity]` | `refresh_d365_field_lastupdates_tds.py` | Step 5: Refresh lastUpdate via Dataverse TDS |
+| `/set-d365-sf-mapping [entity]` | `set_d365_sf_suggested_mapping.py` | Step 6: Set sfSuggestedMapping per field (staleness + usage + required). Clears sfSuggested* when false. |
+| `/update-d365-csv-with-sf [entity]` | `update_d365_entity_csv_mapping_with_sf_suggestions.py` | Step 7: 5-tier SF field matching. Only processes fields with sfSuggestedMapping=true. |
+| `/generate-d365-csv [entity]` | `generate_d365_entity_csv_mapping.py` | Step 8: Extract mapping CSV(s) from enriched JSON (reads sfSuggested* from JSON) |
+| `/generate-d365-report [entity]` | `generate_d365_report_from_json_and_csv.py` | Step 9: Generate field usage Markdown report(s) |
+| `/generate-all [entity]` | All pipeline scripts | Run full pipeline (Steps 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9) |
 
 All commands default to `--all` when no entity argument is provided.

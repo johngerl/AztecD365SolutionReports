@@ -2303,7 +2303,7 @@ def enrich_entity(entity_name, root, property_to_field, class_to_entity):
             'isRetrievable': fdef.get('is_retrievable', False),
             'isDataSourceSecret': fdef.get('is_data_source_secret', False),
             'picklistValues': pv if pv else None,
-            # SF suggestion fields (sfSuggestedMapping set by Step 5, others by Step 6)
+            # SF suggestion fields (sfSuggestedMapping set by Step 6, others by Step 7)
             'sfSuggestedMapping': False,
             'sfSuggestedObjectName': None,
             'sfSuggestedFieldDisplayName': None,
@@ -2311,6 +2311,19 @@ def enrich_entity(entity_name, root, property_to_field, class_to_entity):
             'sfSuggestedDataType': None,
             'sfSuggestedMatchTier': None,
         }
+
+        # Reference count properties (computed by Step 4, initialized to 0)
+        field_out['countForms'] = 0
+        field_out['countViews'] = 0
+        field_out['countChartVisualizations'] = 0
+        field_out['countReports'] = 0
+        field_out['countDashboards'] = 0
+        field_out['countWorkflows'] = 0
+        field_out['countFormulasAndRollups'] = 0
+        field_out['countPlugins'] = 0
+        field_out['countPCFControls'] = 0
+        field_out['countRelationships'] = 0
+        field_out['countRibbonCustomizations'] = 0
 
         # 13 section datasets (no SF columns)
         for section_key in SECTION_KEYS:
@@ -2346,6 +2359,18 @@ def enrich_entity(entity_name, root, property_to_field, class_to_entity):
         'auditEnabled': entity_meta['is_audit_enabled'],
         'primaryIdField': f"{entity_name}id",
         'primaryNameField': primary_name_field,
+        # Reference count properties (computed by Step 4, initialized to 0)
+        'countForms': 0,
+        'countViews': 0,
+        'countChartVisualizations': 0,
+        'countReports': 0,
+        'countDashboards': 0,
+        'countWorkflows': 0,
+        'countFormulasAndRollups': 0,
+        'countPlugins': 0,
+        'countPCFControls': 0,
+        'countRelationships': 0,
+        'countRibbonCustomizations': 0,
         'sections': sections,
         'fields': enriched_fields,
     }

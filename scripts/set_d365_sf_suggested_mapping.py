@@ -2,7 +2,7 @@
 """
 set_d365_sf_suggested_mapping.py
 
-Step 5 of the pipeline. Run steps 1-4 first.
+Step 6 of the pipeline. Run steps 1-5 first.
 
 Reads d365-entities/*.json and sets sfSuggestedMapping (true/false) on each
 field based on staleness gate + usage references + required level. This is the
@@ -146,7 +146,7 @@ def process_entity(entity_name, d365_dir, reset=False):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Step 5: Set sfSuggestedMapping on D365 entity fields"
+        description="Step 6: Set sfSuggestedMapping on D365 entity fields"
     )
     parser.add_argument("entity", nargs="?", default=None,
                         help="Target entity schema name (e.g., account, contact)")
@@ -172,7 +172,7 @@ def main():
         entities = [args.entity.lower()]
 
     print("=" * 60)
-    print(f"Step 5: Set sfSuggestedMapping")
+    print(f"Step 6: Set sfSuggestedMapping")
     if args.reset:
         print("  Mode: RESET (clearing all sfSuggested* first)")
     print(f"  Entities: {len(entities)}")

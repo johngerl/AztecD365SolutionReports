@@ -2,12 +2,12 @@
 """
 update_d365_entity_csv_mapping_with_sf_suggestions.py
 
-Step 6 of the pipeline. Run steps 1-5 first.
+Step 7 of the pipeline. Run steps 1-6 first.
 
 Reads enriched D365 entity JSON from d365-entities/, loads SF entity data
 from salesforce-entities/, and generates SF field suggestions using a 5-tier
-matching algorithm. Writes suggestions to d365-entities JSON (source of truth)
-and updates mapping CSVs with reference counts.
+matching algorithm. Writes suggestions to d365-entities JSON (source of truth).
+CSV generation is handled by Step 8.
 
 Matching tiers:
   1. Exact match (existing SF field by name)
@@ -47,40 +47,6 @@ SF_ENTITIES_DIR = os.path.join(PROJECT_DIR, "salesforce-entities")
 DEFAULT_D365_DIR = os.path.join(PROJECT_DIR, "d365-entities")
 MATRIX_PATH = os.path.join(PROJECT_DIR, "DataTypeCompatibilityMatrix.md")
 SETTINGS_PATH = os.path.join(PROJECT_DIR, ".claude", "settings.local.json")
-
-SF_CONFIRMED_COLUMNS = [
-    "sfObjectName",
-    "sfFieldDisplayName",
-    "sfFieldApiName",
-]
-
-SF_SUGGESTED_COLUMNS = [
-    "sfSuggestedObjectName",
-    "sfSuggestedFieldDisplayName",
-    "sfSuggestedFieldApiName",
-]
-
-SF_COLUMNS = SF_CONFIRMED_COLUMNS + SF_SUGGESTED_COLUMNS
-
-D365_COLUMNS = ["displayName", "dataType", "requiredLevel", "isCustom", "lastUpdate"]
-REPORT_COLUMNS = ["picklistValues", "mappingSuggested"]
-
-REF_COUNT_COLUMNS = [
-    ("refForms", "forms"),
-    ("refViews", "views"),
-    ("refChartVisualizations", "charts"),
-    ("refReports", "reports"),
-    ("refDashboards", "dashboards"),
-    ("refWorkflows", "workflows"),
-    ("refFormulas", "formulas"),
-    ("refPlugins", "plugins"),
-    ("refPcfControls", "pcf"),
-    ("refRelationships", "rels"),
-    ("refRibbon", "ribbon"),
-]
-
-CSV_COLUMNS = (D365_COLUMNS + REPORT_COLUMNS
-               + [col for col, _ in REF_COUNT_COLUMNS] + SF_COLUMNS)
 
 # JSON keys for sfSuggested fields stored in d365-entities/*.json
 SF_SUGGESTED_JSON_KEYS = [
@@ -598,74 +564,6 @@ def generate_suggestions(entity_name, fields, sf_object, sf_fields,
 
 
 # ---------------------------------------------------------------------------
-# CSV HELPERS
-# ---------------------------------------------------------------------------
-
-def load_mapping_csv(mapping_dir, entity_name):
-    """Load confirmed SF mapping data from CSV, keyed by fieldName."""
-    csv_path = os.path.join(mapping_dir, f"{entity_name}.csv")
-    if not os.path.isfile(csv_path):
-        return {}
-    mapping = {}
-    with open(csv_path, "r", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            field_name = row.get("fieldName", "").lower()
-            if field_name:
-                mapping[field_name] = {
-                    col: row.get(col, "") or "" for col in SF_CONFIRMED_COLUMNS
-                }
-    return mapping
-
-
-def write_mapping_csv(mapping_dir, entity_name, fields, sf_confirmed,
-                      sf_suggested_from_json, field_mapping_suggested,
-                      field_ref_counts=None):
-    """Write one row per D365 field to the mapping CSV."""
-    csv_path = os.path.join(mapping_dir, f"{entity_name}.csv")
-    header = ["fieldName"] + CSV_COLUMNS
-    if field_ref_counts is None:
-        field_ref_counts = {}
-
-    rows = []
-    for field in sorted(fields, key=lambda f: f['schema_name'].lower()):
-        sn_lower = field['schema_name'].lower()
-        confirmed = sf_confirmed.get(sn_lower, {})
-        suggested = sf_suggested_from_json.get(sn_lower, {})
-        pv = field.get('picklist_values', [])
-        pv_str = ', '.join(
-            f'{v["value"]}: {v["label"]}' for v in pv) if pv else ''
-        mapping_flag = field_mapping_suggested.get(sn_lower, False)
-        row = {
-            "fieldName": field['schema_name'],
-            "displayName": field.get('display_name', ''),
-            "dataType": field.get('data_type', ''),
-            "requiredLevel": field.get('required_level', ''),
-            "isCustom": str(field.get('is_custom', False)),
-            "lastUpdate": field.get('last_update', ''),
-            "picklistValues": pv_str,
-            "mappingSuggested": "true" if mapping_flag else "false",
-        }
-        refs = field_ref_counts.get(sn_lower, {})
-        for csv_col, count_key in REF_COUNT_COLUMNS:
-            row[csv_col] = refs.get(count_key, 0)
-        # Confirmed SF columns from CSV
-        for col in SF_CONFIRMED_COLUMNS:
-            row[col] = confirmed.get(col, '')
-        # Suggested SF columns from JSON
-        row['sfSuggestedObjectName'] = suggested.get('sfSuggestedObjectName', '')
-        row['sfSuggestedFieldDisplayName'] = suggested.get('sfSuggestedFieldDisplayName', '')
-        row['sfSuggestedFieldApiName'] = suggested.get('sfSuggestedFieldApiName', '')
-        rows.append(row)
-
-    os.makedirs(mapping_dir, exist_ok=True)
-    with open(csv_path, "w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=header)
-        writer.writeheader()
-        writer.writerows(rows)
-
-
-# ---------------------------------------------------------------------------
 # MAIN PROCESSING
 # ---------------------------------------------------------------------------
 
@@ -719,7 +617,7 @@ def process_entity(entity_name, mapping_dir, sf_entity_index, d365_entities_dir,
     for i, raw_field in enumerate(raw_fields):
         fn_lower = raw_field.get('fieldName', '').lower()
 
-        # Skip fields not flagged for mapping (set by Step 5)
+        # Skip fields not flagged for mapping (set by Step 6)
         if not raw_field.get('sfSuggestedMapping', False):
             continue
 
@@ -782,18 +680,6 @@ def process_entity(entity_name, mapping_dir, sf_entity_index, d365_entities_dir,
             json.dump(entity_data, f, indent=2, ensure_ascii=False)
             f.write('\n')
 
-    # 7. Load confirmed mappings from CSV and write updated CSV
-    sf_confirmed = load_mapping_csv(mapping_dir, entity_name)
-
-    # Read sfSuggestedMapping from JSON (set by Step 5)
-    field_mapping_suggested = {}
-    for raw_field in raw_fields:
-        fn_lower = raw_field.get('fieldName', '').lower()
-        field_mapping_suggested[fn_lower] = raw_field.get('sfSuggestedMapping', False)
-
-    write_mapping_csv(mapping_dir, entity_name, fields, sf_confirmed,
-                      all_suggestions, field_mapping_suggested, field_ref_counts)
-
     # Summary
     print(f"  Fields: {len(fields)}")
     print(f"  SF object: {sf_object or '(none)'}")
@@ -802,14 +688,13 @@ def process_entity(entity_name, mapping_dir, sf_entity_index, d365_entities_dir,
             print(f"    Tier {tier}: {count} matches")
     print(f"  New suggestions: {len(new_suggestions)}")
     print(f"  Total with suggestions: {len(all_suggestions)}")
-    print(f"  CSV written: {os.path.join(mapping_dir, entity_name + '.csv')}")
 
     return True
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Update D365-to-SF mapping with 5-tier SF suggestions'
+        description='Generate 5-tier SF suggestions and write to d365-entities JSON'
     )
     parser.add_argument('entity', nargs='?', default=None,
                         help='Target entity schema name (e.g., account, contact)')

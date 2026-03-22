@@ -2,7 +2,7 @@
 """
 generate_d365_entity_csv_mapping.py
 
-Step 7 of the pipeline. Run steps 1-6 first.
+Step 8 of the pipeline. Run steps 1-7 first.
 
 Extracts mapping CSVs from enriched d365-entities/ JSON files. Preserves
 confirmed SF mapping columns (sfObjectName, sfFieldDisplayName, sfFieldApiName)
@@ -41,19 +41,19 @@ SF_COLUMNS = SF_CONFIRMED_COLUMNS + SF_SUGGESTED_COLUMNS
 D365_COLUMNS = ["displayName", "dataType", "requiredLevel", "isCustom", "lastUpdate"]
 REPORT_COLUMNS = ["picklistValues", "mappingSuggested"]
 
-# Reference count columns: CSV header -> JSON section key
+# Reference count columns: CSV header -> JSON count property (set by Step 4)
 REF_COUNT_COLUMNS = [
-    ("refForms", "forms"),
-    ("refViews", "views"),
-    ("refChartVisualizations", "chartVisualizations"),
-    ("refReports", "reports"),
-    ("refDashboards", "dashboards"),
-    ("refWorkflows", "workflows"),
-    ("refFormulas", "formulas"),
-    ("refPlugins", "plugins"),
-    ("refPcfControls", "pcfControls"),
-    ("refRelationships", "relationships"),
-    ("refRibbon", "ribbon"),
+    ("refForms", "countForms"),
+    ("refViews", "countViews"),
+    ("refChartVisualizations", "countChartVisualizations"),
+    ("refReports", "countReports"),
+    ("refDashboards", "countDashboards"),
+    ("refWorkflows", "countWorkflows"),
+    ("refFormulas", "countFormulasAndRollups"),
+    ("refPlugins", "countPlugins"),
+    ("refPcfControls", "countPCFControls"),
+    ("refRelationships", "countRelationships"),
+    ("refRibbon", "countRibbonCustomizations"),
 ]
 
 CSV_COLUMNS = (D365_COLUMNS + REPORT_COLUMNS
@@ -98,7 +98,7 @@ def extract_mapping(source_file, output_file):
         else:
             pv_str = str(pv) if pv else ''
 
-        # Read mappingSuggested from JSON (set by Step 5)
+        # Read mappingSuggested from JSON (set by Step 6)
         mapping_suggested = "true" if field.get("sfSuggestedMapping", False) else "false"
 
         row = {
@@ -112,10 +112,9 @@ def extract_mapping(source_file, output_file):
             "mappingSuggested": mapping_suggested,
         }
 
-        # Reference counts from per-field section arrays
+        # Reference counts from pre-computed count properties (set by Step 4)
         for csv_col, json_key in REF_COUNT_COLUMNS:
-            section = field.get(json_key)
-            row[csv_col] = len(section) if isinstance(section, list) else 0
+            row[csv_col] = field.get(json_key, 0)
 
         # Preserve confirmed SF columns from existing CSV
         prev = existing_sf.get(field_name, {})

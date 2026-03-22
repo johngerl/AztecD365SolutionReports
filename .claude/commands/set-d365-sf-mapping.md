@@ -1,6 +1,6 @@
 Set sfSuggestedMapping on D365 entity field(s) based on usage and staleness rules.
 
-This is Step 5 of the pipeline. Run Steps 1-4 first. This is the single source of truth for "should this field be suggested for SF migration?"
+This is Step 6 of the pipeline. Run Steps 1-5 first. This is the single source of truth for "should this field be suggested for SF migration?"
 
 If `$ARGUMENTS` is empty, run for all entities. Otherwise run for the specified entity.
 

@@ -13,6 +13,17 @@
 | **Last Update** | 2023-10-25 03:27:14 |
 | **Primary ID Field** | businessunitid |
 | **Primary Name Field** | name |
+| **Count Forms** | 1 |
+| **Count Views** | 22 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 17 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 66 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 0 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

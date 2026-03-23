@@ -13,6 +13,17 @@
 | **Last Update** | 2026-01-20 18:23:19 |
 | **Primary ID Field** | azt_leadimportid |
 | **Primary Name Field** | azt_name |
+| **Count Forms** | 31 |
+| **Count Views** | 132 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 66 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 72 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 4 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

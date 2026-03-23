@@ -13,6 +13,17 @@
 | **Last Update** | 2026-03-22 04:01:18 |
 | **Primary ID Field** | systemuserid |
 | **Primary Name Field** | None |
+| **Count Forms** | 14 |
+| **Count Views** | 44 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 23 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 33 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 63 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 77 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

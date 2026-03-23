@@ -13,6 +13,17 @@
 | **Last Update** | 2025-12-15 14:30:06 |
 | **Primary ID Field** | azt_customertrainingid |
 | **Primary Name Field** | azt_name |
+| **Count Forms** | 12 |
+| **Count Views** | 53 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 94 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 91 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 9 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

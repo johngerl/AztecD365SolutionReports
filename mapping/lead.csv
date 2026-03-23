@@ -1,91 +1,91 @@
 fieldName,displayName,dataType,requiredLevel,isCustom,lastUpdate,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-accountid,Account,lookup,none,False,2026-03-19 19:05:35,,true,0,0,0,0,0,0,0,12,0,0,0,,,,Lead,Account__c,Account__c
+accountid,Account,lookup,none,False,2026-03-19 19:05:35,,true,0,0,0,0,0,0,0,12,0,0,0,,,,Lead,Existing Account,Account__c
 address1_addresstypecode,Address 1: Address Type,picklist,none,False,2026-03-22 01:02:18,,true,3,0,0,0,0,5,0,0,0,0,0,,,,Lead,Address 1 Address Type,Address_1_Address_Type__c
-address1_city,City,nvarchar,none,False,2026-03-22 01:02:18,,true,3,0,0,0,0,2,0,0,0,0,0,,,,Lead,City,City
+address1_city,City,nvarchar,none,False,2026-03-22 01:02:18,,true,3,0,0,0,0,2,0,0,0,0,0,,,,Lead,City,City__c
 address1_composite,Address 1,ntext,none,False,2026-03-22 01:02:18,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Lead,Address 1,Address_1__c
-address1_country,Country/Region,nvarchar,none,False,2025-08-08 09:26:28,,true,3,0,0,0,0,1,0,0,0,0,0,,,,Lead,Country,Country
-address1_county,Address 1: County,nvarchar,none,False,2024-12-03 08:07:26,,false,3,0,0,0,0,0,0,0,0,0,0,,,,Lead,Address 1 County,Address_1_County__c
-address1_fax,Address 1: Fax,nvarchar,none,False,Never,,false,0,1,0,0,0,0,0,0,0,0,0,,,,Lead,Address 1 Fax,Address_1_Fax__c
-address1_line1,Street 1,nvarchar,none,False,2024-12-03 08:07:26,,false,3,0,0,0,0,0,0,0,0,0,0,,,,Lead,Street,Street
-address1_line2,Street 2,nvarchar,none,False,Never,,false,3,0,0,0,0,0,0,0,0,0,0,,,,Lead,Street 2,Street_2__c
+address1_country,Country/Region,nvarchar,none,False,2025-08-08 09:26:28,,true,3,0,0,0,0,1,0,0,0,0,0,,,,Lead,Countryregion,Countryregion__c
+address1_county,Address 1: County,nvarchar,none,False,2024-12-03 08:07:26,,false,3,0,0,0,0,0,0,0,0,0,0,,,,,,
+address1_fax,Address 1: Fax,nvarchar,none,False,Never,,false,0,1,0,0,0,0,0,0,0,0,0,,,,,,
+address1_line1,Street 1,nvarchar,none,False,2024-12-03 08:07:26,,false,3,0,0,0,0,0,0,0,0,0,0,,,,,,
+address1_line2,Street 2,nvarchar,none,False,Never,,false,3,0,0,0,0,0,0,0,0,0,0,,,,,,
 address1_name,Address 1: Name,nvarchar,none,False,2026-01-29 20:05:46,,true,3,0,0,0,0,0,0,0,0,0,0,,,,Lead,Address 1 Name,Address_1_Name__c
-address1_postalcode,ZIP/Postal Code,nvarchar,none,False,2025-08-08 09:26:28,,true,0,0,0,0,0,1,0,0,0,0,0,,,,Lead,PostalCode,PostalCode
+address1_postalcode,ZIP/Postal Code,nvarchar,none,False,2025-08-08 09:26:28,,true,0,0,0,0,0,1,0,0,0,0,0,,,,Lead,Zip/Postal Code,PostalCode
 address1_shippingmethodcode,Address 1: Shipping Method,picklist,none,False,2026-03-22 01:02:18,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Address 1 Shipping Method,Address_1_Shipping_Method__c
-address1_stateorprovince,State/Province,nvarchar,none,False,2026-03-22 01:02:18,,true,4,6,0,0,0,5,0,4,0,0,0,,,,Lead,State,State
-address1_telephone1,Address 1: Telephone 1,nvarchar,none,False,Never,,false,0,0,0,0,0,0,0,1,0,0,0,,,,Lead,Address 1 Telephone 1,Address_1_Telephone_1__c
+address1_stateorprovince,State/Province,nvarchar,none,False,2026-03-22 01:02:18,,true,4,6,0,0,0,5,0,4,0,0,0,,,,Lead,Stateprovince,Stateprovince__c
+address1_telephone1,Address 1: Telephone 1,nvarchar,none,False,Never,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
 address2_addresstypecode,Address 2: Address Type,picklist,none,False,2026-03-20 16:52:44,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Address 2 Address Type,Address_2_Address_Type__c
 address2_shippingmethodcode,Address 2: Shipping Method,picklist,none,False,2026-03-20 16:52:44,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Address 2 Shipping Method,Address_2_Shipping_Method__c
-azt_accountleadgen,Account Lead Gen,nvarchar,none,True,2024-07-16 18:00:49,,false,1,0,0,0,0,1,0,0,0,0,0,,,,Lead,Account Lead Gen,Account_Lead_Gen__c
-azt_addresssearch,Address Search,nvarchar,none,True,Never,,false,3,0,0,0,0,0,0,2,0,0,0,,,,Lead,Address Search,Address_Search__c
-azt_analysisbackground,Analysis Background,ntext,none,True,2026-03-20 16:00:48,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Lead,Analysis_Background__c,Analysis_Background__c
-azt_assignedon,Assigned On,datetime,none,True,2024-12-02 19:15:15,,false,2,0,0,0,0,0,1,0,0,0,0,,,,Lead,Assigned On,Assigned_On__c
-azt_dayssinceassigned,Days Since Assigned,int,none,True,2024-12-02 19:15:15,,false,2,0,0,0,0,0,1,0,0,0,0,,,,Lead,Days Since Assigned,Days_Since_Assigned__c
+azt_accountleadgen,Account Lead Gen,nvarchar,none,True,2024-07-16 18:00:49,,false,1,0,0,0,0,1,0,0,0,0,0,,,,,,
+azt_addresssearch,Address Search,nvarchar,none,True,Never,,false,3,0,0,0,0,0,0,2,0,0,0,,,,,,
+azt_analysisbackground,Analysis Background,ntext,none,True,2026-03-20 16:00:48,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Lead,Analysis Background,Analysis_Background__c
+azt_assignedon,Assigned On,datetime,none,True,2024-12-02 19:15:15,,false,2,0,0,0,0,0,1,0,0,0,0,,,,,,
+azt_dayssinceassigned,Days Since Assigned,int,none,True,2024-12-02 19:15:15,,false,2,0,0,0,0,0,1,0,0,0,0,,,,,,
 azt_dayssincecreated,Days Since Created,int,none,True,2026-03-22 01:02:18,,true,2,5,0,0,0,0,1,0,0,0,0,,,,Lead,Days Since Created,Days_Since_Created__c
-azt_fiscalyearend,Fiscal Year End,picklist,none,True,2023-11-30 08:02:26,,false,3,0,0,0,0,0,0,0,0,0,0,,,,Lead,Fiscal Year End,Fiscal_Year_End__c
-azt_lastactivitydate,Last Activity Date,datetime,none,True,2026-03-20 16:52:44,,true,2,5,0,0,0,0,1,1,0,0,0,,,,Lead,LastActivityDate,LastActivityDate
-azt_leadformtype,Lead Form Type,picklist,none,True,2026-03-20 16:52:44,"3: Aztec Lead, 1: FSR, 2: Sales Lead",true,4,0,0,0,0,1,0,0,0,0,0,,,,Lead,Lead_Type__c,Lead_Type__c
+azt_fiscalyearend,Fiscal Year End,picklist,none,True,2023-11-30 08:02:26,,false,3,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_lastactivitydate,Last Activity Date,datetime,none,True,2026-03-20 16:52:44,,true,2,5,0,0,0,0,1,1,0,0,0,,,,Lead,Last Activity,LastActivityDate
+azt_leadformtype,Lead Form Type,picklist,none,True,2026-03-20 16:52:44,"3: Aztec Lead, 1: FSR, 2: Sales Lead",true,4,0,0,0,0,1,0,0,0,0,0,,,,Lead,Lead Type,Lead_Type__c
 azt_leadsource,Old Lead Source,picklist,none,True,Never,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_leadsourceid,Lead Source,lookup,required,True,2026-03-22 01:02:18,,true,2,4,0,1,0,8,0,2,0,1,0,,,,Lead,Lead_Source_Campaign__c,Lead_Source_Campaign__c
+azt_leadsourceid,Lead Source,lookup,required,True,2026-03-22 01:02:18,,true,2,4,0,1,0,8,0,2,0,1,0,,,,Lead,Lead Source Campaign,Lead_Source_Campaign__c
 azt_leadtemperature,Lead Temperature,picklist,required,True,2026-03-22 01:02:18,"327630000: Hot, 327630001: Warm, 327630002: Cold, 327630003: Rainy Day, 327630004: Future, 327630005: Internal Assignment, 100000000: Priority",true,4,6,2,0,0,4,0,0,0,0,0,,,,Lead,Lead Temperature,Lead_Temperature__c
-azt_leadtype,Lead Type,picklist,none,True,2026-03-20 16:52:43,"327630000: Ed Tech, 327630001: Pub, 327630002: CTE, 327630003: Workforce",true,1,6,0,0,0,0,0,0,0,0,0,,,,Lead,Lead_Type__c,Lead_Type__c
+azt_leadtype,Lead Type,picklist,none,True,2026-03-20 16:52:43,"327630000: Ed Tech, 327630001: Pub, 327630002: CTE, 327630003: Workforce",true,1,6,0,0,0,0,0,0,0,0,0,,,,Lead,Lead Type,Lead_Type__c
 azt_nextstepsuggestion,Next Step Suggestion,ntext,none,True,2026-03-19 18:32:48,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Lead,Next Step Suggestion,Next_Step_Suggestion__c
-azt_numberofcomputers,# Computers,int,none,True,2023-11-30 08:02:26,,false,3,0,0,0,0,0,0,0,0,0,0,,,,Lead,NumberOfEmployees,NumberOfEmployees
-azt_numberofstudents,# Students,int,none,True,2023-11-30 08:02:26,,false,3,0,0,0,0,0,0,0,0,0,0,,,,Lead,How_Many_Customers_Members__c,How_Many_Customers_Members__c
-azt_opportunityleadid,Opportunity Lead,lookup,none,True,2026-03-10 19:58:15,,true,1,0,0,0,0,2,0,0,0,1,0,,,,Lead,ConvertedOpportunityId,ConvertedOpportunityId
+azt_numberofcomputers,# Computers,int,none,True,2023-11-30 08:02:26,,false,3,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_numberofstudents,# Students,int,none,True,2023-11-30 08:02:26,,false,3,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_opportunityleadid,Opportunity Lead,lookup,none,True,2026-03-10 19:58:15,,true,1,0,0,0,0,2,0,0,0,1,0,,,,Lead,Converted Opportunity ID,ConvertedOpportunityId
 azt_originatingleadimportid,Originating Lead Import,lookup,none,True,2025-12-30 22:02:43,,true,1,0,0,0,0,0,0,1,0,1,0,,,,Lead,Originating Lead Import,Originating_Lead_Import__c
 azt_pendingassigmnent,Pending Assigmnent,bit,none,True,2026-03-22 01:02:18,"1: Yes, 0: No",true,3,0,0,0,0,2,0,0,0,0,0,,,,Lead,Pending Assigmnent,Pending_Assigmnent__c
 azt_productsissues,Product(s) Issues,ntext,none,True,2026-03-20 16:00:48,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Lead,Products Issues,Products_Issues__c
-azt_qualifiedbyid,Qualified By,lookup,none,True,2026-03-22 01:02:18,,true,1,0,0,0,0,1,0,0,0,1,0,,,,Lead,LastModifiedById,LastModifiedById
-azt_qualifieddisqualifiedon,Qualified/Disqualified On,datetime,none,True,2026-03-22 01:02:18,,true,4,0,0,0,0,1,0,0,0,0,0,,,,Lead,Qualified_Disqualified_On__c,Qualified_Disqualified_On__c
-azt_recommendation,Recommendation,ntext,none,True,2026-03-20 16:00:48,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Lead,Next_Step__c,Next_Step__c
-azt_recordownerid,Record Owner,lookup,none,True,2026-03-20 16:52:43,,true,1,2,0,1,0,37,0,9,0,1,0,,,,Lead,RecordTypeId,RecordTypeId
-azt_verticalmarket,Vertical Market,picklist,none,True,2026-03-22 01:02:18,,true,3,0,0,0,0,2,0,0,0,0,0,,,,Lead,Vertical_Market__c,Vertical_Market__c
+azt_qualifiedbyid,Qualified By,lookup,none,True,2026-03-22 01:02:18,,true,1,0,0,0,0,1,0,0,0,1,0,,,,Lead,Last Modified By ID,LastModifiedById
+azt_qualifieddisqualifiedon,Qualified/Disqualified On,datetime,none,True,2026-03-22 01:02:18,,true,4,0,0,0,0,1,0,0,0,0,0,,,,Lead,Disqualified On,Qualified_Disqualified_On__c
+azt_recommendation,Recommendation,ntext,none,True,2026-03-20 16:00:48,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Lead,Recommendation,Recommendation__c
+azt_recordownerid,Record Owner,lookup,none,True,2026-03-20 16:52:43,,true,1,2,0,1,0,37,0,9,0,1,0,,,,Lead,Record Type ID,RecordTypeId
+azt_verticalmarket,Vertical Market,picklist,none,True,2026-03-22 01:02:18,,true,3,0,0,0,0,2,0,0,0,0,0,,,,Lead,Vertical Market,Vertical_Market__c
 companyname,Company Name,nvarchar,recommended,False,2026-03-22 01:02:18,,true,3,6,0,0,0,3,0,1,0,0,0,,,,Lead,Company,Company
 confirminterest,Confirm Interest,bit,none,False,2026-03-22 01:02:18,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Confirm Interest,Confirm_Interest__c
-contactid,Contact,lookup,none,False,2026-03-20 12:16:21,,true,0,0,0,0,0,0,0,5,0,0,0,,,,Lead,ConvertedAccountId,ConvertedAccountId
-createdby,Created By,lookup,none,False,2026-03-22 01:02:18,,true,2,1,2,2,0,4,0,0,0,0,0,,,,Lead,CreatedById,CreatedById
-createdon,Created On,datetime,none,False,Skipped (createdon),,true,2,25,0,3,0,2,1,10,0,0,0,,,,Lead,CreatedDate,CreatedDate
+contactid,Contact,lookup,none,False,2026-03-20 12:16:21,,true,0,0,0,0,0,0,0,5,0,0,0,,,,Lead,Converted Account ID,ConvertedAccountId
+createdby,Created By,lookup,none,False,2026-03-22 01:02:18,,true,2,1,2,2,0,4,0,0,0,0,0,,,,Lead,Created By ID,CreatedById
+createdon,Created On,datetime,none,False,Skipped (createdon),,true,2,25,0,3,0,2,1,10,0,0,0,,,,Lead,Created Date,CreatedDate
 customerid,Customer,customer,none,False,2026-03-20 12:16:21,,true,0,0,0,0,0,13,0,11,0,1,0,,,,Lead,Customer,Customer__c
 decisionmaker,Decision Maker?,bit,none,False,2026-03-22 01:02:18,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Decision Maker,Decision_Maker__c
 description,Description,ntext,none,False,2026-03-20 16:52:43,,true,2,0,0,0,0,0,0,7,0,0,0,,,,Lead,Description,Description
 donotbulkemail,Do not allow Bulk Emails,bit,none,False,2026-03-22 01:02:18,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Do Not Allow Bulk Emails,Do_Not_Allow_Bulk_Emails__c
-donotemail,Do not allow Emails,bit,none,False,2026-03-22 01:02:18,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,HasOptedOutOfEmail,HasOptedOutOfEmail
-donotfax,Do not allow Faxes,bit,none,False,2026-03-22 01:02:18,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,HasOptedOutOfFax,HasOptedOutOfFax
-donotphone,Do not allow Phone Calls,bit,none,False,2026-03-22 01:02:18,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,DoNotCall,DoNotCall
-donotpostalmail,Do not allow Mails,bit,none,False,2026-03-22 01:02:18,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,DoNotCall,DoNotCall
+donotemail,Do not allow Emails,bit,none,False,2026-03-22 01:02:18,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Do Not Call,DoNotCall
+donotfax,Do not allow Faxes,bit,none,False,2026-03-22 01:02:18,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Do Not Call,DoNotCall
+donotphone,Do not allow Phone Calls,bit,none,False,2026-03-22 01:02:18,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Do Not Allow Phone Calls,Do_Not_Allow_Phone_Calls__c
+donotpostalmail,Do not allow Mails,bit,none,False,2026-03-22 01:02:18,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Do Not Call,DoNotCall
 donotsendmm,Marketing Material,bit,none,False,2026-03-22 01:02:18,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Marketing Material,Marketing_Material__c
 emailaddress1,Email,nvarchar,none,False,2026-03-20 16:52:43,,true,3,0,0,0,0,0,0,2,0,0,0,,,,Lead,Email,Email
 entityimage,Entity Image,image,none,False,Skipped (image),,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-estimatedclosedate,Est. Close Date,datetime,none,False,Never,,false,0,0,0,0,0,0,0,3,0,0,0,,,,Lead,Est Close Date,Est_Close_Date__c
-estimatedvalue,Est. Value (deprecated),float,none,False,Never,,false,0,0,0,0,0,0,0,2,0,0,0,,,,Lead,Est Value Deprecated,Est_Value_Deprecated__c
+estimatedclosedate,Est. Close Date,datetime,none,False,Never,,false,0,0,0,0,0,0,0,3,0,0,0,,,,,,
+estimatedvalue,Est. Value (deprecated),float,none,False,Never,,false,0,0,0,0,0,0,0,2,0,0,0,,,,,,
 evaluatefit,Evaluate Fit,bit,none,False,2026-03-22 01:02:18,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Evaluate Fit,Evaluate_Fit__c
 exchangerate,Exchange Rate,decimal,none,False,2026-03-22 01:02:18,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-fax,Fax,nvarchar,none,False,Never,,false,0,1,0,0,0,0,0,0,0,0,0,,,,Lead,Fax,Fax
-firstname,First Name,nvarchar,recommended,False,2026-03-22 01:02:18,,true,0,0,0,0,0,3,0,1,0,0,0,,,,Lead,FirstName,FirstName
+fax,Fax,nvarchar,none,False,Never,,false,0,1,0,0,0,0,0,0,0,0,0,,,,,,
+firstname,First Name,nvarchar,recommended,False,2026-03-22 01:02:18,,true,0,0,0,0,0,3,0,1,0,0,0,,,,Lead,First Name,FirstName
 followemail,Follow Email Activity,bit,none,False,2026-03-22 01:02:18,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Follow Email Activity,Follow_Email_Activity__c
-fullname,Name,nvarchar,none,False,2026-03-22 01:02:18,,true,2,4,0,3,0,4,0,7,0,0,0,,,,Lead,Name,Name
+fullname,Name,nvarchar,none,False,2026-03-22 01:02:18,,true,2,4,0,3,0,4,0,7,0,0,0,,,,Lead,Full Name,Name
 jobtitle,Job Title,nvarchar,none,False,2026-03-10 13:49:50,,true,1,0,0,0,0,0,0,1,0,0,0,,,,Lead,Title,Title
-lastname,Last Name,nvarchar,recommended,False,2026-03-22 01:02:18,,true,0,0,0,0,0,3,0,1,0,0,0,,,,Lead,LastName,LastName
+lastname,Last Name,nvarchar,recommended,False,2026-03-22 01:02:18,,true,0,0,0,0,0,3,0,1,0,0,0,,,,Lead,Last Name,LastName
 leadid,Lead,uniqueidentifier,required,False,2026-03-22 01:02:18,,true,0,14,0,0,0,2,0,0,0,0,0,,,,Lead,Lead,Lead__c
-leadqualitycode,Rating,picklist,none,False,2026-03-22 01:02:18,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Rating,Rating
+leadqualitycode,Rating,picklist,none,False,2026-03-22 01:02:18,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Rating,Rating__c
 leadsourcecode,OOB Lead Source,picklist,none,False,2025-03-04 00:32:12,"1: Advertisement, 2: Employee Referral, 3: External Referral, 4: Partner, 5: Public Relations, 6: Seminar, 7: Trade Show, 8: Web, 9: Word of Mouth, 10: Other",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-mobilephone,Mobile Phone,nvarchar,none,False,2026-02-13 15:41:31,,true,2,0,0,0,0,0,0,1,0,0,0,,,,Lead,MobilePhone,MobilePhone
-modifiedby,Modified By,lookup,none,False,2026-03-22 01:02:18,,true,0,0,0,0,0,1,0,0,0,0,0,,,,Lead,LastModifiedById,LastModifiedById
-modifiedon,Modified On,datetime,none,False,Skipped (modifiedon),,true,0,2,0,0,0,0,0,4,0,0,0,,,,Lead,LastModifiedDate,LastModifiedDate
-msdyn_leadkpiid,KPI,lookup,none,True,Never,,false,0,0,0,0,0,0,0,0,0,1,0,,,,Lead,Kpi,Kpi__c
-msdyn_predictivescoreid,Predictive Score,lookup,none,True,Never,,false,0,0,0,0,0,0,0,0,0,1,0,,,,Lead,Predictive Score,Predictive_Score__c
-msdyn_segmentid,Segment Id,lookup,none,True,Never,,false,0,0,0,0,0,0,0,0,0,1,0,,,,Lead,Segment Id,Segment_Id__c
-originatingcaseid,Originating Case,lookup,none,False,Never,,false,0,0,0,0,0,0,0,0,0,1,0,,,,Lead,Originating Case,Originating_Case__c
-ownerid,Owner,owner,systemrequired,False,2026-03-22 01:02:18,,true,3,12,0,1,0,24,0,22,0,0,0,,,,Lead,OwnerId,OwnerId
-parentaccountid,Parent Account for lead,lookup,none,False,2026-03-22 01:02:18,,true,8,13,0,1,0,12,0,4,0,0,0,,,,Lead,ConvertedAccountId,ConvertedAccountId
-parentcontactid,Parent Contact for lead,lookup,none,False,2026-03-22 01:02:18,,true,6,2,0,1,0,8,0,1,0,0,0,,,,Lead,ConvertedContactId,ConvertedContactId
+mobilephone,Mobile Phone,nvarchar,none,False,2026-02-13 15:41:31,,true,2,0,0,0,0,0,0,1,0,0,0,,,,Lead,Mobile Phone,MobilePhone
+modifiedby,Modified By,lookup,none,False,2026-03-22 01:02:18,,true,0,0,0,0,0,1,0,0,0,0,0,,,,Lead,Last Modified By ID,LastModifiedById
+modifiedon,Modified On,datetime,none,False,Skipped (modifiedon),,true,0,2,0,0,0,0,0,4,0,0,0,,,,Lead,Last Modified Date,LastModifiedDate
+msdyn_leadkpiid,KPI,lookup,none,True,Never,,false,0,0,0,0,0,0,0,0,0,1,0,,,,,,
+msdyn_predictivescoreid,Predictive Score,lookup,none,True,Never,,false,0,0,0,0,0,0,0,0,0,1,0,,,,,,
+msdyn_segmentid,Segment Id,lookup,none,True,Never,,false,0,0,0,0,0,0,0,0,0,1,0,,,,,,
+originatingcaseid,Originating Case,lookup,none,False,Never,,false,0,0,0,0,0,0,0,0,0,1,0,,,,,,
+ownerid,Owner,owner,systemrequired,False,2026-03-22 01:02:18,,true,3,12,0,1,0,24,0,22,0,0,0,,,,Lead,Owner ID,OwnerId
+parentaccountid,Parent Account for lead,lookup,none,False,2026-03-22 01:02:18,,true,8,13,0,1,0,12,0,4,0,0,0,,,,Lead,Converted Account ID,ConvertedAccountId
+parentcontactid,Parent Contact for lead,lookup,none,False,2026-03-22 01:02:18,,true,6,2,0,1,0,8,0,1,0,0,0,,,,Lead,Converted Contact ID,ConvertedContactId
 preferredcontactmethodcode,Preferred Method of Contact,picklist,none,False,2026-03-22 01:02:18,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Preferred Method Of Contact,Preferred_Method_Of_Contact__c
 prioritycode,Priority,picklist,none,False,2026-03-22 01:02:18,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Priority,Priority__c
 qualifyingopportunityid,Qualifying Opportunity,lookup,none,False,2026-03-20 16:52:43,,true,1,5,0,0,0,1,0,0,0,0,0,,,,Lead,Qualifying Opportunity,Qualifying_Opportunity__c
 salesstagecode,Sales Stage Code,picklist,none,False,2026-03-22 01:02:18,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Sales Stage Code,Sales_Stage_Code__c
-statecode,Status,state,systemrequired,False,2026-03-22 01:02:18,,true,0,12,0,1,0,10,1,20,0,0,0,,,,Lead,PostalCode,PostalCode
+statecode,Status,state,systemrequired,False,2026-03-22 01:02:18,,true,0,12,0,1,0,10,1,20,0,0,0,,,,Lead,Zip/Postal Code,PostalCode
 statuscode,Status Reason,status,none,False,2026-03-22 01:02:18,,true,3,2,0,1,0,5,0,6,0,0,0,,,,Lead,Status,Status
 subject,Topic,nvarchar,required,False,2026-03-22 01:02:18,,true,3,15,0,2,0,18,1,3,0,0,0,,,,Lead,Topic,Topic__c
 telephone1,Business Phone,nvarchar,none,False,2026-02-23 14:21:39,,true,3,0,0,0,0,0,0,1,0,0,0,,,,Lead,Phone,Phone
 transactioncurrencyid,Currency,lookup,none,False,2026-03-22 01:02:18,,true,0,0,0,0,0,5,0,8,0,0,0,,,,Lead,Currency,Currency__c
-websiteurl,Website,nvarchar,none,False,2024-04-23 17:28:21,,false,3,0,0,0,0,0,0,0,0,0,0,,,,Lead,Website,Website
+websiteurl,Website,nvarchar,none,False,2024-04-23 17:28:21,,false,3,0,0,0,0,0,0,0,0,0,0,,,,,,

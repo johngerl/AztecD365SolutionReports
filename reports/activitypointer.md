@@ -9,10 +9,21 @@
 | **Object Type** | Standard |
 | **Ownership Type** |  |
 | **Audit Enabled** | False |
-| **Total Rows** | 813934 |
-| **Last Update** | 2026-03-22 02:48:16 |
+| **Total Rows** | 813936 |
+| **Last Update** | 2026-03-22 23:08:18 |
 | **Primary ID Field** | activitypointerid |
 | **Primary Name Field** | None |
+| **Count Forms** | 0 |
+| **Count Views** | 168 |
+| **Count Chart Visualizations** | 2 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 0 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 99 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 31 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 
@@ -141,26 +152,26 @@ Total fields: **21**
 
 | # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
 |---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [activityid](#activityid) | Activity | uniqueidentifier |  | No | required | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [14](#3.%20Views) |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 2 | [activitytypecode](#activitytypecode) | Activity Type | entityname |  | No | required | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [21](#3.%20Views) | [1](#4.%20Chart%20Visualizations) |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 3 | [actualend](#actualend) | Actual End | datetime |  | No | none | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 1 | [activityid](#activityid) | Activity | uniqueidentifier |  | No | required | 2026-03-22 23:08:18 |  | true |  |  |  |  |  |  |  | [14](#3.%20Views) |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 2 | [activitytypecode](#activitytypecode) | Activity Type | entityname |  | No | required | 2026-03-22 23:08:18 |  | true |  |  |  |  |  |  |  | [21](#3.%20Views) | [1](#4.%20Chart%20Visualizations) |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 3 | [actualend](#actualend) | Actual End | datetime |  | No | none | 2026-03-22 23:08:18 |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 | 4 | [community](#community) | Social Channel | picklist |  | No | none | Never |  | false |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 5 | [createdby](#createdby) | Created By | lookup |  | No | none | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 5 | [createdby](#createdby) | Created By | lookup |  | No | none | 2026-03-22 23:08:18 |  | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 | 6 | [createdon](#createdon) | Date Created | datetime |  | No | none | Skipped (createdon) |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 7 | [description](#description) | Description | ntext |  | No | none | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 7 | [description](#description) | Description | ntext |  | No | none | 2026-03-22 23:08:18 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 8 | [descriptionblobid](#descriptionblobid) | Description File Id | virtual |  | No | none | 2026-03-20 16:52:39 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 9 | [instancetypecode](#instancetypecode) | Recurring Instance Type | picklist |  | No | required | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 10 | [isregularactivity](#isregularactivity) | Is Regular Activity | bit |  | No | required | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 11 | [modifiedby](#modifiedby) | Modified By | lookup |  | No | none | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [4](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 9 | [instancetypecode](#instancetypecode) | Recurring Instance Type | picklist |  | No | required | 2026-03-22 23:08:18 |  | true |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 10 | [isregularactivity](#isregularactivity) | Is Regular Activity | bit |  | No | required | 2026-03-22 23:08:18 |  | true |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 11 | [modifiedby](#modifiedby) | Modified By | lookup |  | No | none | 2026-03-22 23:08:18 |  | true |  |  |  |  |  |  |  | [4](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 | 12 | [modifiedon](#modifiedon) | Last Updated | datetime |  | No | none | Skipped (modifiedon) |  | true |  |  |  |  |  |  |  | [12](#3.%20Views) | [1](#4.%20Chart%20Visualizations) |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 13 | [ownerid](#ownerid) | Owner | lookup |  | No | required | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 14 | [prioritycode](#prioritycode) | Priority | picklist |  | No | none | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [15](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 15 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [14](#3.%20Views) |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [30](#12.%20Relationships) |  |  |
-| 16 | [scheduledend](#scheduledend) | Due Date | datetime |  | No | none | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [26](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 17 | [scheduledstart](#scheduledstart) | Start Date | datetime |  | No | none | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 18 | [statecode](#statecode) | Activity Status | picklist |  | No | required | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [21](#3.%20Views) |  |  |  |  |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 19 | [statuscode](#statuscode) | Status Reason | picklist |  | No | none | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 20 | [subject](#subject) | Subject | nvarchar |  | No | required | 2026-03-22 02:48:16 |  | true |  |  |  |  |  |  |  | [15](#3.%20Views) |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 13 | [ownerid](#ownerid) | Owner | lookup |  | No | required | 2026-03-22 23:08:18 |  | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 14 | [prioritycode](#prioritycode) | Priority | picklist |  | No | none | 2026-03-22 23:08:18 |  | true |  |  |  |  |  |  |  | [15](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 15 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none | 2026-03-22 23:08:18 |  | true |  |  |  |  |  |  |  | [14](#3.%20Views) |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [30](#12.%20Relationships) |  |  |
+| 16 | [scheduledend](#scheduledend) | Due Date | datetime |  | No | none | 2026-03-22 23:08:18 |  | true |  |  |  |  |  |  |  | [26](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 17 | [scheduledstart](#scheduledstart) | Start Date | datetime |  | No | none | 2026-03-22 23:08:18 |  | true |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 18 | [statecode](#statecode) | Activity Status | picklist |  | No | required | 2026-03-22 23:08:18 |  | true |  |  |  |  |  |  |  | [21](#3.%20Views) |  |  |  |  |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 19 | [statuscode](#statuscode) | Status Reason | picklist |  | No | none | 2026-03-22 23:08:18 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 20 | [subject](#subject) | Subject | nvarchar |  | No | required | 2026-03-22 23:08:18 |  | true |  |  |  |  |  |  |  | [15](#3.%20Views) |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 21 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none | 2026-03-21 04:27:30 |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 
 ---

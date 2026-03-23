@@ -13,6 +13,17 @@
 | **Last Update** | 2026-03-22 04:11:12 |
 | **Primary ID Field** | organizationid |
 | **Primary Name Field** | None |
+| **Count Forms** | 0 |
+| **Count Views** | 0 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 0 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 44 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 15 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

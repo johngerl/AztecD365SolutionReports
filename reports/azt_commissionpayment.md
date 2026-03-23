@@ -13,6 +13,17 @@
 | **Last Update** | 2026-03-20 16:30:19 |
 | **Primary ID Field** | azt_commissionpaymentid |
 | **Primary Name Field** | azt_name |
+| **Count Forms** | 17 |
+| **Count Views** | 61 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 120 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 113 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 10 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

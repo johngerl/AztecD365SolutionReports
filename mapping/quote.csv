@@ -1,77 +1,77 @@
 fieldName,displayName,dataType,requiredLevel,isCustom,lastUpdate,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-accountid,Account,lookup,none,False,2026-03-20 22:35:47,,true,0,0,0,0,0,0,0,12,0,0,0,,,,Quote,AccountId,AccountId
+accountid,Account,lookup,none,False,2026-03-20 22:35:47,,true,0,0,0,0,0,0,0,12,0,0,0,,,,Quote,Account ID,AccountId
 azt_defaultfreightamount,Default Freight Amount,money,none,True,2026-03-20 22:35:47,,true,1,1,0,0,0,0,0,1,0,0,0,,,,Quote,Default Freight Amount,Default_Freight_Amount__c
 azt_defaultfreightamount_base,Default Freight Amount (Base),money,none,True,2026-03-20 22:35:47,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
 azt_discretionarydiscount,Discretionary Discount,money,none,True,2026-03-20 22:35:47,,true,1,2,0,3,0,0,1,0,0,0,0,,,,Quote,Discretionary Discount,Discretionary_Discount__c
 azt_discretionarydiscount_base,Discretionary Discount (Base),money,none,True,2026-03-20 22:35:47,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_discretionarydiscountamt,Discretionary Discount Amt,money,none,True,2024-11-10 17:15:24,,false,1,0,0,0,0,0,1,2,0,0,0,,,,Quote,Discretionary Discount Amt,Discretionary_Discount_Amt__c
+azt_discretionarydiscountamt,Discretionary Discount Amt,money,none,True,2024-11-10 17:15:24,,false,1,0,0,0,0,0,1,2,0,0,0,,,,,,
 azt_discretionarydiscountamt_base,Discretionary Discount Amt (Base),money,none,True,2024-11-10 17:15:24,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_freightamtapproved,Freight Amt Approved?,bit,none,True,2026-03-20 22:35:47,"1: Yes, 0: No",true,1,0,0,0,0,0,0,1,0,0,0,,,,Quote,Freight_Approved__c,Freight_Approved__c
+azt_freightamtapproved,Freight Amt Approved?,bit,none,True,2026-03-20 22:35:47,"1: Yes, 0: No",true,1,0,0,0,0,0,0,1,0,0,0,,,,Quote,Freight Approved,Freight_Approved__c
 azt_historicalowner,Historical Owner,nvarchar,none,True,2026-02-13 16:44:19,,true,1,0,0,0,0,3,0,0,0,0,0,,,,Quote,Historical Owner,Historical_Owner__c
-azt_ponumber,PO Number,nvarchar,none,True,2026-01-22 16:04:03,,true,1,0,0,1,0,3,0,2,0,0,0,,,,Quote,PO_Number__c,PO_Number__c
+azt_ponumber,PO Number,nvarchar,none,True,2026-01-22 16:04:03,,true,1,0,0,1,0,3,0,2,0,0,0,,,,Quote,PO Number,PO_Number__c
 azt_quoteapproval,Quote Approval,picklist,none,True,2026-01-21 01:13:24,"276530000: Does not need approval, 276530001: Needs approval, 276530002: Approved",true,0,0,0,0,0,2,0,0,0,0,0,,,,Quote,Quote Approval,Quote_Approval__c
-azt_quotedcontactid,Quoted Contact,lookup,none,True,2026-03-20 22:35:47,,true,1,0,0,1,0,3,0,0,0,1,0,,,,Quote,ContactId,ContactId
-azt_recapnotes,Recap Notes,ntext,none,True,2026-03-20 22:35:47,,true,1,0,0,3,0,2,0,0,0,0,0,,,,Quote,Quote_Summary__c,Quote_Summary__c
+azt_quotedcontactid,Quoted Contact,lookup,none,True,2026-03-20 22:35:47,,true,1,0,0,1,0,3,0,0,0,1,0,,,,Quote,Contact ID,ContactId
+azt_recapnotes,Recap Notes,ntext,none,True,2026-03-20 22:35:47,,true,1,0,0,3,0,2,0,0,0,0,0,,,,Quote,Recap Notes,Recap_Notes__c
 azt_recapnotescannedoptions,Recap Notes (Canned Options),picklist,none,True,2026-03-20 22:35:47,"100000004: Internet Renewal, 276530000: Internet, 100000003: Kaplan Series, 100000001: GED Flash, 100000000: Life Skills Print, 276530001: LAN, 276530002: GED Ready Vouchers, 100000002: Third party vendors (ie..SHI), 276530003: COVID-19, 327630000: Print, 327630001: PassAssured",true,1,0,0,0,0,0,0,0,0,0,0,,,,Quote,Recap Notes Canned Options,Recap_Notes_Canned_Options__c
-azt_recordownerid,Record Owner,lookup,none,True,2026-03-20 22:35:47,,true,1,1,0,3,0,37,0,9,0,1,0,,,,Quote,RecordTypeId,RecordTypeId
-azt_requestedfreightamt,Requested Freight Amt,money,none,True,2026-03-19 15:27:57,,true,1,1,0,0,0,0,0,1,0,0,0,,,,Quote,Freight_Requested__c,Freight_Requested__c
+azt_recordownerid,Record Owner,lookup,none,True,2026-03-20 22:35:47,,true,1,1,0,3,0,37,0,9,0,1,0,,,,Quote,Record Type ID,RecordTypeId
+azt_requestedfreightamt,Requested Freight Amt,money,none,True,2026-03-19 15:27:57,,true,1,1,0,0,0,0,0,1,0,0,0,,,,Quote,Requested Freight Amt,Requested_Freight_Amt__c
 azt_requestedfreightamt_base,Requested Freight Amt (Base),money,none,True,2026-03-19 15:27:57,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_shippingcompany,Ship To Company,nvarchar,none,True,2026-03-20 22:35:47,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Quote,ShippingCountry,ShippingCountry
+azt_shippingcompany,Ship To Company,nvarchar,none,True,2026-03-20 22:35:47,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Quote,Ship To Country,ShippingCountry
 azt_signedquotereceived,Signed Quote Received?,bit,none,True,2026-03-20 22:35:47,"1: Yes, 0: No",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
 azt_taxamount,Tax Amount,money,none,True,2026-02-24 16:32:32,,true,1,0,0,3,0,2,0,0,0,0,0,,,,Quote,Tax Amount,Tax_Amount__c
 azt_taxamount_base,Tax Amount (Base),money,none,True,2026-02-24 16:32:32,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-billto_city,Bill To City,nvarchar,none,False,2026-03-20 22:35:47,,true,0,0,0,5,0,2,0,0,0,0,0,,,,Quote,BillingCity,BillingCity
-billto_contactname,Bill To Contact Name,nvarchar,none,False,2024-11-08 03:09:28,,false,0,0,0,1,0,2,0,0,0,0,0,,,,Quote,Bill To Contact Name,Bill_To_Contact_Name__c
-billto_country,Bill To Country/Region,nvarchar,none,False,2026-03-20 22:35:47,,true,0,0,0,1,0,2,0,0,0,0,0,,,,Quote,BillingCountry,BillingCountry
-billto_fax,Bill To Fax,nvarchar,none,False,Never,,false,0,0,0,1,0,2,0,0,0,0,0,,,,Quote,Bill To Fax,Bill_To_Fax__c
-billto_line1,Bill To Street 1,nvarchar,none,False,2026-03-20 22:35:47,,true,0,0,0,5,0,2,0,1,0,0,0,,,,Quote,BillingStreet,BillingStreet
+billto_city,Bill To City,nvarchar,none,False,2026-03-20 22:35:47,,true,0,0,0,5,0,2,0,0,0,0,0,,,,Quote,Bill To City,BillingCity
+billto_contactname,Bill To Contact Name,nvarchar,none,False,2024-11-08 03:09:28,,false,0,0,0,1,0,2,0,0,0,0,0,,,,,,
+billto_country,Bill To Country/Region,nvarchar,none,False,2026-03-20 22:35:47,,true,0,0,0,1,0,2,0,0,0,0,0,,,,Quote,Bill To Country,BillingCountry
+billto_fax,Bill To Fax,nvarchar,none,False,Never,,false,0,0,0,1,0,2,0,0,0,0,0,,,,,,
+billto_line1,Bill To Street 1,nvarchar,none,False,2026-03-20 22:35:47,,true,0,0,0,5,0,2,0,1,0,0,0,,,,Quote,Bill To Street 1,Bill_To_Street_1__c
 billto_line2,Bill To Street 2,nvarchar,none,False,2026-03-20 16:28:01,,true,0,0,0,2,0,2,0,1,0,0,0,,,,Quote,Bill To Street 2,Bill_To_Street_2__c
 billto_line3,Bill To Street 3,nvarchar,none,False,2026-03-20 21:44:41,,true,0,0,0,1,0,0,0,1,0,0,0,,,,Quote,Bill To Street 3,Bill_To_Street_3__c
-billto_name,Bill To Name,nvarchar,none,False,2026-01-21 01:13:24,,true,0,0,0,1,0,2,0,1,0,0,0,,,,Quote,Client_Bill_To_Name__c,Client_Bill_To_Name__c
-billto_postalcode,Bill To ZIP/Postal Code,nvarchar,none,False,2026-03-20 22:35:47,,true,0,0,0,5,0,2,0,1,0,0,0,,,,Quote,BillingPostalCode,BillingPostalCode
-billto_stateorprovince,Bill To State/Province,nvarchar,none,False,2026-03-20 22:35:47,,true,0,0,0,5,0,2,0,1,0,0,0,,,,Quote,BillingState,BillingState
-billto_telephone,Bill To Phone,nvarchar,none,False,2021-09-07 02:22:59,,false,0,0,0,1,0,2,0,0,0,0,0,,,,Quote,Bill To Phone,Bill_To_Phone__c
-campaignid,Source Campaign,lookup,none,False,Never,,false,0,0,0,0,0,2,0,0,0,0,0,,,,Quote,Source Campaign,Source_Campaign__c
+billto_name,Bill To Name,nvarchar,none,False,2026-01-21 01:13:24,,true,0,0,0,1,0,2,0,1,0,0,0,,,,Quote,Client: Bill To Name,Client_Bill_To_Name__c
+billto_postalcode,Bill To ZIP/Postal Code,nvarchar,none,False,2026-03-20 22:35:47,,true,0,0,0,5,0,2,0,1,0,0,0,,,,Quote,Bill To Zip/Postal Code,BillingPostalCode
+billto_stateorprovince,Bill To State/Province,nvarchar,none,False,2026-03-20 22:35:47,,true,0,0,0,5,0,2,0,1,0,0,0,,,,Quote,Bill To Stateprovince,Bill_To_Stateprovince__c
+billto_telephone,Bill To Phone,nvarchar,none,False,2021-09-07 02:22:59,,false,0,0,0,1,0,2,0,0,0,0,0,,,,,,
+campaignid,Source Campaign,lookup,none,False,Never,,false,0,0,0,0,0,2,0,0,0,0,0,,,,,,
 closedon,Closed On,datetime,none,False,2026-03-20 22:14:10,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Quote,Closed On,Closed_On__c
-contactid,Contact,lookup,none,False,2026-01-20 19:16:35,,true,0,0,0,0,0,0,0,5,0,0,0,,,,Quote,ContactId,ContactId
-createdby,Created By,lookup,none,False,2026-03-20 22:35:47,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Quote,CreatedById,CreatedById
-createdon,Created On,datetime,none,False,Skipped (createdon),,true,1,7,0,1,0,1,0,10,0,0,0,,,,Quote,CreatedDate,CreatedDate
+contactid,Contact,lookup,none,False,2026-01-20 19:16:35,,true,0,0,0,0,0,0,0,5,0,0,0,,,,Quote,Contact ID,ContactId
+createdby,Created By,lookup,none,False,2026-03-20 22:35:47,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Quote,Created By ID,CreatedById
+createdon,Created On,datetime,none,False,Skipped (createdon),,true,1,7,0,1,0,1,0,10,0,0,0,,,,Quote,Created Date,CreatedDate
 customerid,Potential Customer,customer,required,False,2026-03-20 22:35:47,,true,0,5,0,5,0,14,0,11,0,1,0,,,,Quote,Potential Customer,Potential_Customer__c
 description,Description,ntext,none,False,2026-03-20 21:44:41,,true,0,0,0,0,0,0,0,7,0,0,0,,,,Quote,Description,Description
 discountamount,Quote Discount Amount,money,none,False,2026-02-20 19:23:10,,true,1,0,0,3,0,0,0,2,0,0,0,,,,Quote,Quote Discount Amount,Quote_Discount_Amount__c
 discountpercentage,Quote Discount (%),decimal,none,False,2025-07-09 16:14:07,,true,1,0,0,3,0,0,0,1,0,0,0,,,,Quote,Quote Discount,Quote_Discount__c
 effectivefrom,Effective from,datetime,none,False,2026-03-20 22:35:47,,true,1,0,0,3,0,3,0,0,0,0,0,,,,Quote,Effective From,Effective_From__c
 effectiveto,Effective to,datetime,none,False,2026-03-20 22:35:47,,true,1,1,0,3,0,4,0,0,0,0,0,,,,Quote,Effective To,Effective_To__c
-emailaddress,Email Address,nvarchar,none,False,Never,,false,0,0,0,0,0,2,0,0,0,0,0,,,,Quote,Email,Email
-expireson,Due By,datetime,none,False,Never,,false,0,0,0,0,0,2,0,0,0,0,0,,,,Quote,ExpirationDate,ExpirationDate
-freightamount,Freight Amount,money,none,False,2026-03-20 22:35:47,,true,1,1,0,4,0,2,0,1,0,0,0,,,,Quote,ShippingHandling,ShippingHandling
+emailaddress,Email Address,nvarchar,none,False,Never,,false,0,0,0,0,0,2,0,0,0,0,0,,,,,,
+expireson,Due By,datetime,none,False,Never,,false,0,0,0,0,0,2,0,0,0,0,0,,,,,,
+freightamount,Freight Amount,money,none,False,2026-03-20 22:35:47,,true,1,1,0,4,0,2,0,1,0,0,0,,,,Quote,Freight Amount,Freight_Amount__c
 freightamount_base,Freight Amount (Base),money,none,False,2026-03-20 22:35:47,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
 freighttermscode,Freight Terms,picklist,none,False,2026-03-20 22:27:06,,true,0,0,0,0,0,2,0,1,0,0,0,,,,Quote,Freight Terms CRM,Freight_Terms_CRM__c
-modifiedon,Modified On,datetime,none,False,Skipped (modifiedon),,true,0,0,0,0,0,0,0,4,0,0,0,,,,Quote,LastModifiedDate,LastModifiedDate
-name,Name,nvarchar,required,False,2026-03-20 22:35:47,,true,0,8,0,10,0,17,0,23,0,0,0,,,,Quote,Name,Name
-opportunityid,Opportunity,lookup,none,False,2026-03-20 22:35:47,,true,0,1,0,0,0,2,0,32,0,1,0,,,,Quote,OpportunityId,OpportunityId
-ownerid,Owner,lookup,required,False,2026-03-20 22:35:47,,true,1,0,0,1,0,2,0,22,0,0,0,,,,Quote,OwnerId,OwnerId
+modifiedon,Modified On,datetime,none,False,Skipped (modifiedon),,true,0,0,0,0,0,0,0,4,0,0,0,,,,Quote,Last Modified Date,LastModifiedDate
+name,Name,nvarchar,required,False,2026-03-20 22:35:47,,true,0,8,0,10,0,17,0,23,0,0,0,,,,Quote,Quote Name,Name
+opportunityid,Opportunity,lookup,none,False,2026-03-20 22:35:47,,true,0,1,0,0,0,2,0,32,0,1,0,,,,Quote,Opportunity ID,OpportunityId
+ownerid,Owner,lookup,required,False,2026-03-20 22:35:47,,true,1,0,0,1,0,2,0,22,0,0,0,,,,Quote,Owner ID,OwnerId
 paymenttermscode,Payment Terms,picklist,none,False,2025-07-18 12:45:13,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Quote,Payment Terms,Payment_Terms__c
-pricelevelid,Price List,lookup,required,False,2026-03-20 22:35:47,,true,0,0,0,0,0,2,0,1,0,0,0,,,,Quote,Pricebook2Id,Pricebook2Id
-quoteid,Quote,uniqueidentifier,required,False,2026-03-20 22:35:47,,true,0,5,0,4,0,3,0,20,0,1,0,,,,Quote,Quote_GUID__c,Quote_GUID__c
-quotenumber,Quote ID,nvarchar,systemrequired,False,2026-03-20 22:35:47,,true,0,1,0,4,0,0,0,0,0,0,0,,,,Quote,QuoteNumber,QuoteNumber
-requestdeliveryby,Requested Delivery Date,datetime,none,False,Never,,false,0,0,0,0,0,2,0,1,0,0,0,,,,Quote,Requested Delivery Date,Requested_Delivery_Date__c
-shippingmethodcode,Shipping Method,picklist,none,False,2026-03-20 22:27:06,,true,0,0,0,2,0,2,0,1,0,0,0,,,,Quote,ShippingPostalCode,ShippingPostalCode
-shipto_city,Ship To City,nvarchar,none,False,2026-03-20 22:35:47,,true,0,0,0,2,0,2,0,0,0,0,0,,,,Quote,ShippingCity,ShippingCity
+pricelevelid,Price List,lookup,required,False,2026-03-20 22:35:47,,true,0,0,0,0,0,2,0,1,0,0,0,,,,Quote,Price List,Price_List__c
+quoteid,Quote,uniqueidentifier,required,False,2026-03-20 22:35:47,,true,0,5,0,4,0,3,0,20,0,1,0,,,,Quote,Quote GUID,Quote_GUID__c
+quotenumber,Quote ID,nvarchar,systemrequired,False,2026-03-20 22:35:47,,true,0,1,0,4,0,0,0,0,0,0,0,,,,Quote,Quote Number,QuoteNumber
+requestdeliveryby,Requested Delivery Date,datetime,none,False,Never,,false,0,0,0,0,0,2,0,1,0,0,0,,,,,,
+shippingmethodcode,Shipping Method,picklist,none,False,2026-03-20 22:27:06,,true,0,0,0,2,0,2,0,1,0,0,0,,,,Quote,Ship To Zip/Postal Code,ShippingPostalCode
+shipto_city,Ship To City,nvarchar,none,False,2026-03-20 22:35:47,,true,0,0,0,2,0,2,0,0,0,0,0,,,,Quote,Ship To City,ShippingCity
 shipto_contactname,Shipping Contact,nvarchar,none,False,2025-08-12 17:04:53,,true,1,0,0,3,0,3,0,0,0,0,0,,,,Quote,Shipping Contact,Shipping_Contact__c
-shipto_country,Ship To Country/Region,nvarchar,none,False,2026-03-20 22:35:47,,true,0,0,0,2,0,2,0,0,0,0,0,,,,Quote,ShippingCountry,ShippingCountry
-shipto_fax,Ship To Fax,nvarchar,none,False,Never,,false,0,0,0,1,0,2,0,0,0,0,0,,,,Quote,Ship To Fax,Ship_To_Fax__c
-shipto_freighttermscode,Ship To Freight Terms,picklist,none,False,Never,,false,0,0,0,0,0,2,0,0,0,0,0,,,,Quote,Ship To Freight Terms,Ship_To_Freight_Terms__c
-shipto_line1,Ship To Street 1,nvarchar,none,False,2026-03-20 22:35:47,,true,0,0,0,2,0,2,0,1,0,0,0,,,,Quote,ShippingStreet,ShippingStreet
+shipto_country,Ship To Country/Region,nvarchar,none,False,2026-03-20 22:35:47,,true,0,0,0,2,0,2,0,0,0,0,0,,,,Quote,Ship To Country,ShippingCountry
+shipto_fax,Ship To Fax,nvarchar,none,False,Never,,false,0,0,0,1,0,2,0,0,0,0,0,,,,,,
+shipto_freighttermscode,Ship To Freight Terms,picklist,none,False,Never,,false,0,0,0,0,0,2,0,0,0,0,0,,,,,,
+shipto_line1,Ship To Street 1,nvarchar,none,False,2026-03-20 22:35:47,,true,0,0,0,2,0,2,0,1,0,0,0,,,,Quote,Ship To Street 1,Ship_To_Street_1__c
 shipto_line2,Ship To Street 2,nvarchar,none,False,2026-03-20 16:28:01,,true,0,0,0,2,0,2,0,1,0,0,0,,,,Quote,Ship To Street 2,Ship_To_Street_2__c
 shipto_line3,Ship To Street 3,nvarchar,none,False,2026-03-20 22:14:10,,true,0,0,0,1,0,2,0,1,0,0,0,,,,Quote,Ship To Street 3,Ship_To_Street_3__c
-shipto_name,Ship To Name,nvarchar,none,False,2026-03-20 22:35:47,,true,1,0,0,2,0,2,0,1,0,0,0,,,,Quote,ShippingName,ShippingName
-shipto_postalcode,Ship To ZIP/Postal Code,nvarchar,none,False,2026-03-20 22:35:47,,true,0,0,0,2,0,2,0,1,0,0,0,,,,Quote,ShippingPostalCode,ShippingPostalCode
-shipto_stateorprovince,Ship To State/Province,nvarchar,none,False,2026-03-20 22:35:47,,true,0,0,0,2,0,2,0,1,0,0,0,,,,Quote,ShippingState,ShippingState
-shipto_telephone,Ship To Phone,nvarchar,none,False,2021-05-31 23:15:13,,false,0,0,0,1,0,2,0,0,0,0,0,,,,Quote,Ship To Phone,Ship_To_Phone__c
+shipto_name,Ship To Name,nvarchar,none,False,2026-03-20 22:35:47,,true,1,0,0,2,0,2,0,1,0,0,0,,,,Quote,Ship To Name,ShippingName
+shipto_postalcode,Ship To ZIP/Postal Code,nvarchar,none,False,2026-03-20 22:35:47,,true,0,0,0,2,0,2,0,1,0,0,0,,,,Quote,Ship To Zip/Postal Code,ShippingPostalCode
+shipto_stateorprovince,Ship To State/Province,nvarchar,none,False,2026-03-20 22:35:47,,true,0,0,0,2,0,2,0,1,0,0,0,,,,Quote,Ship To Stateprovince,Ship_To_Stateprovince__c
+shipto_telephone,Ship To Phone,nvarchar,none,False,2021-05-31 23:15:13,,false,0,0,0,1,0,2,0,0,0,0,0,,,,,,
 statecode,Status,state,systemrequired,False,2026-03-20 22:35:47,,true,0,8,0,1,0,10,0,20,0,0,0,,,,Quote,Status,Status
 statuscode,Status Reason,status,none,False,2026-03-20 22:35:47,,true,0,0,0,2,0,5,0,6,0,0,0,,,,Quote,Status,Status
-totalamount,Total Amount,money,none,False,2026-03-20 22:35:47,,true,0,5,0,5,0,0,0,4,0,0,0,,,,Quote,GrandTotal,GrandTotal
-totallineitemamount,Total Detail Amount,money,none,False,2026-03-20 22:35:47,,true,0,0,0,3,0,0,0,0,0,0,0,,,,Quote,Subtotal,Subtotal
+totalamount,Total Amount,money,none,False,2026-03-20 22:35:47,,true,0,5,0,5,0,0,0,4,0,0,0,,,,Quote,Total Amount,Total_Amount__c
+totallineitemamount,Total Detail Amount,money,none,False,2026-03-20 22:35:47,,true,0,0,0,3,0,0,0,0,0,0,0,,,,Quote,Total Detail Amount,Total_Detail_Amount__c
 transactioncurrencyid,Currency,lookup,required,False,2026-03-20 22:35:47,,true,0,0,0,0,0,1,0,8,0,0,0,,,,Quote,Currency,Currency__c
 willcall,Ship To,bit,none,False,2026-03-20 22:35:47,,true,1,0,0,0,0,1,0,0,0,0,0,,,,Quote,Ship To,Ship_To__c

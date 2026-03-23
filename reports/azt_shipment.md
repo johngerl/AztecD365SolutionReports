@@ -13,6 +13,17 @@
 | **Last Update** | 2019-07-23 14:18:06 |
 | **Primary ID Field** | azt_shipmentid |
 | **Primary Name Field** | azt_name |
+| **Count Forms** | 17 |
+| **Count Views** | 70 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 86 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 97 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 8 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

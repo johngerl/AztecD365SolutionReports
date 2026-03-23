@@ -13,6 +13,17 @@
 | **Last Update** | 2022-12-26 10:23:10 |
 | **Primary ID Field** | metricid |
 | **Primary Name Field** | None |
+| **Count Forms** | 0 |
+| **Count Views** | 0 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 0 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 73 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 0 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

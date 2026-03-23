@@ -13,6 +13,17 @@
 | **Last Update** | 2026-03-21 04:05:55 |
 | **Primary ID Field** | teamid |
 | **Primary Name Field** | None |
+| **Count Forms** | 3 |
+| **Count Views** | 26 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 2 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 77 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 1 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

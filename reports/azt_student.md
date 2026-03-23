@@ -13,6 +13,17 @@
 | **Last Update** | Never |
 | **Primary ID Field** | azt_studentid |
 | **Primary Name Field** | azt_name |
+| **Count Forms** | 5 |
+| **Count Views** | 33 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 58 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 62 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 4 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

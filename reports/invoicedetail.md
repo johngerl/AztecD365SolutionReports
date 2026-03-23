@@ -13,6 +13,17 @@
 | **Last Update** | 2026-03-20 18:58:39 |
 | **Primary ID Field** | invoicedetailid |
 | **Primary Name Field** | None |
+| **Count Forms** | 10 |
+| **Count Views** | 24 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 6 |
+| **Count Formulas & Rollups** | 4 |
+| **Count Plugins** | 270 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 2 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

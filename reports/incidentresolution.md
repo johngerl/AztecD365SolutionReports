@@ -13,6 +13,17 @@
 | **Last Update** | 2026-03-19 20:06:25 |
 | **Primary ID Field** | incidentresolutionid |
 | **Primary Name Field** | None |
+| **Count Forms** | 3 |
+| **Count Views** | 0 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 0 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 104 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 1 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

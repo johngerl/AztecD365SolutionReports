@@ -13,6 +13,17 @@
 | **Last Update** | 2026-03-03 19:38:44 |
 | **Primary ID Field** | productid |
 | **Primary Name Field** | name |
+| **Count Forms** | 12 |
+| **Count Views** | 70 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 13 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 40 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 126 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 2 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

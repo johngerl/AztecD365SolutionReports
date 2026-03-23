@@ -13,6 +13,17 @@
 | **Last Update** | 2018-12-21 09:21:31 |
 | **Primary ID Field** | transactioncurrencyid |
 | **Primary Name Field** | None |
+| **Count Forms** | 0 |
+| **Count Views** | 0 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 0 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 49 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 9 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

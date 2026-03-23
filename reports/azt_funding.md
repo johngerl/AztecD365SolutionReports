@@ -13,6 +13,17 @@
 | **Last Update** | 2025-11-20 19:52:27 |
 | **Primary ID Field** | azt_fundingid |
 | **Primary Name Field** | azt_name |
+| **Count Forms** | 17 |
+| **Count Views** | 50 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 78 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 74 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 5 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

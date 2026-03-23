@@ -4,11 +4,11 @@ azt_discretionarydiscountamt_base,Discretionary Discount Amt (Base),money,none,T
 azt_issaas,Is SaaS?,bit,none,True,2026-03-21 00:54:35,"1: Yes, 0: No",true,2,0,0,0,0,0,0,2,0,0,0,,,,Opportunity Product,Is Saas,Is_Saas__c
 azt_licensetermmonths,License Term (Months),int,none,True,2026-03-21 00:54:35,,true,2,2,0,0,0,1,0,22,0,0,0,,,,Opportunity Product,License Term Months,License_Term_Months__c
 azt_licensetype,License Type,picklist,required,True,2026-03-21 00:54:35,,true,2,5,0,0,0,1,0,25,0,0,0,,,,Opportunity Product,License Type,License_Type__c
-azt_nonsaastype,Non-SaaS Type,picklist,none,True,2022-03-13 18:47:50,"276530000: Life Skills, 276530001: Kaplan Books, 276530003: GED Vouchers, 276530002: Other",false,0,0,0,0,0,0,0,1,0,0,0,,,,Opportunity Product,Nonsaas Type,Nonsaas_Type__c
+azt_nonsaastype,Non-SaaS Type,picklist,none,True,2022-03-13 18:47:50,"276530000: Life Skills, 276530001: Kaplan Books, 276530003: GED Vouchers, 276530002: Other",false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
 azt_pricebookentry,SF Price Book Entry,nvarchar,none,True,Never,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
 baseamount,Amount,money,none,False,2026-03-21 00:54:35,,true,0,0,0,0,0,0,0,4,0,0,0,,,,Opportunity Product,Amount,Amount__c
 createdon,Created On,datetime,none,False,Skipped (createdon),,true,0,1,0,0,0,0,0,10,0,0,0,,,,Opportunity Product,Created On,Created_On__c
-description,Description,ntext,none,False,Never,,false,0,0,0,0,0,0,0,7,0,0,0,,,,Opportunity Product,Description,Description__c
+description,Description,ntext,none,False,Never,,false,0,0,0,0,0,0,0,7,0,0,0,,,,,,
 entityimage,Entity Image,image,none,False,Skipped (image),,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
 extendedamount,Extended amount,money,none,False,2026-03-21 00:54:35,,true,0,3,0,0,0,0,0,13,0,0,0,,,,Opportunity Product,Extended Amount,Extended_Amount__c
 ispriceoverridden,Price Overridden,bit,none,False,2026-03-21 00:54:35,,true,0,0,0,0,0,0,0,6,0,0,0,,,,Opportunity Product,Price Overridden,Price_Overridden__c
@@ -21,7 +21,7 @@ opportunityproductname,Name,nvarchar,required,False,2026-03-21 00:54:35,,true,0,
 opportunitystatecode,Opportunity Status,picklist,required,False,2026-03-21 00:54:35,,true,0,1,0,0,0,0,0,0,0,0,0,,,,Opportunity Product,Opportunity Status,Opportunity_Status__c
 ownerid,Owner,lookup,required,False,2026-03-21 00:54:35,,true,0,0,0,0,0,0,0,22,0,0,0,,,,Opportunity Product,Owner CRM,Owner_CRM__c
 priceperunit,Price per unit,money,none,False,2026-03-21 00:54:35,,true,0,3,0,0,0,0,0,8,0,0,0,,,,Opportunity Product,Price Per Unit,Price_Per_Unit__c
-productdescription,Write-In Product,nvarchar,none,False,2024-07-02 11:04:03,,false,0,2,0,0,0,1,0,13,0,0,0,,,,Opportunity Product,Writein Product,Writein_Product__c
+productdescription,Write-In Product,nvarchar,none,False,2024-07-02 11:04:03,,false,0,2,0,0,0,1,0,13,0,0,0,,,,,,
 productid,Existing Product,lookup,none,False,2026-03-21 00:54:35,,true,1,5,0,0,0,0,0,33,0,0,0,,,,Opportunity Product,Existing Product,Existing_Product__c
 productname,Product name,nvarchar,none,False,2026-03-21 00:54:35,,true,0,0,0,0,0,0,0,3,0,0,0,,,,Opportunity Product,Product Name,Product_Name__c
 producttypecode,Product type,picklist,required,False,2026-03-21 00:54:35,,true,0,1,0,0,0,0,0,3,0,0,0,,,,Opportunity Product,Product Type,Product_Type__c

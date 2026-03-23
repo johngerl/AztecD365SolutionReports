@@ -13,6 +13,17 @@
 | **Last Update** | 2026-03-20 21:12:19 |
 | **Primary ID Field** | incidentid |
 | **Primary Name Field** | None |
+| **Count Forms** | 29 |
+| **Count Views** | 67 |
+| **Count Chart Visualizations** | 4 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 100 |
+| **Count Formulas & Rollups** | 2 |
+| **Count Plugins** | 162 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 31 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

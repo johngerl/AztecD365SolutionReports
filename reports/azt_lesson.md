@@ -13,6 +13,17 @@
 | **Last Update** | 2024-11-22 07:25:13 |
 | **Primary ID Field** | azt_lessonid |
 | **Primary Name Field** | azt_name |
+| **Count Forms** | 5 |
+| **Count Views** | 32 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 60 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 61 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 4 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

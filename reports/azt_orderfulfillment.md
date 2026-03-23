@@ -13,6 +13,17 @@
 | **Last Update** | 2026-03-20 19:06:56 |
 | **Primary ID Field** | azt_orderfulfillmentid |
 | **Primary Name Field** | bpf_name |
+| **Count Forms** | 0 |
+| **Count Views** | 104 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 53 |
+| **Count Formulas & Rollups** | 3 |
+| **Count Plugins** | 43 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 6 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

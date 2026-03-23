@@ -1,127 +1,127 @@
 fieldName,displayName,dataType,requiredLevel,isCustom,lastUpdate,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-accountid,Account,lookup,none,False,2026-03-21 01:27:04,,true,0,0,0,0,0,0,0,12,0,0,0,,,,Opportunity,AccountId,AccountId
-actualclosedate,Actual Close Date,datetime,none,False,2026-03-20 20:16:40,,true,2,27,5,0,0,0,0,1,0,0,0,,,,Opportunity,CloseDate,CloseDate
+accountid,Account,lookup,none,False,2026-03-22 22:06:40,,true,0,0,0,0,0,0,0,12,0,0,0,,,,Opportunity,Account ID,AccountId
+actualclosedate,Actual Close Date,datetime,none,False,2026-03-20 20:16:40,,true,2,27,5,0,0,0,0,1,0,0,0,,,,Opportunity,Close Date,CloseDate
 actualvalue,Actual Revenue,money,none,False,2026-03-20 20:16:40,,true,0,15,2,0,0,1,0,0,0,0,0,,,,Opportunity,Actual Revenue,Actual_Revenue__c
 actualvalue_base,Actual Revenue (Base),money,none,False,2026-03-20 20:16:40,,true,0,2,0,0,0,0,0,0,0,0,0,,,,Opportunity,Actual Revenue Base,Actual_Revenue_Base__c
 azt_accountclassification,Account Classification,picklist,none,True,2026-03-20 21:44:40,"276530000: A, 276530001: B, 276530002: C, 100000001: D, 100000000: E, 276530003: S, 276530004: N/A",true,2,9,0,0,0,2,0,0,0,0,0,Opportunity,CRM Account Classification,CRM_Account_Classification__c,Opportunity,Account Classification,Account_Classification__c
-azt_addonopportunitytotal,Add-On Opportunity Total,money,none,True,2026-03-21 01:27:04,,true,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Add On Opportunity Total,CRM_Add_On_Opportunity_Total__c,Opportunity,CRM_Initial_Opportunity_Total__c,CRM_Initial_Opportunity_Total__c
-azt_addonopportunitytotal_base,Add-On Opportunity Total (Base),money,none,True,2026-03-21 01:27:04,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_assignedamid,Assigned AM,lookup,none,True,2026-03-21 00:56:55,,true,1,0,0,0,0,0,0,0,0,1,0,Opportunity,CRM Assigned AM,CRM_Assigned_AM__c,Opportunity,Assigned Am,Assigned_Am__c
-azt_committoestimatedclose,Commit to Pipeline?,bit,none,True,2026-03-21 01:27:04,"1: Yes, 0: No",true,1,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Commit To Pipeline,Commit_To_Pipeline__c
-azt_dayssincecreated,Days Since Created,int,none,True,2026-03-21 01:27:04,,true,2,3,0,0,0,0,1,0,0,0,0,,,,Opportunity,Days Since Created,Days_Since_Created__c
-azt_dayssinceprobabilitychanged,Days Since Probability Changed,int,none,True,2026-03-21 01:27:04,,true,2,4,0,0,0,0,1,0,0,0,0,Opportunity,CRM Days Since Probability Changed,CRM_Days_Since_Probability_Changed__c,Opportunity,Days Since Probability Changed,Days_Since_Probability_Changed__c
-azt_defaultfreightamount,Default Freight Amount,money,none,True,2026-03-21 01:27:04,,true,2,0,0,0,0,0,0,1,0,0,0,Opportunity,CRM Default Freight Amount,CRM_Default_Freight_Amount__c,Opportunity,Freight_Amount__c,Freight_Amount__c
-azt_defaultfreightamount_base,Default Freight Amount (Base),money,none,True,2026-03-21 01:27:04,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_deliverytype,Delivery Type,picklist,none,True,2026-03-21 00:56:55,"276530000: Internet, 276530001: LAN, 276530002: Print, 276530003: LAN & Print, 276530004: Internet & Print, 276530005: Internet Year 2, 276530006: Internet Year 3+, 276530007: SA, 276530008: WAN",true,2,0,0,0,0,2,0,0,0,0,0,Opportunity,CRM Delivery Type,CRM_Delivery_Type__c,Opportunity,Delivery Type,Delivery_Type__c
-azt_discretionarydiscount,Discretionary Discount,money,none,True,2026-03-21 01:27:04,,true,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Discretionary Discount,CRM_Discretionary_Discount__c,Opportunity,CRM_Discretionary_Discount__c,CRM_Discretionary_Discount__c
-azt_discretionarydiscount_base,Discretionary Discount (Base),money,none,True,2026-03-21 01:27:04,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_discretionarydiscountamt,Discretionary Discount Amt,money,none,True,2026-02-27 20:44:28,,true,2,0,0,0,0,0,0,2,0,0,0,,,,Opportunity,CRM_Discretionary_Discount__c,CRM_Discretionary_Discount__c
+azt_addonopportunitytotal,Add-On Opportunity Total,money,none,True,2026-03-22 22:06:40,,true,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Add On Opportunity Total,CRM_Add_On_Opportunity_Total__c,Opportunity,CRM Initial Opportunity Total,CRM_Initial_Opportunity_Total__c
+azt_addonopportunitytotal_base,Add-On Opportunity Total (Base),money,none,True,2026-03-22 22:06:40,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_assignedamid,Assigned AM,lookup,none,True,2026-03-22 22:06:40,,true,1,0,0,0,0,0,0,0,0,1,0,Opportunity,CRM Assigned AM,CRM_Assigned_AM__c,Opportunity,Assigned Am,Assigned_Am__c
+azt_committoestimatedclose,Commit to Pipeline?,bit,none,True,2026-03-22 22:06:40,"1: Yes, 0: No",true,1,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Commit To Pipeline,Commit_To_Pipeline__c
+azt_dayssincecreated,Days Since Created,int,none,True,2026-03-22 22:06:40,,true,2,3,0,0,0,0,1,0,0,0,0,,,,Opportunity,Days Since Created,Days_Since_Created__c
+azt_dayssinceprobabilitychanged,Days Since Probability Changed,int,none,True,2026-03-22 22:06:40,,true,2,4,0,0,0,0,1,0,0,0,0,Opportunity,CRM Days Since Probability Changed,CRM_Days_Since_Probability_Changed__c,Opportunity,Days Since Probability Changed,Days_Since_Probability_Changed__c
+azt_defaultfreightamount,Default Freight Amount,money,none,True,2026-03-22 22:06:40,,true,2,0,0,0,0,0,0,1,0,0,0,Opportunity,CRM Default Freight Amount,CRM_Default_Freight_Amount__c,Opportunity,Freight Amount,Freight_Amount__c
+azt_defaultfreightamount_base,Default Freight Amount (Base),money,none,True,2026-03-22 22:06:40,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_deliverytype,Delivery Type,picklist,none,True,2026-03-22 22:06:40,"276530000: Internet, 276530001: LAN, 276530002: Print, 276530003: LAN & Print, 276530004: Internet & Print, 276530005: Internet Year 2, 276530006: Internet Year 3+, 276530007: SA, 276530008: WAN",true,2,0,0,0,0,2,0,0,0,0,0,Opportunity,CRM Delivery Type,CRM_Delivery_Type__c,Opportunity,Delivery Type,Delivery_Type__c
+azt_discretionarydiscount,Discretionary Discount,money,none,True,2026-03-22 22:06:40,,true,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Discretionary Discount,CRM_Discretionary_Discount__c,Opportunity,CRM Discretionary Discount,CRM_Discretionary_Discount__c
+azt_discretionarydiscount_base,Discretionary Discount (Base),money,none,True,2026-03-22 22:06:40,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_discretionarydiscountamt,Discretionary Discount Amt,money,none,True,2026-02-27 20:44:28,,true,2,0,0,0,0,0,0,2,0,0,0,,,,Opportunity,CRM Discretionary Discount,CRM_Discretionary_Discount__c
 azt_discretionarydiscountamt_base,Discretionary Discount Amt (Base),money,none,True,2026-02-27 20:44:28,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_expectedrenewalvalue,Expected Renewal Value,money,none,True,2026-03-20 21:44:40,,true,2,8,0,0,0,0,0,0,0,0,0,,,,Opportunity,Expected_Renewal_Amount__c,Expected_Renewal_Amount__c
+azt_expectedrenewalvalue,Expected Renewal Value,money,none,True,2026-03-20 21:44:40,,true,2,8,0,0,0,0,0,0,0,0,0,,,,Opportunity,Expected Renewal Amount,Expected_Renewal_Amount__c
 azt_expectedrenewalvalue_base,Expected Renewal Value (Base),money,none,True,2026-03-20 21:44:40,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_freightamtapproved,Freight Amt Approved?,bit,none,True,2026-03-21 01:27:04,"1: Yes, 0: No",true,2,0,0,0,0,0,0,1,0,0,0,,,,Opportunity,Freight Amt Approved,Freight_Amt_Approved__c
-azt_fundingsource,Funding Source,picklist,none,True,2026-03-20 21:44:40,"276530000: Annual Budget, 276530001: Discretionary Budget, 276530002: Grant - Federal, 276530003: Grant - Private, 276530004: Grant - State, 276530005: Grant - Perkins, 276530006: Title 1 Funds, 276530007: Other, 276530008: Use or Lose Funds",true,4,0,0,0,0,2,0,0,0,0,0,Opportunity,Funding Source,Funding_Source__c,Opportunity,Funding_Source__c,Funding_Source__c
+azt_freightamtapproved,Freight Amt Approved?,bit,none,True,2026-03-22 22:06:40,"1: Yes, 0: No",true,2,0,0,0,0,0,0,1,0,0,0,,,,Opportunity,Freight Amt Approved,Freight_Amt_Approved__c
+azt_fundingsource,Funding Source,picklist,none,True,2026-03-20 21:44:40,"276530000: Annual Budget, 276530001: Discretionary Budget, 276530002: Grant - Federal, 276530003: Grant - Private, 276530004: Grant - State, 276530005: Grant - Perkins, 276530006: Title 1 Funds, 276530007: Other, 276530008: Use or Lose Funds",true,4,0,0,0,0,2,0,0,0,0,0,Opportunity,Funding Source,Funding_Source__c,Opportunity,Funding Source,Funding_Source__c
 azt_historicalowner,Historical Owner,nvarchar,none,True,2026-03-20 15:49:24,,true,0,0,0,0,0,3,0,0,0,0,0,Opportunity,CRM Historical Owner,CRM_Historical_Owner__c,Opportunity,Historical Owner,Historical_Owner__c
-azt_initialopportunitytotal,Initial Opportunity Total,money,none,True,2026-03-21 01:27:04,,true,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Initial Opportunity Total,CRM_Initial_Opportunity_Total__c,Opportunity,CRM_Initial_Opportunity_Total__c,CRM_Initial_Opportunity_Total__c
-azt_initialopportunitytotal_base,Initial Opportunity Total (Base),money,none,True,2026-03-21 01:27:04,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_internalaztecnotes,Internal Aztec Notes,ntext,none,True,2026-03-20 21:16:46,,true,1,0,0,0,0,2,0,0,0,0,0,Opportunity,CRM Internal Aztec Notes,CRM_Internal_Aztec_Notes__c,Opportunity,CRM_Internal_Aztec_Notes__c,CRM_Internal_Aztec_Notes__c
+azt_initialopportunitytotal,Initial Opportunity Total,money,none,True,2026-03-22 22:06:40,,true,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Initial Opportunity Total,CRM_Initial_Opportunity_Total__c,Opportunity,CRM Initial Opportunity Total,CRM_Initial_Opportunity_Total__c
+azt_initialopportunitytotal_base,Initial Opportunity Total (Base),money,none,True,2026-03-22 22:06:40,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_internalaztecnotes,Internal Aztec Notes,ntext,none,True,2026-03-22 22:06:40,,true,1,0,0,0,0,2,0,0,0,0,0,Opportunity,CRM Internal Aztec Notes,CRM_Internal_Aztec_Notes__c,Opportunity,CRM Internal Aztec Notes,CRM_Internal_Aztec_Notes__c
 azt_invoicenumber,Invoice Number,nvarchar,none,True,Never,,false,0,0,0,0,0,0,0,0,0,0,0,Opportunity,CRM Invoice Number,CRM_Invoice_Number__c,,,
-azt_iscrossselloppty,Is Cross-sell Oppty?,bit,none,True,2026-03-21 01:27:04,"1: Yes, 0: No",true,2,0,0,0,0,0,0,0,0,0,0,Opportunity,Cross-Sell,Cross_Sell__c,Opportunity,Cross_Sell__c,Cross_Sell__c
-azt_lastactivitydate,Last Activity Date,datetime,none,True,2026-03-21 01:27:04,,true,2,1,0,0,0,0,0,1,0,0,0,Opportunity,Legacy Last Activity Date,Legacy_Last_Activity_Date__c,Opportunity,LastActivityDate,LastActivityDate
-azt_lastmodifiedbyid,Last Modified By,lookup,none,True,2026-03-21 01:27:04,,true,2,0,0,0,0,0,0,1,0,1,0,Opportunity,Legacy Modified By,Legacy_Modified_By__c,Opportunity,LastModifiedById,LastModifiedById
+azt_iscrossselloppty,Is Cross-sell Oppty?,bit,none,True,2026-03-22 22:06:40,"1: Yes, 0: No",true,2,0,0,0,0,0,0,0,0,0,0,Opportunity,Cross-Sell,Cross_Sell__c,Opportunity,Cross-Sell,Cross_Sell__c
+azt_lastactivitydate,Last Activity Date,datetime,none,True,2026-03-22 22:06:40,,true,2,1,0,0,0,0,0,1,0,0,0,Opportunity,Legacy Last Activity Date,Legacy_Last_Activity_Date__c,Opportunity,Last Activity,LastActivityDate
+azt_lastmodifiedbyid,Last Modified By,lookup,none,True,2026-03-22 22:06:40,,true,2,0,0,0,0,0,0,1,0,1,0,Opportunity,Legacy Modified By,Legacy_Modified_By__c,Opportunity,Last Modified By ID,LastModifiedById
 azt_leadsource,Lead Source (Old),picklist,none,True,2026-03-20 16:52:47,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_leadsourceid,Lead Source,lookup,none,True,2026-03-21 00:56:55,,true,1,1,0,0,0,8,0,2,0,1,0,Opportunity,CRM Lead Source,CRM_Lead_Source__c,Opportunity,Lead Source,Lead_Source__c
-azt_opportunitynumber,Opp#,nvarchar,none,True,2026-03-21 01:27:04,,true,2,7,0,0,0,0,0,0,0,0,0,Opportunity,CRM Opportunity Number,CRM_Opportunity_Number__c,Opportunity,Opportunity_Summary__c,Opportunity_Summary__c
+azt_leadsourceid,Lead Source,lookup,none,True,2026-03-22 22:06:40,,true,1,1,0,0,0,8,0,2,0,1,0,Opportunity,CRM Lead Source,CRM_Lead_Source__c,Opportunity,Lead Source,Lead_Source__c
+azt_opportunitynumber,Opp#,nvarchar,none,True,2026-03-22 22:06:40,,true,2,7,0,0,0,0,0,0,0,0,0,Opportunity,CRM Opportunity Number,CRM_Opportunity_Number__c,Opportunity,Opportunity Summary,Opportunity_Summary__c
 azt_opportunityproductcategory,Opportunity Product Category,picklist,none,True,2026-03-20 17:38:23,"276530000: P12 & Legacy, 276530001: Kaplan Book, 276530002: GED Flash, 276530003: P12 Prep, 276530004: Legacy, 276530005: APT - Free, 276530006: APT - Paid, 276530007: OPT - Free, 276530008: OPT - Paid, 276530009: Workbooks, 276530010: LSE Booklets",true,2,25,0,0,0,2,0,0,0,0,0,Opportunity,CRM Opportunity Product Category,CRM_Opportunity_Product_Category__c,Opportunity,Opportunity Product Category,Opportunity_Product_Category__c
-azt_opportunitytype,Opportunity Type,picklist,none,True,2026-03-21 01:27:04,"276530005: Renewal, 276530004: Initial, 276530002: Print, 276530003: Add-On, 276530001: Vouchers, 276530000: Pilot, 276530008: Professional Development, 276530006: Monthly, 100000000: Win Back, 327630000: Sample, 100000001: PA, 276530007: Other, 327630001: Add On - Reseller",true,4,57,0,0,0,2,0,0,0,0,0,Opportunity,Type,Type,Opportunity,Type,Type
-azt_otheropportunitytotal,Other Opportunity Total,money,none,True,2026-03-21 01:27:04,,true,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Other Opportunity Total,CRM_Other_Opportunity_Total__c,Opportunity,CRM_Initial_Opportunity_Total__c,CRM_Initial_Opportunity_Total__c
-azt_otheropportunitytotal_base,Other Opportunity Total (Base),money,none,True,2026-03-21 01:27:04,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_parentopportunityid,Parent Opportunity,lookup,none,True,2026-03-20 21:44:40,,true,0,0,0,0,0,1,0,2,0,1,0,Opportunity,CRM Parent Opportunity Name,CRM_Parent_Opportunity_Name__c,Opportunity,Parent_Opportunity__c,Parent_Opportunity__c
-azt_pilotopportunitytotal,Pilot Opportunity Total,money,none,True,2026-03-21 01:27:04,,true,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Pilot Opportunity Total,CRM_Pilot_Opportunity_Total__c,Opportunity,CRM_Initial_Opportunity_Total__c,CRM_Initial_Opportunity_Total__c
-azt_pilotopportunitytotal_base,Pilot Opportunity Total (Base),money,none,True,2026-03-21 01:27:04,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_pipelinestage,Pipeline Stage,picklist,none,True,2026-03-21 00:56:55,"276530000: Identify, 276530001: Qualified, 276530002: Prospecting, 276530003: Cultivating, 276530004: Proposing, 276530005: Closing, 276530006: Delivering, 276530007: Awaiting Payment, 276530008: Won",true,4,23,0,0,0,2,0,0,0,0,0,Opportunity,Stage,StageName,Opportunity,StageName,StageName
+azt_opportunitytype,Opportunity Type,picklist,none,True,2026-03-22 22:06:40,"276530005: Renewal, 276530004: Initial, 276530002: Print, 276530003: Add-On, 276530001: Vouchers, 276530000: Pilot, 276530008: Professional Development, 276530006: Monthly, 100000000: Win Back, 327630000: Sample, 100000001: PA, 276530007: Other, 327630001: Add On - Reseller",true,4,57,0,0,0,2,0,0,0,0,0,Opportunity,Type,Type,Opportunity,Opportunity Type,Opportunity_Type__c
+azt_otheropportunitytotal,Other Opportunity Total,money,none,True,2026-03-22 22:06:40,,true,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Other Opportunity Total,CRM_Other_Opportunity_Total__c,Opportunity,CRM Initial Opportunity Total,CRM_Initial_Opportunity_Total__c
+azt_otheropportunitytotal_base,Other Opportunity Total (Base),money,none,True,2026-03-22 22:06:40,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_parentopportunityid,Parent Opportunity,lookup,none,True,2026-03-20 21:44:40,,true,0,0,0,0,0,1,0,2,0,1,0,Opportunity,CRM Parent Opportunity Name,CRM_Parent_Opportunity_Name__c,Opportunity,Parent Opportunity,Parent_Opportunity__c
+azt_pilotopportunitytotal,Pilot Opportunity Total,money,none,True,2026-03-22 22:06:40,,true,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Pilot Opportunity Total,CRM_Pilot_Opportunity_Total__c,Opportunity,CRM Initial Opportunity Total,CRM_Initial_Opportunity_Total__c
+azt_pilotopportunitytotal_base,Pilot Opportunity Total (Base),money,none,True,2026-03-22 22:06:40,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_pipelinestage,Pipeline Stage,picklist,none,True,2026-03-22 22:06:40,"276530000: Identify, 276530001: Qualified, 276530002: Prospecting, 276530003: Cultivating, 276530004: Proposing, 276530005: Closing, 276530006: Delivering, 276530007: Awaiting Payment, 276530008: Won",true,4,23,0,0,0,2,0,0,0,0,0,Opportunity,Stage,StageName,Opportunity,Pipeline Stage,Pipeline_Stage__c
 azt_previewcompleted,Preview Completed,picklist,none,True,2025-11-21 19:17:05,"276530000: Yes, 276530001: No",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_previousprobability,Previous Probability,nvarchar,none,True,Never,,false,0,0,0,0,0,0,0,1,0,0,0,,,,Opportunity,CRM_Probability__c,CRM_Probability__c
-azt_printopportunitytotal,Print Opportunity Total,money,none,True,2026-03-21 01:27:04,,true,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Print Opportunity Total,CRM_Print_Opportunity_Total__c,Opportunity,CRM_Initial_Opportunity_Total__c,CRM_Initial_Opportunity_Total__c
-azt_printopportunitytotal_base,Print Opportunity Total (Base),money,none,True,2026-03-21 01:27:04,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_probability,Probability,picklist,none,True,2026-03-21 01:27:04,"276530010: 1%, 276530000: 10%, 276530001: 20%, 276530002: 30%, 100000001: 35%, 276530003: 40%, 276530004: 50%, 100000000: 55%, 276530005: 60%, 276530006: 70%, 100530010: 75%, 276530007: 80%, 276530008: 90%, 327630000: 95%, 276530009: 99%",true,4,32,0,0,0,2,0,5,0,0,0,Opportunity,CRM Probability,CRM_Probability__c,Opportunity,CRM_Probability__c,CRM_Probability__c
-azt_probabilitychangedon,Probability Changed On,datetime,none,True,2026-03-21 01:27:04,,true,0,7,0,0,0,0,1,1,0,0,0,Opportunity,Probability Last Changed,Probability_Last_Changed__c,Opportunity,Probability_Last_Changed__c,Probability_Last_Changed__c
-azt_probabilityincreased,Probability Increased?,bit,none,True,2026-03-21 01:27:04,"1: Yes, 0: No",true,0,1,0,0,0,0,0,1,0,0,0,,,,Opportunity,Probability Increased,Probability_Increased__c
+azt_previousprobability,Previous Probability,nvarchar,none,True,Never,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
+azt_printopportunitytotal,Print Opportunity Total,money,none,True,2026-03-22 22:06:40,,true,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Print Opportunity Total,CRM_Print_Opportunity_Total__c,Opportunity,CRM Initial Opportunity Total,CRM_Initial_Opportunity_Total__c
+azt_printopportunitytotal_base,Print Opportunity Total (Base),money,none,True,2026-03-22 22:06:40,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_probability,Probability,picklist,none,True,2026-03-22 22:06:40,"276530010: 1%, 276530000: 10%, 276530001: 20%, 276530002: 30%, 100000001: 35%, 276530003: 40%, 276530004: 50%, 100000000: 55%, 276530005: 60%, 276530006: 70%, 100530010: 75%, 276530007: 80%, 276530008: 90%, 327630000: 95%, 276530009: 99%",true,4,32,0,0,0,2,0,5,0,0,0,Opportunity,CRM Probability,CRM_Probability__c,Opportunity,CRM Probability,CRM_Probability__c
+azt_probabilitychangedon,Probability Changed On,datetime,none,True,2026-03-22 22:06:40,,true,0,7,0,0,0,0,1,1,0,0,0,Opportunity,Probability Last Changed,Probability_Last_Changed__c,Opportunity,Probability Last Changed,Probability_Last_Changed__c
+azt_probabilityincreased,Probability Increased?,bit,none,True,2026-03-22 22:06:40,"1: Yes, 0: No",true,0,1,0,0,0,0,0,1,0,0,0,,,,Opportunity,Probability Increased,Probability_Increased__c
 azt_quotesent,Quote Sent,picklist,none,True,2025-11-21 19:16:23,"276530000: Yes, 276530001: No",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_recordownerid,Record Owner,lookup,none,True,2026-03-21 01:27:04,,true,6,66,32,0,0,39,0,9,0,1,0,Opportunity,Record Owner,OwnerId,Opportunity,OwnerId,OwnerId
-azt_renewalnotes,Renewal Notes,nvarchar,none,True,2026-03-20 20:21:37,,true,2,0,0,0,0,0,0,0,0,0,0,Opportunity,Renewal Notes,Renewal_Notes__c,Opportunity,Renewal_Notes__c,Renewal_Notes__c
-azt_renewalopportunitytotal,Renewal Opportunity Total,money,none,True,2026-03-21 01:27:04,,true,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Renewal Opportunity Total,CRM_Renewal_Opportunity_Total__c,Opportunity,CRM_Renewal_Opportunity_Total__c,CRM_Renewal_Opportunity_Total__c
-azt_renewalopportunitytotal_base,Renewal Opportunity Total (Base),money,none,True,2026-03-21 01:27:04,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_recordownerid,Record Owner,lookup,none,True,2026-03-22 22:06:40,,true,6,66,32,0,0,39,0,9,0,1,0,Opportunity,Record Owner,OwnerId,Opportunity,Record Type ID,RecordTypeId
+azt_renewalnotes,Renewal Notes,nvarchar,none,True,2026-03-20 20:21:37,,true,2,0,0,0,0,0,0,0,0,0,0,Opportunity,Renewal Notes,Renewal_Notes__c,Opportunity,Renewal Notes,Renewal_Notes__c
+azt_renewalopportunitytotal,Renewal Opportunity Total,money,none,True,2026-03-22 22:06:40,,true,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Renewal Opportunity Total,CRM_Renewal_Opportunity_Total__c,Opportunity,CRM Renewal Opportunity Total,CRM_Renewal_Opportunity_Total__c
+azt_renewalopportunitytotal_base,Renewal Opportunity Total (Base),money,none,True,2026-03-22 22:06:40,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
 azt_requestedfreightamt,Requested Freight Amt,money,none,True,2025-04-02 16:39:05,,true,2,0,0,0,0,0,0,1,0,0,0,Opportunity,CRM Requested Freight Amount,CRM_Requested_Freight_Amount__c,Opportunity,Requested Freight Amt,Requested_Freight_Amt__c
 azt_requestedfreightamt_base,Requested Freight Amt (Base),money,none,True,2025-04-02 16:39:05,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
 azt_salesstage,Sales Stage,picklist,none,True,2026-03-02 14:12:04,,true,0,0,0,0,0,1,0,0,0,0,0,,,,Opportunity,Sales Stage,Sales_Stage__c
 azt_webinarpresentationcompleted,Webinar/Presentation Completed,picklist,none,True,2025-11-21 19:17:05,"276530000: Yes, 276530001: No",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_winbackopportunitytotal,Win-Back Opportunity Total,money,none,True,2026-03-21 01:27:04,,true,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Win Back Opportunity Total,CRM_Win_Back_Opportunity_Total__c,Opportunity,CRM_Win_Back_Opportunity_Total__c,CRM_Win_Back_Opportunity_Total__c
-azt_winbackopportunitytotal_base,Win-Back Opportunity Total (Base),money,none,True,2026-03-21 01:27:04,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-budgetamount,Budget amount,money,none,False,2026-03-20 21:44:40,,true,2,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Budget_Amount__c,Budget_Amount__c
-budgetstatus,Budget,picklist,none,False,Never,,false,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Status__c,Status__c
-captureproposalfeedback,Proposal Feedback Captured,bit,none,False,2026-03-21 01:27:04,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Proposal Feedback Captured,Proposal_Feedback_Captured__c
-closeprobability,Probability Number,int,none,False,2026-03-21 01:27:04,,true,2,2,3,0,0,2,0,1,0,0,0,Opportunity,CRM Probability Number,CRM_Probability_Number__c,Opportunity,Probability Number,Probability_Number__c
-completefinalproposal,Final Proposal Ready,bit,none,False,2026-03-21 01:27:04,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Final Proposal Ready,Final_Proposal_Ready__c
-completeinternalreview,Complete Internal Review,bit,none,False,2026-03-21 01:27:04,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Complete Internal Review,Complete_Internal_Review__c
-confirminterest,Confirm Interest,bit,none,False,2026-03-21 01:27:04,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Confirm Interest,Confirm_Interest__c
-contactid,Contact,lookup,none,False,2026-03-05 02:19:28,,true,0,0,0,0,0,0,0,5,0,0,0,,,,Opportunity,ContactId,ContactId
-createdby,Created By,lookup,none,False,2026-03-21 01:27:04,,true,2,9,14,0,0,1,0,0,0,0,0,,,,Opportunity,CreatedById,CreatedById
-createdon,Created On,datetime,none,False,Skipped (createdon),,true,2,39,3,0,0,0,1,10,0,0,0,,,,Opportunity,CreatedDate,CreatedDate
-currentsituation,Current Situation,ntext,none,False,2026-03-20 22:27:05,,true,2,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,NextStep,NextStep
-customerid,Potential Customer,customer,required,False,2026-03-21 01:27:04,,true,0,48,0,0,0,14,0,11,0,1,0,,,,Opportunity,Potential Customer,Potential_Customer__c
+azt_winbackopportunitytotal,Win-Back Opportunity Total,money,none,True,2026-03-22 22:06:40,,true,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Win Back Opportunity Total,CRM_Win_Back_Opportunity_Total__c,Opportunity,CRM Win Back Opportunity Total,CRM_Win_Back_Opportunity_Total__c
+azt_winbackopportunitytotal_base,Win-Back Opportunity Total (Base),money,none,True,2026-03-22 22:06:40,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+budgetamount,Budget amount,money,none,False,2026-03-20 21:44:40,,true,2,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Budget Amount,Budget_Amount__c
+budgetstatus,Budget,picklist,none,False,Never,,false,0,0,0,0,0,2,0,0,0,0,0,,,,,,
+captureproposalfeedback,Proposal Feedback Captured,bit,none,False,2026-03-22 22:06:40,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Proposal Feedback Captured,Proposal_Feedback_Captured__c
+closeprobability,Probability Number,int,none,False,2026-03-22 22:06:40,,true,2,2,3,0,0,2,0,1,0,0,0,Opportunity,CRM Probability Number,CRM_Probability_Number__c,Opportunity,Probability Number,Probability_Number__c
+completefinalproposal,Final Proposal Ready,bit,none,False,2026-03-22 22:06:40,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Final Proposal Ready,Final_Proposal_Ready__c
+completeinternalreview,Complete Internal Review,bit,none,False,2026-03-22 22:06:40,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Complete Internal Review,Complete_Internal_Review__c
+confirminterest,Confirm Interest,bit,none,False,2026-03-22 22:06:40,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Confirm Interest,Confirm_Interest__c
+contactid,Contact,lookup,none,False,2026-03-05 02:19:28,,true,0,0,0,0,0,0,0,5,0,0,0,,,,Opportunity,Contact ID,ContactId
+createdby,Created By,lookup,none,False,2026-03-22 22:06:40,,true,2,9,14,0,0,1,0,0,0,0,0,,,,Opportunity,Created By ID,CreatedById
+createdon,Created On,datetime,none,False,Skipped (createdon),,true,2,39,3,0,0,0,1,10,0,0,0,,,,Opportunity,Created Date,CreatedDate
+currentsituation,Current Situation,ntext,none,False,2026-03-20 22:27:05,,true,2,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,CRM Current Situation,CRM_Current_Situation__c
+customerid,Potential Customer,customer,required,False,2026-03-22 22:06:40,,true,0,48,0,0,0,14,0,11,0,1,0,,,,Opportunity,Potential Customer,Potential_Customer__c
 customerneed,Customer Need,ntext,none,False,2026-03-20 22:27:05,,true,2,0,0,0,0,1,0,0,0,0,0,,,,Opportunity,Customer Need,Customer_Need__c
-customerpainpoints,Customer Pain Points,ntext,none,False,Never,,false,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Customer Pain Points,Customer_Pain_Points__c
-decisionmaker,Decision Maker?,bit,none,False,2026-03-21 01:27:04,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Decision Maker,Decision_Maker__c
-description,Description,ntext,none,False,2026-03-21 01:27:04,,true,1,0,0,0,0,2,0,7,0,0,0,,,,Opportunity,Description,Description
-developproposal,Develop Proposal,bit,none,False,2026-03-21 01:27:04,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Develop Proposal,Develop_Proposal__c
-discountamount,Opportunity Discount Amount,money,none,False,2026-03-09 21:14:59,,true,2,0,0,0,0,0,0,2,0,0,0,,,,Opportunity,Discount_Amount__c,Discount_Amount__c
+customerpainpoints,Customer Pain Points,ntext,none,False,Never,,false,0,0,0,0,0,2,0,0,0,0,0,,,,,,
+decisionmaker,Decision Maker?,bit,none,False,2026-03-22 22:06:40,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Decision Maker,Decision_Maker__c
+description,Description,ntext,none,False,2026-03-22 22:06:40,,true,1,0,0,0,0,2,0,7,0,0,0,,,,Opportunity,Description,Description
+developproposal,Develop Proposal,bit,none,False,2026-03-22 22:06:40,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Develop Proposal,Develop_Proposal__c
+discountamount,Opportunity Discount Amount,money,none,False,2026-03-09 21:14:59,,true,2,0,0,0,0,0,0,2,0,0,0,,,,Opportunity,Discount Amount,Discount_Amount__c
 discountpercentage,Opportunity Discount (%),decimal,none,False,2025-11-21 19:17:58,,true,1,0,0,0,0,2,0,1,0,0,0,,,,Opportunity,Opportunity Discount,Opportunity_Discount__c
-emailaddress,Email Address,nvarchar,none,False,Never,,false,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Email Address,Email_Address__c
-estimatedclosedate,Est. Close Date,datetime,none,False,2026-03-21 01:27:04,,true,3,81,7,0,0,0,0,3,0,0,0,Opportunity,Close Date,CRM_Estimated_Close_Date__c,Opportunity,Expected_Close_Date__c,Expected_Close_Date__c
-estimatedvalue,Est. Revenue,money,none,False,2026-03-21 01:27:04,,true,4,41,8,0,0,2,0,2,0,0,0,Opportunity,CRM Estimated Revenue,CRM_Estimated_Revenue__c,Opportunity,Estimated_Revenue__c,Estimated_Revenue__c
-evaluatefit,Evaluate Fit,bit,none,False,2026-03-21 01:27:04,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Evaluate Fit,Evaluate_Fit__c
-filedebrief,File Debrief,bit,none,False,2026-03-21 01:27:04,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,File Debrief,File_Debrief__c
-freightamount,Freight Amount,money,none,False,2026-03-21 01:27:04,,true,2,0,0,0,0,0,0,1,0,0,0,,,,Opportunity,Freight_Amount__c,Freight_Amount__c
-identifycompetitors,Identify Competitors,bit,none,False,2026-03-21 01:27:04,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Identify Competitors,Identify_Competitors__c
-identifycustomercontacts,Identify Customer Contacts,bit,none,False,2026-03-21 01:27:04,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Identify Customer Contacts,Identify_Customer_Contacts__c
-identifypursuitteam,Identify Sales Team,bit,none,False,2026-03-21 01:27:04,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Identify Sales Team,Identify_Sales_Team__c
-initialcommunication,Initial Communication,picklist,none,False,Never,,false,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Initial Communication,Initial_Communication__c
-isrevenuesystemcalculated,Revenue,bit,none,False,2026-03-21 01:27:04,"1: System Calculated, 0: User Provided",true,2,0,0,0,0,2,0,1,0,0,0,Opportunity,CRM Revenue,CRM_Revenue__c,Opportunity,Revenue,Revenue__c
-modifiedon,Modified On,datetime,none,False,Skipped (modifiedon),,true,0,1,0,0,0,0,0,4,0,0,0,,,,Opportunity,LastModifiedDate,LastModifiedDate
-msa_partnerid,Partner,lookup,none,True,2026-03-21 01:27:04,,true,0,0,0,0,0,0,0,0,0,1,0,,,,Opportunity,Partner,Partner__c
+emailaddress,Email Address,nvarchar,none,False,Never,,false,0,0,0,0,0,2,0,0,0,0,0,,,,,,
+estimatedclosedate,Est. Close Date,datetime,none,False,2026-03-22 22:06:40,,true,3,81,7,0,0,0,0,3,0,0,0,Opportunity,Close Date,CRM_Estimated_Close_Date__c,Opportunity,Expected Close Date,Expected_Close_Date__c
+estimatedvalue,Est. Revenue,money,none,False,2026-03-22 22:06:40,,true,4,41,8,0,0,2,0,2,0,0,0,Opportunity,CRM Estimated Revenue,CRM_Estimated_Revenue__c,Opportunity,Estimated Revenue,Estimated_Revenue__c
+evaluatefit,Evaluate Fit,bit,none,False,2026-03-22 22:06:40,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Evaluate Fit,Evaluate_Fit__c
+filedebrief,File Debrief,bit,none,False,2026-03-22 22:06:40,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,File Debrief,File_Debrief__c
+freightamount,Freight Amount,money,none,False,2026-03-22 22:06:40,,true,2,0,0,0,0,0,0,1,0,0,0,,,,Opportunity,Freight Amount,Freight_Amount__c
+identifycompetitors,Identify Competitors,bit,none,False,2026-03-22 22:06:40,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Identify Competitors,Identify_Competitors__c
+identifycustomercontacts,Identify Customer Contacts,bit,none,False,2026-03-22 22:06:40,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Identify Customer Contacts,Identify_Customer_Contacts__c
+identifypursuitteam,Identify Sales Team,bit,none,False,2026-03-22 22:06:40,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Identify Sales Team,Identify_Sales_Team__c
+initialcommunication,Initial Communication,picklist,none,False,Never,,false,0,0,0,0,0,2,0,0,0,0,0,,,,,,
+isrevenuesystemcalculated,Revenue,bit,none,False,2026-03-22 22:06:40,"1: System Calculated, 0: User Provided",true,2,0,0,0,0,2,0,1,0,0,0,Opportunity,CRM Revenue,CRM_Revenue__c,Opportunity,Revenue,Revenue__c
+modifiedon,Modified On,datetime,none,False,Skipped (modifiedon),,true,0,1,0,0,0,0,0,4,0,0,0,,,,Opportunity,Last Modified Date,LastModifiedDate
+msa_partnerid,Partner,lookup,none,True,2026-03-22 18:57:42,,true,0,0,0,0,0,0,0,0,0,1,0,,,,Opportunity,Partner,Partner__c
 msa_partneroppid,Partner Contact,lookup,none,True,2026-01-20 19:08:41,,true,0,0,0,0,0,0,0,0,0,1,0,,,,Opportunity,Partner Contact,Partner_Contact__c
-msdyn_forecastcategory,Forecast category,picklist,none,True,2026-03-21 01:27:04,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Opportunity,ForecastCategory,ForecastCategory
-msdyn_opportunitykpiid,KPI,lookup,none,True,Never,,false,0,0,0,0,0,0,0,0,0,1,0,,,,Opportunity,Kpi,Kpi__c
-msdyn_predictivescoreid,Predictive Score,lookup,none,True,Never,,false,0,0,0,0,0,0,0,0,0,1,0,,,,Opportunity,Predictive Score,Predictive_Score__c
-msdyn_segmentid,Segment Id,lookup,none,True,Never,,false,0,0,0,0,0,0,0,0,0,1,0,,,,Opportunity,Segment Id,Segment_Id__c
-name,Topic,nvarchar,required,False,2026-03-21 01:27:04,,true,2,75,0,0,0,19,0,23,0,0,0,,,,Opportunity,Name,Name
-need,Need,picklist,none,False,Never,,false,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Need,Need__c
-opportunityid,Opportunity,uniqueidentifier,required,False,2026-03-21 01:27:04,,true,0,65,0,0,0,11,0,32,0,1,0,,,,Opportunity,OpportunityId__c,OpportunityId__c
-opportunityratingcode,Rating,picklist,none,False,2026-03-21 01:27:04,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,OpportunityId__c,OpportunityId__c
-originatingleadid,Originating Lead,lookup,none,False,2026-03-20 20:30:47,,true,2,0,0,0,0,0,0,2,0,1,0,,,,Opportunity,Sales_Lead__c,Sales_Lead__c
-ownerid,Owner,owner,systemrequired,False,2026-03-21 01:27:04,,true,4,27,9,0,0,25,0,22,0,0,0,Opportunity,Record Type,RecordTypeId,Opportunity,RecordTypeId,RecordTypeId
-owningbusinessunit,Owning Business Unit,lookup,none,False,2026-03-21 01:27:04,,true,0,5,0,0,0,0,0,0,0,0,0,,,,Opportunity,Owning Business Unit,Owning_Business_Unit__c
-parentaccountid,Account,lookup,none,False,2026-03-21 01:27:04,,true,5,1,0,0,0,13,0,4,0,1,0,,,,Opportunity,AccountId,AccountId
-parentcontactid,Contact,lookup,none,False,2026-03-21 01:27:04,,true,5,1,0,0,0,10,0,1,0,0,0,Opportunity,Contact name,ContactId,Opportunity,ContactId,ContactId
-presentfinalproposal,Present Final Proposal,bit,none,False,2026-03-21 01:27:04,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Present Final Proposal,Present_Final_Proposal__c
-presentproposal,Presented Proposal,bit,none,False,2026-03-21 01:27:04,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Presented Proposal,Presented_Proposal__c
-pricelevelid,Price List,lookup,required,False,2026-03-21 01:27:04,,true,2,0,0,0,0,7,0,1,0,0,0,Opportunity,Price Book,Pricebook2Id,Opportunity,Pricebook2Id,Pricebook2Id
-prioritycode,Priority,picklist,none,False,2026-03-21 01:27:04,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Priority,Priority__c
-proposedsolution,Proposed Solution,ntext,none,False,2026-03-20 22:27:05,,true,1,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Proposed_Solution__c,Proposed_Solution__c
-purchaseprocess,Purchase Process,picklist,none,False,2026-03-20 21:44:40,,true,2,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Purchase_Process__c,Purchase_Process__c
-purchasetimeframe,Purchase Timeframe,picklist,none,False,2026-03-21 01:27:04,,true,2,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,CRM_Purchase_Timeframe__c,CRM_Purchase_Timeframe__c
-pursuitdecision,Decide Go/No-Go,bit,none,False,2026-03-21 01:27:04,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Decide Gonogo,Decide_Gonogo__c
-qualificationcomments,Qualification Comments,ntext,none,False,Never,,false,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Qualification_Meeting_Notes__c,Qualification_Meeting_Notes__c
-quotecomments,Quote Comments,ntext,none,False,Never,,false,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Quote Comments,Quote_Comments__c
-resolvefeedback,Feedback Resolved,bit,none,False,2026-03-21 01:27:04,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Feedback Resolved,Feedback_Resolved__c
+msdyn_forecastcategory,Forecast category,picklist,none,True,2026-03-22 22:06:40,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Opportunity,Forecast Category,ForecastCategory
+msdyn_opportunitykpiid,KPI,lookup,none,True,Never,,false,0,0,0,0,0,0,0,0,0,1,0,,,,,,
+msdyn_predictivescoreid,Predictive Score,lookup,none,True,Never,,false,0,0,0,0,0,0,0,0,0,1,0,,,,,,
+msdyn_segmentid,Segment Id,lookup,none,True,Never,,false,0,0,0,0,0,0,0,0,0,1,0,,,,,,
+name,Topic,nvarchar,required,False,2026-03-22 22:06:40,,true,2,75,0,0,0,19,0,23,0,0,0,,,,Opportunity,Name,Name
+need,Need,picklist,none,False,Never,,false,0,0,0,0,0,2,0,0,0,0,0,,,,,,
+opportunityid,Opportunity,uniqueidentifier,required,False,2026-03-22 22:06:40,,true,0,65,0,0,0,11,0,32,0,1,0,,,,Opportunity,OpportunityId,OpportunityId__c
+opportunityratingcode,Rating,picklist,none,False,2026-03-22 22:06:40,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,OpportunityId,OpportunityId__c
+originatingleadid,Originating Lead,lookup,none,False,2026-03-22 22:06:40,,true,2,0,0,0,0,0,0,2,0,1,0,,,,Opportunity,Originating Lead,Originating_Lead__c
+ownerid,Owner,owner,systemrequired,False,2026-03-22 22:06:40,,true,4,27,9,0,0,25,0,22,0,0,0,Opportunity,Record Type,RecordTypeId,Opportunity,Owner ID,OwnerId
+owningbusinessunit,Owning Business Unit,lookup,none,False,2026-03-22 22:06:40,,true,0,5,0,0,0,0,0,0,0,0,0,,,,Opportunity,Owning Business Unit,Owning_Business_Unit__c
+parentaccountid,Account,lookup,none,False,2026-03-22 22:06:40,,true,5,1,0,0,0,13,0,4,0,1,0,,,,Opportunity,Account ID,AccountId
+parentcontactid,Contact,lookup,none,False,2026-03-22 22:06:40,,true,5,1,0,0,0,10,0,1,0,0,0,Opportunity,Contact name,ContactId,Opportunity,Contact ID,ContactId
+presentfinalproposal,Present Final Proposal,bit,none,False,2026-03-22 22:06:40,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Present Final Proposal,Present_Final_Proposal__c
+presentproposal,Presented Proposal,bit,none,False,2026-03-22 22:06:40,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Presented Proposal,Presented_Proposal__c
+pricelevelid,Price List,lookup,required,False,2026-03-22 22:06:40,,true,2,0,0,0,0,7,0,1,0,0,0,Opportunity,Price Book,Pricebook2Id,Opportunity,Price List,Price_List__c
+prioritycode,Priority,picklist,none,False,2026-03-22 22:06:40,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Priority,Priority__c
+proposedsolution,Proposed Solution,ntext,none,False,2026-03-20 22:27:05,,true,1,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Proposed Solution,Proposed_Solution__c
+purchaseprocess,Purchase Process,picklist,none,False,2026-03-20 21:44:40,,true,2,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Purchase Process,Purchase_Process__c
+purchasetimeframe,Purchase Timeframe,picklist,none,False,2026-03-22 22:06:40,,true,2,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,CRM Purchase Timeframe,CRM_Purchase_Timeframe__c
+pursuitdecision,Decide Go/No-Go,bit,none,False,2026-03-22 22:06:40,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Decide Gonogo,Decide_Gonogo__c
+qualificationcomments,Qualification Comments,ntext,none,False,Never,,false,0,0,0,0,0,2,0,0,0,0,0,,,,,,
+quotecomments,Quote Comments,ntext,none,False,Never,,false,0,0,0,0,0,2,0,0,0,0,0,,,,,,
+resolvefeedback,Feedback Resolved,bit,none,False,2026-03-22 22:06:40,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Feedback Resolved,Feedback_Resolved__c
 salesstage,Deprecated Sales Stage,picklist,none,False,2026-03-20 20:16:40,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-salesstagecode,Process Code,picklist,none,False,2026-03-21 01:27:04,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Process Code,Process_Code__c
-sendthankyounote,Send Thank You Note,bit,none,False,2026-03-21 01:27:04,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Send Thank You Note,Send_Thank_You_Note__c
-statecode,Status,state,systemrequired,False,2026-03-21 01:27:04,,true,0,58,2,0,0,10,0,20,0,0,0,Opportunity,CRM Status,CRM_Status__c,Opportunity,Status CRM,Status_CRM__c
-statuscode,Status Reason,status,none,False,2026-03-21 01:27:04,,true,0,10,0,0,0,5,0,6,0,0,0,,,,Opportunity,Status__c,Status__c
-totalamount,Total Amount,money,none,False,2026-03-21 01:27:04,,true,1,0,0,0,0,0,0,4,0,0,0,,,,Opportunity,CRM_Total_Amount__c,CRM_Total_Amount__c
-totalamountlessfreight,Total Pre-Freight Amount,money,none,False,2026-03-21 01:27:04,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Opportunity,Total Prefreight Amount,Total_Prefreight_Amount__c
-totallineitemamount,Total Detail Amount,money,none,False,2026-03-21 01:27:04,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Opportunity,CRM_Total_Line_Item_Discount_Amount__c,CRM_Total_Line_Item_Discount_Amount__c
-totaltax,Total Tax,money,none,False,2026-03-21 01:27:04,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Opportunity,Total Tax,Total_Tax__c
-transactioncurrencyid,Currency,lookup,required,False,2026-03-21 01:27:04,,true,2,0,0,0,0,2,0,8,0,0,0,,,,Opportunity,Currency,Currency__c
+salesstagecode,Process Code,picklist,none,False,2026-03-22 22:06:40,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Process Code,Process_Code__c
+sendthankyounote,Send Thank You Note,bit,none,False,2026-03-22 22:06:40,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Send Thank You Note,Send_Thank_You_Note__c
+statecode,Status,state,systemrequired,False,2026-03-22 22:06:40,,true,0,58,2,0,0,10,0,20,0,0,0,Opportunity,CRM Status,CRM_Status__c,Opportunity,Status CRM,Status_CRM__c
+statuscode,Status Reason,status,none,False,2026-03-22 22:06:40,,true,0,10,0,0,0,5,0,6,0,0,0,,,,Opportunity,Status,Status__c
+totalamount,Total Amount,money,none,False,2026-03-22 22:06:40,,true,1,0,0,0,0,0,0,4,0,0,0,,,,Opportunity,CRM Total Amount,CRM_Total_Amount__c
+totalamountlessfreight,Total Pre-Freight Amount,money,none,False,2026-03-22 22:06:40,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Opportunity,Total Prefreight Amount,Total_Prefreight_Amount__c
+totallineitemamount,Total Detail Amount,money,none,False,2026-03-22 22:06:40,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Opportunity,CRM Total Line Item Discount Amount,CRM_Total_Line_Item_Discount_Amount__c
+totaltax,Total Tax,money,none,False,2026-03-22 22:06:40,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Opportunity,Total Tax,Total_Tax__c
+transactioncurrencyid,Currency,lookup,required,False,2026-03-22 22:06:40,,true,2,0,0,0,0,2,0,8,0,0,0,,,,Opportunity,Currency,Currency__c

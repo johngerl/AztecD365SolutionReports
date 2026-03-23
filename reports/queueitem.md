@@ -13,6 +13,17 @@
 | **Last Update** | 2026-03-20 21:42:40 |
 | **Primary ID Field** | queueitemid |
 | **Primary Name Field** | None |
+| **Count Forms** | 1 |
+| **Count Views** | 30 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 0 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 81 |
+| **Count PCF Controls** | 1 |
+| **Count Relationships** | 1 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

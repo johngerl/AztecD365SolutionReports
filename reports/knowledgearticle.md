@@ -13,6 +13,17 @@
 | **Last Update** | 2024-05-13 18:36:30 |
 | **Primary ID Field** | knowledgearticleid |
 | **Primary Name Field** | None |
+| **Count Forms** | 0 |
+| **Count Views** | 0 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 0 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 79 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 2 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

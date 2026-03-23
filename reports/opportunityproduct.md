@@ -13,6 +13,17 @@
 | **Last Update** | 2026-03-21 00:54:35 |
 | **Primary ID Field** | opportunityproductid |
 | **Primary Name Field** | None |
+| **Count Forms** | 12 |
+| **Count Views** | 45 |
+| **Count Chart Visualizations** | 2 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 3 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 279 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 0 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 
@@ -143,11 +154,11 @@ Total fields: **30**
 | 3 | [azt_issaas](#azt_issaas) | Is SaaS? | bit | 1: Yes, 0: No | Yes | none | 2026-03-21 00:54:35 | C R U | true |  |  |  | Opportunity Product | Is Saas | Is_Saas__c | [2](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 4 | [azt_licensetermmonths](#azt_licensetermmonths) | License Term (Months) | int |  | Yes | none | 2026-03-21 00:54:35 | C R U | true |  |  |  | Opportunity Product | License Term Months | License_Term_Months__c | [2](#2.%20Forms) | [2](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 5 | [azt_licensetype](#azt_licensetype) | License Type | picklist |  | Yes | required | 2026-03-21 00:54:35 | C R U | true |  |  |  | Opportunity Product | License Type | License_Type__c | [2](#2.%20Forms) | [5](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [25](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 6 | [azt_nonsaastype](#azt_nonsaastype) | Non-SaaS Type | picklist | 276530000: Life Skills, 276530001: Kaplan Books, 276530003: GED Vouchers, 276530002: Other | Yes | none | 2022-03-13 18:47:50 | C R U | false |  |  |  | Opportunity Product | Nonsaas Type | Nonsaas_Type__c |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 6 | [azt_nonsaastype](#azt_nonsaastype) | Non-SaaS Type | picklist | 276530000: Life Skills, 276530001: Kaplan Books, 276530003: GED Vouchers, 276530002: Other | Yes | none | 2022-03-13 18:47:50 | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 7 | [azt_pricebookentry](#azt_pricebookentry) | SF Price Book Entry | nvarchar |  | Yes | none | Never | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 8 | [baseamount](#baseamount) | Amount | money |  | No | none | 2026-03-21 00:54:35 |  | true |  |  |  | Opportunity Product | Amount | Amount__c |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 9 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) |  | true |  |  |  | Opportunity Product | Created On | Created_On__c |  | [1](#3.%20Views) |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 10 | [description](#description) | Description | ntext |  | No | none | Never |  | false |  |  |  | Opportunity Product | Description | Description__c |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 10 | [description](#description) | Description | ntext |  | No | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 11 | [entityimage](#entityimage) | Entity Image | image |  | No | none | Skipped (image) | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 12 | [extendedamount](#extendedamount) | Extended amount | money |  | No | none | 2026-03-21 00:54:35 |  | true |  |  |  | Opportunity Product | Extended Amount | Extended_Amount__c |  | [3](#3.%20Views) |  |  |  |  |  | [13](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 13 | [ispriceoverridden](#ispriceoverridden) | Price Overridden | bit |  | No | none | 2026-03-21 00:54:35 |  | true |  |  |  | Opportunity Product | Price Overridden | Price_Overridden__c |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
@@ -160,7 +171,7 @@ Total fields: **30**
 | 20 | [opportunitystatecode](#opportunitystatecode) | Opportunity Status | picklist |  | No | required | 2026-03-21 00:54:35 |  | true |  |  |  | Opportunity Product | Opportunity Status | Opportunity_Status__c |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 | 21 | [ownerid](#ownerid) | Owner | lookup |  | No | required | 2026-03-21 00:54:35 |  | true |  |  |  | Opportunity Product | Owner CRM | Owner_CRM__c |  |  |  |  |  |  |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 22 | [priceperunit](#priceperunit) | Price per unit | money |  | No | none | 2026-03-21 00:54:35 |  | true |  |  |  | Opportunity Product | Price Per Unit | Price_Per_Unit__c |  | [3](#3.%20Views) |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 23 | [productdescription](#productdescription) | Write-In Product | nvarchar |  | No | none | 2024-07-02 11:04:03 |  | false |  |  |  | Opportunity Product | Writein Product | Writein_Product__c |  | [2](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [13](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 23 | [productdescription](#productdescription) | Write-In Product | nvarchar |  | No | none | 2024-07-02 11:04:03 |  | false |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [13](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 24 | [productid](#productid) | Existing Product | lookup |  | No | none | 2026-03-21 00:54:35 |  | true |  |  |  | Opportunity Product | Existing Product | Existing_Product__c | [1](#2.%20Forms) | [5](#3.%20Views) |  |  |  |  |  | [33](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 25 | [productname](#productname) | Product name | nvarchar |  | No | none | 2026-03-21 00:54:35 |  | true |  |  |  | Opportunity Product | Product Name | Product_Name__c |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 26 | [producttypecode](#producttypecode) | Product type | picklist |  | No | required | 2026-03-21 00:54:35 |  | true |  |  |  | Opportunity Product | Product Type | Product_Type__c |  | [1](#3.%20Views) |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |

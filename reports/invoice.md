@@ -13,6 +13,17 @@
 | **Last Update** | 2026-03-20 19:18:15 |
 | **Primary ID Field** | invoiceid |
 | **Primary Name Field** | name |
+| **Count Forms** | 30 |
+| **Count Views** | 80 |
+| **Count Chart Visualizations** | 2 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 94 |
+| **Count Formulas & Rollups** | 9 |
+| **Count Plugins** | 227 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 4 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 
@@ -222,19 +233,19 @@ Total fields: **77**
 | 17 | [azt_commissionpercentage1](#azt_commissionpercentage1) | Commission Percentage (1) | decimal |  | Yes | none | Never | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 18 | [azt_commissionpercentage2](#azt_commissionpercentage2) | Commission Percentage (2) | decimal |  | Yes | none | Never | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 19 | [azt_compcompleted](#azt_compcompleted) | Comp Completed | bit | 1: Yes, 0: No | Yes | none | 2026-03-20 19:18:15 | C R U | true | Invoice - Custom | CRM Comp Completed | CRM_Comp_Completed__c | Invoice - Custom | Comp Completed | Comp_Completed__c | [1](#2.%20Forms) |  |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 20 | [azt_discretionarydiscountamt](#azt_discretionarydiscountamt) | Discretionary Discount Amt | money |  | Yes | none | 2024-08-16 18:11:15 | C R U | false | Invoice - Custom | CRM Discretionary Discount Amount | CRM_Discretionary_Discount_Amount__c | Invoice - Custom | Discretionary Discount Amt | Discretionary_Discount_Amt__c | [1](#2.%20Forms) | [3](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 20 | [azt_discretionarydiscountamt](#azt_discretionarydiscountamt) | Discretionary Discount Amt | money |  | Yes | none | 2024-08-16 18:11:15 | C R U | false | Invoice - Custom | CRM Discretionary Discount Amount | CRM_Discretionary_Discount_Amount__c |  |  |  | [1](#2.%20Forms) | [3](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 21 | [azt_discretionarydiscountamt_base](#azt_discretionarydiscountamt_base) | Discretionary Discount Amt (Base) | money |  | Yes | none | 2024-08-16 18:11:15 | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 22 | [azt_estimatedopportunitycommission](#azt_estimatedopportunitycommission) | Estimated Opportunity Commission | money |  | Yes | none | Never | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 23 | [azt_estimatedopportunitycommission_base](#azt_estimatedopportunitycommission_base) | Estimated Opportunity Commission (Base) | money |  | Yes | none | Never | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 24 | [azt_invoicealert](#azt_invoicealert) | Invoice Alert | nvarchar |  | Yes | none | Never | C R U | false | Invoice - Custom | CRM Invoice Alert | CRM_Invoice_Alert__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 25 | [azt_invoicedate](#azt_invoicedate) | Invoice Date | datetime |  | Yes | none | Never | C R U | false |  |  |  | Invoice - Custom | Invoice Date | Invoice_Date__c |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 25 | [azt_invoicedate](#azt_invoicedate) | Invoice Date | datetime |  | Yes | none | Never | C R U | false |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 | 26 | [azt_masecomm1](#azt_masecomm1) | MASE Comm 1? | bit | 1: Yes, 0: No | Yes | none | 2026-03-20 19:18:15 | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 27 | [azt_masecomm2](#azt_masecomm2) | MASE Comm 2? | bit | 1: Yes, 0: No | Yes | none | 2026-03-20 19:18:15 | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 28 | [azt_numberofpayments](#azt_numberofpayments) | # Payments | int |  | Yes | none | 2025-07-10 03:30:59 | C R U | true | Invoice - Custom | CRM No Payments | CRM_No_Payments__c | Invoice - Custom | Payments | Payments__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
 | 29 | [azt_paid](#azt_paid) | Paid % | decimal |  | Yes | none | 2026-03-18 15:34:39 | C R U | true | Invoice - Custom | CRM Paid Pct | CRM_Paid_Pct__c | Invoice - Custom | Paid | Paid__c | [1](#2.%20Forms) | [3](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 30 | [azt_paidon](#azt_paidon) | Paid On | datetime |  | Yes | none | 2026-03-18 15:34:39 | C R U | true | Invoice - Custom | CRM Paid On | CRM_Paid_On__c | Invoice - Custom | Paid On | Paid_On__c | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 31 | [azt_paymentsalreadysplit](#azt_paymentsalreadysplit) | Payments Already Split | bit | 1: Yes, 0: No | Yes | none | 2026-03-20 19:18:15 | C R U | true | Invoice - Custom | CRM Payments Already Split | CRM_Payments_Already_Split__c | Invoice - Custom | Payments Already Split | Payments_Already_Split__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 32 | [azt_paymenttype](#azt_paymenttype) | Payment Type | picklist |  | Yes | none | 2021-07-11 16:00:49 | C R U | false | Invoice - Custom | CRM Payment Type | CRM_Payment_Type__c | Invoice - Custom | Payment Type | Payment_Type__c | [1](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 32 | [azt_paymenttype](#azt_paymenttype) | Payment Type | picklist |  | Yes | none | 2021-07-11 16:00:49 | C R U | false | Invoice - Custom | CRM Payment Type | CRM_Payment_Type__c |  |  |  | [1](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
 | 33 | [azt_ponumber](#azt_ponumber) | PO Number | nvarchar |  | Yes | none | 2026-03-20 19:18:15 | C R U S | true | Invoice - Custom | PO Number | PO_Number__c | Invoice - Custom | Po Number | Po_Number__c | [1](#2.%20Forms) | [4](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 34 | [azt_poreceiveddate](#azt_poreceiveddate) | PO Received Date | datetime |  | Yes | none | 2026-03-20 19:18:15 | C R U | true | Invoice - Custom | PO Received Date | PO_Received_Date__c | Invoice - Custom | Po Received Date | Po_Received_Date__c | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 | 35 | [azt_quickbooksinvoicedate](#azt_quickbooksinvoicedate) | Intacct Invoice Date | datetime |  | Yes | none | 2026-03-20 19:18:15 | C R U | true |  |  |  | Invoice - Custom | Intacct Invoice Date | Intacct_Invoice_Date__c | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
@@ -248,15 +259,15 @@ Total fields: **77**
 | 43 | [billto_line1](#billto_line1) | Bill To Street 1 | nvarchar |  | No | none | 2026-03-20 19:18:15 |  | true |  |  |  | Invoice - Custom | Bill To Street 1 | Bill_To_Street_1__c |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 44 | [billto_line2](#billto_line2) | Bill To Street 2 | nvarchar |  | No | none | 2026-03-20 17:46:13 |  | true |  |  |  | Invoice - Custom | Bill To Street 2 | Bill_To_Street_2__c |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 45 | [billto_line3](#billto_line3) | Bill To Street 3 | nvarchar |  | No | none | 2026-03-20 19:18:15 |  | true |  |  |  | Invoice - Custom | Bill To Street 3 | Bill_To_Street_3__c |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 46 | [billto_name](#billto_name) | Bill To Name | nvarchar |  | No | none | Never |  | false |  |  |  | Invoice - Custom | Bill To Name | Bill_To_Name__c |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 46 | [billto_name](#billto_name) | Bill To Name | nvarchar |  | No | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 47 | [billto_postalcode](#billto_postalcode) | Bill To ZIP/Postal Code | nvarchar |  | No | none | 2026-03-20 19:18:15 |  | true |  |  |  | Invoice - Custom | Bill To Zippostal Code | Bill_To_Zippostal_Code__c |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 48 | [billto_stateorprovince](#billto_stateorprovince) | Bill To State/Province | nvarchar |  | No | none | 2026-03-20 19:18:15 |  | true |  |  |  | Invoice - Custom | Bill To Stateprovince | Bill_To_Stateprovince__c |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 49 | [contactid](#contactid) | Contact | lookup |  | No | none | Never |  | false |  |  |  | Invoice - Custom | Contact | Contact__c |  |  |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 49 | [contactid](#contactid) | Contact | lookup |  | No | none | Never |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 50 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) |  | true |  |  |  | Invoice - Custom | Created On | Created_On__c |  | [3](#3.%20Views) |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 51 | [customerid](#customerid) | Customer | customer |  | No | required | 2026-03-20 19:18:15 | C R U So G Re | true | Invoice - Custom | Account | AccountID | Invoice - Custom | Customer | Customer__c | [1](#2.%20Forms) | [8](#3.%20Views) |  |  |  | [13](#7.%20Workflows) |  | [11](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
 | 52 | [description](#description) | Description | ntext |  | No | none | 2026-03-20 19:18:15 |  | true |  |  |  | Invoice - Custom | Description | Description__c |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 53 | [discountamount](#discountamount) | Invoice Discount Amount | money |  | No | none | 2026-02-12 16:41:21 |  | true |  |  |  | Invoice - Custom | Invoice Discount Amount | Invoice_Discount_Amount__c | [1](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 54 | [duedate](#duedate) | Due Date | datetime |  | No | none | 2025-01-15 14:15:36 |  | false |  |  |  | Invoice - Custom | Due Date | Due_Date__c |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 54 | [duedate](#duedate) | Due Date | datetime |  | No | none | 2025-01-15 14:15:36 |  | false |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 | 55 | [entityimage](#entityimage) | Entity Image | image |  | No | none | Skipped (image) | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 56 | [freightamount](#freightamount) | Freight Amount | money |  | No | none | 2026-03-20 19:18:15 |  | true |  |  |  | Invoice - Custom | Freight Amount | Freight_Amount__c |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 57 | [invoiceid](#invoiceid) | Invoice | uniqueidentifier |  | No | required | 2026-03-20 19:18:15 |  | true |  |  |  | Invoice - Custom | Invoice | Invoice__c |  | [7](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |

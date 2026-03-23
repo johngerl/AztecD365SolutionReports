@@ -13,6 +13,17 @@
 | **Last Update** | 2026-03-21 00:42:12 |
 | **Primary ID Field** | connectionid |
 | **Primary Name Field** | None |
+| **Count Forms** | 7 |
+| **Count Views** | 20 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 0 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 121 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 76 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

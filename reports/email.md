@@ -13,6 +13,17 @@
 | **Last Update** | 2026-03-21 00:21:54 |
 | **Primary ID Field** | emailid |
 | **Primary Name Field** | None |
+| **Count Forms** | 18 |
+| **Count Views** | 79 |
+| **Count Chart Visualizations** | 16 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 125 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 107 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 39 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

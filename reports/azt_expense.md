@@ -9,10 +9,21 @@
 | **Object Type** | Custom |
 | **Ownership Type** | UserOwned |
 | **Audit Enabled** | False |
-| **Total Rows** | 13871 |
-| **Last Update** | 2026-03-17 12:53:21 |
+| **Total Rows** | 13881 |
+| **Last Update** | 2026-03-22 20:36:00 |
 | **Primary ID Field** | azt_expenseid |
 | **Primary Name Field** | azt_name |
+| **Count Forms** | 17 |
+| **Count Views** | 71 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 106 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 112 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 9 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 
@@ -198,34 +209,34 @@ Total fields: **29**
 
 | # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
 |---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [azt_customerid](#azt_customerid) | Customer | lookup |  | Yes | none | 2026-03-14 13:59:21 | C R U S Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [6](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 2 | [azt_description](#azt_description) | Description | ntext |  | Yes | none | 2026-03-17 12:53:21 | C R U Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [5](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 3 | [azt_expenseamount](#azt_expenseamount) | Expense Amount | money |  | Yes | none | 2026-03-17 12:53:21 | C R U Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [5](#3.%20Views) |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 4 | [azt_expenseamount_base](#azt_expenseamount_base) | Expense Amount (Base) | money |  | Yes | none | 2026-03-17 12:53:21 | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 5 | [azt_expensedate](#azt_expensedate) | Expense Date | datetime |  | Yes | none | 2026-03-17 12:53:21 | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 6 | [azt_expenseid](#azt_expenseid) | Expense | primarykey |  | No | systemrequired | 2026-03-17 12:53:21 | C R F Re | true |  |  |  |  |  |  |  | [7](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 7 | [azt_expensereportid](#azt_expensereportid) | Expense Report | lookup |  | Yes | required | 2026-03-17 12:53:21 | C R U S Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [6](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 8 | [azt_expensetype](#azt_expensetype) | Expense Type | picklist | 276530015: Tips, 276530000: Airfare, 276530001: Conference Fee, 276530002: Customer Entertainment, 276530003: Ground Transportation (Gas), 276530004: Ground Transportation (Parking), 276530005: Ground Transportation (Rental Car), 276530006: Ground Transportation (Taxi/Uber), 276530007: Lodging, 276530008: Meals, 276530009: Miles, 276530010: Office Supplies, 276530012: Phone / Internet, 276530013: Service, 276530014: Shipping, 276530011: Other | Yes | required | 2026-03-17 12:53:21 | C R U S Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [6](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 1 | [azt_customerid](#azt_customerid) | Customer | lookup |  | Yes | none | 2026-03-22 20:36:00 | C R U S Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [6](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 2 | [azt_description](#azt_description) | Description | ntext |  | Yes | none | 2026-03-22 20:36:00 | C R U Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [5](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 3 | [azt_expenseamount](#azt_expenseamount) | Expense Amount | money |  | Yes | none | 2026-03-22 20:36:00 | C R U Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [5](#3.%20Views) |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 4 | [azt_expenseamount_base](#azt_expenseamount_base) | Expense Amount (Base) | money |  | Yes | none | 2026-03-22 20:36:00 | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 5 | [azt_expensedate](#azt_expensedate) | Expense Date | datetime |  | Yes | none | 2026-03-22 20:36:00 | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 6 | [azt_expenseid](#azt_expenseid) | Expense | primarykey |  | No | systemrequired | 2026-03-22 20:36:00 | C R F Re | true |  |  |  |  |  |  |  | [7](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 7 | [azt_expensereportid](#azt_expensereportid) | Expense Report | lookup |  | Yes | required | 2026-03-22 20:36:00 | C R U S Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [6](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 8 | [azt_expensetype](#azt_expensetype) | Expense Type | picklist | 276530015: Tips, 276530000: Airfare, 276530001: Conference Fee, 276530002: Customer Entertainment, 276530003: Ground Transportation (Gas), 276530004: Ground Transportation (Parking), 276530005: Ground Transportation (Rental Car), 276530006: Ground Transportation (Taxi/Uber), 276530007: Lodging, 276530008: Meals, 276530009: Miles, 276530010: Office Supplies, 276530012: Phone / Internet, 276530013: Service, 276530014: Shipping, 276530011: Other | Yes | required | 2026-03-22 20:36:00 | C R U S Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [6](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 9 | [azt_mileage](#azt_mileage) | Mileage | int |  | Yes | none | 2026-03-14 13:59:21 | C R U Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [5](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 10 | [azt_name](#azt_name) | Name | nvarchar |  | Yes | required | 2026-03-17 12:53:21 | C R U S Re | true |  |  |  |  |  |  | [3](#2.%20Forms) | [12](#3.%20Views) |  |  |  | [9](#7.%20Workflows) |  | [18](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 11 | [azt_reasonforexpense](#azt_reasonforexpense) | Reason for Expense | picklist | 276530000: Aztec Internal, 276530001: Business Development, 276530002: Customer Support, 276530003: Employee Training, 276530004: Sales - Add On, 276530005: Sales - Initial, 276530006: Sales - Renewal, 276530007: Technical Support, 276530008: Trade Show, 276530009: Training | Yes | required | 2026-03-17 12:53:21 | C R U Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [5](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 12 | [createdby](#createdby) | Created By | lookup |  | No | none | 2026-03-17 12:53:21 | R | true |  |  |  |  |  |  |  |  |  |  |  | [25](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
+| 10 | [azt_name](#azt_name) | Name | nvarchar |  | Yes | required | 2026-03-22 20:36:00 | C R U S Re | true |  |  |  |  |  |  | [3](#2.%20Forms) | [12](#3.%20Views) |  |  |  | [9](#7.%20Workflows) |  | [18](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 11 | [azt_reasonforexpense](#azt_reasonforexpense) | Reason for Expense | picklist | 276530000: Aztec Internal, 276530001: Business Development, 276530002: Customer Support, 276530003: Employee Training, 276530004: Sales - Add On, 276530005: Sales - Initial, 276530006: Sales - Renewal, 276530007: Technical Support, 276530008: Trade Show, 276530009: Training | Yes | required | 2026-03-22 20:36:00 | C R U Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [5](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 12 | [createdby](#createdby) | Created By | lookup |  | No | none | 2026-03-22 20:36:00 | R | true |  |  |  |  |  |  |  |  |  |  |  | [25](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
 | 13 | [createdon](#createdon) | Created On | datetime |  | No | none | Skipped (createdon) | R F Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [6](#3.%20Views) |  |  |  | [7](#7.%20Workflows) |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 14 | [createdonbehalfby](#createdonbehalfby) | Created By (Delegate) | lookup |  | No | none | Never | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 15 | [exchangerate](#exchangerate) | Exchange Rate | decimal |  | No | none | 2026-03-17 12:53:21 | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 15 | [exchangerate](#exchangerate) | Exchange Rate | decimal |  | No | none | 2026-03-22 20:36:00 | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 16 | [importsequencenumber](#importsequencenumber) | Import Sequence Number | int |  | No | none | Never | C R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 17 | [modifiedby](#modifiedby) | Modified By | lookup |  | No | none | 2026-03-17 12:53:21 | R | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
+| 17 | [modifiedby](#modifiedby) | Modified By | lookup |  | No | none | 2026-03-22 20:36:00 | R | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
 | 18 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none | Skipped (modifiedon) | R F Re | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 19 | [modifiedonbehalfby](#modifiedonbehalfby) | Modified By (Delegate) | lookup |  | No | none | 2025-11-23 14:39:23 | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | 20 | [overriddencreatedon](#overriddencreatedon) | Record Created On | datetime |  | No | none | 2025-08-14 15:14:49 | C R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 21 | [ownerid](#ownerid) | Owner | owner |  | No | systemrequired | 2026-03-17 12:53:21 | C R U F | true |  |  |  |  |  |  | [4](#2.%20Forms) | [1](#3.%20Views) |  |  |  | [24](#7.%20Workflows) |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 22 | [owningbusinessunit](#owningbusinessunit) | Owning Business Unit | lookup |  | No | none | 2026-03-17 12:53:21 | R F | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 21 | [ownerid](#ownerid) | Owner | owner |  | No | systemrequired | 2026-03-22 20:36:00 | C R U F | true |  |  |  |  |  |  | [4](#2.%20Forms) | [1](#3.%20Views) |  |  |  | [24](#7.%20Workflows) |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 22 | [owningbusinessunit](#owningbusinessunit) | Owning Business Unit | lookup |  | No | none | 2026-03-22 20:36:00 | R F | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
 | 23 | [owningteam](#owningteam) | Owning Team | lookup |  | No | none | Never | R L | false |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 24 | [owninguser](#owninguser) | Owning User | lookup |  | No | none | 2026-03-17 12:53:21 | R L | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 25 | [statecode](#statecode) | Status | state |  | No | systemrequired | 2026-03-17 12:53:21 | R U F | true |  |  |  |  |  |  |  | [6](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 26 | [statuscode](#statuscode) | Status Reason | status |  | No | none | 2026-03-17 12:53:21 | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [5](#7.%20Workflows) |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 27 | [timezoneruleversionnumber](#timezoneruleversionnumber) | Time Zone Rule Version Number | int |  | No | none | 2026-03-17 12:53:21 | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 28 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none | 2026-03-17 12:53:21 | C R U | true |  |  |  |  |  |  |  |  |  |  |  | [20](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 24 | [owninguser](#owninguser) | Owning User | lookup |  | No | none | 2026-03-22 20:36:00 | R L | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 25 | [statecode](#statecode) | Status | state |  | No | systemrequired | 2026-03-22 20:36:00 | R U F | true |  |  |  |  |  |  |  | [6](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 26 | [statuscode](#statuscode) | Status Reason | status |  | No | none | 2026-03-22 20:36:00 | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [5](#7.%20Workflows) |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 27 | [timezoneruleversionnumber](#timezoneruleversionnumber) | Time Zone Rule Version Number | int |  | No | none | 2026-03-22 20:36:00 | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 28 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none | 2026-03-22 20:36:00 | C R U | true |  |  |  |  |  |  |  |  |  |  |  | [20](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
 | 29 | [utcconversiontimezonecode](#utcconversiontimezonecode) | UTC Conversion Time Zone Code | int |  | No | none | Never | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
 ---

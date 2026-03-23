@@ -13,6 +13,17 @@
 | **Last Update** | 2026-03-22 09:20:29 |
 | **Primary ID Field** | goalid |
 | **Primary Name Field** | None |
+| **Count Forms** | 2 |
+| **Count Views** | 26 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 0 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 93 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 0 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

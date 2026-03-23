@@ -13,6 +13,17 @@
 | **Last Update** | 2025-06-13 19:12:37 |
 | **Primary ID Field** | azt_engagementresearchid |
 | **Primary Name Field** | azt_name |
+| **Count Forms** | 11 |
+| **Count Views** | 33 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 87 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 86 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 7 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

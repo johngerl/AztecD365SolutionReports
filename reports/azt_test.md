@@ -13,6 +13,17 @@
 | **Last Update** | 2024-10-04 15:17:01 |
 | **Primary ID Field** | azt_testid |
 | **Primary Name Field** | azt_name |
+| **Count Forms** | 6 |
+| **Count Views** | 31 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 58 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 58 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 3 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

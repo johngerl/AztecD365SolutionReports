@@ -13,6 +13,17 @@
 | **Last Update** | 2026-03-20 19:07:05 |
 | **Primary ID Field** | salesorderdetailid |
 | **Primary Name Field** | None |
+| **Count Forms** | 29 |
+| **Count Views** | 22 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 8 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 7 |
+| **Count Formulas & Rollups** | 1 |
+| **Count Plugins** | 290 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 1 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

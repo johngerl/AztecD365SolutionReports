@@ -13,6 +13,17 @@
 | **Last Update** | 2026-03-20 19:05:16 |
 | **Primary ID Field** | azt_engagementprocessid |
 | **Primary Name Field** | bpf_name |
+| **Count Forms** | 0 |
+| **Count Views** | 93 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 54 |
+| **Count Formulas & Rollups** | 3 |
+| **Count Plugins** | 42 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 6 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

@@ -13,6 +13,17 @@
 | **Last Update** | 2026-03-20 22:35:37 |
 | **Primary ID Field** | quotedetailid |
 | **Primary Name Field** | None |
+| **Count Forms** | 9 |
+| **Count Views** | 11 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 60 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 3 |
+| **Count Formulas & Rollups** | 1 |
+| **Count Plugins** | 288 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 1 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

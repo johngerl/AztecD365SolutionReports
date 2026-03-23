@@ -13,6 +13,17 @@
 | **Last Update** | Never |
 | **Primary ID Field** | azt_caseauditid |
 | **Primary Name Field** | azt_name |
+| **Count Forms** | 13 |
+| **Count Views** | 37 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 83 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 85 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 9 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

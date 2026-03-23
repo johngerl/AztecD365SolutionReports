@@ -13,6 +13,17 @@
 | **Last Update** | 2024-01-29 05:17:14 |
 | **Primary ID Field** | azt_crmissueid |
 | **Primary Name Field** | azt_name |
+| **Count Forms** | 13 |
+| **Count Views** | 35 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 83 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 84 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 6 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

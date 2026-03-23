@@ -13,6 +13,17 @@
 | **Last Update** | 2026-03-20 20:16:59 |
 | **Primary ID Field** | appointmentid |
 | **Primary Name Field** | None |
+| **Count Forms** | 10 |
+| **Count Views** | 223 |
+| **Count Chart Visualizations** | 59 |
+| **Count Reports** | 18 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 57 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 111 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 35 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

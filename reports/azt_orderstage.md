@@ -13,6 +13,17 @@
 | **Last Update** | 2026-03-20 19:01:41 |
 | **Primary ID Field** | azt_orderstageid |
 | **Primary Name Field** | azt_name |
+| **Count Forms** | 17 |
+| **Count Views** | 38 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 87 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 94 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 9 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

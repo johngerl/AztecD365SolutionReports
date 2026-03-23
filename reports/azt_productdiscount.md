@@ -13,6 +13,17 @@
 | **Last Update** | 2026-03-21 00:54:34 |
 | **Primary ID Field** | azt_productdiscountid |
 | **Primary Name Field** | azt_name |
+| **Count Forms** | 19 |
+| **Count Views** | 86 |
+| **Count Chart Visualizations** | 0 |
+| **Count Reports** | 0 |
+| **Count Dashboards** | 0 |
+| **Count Workflows** | 104 |
+| **Count Formulas & Rollups** | 0 |
+| **Count Plugins** | 141 |
+| **Count PCF Controls** | 0 |
+| **Count Relationships** | 13 |
+| **Count Ribbon Customizations** | 0 |
 
 ## Table of Contents
 

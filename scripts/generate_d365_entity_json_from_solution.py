@@ -63,6 +63,66 @@ QUERY_TYPES = {
     "8192": "InteractiveWorkflow",
 }
 
+# Well-known D365CE system field metadata for fields commonly absent from
+# customizations.xml but present on most entities.  Populates stub field
+# entries with correct types instead of leaving dataType/displayName empty.
+SYSTEM_FIELD_METADATA = {
+    'createdby': {'data_type': 'lookup', 'display_name': 'Created By', 'required_level': 'none', 'description': 'Unique identifier of the user who created the record.'},
+    'createdon': {'data_type': 'datetime', 'display_name': 'Created On', 'required_level': 'none', 'description': 'Date and time when the record was created.'},
+    'createdonbehalfby': {'data_type': 'lookup', 'display_name': 'Created By (Delegate)', 'required_level': 'none', 'description': 'Unique identifier of the delegate user who created the record.'},
+    'modifiedby': {'data_type': 'lookup', 'display_name': 'Modified By', 'required_level': 'none', 'description': 'Unique identifier of the user who modified the record.'},
+    'modifiedon': {'data_type': 'datetime', 'display_name': 'Modified On', 'required_level': 'none', 'description': 'Date and time when the record was last modified.'},
+    'modifiedonbehalfby': {'data_type': 'lookup', 'display_name': 'Modified By (Delegate)', 'required_level': 'none', 'description': 'Unique identifier of the delegate user who modified the record.'},
+    'owningbusinessunit': {'data_type': 'lookup', 'display_name': 'Owning Business Unit', 'required_level': 'none', 'description': 'Unique identifier of the business unit that owns the record.'},
+    'owningteam': {'data_type': 'lookup', 'display_name': 'Owning Team', 'required_level': 'none', 'description': 'Unique identifier of the team that owns the record.'},
+    'owninguser': {'data_type': 'lookup', 'display_name': 'Owning User', 'required_level': 'none', 'description': 'Unique identifier of the user that owns the record.'},
+    'statuscode': {'data_type': 'picklist', 'display_name': 'Status Reason', 'required_level': 'none', 'description': 'Reason for the status of the record.'},
+    'versionnumber': {'data_type': 'bigint', 'display_name': 'Version Number', 'required_level': 'none', 'description': 'Version number of the record.'},
+    'importsequencenumber': {'data_type': 'int', 'display_name': 'Import Sequence Number', 'required_level': 'none', 'description': 'Sequence number of the import that created this record.'},
+    'overriddencreatedon': {'data_type': 'datetime', 'display_name': 'Record Created On', 'required_level': 'none', 'description': 'Date and time that the record was migrated.'},
+    'timezoneruleversionnumber': {'data_type': 'int', 'display_name': 'Time Zone Rule Version Number', 'required_level': 'none', 'description': 'For internal use only.'},
+    'utcconversiontimezonecode': {'data_type': 'int', 'display_name': 'UTC Conversion Time Zone Code', 'required_level': 'none', 'description': 'Time zone code that was in use when the record was created.'},
+    'transactioncurrencyid': {'data_type': 'lookup', 'display_name': 'Currency', 'required_level': 'none', 'description': 'Unique identifier of the currency associated with the entity.'},
+    'exchangerate': {'data_type': 'decimal', 'display_name': 'Exchange Rate', 'required_level': 'none', 'description': 'Exchange rate for the currency.'},
+    'processid': {'data_type': 'uniqueidentifier', 'display_name': 'Process Id', 'required_level': 'none', 'description': 'Unique identifier of the business process flow instance.'},
+    'stageid': {'data_type': 'uniqueidentifier', 'display_name': 'Stage Id', 'required_level': 'none', 'description': 'Unique identifier of the stage.'},
+    'traversedpath': {'data_type': 'nvarchar', 'display_name': 'Traversed Path', 'required_level': 'none', 'description': 'Comma-delimited string of process stage IDs visited.'},
+    'businessprocessflowinstanceid': {'data_type': 'uniqueidentifier', 'display_name': 'Business Process Flow Instance Id', 'required_level': 'none', 'description': 'Unique identifier for the business process flow instance.'},
+    'description': {'data_type': 'ntext', 'display_name': 'Description', 'required_level': 'none', 'description': 'Additional information to describe the record.'},
+    'businessunitid': {'data_type': 'lookup', 'display_name': 'Business Unit', 'required_level': 'required', 'description': 'Unique identifier of the business unit.'},
+    'regardingobjectid': {'data_type': 'lookup', 'display_name': 'Regarding', 'required_level': 'none', 'description': 'Unique identifier of the object the activity is regarding.'},
+}
+
+
+def _is_valid_field_name(name):
+    """Return True if name looks like a valid D365 field schema name.
+
+    Filters out aliased link-entity references (contain dots), FetchXML
+    format placeholders (contain curly braces), and other non-field artifacts.
+    """
+    if not name:
+        return False
+    if '.' in name or '{' in name or '}' in name or ' ' in name:
+        return False
+    return True
+
+
+def _get_system_field_metadata(field_name, entity_name):
+    """Return metadata dict for well-known D365 system fields.
+
+    Checks the primary ID field ({entityname}id) and the shared
+    SYSTEM_FIELD_METADATA dictionary.  Returns None if not recognised.
+    """
+    if field_name == f'{entity_name}id':
+        return {
+            'data_type': 'uniqueidentifier',
+            'display_name': entity_name.title(),
+            'required_level': 'required',
+            'description': f'Unique identifier for the {entity_name} record.',
+        }
+    return SYSTEM_FIELD_METADATA.get(field_name)
+
+
 # ---------------------------------------------------------------------------
 # ENCODING HELPER
 # ---------------------------------------------------------------------------
@@ -244,6 +304,7 @@ def parse_cell_control(cell_el):
         'name': field_name,
         'control_id': control_id,
         'classid': classid,
+        'datafieldname': datafieldname,
         'disabled': control_el.get('disabled', 'false'),
         'visible': cell_el.get('visible', 'true'),
         'label': label,
@@ -381,7 +442,7 @@ def parse_forms(entity_el):
                         form_data['tabs'].append(tab_data)
                         for section in tab_data['sections']:
                             for field in section['fields']:
-                                if not field['is_subgrid'] and not field['is_webresource']:
+                                if not field['is_subgrid'] and not field['is_webresource'] and field.get('datafieldname'):
                                     form_data['all_fields'].add(field['name'].lower())
 
                 header_el = form_el.find('header')
@@ -484,27 +545,32 @@ def parse_views(entity_el):
 
         fetch_el = sq.find('fetchxml')
         if fetch_el is not None:
-            for attr in fetch_el.iter('attribute'):
-                attr_name = attr.get('name', '')
-                if attr_name and attr_name not in [c['name'] for c in view['columns']]:
-                    view['columns'].append({'name': attr_name, 'width': ''})
+            # Only capture attributes/filters/orders from the main <entity>,
+            # NOT from <link-entity> joins (those are fields on other entities)
+            main_ent = fetch_el.find('.//entity')
+            if main_ent is not None:
+                for attr in main_ent.findall('attribute'):
+                    attr_name = attr.get('name', '')
+                    if attr_name and attr_name not in [c['name'] for c in view['columns']]:
+                        view['columns'].append({'name': attr_name, 'width': ''})
 
-            for cond in fetch_el.iter('condition'):
-                cond_attr = cond.get('attribute', '')
-                if cond_attr:
-                    view['filter_fields'].append({
-                        'field': cond_attr,
-                        'operator': cond.get('operator', ''),
-                        'value': cond.get('value', ''),
-                    })
+                for filter_el in main_ent.findall('filter'):
+                    for cond in filter_el.iter('condition'):
+                        cond_attr = cond.get('attribute', '')
+                        if cond_attr:
+                            view['filter_fields'].append({
+                                'field': cond_attr,
+                                'operator': cond.get('operator', ''),
+                                'value': cond.get('value', ''),
+                            })
 
-            for order in fetch_el.iter('order'):
-                order_attr = order.get('attribute', '')
-                if order_attr:
-                    view['sort_fields'].append({
-                        'field': order_attr,
-                        'descending': order.get('descending', 'false') == 'true',
-                    })
+                for order in main_ent.findall('order'):
+                    order_attr = order.get('attribute', '')
+                    if order_attr:
+                        view['sort_fields'].append({
+                            'field': order_attr,
+                            'descending': order.get('descending', 'false') == 'true',
+                        })
 
         views.append(view)
 
@@ -613,8 +679,10 @@ def extract_fetchxml_fields(fetch_root, target_entity):
             if attr_name:
                 attrs.append(attr_name.lower())
 
-        for filter_el in entity_el.iter('filter'):
-            for cond_el in filter_el.findall('condition'):
+        # Use findall (direct children only) to avoid traversing into
+        # link-entity filter elements; iter('condition') handles nested filters
+        for filter_el in entity_el.findall('filter'):
+            for cond_el in filter_el.iter('condition'):
                 cond_attr = cond_el.get('attribute', '')
                 if cond_attr:
                     conditions.append({
@@ -2170,17 +2238,16 @@ def enrich_entity(entity_name, root, property_to_field, class_to_entity):
     for rpt in reports:
         for ds in rpt['datasets']:
             for fd in ds['fetchxml_data']:
+                # Only create stubs for fields from this entity's FetchXML
+                # datasets, not from other entities in multi-entity reports
+                if fd.get('entity', '') and fd['entity'] != entity_name:
+                    continue
                 for attr in fd['attributes']:
                     all_referenced.add(attr.lower())
                 for cond in fd['conditions']:
                     all_referenced.add(cond['field'].lower())
                 for order in fd['orders']:
                     all_referenced.add(order['field'].lower())
-                for le in fd['link_entities']:
-                    for attr in le['attributes']:
-                        all_referenced.add(attr.lower())
-                    for cond in le['conditions']:
-                        all_referenced.add(cond['field'].lower())
 
     for wf in workflows:
         for fn in wf['fields_read']:
@@ -2223,9 +2290,13 @@ def enrich_entity(entity_name, root, property_to_field, class_to_entity):
 
     defined_names = set(f['schema_name'].lower() for f in field_defs)
     missing = all_referenced - defined_names
+    # Filter out aliased/artifact names that aren't real field names
+    missing = {n for n in missing if _is_valid_field_name(n)}
 
+    system_count = 0
     for field_name in missing:
-        field_defs.append({
+        sys_meta = _get_system_field_metadata(field_name, entity_name)
+        stub = {
             'schema_name': field_name,
             'display_name': '',
             'description': '',
@@ -2248,10 +2319,19 @@ def enrich_entity(entity_name, root, property_to_field, class_to_entity):
             'is_retrievable': False,
             'is_data_source_secret': False,
             'picklist_values': [],
-        })
+        }
+        if sys_meta:
+            stub['display_name'] = sys_meta['display_name']
+            stub['description'] = sys_meta.get('description', '')
+            stub['data_type'] = sys_meta['data_type']
+            stub['required_level'] = sys_meta['required_level']
+            stub['is_custom'] = False
+            stub['valid_for_read'] = True
+            system_count += 1
+        field_defs.append(stub)
 
     field_defs = sorted(field_defs, key=lambda f: f['schema_name'].lower())
-    print(f"  Fields: {len(field_defs)} ({len(missing)} inferred from usage)")
+    print(f"  Fields: {len(field_defs)} ({len(missing)} inferred from usage, {system_count} system fields auto-typed)")
 
     # Compute conflicts (needs augmented field_defs)
     conflicts = compute_conflicts(

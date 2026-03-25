@@ -1,5 +1,5 @@
 # Account Field Usage Analysis
-> Date: 2026-03-22
+> Date: 2026-03-25
 
 | Property | Value |
 |---|---|
@@ -9,18 +9,18 @@
 | **Object Type** | Standard |
 | **Ownership Type** | UserOwned |
 | **Audit Enabled** | True |
-| **Total Rows** | 32265 |
-| **Last Update** | 2026-03-21 01:28:31 |
+| **Total Rows** | 0 |
+| **Last Update** |  |
 | **Primary ID Field** | accountid |
 | **Primary Name Field** | name |
-| **Count Forms** | 155 |
-| **Count Views** | 245 |
+| **Count Forms** | 108 |
+| **Count Views** | 212 |
 | **Count Chart Visualizations** | 0 |
-| **Count Reports** | 49 |
+| **Count Reports** | 32 |
 | **Count Dashboards** | 0 |
 | **Count Workflows** | 179 |
 | **Count Formulas & Rollups** | 52 |
-| **Count Plugins** | 977 |
+| **Count Plugins** | 972 |
 | **Count PCF Controls** | 7 |
 | **Count Relationships** | 43 |
 | **Count Ribbon Customizations** | 0 |
@@ -249,473 +249,427 @@
 
 ## 1. Field Definitions
 
-Total fields: **463**
+Total fields: **417**
 
 | # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
 |---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [accessrightsmask](#accessrightsmask) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [3](#5.%20Reports) |  |  |  |  |  |  |  |  |
-| 2 | [accessteam](#accessteam) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 3 | [accountcasessgrid](#accountcasessgrid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 4 | [accountclassificationcode](#accountclassificationcode) | Account Classification | picklist | 1: A, 276530000: B, 276530001: C, 100000001: D, 100000000: E, 276530002: S, 276530003: N/A, 276530004: aa, 276530005: bb, 276530006: cc, 276530007: ss | No | none | 2026-03-20 21:14:01 | C R U Re | true | Account | CRM Account Classification | CRM_Account_Classification__c | Account | Account Classification | Account_Classification__c | [2](#2.%20Forms) | [12](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 5 | [accountid](#accountid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  | [23](#3.%20Views) |  | [1](#5.%20Reports) |  | [8](#7.%20Workflows) |  | [12](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 6 | [accountnumber](#accountnumber) | Sequence Number | nvarchar |  | No | none | 2026-03-10 20:08:23 | C R U | true |  |  |  | Account | Account Number | AccountNumber |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 7 | [accountopportunitiesgrid](#accountopportunitiesgrid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 8 | [activityid](#activityid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 9 | [activitytypecode](#activitytypecode) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 10 | [actualclosedate](#actualclosedate) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [3](#9.%20Formulas%20and%20Rollups) | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 11 | [actualend](#actualend) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [2](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 12 | [actualrevenue](#actualrevenue) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 13 | [actualvalue](#actualvalue) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [3](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 14 | [address1_addresstypecode](#address1_addresstypecode) | Physical Address Type | picklist | 3: Physical, 1: Bill To, 2: Ship To, 4: Other | No | none | 2026-03-21 01:28:31 | C R U L | true |  |  |  | Account | Physical Address Type | Physical_Address_Type__c | [2](#2.%20Forms) |  |  |  |  | [5](#7.%20Workflows) |  |  |  |  |  |  |
-| 15 | [address1_city](#address1_city) | Physical Address City | nvarchar |  | No | none | 2026-03-21 01:28:31 | C R U So G L Re | true |  |  |  | Account | Business Address (City) | Business_Address__City__s | [2](#2.%20Forms) | [17](#3.%20Views) |  |  |  | [3](#7.%20Workflows) |  |  |  |  |  |  |
-| 16 | [address1_composite](#address1_composite) | Physical Address | ntext |  | No | none | 2026-03-21 01:28:31 | R L | true |  |  |  | Account | Physical Address | Physical_Address__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 17 | [address1_country](#address1_country) | Physical Address Country/Region | nvarchar |  | No | recommended | 2026-03-21 01:28:31 | C R U L | true |  |  |  | Account | Billing Country | BillingCountry | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 18 | [address1_county](#address1_county) | Physical Address County | nvarchar |  | No | none | 2026-03-21 01:28:31 | C R U L | true |  |  |  | Account | Physical Address County | Physical_Address_County__c |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 19 | [address1_fax](#address1_fax) | Physical Address Fax | nvarchar |  | No | none | Never | C R U L | true |  |  |  | Account | Physical Address Fax | Physical_Address_Fax__c |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 20 | [address1_freighttermscode](#address1_freighttermscode) | Physical Address Freight Terms | picklist | 1: FOB, 2: No Charge | No | none | 2026-03-10 20:01:05 | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 21 | [address1_latitude](#address1_latitude) | Physical Address Latitude | float |  | No | none | 2026-03-21 01:28:31 | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 22 | [address1_line1](#address1_line1) | Physical Address Street 1 | nvarchar |  | No | none | 2026-03-21 01:28:31 | C R U L | true |  |  |  | Account | Billing Street | BillingStreet | [3](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 23 | [address1_line2](#address1_line2) | Physical Address Street 2 | nvarchar |  | No | none | 2026-03-20 15:33:16 | C R U L | true |  |  |  | Account | Physical Address Street 2 | Physical_Address_Street_2__c | [2](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 24 | [address1_line3](#address1_line3) | Physical Address Street 3 | nvarchar |  | No | none | 2026-03-20 20:23:34 | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 25 | [address1_longitude](#address1_longitude) | Physical Address Longitude | float |  | No | none | 2026-03-21 01:28:31 | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 26 | [address1_name](#address1_name) | Physical Address Name | nvarchar |  | No | none | 2026-03-21 01:28:31 | C R U L | true |  |  |  | Account | Physical Address Name | Physical_Address_Name__c | [2](#2.%20Forms) | [1](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 27 | [address1_postalcode](#address1_postalcode) | Physical Address ZIP/Postal Code | nvarchar |  | No | none | 2026-03-21 01:28:31 | C R U So G L | true |  |  |  | Account | Business Address (ZIP/Postal Code) | Business_Address__PostalCode__s | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 28 | [address1_postofficebox](#address1_postofficebox) | Physical Address Post Office Box | nvarchar |  | No | none | Never | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 29 | [address1_primarycontactname](#address1_primarycontactname) | Physical Address Primary Contact Name | nvarchar |  | No | none | Never | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 30 | [address1_shippingmethodcode](#address1_shippingmethodcode) | Physical Address Shipping Method | picklist | 1: Airborne, 2: DHL, 3: FedEx, 4: UPS, 5: Postal Mail, 6: Full Load, 7: Will Call | No | none | 2026-03-10 20:01:05 | C R U L | true |  |  |  | Account | Physical Address Shipping Method | Physical_Address_Shipping_Method__c |  |  |  |  |  | [5](#7.%20Workflows) |  |  |  |  |  |  |
-| 31 | [address1_stateorprovince](#address1_stateorprovince) | Physical Address State/Province | nvarchar |  | No | recommended | 2026-03-21 01:28:31 | C R U L Re | true |  |  |  | Account | Billing State/Province | BillingState | [2](#2.%20Forms) | [15](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 32 | [address1_telephone1](#address1_telephone1) | Physical Address Phone | nvarchar |  | No | none | Never | C R U L | true |  |  |  | Account | Physical Address Phone | Physical_Address_Phone__c |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 33 | [address1_telephone2](#address1_telephone2) | Physical Address Telephone 2 | nvarchar |  | No | none | Never | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 34 | [address1_telephone3](#address1_telephone3) | Physical Address Telephone 3 | nvarchar |  | No | none | Never | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 35 | [address1_upszone](#address1_upszone) | Physical Address UPS Zone | nvarchar |  | No | none | Never | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 36 | [address1_utcoffset](#address1_utcoffset) | Physical Address UTC Offset | int |  | No | none | Never | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 37 | [address2_addresstypecode](#address2_addresstypecode) | Bill To Address Type | picklist | 3: Physical, 1: Bill To, 2: Ship To, 4: Other | No | none | 2026-03-21 01:28:31 | C R U L | true |  |  |  | Account | Bill To Address Type | Bill_To_Address_Type__c |  |  |  |  |  | [5](#7.%20Workflows) |  |  |  |  |  |  |
-| 38 | [address2_city](#address2_city) | Bill To City | nvarchar |  | No | none | 2026-03-21 01:28:31 | C R U L | false | Account | BillingCity | BillingCity |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 39 | [address2_composite](#address2_composite) | Bill To Address | ntext |  | No | none | 2026-03-21 01:28:31 | R L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 40 | [address2_country](#address2_country) | Bill To Country/Region | nvarchar |  | No | none | 2026-03-21 01:28:31 | C R U L | true | Account | BillingCountry | BillingCountry | Account | Shipping Country | ShippingCountry |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 41 | [address2_county](#address2_county) | Bill To County | nvarchar |  | No | none | 2026-03-19 19:41:31 | C R U L | true |  |  |  | Account | Bill To County | Bill_To_County__c |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 42 | [address2_fax](#address2_fax) | Bill To Fax | nvarchar |  | No | none | Never | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 43 | [address2_freighttermscode](#address2_freighttermscode) | Bill To Freight Terms | picklist | 1: Default Value | No | none | 2026-03-21 01:28:31 | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 44 | [address2_latitude](#address2_latitude) | Bill To Latitude | float |  | No | none | 2026-03-10 20:01:05 | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 45 | [address2_line1](#address2_line1) | Bill To Street 1 | nvarchar |  | No | none | 2026-03-21 01:28:31 | C R U L | true | Account | BillingStreet | BillingStreet | Account | Shipping Street | ShippingStreet |  |  |  | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
-| 46 | [address2_line2](#address2_line2) | Bill To Street 2 | nvarchar |  | No | none | 2026-03-20 15:33:16 | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 47 | [address2_line3](#address2_line3) | Bill To Street 3 | nvarchar |  | No | none | 2026-03-19 02:27:01 | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 48 | [address2_longitude](#address2_longitude) | Bill To Longitude | float |  | No | none | 2026-03-10 20:01:05 | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 49 | [address2_name](#address2_name) | Bill To Address Name | nvarchar |  | No | none | 2026-03-21 01:28:31 | C R U L | true |  |  |  | Account | Bill To Address Name | Bill_To_Address_Name__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 50 | [address2_postalcode](#address2_postalcode) | Bill To ZIP/Postal Code | nvarchar |  | No | none | 2026-03-21 01:28:31 | C R U L | false | Account | BillingPostalCode | BillingPostalCode |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 51 | [address2_postofficebox](#address2_postofficebox) | Bill To Post Office Box | nvarchar |  | No | none | Never | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 52 | [address2_primarycontactname](#address2_primarycontactname) | Bill To Primary Contact Name | nvarchar |  | No | none | Never | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 53 | [address2_shippingmethodcode](#address2_shippingmethodcode) | Bill To Shipping Method | picklist | 1: Default Value | No | none | 2026-03-21 01:28:31 | C R U L | true |  |  |  | Account | Bill To Shipping Method | Bill_To_Shipping_Method__c |  |  |  |  |  | [5](#7.%20Workflows) |  |  |  |  |  |  |
-| 54 | [address2_stateorprovince](#address2_stateorprovince) | Bill To State/Province | nvarchar |  | No | none | 2026-03-21 01:28:31 | C R U L | false | Account | BillingState | BillingState |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 55 | [address2_telephone1](#address2_telephone1) | Bill To Telephone 1 | nvarchar |  | No | none | Never | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 56 | [address2_telephone2](#address2_telephone2) | Bill To Telephone 2 | nvarchar |  | No | none | Never | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 57 | [address2_telephone3](#address2_telephone3) | Bill To Telephone 3 | nvarchar |  | No | none | Never | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 58 | [address2_upszone](#address2_upszone) | Bill To UPS Zone | nvarchar |  | No | none | Never | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 59 | [address2_utcoffset](#address2_utcoffset) | Bill To UTC Offset | int |  | No | none | Never | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 60 | [addresses](#addresses) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 61 | [adx_resolutiondate](#adx_resolutiondate) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 62 | [allocations](#allocations) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 63 | [amountdatatype](#amountdatatype) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 64 | [annotationid](#annotationid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 65 | [azt_account](#azt_account) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 66 | [azt_accountalert](#azt_accountalert) | Account Alert | nvarchar |  | Yes | none | 2026-03-19 18:49:26 | C R U | true | Account | Account Alert | Account_Alert__c | Account | Account Alert | Account_Alert__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 67 | [azt_accountid](#azt_accountid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  | [5](#12.%20Relationships) |  |  |
-| 68 | [azt_accountleadgenerationid](#azt_accountleadgenerationid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 69 | [azt_accountleadgenname](#azt_accountleadgenname) | Account Lead Gen Name | nvarchar |  | Yes | none | 2026-03-17 12:50:21 | C R U | true |  |  |  | Account | Account Lead Gen Name | Account_Lead_Gen_Name__c |  |  |  |  |  | [1](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 70 | [azt_accountnumber](#azt_accountnumber) | Account Number | nvarchar |  | Yes | none | 2026-03-21 01:28:31 | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 71 | [azt_accountspend](#azt_accountspend) | Lifetime Spend | money |  | Yes | none | 2026-03-21 01:28:31 | R | true |  |  |  | Account | Lifetime Spend | Lifetime_Spend__c | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 72 | [azt_accountspend_base](#azt_accountspend_base) | Account Spend (Base) | money |  | Yes | none | 2026-03-21 01:28:31 | R | false | Account | CRM Account Spend (Base) | CRM_Account_Spend__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 73 | [azt_accounttype](#azt_accounttype) | Account Type | picklist | 276530000: Active Account, 276530001: Expired Account, 276530007: Prospect, 276530005: Trade Show, 276530003: Partner, 276530006: Vendor, 276530004: Pilot, 276530002: Other, 100000000: Active | Yes | none | 2026-03-21 01:28:31 | C R U S Re | true | Account | Account Status | Account_Status__c | Account | CRM Account Spend (Base) | CRM_Account_Spend__c | [5](#2.%20Forms) | [11](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 74 | [azt_addresssearch](#azt_addresssearch) | Address Search | nvarchar |  | Yes | none | 2026-03-17 12:51:08 | C R U | true |  |  |  | Account | Address Search | Address_Search__c | [2](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 75 | [azt_addresssearch2](#azt_addresssearch2) | Address Search 2 | nvarchar |  | Yes | none | 2026-02-02 16:03:14 | C R U | true |  |  |  | Account | Address Search 2 | Address_Search_2__c |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 76 | [azt_aeflafunding](#azt_aeflafunding) | AEFLA Funding | bit | 1: Yes, 0: No | Yes | none | 2026-03-20 20:23:34 | C R U | true |  |  |  | Account | Aefla Funding | Aefla_Funding__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 77 | [azt_ageendedstage](#azt_ageendedstage) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 78 | [azt_allocatedtoid](#azt_allocatedtoid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 79 | [azt_allocationtype](#azt_allocationtype) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 80 | [azt_amount](#azt_amount) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 81 | [azt_annualspend](#azt_annualspend) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 82 | [azt_approvalstatus](#azt_approvalstatus) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 83 | [azt_autonumberid](#azt_autonumberid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 84 | [azt_bookingurl](#azt_bookingurl) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 85 | [azt_caseid](#azt_caseid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 86 | [azt_commissionamount](#azt_commissionamount) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 87 | [azt_commissionid](#azt_commissionid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 88 | [azt_commissionpaymentid](#azt_commissionpaymentid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 89 | [azt_companyname](#azt_companyname) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 90 | [azt_compcompleted](#azt_compcompleted) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 91 | [azt_compgoalid](#azt_compgoalid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 92 | [azt_compgoaltypeid](#azt_compgoaltypeid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 93 | [azt_compplanamountid](#azt_compplanamountid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 94 | [azt_concurrentusers](#azt_concurrentusers) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 95 | [azt_currentnumber](#azt_currentnumber) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 96 | [azt_customerid](#azt_customerid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  | [4](#12.%20Relationships) |  |  |
-| 97 | [azt_customerintrocompletedby](#azt_customerintrocompletedby) | Customer Intro Completed By | nvarchar |  | Yes | none | 2026-03-20 16:12:24 | C R U | true |  |  |  | Account | Customer Intro Completed By | Customer_Intro_Completed_By__c |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 98 | [azt_customerintrocompletedon](#azt_customerintrocompletedon) | Customer Intro Completed On | nvarchar |  | Yes | none | 2026-03-20 16:12:24 | C R U | true |  |  |  | Account | Customer Intro Completed On | Customer_Intro_Completed_On__c |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 99 | [azt_customerintroductioncompleted](#azt_customerintroductioncompleted) | Customer Introduction Completed | bit | 1: Yes, 0: No | Yes | none | 2026-03-20 21:14:01 | C R U | true |  |  |  | Account | Customer Introduction Completed | Customer_Introduction_Completed__c |  | [1](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 100 | [azt_customernumber](#azt_customernumber) | Customer Number | nvarchar |  | Yes | recommended | 2026-03-21 01:28:31 | C R U S Re | true | Account | Customer Number | Customer_Number__c | Account | Customer Number | Customer_Number__c | [4](#2.%20Forms) | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 101 | [azt_customerof](#azt_customerof) | Customer Of | picklist | 276530000: Aztec, 276530001: Life Skills, 276530002: Aztec & Life Skills | Yes | none | 2026-03-20 20:23:34 | C R U | true |  |  |  | Account | Customer Number | Customer_Number__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 102 | [azt_customertrainingid](#azt_customertrainingid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 103 | [azt_dateexitedstage](#azt_dateexitedstage) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 104 | [azt_defaultfreightamount](#azt_defaultfreightamount) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 105 | [azt_description](#azt_description) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 106 | [azt_digitalstatus](#azt_digitalstatus) | Digital Status | picklist |  | Yes | none | 2026-03-19 01:47:33 | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 107 | [azt_discountamount](#azt_discountamount) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 108 | [azt_discretionarydiscount](#azt_discretionarydiscount) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
-| 109 | [azt_discretionarydiscountamt](#azt_discretionarydiscountamt) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 110 | [azt_duplicate](#azt_duplicate) | Duplicate? | nvarchar |  | Yes | none | 2026-03-16 15:50:13 | C R U | true |  |  |  | Account | Duplicate | Duplicate__c |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 111 | [azt_effectivedate](#azt_effectivedate) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 112 | [azt_email](#azt_email) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 113 | [azt_enddate](#azt_enddate) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 114 | [azt_engagementid](#azt_engagementid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 115 | [azt_estfulfillmentdate](#azt_estfulfillmentdate) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 116 | [azt_evaluate](#azt_evaluate) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 117 | [azt_excludefromautoassign](#azt_excludefromautoassign) | Exclude from Autoassign? | bit | 1: Yes, 0: No | Yes | none | 2026-03-21 01:28:31 | C R U | true |  |  |  | Account | Exclude From Autoassign | Exclude_From_Autoassign__c | [2](#2.%20Forms) |  |  |  |  | [3](#7.%20Workflows) |  |  |  |  |  |  |
-| 118 | [azt_executivesummary](#azt_executivesummary) | Executive Summary | ntext |  | Yes | none | 2026-03-21 01:28:31 | C R U | true | Account | Executive Summary | Executive_Summary__c | Account | Executive Summary | Executive_Summary__c | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 119 | [azt_expenseamount](#azt_expenseamount) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 120 | [azt_expenseid](#azt_expenseid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 121 | [azt_expensereportid](#azt_expensereportid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 122 | [azt_expensetype](#azt_expensetype) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 123 | [azt_expirationdate](#azt_expirationdate) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 124 | [azt_extension](#azt_extension) | Ext | nvarchar |  | Yes | none | 2026-03-20 17:22:24 | C R U | true | Account | Ext | Ext__c | Account | Ext | Ext__c | [2](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 125 | [azt_fieldtoautonumber](#azt_fieldtoautonumber) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 126 | [azt_firstname](#azt_firstname) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 127 | [azt_fiscalperiodend](#azt_fiscalperiodend) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 128 | [azt_fiscalperiodstart](#azt_fiscalperiodstart) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 129 | [azt_fiscalyearend](#azt_fiscalyearend) | Fiscal Year End | picklist |  | Yes | none | 2026-03-20 20:23:34 | C R U | true | Account | Fiscal Year End | Fiscal_Year_End__c | Account | Fiscal Year End | Fiscal_Year_End__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 130 | [azt_freightamtapproved](#azt_freightamtapproved) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 131 | [azt_fsradminpassword](#azt_fsradminpassword) | FSR Admin Password | nvarchar |  | Yes | none | 2026-03-20 20:23:34 | C R U | false | Account | FSR Admin Password | FSR_Admin_Password__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 132 | [azt_fsradminusername](#azt_fsradminusername) | FSR Admin Username | nvarchar |  | Yes | none | 2026-03-20 20:23:34 | C R U | false | Account | FSR Admin Username | FSR_Admin_Username__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 133 | [azt_fsrassignedon](#azt_fsrassignedon) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 134 | [azt_fsremail](#azt_fsremail) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 135 | [azt_fsrid](#azt_fsrid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 136 | [azt_fsrmobiletelephone](#azt_fsrmobiletelephone) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 137 | [azt_fsrtelephone](#azt_fsrtelephone) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 138 | [azt_fsrtelephoneextension](#azt_fsrtelephoneextension) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 139 | [azt_fundingid](#azt_fundingid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 140 | [azt_fundingyear](#azt_fundingyear) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 141 | [azt_gedprintnoflashplay](#azt_gedprintnoflashplay) | GED Print NO Flash/Play | bit | 1: Yes, 0: No | Yes | none | 2026-03-20 21:14:01 | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 142 | [azt_gedprintnogedsoftware](#azt_gedprintnogedsoftware) | GED Print - NO GED Software | bit | 1: Yes, 0: No | Yes | none | 2026-03-20 21:14:01 | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 143 | [azt_goaltype](#azt_goaltype) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 144 | [azt_historicalowner](#azt_historicalowner) | Historical Owner | nvarchar |  | Yes | none | 2026-03-20 15:01:37 | C R U | true |  |  |  | Account | Historical Owner | Historical_Owner__c | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 145 | [azt_importname](#azt_importname) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 146 | [azt_invoiceid](#azt_invoiceid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 147 | [azt_invoiceproductid](#azt_invoiceproductid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 148 | [azt_isautoduplicate](#azt_isautoduplicate) | Is Auto Duplicate? | bit | 1: Yes, 0: No | Yes | none | 2026-03-20 21:14:01 | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 149 | [azt_isbn](#azt_isbn) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 150 | [azt_iscompanion](#azt_iscompanion) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 151 | [azt_isduplicate](#azt_isduplicate) | Is Duplicate | bit | 1: Yes, 0: No | Yes | none | 2026-03-20 18:32:49 | C R U | true |  |  |  | Account | Is Duplicate | Is_Duplicate__c |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 152 | [azt_isinquickbooks](#azt_isinquickbooks) | Is In Quickbooks? | picklist | 0: Yes, 1: No, 2: Possible | Yes | none | 2026-03-19 14:27:05 | C R U | true |  |  |  | Account | Is In Quickbooks | Is_In_Quickbooks__c |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 153 | [azt_ismatched](#azt_ismatched) | Is Matched? | bit | 1: Yes, 0: No | Yes | none | 2026-03-20 21:14:01 | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 154 | [azt_isprint](#azt_isprint) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 155 | [azt_issaas](#azt_issaas) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 156 | [azt_jobrole](#azt_jobrole) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 157 | [azt_jobtitle](#azt_jobtitle) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 158 | [azt_lastactivitydate](#azt_lastactivitydate) | Last Activity Date | datetime |  | Yes | none | Never | C R U | true |  |  |  | Account | Last Activity | LastActivityDate |  | [2](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 159 | [azt_lastmodifiedbyid](#azt_lastmodifiedbyid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 160 | [azt_lastname](#azt_lastname) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 161 | [azt_lastprintpurchase](#azt_lastprintpurchase) | Last Print Purchase | datetime |  | Yes | none | 2026-03-20 21:14:01 | C R U | true | Account | CRM Last Print Purchase | CRM_Last_Print_Purchase__c | Account | Last Print Purchase | Last_Print_Purchase__c | [3](#2.%20Forms) | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 162 | [azt_lastsaaspurchase](#azt_lastsaaspurchase) | Last SaaS Purchase | datetime |  | Yes | none | 2026-03-20 21:14:01 | C R U | true | Account | CRM Last SaaS Purchase | CRM_Last_SaaS_Purchase__c | Account | Last SaaS Purchase | Last_SaaS_Purchase__c | [3](#2.%20Forms) | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 163 | [azt_lastsuccessfulconnection](#azt_lastsuccessfulconnection) | Last Successful Connection | datetime |  | Yes | none | 2026-03-21 01:28:31 | C R U | true |  |  |  | Account | Last Successful Connection | Last_Successful_Connection__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 164 | [azt_lastyearspend](#azt_lastyearspend) | Last Year Spend | money |  | Yes | none | 2026-03-21 01:28:31 | R | true |  |  |  | Account | Last Year Spend | Last_Year_Spend__c | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 165 | [azt_lastyearspend_base](#azt_lastyearspend_base) | Last Year Spend (Base) | money |  | Yes | none | 2026-03-21 01:28:31 | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 166 | [azt_leadimportid](#azt_leadimportid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 167 | [azt_leadsourceid](#azt_leadsourceid) | Lead Source | lookup |  | Yes | none | 2026-03-20 20:23:34 | C R U | true | Account | Account Source | AccountSource | Account | Lead Source | Lead_Source__c | [2](#2.%20Forms) |  |  |  |  | [8](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 168 | [azt_licensestatus](#azt_licensestatus) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  | [10](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 169 | [azt_licenseterm](#azt_licenseterm) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 170 | [azt_licensetermmonths](#azt_licensetermmonths) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 171 | [azt_licensetype](#azt_licensetype) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [25](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 172 | [azt_masecommission](#azt_masecommission) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 173 | [azt_mileage](#azt_mileage) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 174 | [azt_monthstofilteron](#azt_monthstofilteron) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 175 | [azt_name](#azt_name) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [18](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 176 | [azt_newestclosedate](#azt_newestclosedate) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 177 | [azt_newestimatedvalue](#azt_newestimatedvalue) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 178 | [azt_newownerid](#azt_newownerid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 179 | [azt_newprobability](#azt_newprobability) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 180 | [azt_nomatch](#azt_nomatch) | No Match? | bit | 1: Yes, 0: No | Yes | none | 2026-03-21 01:28:31 | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 181 | [azt_nonsaasstatus](#azt_nonsaasstatus) | Non-SaaS Status | picklist |  | Yes | none | 2026-03-20 21:14:01 | C R U | true | Account | CRM Non-SaaS Status | Non_SaaS_Status__c | Account | Nonsaas Status | Nonsaas_Status__c | [2](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 182 | [azt_nonsaastype](#azt_nonsaastype) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 183 | [azt_numberofcomputers](#azt_numberofcomputers) | # Computers | int |  | Yes | none | 2026-03-19 02:08:44 | C R U | true | Account | # Computers | NumofComputers__c | Account | # Computers | NumofComputers__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 184 | [azt_numberoflicenses](#azt_numberoflicenses) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 185 | [azt_numberofstudents](#azt_numberofstudents) | # Students | int |  | Yes | none | 2026-03-19 02:27:00 | C R U | true | Account | # Students | NumofStudents__c | Account | # Students | NumofStudents__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 186 | [azt_oldbusinessunit](#azt_oldbusinessunit) | Old Business Unit | nvarchar |  | Yes | none | 2026-03-21 01:28:31 | C R U | true |  |  |  | Account | Old Business Unit | Old_Business_Unit__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 187 | [azt_opportunityauditrecordid](#azt_opportunityauditrecordid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 188 | [azt_opportunityid](#azt_opportunityid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 189 | [azt_opportunityproductid](#azt_opportunityproductid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 190 | [azt_orderid](#azt_orderid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 191 | [azt_orderlineid](#azt_orderlineid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 192 | [azt_orderproductid](#azt_orderproductid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 193 | [azt_orderstageid](#azt_orderstageid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 194 | [azt_ordertemplatelines](#azt_ordertemplatelines) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 195 | [azt_ordertype](#azt_ordertype) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 196 | [azt_originatingleadimportid](#azt_originatingleadimportid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 197 | [azt_paid](#azt_paid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 198 | [azt_paidon](#azt_paidon) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 199 | [azt_parentaccountid](#azt_parentaccountid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 200 | [azt_parentaccountspend](#azt_parentaccountspend) | Parent Account Spend | money |  | Yes | none | 2026-03-20 15:01:37 | C R U | true |  |  |  | Account | Parent Account Spend | Parent_Account_Spend__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 201 | [azt_parentaccountspend_base](#azt_parentaccountspend_base) | Parent Account Spend (Base) | money |  | Yes | none | 2026-03-20 15:01:37 | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 202 | [azt_parentlastyearspend](#azt_parentlastyearspend) | Parent Last Year Spend | money |  | Yes | none | 2026-03-20 15:01:37 | C R U | true |  |  |  | Account | Parent Last Year Spend | Parent_Last_Year_Spend__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 203 | [azt_parentlastyearspend_base](#azt_parentlastyearspend_base) | Parent Last Year Spend (Base) | money |  | Yes | none | 2026-03-20 15:01:37 | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 204 | [azt_parentopportunityid](#azt_parentopportunityid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 205 | [azt_parentorderid](#azt_parentorderid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 206 | [azt_parentytdspend](#azt_parentytdspend) | Parent YTD Spend | money |  | Yes | none | 2026-03-20 15:01:37 | C R U | true |  |  |  | Account | Parent Ytd Spend | Parent_Ytd_Spend__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 207 | [azt_parentytdspend_base](#azt_parentytdspend_base) | Parent YTD Spend (Base) | money |  | Yes | none | 2026-03-20 15:01:37 | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 208 | [azt_payablecommission](#azt_payablecommission) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 209 | [azt_paymentdate](#azt_paymentdate) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 210 | [azt_paymentid](#azt_paymentid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 211 | [azt_percentage](#azt_percentage) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 212 | [azt_percentagepaid](#azt_percentagepaid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 213 | [azt_periodend](#azt_periodend) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 214 | [azt_periodstart](#azt_periodstart) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 215 | [azt_phone](#azt_phone) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 216 | [azt_ponumber](#azt_ponumber) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 217 | [azt_possiblematchid](#azt_possiblematchid) | Possible Match | lookup |  | Yes | none | 2026-03-10 20:07:36 | C R U | true |  |  |  | Account | Possible Match | Possible_Match__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 218 | [azt_prefix](#azt_prefix) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 219 | [azt_prefixhasseparator](#azt_prefixhasseparator) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 220 | [azt_prefixseparator](#azt_prefixseparator) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 221 | [azt_prefixseparatorisspace](#azt_prefixseparatorisspace) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 222 | [azt_previousestclosedate](#azt_previousestclosedate) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 223 | [azt_previousestimatedvalue](#azt_previousestimatedvalue) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 224 | [azt_previousownerid](#azt_previousownerid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 225 | [azt_previousprobability](#azt_previousprobability) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 226 | [azt_printproductid](#azt_printproductid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 227 | [azt_printpurchaseid](#azt_printpurchaseid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 228 | [azt_probability](#azt_probability) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 229 | [azt_probabilitychangedon](#azt_probabilitychangedon) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 230 | [azt_probabilityincreased](#azt_probabilityincreased) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 231 | [azt_productdiscountid](#azt_productdiscountid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [11](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 232 | [azt_productfamilies](#azt_productfamilies) | Product Families | multiselectpicklist |  | Yes | none | 2026-03-20 21:14:01 | C R U | true |  |  |  | Account | Product Families | Product_Families__c | [2](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 233 | [azt_producttype](#azt_producttype) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 234 | [azt_purchasedate](#azt_purchasedate) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 235 | [azt_quantity](#azt_quantity) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 236 | [azt_quotenumber](#azt_quotenumber) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 237 | [azt_quoteproductid](#azt_quoteproductid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 238 | [azt_reasonforexpense](#azt_reasonforexpense) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 239 | [azt_recapnotes](#azt_recapnotes) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
-| 240 | [azt_recordowner](#azt_recordowner) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 241 | [azt_recordownerid](#azt_recordownerid) | Record Owner | lookup |  | Yes | none | 2026-03-20 21:14:01 | C R U | true | Account | Record Owner | OwnerId | Account | Record Type ID | RecordTypeId | [2](#2.%20Forms) | [6](#3.%20Views) |  | [2](#5.%20Reports) |  | [37](#7.%20Workflows) |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 242 | [azt_replacementproductid](#azt_replacementproductid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 243 | [azt_requestedfreightamt](#azt_requestedfreightamt) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 244 | [azt_resolvedbyid](#azt_resolvedbyid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 245 | [azt_result](#azt_result) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 246 | [azt_saas](#azt_saas) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 247 | [azt_saasstatus](#azt_saasstatus) | SaaS Status | picklist |  | Yes | none | 2026-03-20 21:14:01 | C R U | true | Account | CRM SaaS Status | CRM_SaaS_Status__c | Account | Saas Status | Saas_Status__c | [2](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 248 | [azt_salesrepid](#azt_salesrepid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 249 | [azt_score](#azt_score) | Score | nvarchar |  | Yes | none | 2026-03-19 16:55:19 | C R U | true |  |  |  | Account | Score | Score__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 250 | [azt_softwarelicenseid](#azt_softwarelicenseid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 251 | [azt_softwareproductid](#azt_softwareproductid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  | [6](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 252 | [azt_startdate](#azt_startdate) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 253 | [azt_stateabbreviation](#azt_stateabbreviation) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 254 | [azt_stateprovince](#azt_stateprovince) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 255 | [azt_suffix](#azt_suffix) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 256 | [azt_suffixhasseparator](#azt_suffixhasseparator) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 257 | [azt_suffixseparator](#azt_suffixseparator) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 258 | [azt_suffixseparatorisspace](#azt_suffixseparatorisspace) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 259 | [azt_supportexpirationdate](#azt_supportexpirationdate) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 260 | [azt_tax_exempt_certificate__c](#azt_tax_exempt_certificate__c) | Tax_Exempt_Certificate__c | bit | 1: Yes, 0: No | Yes | none | 2026-03-21 01:28:31 | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 261 | [azt_taxamount](#azt_taxamount) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
-| 262 | [azt_taxexemptcertificate](#azt_taxexemptcertificate) | Tax Exempt Certificate # | nvarchar |  | Yes | none | 2026-03-20 21:14:01 | C R U | true |  |  |  | Account | Tax Exempt Certificate | Tax_Exempt_Certificate__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 263 | [azt_total](#azt_total) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 264 | [azt_totalamountpaid](#azt_totalamountpaid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 265 | [azt_totalfunding](#azt_totalfunding) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 266 | [azt_trackingnumber](#azt_trackingnumber) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 267 | [azt_trackingnumbers](#azt_trackingnumbers) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 268 | [azt_trainingid](#azt_trainingid) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 269 | [azt_ttprintnotto](#azt_ttprintnotto) | TTPrint - No TTO | bit | 1: Yes, 0: No | Yes | none | 2026-03-20 21:14:01 | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 270 | [azt_type](#azt_type) | Type | nvarchar |  | Yes | none | 2026-03-21 01:28:31 | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 271 | [azt_verticalmarket](#azt_verticalmarket) | Vertical Market | picklist |  | Yes | none | 2026-03-21 01:28:31 | C R U | true |  | Industry |  | Account | Vertical Market | Vertical_Market__c | [5](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 272 | [azt_year](#azt_year) |  |  |  | Yes |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 273 | [azt_yearbeforelastspend](#azt_yearbeforelastspend) | Year Before Last Spend | money |  | Yes | none | 2026-03-21 01:28:31 | R | true |  |  |  | Account | Year Before Last Spend | Year_Before_Last_Spend__c | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 274 | [azt_yearbeforelastspend_base](#azt_yearbeforelastspend_base) | Year Before Last Spend (Base) | money |  | Yes | none | 2026-03-21 01:28:31 | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 275 | [azt_ytdspend](#azt_ytdspend) | YTD Spend | money |  | Yes | none | 2026-03-21 01:28:31 | R | true |  |  |  | Account | Total Spend | Total_Spend__c | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 276 | [azt_ytdspend_base](#azt_ytdspend_base) | YTD Spend (Base) | money |  | Yes | none | 2026-03-21 01:28:31 | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 277 | [baseamount](#baseamount) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 278 | [billto_city](#billto_city) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
-| 279 | [billto_line1](#billto_line1) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 280 | [billto_line2](#billto_line2) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 281 | [billto_line3](#billto_line3) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 282 | [billto_name](#billto_name) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 283 | [billto_postalcode](#billto_postalcode) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 284 | [billto_stateorprovince](#billto_stateorprovince) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 285 | [body](#body) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 286 | [bpf_duration](#bpf_duration) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 287 | [bpf_salesorderid](#bpf_salesorderid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 288 | [businessprocessflowinstanceid](#businessprocessflowinstanceid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 289 | [businessunitid](#businessunitid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 290 | [category](#category) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 291 | [changedon](#changedon) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
-| 292 | [childaccounts](#childaccounts) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 293 | [city](#city) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11.%20PCF%20Controls) |  |  |  |
-| 294 | [closeprobability](#closeprobability) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 295 | [companyname](#companyname) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 296 | [connectionid](#connectionid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 297 | [connectionroleid](#connectionroleid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 298 | [connections](#connections) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 299 | [consideronlygoalownersrecords](#consideronlygoalownersrecords) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 300 | [contactid](#contactid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 301 | [contacts](#contacts) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 302 | [country](#country) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11.%20PCF%20Controls) |  |  |  |
-| 303 | [county](#county) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11.%20PCF%20Controls) |  |  |  |
-| 304 | [createdby](#createdby) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 305 | [createdon](#createdon) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 306 | [customerid](#customerid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [11](#10.%20Plugin%20Source%20Code%20Analysis) |  | [6](#12.%20Relationships) |  |  |
-| 307 | [datefulfilled](#datefulfilled) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 308 | [defaultuomid](#defaultuomid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 309 | [description](#description) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 310 | [discountamount](#discountamount) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 311 | [discountpercentage](#discountpercentage) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 312 | [documentssubgrid](#documentssubgrid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 313 | [donotsendmm](#donotsendmm) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 314 | [effectivefrom](#effectivefrom) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
-| 315 | [effectiveto](#effectiveto) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
-| 316 | [emailaddress1](#emailaddress1) | Email | nvarchar |  | No | none | 2025-11-17 17:18:21 | C R U So | true |  |  |  | Account | Email | Email__c |  | [2](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 317 | [engagementcontacts](#engagementcontacts) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 318 | [engagements](#engagements) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 319 | [estimatedclosedate](#estimatedclosedate) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 320 | [estimatedvalue](#estimatedvalue) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 321 | [ext_amt](#ext_amt) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 322 | [extendedamount](#extendedamount) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [13](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 323 | [fax](#fax) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 324 | [fetchxml](#fetchxml) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 325 | [filename](#filename) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 326 | [firstname](#firstname) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 327 | [freightamount](#freightamount) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 328 | [freighttermscode](#freighttermscode) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 329 | [fullname](#fullname) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  | [1](#3.%20Views) |  | [2](#5.%20Reports) |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 330 | [funding](#funding) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 331 | [fundinggrid](#fundinggrid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 332 | [goalenddate](#goalenddate) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 333 | [goalid](#goalid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 334 | [goalownerid](#goalownerid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 335 | [goalrollupqueryid](#goalrollupqueryid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 336 | [goalstartdate](#goalstartdate) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 337 | [incidentid](#incidentid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 338 | [internalemailaddress](#internalemailaddress) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 339 | [invline.productid](#invline.productid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 340 | [invoicedetailid](#invoicedetailid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 341 | [invoiceid](#invoiceid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 342 | [invoicenumber](#invoicenumber) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 343 | [invoices](#invoices) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 344 | [isamount](#isamount) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 345 | [isfiscalperiodgoal](#isfiscalperiodgoal) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 346 | [isocurrencycode](#isocurrencycode) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 347 | [ispriceoverridden](#ispriceoverridden) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 348 | [isproductoverridden](#isproductoverridden) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 349 | [isrevenuesystemcalculated](#isrevenuesystemcalculated) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 350 | [jobtitle](#jobtitle) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 351 | [lastname](#lastname) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 352 | [lastusedincampaign](#lastusedincampaign) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 353 | [manualdiscountamount](#manualdiscountamount) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 354 | [mapcontrol](#mapcontrol) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 355 | [metricid](#metricid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 356 | [mimetype](#mimetype) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 357 | [mobilephone](#mobilephone) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 358 | [modifiedon](#modifiedon) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 359 | [msa_managingpartnerid](#msa_managingpartnerid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#12.%20Relationships) |  |  |
-| 360 | [msa_partnerid](#msa_partnerid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#12.%20Relationships) |  |  |
-| 361 | [msdyn_accountkpiid](#msdyn_accountkpiid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 362 | [msdyn_salesaccelerationinsightid](#msdyn_salesaccelerationinsightid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 363 | [msdyn_segmentid](#msdyn_segmentid) | Segment Id | lookup |  | Yes | none | Never | C R U | true |  |  |  | Account | Segment Id | Segment_Id__c |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 364 | [name](#name) | Account Name | nvarchar |  | No | required | 2026-03-21 01:28:31 | C R U S So Re | true | Account | Account Name | Name | Account | Account Name | Name | [3](#2.%20Forms) | [46](#3.%20Views) |  | [3](#5.%20Reports) |  | [16](#7.%20Workflows) |  | [23](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 365 | [new_sharedwith](#new_sharedwith) | Shared With | lookup |  | Yes | none | 2026-03-19 19:19:43 | C R U | true |  |  |  | Account | Shared With | Shared_With__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 366 | [notescontrol](#notescontrol) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [3](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 367 | [objectid](#objectid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 368 | [objecttypecode](#objecttypecode) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [4](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 369 | [opportunities](#opportunities) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 370 | [opportunityid](#opportunityid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [32](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 371 | [opportunityproductid](#opportunityproductid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [14](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 372 | [orders](#orders) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 373 | [originatingleadid](#originatingleadid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [3](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 374 | [ownerid](#ownerid) | Owner | owner |  | No | systemrequired | 2026-03-21 01:28:31 | C R U G Re | true | Account | Record type | RecordType | Account | Owner ID | OwnerId | [3](#2.%20Forms) | [9](#3.%20Views) |  | [1](#5.%20Reports) |  | [24](#7.%20Workflows) |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 375 | [owningteam](#owningteam) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 376 | [parentaccountid](#parentaccountid) | Parent Account | lookup |  | No | none | 2026-03-19 19:24:25 | C R U | true | Account | ParentId | ParentId | Account | Parent Account ID | ParentId | [2](#2.%20Forms) | [1](#3.%20Views) |  |  |  | [12](#7.%20Workflows) |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  | [2](#12.%20Relationships) |  |  |
-| 377 | [parentcontactid](#parentcontactid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 378 | [parentcustomerid](#parentcustomerid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 379 | [parentgoalid](#parentgoalid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 380 | [parentid](#parentid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 381 | [parentsystemuserid](#parentsystemuserid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 382 | [previews](#previews) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 383 | [pricelevelid](#pricelevelid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 384 | [priceperunit](#priceperunit) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 385 | [primarycontactid](#primarycontactid) | Primary Contact | lookup |  | No | none | 2026-03-20 20:23:34 | C R U So G | true |  |  |  | Account | Primary Contact | Primary_Contact__c | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 386 | [print](#print) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 387 | [prod.productid](#prod.productid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 388 | [productdescription](#productdescription) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [13](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 389 | [productid](#productid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [33](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 390 | [productname](#productname) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 391 | [productnumber](#productnumber) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  | [7](#3.%20Views) |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 392 | [producttypecode](#producttypecode) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 393 | [purchasedsoftware](#purchasedsoftware) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [3](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 394 | [quantity](#quantity) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [18](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 395 | [queryentitytype](#queryentitytype) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 396 | [quotedetailid](#quotedetailid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [14](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 397 | [quoteid](#quoteid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 398 | [quotenumber](#quotenumber) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
-| 399 | [quotes](#quotes) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 400 | [record1id](#record1id) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 401 | [record1roleid](#record1roleid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 402 | [record2id](#record2id) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 403 | [record2roleid](#record2roleid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 404 | [regardingobjectid](#regardingobjectid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [8](#12.%20Relationships) |  |  |
-| 405 | [requestdeliveryby](#requestdeliveryby) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 406 | [ricontainer_charts](#ricontainer_charts) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 407 | [roleid](#roleid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 408 | [rolluponlyfromchildgoals](#rolluponlyfromchildgoals) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 409 | [rollupqueryactualmoneyid](#rollupqueryactualmoneyid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 410 | [rolluprulestep1_1](#rolluprulestep1_1) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [4](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 411 | [rolluprulestep1_10](#rolluprulestep1_10) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 412 | [rolluprulestep1_11](#rolluprulestep1_11) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 413 | [rolluprulestep1_12](#rolluprulestep1_12) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 414 | [rolluprulestep1_13](#rolluprulestep1_13) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 415 | [rolluprulestep1_2](#rolluprulestep1_2) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [4](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 416 | [rolluprulestep1_3](#rolluprulestep1_3) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [4](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 417 | [rolluprulestep1_4](#rolluprulestep1_4) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [4](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 418 | [rolluprulestep1_5](#rolluprulestep1_5) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [4](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 419 | [rolluprulestep1_6](#rolluprulestep1_6) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [3](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 420 | [rolluprulestep1_7](#rolluprulestep1_7) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [3](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 421 | [rolluprulestep1_8](#rolluprulestep1_8) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [3](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 422 | [rolluprulestep1_9](#rolluprulestep1_9) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [3](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 423 | [salesorderdetailid](#salesorderdetailid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 424 | [salesorderdetailname](#salesorderdetailname) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 425 | [salesorderid](#salesorderid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [13](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 426 | [salesrepid](#salesrepid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 427 | [scheduledend](#scheduledend) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 428 | [shareduser.fullname](#shareduser.fullname) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 429 | [sharedwith](#sharedwith) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 430 | [shippingmethodcode](#shippingmethodcode) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 431 | [shipto_city](#shipto_city) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
-| 432 | [shipto_contactname](#shipto_contactname) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
-| 433 | [shipto_country](#shipto_country) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
-| 434 | [shipto_line1](#shipto_line1) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 435 | [shipto_line2](#shipto_line2) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 436 | [shipto_line3](#shipto_line3) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 437 | [shipto_name](#shipto_name) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 438 | [shipto_postalcode](#shipto_postalcode) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 439 | [shipto_stateorprovince](#shipto_stateorprovince) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 440 | [softwarelicenseallocations](#softwarelicenseallocations) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 441 | [state](#state) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11.%20PCF%20Controls) |  |  |  |
-| 442 | [statecode](#statecode) | Status | state |  | No | systemrequired | 2026-03-21 01:28:31 | R U F | true |  |  |  | Account | Status CRM | Status_CRM__c |  | [17](#3.%20Views) |  |  |  | [10](#7.%20Workflows) | [3](#9.%20Formulas%20and%20Rollups) | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 443 | [statuscode](#statuscode) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 444 | [street](#street) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11.%20PCF%20Controls) |  |  |  |
-| 445 | [subject](#subject) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 446 | [systemuserid](#systemuserid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 447 | [tax](#tax) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 448 | [teamid](#teamid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 449 | [teamtype](#teamtype) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 450 | [telephone1](#telephone1) | Main Phone | nvarchar |  | No | none | 2026-03-21 01:28:31 | C R U S So Re | true |  | Phone |  | Account | Other Phone | OtherPhone__c | [3](#2.%20Forms) | [23](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 451 | [telephone2](#telephone2) | Other Phone | nvarchar |  | No | none | 2026-03-19 14:30:50 | C R U | false | Account | Other Phone | OtherPhone__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 452 | [title](#title) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 453 | [tm.systemuserid](#tm.systemuserid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 454 | [totalamount](#totalamount) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 455 | [totallineitemamount](#totallineitemamount) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
-| 456 | [transactioncurrencyid](#transactioncurrencyid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 457 | [uomid](#uomid) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 458 | [value](#value) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11.%20PCF%20Controls) |  |  |  |
-| 459 | [webresource_recordwall](#webresource_recordwall) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 460 | [websiteurl](#websiteurl) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 461 | [writeteam](#writeteam) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 462 | [zipcode](#zipcode) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11.%20PCF%20Controls) |  |  |  |
-| 463 | [{0}](#%7B0%7D) |  |  |  | No |  | Skipped (no dataType) |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 1 | [accountclassificationcode](#accountclassificationcode) | Account Classification | picklist | 1: A, 276530000: B, 276530001: C, 100000001: D, 100000000: E, 276530002: S, 276530003: N/A, 276530004: aa, 276530005: bb, 276530006: cc, 276530007: ss | No | none |  | C R U Re | true | Account | CRM Account Classification | CRM_Account_Classification__c | Account | Account Classification | Account_Classification__c | [2](#2.%20Forms) | [12](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 2 | [accountid](#accountid) | Account | uniqueidentifier |  | No | required |  | R | false |  |  |  |  |  |  |  | [23](#3.%20Views) |  | [1](#5.%20Reports) |  | [8](#7.%20Workflows) |  | [12](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 3 | [accountnumber](#accountnumber) | Sequence Number | nvarchar |  | No | none |  | C R U | true |  |  |  | Account | Account Number | AccountNumber |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 4 | [activityid](#activityid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 5 | [activitytypecode](#activitytypecode) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 6 | [actualclosedate](#actualclosedate) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [3](#9.%20Formulas%20and%20Rollups) | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 7 | [actualend](#actualend) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [2](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 8 | [actualrevenue](#actualrevenue) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 9 | [actualvalue](#actualvalue) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [3](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 10 | [address1_addresstypecode](#address1_addresstypecode) | Physical Address Type | picklist | 3: Physical, 1: Bill To, 2: Ship To, 4: Other | No | none |  | C R U L | true |  |  |  | Account | Physical Address Type | Physical_Address_Type__c | [2](#2.%20Forms) |  |  |  |  | [5](#7.%20Workflows) |  |  |  |  |  |  |
+| 11 | [address1_city](#address1_city) | Physical Address City | nvarchar |  | No | none |  | C R U So G L Re | true |  |  |  | Account | Business Address (City) | Business_Address__City__s | [2](#2.%20Forms) | [17](#3.%20Views) |  |  |  | [3](#7.%20Workflows) |  |  |  |  |  |  |
+| 12 | [address1_composite](#address1_composite) | Physical Address | ntext |  | No | none |  | R L | true |  |  |  | Account | Physical Address | Physical_Address__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 13 | [address1_country](#address1_country) | Physical Address Country/Region | nvarchar |  | No | recommended |  | C R U L | true |  |  |  | Account | Billing Country | BillingCountry | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 14 | [address1_county](#address1_county) | Physical Address County | nvarchar |  | No | none |  | C R U L | true |  |  |  | Account | Physical Address County | Physical_Address_County__c |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 15 | [address1_fax](#address1_fax) | Physical Address Fax | nvarchar |  | No | none |  | C R U L | true |  |  |  | Account | Physical Address Fax | Physical_Address_Fax__c |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 16 | [address1_freighttermscode](#address1_freighttermscode) | Physical Address Freight Terms | picklist | 1: FOB, 2: No Charge | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 17 | [address1_latitude](#address1_latitude) | Physical Address Latitude | float |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 18 | [address1_line1](#address1_line1) | Physical Address Street 1 | nvarchar |  | No | none |  | C R U L | true |  |  |  | Account | Billing Street | BillingStreet | [3](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 19 | [address1_line2](#address1_line2) | Physical Address Street 2 | nvarchar |  | No | none |  | C R U L | true |  |  |  | Account | Physical Address Street 2 | Physical_Address_Street_2__c | [2](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 20 | [address1_line3](#address1_line3) | Physical Address Street 3 | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 21 | [address1_longitude](#address1_longitude) | Physical Address Longitude | float |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 22 | [address1_name](#address1_name) | Physical Address Name | nvarchar |  | No | none |  | C R U L | true |  |  |  | Account | Physical Address Name | Physical_Address_Name__c | [2](#2.%20Forms) | [1](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 23 | [address1_postalcode](#address1_postalcode) | Physical Address ZIP/Postal Code | nvarchar |  | No | none |  | C R U So G L | true |  |  |  | Account | Business Address (ZIP/Postal Code) | Business_Address__PostalCode__s | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 24 | [address1_postofficebox](#address1_postofficebox) | Physical Address Post Office Box | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 25 | [address1_primarycontactname](#address1_primarycontactname) | Physical Address Primary Contact Name | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 26 | [address1_shippingmethodcode](#address1_shippingmethodcode) | Physical Address Shipping Method | picklist | 1: Airborne, 2: DHL, 3: FedEx, 4: UPS, 5: Postal Mail, 6: Full Load, 7: Will Call | No | none |  | C R U L | true |  |  |  | Account | Physical Address Shipping Method | Physical_Address_Shipping_Method__c |  |  |  |  |  | [5](#7.%20Workflows) |  |  |  |  |  |  |
+| 27 | [address1_stateorprovince](#address1_stateorprovince) | Physical Address State/Province | nvarchar |  | No | recommended |  | C R U L Re | true |  |  |  | Account | Billing State/Province | BillingState | [2](#2.%20Forms) | [15](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 28 | [address1_telephone1](#address1_telephone1) | Physical Address Phone | nvarchar |  | No | none |  | C R U L | true |  |  |  | Account | Physical Address Phone | Physical_Address_Phone__c |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 29 | [address1_telephone2](#address1_telephone2) | Physical Address Telephone 2 | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 30 | [address1_telephone3](#address1_telephone3) | Physical Address Telephone 3 | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 31 | [address1_upszone](#address1_upszone) | Physical Address UPS Zone | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 32 | [address1_utcoffset](#address1_utcoffset) | Physical Address UTC Offset | int |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 33 | [address2_addresstypecode](#address2_addresstypecode) | Bill To Address Type | picklist | 3: Physical, 1: Bill To, 2: Ship To, 4: Other | No | none |  | C R U L | true |  |  |  | Account | Bill To Address Type | Bill_To_Address_Type__c |  |  |  |  |  | [5](#7.%20Workflows) |  |  |  |  |  |  |
+| 34 | [address2_city](#address2_city) | Bill To City | nvarchar |  | No | none |  | C R U L | false | Account | BillingCity | BillingCity |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 35 | [address2_composite](#address2_composite) | Bill To Address | ntext |  | No | none |  | R L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 36 | [address2_country](#address2_country) | Bill To Country/Region | nvarchar |  | No | none |  | C R U L | true | Account | BillingCountry | BillingCountry | Account | Shipping Country | ShippingCountry |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 37 | [address2_county](#address2_county) | Bill To County | nvarchar |  | No | none |  | C R U L | true |  |  |  | Account | Bill To County | Bill_To_County__c |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 38 | [address2_fax](#address2_fax) | Bill To Fax | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 39 | [address2_freighttermscode](#address2_freighttermscode) | Bill To Freight Terms | picklist | 1: Default Value | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 40 | [address2_latitude](#address2_latitude) | Bill To Latitude | float |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 41 | [address2_line1](#address2_line1) | Bill To Street 1 | nvarchar |  | No | none |  | C R U L | true | Account | BillingStreet | BillingStreet | Account | Shipping Street | ShippingStreet |  |  |  | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
+| 42 | [address2_line2](#address2_line2) | Bill To Street 2 | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 43 | [address2_line3](#address2_line3) | Bill To Street 3 | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 44 | [address2_longitude](#address2_longitude) | Bill To Longitude | float |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 45 | [address2_name](#address2_name) | Bill To Address Name | nvarchar |  | No | none |  | C R U L | true |  |  |  | Account | Bill To Address Name | Bill_To_Address_Name__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 46 | [address2_postalcode](#address2_postalcode) | Bill To ZIP/Postal Code | nvarchar |  | No | none |  | C R U L | false | Account | BillingPostalCode | BillingPostalCode |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 47 | [address2_postofficebox](#address2_postofficebox) | Bill To Post Office Box | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 48 | [address2_primarycontactname](#address2_primarycontactname) | Bill To Primary Contact Name | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 49 | [address2_shippingmethodcode](#address2_shippingmethodcode) | Bill To Shipping Method | picklist | 1: Default Value | No | none |  | C R U L | true |  |  |  | Account | Bill To Shipping Method | Bill_To_Shipping_Method__c |  |  |  |  |  | [5](#7.%20Workflows) |  |  |  |  |  |  |
+| 50 | [address2_stateorprovince](#address2_stateorprovince) | Bill To State/Province | nvarchar |  | No | none |  | C R U L | false | Account | BillingState | BillingState |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 51 | [address2_telephone1](#address2_telephone1) | Bill To Telephone 1 | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 52 | [address2_telephone2](#address2_telephone2) | Bill To Telephone 2 | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 53 | [address2_telephone3](#address2_telephone3) | Bill To Telephone 3 | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 54 | [address2_upszone](#address2_upszone) | Bill To UPS Zone | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 55 | [address2_utcoffset](#address2_utcoffset) | Bill To UTC Offset | int |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 56 | [adx_resolutiondate](#adx_resolutiondate) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 57 | [amountdatatype](#amountdatatype) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 58 | [annotationid](#annotationid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 59 | [azt_account](#azt_account) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 60 | [azt_accountalert](#azt_accountalert) | Account Alert | nvarchar |  | Yes | none |  | C R U | true | Account | Account Alert | Account_Alert__c | Account | Account Alert | Account_Alert__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 61 | [azt_accountid](#azt_accountid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  | [5](#12.%20Relationships) |  |  |
+| 62 | [azt_accountleadgenerationid](#azt_accountleadgenerationid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 63 | [azt_accountleadgenname](#azt_accountleadgenname) | Account Lead Gen Name | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Account Lead Gen Name | Account_Lead_Gen_Name__c |  |  |  |  |  | [1](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 64 | [azt_accountnumber](#azt_accountnumber) | Account Number | nvarchar |  | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 65 | [azt_accountspend](#azt_accountspend) | Lifetime Spend | money |  | Yes | none |  | R | true |  |  |  | Account | Lifetime Spend | Lifetime_Spend__c | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 66 | [azt_accountspend_base](#azt_accountspend_base) | Account Spend (Base) | money |  | Yes | none |  | R | false | Account | CRM Account Spend (Base) | CRM_Account_Spend__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 67 | [azt_accounttype](#azt_accounttype) | Account Type | picklist | 276530000: Active Account, 276530001: Expired Account, 276530007: Prospect, 276530005: Trade Show, 276530003: Partner, 276530006: Vendor, 276530004: Pilot, 276530002: Other, 100000000: Active | Yes | none |  | C R U S Re | true | Account | Account Status | Account_Status__c | Account | CRM Account Spend (Base) | CRM_Account_Spend__c | [5](#2.%20Forms) | [11](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 68 | [azt_addresssearch](#azt_addresssearch) | Address Search | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Address Search | Address_Search__c | [2](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 69 | [azt_addresssearch2](#azt_addresssearch2) | Address Search 2 | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Address Search 2 | Address_Search_2__c |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 70 | [azt_aeflafunding](#azt_aeflafunding) | AEFLA Funding | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  | Account | Aefla Funding | Aefla_Funding__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 71 | [azt_ageendedstage](#azt_ageendedstage) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 72 | [azt_allocatedtoid](#azt_allocatedtoid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 73 | [azt_allocationtype](#azt_allocationtype) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 74 | [azt_amount](#azt_amount) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 75 | [azt_annualspend](#azt_annualspend) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 76 | [azt_approvalstatus](#azt_approvalstatus) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 77 | [azt_autonumberid](#azt_autonumberid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 78 | [azt_bookingurl](#azt_bookingurl) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 79 | [azt_caseid](#azt_caseid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 80 | [azt_commissionamount](#azt_commissionamount) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 81 | [azt_commissionid](#azt_commissionid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 82 | [azt_commissionpaymentid](#azt_commissionpaymentid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 83 | [azt_companyname](#azt_companyname) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 84 | [azt_compcompleted](#azt_compcompleted) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 85 | [azt_compgoalid](#azt_compgoalid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 86 | [azt_compgoaltypeid](#azt_compgoaltypeid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 87 | [azt_compplanamountid](#azt_compplanamountid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 88 | [azt_concurrentusers](#azt_concurrentusers) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 89 | [azt_currentnumber](#azt_currentnumber) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 90 | [azt_customerid](#azt_customerid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  | [4](#12.%20Relationships) |  |  |
+| 91 | [azt_customerintrocompletedby](#azt_customerintrocompletedby) | Customer Intro Completed By | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Customer Intro Completed By | Customer_Intro_Completed_By__c |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 92 | [azt_customerintrocompletedon](#azt_customerintrocompletedon) | Customer Intro Completed On | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Customer Intro Completed On | Customer_Intro_Completed_On__c |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 93 | [azt_customerintroductioncompleted](#azt_customerintroductioncompleted) | Customer Introduction Completed | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  | Account | Customer Introduction Completed | Customer_Introduction_Completed__c |  | [1](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 94 | [azt_customernumber](#azt_customernumber) | Customer Number | nvarchar |  | Yes | recommended |  | C R U S Re | true | Account | Customer Number | Customer_Number__c | Account | Customer Number | Customer_Number__c | [4](#2.%20Forms) | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 95 | [azt_customerof](#azt_customerof) | Customer Of | picklist | 276530000: Aztec, 276530001: Life Skills, 276530002: Aztec & Life Skills | Yes | none |  | C R U | true |  |  |  | Account | Customer Number | Customer_Number__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 96 | [azt_customertrainingid](#azt_customertrainingid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 97 | [azt_dateexitedstage](#azt_dateexitedstage) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 98 | [azt_defaultfreightamount](#azt_defaultfreightamount) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 99 | [azt_description](#azt_description) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 100 | [azt_digitalstatus](#azt_digitalstatus) | Digital Status | picklist |  | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 101 | [azt_discountamount](#azt_discountamount) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 102 | [azt_discretionarydiscountamt](#azt_discretionarydiscountamt) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 103 | [azt_duplicate](#azt_duplicate) | Duplicate? | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Duplicate | Duplicate__c |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 104 | [azt_effectivedate](#azt_effectivedate) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 105 | [azt_email](#azt_email) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 106 | [azt_enddate](#azt_enddate) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 107 | [azt_engagementid](#azt_engagementid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 108 | [azt_estfulfillmentdate](#azt_estfulfillmentdate) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 109 | [azt_evaluate](#azt_evaluate) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 110 | [azt_excludefromautoassign](#azt_excludefromautoassign) | Exclude from Autoassign? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  | Account | Exclude From Autoassign | Exclude_From_Autoassign__c | [2](#2.%20Forms) |  |  |  |  | [3](#7.%20Workflows) |  |  |  |  |  |  |
+| 111 | [azt_executivesummary](#azt_executivesummary) | Executive Summary | ntext |  | Yes | none |  | C R U | true | Account | Executive Summary | Executive_Summary__c | Account | Executive Summary | Executive_Summary__c | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 112 | [azt_expenseamount](#azt_expenseamount) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 113 | [azt_expenseid](#azt_expenseid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 114 | [azt_expensereportid](#azt_expensereportid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 115 | [azt_expensetype](#azt_expensetype) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 116 | [azt_expirationdate](#azt_expirationdate) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 117 | [azt_extension](#azt_extension) | Ext | nvarchar |  | Yes | none |  | C R U | true | Account | Ext | Ext__c | Account | Ext | Ext__c | [2](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 118 | [azt_fieldtoautonumber](#azt_fieldtoautonumber) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 119 | [azt_firstname](#azt_firstname) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 120 | [azt_fiscalperiodend](#azt_fiscalperiodend) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 121 | [azt_fiscalperiodstart](#azt_fiscalperiodstart) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 122 | [azt_fiscalyearend](#azt_fiscalyearend) | Fiscal Year End | picklist |  | Yes | none |  | C R U | true | Account | Fiscal Year End | Fiscal_Year_End__c | Account | Fiscal Year End | Fiscal_Year_End__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 123 | [azt_freightamtapproved](#azt_freightamtapproved) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 124 | [azt_fsradminpassword](#azt_fsradminpassword) | FSR Admin Password | nvarchar |  | Yes | none |  | C R U | false | Account | FSR Admin Password | FSR_Admin_Password__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 125 | [azt_fsradminusername](#azt_fsradminusername) | FSR Admin Username | nvarchar |  | Yes | none |  | C R U | false | Account | FSR Admin Username | FSR_Admin_Username__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 126 | [azt_fsrassignedon](#azt_fsrassignedon) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 127 | [azt_fsremail](#azt_fsremail) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 128 | [azt_fsrid](#azt_fsrid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 129 | [azt_fsrmobiletelephone](#azt_fsrmobiletelephone) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 130 | [azt_fsrtelephone](#azt_fsrtelephone) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 131 | [azt_fsrtelephoneextension](#azt_fsrtelephoneextension) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 132 | [azt_fundingid](#azt_fundingid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 133 | [azt_fundingyear](#azt_fundingyear) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 134 | [azt_gedprintnoflashplay](#azt_gedprintnoflashplay) | GED Print NO Flash/Play | bit | 1: Yes, 0: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 135 | [azt_gedprintnogedsoftware](#azt_gedprintnogedsoftware) | GED Print - NO GED Software | bit | 1: Yes, 0: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 136 | [azt_goaltype](#azt_goaltype) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 137 | [azt_historicalowner](#azt_historicalowner) | Historical Owner | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Historical Owner | Historical_Owner__c | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 138 | [azt_importname](#azt_importname) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 139 | [azt_invoiceid](#azt_invoiceid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 140 | [azt_invoiceproductid](#azt_invoiceproductid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 141 | [azt_isautoduplicate](#azt_isautoduplicate) | Is Auto Duplicate? | bit | 1: Yes, 0: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 142 | [azt_isbn](#azt_isbn) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 143 | [azt_iscompanion](#azt_iscompanion) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 144 | [azt_isduplicate](#azt_isduplicate) | Is Duplicate | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  | Account | Is Duplicate | Is_Duplicate__c |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 145 | [azt_isinquickbooks](#azt_isinquickbooks) | Is In Quickbooks? | picklist | 0: Yes, 1: No, 2: Possible | Yes | none |  | C R U | true |  |  |  | Account | Is In Quickbooks | Is_In_Quickbooks__c |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 146 | [azt_ismatched](#azt_ismatched) | Is Matched? | bit | 1: Yes, 0: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 147 | [azt_isprint](#azt_isprint) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 148 | [azt_issaas](#azt_issaas) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 149 | [azt_jobrole](#azt_jobrole) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 150 | [azt_jobtitle](#azt_jobtitle) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 151 | [azt_lastactivitydate](#azt_lastactivitydate) | Last Activity Date | datetime |  | Yes | none |  | C R U | true |  |  |  | Account | Last Activity | LastActivityDate |  | [2](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 152 | [azt_lastmodifiedbyid](#azt_lastmodifiedbyid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 153 | [azt_lastname](#azt_lastname) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 154 | [azt_lastprintpurchase](#azt_lastprintpurchase) | Last Print Purchase | datetime |  | Yes | none |  | C R U | true | Account | CRM Last Print Purchase | CRM_Last_Print_Purchase__c | Account | Last Print Purchase | Last_Print_Purchase__c | [3](#2.%20Forms) | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 155 | [azt_lastsaaspurchase](#azt_lastsaaspurchase) | Last SaaS Purchase | datetime |  | Yes | none |  | C R U | true | Account | CRM Last SaaS Purchase | CRM_Last_SaaS_Purchase__c | Account | Last SaaS Purchase | Last_SaaS_Purchase__c | [3](#2.%20Forms) | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 156 | [azt_lastsuccessfulconnection](#azt_lastsuccessfulconnection) | Last Successful Connection | datetime |  | Yes | none |  | C R U | true |  |  |  | Account | Last Successful Connection | Last_Successful_Connection__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 157 | [azt_lastyearspend](#azt_lastyearspend) | Last Year Spend | money |  | Yes | none |  | R | true |  |  |  | Account | Last Year Spend | Last_Year_Spend__c | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 158 | [azt_lastyearspend_base](#azt_lastyearspend_base) | Last Year Spend (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 159 | [azt_leadimportid](#azt_leadimportid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 160 | [azt_leadsourceid](#azt_leadsourceid) | Lead Source | lookup |  | Yes | none |  | C R U | true | Account | Account Source | AccountSource | Account | Lead Source | Lead_Source__c | [2](#2.%20Forms) |  |  |  |  | [8](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 161 | [azt_licensestatus](#azt_licensestatus) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 162 | [azt_licenseterm](#azt_licenseterm) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 163 | [azt_licensetermmonths](#azt_licensetermmonths) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 164 | [azt_licensetype](#azt_licensetype) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [25](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 165 | [azt_masecommission](#azt_masecommission) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 166 | [azt_mileage](#azt_mileage) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 167 | [azt_monthstofilteron](#azt_monthstofilteron) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 168 | [azt_name](#azt_name) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [18](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 169 | [azt_newestclosedate](#azt_newestclosedate) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 170 | [azt_newestimatedvalue](#azt_newestimatedvalue) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 171 | [azt_newownerid](#azt_newownerid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 172 | [azt_newprobability](#azt_newprobability) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 173 | [azt_nomatch](#azt_nomatch) | No Match? | bit | 1: Yes, 0: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 174 | [azt_nonsaasstatus](#azt_nonsaasstatus) | Non-SaaS Status | picklist |  | Yes | none |  | C R U | true | Account | CRM Non-SaaS Status | Non_SaaS_Status__c | Account | Nonsaas Status | Nonsaas_Status__c | [2](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 175 | [azt_nonsaastype](#azt_nonsaastype) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 176 | [azt_numberofcomputers](#azt_numberofcomputers) | # Computers | int |  | Yes | none |  | C R U | true | Account | # Computers | NumofComputers__c | Account | # Computers | NumofComputers__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 177 | [azt_numberoflicenses](#azt_numberoflicenses) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 178 | [azt_numberofstudents](#azt_numberofstudents) | # Students | int |  | Yes | none |  | C R U | true | Account | # Students | NumofStudents__c | Account | # Students | NumofStudents__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 179 | [azt_oldbusinessunit](#azt_oldbusinessunit) | Old Business Unit | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Old Business Unit | Old_Business_Unit__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 180 | [azt_opportunityauditrecordid](#azt_opportunityauditrecordid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 181 | [azt_opportunityid](#azt_opportunityid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 182 | [azt_opportunityproductid](#azt_opportunityproductid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 183 | [azt_orderid](#azt_orderid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 184 | [azt_orderlineid](#azt_orderlineid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 185 | [azt_orderproductid](#azt_orderproductid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 186 | [azt_orderstageid](#azt_orderstageid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 187 | [azt_ordertemplatelines](#azt_ordertemplatelines) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 188 | [azt_ordertype](#azt_ordertype) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 189 | [azt_originatingleadimportid](#azt_originatingleadimportid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 190 | [azt_paid](#azt_paid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 191 | [azt_paidon](#azt_paidon) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 192 | [azt_parentaccountid](#azt_parentaccountid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 193 | [azt_parentaccountspend](#azt_parentaccountspend) | Parent Account Spend | money |  | Yes | none |  | C R U | true |  |  |  | Account | Parent Account Spend | Parent_Account_Spend__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 194 | [azt_parentaccountspend_base](#azt_parentaccountspend_base) | Parent Account Spend (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 195 | [azt_parentlastyearspend](#azt_parentlastyearspend) | Parent Last Year Spend | money |  | Yes | none |  | C R U | true |  |  |  | Account | Parent Last Year Spend | Parent_Last_Year_Spend__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 196 | [azt_parentlastyearspend_base](#azt_parentlastyearspend_base) | Parent Last Year Spend (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 197 | [azt_parentopportunityid](#azt_parentopportunityid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 198 | [azt_parentorderid](#azt_parentorderid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 199 | [azt_parentytdspend](#azt_parentytdspend) | Parent YTD Spend | money |  | Yes | none |  | C R U | true |  |  |  | Account | Parent Ytd Spend | Parent_Ytd_Spend__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 200 | [azt_parentytdspend_base](#azt_parentytdspend_base) | Parent YTD Spend (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 201 | [azt_payablecommission](#azt_payablecommission) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 202 | [azt_paymentdate](#azt_paymentdate) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 203 | [azt_paymentid](#azt_paymentid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 204 | [azt_percentage](#azt_percentage) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 205 | [azt_percentagepaid](#azt_percentagepaid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 206 | [azt_periodend](#azt_periodend) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 207 | [azt_periodstart](#azt_periodstart) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 208 | [azt_phone](#azt_phone) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 209 | [azt_ponumber](#azt_ponumber) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 210 | [azt_possiblematchid](#azt_possiblematchid) | Possible Match | lookup |  | Yes | none |  | C R U | true |  |  |  | Account | Possible Match | Possible_Match__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 211 | [azt_prefix](#azt_prefix) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 212 | [azt_prefixhasseparator](#azt_prefixhasseparator) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 213 | [azt_prefixseparator](#azt_prefixseparator) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 214 | [azt_prefixseparatorisspace](#azt_prefixseparatorisspace) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 215 | [azt_previousestclosedate](#azt_previousestclosedate) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 216 | [azt_previousestimatedvalue](#azt_previousestimatedvalue) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 217 | [azt_previousownerid](#azt_previousownerid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 218 | [azt_previousprobability](#azt_previousprobability) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 219 | [azt_printproductid](#azt_printproductid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 220 | [azt_printpurchaseid](#azt_printpurchaseid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 221 | [azt_probability](#azt_probability) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 222 | [azt_probabilitychangedon](#azt_probabilitychangedon) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 223 | [azt_probabilityincreased](#azt_probabilityincreased) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 224 | [azt_productdiscountid](#azt_productdiscountid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [11](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 225 | [azt_productfamilies](#azt_productfamilies) | Product Families | multiselectpicklist |  | Yes | none |  | C R U | true |  |  |  | Account | Product Families | Product_Families__c | [2](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 226 | [azt_producttype](#azt_producttype) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 227 | [azt_purchasedate](#azt_purchasedate) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 228 | [azt_quantity](#azt_quantity) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 229 | [azt_quotenumber](#azt_quotenumber) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 230 | [azt_quoteproductid](#azt_quoteproductid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 231 | [azt_reasonforexpense](#azt_reasonforexpense) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 232 | [azt_recordowner](#azt_recordowner) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 233 | [azt_recordownerid](#azt_recordownerid) | Record Owner | lookup |  | Yes | none |  | C R U | true | Account | Record Owner | OwnerId | Account | Record Type ID | RecordTypeId | [2](#2.%20Forms) | [6](#3.%20Views) |  | [2](#5.%20Reports) |  | [37](#7.%20Workflows) |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 234 | [azt_replacementproductid](#azt_replacementproductid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 235 | [azt_requestedfreightamt](#azt_requestedfreightamt) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 236 | [azt_resolvedbyid](#azt_resolvedbyid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 237 | [azt_result](#azt_result) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 238 | [azt_saas](#azt_saas) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 239 | [azt_saasstatus](#azt_saasstatus) | SaaS Status | picklist |  | Yes | none |  | C R U | true | Account | CRM SaaS Status | CRM_SaaS_Status__c | Account | Saas Status | Saas_Status__c | [2](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 240 | [azt_salesrepid](#azt_salesrepid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 241 | [azt_score](#azt_score) | Score | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Score | Score__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 242 | [azt_softwarelicenseid](#azt_softwarelicenseid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 243 | [azt_softwareproductid](#azt_softwareproductid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 244 | [azt_startdate](#azt_startdate) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 245 | [azt_stateabbreviation](#azt_stateabbreviation) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 246 | [azt_stateprovince](#azt_stateprovince) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 247 | [azt_suffix](#azt_suffix) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 248 | [azt_suffixhasseparator](#azt_suffixhasseparator) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 249 | [azt_suffixseparator](#azt_suffixseparator) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 250 | [azt_suffixseparatorisspace](#azt_suffixseparatorisspace) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 251 | [azt_supportexpirationdate](#azt_supportexpirationdate) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 252 | [azt_tax_exempt_certificate__c](#azt_tax_exempt_certificate__c) | Tax_Exempt_Certificate__c | bit | 1: Yes, 0: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 253 | [azt_taxexemptcertificate](#azt_taxexemptcertificate) | Tax Exempt Certificate # | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Tax Exempt Certificate | Tax_Exempt_Certificate__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 254 | [azt_total](#azt_total) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 255 | [azt_totalamountpaid](#azt_totalamountpaid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 256 | [azt_totalfunding](#azt_totalfunding) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 257 | [azt_trackingnumber](#azt_trackingnumber) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 258 | [azt_trackingnumbers](#azt_trackingnumbers) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 259 | [azt_trainingid](#azt_trainingid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 260 | [azt_ttprintnotto](#azt_ttprintnotto) | TTPrint - No TTO | bit | 1: Yes, 0: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 261 | [azt_type](#azt_type) | Type | nvarchar |  | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 262 | [azt_verticalmarket](#azt_verticalmarket) | Vertical Market | picklist |  | Yes | none |  | C R U | true |  | Industry |  | Account | Vertical Market | Vertical_Market__c | [5](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 263 | [azt_year](#azt_year) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 264 | [azt_yearbeforelastspend](#azt_yearbeforelastspend) | Year Before Last Spend | money |  | Yes | none |  | R | true |  |  |  | Account | Year Before Last Spend | Year_Before_Last_Spend__c | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 265 | [azt_yearbeforelastspend_base](#azt_yearbeforelastspend_base) | Year Before Last Spend (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 266 | [azt_ytdspend](#azt_ytdspend) | YTD Spend | money |  | Yes | none |  | R | true |  |  |  | Account | Total Spend | Total_Spend__c | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 267 | [azt_ytdspend_base](#azt_ytdspend_base) | YTD Spend (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 268 | [baseamount](#baseamount) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 269 | [billto_line1](#billto_line1) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 270 | [billto_line2](#billto_line2) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 271 | [billto_line3](#billto_line3) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 272 | [billto_name](#billto_name) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 273 | [billto_postalcode](#billto_postalcode) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 274 | [billto_stateorprovince](#billto_stateorprovince) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 275 | [body](#body) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 276 | [bpf_duration](#bpf_duration) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 277 | [bpf_salesorderid](#bpf_salesorderid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 278 | [businessprocessflowinstanceid](#businessprocessflowinstanceid) | Business Process Flow Instance Id | uniqueidentifier |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 279 | [businessunitid](#businessunitid) | Business Unit | lookup |  | No | required |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 280 | [category](#category) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 281 | [city](#city) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11.%20PCF%20Controls) |  |  |  |
+| 282 | [closeprobability](#closeprobability) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 283 | [companyname](#companyname) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 284 | [connectionid](#connectionid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 285 | [connectionroleid](#connectionroleid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 286 | [consideronlygoalownersrecords](#consideronlygoalownersrecords) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 287 | [contactid](#contactid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 288 | [country](#country) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11.%20PCF%20Controls) |  |  |  |
+| 289 | [county](#county) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11.%20PCF%20Controls) |  |  |  |
+| 290 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 291 | [createdon](#createdon) | Created On | datetime |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 292 | [customerid](#customerid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [11](#10.%20Plugin%20Source%20Code%20Analysis) |  | [6](#12.%20Relationships) |  |  |
+| 293 | [datefulfilled](#datefulfilled) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 294 | [defaultuomid](#defaultuomid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 295 | [description](#description) | Description | ntext |  | No | none |  | R | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 296 | [discountamount](#discountamount) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 297 | [donotsendmm](#donotsendmm) |  |  |  | No |  |  |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 298 | [emailaddress1](#emailaddress1) | Email | nvarchar |  | No | none |  | C R U So | true |  |  |  | Account | Email | Email__c |  | [1](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 299 | [estimatedclosedate](#estimatedclosedate) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 300 | [estimatedvalue](#estimatedvalue) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 301 | [ext_amt](#ext_amt) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 302 | [extendedamount](#extendedamount) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [13](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 303 | [fax](#fax) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 304 | [fetchxml](#fetchxml) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 305 | [filename](#filename) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 306 | [firstname](#firstname) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 307 | [freightamount](#freightamount) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 308 | [freighttermscode](#freighttermscode) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 309 | [fullname](#fullname) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [2](#5.%20Reports) |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 310 | [goalenddate](#goalenddate) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 311 | [goalid](#goalid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 312 | [goalownerid](#goalownerid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 313 | [goalrollupqueryid](#goalrollupqueryid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 314 | [goalstartdate](#goalstartdate) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 315 | [incidentid](#incidentid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 316 | [internalemailaddress](#internalemailaddress) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 317 | [invoicedetailid](#invoicedetailid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 318 | [invoiceid](#invoiceid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 319 | [invoicenumber](#invoicenumber) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 320 | [isamount](#isamount) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 321 | [isfiscalperiodgoal](#isfiscalperiodgoal) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 322 | [isocurrencycode](#isocurrencycode) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 323 | [ispriceoverridden](#ispriceoverridden) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 324 | [isproductoverridden](#isproductoverridden) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 325 | [isrevenuesystemcalculated](#isrevenuesystemcalculated) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 326 | [jobtitle](#jobtitle) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 327 | [lastname](#lastname) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 328 | [lastusedincampaign](#lastusedincampaign) |  |  |  | No |  |  |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 329 | [manualdiscountamount](#manualdiscountamount) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 330 | [metricid](#metricid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 331 | [mimetype](#mimetype) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 332 | [mobilephone](#mobilephone) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 333 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 334 | [msa_managingpartnerid](#msa_managingpartnerid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#12.%20Relationships) |  |  |
+| 335 | [msa_partnerid](#msa_partnerid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#12.%20Relationships) |  |  |
+| 336 | [msdyn_accountkpiid](#msdyn_accountkpiid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 337 | [msdyn_salesaccelerationinsightid](#msdyn_salesaccelerationinsightid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 338 | [msdyn_segmentid](#msdyn_segmentid) | Segment Id | lookup |  | Yes | none |  | C R U | true |  |  |  | Account | Segment Id | Segment_Id__c |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 339 | [name](#name) | Account Name | nvarchar |  | No | required |  | C R U S So Re | true | Account | Account Name | Name | Account | Account Name | Name | [3](#2.%20Forms) | [46](#3.%20Views) |  | [3](#5.%20Reports) |  | [16](#7.%20Workflows) |  | [23](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 340 | [new_sharedwith](#new_sharedwith) | Shared With | lookup |  | Yes | none |  | C R U | true |  |  |  | Account | Shared With | Shared_With__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 341 | [objectid](#objectid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 342 | [objecttypecode](#objecttypecode) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [3](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 343 | [opportunityid](#opportunityid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [32](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 344 | [opportunityproductid](#opportunityproductid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [14](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 345 | [originatingleadid](#originatingleadid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  | [3](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 346 | [ownerid](#ownerid) | Owner | owner |  | No | systemrequired |  | C R U G Re | true | Account | Record type | RecordType | Account | Owner ID | OwnerId | [3](#2.%20Forms) | [9](#3.%20Views) |  | [1](#5.%20Reports) |  | [24](#7.%20Workflows) |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 347 | [owningteam](#owningteam) | Owning Team | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 348 | [parentaccountid](#parentaccountid) | Parent Account | lookup |  | No | none |  | C R U | true | Account | ParentId | ParentId | Account | Parent Account ID | ParentId | [2](#2.%20Forms) | [1](#3.%20Views) |  |  |  | [12](#7.%20Workflows) |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  | [2](#12.%20Relationships) |  |  |
+| 349 | [parentcontactid](#parentcontactid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 350 | [parentcustomerid](#parentcustomerid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 351 | [parentgoalid](#parentgoalid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 352 | [parentid](#parentid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 353 | [parentsystemuserid](#parentsystemuserid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 354 | [pricelevelid](#pricelevelid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 355 | [priceperunit](#priceperunit) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 356 | [primarycontactid](#primarycontactid) | Primary Contact | lookup |  | No | none |  | C R U So G | true |  |  |  | Account | Primary Contact | Primary_Contact__c | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 357 | [productdescription](#productdescription) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [13](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 358 | [productid](#productid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [33](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 359 | [productname](#productname) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 360 | [productnumber](#productnumber) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 361 | [producttypecode](#producttypecode) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 362 | [quantity](#quantity) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [18](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 363 | [queryentitytype](#queryentitytype) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 364 | [quotedetailid](#quotedetailid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [14](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 365 | [quoteid](#quoteid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 366 | [record1id](#record1id) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 367 | [record1roleid](#record1roleid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 368 | [record2id](#record2id) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 369 | [record2roleid](#record2roleid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 370 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [8](#12.%20Relationships) |  |  |
+| 371 | [requestdeliveryby](#requestdeliveryby) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 372 | [roleid](#roleid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 373 | [rolluponlyfromchildgoals](#rolluponlyfromchildgoals) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 374 | [rollupqueryactualmoneyid](#rollupqueryactualmoneyid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 375 | [rolluprulestep1_1](#rolluprulestep1_1) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [4](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 376 | [rolluprulestep1_10](#rolluprulestep1_10) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 377 | [rolluprulestep1_11](#rolluprulestep1_11) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 378 | [rolluprulestep1_12](#rolluprulestep1_12) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 379 | [rolluprulestep1_13](#rolluprulestep1_13) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 380 | [rolluprulestep1_2](#rolluprulestep1_2) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [4](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 381 | [rolluprulestep1_3](#rolluprulestep1_3) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [4](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 382 | [rolluprulestep1_4](#rolluprulestep1_4) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [4](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 383 | [rolluprulestep1_5](#rolluprulestep1_5) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [4](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 384 | [rolluprulestep1_6](#rolluprulestep1_6) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [3](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 385 | [rolluprulestep1_7](#rolluprulestep1_7) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [3](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 386 | [rolluprulestep1_8](#rolluprulestep1_8) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [3](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 387 | [rolluprulestep1_9](#rolluprulestep1_9) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [3](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 388 | [salesorderdetailid](#salesorderdetailid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 389 | [salesorderdetailname](#salesorderdetailname) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 390 | [salesorderid](#salesorderid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [13](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 391 | [salesrepid](#salesrepid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 392 | [scheduledend](#scheduledend) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 393 | [shippingmethodcode](#shippingmethodcode) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 394 | [shipto_line1](#shipto_line1) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 395 | [shipto_line2](#shipto_line2) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 396 | [shipto_line3](#shipto_line3) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 397 | [shipto_name](#shipto_name) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 398 | [shipto_postalcode](#shipto_postalcode) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 399 | [shipto_stateorprovince](#shipto_stateorprovince) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 400 | [state](#state) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11.%20PCF%20Controls) |  |  |  |
+| 401 | [statecode](#statecode) | Status | state |  | No | systemrequired |  | R U F | true |  |  |  | Account | Status CRM | Status_CRM__c |  | [16](#3.%20Views) |  |  |  | [10](#7.%20Workflows) | [3](#9.%20Formulas%20and%20Rollups) | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 402 | [statuscode](#statuscode) | Status Reason | picklist |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 403 | [street](#street) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11.%20PCF%20Controls) |  |  |  |
+| 404 | [subject](#subject) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 405 | [systemuserid](#systemuserid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 406 | [tax](#tax) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 407 | [teamid](#teamid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 408 | [teamtype](#teamtype) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 409 | [telephone1](#telephone1) | Main Phone | nvarchar |  | No | none |  | C R U S So Re | true |  | Phone |  | Account | Other Phone | OtherPhone__c | [3](#2.%20Forms) | [23](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 410 | [telephone2](#telephone2) | Other Phone | nvarchar |  | No | none |  | C R U | false | Account | Other Phone | OtherPhone__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 411 | [title](#title) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 412 | [totalamount](#totalamount) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 413 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 414 | [uomid](#uomid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 415 | [value](#value) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11.%20PCF%20Controls) |  |  |  |
+| 416 | [websiteurl](#websiteurl) |  |  |  | No |  |  |  | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 417 | [zipcode](#zipcode) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#11.%20PCF%20Controls) |  |  |  |
 
 ---
 
@@ -1527,8 +1481,7 @@ Total views: **24**
 |---|-------|-------|
 | 1 | [name](#name) | 300px |
 | 2 | [telephone1](#telephone1) | 100px |
-| 3 | [emailaddress1](#emailaddress1) |  |
-| 4 | [accountid](#accountid) |  |
+| 3 | [accountid](#accountid) |  |
 
 ### 3.5. Account Lookup View
 
@@ -1571,7 +1524,6 @@ Total views: **24**
 | # | Field | Width |
 |---|-------|-------|
 | 1 | [SharedUser.fullname](#SharedUser.fullname) | 150px |
-| 2 | [fullname](#fullname) |  |
 
 ### 3.7. Accounts With Product Family Purchases
 
@@ -1762,17 +1714,12 @@ Total views: **24**
 | 5 | [address1_city](#address1_city) | 125px |
 | 6 | [address1_stateorprovince](#address1_stateorprovince) | 150px |
 | 7 | [ownerid](#ownerid) | 150px |
-| 8 | [azt_softwarelicenseid](#azt_softwarelicenseid) |  |
-| 9 | [accountid](#accountid) |  |
+| 8 | [accountid](#accountid) |  |
 
 **Filter Conditions:**
 
 | Field | Operator | Value |
 |-------|----------|-------|
-| [azt_licensestatus](#azt_licensestatus) | eq | 276530000 |
-| [productnumber](#productnumber) | eq | GED-P |
-| [azt_licensestatus](#azt_licensestatus) | eq | 276530000 |
-| [azt_softwareproductid](#azt_softwareproductid) | eq | {D79C00D6-05DE-E411-80D0-00155D0ABD03} |
 | [statecode](#statecode) | eq | 0 |
 | [azt_accountid](#azt_accountid) | null |  |
 
@@ -1798,19 +1745,12 @@ Total views: **24**
 | 5 | [address1_city](#address1_city) | 125px |
 | 6 | [address1_stateorprovince](#address1_stateorprovince) | 150px |
 | 7 | [ownerid](#ownerid) | 150px |
-| 8 | [azt_softwarelicenseid](#azt_softwarelicenseid) |  |
-| 9 | [accountid](#accountid) |  |
+| 8 | [accountid](#accountid) |  |
 
 **Filter Conditions:**
 
 | Field | Operator | Value |
 |-------|----------|-------|
-| [azt_licensestatus](#azt_licensestatus) | eq | 276530000 |
-| [productnumber](#productnumber) | eq | GEDF |
-| [productnumber](#productnumber) | eq | GEDP |
-| [azt_licensestatus](#azt_licensestatus) | eq | 276530000 |
-| [azt_softwareproductid](#azt_softwareproductid) | eq | {19FB685E-D0BF-E411-80C7-00155D0ABD03} |
-| [azt_softwareproductid](#azt_softwareproductid) | eq | {D79C00D6-05DE-E411-80D0-00155D0ABD03} |
 | [azt_accountid](#azt_accountid) | null |  |
 
 **Sort Order:**
@@ -1835,18 +1775,12 @@ Total views: **24**
 | 5 | [address1_city](#address1_city) | 125px |
 | 6 | [address1_stateorprovince](#address1_stateorprovince) | 150px |
 | 7 | [ownerid](#ownerid) | 150px |
-| 8 | [azt_softwarelicenseid](#azt_softwarelicenseid) |  |
-| 9 | [accountid](#accountid) |  |
+| 8 | [accountid](#accountid) |  |
 
 **Filter Conditions:**
 
 | Field | Operator | Value |
 |-------|----------|-------|
-| [azt_licensestatus](#azt_licensestatus) | eq | 276530000 |
-| [productnumber](#productnumber) | eq | GED-P |
-| [productnumber](#productnumber) | eq | K-GED-P |
-| [azt_licensestatus](#azt_licensestatus) | eq | 276530000 |
-| [azt_softwareproductid](#azt_softwareproductid) | eq | {270C7C1D-2734-E811-815F-00155D0ABD09} |
 | [azt_accountid](#azt_accountid) | null |  |
 
 **Sort Order:**
@@ -1871,17 +1805,12 @@ Total views: **24**
 | 5 | [address1_city](#address1_city) | 125px |
 | 6 | [address1_stateorprovince](#address1_stateorprovince) | 150px |
 | 7 | [ownerid](#ownerid) | 150px |
-| 8 | [azt_softwarelicenseid](#azt_softwarelicenseid) |  |
-| 9 | [accountid](#accountid) |  |
+| 8 | [accountid](#accountid) |  |
 
 **Filter Conditions:**
 
 | Field | Operator | Value |
 |-------|----------|-------|
-| [azt_licensestatus](#azt_licensestatus) | eq | 276530000 |
-| [productnumber](#productnumber) | eq | HiSET-P |
-| [azt_licensestatus](#azt_licensestatus) | eq | 276530000 |
-| [azt_softwareproductid](#azt_softwareproductid) | eq | {42F17A3A-06DE-E411-80D0-00155D0ABD03} |
 | [azt_accountid](#azt_accountid) | null |  |
 
 **Sort Order:**
@@ -1995,8 +1924,6 @@ Total views: **24**
 
 | Field | Operator | Value |
 |-------|----------|-------|
-| [statecode](#statecode) | eq | 0 |
-| [record1id](#record1id) | eq-userid |  |
 | [statecode](#statecode) | eq | 0 |
 
 **Sort Order:**
@@ -2119,17 +2046,12 @@ Total views: **24**
 | 5 | [address1_city](#address1_city) | 125px |
 | 6 | [address1_stateorprovince](#address1_stateorprovince) | 150px |
 | 7 | [ownerid](#ownerid) | 150px |
-| 8 | [azt_softwarelicenseid](#azt_softwarelicenseid) |  |
-| 9 | [accountid](#accountid) |  |
+| 8 | [accountid](#accountid) |  |
 
 **Filter Conditions:**
 
 | Field | Operator | Value |
 |-------|----------|-------|
-| [azt_licensestatus](#azt_licensestatus) | eq | 276530000 |
-| [productnumber](#productnumber) | eq | TASC-P |
-| [azt_licensestatus](#azt_licensestatus) | eq | 276530000 |
-| [azt_softwareproductid](#azt_softwareproductid) | eq | {0660437F-06DE-E411-80D0-00155D0ABD03} |
 | [azt_accountid](#azt_accountid) | null |  |
 
 **Sort Order:**
@@ -2295,13 +2217,6 @@ Fields:
 **Selected Fields:**
 
 - [fullname](#fullname)
-
-**Filter Conditions:**
-
-| Field | Operator | Value |
-|-------|----------|-------|
-| [objecttypecode](#objecttypecode) | eq | 1 |
-| [accessrightsmask](#accessrightsmask) | ne | 0 |
 
 **Link Entity:** `principalobjectaccess` (alias: `Share`, type: inner, from: `principalid` to: `systemuserid`)
 
@@ -5916,9 +5831,8 @@ Fields with inconsistent settings across forms: **4**
 
 ### 14.2 Global Observations
 
-**Fields in code but not on any form (314):**
+**Fields in code but not on any form (313):**
 
-- [accessrightsmask](#accessrightsmask)
 - [accountid](#accountid)
 - [activityid](#activityid)
 - [activitytypecode](#activitytypecode)
@@ -6233,14 +6147,9 @@ Fields with inconsistent settings across forms: **4**
 - [uomid](#uomid)
 - [{0}](#%7B0%7D)
 
-**Fields on forms but never in logic (44):**
+**Fields on forms but never in logic (17):**
 
-- [accessteam](#accessteam)
-- [accountcasessgrid](#accountcasessgrid)
-- [accountopportunitiesgrid](#accountopportunitiesgrid)
 - [address1_composite](#address1_composite)
-- [addresses](#addresses)
-- [allocations](#allocations)
 - [azt_aeflafunding](#azt_aeflafunding)
 - [azt_customerof](#azt_customerof)
 - [azt_fiscalyearend](#azt_fiscalyearend)
@@ -6253,32 +6162,10 @@ Fields with inconsistent settings across forms: **4**
 - [azt_possiblematchid](#azt_possiblematchid)
 - [azt_score](#azt_score)
 - [azt_taxexemptcertificate](#azt_taxexemptcertificate)
-- [childaccounts](#childaccounts)
-- [connections](#connections)
-- [contacts](#contacts)
-- [documentssubgrid](#documentssubgrid)
 - [donotsendmm](#donotsendmm)
-- [engagementcontacts](#engagementcontacts)
-- [engagements](#engagements)
-- [funding](#funding)
-- [fundinggrid](#fundinggrid)
-- [invoices](#invoices)
 - [lastusedincampaign](#lastusedincampaign)
-- [mapcontrol](#mapcontrol)
 - [new_sharedwith](#new_sharedwith)
-- [notescontrol](#notescontrol)
-- [opportunities](#opportunities)
-- [orders](#orders)
-- [previews](#previews)
-- [print](#print)
-- [purchasedsoftware](#purchasedsoftware)
-- [quotes](#quotes)
-- [ricontainer_charts](#ricontainer_charts)
-- [sharedwith](#sharedwith)
-- [softwarelicenseallocations](#softwarelicenseallocations)
-- [webresource_recordwall](#webresource_recordwall)
 - [websiteurl](#websiteurl)
-- [writeteam](#writeteam)
 
 ---
 
@@ -6288,20 +6175,16 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### accessrightsmask
 
-- [Field Definitions](#1.%20Field%20Definitions)
-- [Report: SharedAccountRecords > Users (Filter)](#5.2.%20SharedAccountRecords)
 - [Report: SharedAccountRecords > Users > principalobjectaccess](#5.2.%20SharedAccountRecords)
 - [Report: SharedAccountRecords > Users > principalobjectaccess (Filter)](#5.2.%20SharedAccountRecords)
 
 #### accessteam
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: iGrad Account > Details > section](#2.2.%20iGrad%20Account%20-%20main%20-%20Active)
 - [Form: Account > DETAILS_TAB > section](#2.5.%20Account%20-%20main%20-%20Active)
 
 #### accountcasessgrid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: iGrad Account > Summary > Section](#2.2.%20iGrad%20Account%20-%20main%20-%20Active)
 - [Form: Account > SUMMARY_TAB > SUMMARY_TAB_section_6](#2.5.%20Account%20-%20main%20-%20Active)
 
@@ -6378,7 +6261,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### accountopportunitiesgrid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: iGrad Account > Summary > Section](#2.2.%20iGrad%20Account%20-%20main%20-%20Active)
 - [Form: Account > SUMMARY_TAB > SUMMARY_TAB_section_6](#2.5.%20Account%20-%20main%20-%20Active)
 
@@ -6728,7 +6610,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### addresses
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: iGrad Account > Summary > SOCIAL PANE](#2.2.%20iGrad%20Account%20-%20main%20-%20Active)
 - [Form: Account > SUMMARY_TAB > SOCIAL_PANE_TAB](#2.5.%20Account%20-%20main%20-%20Active)
 
@@ -6739,7 +6620,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### allocations
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: iGrad Account > Allocations > Section](#2.2.%20iGrad%20Account%20-%20main%20-%20Active)
 - [Form: Account > Allocations > Section](#2.5.%20Account%20-%20main%20-%20Active)
 
@@ -7096,7 +6976,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### azt_discretionarydiscount
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#5.1.%20PAQuoteReport)
 
 #### azt_discretionarydiscountamt
@@ -7473,16 +7352,6 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_licensestatus
 
 - [Field Definitions](#1.%20Field%20Definitions)
-- [View: GED Customers Without Kaplan (Filter)](#3.13.%20GED%20Customers%20Without%20Kaplan)
-- [View: GED Customers Without Kaplan (Filter)](#3.13.%20GED%20Customers%20Without%20Kaplan)
-- [View: GED Flash/Play Without Any GED (Filter)](#3.14.%20GED%20Flash%2FPlay%20Without%20Any%20GED)
-- [View: GED Flash/Play Without Any GED (Filter)](#3.14.%20GED%20Flash%2FPlay%20Without%20Any%20GED)
-- [View: GED/KaplanGED Customers Without Flash (Filter)](#3.15.%20GED%2FKaplanGED%20Customers%20Without%20Flash)
-- [View: GED/KaplanGED Customers Without Flash (Filter)](#3.15.%20GED%2FKaplanGED%20Customers%20Without%20Flash)
-- [View: HiSET Customers Without Kaplan HiSET (Filter)](#3.16.%20HiSET%20Customers%20Without%20Kaplan%20HiSET)
-- [View: HiSET Customers Without Kaplan HiSET (Filter)](#3.16.%20HiSET%20Customers%20Without%20Kaplan%20HiSET)
-- [View: TASC Customers Without Kaplan TASC (Filter)](#3.24.%20TASC%20Customers%20Without%20Kaplan%20TASC)
-- [View: TASC Customers Without Kaplan TASC (Filter)](#3.24.%20TASC%20Customers%20Without%20Kaplan%20TASC)
 - [Plugin: CreateSoftwareLicenses (Write)](#10.21.%20CreateSoftwareLicenses)
 - [Plugin: OrderManuallyCreateSoftwareLicense (Write)](#10.55.%20OrderManuallyCreateSoftwareLicense)
 
@@ -7980,7 +7849,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### azt_recapnotes
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#5.1.%20PAQuoteReport)
 
 #### azt_recordowner
@@ -8108,11 +7976,6 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_softwarelicenseid
 
 - [Field Definitions](#1.%20Field%20Definitions)
-- [View: GED Customers Without Kaplan](#3.13.%20GED%20Customers%20Without%20Kaplan)
-- [View: GED Flash/Play Without Any GED](#3.14.%20GED%20Flash%2FPlay%20Without%20Any%20GED)
-- [View: GED/KaplanGED Customers Without Flash](#3.15.%20GED%2FKaplanGED%20Customers%20Without%20Flash)
-- [View: HiSET Customers Without Kaplan HiSET](#3.16.%20HiSET%20Customers%20Without%20Kaplan%20HiSET)
-- [View: TASC Customers Without Kaplan TASC](#3.24.%20TASC%20Customers%20Without%20Kaplan%20TASC)
 - [Plugin: AccountReassignmentShareRecords (Read)](#10.4.%20AccountReassignmentShareRecords)
 - [Plugin: AllocationValidation (Read)](#10.11.%20AllocationValidation)
 - [Plugin: AllocationValidation (Filter)](#10.11.%20AllocationValidation)
@@ -8123,12 +7986,6 @@ Alphabetical field index -- 484 unique fields referenced.
 #### azt_softwareproductid
 
 - [Field Definitions](#1.%20Field%20Definitions)
-- [View: GED Customers Without Kaplan (Filter)](#3.13.%20GED%20Customers%20Without%20Kaplan)
-- [View: GED Flash/Play Without Any GED (Filter)](#3.14.%20GED%20Flash%2FPlay%20Without%20Any%20GED)
-- [View: GED Flash/Play Without Any GED (Filter)](#3.14.%20GED%20Flash%2FPlay%20Without%20Any%20GED)
-- [View: GED/KaplanGED Customers Without Flash (Filter)](#3.15.%20GED%2FKaplanGED%20Customers%20Without%20Flash)
-- [View: HiSET Customers Without Kaplan HiSET (Filter)](#3.16.%20HiSET%20Customers%20Without%20Kaplan%20HiSET)
-- [View: TASC Customers Without Kaplan TASC (Filter)](#3.24.%20TASC%20Customers%20Without%20Kaplan%20TASC)
 - [Plugin: CreateSoftwareLicenses (Write)](#10.21.%20CreateSoftwareLicenses)
 - [Plugin: OrderManuallyCreateSoftwareLicense (Write)](#10.55.%20OrderManuallyCreateSoftwareLicense)
 
@@ -8180,7 +8037,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### azt_taxamount
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#5.1.%20PAQuoteReport)
 
 #### azt_taxexemptcertificate
@@ -8286,7 +8142,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### billto_city
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#5.1.%20PAQuoteReport)
 
 #### billto_line1
@@ -8363,12 +8218,10 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### changedon
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: SharedAccountRecords > Users > principalobjectaccess](#5.2.%20SharedAccountRecords)
 
 #### childaccounts
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: iGrad Account > Summary > CHILD ACCOUNTS](#2.2.%20iGrad%20Account%20-%20main%20-%20Active)
 - [Form: Account > SUMMARY_TAB > CHILD ACCOUNTS](#2.5.%20Account%20-%20main%20-%20Active)
 
@@ -8403,7 +8256,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### connections
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: iGrad Account > Summary > Section](#2.2.%20iGrad%20Account%20-%20main%20-%20Active)
 - [Form: Account > SUMMARY_TAB > SUMMARY_TAB_section_6](#2.5.%20Account%20-%20main%20-%20Active)
 
@@ -8423,7 +8275,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### contacts
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: iGrad Account > Summary > Section](#2.2.%20iGrad%20Account%20-%20main%20-%20Active)
 - [Form: Account > SUMMARY_TAB > SUMMARY_TAB_section_6](#2.5.%20Account%20-%20main%20-%20Active)
 
@@ -8521,13 +8372,11 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### discountpercentage
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#5.1.%20PAQuoteReport)
 - [Plugin: QuoteLinesSyncToOppty (Read)](#10.62.%20QuoteLinesSyncToOppty)
 
 #### documentssubgrid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: iGrad Account > Files > Documents Section](#2.2.%20iGrad%20Account%20-%20main%20-%20Active)
 
 #### donotsendmm
@@ -8537,30 +8386,25 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### effectivefrom
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#5.1.%20PAQuoteReport)
 
 #### effectiveto
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#5.1.%20PAQuoteReport)
 
 #### emailaddress1
 
 - [Field Definitions](#1.%20Field%20Definitions)
-- [View: Account List Member View](#3.4.%20Account%20List%20Member%20View)
 - [View: Account Lookup View](#3.5.%20Account%20Lookup%20View)
 - [Plugin: LeadImport (Write)](#10.36.%20LeadImport)
 - [Plugin: LeadImport (Filter)](#10.36.%20LeadImport)
 
 #### engagementcontacts
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: Engagement Contacts > Tab > section](#2.12.%20Engagement%20Contacts%20-%20quick%20-%20Active)
 
 #### engagements
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: iGrad Account > Engagements > Section](#2.2.%20iGrad%20Account%20-%20main%20-%20Active)
 - [Form: Account > Engagements > Section](#2.5.%20Account%20-%20main%20-%20Active)
 
@@ -8642,7 +8486,6 @@ Alphabetical field index -- 484 unique fields referenced.
 #### fullname
 
 - [Field Definitions](#1.%20Field%20Definitions)
-- [View: Account Sharing Associated View](#3.6.%20Account%20Sharing%20Associated%20View)
 - [Report: PAQuoteReport > QuoteHeader > contact](#5.1.%20PAQuoteReport)
 - [Report: SharedAccountRecords > Users (Select)](#5.2.%20SharedAccountRecords)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
@@ -8655,12 +8498,10 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### funding
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: Account > SUMMARY_TAB > Funding](#2.5.%20Account%20-%20main%20-%20Active)
 
 #### fundinggrid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: Last Purchase Dates Quick View > Tab > Funding](#2.8.%20Last%20Purchase%20Dates%20Quick%20View%20-%20quick%20-%20Active)
 
 #### goalenddate
@@ -8706,7 +8547,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### invline.productid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: AccountLeadGen (Read)](#10.2.%20AccountLeadGen)
 
 #### invoicedetailid
@@ -8736,7 +8576,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### invoices
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: iGrad Account > Quotes Orders Invoices > Section](#2.2.%20iGrad%20Account%20-%20main%20-%20Active)
 - [Form: Account > Quotes Orders Invoices > Section](#2.5.%20Account%20-%20main%20-%20Active)
 
@@ -8810,7 +8649,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### mapcontrol
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: iGrad Account > Summary > MapSection](#2.2.%20iGrad%20Account%20-%20main%20-%20Active)
 
 #### metricid
@@ -8972,7 +8810,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### notescontrol
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: TimelineWallControl - Account- Main > SUMMARY_TAB > SOCIAL_PANE_TAB](#2.1.%20TimelineWallControl%20-%20Account-%20Main%20-%20main%20-%20Active)
 - [Form: iGrad Account > Summary > SOCIAL PANE](#2.2.%20iGrad%20Account%20-%20main%20-%20Active)
 - [Form: Account > SUMMARY_TAB > SOCIAL_PANE_TAB](#2.5.%20Account%20-%20main%20-%20Active)
@@ -8990,7 +8827,6 @@ Alphabetical field index -- 484 unique fields referenced.
 #### objecttypecode
 
 - [Field Definitions](#1.%20Field%20Definitions)
-- [Report: SharedAccountRecords > Users (Filter)](#5.2.%20SharedAccountRecords)
 - [Report: SharedAccountRecords > Users > principalobjectaccess](#5.2.%20SharedAccountRecords)
 - [Report: SharedAccountRecords > Users > principalobjectaccess (Filter)](#5.2.%20SharedAccountRecords)
 - [Report: SharedAccountRecords > Users > principalobjectaccess (Sort)](#5.2.%20SharedAccountRecords)
@@ -8998,7 +8834,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### opportunities
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: iGrad Account > Opportunities > Section](#2.2.%20iGrad%20Account%20-%20main%20-%20Active)
 - [Form: Account > Opportunities > Section](#2.5.%20Account%20-%20main%20-%20Active)
 
@@ -9058,7 +8893,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### orders
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: iGrad Account > Quotes Orders Invoices > Section](#2.2.%20iGrad%20Account%20-%20main%20-%20Active)
 - [Form: Account > Quotes Orders Invoices > Section](#2.5.%20Account%20-%20main%20-%20Active)
 
@@ -9219,7 +9053,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### previews
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: Account > SUMMARY_TAB > Previews](#2.5.%20Account%20-%20main%20-%20Active)
 
 #### pricelevelid
@@ -9251,13 +9084,11 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### print
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: iGrad Account > Print > Section](#2.2.%20iGrad%20Account%20-%20main%20-%20Active)
 - [Form: Account > Print > Section](#2.5.%20Account%20-%20main%20-%20Active)
 
 #### prod.productid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: AccountLeadGen (Read)](#10.2.%20AccountLeadGen)
 
 #### productdescription
@@ -9324,13 +9155,6 @@ Alphabetical field index -- 484 unique fields referenced.
 #### productnumber
 
 - [Field Definitions](#1.%20Field%20Definitions)
-- [View: GED Customers Without Kaplan (Filter)](#3.13.%20GED%20Customers%20Without%20Kaplan)
-- [View: GED Flash/Play Without Any GED (Filter)](#3.14.%20GED%20Flash%2FPlay%20Without%20Any%20GED)
-- [View: GED Flash/Play Without Any GED (Filter)](#3.14.%20GED%20Flash%2FPlay%20Without%20Any%20GED)
-- [View: GED/KaplanGED Customers Without Flash (Filter)](#3.15.%20GED%2FKaplanGED%20Customers%20Without%20Flash)
-- [View: GED/KaplanGED Customers Without Flash (Filter)](#3.15.%20GED%2FKaplanGED%20Customers%20Without%20Flash)
-- [View: HiSET Customers Without Kaplan HiSET (Filter)](#3.16.%20HiSET%20Customers%20Without%20Kaplan%20HiSET)
-- [View: TASC Customers Without Kaplan TASC (Filter)](#3.24.%20TASC%20Customers%20Without%20Kaplan%20TASC)
 - [Plugin: CreateSoftwareLicenses (Read)](#10.21.%20CreateSoftwareLicenses)
 - [Plugin: RestrictProductLookups (Filter)](#10.69.%20RestrictProductLookups)
 - [Plugin: Utility (Filter)](#10.81.%20Utility)
@@ -9344,7 +9168,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### purchasedsoftware
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: iGrad Account > Software > Purchased Software](#2.2.%20iGrad%20Account%20-%20main%20-%20Active)
 - [Form: Account > Software > Purchased Software](#2.5.%20Account%20-%20main%20-%20Active)
 - [Form: Purchased Software Licenses > Tab > section](#2.6.%20Purchased%20Software%20Licenses%20-%20quick%20-%20Active)
@@ -9430,19 +9253,16 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### quotenumber
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#5.1.%20PAQuoteReport)
 
 #### quotes
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: iGrad Account > Quotes Orders Invoices > Section](#2.2.%20iGrad%20Account%20-%20main%20-%20Active)
 - [Form: Account > Quotes Orders Invoices > Section](#2.5.%20Account%20-%20main%20-%20Active)
 
 #### record1id
 
 - [Field Definitions](#1.%20Field%20Definitions)
-- [View: My Connections (Filter)](#3.20.%20My%20Connections)
 - [Plugin: ContactSetConnectionRole (Write)](#10.19.%20ContactSetConnectionRole)
 - [Plugin: LeadQualifyParentStakeholderContacts (Filter)](#10.39.%20LeadQualifyParentStakeholderContacts)
 - [Plugin: SetPrimaryContact (Read)](#10.75.%20SetPrimaryContact)
@@ -9502,7 +9322,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### ricontainer_charts
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: AI for Sales > RAV2 > RAV2_section_1](#2.3.%20AI%20for%20Sales%20-%20main%20-%20Inactive)
 
 #### roleid
@@ -9661,12 +9480,10 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### shareduser.fullname
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [View: Account Sharing Associated View](#3.6.%20Account%20Sharing%20Associated%20View)
 
 #### sharedwith
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: iGrad Account > Details > Section](#2.2.%20iGrad%20Account%20-%20main%20-%20Active)
 - [Form: Account > DETAILS_TAB > Section](#2.5.%20Account%20-%20main%20-%20Active)
 
@@ -9678,17 +9495,14 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### shipto_city
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#5.1.%20PAQuoteReport)
 
 #### shipto_contactname
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#5.1.%20PAQuoteReport)
 
 #### shipto_country
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#5.1.%20PAQuoteReport)
 
 #### shipto_line1
@@ -9728,7 +9542,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### softwarelicenseallocations
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: Allocated Software Licenses > Tab > section](#2.9.%20Allocated%20Software%20Licenses%20-%20quick%20-%20Active)
 
 #### state
@@ -9751,7 +9564,6 @@ Alphabetical field index -- 484 unique fields referenced.
 - [View: Inactive Accounts (Filter)](#3.17.%20Inactive%20Accounts)
 - [View: My Active Accounts (Filter)](#3.18.%20My%20Active%20Accounts)
 - [View: My Active Customers With Purchase Dates (Filter)](#3.19.%20My%20Active%20Customers%20With%20Purchase%20Dates)
-- [View: My Connections (Filter)](#3.20.%20My%20Connections)
 - [View: My Connections (Filter)](#3.20.%20My%20Connections)
 - [View: New Customer Introduction List (Filter)](#3.21.%20New%20Customer%20Introduction%20List)
 - [View: Old Duplicate Accounts View (Filter)](#3.22.%20Old%20Duplicate%20Accounts%20View)
@@ -9901,7 +9713,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### tm.systemuserid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: ShareBasedOnAccessTeam (Read)](#10.76.%20ShareBasedOnAccessTeam)
 
 #### to
@@ -9920,7 +9731,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### totallineitemamount
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#5.1.%20PAQuoteReport)
 
 #### transactioncurrencyid
@@ -9954,7 +9764,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### webresource_recordwall
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: Information > What's New > Section](#2.4.%20Information%20-%20main%20-%20Inactive)
 
 #### websiteurl
@@ -9965,7 +9774,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### writeteam
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Form: iGrad Account > Details > section](#2.2.%20iGrad%20Account%20-%20main%20-%20Active)
 - [Form: Account > DETAILS_TAB > section](#2.5.%20Account%20-%20main%20-%20Active)
 
@@ -9976,5 +9784,4 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### {0}
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: DiscretionaryDiscountSetHeader (Filter)](#10.23.%20DiscretionaryDiscountSetHeader)

@@ -2161,12 +2161,40 @@ def build_per_field_refs(forms, views, chart_visualizations, reports, dashboards
 
 
 # ---------------------------------------------------------------------------
+# Global field map (cross-entity detection)
+# ---------------------------------------------------------------------------
+
+def build_global_field_map(root):
+    """Build a mapping of field_name -> set(entity_names) from customizations.xml.
+
+    Used to identify cross-entity field contamination: if a field is defined
+    in entity A's XML but NOT in entity B's, it should not create a stub on B.
+    Fields not present in the map at all are unknown (system or undiscovered)
+    and are kept as stubs for API enrichment.
+    """
+    field_map = defaultdict(set)
+    for entity_el in root.findall('.//Entity'):
+        name_el = entity_el.find('Name')
+        if name_el is None or not name_el.text:
+            continue
+        ent_name = name_el.text.lower()
+        for fdef in parse_field_definitions(entity_el):
+            field_map[fdef['schema_name'].lower()].add(ent_name)
+    return field_map
+
+
+# ---------------------------------------------------------------------------
 # Entity enrichment
 # ---------------------------------------------------------------------------
 
-def enrich_entity(entity_name, root, property_to_field, class_to_entity):
+def enrich_entity(entity_name, root, property_to_field, class_to_entity,
+                  global_field_map=None, known_entity_names=None):
     """Parse all sections from customizations.xml, build per-field references,
     augment with inferred fields, and return the enriched entity dict.
+
+    When global_field_map is provided, fields known to belong exclusively to
+    other entities are excluded from stub creation.  known_entity_names is
+    used to detect primary keys of other entities ({otherEntity}id).
 
     Returns (enriched_dict, total_refs).
     """
@@ -2283,15 +2311,32 @@ def enrich_entity(entity_name, root, property_to_field, class_to_entity):
         if rel['referencing_attribute']:
             all_referenced.add(rel['referencing_attribute'].lower())
 
-    for ctrl in pcf_controls:
-        for prop in ctrl['bound_properties']:
-            if prop['name']:
-                all_referenced.add(prop['name'].lower())
+    # PCF control bound_properties are control property names (e.g. "city",
+    # "value"), not entity field names.  Actual field bindings are captured
+    # by the form parser via datafieldname, so skip PCF properties here.
 
     defined_names = set(f['schema_name'].lower() for f in field_defs)
     missing = all_referenced - defined_names
     # Filter out aliased/artifact names that aren't real field names
     missing = {n for n in missing if _is_valid_field_name(n)}
+
+    # Exclude fields known to belong exclusively to other entities.
+    # If a field is defined in entity X's customizations.xml but NOT in
+    # this entity's, it's cross-entity contamination (e.g. plugin reading
+    # a related Opportunity field while processing an Account).
+    if global_field_map:
+        cross_entity = {fn for fn in missing
+                        if fn in global_field_map
+                        and entity_name not in global_field_map[fn]
+                        and _get_system_field_metadata(fn, entity_name) is None}
+        # Also exclude primary keys of other entities ({otherEntity}id)
+        # that aren't in customizations.xml because they're system-level
+        if known_entity_names:
+            other_pks = {f'{e}id' for e in known_entity_names if e != entity_name}
+            cross_entity |= (missing & other_pks)
+        if cross_entity:
+            missing -= cross_entity
+            print(f"  Excluded {len(cross_entity)} cross-entity fields")
 
     system_count = 0
     for field_name in missing:
@@ -2499,9 +2544,18 @@ def main():
     print(f"  Property mappings: {len(property_to_field)}")
     print(f"  Entity classes: {len(class_to_entity)}")
 
+    # Build global field-to-entity map for cross-entity detection
+    print("Building global field map...")
+    global_field_map = build_global_field_map(root)
+    total_mapped = sum(len(v) for v in global_field_map.values())
+    print(f"  {len(global_field_map)} unique fields across {total_mapped} entity-field pairs")
+
+    # Discover all entity names (needed for cross-entity primary key detection)
+    all_entity_names = {e.lower() for e in discover_entities(root)}
+
     # Determine entities to process
     if args.all:
-        entity_list = [e.lower() for e in discover_entities(root)]
+        entity_list = sorted(all_entity_names)
         print(f"\nFound {len(entity_list)} entities in customizations.xml.")
     else:
         entity_list = [args.entity.lower()]
@@ -2513,7 +2567,8 @@ def main():
         print(f"\nEnriching {entity_name}...")
 
         enriched, total_refs = enrich_entity(
-            entity_name, root, property_to_field, class_to_entity
+            entity_name, root, property_to_field, class_to_entity,
+            global_field_map, all_entity_names
         )
 
         if enriched is None:

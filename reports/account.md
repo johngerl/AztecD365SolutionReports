@@ -16,11 +16,11 @@
 | **Count Forms** | 106 |
 | **Count Views** | 207 |
 | **Count Chart Visualizations** | 0 |
-| **Count Reports** | 24 |
+| **Count Reports** | 8 |
 | **Count Dashboards** | 0 |
 | **Count Workflows** | 179 |
-| **Count Formulas & Rollups** | 52 |
-| **Count Plugins** | 308 |
+| **Count Formulas & Rollups** | 7 |
+| **Count Plugins** | 132 |
 | **Count PCF Controls** | 0 |
 | **Count Relationships** | 23 |
 | **Count Ribbon Customizations** | 0 |
@@ -249,229 +249,143 @@
 
 ## 1. Field Definitions
 
-Total fields: **219**
+Total fields: **133**
 
 | # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
 |---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
 | 1 | [accountclassificationcode](#accountclassificationcode) | Account Classification | picklist | 1: A, 276530000: B, 276530001: C, 100000001: D, 100000000: E, 276530002: S, 276530003: N/A, 276530004: aa, 276530005: bb, 276530006: cc, 276530007: ss | No | none |  | C R U Re | true | Account | CRM Account Classification | CRM_Account_Classification__c | Account | Account Classification | Account_Classification__c | [2](#2.%20Forms) | [12](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 | 2 | [accountid](#accountid) | Account | uniqueidentifier |  | No | required |  | R | false |  |  |  |  |  |  |  | [23](#3.%20Views) |  | [1](#5.%20Reports) |  | [8](#7.%20Workflows) |  | [12](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 | 3 | [accountnumber](#accountnumber) | Sequence Number | nvarchar |  | No | none |  | C R U | true |  |  |  | Account | Account Number | AccountNumber |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 4 | [activityid](#activityid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 5 | [activitytypecode](#activitytypecode) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 6 | [actualclosedate](#actualclosedate) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [3](#9.%20Formulas%20and%20Rollups) | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 7 | [actualend](#actualend) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [2](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 8 | [actualrevenue](#actualrevenue) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 9 | [actualvalue](#actualvalue) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [3](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 10 | [address1_addresstypecode](#address1_addresstypecode) | Physical Address Type | picklist | 3: Physical, 1: Bill To, 2: Ship To, 4: Other | No | none |  | C R U L | true |  |  |  | Account | Physical Address Type | Physical_Address_Type__c | [2](#2.%20Forms) |  |  |  |  | [5](#7.%20Workflows) |  |  |  |  |  |  |
-| 11 | [address1_city](#address1_city) | Physical Address City | nvarchar |  | No | none |  | C R U So G L Re | true |  |  |  | Account | Business Address (City) | Business_Address__City__s | [2](#2.%20Forms) | [17](#3.%20Views) |  |  |  | [3](#7.%20Workflows) |  |  |  |  |  |  |
-| 12 | [address1_composite](#address1_composite) | Physical Address | ntext |  | No | none |  | R L | true |  |  |  | Account | Physical Address | Physical_Address__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 13 | [address1_country](#address1_country) | Physical Address Country/Region | nvarchar |  | No | recommended |  | C R U L | true |  |  |  | Account | Billing Country | BillingCountry | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 14 | [address1_county](#address1_county) | Physical Address County | nvarchar |  | No | none |  | C R U L | true |  |  |  | Account | Physical Address County | Physical_Address_County__c |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 15 | [address1_fax](#address1_fax) | Physical Address Fax | nvarchar |  | No | none |  | C R U L | true |  |  |  | Account | Physical Address Fax | Physical_Address_Fax__c |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 16 | [address1_freighttermscode](#address1_freighttermscode) | Physical Address Freight Terms | picklist | 1: FOB, 2: No Charge | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 17 | [address1_latitude](#address1_latitude) | Physical Address Latitude | float |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 18 | [address1_line1](#address1_line1) | Physical Address Street 1 | nvarchar |  | No | none |  | C R U L | true |  |  |  | Account | Billing Street | BillingStreet | [3](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 19 | [address1_line2](#address1_line2) | Physical Address Street 2 | nvarchar |  | No | none |  | C R U L | true |  |  |  | Account | Physical Address Street 2 | Physical_Address_Street_2__c | [2](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 20 | [address1_line3](#address1_line3) | Physical Address Street 3 | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 21 | [address1_longitude](#address1_longitude) | Physical Address Longitude | float |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 22 | [address1_name](#address1_name) | Physical Address Name | nvarchar |  | No | none |  | C R U L | true |  |  |  | Account | Physical Address Name | Physical_Address_Name__c | [2](#2.%20Forms) | [1](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 23 | [address1_postalcode](#address1_postalcode) | Physical Address ZIP/Postal Code | nvarchar |  | No | none |  | C R U So G L | true |  |  |  | Account | Business Address (ZIP/Postal Code) | Business_Address__PostalCode__s | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 24 | [address1_postofficebox](#address1_postofficebox) | Physical Address Post Office Box | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 25 | [address1_primarycontactname](#address1_primarycontactname) | Physical Address Primary Contact Name | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 26 | [address1_shippingmethodcode](#address1_shippingmethodcode) | Physical Address Shipping Method | picklist | 1: Airborne, 2: DHL, 3: FedEx, 4: UPS, 5: Postal Mail, 6: Full Load, 7: Will Call | No | none |  | C R U L | true |  |  |  | Account | Physical Address Shipping Method | Physical_Address_Shipping_Method__c |  |  |  |  |  | [5](#7.%20Workflows) |  |  |  |  |  |  |
-| 27 | [address1_stateorprovince](#address1_stateorprovince) | Physical Address State/Province | nvarchar |  | No | recommended |  | C R U L Re | true |  |  |  | Account | Billing State/Province | BillingState | [2](#2.%20Forms) | [15](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 28 | [address1_telephone1](#address1_telephone1) | Physical Address Phone | nvarchar |  | No | none |  | C R U L | true |  |  |  | Account | Physical Address Phone | Physical_Address_Phone__c |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 29 | [address1_telephone2](#address1_telephone2) | Physical Address Telephone 2 | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 30 | [address1_telephone3](#address1_telephone3) | Physical Address Telephone 3 | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 31 | [address1_upszone](#address1_upszone) | Physical Address UPS Zone | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 32 | [address1_utcoffset](#address1_utcoffset) | Physical Address UTC Offset | int |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 33 | [address2_addresstypecode](#address2_addresstypecode) | Bill To Address Type | picklist | 3: Physical, 1: Bill To, 2: Ship To, 4: Other | No | none |  | C R U L | true |  |  |  | Account | Bill To Address Type | Bill_To_Address_Type__c |  |  |  |  |  | [5](#7.%20Workflows) |  |  |  |  |  |  |
-| 34 | [address2_city](#address2_city) | Bill To City | nvarchar |  | No | none |  | C R U L | false | Account | BillingCity | BillingCity |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 35 | [address2_composite](#address2_composite) | Bill To Address | ntext |  | No | none |  | R L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 36 | [address2_country](#address2_country) | Bill To Country/Region | nvarchar |  | No | none |  | C R U L | true | Account | BillingCountry | BillingCountry | Account | Shipping Country | ShippingCountry |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 37 | [address2_county](#address2_county) | Bill To County | nvarchar |  | No | none |  | C R U L | true |  |  |  | Account | Bill To County | Bill_To_County__c |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 38 | [address2_fax](#address2_fax) | Bill To Fax | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 39 | [address2_freighttermscode](#address2_freighttermscode) | Bill To Freight Terms | picklist | 1: Default Value | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 40 | [address2_latitude](#address2_latitude) | Bill To Latitude | float |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 41 | [address2_line1](#address2_line1) | Bill To Street 1 | nvarchar |  | No | none |  | C R U L | true | Account | BillingStreet | BillingStreet | Account | Shipping Street | ShippingStreet |  |  |  | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
-| 42 | [address2_line2](#address2_line2) | Bill To Street 2 | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 43 | [address2_line3](#address2_line3) | Bill To Street 3 | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 44 | [address2_longitude](#address2_longitude) | Bill To Longitude | float |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 45 | [address2_name](#address2_name) | Bill To Address Name | nvarchar |  | No | none |  | C R U L | true |  |  |  | Account | Bill To Address Name | Bill_To_Address_Name__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 46 | [address2_postalcode](#address2_postalcode) | Bill To ZIP/Postal Code | nvarchar |  | No | none |  | C R U L | false | Account | BillingPostalCode | BillingPostalCode |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 47 | [address2_postofficebox](#address2_postofficebox) | Bill To Post Office Box | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 48 | [address2_primarycontactname](#address2_primarycontactname) | Bill To Primary Contact Name | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 49 | [address2_shippingmethodcode](#address2_shippingmethodcode) | Bill To Shipping Method | picklist | 1: Default Value | No | none |  | C R U L | true |  |  |  | Account | Bill To Shipping Method | Bill_To_Shipping_Method__c |  |  |  |  |  | [5](#7.%20Workflows) |  |  |  |  |  |  |
-| 50 | [address2_stateorprovince](#address2_stateorprovince) | Bill To State/Province | nvarchar |  | No | none |  | C R U L | false | Account | BillingState | BillingState |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 51 | [address2_telephone1](#address2_telephone1) | Bill To Telephone 1 | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 52 | [address2_telephone2](#address2_telephone2) | Bill To Telephone 2 | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 53 | [address2_telephone3](#address2_telephone3) | Bill To Telephone 3 | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 54 | [address2_upszone](#address2_upszone) | Bill To UPS Zone | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 55 | [address2_utcoffset](#address2_utcoffset) | Bill To UTC Offset | int |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 56 | [adx_resolutiondate](#adx_resolutiondate) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 57 | [amountdatatype](#amountdatatype) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 58 | [azt_accountalert](#azt_accountalert) | Account Alert | nvarchar |  | Yes | none |  | C R U | true | Account | Account Alert | Account_Alert__c | Account | Account Alert | Account_Alert__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 59 | [azt_accountleadgenname](#azt_accountleadgenname) | Account Lead Gen Name | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Account Lead Gen Name | Account_Lead_Gen_Name__c |  |  |  |  |  | [1](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 60 | [azt_accountnumber](#azt_accountnumber) | Account Number | nvarchar |  | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 61 | [azt_accountspend](#azt_accountspend) | Lifetime Spend | money |  | Yes | none |  | R | true |  |  |  | Account | Lifetime Spend | Lifetime_Spend__c | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 62 | [azt_accountspend_base](#azt_accountspend_base) | Account Spend (Base) | money |  | Yes | none |  | R | false | Account | CRM Account Spend (Base) | CRM_Account_Spend__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 63 | [azt_accounttype](#azt_accounttype) | Account Type | picklist | 276530000: Active Account, 276530001: Expired Account, 276530007: Prospect, 276530005: Trade Show, 276530003: Partner, 276530006: Vendor, 276530004: Pilot, 276530002: Other, 100000000: Active | Yes | none |  | C R U S Re | true | Account | Account Status | Account_Status__c | Account | CRM Account Spend (Base) | CRM_Account_Spend__c | [5](#2.%20Forms) | [11](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 64 | [azt_addresssearch](#azt_addresssearch) | Address Search | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Address Search | Address_Search__c | [2](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 65 | [azt_addresssearch2](#azt_addresssearch2) | Address Search 2 | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Address Search 2 | Address_Search_2__c |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 66 | [azt_aeflafunding](#azt_aeflafunding) | AEFLA Funding | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  | Account | Aefla Funding | Aefla_Funding__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 67 | [azt_compplanamountid](#azt_compplanamountid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 68 | [azt_customerintrocompletedby](#azt_customerintrocompletedby) | Customer Intro Completed By | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Customer Intro Completed By | Customer_Intro_Completed_By__c |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 69 | [azt_customerintrocompletedon](#azt_customerintrocompletedon) | Customer Intro Completed On | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Customer Intro Completed On | Customer_Intro_Completed_On__c |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 70 | [azt_customerintroductioncompleted](#azt_customerintroductioncompleted) | Customer Introduction Completed | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  | Account | Customer Introduction Completed | Customer_Introduction_Completed__c |  | [1](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 71 | [azt_customernumber](#azt_customernumber) | Customer Number | nvarchar |  | Yes | recommended |  | C R U S Re | true | Account | Customer Number | Customer_Number__c | Account | Customer Number | Customer_Number__c | [4](#2.%20Forms) | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 72 | [azt_customerof](#azt_customerof) | Customer Of | picklist | 276530000: Aztec, 276530001: Life Skills, 276530002: Aztec & Life Skills | Yes | none |  | C R U | true |  |  |  | Account | Customer Number | Customer_Number__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 73 | [azt_digitalstatus](#azt_digitalstatus) | Digital Status | picklist |  | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 74 | [azt_duplicate](#azt_duplicate) | Duplicate? | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Duplicate | Duplicate__c |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 75 | [azt_excludefromautoassign](#azt_excludefromautoassign) | Exclude from Autoassign? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  | Account | Exclude From Autoassign | Exclude_From_Autoassign__c | [2](#2.%20Forms) |  |  |  |  | [3](#7.%20Workflows) |  |  |  |  |  |  |
-| 76 | [azt_executivesummary](#azt_executivesummary) | Executive Summary | ntext |  | Yes | none |  | C R U | true | Account | Executive Summary | Executive_Summary__c | Account | Executive Summary | Executive_Summary__c | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 77 | [azt_extension](#azt_extension) | Ext | nvarchar |  | Yes | none |  | C R U | true | Account | Ext | Ext__c | Account | Ext | Ext__c | [2](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 78 | [azt_fiscalyearend](#azt_fiscalyearend) | Fiscal Year End | picklist |  | Yes | none |  | C R U | true | Account | Fiscal Year End | Fiscal_Year_End__c | Account | Fiscal Year End | Fiscal_Year_End__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 79 | [azt_fsradminpassword](#azt_fsradminpassword) | FSR Admin Password | nvarchar |  | Yes | none |  | C R U | false | Account | FSR Admin Password | FSR_Admin_Password__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 80 | [azt_fsradminusername](#azt_fsradminusername) | FSR Admin Username | nvarchar |  | Yes | none |  | C R U | false | Account | FSR Admin Username | FSR_Admin_Username__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 81 | [azt_gedprintnoflashplay](#azt_gedprintnoflashplay) | GED Print NO Flash/Play | bit | 1: Yes, 0: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 82 | [azt_gedprintnogedsoftware](#azt_gedprintnogedsoftware) | GED Print - NO GED Software | bit | 1: Yes, 0: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 83 | [azt_historicalowner](#azt_historicalowner) | Historical Owner | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Historical Owner | Historical_Owner__c | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 84 | [azt_isautoduplicate](#azt_isautoduplicate) | Is Auto Duplicate? | bit | 1: Yes, 0: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 85 | [azt_isduplicate](#azt_isduplicate) | Is Duplicate | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  | Account | Is Duplicate | Is_Duplicate__c |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 86 | [azt_isinquickbooks](#azt_isinquickbooks) | Is In Quickbooks? | picklist | 0: Yes, 1: No, 2: Possible | Yes | none |  | C R U | true |  |  |  | Account | Is In Quickbooks | Is_In_Quickbooks__c |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 87 | [azt_ismatched](#azt_ismatched) | Is Matched? | bit | 1: Yes, 0: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 88 | [azt_lastactivitydate](#azt_lastactivitydate) | Last Activity Date | datetime |  | Yes | none |  | C R U | true |  |  |  | Account | Last Activity | LastActivityDate |  | [2](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 89 | [azt_lastprintpurchase](#azt_lastprintpurchase) | Last Print Purchase | datetime |  | Yes | none |  | C R U | true | Account | CRM Last Print Purchase | CRM_Last_Print_Purchase__c | Account | Last Print Purchase | Last_Print_Purchase__c | [3](#2.%20Forms) | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 90 | [azt_lastsaaspurchase](#azt_lastsaaspurchase) | Last SaaS Purchase | datetime |  | Yes | none |  | C R U | true | Account | CRM Last SaaS Purchase | CRM_Last_SaaS_Purchase__c | Account | Last SaaS Purchase | Last_SaaS_Purchase__c | [3](#2.%20Forms) | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 91 | [azt_lastsuccessfulconnection](#azt_lastsuccessfulconnection) | Last Successful Connection | datetime |  | Yes | none |  | C R U | true |  |  |  | Account | Last Successful Connection | Last_Successful_Connection__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 92 | [azt_lastyearspend](#azt_lastyearspend) | Last Year Spend | money |  | Yes | none |  | R | true |  |  |  | Account | Last Year Spend | Last_Year_Spend__c | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 93 | [azt_lastyearspend_base](#azt_lastyearspend_base) | Last Year Spend (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 94 | [azt_leadsourceid](#azt_leadsourceid) | Lead Source | lookup |  | Yes | none |  | C R U | true | Account | Account Source | AccountSource | Account | Lead Source | Lead_Source__c | [2](#2.%20Forms) |  |  |  |  | [8](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 95 | [azt_licenseterm](#azt_licenseterm) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 96 | [azt_masecommission](#azt_masecommission) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 97 | [azt_nomatch](#azt_nomatch) | No Match? | bit | 1: Yes, 0: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 98 | [azt_nonsaasstatus](#azt_nonsaasstatus) | Non-SaaS Status | picklist |  | Yes | none |  | C R U | true | Account | CRM Non-SaaS Status | Non_SaaS_Status__c | Account | Nonsaas Status | Nonsaas_Status__c | [2](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 99 | [azt_numberofcomputers](#azt_numberofcomputers) | # Computers | int |  | Yes | none |  | C R U | true | Account | # Computers | NumofComputers__c | Account | # Computers | NumofComputers__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 100 | [azt_numberofstudents](#azt_numberofstudents) | # Students | int |  | Yes | none |  | C R U | true | Account | # Students | NumofStudents__c | Account | # Students | NumofStudents__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 101 | [azt_oldbusinessunit](#azt_oldbusinessunit) | Old Business Unit | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Old Business Unit | Old_Business_Unit__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 102 | [azt_parentaccountspend](#azt_parentaccountspend) | Parent Account Spend | money |  | Yes | none |  | C R U | true |  |  |  | Account | Parent Account Spend | Parent_Account_Spend__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 103 | [azt_parentaccountspend_base](#azt_parentaccountspend_base) | Parent Account Spend (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 104 | [azt_parentlastyearspend](#azt_parentlastyearspend) | Parent Last Year Spend | money |  | Yes | none |  | C R U | true |  |  |  | Account | Parent Last Year Spend | Parent_Last_Year_Spend__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 105 | [azt_parentlastyearspend_base](#azt_parentlastyearspend_base) | Parent Last Year Spend (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 106 | [azt_parentytdspend](#azt_parentytdspend) | Parent YTD Spend | money |  | Yes | none |  | C R U | true |  |  |  | Account | Parent Ytd Spend | Parent_Ytd_Spend__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 107 | [azt_parentytdspend_base](#azt_parentytdspend_base) | Parent YTD Spend (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 108 | [azt_payablecommission](#azt_payablecommission) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 109 | [azt_percentagepaid](#azt_percentagepaid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 110 | [azt_possiblematchid](#azt_possiblematchid) | Possible Match | lookup |  | Yes | none |  | C R U | true |  |  |  | Account | Possible Match | Possible_Match__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 111 | [azt_productfamilies](#azt_productfamilies) | Product Families | multiselectpicklist |  | Yes | none |  | C R U | true |  |  |  | Account | Product Families | Product_Families__c | [2](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 112 | [azt_recordowner](#azt_recordowner) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 113 | [azt_recordownerid](#azt_recordownerid) | Record Owner | lookup |  | Yes | none |  | C R U | true | Account | Record Owner | OwnerId | Account | Record Type ID | RecordTypeId | [2](#2.%20Forms) | [6](#3.%20Views) |  | [2](#5.%20Reports) |  | [37](#7.%20Workflows) |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 114 | [azt_saasstatus](#azt_saasstatus) | SaaS Status | picklist |  | Yes | none |  | C R U | true | Account | CRM SaaS Status | CRM_SaaS_Status__c | Account | Saas Status | Saas_Status__c | [2](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 115 | [azt_score](#azt_score) | Score | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Score | Score__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 116 | [azt_tax_exempt_certificate__c](#azt_tax_exempt_certificate__c) | Tax_Exempt_Certificate__c | bit | 1: Yes, 0: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 117 | [azt_taxexemptcertificate](#azt_taxexemptcertificate) | Tax Exempt Certificate # | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Tax Exempt Certificate | Tax_Exempt_Certificate__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 118 | [azt_ttprintnotto](#azt_ttprintnotto) | TTPrint - No TTO | bit | 1: Yes, 0: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 119 | [azt_type](#azt_type) | Type | nvarchar |  | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 120 | [azt_verticalmarket](#azt_verticalmarket) | Vertical Market | picklist |  | Yes | none |  | C R U | true |  | Industry |  | Account | Vertical Market | Vertical_Market__c | [5](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 121 | [azt_yearbeforelastspend](#azt_yearbeforelastspend) | Year Before Last Spend | money |  | Yes | none |  | R | true |  |  |  | Account | Year Before Last Spend | Year_Before_Last_Spend__c | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 122 | [azt_yearbeforelastspend_base](#azt_yearbeforelastspend_base) | Year Before Last Spend (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 123 | [azt_ytdspend](#azt_ytdspend) | YTD Spend | money |  | Yes | none |  | R | true |  |  |  | Account | Total Spend | Total_Spend__c | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 124 | [azt_ytdspend_base](#azt_ytdspend_base) | YTD Spend (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 125 | [baseamount](#baseamount) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 126 | [billto_line1](#billto_line1) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 127 | [billto_line2](#billto_line2) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 128 | [billto_line3](#billto_line3) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 129 | [billto_name](#billto_name) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 130 | [billto_postalcode](#billto_postalcode) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 131 | [billto_stateorprovince](#billto_stateorprovince) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 132 | [body](#body) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 133 | [businessprocessflowinstanceid](#businessprocessflowinstanceid) | Business Process Flow Instance Id | uniqueidentifier |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 134 | [category](#category) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 135 | [consideronlygoalownersrecords](#consideronlygoalownersrecords) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 136 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 137 | [createdon](#createdon) | Created On | datetime |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 138 | [datefulfilled](#datefulfilled) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 139 | [defaultuomid](#defaultuomid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 140 | [description](#description) | Description | ntext |  | No | none |  | R | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 141 | [discountamount](#discountamount) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 142 | [donotsendmm](#donotsendmm) |  |  |  | No |  |  |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 143 | [emailaddress1](#emailaddress1) | Email | nvarchar |  | No | none |  | C R U So | true |  |  |  | Account | Email | Email__c |  | [1](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 144 | [ext_amt](#ext_amt) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 145 | [extendedamount](#extendedamount) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [13](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 146 | [fax](#fax) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 147 | [fetchxml](#fetchxml) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 148 | [filename](#filename) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 149 | [goalenddate](#goalenddate) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 150 | [goalownerid](#goalownerid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 151 | [goalstartdate](#goalstartdate) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 152 | [internalemailaddress](#internalemailaddress) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 153 | [invoicenumber](#invoicenumber) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 154 | [isamount](#isamount) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 155 | [isfiscalperiodgoal](#isfiscalperiodgoal) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 156 | [isocurrencycode](#isocurrencycode) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 157 | [ispriceoverridden](#ispriceoverridden) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 158 | [isproductoverridden](#isproductoverridden) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 159 | [jobtitle](#jobtitle) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 160 | [lastusedincampaign](#lastusedincampaign) |  |  |  | No |  |  |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 161 | [manualdiscountamount](#manualdiscountamount) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 162 | [mimetype](#mimetype) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 163 | [mobilephone](#mobilephone) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 164 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 165 | [msa_managingpartnerid](#msa_managingpartnerid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#12.%20Relationships) |  |  |
-| 166 | [msa_partnerid](#msa_partnerid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#12.%20Relationships) |  |  |
-| 167 | [msdyn_accountkpiid](#msdyn_accountkpiid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 168 | [msdyn_salesaccelerationinsightid](#msdyn_salesaccelerationinsightid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 169 | [msdyn_segmentid](#msdyn_segmentid) | Segment Id | lookup |  | Yes | none |  | C R U | true |  |  |  | Account | Segment Id | Segment_Id__c |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 170 | [name](#name) | Account Name | nvarchar |  | No | required |  | C R U S So Re | true | Account | Account Name | Name | Account | Account Name | Name | [3](#2.%20Forms) | [46](#3.%20Views) |  | [3](#5.%20Reports) |  | [16](#7.%20Workflows) |  | [23](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 171 | [new_sharedwith](#new_sharedwith) | Shared With | lookup |  | Yes | none |  | C R U | true |  |  |  | Account | Shared With | Shared_With__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 172 | [objecttypecode](#objecttypecode) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [3](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 173 | [originatingleadid](#originatingleadid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  | [3](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 174 | [ownerid](#ownerid) | Owner | owner |  | No | systemrequired |  | C R U G Re | true | Account | Record type | RecordType | Account | Owner ID | OwnerId | [3](#2.%20Forms) | [9](#3.%20Views) |  | [1](#5.%20Reports) |  | [24](#7.%20Workflows) |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 175 | [owningteam](#owningteam) | Owning Team | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 176 | [parentaccountid](#parentaccountid) | Parent Account | lookup |  | No | none |  | C R U | true | Account | ParentId | ParentId | Account | Parent Account ID | ParentId | [2](#2.%20Forms) | [1](#3.%20Views) |  |  |  | [12](#7.%20Workflows) |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  | [2](#12.%20Relationships) |  |  |
-| 177 | [parentgoalid](#parentgoalid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 178 | [parentid](#parentid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 179 | [parentsystemuserid](#parentsystemuserid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 180 | [priceperunit](#priceperunit) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 181 | [primarycontactid](#primarycontactid) | Primary Contact | lookup |  | No | none |  | C R U So G | true |  |  |  | Account | Primary Contact | Primary_Contact__c | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 182 | [productdescription](#productdescription) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [13](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 183 | [productname](#productname) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 184 | [queryentitytype](#queryentitytype) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 185 | [record1roleid](#record1roleid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 186 | [record2roleid](#record2roleid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 187 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [8](#12.%20Relationships) |  |  |
-| 188 | [requestdeliveryby](#requestdeliveryby) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 189 | [rolluponlyfromchildgoals](#rolluponlyfromchildgoals) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 190 | [rollupqueryactualmoneyid](#rollupqueryactualmoneyid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 191 | [rolluprulestep1_1](#rolluprulestep1_1) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [4](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 192 | [rolluprulestep1_10](#rolluprulestep1_10) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 193 | [rolluprulestep1_11](#rolluprulestep1_11) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 194 | [rolluprulestep1_12](#rolluprulestep1_12) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 195 | [rolluprulestep1_13](#rolluprulestep1_13) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 196 | [rolluprulestep1_2](#rolluprulestep1_2) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [4](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 197 | [rolluprulestep1_3](#rolluprulestep1_3) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [4](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 198 | [rolluprulestep1_4](#rolluprulestep1_4) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [4](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 199 | [rolluprulestep1_5](#rolluprulestep1_5) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [4](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 200 | [rolluprulestep1_6](#rolluprulestep1_6) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [3](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 201 | [rolluprulestep1_7](#rolluprulestep1_7) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [3](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 202 | [rolluprulestep1_8](#rolluprulestep1_8) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [3](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 203 | [rolluprulestep1_9](#rolluprulestep1_9) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [3](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 204 | [salesorderdetailname](#salesorderdetailname) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 205 | [salesrepid](#salesrepid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 206 | [scheduledend](#scheduledend) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 207 | [shipto_line1](#shipto_line1) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 208 | [shipto_line2](#shipto_line2) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 209 | [shipto_line3](#shipto_line3) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 210 | [shipto_name](#shipto_name) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 211 | [shipto_postalcode](#shipto_postalcode) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 212 | [shipto_stateorprovince](#shipto_stateorprovince) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 213 | [statecode](#statecode) | Status | state |  | No | systemrequired |  | R U F | true |  |  |  | Account | Status CRM | Status_CRM__c |  | [16](#3.%20Views) |  |  |  | [10](#7.%20Workflows) | [3](#9.%20Formulas%20and%20Rollups) | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 214 | [statuscode](#statuscode) | Status Reason | picklist |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 215 | [tax](#tax) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 216 | [teamtype](#teamtype) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 217 | [telephone1](#telephone1) | Main Phone | nvarchar |  | No | none |  | C R U S So Re | true |  | Phone |  | Account | Other Phone | OtherPhone__c | [3](#2.%20Forms) | [23](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 218 | [telephone2](#telephone2) | Other Phone | nvarchar |  | No | none |  | C R U | false | Account | Other Phone | OtherPhone__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 219 | [title](#title) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 4 | [address1_addresstypecode](#address1_addresstypecode) | Physical Address Type | picklist | 3: Physical, 1: Bill To, 2: Ship To, 4: Other | No | none |  | C R U L | true |  |  |  | Account | Physical Address Type | Physical_Address_Type__c | [2](#2.%20Forms) |  |  |  |  | [5](#7.%20Workflows) |  |  |  |  |  |  |
+| 5 | [address1_city](#address1_city) | Physical Address City | nvarchar |  | No | none |  | C R U So G L Re | true |  |  |  | Account | Business Address (City) | Business_Address__City__s | [2](#2.%20Forms) | [17](#3.%20Views) |  |  |  | [3](#7.%20Workflows) |  |  |  |  |  |  |
+| 6 | [address1_composite](#address1_composite) | Physical Address | ntext |  | No | none |  | R L | true |  |  |  | Account | Physical Address | Physical_Address__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 7 | [address1_country](#address1_country) | Physical Address Country/Region | nvarchar |  | No | recommended |  | C R U L | true |  |  |  | Account | Billing Country | BillingCountry | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 8 | [address1_county](#address1_county) | Physical Address County | nvarchar |  | No | none |  | C R U L | true |  |  |  | Account | Physical Address County | Physical_Address_County__c |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 9 | [address1_fax](#address1_fax) | Physical Address Fax | nvarchar |  | No | none |  | C R U L | true |  |  |  | Account | Physical Address Fax | Physical_Address_Fax__c |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 10 | [address1_freighttermscode](#address1_freighttermscode) | Physical Address Freight Terms | picklist | 1: FOB, 2: No Charge | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 11 | [address1_latitude](#address1_latitude) | Physical Address Latitude | float |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 12 | [address1_line1](#address1_line1) | Physical Address Street 1 | nvarchar |  | No | none |  | C R U L | true |  |  |  | Account | Billing Street | BillingStreet | [3](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 13 | [address1_line2](#address1_line2) | Physical Address Street 2 | nvarchar |  | No | none |  | C R U L | true |  |  |  | Account | Physical Address Street 2 | Physical_Address_Street_2__c | [2](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 14 | [address1_line3](#address1_line3) | Physical Address Street 3 | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 15 | [address1_longitude](#address1_longitude) | Physical Address Longitude | float |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 16 | [address1_name](#address1_name) | Physical Address Name | nvarchar |  | No | none |  | C R U L | true |  |  |  | Account | Physical Address Name | Physical_Address_Name__c | [2](#2.%20Forms) | [1](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 17 | [address1_postalcode](#address1_postalcode) | Physical Address ZIP/Postal Code | nvarchar |  | No | none |  | C R U So G L | true |  |  |  | Account | Business Address (ZIP/Postal Code) | Business_Address__PostalCode__s | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 18 | [address1_postofficebox](#address1_postofficebox) | Physical Address Post Office Box | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 19 | [address1_primarycontactname](#address1_primarycontactname) | Physical Address Primary Contact Name | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 20 | [address1_shippingmethodcode](#address1_shippingmethodcode) | Physical Address Shipping Method | picklist | 1: Airborne, 2: DHL, 3: FedEx, 4: UPS, 5: Postal Mail, 6: Full Load, 7: Will Call | No | none |  | C R U L | true |  |  |  | Account | Physical Address Shipping Method | Physical_Address_Shipping_Method__c |  |  |  |  |  | [5](#7.%20Workflows) |  |  |  |  |  |  |
+| 21 | [address1_stateorprovince](#address1_stateorprovince) | Physical Address State/Province | nvarchar |  | No | recommended |  | C R U L Re | true |  |  |  | Account | Billing State/Province | BillingState | [2](#2.%20Forms) | [15](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 22 | [address1_telephone1](#address1_telephone1) | Physical Address Phone | nvarchar |  | No | none |  | C R U L | true |  |  |  | Account | Physical Address Phone | Physical_Address_Phone__c |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 23 | [address1_telephone2](#address1_telephone2) | Physical Address Telephone 2 | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 24 | [address1_telephone3](#address1_telephone3) | Physical Address Telephone 3 | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 25 | [address1_upszone](#address1_upszone) | Physical Address UPS Zone | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 26 | [address1_utcoffset](#address1_utcoffset) | Physical Address UTC Offset | int |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 27 | [address2_addresstypecode](#address2_addresstypecode) | Bill To Address Type | picklist | 3: Physical, 1: Bill To, 2: Ship To, 4: Other | No | none |  | C R U L | true |  |  |  | Account | Bill To Address Type | Bill_To_Address_Type__c |  |  |  |  |  | [5](#7.%20Workflows) |  |  |  |  |  |  |
+| 28 | [address2_city](#address2_city) | Bill To City | nvarchar |  | No | none |  | C R U L | false | Account | BillingCity | BillingCity |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 29 | [address2_composite](#address2_composite) | Bill To Address | ntext |  | No | none |  | R L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 30 | [address2_country](#address2_country) | Bill To Country/Region | nvarchar |  | No | none |  | C R U L | true | Account | BillingCountry | BillingCountry | Account | Shipping Country | ShippingCountry |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 31 | [address2_county](#address2_county) | Bill To County | nvarchar |  | No | none |  | C R U L | true |  |  |  | Account | Bill To County | Bill_To_County__c |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 32 | [address2_fax](#address2_fax) | Bill To Fax | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 33 | [address2_freighttermscode](#address2_freighttermscode) | Bill To Freight Terms | picklist | 1: Default Value | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 34 | [address2_latitude](#address2_latitude) | Bill To Latitude | float |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 35 | [address2_line1](#address2_line1) | Bill To Street 1 | nvarchar |  | No | none |  | C R U L | true | Account | BillingStreet | BillingStreet | Account | Shipping Street | ShippingStreet |  |  |  | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
+| 36 | [address2_line2](#address2_line2) | Bill To Street 2 | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 37 | [address2_line3](#address2_line3) | Bill To Street 3 | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 38 | [address2_longitude](#address2_longitude) | Bill To Longitude | float |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 39 | [address2_name](#address2_name) | Bill To Address Name | nvarchar |  | No | none |  | C R U L | true |  |  |  | Account | Bill To Address Name | Bill_To_Address_Name__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 40 | [address2_postalcode](#address2_postalcode) | Bill To ZIP/Postal Code | nvarchar |  | No | none |  | C R U L | false | Account | BillingPostalCode | BillingPostalCode |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 41 | [address2_postofficebox](#address2_postofficebox) | Bill To Post Office Box | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 42 | [address2_primarycontactname](#address2_primarycontactname) | Bill To Primary Contact Name | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 43 | [address2_shippingmethodcode](#address2_shippingmethodcode) | Bill To Shipping Method | picklist | 1: Default Value | No | none |  | C R U L | true |  |  |  | Account | Bill To Shipping Method | Bill_To_Shipping_Method__c |  |  |  |  |  | [5](#7.%20Workflows) |  |  |  |  |  |  |
+| 44 | [address2_stateorprovince](#address2_stateorprovince) | Bill To State/Province | nvarchar |  | No | none |  | C R U L | false | Account | BillingState | BillingState |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 45 | [address2_telephone1](#address2_telephone1) | Bill To Telephone 1 | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 46 | [address2_telephone2](#address2_telephone2) | Bill To Telephone 2 | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 47 | [address2_telephone3](#address2_telephone3) | Bill To Telephone 3 | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 48 | [address2_upszone](#address2_upszone) | Bill To UPS Zone | nvarchar |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 49 | [address2_utcoffset](#address2_utcoffset) | Bill To UTC Offset | int |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 50 | [azt_accountalert](#azt_accountalert) | Account Alert | nvarchar |  | Yes | none |  | C R U | true | Account | Account Alert | Account_Alert__c | Account | Account Alert | Account_Alert__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 51 | [azt_accountleadgenname](#azt_accountleadgenname) | Account Lead Gen Name | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Account Lead Gen Name | Account_Lead_Gen_Name__c |  |  |  |  |  | [1](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 52 | [azt_accountnumber](#azt_accountnumber) | Account Number | nvarchar |  | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 53 | [azt_accountspend](#azt_accountspend) | Lifetime Spend | money |  | Yes | none |  | R | true |  |  |  | Account | Lifetime Spend | Lifetime_Spend__c | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 54 | [azt_accountspend_base](#azt_accountspend_base) | Account Spend (Base) | money |  | Yes | none |  | R | false | Account | CRM Account Spend (Base) | CRM_Account_Spend__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 55 | [azt_accounttype](#azt_accounttype) | Account Type | picklist | 276530000: Active Account, 276530001: Expired Account, 276530007: Prospect, 276530005: Trade Show, 276530003: Partner, 276530006: Vendor, 276530004: Pilot, 276530002: Other, 100000000: Active | Yes | none |  | C R U S Re | true | Account | Account Status | Account_Status__c | Account | CRM Account Spend (Base) | CRM_Account_Spend__c | [5](#2.%20Forms) | [11](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 56 | [azt_addresssearch](#azt_addresssearch) | Address Search | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Address Search | Address_Search__c | [2](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 57 | [azt_addresssearch2](#azt_addresssearch2) | Address Search 2 | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Address Search 2 | Address_Search_2__c |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 58 | [azt_aeflafunding](#azt_aeflafunding) | AEFLA Funding | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  | Account | Aefla Funding | Aefla_Funding__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 59 | [azt_customerintrocompletedby](#azt_customerintrocompletedby) | Customer Intro Completed By | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Customer Intro Completed By | Customer_Intro_Completed_By__c |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 60 | [azt_customerintrocompletedon](#azt_customerintrocompletedon) | Customer Intro Completed On | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Customer Intro Completed On | Customer_Intro_Completed_On__c |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 61 | [azt_customerintroductioncompleted](#azt_customerintroductioncompleted) | Customer Introduction Completed | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  | Account | Customer Introduction Completed | Customer_Introduction_Completed__c |  | [1](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 62 | [azt_customernumber](#azt_customernumber) | Customer Number | nvarchar |  | Yes | recommended |  | C R U S Re | true | Account | Customer Number | Customer_Number__c | Account | Customer Number | Customer_Number__c | [4](#2.%20Forms) | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 63 | [azt_customerof](#azt_customerof) | Customer Of | picklist | 276530000: Aztec, 276530001: Life Skills, 276530002: Aztec & Life Skills | Yes | none |  | C R U | true |  |  |  | Account | Customer Number | Customer_Number__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 64 | [azt_digitalstatus](#azt_digitalstatus) | Digital Status | picklist |  | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 65 | [azt_duplicate](#azt_duplicate) | Duplicate? | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Duplicate | Duplicate__c |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 66 | [azt_excludefromautoassign](#azt_excludefromautoassign) | Exclude from Autoassign? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  | Account | Exclude From Autoassign | Exclude_From_Autoassign__c | [2](#2.%20Forms) |  |  |  |  | [3](#7.%20Workflows) |  |  |  |  |  |  |
+| 67 | [azt_executivesummary](#azt_executivesummary) | Executive Summary | ntext |  | Yes | none |  | C R U | true | Account | Executive Summary | Executive_Summary__c | Account | Executive Summary | Executive_Summary__c | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 68 | [azt_extension](#azt_extension) | Ext | nvarchar |  | Yes | none |  | C R U | true | Account | Ext | Ext__c | Account | Ext | Ext__c | [2](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 69 | [azt_fiscalyearend](#azt_fiscalyearend) | Fiscal Year End | picklist |  | Yes | none |  | C R U | true | Account | Fiscal Year End | Fiscal_Year_End__c | Account | Fiscal Year End | Fiscal_Year_End__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 70 | [azt_fsradminpassword](#azt_fsradminpassword) | FSR Admin Password | nvarchar |  | Yes | none |  | C R U | false | Account | FSR Admin Password | FSR_Admin_Password__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 71 | [azt_fsradminusername](#azt_fsradminusername) | FSR Admin Username | nvarchar |  | Yes | none |  | C R U | false | Account | FSR Admin Username | FSR_Admin_Username__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 72 | [azt_gedprintnoflashplay](#azt_gedprintnoflashplay) | GED Print NO Flash/Play | bit | 1: Yes, 0: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 73 | [azt_gedprintnogedsoftware](#azt_gedprintnogedsoftware) | GED Print - NO GED Software | bit | 1: Yes, 0: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 74 | [azt_historicalowner](#azt_historicalowner) | Historical Owner | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Historical Owner | Historical_Owner__c | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 75 | [azt_isautoduplicate](#azt_isautoduplicate) | Is Auto Duplicate? | bit | 1: Yes, 0: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 76 | [azt_isduplicate](#azt_isduplicate) | Is Duplicate | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  | Account | Is Duplicate | Is_Duplicate__c |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 77 | [azt_isinquickbooks](#azt_isinquickbooks) | Is In Quickbooks? | picklist | 0: Yes, 1: No, 2: Possible | Yes | none |  | C R U | true |  |  |  | Account | Is In Quickbooks | Is_In_Quickbooks__c |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 78 | [azt_ismatched](#azt_ismatched) | Is Matched? | bit | 1: Yes, 0: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 79 | [azt_lastactivitydate](#azt_lastactivitydate) | Last Activity Date | datetime |  | Yes | none |  | C R U | true |  |  |  | Account | Last Activity | LastActivityDate |  | [2](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 80 | [azt_lastprintpurchase](#azt_lastprintpurchase) | Last Print Purchase | datetime |  | Yes | none |  | C R U | true | Account | CRM Last Print Purchase | CRM_Last_Print_Purchase__c | Account | Last Print Purchase | Last_Print_Purchase__c | [3](#2.%20Forms) | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 81 | [azt_lastsaaspurchase](#azt_lastsaaspurchase) | Last SaaS Purchase | datetime |  | Yes | none |  | C R U | true | Account | CRM Last SaaS Purchase | CRM_Last_SaaS_Purchase__c | Account | Last SaaS Purchase | Last_SaaS_Purchase__c | [3](#2.%20Forms) | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 82 | [azt_lastsuccessfulconnection](#azt_lastsuccessfulconnection) | Last Successful Connection | datetime |  | Yes | none |  | C R U | true |  |  |  | Account | Last Successful Connection | Last_Successful_Connection__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 83 | [azt_lastyearspend](#azt_lastyearspend) | Last Year Spend | money |  | Yes | none |  | R | true |  |  |  | Account | Last Year Spend | Last_Year_Spend__c | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 84 | [azt_lastyearspend_base](#azt_lastyearspend_base) | Last Year Spend (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 85 | [azt_leadsourceid](#azt_leadsourceid) | Lead Source | lookup |  | Yes | none |  | C R U | true | Account | Account Source | AccountSource | Account | Lead Source | Lead_Source__c | [2](#2.%20Forms) |  |  |  |  | [8](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 86 | [azt_nomatch](#azt_nomatch) | No Match? | bit | 1: Yes, 0: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 87 | [azt_nonsaasstatus](#azt_nonsaasstatus) | Non-SaaS Status | picklist |  | Yes | none |  | C R U | true | Account | CRM Non-SaaS Status | Non_SaaS_Status__c | Account | Nonsaas Status | Nonsaas_Status__c | [2](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 88 | [azt_numberofcomputers](#azt_numberofcomputers) | # Computers | int |  | Yes | none |  | C R U | true | Account | # Computers | NumofComputers__c | Account | # Computers | NumofComputers__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 89 | [azt_numberofstudents](#azt_numberofstudents) | # Students | int |  | Yes | none |  | C R U | true | Account | # Students | NumofStudents__c | Account | # Students | NumofStudents__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 90 | [azt_oldbusinessunit](#azt_oldbusinessunit) | Old Business Unit | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Old Business Unit | Old_Business_Unit__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 91 | [azt_parentaccountspend](#azt_parentaccountspend) | Parent Account Spend | money |  | Yes | none |  | C R U | true |  |  |  | Account | Parent Account Spend | Parent_Account_Spend__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 92 | [azt_parentaccountspend_base](#azt_parentaccountspend_base) | Parent Account Spend (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 93 | [azt_parentlastyearspend](#azt_parentlastyearspend) | Parent Last Year Spend | money |  | Yes | none |  | C R U | true |  |  |  | Account | Parent Last Year Spend | Parent_Last_Year_Spend__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 94 | [azt_parentlastyearspend_base](#azt_parentlastyearspend_base) | Parent Last Year Spend (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 95 | [azt_parentytdspend](#azt_parentytdspend) | Parent YTD Spend | money |  | Yes | none |  | C R U | true |  |  |  | Account | Parent Ytd Spend | Parent_Ytd_Spend__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 96 | [azt_parentytdspend_base](#azt_parentytdspend_base) | Parent YTD Spend (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 97 | [azt_possiblematchid](#azt_possiblematchid) | Possible Match | lookup |  | Yes | none |  | C R U | true |  |  |  | Account | Possible Match | Possible_Match__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 98 | [azt_productfamilies](#azt_productfamilies) | Product Families | multiselectpicklist |  | Yes | none |  | C R U | true |  |  |  | Account | Product Families | Product_Families__c | [2](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 99 | [azt_recordownerid](#azt_recordownerid) | Record Owner | lookup |  | Yes | none |  | C R U | true | Account | Record Owner | OwnerId | Account | Record Type ID | RecordTypeId | [2](#2.%20Forms) | [6](#3.%20Views) |  | [2](#5.%20Reports) |  | [37](#7.%20Workflows) |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 100 | [azt_saasstatus](#azt_saasstatus) | SaaS Status | picklist |  | Yes | none |  | C R U | true | Account | CRM SaaS Status | CRM_SaaS_Status__c | Account | Saas Status | Saas_Status__c | [2](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 101 | [azt_score](#azt_score) | Score | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Score | Score__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 102 | [azt_tax_exempt_certificate__c](#azt_tax_exempt_certificate__c) | Tax_Exempt_Certificate__c | bit | 1: Yes, 0: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 103 | [azt_taxexemptcertificate](#azt_taxexemptcertificate) | Tax Exempt Certificate # | nvarchar |  | Yes | none |  | C R U | true |  |  |  | Account | Tax Exempt Certificate | Tax_Exempt_Certificate__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 104 | [azt_ttprintnotto](#azt_ttprintnotto) | TTPrint - No TTO | bit | 1: Yes, 0: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 105 | [azt_type](#azt_type) | Type | nvarchar |  | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 106 | [azt_verticalmarket](#azt_verticalmarket) | Vertical Market | picklist |  | Yes | none |  | C R U | true |  | Industry |  | Account | Vertical Market | Vertical_Market__c | [5](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 107 | [azt_yearbeforelastspend](#azt_yearbeforelastspend) | Year Before Last Spend | money |  | Yes | none |  | R | true |  |  |  | Account | Year Before Last Spend | Year_Before_Last_Spend__c | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 108 | [azt_yearbeforelastspend_base](#azt_yearbeforelastspend_base) | Year Before Last Spend (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 109 | [azt_ytdspend](#azt_ytdspend) | YTD Spend | money |  | Yes | none |  | R | true |  |  |  | Account | Total Spend | Total_Spend__c | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 110 | [azt_ytdspend_base](#azt_ytdspend_base) | YTD Spend (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 111 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 112 | [description](#description) | Description | ntext |  | No | none |  | R | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 113 | [donotsendmm](#donotsendmm) |  |  |  | No |  |  |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 114 | [emailaddress1](#emailaddress1) | Email | nvarchar |  | No | none |  | C R U So | true |  |  |  | Account | Email | Email__c |  | [1](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 115 | [fax](#fax) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 116 | [lastusedincampaign](#lastusedincampaign) |  |  |  | No |  |  |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 117 | [msa_managingpartnerid](#msa_managingpartnerid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#12.%20Relationships) |  |  |
+| 118 | [msa_partnerid](#msa_partnerid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#12.%20Relationships) |  |  |
+| 119 | [msdyn_accountkpiid](#msdyn_accountkpiid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 120 | [msdyn_salesaccelerationinsightid](#msdyn_salesaccelerationinsightid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 121 | [msdyn_segmentid](#msdyn_segmentid) | Segment Id | lookup |  | Yes | none |  | C R U | true |  |  |  | Account | Segment Id | Segment_Id__c |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 122 | [name](#name) | Account Name | nvarchar |  | No | required |  | C R U S So Re | true | Account | Account Name | Name | Account | Account Name | Name | [3](#2.%20Forms) | [46](#3.%20Views) |  | [3](#5.%20Reports) |  | [16](#7.%20Workflows) |  | [23](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 123 | [new_sharedwith](#new_sharedwith) | Shared With | lookup |  | Yes | none |  | C R U | true |  |  |  | Account | Shared With | Shared_With__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 124 | [originatingleadid](#originatingleadid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  | [3](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 125 | [ownerid](#ownerid) | Owner | owner |  | No | systemrequired |  | C R U G Re | true | Account | Record type | RecordType | Account | Owner ID | OwnerId | [3](#2.%20Forms) | [9](#3.%20Views) |  | [1](#5.%20Reports) |  | [24](#7.%20Workflows) |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 126 | [owningteam](#owningteam) | Owning Team | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 127 | [parentaccountid](#parentaccountid) | Parent Account | lookup |  | No | none |  | C R U | true | Account | ParentId | ParentId | Account | Parent Account ID | ParentId | [2](#2.%20Forms) | [1](#3.%20Views) |  |  |  | [12](#7.%20Workflows) |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  | [2](#12.%20Relationships) |  |  |
+| 128 | [parentid](#parentid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 129 | [primarycontactid](#primarycontactid) | Primary Contact | lookup |  | No | none |  | C R U So G | true |  |  |  | Account | Primary Contact | Primary_Contact__c | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 130 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [8](#12.%20Relationships) |  |  |
+| 131 | [statecode](#statecode) | Status | state |  | No | systemrequired |  | R U F | true |  |  |  | Account | Status CRM | Status_CRM__c |  | [16](#3.%20Views) |  |  |  | [10](#7.%20Workflows) | [3](#9.%20Formulas%20and%20Rollups) | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 132 | [telephone1](#telephone1) | Main Phone | nvarchar |  | No | none |  | C R U S So Re | true |  | Phone |  | Account | Other Phone | OtherPhone__c | [3](#2.%20Forms) | [23](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 133 | [telephone2](#telephone2) | Other Phone | nvarchar |  | No | none |  | C R U | false | Account | Other Phone | OtherPhone__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
 ---
 
@@ -6068,7 +5982,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### activityid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: AccountReassignmentShareRecords (Read)](#10.4.%20AccountReassignmentShareRecords)
 - [Plugin: ActivityRegardingGetState (Read)](#10.9.%20ActivityRegardingGetState)
 - [Plugin: PhonecallCreateCallback (Read)](#10.59.%20PhonecallCreateCallback)
@@ -6079,13 +5992,11 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### activitytypecode
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: AccountReassignmentShareRecords (Read)](#10.4.%20AccountReassignmentShareRecords)
 - [Plugin: ActivityRegardingGetState (Read)](#10.9.%20ActivityRegardingGetState)
 
 #### actualclosedate
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_lastyearspend](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_lastyearspend](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_ytdspend](#9.%20Formulas%20and%20Rollups)
@@ -6093,18 +6004,15 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### actualend
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_yearbeforelastspend](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_yearbeforelastspend](#9.%20Formulas%20and%20Rollups)
 
 #### actualrevenue
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_yearbeforelastspend](#9.%20Formulas%20and%20Rollups)
 
 #### actualvalue
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_accountspend](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_lastyearspend](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_ytdspend](#9.%20Formulas%20and%20Rollups)
@@ -6417,7 +6325,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### adx_resolutiondate
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CaseClose (Write)](#10.15.%20CaseClose)
 
 #### allocations
@@ -6427,7 +6334,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### amountdatatype
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 
 #### annotationid
@@ -6649,7 +6555,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### azt_compplanamountid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 - [Plugin: InvoiceCompCompleted (Read)](#10.35.%20InvoiceCompCompleted)
 
@@ -7092,7 +6997,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### azt_licenseterm
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderLinePopulateLicType (Read)](#10.53.%20OrderLinePopulateLicType)
 
 #### azt_licensetermmonths
@@ -7150,7 +7054,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### azt_masecommission
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 - [Plugin: InvoiceCompCompleted (Filter)](#10.35.%20InvoiceCompCompleted)
 
@@ -7359,7 +7262,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### azt_payablecommission
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 
 #### azt_paymentdate
@@ -7383,7 +7285,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### azt_percentagepaid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 
 #### azt_periodend
@@ -7535,7 +7436,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### azt_recordowner
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: RecordOwnerRestrictEdit (Read)](#10.67.%20RecordOwnerRestrictEdit)
 
 #### azt_recordownerid
@@ -7792,7 +7692,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### baseamount
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader > quotedetail](#5.1.%20PAQuoteReport)
 - [Plugin: QuotePreventActivateUnapprovedDiscounts (Read)](#10.64.%20QuotePreventActivateUnapprovedDiscounts)
 - [Plugin: QuotePreventActivateUnapprovedDiscounts (Write)](#10.64.%20QuotePreventActivateUnapprovedDiscounts)
@@ -7805,40 +7704,33 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### billto_line1
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#5.1.%20PAQuoteReport)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### billto_line2
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### billto_line3
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### billto_name
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### billto_postalcode
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#5.1.%20PAQuoteReport)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### billto_stateorprovince
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#5.1.%20PAQuoteReport)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### body
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: SendQuoteReport (Write)](#10.73.%20SendQuoteReport)
 
 #### bpf_duration
@@ -7851,7 +7743,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### businessprocessflowinstanceid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderStageTracking (Read)](#10.57.%20OrderStageTracking)
 
 #### businessunitid
@@ -7867,7 +7758,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### category
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: ContactSetConnectionRole (Sort)](#10.19.%20ContactSetConnectionRole)
 - [Plugin: SetPrimaryContact (Read)](#10.75.%20SetPrimaryContact)
 - [Plugin: SetPrimaryContact (Sort)](#10.75.%20SetPrimaryContact)
@@ -7912,7 +7802,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### consideronlygoalownersrecords
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Write)](#10.22.%20CreateUserGoals)
 
 #### contactid
@@ -7944,7 +7833,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### createdon
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: AccountLeadGen (Filter)](#10.2.%20AccountLeadGen)
 - [Plugin: ChangeLicenseType (Sort)](#10.16.%20ChangeLicenseType)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
@@ -7988,12 +7876,10 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### datefulfilled
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateSoftwareLicenses (Read)](#10.21.%20CreateSoftwareLicenses)
 
 #### defaultuomid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OpportunityLineSyncToQuote (Read)](#10.46.%20OpportunityLineSyncToQuote)
 - [Plugin: QuoteLinesSyncToOppty (Read)](#10.62.%20QuoteLinesSyncToOppty)
 
@@ -8012,7 +7898,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### discountamount
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#5.1.%20PAQuoteReport)
 - [Plugin: QuoteLinesSyncToOppty (Read)](#10.62.%20QuoteLinesSyncToOppty)
 - [Plugin: ReviseQuoteDiscountMove (Write)](#10.72.%20ReviseQuoteDiscountMove)
@@ -8068,12 +7953,10 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### ext_amt
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateCompGoals (Read)](#10.20.%20CreateCompGoals)
 
 #### extendedamount
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateCompGoals (Read)](#10.20.%20CreateCompGoals)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 - [Plugin: OpportunityClone (Read)](#10.44.%20OpportunityClone)
@@ -8095,12 +7978,10 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### fetchxml
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Write)](#10.22.%20CreateUserGoals)
 
 #### filename
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: SendQuoteReport (Write)](#10.73.%20SendQuoteReport)
 
 #### firstname
@@ -8147,7 +8028,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### goalenddate
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 - [Plugin: CreateUserGoals (Write)](#10.22.%20CreateUserGoals)
 - [Plugin: CreateUserGoals (Filter)](#10.22.%20CreateUserGoals)
@@ -8158,7 +8038,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### goalownerid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Write)](#10.22.%20CreateUserGoals)
 - [Plugin: CreateUserGoals (Filter)](#10.22.%20CreateUserGoals)
 
@@ -8168,7 +8047,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### goalstartdate
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 - [Plugin: CreateUserGoals (Write)](#10.22.%20CreateUserGoals)
 - [Plugin: CreateUserGoals (Filter)](#10.22.%20CreateUserGoals)
@@ -8180,7 +8058,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### internalemailaddress
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderFSRSetTemplateFields (Read)](#10.52.%20OrderFSRSetTemplateFields)
 
 #### invline.productid
@@ -8207,7 +8084,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### invoicenumber
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CompGoalCreate (Read)](#10.18.%20CompGoalCreate)
 
 #### invoices
@@ -8217,22 +8093,18 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### isamount
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 
 #### isfiscalperiodgoal
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Write)](#10.22.%20CreateUserGoals)
 
 #### isocurrencycode
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: Utility (Filter)](#10.81.%20Utility)
 
 #### ispriceoverridden
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OpportunityClone (Read)](#10.44.%20OpportunityClone)
 - [Plugin: OrderClone (Read)](#10.51.%20OrderClone)
 - [Plugin: OrderSplit (Read)](#10.56.%20OrderSplit)
@@ -8242,7 +8114,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### isproductoverridden
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OpportunityClone (Read)](#10.44.%20OpportunityClone)
 - [Plugin: OrderClone (Read)](#10.51.%20OrderClone)
 - [Plugin: OrderSplit (Read)](#10.56.%20OrderSplit)
@@ -8254,7 +8125,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### jobtitle
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader > systemuser](#5.1.%20PAQuoteReport)
 - [Plugin: LeadImport (Write)](#10.36.%20LeadImport)
 
@@ -8269,7 +8139,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### manualdiscountamount
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader > quotedetail](#5.1.%20PAQuoteReport)
 - [Plugin: DiscretionaryDiscountSetHeader (Write)](#10.23.%20DiscretionaryDiscountSetHeader)
 - [Plugin: ManualDiscountKill (Read)](#10.40.%20ManualDiscountKill)
@@ -8291,17 +8160,14 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### mimetype
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: SendQuoteReport (Write)](#10.73.%20SendQuoteReport)
 
 #### mobilephone
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderFSRSetTemplateFields (Read)](#10.52.%20OrderFSRSetTemplateFields)
 
 #### modifiedon
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: AccountReassignmentShareRecords (Sort)](#10.4.%20AccountReassignmentShareRecords)
 - [Plugin: OpportunityLineSyncToQuote (Sort)](#10.46.%20OpportunityLineSyncToQuote)
 - [Plugin: UpdateOppFromQuote (Read)](#10.80.%20UpdateOppFromQuote)
@@ -8458,7 +8324,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### objecttypecode
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: SharedAccountRecords > Users > principalobjectaccess](#5.2.%20SharedAccountRecords)
 - [Report: SharedAccountRecords > Users > principalobjectaccess (Filter)](#5.2.%20SharedAccountRecords)
 - [Report: SharedAccountRecords > Users > principalobjectaccess (Sort)](#5.2.%20SharedAccountRecords)
@@ -8656,7 +8521,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### parentgoalid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 - [Plugin: CreateUserGoals (Write)](#10.22.%20CreateUserGoals)
 
@@ -8667,7 +8531,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### parentsystemuserid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 - [Plugin: Utility (Read)](#10.81.%20Utility)
 
@@ -8689,7 +8552,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### priceperunit
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 - [Plugin: OpportunityClone (Read)](#10.44.%20OpportunityClone)
 - [Plugin: OrderClone (Read)](#10.51.%20OrderClone)
@@ -8720,7 +8582,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### productdescription
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 - [Plugin: OpportunityClone (Read)](#10.44.%20OpportunityClone)
 - [Plugin: OpportunityLineSyncToQuote (Read)](#10.46.%20OpportunityLineSyncToQuote)
@@ -8773,7 +8634,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### productname
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OpportunityClone (Read)](#10.44.%20OpportunityClone)
 - [Plugin: OrderClone (Read)](#10.51.%20OrderClone)
 - [Plugin: OrderSplit (Read)](#10.56.%20OrderSplit)
@@ -8819,7 +8679,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### queryentitytype
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Write)](#10.22.%20CreateUserGoals)
 
 #### queueid
@@ -8891,7 +8750,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### record1roleid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: ContactSetConnectionRole (Write)](#10.19.%20ContactSetConnectionRole)
 - [Plugin: SetPrimaryContact (Read)](#10.75.%20SetPrimaryContact)
 - [Plugin: SetPrimaryContact (Write)](#10.75.%20SetPrimaryContact)
@@ -8907,7 +8765,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### record2roleid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: ContactSetConnectionRole (Write)](#10.19.%20ContactSetConnectionRole)
 - [Plugin: LeadQualifyParentStakeholderContacts (Read)](#10.39.%20LeadQualifyParentStakeholderContacts)
 - [Plugin: SetPrimaryContact (Read)](#10.75.%20SetPrimaryContact)
@@ -8936,7 +8793,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### requestdeliveryby
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### ricontainer_charts
@@ -8954,17 +8810,14 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### rolluponlyfromchildgoals
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Write)](#10.22.%20CreateUserGoals)
 
 #### rollupqueryactualmoneyid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Write)](#10.22.%20CreateUserGoals)
 
 #### rolluprulestep1_1
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_accountspend](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_lastyearspend](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_yearbeforelastspend](#9.%20Formulas%20and%20Rollups)
@@ -8972,27 +8825,22 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### rolluprulestep1_10
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_lastyearspend](#9.%20Formulas%20and%20Rollups)
 
 #### rolluprulestep1_11
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_lastyearspend](#9.%20Formulas%20and%20Rollups)
 
 #### rolluprulestep1_12
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_lastyearspend](#9.%20Formulas%20and%20Rollups)
 
 #### rolluprulestep1_13
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_lastyearspend](#9.%20Formulas%20and%20Rollups)
 
 #### rolluprulestep1_2
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_accountspend](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_lastyearspend](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_yearbeforelastspend](#9.%20Formulas%20and%20Rollups)
@@ -9000,7 +8848,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### rolluprulestep1_3
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_accountspend](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_lastyearspend](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_yearbeforelastspend](#9.%20Formulas%20and%20Rollups)
@@ -9008,7 +8855,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### rolluprulestep1_4
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_accountspend](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_lastyearspend](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_yearbeforelastspend](#9.%20Formulas%20and%20Rollups)
@@ -9016,7 +8862,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### rolluprulestep1_5
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_accountspend](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_lastyearspend](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_yearbeforelastspend](#9.%20Formulas%20and%20Rollups)
@@ -9024,28 +8869,24 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### rolluprulestep1_6
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_lastyearspend](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_yearbeforelastspend](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_ytdspend](#9.%20Formulas%20and%20Rollups)
 
 #### rolluprulestep1_7
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_lastyearspend](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_yearbeforelastspend](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_ytdspend](#9.%20Formulas%20and%20Rollups)
 
 #### rolluprulestep1_8
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_lastyearspend](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_yearbeforelastspend](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_ytdspend](#9.%20Formulas%20and%20Rollups)
 
 #### rolluprulestep1_9
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_lastyearspend](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_yearbeforelastspend](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_ytdspend](#9.%20Formulas%20and%20Rollups)
@@ -9064,7 +8905,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### salesorderdetailname
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderLinePopulateTemplateFields (Read)](#10.54.%20OrderLinePopulateTemplateFields)
 
 #### salesorderid
@@ -9085,12 +8925,10 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### salesrepid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: QuotePreventActivateUnapprovedDiscounts (Read)](#10.64.%20QuotePreventActivateUnapprovedDiscounts)
 
 #### scheduledend
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: ActivitiesCreatedDueDatesInPast (Read)](#10.7.%20ActivitiesCreatedDueDatesInPast)
 - [Plugin: PhonecallCreateCallback (Read)](#10.59.%20PhonecallCreateCallback)
 
@@ -9122,36 +8960,30 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### shipto_line1
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#5.1.%20PAQuoteReport)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### shipto_line2
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#5.1.%20PAQuoteReport)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### shipto_line3
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### shipto_name
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#5.1.%20PAQuoteReport)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### shipto_postalcode
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#5.1.%20PAQuoteReport)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### shipto_stateorprovince
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader (Select)](#5.1.%20PAQuoteReport)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
@@ -9223,7 +9055,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### statuscode
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 - [Plugin: InvoiceCompCompleted (Read)](#10.35.%20InvoiceCompCompleted)
 - [Plugin: InvoiceCompCompleted (Write)](#10.35.%20InvoiceCompCompleted)
@@ -9253,7 +9084,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### tax
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OpportunityClone (Read)](#10.44.%20OpportunityClone)
 - [Plugin: OpportunityLineSyncToQuote (Read)](#10.46.%20OpportunityLineSyncToQuote)
 - [Plugin: OrderClone (Read)](#10.51.%20OrderClone)
@@ -9271,7 +9101,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### teamtype
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: AccountAutoAssign (Filter)](#10.1.%20AccountAutoAssign)
 - [Plugin: ShareBasedOnAccessTeam (Filter)](#10.76.%20ShareBasedOnAccessTeam)
 - [Plugin: ShareFromAccountShares (Read)](#10.77.%20ShareFromAccountShares)
@@ -9316,7 +9145,6 @@ Alphabetical field index -- 484 unique fields referenced.
 
 #### title
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Report: PAQuoteReport > QuoteHeader > systemuser](#5.1.%20PAQuoteReport)
 - [Plugin: CreateUserGoals (Write)](#10.22.%20CreateUserGoals)
 - [Plugin: CreateUserGoals (Sort)](#10.22.%20CreateUserGoals)

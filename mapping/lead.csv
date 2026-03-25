@@ -1,16 +1,9 @@
 fieldName,displayName,dataType,requiredLevel,isCustom,lastUpdate,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
 !process_custom_attribute_url_,,,,False,,,false,0,0,0,0,0,2,0,0,0,0,0,,,,,,
-activityid,,,,False,,,false,0,0,0,1,0,0,0,7,0,0,0,,,,,,
-activitytypecode,,,,False,,,false,0,0,0,0,0,0,0,2,0,0,0,,,,,,
-actualclosedate,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-actualend,,,,False,,,false,0,0,0,0,0,0,1,0,0,0,0,,,,,,
-adx_resolutiondate,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-amountdatatype,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
 azt_accountleadgen,Account Lead Gen,nvarchar,none,True,,,false,1,0,0,0,0,1,0,0,0,0,0,,,,,,
 azt_addresssearch,Address Search,nvarchar,none,True,,,false,3,0,0,0,0,0,0,2,0,0,0,,,,,,
 azt_analysisbackground,Analysis Background,ntext,none,True,,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Lead,Analysis Background,Analysis_Background__c
 azt_assignedon,Assigned On,datetime,none,True,,,false,2,0,0,0,0,0,1,0,0,0,0,,,,,,
-azt_compplanamountid,,,,True,,,false,0,0,0,0,0,0,0,2,0,0,0,,,,,,
 azt_dayssinceassigned,Days Since Assigned,int,none,True,,,false,2,0,0,0,0,0,1,0,0,0,0,,,,,,
 azt_dayssincecreated,Days Since Created,int,none,True,,,true,2,5,0,0,0,0,1,0,0,0,0,,,,Lead,Days Since Created,Days_Since_Created__c
 azt_fiscalyearend,Fiscal Year End,picklist,none,True,,,false,3,0,0,0,0,0,0,0,0,0,0,,,,,,
@@ -20,45 +13,25 @@ azt_leadsource,Old Lead Source,picklist,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,
 azt_leadsourceid,Lead Source,lookup,required,True,,,true,2,4,0,1,0,8,0,2,0,1,0,,,,Lead,Lead Source Campaign,Lead_Source_Campaign__c
 azt_leadtemperature,Lead Temperature,picklist,required,True,,"327630000: Hot, 327630001: Warm, 327630002: Cold, 327630003: Rainy Day, 327630004: Future, 327630005: Internal Assignment, 100000000: Priority",true,4,6,2,0,0,4,0,0,0,0,0,,,,Lead,Lead Temperature,Lead_Temperature__c
 azt_leadtype,Lead Type,picklist,none,True,,"327630000: Ed Tech, 327630001: Pub, 327630002: CTE, 327630003: Workforce",true,1,6,0,0,0,0,0,0,0,0,0,,,,Lead,Lead Type,Lead_Type__c
-azt_licenseterm,,,,True,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-azt_masecommission,,,,True,,,false,0,0,0,0,0,0,0,2,0,0,0,,,,,,
 azt_nextstepsuggestion,Next Step Suggestion,ntext,none,True,,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Lead,Next Step Suggestion,Next_Step_Suggestion__c
 azt_numberofcomputers,# Computers,int,none,True,,,false,3,0,0,0,0,0,0,0,0,0,0,,,,,,
 azt_numberofstudents,# Students,int,none,True,,,false,3,0,0,0,0,0,0,0,0,0,0,,,,,,
 azt_opportunityleadid,Opportunity Lead,lookup,none,True,,,true,1,0,0,0,0,2,0,0,0,1,0,,,,Lead,Converted Opportunity ID,ConvertedOpportunityId
 azt_originatingleadimportid,Originating Lead Import,lookup,none,True,,,true,1,0,0,0,0,0,0,1,0,1,0,,,,Lead,Originating Lead Import,Originating_Lead_Import__c
-azt_payablecommission,,,,True,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
 azt_pendingassigmnent,Pending Assigmnent,bit,none,True,,"1: Yes, 0: No",true,3,0,0,0,0,2,0,0,0,0,0,,,,Lead,Pending Assigmnent,Pending_Assigmnent__c
-azt_percentagepaid,,,,True,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
 azt_productsissues,Product(s) Issues,ntext,none,True,,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Lead,Products Issues,Products_Issues__c
 azt_qualifiedbyid,Qualified By,lookup,none,True,,,true,1,0,0,0,0,1,0,0,0,1,0,,,,Lead,Last Modified By ID,LastModifiedById
 azt_qualifieddisqualifiedon,Qualified/Disqualified On,datetime,none,True,,,true,4,0,0,0,0,1,0,0,0,0,0,,,,Lead,Disqualified On,Qualified_Disqualified_On__c
 azt_recommendation,Recommendation,ntext,none,True,,,true,2,0,0,0,0,0,0,0,0,0,0,,,,Lead,Recommendation,Recommendation__c
-azt_recordowner,,,,True,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
 azt_recordownerid,Record Owner,lookup,none,True,,,true,1,2,0,1,0,37,0,9,0,1,0,,,,Lead,Record Type ID,RecordTypeId
 azt_verticalmarket,Vertical Market,picklist,none,True,,,true,3,0,0,0,0,2,0,0,0,0,0,,,,Lead,Vertical Market,Vertical_Market__c
-baseamount,,,,False,,,false,0,0,0,0,0,0,0,4,0,0,0,,,,,,
-billto_line1,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-billto_line2,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-billto_line3,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-billto_name,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-billto_postalcode,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-billto_stateorprovince,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-body,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-businessprocessflowinstanceid,Business Process Flow Instance Id,uniqueidentifier,none,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-category,,,,False,,,false,0,0,0,0,0,0,0,3,0,0,0,,,,,,
 companyname,Company Name,nvarchar,recommended,False,,,true,3,6,0,0,0,3,0,1,0,0,0,,,,Lead,Company,Company
-conditionbranchstep2_1,,,,False,,,false,0,0,0,0,0,0,2,0,0,0,0,,,,,,
 confirminterest,,,,False,,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Confirm Interest,Confirm_Interest__c
-consideronlygoalownersrecords,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
 createdby,Created By,lookup,none,False,,,true,2,1,2,2,0,4,0,0,0,0,0,,,,Lead,Created By ID,CreatedById
 createdon,Created On,datetime,none,False,,,true,2,25,0,3,0,2,1,10,0,0,0,,,,Lead,Created Date,CreatedDate
 customerid,Customer,customer,none,False,,,true,0,0,0,0,0,13,0,11,0,1,0,,,,Lead,Customer,Customer__c
-datefulfilled,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
 decisionmaker,,,,False,,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Decision Maker,Decision_Maker__c
-defaultuomid,,,,False,,,false,0,0,0,0,0,0,0,2,0,0,0,,,,,,
 description,Description,ntext,none,False,,,true,2,0,0,0,0,0,0,7,0,0,0,,,,Lead,Description,Description
-discountamount,,,,False,,,false,0,0,0,0,0,0,0,2,0,0,0,,,,,,
 donotbulkemail,,,,False,,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Do Not Allow Bulk Emails,Do_Not_Allow_Bulk_Emails__c
 donotemail,,,,False,,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Do Not Call,DoNotCall
 donotfax,,,,False,,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Do Not Call,DoNotCall
@@ -69,84 +42,30 @@ emailaddress1,Email,nvarchar,none,False,,,true,3,0,0,0,0,0,0,2,0,0,0,,,,Lead,Ema
 entityimage,Entity Image,image,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
 evaluatefit,,,,False,,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Evaluate Fit,Evaluate_Fit__c
 exchangerate,Exchange Rate,decimal,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-ext_amt,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-extendedamount,,,,False,,,false,0,0,0,0,0,0,0,13,0,0,0,,,,,,
 fax,,,,False,,,false,0,1,0,0,0,0,0,0,0,0,0,,,,,,
-fetchxml,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-filename,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
 firstname,First Name,nvarchar,recommended,False,,,true,0,0,0,0,0,3,0,1,0,0,0,,,,Lead,First Name,FirstName
 followemail,,,,False,,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Follow Email Activity,Follow_Email_Activity__c
 fullname,Name,nvarchar,none,False,,,true,2,4,0,3,0,4,0,7,0,0,0,,,,Lead,Full Name,Name
-goalenddate,,,,False,,,false,0,0,0,0,0,0,0,3,0,0,0,,,,,,
-goalownerid,,,,False,,,false,0,0,0,0,0,0,0,2,0,0,0,,,,,,
-goalstartdate,,,,False,,,false,0,0,0,0,0,0,0,3,0,0,0,,,,,,
-internalemailaddress,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-invoicenumber,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-isamount,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-isfiscalperiodgoal,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-isocurrencycode,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-ispriceoverridden,,,,False,,,false,0,0,0,0,0,0,0,6,0,0,0,,,,,,
-isproductoverridden,,,,False,,,false,0,0,0,0,0,0,0,4,0,0,0,,,,,,
 jobtitle,,,,False,,,true,1,0,0,0,0,0,0,1,0,0,0,,,,Lead,Title,Title
 lastname,Last Name,nvarchar,recommended,False,,,true,0,0,0,0,0,3,0,1,0,0,0,,,,Lead,Last Name,LastName
 leadid,Lead,uniqueidentifier,required,False,,,true,0,14,0,0,0,2,0,0,0,0,0,,,,Lead,Lead,Lead__c
 leadqualitycode,,,,False,,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Rating,Rating__c
 leadsourcecode,OOB Lead Source,picklist,none,False,,"1: Advertisement, 2: Employee Referral, 3: External Referral, 4: Partner, 5: Public Relations, 6: Seminar, 7: Trade Show, 8: Web, 9: Word of Mouth, 10: Other",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-manualdiscountamount,,,,False,,,false,0,0,0,0,0,0,0,9,0,0,0,,,,,,
-mimetype,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
 mobilephone,,,,False,,,true,2,0,0,0,0,0,0,1,0,0,0,,,,Lead,Mobile Phone,MobilePhone
 modifiedby,Modified By,lookup,none,False,,,true,0,0,0,0,0,1,0,0,0,0,0,,,,Lead,Last Modified By ID,LastModifiedById
 modifiedon,Modified On,datetime,none,False,,,true,0,2,0,0,0,0,0,4,0,0,0,,,,Lead,Last Modified Date,LastModifiedDate
 msdyn_leadkpiid,,,,False,,,false,0,0,0,0,0,0,0,0,0,1,0,,,,,,
 msdyn_predictivescoreid,,,,False,,,false,0,0,0,0,0,0,0,0,0,1,0,,,,,,
-objecttypecode,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
 originatingcaseid,,,,False,,,false,0,0,0,0,0,0,0,0,0,1,0,,,,,,
 originatingleadid,,,,False,,,false,0,0,0,0,0,0,0,2,0,2,0,,,,,,
 ownerid,Owner,owner,systemrequired,False,,,true,3,12,0,1,0,24,0,22,0,0,0,,,,Lead,Owner ID,OwnerId
 parentaccountid,Parent Account for lead,lookup,none,False,,,true,8,13,0,1,0,12,0,4,0,0,0,,,,Lead,Converted Account ID,ConvertedAccountId
-parentgoalid,,,,False,,,false,0,0,0,0,0,0,0,2,0,0,0,,,,,,
-parentsystemuserid,,,,False,,,false,0,0,0,0,0,0,0,2,0,0,0,,,,,,
 preferredcontactmethodcode,,,,False,,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Preferred Method Of Contact,Preferred_Method_Of_Contact__c
-priceperunit,,,,False,,,false,0,0,0,0,0,0,0,8,0,0,0,,,,,,
 prioritycode,,,,False,,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Priority,Priority__c
-productdescription,,,,False,,,false,0,0,0,0,0,0,0,13,0,0,0,,,,,,
-productname,,,,False,,,false,0,0,0,0,0,0,0,3,0,0,0,,,,,,
 qualifyingopportunityid,Qualifying Opportunity,lookup,none,False,,,true,1,5,0,0,0,1,0,0,0,0,0,,,,Lead,Qualifying Opportunity,Qualifying_Opportunity__c
-queryentitytype,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-record1roleid,,,,False,,,false,0,0,0,0,0,0,0,3,0,0,0,,,,,,
-record2roleid,,,,False,,,false,0,0,0,0,0,0,0,5,0,0,0,,,,,,
 regardingobjectid,Regarding,lookup,none,False,,,false,0,0,0,1,0,0,0,8,0,1,0,,,,,,
-requestdeliveryby,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-rolluponlyfromchildgoals,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-rollupqueryactualmoneyid,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-rolluprulestep1_1,,,,False,,,false,0,0,0,0,0,0,1,0,0,0,0,,,,,,
-rolluprulestep1_2,,,,False,,,false,0,0,0,0,0,0,1,0,0,0,0,,,,,,
-rolluprulestep1_3,,,,False,,,false,0,0,0,0,0,0,1,0,0,0,0,,,,,,
-rolluprulestep1_4,,,,False,,,false,0,0,0,0,0,0,1,0,0,0,0,,,,,,
-rolluprulestep1_5,,,,False,,,false,0,0,0,0,0,0,1,0,0,0,0,,,,,,
-rolluprulestep1_6,,,,False,,,false,0,0,0,0,0,0,1,0,0,0,0,,,,,,
-rolluprulestep1_7,,,,False,,,false,0,0,0,0,0,0,1,0,0,0,0,,,,,,
-rolluprulestep1_8,,,,False,,,false,0,0,0,0,0,0,1,0,0,0,0,,,,,,
-rolluprulestep1_9,,,,False,,,false,0,0,0,0,0,0,1,0,0,0,0,,,,,,
-salesorderdetailname,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-salesrepid,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
 salesstagecode,,,,False,,,true,0,0,0,0,0,5,0,0,0,0,0,,,,Lead,Sales Stage Code,Sales_Stage_Code__c
-scheduledend,,,,False,,,false,0,0,0,1,0,0,0,2,0,0,0,,,,,,
-setattributevaluestep4_1,,,,False,,,false,0,0,0,0,0,0,2,0,0,0,0,,,,,,
-setattributevaluestep4_2,,,,False,,,false,0,0,0,0,0,0,2,0,0,0,0,,,,,,
-setattributevaluestep4_3,,,,False,,,false,0,0,0,0,0,0,2,0,0,0,0,,,,,,
-setattributevaluestep4_4,,,,False,,,false,0,0,0,0,0,0,2,0,0,0,0,,,,,,
-setattributevaluestep4_5,,,,False,,,false,0,0,0,0,0,0,2,0,0,0,0,,,,,,
-shipto_line1,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-shipto_line2,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-shipto_line3,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-shipto_name,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-shipto_postalcode,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-shipto_stateorprovince,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
 statecode,Status,state,systemrequired,False,,,true,0,12,0,1,0,10,1,20,0,0,0,,,,Lead,Zip/Postal Code,PostalCode
 statuscode,Status Reason,status,none,False,,,true,3,2,0,1,0,5,0,6,0,0,0,,,,Lead,Status,Status
 subject,Topic,nvarchar,required,False,,,true,3,15,0,2,0,18,1,3,0,0,0,,,,Lead,Topic,Topic__c
-tax,,,,False,,,false,0,0,0,0,0,0,0,8,0,0,0,,,,,,
-teamtype,,,,False,,,false,0,0,0,0,0,0,0,3,0,0,0,,,,,,
 telephone1,Business Phone,nvarchar,none,False,,,true,3,0,0,0,0,0,0,1,0,0,0,,,,Lead,Phone,Phone
-title,,,,False,,,false,0,0,0,0,0,0,0,2,0,0,0,,,,,,

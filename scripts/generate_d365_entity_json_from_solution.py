@@ -2291,21 +2291,17 @@ def enrich_entity(entity_name, root, property_to_field, class_to_entity,
                 all_referenced.add(fn.lower())
 
     for formula in formulas:
+        # The formula field itself belongs to this entity; source_fields
+        # are from related entities (rollup aggregation targets) and must
+        # not create stubs here.
         all_referenced.add(formula['field'].lower())
-        for sf in formula['source_fields']:
-            all_referenced.add(sf['field'].lower())
 
-    for plugin in plugin_refs:
-        # Only create field stubs for plugins targeting this entity (or unknown target)
-        tgt = plugin.get('target_entity', '')
-        if tgt and tgt != entity_name:
-            continue
-        for fn in plugin['fields_read']:
-            all_referenced.add(fn.lower())
-        for fn in plugin['fields_written']:
-            all_referenced.add(fn.lower())
-        for fn in plugin['fields_filtered']:
-            all_referenced.add(fn.lower())
+    # Plugins are NOT used for stub creation.  Plugin field extraction is
+    # entity-agnostic — a single C# file references fields from every
+    # entity it touches (Retrieve calls, FetchXML joins, etc.).  Using
+    # these to create stubs causes massive cross-entity contamination.
+    # Plugin per-field refs are still assigned to fields that exist from
+    # other reliable sources, and entity-level sections.plugins is intact.
 
     for rel in relationships:
         if rel['referencing_attribute']:

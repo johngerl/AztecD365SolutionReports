@@ -19,8 +19,8 @@
 | **Count Reports** | 0 |
 | **Count Dashboards** | 0 |
 | **Count Workflows** | 261 |
-| **Count Formulas & Rollups** | 71 |
-| **Count Plugins** | 343 |
+| **Count Formulas & Rollups** | 12 |
+| **Count Plugins** | 190 |
 | **Count PCF Controls** | 0 |
 | **Count Relationships** | 14 |
 | **Count Ribbon Customizations** | 0 |
@@ -337,208 +337,132 @@
 
 ## 1. Field Definitions
 
-Total fields: **198**
+Total fields: **122**
 
 | # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
 |---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
 | 1 | [!process_custom_attribute_url_](#%21process_custom_attribute_url_) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 2 | [activityid](#activityid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 3 | [activitytypecode](#activitytypecode) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 4 | [actualclosedate](#actualclosedate) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Close Date | CloseDate | [2](#2.%20Forms) | [27](#3.%20Views) | [5](#4.%20Chart%20Visualizations) |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 5 | [actualvalue](#actualvalue) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Actual Revenue | Actual_Revenue__c |  | [15](#3.%20Views) | [2](#4.%20Chart%20Visualizations) |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 6 | [actualvalue_base](#actualvalue_base) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Actual Revenue Base | Actual_Revenue_Base__c |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 7 | [adx_resolutiondate](#adx_resolutiondate) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 8 | [amountdatatype](#amountdatatype) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 9 | [azt_accountclassification](#azt_accountclassification) | Account Classification | picklist | 276530000: A, 276530001: B, 276530002: C, 100000001: D, 100000000: E, 276530003: S, 276530004: N/A | Yes | none |  | C R U | true | Opportunity | CRM Account Classification | CRM_Account_Classification__c | Opportunity | Account Classification | Account_Classification__c | [2](#2.%20Forms) | [9](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 10 | [azt_addonopportunitytotal](#azt_addonopportunitytotal) | Add-On Opportunity Total | money |  | Yes | none |  | R | true | Opportunity | CRM Add On Opportunity Total | CRM_Add_On_Opportunity_Total__c | Opportunity | CRM Initial Opportunity Total | CRM_Initial_Opportunity_Total__c | [2](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 11 | [azt_addonopportunitytotal_base](#azt_addonopportunitytotal_base) | Add-On Opportunity Total (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 12 | [azt_assignedamid](#azt_assignedamid) | Assigned AM | lookup |  | Yes | none |  | C R U | true | Opportunity | CRM Assigned AM | CRM_Assigned_AM__c | Opportunity | Assigned Am | Assigned_Am__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 13 | [azt_committoestimatedclose](#azt_committoestimatedclose) | Commit to Pipeline? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  | Opportunity | Commit To Pipeline | Commit_To_Pipeline__c | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 14 | [azt_compplanamountid](#azt_compplanamountid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 15 | [azt_dayssincecreated](#azt_dayssincecreated) | Days Since Created | int |  | Yes | none |  | C R U | true |  |  |  | Opportunity | Days Since Created | Days_Since_Created__c | [2](#2.%20Forms) | [3](#3.%20Views) |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 16 | [azt_dayssinceprobabilitychanged](#azt_dayssinceprobabilitychanged) | Days Since Probability Changed | int |  | Yes | none |  | R | true | Opportunity | CRM Days Since Probability Changed | CRM_Days_Since_Probability_Changed__c | Opportunity | Days Since Probability Changed | Days_Since_Probability_Changed__c | [2](#2.%20Forms) | [4](#3.%20Views) |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 17 | [azt_defaultfreightamount](#azt_defaultfreightamount) | Default Freight Amount | money |  | Yes | none |  | C R U | true | Opportunity | CRM Default Freight Amount | CRM_Default_Freight_Amount__c | Opportunity | Freight Amount | Freight_Amount__c | [2](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 18 | [azt_defaultfreightamount_base](#azt_defaultfreightamount_base) | Default Freight Amount (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 19 | [azt_deliverytype](#azt_deliverytype) | Delivery Type | picklist | 276530000: Internet, 276530001: LAN, 276530002: Print, 276530003: LAN & Print, 276530004: Internet & Print, 276530005: Internet Year 2, 276530006: Internet Year 3+, 276530007: SA, 276530008: WAN | Yes | none |  | C R U | true | Opportunity | CRM Delivery Type | CRM_Delivery_Type__c | Opportunity | Delivery Type | Delivery_Type__c | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 20 | [azt_discretionarydiscount](#azt_discretionarydiscount) | Discretionary Discount | money |  | Yes | none |  | R | true | Opportunity | CRM Discretionary Discount | CRM_Discretionary_Discount__c | Opportunity | CRM Discretionary Discount | CRM_Discretionary_Discount__c | [2](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 21 | [azt_discretionarydiscount_base](#azt_discretionarydiscount_base) | Discretionary Discount (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 22 | [azt_discretionarydiscountamt](#azt_discretionarydiscountamt) | Discretionary Discount Amt | money |  | Yes | none |  | C R U | true |  |  |  | Opportunity | CRM Discretionary Discount | CRM_Discretionary_Discount__c | [2](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 23 | [azt_discretionarydiscountamt_base](#azt_discretionarydiscountamt_base) | Discretionary Discount Amt (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 24 | [azt_expectedrenewalvalue](#azt_expectedrenewalvalue) | Expected Renewal Value | money |  | Yes | none |  | C R U | true |  |  |  | Opportunity | Expected Renewal Amount | Expected_Renewal_Amount__c | [2](#2.%20Forms) | [8](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 25 | [azt_expectedrenewalvalue_base](#azt_expectedrenewalvalue_base) | Expected Renewal Value (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 26 | [azt_freightamtapproved](#azt_freightamtapproved) | Freight Amt Approved? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  | Opportunity | Freight Amt Approved | Freight_Amt_Approved__c | [2](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 27 | [azt_fundingsource](#azt_fundingsource) | Funding Source | picklist | 276530000: Annual Budget, 276530001: Discretionary Budget, 276530002: Grant - Federal, 276530003: Grant - Private, 276530004: Grant - State, 276530005: Grant - Perkins, 276530006: Title 1 Funds, 276530007: Other, 276530008: Use or Lose Funds | Yes | none |  | C R U | true | Opportunity | Funding Source | Funding_Source__c | Opportunity | Funding Source | Funding_Source__c | [4](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 28 | [azt_historicalowner](#azt_historicalowner) | Historical Owner | nvarchar |  | Yes | none |  | C R U | true | Opportunity | CRM Historical Owner | CRM_Historical_Owner__c | Opportunity | Historical Owner | Historical_Owner__c |  |  |  |  |  | [3](#7.%20Workflows) |  |  |  |  |  |  |
-| 29 | [azt_initialopportunitytotal](#azt_initialopportunitytotal) | Initial Opportunity Total | money |  | Yes | none |  | R | true | Opportunity | CRM Initial Opportunity Total | CRM_Initial_Opportunity_Total__c | Opportunity | CRM Initial Opportunity Total | CRM_Initial_Opportunity_Total__c | [2](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 30 | [azt_initialopportunitytotal_base](#azt_initialopportunitytotal_base) | Initial Opportunity Total (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 31 | [azt_internalaztecnotes](#azt_internalaztecnotes) | Internal Aztec Notes | ntext |  | Yes | none |  | C R U | true | Opportunity | CRM Internal Aztec Notes | CRM_Internal_Aztec_Notes__c | Opportunity | CRM Internal Aztec Notes | CRM_Internal_Aztec_Notes__c | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 32 | [azt_invoicenumber](#azt_invoicenumber) | Invoice Number | nvarchar |  | Yes | none |  | C R U | false | Opportunity | CRM Invoice Number | CRM_Invoice_Number__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 33 | [azt_iscrossselloppty](#azt_iscrossselloppty) | Is Cross-sell Oppty? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true | Opportunity | Cross-Sell | Cross_Sell__c | Opportunity | Cross-Sell | Cross_Sell__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 34 | [azt_lastactivitydate](#azt_lastactivitydate) | Last Activity Date | datetime |  | Yes | none |  | C R U | true | Opportunity | Legacy Last Activity Date | Legacy_Last_Activity_Date__c | Opportunity | Last Activity | LastActivityDate | [2](#2.%20Forms) | [1](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 35 | [azt_lastmodifiedbyid](#azt_lastmodifiedbyid) | Last Modified By | lookup |  | Yes | none |  | C R U | true | Opportunity | Legacy Modified By | Legacy_Modified_By__c | Opportunity | Last Modified By ID | LastModifiedById | [2](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 36 | [azt_leadsource](#azt_leadsource) | Lead Source (Old) | picklist |  | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 37 | [azt_leadsourceid](#azt_leadsourceid) | Lead Source | lookup |  | Yes | none |  | C R U | true | Opportunity | CRM Lead Source | CRM_Lead_Source__c | Opportunity | Lead Source | Lead_Source__c | [1](#2.%20Forms) | [1](#3.%20Views) |  |  |  | [8](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 38 | [azt_licenseterm](#azt_licenseterm) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 39 | [azt_masecommission](#azt_masecommission) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 40 | [azt_opportunitynumber](#azt_opportunitynumber) | Opp# | nvarchar |  | Yes | none |  | C R U S | true | Opportunity | CRM Opportunity Number | CRM_Opportunity_Number__c | Opportunity | Opportunity Summary | Opportunity_Summary__c | [2](#2.%20Forms) | [7](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 41 | [azt_opportunityproductcategory](#azt_opportunityproductcategory) | Opportunity Product Category | picklist | 276530000: P12 & Legacy, 276530001: Kaplan Book, 276530002: GED Flash, 276530003: P12 Prep, 276530004: Legacy, 276530005: APT - Free, 276530006: APT - Paid, 276530007: OPT - Free, 276530008: OPT - Paid, 276530009: Workbooks, 276530010: LSE Booklets | Yes | none |  | C R U Re | true | Opportunity | CRM Opportunity Product Category | CRM_Opportunity_Product_Category__c | Opportunity | Opportunity Product Category | Opportunity_Product_Category__c | [2](#2.%20Forms) | [25](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 42 | [azt_opportunitytype](#azt_opportunitytype) | Opportunity Type | picklist | 276530005: Renewal, 276530004: Initial, 276530002: Print, 276530003: Add-On, 276530001: Vouchers, 276530000: Pilot, 276530008: Professional Development, 276530006: Monthly, 100000000: Win Back, 327630000: Sample, 100000001: PA, 276530007: Other, 327630001: Add On - Reseller | Yes | none |  | C R U S Re | true | Opportunity | Type | Type | Opportunity | Opportunity Type | Opportunity_Type__c | [4](#2.%20Forms) | [57](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 43 | [azt_otheropportunitytotal](#azt_otheropportunitytotal) | Other Opportunity Total | money |  | Yes | none |  | R | true | Opportunity | CRM Other Opportunity Total | CRM_Other_Opportunity_Total__c | Opportunity | CRM Initial Opportunity Total | CRM_Initial_Opportunity_Total__c | [2](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 44 | [azt_otheropportunitytotal_base](#azt_otheropportunitytotal_base) | Other Opportunity Total (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 45 | [azt_parentopportunityid](#azt_parentopportunityid) | Parent Opportunity | lookup |  | Yes | none |  | C R U | true | Opportunity | CRM Parent Opportunity Name | CRM_Parent_Opportunity_Name__c | Opportunity | Parent Opportunity | Parent_Opportunity__c |  |  |  |  |  | [1](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 46 | [azt_payablecommission](#azt_payablecommission) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 47 | [azt_percentagepaid](#azt_percentagepaid) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 48 | [azt_pilotopportunitytotal](#azt_pilotopportunitytotal) | Pilot Opportunity Total | money |  | Yes | none |  | R | true | Opportunity | CRM Pilot Opportunity Total | CRM_Pilot_Opportunity_Total__c | Opportunity | CRM Initial Opportunity Total | CRM_Initial_Opportunity_Total__c | [2](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 49 | [azt_pilotopportunitytotal_base](#azt_pilotopportunitytotal_base) | Pilot Opportunity Total (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 50 | [azt_pipelinestage](#azt_pipelinestage) | Pipeline Stage | picklist | 276530000: Identify, 276530001: Qualified, 276530002: Prospecting, 276530003: Cultivating, 276530004: Proposing, 276530005: Closing, 276530006: Delivering, 276530007: Awaiting Payment, 276530008: Won | Yes | none |  | C R U Re | true | Opportunity | Stage | StageName | Opportunity | Pipeline Stage | Pipeline_Stage__c | [4](#2.%20Forms) | [23](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 51 | [azt_previewcompleted](#azt_previewcompleted) | Preview Completed | picklist | 276530000: Yes, 276530001: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 52 | [azt_previousprobability](#azt_previousprobability) | Previous Probability | nvarchar |  | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 53 | [azt_printopportunitytotal](#azt_printopportunitytotal) | Print Opportunity Total | money |  | Yes | none |  | R | true | Opportunity | CRM Print Opportunity Total | CRM_Print_Opportunity_Total__c | Opportunity | CRM Initial Opportunity Total | CRM_Initial_Opportunity_Total__c | [2](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 54 | [azt_printopportunitytotal_base](#azt_printopportunitytotal_base) | Print Opportunity Total (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 55 | [azt_probability](#azt_probability) | Probability | picklist | 276530010: 1%, 276530000: 10%, 276530001: 20%, 276530002: 30%, 100000001: 35%, 276530003: 40%, 276530004: 50%, 100000000: 55%, 276530005: 60%, 276530006: 70%, 100530010: 75%, 276530007: 80%, 276530008: 90%, 327630000: 95%, 276530009: 99% | Yes | none |  | C R U Re | true | Opportunity | CRM Probability | CRM_Probability__c | Opportunity | CRM Probability | CRM_Probability__c | [4](#2.%20Forms) | [32](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 56 | [azt_probabilitychangedon](#azt_probabilitychangedon) | Probability Changed On | datetime |  | Yes | none |  | C R U | true | Opportunity | Probability Last Changed | Probability_Last_Changed__c | Opportunity | Probability Last Changed | Probability_Last_Changed__c |  | [7](#3.%20Views) |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 57 | [azt_probabilityincreased](#azt_probabilityincreased) | Probability Increased? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  | Opportunity | Probability Increased | Probability_Increased__c |  | [1](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 58 | [azt_quotesent](#azt_quotesent) | Quote Sent | picklist | 276530000: Yes, 276530001: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 59 | [azt_recordowner](#azt_recordowner) |  |  |  | Yes |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 60 | [azt_recordownerid](#azt_recordownerid) | Record Owner | lookup |  | Yes | none |  | C R U | true | Opportunity | Record Owner | OwnerId | Opportunity | Record Type ID | RecordTypeId | [6](#2.%20Forms) | [65](#3.%20Views) | [32](#4.%20Chart%20Visualizations) |  |  | [39](#7.%20Workflows) |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 61 | [azt_renewalnotes](#azt_renewalnotes) | Renewal Notes | nvarchar |  | Yes | none |  | C R U | true | Opportunity | Renewal Notes | Renewal_Notes__c | Opportunity | Renewal Notes | Renewal_Notes__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 62 | [azt_renewalopportunitytotal](#azt_renewalopportunitytotal) | Renewal Opportunity Total | money |  | Yes | none |  | R | true | Opportunity | CRM Renewal Opportunity Total | CRM_Renewal_Opportunity_Total__c | Opportunity | CRM Renewal Opportunity Total | CRM_Renewal_Opportunity_Total__c | [2](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 63 | [azt_renewalopportunitytotal_base](#azt_renewalopportunitytotal_base) | Renewal Opportunity Total (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 64 | [azt_requestedfreightamt](#azt_requestedfreightamt) | Requested Freight Amt | money |  | Yes | none |  | C R U | true | Opportunity | CRM Requested Freight Amount | CRM_Requested_Freight_Amount__c | Opportunity | Requested Freight Amt | Requested_Freight_Amt__c | [2](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 65 | [azt_requestedfreightamt_base](#azt_requestedfreightamt_base) | Requested Freight Amt (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 66 | [azt_salesstage](#azt_salesstage) | Sales Stage | picklist |  | Yes | none |  | C R U | true |  |  |  | Opportunity | Sales Stage | Sales_Stage__c |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 67 | [azt_webinarpresentationcompleted](#azt_webinarpresentationcompleted) | Webinar/Presentation Completed | picklist | 276530000: Yes, 276530001: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 68 | [azt_winbackopportunitytotal](#azt_winbackopportunitytotal) | Win-Back Opportunity Total | money |  | Yes | none |  | R | true | Opportunity | CRM Win Back Opportunity Total | CRM_Win_Back_Opportunity_Total__c | Opportunity | CRM Win Back Opportunity Total | CRM_Win_Back_Opportunity_Total__c | [2](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 69 | [azt_winbackopportunitytotal_base](#azt_winbackopportunitytotal_base) | Win-Back Opportunity Total (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 70 | [baseamount](#baseamount) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 71 | [billto_line1](#billto_line1) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 72 | [billto_line2](#billto_line2) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 73 | [billto_line3](#billto_line3) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 74 | [billto_name](#billto_name) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 75 | [billto_postalcode](#billto_postalcode) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 76 | [billto_stateorprovince](#billto_stateorprovince) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 77 | [body](#body) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 78 | [budgetamount](#budgetamount) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Budget Amount | Budget_Amount__c | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 79 | [budgetstatus](#budgetstatus) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 80 | [businessprocessflowinstanceid](#businessprocessflowinstanceid) | Business Process Flow Instance Id | uniqueidentifier |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 81 | [captureproposalfeedback](#captureproposalfeedback) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Proposal Feedback Captured | Proposal_Feedback_Captured__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 82 | [category](#category) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 83 | [closeprobability](#closeprobability) | Probability Number | int |  | No | none |  | C R U | true | Opportunity | CRM Probability Number | CRM_Probability_Number__c | Opportunity | Probability Number | Probability_Number__c | [2](#2.%20Forms) | [2](#3.%20Views) | [3](#4.%20Chart%20Visualizations) |  |  | [2](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 84 | [completefinalproposal](#completefinalproposal) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Final Proposal Ready | Final_Proposal_Ready__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 85 | [completeinternalreview](#completeinternalreview) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Complete Internal Review | Complete_Internal_Review__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 86 | [conditionbranchstep2_1](#conditionbranchstep2_1) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [2](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 87 | [confirminterest](#confirminterest) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Confirm Interest | Confirm_Interest__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 88 | [consideronlygoalownersrecords](#consideronlygoalownersrecords) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 89 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | true |  |  |  | Opportunity | Created By ID | CreatedById | [2](#2.%20Forms) | [9](#3.%20Views) | [14](#4.%20Chart%20Visualizations) |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 90 | [createdon](#createdon) | Created On | datetime |  | No | none |  | R | true |  |  |  | Opportunity | Created Date | CreatedDate | [2](#2.%20Forms) | [39](#3.%20Views) | [3](#4.%20Chart%20Visualizations) |  |  |  | [1](#9.%20Formulas%20and%20Rollups) | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 91 | [currentsituation](#currentsituation) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | CRM Current Situation | CRM_Current_Situation__c | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 92 | [customerid](#customerid) | Potential Customer | customer |  | No | required |  | C R U Re | true |  |  |  | Opportunity | Potential Customer | Potential_Customer__c |  | [48](#3.%20Views) |  |  |  | [14](#7.%20Workflows) |  | [11](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 93 | [customerneed](#customerneed) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Customer Need | Customer_Need__c | [2](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 94 | [customerpainpoints](#customerpainpoints) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 95 | [datefulfilled](#datefulfilled) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 96 | [decisionmaker](#decisionmaker) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Decision Maker | Decision_Maker__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 97 | [defaultuomid](#defaultuomid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 98 | [description](#description) | Description | ntext |  | No | none |  | R | true |  |  |  | Opportunity | Description | Description | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 99 | [developproposal](#developproposal) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Develop Proposal | Develop_Proposal__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 100 | [discountamount](#discountamount) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Discount Amount | Discount_Amount__c | [2](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 101 | [discountpercentage](#discountpercentage) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Opportunity Discount | Opportunity_Discount__c | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 102 | [emailaddress](#emailaddress) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 103 | [estimatedclosedate](#estimatedclosedate) | Est. Close Date | datetime |  | No | none |  | C R U So G Re | true | Opportunity | Close Date | CRM_Estimated_Close_Date__c | Opportunity | Expected Close Date | Expected_Close_Date__c | [3](#2.%20Forms) | [81](#3.%20Views) | [7](#4.%20Chart%20Visualizations) |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 104 | [estimatedvalue](#estimatedvalue) | Est. Revenue | money |  | No | none |  | C R U So G Re | true | Opportunity | CRM Estimated Revenue | CRM_Estimated_Revenue__c | Opportunity | Estimated Revenue | Estimated_Revenue__c | [4](#2.%20Forms) | [41](#3.%20Views) | [8](#4.%20Chart%20Visualizations) |  |  | [2](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 105 | [evaluatefit](#evaluatefit) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Evaluate Fit | Evaluate_Fit__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 106 | [ext_amt](#ext_amt) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 107 | [extendedamount](#extendedamount) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [7](#9.%20Formulas%20and%20Rollups) | [13](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 108 | [fetchxml](#fetchxml) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 109 | [filedebrief](#filedebrief) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | File Debrief | File_Debrief__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 110 | [filename](#filename) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 111 | [goalenddate](#goalenddate) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 112 | [goalownerid](#goalownerid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 113 | [goalstartdate](#goalstartdate) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 114 | [identifycompetitors](#identifycompetitors) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Identify Competitors | Identify_Competitors__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 115 | [identifycustomercontacts](#identifycustomercontacts) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Identify Customer Contacts | Identify_Customer_Contacts__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 116 | [identifypursuitteam](#identifypursuitteam) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Identify Sales Team | Identify_Sales_Team__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 117 | [initialcommunication](#initialcommunication) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 118 | [internalemailaddress](#internalemailaddress) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 119 | [invoicenumber](#invoicenumber) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 120 | [isamount](#isamount) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 121 | [isfiscalperiodgoal](#isfiscalperiodgoal) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 122 | [isocurrencycode](#isocurrencycode) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 123 | [ispriceoverridden](#ispriceoverridden) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 124 | [isproductoverridden](#isproductoverridden) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 125 | [isrevenuesystemcalculated](#isrevenuesystemcalculated) | Revenue | bit | 1: System Calculated, 0: User Provided | No | none |  | C R U | true | Opportunity | CRM Revenue | CRM_Revenue__c | Opportunity | Revenue | Revenue__c | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 126 | [jobtitle](#jobtitle) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 127 | [manualdiscountamount](#manualdiscountamount) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 128 | [mimetype](#mimetype) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 129 | [mobilephone](#mobilephone) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 130 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none |  | R | true |  |  |  | Opportunity | Last Modified Date | LastModifiedDate |  | [1](#3.%20Views) |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 131 | [msa_partnerid](#msa_partnerid) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Partner | Partner__c |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 132 | [msa_partneroppid](#msa_partneroppid) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Partner Contact | Partner_Contact__c |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 133 | [msdyn_forecastcategory](#msdyn_forecastcategory) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Forecast Category | ForecastCategory | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 134 | [msdyn_opportunitykpiid](#msdyn_opportunitykpiid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 135 | [msdyn_predictivescoreid](#msdyn_predictivescoreid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 136 | [name](#name) | Topic | nvarchar |  | No | required |  | C R U S Re | true |  |  |  | Opportunity | Name | Name | [2](#2.%20Forms) | [75](#3.%20Views) |  |  |  | [19](#7.%20Workflows) |  | [23](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 137 | [need](#need) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 138 | [objecttypecode](#objecttypecode) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 139 | [opportunityid](#opportunityid) | Opportunity | uniqueidentifier |  | No | required |  | R | true |  |  |  | Opportunity | OpportunityId | OpportunityId__c |  | [65](#3.%20Views) |  |  |  | [11](#7.%20Workflows) |  | [32](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 140 | [opportunityratingcode](#opportunityratingcode) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | OpportunityId | OpportunityId__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 141 | [originatingleadid](#originatingleadid) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Originating Lead | Originating_Lead__c | [2](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 142 | [ownerid](#ownerid) | Owner | owner |  | No | systemrequired |  | C R U Re | true | Opportunity | Record Type | RecordTypeId | Opportunity | Owner ID | OwnerId | [4](#2.%20Forms) | [26](#3.%20Views) | [9](#4.%20Chart%20Visualizations) |  |  | [25](#7.%20Workflows) |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 143 | [owningbusinessunit](#owningbusinessunit) | Owning Business Unit | lookup |  | No | none |  | R | true |  |  |  | Opportunity | Owning Business Unit | Owning_Business_Unit__c |  | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 144 | [parentaccountid](#parentaccountid) | Account | lookup |  | No | none |  | C R U S So G | true |  |  |  | Opportunity | Account ID | AccountId | [5](#2.%20Forms) | [1](#3.%20Views) |  |  |  | [13](#7.%20Workflows) |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 145 | [parentcontactid](#parentcontactid) | Contact | lookup |  | No | none |  | C R U S So G | true | Opportunity | Contact name | ContactId | Opportunity | Contact ID | ContactId | [5](#2.%20Forms) | [1](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 146 | [parentgoalid](#parentgoalid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 147 | [parentsystemuserid](#parentsystemuserid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 148 | [presentfinalproposal](#presentfinalproposal) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Present Final Proposal | Present_Final_Proposal__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 149 | [presentproposal](#presentproposal) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Presented Proposal | Presented_Proposal__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 150 | [pricelevelid](#pricelevelid) | Price List | lookup |  | No | required |  | C R U | true | Opportunity | Price Book | Pricebook2Id | Opportunity | Price List | Price_List__c | [2](#2.%20Forms) |  |  |  |  | [7](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 151 | [priceperunit](#priceperunit) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 152 | [prioritycode](#prioritycode) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Priority | Priority__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 153 | [productdescription](#productdescription) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [13](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 154 | [productname](#productname) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 155 | [proposedsolution](#proposedsolution) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Proposed Solution | Proposed_Solution__c | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 156 | [purchaseprocess](#purchaseprocess) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Purchase Process | Purchase_Process__c | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 157 | [purchasetimeframe](#purchasetimeframe) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | CRM Purchase Timeframe | CRM_Purchase_Timeframe__c | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 158 | [pursuitdecision](#pursuitdecision) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Decide Gonogo | Decide_Gonogo__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 159 | [qualificationcomments](#qualificationcomments) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 160 | [queryentitytype](#queryentitytype) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 161 | [quotecomments](#quotecomments) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 162 | [record1roleid](#record1roleid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 163 | [record2roleid](#record2roleid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 164 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 165 | [requestdeliveryby](#requestdeliveryby) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 166 | [resolvefeedback](#resolvefeedback) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Feedback Resolved | Feedback_Resolved__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 167 | [rolluponlyfromchildgoals](#rolluponlyfromchildgoals) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 168 | [rollupqueryactualmoneyid](#rollupqueryactualmoneyid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 169 | [rolluprulestep1_1](#rolluprulestep1_1) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [8](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 170 | [rolluprulestep1_2](#rolluprulestep1_2) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [8](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 171 | [rolluprulestep1_3](#rolluprulestep1_3) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [8](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 172 | [rolluprulestep1_4](#rolluprulestep1_4) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [8](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 173 | [rolluprulestep1_5](#rolluprulestep1_5) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [8](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 174 | [salesorderdetailname](#salesorderdetailname) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 175 | [salesrepid](#salesrepid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 176 | [salesstage](#salesstage) | Deprecated Sales Stage | picklist |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 177 | [salesstagecode](#salesstagecode) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Process Code | Process_Code__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 178 | [scheduledend](#scheduledend) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 179 | [sendthankyounote](#sendthankyounote) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Send Thank You Note | Send_Thank_You_Note__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 180 | [setattributevaluestep4_1](#setattributevaluestep4_1) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [2](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 181 | [setattributevaluestep4_2](#setattributevaluestep4_2) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [2](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 182 | [setattributevaluestep4_3](#setattributevaluestep4_3) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [2](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 183 | [setattributevaluestep4_4](#setattributevaluestep4_4) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [2](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 184 | [setattributevaluestep4_5](#setattributevaluestep4_5) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [2](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 185 | [shipto_line1](#shipto_line1) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 186 | [shipto_line2](#shipto_line2) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 187 | [shipto_line3](#shipto_line3) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 188 | [shipto_name](#shipto_name) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 189 | [shipto_postalcode](#shipto_postalcode) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 190 | [shipto_stateorprovince](#shipto_stateorprovince) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 191 | [statecode](#statecode) | Status | state |  | No | systemrequired |  | R U F | true | Opportunity | CRM Status | CRM_Status__c | Opportunity | Status CRM | Status_CRM__c |  | [58](#3.%20Views) | [2](#4.%20Chart%20Visualizations) |  |  | [10](#7.%20Workflows) |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 192 | [statuscode](#statuscode) | Status Reason | status |  | No | none |  | C R U | true |  |  |  | Opportunity | Status | Status__c |  | [10](#3.%20Views) |  |  |  | [5](#7.%20Workflows) |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 193 | [tax](#tax) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 194 | [teamtype](#teamtype) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 195 | [title](#title) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 196 | [totalamountlessfreight](#totalamountlessfreight) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Total Prefreight Amount | Total_Prefreight_Amount__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 197 | [totallineitemamount](#totallineitemamount) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | CRM Total Line Item Discount Amount | CRM_Total_Line_Item_Discount_Amount__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 198 | [totaltax](#totaltax) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Total Tax | Total_Tax__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 2 | [actualclosedate](#actualclosedate) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Close Date | CloseDate | [2](#2.%20Forms) | [27](#3.%20Views) | [5](#4.%20Chart%20Visualizations) |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 3 | [actualvalue](#actualvalue) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Actual Revenue | Actual_Revenue__c |  | [15](#3.%20Views) | [2](#4.%20Chart%20Visualizations) |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 4 | [actualvalue_base](#actualvalue_base) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Actual Revenue Base | Actual_Revenue_Base__c |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 5 | [azt_accountclassification](#azt_accountclassification) | Account Classification | picklist | 276530000: A, 276530001: B, 276530002: C, 100000001: D, 100000000: E, 276530003: S, 276530004: N/A | Yes | none |  | C R U | true | Opportunity | CRM Account Classification | CRM_Account_Classification__c | Opportunity | Account Classification | Account_Classification__c | [2](#2.%20Forms) | [9](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 6 | [azt_addonopportunitytotal](#azt_addonopportunitytotal) | Add-On Opportunity Total | money |  | Yes | none |  | R | true | Opportunity | CRM Add On Opportunity Total | CRM_Add_On_Opportunity_Total__c | Opportunity | CRM Initial Opportunity Total | CRM_Initial_Opportunity_Total__c | [2](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 7 | [azt_addonopportunitytotal_base](#azt_addonopportunitytotal_base) | Add-On Opportunity Total (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 8 | [azt_assignedamid](#azt_assignedamid) | Assigned AM | lookup |  | Yes | none |  | C R U | true | Opportunity | CRM Assigned AM | CRM_Assigned_AM__c | Opportunity | Assigned Am | Assigned_Am__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 9 | [azt_committoestimatedclose](#azt_committoestimatedclose) | Commit to Pipeline? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  | Opportunity | Commit To Pipeline | Commit_To_Pipeline__c | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 10 | [azt_dayssincecreated](#azt_dayssincecreated) | Days Since Created | int |  | Yes | none |  | C R U | true |  |  |  | Opportunity | Days Since Created | Days_Since_Created__c | [2](#2.%20Forms) | [3](#3.%20Views) |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 11 | [azt_dayssinceprobabilitychanged](#azt_dayssinceprobabilitychanged) | Days Since Probability Changed | int |  | Yes | none |  | R | true | Opportunity | CRM Days Since Probability Changed | CRM_Days_Since_Probability_Changed__c | Opportunity | Days Since Probability Changed | Days_Since_Probability_Changed__c | [2](#2.%20Forms) | [4](#3.%20Views) |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 12 | [azt_defaultfreightamount](#azt_defaultfreightamount) | Default Freight Amount | money |  | Yes | none |  | C R U | true | Opportunity | CRM Default Freight Amount | CRM_Default_Freight_Amount__c | Opportunity | Freight Amount | Freight_Amount__c | [2](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 13 | [azt_defaultfreightamount_base](#azt_defaultfreightamount_base) | Default Freight Amount (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 14 | [azt_deliverytype](#azt_deliverytype) | Delivery Type | picklist | 276530000: Internet, 276530001: LAN, 276530002: Print, 276530003: LAN & Print, 276530004: Internet & Print, 276530005: Internet Year 2, 276530006: Internet Year 3+, 276530007: SA, 276530008: WAN | Yes | none |  | C R U | true | Opportunity | CRM Delivery Type | CRM_Delivery_Type__c | Opportunity | Delivery Type | Delivery_Type__c | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 15 | [azt_discretionarydiscount](#azt_discretionarydiscount) | Discretionary Discount | money |  | Yes | none |  | R | true | Opportunity | CRM Discretionary Discount | CRM_Discretionary_Discount__c | Opportunity | CRM Discretionary Discount | CRM_Discretionary_Discount__c | [2](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 16 | [azt_discretionarydiscount_base](#azt_discretionarydiscount_base) | Discretionary Discount (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 17 | [azt_discretionarydiscountamt](#azt_discretionarydiscountamt) | Discretionary Discount Amt | money |  | Yes | none |  | C R U | true |  |  |  | Opportunity | CRM Discretionary Discount | CRM_Discretionary_Discount__c | [2](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 18 | [azt_discretionarydiscountamt_base](#azt_discretionarydiscountamt_base) | Discretionary Discount Amt (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 19 | [azt_expectedrenewalvalue](#azt_expectedrenewalvalue) | Expected Renewal Value | money |  | Yes | none |  | C R U | true |  |  |  | Opportunity | Expected Renewal Amount | Expected_Renewal_Amount__c | [2](#2.%20Forms) | [8](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 20 | [azt_expectedrenewalvalue_base](#azt_expectedrenewalvalue_base) | Expected Renewal Value (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 21 | [azt_freightamtapproved](#azt_freightamtapproved) | Freight Amt Approved? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  | Opportunity | Freight Amt Approved | Freight_Amt_Approved__c | [2](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 22 | [azt_fundingsource](#azt_fundingsource) | Funding Source | picklist | 276530000: Annual Budget, 276530001: Discretionary Budget, 276530002: Grant - Federal, 276530003: Grant - Private, 276530004: Grant - State, 276530005: Grant - Perkins, 276530006: Title 1 Funds, 276530007: Other, 276530008: Use or Lose Funds | Yes | none |  | C R U | true | Opportunity | Funding Source | Funding_Source__c | Opportunity | Funding Source | Funding_Source__c | [4](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 23 | [azt_historicalowner](#azt_historicalowner) | Historical Owner | nvarchar |  | Yes | none |  | C R U | true | Opportunity | CRM Historical Owner | CRM_Historical_Owner__c | Opportunity | Historical Owner | Historical_Owner__c |  |  |  |  |  | [3](#7.%20Workflows) |  |  |  |  |  |  |
+| 24 | [azt_initialopportunitytotal](#azt_initialopportunitytotal) | Initial Opportunity Total | money |  | Yes | none |  | R | true | Opportunity | CRM Initial Opportunity Total | CRM_Initial_Opportunity_Total__c | Opportunity | CRM Initial Opportunity Total | CRM_Initial_Opportunity_Total__c | [2](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 25 | [azt_initialopportunitytotal_base](#azt_initialopportunitytotal_base) | Initial Opportunity Total (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 26 | [azt_internalaztecnotes](#azt_internalaztecnotes) | Internal Aztec Notes | ntext |  | Yes | none |  | C R U | true | Opportunity | CRM Internal Aztec Notes | CRM_Internal_Aztec_Notes__c | Opportunity | CRM Internal Aztec Notes | CRM_Internal_Aztec_Notes__c | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 27 | [azt_invoicenumber](#azt_invoicenumber) | Invoice Number | nvarchar |  | Yes | none |  | C R U | false | Opportunity | CRM Invoice Number | CRM_Invoice_Number__c |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 28 | [azt_iscrossselloppty](#azt_iscrossselloppty) | Is Cross-sell Oppty? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true | Opportunity | Cross-Sell | Cross_Sell__c | Opportunity | Cross-Sell | Cross_Sell__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 29 | [azt_lastactivitydate](#azt_lastactivitydate) | Last Activity Date | datetime |  | Yes | none |  | C R U | true | Opportunity | Legacy Last Activity Date | Legacy_Last_Activity_Date__c | Opportunity | Last Activity | LastActivityDate | [2](#2.%20Forms) | [1](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 30 | [azt_lastmodifiedbyid](#azt_lastmodifiedbyid) | Last Modified By | lookup |  | Yes | none |  | C R U | true | Opportunity | Legacy Modified By | Legacy_Modified_By__c | Opportunity | Last Modified By ID | LastModifiedById | [2](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 31 | [azt_leadsource](#azt_leadsource) | Lead Source (Old) | picklist |  | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 32 | [azt_leadsourceid](#azt_leadsourceid) | Lead Source | lookup |  | Yes | none |  | C R U | true | Opportunity | CRM Lead Source | CRM_Lead_Source__c | Opportunity | Lead Source | Lead_Source__c | [1](#2.%20Forms) | [1](#3.%20Views) |  |  |  | [8](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 33 | [azt_opportunitynumber](#azt_opportunitynumber) | Opp# | nvarchar |  | Yes | none |  | C R U S | true | Opportunity | CRM Opportunity Number | CRM_Opportunity_Number__c | Opportunity | Opportunity Summary | Opportunity_Summary__c | [2](#2.%20Forms) | [7](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 34 | [azt_opportunityproductcategory](#azt_opportunityproductcategory) | Opportunity Product Category | picklist | 276530000: P12 & Legacy, 276530001: Kaplan Book, 276530002: GED Flash, 276530003: P12 Prep, 276530004: Legacy, 276530005: APT - Free, 276530006: APT - Paid, 276530007: OPT - Free, 276530008: OPT - Paid, 276530009: Workbooks, 276530010: LSE Booklets | Yes | none |  | C R U Re | true | Opportunity | CRM Opportunity Product Category | CRM_Opportunity_Product_Category__c | Opportunity | Opportunity Product Category | Opportunity_Product_Category__c | [2](#2.%20Forms) | [25](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 35 | [azt_opportunitytype](#azt_opportunitytype) | Opportunity Type | picklist | 276530005: Renewal, 276530004: Initial, 276530002: Print, 276530003: Add-On, 276530001: Vouchers, 276530000: Pilot, 276530008: Professional Development, 276530006: Monthly, 100000000: Win Back, 327630000: Sample, 100000001: PA, 276530007: Other, 327630001: Add On - Reseller | Yes | none |  | C R U S Re | true | Opportunity | Type | Type | Opportunity | Opportunity Type | Opportunity_Type__c | [4](#2.%20Forms) | [57](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 36 | [azt_otheropportunitytotal](#azt_otheropportunitytotal) | Other Opportunity Total | money |  | Yes | none |  | R | true | Opportunity | CRM Other Opportunity Total | CRM_Other_Opportunity_Total__c | Opportunity | CRM Initial Opportunity Total | CRM_Initial_Opportunity_Total__c | [2](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 37 | [azt_otheropportunitytotal_base](#azt_otheropportunitytotal_base) | Other Opportunity Total (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 38 | [azt_parentopportunityid](#azt_parentopportunityid) | Parent Opportunity | lookup |  | Yes | none |  | C R U | true | Opportunity | CRM Parent Opportunity Name | CRM_Parent_Opportunity_Name__c | Opportunity | Parent Opportunity | Parent_Opportunity__c |  |  |  |  |  | [1](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 39 | [azt_pilotopportunitytotal](#azt_pilotopportunitytotal) | Pilot Opportunity Total | money |  | Yes | none |  | R | true | Opportunity | CRM Pilot Opportunity Total | CRM_Pilot_Opportunity_Total__c | Opportunity | CRM Initial Opportunity Total | CRM_Initial_Opportunity_Total__c | [2](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 40 | [azt_pilotopportunitytotal_base](#azt_pilotopportunitytotal_base) | Pilot Opportunity Total (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 41 | [azt_pipelinestage](#azt_pipelinestage) | Pipeline Stage | picklist | 276530000: Identify, 276530001: Qualified, 276530002: Prospecting, 276530003: Cultivating, 276530004: Proposing, 276530005: Closing, 276530006: Delivering, 276530007: Awaiting Payment, 276530008: Won | Yes | none |  | C R U Re | true | Opportunity | Stage | StageName | Opportunity | Pipeline Stage | Pipeline_Stage__c | [4](#2.%20Forms) | [23](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 42 | [azt_previewcompleted](#azt_previewcompleted) | Preview Completed | picklist | 276530000: Yes, 276530001: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 43 | [azt_previousprobability](#azt_previousprobability) | Previous Probability | nvarchar |  | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 44 | [azt_printopportunitytotal](#azt_printopportunitytotal) | Print Opportunity Total | money |  | Yes | none |  | R | true | Opportunity | CRM Print Opportunity Total | CRM_Print_Opportunity_Total__c | Opportunity | CRM Initial Opportunity Total | CRM_Initial_Opportunity_Total__c | [2](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 45 | [azt_printopportunitytotal_base](#azt_printopportunitytotal_base) | Print Opportunity Total (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 46 | [azt_probability](#azt_probability) | Probability | picklist | 276530010: 1%, 276530000: 10%, 276530001: 20%, 276530002: 30%, 100000001: 35%, 276530003: 40%, 276530004: 50%, 100000000: 55%, 276530005: 60%, 276530006: 70%, 100530010: 75%, 276530007: 80%, 276530008: 90%, 327630000: 95%, 276530009: 99% | Yes | none |  | C R U Re | true | Opportunity | CRM Probability | CRM_Probability__c | Opportunity | CRM Probability | CRM_Probability__c | [4](#2.%20Forms) | [32](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 47 | [azt_probabilitychangedon](#azt_probabilitychangedon) | Probability Changed On | datetime |  | Yes | none |  | C R U | true | Opportunity | Probability Last Changed | Probability_Last_Changed__c | Opportunity | Probability Last Changed | Probability_Last_Changed__c |  | [7](#3.%20Views) |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 48 | [azt_probabilityincreased](#azt_probabilityincreased) | Probability Increased? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  | Opportunity | Probability Increased | Probability_Increased__c |  | [1](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 49 | [azt_quotesent](#azt_quotesent) | Quote Sent | picklist | 276530000: Yes, 276530001: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 50 | [azt_recordownerid](#azt_recordownerid) | Record Owner | lookup |  | Yes | none |  | C R U | true | Opportunity | Record Owner | OwnerId | Opportunity | Record Type ID | RecordTypeId | [6](#2.%20Forms) | [65](#3.%20Views) | [32](#4.%20Chart%20Visualizations) |  |  | [39](#7.%20Workflows) |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 51 | [azt_renewalnotes](#azt_renewalnotes) | Renewal Notes | nvarchar |  | Yes | none |  | C R U | true | Opportunity | Renewal Notes | Renewal_Notes__c | Opportunity | Renewal Notes | Renewal_Notes__c | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 52 | [azt_renewalopportunitytotal](#azt_renewalopportunitytotal) | Renewal Opportunity Total | money |  | Yes | none |  | R | true | Opportunity | CRM Renewal Opportunity Total | CRM_Renewal_Opportunity_Total__c | Opportunity | CRM Renewal Opportunity Total | CRM_Renewal_Opportunity_Total__c | [2](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 53 | [azt_renewalopportunitytotal_base](#azt_renewalopportunitytotal_base) | Renewal Opportunity Total (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 54 | [azt_requestedfreightamt](#azt_requestedfreightamt) | Requested Freight Amt | money |  | Yes | none |  | C R U | true | Opportunity | CRM Requested Freight Amount | CRM_Requested_Freight_Amount__c | Opportunity | Requested Freight Amt | Requested_Freight_Amt__c | [2](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 55 | [azt_requestedfreightamt_base](#azt_requestedfreightamt_base) | Requested Freight Amt (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 56 | [azt_salesstage](#azt_salesstage) | Sales Stage | picklist |  | Yes | none |  | C R U | true |  |  |  | Opportunity | Sales Stage | Sales_Stage__c |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 57 | [azt_webinarpresentationcompleted](#azt_webinarpresentationcompleted) | Webinar/Presentation Completed | picklist | 276530000: Yes, 276530001: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 58 | [azt_winbackopportunitytotal](#azt_winbackopportunitytotal) | Win-Back Opportunity Total | money |  | Yes | none |  | R | true | Opportunity | CRM Win Back Opportunity Total | CRM_Win_Back_Opportunity_Total__c | Opportunity | CRM Win Back Opportunity Total | CRM_Win_Back_Opportunity_Total__c | [2](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 59 | [azt_winbackopportunitytotal_base](#azt_winbackopportunitytotal_base) | Win-Back Opportunity Total (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 60 | [budgetamount](#budgetamount) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Budget Amount | Budget_Amount__c | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 61 | [budgetstatus](#budgetstatus) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 62 | [captureproposalfeedback](#captureproposalfeedback) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Proposal Feedback Captured | Proposal_Feedback_Captured__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 63 | [closeprobability](#closeprobability) | Probability Number | int |  | No | none |  | C R U | true | Opportunity | CRM Probability Number | CRM_Probability_Number__c | Opportunity | Probability Number | Probability_Number__c | [2](#2.%20Forms) | [2](#3.%20Views) | [3](#4.%20Chart%20Visualizations) |  |  | [2](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 64 | [completefinalproposal](#completefinalproposal) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Final Proposal Ready | Final_Proposal_Ready__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 65 | [completeinternalreview](#completeinternalreview) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Complete Internal Review | Complete_Internal_Review__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 66 | [confirminterest](#confirminterest) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Confirm Interest | Confirm_Interest__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 67 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | true |  |  |  | Opportunity | Created By ID | CreatedById | [2](#2.%20Forms) | [9](#3.%20Views) | [14](#4.%20Chart%20Visualizations) |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 68 | [createdon](#createdon) | Created On | datetime |  | No | none |  | R | true |  |  |  | Opportunity | Created Date | CreatedDate | [2](#2.%20Forms) | [39](#3.%20Views) | [3](#4.%20Chart%20Visualizations) |  |  |  | [1](#9.%20Formulas%20and%20Rollups) | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 69 | [currentsituation](#currentsituation) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | CRM Current Situation | CRM_Current_Situation__c | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 70 | [customerid](#customerid) | Potential Customer | customer |  | No | required |  | C R U Re | true |  |  |  | Opportunity | Potential Customer | Potential_Customer__c |  | [48](#3.%20Views) |  |  |  | [14](#7.%20Workflows) |  | [11](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 71 | [customerneed](#customerneed) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Customer Need | Customer_Need__c | [2](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 72 | [customerpainpoints](#customerpainpoints) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 73 | [decisionmaker](#decisionmaker) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Decision Maker | Decision_Maker__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 74 | [description](#description) | Description | ntext |  | No | none |  | R | true |  |  |  | Opportunity | Description | Description | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 75 | [developproposal](#developproposal) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Develop Proposal | Develop_Proposal__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 76 | [discountamount](#discountamount) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Discount Amount | Discount_Amount__c | [2](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 77 | [discountpercentage](#discountpercentage) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Opportunity Discount | Opportunity_Discount__c | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 78 | [emailaddress](#emailaddress) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 79 | [estimatedclosedate](#estimatedclosedate) | Est. Close Date | datetime |  | No | none |  | C R U So G Re | true | Opportunity | Close Date | CRM_Estimated_Close_Date__c | Opportunity | Expected Close Date | Expected_Close_Date__c | [3](#2.%20Forms) | [81](#3.%20Views) | [7](#4.%20Chart%20Visualizations) |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 80 | [estimatedvalue](#estimatedvalue) | Est. Revenue | money |  | No | none |  | C R U So G Re | true | Opportunity | CRM Estimated Revenue | CRM_Estimated_Revenue__c | Opportunity | Estimated Revenue | Estimated_Revenue__c | [4](#2.%20Forms) | [41](#3.%20Views) | [8](#4.%20Chart%20Visualizations) |  |  | [2](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 81 | [evaluatefit](#evaluatefit) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Evaluate Fit | Evaluate_Fit__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 82 | [filedebrief](#filedebrief) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | File Debrief | File_Debrief__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 83 | [identifycompetitors](#identifycompetitors) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Identify Competitors | Identify_Competitors__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 84 | [identifycustomercontacts](#identifycustomercontacts) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Identify Customer Contacts | Identify_Customer_Contacts__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 85 | [identifypursuitteam](#identifypursuitteam) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Identify Sales Team | Identify_Sales_Team__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 86 | [initialcommunication](#initialcommunication) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 87 | [isrevenuesystemcalculated](#isrevenuesystemcalculated) | Revenue | bit | 1: System Calculated, 0: User Provided | No | none |  | C R U | true | Opportunity | CRM Revenue | CRM_Revenue__c | Opportunity | Revenue | Revenue__c | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 88 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none |  | R | true |  |  |  | Opportunity | Last Modified Date | LastModifiedDate |  | [1](#3.%20Views) |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 89 | [msa_partnerid](#msa_partnerid) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Partner | Partner__c |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 90 | [msa_partneroppid](#msa_partneroppid) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Partner Contact | Partner_Contact__c |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 91 | [msdyn_forecastcategory](#msdyn_forecastcategory) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Forecast Category | ForecastCategory | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 92 | [msdyn_opportunitykpiid](#msdyn_opportunitykpiid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 93 | [msdyn_predictivescoreid](#msdyn_predictivescoreid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 94 | [name](#name) | Topic | nvarchar |  | No | required |  | C R U S Re | true |  |  |  | Opportunity | Name | Name | [2](#2.%20Forms) | [75](#3.%20Views) |  |  |  | [19](#7.%20Workflows) |  | [23](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 95 | [need](#need) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 96 | [opportunityid](#opportunityid) | Opportunity | uniqueidentifier |  | No | required |  | R | true |  |  |  | Opportunity | OpportunityId | OpportunityId__c |  | [65](#3.%20Views) |  |  |  | [11](#7.%20Workflows) |  | [32](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 97 | [opportunityratingcode](#opportunityratingcode) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | OpportunityId | OpportunityId__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 98 | [originatingleadid](#originatingleadid) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Originating Lead | Originating_Lead__c | [2](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 99 | [ownerid](#ownerid) | Owner | owner |  | No | systemrequired |  | C R U Re | true | Opportunity | Record Type | RecordTypeId | Opportunity | Owner ID | OwnerId | [4](#2.%20Forms) | [26](#3.%20Views) | [9](#4.%20Chart%20Visualizations) |  |  | [25](#7.%20Workflows) |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 100 | [owningbusinessunit](#owningbusinessunit) | Owning Business Unit | lookup |  | No | none |  | R | true |  |  |  | Opportunity | Owning Business Unit | Owning_Business_Unit__c |  | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 101 | [parentaccountid](#parentaccountid) | Account | lookup |  | No | none |  | C R U S So G | true |  |  |  | Opportunity | Account ID | AccountId | [5](#2.%20Forms) | [1](#3.%20Views) |  |  |  | [13](#7.%20Workflows) |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 102 | [parentcontactid](#parentcontactid) | Contact | lookup |  | No | none |  | C R U S So G | true | Opportunity | Contact name | ContactId | Opportunity | Contact ID | ContactId | [5](#2.%20Forms) | [1](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 103 | [presentfinalproposal](#presentfinalproposal) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Present Final Proposal | Present_Final_Proposal__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 104 | [presentproposal](#presentproposal) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Presented Proposal | Presented_Proposal__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 105 | [pricelevelid](#pricelevelid) | Price List | lookup |  | No | required |  | C R U | true | Opportunity | Price Book | Pricebook2Id | Opportunity | Price List | Price_List__c | [2](#2.%20Forms) |  |  |  |  | [7](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 106 | [prioritycode](#prioritycode) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Priority | Priority__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 107 | [proposedsolution](#proposedsolution) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Proposed Solution | Proposed_Solution__c | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 108 | [purchaseprocess](#purchaseprocess) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Purchase Process | Purchase_Process__c | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 109 | [purchasetimeframe](#purchasetimeframe) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | CRM Purchase Timeframe | CRM_Purchase_Timeframe__c | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 110 | [pursuitdecision](#pursuitdecision) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Decide Gonogo | Decide_Gonogo__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 111 | [qualificationcomments](#qualificationcomments) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 112 | [quotecomments](#quotecomments) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 113 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 114 | [resolvefeedback](#resolvefeedback) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Feedback Resolved | Feedback_Resolved__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 115 | [salesstage](#salesstage) | Deprecated Sales Stage | picklist |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 116 | [salesstagecode](#salesstagecode) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Process Code | Process_Code__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 117 | [sendthankyounote](#sendthankyounote) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Send Thank You Note | Send_Thank_You_Note__c |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 118 | [statecode](#statecode) | Status | state |  | No | systemrequired |  | R U F | true | Opportunity | CRM Status | CRM_Status__c | Opportunity | Status CRM | Status_CRM__c |  | [58](#3.%20Views) | [2](#4.%20Chart%20Visualizations) |  |  | [10](#7.%20Workflows) |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 119 | [statuscode](#statuscode) | Status Reason | status |  | No | none |  | C R U | true |  |  |  | Opportunity | Status | Status__c |  | [10](#3.%20Views) |  |  |  | [5](#7.%20Workflows) |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 120 | [totalamountlessfreight](#totalamountlessfreight) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Total Prefreight Amount | Total_Prefreight_Amount__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 121 | [totallineitemamount](#totallineitemamount) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | CRM Total Line Item Discount Amount | CRM_Total_Line_Item_Discount_Amount__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 122 | [totaltax](#totaltax) |  |  |  | No |  |  |  | true |  |  |  | Opportunity | Total Tax | Total_Tax__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
 
 ---
 
@@ -8205,7 +8129,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### activityid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: AccountReassignmentShareRecords (Read)](#10.4.%20AccountReassignmentShareRecords)
 - [Plugin: ActivityRegardingGetState (Read)](#10.9.%20ActivityRegardingGetState)
 - [Plugin: PhonecallCreateCallback (Read)](#10.59.%20PhonecallCreateCallback)
@@ -8216,7 +8139,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### activitytypecode
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: AccountReassignmentShareRecords (Read)](#10.4.%20AccountReassignmentShareRecords)
 - [Plugin: ActivityRegardingGetState (Read)](#10.9.%20ActivityRegardingGetState)
 
@@ -8300,12 +8222,10 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### adx_resolutiondate
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CaseClose (Write)](#10.15.%20CaseClose)
 
 #### amountdatatype
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 
 #### annotationid
@@ -8506,7 +8426,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### azt_compplanamountid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 - [Plugin: InvoiceCompCompleted (Read)](#10.35.%20InvoiceCompCompleted)
 
@@ -8921,7 +8840,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### azt_licenseterm
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderLinePopulateLicType (Read)](#10.53.%20OrderLinePopulateLicType)
 
 #### azt_licensetermmonths
@@ -8986,7 +8904,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### azt_masecommission
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 - [Plugin: InvoiceCompCompleted (Filter)](#10.35.%20InvoiceCompCompleted)
 
@@ -9274,7 +9191,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### azt_payablecommission
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 
 #### azt_paymentdate
@@ -9298,7 +9214,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### azt_percentagepaid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 
 #### azt_periodend
@@ -9546,7 +9461,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### azt_recordowner
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: RecordOwnerRestrictEdit (Read)](#10.67.%20RecordOwnerRestrictEdit)
 
 #### azt_recordownerid
@@ -9884,7 +9798,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### baseamount
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: QuotePreventActivateUnapprovedDiscounts (Read)](#10.64.%20QuotePreventActivateUnapprovedDiscounts)
 - [Plugin: QuotePreventActivateUnapprovedDiscounts (Write)](#10.64.%20QuotePreventActivateUnapprovedDiscounts)
 - [Plugin: ReviseQuoteDiscountMove (Read)](#10.72.%20ReviseQuoteDiscountMove)
@@ -9892,37 +9805,30 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### billto_line1
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### billto_line2
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### billto_line3
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### billto_name
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### billto_postalcode
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### billto_stateorprovince
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### body
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: SendQuoteReport (Write)](#10.73.%20SendQuoteReport)
 
 #### bpf_duration
@@ -9949,7 +9855,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### businessprocessflowinstanceid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderStageTracking (Read)](#10.57.%20OrderStageTracking)
 
 #### businessunitid
@@ -9975,7 +9880,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### category
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: ContactSetConnectionRole (Sort)](#10.19.%20ContactSetConnectionRole)
 - [Plugin: SetPrimaryContact (Read)](#10.75.%20SetPrimaryContact)
 - [Plugin: SetPrimaryContact (Sort)](#10.75.%20SetPrimaryContact)
@@ -10022,7 +9926,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### conditionbranchstep2_1
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_dayssincecreated](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_dayssinceprobabilitychanged](#9.%20Formulas%20and%20Rollups)
 
@@ -10046,7 +9949,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### consideronlygoalownersrecords
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Write)](#10.22.%20CreateUserGoals)
 
 #### contactid
@@ -10265,7 +10167,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### datefulfilled
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateSoftwareLicenses (Read)](#10.21.%20CreateSoftwareLicenses)
 
 #### decisionmaker
@@ -10276,7 +10177,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### defaultuomid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OpportunityLineSyncToQuote (Read)](#10.46.%20OpportunityLineSyncToQuote)
 - [Plugin: QuoteLinesSyncToOppty (Read)](#10.62.%20QuoteLinesSyncToOppty)
 
@@ -10513,12 +10413,10 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### ext_amt
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateCompGoals (Read)](#10.20.%20CreateCompGoals)
 
 #### extendedamount
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_addonopportunitytotal](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_initialopportunitytotal](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_otheropportunitytotal](#9.%20Formulas%20and%20Rollups)
@@ -10542,7 +10440,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### fetchxml
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Write)](#10.22.%20CreateUserGoals)
 
 #### filedebrief
@@ -10553,7 +10450,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### filename
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: SendQuoteReport (Write)](#10.73.%20SendQuoteReport)
 
 #### firstname
@@ -10591,7 +10487,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### goalenddate
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 - [Plugin: CreateUserGoals (Write)](#10.22.%20CreateUserGoals)
 - [Plugin: CreateUserGoals (Filter)](#10.22.%20CreateUserGoals)
@@ -10602,7 +10497,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### goalownerid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Write)](#10.22.%20CreateUserGoals)
 - [Plugin: CreateUserGoals (Filter)](#10.22.%20CreateUserGoals)
 
@@ -10612,7 +10506,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### goalstartdate
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 - [Plugin: CreateUserGoals (Write)](#10.22.%20CreateUserGoals)
 - [Plugin: CreateUserGoals (Filter)](#10.22.%20CreateUserGoals)
@@ -10648,7 +10541,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### internalemailaddress
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderFSRSetTemplateFields (Read)](#10.52.%20OrderFSRSetTemplateFields)
 
 #### invline.productid
@@ -10675,27 +10567,22 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### invoicenumber
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CompGoalCreate (Read)](#10.18.%20CompGoalCreate)
 
 #### isamount
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 
 #### isfiscalperiodgoal
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Write)](#10.22.%20CreateUserGoals)
 
 #### isocurrencycode
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: Utility (Filter)](#10.81.%20Utility)
 
 #### ispriceoverridden
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OpportunityClone (Read)](#10.44.%20OpportunityClone)
 - [Plugin: OrderClone (Read)](#10.51.%20OrderClone)
 - [Plugin: OrderSplit (Read)](#10.56.%20OrderSplit)
@@ -10705,7 +10592,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### isproductoverridden
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OpportunityClone (Read)](#10.44.%20OpportunityClone)
 - [Plugin: OrderClone (Read)](#10.51.%20OrderClone)
 - [Plugin: OrderSplit (Read)](#10.56.%20OrderSplit)
@@ -10722,7 +10608,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### jobtitle
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: LeadImport (Write)](#10.36.%20LeadImport)
 
 #### lastname
@@ -10731,7 +10616,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### manualdiscountamount
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: DiscretionaryDiscountSetHeader (Write)](#10.23.%20DiscretionaryDiscountSetHeader)
 - [Plugin: ManualDiscountKill (Read)](#10.40.%20ManualDiscountKill)
 - [Plugin: OpportunityClone (Read)](#10.44.%20OpportunityClone)
@@ -10748,12 +10632,10 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### mimetype
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: SendQuoteReport (Write)](#10.73.%20SendQuoteReport)
 
 #### mobilephone
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderFSRSetTemplateFields (Read)](#10.52.%20OrderFSRSetTemplateFields)
 
 #### modifiedon
@@ -10942,7 +10824,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### objecttypecode
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: SendQuoteReport (Write)](#10.73.%20SendQuoteReport)
 
 #### opportunityaudit
@@ -11273,13 +11154,11 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### parentgoalid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 - [Plugin: CreateUserGoals (Write)](#10.22.%20CreateUserGoals)
 
 #### parentsystemuserid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 - [Plugin: Utility (Read)](#10.81.%20Utility)
 
@@ -11321,7 +11200,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### priceperunit
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 - [Plugin: OpportunityClone (Read)](#10.44.%20OpportunityClone)
 - [Plugin: OrderClone (Read)](#10.51.%20OrderClone)
@@ -11348,7 +11226,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### productdescription
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Read)](#10.22.%20CreateUserGoals)
 - [Plugin: OpportunityClone (Read)](#10.44.%20OpportunityClone)
 - [Plugin: OpportunityLineSyncToQuote (Read)](#10.46.%20OpportunityLineSyncToQuote)
@@ -11401,7 +11278,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### productname
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OpportunityClone (Read)](#10.44.%20OpportunityClone)
 - [Plugin: OrderClone (Read)](#10.51.%20OrderClone)
 - [Plugin: OrderSplit (Read)](#10.56.%20OrderSplit)
@@ -11485,7 +11361,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### queryentitytype
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Write)](#10.22.%20CreateUserGoals)
 
 #### queueid
@@ -11557,7 +11432,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### record1roleid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: ContactSetConnectionRole (Write)](#10.19.%20ContactSetConnectionRole)
 - [Plugin: SetPrimaryContact (Read)](#10.75.%20SetPrimaryContact)
 - [Plugin: SetPrimaryContact (Write)](#10.75.%20SetPrimaryContact)
@@ -11573,7 +11447,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### record2roleid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: ContactSetConnectionRole (Write)](#10.19.%20ContactSetConnectionRole)
 - [Plugin: LeadQualifyParentStakeholderContacts (Read)](#10.39.%20LeadQualifyParentStakeholderContacts)
 - [Plugin: SetPrimaryContact (Read)](#10.75.%20SetPrimaryContact)
@@ -11595,7 +11468,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### requestdeliveryby
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### resolvefeedback
@@ -11619,17 +11491,14 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### rolluponlyfromchildgoals
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Write)](#10.22.%20CreateUserGoals)
 
 #### rollupqueryactualmoneyid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Write)](#10.22.%20CreateUserGoals)
 
 #### rolluprulestep1_1
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_addonopportunitytotal](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_discretionarydiscount](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_initialopportunitytotal](#9.%20Formulas%20and%20Rollups)
@@ -11641,7 +11510,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### rolluprulestep1_2
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_addonopportunitytotal](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_discretionarydiscount](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_initialopportunitytotal](#9.%20Formulas%20and%20Rollups)
@@ -11653,7 +11521,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### rolluprulestep1_3
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_addonopportunitytotal](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_discretionarydiscount](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_initialopportunitytotal](#9.%20Formulas%20and%20Rollups)
@@ -11665,7 +11532,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### rolluprulestep1_4
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_addonopportunitytotal](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_discretionarydiscount](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_initialopportunitytotal](#9.%20Formulas%20and%20Rollups)
@@ -11677,7 +11543,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### rolluprulestep1_5
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_addonopportunitytotal](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_discretionarydiscount](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_initialopportunitytotal](#9.%20Formulas%20and%20Rollups)
@@ -11701,7 +11566,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### salesorderdetailname
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderLinePopulateTemplateFields (Read)](#10.54.%20OrderLinePopulateTemplateFields)
 
 #### salesorderid
@@ -11722,7 +11586,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### salesrepid
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: QuotePreventActivateUnapprovedDiscounts (Read)](#10.64.%20QuotePreventActivateUnapprovedDiscounts)
 
 #### salesstage
@@ -11737,7 +11600,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### scheduledend
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: ActivitiesCreatedDueDatesInPast (Read)](#10.7.%20ActivitiesCreatedDueDatesInPast)
 - [Plugin: PhonecallCreateCallback (Read)](#10.59.%20PhonecallCreateCallback)
 
@@ -11749,31 +11611,26 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### setattributevaluestep4_1
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_dayssincecreated](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_dayssinceprobabilitychanged](#9.%20Formulas%20and%20Rollups)
 
 #### setattributevaluestep4_2
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_dayssincecreated](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_dayssinceprobabilitychanged](#9.%20Formulas%20and%20Rollups)
 
 #### setattributevaluestep4_3
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_dayssincecreated](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_dayssinceprobabilitychanged](#9.%20Formulas%20and%20Rollups)
 
 #### setattributevaluestep4_4
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_dayssincecreated](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_dayssinceprobabilitychanged](#9.%20Formulas%20and%20Rollups)
 
 #### setattributevaluestep4_5
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Formula: azt_dayssincecreated](#9.%20Formulas%20and%20Rollups)
 - [Formula: azt_dayssinceprobabilitychanged](#9.%20Formulas%20and%20Rollups)
 
@@ -11783,32 +11640,26 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### shipto_line1
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### shipto_line2
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### shipto_line3
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### shipto_name
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### shipto_postalcode
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### shipto_stateorprovince
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OrderSplit (Write)](#10.56.%20OrderSplit)
 
 #### stakeholders
@@ -11972,7 +11823,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### tax
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: OpportunityClone (Read)](#10.44.%20OpportunityClone)
 - [Plugin: OpportunityLineSyncToQuote (Read)](#10.46.%20OpportunityLineSyncToQuote)
 - [Plugin: OrderClone (Read)](#10.51.%20OrderClone)
@@ -11990,7 +11840,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### teamtype
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: AccountAutoAssign (Filter)](#10.1.%20AccountAutoAssign)
 - [Plugin: ShareBasedOnAccessTeam (Filter)](#10.76.%20ShareBasedOnAccessTeam)
 - [Plugin: ShareFromAccountShares (Read)](#10.77.%20ShareFromAccountShares)
@@ -12001,7 +11850,6 @@ Alphabetical field index -- 442 unique fields referenced.
 
 #### title
 
-- [Field Definitions](#1.%20Field%20Definitions)
 - [Plugin: CreateUserGoals (Write)](#10.22.%20CreateUserGoals)
 - [Plugin: CreateUserGoals (Sort)](#10.22.%20CreateUserGoals)
 

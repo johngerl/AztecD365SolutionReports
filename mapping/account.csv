@@ -2,12 +2,6 @@ fieldName,displayName,dataType,requiredLevel,isCustom,lastUpdate,picklistValues,
 accountclassificationcode,Account Classification,picklist,none,False,,"1: A, 276530000: B, 276530001: C, 100000001: D, 100000000: E, 276530002: S, 276530003: N/A, 276530004: aa, 276530005: bb, 276530006: cc, 276530007: ss",true,2,12,0,0,0,0,0,0,0,0,0,Account,CRM Account Classification,CRM_Account_Classification__c,Account,Account Classification,Account_Classification__c
 accountid,Account,uniqueidentifier,required,False,,,false,0,23,0,1,0,8,0,12,0,0,0,,,,,,
 accountnumber,Sequence Number,nvarchar,none,False,,,true,0,1,0,0,0,0,0,0,0,0,0,,,,Account,Account Number,AccountNumber
-activityid,,,,False,,,false,0,0,0,0,0,0,0,7,0,0,0,,,,,,
-activitytypecode,,,,False,,,false,0,0,0,0,0,0,0,2,0,0,0,,,,,,
-actualclosedate,,,,False,,,false,0,0,0,0,0,0,3,1,0,0,0,,,,,,
-actualend,,,,False,,,false,0,0,0,0,0,0,2,0,0,0,0,,,,,,
-actualrevenue,,,,False,,,false,0,0,0,0,0,0,1,0,0,0,0,,,,,,
-actualvalue,,,,False,,,false,0,0,0,0,0,0,3,0,0,0,0,,,,,,
 address1_addresstypecode,Physical Address Type,picklist,none,False,,"3: Physical, 1: Bill To, 2: Ship To, 4: Other",true,2,0,0,0,0,5,0,0,0,0,0,,,,Account,Physical Address Type,Physical_Address_Type__c
 address1_city,Physical Address City,nvarchar,none,False,,,true,2,17,0,0,0,3,0,0,0,0,0,,,,Account,Business Address (City),Business_Address__City__s
 address1_composite,Physical Address,ntext,none,False,,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Account,Physical Address,Physical_Address__c
@@ -54,8 +48,6 @@ address2_telephone2,Bill To Telephone 2,nvarchar,none,False,,,false,0,0,0,0,0,0,
 address2_telephone3,Bill To Telephone 3,nvarchar,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
 address2_upszone,Bill To UPS Zone,nvarchar,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
 address2_utcoffset,Bill To UTC Offset,int,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-adx_resolutiondate,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-amountdatatype,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
 azt_accountalert,Account Alert,nvarchar,none,True,,,true,2,0,0,0,0,0,0,0,0,0,0,Account,Account Alert,Account_Alert__c,Account,Account Alert,Account_Alert__c
 azt_accountleadgenname,Account Lead Gen Name,nvarchar,none,True,,,true,0,0,0,0,0,1,0,1,0,0,0,,,,Account,Account Lead Gen Name,Account_Lead_Gen_Name__c
 azt_accountnumber,Account Number,nvarchar,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
@@ -65,7 +57,6 @@ azt_accounttype,Account Type,picklist,none,True,,"276530000: Active Account, 276
 azt_addresssearch,Address Search,nvarchar,none,True,,,true,2,0,0,0,0,0,0,2,0,0,0,,,,Account,Address Search,Address_Search__c
 azt_addresssearch2,Address Search 2,nvarchar,none,True,,,true,0,0,0,0,0,0,0,2,0,0,0,,,,Account,Address Search 2,Address_Search_2__c
 azt_aeflafunding,AEFLA Funding,bit,none,True,,"1: Yes, 0: No",true,2,0,0,0,0,0,0,0,0,0,0,,,,Account,Aefla Funding,Aefla_Funding__c
-azt_compplanamountid,,,,True,,,false,0,0,0,0,0,0,0,2,0,0,0,,,,,,
 azt_customerintrocompletedby,Customer Intro Completed By,nvarchar,none,True,,,true,0,0,0,0,0,1,0,0,0,0,0,,,,Account,Customer Intro Completed By,Customer_Intro_Completed_By__c
 azt_customerintrocompletedon,Customer Intro Completed On,nvarchar,none,True,,,true,0,0,0,0,0,1,0,0,0,0,0,,,,Account,Customer Intro Completed On,Customer_Intro_Completed_On__c
 azt_customerintroductioncompleted,Customer Introduction Completed,bit,none,True,,"1: Yes, 0: No",true,0,1,0,0,0,1,0,0,0,0,0,,,,Account,Customer Introduction Completed,Customer_Introduction_Completed__c
@@ -93,8 +84,6 @@ azt_lastsuccessfulconnection,Last Successful Connection,datetime,none,True,,,tru
 azt_lastyearspend,Last Year Spend,money,none,True,,,true,1,0,0,0,0,0,1,0,0,0,0,,,,Account,Last Year Spend,Last_Year_Spend__c
 azt_lastyearspend_base,Last Year Spend (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
 azt_leadsourceid,Lead Source,lookup,none,True,,,true,2,0,0,0,0,8,0,2,0,1,0,Account,Account Source,AccountSource,Account,Lead Source,Lead_Source__c
-azt_licenseterm,,,,True,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-azt_masecommission,,,,True,,,false,0,0,0,0,0,0,0,2,0,0,0,,,,,,
 azt_nomatch,No Match?,bit,none,True,,"1: Yes, 0: No",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
 azt_nonsaasstatus,Non-SaaS Status,picklist,none,True,,,true,2,0,0,0,0,0,0,2,0,0,0,Account,CRM Non-SaaS Status,Non_SaaS_Status__c,Account,Nonsaas Status,Nonsaas_Status__c
 azt_numberofcomputers,# Computers,int,none,True,,,true,1,0,0,0,0,0,0,0,0,0,0,Account,# Computers,NumofComputers__c,Account,# Computers,NumofComputers__c
@@ -106,11 +95,8 @@ azt_parentlastyearspend,Parent Last Year Spend,money,none,True,,,true,1,0,0,0,0,
 azt_parentlastyearspend_base,Parent Last Year Spend (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
 azt_parentytdspend,Parent YTD Spend,money,none,True,,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Account,Parent Ytd Spend,Parent_Ytd_Spend__c
 azt_parentytdspend_base,Parent YTD Spend (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_payablecommission,,,,True,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-azt_percentagepaid,,,,True,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
 azt_possiblematchid,Possible Match,lookup,none,True,,,true,1,0,0,0,0,0,0,0,0,1,0,,,,Account,Possible Match,Possible_Match__c
 azt_productfamilies,Product Families,multiselectpicklist,none,True,,,true,2,2,0,0,0,0,0,0,0,0,0,,,,Account,Product Families,Product_Families__c
-azt_recordowner,,,,True,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
 azt_recordownerid,Record Owner,lookup,none,True,,,true,2,6,0,2,0,37,0,9,0,1,0,Account,Record Owner,OwnerId,Account,Record Type ID,RecordTypeId
 azt_saasstatus,SaaS Status,picklist,none,True,,,true,2,0,0,0,0,0,0,2,0,0,0,Account,CRM SaaS Status,CRM_SaaS_Status__c,Account,Saas Status,Saas_Status__c
 azt_score,Score,nvarchar,none,True,,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Account,Score,Score__c
@@ -123,46 +109,12 @@ azt_yearbeforelastspend,Year Before Last Spend,money,none,True,,,true,1,0,0,0,0,
 azt_yearbeforelastspend_base,Year Before Last Spend (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
 azt_ytdspend,YTD Spend,money,none,True,,,true,1,0,0,0,0,0,1,0,0,0,0,,,,Account,Total Spend,Total_Spend__c
 azt_ytdspend_base,YTD Spend (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-baseamount,,,,False,,,false,0,0,0,1,0,0,0,4,0,0,0,,,,,,
-billto_line1,,,,False,,,false,0,0,0,1,0,0,0,1,0,0,0,,,,,,
-billto_line2,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-billto_line3,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-billto_name,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-billto_postalcode,,,,False,,,false,0,0,0,1,0,0,0,1,0,0,0,,,,,,
-billto_stateorprovince,,,,False,,,false,0,0,0,1,0,0,0,1,0,0,0,,,,,,
-body,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-businessprocessflowinstanceid,Business Process Flow Instance Id,uniqueidentifier,none,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-category,,,,False,,,false,0,0,0,0,0,0,0,3,0,0,0,,,,,,
-consideronlygoalownersrecords,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
 createdby,Created By,lookup,none,False,,,false,0,0,0,0,0,2,0,0,0,0,0,,,,,,
-createdon,Created On,datetime,none,False,,,false,0,0,0,0,0,0,0,10,0,0,0,,,,,,
-datefulfilled,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-defaultuomid,,,,False,,,false,0,0,0,0,0,0,0,2,0,0,0,,,,,,
 description,Description,ntext,none,False,,,false,2,0,0,0,0,0,0,7,0,0,0,,,,,,
-discountamount,,,,False,,,false,0,0,0,1,0,0,0,2,0,0,0,,,,,,
 donotsendmm,,,,False,,,false,1,0,0,0,0,0,0,0,0,0,0,,,,,,
 emailaddress1,Email,nvarchar,none,False,,,true,0,1,0,0,0,0,0,2,0,0,0,,,,Account,Email,Email__c
-ext_amt,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-extendedamount,,,,False,,,false,0,0,0,0,0,0,0,13,0,0,0,,,,,,
 fax,,,,False,,,false,0,1,0,0,0,0,0,0,0,0,0,,,,,,
-fetchxml,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-filename,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-goalenddate,,,,False,,,false,0,0,0,0,0,0,0,3,0,0,0,,,,,,
-goalownerid,,,,False,,,false,0,0,0,0,0,0,0,2,0,0,0,,,,,,
-goalstartdate,,,,False,,,false,0,0,0,0,0,0,0,3,0,0,0,,,,,,
-internalemailaddress,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-invoicenumber,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-isamount,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-isfiscalperiodgoal,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-isocurrencycode,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-ispriceoverridden,,,,False,,,false,0,0,0,0,0,0,0,6,0,0,0,,,,,,
-isproductoverridden,,,,False,,,false,0,0,0,0,0,0,0,4,0,0,0,,,,,,
-jobtitle,,,,False,,,false,0,0,0,1,0,0,0,1,0,0,0,,,,,,
 lastusedincampaign,,,,False,,,false,1,0,0,0,0,0,0,0,0,0,0,,,,,,
-manualdiscountamount,,,,False,,,false,0,0,0,1,0,0,0,9,0,0,0,,,,,,
-mimetype,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-mobilephone,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-modifiedon,Modified On,datetime,none,False,,,false,0,0,0,0,0,0,0,4,0,0,0,,,,,,
 msa_managingpartnerid,,,,False,,,false,0,0,0,0,0,0,0,0,0,2,0,,,,,,
 msa_partnerid,,,,False,,,false,0,0,0,0,0,0,0,0,0,2,0,,,,,,
 msdyn_accountkpiid,,,,False,,,false,0,0,0,0,0,0,0,0,0,1,0,,,,,,
@@ -170,51 +122,13 @@ msdyn_salesaccelerationinsightid,,,,False,,,false,0,0,0,0,0,0,0,0,0,1,0,,,,,,
 msdyn_segmentid,Segment Id,lookup,none,True,,,true,0,0,0,0,0,0,0,0,0,1,0,,,,Account,Segment Id,Segment_Id__c
 name,Account Name,nvarchar,required,False,,,true,3,46,0,3,0,16,0,23,0,0,0,Account,Account Name,Name,Account,Account Name,Name
 new_sharedwith,Shared With,lookup,none,True,,,true,2,0,0,0,0,0,0,0,0,1,0,,,,Account,Shared With,Shared_With__c
-objecttypecode,,,,False,,,false,0,0,0,3,0,0,0,1,0,0,0,,,,,,
 originatingleadid,,,,False,,,false,3,0,0,0,0,0,0,2,0,1,0,,,,,,
 ownerid,Owner,owner,systemrequired,False,,,true,3,9,0,1,0,24,0,22,0,0,0,Account,Record type,RecordType,Account,Owner ID,OwnerId
 owningteam,Owning Team,lookup,none,False,,,false,0,0,0,0,0,1,0,1,0,0,0,,,,,,
 parentaccountid,Parent Account,lookup,none,False,,,true,2,1,0,0,0,12,0,4,0,2,0,Account,ParentId,ParentId,Account,Parent Account ID,ParentId
-parentgoalid,,,,False,,,false,0,0,0,0,0,0,0,2,0,0,0,,,,,,
 parentid,,,,False,,,false,0,0,0,0,0,0,0,0,0,1,0,,,,,,
-parentsystemuserid,,,,False,,,false,0,0,0,0,0,0,0,2,0,0,0,,,,,,
-priceperunit,,,,False,,,false,0,0,0,0,0,0,0,8,0,0,0,,,,,,
 primarycontactid,Primary Contact,lookup,none,False,,,true,2,0,0,0,0,2,0,2,0,0,0,,,,Account,Primary Contact,Primary_Contact__c
-productdescription,,,,False,,,false,0,0,0,0,0,0,0,13,0,0,0,,,,,,
-productname,,,,False,,,false,0,0,0,0,0,0,0,3,0,0,0,,,,,,
-queryentitytype,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-record1roleid,,,,False,,,false,0,0,0,0,0,0,0,3,0,0,0,,,,,,
-record2roleid,,,,False,,,false,0,0,0,0,0,0,0,5,0,0,0,,,,,,
 regardingobjectid,Regarding,lookup,none,False,,,false,0,0,0,0,0,0,0,8,0,8,0,,,,,,
-requestdeliveryby,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-rolluponlyfromchildgoals,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-rollupqueryactualmoneyid,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-rolluprulestep1_1,,,,False,,,false,0,0,0,0,0,0,4,0,0,0,0,,,,,,
-rolluprulestep1_10,,,,False,,,false,0,0,0,0,0,0,1,0,0,0,0,,,,,,
-rolluprulestep1_11,,,,False,,,false,0,0,0,0,0,0,1,0,0,0,0,,,,,,
-rolluprulestep1_12,,,,False,,,false,0,0,0,0,0,0,1,0,0,0,0,,,,,,
-rolluprulestep1_13,,,,False,,,false,0,0,0,0,0,0,1,0,0,0,0,,,,,,
-rolluprulestep1_2,,,,False,,,false,0,0,0,0,0,0,4,0,0,0,0,,,,,,
-rolluprulestep1_3,,,,False,,,false,0,0,0,0,0,0,4,0,0,0,0,,,,,,
-rolluprulestep1_4,,,,False,,,false,0,0,0,0,0,0,4,0,0,0,0,,,,,,
-rolluprulestep1_5,,,,False,,,false,0,0,0,0,0,0,4,0,0,0,0,,,,,,
-rolluprulestep1_6,,,,False,,,false,0,0,0,0,0,0,3,0,0,0,0,,,,,,
-rolluprulestep1_7,,,,False,,,false,0,0,0,0,0,0,3,0,0,0,0,,,,,,
-rolluprulestep1_8,,,,False,,,false,0,0,0,0,0,0,3,0,0,0,0,,,,,,
-rolluprulestep1_9,,,,False,,,false,0,0,0,0,0,0,3,0,0,0,0,,,,,,
-salesorderdetailname,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-salesrepid,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-scheduledend,,,,False,,,false,0,0,0,0,0,0,0,2,0,0,0,,,,,,
-shipto_line1,,,,False,,,false,0,0,0,1,0,0,0,1,0,0,0,,,,,,
-shipto_line2,,,,False,,,false,0,0,0,1,0,0,0,1,0,0,0,,,,,,
-shipto_line3,,,,False,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-shipto_name,,,,False,,,false,0,0,0,1,0,0,0,1,0,0,0,,,,,,
-shipto_postalcode,,,,False,,,false,0,0,0,1,0,0,0,1,0,0,0,,,,,,
-shipto_stateorprovince,,,,False,,,false,0,0,0,1,0,0,0,1,0,0,0,,,,,,
 statecode,Status,state,systemrequired,False,,,true,0,16,0,0,0,10,3,20,0,0,0,,,,Account,Status CRM,Status_CRM__c
-statuscode,Status Reason,picklist,none,False,,,false,0,0,0,0,0,0,0,6,0,0,0,,,,,,
-tax,,,,False,,,false,0,0,0,0,0,0,0,8,0,0,0,,,,,,
-teamtype,,,,False,,,false,0,0,0,0,0,0,0,3,0,0,0,,,,,,
 telephone1,Main Phone,nvarchar,none,False,,,true,3,23,0,0,0,0,0,1,0,0,0,,Phone,,Account,Other Phone,OtherPhone__c
 telephone2,Other Phone,nvarchar,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,Account,Other Phone,OtherPhone__c,,,
-title,,,,False,,,false,0,0,0,1,0,0,0,2,0,0,0,,,,,,

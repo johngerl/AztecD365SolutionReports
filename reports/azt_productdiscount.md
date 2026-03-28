@@ -1,5 +1,5 @@
 # Azt_productdiscount Field Usage Analysis
-> Date: 2026-03-25
+> Date: 2026-03-28
 
 | Property | Value |
 |---|---|
@@ -209,37 +209,37 @@
 
 Total fields: **29**
 
-| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
-|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [azt_approvalstatus](#azt_approvalstatus) | Approval Status | picklist | 276530000: Pending Approval, 276530001: Approved, 276530002: Rejected | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) | [3](#3.%20Views) |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 2 | [azt_customerid](#azt_customerid) | Customer | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 3 | [azt_discountamount](#azt_discountamount) | Discount Amt | money |  | Yes | required |  | C R U Re | true |  |  |  |  |  |  | [2](#2.%20Forms) | [8](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 4 | [azt_discountamount_base](#azt_discountamount_base) | Discount Amount (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 5 | [azt_invoiceproductid](#azt_invoiceproductid) | Invoice Product | lookup |  | Yes | required |  | C R U Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [9](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 6 | [azt_name](#azt_name) | Name | nvarchar |  | Yes | required |  | C R U S Re | true |  |  |  |  |  |  | [3](#2.%20Forms) | [16](#3.%20Views) |  |  |  | [9](#7.%20Workflows) |  | [18](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 7 | [azt_opportunityid](#azt_opportunityid) | Opportunity | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [2](#2.%20Forms) | [1](#3.%20Views) |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 8 | [azt_opportunityproductid](#azt_opportunityproductid) | Opportunity Product | lookup |  | Yes | required |  | C R U Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [8](#3.%20Views) |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 9 | [azt_orderproductid](#azt_orderproductid) | Order Product | lookup |  | Yes | required |  | C R U Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [8](#3.%20Views) |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 10 | [azt_productdiscountid](#azt_productdiscountid) | Product Discount | primarykey |  | No | systemrequired |  | C R F Re | true |  |  |  |  |  |  |  | [9](#3.%20Views) |  |  |  |  |  | [11](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 11 | [azt_quoteproductid](#azt_quoteproductid) | Quote Product | lookup |  | Yes | required |  | C R U Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [8](#3.%20Views) |  |  |  |  |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 12 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  | [25](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
-| 13 | [createdon](#createdon) | Created On | datetime |  | No | none |  | R F Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [8](#3.%20Views) |  |  |  | [7](#7.%20Workflows) |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 14 | [createdonbehalfby](#createdonbehalfby) | Created By (Delegate) | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 15 | [exchangerate](#exchangerate) | Exchange Rate | decimal |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 16 | [importsequencenumber](#importsequencenumber) | Import Sequence Number | int |  | No | none |  | C R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 17 | [modifiedby](#modifiedby) | Modified By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
-| 18 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none |  | R F Re | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 19 | [modifiedonbehalfby](#modifiedonbehalfby) | Modified By (Delegate) | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 20 | [overriddencreatedon](#overriddencreatedon) | Record Created On | datetime |  | No | none |  | C R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 21 | [ownerid](#ownerid) | Owner | owner |  | No | systemrequired |  | C R U S | true |  |  |  |  |  |  | [4](#2.%20Forms) | [2](#3.%20Views) |  |  |  | [24](#7.%20Workflows) |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 22 | [owningbusinessunit](#owningbusinessunit) | Owning Business Unit | lookup |  | No | none |  | R F | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 23 | [owningteam](#owningteam) | Owning Team | lookup |  | No | none |  | R L | false |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 24 | [owninguser](#owninguser) | Owning User | lookup |  | No | none |  | R L | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 25 | [statecode](#statecode) | Status | state |  | No | systemrequired |  | R U F | true |  |  |  |  |  |  |  | [6](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 26 | [statuscode](#statuscode) | Status Reason | status |  | No | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [5](#7.%20Workflows) |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 27 | [timezoneruleversionnumber](#timezoneruleversionnumber) | Time Zone Rule Version Number | int |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 28 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none |  | C R U | true |  |  |  |  |  |  |  |  |  |  |  | [20](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 29 | [utcconversiontimezonecode](#utcconversiontimezonecode) | UTC Conversion Time Zone Code | int |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Notes | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
+|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
+| 1 | [azt_approvalstatus](#azt_approvalstatus) | Approval Status | picklist | 276530000: Pending Approval, 276530001: Approved, 276530002: Rejected | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [3](#3.%20Views) |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 2 | [azt_customerid](#azt_customerid) | Customer | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 3 | [azt_discountamount](#azt_discountamount) | Discount Amt | money |  | Yes | required |  | C R U Re | true |  |  |  |  |  |  |  | [2](#2.%20Forms) | [8](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 4 | [azt_discountamount_base](#azt_discountamount_base) | Discount Amount (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 5 | [azt_invoiceproductid](#azt_invoiceproductid) | Invoice Product | lookup |  | Yes | required |  | C R U Re | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [9](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 6 | [azt_name](#azt_name) | Name | nvarchar |  | Yes | required |  | C R U S Re | true |  |  |  |  |  |  |  | [3](#2.%20Forms) | [16](#3.%20Views) |  |  |  | [9](#7.%20Workflows) |  | [18](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 7 | [azt_opportunityid](#azt_opportunityid) | Opportunity | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [2](#2.%20Forms) | [1](#3.%20Views) |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 8 | [azt_opportunityproductid](#azt_opportunityproductid) | Opportunity Product | lookup |  | Yes | required |  | C R U Re | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [8](#3.%20Views) |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 9 | [azt_orderproductid](#azt_orderproductid) | Order Product | lookup |  | Yes | required |  | C R U Re | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [8](#3.%20Views) |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 10 | [azt_productdiscountid](#azt_productdiscountid) | Product Discount | primarykey |  | No | systemrequired |  | C R F Re | true |  |  |  |  |  |  |  |  | [9](#3.%20Views) |  |  |  |  |  | [11](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 11 | [azt_quoteproductid](#azt_quoteproductid) | Quote Product | lookup |  | Yes | required |  | C R U Re | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [8](#3.%20Views) |  |  |  |  |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 12 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  |  | [25](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
+| 13 | [createdon](#createdon) | Created On | datetime |  | No | none |  | R F Re | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [8](#3.%20Views) |  |  |  | [7](#7.%20Workflows) |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 14 | [createdonbehalfby](#createdonbehalfby) | Created By (Delegate) | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 15 | [exchangerate](#exchangerate) | Exchange Rate | decimal |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 16 | [importsequencenumber](#importsequencenumber) | Import Sequence Number | int |  | No | none |  | C R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 17 | [modifiedby](#modifiedby) | Modified By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
+| 18 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none |  | R F Re | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 19 | [modifiedonbehalfby](#modifiedonbehalfby) | Modified By (Delegate) | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 20 | [overriddencreatedon](#overriddencreatedon) | Record Created On | datetime |  | No | none |  | C R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 21 | [ownerid](#ownerid) | Owner | owner |  | No | systemrequired |  | C R U S | true |  |  |  |  |  |  |  | [4](#2.%20Forms) | [2](#3.%20Views) |  |  |  | [24](#7.%20Workflows) |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 22 | [owningbusinessunit](#owningbusinessunit) | Owning Business Unit | lookup |  | No | none |  | R F | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 23 | [owningteam](#owningteam) | Owning Team | lookup |  | No | none |  | R L | false |  |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 24 | [owninguser](#owninguser) | Owning User | lookup |  | No | none |  | R L | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 25 | [statecode](#statecode) | Status | state |  | No | systemrequired |  | R U F | true |  |  |  |  |  |  |  |  | [6](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 26 | [statuscode](#statuscode) | Status Reason | status |  | No | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [5](#7.%20Workflows) |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 27 | [timezoneruleversionnumber](#timezoneruleversionnumber) | Time Zone Rule Version Number | int |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 28 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none |  | C R U | true |  |  |  |  |  |  |  |  |  |  |  |  | [20](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 29 | [utcconversiontimezonecode](#utcconversiontimezonecode) | UTC Conversion Time Zone Code | int |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
 ---
 

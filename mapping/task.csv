@@ -1,11 +1,11 @@
-fieldName,displayName,dataType,requiredLevel,isCustom,lastUpdate,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-activityid,,,,False,,,true,0,5,0,0,0,0,0,7,0,0,0,,,,Task,Activity GUID,Activity_GUID__c
-azt_historicalowner,Historical Owner,nvarchar,none,True,,,false,0,0,0,0,0,2,0,0,0,0,0,,,,,,
-azt_recordownerid,Record Owner,lookup,none,True,,,true,1,6,0,0,0,37,0,9,0,1,0,,,,Task,Task Record Type ID,RecordTypeId
-azt_reorderopportunityid,Reorder Opportunity,lookup,none,True,,,true,1,0,0,0,0,0,0,0,0,1,0,,,,Task,Reorder Opportunity,Reorder_Opportunity__c
-azt_tasktype,Task Type,picklist,none,True,,"327630000: Standard Task, 327630001: Reorder Task",true,1,2,0,0,0,0,0,0,0,0,0,,,,Task,Task Subtype,TaskSubtype
-createdby,Created By,lookup,none,False,,,true,0,1,0,0,0,1,0,0,0,0,0,,,,Task,Created By ID,CreatedById
-prioritycode,,,,False,,,true,0,5,0,0,0,0,0,0,0,0,0,,,,Task,Priority,Priority
-regardingobjectid,Regarding,lookup,none,False,,,true,0,5,0,0,0,14,0,8,0,32,0,,,,Task,Related To ID,WhatId
-scheduledend,,,,False,,,true,0,8,0,0,0,0,0,2,0,0,0,,,,Task,Due Date,Due_Date__c
-statuscode,Status Reason,picklist,none,False,,,true,0,2,0,0,0,0,0,6,0,0,0,,,,Task,Status,Status
+fieldName,displayName,dataType,requiredLevel,isCustom,lastUpdate,picklistValues,mappingSuggested,notes,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+activityid,,,,False,,,true,,0,5,0,0,0,0,0,7,0,0,0,,,,Task,Activity GUID,Activity_GUID__c
+azt_historicalowner,Historical Owner,nvarchar,none,True,,,false,,0,0,0,0,0,2,0,0,0,0,0,,,,,,
+azt_recordownerid,Record Owner,lookup,none,True,,,true,,1,6,0,0,0,37,0,9,0,1,0,,,,Task,Task Record Type ID,RecordTypeId
+azt_reorderopportunityid,Reorder Opportunity,lookup,none,True,,,true,,1,0,0,0,0,0,0,0,0,1,0,,,,Task,Reorder Opportunity,Reorder_Opportunity__c
+azt_tasktype,Task Type,picklist,none,True,,"327630000: Standard Task, 327630001: Reorder Task",true,,1,2,0,0,0,0,0,0,0,0,0,,,,Task,Task Subtype,TaskSubtype
+createdby,Created By,lookup,none,False,,,true,,0,1,0,0,0,1,0,0,0,0,0,,,,Task,Created By ID,CreatedById
+prioritycode,,,,False,,,true,,0,5,0,0,0,0,0,0,0,0,0,,,,Task,Priority,Priority
+regardingobjectid,Regarding,lookup,none,False,,,true,,0,5,0,0,0,14,0,8,0,32,0,,,,Task,Related To ID,WhatId
+scheduledend,,,,False,,,true,,0,8,0,0,0,0,0,2,0,0,0,,,,Task,Due Date,Due_Date__c
+statuscode,Status Reason,picklist,none,False,,,true,,0,2,0,0,0,0,0,6,0,0,0,,,,Task,Status,Status

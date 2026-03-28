@@ -1,6 +1,6 @@
 Extract mapping CSV(s) from enriched d365-entities/ JSON files.
 
-This is Step 8 of the pipeline. Preserves confirmed SF mapping columns (sfObjectName, sfFieldDisplayName, sfFieldApiName) from existing CSVs. Reads sfSuggested*, sfSuggestedMapping, and count properties from JSON.
+This is Step 8 of the pipeline. Preserves confirmed SF mapping columns (sfObjectName, sfFieldDisplayName, sfFieldApiName) from existing CSVs. Reads sfSuggested*, sfSuggestedMapping, notes, and count properties from JSON.
 
 If `$ARGUMENTS` is empty, run for all entities. Otherwise run for the specified entity.
 

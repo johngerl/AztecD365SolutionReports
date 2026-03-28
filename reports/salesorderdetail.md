@@ -1,5 +1,5 @@
 # Salesorderdetail Field Usage Analysis
-> Date: 2026-03-25
+> Date: 2026-03-28
 
 | Property | Value |
 |---|---|
@@ -142,41 +142,41 @@
 
 Total fields: **33**
 
-| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
-|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [azt_discretionarydiscount](#azt_discretionarydiscount) | Discretionary Discount | money |  | Yes | none |  | R | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 2 | [azt_discretionarydiscount_base](#azt_discretionarydiscount_base) | Discretionary Discount (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 3 | [azt_discretionarydiscountamt](#azt_discretionarydiscountamt) | Discretionary Discount Amt | money |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 4 | [azt_discretionarydiscountamt_base](#azt_discretionarydiscountamt_base) | Discretionary Discount Amt (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 5 | [azt_estfulfillmentdate](#azt_estfulfillmentdate) | Est Fulfillment Date | datetime |  | Yes | none |  | C R U | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 6 | [azt_hasloadingdock](#azt_hasloadingdock) | Has Loading Dock? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 7 | [azt_issaas](#azt_issaas) | Is SaaS? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 8 | [azt_itemstatus](#azt_itemstatus) | Item Status | picklist | 276530000: Ordered, 276530001: Pending Fulfillment, 276530002: Fulfilled | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 9 | [azt_licenseenddate](#azt_licenseenddate) | License End Date | datetime |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 10 | [azt_licensestartdate](#azt_licensestartdate) | License Start Date | datetime |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 11 | [azt_licensetermmonths](#azt_licensetermmonths) | License Term (Months) | int |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 12 | [azt_licensetype](#azt_licensetype) | License Type | picklist |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [25](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 13 | [azt_lsebookfilesprovidedon](#azt_lsebookfilesprovidedon) | LSE Book Files Provided On | datetime |  | Yes | none |  | C R U | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 14 | [azt_lsebooksfile](#azt_lsebooksfile) | LSE Books Files Provided? | picklist | 276530000: Yes, 276530001: No | Yes | none |  | C R U | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 15 | [azt_lsecustomartapproved](#azt_lsecustomartapproved) | LSE Custom Art Approved? | picklist | 276530000: Yes, 276530001: No | Yes | none |  | C R U | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 16 | [azt_lsecustomartapprovedon](#azt_lsecustomartapprovedon) | LSE Custom Art Approved On | datetime |  | Yes | none |  | C R U | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 17 | [azt_lseproductionstartdate](#azt_lseproductionstartdate) | LSE Production Start Date | datetime |  | Yes | none |  | C R U | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 18 | [azt_nonsaastype](#azt_nonsaastype) | Non-SaaS Type | picklist | 276530000: Life Skills, 276530001: Kaplan Books, 276530002: GED Vouchers, 276530003: Other | Yes | none |  | C R U | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 19 | [azt_orderdate](#azt_orderdate) | Order Date | datetime |  | Yes | none |  | C R U | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 20 | [azt_ordertype](#azt_ordertype) | Order Type | picklist | 276530000: Companion, 276530001: Kaplan, 276530002: Print, 276530003: Software | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 21 | [azt_shippingdate](#azt_shippingdate) | Shipping Date | datetime |  | Yes | none |  | C R U | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 22 | [azt_softwarelicenseid](#azt_softwarelicenseid) | Software License | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 23 | [extendedamount](#extendedamount) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  | [1](#5.%20Reports) |  |  |  | [13](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 24 | [isproductoverridden](#isproductoverridden) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 25 | [manualdiscountamount](#manualdiscountamount) |  |  |  | No |  |  |  | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 26 | [priceperunit](#priceperunit) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  | [1](#5.%20Reports) |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 27 | [productdescription](#productdescription) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  | [2](#3.%20Views) |  | [1](#5.%20Reports) |  | [1](#7.%20Workflows) |  | [13](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 28 | [quantitybackordered](#quantitybackordered) |  |  |  | No |  |  |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 29 | [quantitycancelled](#quantitycancelled) |  |  |  | No |  |  |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 30 | [quantityshipped](#quantityshipped) |  |  |  | No |  |  |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 31 | [requestdeliveryby](#requestdeliveryby) |  |  |  | No |  |  |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 32 | [salesorderdetailid](#salesorderdetailid) | Salesorderdetail | uniqueidentifier |  | No | required |  | R | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  | [1](#5.%20Reports) |  |  |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 33 | [salesorderdetailname](#salesorderdetailname) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Notes | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
+|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
+| 1 | [azt_discretionarydiscount](#azt_discretionarydiscount) | Discretionary Discount | money |  | Yes | none |  | R | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 2 | [azt_discretionarydiscount_base](#azt_discretionarydiscount_base) | Discretionary Discount (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 3 | [azt_discretionarydiscountamt](#azt_discretionarydiscountamt) | Discretionary Discount Amt | money |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 4 | [azt_discretionarydiscountamt_base](#azt_discretionarydiscountamt_base) | Discretionary Discount Amt (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 5 | [azt_estfulfillmentdate](#azt_estfulfillmentdate) | Est Fulfillment Date | datetime |  | Yes | none |  | C R U | false |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 6 | [azt_hasloadingdock](#azt_hasloadingdock) | Has Loading Dock? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 7 | [azt_issaas](#azt_issaas) | Is SaaS? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 8 | [azt_itemstatus](#azt_itemstatus) | Item Status | picklist | 276530000: Ordered, 276530001: Pending Fulfillment, 276530002: Fulfilled | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 9 | [azt_licenseenddate](#azt_licenseenddate) | License End Date | datetime |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 10 | [azt_licensestartdate](#azt_licensestartdate) | License Start Date | datetime |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 11 | [azt_licensetermmonths](#azt_licensetermmonths) | License Term (Months) | int |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 12 | [azt_licensetype](#azt_licensetype) | License Type | picklist |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [25](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 13 | [azt_lsebookfilesprovidedon](#azt_lsebookfilesprovidedon) | LSE Book Files Provided On | datetime |  | Yes | none |  | C R U | false |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 14 | [azt_lsebooksfile](#azt_lsebooksfile) | LSE Books Files Provided? | picklist | 276530000: Yes, 276530001: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 15 | [azt_lsecustomartapproved](#azt_lsecustomartapproved) | LSE Custom Art Approved? | picklist | 276530000: Yes, 276530001: No | Yes | none |  | C R U | false |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 16 | [azt_lsecustomartapprovedon](#azt_lsecustomartapprovedon) | LSE Custom Art Approved On | datetime |  | Yes | none |  | C R U | false |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 17 | [azt_lseproductionstartdate](#azt_lseproductionstartdate) | LSE Production Start Date | datetime |  | Yes | none |  | C R U | false |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 18 | [azt_nonsaastype](#azt_nonsaastype) | Non-SaaS Type | picklist | 276530000: Life Skills, 276530001: Kaplan Books, 276530002: GED Vouchers, 276530003: Other | Yes | none |  | C R U | false |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 19 | [azt_orderdate](#azt_orderdate) | Order Date | datetime |  | Yes | none |  | C R U | false |  |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 20 | [azt_ordertype](#azt_ordertype) | Order Type | picklist | 276530000: Companion, 276530001: Kaplan, 276530002: Print, 276530003: Software | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 21 | [azt_shippingdate](#azt_shippingdate) | Shipping Date | datetime |  | Yes | none |  | C R U | false |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 22 | [azt_softwarelicenseid](#azt_softwarelicenseid) | Software License | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 23 | [extendedamount](#extendedamount) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [2](#3.%20Views) |  | [1](#5.%20Reports) |  |  |  | [13](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 24 | [isproductoverridden](#isproductoverridden) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 25 | [manualdiscountamount](#manualdiscountamount) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 26 | [priceperunit](#priceperunit) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [2](#3.%20Views) |  | [1](#5.%20Reports) |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 27 | [productdescription](#productdescription) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  | [2](#3.%20Views) |  | [1](#5.%20Reports) |  | [1](#7.%20Workflows) |  | [13](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 28 | [quantitybackordered](#quantitybackordered) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 29 | [quantitycancelled](#quantitycancelled) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 30 | [quantityshipped](#quantityshipped) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 31 | [requestdeliveryby](#requestdeliveryby) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 32 | [salesorderdetailid](#salesorderdetailid) | Salesorderdetail | uniqueidentifier |  | No | required |  | R | true |  |  |  |  |  |  |  |  | [2](#3.%20Views) |  | [1](#5.%20Reports) |  |  |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 33 | [salesorderdetailname](#salesorderdetailname) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 
 ---
 

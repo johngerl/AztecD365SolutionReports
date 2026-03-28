@@ -1,2 +1,2 @@
-fieldName,displayName,dataType,requiredLevel,isCustom,lastUpdate,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-regardingobjectid,Regarding,lookup,none,False,,,true,0,0,0,0,0,14,0,8,0,2,0,,,,,,
+fieldName,displayName,dataType,requiredLevel,isCustom,lastUpdate,picklistValues,mappingSuggested,notes,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+regardingobjectid,Regarding,lookup,none,False,,,true,,0,0,0,0,0,14,0,8,0,2,0,,,,,,

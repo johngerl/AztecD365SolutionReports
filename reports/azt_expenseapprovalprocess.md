@@ -1,5 +1,5 @@
 # Azt_expenseapprovalprocess Field Usage Analysis
-> Date: 2026-03-25
+> Date: 2026-03-28
 
 | Property | Value |
 |---|---|
@@ -184,30 +184,30 @@
 
 Total fields: **22**
 
-| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
-|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [activestageid](#activestageid) | Active Stage | lookup |  | No | none |  | C R U Re | true |  |  |  |  |  |  |  | [9](#3.%20Views) |  |  |  | [3](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
-| 2 | [activestagestartedon](#activestagestartedon) | Active Stage Started On | datetime |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 3 | [bpf_azt_expensereportid](#bpf_azt_expensereportid) | Azt_Expensereport | lookup |  | Yes | none |  | C R U Re | true |  |  |  |  |  |  |  | [9](#3.%20Views) |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 4 | [bpf_duration](#bpf_duration) | Duration | int |  | Yes | none |  | R | false |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 5 | [bpf_name](#bpf_name) | Name | nvarchar |  | Yes | required |  | C R U S Re | true |  |  |  |  |  |  |  | [18](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 6 | [businessprocessflowinstanceid](#businessprocessflowinstanceid) | Expense Approval Process | primarykey |  | No | systemrequired |  | C R F Re | true |  |  |  |  |  |  |  | [10](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 7 | [completedon](#completedon) | Completed On | datetime |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 8 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  | [25](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
-| 9 | [createdon](#createdon) | Created On | datetime |  | No | none |  | R F Re | true |  |  |  |  |  |  |  | [9](#3.%20Views) |  |  |  | [7](#7.%20Workflows) | [1](#9.%20Formulas%20and%20Rollups) | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 10 | [createdonbehalfby](#createdonbehalfby) | Created By (Delegate) | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 11 | [importsequencenumber](#importsequencenumber) | Import Sequence Number | int |  | No | none |  | C R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 12 | [modifiedby](#modifiedby) | Modified By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
-| 13 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none |  | R F Re | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 14 | [modifiedonbehalfby](#modifiedonbehalfby) | Modified By (Delegate) | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 15 | [organizationid](#organizationid) | Organization Id | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 16 | [overriddencreatedon](#overriddencreatedon) | Record Created On | datetime |  | No | none |  | C R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 17 | [processid](#processid) | Process | lookup |  | No | none |  | C R U Re | true |  |  |  |  |  |  |  | [9](#3.%20Views) |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 18 | [statecode](#statecode) | Status | state |  | No | systemrequired |  | R U F Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [18](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 19 | [statuscode](#statuscode) | Status Reason | status |  | No | none |  | C R U Re | true |  |  |  |  |  |  |  | [9](#3.%20Views) |  |  |  | [5](#7.%20Workflows) |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 20 | [timezoneruleversionnumber](#timezoneruleversionnumber) | Time Zone Rule Version Number | int |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 21 | [traversedpath](#traversedpath) | Traversed Path | nvarchar |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 22 | [utcconversiontimezonecode](#utcconversiontimezonecode) | UTC Conversion Time Zone Code | int |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Notes | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
+|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
+| 1 | [activestageid](#activestageid) | Active Stage | lookup |  | No | none |  | C R U Re | true |  |  |  |  |  |  |  |  | [9](#3.%20Views) |  |  |  | [3](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
+| 2 | [activestagestartedon](#activestagestartedon) | Active Stage Started On | datetime |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 3 | [bpf_azt_expensereportid](#bpf_azt_expensereportid) | Azt_Expensereport | lookup |  | Yes | none |  | C R U Re | true |  |  |  |  |  |  |  |  | [9](#3.%20Views) |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 4 | [bpf_duration](#bpf_duration) | Duration | int |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 5 | [bpf_name](#bpf_name) | Name | nvarchar |  | Yes | required |  | C R U S Re | true |  |  |  |  |  |  |  |  | [18](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 6 | [businessprocessflowinstanceid](#businessprocessflowinstanceid) | Expense Approval Process | primarykey |  | No | systemrequired |  | C R F Re | true |  |  |  |  |  |  |  |  | [10](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 7 | [completedon](#completedon) | Completed On | datetime |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 8 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  |  | [25](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
+| 9 | [createdon](#createdon) | Created On | datetime |  | No | none |  | R F Re | true |  |  |  |  |  |  |  |  | [9](#3.%20Views) |  |  |  | [7](#7.%20Workflows) | [1](#9.%20Formulas%20and%20Rollups) | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 10 | [createdonbehalfby](#createdonbehalfby) | Created By (Delegate) | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 11 | [importsequencenumber](#importsequencenumber) | Import Sequence Number | int |  | No | none |  | C R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 12 | [modifiedby](#modifiedby) | Modified By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
+| 13 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none |  | R F Re | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 14 | [modifiedonbehalfby](#modifiedonbehalfby) | Modified By (Delegate) | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 15 | [organizationid](#organizationid) | Organization Id | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 16 | [overriddencreatedon](#overriddencreatedon) | Record Created On | datetime |  | No | none |  | C R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 17 | [processid](#processid) | Process | lookup |  | No | none |  | C R U Re | true |  |  |  |  |  |  |  |  | [9](#3.%20Views) |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 18 | [statecode](#statecode) | Status | state |  | No | systemrequired |  | R U F Re | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [18](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 19 | [statuscode](#statuscode) | Status Reason | status |  | No | none |  | C R U Re | true |  |  |  |  |  |  |  |  | [9](#3.%20Views) |  |  |  | [5](#7.%20Workflows) |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 20 | [timezoneruleversionnumber](#timezoneruleversionnumber) | Time Zone Rule Version Number | int |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 21 | [traversedpath](#traversedpath) | Traversed Path | nvarchar |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 22 | [utcconversiontimezonecode](#utcconversiontimezonecode) | UTC Conversion Time Zone Code | int |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
 ---
 

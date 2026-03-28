@@ -1,5 +1,5 @@
 # Phonecall Field Usage Analysis
-> Date: 2026-03-25
+> Date: 2026-03-28
 
 | Property | Value |
 |---|---|
@@ -222,30 +222,30 @@
 
 Total fields: **22**
 
-| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
-|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [activityid](#activityid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [15](#3.%20Views) |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 2 | [actualend](#actualend) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [24](#3.%20Views) | [3](#4.%20Chart%20Visualizations) |  |  |  |  |  |  |  |  |  |
-| 3 | [azt_addtocrtqueue](#azt_addtocrtqueue) | Add to CRT Queue? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 4 | [azt_autocreatecallback](#azt_autocreatecallback) | Autocreate Callback? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 5 | [azt_callbackin](#azt_callbackin) | Callback In: | picklist | 276530000: 1 Day, 276530001: 2 Days, 276530002: 3 Days, 276530003: 1 Week, 276530004: 1 Month, 276530005: Specific Date | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 6 | [azt_callbackon](#azt_callbackon) | Callback On | datetime |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 7 | [azt_copydescription](#azt_copydescription) | Copy Description? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 8 | [azt_copysubject](#azt_copysubject) | Copy Subject? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 9 | [azt_historicalowner](#azt_historicalowner) | Historical Owner | nvarchar |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 10 | [azt_phonecallstatus](#azt_phonecallstatus) | Phonecall Status | picklist | 276530000: Active, 276530001: Failed, 276530002: Qualified | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 11 | [azt_recordownerid](#azt_recordownerid) | Record Owner | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) | [15](#3.%20Views) | [13](#4.%20Chart%20Visualizations) |  |  | [37](#7.%20Workflows) |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 12 | [azt_result](#azt_result) | Result | picklist | 327630000: Connected, 327630001: Left VM, 327630002: No Answer | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 13 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  | [3](#7.%20Workflows) |  |  |  |  |  |  |
-| 14 | [description](#description) | Description | ntext |  | No | none |  | C R U | true |  |  |  |  |  |  |  |  |  |  |  | [14](#7.%20Workflows) |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 15 | [directioncode](#directioncode) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 16 | [from](#from) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 17 | [leftvoicemail](#leftvoicemail) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 18 | [phonenumber](#phonenumber) |  |  |  | No |  |  |  | true |  |  |  |  |  |  | [1](#2.%20Forms) | [3](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 19 | [prioritycode](#prioritycode) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 20 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none |  | C R U Re | true |  |  |  |  |  |  |  | [4](#3.%20Views) |  |  |  | [14](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [35](#12.%20Relationships) |  |  |
-| 21 | [scheduledend](#scheduledend) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 22 | [to](#to) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Notes | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
+|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
+| 1 | [activityid](#activityid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [15](#3.%20Views) |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 2 | [actualend](#actualend) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [24](#3.%20Views) | [3](#4.%20Chart%20Visualizations) |  |  |  |  |  |  |  |  |  |
+| 3 | [azt_addtocrtqueue](#azt_addtocrtqueue) | Add to CRT Queue? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 4 | [azt_autocreatecallback](#azt_autocreatecallback) | Autocreate Callback? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 5 | [azt_callbackin](#azt_callbackin) | Callback In: | picklist | 276530000: 1 Day, 276530001: 2 Days, 276530002: 3 Days, 276530003: 1 Week, 276530004: 1 Month, 276530005: Specific Date | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 6 | [azt_callbackon](#azt_callbackon) | Callback On | datetime |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 7 | [azt_copydescription](#azt_copydescription) | Copy Description? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 8 | [azt_copysubject](#azt_copysubject) | Copy Subject? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 9 | [azt_historicalowner](#azt_historicalowner) | Historical Owner | nvarchar |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 10 | [azt_phonecallstatus](#azt_phonecallstatus) | Phonecall Status | picklist | 276530000: Active, 276530001: Failed, 276530002: Qualified | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 11 | [azt_recordownerid](#azt_recordownerid) | Record Owner | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [15](#3.%20Views) | [13](#4.%20Chart%20Visualizations) |  |  | [37](#7.%20Workflows) |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 12 | [azt_result](#azt_result) | Result | picklist | 327630000: Connected, 327630001: Left VM, 327630002: No Answer | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 13 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  | [3](#7.%20Workflows) |  |  |  |  |  |  |
+| 14 | [description](#description) | Description | ntext |  | No | none |  | C R U | true |  |  |  |  |  |  |  |  |  |  |  |  | [14](#7.%20Workflows) |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 15 | [directioncode](#directioncode) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 16 | [from](#from) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 17 | [leftvoicemail](#leftvoicemail) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 18 | [phonenumber](#phonenumber) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [3](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 19 | [prioritycode](#prioritycode) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 20 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none |  | C R U Re | true |  |  |  |  |  |  |  |  | [4](#3.%20Views) |  |  |  | [14](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [35](#12.%20Relationships) |  |  |
+| 21 | [scheduledend](#scheduledend) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 22 | [to](#to) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 
 ---
 

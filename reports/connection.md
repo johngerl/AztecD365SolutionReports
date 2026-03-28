@@ -1,5 +1,5 @@
 # Connection Field Usage Analysis
-> Date: 2026-03-25
+> Date: 2026-03-28
 
 | Property | Value |
 |---|---|
@@ -135,17 +135,17 @@
 
 Total fields: **9**
 
-| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
-|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [azt_verticalname](#azt_verticalname) | Vertical Name | picklist | 100000000: CTE, 327630000: Academic, 327630001: Workforce, 327630002: Wellness | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 2 | [connectionid](#connectionid) | Connection | uniqueidentifier |  | No | required |  | R | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 3 | [description](#description) | Description | ntext |  | No | none |  | R | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 4 | [effectiveend](#effectiveend) |  |  |  | No |  |  |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 5 | [effectivestart](#effectivestart) |  |  |  | No |  |  |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 6 | [record1id](#record1id) | Connected From | lookup |  | No | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  | [38](#12.%20Relationships) |  |  |
-| 7 | [record1roleid](#record1roleid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 8 | [record2id](#record2id) | Connected To | lookup |  | No | none |  | C R U Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [6](#3.%20Views) |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  | [38](#12.%20Relationships) |  |  |
-| 9 | [record2roleid](#record2roleid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Notes | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
+|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
+| 1 | [azt_verticalname](#azt_verticalname) | Vertical Name | picklist | 100000000: CTE, 327630000: Academic, 327630001: Workforce, 327630002: Wellness | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 2 | [connectionid](#connectionid) | Connection | uniqueidentifier |  | No | required |  | R | true |  |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 3 | [description](#description) | Description | ntext |  | No | none |  | R | true |  |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 4 | [effectiveend](#effectiveend) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 5 | [effectivestart](#effectivestart) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 6 | [record1id](#record1id) | Connected From | lookup |  | No | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  | [38](#12.%20Relationships) |  |  |
+| 7 | [record1roleid](#record1roleid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 8 | [record2id](#record2id) | Connected To | lookup |  | No | none |  | C R U Re | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [6](#3.%20Views) |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  | [38](#12.%20Relationships) |  |  |
+| 9 | [record2roleid](#record2roleid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [3](#3.%20Views) |  |  |  |  |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 
 ---
 

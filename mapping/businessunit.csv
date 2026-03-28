@@ -1,9 +1,9 @@
-fieldName,displayName,dataType,requiredLevel,isCustom,lastUpdate,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-address1_telephone1,Main Phone,nvarchar,none,False,,,false,0,3,0,0,0,0,0,1,0,0,0,,,,,,
-azt_stateabbreviation,State Abbreviation,nvarchar,none,True,,,false,1,4,0,0,0,0,0,1,0,0,0,,,,,,
-businessunitid,Businessunit,uniqueidentifier,required,False,,,false,0,3,0,0,0,1,0,8,0,0,0,,,,,,
-isdisabled,,,,False,,,false,0,1,0,0,0,0,0,0,0,0,0,,,,,,
-name,Name,nvarchar,systemrequired,False,,,false,0,7,0,0,0,16,0,23,0,0,0,,,,,,
-owningbusinessunit,Owning Business Unit,lookup,none,False,,,false,0,0,0,0,0,0,0,0,0,22,0,,,,,,
-parentbusinessunitid,,,,False,,,false,0,1,0,0,0,0,0,0,0,0,0,,,,,,
-websiteurl,Website,nvarchar,none,False,,,false,0,3,0,0,0,0,0,0,0,0,0,,,,,,
+fieldName,displayName,dataType,requiredLevel,isCustom,lastUpdate,picklistValues,mappingSuggested,notes,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+address1_telephone1,Main Phone,nvarchar,none,False,,,false,,0,3,0,0,0,0,0,1,0,0,0,,,,,,
+azt_stateabbreviation,State Abbreviation,nvarchar,none,True,,,false,,1,4,0,0,0,0,0,1,0,0,0,,,,,,
+businessunitid,Businessunit,uniqueidentifier,required,False,,,false,,0,3,0,0,0,1,0,8,0,0,0,,,,,,
+isdisabled,,,,False,,,false,,0,1,0,0,0,0,0,0,0,0,0,,,,,,
+name,Name,nvarchar,systemrequired,False,,,false,,0,7,0,0,0,16,0,23,0,0,0,,,,,,
+owningbusinessunit,Owning Business Unit,lookup,none,False,,,false,,0,0,0,0,0,0,0,0,0,22,0,,,,,,
+parentbusinessunitid,,,,False,,,false,,0,1,0,0,0,0,0,0,0,0,0,,,,,,
+websiteurl,Website,nvarchar,none,False,,,false,,0,3,0,0,0,0,0,0,0,0,0,,,,,,

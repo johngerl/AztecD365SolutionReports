@@ -1,5 +1,5 @@
 # Expiredprocess Field Usage Analysis
-> Date: 2026-03-25
+> Date: 2026-03-28
 
 | Property | Value |
 |---|---|
@@ -131,13 +131,13 @@
 
 Total fields: **5**
 
-| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
-|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [expirationdate](#expirationdate) |  |  |  | No |  |  |  | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 2 | [expiredreviewoptions](#expiredreviewoptions) |  |  |  | No |  |  |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 3 | [knowledgearticleid](#knowledgearticleid) | Knowledge Article | lookup |  | No | none |  | C R U S Re | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 4 | [setproductassociations](#setproductassociations) |  |  |  | No |  |  |  | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 5 | [updatecontent](#updatecontent) |  |  |  | No |  |  |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Notes | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
+|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
+| 1 | [expirationdate](#expirationdate) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 2 | [expiredreviewoptions](#expiredreviewoptions) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 3 | [knowledgearticleid](#knowledgearticleid) | Knowledge Article | lookup |  | No | none |  | C R U S Re | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 4 | [setproductassociations](#setproductassociations) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 5 | [updatecontent](#updatecontent) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
 
 ---
 

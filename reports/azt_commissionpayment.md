@@ -1,5 +1,5 @@
 # Azt_commissionpayment Field Usage Analysis
-> Date: 2026-03-25
+> Date: 2026-03-28
 
 | Property | Value |
 |---|---|
@@ -207,35 +207,35 @@
 
 Total fields: **27**
 
-| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
-|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [azt_commissionamount](#azt_commissionamount) | Commission Amount | money |  | Yes | recommended |  | C R U Re | true |  |  |  |  |  |  | [2](#2.%20Forms) | [5](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 2 | [azt_commissionamount_base](#azt_commissionamount_base) | Commission Amount (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 3 | [azt_commissionid](#azt_commissionid) | Commission | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [3](#7.%20Workflows) |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 4 | [azt_commissionpaymentid](#azt_commissionpaymentid) | Commission Payment | primarykey |  | No | systemrequired |  | C R F Re | true |  |  |  |  |  |  |  | [7](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 5 | [azt_compgoalid](#azt_compgoalid) | Comp Goal | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 6 | [azt_invoiceid](#azt_invoiceid) | Invoice | lookup |  | Yes | none |  | C R U S Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [7](#3.%20Views) |  |  |  | [3](#7.%20Workflows) |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 7 | [azt_name](#azt_name) | Name | nvarchar |  | Yes | required |  | C R U S Re | true |  |  |  |  |  |  | [3](#2.%20Forms) | [7](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [18](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 8 | [azt_periodend](#azt_periodend) | Period End | datetime |  | Yes | required |  | C R U Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [10](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 9 | [azt_periodstart](#azt_periodstart) | Period Start | datetime |  | Yes | required |  | C R U Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [5](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 10 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  | [25](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
-| 11 | [createdon](#createdon) | Created On | datetime |  | No | none |  | R F Re | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [7](#7.%20Workflows) |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 12 | [createdonbehalfby](#createdonbehalfby) | Created By (Delegate) | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 13 | [exchangerate](#exchangerate) | Exchange Rate | decimal |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 14 | [importsequencenumber](#importsequencenumber) | Import Sequence Number | int |  | No | none |  | C R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 15 | [modifiedby](#modifiedby) | Modified By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
-| 16 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none |  | R F Re | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 17 | [modifiedonbehalfby](#modifiedonbehalfby) | Modified By (Delegate) | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 18 | [overriddencreatedon](#overriddencreatedon) | Record Created On | datetime |  | No | none |  | C R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 19 | [ownerid](#ownerid) | Owner | owner |  | No | systemrequired |  | C R U S Re | true |  |  |  |  |  |  | [4](#2.%20Forms) | [14](#3.%20Views) |  |  |  | [25](#7.%20Workflows) |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 20 | [owningbusinessunit](#owningbusinessunit) | Owning Business Unit | lookup |  | No | none |  | R F | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 21 | [owningteam](#owningteam) | Owning Team | lookup |  | No | none |  | R L | false |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 22 | [owninguser](#owninguser) | Owning User | lookup |  | No | none |  | R L | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 23 | [statecode](#statecode) | Status | state |  | No | systemrequired |  | R U F | true |  |  |  |  |  |  |  | [6](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 24 | [statuscode](#statuscode) | Status Reason | status |  | No | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [5](#7.%20Workflows) |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 25 | [timezoneruleversionnumber](#timezoneruleversionnumber) | Time Zone Rule Version Number | int |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 26 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [20](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 27 | [utcconversiontimezonecode](#utcconversiontimezonecode) | UTC Conversion Time Zone Code | int |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Notes | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
+|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
+| 1 | [azt_commissionamount](#azt_commissionamount) | Commission Amount | money |  | Yes | recommended |  | C R U Re | true |  |  |  |  |  |  |  | [2](#2.%20Forms) | [5](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 2 | [azt_commissionamount_base](#azt_commissionamount_base) | Commission Amount (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 3 | [azt_commissionid](#azt_commissionid) | Commission | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [3](#7.%20Workflows) |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 4 | [azt_commissionpaymentid](#azt_commissionpaymentid) | Commission Payment | primarykey |  | No | systemrequired |  | C R F Re | true |  |  |  |  |  |  |  |  | [7](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 5 | [azt_compgoalid](#azt_compgoalid) | Comp Goal | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 6 | [azt_invoiceid](#azt_invoiceid) | Invoice | lookup |  | Yes | none |  | C R U S Re | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [7](#3.%20Views) |  |  |  | [3](#7.%20Workflows) |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 7 | [azt_name](#azt_name) | Name | nvarchar |  | Yes | required |  | C R U S Re | true |  |  |  |  |  |  |  | [3](#2.%20Forms) | [7](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [18](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 8 | [azt_periodend](#azt_periodend) | Period End | datetime |  | Yes | required |  | C R U Re | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [10](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 9 | [azt_periodstart](#azt_periodstart) | Period Start | datetime |  | Yes | required |  | C R U Re | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [5](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 10 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  |  | [25](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
+| 11 | [createdon](#createdon) | Created On | datetime |  | No | none |  | R F Re | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [7](#7.%20Workflows) |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 12 | [createdonbehalfby](#createdonbehalfby) | Created By (Delegate) | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 13 | [exchangerate](#exchangerate) | Exchange Rate | decimal |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 14 | [importsequencenumber](#importsequencenumber) | Import Sequence Number | int |  | No | none |  | C R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 15 | [modifiedby](#modifiedby) | Modified By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
+| 16 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none |  | R F Re | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 17 | [modifiedonbehalfby](#modifiedonbehalfby) | Modified By (Delegate) | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 18 | [overriddencreatedon](#overriddencreatedon) | Record Created On | datetime |  | No | none |  | C R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 19 | [ownerid](#ownerid) | Owner | owner |  | No | systemrequired |  | C R U S Re | true |  |  |  |  |  |  |  | [4](#2.%20Forms) | [14](#3.%20Views) |  |  |  | [25](#7.%20Workflows) |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 20 | [owningbusinessunit](#owningbusinessunit) | Owning Business Unit | lookup |  | No | none |  | R F | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 21 | [owningteam](#owningteam) | Owning Team | lookup |  | No | none |  | R L | false |  |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 22 | [owninguser](#owninguser) | Owning User | lookup |  | No | none |  | R L | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 23 | [statecode](#statecode) | Status | state |  | No | systemrequired |  | R U F | true |  |  |  |  |  |  |  |  | [6](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 24 | [statuscode](#statuscode) | Status Reason | status |  | No | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [5](#7.%20Workflows) |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 25 | [timezoneruleversionnumber](#timezoneruleversionnumber) | Time Zone Rule Version Number | int |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 26 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [20](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 27 | [utcconversiontimezonecode](#utcconversiontimezonecode) | UTC Conversion Time Zone Code | int |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
 ---
 

@@ -1,5 +1,5 @@
 # Incident Field Usage Analysis
-> Date: 2026-03-25
+> Date: 2026-03-28
 
 | Property | Value |
 |---|---|
@@ -205,61 +205,61 @@
 
 Total fields: **53**
 
-| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
-|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [!process_custom_attribute_url_](#%21process_custom_attribute_url_) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  | [3](#7.%20Workflows) |  |  |  |  |  |  |
-| 2 | [adx_resolution](#adx_resolution) |  |  |  | No |  |  |  | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 3 | [adx_resolutiondate](#adx_resolutiondate) |  |  |  | No |  |  |  | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 4 | [azt_aztecproduct](#azt_aztecproduct) | Aztec Product | picklist | 100000000: P6 - Testing Platform, 100000001: P12 - Learning Platform, 100000003: Legacy | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 5 | [azt_customersupportstatus](#azt_customersupportstatus) | Customer Support Status | bit | 1: Active, 0: Expired | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 6 | [azt_daysopen](#azt_daysopen) | Days Open | int |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) | [1](#3.%20Views) |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
-| 7 | [azt_engagementid](#azt_engagementid) | Engagement | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [4](#7.%20Workflows) |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 8 | [azt_firstrecordownerassignment](#azt_firstrecordownerassignment) | First Record Owner Assignment | bit | 0: No, 1: Yes | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 9 | [azt_historicalowner](#azt_historicalowner) | Historical Owner | nvarchar |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 10 | [azt_recordownerid](#azt_recordownerid) | Record Owner | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [2](#2.%20Forms) | [5](#3.%20Views) |  |  |  | [37](#7.%20Workflows) |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 11 | [azt_resolvedbyid](#azt_resolvedbyid) | Resolved By | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 12 | [azt_responsibletechnicianid](#azt_responsibletechnicianid) | Responsible Rep | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 13 | [azt_utrackcase](#azt_utrackcase) | U-Track Case# | nvarchar |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 14 | [caseorigincode](#caseorigincode) | Case Origin | picklist |  | No | none |  | C R U G Re | true |  |  |  |  |  |  | [2](#2.%20Forms) | [4](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 15 | [casetypecode](#casetypecode) | Case Type | picklist | 3: Support - Request, 100000001: Academic, 100000000: Engineering, 327630000: Operational, 327630002: Companion Repair, 327630001: Support - Companion, 1: Support - Internal, 2: Support - Online, 100000004: Professional Development Support, 100000002: Feature Request, 100000003: Content Request | No | none |  | C R U So G | true |  |  |  |  |  |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 16 | [contractdetailid](#contractdetailid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 17 | [contractid](#contractid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 18 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | true |  |  |  |  |  |  | [1](#2.%20Forms) | [4](#3.%20Views) | [4](#4.%20Chart%20Visualizations) |  |  | [6](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
-| 19 | [createdbyexternalparty](#createdbyexternalparty) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 20 | [createdon](#createdon) | Created On | datetime |  | No | none |  | R | true |  |  |  |  |  |  |  | [8](#3.%20Views) |  |  |  | [2](#7.%20Workflows) | [1](#9.%20Formulas%20and%20Rollups) | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 21 | [customerid](#customerid) | Customer | customer |  | No | systemrequired |  | C R U So G | true |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  | [13](#7.%20Workflows) |  | [11](#10.%20Plugin%20Source%20Code%20Analysis) |  | [2](#12.%20Relationships) |  |  |
-| 22 | [description](#description) | Description | ntext |  | No | none |  | R | true |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 23 | [entitlementid](#entitlementid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 24 | [entityimage](#entityimage) | Entity Image | image |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 25 | [existingcase](#existingcase) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 26 | [firstresponsebykpiid](#firstresponsebykpiid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 27 | [incidentid](#incidentid) | Incident | uniqueidentifier |  | No | required |  | R | true |  |  |  |  |  |  |  | [7](#3.%20Views) |  |  |  | [3](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 28 | [modifiedby](#modifiedby) | Modified By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 29 | [modifiedbyexternalparty](#modifiedbyexternalparty) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 30 | [msa_partnercontactid](#msa_partnercontactid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 31 | [msa_partnerid](#msa_partnerid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 32 | [msdyn_aiagentstatus](#msdyn_aiagentstatus) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 33 | [msdyn_iotalert](#msdyn_iotalert) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 34 | [originatingcaseid](#originatingcaseid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 35 | [owningbusinessunit](#owningbusinessunit) | Owning Business Unit | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 36 | [owningteam](#owningteam) | Owning Team | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 37 | [owninguser](#owninguser) | Owning User | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 38 | [parentcaseid](#parentcaseid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 39 | [primarycontactid](#primarycontactid) | Contact | lookup |  | No | required |  | C R U So | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 40 | [prioritycode](#prioritycode) |  |  |  | No |  |  |  | true |  |  |  |  |  |  | [1](#2.%20Forms) | [4](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 41 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [8](#12.%20Relationships) |  |  |
-| 42 | [resolveby](#resolveby) |  |  |  | No |  |  |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 43 | [resolvebykpiid](#resolvebykpiid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 44 | [responseby](#responseby) |  |  |  | No |  |  |  | false |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 45 | [responsiblecontactid](#responsiblecontactid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 46 | [slaid](#slaid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 47 | [slainvokedid](#slainvokedid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 48 | [socialprofileid](#socialprofileid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 49 | [statecode](#statecode) | Status | state |  | No | systemrequired |  | C R U So Re | true |  |  |  |  |  |  |  | [6](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 50 | [statuscode](#statuscode) | Status Reason | status |  | No | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  | [5](#7.%20Workflows) |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 51 | [subjectid](#subjectid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 52 | [ticketnumber](#ticketnumber) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [4](#3.%20Views) |  |  |  | [3](#7.%20Workflows) |  |  |  |  |  |  |
-| 53 | [title](#title) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [12](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Notes | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
+|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
+| 1 | [!process_custom_attribute_url_](#%21process_custom_attribute_url_) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [3](#7.%20Workflows) |  |  |  |  |  |  |
+| 2 | [adx_resolution](#adx_resolution) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 3 | [adx_resolutiondate](#adx_resolutiondate) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 4 | [azt_aztecproduct](#azt_aztecproduct) | Aztec Product | picklist | 100000000: P6 - Testing Platform, 100000001: P12 - Learning Platform, 100000003: Legacy | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 5 | [azt_customersupportstatus](#azt_customersupportstatus) | Customer Support Status | bit | 1: Active, 0: Expired | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 6 | [azt_daysopen](#azt_daysopen) | Days Open | int |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [1](#3.%20Views) |  |  |  |  | [1](#9.%20Formulas%20and%20Rollups) |  |  |  |  |  |
+| 7 | [azt_engagementid](#azt_engagementid) | Engagement | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [4](#7.%20Workflows) |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 8 | [azt_firstrecordownerassignment](#azt_firstrecordownerassignment) | First Record Owner Assignment | bit | 0: No, 1: Yes | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 9 | [azt_historicalowner](#azt_historicalowner) | Historical Owner | nvarchar |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 10 | [azt_recordownerid](#azt_recordownerid) | Record Owner | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [2](#2.%20Forms) | [5](#3.%20Views) |  |  |  | [37](#7.%20Workflows) |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 11 | [azt_resolvedbyid](#azt_resolvedbyid) | Resolved By | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [1](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 12 | [azt_responsibletechnicianid](#azt_responsibletechnicianid) | Responsible Rep | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 13 | [azt_utrackcase](#azt_utrackcase) | U-Track Case# | nvarchar |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 14 | [caseorigincode](#caseorigincode) | Case Origin | picklist |  | No | none |  | C R U G Re | true |  |  |  |  |  |  |  | [2](#2.%20Forms) | [4](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 15 | [casetypecode](#casetypecode) | Case Type | picklist | 3: Support - Request, 100000001: Academic, 100000000: Engineering, 327630000: Operational, 327630002: Companion Repair, 327630001: Support - Companion, 1: Support - Internal, 2: Support - Online, 100000004: Professional Development Support, 100000002: Feature Request, 100000003: Content Request | No | none |  | C R U So G | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 16 | [contractdetailid](#contractdetailid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 17 | [contractid](#contractid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 18 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [4](#3.%20Views) | [4](#4.%20Chart%20Visualizations) |  |  | [6](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
+| 19 | [createdbyexternalparty](#createdbyexternalparty) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 20 | [createdon](#createdon) | Created On | datetime |  | No | none |  | R | true |  |  |  |  |  |  |  |  | [8](#3.%20Views) |  |  |  | [2](#7.%20Workflows) | [1](#9.%20Formulas%20and%20Rollups) | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 21 | [customerid](#customerid) | Customer | customer |  | No | systemrequired |  | C R U So G | true |  |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  | [13](#7.%20Workflows) |  | [11](#10.%20Plugin%20Source%20Code%20Analysis) |  | [2](#12.%20Relationships) |  |  |
+| 22 | [description](#description) | Description | ntext |  | No | none |  | R | true |  |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 23 | [entitlementid](#entitlementid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 24 | [entityimage](#entityimage) | Entity Image | image |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 25 | [existingcase](#existingcase) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 26 | [firstresponsebykpiid](#firstresponsebykpiid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 27 | [incidentid](#incidentid) | Incident | uniqueidentifier |  | No | required |  | R | true |  |  |  |  |  |  |  |  | [7](#3.%20Views) |  |  |  | [3](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 28 | [modifiedby](#modifiedby) | Modified By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 29 | [modifiedbyexternalparty](#modifiedbyexternalparty) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 30 | [msa_partnercontactid](#msa_partnercontactid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 31 | [msa_partnerid](#msa_partnerid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 32 | [msdyn_aiagentstatus](#msdyn_aiagentstatus) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 33 | [msdyn_iotalert](#msdyn_iotalert) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 34 | [originatingcaseid](#originatingcaseid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 35 | [owningbusinessunit](#owningbusinessunit) | Owning Business Unit | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 36 | [owningteam](#owningteam) | Owning Team | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 37 | [owninguser](#owninguser) | Owning User | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 38 | [parentcaseid](#parentcaseid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 39 | [primarycontactid](#primarycontactid) | Contact | lookup |  | No | required |  | C R U So | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 40 | [prioritycode](#prioritycode) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [4](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 41 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [8](#12.%20Relationships) |  |  |
+| 42 | [resolveby](#resolveby) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 43 | [resolvebykpiid](#resolvebykpiid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 44 | [responseby](#responseby) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 45 | [responsiblecontactid](#responsiblecontactid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 46 | [slaid](#slaid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 47 | [slainvokedid](#slainvokedid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 48 | [socialprofileid](#socialprofileid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 49 | [statecode](#statecode) | Status | state |  | No | systemrequired |  | C R U So Re | true |  |  |  |  |  |  |  |  | [6](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 50 | [statuscode](#statuscode) | Status Reason | status |  | No | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  | [5](#7.%20Workflows) |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 51 | [subjectid](#subjectid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 52 | [ticketnumber](#ticketnumber) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [4](#3.%20Views) |  |  |  | [3](#7.%20Workflows) |  |  |  |  |  |  |
+| 53 | [title](#title) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [12](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 
 ---
 

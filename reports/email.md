@@ -1,5 +1,5 @@
 # Email Field Usage Analysis
-> Date: 2026-03-25
+> Date: 2026-03-28
 
 | Property | Value |
 |---|---|
@@ -180,32 +180,32 @@
 
 Total fields: **24**
 
-| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
-|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [acceptingentityid](#acceptingentityid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#12.%20Relationships) |  |  |
-| 2 | [activityid](#activityid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [11](#3.%20Views) |  |  |  | [3](#7.%20Workflows) |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 3 | [actualend](#actualend) |  |  |  | No |  |  |  | true |  |  |  |  |  |  | [5](#2.%20Forms) | [31](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 4 | [cc](#cc) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 5 | [correlatedactivityid](#correlatedactivityid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 6 | [correlatedsubjectchanged](#correlatedsubjectchanged) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  | [4](#7.%20Workflows) |  |  |  |  |  |  |
-| 7 | [createdon](#createdon) | Created On | datetime |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 8 | [deliveryprioritycode](#deliveryprioritycode) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  | [10](#7.%20Workflows) |  |  |  |  |  |  |
-| 9 | [description](#description) | Description | ntext |  | No | none |  | R | true |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  | [10](#7.%20Workflows) |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 10 | [descriptionblobid](#descriptionblobid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 11 | [directioncode](#directioncode) |  |  |  | No |  |  |  | true |  |  |  |  |  |  | [4](#2.%20Forms) |  |  |  |  | [10](#7.%20Workflows) |  |  |  |  |  |  |
-| 12 | [followemailuserpreference](#followemailuserpreference) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  | [10](#7.%20Workflows) |  |  |  |  |  |  |
-| 13 | [from](#from) |  |  |  | No |  |  |  | true |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  | [10](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 14 | [issafedescriptiontruncated](#issafedescriptiontruncated) | IsSafeDescriptionTruncated | int |  | No | none |  | L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 15 | [msdyn_emailclassificationcategory](#msdyn_emailclassificationcategory) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 16 | [notifications](#notifications) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  | [10](#7.%20Workflows) |  |  |  |  |  |  |
-| 17 | [prioritycode](#prioritycode) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  | [10](#7.%20Workflows) |  |  |  |  |  |  |
-| 18 | [receivingmailboxid](#receivingmailboxid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 19 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none |  | C R U Re | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [14](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [32](#12.%20Relationships) |  |  |
-| 20 | [related](#related) | Related | partylist |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 21 | [sensitivitylabelid](#sensitivitylabelid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 22 | [senton](#senton) |  |  |  | No |  |  |  | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 23 | [statuscode](#statuscode) | Status Reason | picklist |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 24 | [to](#to) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  | [10](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Notes | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
+|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
+| 1 | [acceptingentityid](#acceptingentityid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [2](#12.%20Relationships) |  |  |
+| 2 | [activityid](#activityid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [11](#3.%20Views) |  |  |  | [3](#7.%20Workflows) |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 3 | [actualend](#actualend) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [5](#2.%20Forms) | [31](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 4 | [cc](#cc) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 5 | [correlatedactivityid](#correlatedactivityid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 6 | [correlatedsubjectchanged](#correlatedsubjectchanged) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  |  | [4](#7.%20Workflows) |  |  |  |  |  |  |
+| 7 | [createdon](#createdon) | Created On | datetime |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 8 | [deliveryprioritycode](#deliveryprioritycode) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  |  | [10](#7.%20Workflows) |  |  |  |  |  |  |
+| 9 | [description](#description) | Description | ntext |  | No | none |  | R | true |  |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  | [10](#7.%20Workflows) |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 10 | [descriptionblobid](#descriptionblobid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 11 | [directioncode](#directioncode) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [4](#2.%20Forms) |  |  |  |  | [10](#7.%20Workflows) |  |  |  |  |  |  |
+| 12 | [followemailuserpreference](#followemailuserpreference) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  |  | [10](#7.%20Workflows) |  |  |  |  |  |  |
+| 13 | [from](#from) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [2](#2.%20Forms) |  |  |  |  | [10](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 14 | [issafedescriptiontruncated](#issafedescriptiontruncated) | IsSafeDescriptionTruncated | int |  | No | none |  | L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 15 | [msdyn_emailclassificationcategory](#msdyn_emailclassificationcategory) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 16 | [notifications](#notifications) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  |  | [10](#7.%20Workflows) |  |  |  |  |  |  |
+| 17 | [prioritycode](#prioritycode) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  |  | [10](#7.%20Workflows) |  |  |  |  |  |  |
+| 18 | [receivingmailboxid](#receivingmailboxid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 19 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none |  | C R U Re | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [14](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [32](#12.%20Relationships) |  |  |
+| 20 | [related](#related) | Related | partylist |  | No | none |  | C R U L | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 21 | [sensitivitylabelid](#sensitivitylabelid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 22 | [senton](#senton) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 23 | [statuscode](#statuscode) | Status Reason | picklist |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 24 | [to](#to) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  |  | [10](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 
 ---
 

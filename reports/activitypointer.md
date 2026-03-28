@@ -1,5 +1,5 @@
 # Activitypointer Field Usage Analysis
-> Date: 2026-03-25
+> Date: 2026-03-28
 
 | Property | Value |
 |---|---|
@@ -150,22 +150,22 @@
 
 Total fields: **14**
 
-| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
-|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [activityid](#activityid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [14](#3.%20Views) |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 2 | [activitytypecode](#activitytypecode) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [21](#3.%20Views) | [1](#4.%20Chart%20Visualizations) |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 3 | [actualend](#actualend) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 4 | [community](#community) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 5 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 6 | [createdon](#createdon) | Created On | datetime |  | No | none |  | R | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 7 | [descriptionblobid](#descriptionblobid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 8 | [isregularactivity](#isregularactivity) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 9 | [modifiedby](#modifiedby) | Modified By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  | [4](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 10 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none |  | R | true |  |  |  |  |  |  |  | [12](#3.%20Views) | [1](#4.%20Chart%20Visualizations) |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 11 | [prioritycode](#prioritycode) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [15](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 12 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  | [14](#3.%20Views) |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [30](#12.%20Relationships) |  |  |
-| 13 | [scheduledend](#scheduledend) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [26](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 14 | [scheduledstart](#scheduledstart) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Notes | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
+|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
+| 1 | [activityid](#activityid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [14](#3.%20Views) |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 2 | [activitytypecode](#activitytypecode) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [21](#3.%20Views) | [1](#4.%20Chart%20Visualizations) |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 3 | [actualend](#actualend) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 4 | [community](#community) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 5 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 6 | [createdon](#createdon) | Created On | datetime |  | No | none |  | R | true |  |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 7 | [descriptionblobid](#descriptionblobid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 8 | [isregularactivity](#isregularactivity) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 9 | [modifiedby](#modifiedby) | Modified By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  | [4](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 10 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none |  | R | true |  |  |  |  |  |  |  |  | [12](#3.%20Views) | [1](#4.%20Chart%20Visualizations) |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 11 | [prioritycode](#prioritycode) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [15](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 12 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  | [14](#3.%20Views) |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [30](#12.%20Relationships) |  |  |
+| 13 | [scheduledend](#scheduledend) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [26](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 14 | [scheduledstart](#scheduledstart) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
 
 ---
 

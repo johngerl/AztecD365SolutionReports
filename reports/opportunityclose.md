@@ -1,5 +1,5 @@
 # Opportunityclose Field Usage Analysis
-> Date: 2026-03-25
+> Date: 2026-03-28
 
 | Property | Value |
 |---|---|
@@ -145,10 +145,10 @@
 
 Total fields: **2**
 
-| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
-|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [opportunitystatuscode](#opportunitystatuscode) | Status Reason | picklist | 276530000: Processed, 276530001: No Funding Available, 276530002: Lost to Competitor, 276530003: No Test Prep Offered, 276530004: No Computers/Technology, 276530005: Customer Unresponsive, 276530006: Change in Decision Maker/Champion, 276530007: Organization Shut Down, 276530008: Other, 276530009: Bulk Loss Older than 1 Year, 1: In Progress, 2: On Hold, 3: Won, 4: Selected another Aztec Opportunity, 5: Too Expensive | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 2 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none |  | C R U | true |  |  |  |  |  |  |  |  |  |  |  | [14](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [2](#12.%20Relationships) |  |  |
+| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Notes | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
+|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
+| 1 | [opportunitystatuscode](#opportunitystatuscode) | Status Reason | picklist | 276530000: Processed, 276530001: No Funding Available, 276530002: Lost to Competitor, 276530003: No Test Prep Offered, 276530004: No Computers/Technology, 276530005: Customer Unresponsive, 276530006: Change in Decision Maker/Champion, 276530007: Organization Shut Down, 276530008: Other, 276530009: Bulk Loss Older than 1 Year, 1: In Progress, 2: On Hold, 3: Won, 4: Selected another Aztec Opportunity, 5: Too Expensive | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 2 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none |  | C R U | true |  |  |  |  |  |  |  |  |  |  |  |  | [14](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [2](#12.%20Relationships) |  |  |
 
 ---
 

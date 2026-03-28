@@ -55,7 +55,7 @@ python scripts/generate_sf_entity_json_from_api.py --all     # all existing obje
 
 ### Step 2: generate_d365_entity_json_from_solution.py
 
-Builds enriched per-entity JSON with 13 section datasets (forms, views, charts, reports, dashboards, workflows, JavaScript, formulas, plugins, PCF controls, relationships, ribbon, conflicts).
+Builds enriched per-entity JSON with 13 section datasets (forms, views, charts, reports, dashboards, workflows, JavaScript, formulas, plugins, PCF controls, relationships, ribbon, conflicts). Caches and restores sfSuggested* and notes values across regenerations.
 
 ```bash
 python scripts/generate_d365_entity_json_from_solution.py account   # single entity
@@ -127,7 +127,7 @@ python scripts/generate_d365_sf_suggestions.py --all     # all entities
 
 ### Step 8: generate_d365_entity_csv_mapping.py
 
-Extracts mapping CSV from enriched entity JSON. Preserves confirmed SF columns, reads sfSuggested*, sfSuggestedMapping, and count properties from JSON.
+Extracts mapping CSV from enriched entity JSON. Preserves confirmed SF columns, reads sfSuggested*, sfSuggestedMapping, notes, and count properties from JSON.
 
 ```bash
 python scripts/generate_d365_entity_csv_mapping.py account   # single entity
@@ -154,7 +154,7 @@ Each generated report contains 14 sections plus an alphabetical field index:
 
 | # | Section | Description |
 |---|---------|-------------|
-| 1 | Field Definitions | All fields with schema name, type, custom flag, required level, and 6 SF mapping columns |
+| 1 | Field Definitions | All fields with schema name, type, custom flag, required level, notes, and 6 SF mapping columns |
 | 2 | Forms | Per-form tab/section/field layout, subgrids, events, JS libraries |
 | 3 | Views | Display columns, filter conditions, sort order |
 | 4 | Chart Visualizations | Measure fields, group-by fields, filters |
@@ -171,8 +171,9 @@ Each generated report contains 14 sections plus an alphabetical field index:
 
 ### SF Mapping Columns (Section 1)
 
-The Field Definitions table includes 6 Salesforce mapping columns:
+The Field Definitions table includes a **Notes** column for free-text annotations and 6 Salesforce mapping columns:
 
+- **Notes** — Human-entered free-text annotations per field
 - **Mapping Object** / **Mapping Field** / **Mapping API** — Human-confirmed Salesforce equivalents
 - **Suggested Object** / **Suggested Field** / **Suggested API** — AI-suggested matches from `salesforce-entities/` schemas
 
@@ -180,13 +181,16 @@ The Field Definitions table includes 6 Salesforce mapping columns:
 
 | Command | Purpose |
 |---|---|
-| `/generate-d365-json [entity]` | Step 1: Generate enriched D365 entity JSON(s) |
-| `/enrich-d365-json [entity]` | Step 2: Enrich stub fields with Dataverse API metadata |
-| `/generate-d365-csv [entity]` | Step 3: Extract mapping CSV(s) from enriched JSON |
-| `/generate-sf-json [object]` | Step 4: Refresh Salesforce object schema(s) from org |
+| `/generate-sf-json [object]` | Step 1: Refresh Salesforce object schema(s) from org |
+| `/generate-d365-json [entity]` | Step 2: Generate enriched D365 entity JSON(s) |
+| `/enrich-d365-json [entity]` | Step 3: Enrich stub fields with Dataverse API metadata |
+| `/compute-d365-ref-counts [entity]` | Step 4: Pre-compute reference counts at entity and field level |
+| `/refresh-d365-lastupdates [entity]` | Step 5: Refresh lastUpdate via Dataverse TDS |
+| `/evaluate-d365-migration [entity]` | Step 6: Evaluate migration eligibility per field |
 | `/generate-d365-sf-suggestions [entity]` | Step 7: Generate SF field suggestions |
-| `/generate-d365-report [entity]` | Step 6: Generate field usage Markdown report(s) |
-| `/generate-all [entity]` | Run full pipeline (Steps 1 → 2 → 3 → 4 → 5 → 6) |
+| `/generate-d365-csv [entity]` | Step 8: Extract mapping CSV(s) from enriched JSON |
+| `/generate-d365-report [entity]` | Step 9: Generate field usage Markdown report(s) |
+| `/generate-all [entity]` | Run full pipeline (Steps 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9) |
 
 All commands default to `--all` when no argument is provided.
 

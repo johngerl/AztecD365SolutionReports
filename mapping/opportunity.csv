@@ -1,123 +1,123 @@
-fieldName,displayName,dataType,requiredLevel,isCustom,lastUpdate,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-!process_custom_attribute_url_,,,,False,,,false,0,0,0,0,0,2,0,0,0,0,0,,,,,,
-actualclosedate,,,,False,,,true,2,27,5,0,0,0,0,1,0,0,0,,,,Opportunity,Close Date,CloseDate
-actualvalue,,,,False,,,true,0,15,2,0,0,1,0,0,0,0,0,,,,Opportunity,Actual Revenue,Actual_Revenue__c
-actualvalue_base,,,,False,,,true,0,2,0,0,0,0,0,0,0,0,0,,,,Opportunity,Actual Revenue Base,Actual_Revenue_Base__c
-azt_accountclassification,Account Classification,picklist,none,True,,"276530000: A, 276530001: B, 276530002: C, 100000001: D, 100000000: E, 276530003: S, 276530004: N/A",true,2,9,0,0,0,2,0,0,0,0,0,Opportunity,CRM Account Classification,CRM_Account_Classification__c,Opportunity,Account Classification,Account_Classification__c
-azt_addonopportunitytotal,Add-On Opportunity Total,money,none,True,,,true,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Add On Opportunity Total,CRM_Add_On_Opportunity_Total__c,Opportunity,CRM Initial Opportunity Total,CRM_Initial_Opportunity_Total__c
-azt_addonopportunitytotal_base,Add-On Opportunity Total (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_assignedamid,Assigned AM,lookup,none,True,,,true,1,0,0,0,0,0,0,0,0,1,0,Opportunity,CRM Assigned AM,CRM_Assigned_AM__c,Opportunity,Assigned Am,Assigned_Am__c
-azt_committoestimatedclose,Commit to Pipeline?,bit,none,True,,"1: Yes, 0: No",true,1,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Commit To Pipeline,Commit_To_Pipeline__c
-azt_dayssincecreated,Days Since Created,int,none,True,,,true,2,3,0,0,0,0,1,0,0,0,0,,,,Opportunity,Days Since Created,Days_Since_Created__c
-azt_dayssinceprobabilitychanged,Days Since Probability Changed,int,none,True,,,true,2,4,0,0,0,0,1,0,0,0,0,Opportunity,CRM Days Since Probability Changed,CRM_Days_Since_Probability_Changed__c,Opportunity,Days Since Probability Changed,Days_Since_Probability_Changed__c
-azt_defaultfreightamount,Default Freight Amount,money,none,True,,,true,2,0,0,0,0,0,0,1,0,0,0,Opportunity,CRM Default Freight Amount,CRM_Default_Freight_Amount__c,Opportunity,Freight Amount,Freight_Amount__c
-azt_defaultfreightamount_base,Default Freight Amount (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_deliverytype,Delivery Type,picklist,none,True,,"276530000: Internet, 276530001: LAN, 276530002: Print, 276530003: LAN & Print, 276530004: Internet & Print, 276530005: Internet Year 2, 276530006: Internet Year 3+, 276530007: SA, 276530008: WAN",true,2,0,0,0,0,2,0,0,0,0,0,Opportunity,CRM Delivery Type,CRM_Delivery_Type__c,Opportunity,Delivery Type,Delivery_Type__c
-azt_discretionarydiscount,Discretionary Discount,money,none,True,,,true,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Discretionary Discount,CRM_Discretionary_Discount__c,Opportunity,CRM Discretionary Discount,CRM_Discretionary_Discount__c
-azt_discretionarydiscount_base,Discretionary Discount (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_discretionarydiscountamt,Discretionary Discount Amt,money,none,True,,,true,2,0,0,0,0,0,0,2,0,0,0,,,,Opportunity,CRM Discretionary Discount,CRM_Discretionary_Discount__c
-azt_discretionarydiscountamt_base,Discretionary Discount Amt (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_expectedrenewalvalue,Expected Renewal Value,money,none,True,,,true,2,8,0,0,0,0,0,0,0,0,0,,,,Opportunity,Expected Renewal Amount,Expected_Renewal_Amount__c
-azt_expectedrenewalvalue_base,Expected Renewal Value (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_freightamtapproved,Freight Amt Approved?,bit,none,True,,"1: Yes, 0: No",true,2,0,0,0,0,0,0,1,0,0,0,,,,Opportunity,Freight Amt Approved,Freight_Amt_Approved__c
-azt_fundingsource,Funding Source,picklist,none,True,,"276530000: Annual Budget, 276530001: Discretionary Budget, 276530002: Grant - Federal, 276530003: Grant - Private, 276530004: Grant - State, 276530005: Grant - Perkins, 276530006: Title 1 Funds, 276530007: Other, 276530008: Use or Lose Funds",true,4,0,0,0,0,2,0,0,0,0,0,Opportunity,Funding Source,Funding_Source__c,Opportunity,Funding Source,Funding_Source__c
-azt_historicalowner,Historical Owner,nvarchar,none,True,,,true,0,0,0,0,0,3,0,0,0,0,0,Opportunity,CRM Historical Owner,CRM_Historical_Owner__c,Opportunity,Historical Owner,Historical_Owner__c
-azt_initialopportunitytotal,Initial Opportunity Total,money,none,True,,,true,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Initial Opportunity Total,CRM_Initial_Opportunity_Total__c,Opportunity,CRM Initial Opportunity Total,CRM_Initial_Opportunity_Total__c
-azt_initialopportunitytotal_base,Initial Opportunity Total (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_internalaztecnotes,Internal Aztec Notes,ntext,none,True,,,true,1,0,0,0,0,2,0,0,0,0,0,Opportunity,CRM Internal Aztec Notes,CRM_Internal_Aztec_Notes__c,Opportunity,CRM Internal Aztec Notes,CRM_Internal_Aztec_Notes__c
-azt_invoicenumber,Invoice Number,nvarchar,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,Opportunity,CRM Invoice Number,CRM_Invoice_Number__c,,,
-azt_iscrossselloppty,Is Cross-sell Oppty?,bit,none,True,,"1: Yes, 0: No",true,2,0,0,0,0,0,0,0,0,0,0,Opportunity,Cross-Sell,Cross_Sell__c,Opportunity,Cross-Sell,Cross_Sell__c
-azt_lastactivitydate,Last Activity Date,datetime,none,True,,,true,2,1,0,0,0,0,0,1,0,0,0,Opportunity,Legacy Last Activity Date,Legacy_Last_Activity_Date__c,Opportunity,Last Activity,LastActivityDate
-azt_lastmodifiedbyid,Last Modified By,lookup,none,True,,,true,2,0,0,0,0,0,0,1,0,1,0,Opportunity,Legacy Modified By,Legacy_Modified_By__c,Opportunity,Last Modified By ID,LastModifiedById
-azt_leadsource,Lead Source (Old),picklist,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_leadsourceid,Lead Source,lookup,none,True,,,true,1,1,0,0,0,8,0,2,0,1,0,Opportunity,CRM Lead Source,CRM_Lead_Source__c,Opportunity,Lead Source,Lead_Source__c
-azt_opportunitynumber,Opp#,nvarchar,none,True,,,true,2,7,0,0,0,0,0,0,0,0,0,Opportunity,CRM Opportunity Number,CRM_Opportunity_Number__c,Opportunity,Opportunity Summary,Opportunity_Summary__c
-azt_opportunityproductcategory,Opportunity Product Category,picklist,none,True,,"276530000: P12 & Legacy, 276530001: Kaplan Book, 276530002: GED Flash, 276530003: P12 Prep, 276530004: Legacy, 276530005: APT - Free, 276530006: APT - Paid, 276530007: OPT - Free, 276530008: OPT - Paid, 276530009: Workbooks, 276530010: LSE Booklets",true,2,25,0,0,0,2,0,0,0,0,0,Opportunity,CRM Opportunity Product Category,CRM_Opportunity_Product_Category__c,Opportunity,Opportunity Product Category,Opportunity_Product_Category__c
-azt_opportunitytype,Opportunity Type,picklist,none,True,,"276530005: Renewal, 276530004: Initial, 276530002: Print, 276530003: Add-On, 276530001: Vouchers, 276530000: Pilot, 276530008: Professional Development, 276530006: Monthly, 100000000: Win Back, 327630000: Sample, 100000001: PA, 276530007: Other, 327630001: Add On - Reseller",true,4,57,0,0,0,2,0,0,0,0,0,Opportunity,Type,Type,Opportunity,Opportunity Type,Opportunity_Type__c
-azt_otheropportunitytotal,Other Opportunity Total,money,none,True,,,true,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Other Opportunity Total,CRM_Other_Opportunity_Total__c,Opportunity,CRM Initial Opportunity Total,CRM_Initial_Opportunity_Total__c
-azt_otheropportunitytotal_base,Other Opportunity Total (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_parentopportunityid,Parent Opportunity,lookup,none,True,,,true,0,0,0,0,0,1,0,2,0,1,0,Opportunity,CRM Parent Opportunity Name,CRM_Parent_Opportunity_Name__c,Opportunity,Parent Opportunity,Parent_Opportunity__c
-azt_pilotopportunitytotal,Pilot Opportunity Total,money,none,True,,,true,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Pilot Opportunity Total,CRM_Pilot_Opportunity_Total__c,Opportunity,CRM Initial Opportunity Total,CRM_Initial_Opportunity_Total__c
-azt_pilotopportunitytotal_base,Pilot Opportunity Total (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_pipelinestage,Pipeline Stage,picklist,none,True,,"276530000: Identify, 276530001: Qualified, 276530002: Prospecting, 276530003: Cultivating, 276530004: Proposing, 276530005: Closing, 276530006: Delivering, 276530007: Awaiting Payment, 276530008: Won",true,4,23,0,0,0,2,0,0,0,0,0,Opportunity,Stage,StageName,Opportunity,Pipeline Stage,Pipeline_Stage__c
-azt_previewcompleted,Preview Completed,picklist,none,True,,"276530000: Yes, 276530001: No",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_previousprobability,Previous Probability,nvarchar,none,True,,,false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-azt_printopportunitytotal,Print Opportunity Total,money,none,True,,,true,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Print Opportunity Total,CRM_Print_Opportunity_Total__c,Opportunity,CRM Initial Opportunity Total,CRM_Initial_Opportunity_Total__c
-azt_printopportunitytotal_base,Print Opportunity Total (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_probability,Probability,picklist,none,True,,"276530010: 1%, 276530000: 10%, 276530001: 20%, 276530002: 30%, 100000001: 35%, 276530003: 40%, 276530004: 50%, 100000000: 55%, 276530005: 60%, 276530006: 70%, 100530010: 75%, 276530007: 80%, 276530008: 90%, 327630000: 95%, 276530009: 99%",true,4,32,0,0,0,2,0,5,0,0,0,Opportunity,CRM Probability,CRM_Probability__c,Opportunity,CRM Probability,CRM_Probability__c
-azt_probabilitychangedon,Probability Changed On,datetime,none,True,,,true,0,7,0,0,0,0,1,1,0,0,0,Opportunity,Probability Last Changed,Probability_Last_Changed__c,Opportunity,Probability Last Changed,Probability_Last_Changed__c
-azt_probabilityincreased,Probability Increased?,bit,none,True,,"1: Yes, 0: No",true,0,1,0,0,0,0,0,1,0,0,0,,,,Opportunity,Probability Increased,Probability_Increased__c
-azt_quotesent,Quote Sent,picklist,none,True,,"276530000: Yes, 276530001: No",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_recordownerid,Record Owner,lookup,none,True,,,true,6,65,32,0,0,39,0,9,0,1,0,Opportunity,Record Owner,OwnerId,Opportunity,Record Type ID,RecordTypeId
-azt_renewalnotes,Renewal Notes,nvarchar,none,True,,,true,2,0,0,0,0,0,0,0,0,0,0,Opportunity,Renewal Notes,Renewal_Notes__c,Opportunity,Renewal Notes,Renewal_Notes__c
-azt_renewalopportunitytotal,Renewal Opportunity Total,money,none,True,,,true,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Renewal Opportunity Total,CRM_Renewal_Opportunity_Total__c,Opportunity,CRM Renewal Opportunity Total,CRM_Renewal_Opportunity_Total__c
-azt_renewalopportunitytotal_base,Renewal Opportunity Total (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_requestedfreightamt,Requested Freight Amt,money,none,True,,,true,2,0,0,0,0,0,0,1,0,0,0,Opportunity,CRM Requested Freight Amount,CRM_Requested_Freight_Amount__c,Opportunity,Requested Freight Amt,Requested_Freight_Amt__c
-azt_requestedfreightamt_base,Requested Freight Amt (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_salesstage,Sales Stage,picklist,none,True,,,true,0,0,0,0,0,1,0,0,0,0,0,,,,Opportunity,Sales Stage,Sales_Stage__c
-azt_webinarpresentationcompleted,Webinar/Presentation Completed,picklist,none,True,,"276530000: Yes, 276530001: No",false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_winbackopportunitytotal,Win-Back Opportunity Total,money,none,True,,,true,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Win Back Opportunity Total,CRM_Win_Back_Opportunity_Total__c,Opportunity,CRM Win Back Opportunity Total,CRM_Win_Back_Opportunity_Total__c
-azt_winbackopportunitytotal_base,Win-Back Opportunity Total (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-budgetamount,,,,False,,,true,2,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Budget Amount,Budget_Amount__c
-budgetstatus,,,,False,,,false,0,0,0,0,0,2,0,0,0,0,0,,,,,,
-captureproposalfeedback,,,,False,,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Proposal Feedback Captured,Proposal_Feedback_Captured__c
-closeprobability,Probability Number,int,none,False,,,true,2,2,3,0,0,2,0,1,0,0,0,Opportunity,CRM Probability Number,CRM_Probability_Number__c,Opportunity,Probability Number,Probability_Number__c
-completefinalproposal,,,,False,,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Final Proposal Ready,Final_Proposal_Ready__c
-completeinternalreview,,,,False,,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Complete Internal Review,Complete_Internal_Review__c
-confirminterest,,,,False,,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Confirm Interest,Confirm_Interest__c
-createdby,Created By,lookup,none,False,,,true,2,9,14,0,0,1,0,0,0,0,0,,,,Opportunity,Created By ID,CreatedById
-createdon,Created On,datetime,none,False,,,true,2,39,3,0,0,0,1,10,0,0,0,,,,Opportunity,Created Date,CreatedDate
-currentsituation,,,,False,,,true,2,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,CRM Current Situation,CRM_Current_Situation__c
-customerid,Potential Customer,customer,required,False,,,true,0,48,0,0,0,14,0,11,0,1,0,,,,Opportunity,Potential Customer,Potential_Customer__c
-customerneed,,,,False,,,true,2,0,0,0,0,1,0,0,0,0,0,,,,Opportunity,Customer Need,Customer_Need__c
-customerpainpoints,,,,False,,,false,0,0,0,0,0,2,0,0,0,0,0,,,,,,
-decisionmaker,,,,False,,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Decision Maker,Decision_Maker__c
-description,Description,ntext,none,False,,,true,1,0,0,0,0,2,0,7,0,0,0,,,,Opportunity,Description,Description
-developproposal,,,,False,,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Develop Proposal,Develop_Proposal__c
-discountamount,,,,False,,,true,2,0,0,0,0,0,0,2,0,0,0,,,,Opportunity,Discount Amount,Discount_Amount__c
-discountpercentage,,,,False,,,true,1,0,0,0,0,2,0,1,0,0,0,,,,Opportunity,Opportunity Discount,Opportunity_Discount__c
-emailaddress,,,,False,,,false,0,0,0,0,0,2,0,0,0,0,0,,,,,,
-estimatedclosedate,Est. Close Date,datetime,none,False,,,true,3,81,7,0,0,0,0,3,0,0,0,Opportunity,Close Date,CRM_Estimated_Close_Date__c,Opportunity,Expected Close Date,Expected_Close_Date__c
-estimatedvalue,Est. Revenue,money,none,False,,,true,4,41,8,0,0,2,0,2,0,0,0,Opportunity,CRM Estimated Revenue,CRM_Estimated_Revenue__c,Opportunity,Estimated Revenue,Estimated_Revenue__c
-evaluatefit,,,,False,,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Evaluate Fit,Evaluate_Fit__c
-filedebrief,,,,False,,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,File Debrief,File_Debrief__c
-identifycompetitors,,,,False,,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Identify Competitors,Identify_Competitors__c
-identifycustomercontacts,,,,False,,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Identify Customer Contacts,Identify_Customer_Contacts__c
-identifypursuitteam,,,,False,,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Identify Sales Team,Identify_Sales_Team__c
-initialcommunication,,,,False,,,false,0,0,0,0,0,2,0,0,0,0,0,,,,,,
-isrevenuesystemcalculated,Revenue,bit,none,False,,"1: System Calculated, 0: User Provided",true,2,0,0,0,0,2,0,1,0,0,0,Opportunity,CRM Revenue,CRM_Revenue__c,Opportunity,Revenue,Revenue__c
-modifiedon,Modified On,datetime,none,False,,,true,0,1,0,0,0,0,0,4,0,0,0,,,,Opportunity,Last Modified Date,LastModifiedDate
-msa_partnerid,,,,False,,,true,0,0,0,0,0,0,0,0,0,1,0,,,,Opportunity,Partner,Partner__c
-msa_partneroppid,,,,False,,,true,0,0,0,0,0,0,0,0,0,1,0,,,,Opportunity,Partner Contact,Partner_Contact__c
-msdyn_forecastcategory,,,,False,,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Opportunity,Forecast Category,ForecastCategory
-msdyn_opportunitykpiid,,,,False,,,false,0,0,0,0,0,0,0,0,0,1,0,,,,,,
-msdyn_predictivescoreid,,,,False,,,false,0,0,0,0,0,0,0,0,0,1,0,,,,,,
-name,Topic,nvarchar,required,False,,,true,2,75,0,0,0,19,0,23,0,0,0,,,,Opportunity,Name,Name
-need,,,,False,,,false,0,0,0,0,0,2,0,0,0,0,0,,,,,,
-opportunityid,Opportunity,uniqueidentifier,required,False,,,true,0,65,0,0,0,11,0,32,0,1,0,,,,Opportunity,OpportunityId,OpportunityId__c
-opportunityratingcode,,,,False,,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,OpportunityId,OpportunityId__c
-originatingleadid,,,,False,,,true,2,0,0,0,0,0,0,2,0,1,0,,,,Opportunity,Originating Lead,Originating_Lead__c
-ownerid,Owner,owner,systemrequired,False,,,true,4,26,9,0,0,25,0,22,0,0,0,Opportunity,Record Type,RecordTypeId,Opportunity,Owner ID,OwnerId
-owningbusinessunit,Owning Business Unit,lookup,none,False,,,true,0,5,0,0,0,0,0,0,0,0,0,,,,Opportunity,Owning Business Unit,Owning_Business_Unit__c
-parentaccountid,Account,lookup,none,False,,,true,5,1,0,0,0,13,0,4,0,1,0,,,,Opportunity,Account ID,AccountId
-parentcontactid,Contact,lookup,none,False,,,true,5,1,0,0,0,10,0,1,0,0,0,Opportunity,Contact name,ContactId,Opportunity,Contact ID,ContactId
-presentfinalproposal,,,,False,,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Present Final Proposal,Present_Final_Proposal__c
-presentproposal,,,,False,,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Presented Proposal,Presented_Proposal__c
-pricelevelid,Price List,lookup,required,False,,,true,2,0,0,0,0,7,0,1,0,0,0,Opportunity,Price Book,Pricebook2Id,Opportunity,Price List,Price_List__c
-prioritycode,,,,False,,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Priority,Priority__c
-proposedsolution,,,,False,,,true,1,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Proposed Solution,Proposed_Solution__c
-purchaseprocess,,,,False,,,true,2,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Purchase Process,Purchase_Process__c
-purchasetimeframe,,,,False,,,true,2,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,CRM Purchase Timeframe,CRM_Purchase_Timeframe__c
-pursuitdecision,,,,False,,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Decide Gonogo,Decide_Gonogo__c
-qualificationcomments,,,,False,,,false,0,0,0,0,0,2,0,0,0,0,0,,,,,,
-quotecomments,,,,False,,,false,0,0,0,0,0,2,0,0,0,0,0,,,,,,
-regardingobjectid,Regarding,lookup,none,False,,,false,0,0,0,0,0,0,0,8,0,1,0,,,,,,
-resolvefeedback,,,,False,,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Feedback Resolved,Feedback_Resolved__c
-salesstage,Deprecated Sales Stage,picklist,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-salesstagecode,,,,False,,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Process Code,Process_Code__c
-sendthankyounote,,,,False,,,true,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Send Thank You Note,Send_Thank_You_Note__c
-statecode,Status,state,systemrequired,False,,,true,0,58,2,0,0,10,0,20,0,0,0,Opportunity,CRM Status,CRM_Status__c,Opportunity,Status CRM,Status_CRM__c
-statuscode,Status Reason,status,none,False,,,true,0,10,0,0,0,5,0,6,0,0,0,,,,Opportunity,Status,Status__c
-totalamountlessfreight,,,,False,,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Opportunity,Total Prefreight Amount,Total_Prefreight_Amount__c
-totallineitemamount,,,,False,,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Opportunity,CRM Total Line Item Discount Amount,CRM_Total_Line_Item_Discount_Amount__c
-totaltax,,,,False,,,true,1,0,0,0,0,0,0,0,0,0,0,,,,Opportunity,Total Tax,Total_Tax__c
+fieldName,displayName,dataType,requiredLevel,isCustom,lastUpdate,picklistValues,mappingSuggested,notes,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+!process_custom_attribute_url_,,,,False,,,false,,0,0,0,0,0,2,0,0,0,0,0,,,,,,
+actualclosedate,,,,False,,,true,,2,27,5,0,0,0,0,1,0,0,0,,,,Opportunity,Close Date,CloseDate
+actualvalue,,,,False,,,true,,0,15,2,0,0,1,0,0,0,0,0,,,,Opportunity,Actual Revenue,Actual_Revenue__c
+actualvalue_base,,,,False,,,true,,0,2,0,0,0,0,0,0,0,0,0,,,,Opportunity,Actual Revenue Base,Actual_Revenue_Base__c
+azt_accountclassification,Account Classification,picklist,none,True,,"276530000: A, 276530001: B, 276530002: C, 100000001: D, 100000000: E, 276530003: S, 276530004: N/A",true,,2,9,0,0,0,2,0,0,0,0,0,Opportunity,CRM Account Classification,CRM_Account_Classification__c,Opportunity,Account Classification,Account_Classification__c
+azt_addonopportunitytotal,Add-On Opportunity Total,money,none,True,,,true,,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Add On Opportunity Total,CRM_Add_On_Opportunity_Total__c,Opportunity,CRM Initial Opportunity Total,CRM_Initial_Opportunity_Total__c
+azt_addonopportunitytotal_base,Add-On Opportunity Total (Base),money,none,True,,,false,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_assignedamid,Assigned AM,lookup,none,True,,,true,,1,0,0,0,0,0,0,0,0,1,0,Opportunity,CRM Assigned AM,CRM_Assigned_AM__c,Opportunity,Assigned Am,Assigned_Am__c
+azt_committoestimatedclose,Commit to Pipeline?,bit,none,True,,"1: Yes, 0: No",true,,1,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Commit To Pipeline,Commit_To_Pipeline__c
+azt_dayssincecreated,Days Since Created,int,none,True,,,true,,2,3,0,0,0,0,1,0,0,0,0,,,,Opportunity,Days Since Created,Days_Since_Created__c
+azt_dayssinceprobabilitychanged,Days Since Probability Changed,int,none,True,,,true,,2,4,0,0,0,0,1,0,0,0,0,Opportunity,CRM Days Since Probability Changed,CRM_Days_Since_Probability_Changed__c,Opportunity,Days Since Probability Changed,Days_Since_Probability_Changed__c
+azt_defaultfreightamount,Default Freight Amount,money,none,True,,,true,,2,0,0,0,0,0,0,1,0,0,0,Opportunity,CRM Default Freight Amount,CRM_Default_Freight_Amount__c,Opportunity,Freight Amount,Freight_Amount__c
+azt_defaultfreightamount_base,Default Freight Amount (Base),money,none,True,,,false,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_deliverytype,Delivery Type,picklist,none,True,,"276530000: Internet, 276530001: LAN, 276530002: Print, 276530003: LAN & Print, 276530004: Internet & Print, 276530005: Internet Year 2, 276530006: Internet Year 3+, 276530007: SA, 276530008: WAN",true,,2,0,0,0,0,2,0,0,0,0,0,Opportunity,CRM Delivery Type,CRM_Delivery_Type__c,Opportunity,Delivery Type,Delivery_Type__c
+azt_discretionarydiscount,Discretionary Discount,money,none,True,,,true,,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Discretionary Discount,CRM_Discretionary_Discount__c,Opportunity,CRM Discretionary Discount,CRM_Discretionary_Discount__c
+azt_discretionarydiscount_base,Discretionary Discount (Base),money,none,True,,,false,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_discretionarydiscountamt,Discretionary Discount Amt,money,none,True,,,true,,2,0,0,0,0,0,0,2,0,0,0,,,,Opportunity,CRM Discretionary Discount,CRM_Discretionary_Discount__c
+azt_discretionarydiscountamt_base,Discretionary Discount Amt (Base),money,none,True,,,false,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_expectedrenewalvalue,Expected Renewal Value,money,none,True,,,true,,2,8,0,0,0,0,0,0,0,0,0,,,,Opportunity,Expected Renewal Amount,Expected_Renewal_Amount__c
+azt_expectedrenewalvalue_base,Expected Renewal Value (Base),money,none,True,,,false,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_freightamtapproved,Freight Amt Approved?,bit,none,True,,"1: Yes, 0: No",true,,2,0,0,0,0,0,0,1,0,0,0,,,,Opportunity,Freight Amt Approved,Freight_Amt_Approved__c
+azt_fundingsource,Funding Source,picklist,none,True,,"276530000: Annual Budget, 276530001: Discretionary Budget, 276530002: Grant - Federal, 276530003: Grant - Private, 276530004: Grant - State, 276530005: Grant - Perkins, 276530006: Title 1 Funds, 276530007: Other, 276530008: Use or Lose Funds",true,,4,0,0,0,0,2,0,0,0,0,0,Opportunity,Funding Source,Funding_Source__c,Opportunity,Funding Source,Funding_Source__c
+azt_historicalowner,Historical Owner,nvarchar,none,True,,,true,,0,0,0,0,0,3,0,0,0,0,0,Opportunity,CRM Historical Owner,CRM_Historical_Owner__c,Opportunity,Historical Owner,Historical_Owner__c
+azt_initialopportunitytotal,Initial Opportunity Total,money,none,True,,,true,,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Initial Opportunity Total,CRM_Initial_Opportunity_Total__c,Opportunity,CRM Initial Opportunity Total,CRM_Initial_Opportunity_Total__c
+azt_initialopportunitytotal_base,Initial Opportunity Total (Base),money,none,True,,,false,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_internalaztecnotes,Internal Aztec Notes,ntext,none,True,,,true,,1,0,0,0,0,2,0,0,0,0,0,Opportunity,CRM Internal Aztec Notes,CRM_Internal_Aztec_Notes__c,Opportunity,CRM Internal Aztec Notes,CRM_Internal_Aztec_Notes__c
+azt_invoicenumber,Invoice Number,nvarchar,none,True,,,false,,0,0,0,0,0,0,0,0,0,0,0,Opportunity,CRM Invoice Number,CRM_Invoice_Number__c,,,
+azt_iscrossselloppty,Is Cross-sell Oppty?,bit,none,True,,"1: Yes, 0: No",true,,2,0,0,0,0,0,0,0,0,0,0,Opportunity,Cross-Sell,Cross_Sell__c,Opportunity,Cross-Sell,Cross_Sell__c
+azt_lastactivitydate,Last Activity Date,datetime,none,True,,,true,,2,1,0,0,0,0,0,1,0,0,0,Opportunity,Legacy Last Activity Date,Legacy_Last_Activity_Date__c,Opportunity,Last Activity,LastActivityDate
+azt_lastmodifiedbyid,Last Modified By,lookup,none,True,,,true,,2,0,0,0,0,0,0,1,0,1,0,Opportunity,Legacy Modified By,Legacy_Modified_By__c,Opportunity,Last Modified By ID,LastModifiedById
+azt_leadsource,Lead Source (Old),picklist,none,True,,,false,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_leadsourceid,Lead Source,lookup,none,True,,,true,,1,1,0,0,0,8,0,2,0,1,0,Opportunity,CRM Lead Source,CRM_Lead_Source__c,Opportunity,Lead Source,Lead_Source__c
+azt_opportunitynumber,Opp#,nvarchar,none,True,,,true,,2,7,0,0,0,0,0,0,0,0,0,Opportunity,CRM Opportunity Number,CRM_Opportunity_Number__c,Opportunity,Opportunity Summary,Opportunity_Summary__c
+azt_opportunityproductcategory,Opportunity Product Category,picklist,none,True,,"276530000: P12 & Legacy, 276530001: Kaplan Book, 276530002: GED Flash, 276530003: P12 Prep, 276530004: Legacy, 276530005: APT - Free, 276530006: APT - Paid, 276530007: OPT - Free, 276530008: OPT - Paid, 276530009: Workbooks, 276530010: LSE Booklets",true,,2,25,0,0,0,2,0,0,0,0,0,Opportunity,CRM Opportunity Product Category,CRM_Opportunity_Product_Category__c,Opportunity,Opportunity Product Category,Opportunity_Product_Category__c
+azt_opportunitytype,Opportunity Type,picklist,none,True,,"276530005: Renewal, 276530004: Initial, 276530002: Print, 276530003: Add-On, 276530001: Vouchers, 276530000: Pilot, 276530008: Professional Development, 276530006: Monthly, 100000000: Win Back, 327630000: Sample, 100000001: PA, 276530007: Other, 327630001: Add On - Reseller",true,,4,57,0,0,0,2,0,0,0,0,0,Opportunity,Type,Type,Opportunity,Opportunity Type,Opportunity_Type__c
+azt_otheropportunitytotal,Other Opportunity Total,money,none,True,,,true,,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Other Opportunity Total,CRM_Other_Opportunity_Total__c,Opportunity,CRM Initial Opportunity Total,CRM_Initial_Opportunity_Total__c
+azt_otheropportunitytotal_base,Other Opportunity Total (Base),money,none,True,,,false,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_parentopportunityid,Parent Opportunity,lookup,none,True,,,true,,0,0,0,0,0,1,0,2,0,1,0,Opportunity,CRM Parent Opportunity Name,CRM_Parent_Opportunity_Name__c,Opportunity,Parent Opportunity,Parent_Opportunity__c
+azt_pilotopportunitytotal,Pilot Opportunity Total,money,none,True,,,true,,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Pilot Opportunity Total,CRM_Pilot_Opportunity_Total__c,Opportunity,CRM Initial Opportunity Total,CRM_Initial_Opportunity_Total__c
+azt_pilotopportunitytotal_base,Pilot Opportunity Total (Base),money,none,True,,,false,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_pipelinestage,Pipeline Stage,picklist,none,True,,"276530000: Identify, 276530001: Qualified, 276530002: Prospecting, 276530003: Cultivating, 276530004: Proposing, 276530005: Closing, 276530006: Delivering, 276530007: Awaiting Payment, 276530008: Won",true,,4,23,0,0,0,2,0,0,0,0,0,Opportunity,Stage,StageName,Opportunity,Pipeline Stage,Pipeline_Stage__c
+azt_previewcompleted,Preview Completed,picklist,none,True,,"276530000: Yes, 276530001: No",false,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_previousprobability,Previous Probability,nvarchar,none,True,,,false,,0,0,0,0,0,0,0,1,0,0,0,,,,,,
+azt_printopportunitytotal,Print Opportunity Total,money,none,True,,,true,,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Print Opportunity Total,CRM_Print_Opportunity_Total__c,Opportunity,CRM Initial Opportunity Total,CRM_Initial_Opportunity_Total__c
+azt_printopportunitytotal_base,Print Opportunity Total (Base),money,none,True,,,false,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_probability,Probability,picklist,none,True,,"276530010: 1%, 276530000: 10%, 276530001: 20%, 276530002: 30%, 100000001: 35%, 276530003: 40%, 276530004: 50%, 100000000: 55%, 276530005: 60%, 276530006: 70%, 100530010: 75%, 276530007: 80%, 276530008: 90%, 327630000: 95%, 276530009: 99%",true,,4,32,0,0,0,2,0,5,0,0,0,Opportunity,CRM Probability,CRM_Probability__c,Opportunity,CRM Probability,CRM_Probability__c
+azt_probabilitychangedon,Probability Changed On,datetime,none,True,,,true,,0,7,0,0,0,0,1,1,0,0,0,Opportunity,Probability Last Changed,Probability_Last_Changed__c,Opportunity,Probability Last Changed,Probability_Last_Changed__c
+azt_probabilityincreased,Probability Increased?,bit,none,True,,"1: Yes, 0: No",true,,0,1,0,0,0,0,0,1,0,0,0,,,,Opportunity,Probability Increased,Probability_Increased__c
+azt_quotesent,Quote Sent,picklist,none,True,,"276530000: Yes, 276530001: No",false,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_recordownerid,Record Owner,lookup,none,True,,,true,,6,65,32,0,0,39,0,9,0,1,0,Opportunity,Record Owner,OwnerId,Opportunity,Record Type ID,RecordTypeId
+azt_renewalnotes,Renewal Notes,nvarchar,none,True,,,true,,2,0,0,0,0,0,0,0,0,0,0,Opportunity,Renewal Notes,Renewal_Notes__c,Opportunity,Renewal Notes,Renewal_Notes__c
+azt_renewalopportunitytotal,Renewal Opportunity Total,money,none,True,,,true,,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Renewal Opportunity Total,CRM_Renewal_Opportunity_Total__c,Opportunity,CRM Renewal Opportunity Total,CRM_Renewal_Opportunity_Total__c
+azt_renewalopportunitytotal_base,Renewal Opportunity Total (Base),money,none,True,,,false,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_requestedfreightamt,Requested Freight Amt,money,none,True,,,true,,2,0,0,0,0,0,0,1,0,0,0,Opportunity,CRM Requested Freight Amount,CRM_Requested_Freight_Amount__c,Opportunity,Requested Freight Amt,Requested_Freight_Amt__c
+azt_requestedfreightamt_base,Requested Freight Amt (Base),money,none,True,,,false,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_salesstage,Sales Stage,picklist,none,True,,,true,,0,0,0,0,0,1,0,0,0,0,0,,,,Opportunity,Sales Stage,Sales_Stage__c
+azt_webinarpresentationcompleted,Webinar/Presentation Completed,picklist,none,True,,"276530000: Yes, 276530001: No",false,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_winbackopportunitytotal,Win-Back Opportunity Total,money,none,True,,,true,,2,0,0,0,0,0,1,0,0,0,0,Opportunity,CRM Win Back Opportunity Total,CRM_Win_Back_Opportunity_Total__c,Opportunity,CRM Win Back Opportunity Total,CRM_Win_Back_Opportunity_Total__c
+azt_winbackopportunitytotal_base,Win-Back Opportunity Total (Base),money,none,True,,,false,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+budgetamount,,,,False,,,true,,2,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Budget Amount,Budget_Amount__c
+budgetstatus,,,,False,,,false,,0,0,0,0,0,2,0,0,0,0,0,,,,,,
+captureproposalfeedback,,,,False,,,true,,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Proposal Feedback Captured,Proposal_Feedback_Captured__c
+closeprobability,Probability Number,int,none,False,,,true,,2,2,3,0,0,2,0,1,0,0,0,Opportunity,CRM Probability Number,CRM_Probability_Number__c,Opportunity,Probability Number,Probability_Number__c
+completefinalproposal,,,,False,,,true,,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Final Proposal Ready,Final_Proposal_Ready__c
+completeinternalreview,,,,False,,,true,,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Complete Internal Review,Complete_Internal_Review__c
+confirminterest,,,,False,,,true,,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Confirm Interest,Confirm_Interest__c
+createdby,Created By,lookup,none,False,,,true,,2,9,14,0,0,1,0,0,0,0,0,,,,Opportunity,Created By ID,CreatedById
+createdon,Created On,datetime,none,False,,,true,,2,39,3,0,0,0,1,10,0,0,0,,,,Opportunity,Created Date,CreatedDate
+currentsituation,,,,False,,,true,,2,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,CRM Current Situation,CRM_Current_Situation__c
+customerid,Potential Customer,customer,required,False,,,true,,0,48,0,0,0,14,0,11,0,1,0,,,,Opportunity,Potential Customer,Potential_Customer__c
+customerneed,,,,False,,,true,,2,0,0,0,0,1,0,0,0,0,0,,,,Opportunity,Customer Need,Customer_Need__c
+customerpainpoints,,,,False,,,false,,0,0,0,0,0,2,0,0,0,0,0,,,,,,
+decisionmaker,,,,False,,,true,,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Decision Maker,Decision_Maker__c
+description,Description,ntext,none,False,,,true,,1,0,0,0,0,2,0,7,0,0,0,,,,Opportunity,Description,Description
+developproposal,,,,False,,,true,,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Develop Proposal,Develop_Proposal__c
+discountamount,,,,False,,,true,,2,0,0,0,0,0,0,2,0,0,0,,,,Opportunity,Discount Amount,Discount_Amount__c
+discountpercentage,,,,False,,,true,,1,0,0,0,0,2,0,1,0,0,0,,,,Opportunity,Opportunity Discount,Opportunity_Discount__c
+emailaddress,,,,False,,,false,,0,0,0,0,0,2,0,0,0,0,0,,,,,,
+estimatedclosedate,Est. Close Date,datetime,none,False,,,true,,3,81,7,0,0,0,0,3,0,0,0,Opportunity,Close Date,CRM_Estimated_Close_Date__c,Opportunity,Expected Close Date,Expected_Close_Date__c
+estimatedvalue,Est. Revenue,money,none,False,,,true,,4,41,8,0,0,2,0,2,0,0,0,Opportunity,CRM Estimated Revenue,CRM_Estimated_Revenue__c,Opportunity,Estimated Revenue,Estimated_Revenue__c
+evaluatefit,,,,False,,,true,,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Evaluate Fit,Evaluate_Fit__c
+filedebrief,,,,False,,,true,,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,File Debrief,File_Debrief__c
+identifycompetitors,,,,False,,,true,,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Identify Competitors,Identify_Competitors__c
+identifycustomercontacts,,,,False,,,true,,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Identify Customer Contacts,Identify_Customer_Contacts__c
+identifypursuitteam,,,,False,,,true,,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Identify Sales Team,Identify_Sales_Team__c
+initialcommunication,,,,False,,,false,,0,0,0,0,0,2,0,0,0,0,0,,,,,,
+isrevenuesystemcalculated,Revenue,bit,none,False,,"1: System Calculated, 0: User Provided",true,,2,0,0,0,0,2,0,1,0,0,0,Opportunity,CRM Revenue,CRM_Revenue__c,Opportunity,Revenue,Revenue__c
+modifiedon,Modified On,datetime,none,False,,,true,,0,1,0,0,0,0,0,4,0,0,0,,,,Opportunity,Last Modified Date,LastModifiedDate
+msa_partnerid,,,,False,,,true,,0,0,0,0,0,0,0,0,0,1,0,,,,Opportunity,Partner,Partner__c
+msa_partneroppid,,,,False,,,true,,0,0,0,0,0,0,0,0,0,1,0,,,,Opportunity,Partner Contact,Partner_Contact__c
+msdyn_forecastcategory,,,,False,,,true,,1,0,0,0,0,0,0,0,0,0,0,,,,Opportunity,Forecast Category,ForecastCategory
+msdyn_opportunitykpiid,,,,False,,,false,,0,0,0,0,0,0,0,0,0,1,0,,,,,,
+msdyn_predictivescoreid,,,,False,,,false,,0,0,0,0,0,0,0,0,0,1,0,,,,,,
+name,Topic,nvarchar,required,False,,,true,,2,75,0,0,0,19,0,23,0,0,0,,,,Opportunity,Name,Name
+need,,,,False,,,false,,0,0,0,0,0,2,0,0,0,0,0,,,,,,
+opportunityid,Opportunity,uniqueidentifier,required,False,,,true,,0,65,0,0,0,11,0,32,0,1,0,,,,Opportunity,OpportunityId,OpportunityId__c
+opportunityratingcode,,,,False,,,true,,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,OpportunityId,OpportunityId__c
+originatingleadid,,,,False,,,true,,2,0,0,0,0,0,0,2,0,1,0,,,,Opportunity,Originating Lead,Originating_Lead__c
+ownerid,Owner,owner,systemrequired,False,,,true,,4,26,9,0,0,25,0,22,0,0,0,Opportunity,Record Type,RecordTypeId,Opportunity,Owner ID,OwnerId
+owningbusinessunit,Owning Business Unit,lookup,none,False,,,true,,0,5,0,0,0,0,0,0,0,0,0,,,,Opportunity,Owning Business Unit,Owning_Business_Unit__c
+parentaccountid,Account,lookup,none,False,,,true,,5,1,0,0,0,13,0,4,0,1,0,,,,Opportunity,Account ID,AccountId
+parentcontactid,Contact,lookup,none,False,,,true,,5,1,0,0,0,10,0,1,0,0,0,Opportunity,Contact name,ContactId,Opportunity,Contact ID,ContactId
+presentfinalproposal,,,,False,,,true,,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Present Final Proposal,Present_Final_Proposal__c
+presentproposal,,,,False,,,true,,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Presented Proposal,Presented_Proposal__c
+pricelevelid,Price List,lookup,required,False,,,true,,2,0,0,0,0,7,0,1,0,0,0,Opportunity,Price Book,Pricebook2Id,Opportunity,Price List,Price_List__c
+prioritycode,,,,False,,,true,,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Priority,Priority__c
+proposedsolution,,,,False,,,true,,1,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Proposed Solution,Proposed_Solution__c
+purchaseprocess,,,,False,,,true,,2,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Purchase Process,Purchase_Process__c
+purchasetimeframe,,,,False,,,true,,2,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,CRM Purchase Timeframe,CRM_Purchase_Timeframe__c
+pursuitdecision,,,,False,,,true,,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Decide Gonogo,Decide_Gonogo__c
+qualificationcomments,,,,False,,,false,,0,0,0,0,0,2,0,0,0,0,0,,,,,,
+quotecomments,,,,False,,,false,,0,0,0,0,0,2,0,0,0,0,0,,,,,,
+regardingobjectid,Regarding,lookup,none,False,,,false,,0,0,0,0,0,0,0,8,0,1,0,,,,,,
+resolvefeedback,,,,False,,,true,,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Feedback Resolved,Feedback_Resolved__c
+salesstage,Deprecated Sales Stage,picklist,none,False,,,false,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+salesstagecode,,,,False,,,true,,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Process Code,Process_Code__c
+sendthankyounote,,,,False,,,true,,0,0,0,0,0,2,0,0,0,0,0,,,,Opportunity,Send Thank You Note,Send_Thank_You_Note__c
+statecode,Status,state,systemrequired,False,,,true,,0,58,2,0,0,10,0,20,0,0,0,Opportunity,CRM Status,CRM_Status__c,Opportunity,Status CRM,Status_CRM__c
+statuscode,Status Reason,status,none,False,,,true,,0,10,0,0,0,5,0,6,0,0,0,,,,Opportunity,Status,Status__c
+totalamountlessfreight,,,,False,,,true,,1,0,0,0,0,0,0,0,0,0,0,,,,Opportunity,Total Prefreight Amount,Total_Prefreight_Amount__c
+totallineitemamount,,,,False,,,true,,1,0,0,0,0,0,0,0,0,0,0,,,,Opportunity,CRM Total Line Item Discount Amount,CRM_Total_Line_Item_Discount_Amount__c
+totaltax,,,,False,,,true,,1,0,0,0,0,0,0,0,0,0,0,,,,Opportunity,Total Tax,Total_Tax__c

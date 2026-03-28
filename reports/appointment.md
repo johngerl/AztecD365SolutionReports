@@ -1,5 +1,5 @@
 # Appointment Field Usage Analysis
-> Date: 2026-03-25
+> Date: 2026-03-28
 
 | Property | Value |
 |---|---|
@@ -260,28 +260,28 @@
 
 Total fields: **20**
 
-| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
-|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [activityid](#activityid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [34](#3.%20Views) |  | [1](#5.%20Reports) |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 2 | [actualend](#actualend) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [12](#3.%20Views) | [1](#4.%20Chart%20Visualizations) |  |  |  |  |  |  |  |  |  |
-| 3 | [actualstart](#actualstart) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [1](#3.%20Views) | [1](#4.%20Chart%20Visualizations) | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
-| 4 | [azt_appointmenttype](#azt_appointmenttype) | Appointment Type | picklist | 100000000: Conference Call, 100000001: Offsite Cold Call, 100000002: Onsite Customer Service, 100000003: Onsite Meeting, 100000004: Onsite Presentation, 100000005: Onsite Technical, 100000006: Onsite Training, 100000010: Other, 293130000: Trade Show, 100000007: Web Implementation, 100000008: Web Training, 100000009: Webinar | Yes | required |  | C R U | true |  |  |  |  |  |  | [2](#2.%20Forms) | [32](#3.%20Views) |  | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
-| 5 | [azt_historicalowner](#azt_historicalowner) | Historical Owner | nvarchar |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 6 | [azt_isleadershipappointment](#azt_isleadershipappointment) | Is Leadership Appointment | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 7 | [azt_leadershipcallwithid](#azt_leadershipcallwithid) | Leadership Call With | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 8 | [azt_recordownerid](#azt_recordownerid) | Record Owner | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) | [36](#3.%20Views) | [46](#4.%20Chart%20Visualizations) | [1](#5.%20Reports) |  | [37](#7.%20Workflows) |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 9 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  | [2](#5.%20Reports) |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 10 | [createdon](#createdon) | Created On | datetime |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  | [3](#5.%20Reports) |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 11 | [description](#description) | Description | ntext |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 12 | [instancetypecode](#instancetypecode) | Recurring Type | picklist | 0: Not Recurring, 1: Recurring Master, 2: Recurring Instance, 3: Recurring Exception, 4: Recurring Future Exception | No | systemrequired |  | R Re | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
-| 13 | [isonlinemeeting](#isonlinemeeting) |  |  |  | No |  |  |  | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 14 | [location](#location) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 15 | [prioritycode](#prioritycode) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 16 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none |  | C R U | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  | [1](#5.%20Reports) |  | [14](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [33](#12.%20Relationships) |  |  |
-| 17 | [requiredattendees](#requiredattendees) |  |  |  | No |  |  |  | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 18 | [scheduledend](#scheduledend) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [30](#3.%20Views) | [8](#4.%20Chart%20Visualizations) | [1](#5.%20Reports) |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 19 | [scheduledstart](#scheduledstart) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [12](#3.%20Views) | [3](#4.%20Chart%20Visualizations) | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
-| 20 | [statuscode](#statuscode) | Status Reason | picklist |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Notes | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
+|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
+| 1 | [activityid](#activityid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [34](#3.%20Views) |  | [1](#5.%20Reports) |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 2 | [actualend](#actualend) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [12](#3.%20Views) | [1](#4.%20Chart%20Visualizations) |  |  |  |  |  |  |  |  |  |
+| 3 | [actualstart](#actualstart) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [1](#3.%20Views) | [1](#4.%20Chart%20Visualizations) | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
+| 4 | [azt_appointmenttype](#azt_appointmenttype) | Appointment Type | picklist | 100000000: Conference Call, 100000001: Offsite Cold Call, 100000002: Onsite Customer Service, 100000003: Onsite Meeting, 100000004: Onsite Presentation, 100000005: Onsite Technical, 100000006: Onsite Training, 100000010: Other, 293130000: Trade Show, 100000007: Web Implementation, 100000008: Web Training, 100000009: Webinar | Yes | required |  | C R U | true |  |  |  |  |  |  |  | [2](#2.%20Forms) | [32](#3.%20Views) |  | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
+| 5 | [azt_historicalowner](#azt_historicalowner) | Historical Owner | nvarchar |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 6 | [azt_isleadershipappointment](#azt_isleadershipappointment) | Is Leadership Appointment | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 7 | [azt_leadershipcallwithid](#azt_leadershipcallwithid) | Leadership Call With | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 8 | [azt_recordownerid](#azt_recordownerid) | Record Owner | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [36](#3.%20Views) | [46](#4.%20Chart%20Visualizations) | [1](#5.%20Reports) |  | [37](#7.%20Workflows) |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 9 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  | [2](#3.%20Views) |  | [2](#5.%20Reports) |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 10 | [createdon](#createdon) | Created On | datetime |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  | [3](#5.%20Reports) |  |  |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 11 | [description](#description) | Description | ntext |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 12 | [instancetypecode](#instancetypecode) | Recurring Type | picklist | 0: Not Recurring, 1: Recurring Master, 2: Recurring Instance, 3: Recurring Exception, 4: Recurring Future Exception | No | systemrequired |  | R Re | true |  |  |  |  |  |  |  |  | [1](#3.%20Views) |  | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
+| 13 | [isonlinemeeting](#isonlinemeeting) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 14 | [location](#location) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 15 | [prioritycode](#prioritycode) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 16 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none |  | C R U | true |  |  |  |  |  |  |  |  | [2](#3.%20Views) |  | [1](#5.%20Reports) |  | [14](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [33](#12.%20Relationships) |  |  |
+| 17 | [requiredattendees](#requiredattendees) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 18 | [scheduledend](#scheduledend) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [30](#3.%20Views) | [8](#4.%20Chart%20Visualizations) | [1](#5.%20Reports) |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 19 | [scheduledstart](#scheduledstart) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [12](#3.%20Views) | [3](#4.%20Chart%20Visualizations) | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
+| 20 | [statuscode](#statuscode) | Status Reason | picklist |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  | [1](#5.%20Reports) |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 
 ---
 

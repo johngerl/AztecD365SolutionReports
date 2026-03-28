@@ -1,19 +1,19 @@
-fieldName,displayName,dataType,requiredLevel,isCustom,lastUpdate,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-azt_discretionarydiscountamt,Discretionary Discount Amt,money,none,True,,,true,1,0,0,0,0,0,0,2,0,0,0,,,,Opportunity Product,Discretionary Discount Amt,Discretionary_Discount_Amt__c
-azt_discretionarydiscountamt_base,Discretionary Discount Amt (Base),money,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-azt_issaas,Is SaaS?,bit,none,True,,"1: Yes, 0: No",true,2,0,0,0,0,0,0,2,0,0,0,,,,Opportunity Product,Is Saas,Is_Saas__c
-azt_licensetermmonths,License Term (Months),int,none,True,,,true,2,2,0,0,0,1,0,22,0,0,0,,,,Opportunity Product,License Term Months,License_Term_Months__c
-azt_licensetype,License Type,picklist,required,True,,,true,2,5,0,0,0,1,0,25,0,0,0,,,,Opportunity Product,License Type,License_Type__c
-azt_nonsaastype,Non-SaaS Type,picklist,none,True,,"276530000: Life Skills, 276530001: Kaplan Books, 276530003: GED Vouchers, 276530002: Other",false,0,0,0,0,0,0,0,1,0,0,0,,,,,,
-azt_pricebookentry,SF Price Book Entry,nvarchar,none,True,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-createdon,Created On,datetime,none,False,,,true,0,1,0,0,0,0,0,10,0,0,0,,,,Opportunity Product,Created On,Created_On__c
-entityimage,Entity Image,image,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-extendedamount,,,,False,,,true,0,3,0,0,0,0,0,13,0,0,0,,,,Opportunity Product,Extended Amount,Extended_Amount__c
-isproductoverridden,,,,False,,,true,0,1,0,0,0,0,0,4,0,0,0,,,,Opportunity Product,Select Product,Select_Product__c
-manualdiscountamount,,,,False,,,true,2,0,0,0,0,0,0,9,0,0,0,,,,Opportunity Product,Manual Discount Amount,Manual_Discount_Amount__c
-opportunityproductid,Opportunityproduct,uniqueidentifier,required,False,,,true,0,6,0,0,0,0,0,14,0,0,0,,,,Opportunity Product,Opportunity Product,Opportunity_Product__c
-opportunityproductname,,,,False,,,true,0,5,0,0,0,0,0,0,0,0,0,,,,Opportunity Product,Name CRM,Name_CRM__c
-opportunitystatecode,,,,False,,,true,0,1,0,0,0,0,0,0,0,0,0,,,,Opportunity Product,Opportunity Status,Opportunity_Status__c
-priceperunit,,,,False,,,true,0,3,0,0,0,0,0,8,0,0,0,,,,Opportunity Product,Price Per Unit,Price_Per_Unit__c
-productdescription,,,,False,,,false,0,2,0,0,0,1,0,13,0,0,0,,,,,,
-quantity,Quantity,decimal,required,False,,,true,0,7,2,0,0,0,0,18,0,0,0,Opportunity Product,Quantity,Quantity,Opportunity Product,Quantity,Quantity__c
+fieldName,displayName,dataType,requiredLevel,isCustom,lastUpdate,picklistValues,mappingSuggested,notes,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+azt_discretionarydiscountamt,Discretionary Discount Amt,money,none,True,,,true,,1,0,0,0,0,0,0,2,0,0,0,,,,Opportunity Product,Discretionary Discount Amt,Discretionary_Discount_Amt__c
+azt_discretionarydiscountamt_base,Discretionary Discount Amt (Base),money,none,True,,,false,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+azt_issaas,Is SaaS?,bit,none,True,,"1: Yes, 0: No",true,,2,0,0,0,0,0,0,2,0,0,0,,,,Opportunity Product,Is Saas,Is_Saas__c
+azt_licensetermmonths,License Term (Months),int,none,True,,,true,,2,2,0,0,0,1,0,22,0,0,0,,,,Opportunity Product,License Term Months,License_Term_Months__c
+azt_licensetype,License Type,picklist,required,True,,,true,,2,5,0,0,0,1,0,25,0,0,0,,,,Opportunity Product,License Type,License_Type__c
+azt_nonsaastype,Non-SaaS Type,picklist,none,True,,"276530000: Life Skills, 276530001: Kaplan Books, 276530003: GED Vouchers, 276530002: Other",false,,0,0,0,0,0,0,0,1,0,0,0,,,,,,
+azt_pricebookentry,SF Price Book Entry,nvarchar,none,True,,,false,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+createdon,Created On,datetime,none,False,,,true,,0,1,0,0,0,0,0,10,0,0,0,,,,Opportunity Product,Created On,Created_On__c
+entityimage,Entity Image,image,none,False,,,false,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+extendedamount,,,,False,,,true,,0,3,0,0,0,0,0,13,0,0,0,,,,Opportunity Product,Extended Amount,Extended_Amount__c
+isproductoverridden,,,,False,,,true,,0,1,0,0,0,0,0,4,0,0,0,,,,Opportunity Product,Select Product,Select_Product__c
+manualdiscountamount,,,,False,,,true,,2,0,0,0,0,0,0,9,0,0,0,,,,Opportunity Product,Manual Discount Amount,Manual_Discount_Amount__c
+opportunityproductid,Opportunityproduct,uniqueidentifier,required,False,,,true,,0,6,0,0,0,0,0,14,0,0,0,,,,Opportunity Product,Opportunity Product,Opportunity_Product__c
+opportunityproductname,,,,False,,,true,,0,5,0,0,0,0,0,0,0,0,0,,,,Opportunity Product,Name CRM,Name_CRM__c
+opportunitystatecode,,,,False,,,true,,0,1,0,0,0,0,0,0,0,0,0,,,,Opportunity Product,Opportunity Status,Opportunity_Status__c
+priceperunit,,,,False,,,true,,0,3,0,0,0,0,0,8,0,0,0,,,,Opportunity Product,Price Per Unit,Price_Per_Unit__c
+productdescription,,,,False,,,false,,0,2,0,0,0,1,0,13,0,0,0,,,,,,
+quantity,Quantity,decimal,required,False,,,true,,0,7,2,0,0,0,0,18,0,0,0,Opportunity Product,Quantity,Quantity,Opportunity Product,Quantity,Quantity__c

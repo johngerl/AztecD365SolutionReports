@@ -1,5 +1,5 @@
 # Goal Field Usage Analysis
-> Date: 2026-03-25
+> Date: 2026-03-28
 
 | Property | Value |
 |---|---|
@@ -134,21 +134,21 @@
 
 Total fields: **13**
 
-| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
-|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [actualstring](#actualstring) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 2 | [azt_goaltype](#azt_goaltype) | Goal Type | picklist | 327630000: Actual SaaS, 327630001: Actual Print, 327630002: Actual Combined, 327630003: SaaS Opportunity, 327630004: Print Opportunity, 327630005: Initial, 327630006: Add-On, 327630007: Win-Back, 327630008: Renewals, 327630009: Print + | Yes | recommended |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 3 | [azt_isprint](#azt_isprint) | Is Print? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 4 | [azt_month](#azt_month) | Month | picklist |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 5 | [goalenddate](#goalenddate) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 6 | [goalid](#goalid) | Goal | uniqueidentifier |  | No | required |  | R | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 7 | [goalownerid](#goalownerid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 8 | [goalstartdate](#goalstartdate) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 9 | [inprogressstring](#inprogressstring) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 10 | [parentgoalid](#parentgoalid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 11 | [percentage](#percentage) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 12 | [targetstring](#targetstring) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 13 | [title](#title) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [4](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Notes | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
+|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
+| 1 | [actualstring](#actualstring) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 2 | [azt_goaltype](#azt_goaltype) | Goal Type | picklist | 327630000: Actual SaaS, 327630001: Actual Print, 327630002: Actual Combined, 327630003: SaaS Opportunity, 327630004: Print Opportunity, 327630005: Initial, 327630006: Add-On, 327630007: Win-Back, 327630008: Renewals, 327630009: Print + | Yes | recommended |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 3 | [azt_isprint](#azt_isprint) | Is Print? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 4 | [azt_month](#azt_month) | Month | picklist |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 5 | [goalenddate](#goalenddate) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 6 | [goalid](#goalid) | Goal | uniqueidentifier |  | No | required |  | R | true |  |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 7 | [goalownerid](#goalownerid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 8 | [goalstartdate](#goalstartdate) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  | [3](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 9 | [inprogressstring](#inprogressstring) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 10 | [parentgoalid](#parentgoalid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 11 | [percentage](#percentage) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 12 | [targetstring](#targetstring) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 13 | [title](#title) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [4](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 
 ---
 

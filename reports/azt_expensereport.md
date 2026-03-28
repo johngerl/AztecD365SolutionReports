@@ -1,5 +1,5 @@
 # Azt_expensereport Field Usage Analysis
-> Date: 2026-03-25
+> Date: 2026-03-28
 
 | Property | Value |
 |---|---|
@@ -215,51 +215,51 @@
 
 Total fields: **43**
 
-| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
-|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [!process_custom_attribute_url_](#%21process_custom_attribute_url_) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 2 | [azt_approvingcorporatemanagerid](#azt_approvingcorporatemanagerid) | Approving Corporate Manager | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 3 | [azt_approvingmanagerid](#azt_approvingmanagerid) | Approving Manager | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 4 | [azt_corporateapproved](#azt_corporateapproved) | Corporate Approved? | bit | 1: Approved, 0: Not Approved | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 5 | [azt_datecorporateapproved](#azt_datecorporateapproved) | Date Corporate Approved | datetime |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 6 | [azt_datemanagerapproved](#azt_datemanagerapproved) | Date Manager Approved | datetime |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 7 | [azt_datepaid](#azt_datepaid) | Date Paid | datetime |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 8 | [azt_datesubmitted](#azt_datesubmitted) | Date Submitted | datetime |  | Yes | none |  | C R U Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [17](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 9 | [azt_enddate](#azt_enddate) | End Date | datetime |  | Yes | none |  | C R U Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [11](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 10 | [azt_expenseid](#azt_expenseid) | Expense ID | nvarchar |  | Yes | none |  | C R U S Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [12](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 11 | [azt_expensereportid](#azt_expensereportid) | Expense Report | primarykey |  | No | systemrequired |  | C R F Re | true |  |  |  |  |  |  |  | [15](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 12 | [azt_ispaid](#azt_ispaid) | Is Paid? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 13 | [azt_managerapproved](#azt_managerapproved) | Manager Approved? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 14 | [azt_name](#azt_name) | Name | nvarchar |  | Yes | required |  | C R U S Re | true |  |  |  |  |  |  | [3](#2.%20Forms) | [20](#3.%20Views) |  |  |  | [9](#7.%20Workflows) |  | [18](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 15 | [azt_paidbyid](#azt_paidbyid) | Paid By | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 16 | [azt_reject](#azt_reject) | Reject | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 17 | [azt_startdate](#azt_startdate) | Start Date | datetime |  | Yes | none |  | C R U Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [11](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 18 | [azt_submitted](#azt_submitted) | Submitted? | bit | 1: Yes, 0: No | Yes | none |  | C R U Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [11](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 19 | [azt_submittedbyid](#azt_submittedbyid) | Submitted By | lookup |  | Yes | none |  | C R U S Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [17](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
-| 20 | [azt_totalreimbursement](#azt_totalreimbursement) | Total Reimbursement | money |  | Yes | none |  | C R U Re | true |  |  |  |  |  |  | [2](#2.%20Forms) | [14](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 21 | [azt_totalreimbursement_base](#azt_totalreimbursement_base) | Total Reimbursement (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 22 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [25](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
-| 23 | [createdon](#createdon) | Created On | datetime |  | No | none |  | R F Re | true |  |  |  |  |  |  | [1](#2.%20Forms) | [19](#3.%20Views) |  |  |  | [7](#7.%20Workflows) |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 24 | [createdonbehalfby](#createdonbehalfby) | Created By (Delegate) | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 25 | [exchangerate](#exchangerate) | Exchange Rate | decimal |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 26 | [importsequencenumber](#importsequencenumber) | Import Sequence Number | int |  | No | none |  | C R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 27 | [modifiedby](#modifiedby) | Modified By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
-| 28 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none |  | R F Re | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 29 | [modifiedonbehalfby](#modifiedonbehalfby) | Modified By (Delegate) | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 30 | [overriddencreatedon](#overriddencreatedon) | Record Created On | datetime |  | No | none |  | C R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 31 | [ownerid](#ownerid) | Owner | owner |  | No | systemrequired |  | C R U F | true |  |  |  |  |  |  | [4](#2.%20Forms) | [4](#3.%20Views) |  |  |  | [24](#7.%20Workflows) |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 32 | [owningbusinessunit](#owningbusinessunit) | Owning Business Unit | lookup |  | No | none |  | R F | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 33 | [owningteam](#owningteam) | Owning Team | lookup |  | No | none |  | R L | false |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 34 | [owninguser](#owninguser) | Owning User | lookup |  | No | none |  | R L | true |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 35 | [processid](#processid) | Process Id | uniqueidentifier |  | No | none |  | C R U | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 36 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [6](#12.%20Relationships) |  |  |
-| 37 | [stageid](#stageid) | (Deprecated) Stage Id | uniqueidentifier |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 38 | [statecode](#statecode) | Status | state |  | No | systemrequired |  | R U F | true |  |  |  |  |  |  |  | [12](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 39 | [statuscode](#statuscode) | Expense Status | status |  | No | none |  | C R U S Re | true |  |  |  |  |  |  | [2](#2.%20Forms) | [22](#3.%20Views) |  |  |  | [5](#7.%20Workflows) |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 40 | [timezoneruleversionnumber](#timezoneruleversionnumber) | Time Zone Rule Version Number | int |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 41 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [20](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 42 | [traversedpath](#traversedpath) | (Deprecated) Traversed Path | nvarchar |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| 43 | [utcconversiontimezonecode](#utcconversiontimezonecode) | UTC Conversion Time Zone Code | int |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Notes | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
+|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
+| 1 | [!process_custom_attribute_url_](#%21process_custom_attribute_url_) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 2 | [azt_approvingcorporatemanagerid](#azt_approvingcorporatemanagerid) | Approving Corporate Manager | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 3 | [azt_approvingmanagerid](#azt_approvingmanagerid) | Approving Manager | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 4 | [azt_corporateapproved](#azt_corporateapproved) | Corporate Approved? | bit | 1: Approved, 0: Not Approved | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 5 | [azt_datecorporateapproved](#azt_datecorporateapproved) | Date Corporate Approved | datetime |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 6 | [azt_datemanagerapproved](#azt_datemanagerapproved) | Date Manager Approved | datetime |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 7 | [azt_datepaid](#azt_datepaid) | Date Paid | datetime |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 8 | [azt_datesubmitted](#azt_datesubmitted) | Date Submitted | datetime |  | Yes | none |  | C R U Re | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [17](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 9 | [azt_enddate](#azt_enddate) | End Date | datetime |  | Yes | none |  | C R U Re | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [11](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 10 | [azt_expenseid](#azt_expenseid) | Expense ID | nvarchar |  | Yes | none |  | C R U S Re | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [12](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 11 | [azt_expensereportid](#azt_expensereportid) | Expense Report | primarykey |  | No | systemrequired |  | C R F Re | true |  |  |  |  |  |  |  |  | [15](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  | [5](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 12 | [azt_ispaid](#azt_ispaid) | Is Paid? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 13 | [azt_managerapproved](#azt_managerapproved) | Manager Approved? | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 14 | [azt_name](#azt_name) | Name | nvarchar |  | Yes | required |  | C R U S Re | true |  |  |  |  |  |  |  | [3](#2.%20Forms) | [20](#3.%20Views) |  |  |  | [9](#7.%20Workflows) |  | [18](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 15 | [azt_paidbyid](#azt_paidbyid) | Paid By | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 16 | [azt_reject](#azt_reject) | Reject | bit | 1: Yes, 0: No | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 17 | [azt_startdate](#azt_startdate) | Start Date | datetime |  | Yes | none |  | C R U Re | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [11](#3.%20Views) |  |  |  | [2](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 18 | [azt_submitted](#azt_submitted) | Submitted? | bit | 1: Yes, 0: No | Yes | none |  | C R U Re | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [11](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 19 | [azt_submittedbyid](#azt_submittedbyid) | Submitted By | lookup |  | Yes | none |  | C R U S Re | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [17](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
+| 20 | [azt_totalreimbursement](#azt_totalreimbursement) | Total Reimbursement | money |  | Yes | none |  | C R U Re | true |  |  |  |  |  |  |  | [2](#2.%20Forms) | [14](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 21 | [azt_totalreimbursement_base](#azt_totalreimbursement_base) | Total Reimbursement (Base) | money |  | Yes | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 22 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [25](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
+| 23 | [createdon](#createdon) | Created On | datetime |  | No | none |  | R F Re | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [19](#3.%20Views) |  |  |  | [7](#7.%20Workflows) |  | [10](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 24 | [createdonbehalfby](#createdonbehalfby) | Created By (Delegate) | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 25 | [exchangerate](#exchangerate) | Exchange Rate | decimal |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 26 | [importsequencenumber](#importsequencenumber) | Import Sequence Number | int |  | No | none |  | C R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 27 | [modifiedby](#modifiedby) | Modified By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
+| 28 | [modifiedon](#modifiedon) | Modified On | datetime |  | No | none |  | R F Re | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [4](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 29 | [modifiedonbehalfby](#modifiedonbehalfby) | Modified By (Delegate) | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 30 | [overriddencreatedon](#overriddencreatedon) | Record Created On | datetime |  | No | none |  | C R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 31 | [ownerid](#ownerid) | Owner | owner |  | No | systemrequired |  | C R U F | true |  |  |  |  |  |  |  | [4](#2.%20Forms) | [4](#3.%20Views) |  |  |  | [24](#7.%20Workflows) |  | [22](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 32 | [owningbusinessunit](#owningbusinessunit) | Owning Business Unit | lookup |  | No | none |  | R F | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 33 | [owningteam](#owningteam) | Owning Team | lookup |  | No | none |  | R L | false |  |  |  |  |  |  |  |  |  |  |  |  | [1](#7.%20Workflows) |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 34 | [owninguser](#owninguser) | Owning User | lookup |  | No | none |  | R L | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 35 | [processid](#processid) | Process Id | uniqueidentifier |  | No | none |  | C R U | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 36 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [6](#12.%20Relationships) |  |  |
+| 37 | [stageid](#stageid) | (Deprecated) Stage Id | uniqueidentifier |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 38 | [statecode](#statecode) | Status | state |  | No | systemrequired |  | R U F | true |  |  |  |  |  |  |  |  | [12](#3.%20Views) |  |  |  | [10](#7.%20Workflows) |  | [20](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 39 | [statuscode](#statuscode) | Expense Status | status |  | No | none |  | C R U S Re | true |  |  |  |  |  |  |  | [2](#2.%20Forms) | [22](#3.%20Views) |  |  |  | [5](#7.%20Workflows) |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 40 | [timezoneruleversionnumber](#timezoneruleversionnumber) | Time Zone Rule Version Number | int |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 41 | [transactioncurrencyid](#transactioncurrencyid) | Currency | lookup |  | No | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [20](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 42 | [traversedpath](#traversedpath) | (Deprecated) Traversed Path | nvarchar |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| 43 | [utcconversiontimezonecode](#utcconversiontimezonecode) | UTC Conversion Time Zone Code | int |  | No | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
 ---
 

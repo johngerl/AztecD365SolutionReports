@@ -1,5 +1,5 @@
 # Systemuser Field Usage Analysis
-> Date: 2026-03-25
+> Date: 2026-03-28
 
 | Property | Value |
 |---|---|
@@ -171,35 +171,35 @@
 
 Total fields: **27**
 
-| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
-|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [acceptingentityid](#acceptingentityid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 2 | [accessmode](#accessmode) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  | [2](#5.%20Reports) |  |  |  |  |  |  |  |  |
-| 3 | [azt_addoncomp](#azt_addoncomp) | Add-On Comp % | decimal |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 4 | [azt_bookingurl](#azt_bookingurl) | Booking URL | nvarchar |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 5 | [azt_defaultpricelistid](#azt_defaultpricelistid) | Default Price List | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
-| 6 | [azt_expenseteamid](#azt_expenseteamid) | Expense Team | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 7 | [azt_extension](#azt_extension) | Extension | nvarchar |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 8 | [azt_igradnonsaas](#azt_igradnonsaas) | iGrad Non-SaaS | decimal |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 9 | [azt_individuallicensecomp](#azt_individuallicensecomp) | Individual License Comp % | decimal |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 10 | [azt_initialcomp](#azt_initialcomp) | Initial Comp % | decimal |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 11 | [azt_jobrole](#azt_jobrole) | Job Role | picklist | 327630008: Client Success, 327630003: Exec, 327630002: FSR, 327630009: iGrad, 327630004: Marketing, 327630006: Other, 327630007: PassAssured, 327630001: Renewal Team, 327630000: Sales Rep, 327630005: Technical | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) | [7](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 12 | [azt_printcomp](#azt_printcomp) | Print + Comp % | decimal |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 13 | [azt_renewalcomp](#azt_renewalcomp) | Renewal Comp % | decimal |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 14 | [azt_winbackcomp](#azt_winbackcomp) | Win-Back Comp % | decimal |  | Yes | none |  | C R U | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 15 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  | [2](#5.%20Reports) |  |  |  |  |  | [37](#12.%20Relationships) |  |  |
-| 16 | [incomingemaildeliverymethod](#incomingemaildeliverymethod) |  |  |  | No |  |  |  | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 17 | [internalemailaddress](#internalemailaddress) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 18 | [isdisabled](#isdisabled) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [2](#3.%20Views) |  | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
-| 19 | [licensee](#licensee) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 20 | [modifiedby](#modifiedby) | Modified By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [37](#12.%20Relationships) |  |  |
-| 21 | [msdyn_defaultpresenceiduser](#msdyn_defaultpresenceiduser) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 22 | [outgoingemaildeliverymethod](#outgoingemaildeliverymethod) |  |  |  | No |  |  |  | true |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
-| 23 | [owninguser](#owninguser) | Owning User | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [22](#12.%20Relationships) |  |  |
-| 24 | [parentsystemuserid](#parentsystemuserid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [4](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 25 | [siteid](#siteid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 26 | [systemuserid](#systemuserid) | Systemuser | uniqueidentifier |  | No | required |  | R | true |  |  |  |  |  |  |  | [5](#3.%20Views) |  | [1](#5.%20Reports) |  | [1](#7.%20Workflows) |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 27 | [title](#title) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [5](#3.%20Views) |  | [3](#5.%20Reports) |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Notes | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
+|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
+| 1 | [acceptingentityid](#acceptingentityid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 2 | [accessmode](#accessmode) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [2](#3.%20Views) |  | [2](#5.%20Reports) |  |  |  |  |  |  |  |  |
+| 3 | [azt_addoncomp](#azt_addoncomp) | Add-On Comp % | decimal |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 4 | [azt_bookingurl](#azt_bookingurl) | Booking URL | nvarchar |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 5 | [azt_defaultpricelistid](#azt_defaultpricelistid) | Default Price List | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  | [2](#7.%20Workflows) |  |  |  | [1](#12.%20Relationships) |  |  |
+| 6 | [azt_expenseteamid](#azt_expenseteamid) | Expense Team | lookup |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 7 | [azt_extension](#azt_extension) | Extension | nvarchar |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 8 | [azt_igradnonsaas](#azt_igradnonsaas) | iGrad Non-SaaS | decimal |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 9 | [azt_individuallicensecomp](#azt_individuallicensecomp) | Individual License Comp % | decimal |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 10 | [azt_initialcomp](#azt_initialcomp) | Initial Comp % | decimal |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 11 | [azt_jobrole](#azt_jobrole) | Job Role | picklist | 327630008: Client Success, 327630003: Exec, 327630002: FSR, 327630009: iGrad, 327630004: Marketing, 327630006: Other, 327630007: PassAssured, 327630001: Renewal Team, 327630000: Sales Rep, 327630005: Technical | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) | [7](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 12 | [azt_printcomp](#azt_printcomp) | Print + Comp % | decimal |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 13 | [azt_renewalcomp](#azt_renewalcomp) | Renewal Comp % | decimal |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 14 | [azt_winbackcomp](#azt_winbackcomp) | Win-Back Comp % | decimal |  | Yes | none |  | C R U | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 15 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  | [2](#5.%20Reports) |  |  |  |  |  | [37](#12.%20Relationships) |  |  |
+| 16 | [incomingemaildeliverymethod](#incomingemaildeliverymethod) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 17 | [internalemailaddress](#internalemailaddress) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [2](#3.%20Views) |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 18 | [isdisabled](#isdisabled) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [2](#3.%20Views) |  | [1](#5.%20Reports) |  |  |  |  |  |  |  |  |
+| 19 | [licensee](#licensee) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 20 | [modifiedby](#modifiedby) | Modified By | lookup |  | No | none |  | R | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [37](#12.%20Relationships) |  |  |
+| 21 | [msdyn_defaultpresenceiduser](#msdyn_defaultpresenceiduser) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 22 | [outgoingemaildeliverymethod](#outgoingemaildeliverymethod) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  |  |  |  |
+| 23 | [owninguser](#owninguser) | Owning User | lookup |  | No | none |  | R | false |  |  |  |  |  |  |  |  |  |  |  |  |  |  | [1](#10.%20Plugin%20Source%20Code%20Analysis) |  | [22](#12.%20Relationships) |  |  |
+| 24 | [parentsystemuserid](#parentsystemuserid) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [4](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 25 | [siteid](#siteid) |  |  |  | No |  |  |  | false |  |  |  |  |  |  |  |  | [1](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 26 | [systemuserid](#systemuserid) | Systemuser | uniqueidentifier |  | No | required |  | R | true |  |  |  |  |  |  |  |  | [5](#3.%20Views) |  | [1](#5.%20Reports) |  | [1](#7.%20Workflows) |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 27 | [title](#title) |  |  |  | No |  |  |  | true |  |  |  |  |  |  |  |  | [5](#3.%20Views) |  | [3](#5.%20Reports) |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 
 ---
 

@@ -1,6 +1,6 @@
-fieldName,displayName,dataType,requiredLevel,isCustom,lastUpdate,picklistValues,mappingSuggested,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
-expirationdate,,,,False,,,false,2,0,0,0,0,0,0,0,0,0,0,,,,,,
-expiredreviewoptions,,,,False,,,false,1,0,0,0,0,0,0,0,0,0,0,,,,,,
-knowledgearticleid,Knowledge Article,lookup,none,False,,,false,0,0,0,0,0,0,0,0,0,0,0,,,,,,
-setproductassociations,,,,False,,,false,2,0,0,0,0,0,0,0,0,0,0,,,,,,
-updatecontent,,,,False,,,false,1,0,0,0,0,0,0,0,0,0,0,,,,,,
+fieldName,displayName,dataType,requiredLevel,isCustom,lastUpdate,picklistValues,mappingSuggested,notes,refForms,refViews,refChartVisualizations,refReports,refDashboards,refWorkflows,refFormulas,refPlugins,refPcfControls,refRelationships,refRibbon,sfObjectName,sfFieldDisplayName,sfFieldApiName,sfSuggestedObjectName,sfSuggestedFieldDisplayName,sfSuggestedFieldApiName
+expirationdate,,,,False,,,false,,2,0,0,0,0,0,0,0,0,0,0,,,,,,
+expiredreviewoptions,,,,False,,,false,,1,0,0,0,0,0,0,0,0,0,0,,,,,,
+knowledgearticleid,Knowledge Article,lookup,none,False,,,false,,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+setproductassociations,,,,False,,,false,,2,0,0,0,0,0,0,0,0,0,0,,,,,,
+updatecontent,,,,False,,,false,,1,0,0,0,0,0,0,0,0,0,0,,,,,,

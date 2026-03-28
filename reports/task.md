@@ -1,5 +1,5 @@
 # Task Field Usage Analysis
-> Date: 2026-03-25
+> Date: 2026-03-28
 
 | Property | Value |
 |---|---|
@@ -189,18 +189,18 @@
 
 Total fields: **10**
 
-| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
-|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
-| 1 | [activityid](#activityid) |  |  |  | No |  |  |  | true |  |  |  | Task | Activity GUID | Activity_GUID__c |  | [5](#3.%20Views) |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 2 | [azt_historicalowner](#azt_historicalowner) | Historical Owner | nvarchar |  | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
-| 3 | [azt_recordownerid](#azt_recordownerid) | Record Owner | lookup |  | Yes | none |  | C R U | true |  |  |  | Task | Task Record Type ID | RecordTypeId | [1](#2.%20Forms) | [6](#3.%20Views) |  |  |  | [37](#7.%20Workflows) |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
-| 4 | [azt_reorderopportunityid](#azt_reorderopportunityid) | Reorder Opportunity | lookup |  | Yes | none |  | C R U | true |  |  |  | Task | Reorder Opportunity | Reorder_Opportunity__c | [1](#2.%20Forms) |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
-| 5 | [azt_tasktype](#azt_tasktype) | Task Type | picklist | 327630000: Standard Task, 327630001: Reorder Task | Yes | none |  | C R U | true |  |  |  | Task | Task Subtype | TaskSubtype | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 6 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | true |  |  |  | Task | Created By ID | CreatedById |  | [1](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
-| 7 | [prioritycode](#prioritycode) |  |  |  | No |  |  |  | true |  |  |  | Task | Priority | Priority |  | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
-| 8 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none |  | C R U Re | true |  |  |  | Task | Related To ID | WhatId |  | [5](#3.%20Views) |  |  |  | [14](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [32](#12.%20Relationships) |  |  |
-| 9 | [scheduledend](#scheduledend) |  |  |  | No |  |  |  | true |  |  |  | Task | Due Date | Due_Date__c |  | [8](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
-| 10 | [statuscode](#statuscode) | Status Reason | picklist |  | No | none |  | R | true |  |  |  | Task | Status | Status |  | [2](#3.%20Views) |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Notes | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |
+|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|
+| 1 | [activityid](#activityid) |  |  |  | No |  |  |  | true |  |  |  | Task | Activity GUID | Activity_GUID__c |  |  | [5](#3.%20Views) |  |  |  |  |  | [7](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 2 | [azt_historicalowner](#azt_historicalowner) | Historical Owner | nvarchar |  | Yes | none |  | C R U | false |  |  |  |  |  |  |  |  |  |  |  |  | [2](#7.%20Workflows) |  |  |  |  |  |  |
+| 3 | [azt_recordownerid](#azt_recordownerid) | Record Owner | lookup |  | Yes | none |  | C R U | true |  |  |  | Task | Task Record Type ID | RecordTypeId |  | [1](#2.%20Forms) | [6](#3.%20Views) |  |  |  | [37](#7.%20Workflows) |  | [9](#10.%20Plugin%20Source%20Code%20Analysis) |  | [1](#12.%20Relationships) |  |  |
+| 4 | [azt_reorderopportunityid](#azt_reorderopportunityid) | Reorder Opportunity | lookup |  | Yes | none |  | C R U | true |  |  |  | Task | Reorder Opportunity | Reorder_Opportunity__c |  | [1](#2.%20Forms) |  |  |  |  |  |  |  |  | [1](#12.%20Relationships) |  |  |
+| 5 | [azt_tasktype](#azt_tasktype) | Task Type | picklist | 327630000: Standard Task, 327630001: Reorder Task | Yes | none |  | C R U | true |  |  |  | Task | Task Subtype | TaskSubtype |  | [1](#2.%20Forms) | [2](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 6 | [createdby](#createdby) | Created By | lookup |  | No | none |  | R | true |  |  |  | Task | Created By ID | CreatedById |  |  | [1](#3.%20Views) |  |  |  | [1](#7.%20Workflows) |  |  |  |  |  |  |
+| 7 | [prioritycode](#prioritycode) |  |  |  | No |  |  |  | true |  |  |  | Task | Priority | Priority |  |  | [5](#3.%20Views) |  |  |  |  |  |  |  |  |  |  |
+| 8 | [regardingobjectid](#regardingobjectid) | Regarding | lookup |  | No | none |  | C R U Re | true |  |  |  | Task | Related To ID | WhatId |  |  | [5](#3.%20Views) |  |  |  | [14](#7.%20Workflows) |  | [8](#10.%20Plugin%20Source%20Code%20Analysis) |  | [32](#12.%20Relationships) |  |  |
+| 9 | [scheduledend](#scheduledend) |  |  |  | No |  |  |  | true |  |  |  | Task | Due Date | Due_Date__c |  |  | [8](#3.%20Views) |  |  |  |  |  | [2](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
+| 10 | [statuscode](#statuscode) | Status Reason | picklist |  | No | none |  | R | true |  |  |  | Task | Status | Status |  |  | [2](#3.%20Views) |  |  |  |  |  | [6](#10.%20Plugin%20Source%20Code%20Analysis) |  |  |  |  |
 
 ---
 

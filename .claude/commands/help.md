@@ -7,13 +7,13 @@ Do NOT run any scripts. Simply display the following information to the user:
 | Command | Usage | Description |
 |---|---|---|
 | `/generate-sf-json [object]` | `/generate-sf-json Account` or `/generate-sf-json` (all) | Step 1: Refresh Salesforce object schema(s) from the org via REST API. No dependencies on other scripts. Use SF API names (e.g., Account, Custom_Object__c) |
-| `/generate-d365-json [entity]` | `/generate-d365-json account` or `/generate-d365-json` (all) | Step 2: Parse SolutionExtract/ and plugins/ to generate enriched D365 entity JSON(s). Caches and restores sfSuggested* values across regenerations. |
+| `/generate-d365-json [entity]` | `/generate-d365-json account` or `/generate-d365-json` (all) | Step 2: Parse SolutionExtract/ and plugins/ to generate enriched D365 entity JSON(s). Caches and restores sfSuggested* and notes values across regenerations. |
 | `/enrich-d365-json [entity]` | `/enrich-d365-json account` or `/enrich-d365-json` (all) | Step 3: Enrich stub fields with Dataverse API metadata. Also enriches plugin sections with registration metadata (mode, stage, state). |
 | `/compute-d365-ref-counts [entity]` | `/compute-d365-ref-counts account` or `/compute-d365-ref-counts` (all) | Step 4: Pre-compute reference counts at entity and field level from section arrays. Downstream steps read these instead of recomputing. |
 | `/refresh-d365-lastupdates [entity]` | `/refresh-d365-lastupdates account` or `/refresh-d365-lastupdates` (all) | Step 5: Refresh lastUpdate fields via D365 Dataverse TDS endpoint. Requires pyodbc, msal, and scripts/config.local.json |
 | `/evaluate-d365-migration [entity]` | `/evaluate-d365-migration account` or `/evaluate-d365-migration` (all) | Step 6: Evaluate migration eligibility per field based on usage and staleness. Sets sfSuggestedMapping flag. Clears sfSuggested* for non-qualifying fields. |
 | `/generate-d365-sf-suggestions [entity]` | `/generate-d365-sf-suggestions account` or `/generate-d365-sf-suggestions` (all) | Step 7: 5-tier SF field matching (exact, fuzzy, synonym, rule-based, AI). Writes suggestions to d365-entities JSON. Only processes fields with sfSuggestedMapping=true. |
-| `/generate-d365-csv [entity]` | `/generate-d365-csv account` or `/generate-d365-csv` (all) | Step 8: Extract mapping CSV(s) from enriched JSON. Reads sfSuggested*, sfSuggestedMapping, and count properties from JSON. |
+| `/generate-d365-csv [entity]` | `/generate-d365-csv account` or `/generate-d365-csv` (all) | Step 8: Extract mapping CSV(s) from enriched JSON. Reads sfSuggested*, sfSuggestedMapping, notes, and count properties from JSON. |
 | `/generate-d365-report [entity]` | `/generate-d365-report opportunity` or `/generate-d365-report` (all) | Step 9: Generate field usage report(s). Reads from d365-entities/*.json and mapping/*.csv. Entity-level counts displayed in report header. |
 | `/generate-all [entity]` | `/generate-all account` or `/generate-all` (all) | Run full pipeline: Steps 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9 |
 
@@ -38,5 +38,5 @@ Step 9:  /generate-d365-report          JSON + CSV                    →  repor
 | File | Purpose |
 |---|---|
 | `DataTypeCompatibilityMatrix.md` | User-editable D365→SF data type compatibility rules (read by Step 7) |
-| `d365-entities/*.json` | Source of truth for count properties, sfSuggestedMapping, and sfSuggested* field mappings |
+| `d365-entities/*.json` | Source of truth for count properties, sfSuggestedMapping, sfSuggested* field mappings, and notes |
 | `mapping/*.csv` | Source of truth for confirmed SF mappings (sfObjectName, sfFieldDisplayName, sfFieldApiName) |

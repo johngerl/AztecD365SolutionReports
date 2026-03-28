@@ -26,6 +26,7 @@ import ssl
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 from collections import OrderedDict
 
@@ -224,6 +225,53 @@ def get_description(attr):
 # Entity Processing
 # ---------------------------------------------------------------------------
 
+def get_entity_row_count(api_base, headers, entity_name):
+    """Query the entity row count via Dataverse FetchXML aggregate.
+
+    Uses EntityDefinitions to resolve the EntitySetName and PrimaryIdAttribute,
+    then runs a FetchXML aggregate count which is not subject to the 5,000-row
+    OData page limit.  Returns an int (0 on any error).
+    """
+    ctx = ssl.create_default_context()
+
+    # Resolve EntitySetName and PrimaryIdAttribute
+    meta_url = (
+        f"{api_base}/EntityDefinitions(LogicalName='{entity_name}')"
+        f"?$select=EntitySetName,PrimaryIdAttribute"
+    )
+    req = urllib.request.Request(meta_url, headers=headers)
+    try:
+        with urllib.request.urlopen(req, context=ctx, timeout=30) as resp:
+            body = json.loads(resp.read().decode("utf-8"))
+            entity_set = body.get("EntitySetName")
+            primary_id = body.get("PrimaryIdAttribute")
+    except Exception:
+        return 0
+
+    if not entity_set or not primary_id:
+        return 0
+
+    # FetchXML aggregate count (bypasses the 5,000-row OData page limit)
+    fetch_xml = (
+        f"<fetch aggregate='true'>"
+        f"<entity name='{entity_name}'>"
+        f"<attribute name='{primary_id}' alias='cnt' aggregate='count'/>"
+        f"</entity></fetch>"
+    )
+    count_url = f"{api_base}/{entity_set}?fetchXml={urllib.parse.quote(fetch_xml)}"
+    count_req = urllib.request.Request(count_url, headers=headers)
+    try:
+        with urllib.request.urlopen(count_req, context=ctx, timeout=30) as resp:
+            body = json.loads(resp.read().decode("utf-8"))
+            values = body.get("value", [])
+            if values:
+                return int(values[0].get("cnt", 0))
+    except Exception:
+        return 0
+
+    return 0
+
+
 def get_entity_attributes(api_base, headers, entity_name):
     """Query EntityDefinitions/Attributes for a given entity.
 
@@ -332,6 +380,13 @@ def process_entity(api_base, headers, entity_json_path, dry_run, plugin_step_loo
     entity_name = data.get("entityName", os.path.splitext(os.path.basename(entity_json_path))[0])
     fields = data.get("fields", [])
 
+    # Query entity row count from Dataverse Web API
+    row_count = get_entity_row_count(api_base, headers, entity_name)
+    rows_changed = (data.get("totalRows", 0) != row_count)
+    if rows_changed:
+        data["totalRows"] = row_count
+        print(f"  Total rows: {row_count}")
+
     # Enrich plugin sections with registration metadata
     plugins_enriched = 0
     if plugin_step_lookup:
@@ -343,11 +398,11 @@ def process_entity(api_base, headers, entity_json_path, dry_run, plugin_step_loo
     stub_indices = [i for i, f in enumerate(fields) if f.get("dataType", "") == ""]
     stub_count = len(stub_indices)
 
-    if stub_count == 0 and plugins_enriched == 0:
-        print(f"  No stub fields, no plugin updates, skipping.")
+    if stub_count == 0 and plugins_enriched == 0 and not rows_changed:
+        print(f"  No stub fields, no plugin updates, no row count change, skipping.")
         return (0, 0, 0)
     if stub_count == 0:
-        # No stubs but plugins were enriched — save and return
+        # No stubs but plugins were enriched or row count changed — save and return
         if not dry_run:
             with open(entity_json_path, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
@@ -408,7 +463,7 @@ def process_entity(api_base, headers, entity_json_path, dry_run, plugin_step_loo
     print(f"  Matched in API: {enriched} (enriched)")
     print(f"  Removed: {removed} (cross-entity artifacts)")
 
-    if not dry_run and (enriched > 0 or removed > 0):
+    if not dry_run and (enriched > 0 or removed > 0 or rows_changed):
         with open(entity_json_path, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
             f.write("\n")

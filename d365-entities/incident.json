@@ -5,7 +5,7 @@
   "objectType": "Standard",
   "ownershipType": "UserOwned",
   "auditEnabled": true,
-  "totalRows": 0,
+  "totalRows": 20756,
   "lastUpdate": "",
   "primaryIdField": "incidentid",
   "primaryNameField": null,
@@ -2469,7 +2469,8 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": []
       },
       {
         "className": "AccountLeadGen",
@@ -2524,7 +2525,17 @@
         ],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true
+        "hasPostImage": true,
+        "registrations": [
+          {
+            "message": "Update",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "azt_evaluate",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "AccountLeadGenAssociate",
@@ -2550,7 +2561,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Associate",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "AccountReassignmentShareRecords",
@@ -2587,7 +2608,8 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": []
       },
       {
         "className": "AccountTypeSet",
@@ -2612,7 +2634,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true
+        "hasPostImage": true,
+        "registrations": [
+          {
+            "message": "Update",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "azt_nonsaasstatus,azt_saasstatus",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "ActivateOrReviseQuote",
@@ -2633,7 +2665,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "ActivitiesCreatedDueDatesInPast",
@@ -2651,7 +2693,33 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "ActivityCloseForceRecordOwner",
@@ -2670,7 +2738,25 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "statecode",
+            "rank": 1
+          },
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "statecode",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "ActivityRegardingGetState",
@@ -2695,7 +2781,8 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": []
       },
       {
         "className": "AddressSearchCleanupFields",
@@ -2717,7 +2804,41 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Disabled",
+            "filteringAttributes": "azt_addresssearch,azt_addresssearch2",
+            "rank": 1
+          },
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Disabled",
+            "filteringAttributes": "azt_addresssearch",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Disabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Disabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "AllocationValidation",
@@ -2741,7 +2862,25 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true
+        "hasPostImage": true,
+        "registrations": [
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "azt_numberoflicenses",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "AutoAssignStateAbb",
@@ -2763,7 +2902,57 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Pre-Validation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Pre-Validation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Pre-Validation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Pre-Validation",
+            "state": "Enabled",
+            "filteringAttributes": "stateorprovince",
+            "rank": 1
+          },
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Pre-Validation",
+            "state": "Enabled",
+            "filteringAttributes": "address1_stateorprovince",
+            "rank": 1
+          },
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Pre-Validation",
+            "state": "Enabled",
+            "filteringAttributes": "address1_stateorprovince",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "AutoNumber",
@@ -2796,7 +2985,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "CaseAudit",
@@ -2818,7 +3017,25 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Disabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Disabled",
+            "filteringAttributes": "ownerid",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "CaseClose",
@@ -2840,7 +3057,25 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "statecode",
+            "rank": 1
+          },
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "statecode",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "ChangeLicenseType",
@@ -2865,7 +3100,8 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": []
       },
       {
         "className": "CloneExpenseLine",
@@ -2902,7 +3138,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "CompGoalCreate",
@@ -2925,7 +3171,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "ContactSetConnectionRole",
@@ -2957,7 +3213,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "azt_ContactSetConnectionRole",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "CreateCompGoals",
@@ -3000,7 +3266,8 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": []
       },
       {
         "className": "CreateSoftwareLicenses",
@@ -3065,7 +3332,25 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true
+        "hasPostImage": true,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Disabled",
+            "filteringAttributes": "salesorderdetailid",
+            "rank": 2
+          },
+          {
+            "message": "Update",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "statecode",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "CreateUserGoals",
@@ -3157,7 +3442,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "azt_GoalAutoCreate",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "DiscretionaryDiscountSetHeader",
@@ -3214,7 +3509,33 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true
+        "hasPostImage": true,
+        "registrations": [
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "azt_discountamount,azt_invoiceproductid,azt_opportunityproductid,azt_orderproductid,azt_quoteproductid",
+            "rank": 1
+          },
+          {
+            "message": "Delete",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "EngagementFSRAssignedOn",
@@ -3236,7 +3557,25 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "ownerid",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "EngagementSetEndDate",
@@ -3255,7 +3594,25 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "SetStateDynamicEntity",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "SetState",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "ExpenseLineTotals",
@@ -3285,7 +3642,25 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true
+        "hasPostImage": true,
+        "registrations": [
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "azt_expenseid,azt_expenseamount",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "ExpenseRestrictVisibility",
@@ -3305,7 +3680,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "RetrieveMultiple",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "FundingSetAnnualSpend",
@@ -3333,7 +3718,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "azt_fundingid",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "FundingTotalAmt",
@@ -3352,7 +3747,25 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true
+        "hasPostImage": true,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "azt_federalfundingamount,azt_otherfundingamount,azt_statefundingamount",
+            "rank": 1
+          },
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "azt_federalfundingamount,azt_otherfundingamount,azt_statefundingamount",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "FundingYearSync",
@@ -3372,7 +3785,25 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "azt_fundingyear",
+            "rank": 1
+          },
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "azt_fundingyear",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "GetAcctTeamOwned",
@@ -3398,7 +3829,8 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": []
       },
       {
         "className": "GetUserHasRole",
@@ -3416,7 +3848,8 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": []
       },
       {
         "className": "GetUserHasRoleToAction",
@@ -3440,7 +3873,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "azt_GetHasRole",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "InvoiceClosePaidOnPercentage",
@@ -3463,7 +3906,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "azt_compcompleted",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "InvoiceCompCompleted",
@@ -3521,7 +3974,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Update",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "azt_compcompleted",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "LeadImport",
@@ -3574,7 +4037,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "azt_leadimportid",
+            "rank": 2
+          }
+        ]
       },
       {
         "className": "LeadImportPopulateName",
@@ -3595,7 +4068,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "azt_importname,azt_leadimportid",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "LeadQualify",
@@ -3613,7 +4096,25 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "QualifyLead",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "QualifyLead",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Disabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "LeadQualifyParentStakeholderContacts",
@@ -3643,7 +4144,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "ManualDiscountKill",
@@ -3661,7 +4172,41 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Disabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Disabled",
+            "filteringAttributes": "manualdiscountamount",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Disabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Disabled",
+            "filteringAttributes": "manualdiscountamount",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "OppAuditRemoval",
@@ -3681,7 +4226,8 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": []
       },
       {
         "className": "OpportunityAssignFromLead",
@@ -3702,7 +4248,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 3
+          }
+        ]
       },
       {
         "className": "OpportunityAudit",
@@ -3737,7 +4293,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": true
+        "hasPostImage": true,
+        "registrations": [
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "estimatedclosedate,estimatedvalue,azt_probability",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "OpportunityClone",
@@ -3780,7 +4346,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "azt_CloneOpportunity",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "OpportunityLastActivityDate",
@@ -3804,7 +4380,81 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "SetStateDynamicEntity",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "estimatedclosedate,estimatedvalue,azt_probability",
+            "rank": 1
+          },
+          {
+            "message": "SetState",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "SetState",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "SetStateDynamicEntity",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "SetStateDynamicEntity",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "SetState",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "SetState",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "SetStateDynamicEntity",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "OpportunityLineSyncToQuote",
@@ -3847,7 +4497,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": true
+        "hasPostImage": true,
+        "registrations": [
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "azt_licensetermmonths,azt_licensetype,quantity",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "OpportunityPreventCreateQuote",
@@ -3870,7 +4530,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "OpportunityProbabilityChange",
@@ -3893,7 +4563,25 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "azt_probability",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "OpportunityProbabilityNumber",
@@ -3914,7 +4602,25 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "azt_probability",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "OpptyToQuoteFieldMappings",
@@ -3963,7 +4669,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 100
+          }
+        ]
       },
       {
         "className": "OrderClone",
@@ -4004,7 +4720,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "azt_CloneOrder",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "OrderFSRSetTemplateFields",
@@ -4033,7 +4759,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "azt_fsrid",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "OrderLinePopulateLicType",
@@ -4058,7 +4794,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "OrderLinePopulateTemplateFields",
@@ -4084,7 +4830,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "salesorderdetailname,salesorderid",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "OrderManuallyCreateSoftwareLicense",
@@ -4122,7 +4878,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "azt_CreateSoftwareLicense",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "OrderSplit",
@@ -4196,7 +4962,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "azt_OrderSplit",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "OrderStageTracking",
@@ -4227,7 +5003,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "PaymentUpdate",
@@ -4251,7 +5037,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true
+        "hasPostImage": true,
+        "registrations": [
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "statuscode",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "PhonecallCreateCallback",
@@ -4307,7 +5103,25 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true
+        "hasPostImage": true,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "ProductDiscountPreventOnActiveQuote",
@@ -4327,7 +5141,25 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "azt_discountamount,azt_productdiscountid,azt_quoteproductid",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "QuoteCloneAndDelete",
@@ -4362,7 +5194,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "azt_CloneAndDeleteQuote",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "QuoteLinesSyncToOppty",
@@ -4404,7 +5246,33 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": true
+        "hasPostImage": true,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "Update",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "productid,extendedamount,manualdiscountamount,priceperunit,quantity,tax,productdescription",
+            "rank": 1
+          },
+          {
+            "message": "Delete",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "QuoteOrderProductsTrackDiscount",
@@ -4434,7 +5302,25 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "QuotePreventActivateUnapprovedDiscounts",
@@ -4491,7 +5377,25 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "SetStateDynamicEntity",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "SetState",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "QuotePreventActivateUnapprovedFreight",
@@ -4512,7 +5416,25 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "SetState",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "SetStateDynamicEntity",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "QuoteSyncTotalToOpportunity",
@@ -4535,7 +5457,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true
+        "hasPostImage": true,
+        "registrations": [
+          {
+            "message": "Update",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "freightamount,totalamount",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "RecordOwnerRestrictEdit",
@@ -4558,7 +5490,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "RestrictCreateQuote",
@@ -4581,7 +5523,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "RestrictProductLookups",
@@ -4602,7 +5554,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "RetrieveMultiple",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "RestrictWinOpportunities",
@@ -4620,7 +5582,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Win",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Disabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "RestrictWinQuote",
@@ -4638,7 +5610,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Win",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "ReviseQuoteDiscountMove",
@@ -4673,7 +5655,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "SendQuoteReport",
@@ -4696,7 +5688,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "azt_SendQuote",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "SetOppProductDefaults",
@@ -4722,7 +5724,17 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "SetPrimaryContact",
@@ -4767,7 +5779,25 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "azt_ContactSetPrimary",
+            "mode": "Synchronous",
+            "stage": "Pre-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "ShareBasedOnAccessTeam",
@@ -4810,7 +5840,65 @@
         ],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Disabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Disabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Disabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Disabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Disabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Disabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Disabled",
+            "filteringAttributes": "",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "ShareFromAccountShares",
@@ -4832,7 +5920,49 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "activityid",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "contactid",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "opportunityid",
+            "rank": 1
+          },
+          {
+            "message": "Create",
+            "mode": "Asynchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "activityid",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "ShareWithAccountOwner",
@@ -4859,7 +5989,8 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": []
       },
       {
         "className": "ShipmentSetTrackingNumber",
@@ -4887,7 +6018,25 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": [
+          {
+            "message": "Create",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "",
+            "rank": 1
+          },
+          {
+            "message": "Update",
+            "mode": "Synchronous",
+            "stage": "Post-Operation",
+            "state": "Enabled",
+            "filteringAttributes": "azt_trackingnumber",
+            "rank": 1
+          }
+        ]
       },
       {
         "className": "UpdateOppFromQuote",
@@ -4927,7 +6076,8 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": true
+        "hasPostImage": true,
+        "registrations": []
       },
       {
         "className": "Utility",
@@ -4988,7 +6138,8 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false
+        "hasPostImage": false,
+        "registrations": []
       }
     ],
     "pcfControls": [
@@ -5708,92 +6859,15 @@
   },
   "fields": [
     {
-      "fieldName": "!process_custom_attribute_url_",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
-      "isCustom": false,
-      "lastUpdate": "",
-      "introducedVersion": "",
-      "maxLength": null,
-      "fieldSecurity": false,
-      "auditEnabled": false,
-      "relatedTo": null,
-      "displayMask": "",
-      "validForCreate": false,
-      "validForRead": false,
-      "validForUpdate": false,
-      "isSearchable": false,
-      "isFilterable": false,
-      "isSortable": false,
-      "isGlobalFilterEnabled": false,
-      "isLogical": false,
-      "isRetrievable": false,
-      "isDataSourceSecret": false,
-      "picklistValues": null,
-      "sfSuggestedMapping": false,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null,
-      "notes": null,
-      "countForms": 0,
-      "countViews": 0,
-      "countChartVisualizations": 0,
-      "countReports": 0,
-      "countDashboards": 0,
-      "countWorkflows": 3,
-      "countFormulasAndRollups": 0,
-      "countPlugins": 0,
-      "countPCFControls": 0,
-      "countRelationships": 0,
-      "countRibbonCustomizations": 0,
-      "forms": [],
-      "views": [],
-      "chartVisualizations": [],
-      "reports": [],
-      "dashboards": [],
-      "workflows": [
-        {
-          "workflowName": "CasePendingAssignmentNotification",
-          "file": "CasePendingAssignmentNotification-177DE8B3-E0C3-4F1C-A7B5-DA84B3629AED.xaml",
-          "usage": "read"
-        },
-        {
-          "workflowName": "CaseRecordOwnerAssignmentNotification",
-          "file": "CaseRecordOwnerAssignmentNotification-2F6035E6-1FBC-476B-9C97-4554E8360B7C.xaml",
-          "usage": "read"
-        },
-        {
-          "workflowName": "CaseResolutionNotificationEmail",
-          "file": "CaseResolutionNotificationEmail-734E721F-7454-4437-8BAC-8B20F496DF12.xaml",
-          "usage": "read"
-        }
-      ],
-      "javaScript": [],
-      "formulas": [],
-      "plugins": [],
-      "pcfControls": [],
-      "relationships": [],
-      "ribbon": [],
-      "conflicts": [
-        {
-          "type": "in_code_not_on_forms"
-        }
-      ]
-    },
-    {
       "fieldName": "adx_resolution",
-      "displayName": "",
+      "displayName": "Resolution",
       "description": "",
-      "dataType": "",
-      "requiredLevel": "",
-      "isCustom": false,
+      "dataType": "ntext",
+      "requiredLevel": "none",
+      "isCustom": true,
       "lastUpdate": "",
       "introducedVersion": "",
-      "maxLength": null,
+      "maxLength": 10000,
       "fieldSecurity": false,
       "auditEnabled": false,
       "relatedTo": null,
@@ -5860,11 +6934,11 @@
     },
     {
       "fieldName": "adx_resolutiondate",
-      "displayName": "",
+      "displayName": "Resolution Date",
       "description": "",
-      "dataType": "",
-      "requiredLevel": "",
-      "isCustom": false,
+      "dataType": "datetime",
+      "requiredLevel": "none",
+      "isCustom": true,
       "lastUpdate": "",
       "introducedVersion": "",
       "maxLength": null,
@@ -7383,10 +8457,10 @@
     },
     {
       "fieldName": "contractdetailid",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
+      "displayName": "Contract Line",
+      "description": "Choose the contract line that the case should be logged under to make sure the customer is charged correctly.",
+      "dataType": "lookup",
+      "requiredLevel": "none",
       "isCustom": false,
       "lastUpdate": "",
       "introducedVersion": "",
@@ -7447,10 +8521,10 @@
     },
     {
       "fieldName": "contractid",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
+      "displayName": "Contract",
+      "description": "Choose the service contract that the case should be logged under to make sure the customer is eligible for support services.",
+      "dataType": "lookup",
+      "requiredLevel": "none",
       "isCustom": false,
       "lastUpdate": "",
       "introducedVersion": "",
@@ -7667,10 +8741,10 @@
     },
     {
       "fieldName": "createdbyexternalparty",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
+      "displayName": "Created By (External Party)",
+      "description": "Shows the external party who created the record.",
+      "dataType": "lookup",
+      "requiredLevel": "none",
       "isCustom": false,
       "lastUpdate": "",
       "introducedVersion": "",
@@ -8334,10 +9408,10 @@
     },
     {
       "fieldName": "entitlementid",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
+      "displayName": "Entitlement",
+      "description": "Choose the entitlement that is applicable for the case.",
+      "dataType": "lookup",
+      "requiredLevel": "none",
       "isCustom": false,
       "lastUpdate": "",
       "introducedVersion": "",
@@ -8455,10 +9529,10 @@
     },
     {
       "fieldName": "existingcase",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
+      "displayName": "Existing Case",
+      "description": "Select an existing case for the customer that has been populated. For internal use only.",
+      "dataType": "lookup",
+      "requiredLevel": "none",
       "isCustom": false,
       "lastUpdate": "",
       "introducedVersion": "",
@@ -8519,10 +9593,10 @@
     },
     {
       "fieldName": "firstresponsebykpiid",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
+      "displayName": "First Response By KPI",
+      "description": "For internal use only.",
+      "dataType": "lookup",
+      "requiredLevel": "none",
       "isCustom": false,
       "lastUpdate": "",
       "introducedVersion": "",
@@ -8789,10 +9863,10 @@
     },
     {
       "fieldName": "modifiedbyexternalparty",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
+      "displayName": "Modified By (External Party)",
+      "description": "Shows the external party who modified the record.",
+      "dataType": "lookup",
+      "requiredLevel": "none",
       "isCustom": false,
       "lastUpdate": "",
       "introducedVersion": "",
@@ -8853,11 +9927,11 @@
     },
     {
       "fieldName": "msa_partnercontactid",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
-      "isCustom": false,
+      "displayName": "Partner Contact",
+      "description": "Allows a partner contact to be assigned to a specific case.",
+      "dataType": "lookup",
+      "requiredLevel": "none",
+      "isCustom": true,
       "lastUpdate": "",
       "introducedVersion": "",
       "maxLength": null,
@@ -8917,11 +9991,11 @@
     },
     {
       "fieldName": "msa_partnerid",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
-      "isCustom": false,
+      "displayName": "Partner",
+      "description": "Creates a Relationship between a Partner (account) and a case for indirect service arrangements.",
+      "dataType": "lookup",
+      "requiredLevel": "none",
+      "isCustom": true,
       "lastUpdate": "",
       "introducedVersion": "",
       "maxLength": null,
@@ -8981,11 +10055,11 @@
     },
     {
       "fieldName": "msdyn_aiagentstatus",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
-      "isCustom": false,
+      "displayName": "AI Agent Status",
+      "description": "Status of AI Agent for the given record.",
+      "dataType": "lookup",
+      "requiredLevel": "none",
+      "isCustom": true,
       "lastUpdate": "",
       "introducedVersion": "",
       "maxLength": null,
@@ -9045,11 +10119,11 @@
     },
     {
       "fieldName": "msdyn_iotalert",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
-      "isCustom": false,
+      "displayName": "IoT Alert",
+      "description": "The iot alert that initiated this case",
+      "dataType": "lookup",
+      "requiredLevel": "none",
+      "isCustom": true,
       "lastUpdate": "",
       "introducedVersion": "",
       "maxLength": null,
@@ -9102,70 +10176,6 @@
           "type": "N:1",
           "referencedEntity": "msdyn_iotalert",
           "referencingEntity": "Incident"
-        }
-      ],
-      "ribbon": [],
-      "conflicts": []
-    },
-    {
-      "fieldName": "originatingcaseid",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
-      "isCustom": false,
-      "lastUpdate": "",
-      "introducedVersion": "",
-      "maxLength": null,
-      "fieldSecurity": false,
-      "auditEnabled": false,
-      "relatedTo": "Incident",
-      "displayMask": "",
-      "validForCreate": false,
-      "validForRead": false,
-      "validForUpdate": false,
-      "isSearchable": false,
-      "isFilterable": false,
-      "isSortable": false,
-      "isGlobalFilterEnabled": false,
-      "isLogical": false,
-      "isRetrievable": false,
-      "isDataSourceSecret": false,
-      "picklistValues": null,
-      "sfSuggestedMapping": false,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null,
-      "notes": null,
-      "countForms": 0,
-      "countViews": 0,
-      "countChartVisualizations": 0,
-      "countReports": 0,
-      "countDashboards": 0,
-      "countWorkflows": 0,
-      "countFormulasAndRollups": 0,
-      "countPlugins": 0,
-      "countPCFControls": 0,
-      "countRelationships": 1,
-      "countRibbonCustomizations": 0,
-      "forms": [],
-      "views": [],
-      "chartVisualizations": [],
-      "reports": [],
-      "dashboards": [],
-      "workflows": [],
-      "javaScript": [],
-      "formulas": [],
-      "plugins": [],
-      "pcfControls": [],
-      "relationships": [
-        {
-          "relationshipName": "OriginatingCase_Lead",
-          "type": "1:N",
-          "referencedEntity": "Incident",
-          "referencingEntity": "Lead"
         }
       ],
       "ribbon": [],
@@ -9381,10 +10391,10 @@
     },
     {
       "fieldName": "parentcaseid",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
+      "displayName": "Parent Case",
+      "description": "Choose the parent case for a case.",
+      "dataType": "lookup",
+      "requiredLevel": "none",
       "isCustom": false,
       "lastUpdate": "",
       "introducedVersion": "",
@@ -9547,10 +10557,10 @@
     },
     {
       "fieldName": "prioritycode",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
+      "displayName": "Priority",
+      "description": "Select the priority so that preferred customers or critical issues are handled quickly.",
+      "dataType": "picklist",
+      "requiredLevel": "none",
       "isCustom": false,
       "lastUpdate": "",
       "introducedVersion": "",
@@ -9807,10 +10817,10 @@
     },
     {
       "fieldName": "resolveby",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
+      "displayName": "Resolve By",
+      "description": "Enter the date by when the case must be resolved.",
+      "dataType": "datetime",
+      "requiredLevel": "none",
       "isCustom": false,
       "lastUpdate": "",
       "introducedVersion": "",
@@ -9879,10 +10889,10 @@
     },
     {
       "fieldName": "resolvebykpiid",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
+      "displayName": "Resolve By KPI",
+      "description": "For internal use only.",
+      "dataType": "lookup",
+      "requiredLevel": "none",
       "isCustom": false,
       "lastUpdate": "",
       "introducedVersion": "",
@@ -9943,10 +10953,10 @@
     },
     {
       "fieldName": "responseby",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
+      "displayName": "First Response By",
+      "description": "For internal use only.",
+      "dataType": "datetime",
+      "requiredLevel": "none",
       "isCustom": false,
       "lastUpdate": "",
       "introducedVersion": "",
@@ -10015,10 +11025,10 @@
     },
     {
       "fieldName": "responsiblecontactid",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
+      "displayName": "Responsible Contact (Deprecated)",
+      "description": "Choose an additional customer contact who can also help resolve the case.",
+      "dataType": "lookup",
+      "requiredLevel": "none",
       "isCustom": false,
       "lastUpdate": "",
       "introducedVersion": "",
@@ -10079,10 +11089,10 @@
     },
     {
       "fieldName": "slaid",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
+      "displayName": "SLA",
+      "description": "Choose the service level agreement (SLA) that you want to apply to the case record.",
+      "dataType": "lookup",
+      "requiredLevel": "none",
       "isCustom": false,
       "lastUpdate": "",
       "introducedVersion": "",
@@ -10143,10 +11153,10 @@
     },
     {
       "fieldName": "slainvokedid",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
+      "displayName": "Last SLA applied",
+      "description": "Last SLA that was applied to this case. This field is for internal use only.",
+      "dataType": "lookup",
+      "requiredLevel": "none",
       "isCustom": false,
       "lastUpdate": "",
       "introducedVersion": "",
@@ -10207,10 +11217,10 @@
     },
     {
       "fieldName": "socialprofileid",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
+      "displayName": "Social Profile",
+      "description": "Unique identifier of the social profile with which the case is associated.",
+      "dataType": "lookup",
+      "requiredLevel": "none",
       "isCustom": false,
       "lastUpdate": "",
       "introducedVersion": "",
@@ -10774,10 +11784,10 @@
     },
     {
       "fieldName": "subjectid",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
+      "displayName": "Subject",
+      "description": "Choose the subject for the case, such as catalog request or product complaint, so customer service managers can identify frequent requests or problem areas. Administrators can configure subjects under Business Management in the Settings area.",
+      "dataType": "lookup",
+      "requiredLevel": "none",
       "isCustom": false,
       "lastUpdate": "",
       "introducedVersion": "",
@@ -10856,14 +11866,14 @@
     },
     {
       "fieldName": "ticketnumber",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
+      "displayName": "Case Number",
+      "description": "Shows the case number for customer reference and searching capabilities. This cannot be modified.",
+      "dataType": "nvarchar",
+      "requiredLevel": "none",
       "isCustom": false,
       "lastUpdate": "",
       "introducedVersion": "",
-      "maxLength": null,
+      "maxLength": 100,
       "fieldSecurity": false,
       "auditEnabled": false,
       "relatedTo": null,
@@ -10958,14 +11968,14 @@
     },
     {
       "fieldName": "title",
-      "displayName": "",
-      "description": "",
-      "dataType": "",
-      "requiredLevel": "",
+      "displayName": "Case Title",
+      "description": "Type a subject or descriptive name, such as the request, issue, or company name, to identify the case in Microsoft Dynamics 365 views.",
+      "dataType": "nvarchar",
+      "requiredLevel": "required",
       "isCustom": false,
       "lastUpdate": "",
       "introducedVersion": "",
-      "maxLength": null,
+      "maxLength": 200,
       "fieldSecurity": false,
       "auditEnabled": false,
       "relatedTo": null,

@@ -187,6 +187,7 @@ Each `mapping/{entity}.csv` contains one row per D365 field with these columns:
 | `lastUpdate` | Dataverse TDS | Last modified date for field data (datetime, "Never", or "Skipped") |
 | `picklistValues` | customizations.xml | Pre-formatted picklist string: `1: Label, 2: Label, ...` |
 | `mappingSuggested` | d365-entities JSON | Read from `sfSuggestedMapping` (set by Step 6 based on staleness + usage + required level) |
+| `notes` | d365-entities JSON | Free-text annotation for the field |
 | `refForms` | Computed | Number of form references for this field |
 | `refViews` | Computed | Number of view references for this field |
 | `refChartVisualizations` | Computed | Number of chart visualization references |
@@ -280,6 +281,7 @@ Each `d365-entities/{entity}.json` contains:
       "sfSuggestedFieldApiName": null,
       "sfSuggestedDataType": null,
       "sfSuggestedMatchTier": null,
+      "notes": null,
       "forms": [],
       "views": [],
       "chartVisualizations": [],
@@ -349,6 +351,7 @@ Each `d365-entities/{entity}.json` contains:
 | `sfSuggestedFieldApiName` | Step 7 | Suggested SF field API name (e.g., `Account_Alert__c`), or null |
 | `sfSuggestedDataType` | Step 7 | Expected SF data type from compatibility matrix, or null |
 | `sfSuggestedMatchTier` | Step 7 | Which tier matched: `exact`, `fuzzy`, `synonym`, `generated`, `ai` |
+| `notes` | Human-entered | Free-text annotation for the field, or null |
 
 ---
 

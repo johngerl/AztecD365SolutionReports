@@ -138,6 +138,7 @@ def adapt_json_fields(json_fields):
         'sf_suggested_api': jf.get('sfSuggestedFieldApiName') or '',
         'sf_suggested_data_type': jf.get('sfSuggestedDataType') or '',
         'sf_suggested_match_tier': jf.get('sfSuggestedMatchTier') or '',
+        'notes': jf.get('notes') or '',
         'picklist_values': jf.get('picklistValues') or [],
     } for jf in json_fields]
 

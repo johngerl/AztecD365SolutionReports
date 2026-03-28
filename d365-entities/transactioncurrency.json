@@ -3057,6 +3057,7 @@
       "sfSuggestedFieldApiName": null,
       "sfSuggestedDataType": null,
       "sfSuggestedMatchTier": null,
+      "notes": null,
       "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,

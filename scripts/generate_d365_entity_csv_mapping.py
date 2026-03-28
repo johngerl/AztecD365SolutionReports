@@ -40,6 +40,7 @@ SF_COLUMNS = SF_CONFIRMED_COLUMNS + SF_SUGGESTED_COLUMNS
 
 D365_COLUMNS = ["displayName", "dataType", "requiredLevel", "isCustom", "lastUpdate"]
 REPORT_COLUMNS = ["picklistValues", "mappingSuggested"]
+NOTES_COLUMNS = ["notes"]
 
 # Reference count columns: CSV header -> JSON count property (set by Step 4)
 REF_COUNT_COLUMNS = [
@@ -56,7 +57,7 @@ REF_COUNT_COLUMNS = [
     ("refRibbon", "countRibbonCustomizations"),
 ]
 
-CSV_COLUMNS = (D365_COLUMNS + REPORT_COLUMNS
+CSV_COLUMNS = (D365_COLUMNS + REPORT_COLUMNS + NOTES_COLUMNS
                + [col for col, _ in REF_COUNT_COLUMNS] + SF_COLUMNS)
 
 
@@ -110,6 +111,7 @@ def extract_mapping(source_file, output_file):
             "lastUpdate": field.get("lastUpdate", ""),
             "picklistValues": pv_str,
             "mappingSuggested": mapping_suggested,
+            "notes": field.get("notes") or "",
         }
 
         # Reference counts from pre-computed count properties (set by Step 4)

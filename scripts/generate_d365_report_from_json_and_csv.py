@@ -206,8 +206,8 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
     a('')
     a(f'Total fields: **{len(fields)}**')
     a('')
-    a('| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |')
-    a('|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|')
+    a('| # | Schema Name | Display Name | Type | Picklist Values | Custom | Required | Last Update | Flags | Mapping Suggested | SF Object | SF Field | SF API Name | SF Suggested Object | SF Suggested Field | SF Suggested API Name | Notes | Forms | Views | Chart Visualizations | Reports | Dashboards | Workflows | Formulas & Rollups | Plugins | PCF Controls | Relationships | Ribbon Customizations | Conflicts & Observations |')
+    a('|---|-------------|-------------|------|-----------------|--------|----------|-------------|-------|-------------------|-----------|----------|-------------|---------------------|--------------------|-----------------------|-------|-------|-------|----------------------|---------|------------|-----------|--------------------|---------|--------------|--------------|-----------------------|--------------------------|')
     section_cols = [
         ('forms', f'#{section_slug(2)}'),
         ('views', f'#{section_slug(3)}'),
@@ -257,7 +257,8 @@ def generate_markdown(entity_name, fields, forms, views, chart_visualizations,
         sf_sug_obj = csv_row.get('sfSuggestedObjectName', '')
         sf_sug_field = csv_row.get('sfSuggestedFieldDisplayName', '')
         sf_sug_api = csv_row.get('sfSuggestedFieldApiName', '')
-        sf_str = f'{suggested} | {sf_obj} | {sf_field_name} | {sf_api} | {sf_sug_obj} | {sf_sug_field} | {sf_sug_api}'
+        notes_str = csv_row.get('notes', '') or field.get('notes', '') or ''
+        sf_str = f'{suggested} | {sf_obj} | {sf_field_name} | {sf_api} | {sf_sug_obj} | {sf_sug_field} | {sf_sug_api} | {notes_str}'
         # Section heatmap columns
         refs_for_field = field_ref_counts.get(sn_lower, {})
         cells = []

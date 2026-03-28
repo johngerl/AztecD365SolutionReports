@@ -2432,6 +2432,7 @@ def enrich_entity(entity_name, root, property_to_field, class_to_entity,
             'sfSuggestedFieldApiName': None,
             'sfSuggestedDataType': None,
             'sfSuggestedMatchTier': None,
+            'notes': None,
         }
 
         # Reference count properties (computed by Step 4, initialized to 0)
@@ -2573,15 +2574,18 @@ def main():
 
         output_file = os.path.join(output_dir, f"{entity_name}.json")
 
-        # Cache existing sfSuggested* values from previous JSON (if any)
+        # Cache existing sfSuggested* and notes values from previous JSON (if any)
         sf_cache = {}
+        notes_cache = {}
         if os.path.isfile(output_file):
             try:
                 with open(output_file, 'r', encoding='utf-8') as f:
                     old_data = json.load(f)
                 for old_field in old_data.get('fields', []):
                     fn = old_field.get('fieldName', '').lower()
-                    if fn and (old_field.get('sfSuggestedMapping') or old_field.get('sfSuggestedObjectName')):
+                    if not fn:
+                        continue
+                    if old_field.get('sfSuggestedMapping') or old_field.get('sfSuggestedObjectName'):
                         sf_cache[fn] = {
                             k: old_field.get(k)
                             for k in ('sfSuggestedMapping',
@@ -2589,10 +2593,12 @@ def main():
                                       'sfSuggestedFieldApiName', 'sfSuggestedDataType',
                                       'sfSuggestedMatchTier')
                         }
+                    if old_field.get('notes') is not None:
+                        notes_cache[fn] = old_field['notes']
             except (json.JSONDecodeError, IOError):
                 pass
 
-        # Restore cached sfSuggested* values to matching fields
+        # Restore cached sfSuggested* and notes values to matching fields
         if sf_cache:
             restored = 0
             for field_out in enriched.get('fields', []):
@@ -2604,6 +2610,15 @@ def main():
                     restored += 1
             if restored:
                 print(f"  Restored {restored} cached SF suggestions")
+        if notes_cache:
+            notes_restored = 0
+            for field_out in enriched.get('fields', []):
+                fn = field_out.get('fieldName', '').lower()
+                if fn in notes_cache:
+                    field_out['notes'] = notes_cache[fn]
+                    notes_restored += 1
+            if notes_restored:
+                print(f"  Restored {notes_restored} cached notes")
 
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(enriched, f, indent=2, ensure_ascii=False, default=json_serializer)

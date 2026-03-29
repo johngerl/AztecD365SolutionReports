@@ -665,6 +665,10 @@ def process_entity(entity_name, mapping_dir, sf_entity_index, d365_entities_dir,
     # 6. Write suggestions back to d365-entities JSON
     json_modified = False
     for raw_field in raw_fields:
+        # Never overwrite manual entries
+        if raw_field.get('sfSuggestedMatchTier') == 'manual':
+            continue
+
         fn_lower = raw_field.get('fieldName', '').lower()
         sug = all_suggestions.get(fn_lower)
         if sug:

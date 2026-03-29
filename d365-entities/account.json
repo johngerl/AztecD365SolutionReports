@@ -6,19 +6,19 @@
   "ownershipType": "UserOwned",
   "auditEnabled": true,
   "totalRows": 32274,
-  "lastUpdate": "",
+  "lastUpdate": "2026-03-27 20:27:01",
   "primaryIdField": "accountid",
   "primaryNameField": "name",
-  "countForms": 106,
-  "countViews": 207,
+  "countForms": 0,
+  "countViews": 0,
   "countChartVisualizations": 0,
-  "countReports": 8,
+  "countReports": 0,
   "countDashboards": 0,
-  "countWorkflows": 179,
-  "countFormulasAndRollups": 7,
-  "countPlugins": 132,
+  "countWorkflows": 0,
+  "countFormulasAndRollups": 0,
+  "countPlugins": 0,
   "countPCFControls": 0,
-  "countRelationships": 23,
+  "countRelationships": 0,
   "countRibbonCustomizations": 0,
   "sections": {
     "forms": [
@@ -6856,8 +6856,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": []
+        "hasPostImage": false
       },
       {
         "className": "AccountLeadGen",
@@ -6912,17 +6911,7 @@
         ],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_evaluate",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "AccountLeadGenAssociate",
@@ -6948,17 +6937,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Associate",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "AccountReassignmentShareRecords",
@@ -6995,8 +6974,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": []
+        "hasPostImage": false
       },
       {
         "className": "AccountTypeSet",
@@ -7021,17 +6999,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_nonsaasstatus,azt_saasstatus",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "ActivateOrReviseQuote",
@@ -7052,17 +7020,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "ActivitiesCreatedDueDatesInPast",
@@ -7080,33 +7038,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "ActivityCloseForceRecordOwner",
@@ -7125,25 +7057,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "statecode",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "statecode",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "ActivityRegardingGetState",
@@ -7168,8 +7082,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": []
+        "hasPostImage": false
       },
       {
         "className": "AddressSearchCleanupFields",
@@ -7191,41 +7104,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "azt_addresssearch,azt_addresssearch2",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "azt_addresssearch",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "AllocationValidation",
@@ -7249,25 +7128,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_numberoflicenses",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "AutoAssignStateAbb",
@@ -7289,57 +7150,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Validation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Validation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Validation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Validation",
-            "state": "Enabled",
-            "filteringAttributes": "stateorprovince",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Validation",
-            "state": "Enabled",
-            "filteringAttributes": "address1_stateorprovince",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Validation",
-            "state": "Enabled",
-            "filteringAttributes": "address1_stateorprovince",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "AutoNumber",
@@ -7372,17 +7183,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "CaseAudit",
@@ -7404,25 +7205,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "ownerid",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "CaseClose",
@@ -7444,25 +7227,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "statecode",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "statecode",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "ChangeLicenseType",
@@ -7487,8 +7252,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": []
+        "hasPostImage": false
       },
       {
         "className": "CloneExpenseLine",
@@ -7525,17 +7289,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "CompGoalCreate",
@@ -7558,17 +7312,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "ContactSetConnectionRole",
@@ -7600,17 +7344,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "azt_ContactSetConnectionRole",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "CreateCompGoals",
@@ -7653,8 +7387,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": []
+        "hasPostImage": false
       },
       {
         "className": "CreateSoftwareLicenses",
@@ -7719,25 +7452,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "salesorderdetailid",
-            "rank": 2
-          },
-          {
-            "message": "Update",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "statecode",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "CreateUserGoals",
@@ -7829,17 +7544,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "azt_GoalAutoCreate",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "DiscretionaryDiscountSetHeader",
@@ -7896,33 +7601,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_discountamount,azt_invoiceproductid,azt_opportunityproductid,azt_orderproductid,azt_quoteproductid",
-            "rank": 1
-          },
-          {
-            "message": "Delete",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "EngagementFSRAssignedOn",
@@ -7944,25 +7623,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "ownerid",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "EngagementSetEndDate",
@@ -7981,25 +7642,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "SetStateDynamicEntity",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "SetState",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "ExpenseLineTotals",
@@ -8029,25 +7672,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_expenseid,azt_expenseamount",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "ExpenseRestrictVisibility",
@@ -8067,17 +7692,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "RetrieveMultiple",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "FundingSetAnnualSpend",
@@ -8105,17 +7720,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_fundingid",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "FundingTotalAmt",
@@ -8134,25 +7739,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_federalfundingamount,azt_otherfundingamount,azt_statefundingamount",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_federalfundingamount,azt_otherfundingamount,azt_statefundingamount",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "FundingYearSync",
@@ -8172,25 +7759,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_fundingyear",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_fundingyear",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "GetAcctTeamOwned",
@@ -8216,8 +7785,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": []
+        "hasPostImage": false
       },
       {
         "className": "GetUserHasRole",
@@ -8235,8 +7803,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": []
+        "hasPostImage": false
       },
       {
         "className": "GetUserHasRoleToAction",
@@ -8260,17 +7827,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "azt_GetHasRole",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "InvoiceClosePaidOnPercentage",
@@ -8293,17 +7850,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_compcompleted",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "InvoiceCompCompleted",
@@ -8361,17 +7908,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_compcompleted",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "LeadImport",
@@ -8424,17 +7961,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_leadimportid",
-            "rank": 2
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "LeadImportPopulateName",
@@ -8455,17 +7982,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_importname,azt_leadimportid",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "LeadQualify",
@@ -8483,25 +8000,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "QualifyLead",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "QualifyLead",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "LeadQualifyParentStakeholderContacts",
@@ -8531,17 +8030,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "ManualDiscountKill",
@@ -8559,41 +8048,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "manualdiscountamount",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "manualdiscountamount",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OppAuditRemoval",
@@ -8613,8 +8068,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": []
+        "hasPostImage": false
       },
       {
         "className": "OpportunityAssignFromLead",
@@ -8635,17 +8089,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 3
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OpportunityAudit",
@@ -8680,17 +8124,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "estimatedclosedate,estimatedvalue,azt_probability",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "OpportunityClone",
@@ -8733,17 +8167,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "azt_CloneOpportunity",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OpportunityLastActivityDate",
@@ -8767,81 +8191,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "SetStateDynamicEntity",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "estimatedclosedate,estimatedvalue,azt_probability",
-            "rank": 1
-          },
-          {
-            "message": "SetState",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "SetState",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "SetStateDynamicEntity",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "SetStateDynamicEntity",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "SetState",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "SetState",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "SetStateDynamicEntity",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OpportunityLineSyncToQuote",
@@ -8884,17 +8234,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_licensetermmonths,azt_licensetype,quantity",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "OpportunityPreventCreateQuote",
@@ -8917,17 +8257,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OpportunityProbabilityChange",
@@ -8950,25 +8280,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_probability",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OpportunityProbabilityNumber",
@@ -8989,25 +8301,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_probability",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OpptyToQuoteFieldMappings",
@@ -9056,17 +8350,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 100
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OrderClone",
@@ -9107,17 +8391,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "azt_CloneOrder",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OrderFSRSetTemplateFields",
@@ -9146,17 +8420,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_fsrid",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OrderLinePopulateLicType",
@@ -9181,17 +8445,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OrderLinePopulateTemplateFields",
@@ -9217,17 +8471,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "salesorderdetailname,salesorderid",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OrderManuallyCreateSoftwareLicense",
@@ -9265,17 +8509,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "azt_CreateSoftwareLicense",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OrderSplit",
@@ -9349,17 +8583,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "azt_OrderSplit",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OrderStageTracking",
@@ -9390,17 +8614,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "PaymentUpdate",
@@ -9424,17 +8638,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "statuscode",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "PhonecallCreateCallback",
@@ -9490,25 +8694,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "ProductDiscountPreventOnActiveQuote",
@@ -9528,25 +8714,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_discountamount,azt_productdiscountid,azt_quoteproductid",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "QuoteCloneAndDelete",
@@ -9581,17 +8749,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "azt_CloneAndDeleteQuote",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "QuoteLinesSyncToOppty",
@@ -9633,33 +8791,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "productid,extendedamount,manualdiscountamount,priceperunit,quantity,tax,productdescription",
-            "rank": 1
-          },
-          {
-            "message": "Delete",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "QuoteOrderProductsTrackDiscount",
@@ -9689,25 +8821,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "QuotePreventActivateUnapprovedDiscounts",
@@ -9764,25 +8878,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "SetStateDynamicEntity",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "SetState",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "QuotePreventActivateUnapprovedFreight",
@@ -9803,25 +8899,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "SetState",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "SetStateDynamicEntity",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "QuoteSyncTotalToOpportunity",
@@ -9844,17 +8922,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "freightamount,totalamount",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "RecordOwnerRestrictEdit",
@@ -9877,17 +8945,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "RestrictCreateQuote",
@@ -9910,17 +8968,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "RestrictProductLookups",
@@ -9941,17 +8989,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "RetrieveMultiple",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "RestrictWinOpportunities",
@@ -9969,17 +9007,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Win",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "RestrictWinQuote",
@@ -9997,17 +9025,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Win",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "ReviseQuoteDiscountMove",
@@ -10042,17 +9060,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "SendQuoteReport",
@@ -10075,17 +9083,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "azt_SendQuote",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "SetOppProductDefaults",
@@ -10111,17 +9109,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "SetPrimaryContact",
@@ -10166,25 +9154,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "azt_ContactSetPrimary",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "ShareBasedOnAccessTeam",
@@ -10227,65 +9197,7 @@
         ],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "ShareFromAccountShares",
@@ -10307,49 +9219,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "activityid",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "contactid",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "opportunityid",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "activityid",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "ShareWithAccountOwner",
@@ -10376,8 +9246,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": []
+        "hasPostImage": false
       },
       {
         "className": "ShipmentSetTrackingNumber",
@@ -10405,25 +9274,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_trackingnumber",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "UpdateOppFromQuote",
@@ -10463,8 +9314,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": true,
-        "registrations": []
+        "hasPostImage": true
       },
       {
         "className": "Utility",
@@ -10525,8 +9375,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": []
+        "hasPostImage": false
       }
     ],
     "pcfControls": [
@@ -11375,7 +10224,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:57:03",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": true,
@@ -11444,9 +10293,9 @@
       "sfSuggestedFieldApiName": "Account_Classification__c",
       "sfSuggestedDataType": "string",
       "sfSuggestedMatchTier": "fuzzy",
-      "notes": null,
-      "countForms": 2,
-      "countViews": 12,
+      "notes": "Currently Account Classification in SF is a string that is a hardcoded string formula. This needs to get updated",
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
@@ -11578,7 +10427,7 @@
       "dataType": "uniqueidentifier",
       "requiredLevel": "required",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -11596,21 +10445,21 @@
       "isRetrievable": false,
       "isDataSourceSecret": false,
       "picklistValues": null,
-      "sfSuggestedMapping": false,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null,
-      "notes": null,
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": "Account",
+      "sfSuggestedFieldDisplayName": "Dynamics Legacy Id",
+      "sfSuggestedFieldApiName": "Dynamics_Legacy_Id__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "manual",
+      "notes": "This is currently only the first 18 characters. While the last 18 charaters are a part of sequential guid composed of the Mac address of the machine SQL Server is on at that point of row creation, really only the first 8 characters are required right now because of the number of rows in Account today.",
       "countForms": 0,
-      "countViews": 23,
+      "countViews": 0,
       "countChartVisualizations": 0,
-      "countReports": 1,
+      "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 8,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 12,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -11913,7 +10762,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-10 20:08:23",
       "introducedVersion": "5.0.0.0",
       "maxLength": 20,
       "fieldSecurity": false,
@@ -11939,7 +10788,7 @@
       "sfSuggestedMatchTier": "exact",
       "notes": null,
       "countForms": 0,
-      "countViews": 1,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
@@ -11977,7 +10826,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:50:49",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -12019,12 +10868,12 @@
       "sfSuggestedDataType": "picklist",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 2,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 5,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
@@ -12127,7 +10976,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "5.0.0.0",
       "maxLength": 80,
       "fieldSecurity": false,
@@ -12145,19 +10994,19 @@
       "isRetrievable": true,
       "isDataSourceSecret": false,
       "picklistValues": null,
-      "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": "Account",
-      "sfSuggestedFieldDisplayName": "Business Address (City)",
-      "sfSuggestedFieldApiName": "Business_Address__City__s",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "fuzzy",
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null,
       "notes": null,
-      "countForms": 2,
-      "countViews": 17,
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 3,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
@@ -12338,7 +11187,7 @@
       "dataType": "ntext",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "6.0.0.0",
       "maxLength": 1000,
       "fieldSecurity": false,
@@ -12363,7 +11212,7 @@
       "sfSuggestedDataType": "textarea",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
@@ -12410,7 +11259,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "recommended",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "5.0.0.0",
       "maxLength": 80,
       "fieldSecurity": false,
@@ -12435,12 +11284,12 @@
       "sfSuggestedDataType": "string",
       "sfSuggestedMatchTier": "synonym",
       "notes": null,
-      "countForms": 2,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 2,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
@@ -12513,7 +11362,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 16:27:36",
       "introducedVersion": "5.0.0.0",
       "maxLength": 50,
       "fieldSecurity": false,
@@ -12543,7 +11392,7 @@
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 1,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
@@ -12580,7 +11429,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "5.0.0.0",
       "maxLength": 50,
       "fieldSecurity": false,
@@ -12598,15 +11447,15 @@
       "isRetrievable": false,
       "isDataSourceSecret": false,
       "picklistValues": null,
-      "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": "Account",
-      "sfSuggestedFieldDisplayName": "Physical Address Fax",
-      "sfSuggestedFieldApiName": "Physical_Address_Fax__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated",
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null,
       "notes": null,
       "countForms": 0,
-      "countViews": 1,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
@@ -12644,7 +11493,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-10 20:01:05",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -12710,7 +11559,7 @@
       "dataType": "float",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -12767,7 +11616,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "5.0.0.0",
       "maxLength": 250,
       "fieldSecurity": false,
@@ -12792,12 +11641,12 @@
       "sfSuggestedDataType": "textarea",
       "sfSuggestedMatchTier": "synonym",
       "notes": null,
-      "countForms": 3,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 1,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
@@ -12875,7 +11724,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 16:27:35",
       "introducedVersion": "5.0.0.0",
       "maxLength": 250,
       "fieldSecurity": false,
@@ -12900,12 +11749,12 @@
       "sfSuggestedDataType": "string",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 2,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 1,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
@@ -12973,7 +11822,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 16:27:35",
       "introducedVersion": "5.0.0.0",
       "maxLength": 250,
       "fieldSecurity": false,
@@ -13030,7 +11879,7 @@
       "dataType": "float",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -13087,7 +11936,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:57:03",
       "introducedVersion": "5.0.0.0",
       "maxLength": 200,
       "fieldSecurity": false,
@@ -13112,12 +11961,12 @@
       "sfSuggestedDataType": "string",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 2,
-      "countViews": 1,
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 2,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
@@ -13210,7 +12059,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "5.0.0.0",
       "maxLength": 20,
       "fieldSecurity": false,
@@ -13228,19 +12077,19 @@
       "isRetrievable": false,
       "isDataSourceSecret": false,
       "picklistValues": null,
-      "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": "Account",
-      "sfSuggestedFieldDisplayName": "Business Address (ZIP/Postal Code)",
-      "sfSuggestedFieldApiName": "Business_Address__PostalCode__s",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "fuzzy",
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null,
       "notes": null,
-      "countForms": 2,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 2,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
@@ -13313,7 +12162,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "5.0.0.0",
       "maxLength": 20,
       "fieldSecurity": false,
@@ -13370,7 +12219,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "5.0.0.0",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -13427,7 +12276,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-10 20:01:05",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -13486,7 +12335,7 @@
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 5,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
@@ -13543,7 +12392,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "recommended",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "5.0.0.0",
       "maxLength": 50,
       "fieldSecurity": false,
@@ -13568,14 +12417,14 @@
       "sfSuggestedDataType": "string",
       "sfSuggestedMatchTier": "synonym",
       "notes": null,
-      "countForms": 2,
-      "countViews": 15,
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 10,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 4,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -13819,7 +12668,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "5.0.0.0",
       "maxLength": 50,
       "fieldSecurity": false,
@@ -13851,7 +12700,7 @@
       "countDashboards": 0,
       "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 1,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -13888,7 +12737,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "5.0.0.0",
       "maxLength": 50,
       "fieldSecurity": false,
@@ -13945,7 +12794,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "5.0.0.0",
       "maxLength": 50,
       "fieldSecurity": false,
@@ -14002,7 +12851,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "5.0.0.0",
       "maxLength": 4,
       "fieldSecurity": false,
@@ -14059,7 +12908,7 @@
       "dataType": "int",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -14116,7 +12965,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:50:49",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -14156,14 +13005,14 @@
       "sfSuggestedFieldDisplayName": "Bill To Address Type",
       "sfSuggestedFieldApiName": "Bill_To_Address_Type__c",
       "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated",
+      "sfSuggestedMatchTier": "manual",
       "notes": null,
       "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 5,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
@@ -14234,7 +13083,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:50:49",
       "introducedVersion": "5.0.0.0",
       "maxLength": 80,
       "fieldSecurity": false,
@@ -14252,12 +13101,12 @@
       "isRetrievable": false,
       "isDataSourceSecret": false,
       "picklistValues": null,
-      "sfSuggestedMapping": false,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null,
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": "Account",
+      "sfSuggestedFieldDisplayName": "Bill To City",
+      "sfSuggestedFieldApiName": "Bill_To_City__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "manual",
       "notes": null,
       "countForms": 0,
       "countViews": 0,
@@ -14291,7 +13140,7 @@
       "dataType": "ntext",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:50:49",
       "introducedVersion": "6.0.0.0",
       "maxLength": 1000,
       "fieldSecurity": false,
@@ -14310,11 +13159,11 @@
       "isDataSourceSecret": false,
       "picklistValues": null,
       "sfSuggestedMapping": false,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null,
+      "sfSuggestedObjectName": "Account",
+      "sfSuggestedFieldDisplayName": "Bill To Address",
+      "sfSuggestedFieldApiName": "Bill_To_Address__c",
+      "sfSuggestedDataType": "textarea",
+      "sfSuggestedMatchTier": "manual",
       "notes": null,
       "countForms": 0,
       "countViews": 0,
@@ -14348,7 +13197,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 16:27:35",
       "introducedVersion": "5.0.0.0",
       "maxLength": 80,
       "fieldSecurity": false,
@@ -14368,17 +13217,17 @@
       "picklistValues": null,
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Account",
-      "sfSuggestedFieldDisplayName": "Shipping Country",
-      "sfSuggestedFieldApiName": "ShippingCountry",
+      "sfSuggestedFieldDisplayName": "Bill To Country/Region",
+      "sfSuggestedFieldApiName": "Bill_To_Country/Region__c",
       "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "synonym",
+      "sfSuggestedMatchTier": "manual",
       "notes": null,
       "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 1,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
@@ -14415,7 +13264,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-26 20:16:39",
       "introducedVersion": "5.0.0.0",
       "maxLength": 50,
       "fieldSecurity": false,
@@ -14438,14 +13287,14 @@
       "sfSuggestedFieldDisplayName": "Bill To County",
       "sfSuggestedFieldApiName": "Bill_To_County__c",
       "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated",
+      "sfSuggestedMatchTier": "manual",
       "notes": null,
       "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 1,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
@@ -14482,7 +13331,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "5.0.0.0",
       "maxLength": 50,
       "fieldSecurity": false,
@@ -14501,11 +13350,11 @@
       "isDataSourceSecret": false,
       "picklistValues": null,
       "sfSuggestedMapping": false,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null,
+      "sfSuggestedObjectName": "Account",
+      "sfSuggestedFieldDisplayName": "Bill To Fax",
+      "sfSuggestedFieldApiName": "Bill_To_Fax__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "manual",
       "notes": null,
       "countForms": 0,
       "countViews": 0,
@@ -14539,7 +13388,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:50:49",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -14563,11 +13412,11 @@
         }
       ],
       "sfSuggestedMapping": false,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null,
+      "sfSuggestedObjectName": "Account",
+      "sfSuggestedFieldDisplayName": "Bill To Freight Terms",
+      "sfSuggestedFieldApiName": "Bill_To_Freight_Terms__c",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "manual",
       "notes": null,
       "countForms": 0,
       "countViews": 0,
@@ -14601,7 +13450,7 @@
       "dataType": "float",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-10 20:01:05",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -14620,11 +13469,11 @@
       "isDataSourceSecret": false,
       "picklistValues": null,
       "sfSuggestedMapping": false,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null,
+      "sfSuggestedObjectName": "Account",
+      "sfSuggestedFieldDisplayName": "Bill To Latitude",
+      "sfSuggestedFieldApiName": "Bill_To_Latitude__c",
+      "sfSuggestedDataType": "double",
+      "sfSuggestedMatchTier": "manual",
       "notes": null,
       "countForms": 0,
       "countViews": 0,
@@ -14658,7 +13507,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:50:49",
       "introducedVersion": "5.0.0.0",
       "maxLength": 250,
       "fieldSecurity": false,
@@ -14678,15 +13527,15 @@
       "picklistValues": null,
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Account",
-      "sfSuggestedFieldDisplayName": "Shipping Street",
-      "sfSuggestedFieldApiName": "ShippingStreet",
-      "sfSuggestedDataType": "textarea",
-      "sfSuggestedMatchTier": "synonym",
+      "sfSuggestedFieldDisplayName": "Bill To Street 1",
+      "sfSuggestedFieldApiName": "Bill_To_Street_1__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "manual",
       "notes": null,
       "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
-      "countReports": 1,
+      "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
       "countFormulasAndRollups": 0,
@@ -14724,7 +13573,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 16:27:35",
       "introducedVersion": "5.0.0.0",
       "maxLength": 250,
       "fieldSecurity": false,
@@ -14742,12 +13591,12 @@
       "isRetrievable": false,
       "isDataSourceSecret": false,
       "picklistValues": null,
-      "sfSuggestedMapping": false,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null,
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": "Account",
+      "sfSuggestedFieldDisplayName": "Bill To Street 2",
+      "sfSuggestedFieldApiName": "Bill_To_Street_2__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "manual",
       "notes": null,
       "countForms": 0,
       "countViews": 0,
@@ -14781,7 +13630,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-23 19:24:30",
       "introducedVersion": "5.0.0.0",
       "maxLength": 250,
       "fieldSecurity": false,
@@ -14799,12 +13648,12 @@
       "isRetrievable": false,
       "isDataSourceSecret": false,
       "picklistValues": null,
-      "sfSuggestedMapping": false,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null,
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": "Account",
+      "sfSuggestedFieldDisplayName": "Bill To Street 3",
+      "sfSuggestedFieldApiName": "Bill_To_Street_3__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "manual",
       "notes": null,
       "countForms": 0,
       "countViews": 0,
@@ -14838,7 +13687,7 @@
       "dataType": "float",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-10 20:01:05",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -14857,11 +13706,11 @@
       "isDataSourceSecret": false,
       "picklistValues": null,
       "sfSuggestedMapping": false,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null,
+      "sfSuggestedObjectName": "Account",
+      "sfSuggestedFieldDisplayName": "Bill To Longitude",
+      "sfSuggestedFieldApiName": "Bill_To_Longitude__c",
+      "sfSuggestedDataType": "double",
+      "sfSuggestedMatchTier": "manual",
       "notes": null,
       "countForms": 0,
       "countViews": 0,
@@ -14895,7 +13744,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:50:49",
       "introducedVersion": "5.0.0.0",
       "maxLength": 200,
       "fieldSecurity": false,
@@ -14918,14 +13767,14 @@
       "sfSuggestedFieldDisplayName": "Bill To Address Name",
       "sfSuggestedFieldApiName": "Bill_To_Address_Name__c",
       "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated",
+      "sfSuggestedMatchTier": "manual",
       "notes": null,
       "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 2,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
@@ -14981,7 +13830,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:50:49",
       "introducedVersion": "5.0.0.0",
       "maxLength": 20,
       "fieldSecurity": false,
@@ -14999,12 +13848,12 @@
       "isRetrievable": false,
       "isDataSourceSecret": false,
       "picklistValues": null,
-      "sfSuggestedMapping": false,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null,
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": "Account",
+      "sfSuggestedFieldDisplayName": "Bill To ZIP/Postal Code",
+      "sfSuggestedFieldApiName": "Bill_To_ZIP/Postal_Code__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "manual",
       "notes": null,
       "countForms": 0,
       "countViews": 0,
@@ -15038,7 +13887,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "5.0.0.0",
       "maxLength": 20,
       "fieldSecurity": false,
@@ -15057,11 +13906,11 @@
       "isDataSourceSecret": false,
       "picklistValues": null,
       "sfSuggestedMapping": false,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null,
+      "sfSuggestedObjectName": "Account",
+      "sfSuggestedFieldDisplayName": "Bill To Post Office Box",
+      "sfSuggestedFieldApiName": "Bill_To_Post_Office_Box__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "manual",
       "notes": null,
       "countForms": 0,
       "countViews": 0,
@@ -15095,7 +13944,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "5.0.0.0",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -15114,11 +13963,11 @@
       "isDataSourceSecret": false,
       "picklistValues": null,
       "sfSuggestedMapping": false,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null,
+      "sfSuggestedObjectName": "Account",
+      "sfSuggestedFieldDisplayName": "Bill To Primary Contact Name",
+      "sfSuggestedFieldApiName": "Bill_To_Primary_Contact_Name__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "manual",
       "notes": null,
       "countForms": 0,
       "countViews": 0,
@@ -15152,7 +14001,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:50:49",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -15175,19 +14024,19 @@
           "value": "1"
         }
       ],
-      "sfSuggestedMapping": true,
+      "sfSuggestedMapping": false,
       "sfSuggestedObjectName": "Account",
       "sfSuggestedFieldDisplayName": "Bill To Shipping Method",
       "sfSuggestedFieldApiName": "Bill_To_Shipping_Method__c",
       "sfSuggestedDataType": "picklist",
-      "sfSuggestedMatchTier": "generated",
+      "sfSuggestedMatchTier": "manual",
       "notes": null,
       "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 5,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
@@ -15244,7 +14093,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:50:49",
       "introducedVersion": "5.0.0.0",
       "maxLength": 50,
       "fieldSecurity": false,
@@ -15262,12 +14111,12 @@
       "isRetrievable": false,
       "isDataSourceSecret": false,
       "picklistValues": null,
-      "sfSuggestedMapping": false,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null,
+      "sfSuggestedMapping": true,
+      "sfSuggestedObjectName": "Account",
+      "sfSuggestedFieldDisplayName": "Bill To State/Province",
+      "sfSuggestedFieldApiName": "Bill_To_State/Province__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "manual",
       "notes": null,
       "countForms": 0,
       "countViews": 0,
@@ -15301,7 +14150,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "5.0.0.0",
       "maxLength": 50,
       "fieldSecurity": false,
@@ -15320,11 +14169,11 @@
       "isDataSourceSecret": false,
       "picklistValues": null,
       "sfSuggestedMapping": false,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null,
+      "sfSuggestedObjectName": "Account",
+      "sfSuggestedFieldDisplayName": "Bill To Telephone 1",
+      "sfSuggestedFieldApiName": "Bill_To_Telephone_1__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "manual",
       "notes": null,
       "countForms": 0,
       "countViews": 0,
@@ -15358,7 +14207,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "5.0.0.0",
       "maxLength": 50,
       "fieldSecurity": false,
@@ -15377,11 +14226,11 @@
       "isDataSourceSecret": false,
       "picklistValues": null,
       "sfSuggestedMapping": false,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null,
+      "sfSuggestedObjectName": "Account",
+      "sfSuggestedFieldDisplayName": "Bill To Telephone 2",
+      "sfSuggestedFieldApiName": "Bill_To_Telephone_2__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "manual",
       "notes": null,
       "countForms": 0,
       "countViews": 0,
@@ -15415,7 +14264,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "5.0.0.0",
       "maxLength": 50,
       "fieldSecurity": false,
@@ -15434,11 +14283,11 @@
       "isDataSourceSecret": false,
       "picklistValues": null,
       "sfSuggestedMapping": false,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null,
+      "sfSuggestedObjectName": "Account",
+      "sfSuggestedFieldDisplayName": "Bill To Telephone 3",
+      "sfSuggestedFieldApiName": "Bill_To_Telephone_3__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "manual",
       "notes": null,
       "countForms": 0,
       "countViews": 0,
@@ -15472,7 +14321,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "5.0.0.0",
       "maxLength": 4,
       "fieldSecurity": false,
@@ -15491,11 +14340,11 @@
       "isDataSourceSecret": false,
       "picklistValues": null,
       "sfSuggestedMapping": false,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null,
+      "sfSuggestedObjectName": "Account",
+      "sfSuggestedFieldDisplayName": "Bill To UPS Zone",
+      "sfSuggestedFieldApiName": "Bill_To_UPS_Zone__c",
+      "sfSuggestedDataType": "string",
+      "sfSuggestedMatchTier": "manual",
       "notes": null,
       "countForms": 0,
       "countViews": 0,
@@ -15529,7 +14378,7 @@
       "dataType": "int",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -15548,11 +14397,11 @@
       "isDataSourceSecret": false,
       "picklistValues": null,
       "sfSuggestedMapping": false,
-      "sfSuggestedObjectName": null,
-      "sfSuggestedFieldDisplayName": null,
-      "sfSuggestedFieldApiName": null,
-      "sfSuggestedDataType": null,
-      "sfSuggestedMatchTier": null,
+      "sfSuggestedObjectName": "Account",
+      "sfSuggestedFieldDisplayName": "Bill To UTC Offset",
+      "sfSuggestedFieldApiName": "Bill_To_UTC_Offset__c",
+      "sfSuggestedDataType": "int",
+      "sfSuggestedMatchTier": "manual",
       "notes": null,
       "countForms": 0,
       "countViews": 0,
@@ -15586,7 +14435,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 16:27:27",
       "introducedVersion": "1.0.0.0",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -15611,7 +14460,7 @@
       "sfSuggestedDataType": "textarea",
       "sfSuggestedMatchTier": "fuzzy",
       "notes": null,
-      "countForms": 2,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
@@ -15678,7 +14527,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-17 12:50:21",
       "introducedVersion": "1.0.0.0",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -15696,21 +14545,21 @@
       "isRetrievable": false,
       "isDataSourceSecret": false,
       "picklistValues": null,
-      "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": "Account",
-      "sfSuggestedFieldDisplayName": "Account Lead Gen Name",
-      "sfSuggestedFieldApiName": "Account_Lead_Gen_Name__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated",
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null,
       "notes": null,
       "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 1,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 1,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -15753,7 +14602,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "1.0",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -15810,7 +14659,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -15835,13 +14684,13 @@
       "sfSuggestedDataType": "currency",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
-      "countFormulasAndRollups": 1,
+      "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
@@ -15901,7 +14750,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -15958,7 +14807,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": true,
@@ -16015,19 +14864,19 @@
       ],
       "sfSuggestedMapping": true,
       "sfSuggestedObjectName": "Account",
-      "sfSuggestedFieldDisplayName": "CRM Account Spend (Base)",
-      "sfSuggestedFieldApiName": "CRM_Account_Spend__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "fuzzy",
+      "sfSuggestedFieldDisplayName": "Account Type",
+      "sfSuggestedFieldApiName": "Account_Type__c",
+      "sfSuggestedDataType": "picklist",
+      "sfSuggestedMatchTier": "manual",
       "notes": null,
-      "countForms": 5,
-      "countViews": 11,
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 1,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -16186,7 +15035,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 16:27:32",
       "introducedVersion": "1.0.0.1",
       "maxLength": 200,
       "fieldSecurity": false,
@@ -16211,14 +15060,14 @@
       "sfSuggestedDataType": "string",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 2,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 2,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -16279,7 +15128,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-02-02 16:03:14",
       "introducedVersion": "1.0.0.0",
       "maxLength": 200,
       "fieldSecurity": false,
@@ -16311,7 +15160,7 @@
       "countDashboards": 0,
       "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 2,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -16355,7 +15204,7 @@
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -16389,7 +15238,7 @@
       "sfSuggestedDataType": "boolean",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 2,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
@@ -16446,7 +15295,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-24 17:11:32",
       "introducedVersion": "1.0.0.0",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -16476,7 +15325,7 @@
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 1,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
@@ -16535,7 +15384,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-24 17:11:32",
       "introducedVersion": "1.0.0.0",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -16565,7 +15414,7 @@
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 1,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
@@ -16624,7 +15473,7 @@
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -16659,11 +15508,11 @@
       "sfSuggestedMatchTier": "generated",
       "notes": null,
       "countForms": 0,
-      "countViews": 1,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 1,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
@@ -16722,7 +15571,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "recommended",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "1.0.0.0",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -16747,8 +15596,8 @@
       "sfSuggestedDataType": "string",
       "sfSuggestedMatchTier": "fuzzy",
       "notes": null,
-      "countForms": 4,
-      "countViews": 5,
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
@@ -16884,7 +15733,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:50:49",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -16915,14 +15764,14 @@
           "value": "276530002"
         }
       ],
-      "sfSuggestedMapping": true,
+      "sfSuggestedMapping": "TRUE",
       "sfSuggestedObjectName": "Account",
-      "sfSuggestedFieldDisplayName": "Customer Number",
-      "sfSuggestedFieldApiName": "Customer_Number__c",
-      "sfSuggestedDataType": "string",
+      "sfSuggestedFieldDisplayName": "Customer Of",
+      "sfSuggestedFieldApiName": "Customer_Of__c",
+      "sfSuggestedDataType": "picklist",
       "sfSuggestedMatchTier": "fuzzy",
-      "notes": null,
-      "countForms": 2,
+      "notes": "Plative created this column as a string in SF. Verify if we should change data type in SF",
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
@@ -16979,7 +15828,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-24 12:53:24",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -17036,7 +15885,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 16:17:32",
       "introducedVersion": "1.0",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -17054,15 +15903,15 @@
       "isRetrievable": false,
       "isDataSourceSecret": false,
       "picklistValues": null,
-      "sfSuggestedMapping": true,
-      "sfSuggestedObjectName": "Account",
-      "sfSuggestedFieldDisplayName": "Duplicate",
-      "sfSuggestedFieldApiName": "Duplicate__c",
-      "sfSuggestedDataType": "string",
-      "sfSuggestedMatchTier": "generated",
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null,
       "notes": null,
       "countForms": 0,
-      "countViews": 1,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
@@ -17101,7 +15950,7 @@
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": true,
@@ -17135,12 +15984,12 @@
       "sfSuggestedDataType": "boolean",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 2,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 3,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
@@ -17218,7 +16067,7 @@
       "dataType": "ntext",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:57:03",
       "introducedVersion": "1.0.0.0",
       "maxLength": 4000,
       "fieldSecurity": false,
@@ -17243,12 +16092,12 @@
       "sfSuggestedDataType": "textarea",
       "sfSuggestedMatchTier": "fuzzy",
       "notes": null,
-      "countForms": 2,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 2,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
@@ -17307,7 +16156,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 16:17:22",
       "introducedVersion": "1.0.0.0",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -17332,14 +16181,14 @@
       "sfSuggestedDataType": "string",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 2,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 1,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -17393,7 +16242,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:50:49",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -17418,7 +16267,7 @@
       "sfSuggestedDataType": "string",
       "sfSuggestedMatchTier": "fuzzy",
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
@@ -17465,7 +16314,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 16:27:33",
       "introducedVersion": "1.0.0.0",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -17522,7 +16371,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 16:27:33",
       "introducedVersion": "1.0.0.0",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -17579,7 +16428,7 @@
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -17645,7 +16494,7 @@
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -17711,7 +16560,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:50:49",
       "introducedVersion": "1.0.0.0",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -17736,12 +16585,12 @@
       "sfSuggestedDataType": "string",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 2,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 2,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
@@ -17800,7 +16649,7 @@
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -17866,7 +16715,7 @@
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -17901,7 +16750,7 @@
       "sfSuggestedMatchTier": "generated",
       "notes": null,
       "countForms": 0,
-      "countViews": 1,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
@@ -17940,7 +16789,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 16:27:34",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -17979,7 +16828,7 @@
       "sfSuggestedMatchTier": "generated",
       "notes": null,
       "countForms": 0,
-      "countViews": 1,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
@@ -18018,7 +16867,7 @@
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -18084,7 +16933,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -18110,13 +16959,13 @@
       "sfSuggestedMatchTier": "fuzzy",
       "notes": null,
       "countForms": 0,
-      "countViews": 2,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 1,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -18166,7 +17015,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:57:03",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -18191,8 +17040,8 @@
       "sfSuggestedDataType": "date",
       "sfSuggestedMatchTier": "fuzzy",
       "notes": null,
-      "countForms": 3,
-      "countViews": 5,
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
@@ -18313,7 +17162,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:57:03",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -18338,8 +17187,8 @@
       "sfSuggestedDataType": "date",
       "sfSuggestedMatchTier": "fuzzy",
       "notes": null,
-      "countForms": 3,
-      "countViews": 5,
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
@@ -18460,7 +17309,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:50:49",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -18485,7 +17334,7 @@
       "sfSuggestedDataType": "datetime",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 2,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
@@ -18542,7 +17391,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -18567,13 +17416,13 @@
       "sfSuggestedDataType": "currency",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
-      "countFormulasAndRollups": 1,
+      "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
@@ -18619,7 +17468,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -18676,7 +17525,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:50:49",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -18701,16 +17550,16 @@
       "sfSuggestedDataType": "reference",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 2,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 8,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 2,
+      "countPlugins": 0,
       "countPCFControls": 0,
-      "countRelationships": 1,
+      "countRelationships": 0,
       "countRibbonCustomizations": 0,
       "forms": [
         {
@@ -18817,7 +17666,7 @@
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -18883,7 +17732,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:57:03",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -18908,14 +17757,14 @@
       "sfSuggestedDataType": "picklist",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 2,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 2,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -18976,7 +17825,7 @@
       "dataType": "int",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 16:17:26",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -19001,7 +17850,7 @@
       "sfSuggestedDataType": "double",
       "sfSuggestedMatchTier": "fuzzy",
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
@@ -19048,7 +17897,7 @@
       "dataType": "int",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 16:17:29",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -19073,7 +17922,7 @@
       "sfSuggestedDataType": "double",
       "sfSuggestedMatchTier": "fuzzy",
       "notes": null,
-      "countForms": 2,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
@@ -19130,7 +17979,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:57:03",
       "introducedVersion": "1.0",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -19155,7 +18004,7 @@
       "sfSuggestedDataType": "string",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
@@ -19202,7 +18051,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 16:27:34",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -19227,7 +18076,7 @@
       "sfSuggestedDataType": "currency",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
@@ -19284,7 +18133,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 16:27:34",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -19341,7 +18190,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 16:27:34",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -19366,7 +18215,7 @@
       "sfSuggestedDataType": "currency",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
@@ -19413,7 +18262,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 16:27:34",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -19470,7 +18319,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 16:27:34",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -19495,7 +18344,7 @@
       "sfSuggestedDataType": "currency",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
@@ -19542,7 +18391,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 16:27:34",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -19599,7 +18448,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-10 20:07:36",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -19624,7 +18473,7 @@
       "sfSuggestedDataType": "reference",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
@@ -19633,7 +18482,7 @@
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
-      "countRelationships": 1,
+      "countRelationships": 0,
       "countRibbonCustomizations": 0,
       "forms": [
         {
@@ -19678,7 +18527,7 @@
       "dataType": "multiselectpicklist",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:57:03",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -19703,8 +18552,8 @@
       "sfSuggestedDataType": "multipicklist",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 2,
-      "countViews": 2,
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
@@ -19770,7 +18619,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -19795,16 +18644,16 @@
       "sfSuggestedDataType": "reference",
       "sfSuggestedMatchTier": "fuzzy",
       "notes": null,
-      "countForms": 2,
-      "countViews": 6,
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
-      "countReports": 2,
+      "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 37,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 9,
+      "countPlugins": 0,
       "countPCFControls": 0,
-      "countRelationships": 1,
+      "countRelationships": 0,
       "countRibbonCustomizations": 0,
       "forms": [
         {
@@ -20230,7 +19079,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:57:03",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -20255,14 +19104,14 @@
       "sfSuggestedDataType": "picklist",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 2,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 2,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -20323,7 +19172,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-19 16:55:19",
       "introducedVersion": "1.0.0.0",
       "maxLength": 250,
       "fieldSecurity": false,
@@ -20348,7 +19197,7 @@
       "sfSuggestedDataType": "string",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
@@ -20395,7 +19244,7 @@
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -20461,7 +19310,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:57:03",
       "introducedVersion": "1.0.0.0",
       "maxLength": 100,
       "fieldSecurity": true,
@@ -20486,7 +19335,7 @@
       "sfSuggestedDataType": "string",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 2,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
@@ -20543,7 +19392,7 @@
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -20609,7 +19458,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 16:27:35",
       "introducedVersion": "1.0.0.0",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -20666,7 +19515,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:18:05",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -20691,12 +19540,12 @@
       "sfSuggestedDataType": "picklist",
       "sfSuggestedMatchTier": "fuzzy",
       "notes": null,
-      "countForms": 5,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 2,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
@@ -20806,7 +19655,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -20831,13 +19680,13 @@
       "sfSuggestedDataType": "currency",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
-      "countFormulasAndRollups": 1,
+      "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
@@ -20883,7 +19732,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -20940,7 +19789,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -20965,13 +19814,13 @@
       "sfSuggestedDataType": "currency",
       "sfSuggestedMatchTier": "fuzzy",
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
-      "countFormulasAndRollups": 1,
+      "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
@@ -21017,7 +19866,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -21074,7 +19923,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -21104,7 +19953,7 @@
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 2,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
@@ -21146,7 +19995,7 @@
       "dataType": "ntext",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 16:27:34",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -21171,14 +20020,14 @@
       "sfSuggestedDataType": null,
       "sfSuggestedMatchTier": null,
       "notes": null,
-      "countForms": 2,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 7,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -21269,12 +20118,12 @@
     },
     {
       "fieldName": "donotsendmm",
-      "displayName": "Send Marketing Materials",
-      "description": "Select whether the account accepts marketing materials, such as brochures or catalogs.",
-      "dataType": "bit",
-      "requiredLevel": "none",
+      "displayName": "",
+      "description": "",
+      "dataType": "",
+      "requiredLevel": "",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Skipped (no dataType)",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -21299,7 +20148,7 @@
       "sfSuggestedDataType": null,
       "sfSuggestedMatchTier": null,
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
@@ -21346,7 +20195,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2025-11-17 17:18:21",
       "introducedVersion": "5.0.0.0",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -21372,13 +20221,13 @@
       "sfSuggestedMatchTier": "generated",
       "notes": null,
       "countForms": 0,
-      "countViews": 1,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 2,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -21424,14 +20273,14 @@
     },
     {
       "fieldName": "fax",
-      "displayName": "Fax",
-      "description": "Type the fax number for the account.",
-      "dataType": "nvarchar",
-      "requiredLevel": "none",
+      "displayName": "",
+      "description": "",
+      "dataType": "",
+      "requiredLevel": "",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Skipped (no dataType)",
       "introducedVersion": "",
-      "maxLength": 50,
+      "maxLength": null,
       "fieldSecurity": false,
       "auditEnabled": false,
       "relatedTo": null,
@@ -21455,7 +20304,7 @@
       "sfSuggestedMatchTier": null,
       "notes": null,
       "countForms": 0,
-      "countViews": 1,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
@@ -21488,12 +20337,12 @@
     },
     {
       "fieldName": "lastusedincampaign",
-      "displayName": "Last Date Included in Campaign",
-      "description": "Shows the date when the account was last included in a marketing campaign or quick campaign.",
-      "dataType": "datetime",
-      "requiredLevel": "none",
+      "displayName": "",
+      "description": "",
+      "dataType": "",
+      "requiredLevel": "",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Skipped (no dataType)",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -21518,7 +20367,7 @@
       "sfSuggestedDataType": null,
       "sfSuggestedMatchTier": null,
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
@@ -21560,12 +20409,12 @@
     },
     {
       "fieldName": "msa_managingpartnerid",
-      "displayName": "Managing Partner",
-      "description": "Unique identifier for Account associated with Account.",
-      "dataType": "lookup",
-      "requiredLevel": "none",
-      "isCustom": true,
-      "lastUpdate": "",
+      "displayName": "",
+      "description": "",
+      "dataType": "",
+      "requiredLevel": "",
+      "isCustom": false,
+      "lastUpdate": "Skipped (no dataType)",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -21599,7 +20448,7 @@
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
-      "countRelationships": 2,
+      "countRelationships": 0,
       "countRibbonCustomizations": 0,
       "forms": [],
       "views": [],
@@ -21629,13 +20478,83 @@
       "conflicts": []
     },
     {
-      "fieldName": "msdyn_accountkpiid",
-      "displayName": "KPI",
+      "fieldName": "msa_partnerid",
+      "displayName": "",
       "description": "",
-      "dataType": "lookup",
-      "requiredLevel": "none",
-      "isCustom": true,
-      "lastUpdate": "",
+      "dataType": "",
+      "requiredLevel": "",
+      "isCustom": false,
+      "lastUpdate": "Skipped (no dataType)",
+      "introducedVersion": "",
+      "maxLength": null,
+      "fieldSecurity": false,
+      "auditEnabled": false,
+      "relatedTo": "Account",
+      "displayMask": "",
+      "validForCreate": false,
+      "validForRead": false,
+      "validForUpdate": false,
+      "isSearchable": false,
+      "isFilterable": false,
+      "isSortable": false,
+      "isGlobalFilterEnabled": false,
+      "isLogical": false,
+      "isRetrievable": false,
+      "isDataSourceSecret": false,
+      "picklistValues": null,
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null,
+      "notes": null,
+      "countForms": 0,
+      "countViews": 0,
+      "countChartVisualizations": 0,
+      "countReports": 0,
+      "countDashboards": 0,
+      "countWorkflows": 0,
+      "countFormulasAndRollups": 0,
+      "countPlugins": 0,
+      "countPCFControls": 0,
+      "countRelationships": 0,
+      "countRibbonCustomizations": 0,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "javaScript": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [
+        {
+          "relationshipName": "msa_account_incident",
+          "type": "1:N",
+          "referencedEntity": "Account",
+          "referencingEntity": "Incident"
+        },
+        {
+          "relationshipName": "msa_partner_opportunity",
+          "type": "1:N",
+          "referencedEntity": "Account",
+          "referencingEntity": "Opportunity"
+        }
+      ],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
+      "fieldName": "msdyn_accountkpiid",
+      "displayName": "",
+      "description": "",
+      "dataType": "",
+      "requiredLevel": "",
+      "isCustom": false,
+      "lastUpdate": "Skipped (no dataType)",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -21669,7 +20588,7 @@
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
-      "countRelationships": 1,
+      "countRelationships": 0,
       "countRibbonCustomizations": 0,
       "forms": [],
       "views": [],
@@ -21694,12 +20613,12 @@
     },
     {
       "fieldName": "msdyn_salesaccelerationinsightid",
-      "displayName": "Sales Acceleration Insights ID",
-      "description": "Sales Acceleration Insights ID",
-      "dataType": "lookup",
-      "requiredLevel": "none",
-      "isCustom": true,
-      "lastUpdate": "",
+      "displayName": "",
+      "description": "",
+      "dataType": "",
+      "requiredLevel": "",
+      "isCustom": false,
+      "lastUpdate": "Skipped (no dataType)",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -21733,7 +20652,7 @@
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
-      "countRelationships": 1,
+      "countRelationships": 0,
       "countRibbonCustomizations": 0,
       "forms": [],
       "views": [],
@@ -21763,7 +20682,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "1.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -21797,7 +20716,7 @@
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
-      "countRelationships": 1,
+      "countRelationships": 0,
       "countRibbonCustomizations": 0,
       "forms": [],
       "views": [],
@@ -21827,7 +20746,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "required",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "5.0.0.0",
       "maxLength": 160,
       "fieldSecurity": false,
@@ -21852,14 +20771,14 @@
       "sfSuggestedDataType": "string",
       "sfSuggestedMatchTier": "exact",
       "notes": null,
-      "countForms": 3,
-      "countViews": 46,
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
-      "countReports": 3,
+      "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 16,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 23,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -22517,7 +21436,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-26 20:34:10",
       "introducedVersion": "1.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -22542,7 +21461,7 @@
       "sfSuggestedDataType": "reference",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 2,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
@@ -22551,7 +21470,7 @@
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
-      "countRelationships": 1,
+      "countRelationships": 0,
       "countRibbonCustomizations": 0,
       "forms": [
         {
@@ -22601,12 +21520,12 @@
     },
     {
       "fieldName": "originatingleadid",
-      "displayName": "Originating Lead",
-      "description": "Shows the lead that the account was created from if the account was created by converting a lead in Microsoft Dynamics 365. This is used to relate the account to data on the originating lead for use in reporting and analytics.",
-      "dataType": "lookup",
-      "requiredLevel": "none",
+      "displayName": "",
+      "description": "",
+      "dataType": "",
+      "requiredLevel": "",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Skipped (no dataType)",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -22631,16 +21550,16 @@
       "sfSuggestedDataType": null,
       "sfSuggestedMatchTier": null,
       "notes": null,
-      "countForms": 3,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 2,
+      "countPlugins": 0,
       "countPCFControls": 0,
-      "countRelationships": 1,
+      "countRelationships": 0,
       "countRibbonCustomizations": 0,
       "forms": [
         {
@@ -22716,7 +21635,7 @@
       "dataType": "owner",
       "requiredLevel": "systemrequired",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -22741,14 +21660,14 @@
       "sfSuggestedDataType": "reference",
       "sfSuggestedMatchTier": "exact",
       "notes": null,
-      "countForms": 3,
-      "countViews": 9,
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
-      "countReports": 1,
+      "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 24,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 22,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -23164,7 +22083,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -23194,9 +22113,9 @@
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 1,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 1,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -23239,7 +22158,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:57:03",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -23264,16 +22183,16 @@
       "sfSuggestedDataType": "reference",
       "sfSuggestedMatchTier": "fuzzy",
       "notes": null,
-      "countForms": 2,
-      "countViews": 1,
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 12,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 4,
+      "countPlugins": 0,
       "countPCFControls": 0,
-      "countRelationships": 2,
+      "countRelationships": 0,
       "countRibbonCustomizations": 0,
       "forms": [
         {
@@ -23462,13 +22381,77 @@
       "conflicts": []
     },
     {
+      "fieldName": "parentid",
+      "displayName": "",
+      "description": "",
+      "dataType": "",
+      "requiredLevel": "",
+      "isCustom": false,
+      "lastUpdate": "Skipped (no dataType)",
+      "introducedVersion": "",
+      "maxLength": null,
+      "fieldSecurity": false,
+      "auditEnabled": false,
+      "relatedTo": "Account",
+      "displayMask": "",
+      "validForCreate": false,
+      "validForRead": false,
+      "validForUpdate": false,
+      "isSearchable": false,
+      "isFilterable": false,
+      "isSortable": false,
+      "isGlobalFilterEnabled": false,
+      "isLogical": false,
+      "isRetrievable": false,
+      "isDataSourceSecret": false,
+      "picklistValues": null,
+      "sfSuggestedMapping": false,
+      "sfSuggestedObjectName": null,
+      "sfSuggestedFieldDisplayName": null,
+      "sfSuggestedFieldApiName": null,
+      "sfSuggestedDataType": null,
+      "sfSuggestedMatchTier": null,
+      "notes": null,
+      "countForms": 0,
+      "countViews": 0,
+      "countChartVisualizations": 0,
+      "countReports": 0,
+      "countDashboards": 0,
+      "countWorkflows": 0,
+      "countFormulasAndRollups": 0,
+      "countPlugins": 0,
+      "countPCFControls": 0,
+      "countRelationships": 0,
+      "countRibbonCustomizations": 0,
+      "forms": [],
+      "views": [],
+      "chartVisualizations": [],
+      "reports": [],
+      "dashboards": [],
+      "workflows": [],
+      "javaScript": [],
+      "formulas": [],
+      "plugins": [],
+      "pcfControls": [],
+      "relationships": [
+        {
+          "relationshipName": "Account_CustomerAddress",
+          "type": "1:N",
+          "referencedEntity": "Account",
+          "referencingEntity": "CustomerAddress"
+        }
+      ],
+      "ribbon": [],
+      "conflicts": []
+    },
+    {
       "fieldName": "primarycontactid",
       "displayName": "Primary Contact",
       "description": "Choose the primary contact for the account to provide quick access to contact details.",
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 18:57:03",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -23493,14 +22476,14 @@
       "sfSuggestedDataType": "reference",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 2,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 2,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 2,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -23572,7 +22555,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Error",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -23604,9 +22587,9 @@
       "countDashboards": 0,
       "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 8,
+      "countPlugins": 0,
       "countPCFControls": 0,
-      "countRelationships": 8,
+      "countRelationships": 0,
       "countRibbonCustomizations": 0,
       "forms": [],
       "views": [],
@@ -23739,7 +22722,7 @@
       "dataType": "state",
       "requiredLevel": "systemrequired",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -23765,13 +22748,13 @@
       "sfSuggestedMatchTier": "generated",
       "notes": null,
       "countForms": 0,
-      "countViews": 16,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 10,
-      "countFormulasAndRollups": 3,
-      "countPlugins": 20,
+      "countWorkflows": 0,
+      "countFormulasAndRollups": 0,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -24125,7 +23108,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:27:01",
       "introducedVersion": "5.0.0.0",
       "maxLength": 50,
       "fieldSecurity": false,
@@ -24150,14 +23133,14 @@
       "sfSuggestedDataType": "phone",
       "sfSuggestedMatchTier": "fuzzy",
       "notes": null,
-      "countForms": 3,
-      "countViews": 23,
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 1,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -24422,7 +23405,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 16:17:02",
       "introducedVersion": "5.0.0.0",
       "maxLength": 50,
       "fieldSecurity": false,

@@ -278,9 +278,11 @@ def build_entity_json(describe_response, existing_json):
     is_custom = describe_response.get("custom", False)
     object_type = "Custom" if is_custom else "Standard"
 
-    # Build fields from describe
+    # Build fields from describe, excluding compound sub-components
     fields = []
     for sf_field in describe_response.get("fields", []):
+        if sf_field.get("compoundFieldName"):
+            continue
         fields.append(build_field_entry(sf_field))
 
     return {

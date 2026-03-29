@@ -2574,13 +2574,18 @@ def main():
 
         output_file = os.path.join(output_dir, f"{entity_name}.json")
 
-        # Cache existing sfSuggested* and notes values from previous JSON (if any)
+        # Cache existing sfSuggested*, notes, and lastUpdate values from previous JSON (if any)
         sf_cache = {}
         notes_cache = {}
+        lastupdate_cache = {}
+        cached_total_rows = 0
+        cached_entity_last_update = ''
         if os.path.isfile(output_file):
             try:
                 with open(output_file, 'r', encoding='utf-8') as f:
                     old_data = json.load(f)
+                cached_total_rows = old_data.get('totalRows', 0)
+                cached_entity_last_update = old_data.get('lastUpdate', '')
                 for old_field in old_data.get('fields', []):
                     fn = old_field.get('fieldName', '').lower()
                     if not fn:
@@ -2595,6 +2600,9 @@ def main():
                         }
                     if old_field.get('notes') is not None:
                         notes_cache[fn] = old_field['notes']
+                    old_last_update = old_field.get('lastUpdate', '')
+                    if old_last_update:
+                        lastupdate_cache[fn] = old_last_update
             except (json.JSONDecodeError, IOError):
                 pass
 
@@ -2619,6 +2627,19 @@ def main():
                     notes_restored += 1
             if notes_restored:
                 print(f"  Restored {notes_restored} cached notes")
+        if cached_total_rows or cached_entity_last_update:
+            enriched['totalRows'] = cached_total_rows
+            enriched['lastUpdate'] = cached_entity_last_update
+            print(f"  Restored entity totalRows={cached_total_rows}, lastUpdate={cached_entity_last_update}")
+        if lastupdate_cache:
+            lu_restored = 0
+            for field_out in enriched.get('fields', []):
+                fn = field_out.get('fieldName', '').lower()
+                if fn in lastupdate_cache:
+                    field_out['lastUpdate'] = lastupdate_cache[fn]
+                    lu_restored += 1
+            if lu_restored:
+                print(f"  Restored {lu_restored} cached field lastUpdate values")
 
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(enriched, f, indent=2, ensure_ascii=False, default=json_serializer)

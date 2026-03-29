@@ -107,8 +107,10 @@ def process_entity(entity_name, d365_dir, reset=False):
     cleared = 0
 
     for i, field in enumerate(fields):
-        # Optional reset: clear all sfSuggested* fields first
-        if reset:
+        is_manual = field.get("sfSuggestedMatchTier") == "manual"
+
+        # Optional reset: clear all sfSuggested* fields first (skip manual)
+        if reset and not is_manual:
             for key in SF_SUGGESTED_KEYS:
                 if field.get(key) is not None:
                     field[key] = None
@@ -116,16 +118,22 @@ def process_entity(entity_name, d365_dir, reset=False):
 
         # Compute the mapping flag
         should_map = compute_sf_suggested_mapping(field)
-        field["sfSuggestedMapping"] = should_map
 
-        # If not mapping, clear sfSuggested* fields
-        if not should_map:
+        if is_manual:
+            # Manual entries are never modified — preserve existing mapping decision
+            if field.get("sfSuggestedMapping", False):
+                mapped_true += 1
+            else:
+                mapped_false += 1
+        elif not should_map:
+            field["sfSuggestedMapping"] = False
             for key in SF_SUGGESTED_KEYS:
                 if field.get(key) is not None:
                     field[key] = None
                     cleared += 1
             mapped_false += 1
         else:
+            field["sfSuggestedMapping"] = True
             mapped_true += 1
 
         # Ensure key ordering

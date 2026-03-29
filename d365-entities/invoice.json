@@ -6,19 +6,19 @@
   "ownershipType": "UserOwned",
   "auditEnabled": true,
   "totalRows": 16724,
-  "lastUpdate": "",
+  "lastUpdate": "2026-03-27 20:52:35",
   "primaryIdField": "invoiceid",
   "primaryNameField": "name",
-  "countForms": 25,
-  "countViews": 74,
-  "countChartVisualizations": 1,
+  "countForms": 0,
+  "countViews": 0,
+  "countChartVisualizations": 0,
   "countReports": 0,
   "countDashboards": 0,
-  "countWorkflows": 91,
-  "countFormulasAndRollups": 9,
-  "countPlugins": 121,
+  "countWorkflows": 0,
+  "countFormulasAndRollups": 0,
+  "countPlugins": 0,
   "countPCFControls": 0,
-  "countRelationships": 4,
+  "countRelationships": 0,
   "countRibbonCustomizations": 0,
   "sections": {
     "forms": [
@@ -2636,8 +2636,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": []
+        "hasPostImage": false
       },
       {
         "className": "AccountLeadGen",
@@ -2692,17 +2691,7 @@
         ],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_evaluate",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "AccountLeadGenAssociate",
@@ -2728,17 +2717,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Associate",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "AccountReassignmentShareRecords",
@@ -2775,8 +2754,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": []
+        "hasPostImage": false
       },
       {
         "className": "AccountTypeSet",
@@ -2801,17 +2779,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_nonsaasstatus,azt_saasstatus",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "ActivateOrReviseQuote",
@@ -2832,17 +2800,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "ActivitiesCreatedDueDatesInPast",
@@ -2860,33 +2818,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "ActivityCloseForceRecordOwner",
@@ -2905,25 +2837,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "statecode",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "statecode",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "ActivityRegardingGetState",
@@ -2948,8 +2862,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": []
+        "hasPostImage": false
       },
       {
         "className": "AddressSearchCleanupFields",
@@ -2971,41 +2884,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "azt_addresssearch,azt_addresssearch2",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "azt_addresssearch",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "AllocationValidation",
@@ -3029,25 +2908,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_numberoflicenses",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "AutoAssignStateAbb",
@@ -3069,57 +2930,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Validation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Validation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Validation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Validation",
-            "state": "Enabled",
-            "filteringAttributes": "stateorprovince",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Validation",
-            "state": "Enabled",
-            "filteringAttributes": "address1_stateorprovince",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Validation",
-            "state": "Enabled",
-            "filteringAttributes": "address1_stateorprovince",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "AutoNumber",
@@ -3152,17 +2963,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "CaseAudit",
@@ -3184,25 +2985,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "ownerid",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "CaseClose",
@@ -3224,25 +3007,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "statecode",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "statecode",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "ChangeLicenseType",
@@ -3267,8 +3032,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": []
+        "hasPostImage": false
       },
       {
         "className": "CloneExpenseLine",
@@ -3305,17 +3069,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "CompGoalCreate",
@@ -3338,17 +3092,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "ContactSetConnectionRole",
@@ -3380,17 +3124,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "azt_ContactSetConnectionRole",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "CreateCompGoals",
@@ -3433,8 +3167,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": []
+        "hasPostImage": false
       },
       {
         "className": "CreateSoftwareLicenses",
@@ -3499,25 +3232,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "salesorderdetailid",
-            "rank": 2
-          },
-          {
-            "message": "Update",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "statecode",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "CreateUserGoals",
@@ -3609,17 +3324,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "azt_GoalAutoCreate",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "DiscretionaryDiscountSetHeader",
@@ -3676,33 +3381,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_discountamount,azt_invoiceproductid,azt_opportunityproductid,azt_orderproductid,azt_quoteproductid",
-            "rank": 1
-          },
-          {
-            "message": "Delete",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "EngagementFSRAssignedOn",
@@ -3724,25 +3403,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "ownerid",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "EngagementSetEndDate",
@@ -3761,25 +3422,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "SetStateDynamicEntity",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "SetState",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "ExpenseLineTotals",
@@ -3809,25 +3452,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_expenseid,azt_expenseamount",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "ExpenseRestrictVisibility",
@@ -3847,17 +3472,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "RetrieveMultiple",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "FundingSetAnnualSpend",
@@ -3885,17 +3500,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_fundingid",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "FundingTotalAmt",
@@ -3914,25 +3519,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_federalfundingamount,azt_otherfundingamount,azt_statefundingamount",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_federalfundingamount,azt_otherfundingamount,azt_statefundingamount",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "FundingYearSync",
@@ -3952,25 +3539,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_fundingyear",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_fundingyear",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "GetAcctTeamOwned",
@@ -3996,8 +3565,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": []
+        "hasPostImage": false
       },
       {
         "className": "GetUserHasRole",
@@ -4015,8 +3583,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": []
+        "hasPostImage": false
       },
       {
         "className": "GetUserHasRoleToAction",
@@ -4040,17 +3607,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "azt_GetHasRole",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "InvoiceClosePaidOnPercentage",
@@ -4073,17 +3630,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_compcompleted",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "InvoiceCompCompleted",
@@ -4141,17 +3688,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_compcompleted",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "LeadImport",
@@ -4204,17 +3741,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_leadimportid",
-            "rank": 2
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "LeadImportPopulateName",
@@ -4235,17 +3762,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_importname,azt_leadimportid",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "LeadQualify",
@@ -4263,25 +3780,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "QualifyLead",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "QualifyLead",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "LeadQualifyParentStakeholderContacts",
@@ -4311,17 +3810,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "ManualDiscountKill",
@@ -4339,41 +3828,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "manualdiscountamount",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "manualdiscountamount",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OppAuditRemoval",
@@ -4393,8 +3848,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": []
+        "hasPostImage": false
       },
       {
         "className": "OpportunityAssignFromLead",
@@ -4415,17 +3869,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 3
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OpportunityAudit",
@@ -4460,17 +3904,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "estimatedclosedate,estimatedvalue,azt_probability",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "OpportunityClone",
@@ -4513,17 +3947,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "azt_CloneOpportunity",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OpportunityLastActivityDate",
@@ -4547,81 +3971,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "SetStateDynamicEntity",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "estimatedclosedate,estimatedvalue,azt_probability",
-            "rank": 1
-          },
-          {
-            "message": "SetState",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "SetState",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "SetStateDynamicEntity",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "SetStateDynamicEntity",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "SetState",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "SetState",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "SetStateDynamicEntity",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OpportunityLineSyncToQuote",
@@ -4664,17 +4014,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_licensetermmonths,azt_licensetype,quantity",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "OpportunityPreventCreateQuote",
@@ -4697,17 +4037,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OpportunityProbabilityChange",
@@ -4730,25 +4060,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_probability",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OpportunityProbabilityNumber",
@@ -4769,25 +4081,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_probability",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OpptyToQuoteFieldMappings",
@@ -4836,17 +4130,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 100
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OrderClone",
@@ -4887,17 +4171,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "azt_CloneOrder",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OrderFSRSetTemplateFields",
@@ -4926,17 +4200,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_fsrid",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OrderLinePopulateLicType",
@@ -4961,17 +4225,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OrderLinePopulateTemplateFields",
@@ -4997,17 +4251,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "salesorderdetailname,salesorderid",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OrderManuallyCreateSoftwareLicense",
@@ -5045,17 +4289,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "azt_CreateSoftwareLicense",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OrderSplit",
@@ -5129,17 +4363,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "azt_OrderSplit",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "OrderStageTracking",
@@ -5170,17 +4394,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "PaymentUpdate",
@@ -5204,17 +4418,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "statuscode",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "PhonecallCreateCallback",
@@ -5270,25 +4474,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "ProductDiscountPreventOnActiveQuote",
@@ -5308,25 +4494,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_discountamount,azt_productdiscountid,azt_quoteproductid",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "QuoteCloneAndDelete",
@@ -5361,17 +4529,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "azt_CloneAndDeleteQuote",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "QuoteLinesSyncToOppty",
@@ -5413,33 +4571,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "productid,extendedamount,manualdiscountamount,priceperunit,quantity,tax,productdescription",
-            "rank": 1
-          },
-          {
-            "message": "Delete",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "QuoteOrderProductsTrackDiscount",
@@ -5469,25 +4601,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "QuotePreventActivateUnapprovedDiscounts",
@@ -5544,25 +4658,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "SetStateDynamicEntity",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "SetState",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "QuotePreventActivateUnapprovedFreight",
@@ -5583,25 +4679,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "SetState",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "SetStateDynamicEntity",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "QuoteSyncTotalToOpportunity",
@@ -5624,17 +4702,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": true,
-        "registrations": [
-          {
-            "message": "Update",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "freightamount,totalamount",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": true
       },
       {
         "className": "RecordOwnerRestrictEdit",
@@ -5657,17 +4725,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "RestrictCreateQuote",
@@ -5690,17 +4748,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "RestrictProductLookups",
@@ -5721,17 +4769,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "RetrieveMultiple",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "RestrictWinOpportunities",
@@ -5749,17 +4787,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Win",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "RestrictWinQuote",
@@ -5777,17 +4805,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Win",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "ReviseQuoteDiscountMove",
@@ -5822,17 +4840,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "SendQuoteReport",
@@ -5855,17 +4863,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "azt_SendQuote",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "SetOppProductDefaults",
@@ -5891,17 +4889,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "SetPrimaryContact",
@@ -5946,25 +4934,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "azt_ContactSetPrimary",
-            "mode": "Synchronous",
-            "stage": "Pre-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "ShareBasedOnAccessTeam",
@@ -6007,65 +4977,7 @@
         ],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Disabled",
-            "filteringAttributes": "",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "ShareFromAccountShares",
@@ -6087,49 +4999,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "activityid",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "contactid",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "opportunityid",
-            "rank": 1
-          },
-          {
-            "message": "Create",
-            "mode": "Asynchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "activityid",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "ShareWithAccountOwner",
@@ -6156,8 +5026,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": []
+        "hasPostImage": false
       },
       {
         "className": "ShipmentSetTrackingNumber",
@@ -6185,25 +5054,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": [
-          {
-            "message": "Create",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "",
-            "rank": 1
-          },
-          {
-            "message": "Update",
-            "mode": "Synchronous",
-            "stage": "Post-Operation",
-            "state": "Enabled",
-            "filteringAttributes": "azt_trackingnumber",
-            "rank": 1
-          }
-        ]
+        "hasPostImage": false
       },
       {
         "className": "UpdateOppFromQuote",
@@ -6243,8 +5094,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": true,
-        "hasPostImage": true,
-        "registrations": []
+        "hasPostImage": true
       },
       {
         "className": "Utility",
@@ -6305,8 +5155,7 @@
         "crossEntityRefs": [],
         "selectsAll": false,
         "hasPreImage": false,
-        "hasPostImage": false,
-        "registrations": []
+        "hasPostImage": false
       }
     ],
     "pcfControls": [
@@ -6765,7 +5614,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": true,
@@ -6822,7 +5671,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -6879,7 +5728,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -6904,13 +5753,13 @@
       "sfSuggestedDataType": "currency",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
-      "countFormulasAndRollups": 1,
+      "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
@@ -6956,7 +5805,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -7013,7 +5862,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": true,
@@ -7038,13 +5887,13 @@
       "sfSuggestedDataType": "currency",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 4,
-      "countFormulasAndRollups": 1,
+      "countWorkflows": 0,
+      "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
@@ -7110,7 +5959,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -7167,7 +6016,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -7192,13 +6041,13 @@
       "sfSuggestedDataType": "currency",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
-      "countFormulasAndRollups": 1,
+      "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
@@ -7244,7 +6093,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -7301,7 +6150,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-26 20:49:13",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -7326,13 +6175,13 @@
       "sfSuggestedDataType": "currency",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
-      "countFormulasAndRollups": 1,
+      "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
@@ -7378,7 +6227,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-26 20:49:13",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -7435,7 +6284,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": true,
@@ -7492,7 +6341,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": true,
@@ -7549,7 +6398,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -7606,7 +6455,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": true,
@@ -7663,7 +6512,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -7720,7 +6569,7 @@
       "dataType": "decimal",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": true,
@@ -7777,7 +6626,7 @@
       "dataType": "decimal",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": true,
@@ -7834,7 +6683,7 @@
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": true,
@@ -7868,14 +6717,14 @@
       "sfSuggestedDataType": "boolean",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 5,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -7947,7 +6796,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2024-08-16 18:11:15",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": true,
@@ -7972,14 +6821,14 @@
       "sfSuggestedDataType": null,
       "sfSuggestedMatchTier": null,
       "notes": null,
-      "countForms": 1,
-      "countViews": 3,
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 2,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -8049,7 +6898,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2024-08-16 18:11:15",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -8106,7 +6955,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": true,
@@ -8163,7 +7012,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -8220,7 +7069,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "1.0.0.0",
       "maxLength": 400,
       "fieldSecurity": false,
@@ -8277,7 +7126,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "Never",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": true,
@@ -8303,7 +7152,7 @@
       "sfSuggestedMatchTier": null,
       "notes": null,
       "countForms": 0,
-      "countViews": 2,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
@@ -8347,7 +7196,7 @@
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": true,
@@ -8413,7 +7262,7 @@
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": true,
@@ -8479,7 +7328,7 @@
       "dataType": "int",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2025-07-10 03:30:59",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": true,
@@ -8504,7 +7353,7 @@
       "sfSuggestedDataType": "int",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
@@ -8562,7 +7411,7 @@
       "dataType": "decimal",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-26 20:49:13",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -8587,14 +7436,14 @@
       "sfSuggestedDataType": "double",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
-      "countViews": 3,
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 1,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -8657,7 +7506,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-26 20:49:13",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -8682,14 +7531,14 @@
       "sfSuggestedDataType": "datetime",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
-      "countViews": 2,
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 2,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -8753,7 +7602,7 @@
       "dataType": "bit",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -8787,7 +7636,7 @@
       "sfSuggestedDataType": "boolean",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
@@ -8845,7 +7694,7 @@
       "dataType": "picklist",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2021-07-11 16:00:49",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -8870,12 +7719,12 @@
       "sfSuggestedDataType": null,
       "sfSuggestedMatchTier": null,
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 1,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
@@ -8919,7 +7768,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "1.0.0.0",
       "maxLength": 100,
       "fieldSecurity": true,
@@ -8944,14 +7793,14 @@
       "sfSuggestedDataType": "string",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
-      "countViews": 4,
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 2,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 2,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -9039,7 +7888,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": true,
@@ -9064,8 +7913,8 @@
       "sfSuggestedDataType": "datetime",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
-      "countViews": 2,
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
@@ -9120,7 +7969,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": true,
@@ -9145,8 +7994,8 @@
       "sfSuggestedDataType": "datetime",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
-      "countViews": 2,
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
@@ -9201,7 +8050,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "1.0.0.0",
       "maxLength": 100,
       "fieldSecurity": true,
@@ -9226,8 +8075,8 @@
       "sfSuggestedDataType": "string",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
-      "countViews": 3,
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
@@ -9289,7 +8138,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "1.0.0.0",
       "maxLength": 100,
       "fieldSecurity": false,
@@ -9314,14 +8163,14 @@
       "sfSuggestedDataType": "string",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
-      "countViews": 1,
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 1,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 2,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -9386,7 +8235,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -9411,16 +8260,16 @@
       "sfSuggestedDataType": "reference",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 2,
-      "countViews": 1,
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 37,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 9,
+      "countPlugins": 0,
       "countPCFControls": 0,
-      "countRelationships": 1,
+      "countRelationships": 0,
       "countRibbonCustomizations": 0,
       "forms": [
         {
@@ -9801,7 +8650,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-26 20:49:13",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -9826,14 +8675,14 @@
       "sfSuggestedDataType": "currency",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
-      "countFormulasAndRollups": 1,
-      "countPlugins": 1,
+      "countFormulasAndRollups": 0,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -9885,7 +8734,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-26 20:49:13",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -9942,7 +8791,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -9967,13 +8816,13 @@
       "sfSuggestedDataType": "currency",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
-      "countFormulasAndRollups": 1,
+      "countFormulasAndRollups": 0,
       "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
@@ -10019,7 +8868,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": true,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "1.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -10076,7 +8925,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Skipped (createdon)",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -10102,13 +8951,13 @@
       "sfSuggestedMatchTier": "generated",
       "notes": null,
       "countForms": 0,
-      "countViews": 3,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 10,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -10227,7 +9076,7 @@
       "dataType": "customer",
       "requiredLevel": "required",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -10252,16 +9101,16 @@
       "sfSuggestedDataType": "reference",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
-      "countViews": 8,
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 13,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 11,
+      "countPlugins": 0,
       "countPCFControls": 0,
-      "countRelationships": 1,
+      "countRelationships": 0,
       "countRibbonCustomizations": 0,
       "forms": [
         {
@@ -10504,12 +9353,12 @@
     },
     {
       "fieldName": "discountamount",
-      "displayName": "Invoice Discount Amount",
-      "description": "Type the discount amount for the invoice if the customer is eligible for special savings.",
-      "dataType": "money",
-      "requiredLevel": "none",
+      "displayName": "",
+      "description": "",
+      "dataType": "",
+      "requiredLevel": "",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-02-12 16:41:21",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -10534,14 +9383,14 @@
       "sfSuggestedDataType": "currency",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 2,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -10587,12 +9436,12 @@
     },
     {
       "fieldName": "duedate",
-      "displayName": "Due Date",
-      "description": "Enter the date by which the invoice should be paid by the customer.",
-      "dataType": "datetime",
-      "requiredLevel": "none",
+      "displayName": "",
+      "description": "",
+      "dataType": "",
+      "requiredLevel": "",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2025-01-15 14:15:36",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -10618,7 +9467,7 @@
       "sfSuggestedMatchTier": null,
       "notes": null,
       "countForms": 0,
-      "countViews": 2,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
@@ -10662,7 +9511,7 @@
       "dataType": "image",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Skipped (image)",
       "introducedVersion": "6.0.0.0",
       "maxLength": 9437328,
       "fieldSecurity": false,
@@ -10719,7 +9568,7 @@
       "dataType": "uniqueidentifier",
       "requiredLevel": "required",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -10745,15 +9594,15 @@
       "sfSuggestedMatchTier": "generated",
       "notes": null,
       "countForms": 0,
-      "countViews": 7,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 1,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 8,
+      "countPlugins": 0,
       "countPCFControls": 0,
-      "countRelationships": 1,
+      "countRelationships": 0,
       "countRibbonCustomizations": 0,
       "forms": [],
       "views": [
@@ -10888,14 +9737,14 @@
     },
     {
       "fieldName": "invoicenumber",
-      "displayName": "Invoice ID",
-      "description": "Shows the identifying number or code of the invoice.",
-      "dataType": "nvarchar",
-      "requiredLevel": "required",
+      "displayName": "",
+      "description": "",
+      "dataType": "",
+      "requiredLevel": "",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "",
-      "maxLength": 100,
+      "maxLength": null,
       "fieldSecurity": false,
       "auditEnabled": false,
       "relatedTo": null,
@@ -10923,9 +9772,9 @@
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 1,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 1,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -10968,7 +9817,7 @@
       "dataType": "datetime",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Skipped (modifiedon)",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -10994,13 +9843,13 @@
       "sfSuggestedMatchTier": "generated",
       "notes": null,
       "countForms": 0,
-      "countViews": 1,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 4,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -11065,7 +9914,7 @@
       "dataType": "nvarchar",
       "requiredLevel": "required",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "5.0.0.0",
       "maxLength": 300,
       "fieldSecurity": false,
@@ -11091,13 +9940,13 @@
       "sfSuggestedMatchTier": "generated",
       "notes": null,
       "countForms": 0,
-      "countViews": 13,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 16,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 23,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -11508,7 +10357,7 @@
       "dataType": "lookup",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "Error",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -11540,9 +10389,9 @@
       "countDashboards": 0,
       "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 8,
+      "countPlugins": 0,
       "countPCFControls": 0,
-      "countRelationships": 1,
+      "countRelationships": 0,
       "countRibbonCustomizations": 0,
       "forms": [],
       "views": [],
@@ -11633,7 +10482,7 @@
       "dataType": "state",
       "requiredLevel": "systemrequired",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -11658,14 +10507,14 @@
       "sfSuggestedDataType": "picklist",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
-      "countViews": 5,
+      "countForms": 0,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 10,
+      "countWorkflows": 0,
       "countFormulasAndRollups": 0,
-      "countPlugins": 20,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -11929,7 +10778,7 @@
       "dataType": "status",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -11955,13 +10804,13 @@
       "sfSuggestedMatchTier": "generated",
       "notes": null,
       "countForms": 0,
-      "countViews": 5,
+      "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
-      "countWorkflows": 5,
-      "countFormulasAndRollups": 1,
-      "countPlugins": 6,
+      "countWorkflows": 0,
+      "countFormulasAndRollups": 0,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -12156,7 +11005,7 @@
       "dataType": "money",
       "requiredLevel": "none",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "5.0.0.0",
       "maxLength": null,
       "fieldSecurity": false,
@@ -12181,14 +11030,14 @@
       "sfSuggestedDataType": "currency",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
-      "countViews": 7,
-      "countChartVisualizations": 1,
+      "countForms": 0,
+      "countViews": 0,
+      "countChartVisualizations": 0,
       "countReports": 0,
       "countDashboards": 0,
       "countWorkflows": 0,
-      "countFormulasAndRollups": 2,
-      "countPlugins": 4,
+      "countFormulasAndRollups": 0,
+      "countPlugins": 0,
       "countPCFControls": 0,
       "countRelationships": 0,
       "countRibbonCustomizations": 0,
@@ -12327,12 +11176,12 @@
     },
     {
       "fieldName": "totaltax",
-      "displayName": "Total Tax",
-      "description": "Shows the total of the Tax amounts specified on all products included in the invoice, included in the Total Amount due calculation for the invoice.",
-      "dataType": "money",
-      "requiredLevel": "none",
+      "displayName": "",
+      "description": "",
+      "dataType": "",
+      "requiredLevel": "",
       "isCustom": false,
-      "lastUpdate": "",
+      "lastUpdate": "2026-03-27 20:52:35",
       "introducedVersion": "",
       "maxLength": null,
       "fieldSecurity": false,
@@ -12357,7 +11206,7 @@
       "sfSuggestedDataType": "currency",
       "sfSuggestedMatchTier": "generated",
       "notes": null,
-      "countForms": 1,
+      "countForms": 0,
       "countViews": 0,
       "countChartVisualizations": 0,
       "countReports": 0,
